@@ -135,13 +135,15 @@ JOB 프로그램을 편집하고 모니터링 정보를 확인하는 등 다양�
       <td style="text-align:left">
         <p>&#xC791;&#xC5C5; &#xC601;&#xC5ED;&#xC740; &#xC0C1;&#xD558;, &#xB450; &#xAC1C;&#xC758;
           &#xD328;&#xB110; &#xC2A4;&#xD0DD;&#xC73C;&#xB85C; &#xAE30;&#xBCF8; &#xAD6C;&#xC131;&#xB429;&#xB2C8;&#xB2E4;.</p>
-        <p>&#x9F; &#xAC01; &#xD328;&#xB110; &#xC2A4;&#xD0DD;&#xC5D0; &#xD328;&#xB110;&#xCC3D;&#xC744;
-          &#xCD94;&#xAC00;&#xD558;&#xC5EC; &#xC5EC;&#xB7EC; &#xC791;&#xC5C5;&#xC744;
-          &#xB3D9;&#xC2DC;&#xC5D0; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-        <p>&#x9F; &#xAE30;&#xC874; &#xD328;&#xB110; &#xC2A4;&#xD0DD;&#xC758; &#xC0C1;&#xB2E8;&#xACFC;
-          &#xD558;&#xB2E8;&#xC5D0; &#xB610;&#xB294; &#xD328;&#xB110; &#xC2A4;&#xD0DD;
-          &#xC0AC;&#xC774;&#xC5D0; &#xC0C8; &#xD328;&#xB110; &#xC2A4;&#xD0DD;&#xC744;
-          &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <ul>
+          <li>&#xAC01; &#xD328;&#xB110; &#xC2A4;&#xD0DD;&#xC5D0; &#xD328;&#xB110;&#xCC3D;&#xC744;
+            &#xCD94;&#xAC00;&#xD558;&#xC5EC; &#xC5EC;&#xB7EC; &#xC791;&#xC5C5;&#xC744;
+            &#xB3D9;&#xC2DC;&#xC5D0; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+          <li>&#xAE30;&#xC874; &#xD328;&#xB110; &#xC2A4;&#xD0DD;&#xC758; &#xC0C1;&#xB2E8;&#xACFC;
+            &#xD558;&#xB2E8;&#xC5D0; &#xB610;&#xB294; &#xD328;&#xB110; &#xC2A4;&#xD0DD;
+            &#xC0AC;&#xC774;&#xC5D0; &#xC0C8; &#xD328;&#xB110; &#xC2A4;&#xD0DD;&#xC744;
+            &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+        </ul>
       </td>
     </tr>
     <tr>
