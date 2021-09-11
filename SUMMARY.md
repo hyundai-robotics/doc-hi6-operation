@@ -23,7 +23,3 @@
 * [9. 속성](9-property.md)
 * [10. 로봇 언어](10-robot-language.md)
 
-## 11. 시험 그룹
-
-* [11.1 시험 섹션](11./11-1-test-section.md)
-
