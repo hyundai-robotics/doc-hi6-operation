@@ -15,7 +15,9 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">1</td>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c1.png" alt/>
+      </td>
       <td style="text-align:left">&#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904;&#xC785;&#xB2C8;&#xB2E4;. &#xD2F0;&#xCE58;
         &#xD39C;&#xB358;&#xD2B8;&#xC758; &#xD1B5;&#xC2E0; &#xC0C1;&#xD0DC;&#xC640;
         &#xC6B4;&#xC804; &#xBAA8;&#xB4DC;, &#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758;
@@ -24,14 +26,18 @@
         &#xD45C;&#xC2DC;&#xC904;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">2</td>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c2.png" alt/>
+      </td>
       <td style="text-align:left">&#xAE30;&#xB2A5; &#xBC84;&#xD2BC;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC124;&#xC815;&#xAC12;&#xC744;
         &#xD655;&#xC778;&#xD558;&#xACE0; &#xBCC0;&#xACBD;&#xD569;&#xB2C8;&#xB2E4;.
         &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.3 &#xAE30;&#xB2A5;
         &#xBC84;&#xD2BC;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">3</td>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c3.png" alt/>
+      </td>
       <td style="text-align:left">&#xC791;&#xC5C5; &#xC601;&#xC5ED;&#xC785;&#xB2C8;&#xB2E4;. JOB &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744;
         &#xD3B8;&#xC9D1;&#xD558;&#xACE0; &#xBAA8;&#xB2C8;&#xD130;&#xB9C1; &#xC815;&#xBCF4;&#xB97C;
         &#xD655;&#xC778;&#xD558;&#xB294; &#xB4F1; &#xB2E4;&#xC591;&#xD55C; &#xC791;&#xC5C5;&#xC744;
@@ -39,7 +45,9 @@
         &#xB3D9;&#xC2DC;&#xC5D0; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">4</td>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c4.png" alt/>
+      </td>
       <td style="text-align:left">&#xBA54;&#xB274; &#xBC84;&#xD2BC;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xBA54;&#xB274;&#xC758;
         &#xC124;&#xC815;&#xAC12;&#xC744; &#xD655;&#xC778; &#xBC0F; &#xBCC0;&#xACBD;&#xD558;&#xACE0;,
         &#xB2E4;&#xC591;&#xD55C; &#xAE30;&#xB2A5;&#xC744; &#xC2E4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.
@@ -47,7 +55,9 @@
         &#xBC84;&#xD2BC;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">5</td>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c5.png" alt/>
+      </td>
       <td style="text-align:left">&#xC870;&#xADF8; &#xB9C9;&#xB300;&#xC785;&#xB2C8;&#xB2E4;. [&#xC88C;&#xD45C;&#xACC4;]
         &#xBC84;&#xD2BC;&#xC73C;&#xB85C; &#xC120;&#xD0DD;&#xD55C; &#xC870;&#xADF8;
         &#xC218;&#xD589;&#xC758; &#xAE30;&#xC900; &#xC88C;&#xD45C;&#xACC4;&#xC5D0;
@@ -55,7 +65,9 @@
         &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">6</td>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c6.png" alt/>
+      </td>
       <td style="text-align:left">
         <p>&#xC774;&#xB825; &#xD45C;&#xC2DC;&#xC904;&#xC785;&#xB2C8;&#xB2E4;. &#xC790;&#xC138;&#xD55C;
           &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.2 &#xC774;&#xB825; &#xD45C;&#xC2DC;&#xC904;&#x201D;&#xC744;
@@ -81,13 +93,165 @@
 
 ![&#xADF8;&#xB9BC; 9 &#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904;](../../.gitbook/assets/image%20%281%29.png)
 
-![](../../.gitbook/assets/image%20%2825%29.png)
+### 
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xBC88;&#xD638;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">&#xB85C;&#xBD07; &#xC81C;&#xC5B4;&#xAE30; &#xD50C;&#xB7AB;&#xD3FC;&#xC758;
+        &#xC774;&#xB984;&#xC785;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">&#xD2F0;&#xCE58; &#xD39C;&#xB358;&#xD2B8;&#xC640; &#xB85C;&#xBD07; &#xC81C;&#xC5B4;&#xAE30;
+        &#xBCF8;&#xCCB4;&#xC758; COM &#xBAA8;&#xB4C8; &#xAC04; &#xC774;&#xB354;&#xB137;
+        &#xD1B5;&#xC2E0;&#xC758; &#xC0C1;&#xD0DC;&#xB97C; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.
+        (
+        <img src="../../.gitbook/assets/flag-comm-ok.png" alt/>: &#xC815;&#xC0C1; /
+        <img src="../../.gitbook/assets/flag-comm-ng.png"
+        alt/>: &#xC751;&#xB2F5; &#xC5C6;&#xC74C;)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>&#xB85C;&#xBD07;&#xC758; &#xC6B4;&#xC804; &#xBC29;&#xC2DD;&#xC744; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+        <ul>
+          <li><b>&#xC218;&#xB3D9;</b>: &#xC870;&#xADF8;&#xB85C; &#xB85C;&#xBD07;&#xC744;
+            &#xC81C;&#xC5B4;&#xD558;&#xACE0;, JOB &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744;
+            &#xC791;&#xC131;&#xD558;&#xB294; &#xB85C;&#xBD07; &#xAD50;&#xC2DC; &#xBAA8;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.</li>
+          <li><b>&#xC790;&#xB3D9;</b>: JOB &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744;
+            &#xC7AC;&#xC0DD;&#xD558;&#xC5EC; &#xB85C;&#xBD07;&#xC744; &#xC790;&#xB3D9;&#xC73C;&#xB85C;
+            &#xC6B4;&#xC804;&#xD558;&#xB294; &#xBAA8;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.</li>
+          <li><b>&#xC6D0;&#xACA9;&#xC218;&#xB3D9;</b>: &#xBAA8;&#xB4DC;&#xB97C; &#xC6D0;&#xACA9;&#xC5D0;&#xC11C;
+            I/O&#xC2E0;&#xD638;&#xB85C; &#xACB0;&#xC815;&#xD558;&#xB294; &#xC0C1;&#xD0DC;&#xC785;&#xB2C8;&#xB2E4;.
+            (&#xD604;&#xC7AC; &#xC0C1;&#xD0DC;: &#xC218;&#xB3D9; &#xBAA8;&#xB4DC;)</li>
+          <li><b>&#xC6D0;&#xACA9;&#xC790;&#xB3D9;</b>: &#xBAA8;&#xB4DC;&#xB97C; &#xC6D0;&#xACA9;&#xC5D0;&#xC11C;
+            I/O&#xC2E0;&#xD638;&#xB85C; &#xACB0;&#xC815;&#xD558;&#xB294; &#xC0C1;&#xD0DC;&#xC785;&#xB2C8;&#xB2E4;.
+            (&#xD604;&#xC7AC; &#xC0C1;&#xD0DC;: &#xC790;&#xB3D9; &#xBAA8;&#xB4DC;)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">&#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xB2E4;&#xC591;&#xD55C;
+        &#xC0C1;&#xD0DC;&#xB97C; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">&#xB85C;&#xBD07;&#xC758; &#xB3D9;&#xC791; &#xC0C1;&#xD0DC;&#xB97C; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.
+        (
+        <img src="../../.gitbook/assets/flag-mot-on.png" alt/>: &#xBAA8;&#xD130; ON /
+        <img src="../../.gitbook/assets/flag-start.png"
+        alt/>: &#xB85C;&#xBD07; &#xC7AC;&#xC0DD; &#xC911; /
+        <img src="../../.gitbook/assets/flag-stop.png"
+        alt/>: &#xB85C;&#xBD07; &#xC815;&#xC9C0;)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">&#xC120;&#xD0DD;&#xB41C; &#xB85C;&#xBD07; &#xBA54;&#xCEE4;&#xB2C8;&#xC998;&#xC758;
+        &#xBAA8;&#xB378;&#xBA85;&#xC744; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 이력 표시줄
 
 ![&#xADF8;&#xB9BC; 10 &#xC774;&#xB825; &#xD45C;&#xC2DC;&#xC904;](../../.gitbook/assets/image%20%2822%29.png)
 
-![](../../.gitbook/assets/image%20%2830%29.png)
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xBC88;&#xD638;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">&#xB0A0;&#xC9DC;&#xC640; &#xC2DC;&#xAC04; &#xC815;&#xBCF4;&#xAC00; &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;.
+        [&#xBA54;&#xB274;] &#xBC84;&#xD2BC; &gt; [08: &#xB0A0;&#xC9DC;, &#xC2DC;&#xAC04;
+        &#xC124;&#xC815;] &#xBA54;&#xB274;&#xB97C; &#xD130;&#xCE58;&#xD558;&#xBA74;
+        &#xB0A0;&#xC9DC;&#xC640; &#xC2DC;&#xAC04; &#xC815;&#xBCF4;&#xB97C; &#xBCC0;&#xACBD;&#xD560;
+        &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB0A0;&#xC9DC;&#xC640; &#xC2DC;&#xAC04;
+        &#xC815;&#xBCF4; &#xBCC0;&#xACBD;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C;
+        &#xB0B4;&#xC6A9;&#xC740; &#x201C;4.5 &#xB0A0;&#xC9DC; &#xBC0F; &#xC2DC;&#xAC04;
+        &#xC124;&#xC815;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>&#xD2F0;&#xCE58; &#xD39C;&#xB358;&#xD2B8;&#xC758; &#xBA54;&#xBAA8;&#xB9AC;(RAM)
+            &#xC0AC;&#xC6A9; &#xD604;&#xD669;&#xC774; &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;.
+            &#xBA54;&#xBAA8;&#xB9AC;&#xC758; &#xC804;&#xCCB4; &#xC6A9;&#xB7C9; &#xB300;&#xBE44;
+            &#xC0AC;&#xC6A9; &#xBC0F; &#xC794;&#xC5EC; &#xC6A9;&#xB7C9;&#xC774; &#xB9C9;&#xB300;&#xADF8;&#xB798;&#xD504;&#xC5D0;
+            &#xB098;&#xD0C0;&#xB098;&#xACE0; &#xC794;&#xC5EC; &#xC6A9;&#xB7C9;(MByte)&#xC740;
+            &#xC218;&#xCE58;&#xB85C;&#xB3C4; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+          <li>&#xC5D0;&#xB7EC; &#xB610;&#xB294; &#xACBD;&#xACE0; &#xC0C1;&#xD669;&#xC774;
+            &#xBC1C;&#xC0DD;&#xD558;&#xBA74; &#xBA54;&#xBAA8;&#xB9AC; &#xC0AC;&#xC6A9;
+            &#xD604;&#xD669; &#xB300;&#xC2E0; &#xC54C;&#xB9BC; &#xBA54;&#xC2DC;&#xC9C0;&#xAC00;
+            &#xB098;&#xD0C0;&#xB098; &#xC57D; 1&#xBD84; &#xB3D9;&#xC548; &#xAE5C;&#xBE61;&#xC778;
+            &#xD6C4; &#xBA48;&#xCDA5;&#xB2C8;&#xB2E4;.</li>
+          <li>&#xC54C;&#xB9BC; &#xBA54;&#xC2DC;&#xC9C0; &#xC6B0;&#xCE21;&#xC5D0;&#xC11C;
+            &#xC5D0;&#xB7EC; &#xBC0F; &#xACBD;&#xACE0; &#xBC1C;&#xC0DD; &#xC2DC;&#xC810;&#xC744;
+            &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C;
+            &#xC54C;&#xB9BC; &#xBA54;&#xC2DC;&#xC9C0;&#xB97C; &#xD130;&#xCE58;&#xD558;&#xBA74;
+            &#xC0C8; &#xCC3D;&#xC5D0;&#xC11C; &#xC5D0;&#xB7EC; &#xBC0F; &#xACBD;&#xACE0;
+            &#xBC1C;&#xC0DD; &#xC774;&#xB825;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218;
+            &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+          <li>&#xC54C;&#xB9BC; &#xBA54;&#xC2DC;&#xC9C0;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C;
+            &#xB0B4;&#xC6A9;&#xC740; &#x201C;2.5 &#xC5D0;&#xB7EC; &#xC815;&#xBCF4;&#x201D;&#xB97C;
+            &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>&#xD654;&#xBA74;&#xC5D0; &#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC;&#xB97C;
+          &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;. &#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC;&#xC758;
+          &#xC0AC;&#xC6A9; &#xBC29;&#xBC95;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C;
+          &#xB0B4;&#xC6A9;&#xC740; &#x201C;3.2.4.4 &#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC;&#x201D;&#xB97C;
+          &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
+        <ul>
+          <li>&#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC; &#xC0AC;&#xC6A9; &#xC911;&#xC5D0;
+            [
+            <img src="../../.gitbook/assets/bt-dock-softkb.png" alt/>] &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD558;&#xBA74; &#xD0A4;&#xBCF4;&#xB4DC;&#xC758;
+            &#xC704;&#xCE58;&#xB97C; &#xD654;&#xBA74; &#xC0C1;&#xB2E8;&#xC73C;&#xB85C;
+            &#xC774;&#xB3D9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+          <li>&#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC;&#xB97C; &#xC228;&#xAE30;&#xB824;&#xBA74;,
+            [
+            <img src="../../.gitbook/assets/bt-softkb.png" alt/>] &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 기능 버튼
 
@@ -131,7 +295,9 @@ JOB 프로그램을 편집하고 모니터링 정보를 확인하는 등 다양�
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">1</td>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c1.png" alt/>
+      </td>
       <td style="text-align:left">
         <p>&#xC791;&#xC5C5; &#xC601;&#xC5ED;&#xC740; &#xC0C1;&#xD558;, &#xB450; &#xAC1C;&#xC758;
           &#xD328;&#xB110; &#xC2A4;&#xD0DD;&#xC73C;&#xB85C; &#xAE30;&#xBCF8; &#xAD6C;&#xC131;&#xB429;&#xB2C8;&#xB2E4;.</p>
@@ -147,7 +313,9 @@ JOB 프로그램을 편집하고 모니터링 정보를 확인하는 등 다양�
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">2</td>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c2.png" alt/>
+      </td>
       <td style="text-align:left">
         <p>&#xD328;&#xB110; &#xC2A4;&#xD0DD;&#xC785;&#xB2C8;&#xB2E4;. &#xD604;&#xC7AC;
           &#xC5F4;&#xB824; &#xC788;&#xB294; &#xBAA8;&#xB4E0; &#xD328;&#xB110;&#xC758;
@@ -173,7 +341,9 @@ JOB 프로그램을 편집하고 모니터링 정보를 확인하는 등 다양�
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">3</td>
+      <td style="text-align:left">
+        <img src="../../.gitbook/assets/c3.png" alt/>
+      </td>
       <td style="text-align:left">
         <ul>
           <li>[+]: &#xD328;&#xB110; &#xC120;&#xD0DD;&#xCC3D;&#xC5D0;&#xC11C; &#xC6D0;&#xD558;&#xB294;
