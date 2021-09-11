@@ -1,4 +1,4 @@
-# 환영
+# Hi6 Robot Controller - Operation Manual
 
 
 
