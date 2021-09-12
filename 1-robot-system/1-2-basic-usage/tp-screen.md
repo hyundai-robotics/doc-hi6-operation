@@ -646,11 +646,7 @@
   </tbody>
 </table>
 
-![](../../.gitbook/assets/image%20%2818%29.png)
-
-![](../../.gitbook/assets/image%20%2813%29.png)
-
-![](../../.gitbook/assets/image%20%2828%29.png)
+### 
 
 ### 작업 영역
 
