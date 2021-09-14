@@ -4,7 +4,7 @@
 
 2.	로봇과 제어기의 시스템 환경 정보를 확인하고 관리하십시오.
 
-![](../../../.gitbook/assets/image%20%28134%29.png)
+![](../../../.gitbook/assets/image%20%28136%29.png)
 
 <table>
   <thead>
