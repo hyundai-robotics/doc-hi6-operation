@@ -4,11 +4,11 @@
 
 * 에러\(error\): 로봇 동작을 멈춰야 할 만큼 중대한 문제로, 알림 메시지의 코드 번호는 E로 시작합니다.
 
-![](../../.gitbook/assets/image%20%2889%29.png)
+![](../../.gitbook/assets/image%20%2890%29.png)
 
 * 경고\(warning\): 로봇 동작은 계속되지만 대응 조치 수행 여부를 확인해야 하는 문제로, 알림 메시지의 코드 번호는 W로 시작합니다.
 
-![](../../.gitbook/assets/image%20%28100%29.png)
+![](../../.gitbook/assets/image%20%28101%29.png)
 
 
 

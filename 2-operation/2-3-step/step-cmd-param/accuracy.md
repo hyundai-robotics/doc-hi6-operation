@@ -22,5 +22,5 @@ Accuracy level 값에 따른 코너링 경로 생성 방식은 모든 보간 종
 
 코너링 경로는 Convex hull property에 의해 다음의 convex polygon 영역을 벗어나지 않습니다.
 
-![&#xADF8;&#xB9BC; 21 Convex polygon &#xC601;&#xC5ED; &#xB0B4;&#xC758; &#xCF54;&#xB108;&#xB9C1; &#xACBD;&#xB85C;&#xC758; &#xBAA8;&#xB4E0; &#xC810;](../../../.gitbook/assets/image%20%2885%29.png)
+![&#xADF8;&#xB9BC; 21 Convex polygon &#xC601;&#xC5ED; &#xB0B4;&#xC758; &#xCF54;&#xB108;&#xB9C1; &#xACBD;&#xB85C;&#xC758; &#xBAA8;&#xB4E0; &#xC810;](../../../.gitbook/assets/image%20%2886%29.png)
 

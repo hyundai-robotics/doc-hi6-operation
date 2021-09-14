@@ -29,7 +29,7 @@
 
 
 
-![](../.gitbook/assets/image%20%28103%29.png)
+![](../.gitbook/assets/image%20%28104%29.png)
 
 7.	로봇의 자세를 바꾸고 5 ~ 6번 단계를 4번 이상 반복하십시오.
 
