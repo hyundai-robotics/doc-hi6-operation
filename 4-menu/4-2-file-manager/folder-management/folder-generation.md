@@ -6,5 +6,5 @@
 
 2.	새 폴더의 이름을 입력한 후 &lt;enter&gt; 키를 누르십시오.
 
-![](../../../.gitbook/assets/image%20%28133%29.png)
+![](../../../.gitbook/assets/image%20%28136%29.png)
 
