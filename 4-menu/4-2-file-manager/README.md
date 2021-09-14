@@ -8,7 +8,7 @@
 
 2.	장치별 폴더 구조와 저장된 파일을 확인하고 관리하십시오.
 
-![](../../.gitbook/assets/image%20%28109%29.png)
+![](../../.gitbook/assets/image%20%28111%29.png)
 
 <table>
   <thead>
