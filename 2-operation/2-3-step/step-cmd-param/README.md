@@ -6,7 +6,7 @@
 
 스텝 명령문은 다음과 같이 구성됩니다.
 
-![](../../../.gitbook/assets/image%20%2859%29.png)
+![](../../../.gitbook/assets/image%20%2869%29.png)
 
 
 

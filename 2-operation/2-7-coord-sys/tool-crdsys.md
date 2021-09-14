@@ -14,13 +14,13 @@
 
 * 로봇에 토치를 부착한 경우
 
-![](../../.gitbook/assets/image%20%2854%29.png)
+![](../../.gitbook/assets/image%20%2861%29.png)
 
 
 
 * 로봇에 토치를 부착하지 않은 경우
 
-![](../../.gitbook/assets/image%20%2869%29.png)
+![](../../.gitbook/assets/image%20%2881%29.png)
 
 {% hint style="info" %}
 조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 “2.7.1 조그키”를 참조하십시오.
