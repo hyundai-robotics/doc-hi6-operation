@@ -2,7 +2,7 @@
 
 명령문은 주소 영역과 명령문 영역으로 구성됩니다.
 
-![&#xADF8;&#xB9BC; 29 &#xBA85;&#xB839;&#xBB38;&#xC758; &#xAD6C;&#xC131; &#xC601;&#xC5ED;](../../.gitbook/assets/image%20%2895%29.png)
+![&#xADF8;&#xB9BC; 29 &#xBA85;&#xB839;&#xBB38;&#xC758; &#xAD6C;&#xC131; &#xC601;&#xC5ED;](../../.gitbook/assets/image%20%28101%29.png)
 
 | 번호 | 영역 | 설명 |
 | :--- | :--- | :--- |
@@ -11,7 +11,7 @@
 
 티치 펜던트의 &lt;←/→&gt; 키를 눌러 주소 영역과 명령문 영역 사이에서 커서의 위치를 이동할 수 있습니다. &lt;↓/↑&gt; 키를 누르면 선택된 영역 내의 행 사이에서 커서를 위아래로 이동할 수 있습니다.
 
-![&#xADF8;&#xB9BC; 30 &#xC601;&#xC5ED; &#xAC04; &#xCEE4;&#xC11C; &#xC774;&#xB3D9;\(&#xC88C;: &#xC8FC;&#xC18C; &#xC601;&#xC5ED;, &#xC6B0;: &#xBA85;&#xB839;&#xBB38; &#xC601;&#xC5ED;\)](../../.gitbook/assets/image%20%2875%29.png)
+![&#xADF8;&#xB9BC; 30 &#xC601;&#xC5ED; &#xAC04; &#xCEE4;&#xC11C; &#xC774;&#xB3D9;\(&#xC88C;: &#xC8FC;&#xC18C; &#xC601;&#xC5ED;, &#xC6B0;: &#xBA85;&#xB839;&#xBB38; &#xC601;&#xC5ED;\)](../../.gitbook/assets/image%20%2881%29.png)
 
 
 
