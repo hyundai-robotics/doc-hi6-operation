@@ -4,7 +4,7 @@
 
 제어기 내 I/O 보드의 CNIN 커넥터를 통해 입력되는 신호인 범용 입력 신호의 상태를 확인할 수 있습니다.
 
-![&#xADF8;&#xB9BC; 40 &#xBC94;&#xC6A9; &#xC785;&#xB825; &#xC2E0;&#xD638; - ON/OFF &#xC0C1;&#xD0DC;\(&#xC88C;\) / &#xAC12; &#xC0C1;&#xD0DC;\(&#xC6B0;\)](../.gitbook/assets/image%20%28155%29.png)
+![&#xADF8;&#xB9BC; 40 &#xBC94;&#xC6A9; &#xC785;&#xB825; &#xC2E0;&#xD638; - ON/OFF &#xC0C1;&#xD0DC;\(&#xC88C;\) / &#xAC12; &#xC0C1;&#xD0DC;\(&#xC6B0;\)](../.gitbook/assets/image%20%28156%29.png)
 
 
 
