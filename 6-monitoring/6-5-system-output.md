@@ -4,9 +4,9 @@
 
 로봇의 운행과 관련된 신호와 브레이크 제어 상태를 확인할 수 있습니다.
 
-![&#xADF8;&#xB9BC; 38 &#xC2DC;&#xC2A4;&#xD15C; &#xCD9C;&#xB825; - ON/OFF &#xC0C1;&#xD0DC;\(&#xC88C;\) / &#xAC12; &#xC0C1;&#xD0DC;\(&#xC6B0;\)](../.gitbook/assets/image%20%28152%29.png)
+![&#xADF8;&#xB9BC; 38 &#xC2DC;&#xC2A4;&#xD15C; &#xCD9C;&#xB825; - ON/OFF &#xC0C1;&#xD0DC;\(&#xC88C;\) / &#xAC12; &#xC0C1;&#xD0DC;\(&#xC6B0;\)](../.gitbook/assets/image%20%28155%29.png)
 
-![&#xADF8;&#xB9BC; 39 &#xC2DC;&#xC2A4;&#xD15C; &#xCD9C;&#xB825; - &#xC2DC;&#xD000;&#xC2A4; &#xC0C1;&#xD0DC;](../.gitbook/assets/image%20%28153%29.png)
+![&#xADF8;&#xB9BC; 39 &#xC2DC;&#xC2A4;&#xD15C; &#xCD9C;&#xB825; - &#xC2DC;&#xD000;&#xC2A4; &#xC0C1;&#xD0DC;](../.gitbook/assets/image%20%28156%29.png)
 
 * ON/OFF 상태와 시퀀스 상태에서 현재 입력 중인 신호는 노란색으로 표시됩니다.
 * 시퀀스 상태에서는 제어기 시퀀스 신호의 상태만 표시합니다.
@@ -41,5 +41,5 @@
 
 4.	선택한 신호의 출력 상태를 확인하십시오. 선택한 신호가 출력 상태로 전환되어 신호창에 노란색으로 표시됩니다.
 
-![](../.gitbook/assets/image%20%28155%29.png)
+![](../.gitbook/assets/image%20%28158%29.png)
 
