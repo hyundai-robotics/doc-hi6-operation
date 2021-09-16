@@ -2,7 +2,7 @@
 
 패널 선택창에서 \[job\]을 터치하십시오. JOB 프로그램창이 나타납니다. 프로그램을 확인하고 편집 및 삭제하거나 작성할 수 있습니다.
 
-![&#xADF8;&#xB9BC; 34 JOB &#xD504;&#xB85C;&#xADF8;&#xB7A8;](../.gitbook/assets/image%20%28148%29.png)
+![&#xADF8;&#xB9BC; 34 JOB &#xD504;&#xB85C;&#xADF8;&#xB7A8;](../.gitbook/assets/image%20%28150%29.png)
 
 <table>
   <thead>
