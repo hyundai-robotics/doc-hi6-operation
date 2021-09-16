@@ -4,7 +4,7 @@
 
 제어기 내 I/O 보드의 CNOUT커넥터를 통해 입력하는 신호인 범용 출력 신호의 상태를 확인할 수 있습니다.
 
-![&#xADF8;&#xB9BC; 41 &#xBC94;&#xC6A9; &#xCD9C;&#xB825; &#xC2E0;&#xD638; - ON/OFF &#xC0C1;&#xD0DC;\(&#xC88C;\) / &#xAC12; &#xC0C1;&#xD0DC;\(&#xC6B0;\)](../.gitbook/assets/image%20%28148%29.png)
+![&#xADF8;&#xB9BC; 41 &#xBC94;&#xC6A9; &#xCD9C;&#xB825; &#xC2E0;&#xD638; - ON/OFF &#xC0C1;&#xD0DC;\(&#xC88C;\) / &#xAC12; &#xC0C1;&#xD0DC;\(&#xC6B0;\)](../.gitbook/assets/image%20%28152%29.png)
 
 
 
@@ -78,13 +78,13 @@
 
 2.	신호창에서 신호를 터치하여 선택한 후 \[수동 출력\] 버튼을 터치하십시오.
 
-![](../.gitbook/assets/image%20%28153%29.png)
+![](../.gitbook/assets/image%20%28157%29.png)
 
 
 
 3.	수동 출력 확인창에서 출력 조건을 확인한 후 \[확인\] 버튼을 터치하십시오.
 
-![](../.gitbook/assets/image%20%28146%29.png)
+![](../.gitbook/assets/image%20%28147%29.png)
 
 | FbN | doN | =1/0 |
 | :---: | :---: | :---: |
@@ -92,5 +92,5 @@
 
 4.	선택한 신호의 출력 상태를 확인하십시오. 선택한 신호가 출력 상태로 전환되어 신호창에 노란색으로 표시됩니다.
 
-![](../.gitbook/assets/image%20%28159%29.png)
+![](../.gitbook/assets/image%20%28165%29.png)
 
