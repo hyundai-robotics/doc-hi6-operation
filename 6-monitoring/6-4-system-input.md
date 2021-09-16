@@ -6,7 +6,7 @@
 
 ![&#xADF8;&#xB9BC; 36 &#xC2DC;&#xC2A4;&#xD15C; &#xC785;&#xB825; - ON/OFF &#xC0C1;&#xD0DC;\(&#xC88C;\) / &#xAC12; &#xC0C1;&#xD0DC;\(&#xC6B0;\)](../.gitbook/assets/image%20%28144%29.png)
 
-![&#xADF8;&#xB9BC; 37 &#xC2DC;&#xC2A4;&#xD15C; &#xC785;&#xB825; - &#xC2DC;&#xD000;&#xC2A4; &#xC0C1;&#xD0DC;](../.gitbook/assets/image%20%28149%29.png)
+![&#xADF8;&#xB9BC; 37 &#xC2DC;&#xC2A4;&#xD15C; &#xC785;&#xB825; - &#xC2DC;&#xD000;&#xC2A4; &#xC0C1;&#xD0DC;](../.gitbook/assets/image%20%28151%29.png)
 
 * ON/OFF 상태와 시퀀스 상태에서 현재 입력 중인 신호는 노란색으로 표시됩니다.
 * 시퀀스 상태에서는 제어기 시퀀스 신호의 상태만 표시합니다.
