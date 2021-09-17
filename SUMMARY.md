@@ -116,4 +116,5 @@
 * [8. R코드](8-r-code.md)
 * [9. 속성](9-property.md)
 * [10. 로봇 언어](10-robot-language.md)
+* [11. test](11.-test.md)
 
