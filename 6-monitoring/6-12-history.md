@@ -4,7 +4,7 @@
 
 작업 프로그램의 실행 이력과 타임 스탬프가 함께 출력되어 히스토리를 확인할 수 있습니다.
 
-![&#xADF8;&#xB9BC; 44 &#xD788;&#xC2A4;&#xD1A0;&#xB9AC;](../.gitbook/assets/image%20%28169%29.png)
+![&#xADF8;&#xB9BC; 44 &#xD788;&#xC2A4;&#xD1A0;&#xB9AC;](../.gitbook/assets/image%20%28171%29.png)
 
 
 
