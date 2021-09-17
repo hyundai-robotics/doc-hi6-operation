@@ -123,7 +123,7 @@
       * [7.3.2.3	입출력 신호 설정 정보](7-setting/7-3-control-parameter/io-signal-setting/io-signal-set-info.md)
       * [7.3.2.4 입력 신호 할당](7-setting/7-3-control-parameter/io-signal-setting/input-signal-assign.md)
       * [7.3.2.5 입력 신호 설정 정보](7-setting/7-3-control-parameter/io-signal-setting/input-signal-set-info.md)
-      * [7.3.2.6 출력 신호 할당](7-setting/7-3-control-parameter/io-signal-setting/output-signal-set.md)
+      * [7.3.2.6 출력 신호 할당](7-setting/7-3-control-parameter/io-signal-setting/output-signal-assign.md)
       * [7.3.2.7 출력 신호 설정 정보](7-setting/7-3-control-parameter/io-signal-setting/output-signal-set-info.md)
       * [7.3.2.8 키 신호 출력](7-setting/7-3-control-parameter/io-signal-setting/key-signal-output.md)
       * [7.3.2.9 DIO 블록 할당](7-setting/7-3-control-parameter/io-signal-setting/dio-block-assign.md)
