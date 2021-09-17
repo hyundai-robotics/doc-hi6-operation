@@ -6,8 +6,6 @@
 
 ![&#xADF8;&#xB9BC; 50 &#xC13C;&#xC11C; &#xB3D9;&#xAE30; &#xBAA8;&#xB2C8;&#xD130;&#xB9C1;](../.gitbook/assets/image%20%28175%29.png)
 
-
-
 <table>
   <thead>
     <tr>
