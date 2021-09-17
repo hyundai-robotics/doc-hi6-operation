@@ -4,7 +4,7 @@
 
 태스크별 동작 주기와 실행 시간 정보를 확인할 수 있습니다.
 
-![&#xADF8;&#xB9BC; 46 &#xD0DC;&#xC2A4;&#xD06C;](../.gitbook/assets/image%20%28171%29.png)
+![&#xADF8;&#xB9BC; 46 &#xD0DC;&#xC2A4;&#xD06C;](../.gitbook/assets/image%20%28172%29.png)
 
 <table>
   <thead>
