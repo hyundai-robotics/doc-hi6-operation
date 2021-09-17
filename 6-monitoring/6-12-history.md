@@ -17,7 +17,9 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/c1.png" alt/>
+      </td>
       <td style="text-align:left">
         <ul>
           <li>[
@@ -34,7 +36,9 @@
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/c2.png" alt/>
+      </td>
       <td style="text-align:left">&#xC791;&#xC5C5; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC758; &#xC2E4;&#xD589;
         &#xC774;&#xB825;&#xACFC; &#xD0C0;&#xC784; &#xC2A4;&#xD0EC;&#xD504;&#xC785;&#xB2C8;&#xB2E4;.
         &#xC2E4;&#xD589; &#xC791;&#xC5C5; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC758;
