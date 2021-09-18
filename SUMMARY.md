@@ -164,5 +164,6 @@
 * [8. R코드](8-r-code.md)
 * [9. 속성](9-property.md)
 * [10. 로봇 언어](10-robot-language.md)
-* [11. test](11.-test.md)
+* [별첨](11-appendices/README.md)
+  * [산업안전보건기준에 관한 규칙 및 안전검사 고시](11-appendices/rules-occupational-safety.md)
 
