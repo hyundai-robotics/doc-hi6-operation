@@ -6,7 +6,7 @@
 
 
 
-![&#xADF8;&#xB9BC; 57 &#xC0AC;&#xC6A9;&#xC790; &#xC88C;&#xD45C;&#xACC4; &#xC815;&#xC758;&#xB97C; &#xC704;&#xD55C; 3&#xAC1C;&#xC758; &#xAE30;&#xC900; &#xC2A4;&#xD15D; &#xD2F0;&#xCE6D; &#xBC29;&#xBC95;](../../../.gitbook/assets/image%20%28179%29.png)
+![&#xADF8;&#xB9BC; 57 &#xC0AC;&#xC6A9;&#xC790; &#xC88C;&#xD45C;&#xACC4; &#xC815;&#xC758;&#xB97C; &#xC704;&#xD55C; 3&#xAC1C;&#xC758; &#xAE30;&#xC900; &#xC2A4;&#xD15D; &#xD2F0;&#xCE6D; &#xBC29;&#xBC95;](../../../.gitbook/assets/image%20%28194%29.png)
 
 1.	사용자 좌표계의 원점 정의: 임의의 한 점을 티칭하십시오.
 
@@ -33,7 +33,7 @@
 
 2.	사용자 좌표계 이름과 프로그램 번호, 축별 원점과의 거리 및 각도를 설정하십시오.
 
-![](../../../.gitbook/assets/image%20%28124%29.png)
+![](../../../.gitbook/assets/image%20%28140%29.png)
 
 
 
