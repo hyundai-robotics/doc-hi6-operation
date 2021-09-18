@@ -6,7 +6,7 @@
 
 2.	각 축의 위치를 조정하여 엔코더 옵셋값을 설정하십시오. 엔코더 옵셋값은 헥사값\(Hexa값, 16진수\)으로 기록됩니다.
 
-![](../../.gitbook/assets/image%20%28212%29.png)
+![](../../../.gitbook/assets/image%20%28218%29.png)
 
 <table>
   <thead>
@@ -18,7 +18,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
       <td style="text-align:left">&#xAC01; &#xCD95;&#xC758; &#xC5D4;&#xCF54;&#xB354; &#xC635;&#xC14B;&#xAC12;&#xC758;
         &#xC0C1;&#xC138; &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;. &#xCD95;&#xC758;
@@ -28,7 +28,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../.gitbook/assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

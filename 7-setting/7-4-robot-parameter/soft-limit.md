@@ -6,7 +6,7 @@
 
 2.	각 축의 동작 범위를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28210%29.png)
+![](../../.gitbook/assets/image%20%28213%29.png)
 
 <table>
   <thead>
