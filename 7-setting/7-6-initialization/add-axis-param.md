@@ -8,7 +8,7 @@
 
 2.	부가축의 사양 및 구성 등 파라미터를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28230%29.png)
+![](../../.gitbook/assets/image%20%28232%29.png)
 
 
 
