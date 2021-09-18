@@ -6,7 +6,7 @@
 
 2.	시리얼 포트별 파라미터를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28191%29.png)
+![](../../.gitbook/assets/image%20%28196%29.png)
 
 
 
