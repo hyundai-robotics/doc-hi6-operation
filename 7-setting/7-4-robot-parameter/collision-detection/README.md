@@ -19,7 +19,7 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
 
 2.	충돌검지 기능의 사용 여부와 민감도 등을 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28209%29.png)
+![](../../../.gitbook/assets/image%20%28209%29.png)
 
 <table>
   <thead>
@@ -31,7 +31,7 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>&#xCDA9;&#xB3CC;&#xAC80;&#xC9C0; &#xAE30;&#xB2A5;&#xC758; &#xC0AC;&#xC6A9;
@@ -66,7 +66,7 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../.gitbook/assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
