@@ -312,7 +312,7 @@
             &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD55C; &#xD6C4; &#xC124;&#xC815;&#xCC3D;&#xC5D0;&#xC11C;
             &#xC635;&#xC158;&#xC744; &#xC124;&#xC815;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
           <li>
-            <img src="../../.gitbook/assets/bt-spd_manual (3).png" alt/>[1cycle]: end &#xBA85;&#xB839;&#xBB38;&#xAE4C;&#xC9C0; &#xC2E4;&#xD589;
+            <img src="../../.gitbook/assets/bt-spd_manual (3) (3).png" alt/>[1cycle]: end &#xBA85;&#xB839;&#xBB38;&#xAE4C;&#xC9C0; &#xC2E4;&#xD589;
             &#xD6C4; &#xC815;&#xC9C0;&#xD569;&#xB2C8;&#xB2E4;.</li>
           <li>
             <img src="../../.gitbook/assets/bt-runto-cont.png" alt/>[cont]: end &#xBA85;&#xB839;&#xBB38;&#xAE4C;&#xC9C0; &#xC2E4;&#xD589;
@@ -336,10 +336,10 @@
         <p></p>
         <ul>
           <li>
-            <img src="../../.gitbook/assets/bt-spd_manual (2).png" alt/>&#xC218;&#xB3D9; &#xBAA8;&#xB4DC;: &#xC2A4;&#xD15D; FWD/BWD &#xC81C;&#xD55C;
+            <img src="../../.gitbook/assets/bt-spd_manual (3) (2).png" alt/>&#xC218;&#xB3D9; &#xBAA8;&#xB4DC;: &#xC2A4;&#xD15D; FWD/BWD &#xC81C;&#xD55C;
             &#xC18D;&#xB3C4;(&#x339C;/sec)&#xB97C; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</li>
           <li>
-            <img src="../../.gitbook/assets/bt-spd_manual (1).png" alt/>&#xC790;&#xB3D9; &#xBAA8;&#xB4DC;: &#xC7AC;&#xC0DD; &#xC18D;&#xB3C4;(%)&#xB97C;
+            <img src="../../.gitbook/assets/bt-spd_manual (3) (1).png" alt/>&#xC790;&#xB3D9; &#xBAA8;&#xB4DC;: &#xC7AC;&#xC0DD; &#xC18D;&#xB3C4;(%)&#xB97C;
             &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</li>
         </ul>
       </td>
