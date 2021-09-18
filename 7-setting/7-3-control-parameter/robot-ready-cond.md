@@ -6,5 +6,5 @@
 
 2.	로봇 준비 조건을 설정한 후 \[OK\] 버튼을 터치하십시오.
 
-![](../../.gitbook/assets/image%20%2881%29.png)
+![](../../.gitbook/assets/image%20%2888%29.png)
 

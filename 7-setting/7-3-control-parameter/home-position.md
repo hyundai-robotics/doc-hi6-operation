@@ -6,7 +6,7 @@
 
 2.	원위치 탭을 선택하고 사용 여부와 출력 신호, 축각도와 범위를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%2893%29.png)
+![](../../.gitbook/assets/image%20%28124%29.png)
 
 <table>
   <thead>
