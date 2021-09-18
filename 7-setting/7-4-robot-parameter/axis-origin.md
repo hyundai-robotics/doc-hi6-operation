@@ -6,7 +6,7 @@
 
 2.	각 축의 기구학적 원점 위치를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28211%29.png)
+![](../../.gitbook/assets/image%20%28212%29.png)
 
 
 

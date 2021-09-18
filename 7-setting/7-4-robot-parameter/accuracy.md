@@ -6,7 +6,7 @@
 
 2.	Accuracy 레벨별 툴 끝 위치\(TCP\)와 자세를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28214%29.png)
+![](../../.gitbook/assets/image%20%28215%29.png)
 
 <table>
   <thead>
