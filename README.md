@@ -1,4 +1,4 @@
-# Hi6 Robot Controller - Operation Manual
+# Hi6 로봇제어기 조작설명서
 
 
 

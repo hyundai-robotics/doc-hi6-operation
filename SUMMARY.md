@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Hi6 로봇제어기 - 조작설명서](README.md)
+* [Hi6 로봇제어기 조작설명서](README.md)
 * [이 설명서에 대하여](about-this-manual/README.md)
   * [저작권](about-this-manual/copyright.md)
   * [표기 규약](about-this-manual/notation.md)
