@@ -1,35 +1,38 @@
-# 1.2.2 전원 끄기
+# 1.2.2 Turning Off the Power
 
-모든 작업을 수행한 후, 로봇을 정지하고 제어기의 전원 버튼을 끄는 모든 동작을 말합니다.
+It refers to all operations of stopping the robot and turning off the power button of the controller after performing all works.
 
 {% hint style="warning" %}
-\[주의\]
+* If the robot will not be in use for a long time, the encoder battery may be discharged, so move the robot to the reference position and then turn off the power.
 
-* 로봇을 장시간 사용하지 않을 때에는 엔코더 배터리가 방전될 수 있으므로 로봇을 기준 위치로 이동시킨 후 전원을 해제하십시오.
-* 엔코더 배터리에 전압 저하 알람이 발생한 상태에서 전원을 해제하면 엔코더 데이터가 소멸될 수 있으므로 주의하십시오.
+* Be careful as the encoder data may be destroyed if the power is turned off while the encoder battery has a voltage drop alarm. 
 {% endhint %}
 
-#### 수직다관절로봇 제어기
+#### Vertical Articulated Robot Controller
 
-1. 티치 펜던트의 &lt;정지&gt; 키를 누르십시오. 운전 중인 로봇이 동작을 멈추고 정지 램프가 켜집니다.
+1.	Press the &lt;Stop&gt; key on the teach pendant. Then, the robot in operation will stop, and the stop lamp will be turned on.
 
-2. 티치 펜던트의 비상 정지 스위치를 누르십시오. 로봇 모터에 서보 전원이 차단되어 모터가 꺼집니다.
+2.	Press the emergency stop switch on the teach pendant. Then, the servo power to the robot motor will be cut off, and then the motor will be turned off.
 
 ![](../../.gitbook/assets/image%20%2836%29.png)
 
-3. 제어기 좌측의 전원 스위치를 OFF 방향으로 돌리십시오. 로봇 시스템의 전원이 차단됩니다.
+
+
+3.	Turn the power switch on the left side of the robot controller to the OFF direction. Then, the robot system will be powered off.
 
 ![](../../.gitbook/assets/image%20%2829%29.png)
 
-#### 협동로봇 제어기
+#### Collaborative Robot Controller
 
-1. 티치 펜던트의 &lt;정지&gt; 키를 누르십시오. 운전 중인 로봇이 동작을 멈추고 정지 램프가 켜집니다.
+1.	Press the &lt;Stop&gt; key on the teach pendant. The robot in operation will stop, and the stop lamp will be turned on.
 
-2. 제어기의 비상 정지 스위치를 누르십시오. 로봇 모터에 서보 전원이 차단되어 모터가 꺼집니다.
-
-
+2.	Press the emergency stop switch on the controller. The servo power to the robot motor will be cut off, and then the motor will be turned off.
 
 ![](../../.gitbook/assets/image%20%2811%29.png)
 
-3.  전원 차단기의 스위치를 밀어 내리십시오. 전원이 차단되면 로봇 시스템이 꺼져 티치 펜던트의 디스플레이와 협동로봇의 LED 램프가 꺼집니다.
+
+
+3.	Push downward the switch on the power circuit breaker. When the power is cut off, the robot system will be turned off, and the display of the teach pendant and the LED lamp of the collaborative robot will be turned off.
+
+![](../../.gitbook/assets/image%20%28284%29.png)
 

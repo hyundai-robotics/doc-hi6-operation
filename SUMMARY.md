@@ -12,7 +12,7 @@
   * [1.2	Basic Use](1-robot-system/1-2-basic-usage/README.md)
     * [1.2.1 Turning On the Power](1-robot-system/1-2-basic-usage/power-on/README.md)
       * [1.2.1.1 Input of the Power to the Motor and the Operable Status](1-robot-system/1-2-basic-usage/power-on/input-of-the-power-to-the-mot.md)
-    * [1.2.2 전원 끄기](1-robot-system/1-2-basic-usage/power-off.md)
+    * [1.2.2 Turning Off the Power](1-robot-system/1-2-basic-usage/power-off.md)
     * [1.2.3 Hi6 티치 펜던트 화면](1-robot-system/1-2-basic-usage/tp-screen.md)
 * [2. 운전](2-operation/README.md)
   * [2.1 수동 운전](2-operation/2-1-manual-operation/README.md)
