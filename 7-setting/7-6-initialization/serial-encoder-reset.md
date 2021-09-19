@@ -6,7 +6,7 @@
 
 2.	각 축의 엔코더 리셋 모드를 설정하고 상태를 확인한 후 리셋을 실행하십시오.
 
-![](../../.gitbook/assets/image%20%28230%29.png)
+![](../../.gitbook/assets/image%20%28231%29.png)
 
 <table>
   <thead>
