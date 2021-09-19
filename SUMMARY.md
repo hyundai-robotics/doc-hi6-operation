@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Hi6 Robot Controller - Operation Manual](README.md)
+* [Hi6 로봇제어기 - 조작설명서](README.md)
 * [이 설명서에 대하여](about-this-manual/README.md)
   * [저작권](about-this-manual/copyright.md)
   * [표기 규약](about-this-manual/notation.md)
@@ -203,4 +203,5 @@
 * [10. 로봇 언어](10-robot-language.md)
 * [별첨](11-appendices/README.md)
   * [산업안전보건기준에 관한 규칙 및 안전검사 고시](11-appendices/rules-occupational-safety.md)
+* [품질 보증](undefined.md)
 
