@@ -99,7 +99,9 @@
           &#xC0AC;&#xC6A9; &#xBAA8;&#xB4DC;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</p>
         <ul>
           <li>
-            <p>[/]: &#xC6D0;&#xD558;&#xB294; &#xCD95;&#xBCC4; &#xB610;&#xB294; &#xC9C1;&#xAD50;
+            <p>[
+              <img src="../../../.gitbook/assets/bt-spd-up.png" alt/>/
+              <img src="../../../.gitbook/assets/bt-spd-dn.png" alt/>]: &#xC6D0;&#xD558;&#xB294; &#xCD95;&#xBCC4; &#xB610;&#xB294; &#xC9C1;&#xAD50;
               &#xC870;&#xADF8;&#xC758; &#xC18D;&#xB3C4; &#xB808;&#xBCA8;(1: &#xC800;&#xC18D;
               ~ 8: &#xACE0;&#xC18D;)&#xC774; &#xB098;&#xD0C0;&#xB0A0; &#xB54C;&#xAE4C;&#xC9C0;
               &#xBC84;&#xD2BC;&#xC744; &#xBC18;&#xBCF5;&#xD558;&#xC5EC; &#xD130;&#xCE58;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.
