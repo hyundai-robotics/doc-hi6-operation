@@ -16,5 +16,5 @@ The following shows an example of the basic configuration of the robot system ac
 
 ![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../.gitbook/assets/image%20%28282%29.png)
 
-![Figure 3 Basic Configuration of the Collaborative Robot System ](../../.gitbook/assets/image%20%28285%29.png)
+![Figure 3 Basic Configuration of the Collaborative Robot System ](../../.gitbook/assets/image%20%28286%29.png)
 
