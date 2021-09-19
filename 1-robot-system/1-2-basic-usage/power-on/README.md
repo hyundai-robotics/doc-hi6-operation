@@ -1,26 +1,26 @@
-# 1.2.1 전원 켜기
+# 1.2.1 Turning On the Power
 
 {% hint style="info" %}
-전원을 켜고 끄는 방법은 제어기별로 다를 수 있습니다.
+The method of turning on and off the power may differ depending on the type of controller.
 {% endhint %}
 
-#### 수직다관절로봇 제어기
+#### Vertical Articulated Robot Controller
 
-로봇을 기동하려면 로봇 제어기에 전원을 공급해야 합니다.
+To start up the robot, power should be supplied to the robot controller. 
 
-제어기 좌측의 전원 스위치를 ON 방향으로 돌리십시오. 제어기의 메인 전원이 연결됩니다. 전원이 연결되면 로봇 시스템이 부팅되어 티치 펜던트의 디스플레이가 켜지고 모든 장치가 켜집니다.
+Turn the power switch on the left side of the robot controller to the ON direction to connect the main power of the controller. When the power is connected, the robot system will boot, and the display of the teach pendant will be turned on together with all the devices.
+
+![](../../../.gitbook/assets/image%20%2812%29.png)
+
+#### Collaborative Robot Controller
+
+The power of the collaborative robot is supplied through the power connector of the controller.
+
+Push upward the switch on the power breaker. When power is connected, the robot system will boot, the display of the teach pendant will be turned on, and the collaborative robot’s LED lamp will be turned on in white.
 
 
 
-![](../../.gitbook/assets/image%20%2812%29.png)
-
-#### 협동로봇 제어기
-
-협동로봇의 전원은 제어기의 전원 커넥터를 통해 공급됩니다.
-
-전원 차단기의 스위치를 밀어 올리십시오. 전원이 연결되면 로봇 시스템이 부팅되어 티치 펜던트의 디스플레이가 켜지고 협동로봇 LED 램프가 흰색으로 켜집니다.
-
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../../../.gitbook/assets/image%20%2823%29.png)
 
 ### 모터 전원 투입 및 조작 가능 상태
 
