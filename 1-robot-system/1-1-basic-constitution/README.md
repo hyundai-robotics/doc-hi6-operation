@@ -10,11 +10,11 @@ The robot system consists of a manipulator and a controller that controls the ma
 
 The following shows an example of the basic configuration of the robot system according to the robot type.
 
-![Figure 1 Basic Configuration of the LCD Robot System](../../.gitbook/assets/image%20%28284%29.png)
+![Figure 1 Basic Configuration of the LCD Robot System](../../.gitbook/assets/image%20%28286%29.png)
 
 
 
-![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../.gitbook/assets/image%20%28283%29.png)
+![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../.gitbook/assets/image%20%28285%29.png)
 
-![Figure 3 Basic Configuration of the Collaborative Robot System ](../../.gitbook/assets/image%20%28289%29.png)
+![Figure 3 Basic Configuration of the Collaborative Robot System ](../../.gitbook/assets/image%20%28291%29.png)
 
