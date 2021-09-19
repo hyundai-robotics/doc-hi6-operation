@@ -1,61 +1,69 @@
-# 안전 주의 사항
+# Safety Cautions
 
-제품의 올바른 사용과 사용자의 안전을 확보하고 재산상의 피해 방지를 위해 반드시 다음의 안전 주의 사항을 숙지한 후 제품을 사용하시기 바랍니다.
+Before using the product, you must read the following safety cautions for proper use, user safety, and prevention of property damage.
 
-### 위험
+### Danger
 
 {% hint style="danger" %}
-\[위험\] 긴박한 위험: 준수하지 않았을 경우 작업자가 사망하거나 중상을 입을 수 있습니다.
+Imminent danger: Incompliance may cause the death of or serious injuries to the operator.
 {% endhint %}
 
-* 설명서의 제품 설치 내용을 숙지하고 지시 사항을 준수하여 로봇 제품과 기타 장치를 설치하십시오.
-* 소프트웨어에 치명적인 오류가 발생하면 즉시 사용을 중단하고 고객지원팀에 연락하십시오.
-* 제품의 고장이나 파손 등 문제가 있을 때에는 즉시 사용을 중단하고 고객지원팀에 문의하십시오.
+* Read the contents of the product installation in the manual and follow the instructions when installing the robot product and other devices.
+* If a fatal error occurs in the software, stop using it immediately, and contact our customer support team.
+* If there is a problem with the product, such as failure or damage, stop using it immediately and contact the customer support team for inquiry.
 
 
 
-### 경고
+### Warning
 
 {% hint style="warning" %}
-\[경고\] 잠재적인 위험: 준수하지 않았을 경우 작업자가 상해를 입거나 제품이 크게 손상되는 등 재산상의 손해를 입을 수 있습니다.
+Potential danger: Incompliance may cause injuries to the operator or damage to property, such as significant damage to the product.
 {% endhint %}
 
 
 
-* 제어기와 연결하여 사용할 안전 장비는 반드시 안전용 접점 단자 또는 Safety I/O로 설정한 Configurable digital I/O에 이중 신호로 연결하십시오. 일반 접점 단자에 연결하거나 단일 신호로 연결할 경우 규정된 안전 수준을 충족할 수 없습니다.
-* 제어기의 내부 브래킷 뒤로 손가락 등의 신체 부위를 집어 넣지 마십시오. 감전이나 상해의 위험이 있습니다.
-* 로봇 응용 시스템 제조자나 로봇 사용자는 설명서의 내용을 숙지하고 제품의 운영 교육을 이수하십시오.
-* 작업자와 사용자의 안전을 위해 제품 설치 전 반드시 안전 펜스 등 적절한 안전 시설을 마련하십시오.
-* 규격 정보를 확인하여 알맞은 고정 나사를 사용하여 지정된 토크로 체결하십시오. 나사가 헐거우면 로봇이 설치 장소에서 분리되어 추락하거나 손상될 수 있습니다.
-* 제품의 연결부\(전원 및 케이블\)에 액체나 먼지, 금속 가루 등의 전도성 이물질이 들어가지 않도록 주의하십시오. 또한 연결부를 뾰족한 물체로 찌르거나 케이블 연결 시 무리한 힘을 가하지 마십시오. 연결 단자의 부식 또는 일시적인 단락으로 제품이 폭발하거나 화재가 발생할 수 있습니다.
-* 배선 정보를 확인하고 장치 유형에 맞춰 알맞은 단자를 이용해 장치를 연결하십시오. 특히, 안전 장치는 일반 단자에 연결하면 안전 기능을 보장할 수 없으므로 반드시 안전 장치용 단자에 연결하십시오.
-* 손상된 케이블을 절대 사용하지 말고 제품 사용 중에는 전원을 분리하지 마십시오. 감전, 화재, 고장, 및 상해의 원인이 될 수 있습니다.
-* 제품을 장시간 사용하면 열이 발생하여 화상 등 상해의 위험이 있습니다. 제품을 만져야 할 경우에는 전원을 끄고 1시간 이상 방치하여 제품을 충분히 냉각한 후 작업하십시오.
-* 로봇의 움직임에 주의하여 티치 펜던트를 사용하십시오.
-* 티치 펜던트에서 치명적인 에러를 경고하는 경우 즉시 비상 정지 스위치로 로봇을 정지하고 원인을 파악하여 에러를 해결하십시오. 에러를 해결할 수 없는 경우 고객지원팀에 문의하십시오.
-* 절대 무단으로 제품을 설치, 개조, 분해 및 수리하지 마십시오. 고장 및 사고의 원인이 될 수 있습니다. 또한 이로 인한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
+* The safety equipment to be used after being connected to the controller must be connected to the safety contact terminal or to the configurable digital I/O set, which is to be set as the safety I/O, in double signals. When the equipment is connected to common contact terminals or in a single signal, the regulated safety level cannot be satisfied.
+* Do not put your fingers or other body parts behind the controller’s inner bracket. There is a risk of electric shock or injury.
+* 
+  If you are a robot application system manufacturer or a robot user, you should fully understand the contents of the manual and complete the product operation training.
+
+* For the safety of workers and users, you must prepare appropriate safety facilities, such as safety fences, before installing the product.
+* Check the specification information and perform fastening by using appropriate fixing screws. Loosened screws may lead to separation of the robot, causing it to fall or suffer damage.
+* Be careful not to let conductive foreign substances, such as liquid, dust, or metal powder, enter the connection sections \(power and cables\). Moreover, do not poke the connection parts with a pointed object or apply excessive force to them when connecting them. Corrosion or temporary short-circuiting of the connection terminals may cause the product to explode or suffer a fire.
+* Check the wiring information and connect the devices using the appropriate terminals corresponding to the type of individual devices. In particular, if a safety device is connected to a general terminal, the safety function cannot be guaranteed, so you must connect it to the terminal designed for safety devices.
+* Never use a damaged cable and do not disconnect the power while the product is in use. It may cause electric shock, fire, failure, or injury.
+* 
+  If the product is used for a long time, it may generate heat and cause injury, such as burns. If you need to touch the product, turn off the power and leave it for at least one hour to let it cool sufficiently before carrying out works.
+
+* 
+  Use the teach pendant while paying attention to the movement of the robot.
+
+* If the teach pendant warns of a fatal error, stop the robot with the emergency stop switch immediately, identify the cause, and resolve the error. If the error cannot be resolved, please contact our customer support team for an inquiry.
+* Never install, modify, disassemble, or repair the product without our permission. It may cause a failure or an accident. In addition, we are not responsible for any damage to or breaking of the product if you do not follow the instructions.
 
 
 
-### 주의
+### Caution
 
 {% hint style="warning" %}
-\[주의\] 저위험 요소 : 준수하지 않았을 경우 작업자가 경미한 상해를 입거나 제품이 손상되는 등 재산상의 손해를 입을 수 있습니다. 
+Low-level danger factor: Incompliance may result in minor injury to the operator or damage to property, such as damage to the product.
 {% endhint %}
 
 
 
-* 제품을 임의로 설치 또는 개조, 분해, 수리하지 마십시오. 또한 당사의 전문가 이외의 사람이 임의로 제품을 개조하거나 부품을 부착하는 행위를 금합니다. 이로 인한 제품 고장 발생 시 무상 서비스 및 품질 보증 서비스를 받을 수 없습니다.
-* 자격이 있는 설치 전문가가 해당 국가 및 지역의 관련 규정 및 법규를 준수하여 제품을 설치해야 합니다. 제품을 설치 및 수리할 때에는 고객지원팀에 문의하여 전문가에게 의뢰하십시오.
-* 먼지가 많거나 더러운 곳에 제품을 설치 및 사용하지 마십시오. 먼지나 이물질로 인해 제품이 고장 나거나 성능에 이상이 발생할 수 있습니다.
-* 자성이 있거나 자성의 영향이 미치는 곳 또는 전자파 장해가 있는 곳에 제품을 설치 및 사용하지 마십시오. 자성에 의해 제품이 손상되거나 성능에 이상이 발생할 수 있습니다.
-* 제품 운전 시에는 헐거운 옷이나 장신구를 착용하지 말고, 머리카락이 긴 경우에는 뒤로 묶어 로봇의 관절 등에 끼이지 않도록 주의하십시오.
-* 제품 동작 중에는 작동 범위 내에 들어가거나 로봇을 만지지 마십시오. 상해의 위험이 있습니다.
-* 제품은 포장된 상태로 운반하여 파손을 피하고 습도가 낮은 건조한 장소에 보관하십시오. 포장 자재 내부에 습기로 제품이 손상되거나 고장 날 수 있습니다.
-* 제품은 온도와 습도가 변하기 쉬운 곳을 피하고, 깨끗하고 서늘하며 건조한 곳에 보관하십시오.
-* 제품 운반 시에는 올바를 자세를 유지하고 두 명 이상이 함께 작업하십시오. 허리나 팔, 다리 등의 신체 부위에 상해를 입을 수 있습니다.
-* 리프팅 장비를 이용해 제품을 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수하십시오.
-* 설명서의 운반 내용을 숙지하고 지시 사항을 준수하여 제품을 운반하십시오. 고객의 제품 운송으로 발생한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
+* Do not install, modify, disassemble, or repair the product arbitrarily as it is prohibited for anyone other than our experts to arbitrarily modify the product or attach parts. If the product fails because of such acts, our free service and warranty service will be forfeited.
+* A qualified installer should install the product in compliance with the related regulations and laws of the concerned country and region. When you want to install and repair the product, contact our customer support team, and ask an expert.
+* Do not install and use the product in a dusty or dirty place. Dust or foreign substances may cause failure or abnormal performance of the product.
+* Do not install and use the product in a place where magnetism exists or its influence reaches the product or there is electromagnetic interference. Magnetism may damage the product or cause abnormal performance.
+* When operating the product, do not wear loose clothing or jewelry, and if the hair is long, take precautions to tie it back so that the hair does not get caught in the joints of the robot.
+* Do not enter the operation range or touch the robot while the robot is in operation. Otherwise, there is a risk of injury.
+* Prevent the product from being damaged by transporting it in a packaged state and by storing it in a dry place with low humidity. Otherwise, the moisture inside the packaging material may cause the product to get damaged or to fail.
+* When it comes to storing the product, avoid places where temperature and humidity may change easily. Store the product in a clean, cool, and dry place.
+* When transporting the product, maintain proper posture, and two or more people should work together. Otherwise, you may suffer injury to parts of your body, including waist, arms, and legs.
+* If you use lifting equipment to transport the product, follow the safety regulations and equipment usage guidelines in the concerned country and region.
+* When transporting the product, fully understand the transportation-related contents of the manual and comply with the instructions. We are not responsible for any damage to or breaking of the product because of transportation by the customer.
+
+
 
 
 

@@ -4,7 +4,7 @@
 * [About the Manual](about-this-manual/README.md)
   * [Copyrights](about-this-manual/copyright.md)
   * [Notation Convention](about-this-manual/notation.md)
-  * [안전 주의 사항](about-this-manual/safety-notice.md)
+  * [Safety Cautions](about-this-manual/safety-notice.md)
 * [1. 로봇 시스템](1-robot-system/README.md)
   * [1.1 기본 구성](1-robot-system/1-1-basic-constitution/README.md)
     * [1.1.1 제어기](1-robot-system/1-1-basic-constitution/controller.md)
