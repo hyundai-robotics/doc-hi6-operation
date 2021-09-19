@@ -1,20 +1,20 @@
-# 1.1 기본 구성
+# 1.1 Basic Configuration
 
-산업용 로봇이란 “자동 제어에 의한 조작\(manipulation\) 기능 및 이동 동작 기능이 탑재되어 산업 현장에서 다양한 작업을 프로그램으로 실행할 수 있는 기계”입니다. 협동로봇은 산업용 로봇의 한 종류입니다.
+Industrial robots are “machines that are equipped with manipulation and movement functions based on automatic control for them to perform various works by using programs at an industrial site.” The collaborative robot is a type of industrial robot.
 
-로봇 시스템은 로봇 본체와 본체를 제어하는 제어기로 구성됩니다. 제어기에는 로봇 시스템의 설정 및 수동 조작에 사용하는 티치 펜던트가 부착됩니다.
+The robot system consists of a manipulator and a controller that controls the manipulator. A teach pendant that is to be used for setting and manually operating the robot system is attached to the controller.
 
-* 로봇: 물체를 운반하거나 부품을 조립하는 등 산업 현장에서 다양한 작업을 수행합니다.
-* 제어기: 티치 펜던트로 설정한 프로그램의 설정값에 따라 로봇의 동작을 조정합니다. 제어기의 입출력 포트를 이용해 다양한 외부 장비 또는 장치와 연동할 수 있습니다.
-* 티치 펜던트: 로봇 시스템 전체를 관리하는 장치입니다. 로봇에게 특정 자세를 학습시키거나 프로그램을 설정 및 제어할 수 있습니다.
+* Robot: Performs various works in industrial sites such as transporting objects, assembling parts, etc.
+* Controller: Adjusts the robot’s operation according to the program setting values set through the teach pendant. It can be interoperated with various external equipment or devices through the input/output port of the controller. 
+* Teach Pendant: A device that manages the entire robot system. It enables you to teach the robot a specific posture or setup and control the programs.
 
-로봇 유형에 따른 로봇 시스템의 기본 구성의 예는 다음과 같습니다.
+The following shows an example of the basic configuration of the robot system according to the robot type.
 
-![&#xADF8;&#xB9BC; 1 LCD &#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xAE30;&#xBCF8; &#xAD6C;&#xC131;](../../.gitbook/assets/image.png)
-
-![&#xADF8;&#xB9BC; 2 &#xC218;&#xC9C1;&#xB2E4;&#xAD00;&#xC808;&#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xAE30;&#xBCF8; &#xAD6C;&#xC131;](../../.gitbook/assets/image%20%286%29.png)
+![Figure 1 Basic Configuration of the LCD Robot System](../../.gitbook/assets/image%20%28283%29.png)
 
 
 
-![&#xADF8;&#xB9BC; 3 &#xD611;&#xB3D9;&#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xAE30;&#xBCF8; &#xAD6C;&#xC131;](../../.gitbook/assets/image%20%288%29.png)
+![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../.gitbook/assets/image%20%28282%29.png)
+
+![Figure 3 Basic Configuration of the Collaborative Robot System ](../../.gitbook/assets/image%20%28284%29.png)
 

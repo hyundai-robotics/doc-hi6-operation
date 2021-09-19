@@ -1,34 +1,36 @@
-# 1.1.1 제어기
+# 1.1.1 Controller
 
-#### 수직다관절로봇 제어기
+#### Vertical Articulated Robot Controller 
 
-![&#xADF8;&#xB9BC; 4 &#xC81C;&#xC5B4;&#xAE30; &#xC55E;&#xBA74;\(&#xC88C;\) / &#xB4B7;&#xBA74;\(&#xC6B0;\)](../../.gitbook/assets/image%20%2833%29.png)
+![Figure 4 Front \(Left\) / Back \(Right\) of the Controller](../../.gitbook/assets/image%20%2833%29.png)
 
-| 번호 | 이름 | 설명 |
+| No. | Name | Description |
 | :--- | :--- | :--- |
-|  ![](../../.gitbook/assets/c1.png)  | 연결부 | 제어기에 기구 및 티치 펜던트를 연결하거나 응용 장치를 내부의 모듈과 연결하는 통로입니다. |
-|  ![](../../.gitbook/assets/c2.png)  | 전원 스위치 | 제어기의 주전원을 켜거나 끕니다. |
-|  ![](../../.gitbook/assets/c3.png)  | TP 보관용 고리 | 티치 펜던트를 걸어 보관합니다. |
-|  ![](../../.gitbook/assets/c4.png)  | 비상 정지 스위치 | 긴급 상황 발생 시 비상 정지 스위치를 눌러 로봇의 동작을 정지시킵니다. |
-|  ![](../../.gitbook/assets/c5.png)  | 냉각팬 | 제어기 내부의 가열된 공기를 외부로 강제 유출시키는 장치입니다. |
+| ![](../../.gitbook/assets/c1.png)  | Connection part | A passage for connecting instruments and the teach pendant to the controller or for connecting application devices to internal modules |
+| ![](../../.gitbook/assets/c2.png)  | Power switch | Turns on or off the power of the controller |
+| ![](../../.gitbook/assets/c3.png)  | Hook for storing the TP | Used for hanging the teach pendant or storing it |
+| ![](../../.gitbook/assets/c4.png)  | Emergency stop switch | Causes the robot to stop operating when pressed in case of an emergency |
+| ![](../../.gitbook/assets/c5.png)  | Cooling fan | A device that forcibly discharges the heated air inside the controller |
 
-#### 협동로봇 제어기
+#### Collaborative Robot Controller
 
-![&#xADF8;&#xB9BC; 5 &#xC81C;&#xC5B4;&#xAE30; &#xC55E;&#xBA74;\(&#xC88C;\) / &#xB4B7;&#xBA74;\(&#xC6B0;\)](../../.gitbook/assets/image%20%2815%29.png)
+![Figure 5 Front \(Left\) / Back \(Right\) of the Controller](../../.gitbook/assets/image%20%2815%29.png)
 
-| 번호 | 이름 | 설명 |
+
+
+| o. | Name | Description |
 | :--- | :--- | :--- |
-| ![](../../.gitbook/assets/c1.png)  | 로봇 케이블 커넥터 | 통신선과 전원선이 내장되어 제어기를 기구와 연결하는 커넥터입니다. |
-| ![](../../.gitbook/assets/c2.png)  | 전원 커넥터 | 제어기에 전원을 공급하는 커넥터입니다. |
-| ![](../../.gitbook/assets/c3.png)  | 전원 차단기 | 전원 스위치를 이용해 제어기의 주전원을 켜거나 끕니다. |
-| ![](../../.gitbook/assets/c4.png)  | 환풍구 | 제어기의 냉각을 위한 공기 유입 통로입니다. |
-| ![](../../.gitbook/assets/c5.png)  | 손잡이 | 제어기의 전면과 후면에 장착되어 운반에 사용합니다. |
-| ![](../../.gitbook/assets/c6.png)  | 비상 정지 스위치 | 긴급 상황 발생 시 비상 정지 스위치를 눌러 로봇의 동작을 정지시킵니다. |
-| ![](../../.gitbook/assets/c7.png)  | 응용 장치 연결구 | 응용 장치를 내부의 모듈과 케이블로 연결할 경우 사용하는 통로입니다. |
-| ![](../../.gitbook/assets/c8.png)  | 티치 펜던트 연결구 | 직결형의 티치 펜던트를 연결하는 통로입니다. |
-| ![](../../.gitbook/assets/c9.png)  | I/O 연결 블록 | 주변 기기를 제어기에 연결합니다. |
-| ![](../../.gitbook/assets/c10.png)  | 도어 | 도어를 열어 제어기의 측면을 개방합니다. |
-| ![](../../.gitbook/assets/c11.png)  | 냉각팬 | 제어기 내부의 가열된 공기를 외부로 강제 유출시키는 장치입니다. |
+| ![](../../.gitbook/assets/c1.png) | Robot cable connector | A connector that has built-in communication and power lines, making it possible to connect the controller to the equipment. |
+| ![](../../.gitbook/assets/c2.png) | Power connector | A connector that supplies power to the controller. |
+| ![](../../.gitbook/assets/c3.png) | Power circuit breaker | The main power of the controller can be turned on or off with the power switch. |
+| ![](../../.gitbook/assets/c4.png) | Vent | An air inflow passage for cooling the controller. |
+| ![](../../.gitbook/assets/c5.png) | Handle | It is mounted on the front and rear of the controller and used for transportation. |
+| ![](../../.gitbook/assets/c6.png) | Emergency stop switch | When an emergency situation occurs, the operation of the robot can be stopped by pressing the emergency stop switch. |
+| ![](../../.gitbook/assets/c7.png) | Application device connection hole | A passage to be used when an application device needs to be connected using a cable, with an internal module. |
+| ![](../../.gitbook/assets/c8.png) | Teach pendant connection hole | A passage for the connection of a teach pendant of direct-connection type. |
+| ![](../../.gitbook/assets/c9.png) | I/O connection block | This connects peripheral devices to the controller. |
+| ![](../../.gitbook/assets/c10.png) | Door | You can open the side of the controller by opening the door. |
+| ![](../../.gitbook/assets/c11.png) | Cooling fan | It is a device that forcibly discharges the heated air from inside the controller. |
 
 
 
