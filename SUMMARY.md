@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Hi6 Robot Controller Operation Manual](README.md)
-* [이 설명서에 대하여](about-this-manual/README.md)
-  * [저작권](about-this-manual/copyright.md)
-  * [표기 규약](about-this-manual/notation.md)
+* [About the Manual](about-this-manual/README.md)
+  * [Copyrights](about-this-manual/copyright.md)
+  * [Notation Convention](about-this-manual/notation.md)
   * [안전 주의 사항](about-this-manual/safety-notice.md)
 * [1. 로봇 시스템](1-robot-system/README.md)
   * [1.1 기본 구성](1-robot-system/1-1-basic-constitution/README.md)
