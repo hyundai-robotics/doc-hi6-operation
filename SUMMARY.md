@@ -8,7 +8,7 @@
 * [1. Robot System](1-robot-system/README.md)
   * [1.1 Basic Configuration](1-robot-system/1-1-basic-constitution/README.md)
     * [1.1.1 Controller](1-robot-system/1-1-basic-constitution/controller.md)
-    * [1.1.2 티치 펜던트](1-robot-system/1-1-basic-constitution/teach-pendant.md)
+    * [1.1.2 Teach Pendant](1-robot-system/1-1-basic-constitution/teach-pendant.md)
   * [1.2    기본 사용](1-robot-system/1-2-basic-usage/README.md)
     * [1.2.1 전원 켜기](1-robot-system/1-2-basic-usage/power-on.md)
     * [1.2.2 전원 끄기](1-robot-system/1-2-basic-usage/power-off.md)
