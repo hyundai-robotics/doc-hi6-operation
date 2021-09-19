@@ -13,7 +13,7 @@
     * [1.2.1 Turning On the Power](1-robot-system/1-2-basic-usage/power-on/README.md)
       * [1.2.1.1 Input of the Power to the Motor and the Operable Status](1-robot-system/1-2-basic-usage/power-on/input-of-the-power-to-the-mot.md)
     * [1.2.2 Turning Off the Power](1-robot-system/1-2-basic-usage/power-off.md)
-    * [1.2.3 Changing the language of the teach pendant screen](1-robot-system/1-2-basic-usage/tp-screen.md)
+    * [1.2.3 Changing the language of the teach pendant screen](1-robot-system/1-2-basic-usage/change-language-of-tp.md)
     * [1.2.4 Screen of the Hi6 Teach Pendant](1-robot-system/1-2-basic-usage/screen-of-the-hi6-tp.md)
 * [2. 운전](2-operation/README.md)
   * [2.1 수동 운전](2-operation/2-1-manual-operation/README.md)

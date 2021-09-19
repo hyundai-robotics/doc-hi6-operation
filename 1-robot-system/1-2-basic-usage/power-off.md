@@ -34,5 +34,5 @@ It refers to all operations of stopping the robot and turning off the power butt
 
 3.	Push downward the switch on the power circuit breaker. When the power is cut off, the robot system will be turned off, and the display of the teach pendant and the LED lamp of the collaborative robot will be turned off.
 
-![](../../.gitbook/assets/image%20%28284%29.png)
+![](../../.gitbook/assets/image%20%28285%29.png)
 
