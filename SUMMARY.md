@@ -24,7 +24,7 @@
   * [2.1 Manual Operation](2-operation/2-1-manual-operation/README.md)
     * [2.1.1 Operation Method](2-operation/2-1-manual-operation/how-to-op.md)
     * [2.1.2 Operation Speed Adjustment](2-operation/2-1-manual-operation/op-speed.md)
-    * [2.1.3 스텝 전후진](2-operation/2-1-manual-operation/step-fwd-bwd.md)
+    * [2.1.3 Step Forward/Backward](2-operation/2-1-manual-operation/step-fwd-bwd.md)
   * [2.2 자동 운전](2-operation/2-2-automatic-operation/README.md)
     * [2.2.1 운전 방법](2-operation/2-2-automatic-operation/how-to-op.md)
     * [2.2.2 운전 속도 조정](2-operation/2-2-automatic-operation/adjust-op-spd.md)
