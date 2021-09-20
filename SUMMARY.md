@@ -52,7 +52,7 @@
   * [2.7 Coordinate System](2-operation/2-7-coord-sys/README.md)
     * [2.7.1 Jog Keys](2-operation/2-7-coord-sys/jog-key.md)
     * [2.7.2 Joint Coordinate System](2-operation/2-7-coord-sys/joint-crdsys.md)
-    * [2.7.3 로봇 좌표계](2-operation/2-7-coord-sys/robot-crdsys.md)
+    * [2.7.3 Robot Coordinate System](2-operation/2-7-coord-sys/robot-crdsys.md)
     * [2.7.4 사용자 좌표계](2-operation/2-7-coord-sys/user-crdsys.md)
     * [2.7.5 툴 좌표계](2-operation/2-7-coord-sys/tool-crdsys.md)
   * [2.8 축 원점 및 툴 길이 최적화 설정](2-operation/2-8-axis-origin.md)

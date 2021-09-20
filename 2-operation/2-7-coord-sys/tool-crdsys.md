@@ -1,8 +1,8 @@
 # 2.7.5 툴 좌표계
 
-| 축 좌표계 | 로봇 좌표계 | 사용자 좌표계 | **툴 좌표계** |
+| Joint Coordinate System | Robot Coordinate System | User Coordinate System | **Tool Coordinate System** |
 | :---: | :---: | :---: | :---: |
-|  ![](../../.gitbook/assets/bt-crd2-joint.png)  | ![](../../.gitbook/assets/bt-crd2-robot.png)  | ![](../../.gitbook/assets/bt-crd2-user.png)  | ![](../../.gitbook/assets/bt-crd2-tool.png) |
+|  ![](../../.gitbook/assets/bt-crd2-joint-en.png)  | ![](../../.gitbook/assets/bt-crd2-robot-en.png)  | ![](../../.gitbook/assets/bt-crd2-user-en%20%281%29.png)  | ![](../../.gitbook/assets/bt-crd2-tool-en.png)  |
 
 1.	수동 모드에서 모터를 켜고 티치 펜던트 뒷면의 인에이블링 스위치를 잡으십시오.
 

@@ -1,25 +1,30 @@
-# 2.7.3 로봇 좌표계
+# 2.7.3 Robot Coordinate System
 
-| 축 좌표계 | **로봇 좌표계** | 사용자 좌표계 | 툴 좌표계 |
+| Joint Coordinate System | **Robot Coordinate System** | User Coordinate System | Tool Coordinate System |
 | :---: | :---: | :---: | :---: |
-|  ![](../../.gitbook/assets/bt-crd2-joint.png)  | ![](../../.gitbook/assets/bt-crd2-robot.png)  | ![](../../.gitbook/assets/bt-crd2-user.png)  | ![](../../.gitbook/assets/bt-crd2-tool.png)  |
+|  ![](../../.gitbook/assets/bt-crd2-joint-en.png)  | ![](../../.gitbook/assets/bt-crd2-robot-en.png)  | ![](../../.gitbook/assets/bt-crd2-user-en%20%281%29.png)  | ![](../../.gitbook/assets/bt-crd2-tool-en.png)  |
 
-1.	수동 모드에서 모터를 켜고 티치 펜던트 뒷면의 인에이블링 스위치를 잡으십시오.
+1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
 
-2.	Hi6 티치 펜던트 화면 우측의 \[좌표계\] 버튼을 반복해서 터치하여 로봇 좌표계를 선택하십시오. 조그 막대에 X, Y, Z, RX, RY, RZ와 부가축이 표시됩니다.
+2.	Select the robot coordinate system by repeatedly touching the \[Crd. Sys\] button on the right side of the Hi6 teach pendant screen. Then, the jog bar will display X, Y, Z, RX, RY, RZ, and additional axes.
+
+3.	Operate the robot with the jog keys. The robot will move as follows.
+
+
 
 ![](../../.gitbook/assets/image%20%2862%29.png)
 
 {% hint style="info" %}
-* 조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 “2.7.1 조그키”를 참조하십시오.
-* 오른손을 이용하면 로봇 좌표계에서 로봇의 동작을 쉽게 이해할 수 있습니다.
+* For details on the robot’s progress direction in relation to the jog keys, refer to “2.7.1 Jog Keys.” 
+* 
+  If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
 
 ![](../../.gitbook/assets/crd-direction.png) 
 
-그림 27 좌표계 방향\(좌\) / 회전 방향\(우\)
+Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
 
-* 로봇 뒷면에서 오른손 검지 손가락의 진행 방향을 로봇 좌표계의 X방향으로 두면, 엄지 손가락의 진행 방향이 Z방향, 중지 손가락의 진행 방향이 Y방향이 됩니다.
-* 오른손 엄지 손가락을 회전 중심축 방향으로 두면, 나머지 손가락을 접은 방향이 회전 방향의 + 방향입니다.
+* If you put the progress direction of the right index finger in the X direction of the robot coordinate system, while you stand on the back of the robot, the progress direction of the thumb becomes the Z direction, and the progress direction of the middle finger becomes the Y direction.
+* If you put the thumb of the right hand in the direction of the central axis of rotation, the direction of the other folded fingers becomes the + direction of the rotation direction.
 {% endhint %}
 
 

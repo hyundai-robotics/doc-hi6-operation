@@ -1,8 +1,8 @@
 # 2.7.4 사용자 좌표계
 
-| 축 좌표계 | 로봇 좌표계 | **사용자 좌표계** | 툴 좌표계 |
+| Joint Coordinate System | Robot Coordinate System | **User Coordinate System** | Tool Coordinate System |
 | :---: | :---: | :---: | :---: |
-|  ![](../../.gitbook/assets/bt-crd2-joint.png)  | ![](../../.gitbook/assets/bt-crd2-robot.png)  | ![](../../.gitbook/assets/bt-crd2-user.png)  | ![](../../.gitbook/assets/bt-crd2-tool.png)  |
+|  ![](../../.gitbook/assets/bt-crd2-joint-en.png)  | ![](../../.gitbook/assets/bt-crd2-robot-en.png)  | ![](../../.gitbook/assets/bt-crd2-user-en%20%281%29.png)  | ![](../../.gitbook/assets/bt-crd2-tool-en.png)  |
 
 1.	초기 화면 우측의 \[설정\] 버튼 &gt; \[2: 제어 파라미터 &gt; 7: 좌표계 등록 &gt; 1: 사용자 좌표계\] 메뉴를 터치한 후 사용자 좌표계를 등록하십시오.
 
