@@ -1,25 +1,25 @@
-# 2.1.2    운전 속도 조정
+# 2.1.2 Operation Speed Adjustment
 
-수동 모드에서는 스텝 전후진 운전과 수동 조그 조작을 이용해 로봇을 조작합니다. Hi6 티치 펜던트 화면 좌측의 기능 버튼으로 스텝의 전후진 제한 속도\(![](../../.gitbook/assets/c1.png)\)와 조그의 속도 레벨\(![](../../.gitbook/assets/c2.png)\)을 확인하고 조절할 수 있습니다.
+In manual mode, you can operate the robot using the step forward/backward operation and manual jog operation. With the function button on the left side of the Hi6 teach pendant screen, you can check and adjust the step forward/backward speed limit \(![](../../.gitbook/assets/c1.png)\) and the jog’s speed level \(![](../../.gitbook/assets/c2.png)\).
 
-![](../../.gitbook/assets/lbt-spd-bar%20%281%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%28301%29.png)
 
-스텝의 제한 속도를 설정하려면, \[속도조절\] 버튼을 터치한 후 설정창에서 속도값을 입력하십시오. 스텝 전후진 제한 속도는 \[속도조절\] 버튼에 단위\(㎜/sec\)와 함께 숫자로 표시됩니다. 로봇 툴과 링크의 최고 속도는 제한 속도 이하로 제한됩니다.
+To set the step speed limit, touch the \[Speed Adjustment\] button and then input the speed value in the setting window. The step forward/backward speed limit will be displayed in numbers along with the unit \(mm/sec\) on the \[Speed Adjustment\] button. The maximum speed of the robot tool and link will be limited below the speed limit.
 
-![](../../.gitbook/assets/cond-set-step-fwd-bwd-spd.png)
+![](../../.gitbook/assets/image%20%28296%29.png)
 
-예를 들어, 수동 모드의 제한 속도가 250 ㎜/s로 설정되어 있고 기록된 스텝의 속도가 1000 ㎜/s일 경우 스텝 전후진 운전 시 스텝의 이동 속도는 250 ㎜/s로 제한됩니다. 기록 속도가 100 ㎜/s 일 경우, 기록 속도가 제한 속도를 초과하지 않으므로 로봇은 100 ㎜/s로 이동합니다.
+For example, if the speed limit in manual mode is set to 250 mm/s and the recorded step speed is 1,000 mm/s, the moving speed of the step will be limited to 250 mm/s during the step forward/backward operation. When the recorded speed is 100 mm/s, the robot will move at 100 mm/s because the recorded speed does not exceed the speed limit.
 
 {% hint style="info" %}
-자동 모드일 때, \[속도조절\] 버튼에는 스텝 제한 속도\(㎜/sec\) 대신 재생 속도\(%\)가 표시됩니다.
+In automatic mode, the \[Speed Adjustment\] button will display the playback speed \(%\) instead of the step speed limit \(mm/sec\).
 {% endhint %}
 
-조그 속도 레벨\(1: 저속~8: 고속\)을 설정하려면, 원하는 속도 레벨이 나타날 때까지 \[/\] 버튼을 반복하여 터치하십시오. 조그 속도 레벨은 \[/\] 버튼 사이에 숫자로 표시됩니다. 이 때에도 로봇 툴과 링크의 최고 속도는 제한 속도 이하로 제한됩니다.
+To set the jog speed level \(1: Low to 8: High\), touch the \[ / \] button repeatedly until the desired speed level appears. The jog speed level will be displayed in numbers between the \[ / \] buttons. Even in this case, the maximum speed of the robot tool and link will be limited below the speed limit.
 
 ![](../../.gitbook/assets/lbt-spd-bar2%20%281%29.png)
 
 {% hint style="warning" %}
-\[주의\] 툴 데이터의 길이와 각도가 실제와 다르게 설정되어 있으면 수동 모드에서 툴이 너무 빠르게 동작할 수 있습니다. 로봇을 조작하기 전에 반드시 툴 데이터가 올바르게 설정되어 있는지 확인하십시오.
+If the length and angle in the tool data are set differently from the actual values, the tool may operate too fast in manual mode. Before operating the robot, you must make sure that the tool data is set correctly.
 {% endhint %}
 
 
