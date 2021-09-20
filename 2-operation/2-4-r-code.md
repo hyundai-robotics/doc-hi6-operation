@@ -1,8 +1,12 @@
-# 2.4 R코드
+# 2.4 R Codes
 
-R코드는 특정한 기능에 할당한 고유의 코드 번호입니다. 자주 사용하는 기능에 고유의 코드 번호를 지정해 두면 해당 기능을 신속하게 사용할 수 있습니다. R코드에 대한 자세한 내용은 “8 R코드”를 참조하십시오.
+R codes are unique code numbers assigned to specific functions. Assigning unique code numbers to frequently used functions can help you use those functions quickly. For details on R codes, refer to “8 R codes.”
 
-Hi6 티치 펜던트 화면 우측의 \[즐겨찾기\] 버튼을 터치한 후 코드 번호를 입력하고 \[확인\] 버튼을 터치하십시오. 미리 지정된 기능이 실행됩니다.
+After touching the \[Favorites\] button on the right side of the Hi6 teach pendant screen, input the code number and touch the \[OK\] button. Then the predefined function will be executed.
 
-![](../.gitbook/assets/image%20%2898%29.png)
+![](../.gitbook/assets/image%20%28310%29.png)
+
+
+
+
 

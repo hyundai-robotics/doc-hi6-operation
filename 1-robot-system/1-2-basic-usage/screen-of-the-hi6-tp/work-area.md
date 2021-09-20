@@ -2,7 +2,7 @@
 
 The work area is an area where you can perform various tasks, such as editing JOB programs and checking the monitoring information.
 
-![Figure 10 Layout of the Work Area](../../../.gitbook/assets/image%20%28305%29.png)
+![Figure 10 Layout of the Work Area](../../../.gitbook/assets/image%20%28307%29.png)
 
 <table>
   <thead>

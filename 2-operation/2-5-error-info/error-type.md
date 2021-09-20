@@ -1,14 +1,16 @@
-# 2.5.1 에러 유형
+# 2.5.1 Error Type
 
-로봇 시스템의 문제\(trouble\)에는 에러와 경고가 있습니다.
+Troubles in the robot system are divided into errors and warnings.
 
-* 에러\(error\): 로봇 동작을 멈춰야 할 만큼 중대한 문제로, 알림 메시지의 코드 번호는 E로 시작합니다.
+* Error: It is trouble serious enough to stop the robot operation, and the code number in the notification message starts with E.
 
-![](../../.gitbook/assets/image%20%2891%29.png)
+![](../../.gitbook/assets/image%20%28295%29.png)
 
-* 경고\(warning\): 로봇 동작은 계속되지만 대응 조치 수행 여부를 확인해야 하는 문제로, 알림 메시지의 코드 번호는 W로 시작합니다.
 
-![](../../.gitbook/assets/image%20%28102%29.png)
+
+* Warning: The robot will continue to operate, but a warning is a trouble that requires you to check whether or not a response action has been taken. The code number in the notification message starts with W.
+
+![](../../.gitbook/assets/image%20%28296%29.png)
 
 
 
