@@ -43,7 +43,7 @@
   * [2.4 R Codes](2-operation/2-4-r-code.md)
   * [2.5 Error Information](2-operation/2-5-error-info/README.md)
     * [2.5.1 Error Type](2-operation/2-5-error-info/error-type.md)
-    * [2.5.2 에러 처리](2-operation/2-5-error-info/error-handle.md)
+    * [2.5.2 Error Handling](2-operation/2-5-error-info/error-handle.md)
   * [2.6 사용자 키](2-operation/2-6-user-key/README.md)
     * [2.6.1 사용자키 영역 전환](2-operation/2-6-user-key/2.6.1.md)
     * [2.6.2 영역별 버튼 등록](2-operation/2-6-user-key/button-registration/README.md)

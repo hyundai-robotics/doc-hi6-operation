@@ -4,7 +4,7 @@ R codes are unique code numbers assigned to specific functions. Assigning unique
 
 After touching the \[Favorites\] button on the right side of the Hi6 teach pendant screen, input the code number and touch the \[OK\] button. Then the predefined function will be executed.
 
-![](../.gitbook/assets/image%20%28310%29.png)
+![](../.gitbook/assets/image%20%28311%29.png)
 
 
 
