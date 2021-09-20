@@ -32,7 +32,7 @@
     * [2.3.1 Step Statement Parameters](2-operation/2-3-step/step-cmd-param/README.md)
       * [2.3.1.1 Interpolation](2-operation/2-3-step/step-cmd-param/interpolation.md)
       * [2.3.1.2 Pose](2-operation/2-3-step/step-cmd-param/pose.md)
-      * [2.3.1.3 속도](2-operation/2-3-step/step-cmd-param/speed.md)
+      * [2.3.1.3 Speed](2-operation/2-3-step/step-cmd-param/speed.md)
       * [2.3.1.4 Accuracy](2-operation/2-3-step/step-cmd-param/accuracy.md)
       * [2.3.1.5 툴 번호](2-operation/2-3-step/step-cmd-param/tool-no.md)
       * [2.3.1.6 정지 조건](2-operation/2-3-step/step-cmd-param/until.md)

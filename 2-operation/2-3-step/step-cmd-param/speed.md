@@ -1,10 +1,18 @@
-# 2.3.1.3 속도
+# 2.3.1.3 Speed
 
-로봇의 운전 속도는 다음 4 종의 단위를 사용하여 표시합니다. 모든 보간 방법에서 사용할 수 있습니다.
+The operation speed of the robot can be displayed using the following four types of units. They can be used in all interpolation methods.
 
-* ㎜/sec, ㎝/min: 로봇의 툴 끝\(TCP, Tool Center Point\)의 최고 속도를 설정합니다. 로봇의 최고 속도는 위치, 가감속 파라미터 등에 따라 제어기에서 자동으로 계산됩니다. 설정값이 로봇 성능의 최고 속도 한계보다 클 경우, 로봇은 최고 속도 한계로만 동작합니다.  
-* sec: 로봇의 이동 시간을 설정합니다. 로봇의 최단 이동 시간은 위치, 가감속 파라미터 등에 따라 제어기에서 자동으로 계산됩니다. 설정값이 로봇 성능의 최단 시간 한계보다 짧을 경우, 로봇은 최단 시간 한계로만 동작합니다.  
-* %: 로봇이 낼 수 있는 최고 속도에 대한 로봇의 이동 속도의 비율을 설정합니다. 100%로 설정하면 로봇이 허용 범위 내의 최고 속도로 동작합니다.
+* ㎜/sec, ㎝/min: Sets the maximum speed of the TCP \(Tool Center Point\) of the robot.   The maximum speed of the robot will be automatically calculated by the controller based on the position and acceleration/deceleration parameters. If the setting value is larger than the maximum speed limit of the performance of the robot, the robot will operate only at the maximum speed limit.
+
+
+
+* sec: Sets the robot moving time.  The shortest robot moving time will be automatically calculated by the controller based on the position and acceleration/deceleration parameters. If the setting value is shorter than the shortest time limit of the performance of the robot, the robot will operate only at the shortest time limit.
+
+
+
+* %: Sets the ratio of the robot moving speed to the maximum speed at which the robot can operate.  When this is set to 100%, the robot will operate at the maximum speed within the allowable range.
+
+
 
 
 
