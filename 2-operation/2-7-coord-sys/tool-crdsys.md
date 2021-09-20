@@ -1,28 +1,26 @@
-# 2.7.5 툴 좌표계
+# 2.7.5 Tool Coordinate System
 
 | Joint Coordinate System | Robot Coordinate System | User Coordinate System | **Tool Coordinate System** |
 | :---: | :---: | :---: | :---: |
 |  ![](../../.gitbook/assets/bt-crd2-joint-en.png)  | ![](../../.gitbook/assets/bt-crd2-robot-en.png)  | ![](../../.gitbook/assets/bt-crd2-user-en%20%281%29.png)  | ![](../../.gitbook/assets/bt-crd2-tool-en.png)  |
 
-1.	수동 모드에서 모터를 켜고 티치 펜던트 뒷면의 인에이블링 스위치를 잡으십시오.
+1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
 
-2.	Hi6 티치 펜던트 화면 우측의 \[좌표계\] 버튼을 반복해서 터치하여 툴 좌표계를 선택하십시오. 조그 막대에 X, Y, Z, RX, RY, RZ와 부가축이 표시됩니다.
+2.	Select the tool coordinate system by repeatedly touching the \[Crd. Sys\] button on the right side of the Hi6 teach pendant screen. Then, the jog bar will display X, Y, Z, RX, RY, RZ, and additional axes.
 
-3.	조그키로 로봇을 동작하십시오. 로봇이 다음과 같이 움직입니다.
+3.	Operate the robot with the jog keys. The robot will move as follows.
 
-
-
-* 로봇에 토치를 부착한 경우
+* If a torch is attached to the robot
 
 ![](../../.gitbook/assets/image%20%2868%29.png)
 
 
 
-* 로봇에 토치를 부착하지 않은 경우
+* If no torch is attached to the robot
 
 ![](../../.gitbook/assets/image%20%2892%29.png)
 
 {% hint style="info" %}
-조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 “2.7.1 조그키”를 참조하십시오.
+For details on the robot’s progress direction in relation to the jog keys, refer to “2.7.1 Jog Keys.”
 {% endhint %}
 

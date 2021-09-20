@@ -42,13 +42,13 @@ Singular postures in which the posture interpolation cannot be performed are as 
 
 
 
-![Figure 16 Example 1 of C-Circular Interpolation](../../../.gitbook/assets/image%20%28331%29.png)
+![Figure 16 Example 1 of C-Circular Interpolation](../../../.gitbook/assets/image%20%28336%29.png)
 
 If you use the criteria of selecting three points required for determining the circle, you can create a program through the double registration of the same point, even in the case of a continuous arc.
 
 In this way, by determining the interpolation method of the step in consideration of the path to move along and using the same point dual registration function, you can create a program as desired.
 
-![Figure 17 Example 2 of C-Circular Interpolation](../../../.gitbook/assets/image%20%28301%29.png)
+![Figure 17 Example 2 of C-Circular Interpolation](../../../.gitbook/assets/image%20%28302%29.png)
 
 * Stationary tool interpolation
 

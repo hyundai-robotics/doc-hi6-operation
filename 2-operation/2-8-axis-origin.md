@@ -1,51 +1,51 @@
-# 2.8 축 원점 및 툴 길이 최적화 설정
+# 2.8 Optimization of the Axis Origin and Tool Length
 
-직선보간 궤적 및 좌표변환 정도의 향상을 위해 축 정수와 툴 길이를 자동으로 설정합니다.
+You can make it possible for the axis integer and tool length to be automatically set to improve the accuracy of the linear interpolation trajectory and coordinate shifting.
 
-* 3차원상에서 측정하기 어려운 툴 끝까지의 거리를 자동으로 설정할 수 있습니다. 보정되는 파라미터는 H, V, R2, B축의 축 원점과 X, Y, Z방향 툴 길이입니다.
-* ‘축 원점 및 툴 길이’와 ‘툴 길이’ 최적화를 실행할 수 있습니다.
+* You can make it possible for the distance to the tooltip, which is difficult to measure in 3D, to be automatically set. The parameters to be calibrated are the axis origins of the H, V, R2, and B axes and the tool length in the X, Y, and Z directions.
+* You can perform “optimization of axis origin and tool length” and of “tool length.”
 
 {% hint style="warning" %}
-로봇 프로그램을 티칭하기 전에 ‘축 원점 및 툴 길이’를 최적화하십시오. 로봇 프로그램이 만들어진 상태에서 ‘축 원점 및 툴 길이’를 최적화하면 기존 프로그램의 위치가 변경될 수 있습니다.
+You should optimize the “axis origin and tool length” before teaching the robot program. If the “axis origin and tool length” is optimized while a robot program has been created already, the position in the existing program may change.
 {% endhint %}
 
-축 원점 및 툴 길이 최적화를 설정하는 방법은 다음과 같습니다.
+The following shows how to set the optimization of the axis origin and tool length:
 
-1.	티치 펜던트의 모드 스위치를 이용해 운전 방식을 수동 모드로 설정하십시오.
+1.	Set the operation mode to manual mode using the mode switch on the teach pendant.
 
-2.	JOB 프로그램창에서 \[프로그램\] 버튼을 터치한 후 프로그램 번호를 입력하고 \[확인\] 버튼을 터치하십시오.
-
-![](../.gitbook/assets/image%20%2855%29.png)
-
-3.	티치 펜던트의 &lt;모터&gt; 키를 누르십시오. 모터 램프가 깜빡입니다.
-
-* 모터가 켜지지 않으면 이력 표시줄에서 에러 메시지를 확인하고 문제를 해결하십시오.
-
-4.	티치 펜던트 뒷면의 인에이블링 스위치를 잡은 채로 조그키를 이용해 로봇을 동작하십시오
-
-5.	로봇의 동작 범위 내 임의의 위치에 뾰족한 침을 두고 로봇의 툴 끝을 침에 일치시키십시오. 로봇 선단부터 일치시킨 툴 끝까지의 길이가 최적화됩니다.
-
-6.	Hi6 티치 펜던트 화면 우측의 \[기록\] 버튼을 터치하여 스텝을 기록하십시오.
+2.	After touching the \[Prog\] button in the JOB program window, input the program number, and then touch the \[OK\] button.
 
 
 
-![](../.gitbook/assets/image%20%28105%29.png)
+![](../.gitbook/assets/image%20%28314%29.png)
 
-7.	로봇의 자세를 바꾸고 5 ~ 6번 단계를 4번 이상 반복하십시오.
+3.	Press the &lt;motor&gt; key on the teach pendant, and then the motor lamp will blink.
 
-* 가능한 한 6축 전체를 이용하여 로봇의 자세를 바꾸십시오. 또한 축의 각도는 30 deg 이상 변경하십시오.
+* If the motor is not turned on, check the error message on the log bar and resolve the trouble.
 
-8.	\[설정\] 버튼 &gt; \[6: 자동 캘리브레이션 &gt; 1: 축 원점 및 툴 길이 최적화\] 메뉴를 터치하십시오.
+4.	Operate the robot using the jog key while holding the enabling switch on the back of the teach pendant.
 
-![](../.gitbook/assets/image%20%2852%29.png)
+5.	Place a pointed needle at an arbitrary location within the operation range of the robot, and then match the tooltip of the robot to it. The distance from the front end of the robot to the matched tooltip will be optimized.
 
-9.	자동 캘리브레이션용으로 작성한 프로그램 번호, 툴 번호, 스텝 위치 오차 허용 범위를 설정한 후 \[실행\] 버튼을 터치하십시오. 선택된 축 원점 및 툴 길이가 설정됩니다.
+6.	Record the step by touching the \[Record\] button on the right side of the Hi6 teach pendant screen.
 
-![](../.gitbook/assets/image%20%2872%29.png)
+![](../.gitbook/assets/image%20%28316%29.png)
 
-* 여러 개의 툴을 사용할 때, 두 번째 툴의 자동 캘리브레이션부터는 \[최적화 선택\] 옵션을 툴 길이로 선택하여 실행하십시오. 축 원점 및 툴 길이를 선택하면 먼저 설정한 툴의 정보가 맞지 않게 됩니다.
+7.	Change the robot’s posture and repeat the above steps 5–6 more than four times.
+
+* Change the robot’s posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
+
+8.	Touch the \[Set up\] button &gt; \[6: Auto Calibration &gt; 1: Optimize axis origin and tool length\] menu.
+
+![](../.gitbook/assets/image%20%28322%29.png)
+
+9.	Set the program number, tool number, and step position error allowable range created for the automatic calibration, and then touch the \[Execute\] button. Then the selected axis origin and tool length will be set.
+
+![](../.gitbook/assets/image%20%28328%29.png)
+
+* You should select Tool Length in the \[Optimization Selection\] option, starting from the automatic calibration of the second tool, when you use multiple tools. If you select Axis Origin and Tool Length, the previously set tool information will not match.
 
 {% hint style="info" %}
-이 기능에 대한 자세한 내용은 “7.7.1 축 원점 및 툴 길이 최적화”를 참조하십시오.
+For details on this function, refer to “7.7.1 Optimization of Axis Origin and Tool Length.”
 {% endhint %}
 
