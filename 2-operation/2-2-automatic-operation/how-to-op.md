@@ -20,13 +20,13 @@ It is the method to teach the robot the contents of the work and then make it pe
 
 4.	Touch the \[Recording Condition\] button on the left side of the initial screen. Then, the condition setting window will appear.
 
-![](../../.gitbook/assets/image%20%28312%29.png)
+![](../../.gitbook/assets/image%20%28313%29.png)
 
 
 
 5.	Set the program repetition option and robot operation speed.
 
-![](../../.gitbook/assets/image%20%28300%29.png)
+![](../../.gitbook/assets/image%20%28301%29.png)
 
 * **\[1: Operation Cycle type\]:** You can set whether to repeat the program that will be executed during automatic operation.
 * **\[6: Playback speed rate\]:** You can set the operation speed \(%\) of the robot when a program is played back in automatic mode.  

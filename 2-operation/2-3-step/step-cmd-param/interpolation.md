@@ -1,45 +1,62 @@
-# 2.3.1.1 보간
+# 2.3.1.1 Interpolation
 
-보간은 스텝과 스텝 사이의 보간된 경로를 말하며 \[스텝 N\]의 보간 방법은 \[스텝 N-1\]과 \[스텝 N\] 사이의 경로 형태를 결정합니다.
+Interpolation refers to the interpolated path between steps, and the interpolation method for the \[Step N\] determines the form of the path between \[Step N-1\] and \[Step N\].
 
-* P-PTP \(Point To Point\) 툴 끝이 아닌 각 축을 기준으로 두 스텝 사이의 경로를 보간하는 방식으로 일반 보간 방식 중 가장 빠릅니다. 회전형 조인트로 구성된 산업용 로봇의 특성상 툴 끝 경로는 일반적으로 C 자 형태로 형성됩니다.
+* P-PTP \(Point-to-Point\) It is the fastest of the general interpolation modes as it interpolates the path between two steps based on individual axes, not the tooltip. Considering the characteristics of industrial robots that consist of rotation joints, the path of the tooltip is usually shaped in a C form.
 
 
 
-![&#xADF8;&#xB9BC; 15 P-PTP &#xBCF4;&#xAC04;&#xC758; &#xD234; &#xB05D; &#xACBD;&#xB85C; &#xC608;](../../../.gitbook/assets/image%20%2873%29.png)
 
-* L-직선보간 직교 공간상에서 두 스텝 사이를 직선으로 이동합니다. 아크 용접 구간 등 직선 경로가 필요한 경우에 사용하며 다음과 같이 손목 자세를 자동으로 바꾸며 이동합니다.
 
-![&#xADF8;&#xB9BC; 16 L-&#xC9C1;&#xC120; &#xBCF4;&#xAC04; &#xC608;](../../../.gitbook/assets/image%20%2848%29.png)
+![Figure 14 Example of the Tooltip Path in P-PTP Interpolation](../../../.gitbook/assets/image%20%2873%29.png)
 
-직선보간 시 특정한 조건에서는 로봇이 손목 자세를 자동으로 바꾸지 못합니다. 이 조건을 Singular 자세라고 합니다.
+* L-Linear interpolation It moves in a linear line between two steps in Cartesian space. It is used for a case in which a linear path is needed, such as an arc welding section. The movement will take place while the wrist posture changes automatically as follows.
+
+![Figure 15 Example of L-Linear Interpolation](../../../.gitbook/assets/image%20%2848%29.png)
+
+During the linear interpolation, under certain conditions, the robot cannot automatically change the wrist posture, and such a condition is called the singular posture.
 
 
 
 {% hint style="info" %}
-자세 보간이 불가능한 Singular 자세는 다음과 같습니다.
+Singular postures in which the posture interpolation cannot be performed are as follows.
 
-* B축이 Dead zone 근처인 경우: Dead zone 설정에 대한 자세한 내용은 “7.4.5 B축 비사용구역”을 참조하십시오.
-* B축의 부호가 바뀌는 경우: B축 각도의 부호가 \( - → + \) 또는 \( + → - \) 로 전환되는 경우입니다.
-* R2, R1축의 각도 변화가 180도를 초과하는 경우
-* S축\(1축\) 회전 중심을 B축\(5축\) 중심이나 툴 끝이 지나가는 경우: 자세는 물론, 궤적 오차나 에러가 발생할 수 있습니다.
-* S축의 각도 변화가 180 도를 초과하는 경우
+* If the B-axis is near the dead zone: For details on the dead zone setting, refer to “7.4.5 B-axis No-Use Area.”
+* When the sign of the B-axis changes: When the sign of the B-axis angle switches \( - → + \) or \( + → - \)
+* When the angle variation of the R2 and R1 axes exceeds 180 degrees
+* When the center of the B-axis \(axis 5\) or the tooltip passes the center of rotation of the S-axis \(axis 1\): There may be an error in the trajectory as well as in the posture.
+* When the angle variation of the S-axis exceeds 180 degrees
 {% endhint %}
 
-* C-원호보간 두 스텝 사이를 원호로 생성되는 경로로 이동합니다. 원을 결정하려면 3점이 필요한데 이를 선정하는 기준은 다음과 같습니다.  
-  * \[스텝 n\]에서 \[스텝 n+1\]로 이동할 때 \[스텝 n+1\]의 보간 방법이 원호보간 C이면 다음 스텝 \[스텝 n+2\]를 참조합니다. 
-  * \[스텝 n+2\]의 보간 방법이 원호보간 C이면, \[스텝 n\] \[스텝 n+1\] \[스텝 n+2\]로 원을 결정하고 그 중에서 \[스텝 n\] ~ \[스텝 n+1\] 구간의 호를 따라 이동합니다. 
-  * \[스텝 n+2\]의 보간 방법이 원호보간이 아니면, 이전 스텝 \[스텝 n-1\]을 참조하여 \[스텝 n-1\]\[스텝 n\]\[스텝 n+1\]로 원을 결정하고 그 중에서 \[스텝 n\] ~ \[스텝 n+1\] 구간의 호를 따라 이동합니다.
+* C-Circular interpolation
 
-![&#xADF8;&#xB9BC; 17 C-&#xC6D0;&#xD638;&#xBCF4;&#xAC04; &#xC608;1](../../../.gitbook/assets/image%20%2896%29.png)
+  It moves in a circular path created between two steps. There should be three points to determine the circle, and the references for selecting them are as follows.
 
-원의 결정에 필요한 3점 선정 기준을 이용하면 연속원호의 경우에도 동일점 이중등록을 이용하여 프로그램을 작성할 수 있습니다.
 
-이와 같이 이동할 경로를 고려하여 스텝의 보간 방법을 결정하고 동일점 이중등록을 이용하면 원하는 대로 프로그램을 작성할 수 있습니다.
 
-![&#xADF8;&#xB9BC; 18 C-&#xC6D0;&#xD638; &#xBCF4;&#xAC04; &#xC608;2](../../../.gitbook/assets/image%20%28101%29.png)
+  * At the time of moving from \[Step n\] to \[Step n+1\], if the interpolation method of \[Step n+1\] is C-circular interpolation, it is required to refer to the next step \[Step n+2\].
 
-* 정치툴 보간 로봇이 작업물을 소유하고, 외부의 고정된 툴을 이용하여 작업하는 경우에 사용합니다. 이 경우에 보간 동작은 로봇이 소유하고 있는 작업물을 기준으로 이루어집니다.  정치툴 보간의 종류에 대한 자세한 내용은 “7.3.6.2 정치툴 좌표계”를 참조하십시오.
+  * If the interpolation method of \[Step n+2\] is C-circular interpolation, it is required to determine the circle based on \[Step n\], \[Step n+1\], and \[Step n+2\], and among them, movement should take place along the arc of the section of \[Step n\] - \[Step n+1\].
+
+  * If the interpolation method of \[Step n+2\] is not a circular interpolation, it is required to refer to the previous step \[Step n-1\] and determine the circle based on \[Step n-1\], \[Step n\], and \[Step n+1\], and among them, movement should take place along the arc of the section of \[Step n\] - \[Step n+1\].
+
+
+
+![Figure 16 Example 1 of C-Circular Interpolation](../../../.gitbook/assets/image%20%28317%29.png)
+
+If you use the criteria of selecting three points required for determining the circle, you can create a program through the double registration of the same point, even in the case of a continuous arc.
+
+In this way, by determining the interpolation method of the step in consideration of the path to move along and using the same point dual registration function, you can create a program as desired.
+
+![Figure 17 Example 2 of C-Circular Interpolation](../../../.gitbook/assets/image%20%28299%29.png)
+
+* Stationary tool interpolation
+
+  This method will be used when the robot owns the workpiece and perform the work using an externally fixed tool. In this case, the interpolation will be performed based on the workpiece owned by the robot.
+
+  For details on the types of interpolation for stationary tools, refer to “7.3.6.2 Stationary Tool Coordinate System.”
+
+
 
 
 

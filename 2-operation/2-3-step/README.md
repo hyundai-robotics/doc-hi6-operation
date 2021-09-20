@@ -1,11 +1,13 @@
-# 2.3 스텝
+# 2.3 Step
 
-스텝은 작업 프로그램에 기록되어 로봇이 취하는 특정한 자세\(각 축의 위치 또는 툴 끝의 위치\)를 뜻합니다. 즉, 로봇이 움직여 도달한 하나의 위치가 스텝입니다.
+A step refers to a specific posture \(the position of each axis or the position of the tooltip\) that is to be recorded in the job program and taken by the robot. In other words, a step is one position that the robot will reach through a movement.
 
-로봇은 한 스텝에서 다른 스텝으로 이동하며 다양한 기능을 수행합니다. 로봇이 한 스텝에서 다른 스텝으로 이동하기 위해서는 이동 명령 move와 이동 조건이 필요합니다.
+The robot performs various functions while moving from one step to another. For movement from one step to another, a movement condition such as a move, which is a movement command, is required.
 
-* 이동 명령 move: 로봇 프로그래밍의 기본 단위. 로봇 본체의 이동을 지시하는 명령어입니다. 로봇의 동작에 필요한 최소한의 정보로 구성됩니다.
-* 이동 조건: 로봇의 위치, 보간, 속도, Accuracy, 툴 번호 등의 스텝 명령문 인수\(PARAMETER\)
+* It is the basic unit of robot programming. This is a command for the manipulator to move. It consists of minimum information that is necessary for the operation of the robot. 
+* Movement conditions: These are the step statement parameters such as robot position, interpolation, speed, accuracy, and tool number.
+
+
 
 
 
