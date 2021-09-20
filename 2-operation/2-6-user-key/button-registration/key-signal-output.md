@@ -27,7 +27,7 @@ You can easily input the signal output variable value using the \[fb\] button an
 
 4.	Check the buttons in the key signal output function area, and touch each button to make sure that the set value is properly applied.
 
-![](../../../.gitbook/assets/image%20%28329%29.png)
+![](../../../.gitbook/assets/image%20%28331%29.png)
 
 {% hint style="info" %}
 You can also assign the desired output signals to the buttons in the key signal output function area in the \[Set Up&gt; Control Parameter&gt; Input/Output Signal Setting&gt; Key Signal Output\] menu. For details, refer to “7.3.2.8 Key Signal Output.”

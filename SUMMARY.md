@@ -56,7 +56,7 @@
     * [2.7.4 User Coordinate System](2-operation/2-7-coord-sys/user-crdsys.md)
     * [2.7.5 Tool Coordinate System](2-operation/2-7-coord-sys/tool-crdsys.md)
   * [2.8 Optimization of the Axis Origin and Tool Length](2-operation/2-8-axis-origin.md)
-  * [2.9 툴 데이터 자동 보정](2-operation/2-9-tool-data-auto-calib.md)
+  * [2.9 Tool Data Automatic Calibration](2-operation/2-9-tool-data-auto-calib.md)
 * [3. 프로그램 작성](3-programming/README.md)
   * [3.1 프로그램 관리](3-programming/3-1-prog-manage.md)
   * [3.2    프로그램 작성](3-programming/3-2-prog-edit/README.md)

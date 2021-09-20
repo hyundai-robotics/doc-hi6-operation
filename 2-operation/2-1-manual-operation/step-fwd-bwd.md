@@ -28,7 +28,7 @@ If you set the execution unit as end and then perform the step forward/backward 
 
 When the robot stops at cornering and then executes the forward operation, the robot will operate on the original cornering path. Here, if the robot executes the backward operation and then, without reaching the previous step completely, executes the forward operation again, the robot may not be able to create the original cornering path in some cases. In other words, if the distance of the step becomes shorter than the original distance, making it impossible to meet the existing accuracy condition, a smaller cornering path than the original one will be created.
 
-![Figure 13 Example of the Robot Path Change During Step Forward/Backward Operation](../../.gitbook/assets/image%20%28331%29.png)
+![Figure 13 Example of the Robot Path Change During Step Forward/Backward Operation](../../.gitbook/assets/image%20%28333%29.png)
 
 You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the \[run to\] button on the left side of the Hi6 teach pendant screen, set the speed value and function execution option in the setting window.
 

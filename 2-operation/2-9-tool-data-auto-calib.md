@@ -1,20 +1,20 @@
-# 2.9 툴 데이터 자동 보정
+# 2.9 Tool Data Automatic Calibration
 
-자동 캘리브레이션 기능 등을 이용해 축 원점 및 툴 길이를 결정한 후 툴이 변형되었을 때 간단히 새로운 툴 데이터를 결정할 수 있습니다. 이때, 축 원점\(Axis origin\)은 결정되어 있어야 하고 계속 유지되어야 합니다. 또한 툴 길이를 결정하고 각도 보정을 완료한 후 고정된 기준점을 티칭해 두어야 합니다. 툴 변형이 발생하면 툴을 변경 전에 지정해 둔 기준점에 동일한 자세로 위치시킨 후 툴 데이터 자동 보정을 실행하십시오.
+After determining the axis origin and tool length through automatic calibration, etc., if the tool is deformed, you can simply determine new tool data. At this time, the axis origin should have been determined and maintained. In addition, a fixed reference point should be taught after the tool length is determined and the angle calibration is completed. If tool deformation occurs, place the tool in the same position at the reference point designated prior to the deformation, and then perform automatic tool data calibration.
 
-1.	\[설정\] 버튼 &gt; \[3: 로봇 파라미터 &gt; 1: 툴 데이터\] 메뉴를 터치하십시오.
+1.	Touch the \[Set up\] button &gt; \[3: Robot Parameter&gt; 1: Tool Data\] menu.
 
-![](../.gitbook/assets/image%20%2897%29.png)
+![](../.gitbook/assets/image%20%28340%29.png)
 
-2.	\[자동보정\] 버튼을 터치한 후 조그키를 이용하여 툴 끝을 원래의 위치로 이동하십시오.
+2.	After touching the \[Auto Calibration\] button, move the tooltip to the original position using the jog key.
 
-![](../.gitbook/assets/image%20%2883%29.png)
+![](../.gitbook/assets/image%20%28341%29.png)
 
-3.	미리 결정해 둔 기준점의 프로그램 번호, 스텝 번호, 설정할 툴 번호를 확인한 후 \[실행\] 버튼을 터치하십시오.
+3.	 After checking the program number of the predetermined reference point, the step number, and the tool number, touch the \[Execute\] button.
 
-![](../.gitbook/assets/image%20%28107%29.png)
+![](../.gitbook/assets/image%20%28322%29.png)
 
 {% hint style="info" %}
-이 기능에 대한 자세한 내용은 “7.4.1 툴 데이터”를 참조하십시오.
+For details on this function, refer to “7.4.1 Tool Data.”
 {% endhint %}
 
