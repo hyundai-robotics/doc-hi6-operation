@@ -27,7 +27,7 @@
     * [2.1.3 Step Forward/Backward](2-operation/2-1-manual-operation/step-fwd-bwd.md)
   * [2.2 Automatic Operation](2-operation/2-2-automatic-operation/README.md)
     * [2.2.1 Operation Method](2-operation/2-2-automatic-operation/how-to-op.md)
-    * [2.2.2 운전 속도 조정](2-operation/2-2-automatic-operation/adjust-op-spd.md)
+    * [2.2.2 Operation Speed Adjustment](2-operation/2-2-automatic-operation/adjust-op-spd.md)
   * [2.3 스텝](2-operation/2-3-step/README.md)
     * [2.3.1 스텝 명령문 인수](2-operation/2-3-step/step-cmd-param/README.md)
       * [2.3.1.1 보간](2-operation/2-3-step/step-cmd-param/interpolation.md)
