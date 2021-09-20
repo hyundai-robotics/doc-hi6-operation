@@ -31,7 +31,7 @@
   * [2.3 Step](2-operation/2-3-step/README.md)
     * [2.3.1 Step Statement Parameters](2-operation/2-3-step/step-cmd-param/README.md)
       * [2.3.1.1 Interpolation](2-operation/2-3-step/step-cmd-param/interpolation.md)
-      * [2.3.1.2 포즈](2-operation/2-3-step/step-cmd-param/pose.md)
+      * [2.3.1.2 Pose](2-operation/2-3-step/step-cmd-param/pose.md)
       * [2.3.1.3 속도](2-operation/2-3-step/step-cmd-param/speed.md)
       * [2.3.1.4 Accuracy](2-operation/2-3-step/step-cmd-param/accuracy.md)
       * [2.3.1.5 툴 번호](2-operation/2-3-step/step-cmd-param/tool-no.md)

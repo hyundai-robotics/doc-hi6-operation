@@ -20,7 +20,7 @@ It is the method to teach the robot the contents of the work and then make it pe
 
 4.	Touch the \[Recording Condition\] button on the left side of the initial screen. Then, the condition setting window will appear.
 
-![](../../.gitbook/assets/image%20%28313%29.png)
+![](../../.gitbook/assets/image%20%28315%29.png)
 
 
 

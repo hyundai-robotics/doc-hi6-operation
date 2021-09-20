@@ -14,19 +14,19 @@ The method of instructing the contents of the work to the robot using the jog ke
 
 3.	In the status bar of the Hi6 teach pendant screen, check whether the operation mode is set to manual mode.
 
-![](../../.gitbook/assets/image%20%28311%29.png)
+![](../../.gitbook/assets/image%20%28312%29.png)
 
 * If it is set to automatic mode, set the operation mode to manual mode by turning the mode switch of the teach pendant.
 
 4.	Touch the \[Program\] button in the JOB program window. Then, the program selection window will appear.
 
-![](../../.gitbook/assets/image%20%28312%29.png)
+![](../../.gitbook/assets/image%20%28314%29.png)
 
 
 
 5.	Select a program from the list in the program selection window or input the program number and then touch the \[OK\] button.
 
-![](../../.gitbook/assets/image%20%28308%29.png)
+![](../../.gitbook/assets/image%20%28309%29.png)
 
 6.	Press the &lt;motor&gt; key on the teach pendant. Then, the motor lamp will blink, and the servo power will be ready to be supplied to the motor of each axis of the robot.
 
