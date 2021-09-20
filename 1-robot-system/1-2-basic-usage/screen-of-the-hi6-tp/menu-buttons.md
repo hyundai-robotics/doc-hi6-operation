@@ -5,12 +5,14 @@
 <table>
   <thead>
     <tr>
+      <th style="text-align:left"></th>
       <th style="text-align:left">No.</th>
       <th style="text-align:left">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left"></td>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
@@ -24,6 +26,9 @@
     </tr>
     <tr>
       <td style="text-align:left">
+        <img src="../../../.gitbook/assets/rbt-bar-en.png" alt/>
+      </td>
+      <td style="text-align:left">
         <img src="../../../.gitbook/assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
@@ -33,18 +38,21 @@
           system mode appears. The name of the axis newly selected according to the
           selected reference coordinate system will be displayed on the jog bar on
           the right side of the screen.</p>
-        <p></p>
         <ul>
-          <li>Joint Coordinate System: The name of each joint will be displayed on the
+          <li>
+            <img src="../../../.gitbook/assets/bt-crd-joint-en.png" alt/>Joint Coordinate System: The name of each joint will be displayed on the
             jog bar. If you touch the [-/+] button on the right side of the joint name,
             you can move the corresponding joint.</li>
-          <li>Robot Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
+          <li>
+            <img src="../../../.gitbook/assets/bt-crd-robot-en.png" alt/>Robot Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
             be displayed on the jog bar. Based on the robot coordinate system, the
             tooltip (TCP, Tool Center Point) of the robot can be moved or rotated.</li>
-          <li>User Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
+          <li>
+            <img src="../../../.gitbook/assets/bt-crd-user (1).png" alt/>User Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
             be displayed on the jog bar. The tooltip of the robot can be moved and
             rotated based on the user coordinate system.</li>
-          <li>Tool Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
+          <li>
+            <img src="../../../.gitbook/assets/bt-crd-tool (1).png" alt/>Tool Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
             be displayed on the jog bar. The tooltip of the robot can be moved and
             rotated based on the tool coordinate system.</li>
         </ul>
@@ -52,6 +60,9 @@
     </tr>
     <tr>
       <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../../../.gitbook/assets/c3.png" alt/>
+      </td>
       <td style="text-align:left">
         <p>Record: You can input the move statement in the JOB program.</p>
         <p>Touch the [Record] button. Then, the move statement will be inputted right
@@ -64,60 +75,73 @@
           <li>The target pose and the values of the recording condition of the move
             statement can be edited later.</li>
         </ul>
+        <p>
+          <img src="../../../.gitbook/assets/bt-pos-mod-en.png" alt/>(In combination with the &lt;shift&gt; key) Position Correction: Apply
+          the robot&#x2019;s current posture as the target pose of the step in the
+          JOB program.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
-      <td style="text-align:left">(In combination with the <b>&lt;shift&gt;</b> key) Position Correction:
-        Apply the robot&#x2019;s current posture as the target pose of the step
-        in the JOB program.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../../../.gitbook/assets/c4.png" alt/>
+      </td>
       <td style="text-align:left">
         <p>Command Inputting: Input the desired command.</p>
         <p>After touching the <b>[Command]</b> button, touch the command in the command
           inputting window. Then, the statement will be inputted right below the
           current cursor position. For details on inputting the commands, refer to
           &#x201C;<b>3.2.2 Statement Inputting.</b>&#x201D;</p>
+        <p>
+          <img src="../../../.gitbook/assets/bt-delete-en.png" alt/>(In combination with the &lt;shift&gt; key)</p>
+        <p>Deletion: You can delete the statement in the JOB program.</p>
       </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">(In combination with the <b>&lt;shift&gt;</b> key)
-        <br />Deletion: You can delete the statement in the JOB program.</td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
+        <img src="../../../.gitbook/assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">
         <p>Attribute: You can check the attributes of a statement.</p>
         <p>After selecting a statement by touching it, touch the <b>[Attribute</b>]
           button. Then, the attribute window for the statement will appear.</p>
+        <p>
+          <img src="../../../.gitbook/assets/bt-block-edit-en.png" alt/>(In combination with the &lt;shift&gt; key) Block Editing: You can enter
+          the block editing mode where you can perform copying, cutting, and pasting
+          in the JOB program. For details on block editing, refer to &#x201C;3.2.4.5
+          Block Editing Mode.&#x201D;</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
-      <td style="text-align:left">(In combination with the &lt;shift&gt; key) Block Editing: You can enter
-        the block editing mode where you can perform copying, cutting, and pasting
-        in the JOB program. For details on block editing, refer to &#x201C;<b>3.2.4.5 Block Editing Mode.</b>&#x201D;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../../../.gitbook/assets/c6.png" alt/>
+      </td>
       <td style="text-align:left">[Menu]: You can use the service function menus in the program.</td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../../../.gitbook/assets/c7.png" alt/>
+      </td>
       <td style="text-align:left">[Set up]: You can set the user environment using the system menu of the
         program.</td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../../../.gitbook/assets/c8.png" alt/>
+      </td>
       <td style="text-align:left">Favorites: You can quickly execute predesignated functions using code
         numbers. Touch the <b>[Favorites]</b> button, input the code number, and
         touch the <b>[OK] </b>button. Then, the designated function will be executed.</td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../../../.gitbook/assets/c9.png" alt/>
+      </td>
       <td style="text-align:left">
         <p>User Key: You can use the function assigned, as a button, to the user
           key area when teaching the robot.</p>
