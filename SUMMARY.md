@@ -51,7 +51,7 @@
       * [2.6.2.2 Spot Application Function Area](2-operation/2-6-user-key/button-registration/spot-appl.md)
   * [2.7 Coordinate System](2-operation/2-7-coord-sys/README.md)
     * [2.7.1 Jog Keys](2-operation/2-7-coord-sys/jog-key.md)
-    * [2.7.2 축 좌표계](2-operation/2-7-coord-sys/joint-crdsys.md)
+    * [2.7.2 Joint Coordinate System](2-operation/2-7-coord-sys/joint-crdsys.md)
     * [2.7.3 로봇 좌표계](2-operation/2-7-coord-sys/robot-crdsys.md)
     * [2.7.4 사용자 좌표계](2-operation/2-7-coord-sys/user-crdsys.md)
     * [2.7.5 툴 좌표계](2-operation/2-7-coord-sys/tool-crdsys.md)
