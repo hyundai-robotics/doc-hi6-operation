@@ -1,4 +1,4 @@
-# 2.2 자동 운전
+# 2.2 Automatic Operation
 
-자동 운전이란 로봇이 작업할 내용을 교시한 후 로봇에게 작업을 시키는 운전 방법입니다.
+Automatic operation is an operation method of teaching the robot the contents of the work that it should execute and then making the robot perform the work.
 
