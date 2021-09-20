@@ -1,6 +1,6 @@
-# 2.6.2 영역별 버튼 등록
+# 2.6.2 Button Registration for Each Area
 
-사용자키 영역에 원하는 기능을 버튼으로 등록합니다. 등록할 수 있는 기능은 최대 8개입니다.
+You can register the desired function in the user key area with a button. Up to eight functions can be registered.
 
 
 

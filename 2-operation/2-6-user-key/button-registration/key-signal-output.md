@@ -1,32 +1,36 @@
-# 2.6.2.1 키 신호 출력 기능 영역
+# 2.6.2.1 Key Signal Output Function Area
 
-원하는 출력 신호를 버튼으로 등록하여 간단히 ON/OFF 할 수 있습니다.
+You can simply turn on/off the desired output signal by registering it with a button.
 
-1.	키 신호 출력 기능 영역이 나타날 때까지 \[사용자키\] 버튼을 반복해서 터치하십시오.
+1.	Touch the \[User Buttons\] button repeatedly until the key signal output function area appears.
 
-2.	&lt;ctrl&gt; 키를 누른 상태에서 \[사용자키\] 버튼을 터치하십시오. 키 신호 출력 설정창이 나타납니다.
+2.	While pressing the &lt;ctrl&gt; key, touch the \[User Buttons\] button. The key signal output setting window will appear.
 
-3.	버튼에 표시할 기능 이름과 옵션을 설정한 후 \[확인\] 버튼을 터치하십시오.
+3.	After setting the function name and option to display on the button, touch the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%2884%29.png)
+![](../../../.gitbook/assets/image%20%28309%29.png)
 
-* \[제목\]: 버튼에 표시할 기능 이름입니다.
-* \[on 변수\]: 신호 출력 변수 또는 숫자형 변수의 이름입니다. 버튼을 ON할 때 값을 ON \(1 대입\)할 변수의 이름입니다.
-* \[off 변수\]: 신호 출력 변수 또는 숫자형 변수의 이름입니다. 버튼을 OFF할 때 값을 ON \(1 대입\)할 변수의 이름입니다.
-* \[토글\]: 버튼을 터치할 때마다 버튼에 등록한 기능이 활성화 또는 비활성화되도록 설정합니다. 토글 기능을 사용하지 않으면 버튼을 터치하고 있는 동안에만 버튼에 등록한 기능이 활성화됩니다.
-* \[자동 모드시 허용\]: 자동 모드에서도 변수값 출력 기능을 허용합니다.
-* \[자동 모드시 OFF\]: 자동 모드에서 모든 변수값을 OFF \(0 대입\)합니다.
+
+
+* \[Title\]: This is the function name to be displayed on the button.
+* \[on-var.\]: This is the name of the signal output variable or of the number type variable. This is the name of the variable whose value will be turned ON \(assign 1\) when the button is turned ON.
+* \[off-var.\]: This is the name of the signal output variable or the number type variable. This is the name of the variable whose value will be turned ON \(assign 1\) when the button is turned OFF.
+* \[Toggle\]: This helps you perform the setting in a way that the functions registered with the buttons can be activated or deactivated whenever you touch the buttons. If the toggle function is not used, the functions registered with the button will be activated only while the button is being touched.
+* \[Permit on Auto Mode\]: This allows the variable value output function even in automatic mode.
+* \[Off on Auto Mode\]: This turns off all variable values \(assign 0\) in automatic mode.
+
+
 
 {% hint style="info" %}
-\[fb\] 버튼과 \[do\] 버튼을 이용하면 숫자와 소수점만으로 신호 출력 변수값을 간단히 입력할 수 있습니다. 예를 들어, 2.9를 입력하고 &lt;enter&gt; 키를 누르십시오. fb2.do9로 변환되어 나타납니다. 소수점 없이 9를 입력하면 &lt;enter&gt; 키를 누르면 do9로 변환됩니다.
+You can easily input the signal output variable value using the \[fb\] button and the \[do\] button. For example, input 2.9 and press the &lt;enter&gt; key. It will be converted to and displayed as fb2.do9. If you input 9 without decimal point and press the &lt;enter&gt; key, it will be converted to do9.
 {% endhint %}
 
-4.	키 신호 출력 기능 영역에서 버튼을 확인하고 각 버튼을 터치하여 설정값이 제대로 적용되는지 확인하십시오.
+4.	Check the buttons in the key signal output function area, and touch each button to make sure that the set value is properly applied.
 
-![](../../../.gitbook/assets/image%20%28100%29.png)
+![](../../../.gitbook/assets/image%20%28324%29.png)
 
 {% hint style="info" %}
-\[설정 &gt; 제어 파라미터 &gt; 입출력 신호 설정 &gt; 키 신호 출력\] 메뉴에서도 원하는 출력 신호를 키 신호 출력 기능 영역의 버튼에 할당할 수 있습니다. 자세한 내용은 “7.3.2.8 키 신호 출력”를 참조하세요.
+You can also assign the desired output signals to the buttons in the key signal output function area in the \[Set Up&gt; Control Parameter&gt; Input/Output Signal Setting&gt; Key Signal Output\] menu. For details, refer to “7.3.2.8 Key Signal Output.”
 {% endhint %}
 
 

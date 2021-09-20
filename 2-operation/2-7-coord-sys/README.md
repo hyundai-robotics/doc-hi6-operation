@@ -1,9 +1,14 @@
-# 2.7 좌표계
+# 2.7 Coordinate System
 
-로봇의 이동 방향을 결정하기 위해 공간상의 좌표를 사용합니다. Hi6 제어기에는 축 좌표계, 로봇 좌표계, 사용자 좌표계, 툴 좌표계가 있습니다.
+Coordinates in space are used to determine the direction of the robot’s movement. Hi6 controller has the joint coordinate system, robot coordinate system, user coordinate system, and tool coordinate system.
 
-* 축\(Joint\) 좌표계: 축 이름 우측의 \[-/+\] 버튼을 터치하면 해당하는 축을 움직일 수 있습니다. 오른쪽 버튼은 + 방향, 왼쪽 버튼은 - 방향입니다. 예를 들어, 첫 번째 축을 축 좌표계로 움직일 경우 &lt;esc&gt; 키는 + 방향, &lt;enter&gt; 키는 - 방향이고, 두 번째 축을 움직일 경우 &lt;→&gt; 키는 + 방향, &lt;←&gt; 키는 - 방향입니다.
-* 로봇\(Robot\)/사용자\(User\)/툴\(Tool\) 좌표계: 각 좌표계를 기준으로 로봇의 툴 끝\(TCP, Tool Center Point\)을 이동 및 회전할 수 있습니다.
+* Joint coordinate system: You can move the corresponding joint when touching the \[-/+\] button on the right side of the joint name The buttons on the right are for the + direction, and the buttons on the left are for the - direction. For example, when you move the first joint in the joint coordinate system, the &lt;esc&gt; key will be for the + direction, and the &lt;enter&gt; key will be for the – direction. When you move the second joint, the &lt;→&gt; key will be for the + direction, and the &lt;←&gt; key will be for the – direction.
+
+
+
+* Robot/User/Tool Coordinate System: The tooltip \(TCP, Tool Center Point\) of the robot can be moved and rotated based on each coordinate system.
+
+
 
 
 

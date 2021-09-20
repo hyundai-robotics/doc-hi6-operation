@@ -1,4 +1,4 @@
-# 2.6 사용자 키
+# 2.6 User Buttons
 
-Hi6 티치 펜던트 화면 우측의 사용자키 영역의 버튼에 원하는 기능을 할당하여 로봇 티칭 시 편리하게 사용할 수 있습니다.
+By assigning the desired functions to the buttons in the user button area on the right side of the Hi6 teach pendant screen, you can conveniently use them when teaching a robot.
 
