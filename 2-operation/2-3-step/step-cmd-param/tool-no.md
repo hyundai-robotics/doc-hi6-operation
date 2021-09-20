@@ -1,4 +1,4 @@
-# 2.3.1.5 툴 번호
+# 2.3.1.5 Tool Number
 
-로봇 위치는 툴 끝의 위치와 자세로 결정됩니다. 사용하는 툴의 번호\(0 ~ 31\)를 지정합니다.
+The robot position will be determined by the position and posture of the tooltip. You can designate the tool number \(0–31\) that will be used.
 

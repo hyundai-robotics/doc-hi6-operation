@@ -1,4 +1,4 @@
-# 2.3.2 스텝 위치 기록 및 변경
+# 2.3.2 Recording and Changing a Step Position
 
-\[기록\] 버튼을 이용해 기록된 스텝의 로봇 위치 및 자세를 기록하거나 변경합니다.
+You can record or change the robot position and posture of the recorded step using the \[Record\] button.
 

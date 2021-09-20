@@ -1,6 +1,8 @@
-# 2.3.2.1 축 좌표 기록 좌표
+# 2.3.2.1 Axis Angle Recording Coordinate
 
-수동 모드에서 \[설정 &gt; 1: 사용자 환경\] 메뉴의 \[1: POSE 기록 형태\] 옵션이 축 좌표로 설정된 경우, move 명령문에서 \[속성\] 버튼을 터치하십시오. 다음의 속성창이 나타납니다. 엔코더로 기록된 로봇의 자세는 위치만 확인할 수 있고 위치 데이터는 수정할 수 없습니다.
+In manual mode, if the \[1: Pose Recording Form\] option in the \[Set up&gt; 1: User Environment\] menu is set to axis angle, touch the \[property\] button in the move statement. The following attributes window will appear. The position of the robot recorded by the encoder can only be checked, and the position data cannot be modified.
 
-![](../../../.gitbook/assets/image%20%2894%29.png)
+![](../../../.gitbook/assets/image%20%28319%29.png)
+
+
 

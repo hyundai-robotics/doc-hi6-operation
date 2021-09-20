@@ -1,35 +1,41 @@
-# 2.3.2.2 베이스 및 로봇 기록 좌표
+# 2.3.2.2 Base and Robot Recording Coordinates
 
-로봇의 위치와 자세는 좌표계에 따라 다르게 나타낼 수 있습니다. 주행 축이 없는 경우, 일반적으로 베이스 좌표와 로봇 좌표가 동일합니다. 주행 축이 정의된 경우, 로봇 툴의 위치와 자세는 베이스 좌표와 로봇 좌표에 따라 다르게 나타납니다.
+The position and posture of the robot can be displayed differently depending on the coordinate system. If there is no travel axis, the base coordinate and the robot coordinate will generally be the same. If the travel axis is defined, the position and posture of the robot tool will be displayed differently depending on whether it is the base coordinate and the robot coordinate.
 
-수동 모드에서 \[설정 &gt; 1: 사용자 환경\] 메뉴의 \[1: POSE 기록 형태\] 옵션이 베이스 또는 로봇으로 설정된 경우, move 명령문에서 \[속성\] 버튼을 터치하십시오. 속성창에서 로봇 툴의 위치와 자세를 확인할 수 있습니다.
+In manual mode, if the \[1: Pose Recording Form\] option in the \[Set up&gt; 1: User Environment\] menu is set to base or robot, touch the \[property\] button in the move statement. You can check the position and posture of the robot tool in the attributes window.
 
 {% hint style="info" %}
-Pose 기록 형태를 변경하려면 고객지원팀에 문의하여 전문가에게 의뢰하거나 엔지니어에게 문의하십시오.
+If you would like to change the pose recording form, please contact our customer support team to ask an expert or an engineer.
 {% endhint %}
 
-하나의 툴 끝 위치 및 방향에 대해서, 기구의 특성상 여러 자세가 있을 수 있으므로, 하나의 자세로 정의하려면 로봇 형태\(config.\)를 지정해야 합니다.
+For one tooltip position and its orientation, there may be multiple postures because of the characteristics of the instrument, so to define one posture, the robot form \(config.\) should be designated.
 
-협동로봇의 경우, 기구학적 구조에 의해 소프트 리밋에 제한될 수 있습니다. 로봇이 동작하지 않을 때 소프트 리밋을 해제하거나 큰 값으로 설정하여 사용할 수 있습니다.
+Collaborative robots can be restricted by the soft limit because of their mechanical structures. When the robot is not in operation, you can release the soft limit or set it to a large value.
 
-* auto \(자동\): 현재 로봇이 취하고 있는 자세에 대하여 이후의 항목들을 설정하지 않고 자동으로 결정합니다. 지정하지 않으면 아래의 항목들의 지정여부로 결정합니다.
-* back \(뒤쪽\): 로봇의 툴 끝이 로봇 좌표계의 X축-방향인 뒤쪽입니다. 지정하지 않으면 + 방향인 앞쪽입니다.
-* down \(하\): H축과 V축의 관계입니다. 지정하면 하, 지정하지 않으면 상입니다.
+* auto: Regarding the current posture of the robot, the items that come later will be automatically determined. If this mode is not set, a determination will be performed based on whether the items below are designated or not.
+* back: The tooltip of the robot is in the – direction on the X-axis of the robot coordinate system, meaning the rear. If this is not designated, the tooltip will be in the + direction, meaning the front. 
+* down: Relationship between the H-axis and V-axis. If this is designated, the result will be the bottom. If this is not designated, the result will be top.
 
-![&#xADF8;&#xB9BC; 23 H&#xCD95;&#xACFC; V&#xCD95; &#xC790;&#xC138;: &#xC0C1;\(&#xC88C;\), &#xD558;\(&#xC6B0;\)](../../../.gitbook/assets/image%20%2858%29%20%281%29%20%281%29.png)
+![Figure 22 Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../.gitbook/assets/image%20%2858%29%20%281%29%20%281%29.png)
 
 
 
-* flip \(플립\): B축의 좌표가 + 값인 플립입니다. 지정하지 않으면 - 값인 논플립\(non-flip\)입니다. 그림의 적색 화살표는 손목축의 상부 방향을 나타냅니다.
+* flip: Flip with the B-axis coordinate being a + value. If this is not designated, the result will be non-flip with a - value. The red arrow in the figure shows the direction of the top of the wrist axis.
 
-![&#xADF8;&#xB9BC; 24 Flip \(&#xC88C;\) / Non-flip \(&#xC6B0;\) &#xC790;&#xC138;](../../../.gitbook/assets/image%20%2875%29.png)
+![Figure 23 Flip \(Left\) / Non-flip \(Right\) Posture](../../../.gitbook/assets/image%20%2875%29.png)
 
-* S \(\|S\|&gt;=180\): S축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다. 
-* B \(\|B\|&gt;=180\): B축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다.
-* R2 \(\|R2\|&gt;=180\): R2축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다.
-* R1 \(\|R1\|&gt;=180\): R1축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다.
+* S \(\|S\|&gt;=180\): The absolute value of the S-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
+* 
+  B \(\|B\|&gt;=180\): The absolute value of the B-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
 
-좌표계는 \[포즈변수\].crd로 저장되며\(예: po32.crd\) 다음의 문자열 중 하나가 지정됩니다. 공문자열이면 기본값이 joint로 인식됩니다.
+* 
+  R2 \(\|R2\|&gt;=180\): The absolute value of the R2-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
+
+* R1 \(\|R1\|&gt;=180\): The absolute value of the R1-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
+
+
+
+The coordinate system will be saved as \[Pose Variable\].crd \(Example: po32.crd\), and one of the following strings will be designated. If it is an empty string, the basic value will be recognized as joint.
 
 <table>
   <thead>
@@ -40,22 +46,23 @@ Pose 기록 형태를 변경하려면 고객지원팀에 문의하여 전문가�
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p>&#xBCA0;&#xC774;&#xC2A4; &#xC88C;&#xD45C;&#xACC4; = &quot;base&quot;
-          <br
-          />
-        </p>
-        <p>&#xB85C;&#xBD07; &#xC88C;&#xD45C;&#xACC4; = &quot;robot&quot;
+        <p>Base coordinate system = &quot;base&quot;
           <br />
         </p>
-        <p>&#xCD95; &#xC88C;&#xD45C;&#xACC4; = &quot;joint&quot;
+        <p>Robot coordinate system = &quot;robot&quot;
           <br />
         </p>
-        <p>&#xC5D4;&#xCF54;&#xB354; = &quot;encoder&quot;
+        <p>Joint coordinate system = &quot;joint&quot;
           <br />
         </p>
-        <p>&#xC0AC;&#xC6A9;&#xC790; &#xC88C;&#xD45C;&#xACC4; = &quot;u1&quot; ~ &quot;u10&quot;
-          <br
-          />
+        <p>Encoder = &quot;encoder&quot;
+          <br />
+        </p>
+        <p>User coordinate system = &quot;u1&quot; &#x2013; &quot;u10&quot;
+          <br />
+        </p>
+        <p>
+          <br />
         </p>
       </td>
     </tr>
