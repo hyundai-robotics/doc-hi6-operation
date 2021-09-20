@@ -1,4 +1,4 @@
-# 2.1 수동 운전
+# 2.1 Manual Operation
 
-수동 운전이란 안전한 속도에서 로봇을 직접 교시하고 확인하는 운전 방법입니다.
+Manual operation is an operation method of directly teaching and checking the robot at a safe speed.
 
