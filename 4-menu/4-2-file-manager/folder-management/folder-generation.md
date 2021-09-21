@@ -1,10 +1,10 @@
-# 4.2.3.2 폴더 생성
+# 4.2.3.2 Folder Creation
 
-1.	폴더 목록에서 티치 펜던트의 조그 다이얼을 이용해 폴더를 선택한 후 화면 우측의 \[새 폴더\] 버튼을 터치하십시오. 선택한 폴더의 하위에 새 폴더가 추가됩니다.
+1.	Select a folder in the folder list using the jog dial of the teach pendant and then touch the \[New Folder\] button on the right side of the screen. Then, a new folder will be added under the selected folder.
 
-![](../../../.gitbook/assets/image%20%28117%29.png)
+![](../../../.gitbook/assets/image%20%28221%29.png)
 
-2.	새 폴더의 이름을 입력한 후 &lt;enter&gt; 키를 누르십시오.
+2.	Input the name of the new folder and then press the &lt;enter&gt; key.
 
-![](../../../.gitbook/assets/image%20%28136%29.png)
+![](../../../.gitbook/assets/image%20%28194%29.png)
 

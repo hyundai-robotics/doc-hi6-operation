@@ -1,4 +1,4 @@
-# 4.2.3 폴더 관리
+# 4.2.3 Folder Management
 
-폴더를 삭제하거나 새 폴더를 추가합니다.
+You can delete a folder or add a new one.
 

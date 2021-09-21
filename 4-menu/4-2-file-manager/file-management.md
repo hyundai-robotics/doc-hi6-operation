@@ -1,38 +1,37 @@
-# 4.2.1 파일 관리
+# 4.2.1 File Management
 
-하나 혹은 여러 파일을 선택하여 복사, 이동 및 삭제합니다.
+Select one or multiple files to copy, move, or delete.
 
-1.	폴더 목록에서 티치 펜던트의 조그 다이얼을 이용해 폴더를 선택하십시오. 선택한 폴더에 저장된 파일 목록이 나타납니다. 
+1.	Select a folder in the folder list using the jog dial on the teach pendant. A list of files saved in the selected folder will appear.
 
-![](../../.gitbook/assets/image%20%28133%29.png)
+![](../../.gitbook/assets/image%20%28238%29.png)
 
-2.	파일 목록에서 원하는 파일을 터치하여 선택하십시오. 
+2.	Select the desired file in the file list by touching it.
 
-![](../../.gitbook/assets/image%20%28135%29.png)
+![](../../.gitbook/assets/image%20%28315%29.png)
 
-* &lt;ctrl&gt; 키를 누른 상태에서 파일을 터치하면 여러 파일을 하나씩 선택할 수 있습니다.
-* &lt;shift&gt; 키를 누른 상태에서 두 파일을 터치하면 두 파일 사이의 모든 파일을 한 번에 선택할 수 있습니다.
-* 화면 우측의 \[전체선택\] 버튼을 터치하면 모든 파일을 한 번에 선택할 수 있습니다.
-* 파일 선택을 취소하려면 &lt;esc&gt; 키를 누르십시오.
+* You can select multiple files one by one by touching each file while pressing the &lt;ctrl&gt; key.
+* If you touch two files while pressing the &lt;shift&gt; key, you can select all files between the two files at once.
+* If you touch the \[Select All\] button on the right side of the screen, you can select all files at once.
 
+  Press the &lt;esc&gt; key to cancel the file selection.
 
+3.	You can copy, move, or delete the selected file using the function buttons on the right side of the screen.
 
-3.	화면 우측의 기능 버튼을 이용하여 선택한 파일을 복사, 이동 및 삭제하십시오.
+* \[Copy\]: Copy the selected file and save it in a temporary folder so that it can be pasted into another folder.
+* \[Paste\]: You can paste the file saved in the clipboard to the desired folder. 
+* \[Cut\]: You can cut the selected file and save it in a temporary folder so that it can be pasted into another folder. 
+* \[Delete\]: You can delete the selected file. A protected file \(with the protection mark \(W\_\) in the attributes\) cannot be deleted.
 
-* \[복사\]: 선택한 파일을 복사하여 다른 폴더에 붙여 넣을 수 있도록 임시 폴더에 저장합니다.
-* \[붙여넣기\]: 클립보드에 저장한 파일을 원하는 폴더에 붙여 넣습니다.
-* \[잘라내기\]: 선택한 파일을 잘라내어 다른 폴더에 붙여 넣을 수 있도록 임시 폴더에 저장합니다.
-* \[삭제\]: 선택한 파일을 삭제합니다. 보호 설정된 파일\(속성에 보호 표시\(W\_\)\)은 삭제할 수 없습니다.
+4.	To paste a file into a folder, select the folder using the jog dial and then touch the \[Paste\] button. Then, the file will be pasted to the selected folder.
 
-4.	파일을 폴더에 붙여 넣기할 경우, 조그 다이얼로 폴더를 선택한 후 \[붙여넣기\] 버튼을 터치하십시오. 선택한 폴더에 파일이 붙여 넣기됩니다. 
+![](../../.gitbook/assets/image%20%28255%29.png)
 
-![](../../.gitbook/assets/image%20%28129%29.png)
+If the selected folder has a file with a duplicate name, a duplication notification window will appear. Handle it by setting whether to overwrite it.
 
-* 선택한 폴더에 같은 이름의 파일이 있으면 중복 알림창이 나타납니다. 덮어쓰기 여부를 설정하여 처리하십시오. 
+![](../../.gitbook/assets/image%20%28311%29.png)
 
-![](../../.gitbook/assets/image%20%28111%29.png)
+* To delete a file, touch the \[Delete\] button, and then touch the \[ENTER\] button in the confirmation window.
 
-* 파일을 삭제할 경우, \[삭제\] 버튼을 터치한 후 확인창에서 \[확인\] 버튼을 터치하십시오.
-
-![](../../.gitbook/assets/image%20%28115%29.png)
+![](../../.gitbook/assets/image%20%28359%29.png)
 

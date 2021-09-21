@@ -1,12 +1,12 @@
-# 4.2.3.1 폴더 삭제
+# 4.2.3.1 Folder Deletion
 
-1.	폴더 목록에서 티치 펜던트의 조그 다이얼을 이용해 폴더를 선택한 후 화면 우측의 \[삭제\] 버튼을 터치하십시오. 
+1.	Select a folder in the folder list using the jog dial on the teach pendant and then touch the \[Delete\] button on the right side of the screen.
 
-![](../../../.gitbook/assets/image%20%28137%29.png)
+![](../../../.gitbook/assets/image%20%28304%29.png)
 
-2.	확인창에서 \[확인\] 버튼을 터치하십시오. 선택한 폴더와 폴더에 저장된 파일이 모두 삭제됩니다.
+2.	In the confirmation window, touch the \[ENTER\] button. The selected folder and all files saved in it will be deleted.
 
-![](../../../.gitbook/assets/image%20%28130%29.png)
+![](../../../.gitbook/assets/image%20%28320%29.png)
 
 
 

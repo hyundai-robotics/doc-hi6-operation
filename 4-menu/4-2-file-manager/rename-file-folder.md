@@ -1,24 +1,30 @@
-# 4.2.2 파일명 및 폴더명 변경
+# 4.2.2 Renaming of a File and Folder
 
-파일 또는 폴더의 이름을 변경합니다. 여러 파일이나 폴더의 이름을 한 번에 변경할 수도 있습니다.
+You can rename a file or folder. You can also rename multiple files or folders at once.
 
-1.	파일\(또는 폴더\) 목록에서 원하는 파일\(또는 폴더\)을 터치하여 선택한 후 화면 우측에서 \[이름변경\] 버튼을 터치하십시오.
+1.	Touch the desired file \(or folder\) in the file \(or folder\) list to select it, and then touch the \[Rename\] button on the right side of the screen.
 
-![](../../.gitbook/assets/image%20%28121%29.png)
+![](../../.gitbook/assets/image%20%2881%29.png)
 
-2.	입력 영역에 파일\(또는 폴더\) 이름을 입력하십시오.
+2.	Input the file \(or folder\) name in the input area.
 
-![](../../.gitbook/assets/image%20%28128%29.png)
+![](../../.gitbook/assets/image%20%28321%29.png)
 
-* 숫자는 티치 펜던트의 조작 키를 이용해 간단히 입력할 수 있습니다. \(&lt;←/→&gt; 키: 커서 이동, 숫자키: 숫자 입력\)
-* 숫자를 포함한 텍스트를 입력하려면 이력 표시줄의 \[![](../../.gitbook/assets/image%20%28110%29.png)\] 버튼을 터치하여 소프트 키보드를 이용하십시오.
+* You can input the number simply by using the operation keys on the teach pendant. \(&lt;←/→&gt; keys: For moving the cursor. Number keys: For inputting a number\)
+* 
+  To input a text including numbers, touch the \[ ![](../../.gitbook/assets/bt-dock-softkb.png) \] button on the log bar to use the soft keyboard.
 
-3.	&lt;enter&gt; 키를 누르십시오. 목록에 입력한 이름으로 변경되어 나타납니다.
+3.	Press the &lt;enter&gt; key. Then, the new name you inputted in the list will appear.
 
 {% hint style="info" %}
-* 보호 설정된 파일도 이름을 변경할 수 있습니다.
-* 파일의 이름을 변경해도 크기, 수정 날짜, 속성 등의 정보는 기존과 동일하게 유지됩니다.
-* R코드의 “R116 프로그램 번호 변경”과 동일한 기능입니다.
+* You can also rename a protected file.
+* 
+  Even if a file is renamed, the information such as size, modified date, and attributes will remain the same as before.
+
+* 
+  It is the same function as “R116 Program Number Change” of R codes.
+
+
 {% endhint %}
 
 
