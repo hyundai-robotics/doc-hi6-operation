@@ -1,2 +1,2 @@
-# 3.2.2 명령문 입력
+# 3.2.2 Statement Inputting
 

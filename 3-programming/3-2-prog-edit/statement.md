@@ -1,23 +1,25 @@
-# 3.2.1 명령문
+# 3.2.1 Statements
 
-일반적인 프로그램은 로봇의 이동을 지시하는 스텝 명령문과 이동 후 작업을 지시하는 펑션 명령문으로 구성됩니다.
+A general program consists of a step command that instructs the robot to move and a function command that instructs the robot to carry out work after the movement.
 
-명령문은 크게 명령어와 부가 항목인 인수\(Parameter\)로 나뉘며 인수에는 명령문에 반드시 필요한 기본 인수와 생략 가능한 선택 인수가 있습니다.
+A statement is largely divided into a command and a parameter, which is an additional item. The parameters are divided into default parameters essential for a statement and optional parameters that can be omitted.
 
 ![](../../.gitbook/assets/image%20%2882%29.png)
 
-| 번호 | 설명 | 번호 | 설명 |
+
+
+| No. | Description | No. | Description |
 | :--- | :--- | :--- | :--- |
-| ![](../../.gitbook/assets/c1.png)  | 스텝 번호 | ![](../../.gitbook/assets/c3.png)  | 인수 |
-| ![](../../.gitbook/assets/c2.png)  | 명령어 | ![](../../.gitbook/assets/c4.png)  | 주석 |
+| ![](../../.gitbook/assets/c1.png)  | Step number | ![](../../.gitbook/assets/c3.png)  | Parameter |
+| ![](../../.gitbook/assets/c2.png)  | Command | ![](../../.gitbook/assets/c4.png)  | Comment |
 
 {% hint style="info" %}
-인수에 대한 자세한 내용은 “2.3.1 스텝 명령문 인수”를 참조하십시오.
+For details on parameters, refer to “2.3.1 Step Statement Parameters.”
 {% endhint %}
 
-명령문을 입력하면 기본 인수에는 기본 설정값이 자동으로 입력되며 변경할 수 있습니다. 선택 인수는 기호\( \_ \)로 표시되며 이곳을 선택하면 인수값을 입력할 수 있습니다. 인수에 따라 화면 우측에 입력 가능한 인수가 버튼으로 나타납니다.
+When you input a statement, basic setting values will be automatically inputted into the default parameters and can be changed. Optional parameters are marked with a symbol \( \_ \), and you can input the parameter values by selecting the parameters. Moreover, parameters that can be inputted will be displayed as buttons on the right side of the screen.
 
-![&#xADF8;&#xB9BC; 28 &#xBA85;&#xB839;&#xBB38; &#xD3B8;&#xC9D1; - &#xC778;&#xC218;&#xAC12; &#xC785;&#xB825;](../../.gitbook/assets/image%20%2876%29.png)
+![Figure 27 Editing a Command &#x2013; Inputting Parameter Values](../../.gitbook/assets/image%20%28348%29.png)
 
-명령어 인수를 편집할 때는 티치 펜던트의 조작키와 화면 우측의 메뉴 버튼을 이용하거나 소프트 키보드를 이용하여 변수나 수식, 문자열을 편집할 수 있습니다.
+When editing the command parameters, you can edit variables, expressions, and strings by using the operation keys on the teach pendant and the menu buttons on the right side of the screen, or by using the soft keyboard.
 

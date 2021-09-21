@@ -1,6 +1,6 @@
-# 3.2    프로그램 작성
+# 3.2 Program Writing
 
-원하는 결과를 얻기 위해 로봇의 동작을 지시하는 다양한 명령문으로 구성된 프로그램을 작성하고 편집합니다. 프로그램은 수동 모드에서 작성할 수 있습니다.
+To get the desired result, you can write and edit a program consisting of various statements that instruct the robot to operate. You can write programs in manual mode.
 
 
 
