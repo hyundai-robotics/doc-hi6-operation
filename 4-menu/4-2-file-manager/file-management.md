@@ -8,7 +8,7 @@ Select one or multiple files to copy, move, or delete.
 
 2.	Select the desired file in the file list by touching it.
 
-![](../../.gitbook/assets/image%20%28359%29.png)
+![](../../.gitbook/assets/image%20%28360%29.png)
 
 * You can select multiple files one by one by touching each file while pressing the &lt;ctrl&gt; key.
 * If you touch two files while pressing the &lt;shift&gt; key, you can select all files between the two files at once.
@@ -29,9 +29,9 @@ Select one or multiple files to copy, move, or delete.
 
 If the selected folder has a file with a duplicate name, a duplication notification window will appear. Handle it by setting whether to overwrite it.
 
-![](../../.gitbook/assets/image%20%28323%29.png)
+![](../../.gitbook/assets/image%20%28359%29.png)
 
 * To delete a file, touch the \[Delete\] button, and then touch the \[ENTER\] button in the confirmation window.
 
-![](../../.gitbook/assets/image%20%28369%29.png)
+![](../../.gitbook/assets/image%20%28370%29.png)
 

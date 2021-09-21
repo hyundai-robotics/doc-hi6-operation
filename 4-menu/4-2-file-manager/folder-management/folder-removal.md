@@ -6,7 +6,7 @@
 
 2.	In the confirmation window, touch the \[ENTER\] button. The selected folder and all files saved in it will be deleted.
 
-![](../../../.gitbook/assets/image%20%28363%29.png)
+![](../../../.gitbook/assets/image%20%28364%29.png)
 
 
 
