@@ -1,20 +1,20 @@
-# 3.2.4.2 명령문 편집 예
+# 3.2.4.2 Example of Statement Editing
 
-보간 인수를 P \(축 보간\)에서 L \(직선 보간\)로 변경하는 것을 예로 들어, 명령문을 편집하는 방법에 대해 설명합니다.
+With an example of changing the interpolation parameter from P \(joint interpolation\) to L \(linear interpolation\), the following describes how to edit a statement.
 
-1.	문장 커서 상태에서 티치 펜던트의 &lt;enter&gt; 키를 누르십시오. 단어 커서 상태가 되어 move 문의 보간 인수인 P \(축 보간\)가 선택됩니다. 입력 영역에는 보간의 현재 설정값인 P가 표시되고 입력 가능한 보간 인수가 화면 우측에 버튼으로 나타납니다.
+1.	Press the &lt;enter&gt; key on the teach pendant while in the statement cursor status. Then, the statement cursor will change to the word cursor status, allowing the P \(joint interpolation\), which is the interpolation parameter of the move statement, to be selected. In the input area, P, which is the current setting value of interpolation, will be displayed and the interpolation parameter that can be inputted will be displayed as buttons on the right side of the screen.
 
 ![](../../../.gitbook/assets/image%20%2851%29.png)
 
-2.	화면 우측의 버튼 중 \[L\] 버튼을 터치하십시오. 입력 영역에 L \(직선 보간\)이 표시됩니다. 
+2.	Touch the \[L\] button among the buttons on the right side of the screen. Then, L \(linear interpolation\) will be displayed in the input area.
 
 ![](../../../.gitbook/assets/image%20%2859%29.png)
 
-3.	&lt;enter&gt; 키를 누르십시오. 명령문의 보간 인수가 L로 변경되고 커서가 다음 인수로 이동하여 이동 속도가 선택됩니다.
+3.	Press the &lt;enter&gt; key. The interpolation parameter of the statement will change to L, and then the cursor will move to the next parameter, allowing the moving speed to be selected.
 
 ![](../../../.gitbook/assets/image%20%2869%29.png)
 
-4.	&lt;enter&gt; 키를 눌러 편집을 완료하십시오. 변경 내용이 JOB 프로그램에 저장되고 문장 커서 상태로 돌아갑니다.
+4.	Press the &lt;enter&gt; key to complete editing. The contents of the change will be saved in the JOB program, and then the cursor will return to the statement cursor status.
 
 
 

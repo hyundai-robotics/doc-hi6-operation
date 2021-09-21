@@ -1,17 +1,17 @@
-# 3.2.3 명령문 구성
+# 3.2.3 Statement Configuration
 
-명령문은 주소 영역과 명령문 영역으로 구성됩니다.
+A statement consists of an address area and a statement area. 
 
-![&#xADF8;&#xB9BC; 29 &#xBA85;&#xB839;&#xBB38;&#xC758; &#xAD6C;&#xC131; &#xC601;&#xC5ED;](../../.gitbook/assets/image%20%28106%29.png)
+![Figure 28 Areas Comprising a Statement](../../.gitbook/assets/image%20%28106%29.png)
 
-| 번호 | 영역 | 설명 |
+| No. | Area | Description |
 | :--- | :--- | :--- |
-| ![](../../.gitbook/assets/c1.png)  | 주소 영역 | 행 번호\(1 ~ 9999\)와 스텝 번호 \(S1 ~ S999\)가 표시됩니다. |
-| ![](../../.gitbook/assets/c2.png)  | 명령문 영역 | 명령문이 표시됩니다. |
+| ![](../../.gitbook/assets/c1.png) | Address area | Displays the line number \(1 to 9999\) and step number \(S1 to S999\) |
+| ![](../../.gitbook/assets/c2.png) | Statement area | Displays a statement |
 
-티치 펜던트의 &lt;←/→&gt; 키를 눌러 주소 영역과 명령문 영역 사이에서 커서의 위치를 이동할 수 있습니다. &lt;↓/↑&gt; 키를 누르면 선택된 영역 내의 행 사이에서 커서를 위아래로 이동할 수 있습니다.
+You can move the cursor position between the address area and the statement area by pressing the &lt;←/→&gt; key on the teach pendant. Pressing the &lt;↓/↑&gt; key will allow you to move the cursor up and down between the lines within the selected area.
 
-![&#xADF8;&#xB9BC; 30 &#xC601;&#xC5ED; &#xAC04; &#xCEE4;&#xC11C; &#xC774;&#xB3D9;\(&#xC88C;: &#xC8FC;&#xC18C; &#xC601;&#xC5ED;, &#xC6B0;: &#xBA85;&#xB839;&#xBB38; &#xC601;&#xC5ED;\)](../../.gitbook/assets/image%20%2886%29.png)
+![Figure 29 Moving the Cursor Between Areas \(Left: Address Area. Right: Statement Area\)](../../.gitbook/assets/image%20%2886%29.png)
 
 
 

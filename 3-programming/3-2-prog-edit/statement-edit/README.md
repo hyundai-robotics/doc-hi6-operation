@@ -1,14 +1,14 @@
-# 3.2.4 명령문 편집
+# 3.2.4 Statement Editing
 
-티치 펜던트의 조작키와 화면 우측의 메뉴 버튼을 이용하여 JOB 프로그램창에서 명령문을 편집합니다. 소프트 키보드를 이용하면 변수나 수식, 문자열을 편집할 수 있습니다.
+You can edit the statement in the JOB program window using the operation keys on the teach pendant and the menu buttons on the right side of the screen. Using the soft keyboard, you can edit variables, expressions, and strings.
 
-명령문 영역은 선택된 대상에 따라 커서 상태를 전환하여 명령문을 확인 및 편집할 수 있습니다.
+In the statement area, you can check and edit statements by switching the status of the cursor according to the selected object.
 
-* 문장 커서 상태: 명령문의 한 행 전체가 선택 상태로 명령문을 확인할 수 있습니다. 
+* Statement cursor Status: You can check a statement while the entire line of the statement is selected.
 
 ![](../../../.gitbook/assets/image%20%2841%29.png)
 
-* 명령문 커서 상태: 명령문의 개별 인수가 선택된 상태로 명령문을 확인하고 편집할 수 있습니다.
+* Word cursor Status: You can check and edit a statement while the individual parameters of the statement are selected.
 
 ![](../../../.gitbook/assets/image%20%2864%29.png)
 

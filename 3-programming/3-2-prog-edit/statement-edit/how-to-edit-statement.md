@@ -1,24 +1,26 @@
-# 3.2.4.1 명령문 편집 방법
+# 3.2.4.1 Statement Editing Method
 
-명령문을 편집하는 방법은 다음과 같습니다.
+The following shows how to edit a statement.
 
-1.	JOB 프로그램창에서 티치 펜던트의 &lt;←/→&gt; 키를 눌러 명령문 영역을 선택하십시오. 명령문 영역이 문장 커서 상태로 선택됩니다.
+1.	In the JOB program window, select the statement area by pressing the &lt;←/→&gt; key on the teach pendant. The statement area will be selected while in the statement cursor status.
 
-2.	문장 커서 상태에서 티치 펜던트의 &lt;enter&gt; 키를 누르십시오. 명령문 커서 상태가 되어 인수가 선택되고 하단의 입력 영역에 선택된 인수값이 나타납니다.
+2.	Press the &lt;enter&gt; key on the teach pendant while in the statement cursor status. Then, switching to the statement cursor status will occur and a parameter will be selected, and the selected parameter value will appear in the input area at the bottom.
 
-3.	티치 펜던트의 조작키와 화면 우측의 메뉴 버튼을 이용하여 인수값을 편집하십시오.
+3.	Edit the parameter value using the operation keys on the teach pendant and the menu buttons on the right side of the screen.
 
-* &lt;←/→&gt; 키를 누르면 인수 사이에서 커서를 좌우로 이동할 수 있습니다.
-* 인수에 따라 화면 우측에 입력 가능한 인수가 버튼으로 나타납니다. 원하는 버튼을 선택하면 간편히 인수를 입력할 수 있습니다.
-* 소프트 키보드를 이용하여 변수나 수식, 문자열을 편집할 수 있습니다.
+* Pressing the &lt;←/→&gt; key will allow you to move the cursor in the left or right direction between parameters
+* Parameters that can be inputted will be displayed as buttons on the right side of the screen. You can easily input parameters by selecting the desired buttons.
+* You can edit variables, expressions, and strings using the soft keyboard. 
 
-4.	&lt;enter&gt; 키를 누르십시오. 변경 내용이 적용되어 명령문의 인수값이 변경되고 커서가 다음 인수로 이동합니다.
+4.	Press the &lt;enter&gt; key. Then, the contents of the change will be applied, allowing the parameter value of the statement to be changed and the cursor to move to the next parameter.
 
-* 변경 내용을 취소하려면, &lt;esc&gt; 키를 누르십시오.
+* To cancel the change, press the &lt;esc&gt; key.
 
-5.	2 ~ 3번 절차를 반복하여 다른 인수를 편집하십시오.
+5.	You can edit another parameter by repeating the above steps 2–3.
 
-6.	&lt;enter&gt; 키를 눌러 편집을 완료하십시오. 변경 내용이 JOB 프로그램에 저장되고 문장 커서 상태로 돌아갑니다.
+6.	Press the &lt;enter&gt; key to complete the editing. The changes will be saved in the JOB program, and the cursor will return to the statement cursor status.
+
+
 
 
 
