@@ -19,7 +19,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
       <td style="text-align:left">
         <img src="../../.gitbook/assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">&#xC870;&#xC791;&#xD0A4;</td>
+      <td style="text-align:left">&#xC870;&#xC791;&#xD0A4;2</td>
       <td style="text-align:left">&#xB85C;&#xBD07;&#xC758; &#xB3D9;&#xC791;&#xC744; &#xC81C;&#xC5B4;&#xD558;&#xACE0;
         &#xBA85;&#xB839;&#xC744; &#xC785;&#xB825;&#xD558;&#xAC70;&#xB098; &#xBA54;&#xB274;&#xB97C;
         &#xC120;&#xD0DD;&#xD558;&#xACE0; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</td>
