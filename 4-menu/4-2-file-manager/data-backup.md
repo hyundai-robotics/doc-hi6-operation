@@ -1,16 +1,16 @@
-# 4.2.5 데이터 백업
+# 4.2.5 Data Backup
 
-메모리 버퍼의 이력을 파일로 저장하고 프로젝트\(project/\)와 이력\(log/\) 폴더를 백업합니다.
+You can save the history of the memory buffer as a file, and back up the project \(project/\) and history \(log/\) folders.
 
-1.	폴더 목록의 티치 펜던트\(T/P\) 또는 이동식 저장 장치\(USB\)에서 티치 펜던트의 조그 다이얼을 이용해 데이터 백업을 저장할 폴더를 선택하십시오. 
+1.	By using the jog dial on the teach pendant, select the folder where you want to save the backup data in the teach pendant \(T/P\) or removable storage device \(USB\) folder in the folder list.
 
-![](../../.gitbook/assets/image%20%28127%29.png)
+![](../../.gitbook/assets/image%20%28363%29.png)
 
-2.	&lt;shift&gt; 키를 누른 상태에서 화면 우측의 \[전체 백업\] 버튼을 터치하십시오. 데이터 백업이 시작됩니다. 
+2.	While pressing the &lt;shift&gt; key, touch the \[Select all\] button at the right side of the screen. The data backup will start.
 
-![](../../.gitbook/assets/image%20%28112%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%28364%29.png)
 
-3.	데이터 백업\(약 30 초 소요\)이 완료되면 알림창에서 백업 결과를 확인하십시오.
+3.	When data backup \(it will take about 30 seconds\) is completed, check the backup result in the notification window.
 
-![](../../.gitbook/assets/image%20%28138%29.png)
+![](../../.gitbook/assets/image%20%28221%29.png)
 

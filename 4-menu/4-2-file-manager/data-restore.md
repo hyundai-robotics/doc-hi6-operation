@@ -1,20 +1,22 @@
-# 4.2.6 데이터 복원
+# 4.2.6 Data Restoration
 
-백업 프로젝트\(project/\) 및 이력\(log/\)을 복원합니다.
+This function helps restore the project \(project/\) and history \(log/\) that are previously backed up.
 
-1.	폴더 목록의 티치 펜던트\(T/P\) 또는 이동식 저장 장치\(USB\)에서 티치 펜던트의 조그 다이얼을 이용해 프로젝트 또는 이력이 백업된 폴더를 선택한 후 화면 우측의 \[복사\] 버튼을 터치하십시오.
-
-![](../../.gitbook/assets/image%20%28119%29.png)
-
-2.	폴더 목록에서 티치 펜던트의 조그 다이얼을 이용해 \[MAIN\]을 선택한 후 화면 우측의 \[붙여넣기\] 버튼을 터치하십시오. 
-
-![](../../.gitbook/assets/image%20%28120%29.png)
-
-3.	중복 ~~~~알림창에서 \[전부\] 체크박스를 터치하여 선택한 후 \[확인\] 버튼을 터치하십시오. 메인 보드에 백업 데이터가 복원됩니다.
-
-![](../../.gitbook/assets/image%20%28123%29.png)
-
- 4.	제어기의 전원을 다시 켜십시오.
+1.	By using the teach pendant’s jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device \(USB\), and then touch the \[Copy\] button.
 
 
+
+![](../../.gitbook/assets/image%20%28361%29.png)
+
+2.	By using the teach pendant’s jog dial, select the \[MAIN\] folder in the folder list, and then touch the \[Paste\] button.
+
+![](../../.gitbook/assets/image%20%28360%29.png)
+
+
+
+3.	In the duplicate notification window, touch the checkbox for \[All\] to select it, and then touch the \[OK\] button. The backup data will be restored on the main board.
+
+![](../../.gitbook/assets/image%20%28255%29.png)
+
+4.	Turn the power of the controller back on.
 
