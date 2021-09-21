@@ -4,7 +4,7 @@
 
 Accuracy에 의해 새롭게 만들어진 Accuracy 범위\(0 ~ 7\) 내에 있는 경로를 코너링 경로라고 합니다. 일반적으로 Accuracy가 클수록 코너링 속도가 빨라지므로 이동 시간 측면에서 유리합니다.
 
-![&#xADF8;&#xB9BC; 19 Accuracy&#xC5D0; &#xB530;&#xB978; P2&#xC758; &#xACBD;&#xB85C; &#xBCC0;&#xD654;](../../../.gitbook/assets/image%20%2853%29.png)
+![그림 19 Accuracy에 따른 P2의 경로 변화](../../../.gitbook/assets/image%20%2853%29.png)
 
 Accuracy 0이 가장 정밀하고 Accuracy 7은 오차가 가장 큽니다. Accuracy는 목표 스텝 양쪽 궤적 중 짧은 궤적 길이의 1/2보다는 크게 적용되지 않습니다. 즉, 위의 예에서 “Accuracy ≤ min\(P1-P2, P2-P3\) / 2” 수식을 적용할 수 있습니다. 이 수식에서는 TCP 거리로 설명하였으나 각도에서도 동일한 개념을 적용할 수 있습니다.
 
@@ -14,7 +14,7 @@ Accuracy level의 적용 값은 로봇의 경우에는 로봇의 툴 끝 거리 
 
 
 
-![&#xADF8;&#xB9BC; 20 Accuracy level &#xAC12;&#xC5D0; &#xB530;&#xB978; &#xCF54;&#xB108;&#xB9C1; &#xACBD;&#xB85C; &#xC0DD;&#xC131;](../../../.gitbook/assets/image%20%2879%29.png)
+![그림 20 Accuracy level 값에 따른 코너링 경로 생성](../../../.gitbook/assets/image%20%2879%29.png)
 
 {% hint style="info" %}
 Accuracy level 값에 따른 코너링 경로 생성 방식은 모든 보간 종류에서 동일하게 적용됩니다. P 보간인 경우에는 TCP 거리 Accuracy가 적용되지만 오차가 발생할 수 있습니다.
@@ -22,5 +22,5 @@ Accuracy level 값에 따른 코너링 경로 생성 방식은 모든 보간 종
 
 코너링 경로는 Convex hull property에 의해 다음의 convex polygon 영역을 벗어나지 않습니다.
 
-![&#xADF8;&#xB9BC; 21 Convex polygon &#xC601;&#xC5ED; &#xB0B4;&#xC758; &#xCF54;&#xB108;&#xB9C1; &#xACBD;&#xB85C;&#xC758; &#xBAA8;&#xB4E0; &#xC810;](../../../.gitbook/assets/image%20%2887%29.png)
+![그림 21 Convex polygon 영역 내의 코너링 경로의 모든 점](../../../.gitbook/assets/image%20%2887%29.png)
 

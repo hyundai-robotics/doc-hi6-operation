@@ -18,19 +18,19 @@
 
 실행 단위를 **cmd** 또는 **step**으로 설정하고 스텝 전후진을 수행할 때는 코너링이 없는 경로상에서 로봇이 동작합니다. 코너링에 대한 자세한 내용은 “2.3.1.4 Accuracy”를 참조하십시오.
 
-![&#xADF8;&#xB9BC; 12 cmd/step &#xC124;&#xC815; &#xC2DC; &#xC7AC;&#xC0DD; &#xC804;&#xD6C4;&#xC9C4; &#xACBD;&#xB85C;](../../.gitbook/assets/path-cmd-step-pback-fwd-bwd.png)
+![그림 12 cmd/step 설정 시 재생 전후진 경로](../../.gitbook/assets/path-cmd-step-pback-fwd-bwd.png)
 
 
 
 실행 단위를 **end**로 설정하고 스텝 전후진을 수행하면 정지 위치에 따라 로봇의 경로가 달라집니다. 즉, 로봇이 코너링이 아닌 다른 곳에서 정지한 후 전진을 실행하면 원래 코너링의 경로를 복구하지만, 후진을 실행하면 기록된 스텝까지 이동하며 이 때 기록된 스텝에서는 정지 후 즉각 이전 스텝으로 이동합니다. 로봇이 코너링에서 정지한 후에는 전후진 시 모두 이전의 코너 경로를 유지합니다.
 
-![&#xADF8;&#xB9BC; 13 end &#xC124;&#xC815; &#xC2DC; &#xC7AC;&#xC0DD; &#xC804;&#xD6C4;&#xC9C4; &#xACBD;&#xB85C;](../../.gitbook/assets/path-end-pback-fwd-bwd.png)
+![그림 13 end 설정 시 재생 전후진 경로](../../.gitbook/assets/path-end-pback-fwd-bwd.png)
 
 
 
 로봇이 코너링에서 정지한 후 전진을 실행하면 원래 코너 경로를 따라 동작합니다. 여기서 다시 후진을 실행하다가 이전 스텝에 다 도달하지 못한 상태에서 다시 전진을 실행할 때는 원래의 코너링의 경로를 만들지 못하는 경우가 있습니다. 즉, 스텝의 거리가 원래 보다 짧아져서 기존의 Accuracy 조건을 만족할 수 없으면 원래의 코너 경로 보다 작게 코너 경로가 만들어집니다.
 
-![&#xADF8;&#xB9BC; 14 &#xC2A4;&#xD15D; &#xD6C4;&#xC9C4; &#xD6C4; &#xC804;&#xC9C4; &#xC2DC; &#xB85C;&#xBD07; &#xACBD;&#xB85C; &#xBCC0;&#xACBD; &#xC608;](../../.gitbook/assets/path-step-bwd-then-fwd.png)
+![그림 14 스텝 후진 후 전진 시 로봇 경로 변경 예](../../.gitbook/assets/path-step-bwd-then-fwd.png)
 
 
 

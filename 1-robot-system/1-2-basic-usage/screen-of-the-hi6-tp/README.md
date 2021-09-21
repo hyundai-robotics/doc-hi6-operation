@@ -7,8 +7,8 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -16,71 +16,71 @@
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">&#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904;&#xC785;&#xB2C8;&#xB2E4;. &#xD2F0;&#xCE58;
-        &#xD39C;&#xB358;&#xD2B8;&#xC758; &#xD1B5;&#xC2E0; &#xC0C1;&#xD0DC;&#xC640;
-        &#xC6B4;&#xC804; &#xBAA8;&#xB4DC;, &#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758;
-        &#xC0C1;&#xD0DC;&#xC640; &#xBA54;&#xCEE4;&#xB2C8;&#xC998;&#xC744; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.
-        &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.1 &#xC0C1;&#xD0DC;
-        &#xD45C;&#xC2DC;&#xC904;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
+      <td style="text-align:left">상태 표시줄입니다. 티치
+        펜던트의 통신 상태와
+        운전 모드, 로봇 시스템의
+        상태와 메커니즘을 표시합니다.
+        자세한 내용은 “1.2.3.1 상태
+        표시줄”을 참조하십시오.</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">&#xAE30;&#xB2A5; &#xBC84;&#xD2BC;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC124;&#xC815;&#xAC12;&#xC744;
-        &#xD655;&#xC778;&#xD558;&#xACE0; &#xBCC0;&#xACBD;&#xD569;&#xB2C8;&#xB2E4;.
-        &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.3 &#xAE30;&#xB2A5;
-        &#xBC84;&#xD2BC;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
+      <td style="text-align:left">기능 버튼을 이용해 설정값을
+        확인하고 변경합니다.
+        자세한 내용은 “1.2.3.3 기능
+        버튼”을 참조하십시오.</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c3.png" alt/>
       </td>
-      <td style="text-align:left">&#xC791;&#xC5C5; &#xC601;&#xC5ED;&#xC785;&#xB2C8;&#xB2E4;. JOB &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744;
-        &#xD3B8;&#xC9D1;&#xD558;&#xACE0; &#xBAA8;&#xB2C8;&#xD130;&#xB9C1; &#xC815;&#xBCF4;&#xB97C;
-        &#xD655;&#xC778;&#xD558;&#xB294; &#xB4F1; &#xB2E4;&#xC591;&#xD55C; &#xC791;&#xC5C5;&#xC744;
-        &#xC218;&#xD589;&#xD569;&#xB2C8;&#xB2E4;. &#xC5EC;&#xB7EC; &#xC791;&#xC5C5;&#xC744;
-        &#xB3D9;&#xC2DC;&#xC5D0; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
+      <td style="text-align:left">작업 영역입니다. JOB 프로그램을
+        편집하고 모니터링 정보를
+        확인하는 등 다양한 작업을
+        수행합니다. 여러 작업을
+        동시에 수행할 수 있습니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c4.png" alt/>
       </td>
-      <td style="text-align:left">&#xBA54;&#xB274; &#xBC84;&#xD2BC;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xBA54;&#xB274;&#xC758;
-        &#xC124;&#xC815;&#xAC12;&#xC744; &#xD655;&#xC778; &#xBC0F; &#xBCC0;&#xACBD;&#xD558;&#xACE0;,
-        &#xB2E4;&#xC591;&#xD55C; &#xAE30;&#xB2A5;&#xC744; &#xC2E4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.
-        &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.4 &#xBA54;&#xB274;
-        &#xBC84;&#xD2BC;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
+      <td style="text-align:left">메뉴 버튼을 이용해 메뉴의
+        설정값을 확인 및 변경하고,
+        다양한 기능을 실행합니다.
+        자세한 내용은 “1.2.3.4 메뉴
+        버튼”을 참조하십시오.</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c5.png" alt/>
       </td>
-      <td style="text-align:left">&#xC870;&#xADF8; &#xB9C9;&#xB300;&#xC785;&#xB2C8;&#xB2E4;. [&#xC88C;&#xD45C;&#xACC4;]
-        &#xBC84;&#xD2BC;&#xC73C;&#xB85C; &#xC120;&#xD0DD;&#xD55C; &#xC870;&#xADF8;
-        &#xC218;&#xD589;&#xC758; &#xAE30;&#xC900; &#xC88C;&#xD45C;&#xACC4;&#xC5D0;
-        &#xB530;&#xB77C; &#xBCC0;&#xACBD;&#xB41C; &#xCD95;&#xC758; &#xC774;&#xB984;&#xC774;
-        &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;.</td>
+      <td style="text-align:left">조그 막대입니다. [좌표계]
+        버튼으로 선택한 조그
+        수행의 기준 좌표계에
+        따라 변경된 축의 이름이
+        표시됩니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c6.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>&#xC774;&#xB825; &#xD45C;&#xC2DC;&#xC904;&#xC785;&#xB2C8;&#xB2E4;. &#xC790;&#xC138;&#xD55C;
-          &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.2 &#xC774;&#xB825; &#xD45C;&#xC2DC;&#xC904;&#x201D;&#xC744;
-          &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
+        <p>이력 표시줄입니다. 자세한
+          내용은 “1.2.3.2 이력 표시줄”을
+          참조하십시오.</p>
         <ul>
-          <li>&#xD604;&#xC7AC; &#xC2DC;&#xAC04; &#xC815;&#xBCF4;&#xC640; &#xD2F0;&#xCE58;
-            &#xD39C;&#xB358;&#xD2B8;&#xC758; &#xBA54;&#xBAA8;&#xB9AC; &#xC0AC;&#xC6A9;
-            &#xD604;&#xD669;&#xC774; &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C;
-            &#xC5D0;&#xB7EC; &#xBA54;&#xC2DC;&#xC9C0; &#xB610;&#xB294; &#xACBD;&#xACE0;
-            &#xBA54;&#xC2DC;&#xC9C0;&#xB97C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
-          <li>&#xD654;&#xBA74;&#xC5D0; &#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC;&#xB97C;
-            &#xD45C;&#xC2DC;&#xD558;&#xAC70;&#xB098; &#xC228;&#xAE41;&#xB2C8;&#xB2E4;.
-            &#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC; &#xC0AC;&#xC6A9; &#xC911;&#xC5D0;&#xB294;
-            &#xD0A4;&#xBCF4;&#xB4DC;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xD654;&#xBA74;&#xC758;
-            &#xC0C1;&#xB2E8;&#xC73C;&#xB85C; &#xC774;&#xB3D9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+          <li>현재 시간 정보와 티치
+            펜던트의 메모리 사용
+            현황이 표시됩니다. 또한
+            에러 메시지 또는 경고
+            메시지를 확인할 수 있습니다.</li>
+          <li>화면에 소프트 키보드를
+            표시하거나 숨깁니다.
+            소프트 키보드 사용 중에는
+            키보드의 위치를 화면의
+            상단으로 이동할 수 있습니다.</li>
         </ul>
       </td>
     </tr>

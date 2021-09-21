@@ -16,13 +16,13 @@ Pose 기록 형태를 변경하려면 고객지원팀에 문의하여 전문가�
 * back \(뒤쪽\): 로봇의 툴 끝이 로봇 좌표계의 X축-방향인 뒤쪽입니다. 지정하지 않으면 + 방향인 앞쪽입니다.
 * down \(하\): H축과 V축의 관계입니다. 지정하면 하, 지정하지 않으면 상입니다.
 
-![&#xADF8;&#xB9BC; 23 H&#xCD95;&#xACFC; V&#xCD95; &#xC790;&#xC138;: &#xC0C1;\(&#xC88C;\), &#xD558;\(&#xC6B0;\)](../../../.gitbook/assets/image%20%2858%29%20%281%29%20%281%29.png)
+![그림 23 H축과 V축 자세: 상\(좌\), 하\(우\)](../../../.gitbook/assets/image%20%2858%29%20%281%29%20%281%29.png)
 
 
 
 * flip \(플립\): B축의 좌표가 + 값인 플립입니다. 지정하지 않으면 - 값인 논플립\(non-flip\)입니다. 그림의 적색 화살표는 손목축의 상부 방향을 나타냅니다.
 
-![&#xADF8;&#xB9BC; 24 Flip \(&#xC88C;\) / Non-flip \(&#xC6B0;\) &#xC790;&#xC138;](../../../.gitbook/assets/image%20%2875%29.png)
+![그림 24 Flip \(좌\) / Non-flip \(우\) 자세](../../../.gitbook/assets/image%20%2875%29.png)
 
 * S \(\|S\|&gt;=180\): S축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다. 
 * B \(\|B\|&gt;=180\): B축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다.
@@ -40,20 +40,20 @@ Pose 기록 형태를 변경하려면 고객지원팀에 문의하여 전문가�
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p>&#xBCA0;&#xC774;&#xC2A4; &#xC88C;&#xD45C;&#xACC4; = &quot;base&quot;
+        <p>베이스 좌표계 = &quot;base&quot;
           <br
           />
         </p>
-        <p>&#xB85C;&#xBD07; &#xC88C;&#xD45C;&#xACC4; = &quot;robot&quot;
+        <p>로봇 좌표계 = &quot;robot&quot;
           <br />
         </p>
-        <p>&#xCD95; &#xC88C;&#xD45C;&#xACC4; = &quot;joint&quot;
+        <p>축 좌표계 = &quot;joint&quot;
           <br />
         </p>
-        <p>&#xC5D4;&#xCF54;&#xB354; = &quot;encoder&quot;
+        <p>엔코더 = &quot;encoder&quot;
           <br />
         </p>
-        <p>&#xC0AC;&#xC6A9;&#xC790; &#xC88C;&#xD45C;&#xACC4; = &quot;u1&quot; ~ &quot;u10&quot;
+        <p>사용자 좌표계 = &quot;u1&quot; ~ &quot;u10&quot;
           <br
           />
         </p>

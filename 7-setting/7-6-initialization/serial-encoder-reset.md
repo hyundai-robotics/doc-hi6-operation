@@ -11,8 +11,8 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -21,18 +21,18 @@
         <img src="../../.gitbook/assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>&#xCD95;&#xBCC4;&#xB85C; &#xC5D4;&#xCF54;&#xB354; &#xB9AC;&#xC14B; &#xC0AC;&#xC6A9;
-          &#xC5EC;&#xBD80;&#xC640; &#xBAA8;&#xB4DC;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>축별로 엔코더 리셋 사용
+          여부와 모드를 설정합니다.</p>
         <ul>
-          <li>[&#xBB34;&#xD6A8;]: &#xC2DC;&#xB9AC;&#xC5BC; &#xC5D4;&#xCF54;&#xB354;
-            &#xB9AC;&#xC14B;&#xC744; &#xC2E4;&#xD589;&#xD558;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xC5D0;&#xB7EC;&#xD574;&#xC81C;]: &#xC5D4;&#xCF54;&#xB354; &#xD68C;&#xC804;&#xC218;&#xB97C;
-            &#xD074;&#xB9AC;&#xC5B4;&#xD558;&#xC9C0; &#xC54A;&#xACE0; &#xBAA8;&#xD130;&#xC758;
-            &#xC5D4;&#xCF54;&#xB354; &#xAD00;&#xB828; &#xC5D0;&#xB7EC;&#xB9CC; &#xD574;&#xC81C;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xC5D4;&#xCF54;&#xB354; &#xB9AC;&#xC14B;]: &#xBAA8;&#xD130;&#xC758;
-            &#xC5D4;&#xCF54;&#xB354; &#xAD00;&#xB828; &#xC5D0;&#xB7EC;&#xB97C; &#xD574;&#xC81C;&#xD558;&#xACE0;
-            &#xC5D4;&#xCF54;&#xB354;&#xC758; &#xC601;&#xC810;&#xC744; &#xB9AC;&#xC14B;&#xD558;&#xC5EC;
-            &#xD68C;&#xC804;&#xC218;&#xB97C; &#xD074;&#xB9AC;&#xC5B4;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[무효]: 시리얼 엔코더
+            리셋을 실행하지 않습니다.</li>
+          <li>[에러해제]: 엔코더 회전수를
+            클리어하지 않고 모터의
+            엔코더 관련 에러만 해제합니다.</li>
+          <li>[엔코더 리셋]: 모터의
+            엔코더 관련 에러를 해제하고
+            엔코더의 영점을 리셋하여
+            회전수를 클리어합니다.</li>
         </ul>
       </td>
     </tr>
@@ -42,12 +42,12 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[&#xC2E4;&#xD589;]: &#xC2DC;&#xB9AC;&#xC5BC; &#xC5D4;&#xCF54;&#xB354;
-            &#xB9AC;&#xC14B;&#xC744; &#xC2E4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xC804;&#xCD95;&#xC120;&#xD0DD;]: &#xBAA8;&#xB4E0; &#xCD95;&#xC744;
-            &#xD55C; &#xBC88;&#xC5D0; &#xC120;&#xD0DD;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xC804;&#xCD95;&#xD574;&#xC81C;]: &#xBAA8;&#xB4E0; &#xCD95;&#xC758;
-            &#xC120;&#xD0DD;&#xC744; &#xD55C; &#xBC88;&#xC5D0; &#xD574;&#xC81C;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[실행]: 시리얼 엔코더
+            리셋을 실행합니다.</li>
+          <li>[전축선택]: 모든 축을
+            한 번에 선택합니다.</li>
+          <li>[전축해제]: 모든 축의
+            선택을 한 번에 해제합니다.</li>
         </ul>
       </td>
     </tr>

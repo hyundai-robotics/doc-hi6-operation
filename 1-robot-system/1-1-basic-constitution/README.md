@@ -10,11 +10,11 @@
 
 로봇 유형에 따른 로봇 시스템의 기본 구성의 예는 다음과 같습니다.
 
-![&#xADF8;&#xB9BC; 1 LCD &#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xAE30;&#xBCF8; &#xAD6C;&#xC131;](../../.gitbook/assets/image.png)
+![그림 1 LCD 로봇 시스템의 기본 구성](../../.gitbook/assets/image.png)
 
-![&#xADF8;&#xB9BC; 2 &#xC218;&#xC9C1;&#xB2E4;&#xAD00;&#xC808;&#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xAE30;&#xBCF8; &#xAD6C;&#xC131;](../../.gitbook/assets/image%20%286%29.png)
+![그림 2 수직다관절로봇 시스템의 기본 구성](../../.gitbook/assets/image%20%286%29.png)
 
 
 
-![&#xADF8;&#xB9BC; 3 &#xD611;&#xB3D9;&#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xAE30;&#xBCF8; &#xAD6C;&#xC131;](../../.gitbook/assets/image%20%288%29.png)
+![그림 3 협동로봇 시스템의 기본 구성](../../.gitbook/assets/image%20%288%29.png)
 

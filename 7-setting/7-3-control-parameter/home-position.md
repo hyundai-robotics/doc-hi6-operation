@@ -11,8 +11,8 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -21,28 +21,28 @@
         <img src="../../.gitbook/assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>&#xD0ED;&#xC5D0;&#xC11C; &#xC120;&#xD0DD;&#xD55C; &#xC6D0;&#xC704;&#xCE58;&#xC758;
-          &#xC0C1;&#xC138; &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;. &#xC0AC;&#xC6A9;
-          &#xC5EC;&#xBD80;&#xC640; &#xCD9C;&#xB825; &#xC2E0;&#xD638;, &#xCD95;&#xAC01;&#xB3C4;&#xC640;
-          &#xBC94;&#xC704;, &#xC124;&#xBA85;&#xC744; &#xC124;&#xC815;&#xD560; &#xC218;
-          &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>탭에서 선택한 원위치의
+          상세 정보입니다. 사용
+          여부와 출력 신호, 축각도와
+          범위, 설명을 설정할 수
+          있습니다.</p>
         <ul>
-          <li>[&#xC0AC;&#xC6A9; &#xC5EC;&#xBD80;]: &#xC0AC;&#xC6A9; &#xC5EC;&#xBD80;&#xB97C;
-            &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xCD9C;&#xB825; &#xC2E0;&#xD638;]: &#xCD9C;&#xB825; &#xC2E0;&#xD638;
-            &#xBC88;&#xD638;&#xB97C; &#xC785;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xCD95;&#xAC01;&#xB3C4;]/[&#xBC94;&#xC704;]: &#xC6D0;&#xC704;&#xCE58;&#xC5D0;&#xC11C;
-            &#xB85C;&#xBD07;&#xC758; &#xCD95;&#xAC01;&#xB3C4;&#xC640; &#xBC94;&#xC704;&#xB97C;
-            &#xC785;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>&#xBC94;&#xC704;&#xAC00; 0&#xC73C;&#xB85C; &#xC124;&#xC815;&#xB41C; &#xACBD;&#xC6B0;,
-            &#xD574;&#xB2F9; &#xCD95;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB294; &#xC6D0;&#xC704;&#xCE58;
-            &#xAC80;&#xC0AC;&#xB97C; &#xC218;&#xD589;&#xD558;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
-          <li>&#xBC94;&#xC704;&#xB294; &#xC6D0;&#xC704;&#xCE58; &#xD3EC;&#xC778;&#xD2B8;&#xC758;
-            + &#xBC29;&#xD5A5;&#xACFC; - &#xBC29;&#xD5A5;&#xC758; &#xBC94;&#xC704;&#xB85C;
-            &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4;,
-            &#xBC94;&#xC704;&#xB97C; 0.5&#xB85C; &#xC124;&#xC815;&#xD558;&#xBA74; &#xC6D0;&#xC704;&#xCE58;
-            &#xC2E0;&#xD638;&#xC758; &#xCD9C;&#xB825; &#xBC94;&#xC704;&#xB294; 1&#xC774;
-            &#xB429;&#xB2C8;&#xB2E4;.</li>
+          <li>[사용 여부]: 사용 여부를
+            설정합니다.</li>
+          <li>[출력 신호]: 출력 신호
+            번호를 입력합니다.</li>
+          <li>[축각도]/[범위]: 원위치에서
+            로봇의 축각도와 범위를
+            입력합니다.</li>
+          <li>범위가 0으로 설정된 경우,
+            해당 축에 대해서는 원위치
+            검사를 수행하지 않습니다.</li>
+          <li>범위는 원위치 포인트의
+            + 방향과 - 방향의 범위로
+            사용합니다. 예를 들어,
+            범위를 0.5로 설정하면 원위치
+            신호의 출력 범위는 1이
+            됩니다.</li>
         </ul>
       </td>
     </tr>
@@ -52,14 +52,14 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: &#xBCC0;&#xACBD; &#xB0B4;&#xC6A9;&#xC744; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xD604;&#xC7AC; &#xB85C;&#xBD07; &#xD3EC;&#xC988;]: &#xD604;&#xC7AC;
-            &#xB85C;&#xBD07; &#xC790;&#xC138;&#xC758; &#xCD95;&#xAC01;&#xB3C4;&#xC640;
-            &#xBC94;&#xC704;&#xAC00; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xC785;&#xB825;&#xB429;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xD504;&#xB85C;&#xADF8;&#xB7A8;/&#xC2A4;&#xD15D;]: &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xACFC;
-            &#xC2A4;&#xD15D; &#xBC88;&#xD638;&#xB97C; &#xC785;&#xB825;&#xD558;&#xBA74;
-            &#xD574;&#xB2F9; &#xC2A4;&#xD15D;&#xC758; &#xCD95;&#xAC01;&#xB3C4;&#xC640;
-            &#xBC94;&#xC704;&#xAC00; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xC785;&#xB825;&#xB429;&#xB2C8;&#xB2E4;.</li>
+          <li>[OK]: 변경 내용을 저장합니다.</li>
+          <li>[현재 로봇 포즈]: 현재
+            로봇 자세의 축각도와
+            범위가 자동으로 입력됩니다.</li>
+          <li>[프로그램/스텝]: 프로그램과
+            스텝 번호를 입력하면
+            해당 스텝의 축각도와
+            범위가 자동으로 입력됩니다.</li>
         </ul>
       </td>
     </tr>

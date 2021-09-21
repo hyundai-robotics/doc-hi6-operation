@@ -13,9 +13,9 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC778;&#xC218;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">인수</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -23,36 +23,36 @@
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">&#xBCF4;&#xAC04;</td>
+      <td style="text-align:left">보간</td>
       <td style="text-align:left">
-        <p>&#xC2A4;&#xD15D;&#xACFC; &#xC2A4;&#xD15D; &#xC0AC;&#xC774;&#xC758; &#xBCF4;&#xAC04;&#xB41C;
-          &#xACBD;&#xB85C;</p>
-        <p>P (&#xCD95;&#xBCF4;&#xAC04;), L (&#xC9C1;&#xC120;&#xBCF4;&#xAC04;), C
-          (&#xC6D0;&#xD638;&#xBCF4;&#xAC04;), SP (&#xC815;&#xCE58;&#xD234;&#xBCF4;&#xAC04;
-          Off), SL (&#xC815;&#xCE58;&#xD234; &#xC9C1;&#xC120;&#xBCF4;&#xAC04;), SC
-          (&#xC815;&#xCE58;&#xD234; &#xC6D0;&#xD638;&#xBCF4;&#xAC04;)</p>
+        <p>스텝과 스텝 사이의 보간된
+          경로</p>
+        <p>P (축보간), L (직선보간), C
+          (원호보간), SP (정치툴보간
+          Off), SL (정치툴 직선보간), SC
+          (정치툴 원호보간)</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">&#xD3EC;&#xC988;</td>
+      <td style="text-align:left">포즈</td>
       <td style="text-align:left">
-        <p>&#xC704;&#xCE58;&#xB97C; &#xAE30;&#xB85D;&#xD558;&#xB294; &#xC778;&#xC218;.
-          &#xC774; &#xC778;&#xC218;&#xAC00; &#xC0DD;&#xB7B5;&#xB418;&#xACE0; &#xBA85;&#xB839;&#xBB38;
-          &#xB4A4;&#xC5D0; &#xD3EC;&#xC988;&#xAC00; &#xC9C0;&#xC815;&#xB420; &#xC218;&#xB3C4;
-          &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;(&#xC228;&#xC740; &#xD3EC;&#xC988;).</p>
-        <p>Target &#xD3EC;&#xC988;(X, Y, Z, Rx, Ry, Rz, Cfg){&#xC88C;&#xD45C;&#xACC4;}
-          + &#xC2DC;&#xD504;&#xD2B8;(X, Y, Z, Rx, Ry, Rz){&#xC88C;&#xD45C;&#xACC4;}</p>
+        <p>위치를 기록하는 인수.
+          이 인수가 생략되고 명령문
+          뒤에 포즈가 지정될 수도
+          있습니다(숨은 포즈).</p>
+        <p>Target 포즈(X, Y, Z, Rx, Ry, Rz, Cfg){좌표계}
+          + 시프트(X, Y, Z, Rx, Ry, Rz){좌표계}</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c3.png" alt/>
       </td>
-      <td style="text-align:left">&#xC18D;&#xB3C4;</td>
-      <td style="text-align:left">&#xB85C;&#xBD07;&#xC758; &#xC6B4;&#xC804; &#xC18D;&#xB3C4;(&#xB2E8;&#xC704;:
+      <td style="text-align:left">속도</td>
+      <td style="text-align:left">로봇의 운전 속도(단위:
         mm/sec, cm/min, %, sec)</td>
     </tr>
     <tr>
@@ -60,35 +60,35 @@
         <img src="../../../.gitbook/assets/c4.png" alt/>
       </td>
       <td style="text-align:left">Accuracy</td>
-      <td style="text-align:left">&#xB85C;&#xBD07;&#xC774; &#xBAA9;&#xD45C; &#xC2A4;&#xD15D;&#xC73C;&#xB85C;
-        &#xC774;&#xB3D9;&#xD560; &#xB54C; &#xBC1C;&#xC0DD;&#xD558;&#xB294; &#xD604;&#xC7AC;
-        &#xC704;&#xCE58;&#xC640; &#xAE30;&#xB85D; &#xC704;&#xCE58;&#xC758; &#xD5C8;&#xC6A9;
-        &#xC624;&#xCC28;&#xAC12;(0 ~ 7)</td>
+      <td style="text-align:left">로봇이 목표 스텝으로
+        이동할 때 발생하는 현재
+        위치와 기록 위치의 허용
+        오차값(0 ~ 7)</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c5.png" alt/>
       </td>
-      <td style="text-align:left">&#xD234; &#xBC88;&#xD638;</td>
-      <td style="text-align:left">&#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xD234;&#xC758; &#xBC88;&#xD638;(0 ~
+      <td style="text-align:left">툴 번호</td>
+      <td style="text-align:left">사용하는 툴의 번호(0 ~
         31)</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">&#xC815;&#xC9C0; &#xC870;&#xAC74;</td>
-      <td style="text-align:left">&#xB85C;&#xBD07;&#xC774; &#xB2E4;&#xC74C; &#xBA85;&#xB839;(&#xC2A4;&#xD15D;
-        &#xB610;&#xB294; &#xD391;&#xC158;)&#xC744; &#xC218;&#xD589;&#xD558;&#xAE30;
-        &#xC704;&#xD574; &#xC774;&#xB3D9;&#xC744; &#xC815;&#xC9C0;&#xD558;&#xAE30;
-        &#xC704;&#xD55C; &#xC870;&#xAC74;</td>
+      <td style="text-align:left">정지 조건</td>
+      <td style="text-align:left">로봇이 다음 명령(스텝
+        또는 펑션)을 수행하기
+        위해 이동을 정지하기
+        위한 조건</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c7.png" alt/>
       </td>
-      <td style="text-align:left">&#xC8FC;&#xC11D;</td>
-      <td style="text-align:left">&#xC2A4;&#xD15D;&#xC5D0; &#xB300;&#xD55C; &#xC124;&#xBA85;</td>
+      <td style="text-align:left">주석</td>
+      <td style="text-align:left">스텝에 대한 설명</td>
     </tr>
   </tbody>
 </table>

@@ -4,7 +4,7 @@
 
 뾰족한 팁 2 개를 준비하여 하나는 외부에 고정하고 다른 하나는 툴에 고정한 후 외부의 고정 팁을 기준으로 로봇의 툴 끝의 자세만 바꿔 여러 점을 로봇 프로그램으로 기록합니다. 이때 축 원점과 툴 길이를 모두 찾아내려면 7 점, 툴 길이만 찾아내려면 4 점 이상을 교시해야 합니다.
 
-![&#xADF8;&#xB9BC; 68 &#xCD95; &#xC6D0;&#xC810; &#xBC0F; &#xD234; &#xAE38;&#xC774; &#xCD5C;&#xC801;&#xD654; &#xAE30;&#xB2A5; &#xAD50;&#xC2DC; &#xBC29;&#xBC95;](../../.gitbook/assets/image%20%28228%29.png)
+![그림 68 축 원점 및 툴 길이 최적화 기능 교시 방법](../../.gitbook/assets/image%20%28228%29.png)
 
 축 원점 및 툴 길이 최적화 기능을 이용하면 CAD데이터가 없는 툴 길이 X, Y, Z뿐만 아니라 로봇 H, V, R2, B축의 원점을 최적화하여 찾아낼 수 있습니다.
 
@@ -31,8 +31,8 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -41,41 +41,41 @@
         <img src="../../.gitbook/assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>&#xBD80;&#xAC00;&#xCD95;&#xC758; &#xC0C1;&#xC138; &#xD30C;&#xB77C;&#xBBF8;&#xD130;
-          &#xC124;&#xC815; &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;. &#xBD80;&#xAC00;&#xCD95;
-          &#xC774;&#xB984;&#xACFC; &#xC0AC;&#xC591;, &#xAD6C;&#xC131; &#xB4F1;&#xC744;
-          &#xD655;&#xC778;&#xD558;&#xACE0; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>부가축의 상세 파라미터
+          설정 정보입니다. 부가축
+          이름과 사양, 구성 등을
+          확인하고 설정할 수 있습니다.</p>
         <ul>
-          <li>[&#xCD5C;&#xC801;&#xD654; &#xC120;&#xD0DD;]: &#xCD5C;&#xC801;&#xD654;
-            &#xB300;&#xC0C1;&#xC744; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xD234; &#xAE38;&#xC774;]: &#xB85C;&#xBD07;&#xC758; &#xD234; &#xAE38;&#xC774;
-            &#xAC12;&#xC744; &#xBCF4;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xB85C;&#xBD07;
-            &#xC6D0;&#xC810;&#xC774; &#xC815;&#xD655;&#xD788; &#xC124;&#xC815;&#xB41C;
-            &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xD234; &#xAE38;&#xC774;&#xB9CC; &#xBCF4;&#xC815;&#xD560;
-            &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xCD95; &#xC6D0;&#xC810; &#xBC0F; &#xD234; &#xAE38;&#xC774;]: &#xB85C;&#xBD07;&#xC758;
-            &#xC6D0;&#xC810;&#xACFC; &#xD234; &#xAE38;&#xC774; &#xAC12;&#xC744; &#xBAA8;&#xB450;
-            &#xBCF4;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xD1B5;&#xC0C1;&#xC801;&#xC73C;&#xB85C;
-            &#xB85C;&#xBD07;&#xC744; &#xC124;&#xCE58;&#xD558;&#xACE0; &#xCD5C;&#xCD08;&#xC5D0;
-            &#xC815;&#xD655;&#xD55C; &#xC6D0;&#xC810;&#xC744; &#xC124;&#xC815;&#xD558;&#xACE0;&#xC790;
-            &#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xBC88;&#xD638;]: &#xB3D9;&#xC77C;&#xC810;&#xC744;
-            &#xC5EC;&#xB7EC; &#xC790;&#xC138;&#xB85C; &#xAE30;&#xB85D;&#xD55C; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC758;
-            &#xBC88;&#xD638;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xD234; &#xBC88;&#xD638;]: &#xC790;&#xB3D9; &#xC124;&#xC815;&#xD558;&#xB824;&#xB294;
-            &#xD234;&#xC758; &#xBC88;&#xD638;&#xC785;&#xB2C8;&#xB2E4;. &#xC124;&#xC815;&#xC6A9;
-            &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0; &#xAE30;&#xB85D;&#xB418;&#xC5B4;
-            &#xC788;&#xB294; &#xD234; &#xBC88;&#xD638;&#xC640; &#xC77C;&#xCE58;&#xD574;&#xC57C;
-            &#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xC2A4;&#xD15D;&#xC704;&#xCE58; &#xC624;&#xCC28; &#xD5C8;&#xC6A9;&#xBC94;&#xC704;]:
-            &#xC790;&#xB3D9; &#xCE98;&#xB9AC;&#xBE0C;&#xB808;&#xC774;&#xC158; &#xACB0;&#xACFC;&#xC758;
-            &#xC624;&#xCC28; &#xBC94;&#xC704;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;(&#xCD08;&#xAE30;
-            &#xC124;&#xC815;&#xAC12; 0.6 &#x339C;). &#xC608;&#xC0C1; &#xC624;&#xCC28;&#xAC00;
-            &#xC624;&#xCC28; &#xBC94;&#xC704; &#xB0B4;&#xC774;&#xBA74; &#xC790;&#xB3D9;&#xC73C;&#xB85C;
-            &#xC815;&#xC218; &#xB370;&#xC774;&#xD130;&#xB97C; &#xAC31;&#xC2E0;&#xD558;&#xACE0;
-            &#xC624;&#xCC28; &#xBC94;&#xC704;&#xB97C; &#xBC97;&#xC5B4;&#xB098;&#xBA74;
-            &#xC815;&#xC218;&#xC758; &#xBC18;&#xC601; &#xC5EC;&#xBD80;&#xB97C; &#xC0AC;&#xC6A9;&#xC790;&#xC5D0;&#xAC8C;
-            &#xC54C;&#xB824; &#xD655;&#xC778; &#xD6C4; &#xCC98;&#xB9AC;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[최적화 선택]: 최적화
+            대상을 설정합니다.</li>
+          <li>[툴 길이]: 로봇의 툴 길이
+            값을 보정합니다. 로봇
+            원점이 정확히 설정된
+            경우에는 툴 길이만 보정할
+            수 있습니다.</li>
+          <li>[축 원점 및 툴 길이]: 로봇의
+            원점과 툴 길이 값을 모두
+            보정합니다. 통상적으로
+            로봇을 설치하고 최초에
+            정확한 원점을 설정하고자
+            할 때 사용합니다.</li>
+          <li>[프로그램 번호]: 동일점을
+            여러 자세로 기록한 프로그램의
+            번호를 설정합니다.</li>
+          <li>[툴 번호]: 자동 설정하려는
+            툴의 번호입니다. 설정용
+            프로그램에 기록되어
+            있는 툴 번호와 일치해야
+            합니다.</li>
+          <li>[스텝위치 오차 허용범위]:
+            자동 캘리브레이션 결과의
+            오차 범위를 설정합니다(초기
+            설정값 0.6 ㎜). 예상 오차가
+            오차 범위 내이면 자동으로
+            정수 데이터를 갱신하고
+            오차 범위를 벗어나면
+            정수의 반영 여부를 사용자에게
+            알려 확인 후 처리합니다.</li>
         </ul>
       </td>
     </tr>
@@ -85,11 +85,11 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: &#xBCC0;&#xACBD; &#xB0B4;&#xC6A9;&#xC744; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xC2E4;&#xD589;]: &#xC124;&#xC815; &#xC815;&#xBCF4;&#xB97C; &#xBC14;&#xD0D5;&#xC73C;&#xB85C;
-            &#xCD5C;&#xC801;&#xD654;&#xB97C; &#xC2E4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.
-            &#xCD5C;&#xC801;&#xD654; &#xACB0;&#xACFC;&#xB294; [&#xCD5C;&#xB300;&#xC2A4;&#xD15D;
-            &#xC704;&#xCE58; &#xC624;&#xCC28;]&#xC5D0; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;.</li>
+          <li>[OK]: 변경 내용을 저장합니다.</li>
+          <li>[실행]: 설정 정보를 바탕으로
+            최적화를 실행합니다.
+            최적화 결과는 [최대스텝
+            위치 오차]에 나타납니다.</li>
         </ul>
       </td>
     </tr>

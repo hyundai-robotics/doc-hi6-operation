@@ -6,7 +6,7 @@
 
 
 
-![&#xADF8;&#xB9BC; 58 &#xC2E4;&#xB9C1; &#xC791;&#xC5C5; &#xC608;](../../../.gitbook/assets/image%20%28154%29.png)
+![그림 58 실링 작업 예](../../../.gitbook/assets/image%20%28154%29.png)
 
 이 궤적을 생성하기 위해 로봇은 자체에 부착된 툴이 아닌 외부에 부착된 툴을 기준으로 직선 \(L\) 및 원호 \(C\) 보간을 수행합니다. 이때 정치툴 보간 기능을 사용합니다.
 
@@ -29,8 +29,8 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -38,9 +38,9 @@
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">&#xC815;&#xCE58;&#xD234; &#xC88C;&#xD45C;&#xACC4;&#xB294; &#xD0ED;&#xC744;
-        &#xC120;&#xD0DD;&#xD558;&#xC5EC; &#xCD1D; 4 &#xAC1C;(tool 0 ~ tool 3)&#xB97C;
-        &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
+      <td style="text-align:left">정치툴 좌표계는 탭을
+        선택하여 총 4 개(tool 0 ~ tool 3)를
+        설정할 수 있습니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -48,10 +48,10 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: &#xBCC0;&#xACBD; &#xB0B4;&#xC6A9;&#xC744; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xC790;&#xB3D9;&#xC124;&#xC815;]: &#xD604;&#xC7AC;&#xC758; TCP &#xC704;&#xCE58;&#xB97C;
-            &#xC815;&#xCE58;&#xD234; &#xC88C;&#xD45C;&#xACC4;&#xC758; &#xC704;&#xCE58;&#xB85C;
-            &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[OK]: 변경 내용을 저장합니다.</li>
+          <li>[자동설정]: 현재의 TCP 위치를
+            정치툴 좌표계의 위치로
+            설정합니다.</li>
         </ul>
       </td>
     </tr>
@@ -64,7 +64,7 @@
 
 로봇 베이스 좌표계를 기준으로 TCP를 정확히 찾은 후 그림과 같이 정치툴과 로봇툴을 일치시키고 \[자동설정\] 버튼으로 자동 설정 기능을 실행하십시오. 현재의 TCP 위치가 등록됩니다.
 
-![&#xADF8;&#xB9BC; 59 \[&#xC790;&#xB3D9;&#xC124;&#xC815;\] &#xBC84;&#xD2BC;&#xC744; &#xC774;&#xC6A9;&#xD55C; &#xD2F0;&#xCE6D; &#xBC29;&#xBC95;](../../../.gitbook/assets/image%20%28178%29.png)
+![그림 59 \[자동설정\] 버튼을 이용한 티칭 방법](../../../.gitbook/assets/image%20%28178%29.png)
 
 
 

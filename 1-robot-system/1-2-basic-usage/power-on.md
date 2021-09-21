@@ -29,34 +29,34 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xC548;&#xC804; &#xD50C;&#xB7EC;&#xADF8;</th>
-      <th style="text-align:left">&#xBAA8;&#xB4DC; &#xC2A4;&#xC704;&#xCE58;: &#xC218;&#xB3D9;</th>
-      <th style="text-align:left">&#xBAA8;&#xB4DC; &#xC2A4;&#xC704;&#xCE58;: &#xC790;&#xB3D9;</th>
+      <th style="text-align:left">안전 플러그</th>
+      <th style="text-align:left">모드 스위치: 수동</th>
+      <th style="text-align:left">모드 스위치: 자동</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">&#xD574;&#xC81C;</td>
+      <td style="text-align:left">해제</td>
       <td style="text-align:left">
         <ul>
-          <li>Motor ON &#xAC00;&#xB2A5;</li>
-          <li>&#xC2A4;&#xD15D; &#xC804;&#xD6C4;&#xC9C4; &#xAC00;&#xB2A5;</li>
+          <li>Motor ON 가능</li>
+          <li>스텝 전후진 가능</li>
         </ul>
       </td>
       <td style="text-align:left">Emergency (Motor Off)</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xD22C;&#xC785;</td>
+      <td style="text-align:left">투입</td>
       <td style="text-align:left">
         <ul>
-          <li>Motor ON &#xAC00;&#xB2A5;</li>
-          <li>&#xC2A4;&#xD15D; &#xC804;&#xD6C4;&#xC9C4; &#xAC00;&#xB2A5;</li>
+          <li>Motor ON 가능</li>
+          <li>스텝 전후진 가능</li>
         </ul>
       </td>
       <td style="text-align:left">
         <ul>
-          <li>Motor ON &#xAC00;&#xB2A5;</li>
-          <li>&#xC815;&#xC0C1; &#xC18D;&#xB3C4; &#xC6B4;&#xC804;</li>
+          <li>Motor ON 가능</li>
+          <li>정상 속도 운전</li>
         </ul>
       </td>
     </tr>

@@ -9,23 +9,23 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC29;&#xBC95;</th>
-      <th style="text-align:left">&#xC808;&#xCC28;</th>
+      <th style="text-align:left">방법</th>
+      <th style="text-align:left">절차</th>
       <th style="text-align:left"></th>
-      <th style="text-align:left">&#xC0C1;&#xC138; &#xACFC;&#xC815;</th>
+      <th style="text-align:left">상세 과정</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">&#xC815;&#xBC29;&#xD5A5;</td>
-      <td style="text-align:left">&#xBCF5;&#xC0AC; &#xC804;</td>
+      <td style="text-align:left">정방향</td>
+      <td style="text-align:left">복사 전</td>
       <td style="text-align:left">
-        <p>&#xC6D0;&#xBCF8; &#xD504;&#xB85C;&#xADF8;&#xB7A8;</p>
-        <p>(&#xD504;&#xB85C;&#xADF8;&#xB7A8;1)</p>
-        <p>&#x25BC;</p>
-        <p>&#x25BC;</p>
-        <p>&#xB300;&#xC0C1; &#xD504;&#xB85C;&#xADF8;&#xB7A8;</p>
-        <p>(&#xD504;&#xB85C;&#xADF8;&#xB7A8;2)</p>
+        <p>원본 프로그램</p>
+        <p>(프로그램1)</p>
+        <p>▼</p>
+        <p>▼</p>
+        <p>대상 프로그램</p>
+        <p>(프로그램2)</p>
       </td>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/step-copy-fwd-prv.png" alt/>
@@ -33,22 +33,22 @@
     </tr>
     <tr>
       <td style="text-align:left"></td>
-      <td style="text-align:left">&#xBCF5;&#xC0AC; &#xACB0;&#xACFC;</td>
-      <td style="text-align:left">&#xD504;&#xB85C;&#xADF8;&#xB7A8;2</td>
+      <td style="text-align:left">복사 결과</td>
+      <td style="text-align:left">프로그램2</td>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/step-copy-fwd-nxt.png" alt/>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xC5ED;&#xBC29;&#xD5A5;</td>
-      <td style="text-align:left">&#xBCF5;&#xC0AC; &#xC804;</td>
+      <td style="text-align:left">역방향</td>
+      <td style="text-align:left">복사 전</td>
       <td style="text-align:left">
-        <p>&#xC6D0;&#xBCF8; &#xD504;&#xB85C;&#xADF8;&#xB7A8;</p>
-        <p>(&#xD504;&#xB85C;&#xADF8;&#xB7A8;1)</p>
-        <p>&#x25BC;</p>
-        <p>&#x25BC;</p>
-        <p>&#xB300;&#xC0C1; &#xD504;&#xB85C;&#xADF8;&#xB7A8;</p>
-        <p>(&#xD504;&#xB85C;&#xADF8;&#xB7A8;2)</p>
+        <p>원본 프로그램</p>
+        <p>(프로그램1)</p>
+        <p>▼</p>
+        <p>▼</p>
+        <p>대상 프로그램</p>
+        <p>(프로그램2)</p>
       </td>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/step-copy-bwd-prv.png" alt/>
@@ -56,8 +56,8 @@
     </tr>
     <tr>
       <td style="text-align:left"></td>
-      <td style="text-align:left">&#xBCF5;&#xC0AC; &#xACB0;&#xACFC;</td>
-      <td style="text-align:left">&#xD504;&#xB85C;&#xADF8;&#xB7A8;2</td>
+      <td style="text-align:left">복사 결과</td>
+      <td style="text-align:left">프로그램2</td>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/step-copy-bwd-nxt.png" alt/>
       </td>
