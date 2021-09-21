@@ -5,40 +5,40 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">항목</th>
-      <th style="text-align:left">내용</th>
+      <th style="text-align:left">&#xD56D;&#xBAA9;</th>
+      <th style="text-align:left">&#xB0B4;&#xC6A9;</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">명령어</td>
+      <td style="text-align:left">&#xBA85;&#xB839;&#xC5B4;</td>
       <td style="text-align:left">ColDet Sensitivity</td>
     </tr>
     <tr>
-      <td style="text-align:left">설명</td>
-      <td style="text-align:left">충돌검지 민감도 변경</td>
+      <td style="text-align:left">&#xC124;&#xBA85;</td>
+      <td style="text-align:left">&#xCDA9;&#xB3CC;&#xAC80;&#xC9C0; &#xBBFC;&#xAC10;&#xB3C4; &#xBCC0;&#xACBD;</td>
     </tr>
     <tr>
-      <td style="text-align:left">입력 방법</td>
-      <td style="text-align:left">command → MOTION → colsense</td>
+      <td style="text-align:left">&#xC785;&#xB825; &#xBC29;&#xBC95;</td>
+      <td style="text-align:left">command &#x2192; MOTION &#x2192; colsense</td>
     </tr>
     <tr>
-      <td style="text-align:left">문법</td>
+      <td style="text-align:left">&#xBB38;&#xBC95;</td>
       <td style="text-align:left">ColDet Sensitivity=100</td>
     </tr>
     <tr>
-      <td style="text-align:left">파라미터</td>
-      <td style="text-align:left">0 ~ 200 (0: 기능 무효, 민감도
-        값이 클수록 충격에 민감하게
-        동작)</td>
+      <td style="text-align:left">&#xD30C;&#xB77C;&#xBBF8;&#xD130;</td>
+      <td style="text-align:left">0 ~ 200 (0: &#xAE30;&#xB2A5; &#xBB34;&#xD6A8;, &#xBBFC;&#xAC10;&#xB3C4;
+        &#xAC12;&#xC774; &#xD074;&#xC218;&#xB85D; &#xCDA9;&#xACA9;&#xC5D0; &#xBBFC;&#xAC10;&#xD558;&#xAC8C;
+        &#xB3D9;&#xC791;)</td>
     </tr>
     <tr>
-      <td style="text-align:left">예</td>
+      <td style="text-align:left">&#xC608;</td>
       <td style="text-align:left">
-        <p>[충돌검지] 메뉴에서 민감도를
-          100%로 설정한 경우</p>
-        <p>S1 ~ S2: 민감도 100%로 검지 / S3 ~
-          S4: 민감도 50%로 검지</p>
+        <p>[&#xCDA9;&#xB3CC;&#xAC80;&#xC9C0;] &#xBA54;&#xB274;&#xC5D0;&#xC11C; &#xBBFC;&#xAC10;&#xB3C4;&#xB97C;
+          100%&#xB85C; &#xC124;&#xC815;&#xD55C; &#xACBD;&#xC6B0;</p>
+        <p>S1 ~ S2: &#xBBFC;&#xAC10;&#xB3C4; 100%&#xB85C; &#xAC80;&#xC9C0; / S3 ~
+          S4: &#xBBFC;&#xAC10;&#xB3C4; 50%&#xB85C; &#xAC80;&#xC9C0;</p>
         <p>
           <img src="../../../.gitbook/assets/coldet-sensitivity.png" alt/>
         </p>

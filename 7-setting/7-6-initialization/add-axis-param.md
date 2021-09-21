@@ -4,19 +4,16 @@
 
 사용 중인 부가축의 사양 및 구성 등 파라미터를 설정하는 방법은 다음과 같습니다.
 
-1.	\[5: 초기화 &gt; 5: 부가축 파라미터 설정\] 메뉴를 터치하십시오.
-
-2.	부가축의 사양 및 구성 등 파라미터를 설정하십시오.
+1. \[5: 초기화 &gt; 5: 부가축 파라미터 설정\] 메뉴를 터치하십시오.
+2. 부가축의 사양 및 구성 등 파라미터를 설정하십시오.
 
 ![](../../.gitbook/assets/image%20%28236%29.png)
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
+      <th style="text-align:left">&#xBC88;&#xD638;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
     </tr>
   </thead>
   <tbody>
@@ -25,62 +22,62 @@
         <img src="../../.gitbook/assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>부가축의 상세 파라미터
-          설정 정보입니다. 부가축
-          이름과 사양, 구성 등을
-          확인하고 설정할 수 있습니다.</p>
+        <p>&#xBD80;&#xAC00;&#xCD95;&#xC758; &#xC0C1;&#xC138; &#xD30C;&#xB77C;&#xBBF8;&#xD130;
+          &#xC124;&#xC815; &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;. &#xBD80;&#xAC00;&#xCD95;
+          &#xC774;&#xB984;&#xACFC; &#xC0AC;&#xC591;, &#xAD6C;&#xC131; &#xB4F1;&#xC744;
+          &#xD655;&#xC778;&#xD558;&#xACE0; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
         <ul>
-          <li>[부가축]: 사용 중인 부가축의
-            이름입니다.</li>
-          <li>[축 사양]: 부가축의 사양입니다.
-            사양에 따라 부가축 용도별로
-            개발된 별도의 기능을
-            사용할 수 있습니다.</li>
-          <li>[축 구성]: 부가축의 메커니즘
-            형태입니다. 일부 축 사양에는
-            사전에 등록된 메커니즘
-            형태를 지정할 수 있습니다.
-            대표적으로 포지셔너의
-            경우 표준 포지셔너 모델을
-            선택할 수 있습니다.</li>
-          <li>[축 위치]: DSP 보드에서 해당
-            축이 연결된 위치입니다.
-            배선이 연결된 사양에
-            따라 BD 번호, DSP 번호, 축 번호,
-            브레이크 번호를 순차적으로
-            배선된 사양에 따라 지정합니다.</li>
-          <li>[감속비]: 부가축 모터와
-            링크의 감속비 정보입니다.
+          <li>[&#xBD80;&#xAC00;&#xCD95;]: &#xC0AC;&#xC6A9; &#xC911;&#xC778; &#xBD80;&#xAC00;&#xCD95;&#xC758;
+            &#xC774;&#xB984;&#xC785;&#xB2C8;&#xB2E4;.</li>
+          <li>[&#xCD95; &#xC0AC;&#xC591;]: &#xBD80;&#xAC00;&#xCD95;&#xC758; &#xC0AC;&#xC591;&#xC785;&#xB2C8;&#xB2E4;.
+            &#xC0AC;&#xC591;&#xC5D0; &#xB530;&#xB77C; &#xBD80;&#xAC00;&#xCD95; &#xC6A9;&#xB3C4;&#xBCC4;&#xB85C;
+            &#xAC1C;&#xBC1C;&#xB41C; &#xBCC4;&#xB3C4;&#xC758; &#xAE30;&#xB2A5;&#xC744;
+            &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+          <li>[&#xCD95; &#xAD6C;&#xC131;]: &#xBD80;&#xAC00;&#xCD95;&#xC758; &#xBA54;&#xCEE4;&#xB2C8;&#xC998;
+            &#xD615;&#xD0DC;&#xC785;&#xB2C8;&#xB2E4;. &#xC77C;&#xBD80; &#xCD95; &#xC0AC;&#xC591;&#xC5D0;&#xB294;
+            &#xC0AC;&#xC804;&#xC5D0; &#xB4F1;&#xB85D;&#xB41C; &#xBA54;&#xCEE4;&#xB2C8;&#xC998;
+            &#xD615;&#xD0DC;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+            &#xB300;&#xD45C;&#xC801;&#xC73C;&#xB85C; &#xD3EC;&#xC9C0;&#xC154;&#xB108;&#xC758;
+            &#xACBD;&#xC6B0; &#xD45C;&#xC900; &#xD3EC;&#xC9C0;&#xC154;&#xB108; &#xBAA8;&#xB378;&#xC744;
+            &#xC120;&#xD0DD;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+          <li>[&#xCD95; &#xC704;&#xCE58;]: DSP &#xBCF4;&#xB4DC;&#xC5D0;&#xC11C; &#xD574;&#xB2F9;
+            &#xCD95;&#xC774; &#xC5F0;&#xACB0;&#xB41C; &#xC704;&#xCE58;&#xC785;&#xB2C8;&#xB2E4;.
+            &#xBC30;&#xC120;&#xC774; &#xC5F0;&#xACB0;&#xB41C; &#xC0AC;&#xC591;&#xC5D0;
+            &#xB530;&#xB77C; BD &#xBC88;&#xD638;, DSP &#xBC88;&#xD638;, &#xCD95; &#xBC88;&#xD638;,
+            &#xBE0C;&#xB808;&#xC774;&#xD06C; &#xBC88;&#xD638;&#xB97C; &#xC21C;&#xCC28;&#xC801;&#xC73C;&#xB85C;
+            &#xBC30;&#xC120;&#xB41C; &#xC0AC;&#xC591;&#xC5D0; &#xB530;&#xB77C; &#xC9C0;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[&#xAC10;&#xC18D;&#xBE44;]: &#xBD80;&#xAC00;&#xCD95; &#xBAA8;&#xD130;&#xC640;
+            &#xB9C1;&#xD06C;&#xC758; &#xAC10;&#xC18D;&#xBE44; &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;.
             <ul>
-              <li>감속비 부호는 부가축
-                링크가 (+) 방향으로 움직일
-                때의 모터 샤프트의 회전
-                방향에 따라 설정합니다.
-                샤프트를 정면에서 보았을
-                때 반시계방향(CCW)으로
-                회전하면 (+) 부호, 시계방향(CW)으로
-                회전하면 (-) 방향입니다.</li>
-              <li>감속비 분자항의 파라미터는
-                링크의 이동 거리(㎜ 또는
-                deg)이며, 분모에 해당하는
-                파라미터는 링크의 이동
-                거리에 대응하는 모터의
-                회전수입니다. 설정 항목의
-                파라미터는 정수 형태로
-                정의됩니다. 소수점으로
-                나타나는 파라미터의
-                경우 일정 배수를 분자와
-                분모에 곱해 정수로 감속비를
-                설정하십시오.</li>
+              <li>&#xAC10;&#xC18D;&#xBE44; &#xBD80;&#xD638;&#xB294; &#xBD80;&#xAC00;&#xCD95;
+                &#xB9C1;&#xD06C;&#xAC00; (+) &#xBC29;&#xD5A5;&#xC73C;&#xB85C; &#xC6C0;&#xC9C1;&#xC77C;
+                &#xB54C;&#xC758; &#xBAA8;&#xD130; &#xC0E4;&#xD504;&#xD2B8;&#xC758; &#xD68C;&#xC804;
+                &#xBC29;&#xD5A5;&#xC5D0; &#xB530;&#xB77C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.
+                &#xC0E4;&#xD504;&#xD2B8;&#xB97C; &#xC815;&#xBA74;&#xC5D0;&#xC11C; &#xBCF4;&#xC558;&#xC744;
+                &#xB54C; &#xBC18;&#xC2DC;&#xACC4;&#xBC29;&#xD5A5;(CCW)&#xC73C;&#xB85C;
+                &#xD68C;&#xC804;&#xD558;&#xBA74; (+) &#xBD80;&#xD638;, &#xC2DC;&#xACC4;&#xBC29;&#xD5A5;(CW)&#xC73C;&#xB85C;
+                &#xD68C;&#xC804;&#xD558;&#xBA74; (-) &#xBC29;&#xD5A5;&#xC785;&#xB2C8;&#xB2E4;.</li>
+              <li>&#xAC10;&#xC18D;&#xBE44; &#xBD84;&#xC790;&#xD56D;&#xC758; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB294;
+                &#xB9C1;&#xD06C;&#xC758; &#xC774;&#xB3D9; &#xAC70;&#xB9AC;(&#x339C; &#xB610;&#xB294;
+                deg)&#xC774;&#xBA70;, &#xBD84;&#xBAA8;&#xC5D0; &#xD574;&#xB2F9;&#xD558;&#xB294;
+                &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB294; &#xB9C1;&#xD06C;&#xC758; &#xC774;&#xB3D9;
+                &#xAC70;&#xB9AC;&#xC5D0; &#xB300;&#xC751;&#xD558;&#xB294; &#xBAA8;&#xD130;&#xC758;
+                &#xD68C;&#xC804;&#xC218;&#xC785;&#xB2C8;&#xB2E4;. &#xC124;&#xC815; &#xD56D;&#xBAA9;&#xC758;
+                &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB294; &#xC815;&#xC218; &#xD615;&#xD0DC;&#xB85C;
+                &#xC815;&#xC758;&#xB429;&#xB2C8;&#xB2E4;. &#xC18C;&#xC218;&#xC810;&#xC73C;&#xB85C;
+                &#xB098;&#xD0C0;&#xB098;&#xB294; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC758;
+                &#xACBD;&#xC6B0; &#xC77C;&#xC815; &#xBC30;&#xC218;&#xB97C; &#xBD84;&#xC790;&#xC640;
+                &#xBD84;&#xBAA8;&#xC5D0; &#xACF1;&#xD574; &#xC815;&#xC218;&#xB85C; &#xAC10;&#xC18D;&#xBE44;&#xB97C;
+                &#xC124;&#xC815;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
             </ul>
           </li>
-          <li>[소프트리밋]: 부가축의
-            최소와 최대 동작 범위입니다.</li>
-          <li>[AMP 사양]: 부가축 엠프 사양입니다.</li>
-          <li>[모터 사양]: 부가축에
-            연결된 모터의 모델명입니다.</li>
-          <li>[가감속 파라미터]: 부가축의
-            최고 속도와 가속 시간입니다.</li>
+          <li>[&#xC18C;&#xD504;&#xD2B8;&#xB9AC;&#xBC0B;]: &#xBD80;&#xAC00;&#xCD95;&#xC758;
+            &#xCD5C;&#xC18C;&#xC640; &#xCD5C;&#xB300; &#xB3D9;&#xC791; &#xBC94;&#xC704;&#xC785;&#xB2C8;&#xB2E4;.</li>
+          <li>[AMP &#xC0AC;&#xC591;]: &#xBD80;&#xAC00;&#xCD95; &#xC5E0;&#xD504; &#xC0AC;&#xC591;&#xC785;&#xB2C8;&#xB2E4;.</li>
+          <li>[&#xBAA8;&#xD130; &#xC0AC;&#xC591;]: &#xBD80;&#xAC00;&#xCD95;&#xC5D0;
+            &#xC5F0;&#xACB0;&#xB41C; &#xBAA8;&#xD130;&#xC758; &#xBAA8;&#xB378;&#xBA85;&#xC785;&#xB2C8;&#xB2E4;.</li>
+          <li>[&#xAC00;&#xAC10;&#xC18D; &#xD30C;&#xB77C;&#xBBF8;&#xD130;]: &#xBD80;&#xAC00;&#xCD95;&#xC758;
+            &#xCD5C;&#xACE0; &#xC18D;&#xB3C4;&#xC640; &#xAC00;&#xC18D; &#xC2DC;&#xAC04;&#xC785;&#xB2C8;&#xB2E4;.</li>
         </ul>
       </td>
     </tr>
@@ -90,28 +87,28 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: 변경 내용을 저장합니다.</li>
-          <li>[+]/[-]: 새로운 부가축을 추가하거나
-            부가축을 삭제합니다.</li>
-          <li>부가축 목록입니다. 부가축
-            이름을 선택하면 상세
-            파라미터를 확인 및 편집할
-            수 있습니다.</li>
-          <li>[페이지 복사]/[페이지
-            붙여넣기]: 부가축 정보를
-            복사하여 다른 부가축
-            데이터에 붙여 넣습니다.
+          <li>[OK]: &#xBCC0;&#xACBD; &#xB0B4;&#xC6A9;&#xC744; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[+]/[-]: &#xC0C8;&#xB85C;&#xC6B4; &#xBD80;&#xAC00;&#xCD95;&#xC744; &#xCD94;&#xAC00;&#xD558;&#xAC70;&#xB098;
+            &#xBD80;&#xAC00;&#xCD95;&#xC744; &#xC0AD;&#xC81C;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>&#xBD80;&#xAC00;&#xCD95; &#xBAA9;&#xB85D;&#xC785;&#xB2C8;&#xB2E4;. &#xBD80;&#xAC00;&#xCD95;
+            &#xC774;&#xB984;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xBA74; &#xC0C1;&#xC138;
+            &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xD655;&#xC778; &#xBC0F; &#xD3B8;&#xC9D1;&#xD560;
+            &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+          <li>[&#xD398;&#xC774;&#xC9C0; &#xBCF5;&#xC0AC;]/[&#xD398;&#xC774;&#xC9C0;
+            &#xBD99;&#xC5EC;&#xB123;&#xAE30;]: &#xBD80;&#xAC00;&#xCD95; &#xC815;&#xBCF4;&#xB97C;
+            &#xBCF5;&#xC0AC;&#xD558;&#xC5EC; &#xB2E4;&#xB978; &#xBD80;&#xAC00;&#xCD95;
+            &#xB370;&#xC774;&#xD130;&#xC5D0; &#xBD99;&#xC5EC; &#xB123;&#xC2B5;&#xB2C8;&#xB2E4;.
             <br
-            />목록에서 복사할 부가축
-            정보의 이름을 선택하고
-            [페이지 복사] 버튼을 터치한
-            후 값을 적용할 부가축의
-            이름을 선택하고 [페이지
-            붙여넣기] 버튼을 터치하십시오.</li>
-          <li>[회전 반경]: 부가축이
-            회전축인 경우, 조그 시
-            선속도 제한을 위한 회전
-            반경을 설정합니다.</li>
+            />&#xBAA9;&#xB85D;&#xC5D0;&#xC11C; &#xBCF5;&#xC0AC;&#xD560; &#xBD80;&#xAC00;&#xCD95;
+            &#xC815;&#xBCF4;&#xC758; &#xC774;&#xB984;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xACE0;
+            [&#xD398;&#xC774;&#xC9C0; &#xBCF5;&#xC0AC;] &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD55C;
+            &#xD6C4; &#xAC12;&#xC744; &#xC801;&#xC6A9;&#xD560; &#xBD80;&#xAC00;&#xCD95;&#xC758;
+            &#xC774;&#xB984;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xACE0; [&#xD398;&#xC774;&#xC9C0;
+            &#xBD99;&#xC5EC;&#xB123;&#xAE30;] &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
+          <li>[&#xD68C;&#xC804; &#xBC18;&#xACBD;]: &#xBD80;&#xAC00;&#xCD95;&#xC774;
+            &#xD68C;&#xC804;&#xCD95;&#xC778; &#xACBD;&#xC6B0;, &#xC870;&#xADF8; &#xC2DC;
+            &#xC120;&#xC18D;&#xB3C4; &#xC81C;&#xD55C;&#xC744; &#xC704;&#xD55C; &#xD68C;&#xC804;
+            &#xBC18;&#xACBD;&#xC744; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
         </ul>
       </td>
     </tr>

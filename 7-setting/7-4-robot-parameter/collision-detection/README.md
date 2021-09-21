@@ -15,17 +15,16 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
 
 충돌검지 기능을 설정하는 방법은 다음과 같습니다.
 
-1.	\[3: 로봇 파라미터 &gt; 14: 충돌검지\] 메뉴를 터치하십시오.
-
-2.	충돌검지 기능의 사용 여부와 민감도 등을 설정하십시오.
+1. \[3: 로봇 파라미터 &gt; 14: 충돌검지\] 메뉴를 터치하십시오.
+2. 충돌검지 기능의 사용 여부와 민감도 등을 설정하십시오.
 
 ![](../../../.gitbook/assets/image%20%28210%29.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
+      <th style="text-align:left">&#xBC88;&#xD638;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
     </tr>
   </thead>
   <tbody>
@@ -34,31 +33,31 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
         <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>충돌검지 기능의 사용
-          옵션 정보입니다. 이 기능의
-          사용 여부와 민감도, 저속
-          충돌검지 기능 사용 여부를
-          설정할 수 있습니다.</p>
+        <p>&#xCDA9;&#xB3CC;&#xAC80;&#xC9C0; &#xAE30;&#xB2A5;&#xC758; &#xC0AC;&#xC6A9;
+          &#xC635;&#xC158; &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;. &#xC774; &#xAE30;&#xB2A5;&#xC758;
+          &#xC0AC;&#xC6A9; &#xC5EC;&#xBD80;&#xC640; &#xBBFC;&#xAC10;&#xB3C4;, &#xC800;&#xC18D;
+          &#xCDA9;&#xB3CC;&#xAC80;&#xC9C0; &#xAE30;&#xB2A5; &#xC0AC;&#xC6A9; &#xC5EC;&#xBD80;&#xB97C;
+          &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
         <ul>
-          <li>[기능 사용]: 충돌검지
-            기능의 사용 여부를 설정합니다.</li>
-          <li>[민감도]: 충돌검지 민감도를
-            설정합니다. 값이 클수록
-            충격에 민감하게 동작합니다.(기본
-            설정값: 100%)</li>
-          <li>[저속 충돌 검지]: 저속
-            충돌검지 기능의 사용
-            여부를 설정합니다.
+          <li>[&#xAE30;&#xB2A5; &#xC0AC;&#xC6A9;]: &#xCDA9;&#xB3CC;&#xAC80;&#xC9C0;
+            &#xAE30;&#xB2A5;&#xC758; &#xC0AC;&#xC6A9; &#xC5EC;&#xBD80;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[&#xBBFC;&#xAC10;&#xB3C4;]: &#xCDA9;&#xB3CC;&#xAC80;&#xC9C0; &#xBBFC;&#xAC10;&#xB3C4;&#xB97C;
+            &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xAC12;&#xC774; &#xD074;&#xC218;&#xB85D;
+            &#xCDA9;&#xACA9;&#xC5D0; &#xBBFC;&#xAC10;&#xD558;&#xAC8C; &#xB3D9;&#xC791;&#xD569;&#xB2C8;&#xB2E4;.(&#xAE30;&#xBCF8;
+            &#xC124;&#xC815;&#xAC12;: 100%)</li>
+          <li>[&#xC800;&#xC18D; &#xCDA9;&#xB3CC; &#xAC80;&#xC9C0;]: &#xC800;&#xC18D;
+            &#xCDA9;&#xB3CC;&#xAC80;&#xC9C0; &#xAE30;&#xB2A5;&#xC758; &#xC0AC;&#xC6A9;
+            &#xC5EC;&#xBD80;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.
             <ul>
-              <li>[기준 시간]: 충돌로 판단하기
-                위한 기준 시간을 설정합니다.
-                기준 시간 동안 충격력이
-                발생하면 충돌로 판단합니다.</li>
-              <li>[링크 속도]: 저속으로
-                판단하기 위한 기준 속도를
-                설정합니다. 기준 링크
-                속도 이하에서만 저속
-                충돌을 검사합니다.</li>
+              <li>[&#xAE30;&#xC900; &#xC2DC;&#xAC04;]: &#xCDA9;&#xB3CC;&#xB85C; &#xD310;&#xB2E8;&#xD558;&#xAE30;
+                &#xC704;&#xD55C; &#xAE30;&#xC900; &#xC2DC;&#xAC04;&#xC744; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.
+                &#xAE30;&#xC900; &#xC2DC;&#xAC04; &#xB3D9;&#xC548; &#xCDA9;&#xACA9;&#xB825;&#xC774;
+                &#xBC1C;&#xC0DD;&#xD558;&#xBA74; &#xCDA9;&#xB3CC;&#xB85C; &#xD310;&#xB2E8;&#xD569;&#xB2C8;&#xB2E4;.</li>
+              <li>[&#xB9C1;&#xD06C; &#xC18D;&#xB3C4;]: &#xC800;&#xC18D;&#xC73C;&#xB85C;
+                &#xD310;&#xB2E8;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xAE30;&#xC900; &#xC18D;&#xB3C4;&#xB97C;
+                &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xAE30;&#xC900; &#xB9C1;&#xD06C;
+                &#xC18D;&#xB3C4; &#xC774;&#xD558;&#xC5D0;&#xC11C;&#xB9CC; &#xC800;&#xC18D;
+                &#xCDA9;&#xB3CC;&#xC744; &#xAC80;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;.</li>
             </ul>
           </li>
         </ul>
@@ -70,9 +69,9 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: 변경 내용을 저장합니다.</li>
-          <li>[ALL 초기화]: 모든 사용 옵션
-            설정값을 초기화합니다.</li>
+          <li>[OK]: &#xBCC0;&#xACBD; &#xB0B4;&#xC6A9;&#xC744; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[ALL &#xCD08;&#xAE30;&#xD654;]: &#xBAA8;&#xB4E0; &#xC0AC;&#xC6A9; &#xC635;&#xC158;
+            &#xC124;&#xC815;&#xAC12;&#xC744; &#xCD08;&#xAE30;&#xD654;&#xD569;&#xB2C8;&#xB2E4;.</li>
         </ul>
       </td>
     </tr>

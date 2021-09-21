@@ -26,11 +26,11 @@
 
 * 프로그램 스트로브 신호 사용이 유효인 경우: 외부 기동 입력 시 프로그램 스트포브 신호가 On이면 프로그램 선택 Bit를 읽고, 이 값을 프로그램 번호로 확정합니다.  
 
-![그림 52 프로그램 스트로브신호 &amp;lt;유효&amp;gt; 시 외부 프로그램 선택 선도](../../../.gitbook/assets/io-signal-strobe1.png)
+![&#xADF8;&#xB9BC; 52 &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC2A4;&#xD2B8;&#xB85C;&#xBE0C;&#xC2E0;&#xD638; &amp;lt;&#xC720;&#xD6A8;&amp;gt; &#xC2DC; &#xC678;&#xBD80; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC120;&#xD0DD; &#xC120;&#xB3C4;](../../../.gitbook/assets/io-signal-strobe1.png)
 
 * 프로그램 스트로브 신호 사용이 무효인 경우: 외부 기동 입력 후 프로그램 선택 Bit를 읽고, 이 값이 90 ms 동안 변경되지 않는 경우에 프로그램 번호로 확정합니다.
 
-![그림 53 프로그램 스트로브신호 &amp;lt;무효&amp;gt; 시 외부 프로그램 선택 선도](../../../.gitbook/assets/io-signal-strobe2.png)
+![&#xADF8;&#xB9BC; 53 &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC2A4;&#xD2B8;&#xB85C;&#xBE0C;&#xC2E0;&#xD638; &amp;lt;&#xBB34;&#xD6A8;&amp;gt; &#xC2DC; &#xC678;&#xBD80; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC120;&#xD0DD; &#xC120;&#xB3C4;](../../../.gitbook/assets/io-signal-strobe2.png)
 
 * 프로그램 선택 Bit와 Binary/Discrete \(OFF→Binary\)
 

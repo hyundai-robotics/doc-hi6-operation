@@ -2,17 +2,16 @@
 
 로봇 사용 환경에 따라 각 축의 동작 범위를 조정합니다.
 
-1.	\[3: 로봇 파라미터 &gt; 3: 소프트 리밋\] 메뉴를 터치하십시오.
-
-2.	각 축의 동작 범위를 설정하십시오.
+1. \[3: 로봇 파라미터 &gt; 3: 소프트 리밋\] 메뉴를 터치하십시오.
+2. 각 축의 동작 범위를 설정하십시오.
 
 ![](../../.gitbook/assets/image%20%28214%29.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
+      <th style="text-align:left">&#xBC88;&#xD638;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
     </tr>
   </thead>
   <tbody>
@@ -20,10 +19,10 @@
       <td style="text-align:left">
         <img src="../../.gitbook/assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">각 축의 동작 범위의 상세
-        정보입니다. 축의 최소와
-        최대 동작 범위와 현재
-        축 위치를 설정할 수 있습니다.</td>
+      <td style="text-align:left">&#xAC01; &#xCD95;&#xC758; &#xB3D9;&#xC791; &#xBC94;&#xC704;&#xC758; &#xC0C1;&#xC138;
+        &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;. &#xCD95;&#xC758; &#xCD5C;&#xC18C;&#xC640;
+        &#xCD5C;&#xB300; &#xB3D9;&#xC791; &#xBC94;&#xC704;&#xC640; &#xD604;&#xC7AC;
+        &#xCD95; &#xC704;&#xCE58;&#xB97C; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -31,12 +30,12 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: 변경 내용을 저장합니다.</li>
-          <li>[현재값]: 현재 로봇의
-            위치를 기준으로 각 축의
-            동작 범위를 설정합니다.</li>
-          <li>[ALL 초기화]: 모든 축의 동작
-            범위를 초기화합니다.</li>
+          <li>[OK]: &#xBCC0;&#xACBD; &#xB0B4;&#xC6A9;&#xC744; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[&#xD604;&#xC7AC;&#xAC12;]: &#xD604;&#xC7AC; &#xB85C;&#xBD07;&#xC758;
+            &#xC704;&#xCE58;&#xB97C; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xAC01; &#xCD95;&#xC758;
+            &#xB3D9;&#xC791; &#xBC94;&#xC704;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[ALL &#xCD08;&#xAE30;&#xD654;]: &#xBAA8;&#xB4E0; &#xCD95;&#xC758; &#xB3D9;&#xC791;
+            &#xBC94;&#xC704;&#xB97C; &#xCD08;&#xAE30;&#xD654;&#xD569;&#xB2C8;&#xB2E4;.</li>
         </ul>
       </td>
     </tr>
