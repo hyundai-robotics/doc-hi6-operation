@@ -48,7 +48,7 @@
             be displayed on the jog bar. Based on the robot coordinate system, the
             tooltip (TCP, Tool Center Point) of the robot can be moved or rotated.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-user (1).png" alt/>User Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
+            <img src="../../../.gitbook/assets/bt-crd-user.png" alt/>User Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
             be displayed on the jog bar. The tooltip of the robot can be moved and
             rotated based on the user coordinate system.</li>
           <li>
