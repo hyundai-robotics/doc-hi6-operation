@@ -1,4 +1,4 @@
-# 4. 메뉴
+# 4. Menu
 
-변수 및 파일 관리 등 프로그램의 각종 서비스 기능 메뉴를 사용할 수 있습니다.
+You can use the program’s various service function menus such as variable and file management.
 

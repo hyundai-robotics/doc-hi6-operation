@@ -289,7 +289,7 @@ You can control the operation of the robot or manage devices that interoperate w
             &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD55C; &#xD6C4; &#xC124;&#xC815;&#xCC3D;&#xC5D0;&#xC11C;
             &#xC635;&#xC158;&#xC744; &#xC124;&#xC815;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-spd_manual (3) (3) (3) (3).png"
+            <img src="../../../.gitbook/assets/bt-spd_manual (3) (3) (3) (3) (5).png"
             alt/>[1cycle]: end &#xBA85;&#xB839;&#xBB38;&#xAE4C;&#xC9C0; &#xC2E4;&#xD589;
             &#xD6C4; &#xC815;&#xC9C0;&#xD569;&#xB2C8;&#xB2E4;.</li>
           <li>
@@ -314,11 +314,11 @@ You can control the operation of the robot or manage devices that interoperate w
         <p></p>
         <ul>
           <li>
-            <img src="../../../.gitbook/assets/bt-spd_manual (3) (3) (3) (2).png"
+            <img src="../../../.gitbook/assets/bt-spd_manual (3) (3) (3) (3) (4).png"
             alt/>&#xC218;&#xB3D9; &#xBAA8;&#xB4DC;: &#xC2A4;&#xD15D; FWD/BWD &#xC81C;&#xD55C;
             &#xC18D;&#xB3C4;(&#x339C;/sec)&#xB97C; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-spd_manual (3) (3) (3) (1).png"
+            <img src="../../../.gitbook/assets/bt-spd_manual (3) (3) (3) (3) (3).png"
             alt/>&#xC790;&#xB3D9; &#xBAA8;&#xB4DC;: &#xC7AC;&#xC0DD; &#xC18D;&#xB3C4;(%)&#xB97C;
             &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</li>
         </ul>
@@ -487,7 +487,7 @@ You can control the operation of the robot or manage devices that interoperate w
             &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xB85C;&#xBD07;&#xC758; &#xD234; &#xB05D;(TCP)&#xC744;
             &#xC774;&#xB3D9; &#xBC0F; &#xD68C;&#xC804;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-tool (1) (1).png" alt/>&#xD234;(Tool) &#xC88C;&#xD45C;&#xACC4;: &#xC870;&#xADF8; &#xB9C9;&#xB300;&#xC5D0;
+            <img src="../../../.gitbook/assets/bt-crd-tool (1) (1) (1).png" alt/>&#xD234;(Tool) &#xC88C;&#xD45C;&#xACC4;: &#xC870;&#xADF8; &#xB9C9;&#xB300;&#xC5D0;
             X, Y, Z, RX, RY, RZ&#xC640; &#xBD80;&#xAC00;&#xCD95;&#xC774; &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;.
             &#xD234; &#xC88C;&#xD45C;&#xACC4;&#xB97C; &#xAE30;&#xC900;&#xC73C;&#xB85C;
             &#xB85C;&#xBD07;&#xC758; &#xD234; &#xB05D;(TCP)&#xC744; &#xC774;&#xB3D9;

@@ -1,15 +1,22 @@
-# 4.1 메뉴 사용
+# 4.1 Use of Menus
 
-1.	수동 또는 자동 모드에서 초기 화면 우측의 \[메뉴\] 버튼을 터치하십시오. 프로그램의 각종 서비스 메뉴가 표시됩니다.
+1.	In manual or automatic mode, touch the \[Menu\] button on the right side of the initial screen. Various service menus of the program will be displayed.
 
-2.	원하는 메뉴를 선택하여 파일 및 프로그램, 티치 펜던트를 관리하거나 로봇 시스템의 상태를 확인하십시오. 
+2.	Selecting the desired menu will enable you to manage files, programs, teach pendants, or to check the status of the robot system.
 
-![](../.gitbook/assets/image%20%2844%29.png)
+![](../.gitbook/assets/image%20%28194%29.png)
 
-* \[5: 파일관리\]: 메인 보드의 내부 메모리와 티치 펜던트 및 이동식 저장 장치의 파일을 관리합니다.
-* \[6: 프로그램 변환\]: 작성된 프로그램의 조건 및 위치 등을 일괄 또는 개별 변환합니다.
-* \[7: 시스템 진단\]: 로봇과 제어기의 상태를 확인하고 시스템의 버전을 업데이트합니다.
-* \[8: 날짜, 시간 설정\]: 제어기의 날짜와 시간을 설정합니다.
+
+
+* \[5: File Manager\]: You can manage files in the main board’s internal memory, teach pendant, or removable storage device.
+* \[6: Program Conversion\]: You can convert the data, such as the condition and location of the created program, by batch or individually.
+* 
+  \[7: System Diagnosis\]: You can check the status of the robot and controller and update the system version.
+
+* 
+  \[8: Date, time setting\]: You can set the date and time of the controller.
+
+
 
 
 

@@ -4,7 +4,7 @@ The following shows how to check and deal with various system troubles, such as 
 
 * Check the notification on the taskbar. An error code, notification message, and time of error occurrence will appear.
 
-![](../../.gitbook/assets/image%20%28304%29.png)
+![](../../.gitbook/assets/image%20%28304%29%20%281%29.png)
 
 * Touch the notification on the taskbar. Then, the error and warning history will appear in a new window. 
 

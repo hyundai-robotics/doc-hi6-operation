@@ -66,7 +66,7 @@
           <li>[&#xAC01;&#xB3C4;&#xBCF4;&#xC815;]: &#xD234;&#xC758; &#xAC01;&#xB3C4;&#xB97C;
             &#xBCF4;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.
             <br />
-            <img src="../../../.gitbook/assets/tool-angle-auto-calib (1).png" alt/>
+            <img src="../../../.gitbook/assets/tool-angle-auto-calib (2).png" alt/>
           </li>
         </ul>
       </td>
