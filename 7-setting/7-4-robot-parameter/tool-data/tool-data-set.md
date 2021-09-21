@@ -43,7 +43,7 @@
             &#xC0C8;&#xB85C;&#xC6B4; &#xD234;&#xC758; &#xAE38;&#xC774;&#xC640; &#xAC01;&#xB3C4;&#xAC00;
             &#xC0DD;&#xC131;&#xB429;&#xB2C8;&#xB2E4;.
             <br />
-            <img src="../../../.gitbook/assets/tool-data-auto-calib.png" alt/>
+            <img src="../../../.gitbook/assets/tool-angle-auto-calib (1).png" alt/>
             <br />
             <ul>
               <li>[&#xAE30;&#xC874; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xBC88;&#xD638;]:

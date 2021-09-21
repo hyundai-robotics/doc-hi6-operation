@@ -65,7 +65,7 @@
             &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xB85C;&#xBD07;&#xC758; &#xD234; &#xB05D;(TCP)&#xC744;
             &#xC774;&#xB3D9; &#xBC0F; &#xD68C;&#xC804;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-tool.png" alt/>&#xD234;(Tool) &#xC88C;&#xD45C;&#xACC4;: &#xC870;&#xADF8; &#xB9C9;&#xB300;&#xC5D0;
+            <img src="../../../.gitbook/assets/bt-crd-tool (1) (1) (2).png" alt/>&#xD234;(Tool) &#xC88C;&#xD45C;&#xACC4;: &#xC870;&#xADF8; &#xB9C9;&#xB300;&#xC5D0;
             X, Y, Z, RX, RY, RZ&#xC640; &#xBD80;&#xAC00;&#xCD95;&#xC774; &#xD45C;&#xC2DC;&#xB429;&#xB2C8;&#xB2E4;.
             &#xD234; &#xC88C;&#xD45C;&#xACC4;&#xB97C; &#xAE30;&#xC900;&#xC73C;&#xB85C;
             &#xB85C;&#xBD07;&#xC758; &#xD234; &#xB05D;(TCP)&#xC744; &#xC774;&#xB3D9;
