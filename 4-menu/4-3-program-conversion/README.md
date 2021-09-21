@@ -1,15 +1,15 @@
-# 4.3 프로그램 변환
+# 4.3 Program Conversion
 
-작성된 프로그램의 조건 및 위치 등을 일괄 또는 개별적으로 수정하거나 좌표를 변환하여 새 프로그램을 작성합니다.
+You can write a new program by modifying the conditions and location of the created program by batches or individually, or by shifting coordinates.
 
-1.	\[6: 프로그램 변환\] 메뉴를 터치하십시오. 프로그램 변환 메뉴가 나타납니다.
+1.	Touch the \[6: Program Conversion\] menu. Then, the program conversion menu will appear. 
 
-2.	원하는 메뉴를 선택하여 프로그램의 조건 및 위치 등을 수정하거나 새 프로그램을 작성하십시오.
+2.	Select the desired menu and then modify the program conditions and location, or write a new program.
 
-![](../../.gitbook/assets/image%20%28141%29.png)
+![](../../.gitbook/assets/image%20%28255%29.png)
 
 {% hint style="info" %}
-로봇 기동 중에는 \[4: 기록좌표계\], \[5: 좌표변환\], \[6: 미러 이미지\], \[7: 스텝복사\] 메뉴의 사용이 제한됩니다.
+During the startup of the robot, the use of the menus \[4: The reference coordinate system\], \[5: Coordinate transformation\], \[6: Mirror Image\], and \[7: Step Copy\] will be restricted.
 {% endhint %}
 
 

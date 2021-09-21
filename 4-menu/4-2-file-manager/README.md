@@ -6,7 +6,7 @@
 
 2.	Check and manage the folder structure and saved files by device.
 
-![](../../.gitbook/assets/image%20%28315%29.png)
+![](../../.gitbook/assets/image%20%28320%29.png)
 
 
 
