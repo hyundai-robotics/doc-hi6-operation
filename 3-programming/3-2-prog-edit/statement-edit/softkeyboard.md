@@ -1,20 +1,27 @@
-# 3.2.4.4 소프트 키보드
+# 3.2.4.4 Soft Keyboard
 
-Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수식, 문자열을 편리하게 입력합니다.
+You can easily input variables, expressions, and strings using the soft keyboard on the Hi6 teach pendant screen.
 
-1.	Hi6 티치 펜던트 화면의 이력 표시줄에서 \[![](../../../.gitbook/assets/bt-softkb-off.png)\] 버튼을 터치하십시오. 화면 하단에 소프트 키보드가 나타납니다.
+1.	Touch the \[ \] button on the log bar of the Hi6 teach pendant screen. Then, a soft keyboard will appear at the bottom of the screen.
 
-2.	소프트 키보드를 이용하여 입력 영역에 변수나 수식, 문자열을 입력하십시오. 기존의 인수값이 제거되고 입력한 텍스트가 표시됩니다.
+2.	You can input variables, expressions, and strings in the input area using the soft keyboard. The existing parameter values will be removed, and the inputted texts will be displayed.
 
 ![](../../../.gitbook/assets/image%20%2878%29.png)
 
-* 입력 영역 좌측의 \[![](../../../.gitbook/assets/bt-cursor-left.png)/![](../../../.gitbook/assets/bt-cursor-right.png)\] 버튼을 터치하면, 커서의 위치를 이동하여 원하는 위치에 텍스트를 삽입할 수 있습니다.
-* \[![](../../../.gitbook/assets/bt-123.png)/![](../../../.gitbook/assets/bt-symbol.png)\] 버튼을 터치하면 숫자와 기호 및 특수 문자를 입력할 수 있습니다.
-* \[![](../../../.gitbook/assets/bt-lang.png)\] 버튼을 터치하면 입력 언어를 변경할 수 있습니다.
-* 티치 펜던트의 &lt;shift&gt; 키를 누른 상태에서 키를 터치하면 대문자 및 기호를 입력할 수 있습니다.
-* \[![](../../../.gitbook/assets/bt-dock-softkb.png)\] 버튼을 터치하면 키보드의 위치를 화면 상단으로 이동할 수 있습니다.
+* If you touch the \[ / \] button on the left side of the input area, you can move the cursor position, allowing you to insert the text at the desired position.
+* You can input numbers and special characters by touching the \[![](../../../.gitbook/assets/bt-123.png)/![](../../../.gitbook/assets/bt-symbol.png)\] button.
+* 
+  You can change the input language by touching the \[![](../../../.gitbook/assets/bt-lang.png)\] button.
 
-3.	텍스트 편집을 완료하면, 소프트 키보드 우측 하단의 \[![](../../../.gitbook/assets/bt-softkb.png)\] 버튼을 터치하여 소프트 키보드를 숨기십시오.
+* 
+  You can input a capital letter or a symbol by touching the key while pressing the &lt;shift&gt; key on the teach pendant.
+
+* 
+  You can move the keyboard to the top of the screen by touching the \[![](../../../.gitbook/assets/bt-dock-softkb.png)\] button.
+
+3.	When you have finished editing the text, you can hide the soft keyboard by touching the \[![](../../../.gitbook/assets/bt-softkb.png)\] button at the bottom right of the soft keyboard.
+
+
 
 
 

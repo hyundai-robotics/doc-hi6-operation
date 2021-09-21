@@ -1,27 +1,35 @@
-# 3.2.4.5 블록 편집 모드
+# 3.2.4.5 Block Editing Mode
 
-프로그램의 한 행 또는 여러 행을 블록\(Block\)으로 지정하여 복사, 이동 및 삭제합니다.
+You can copy, move, and delete a line or multiple lines of the program by designating it or them as a block.
 
-1.	티치 펜던트의 &lt;shift&gt; 키를 누른 상태에서 JOB 프로그램창 우측의 \[블록편집\] 버튼을 터치하십시오. 블록편집 모드가 활성화됩니다.
+1.	While pressing the &lt;shift&gt; key on the teach pendant, touch the \[Block Editing\] button on the right side of the JOB program window. Then, the block editing mode will be activated.
 
-2.	티치 펜던트의 &lt;↓/↑&gt; 키로 원하는 행에 커서를 두고 &lt;enter&gt; 키를 누르십시오. 커서가 위치한 행이 블록의 시작행으로 선택됩니다. 
+2.	Place the cursor on the desired line using the &lt;↓/↑&gt; keys on the teach pendant and then press the &lt;enter&gt; key. Then, the line on which the cursor is placed will be selected as the start line of the block.
 
-![](../../../.gitbook/assets/image%20%2880%29.png)
+![](../../../.gitbook/assets/image%20%28354%29.png)
 
-3.	티치 펜던트의 조그 다이얼을 돌려 커서를 이동하십시오. 시작행부터 커서를 이동시킨 행까지 블록으로 선택됩니다. 
 
-![](../../../.gitbook/assets/image%20%2843%29.png)
 
-4.	화면 우측의 기능 버튼을 이용하여 블록으로 선택한 영역의 명령문을 편집하십시오. 
+3.	Move the cursor by turning the jog dial on the teach pendant. Then, the section from the start line to the line to which the cursor is moved to will be selected as a block.
 
-![](../../../.gitbook/assets/image%20%2857%29.png)
+![](../../../.gitbook/assets/image%20%28343%29.png)
 
-* \[잘라내기\]: 블록으로 선택한 영역을 잘라내어 다른 위치에 붙여 넣을 수 있도록 클립보드에 저장합니다.  
-* \[복사하기\]: 블록으로 선택한 영역을 복사하여 다른 위치에 붙여 넣을 수 있도록 클립보드에 저장합니다.  
-* \[붙여넣기\]: 클립보드에 저장한 영역을 원하는 위치에 붙여 넣습니다. 클립보드에 저장된 명령문을 붙여 넣으려면, 조그 다이얼로 커서의 위치를 선택한 후 \[붙여넣기\] 버튼을 터치하십시오. 현재 커서 위치 바로 아래 행에 명령문이 입력됩니다.  
-* \[삭제\]: 선택 영역을 삭제합니다.
+4.	You can edit the statement in the area that is selected as a block using the function buttons on the right side of the screen.
 
-5.	블록 편집을 완료하면, 티치 펜던트의 &lt;esc&gt; 키를 누르거나 화면 우측의 \[닫기\] 버튼을 터치하여 블록편집 모드를 종료하십시오.
+![](../../../.gitbook/assets/image%20%28345%29.png)
+
+* \[Cut\]: You can cut the area selected as a block and save it in the clipboard so that it can be pasted to another location.
+* \[Copy\]: You can copy the area selected as a block and save it in the clipboard so that it can be pasted to another location.
+* \[Paste\]: Paste the area saved in the clipboard to the desired location.
+
+  To paste the statement saved in the clipboard, you should select the cursor position using the jog dial and then touch the \[Paste\] button. Then, the statement will be inputted into the line right below the current cursor position.
+
+* 
+  \[Delete\]: You can delete the selected area.
+
+5.	When you complete editing a block, press the &lt;esc&gt; key on the teach pendant or touch the \[Close\] button on the right side of the screen to exit the block editing mode.
+
+
 
 
 
