@@ -1,34 +1,36 @@
-# 6.13 시스템 특성
+# 6.13 System Character
 
-패널 선택창에서 \[시스템 특성\]을 터치하십시오. 시스템 특성창이 나타납니다. 로봇 시스템의 다양한 데이터를 모두 확인하거나 특정한 정보 유형의 데이터만 확인할 수 있습니다.
+In the panel selection window, touch \[System character\]. Then, the system character window will appear. 
 
-![&#xADF8;&#xB9BC; 45 &#xC2DC;&#xC2A4;&#xD15C; &#xD2B9;&#xC131;](../.gitbook/assets/image%20%28171%29.png)
+You can check all the various data of the robot system or only the data of a specific type of information.
 
-| 번호 | 설명 |
+![Figure 44 System character](../.gitbook/assets/image%20%28412%29.png)
+
+| No. | Description |
 | :--- | :--- |
-| ![](../.gitbook/assets/c1.png)  | 로봇 시스템의 데이터를 표시합니다. 상단의 정보 유형을 선택하여 해당 유형의 상세 데이터를 확인할 수 있습니다. |
-| ![](../.gitbook/assets/c2.png)  | \[초기화\]: 축별 모션을 제외한 나머지 항목에 한하여, 시스템 데이터의 최대값을 유형별로 초기화할 수 있습니다. |
+| ![](../.gitbook/assets/c1.png) | Displays the data of the robot system. You can check the detailed data of a specific type by selecting individual types of information shown above. |
+| ![](../.gitbook/assets/c2.png) | **\[Clear\]**: For the rest of the items except for the motion of each axis, you can initialize the maximum value of the system data by type. |
 
 {% hint style="info" %}
-시스템 특성 모니터링 기능은 엔지니어 모드에서만 사용할 수 있습니다.
+System character monitoring function is only available in engineer mode.
 {% endhint %}
 
 {% hint style="warning" %}
-* 엔지니어 모드\(Engineer Mode\)에서는 상태 표시줄에 엔지니어 모드 아이콘\(![](../.gitbook/assets/eng-mode%20%281%29.png)\)이 깜빡입니다.
-* 엔지니어 모드에서 잘못 설정하면 로봇 시스템에 심각한 문제가 발생할 수 있으므로 주의하시기 바랍니다.
+* In Engineer Mode, the Engineer Mode icon \(![](../.gitbook/assets/eng-mode%20%281%29.png)\) will blink on the status bar.
+* Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
 {% endhint %}
 
 ### 
 
-### 초기화
+#### Initialization
 
-원하는 정보 유형을 선택하여 데이터의 최대값을 초기화할 수 있습니다.
+You can initialize the maximum value of the data by selecting the type of information you want.
 
-1.	시스템 특성창 하단의 \[초기화\] 버튼을 터치하십시오.
+1.	Touch the \[Clear\] button at the bottom of the system properties window.
 
-![](../.gitbook/assets/image%20%28177%29.png)
+![](../.gitbook/assets/image%20%28405%29.png)
 
-2.	초기화할 정보 유형을 터치하십시오. 선택한 항목의 최대값이 초기화됩니다.
+2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized.
 
-![](../.gitbook/assets/image%20%28168%29.png)
+![](../.gitbook/assets/image%20%28406%29.png)
 

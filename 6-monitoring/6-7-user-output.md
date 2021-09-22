@@ -4,7 +4,7 @@ Touch \[public Output\] in the panel selection window. Then, the public output s
 
 You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
 
-![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28410%29.png)
+![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28413%29.png)
 
 <table>
   <thead>
@@ -68,11 +68,11 @@ You can select the desired signal and force it to be outputted.
 
 2.	Touch a signal to select it in the signal window, and then touch the \[Manual Output\] button.
 
-![](../.gitbook/assets/image%20%28408%29.png)
+![](../.gitbook/assets/image%20%28410%29.png)
 
 3.	After checking the output conditions in the manual output confirmation window, touch the \[ENTER\] button.
 
-![](../.gitbook/assets/image%20%28421%29.png)
+![](../.gitbook/assets/image%20%28424%29.png)
 
 | FbN | doN | =1/0 |
 | :---: | :---: | :---: |
@@ -80,5 +80,5 @@ You can select the desired signal and force it to be outputted.
 
 4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
 
-![](../.gitbook/assets/image%20%28406%29.png)
+![](../.gitbook/assets/image%20%28408%29.png)
 
