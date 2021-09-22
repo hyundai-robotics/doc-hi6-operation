@@ -12,7 +12,7 @@ You can check the local variables defined as var in the JOB program. You can als
 
 3.	You can check the name, type, and value of a variable. You can also select and change the value of a variable.
 
-![](../.gitbook/assets/image%20%28417%29.png)
+![](../.gitbook/assets/image%20%28418%29.png)
 
 
 

@@ -72,7 +72,7 @@ You can select the desired signal and force it to be outputted.
 
 3.	After checking the output conditions in the manual output confirmation window, touch the \[ENTER\] button.
 
-![](../.gitbook/assets/image%20%28419%29.png)
+![](../.gitbook/assets/image%20%28420%29.png)
 
 | FbN | doN | =1/0 |
 | :---: | :---: | :---: |

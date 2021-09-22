@@ -110,7 +110,7 @@
   * [6.8 Global Variables](6-monitoring/6-8-global-variable.md)
   * [6.9 Local Variables](6-monitoring/6-9-local-variable.md)
   * [6.10 Operation time](6-monitoring/6-10-op-info.md)
-  * [6.11 이력](6-monitoring/6-11-log.md)
+  * [6.11 Log](6-monitoring/6-11-log.md)
   * [6.12 히스토리](6-monitoring/6-12-history.md)
   * [6.13 시스템 특성](6-monitoring/6-13-system-spec.md)
   * [6.14 태스크](6-monitoring/6-14-task.md)
