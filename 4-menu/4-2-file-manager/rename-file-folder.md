@@ -8,7 +8,7 @@ You can rename a file or folder. You can also rename multiple files or folders a
 
 2.	Input the file \(or folder\) name in the input area.
 
-![](../../.gitbook/assets/image%20%28383%29.png)
+![](../../.gitbook/assets/image%20%28387%29.png)
 
 * You can input the number simply by using the operation keys on the teach pendant. \(&lt;←/→&gt; keys: For moving the cursor. Number keys: For inputting a number\)
 * 

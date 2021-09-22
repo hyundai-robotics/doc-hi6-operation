@@ -1,22 +1,24 @@
-# 5.1    운전 조건 설정
+# 5.1 Operation Condition Setting
 
-1.	초기 화면에서 좌측 상단의 \[속도조절\] 버튼을 터치하십시오. 운전 조건 설정창이 나타납니다.
+1.	Touch the \[Speed Adjustment\] button on the upper left on the initial screen. Then, the operation conditions setting window will appear.
 
-![](../.gitbook/assets/image%20%28113%29.png)
+![](../.gitbook/assets/image%20%28365%29.png)
 
 {% hint style="info" %}
-\[속도조절\] 버튼에는 수동 모드일 때에는 스텝 전후진 제한 속도\(㎜/sec\)가 표시되고, 자동 모드에서는 재생 속도\(%\)가 표시됩니다.
+On the \[Speed Adjustment\] button, the speed limit \(mm/sec\) will be displayed while in manual mode, and the playback speed \(%\) will be displayed in automatic mode.
 {% endhint %}
 
 
 
-2.	다음 절차를 반복하여 운전 조건 설정값을 변경한 후 \[OK\] 버튼을 터치하십시오.
+2.	Change the operation condition setting values by repeating the following procedure, and then touch the \[OK\] button.
 
-![](../.gitbook/assets/image%20%28132%29.png)
+![](../.gitbook/assets/image%20%28371%29.png)
 
-a.	티치 펜던트의 조그 다이얼을 돌리십시오. 커서가 이동합니다.
+a.	Turn the jog dial on the teach pendant. Then, the cursor will move.
 
-b.	조그 다이얼을 돌려 원하는 옵션을 선택하거나 숫자키를 눌러 수치를 입력하십시오.
+b.	Turn the jog dial to select the desired option, or press the numeric keys to input a number.
 
-c.	&lt;enter&gt; 키를 누르십시오. 변경 내용이 적용되어 설정값이 변경되고 커서가 다음 항목으로 이동합니다.
+c.	Press the &lt;enter&gt; key. Then, the contents of the change will be applied, causing the setting value to be changed, and then the cursor will move to the next item.
+
+
 

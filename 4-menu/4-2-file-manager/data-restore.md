@@ -6,11 +6,11 @@ This function helps restore the project \(project/\) and history \(log/\) that a
 
 
 
-![](../../.gitbook/assets/image%20%28377%29.png)
+![](../../.gitbook/assets/image%20%28381%29.png)
 
 2.	By using the teach pendant’s jog dial, select the \[MAIN\] folder in the folder list, and then touch the \[Paste\] button.
 
-![](../../.gitbook/assets/image%20%28376%29.png)
+![](../../.gitbook/assets/image%20%28380%29.png)
 
 
 

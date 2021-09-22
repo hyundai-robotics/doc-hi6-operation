@@ -1,56 +1,78 @@
-# 5.2    운전 조건 설정 정보
+# 5.2 Information of Operation Conditions Setting
 
 
 
-* \[1: 동작 사이클\]: 자동 운전 시 실행되는 프로그램의 반복 여부를 설정합니다. 로봇 기동 중에도 설정할 수 있으며 수동 운전 시에서 설정값이 적용되지 않습니다.
-  * 1사이클: 작업 프로그램을 1 회 운전 후 종료합니다. 프로그램 END를 만나면 로봇이 정지합니다.
-  * 반복: 작업 프로그램을 연속해서 반복 운전합니다. 외부의 정지 조작이 있으면 로봇이 정지합니다.
-* \[2: 스탭 전/후진시 최고속\]: 스텝의 전후진 시 제한 속도를 설정합니다. 이 옵션에 대한 자세한 내용은 “2.1 수동 운전”을 참조하십시오.
-* \[3: 스탭 전진시 펑션 실행\]: 스텝 전진 시 작업 프로그램에 기록된 기능의 실행 옵션\(방식\)을 설정합니다.
-  * Off: 작업 프로그램에 기록된 END만 실행합니다. END를 제외한 다른 모든 기능은 실행하지 않습니다.
-  * On: 작업 프로그램에 기록된 모든 기능을 실행합니다.
-  * 1 On: 입력 신호 대기 기능과 프로그램 END 기능만 실행합니다.
+* \[1: Operation cycle type\]: You can set whether to repeat the program that will be executed during automatic operation. It can also be set while the robot is starting up, and the setting value will not be applied during manual operation.
+  * 
+    1 Cycle: The job program will operate once and then stop. When the program END is reached, the robot will stop.
+
+  * Continuous: The job program will operate continuously and repeatedly. If there is an external stop operation, the robot will stop.
+* 
+  \[2: Step FWD/BWD maximum speed\]: You can set the speed limit for a step forward/backward. For details on this option, refer to “2.1 Manual Operation.”
+
+* 
+  \[3: Function execution during Step FWD\]: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
+
+  * 
+    Off: Only END recorded in the job program will be executed. All other functions except for END will not be executed.
+
+  * 
+    On: All functions recorded in the job program will be executed.
+
+  * 
+    1 On: Only the input signal wait function and program END function will be executed.
+
+
 
 {% hint style="warning" %}
-스텝 후진 시에는 입력 대기 신호 기능만 실행하고 이외의 모든 기능은 실행하지 않습니다.
+While in the step backward operation, only the input wait signal function will be executed, and all other functions will not be executed.
 {% endhint %}
 
-* \[4: 스텝 후진 후, 전진 시 펑션 재실행\]: 스텝 후진 후 다시 전진할 때 작업 프로그램에 기록된 기능 중 이전에 실행한 기능을 다시 실행하도록 설정합니다.
-* \[5: 스텝 전/후진시 경로복구\]: 스텝 전후진 시 경로 복구의 실행 방식을 설정합니다.
-  * 무효: 경로 복구를 실행하지 않습니다.
-  * 유효: 사용자에게 경로 복구의 실행 여부를 확인하지 않고 수행합니다.
-* \[6: 자동운전 속도비율\]: 자동 모드로 프로그램 재생 시 로봇의 운전 속도\(%\)를 설정합니다. 작업 프로그램의 스텝에 기록된 속도를 변경하는 것이 아니라 스텝에 기록된 속도에 대한 로봇의 이동 속도를 1 ~ 100% 범위의 비율\(%\)로 일괄 변경합니다.
+* \[4: Re-execution of the function after step backward and forward\]: You can perform setting in a way that the previously executed functions among the functions recorded in the job program can be executed again when in the step forward operation again after the step backward operation.
+* 
+  \[5: Path recovery during step FWD/BWD\]: You can set the mode of executing path recovery when in the step forward/backward operation.
+
+  * Disable: Will not execute path recovery
+  * Enable: Will execute path recovery without confirming with the user whether to execute path recovery
+
+* 
+  \[6: Playback speed rate\]: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot’s moving speed against the speed recorded in the step in batch.
+
+
 
 {% hint style="info" %}
-스텝 후진 시에는 입력 대기 신호 기능만 실행하고 이외의 모든 기능은 실행하지 않습니다.
+If a low-speed command is inputted through an external input during automatic operation, the automatic operation speed ratio will not be applied, but the manual maximum speed \(250 mm/s\) will be applied.
 {% endhint %}
 
-* \[7: 로봇 Lock\]: 로봇을 실제로 움직이지 않고 작업 프로그램을 자동 운전하도록 설정합니다. 주변 기기와의 입출력 상태와 소프트 리미트, 사이클 타임 등을 확인할 수 있습니다.
-* \[8: 보간기준\]: 수동으로 로봇을 조그 동작할 때 기준이 되는 툴을 설정합니다. 일반적으로 로봇툴을 보간 기준으로 사용합니다.
-  * 로봇툴: 로봇 선단에 부착된 툴을 기준으로 보간 동작을 실행합니다.
-  * 정치툴: 바닥면 등에 고정된 툴의 선단을 기준으로 보간 동작을 실행합니다. 정치툴을 보간 기준으로 선택하면 초기 화면 좌측의 툴 번호가 ST0으로 표시됩니다\(![](../.gitbook/assets/icon-st0.png)\).
+* \[7: Robot Lock\]: You can set the job program in a way that automatic operation is possible, without moving the robot. You can check the status of I/O with the peripheral devices, the soft limit, the cycle time, etc.
+* \[8: Interpolation base\]: You can set a tool that will be the reference during the manual jogging of the robot. In general, a robot tool is used as an interpolation reference.
+  * Robot Tool: Interpolation operation will be executed based on the tool attached to the front end of the robot.
+  * 
+    Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../.gitbook/assets/bt-st0s.png)\).
+
+
 
 {% hint style="info" %}
-정치툴을 보간 기준으로 선택한 경우 반드시 정치툴 좌표계를 설정해야 합니다. 자세한 내용은 “7.3.6.2 정치툴 좌표계”를 참조하십시오.
+If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to “7.3.6.2 Stationary Tool Coordinate System.”
 {% endhint %}
 
-* \[9: 사용자 좌표계 지정\]: 수동 조그 조작 시 직교 동작을 위해 사용자 좌표계 번호\(0 ~ 10\)를 설정합니다. 로봇이 지정된 사용자 좌표계의 X, Y, Z 축 방향으로 직교 좌표계 동작을 수행합니다. 그리고 포즈 모니터링 시 선택한 사용자 좌표계의 좌표값이 툴 선단의 X, Y, Z 좌표값으로 나타납니다.
+* \[9: Select user Coordinate System Designation\]: You can set the user coordinate system number \(0–10\) for Cartesian operation during manual jog operation. Then, the robot will operate based on the Cartesian coordinate system in the directions of X, Y, and Z axes of the designated user coordinate system, and the coordinate values of the user coordinate system selected during the monitoring of the pose will be displayed as X, Y, and Z coordinate values of the front end of the tool.
 
 
 
 * 
-  0으로 설정하면 화면 우측의 \[좌표계\] 버튼에 로봇 좌표계 아이콘\(![](../.gitbook/assets/icon-crd-rob.png)\)이 표시됩니다. 사용자 좌표계에 대한 동작이 해제되고 로봇 좌표계에 대한 직교 좌표 동작 및 모니터링을 수행합니다.
+  If 0 is set, the robot coordinate system icon \(![](../.gitbook/assets/icon-crd-rob.png)\) will be displayed on the \[Coordinate System\] button on the right side of the screen. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed.
 
-![](../.gitbook/assets/image%20%28126%29.png)
+![](../.gitbook/assets/image%20%28364%29.png)
 
-* 1 ~ 10 사이의 번호로 설정하면 \[좌표계\] 버튼에 사용자 좌표계 아이콘\(![](../.gitbook/assets/icon-crd-user.png)\)이 표시됩니다. &lt;축조작&gt; 키로 변경된 좌표치 값은 사용자 좌표계를 기준으로 합니다.
+* If a number between 1 and 10 is set, the user coordinate system icon \(![](../.gitbook/assets/icon-crd-user.png)\) will be displayed on the \[Coordinate System\] button. The coordinate values that are changed by using the &lt;Axis Operation&gt; key will be based on the user coordinate system.
 
-![](../.gitbook/assets/image%20%28134%29.png)
+![](../.gitbook/assets/image%20%28363%29.png)
 
 
 
 {% hint style="info" %}
-사용자 좌표계 번호는 \[설정 &gt; 2: 제어 파라미터 &gt; 7: 좌표계 등록 &gt;1: 사용자 좌표계\] 메뉴에서 등록할 수 있습니다.
+You can register the user coordinate system number in the \[Set up &gt; 2: Control Parameter &gt; 7: Coordinate System Registration &gt;1: User Coordinate System\].
 {% endhint %}
 
 
