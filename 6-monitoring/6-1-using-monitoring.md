@@ -1,17 +1,20 @@
-# 6.1 모니터링 기능 사용
+# 6.1 Use of the Monitoring Function
 
-1.	작업 영역의 패널 스택 우측 상단의 \[+\] 버튼을 터치하십시오. 패널 선택창이 나타납니다.
+1.	Touch the \[+\] button at the top right of the panel stack in the work area. The panel selection window will appear.
 
-![](../.gitbook/assets/image%20%28145%29.png)
+![](../.gitbook/assets/image%20%28383%29.png)
 
 2.	패널 선택창에서 원하는 모니터링 항목을 선택하여 로봇 시스템의 상태와 제어기의 각종 데이터를 확인하십시오.
 
-![](../.gitbook/assets/image%20%28155%29.png)
+![](../.gitbook/assets/image%20%28382%29.png)
 
 {% hint style="info" %}
-* 패널 선택창에 모니터링 가능한 모든 항목이 나타납니다.
-* 모니터링 가능한 항목은 제어기 설정에 따라 다르게 나타납니다.
-* 작업 영역의 패널 스택과 창의 사용 방법에 대한 자세한 내용은 “1.2.3.5 작업 영역”을 참조하십시오.
+* All items that can be monitored will be displayed on the panel selection window.
+* 
+  The items that can be monitored will be displayed differently depending on the setting of the controller.
+
+* 
+  For details on how to use the panel stack and window of the work area, refer to “1.2.4.5 Work area.”
 {% endhint %}
 
 

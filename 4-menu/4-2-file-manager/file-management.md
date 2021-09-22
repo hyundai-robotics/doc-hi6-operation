@@ -33,5 +33,5 @@ Select one or multiple files to copy, move, or delete.
 
 * To delete a file, touch the \[Delete\] button, and then touch the \[ENTER\] button in the confirmation window.
 
-![](../../.gitbook/assets/image%20%28389%29.png)
+![](../../.gitbook/assets/image%20%28392%29.png)
 

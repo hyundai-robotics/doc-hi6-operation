@@ -1,4 +1,4 @@
-# 6. 모니터링
+# 6. Monitoring
 
-로봇 시스템의 상태와 제어기의 각종 데이터를 확인합니다.
+You can check the status of the robot system and various data of the controller.
 

@@ -4,7 +4,7 @@
 
 2.	Check and manage the system environment \(software version\) information of the robot and controller.
 
-![](../../../.gitbook/assets/image%20%28385%29.png)
+![](../../../.gitbook/assets/image%20%28388%29.png)
 
 <table>
   <thead>
