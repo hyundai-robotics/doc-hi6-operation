@@ -1,6 +1,6 @@
-# 6.3 포즈
+# 6.3 Pose
 
-패널 선택창에서 \[포즈\]를 터치하십시오. 로봇의 포즈 정보창이 나타납니다. 로봇 각 축의 현재 각도와 TCP의 좌표값, 엔코더의 현재값과 지령값을 확인할 수 있습니다.
+Touch \[Pose\] in the panel selection window. Then, the robot pose information window will appear. You can check the current angle of each axis of the robot, the coordinate value of the tool center point \(TCP\), and the current value and command value of the encoder.
 
-![&#xADF8;&#xB9BC; 35 &#xD3EC;&#xC988;](../.gitbook/assets/image%20%28142%29.png)
+![Figure 34 Pose](../.gitbook/assets/image%20%28392%29.png)
 
