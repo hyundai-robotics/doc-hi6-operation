@@ -6,7 +6,7 @@ You can check the history as the execution history and time stamps of the job pr
 
 
 
-![Figure 43 History](../.gitbook/assets/image%20%28411%29.png)
+![Figure 43 History](../.gitbook/assets/image%20%28414%29.png)
 
 <table>
   <thead>

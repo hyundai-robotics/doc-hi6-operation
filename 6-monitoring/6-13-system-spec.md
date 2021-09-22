@@ -4,7 +4,7 @@ In the panel selection window, touch \[System character\]. Then, the system char
 
 You can check all the various data of the robot system or only the data of a specific type of information.
 
-![Figure 44 System character](../.gitbook/assets/image%20%28412%29.png)
+![Figure 44 System character](../.gitbook/assets/image%20%28415%29.png)
 
 | No. | Description |
 | :--- | :--- |
