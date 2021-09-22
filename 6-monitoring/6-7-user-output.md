@@ -15,7 +15,9 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/c1.png" alt/>
+      </td>
       <td style="text-align:left">
         <p>&#xBC94;&#xC6A9; &#xCD9C;&#xB825; &#xC2E0;&#xD638;&#xC758; &#xC0C1;&#xD0DC;&#xB97C;
           &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</p>
@@ -30,7 +32,9 @@
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <img src="../.gitbook/assets/c2.png" alt/>
+      </td>
       <td style="text-align:left">
         <ul>
           <li>[FB0]: &#xB4DC;&#xB86D;&#xB2E4;&#xC6B4; &#xBA54;&#xB274;&#xB97C; &#xD130;&#xCE58;&#xD558;&#xC5EC;
