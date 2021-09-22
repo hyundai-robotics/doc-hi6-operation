@@ -95,7 +95,7 @@
   * [4.4 System Diagnosis](4-menu/4-4-system-diagnosis/README.md)
     * [4.4.1 System Version](4-menu/4-4-system-diagnosis/system-version/README.md)
       * [4.4.1.1 Controller System Updating](4-menu/4-4-system-diagnosis/system-version/controller-system-update.md)
-  * [4.5 날짜 및 시간 설정](4-menu/4-5-date-time-setting.md)
+  * [4.5 Setting of Date and Time](4-menu/4-5-date-time-setting.md)
 * [5. 조건 설정](5-conditional-setting/README.md)
   * [5.1    운전 조건 설정](5-conditional-setting/5-1-op-cond-set.md)
   * [5.2    운전 조건 설정 정보](5-conditional-setting/5-2-op-cond-set-info.md)

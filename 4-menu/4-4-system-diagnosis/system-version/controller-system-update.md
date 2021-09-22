@@ -18,5 +18,5 @@ You can update the version of each module of the controller using the integrated
 
 5.	When the update is completed, touch the \[OK\] button. Then, the version upgrade program execution window will be closed, and the controller will automatically restart.
 
-![](../../../.gitbook/assets/image%20%28363%29.png)
+![](../../../.gitbook/assets/image%20%28364%29.png)
 

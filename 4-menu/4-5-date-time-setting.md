@@ -1,17 +1,24 @@
-# 4.5 날짜 및 시간 설정
+# 4.5 Setting of Date and Time
 
-제어기의 날짜와 시간을 설정합니다.
+You can set the date and time of the controller.
 
-1.	\[8: 날짜, 시간 설정\] 메뉴를 터치하십시오. 날짜 및 시간 설정창이 나타납니다.
+1.	Touch the \[8: Date, time setting\] menu. The date and time setting window will appear.
 
-2.	날짜 및 시간 정보를 설정한 후 \[OK\] 버튼을 터치하십시오.
+2.	After setting the date and time information, touch the \[OK\] button.
 
-![](../.gitbook/assets/image%20%28122%29.png)
+![](../.gitbook/assets/image%20%28361%29.png)
 
-* 티치 펜던트의 조작키로 날짜와 시간을 입력하여 설정합니다.
-* 방향키를 누르면 날짜와 시간 항목\(연/월/일/시/분/초/오전오후\) 사이에서 커서가 이동합니다.
-* 숫자키를 눌러 숫자를 입력합니다. &lt;shift+↑/↓&gt; 키로 수치를 조절할 수도 있습니다.
-* 달력에서 날짜를 설정합니다. \[◁/▷\] 버튼을 터치하여 연월을 선택한 후 날짜를 터치하십시오.
+
+
+* You can perform setting by inputting the date and time by using the operation keys on the teach pendant.
+  * 
+    If you press the arrow keys, the cursor will move between the date and time items \(year/month/day/hour/minute/second/a.m./p.m.\).
+
+  * 
+    You can input a number by pressing the number keys. You can also adjust the value using the &lt;shift+↑/↓&gt; keys.
+* Set the date on the calendar. Touch the \[◁/▷\] button to select the year and month and then touch the date.
+
+
 
 
 
