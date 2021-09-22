@@ -109,7 +109,7 @@
   * [6.7 Public Output](6-monitoring/6-7-user-output.md)
   * [6.8 Global Variables](6-monitoring/6-8-global-variable.md)
   * [6.9 Local Variables](6-monitoring/6-9-local-variable.md)
-  * [6.10 가동정보](6-monitoring/6-10-op-info.md)
+  * [6.10 Operation time](6-monitoring/6-10-op-info.md)
   * [6.11 이력](6-monitoring/6-11-log.md)
   * [6.12 히스토리](6-monitoring/6-12-history.md)
   * [6.13 시스템 특성](6-monitoring/6-13-system-spec.md)
