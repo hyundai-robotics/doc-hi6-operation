@@ -1,4 +1,4 @@
-# 4.4 시스템 진단
+# 4.4 System Diagnosis
 
-로봇과 제어기의 상태를 검사하고 관리합니다. 제어기의 모듈별로 버전을 확인하고 업데이트할 수 있습니다.
+You can inspect and manage the state of the robot and controller. You can check and update the version of each module of the controller.
 

@@ -1,20 +1,22 @@
-# 4.4.1.1 제어기 시스템 업데이트
+# 4.4.1.1 Controller System Updating
 
-통합 압축 파일을 이용하여 제어기 각 모듈의 버전을 업데이트합니다.
+You can update the version of each module of the controller using the integrated compressed file.
 
-1.	통합 압축 파일이 저장된 이동식 저장 장치를 티치 펜던트의 USB 슬롯에 연결하십시오. 티치 펜던트에 이동식 저장 장치가 연결되면 상태 표시줄에 \[USB\] 아이콘\( \)이 나타납니다.
+1.	Connect the removable storage device containing the integrated compressed file to the USB slot of the teach pendant. When the removable storage device is connected to the teach pendant, the \[USB\] icon \(![](../../../.gitbook/assets/icon-usb2.png)\) will appear in the status bar.
 
-2.	시스템 환경 설정창 우측의 \[버전업\] 버튼을 터치하십시오. 버전업 프로그램 실행창이 나타납니다.
+2.	Touch the \[Ver. Up\] button on the right side of the system environment setting window. Then, the version upgrade program execution window will appear.
 
-3.	드롭다운 메뉴를 터치하여 \[버전 업\] 모드를 선택하고 \[Open\] 버튼을 이용하여 통합 압축 파일을 선택한 후 \[확인\] 버튼을 터치하십시오. 
+3.	Select the \[Version Up\] mode by touching the drop-down menu, select the integrated compressed file using the \[Open\] button, and then touch the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%28118%29.png)
+![](../../../.gitbook/assets/image%20%28311%29.png)
 
-4.	업데이트할 모듈을 선택한 후 \[확인\] 버튼을 터치하십시오. 업데이트가 시작됩니다. 
 
-![](../../../.gitbook/assets/image%20%28109%29.png)
 
-5.	업데이트가 완료되면 \[확인\] 버튼을 터치하십시오. 버전업 프로그램 실행창이 닫히고 제어기가 자동으로 재시작합니다.
+4.	After selecting the module that you want to update, touch the \[OK\] button. Then, the update will start.
 
-![](../../../.gitbook/assets/image%20%28114%29.png)
+![](../../../.gitbook/assets/image%20%28255%29.png)
+
+5.	When the update is completed, touch the \[OK\] button. Then, the version upgrade program execution window will be closed, and the controller will automatically restart.
+
+![](../../../.gitbook/assets/image%20%28363%29.png)
 

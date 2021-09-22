@@ -4,7 +4,7 @@
 
 2.	Selecting the desired menu will enable you to manage files, programs, teach pendants, or to check the status of the robot system.
 
-![](../.gitbook/assets/image%20%28369%29.png)
+![](../.gitbook/assets/image%20%28383%29.png)
 
 
 
