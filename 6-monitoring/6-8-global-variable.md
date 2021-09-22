@@ -1,16 +1,16 @@
-# 6.8 전역변수
+# 6.8 Global Variables
 
-JOB 프로그램에 global로 정의된 전역 변수를 확인합니다. 또한 변수값을 선택하여 변경할 수 있습니다.
+You can check the global variables defined as global in the JOB program. You can also select and change a variable value.
 
-1.	global로 정의된 전역 변수가 포함된 프로그램을 실행한 후 작업 영역의 패널 스택 우측 상단의 \[+\] 버튼을 터치하십시오.
+1.	Execute the program that includes the global variables defined as global, and then touch the \[+\] button at the top right of the panel stack in the work area.
 
-![](../.gitbook/assets/image%20%28151%29.png)
+![](../.gitbook/assets/image%20%28412%29.png)
 
-2.	패널 선택창에서 \[전역변수\]를 터치하십시오. 프로그램에 포함된 전역 변수 목록이 새 창에 나타납니다.
+2.	In the panel selection window, touch \[Global Variable\]. Then, a list of global variables included in the program will appear in a new window.
 
-![](../.gitbook/assets/image%20%28163%29.png)
+![](../.gitbook/assets/image%20%28416%29.png)
 
-3.	변수 이름과 유형, 값을 확인하십시오. 변수값을 선택하여 변경할 수도 있습니다.
+3.	You can check the name, type, and value of a variable. You can also select and change the value of a variable.
 
-![](../.gitbook/assets/image%20%28148%29.png)
+![](../.gitbook/assets/image%20%28414%29.png)
 
