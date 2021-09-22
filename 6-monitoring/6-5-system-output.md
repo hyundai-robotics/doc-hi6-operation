@@ -1,45 +1,41 @@
-# 6.5 시스템 출력
+# 6.5	System Output
 
-패널 선택창에서 \[시스템 출력\]을 터치하십시오. 출력 신호창이 나타납니다.
+Touch \[System Output\] in the panel selection window. Then, the output signal window will appear.
 
-로봇의 운행과 관련된 신호와 브레이크 제어 상태를 확인할 수 있습니다.
-
-![&#xADF8;&#xB9BC; 38 &#xC2DC;&#xC2A4;&#xD15C; &#xCD9C;&#xB825; - ON/OFF &#xC0C1;&#xD0DC;\(&#xC88C;\) / &#xAC12; &#xC0C1;&#xD0DC;\(&#xC6B0;\)](../.gitbook/assets/image%20%28159%29.png)
-
-![&#xADF8;&#xB9BC; 39 &#xC2DC;&#xC2A4;&#xD15C; &#xCD9C;&#xB825; - &#xC2DC;&#xD000;&#xC2A4; &#xC0C1;&#xD0DC;](../.gitbook/assets/image%20%28161%29.png)
-
-* ON/OFF 상태와 시퀀스 상태에서 현재 입력 중인 신호는 노란색으로 표시됩니다.
-* 시퀀스 상태에서는 제어기 시퀀스 신호의 상태만 표시합니다.
-* \[ON/OFF\]/\[값\]/\[시퀀스\]: 라디오 버튼을 터치하여 출력 신호창의 표시 방식을 변경할 수 있습니다.
-* \[수동 출력\]: ON/OFF 상태와 시퀀스 상태에서 선택한 신호를 강제로 출력할 수 있습니다.
+You can check the signals related to the robot operation and check the status of brake control.
 
 
 
-### 수동 출력
+![Figure 37 System Output - ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28407%29.png)
 
-원하는 신호를 선택하여 강제로 출력할 수 있습니다.
+![Figure 38 System Output &#x2013; Sequence Status](../.gitbook/assets/image%20%28404%29.png)
 
-1.	시스템 출력 신호창 우측의 \[ON/OFF\] 또는 \[시퀀스\] 라디오 버튼을 터치하여 표시 방식을 ON/OFF 또는 시퀀스 상태로 설정하십시오.
-
-
-
-2.	신호창에서 신호를 터치하여 선택한 후 \[수동 출력\] 버튼을 터치하십시오.
-
+* In the ON/OFF status and sequence status, the signals currently being outputted will be displayed in yellow.
+* In the sequence status, only the status of the controller sequence signals will be displayed.
+* \[ON/OFF\]/\[Value\]/\[Sequence\]: You can change the display mode of the output signal window by touching the radio button.
+* \[Manual output\]: You can force the output of the selected signals while in the ON/OFF and sequence status.
 
 
-![](../.gitbook/assets/image%20%28146%29.png)
 
-3.	수동 출력 확인창에서 출력 조건을 확인한 후 \[확인\] 버튼을 터치하십시오.
+#### Manual Output
 
-![](../.gitbook/assets/image%20%28143%29.png)
+You can select the desired signal and force it to be outputted.
+
+1.	You can set the display mode to the ON/OFF status or sequence status by touching the \[ON/OFF\] or \[Sequence\] radio button on the right side of the system output signal window. 
+
+2.	Touch a signal to select it in the signal window, and then touch the \[Manual Output\] button.
+
+![](../.gitbook/assets/image%20%28406%29.png)
+
+3.	After checking the output conditions in the manual output confirmation window, touch the \[ENTER\] button.
+
+![](../.gitbook/assets/image%20%28400%29.png)
 
 | soN | =1/0 |
 | :---: | :---: |
-| N: 출력할 신호의 번호 | 출력 상태\(1: 출력, 0: 미출력\) |
+| N: Number of the signal to be outputted | Output status \(1: Output, 0: No output\) |
 
+4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
 
-
-4.	선택한 신호의 출력 상태를 확인하십시오. 선택한 신호가 출력 상태로 전환되어 신호창에 노란색으로 표시됩니다.
-
-![](../.gitbook/assets/image%20%28164%29.png)
+![](../.gitbook/assets/image%20%28399%29.png)
 
