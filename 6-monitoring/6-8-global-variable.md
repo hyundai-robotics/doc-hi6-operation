@@ -4,13 +4,13 @@ You can check the global variables defined as global in the JOB program. You can
 
 1.	Execute the program that includes the global variables defined as global, and then touch the \[+\] button at the top right of the panel stack in the work area.
 
-![](../.gitbook/assets/image%20%28422%29.png)
+![](../.gitbook/assets/image%20%28427%29.png)
 
 2.	In the panel selection window, touch \[Global Variable\]. Then, a list of global variables included in the program will appear in a new window.
 
-![](../.gitbook/assets/image%20%28428%29.png)
+![](../.gitbook/assets/image%20%28434%29.png)
 
 3.	You can check the name, type, and value of a variable. You can also select and change the value of a variable.
 
-![](../.gitbook/assets/image%20%28426%29.png)
+![](../.gitbook/assets/image%20%28432%29.png)
 

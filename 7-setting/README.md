@@ -1,4 +1,4 @@
-# 7. 설정
+# 7. Set Up
 
-설정 항목에서는 사용자의 정보와 각종 파라미터 정보 등을 확인 및 설정할 수 있습니다.
+In the settings item, you can check and set the user information and various parameter information.
 
