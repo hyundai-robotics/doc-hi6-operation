@@ -1,10 +1,12 @@
-# 7.3.4 로봇 준비 조건
+# 7.3.4 Robot Ready Condition
 
-로봇의 준비 완료 시 \[설정 &gt; 2: 제어 파라미터 &gt; 2: 입출력 신호 설정 &gt; 4: 출력신호 할당\]의 \[로봇 준비 OK\] 항목의 신호 출력을 위한 조건을 설정합니다.
+When the robot ready is completed, set the conditions for signal output in the \[Robot Ready OK\] item of the \[Set up&gt; 2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 4: Output Signal Assign\] menu.
 
-1.	\[2: 제어 파라미터 &gt; 4: 로봇 준비 조건\] 메뉴를 터치하십시오.
+1.	Touch the \[2: Control Parameter &gt; 4: Robot Ready Condition\] menu. 
 
-2.	로봇 준비 조건을 설정한 후 \[OK\] 버튼을 터치하십시오.
+2.	After setting the robot ready condition, touch the \[OK\] button.
 
-![](../../.gitbook/assets/image%20%2888%29.png)
+![](../../.gitbook/assets/image%20%28464%29.png)
+
+
 

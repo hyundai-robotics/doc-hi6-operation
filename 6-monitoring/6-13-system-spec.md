@@ -4,7 +4,7 @@ In the panel selection window, touch \[System character\]. Then, the system char
 
 You can check all the various data of the robot system or only the data of a specific type of information.
 
-![Figure 44 System character](../.gitbook/assets/image%20%28434%29.png)
+![Figure 44 System character](../.gitbook/assets/image%20%28440%29.png)
 
 | No. | Description |
 | :--- | :--- |
@@ -28,9 +28,9 @@ You can initialize the maximum value of the data by selecting the type of inform
 
 1.	Touch the \[Clear\] button at the bottom of the system properties window.
 
-![](../.gitbook/assets/image%20%28414%29.png)
+![](../.gitbook/assets/image%20%28419%29.png)
 
 2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized.
 
-![](../.gitbook/assets/image%20%28415%29.png)
+![](../.gitbook/assets/image%20%28420%29.png)
 

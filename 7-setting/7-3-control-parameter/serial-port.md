@@ -6,7 +6,7 @@ You can set the information required for serial port communication.
 
 2.	Set the parameters for each serial port.
 
-![](../../.gitbook/assets/image%20%28408%29.png)
+![](../../.gitbook/assets/image%20%28412%29.png)
 
 
 

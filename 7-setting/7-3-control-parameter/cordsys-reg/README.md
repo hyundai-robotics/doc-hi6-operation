@@ -1,8 +1,10 @@
-# 7.3.6 좌표계 등록
+# 7.3.6 Coordinate System Registration
 
-1.	\[2: 제어 파라미터 &gt; 6: 좌표계 등록\] 메뉴를 터치하십시오. 좌표계 등록 메뉴가 나타납니다.
+1.	Touch the \[2: Control Parameter &gt; 6: Coordinate Registration\] menu. Then, the coordinate system registration menu will appear. 
 
-2.	원하는 메뉴를 선택하여 사용자 좌표계나 정치툴 좌표계에 대한 좌표계를 설정하십시오.
+2.	By selecting the desired menu, you can set the coordinate system with respect to the user coordinate system or the stationary tool coordinate system.
 
-![](../../../.gitbook/assets/image%20%28179%29.png)
+![](../../../.gitbook/assets/image%20%28401%29.png)
+
+
 

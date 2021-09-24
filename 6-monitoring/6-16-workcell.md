@@ -6,7 +6,7 @@ By setting the safety function of the collaborative robot, you can check the set
 
 
 
-![Figure 47 Work Cell Monitoring](../.gitbook/assets/image%20%28423%29.png)
+![Figure 47 Work Cell Monitoring](../.gitbook/assets/image%20%28429%29.png)
 
 * Select the \[Upscale/Downscale\] icon \(![](../.gitbook/assets/wc-zoom.png)\), \[Move\] icon \(![](../.gitbook/assets/wc-pan.png)\), or \[Rotate\] icon \(![](../.gitbook/assets/wc-rotate.png)\) at the bottom right of the 3D screen, and then drag the screen. Then, the camera will be adjusted.
 * If the setting is changed, you can apply the new settings only after closing and reopening the workcell window.

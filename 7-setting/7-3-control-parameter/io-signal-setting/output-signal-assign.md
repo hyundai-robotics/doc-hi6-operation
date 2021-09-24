@@ -6,7 +6,7 @@ Event information or status information that occurred in the controller can be t
 
 2.	After inputting the output signal number in the information item, touch the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%28425%29.png)
+![](../../../.gitbook/assets/image%20%28431%29.png)
 
 
 

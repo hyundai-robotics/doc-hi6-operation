@@ -6,9 +6,9 @@ You can check the signals related to the robot operation and check the status of
 
 
 
-![Figure 37 System Output - ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28442%29.png)
+![Figure 37 System Output - ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28449%29.png)
 
-![Figure 38 System Output &#x2013; Sequence Status](../.gitbook/assets/image%20%28411%29.png)
+![Figure 38 System Output &#x2013; Sequence Status](../.gitbook/assets/image%20%28416%29.png)
 
 * In the ON/OFF status and sequence status, the signals currently being outputted will be displayed in yellow.
 * In the sequence status, only the status of the controller sequence signals will be displayed.
@@ -25,11 +25,11 @@ You can select the desired signal and force it to be outputted.
 
 2.	Touch a signal to select it in the signal window, and then touch the \[Manual Output\] button.
 
-![](../.gitbook/assets/image%20%28438%29.png)
+![](../.gitbook/assets/image%20%28445%29.png)
 
 3.	After checking the output conditions in the manual output confirmation window, touch the \[ENTER\] button.
 
-![](../.gitbook/assets/image%20%28402%29.png)
+![](../.gitbook/assets/image%20%28406%29.png)
 
 | soN | =1/0 |
 | :---: | :---: |
@@ -37,5 +37,5 @@ You can select the desired signal and force it to be outputted.
 
 4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
 
-![](../.gitbook/assets/image%20%28401%29.png)
+![](../.gitbook/assets/image%20%28405%29.png)
 

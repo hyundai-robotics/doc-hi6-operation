@@ -4,7 +4,7 @@ Touch \[public Input\] in the panel selection window. Then, the public input sig
 
 You can check the status of public input signals that are inputted through the CNIN connector of the I/O board in the controller.
 
-![Figure 39 Public Input Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28407%29.png)
+![Figure 39 Public Input Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28411%29.png)
 
 <table>
   <thead>
@@ -55,5 +55,5 @@ You can check the status of public input signals that are inputted through the C
   The flow of the input signals is as follows.
 {% endhint %}
 
-![](../.gitbook/assets/image%20%28409%29.png)
+![](../.gitbook/assets/image%20%28413%29.png)
 
