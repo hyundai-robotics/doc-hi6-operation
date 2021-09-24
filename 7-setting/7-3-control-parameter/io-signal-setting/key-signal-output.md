@@ -1,17 +1,22 @@
-# 7.3.2.8 키 신호 출력
+# 7.3.2.8 Key Signal Output
 
-원하는 출력 신호를 키 신호 출력 기능 영역의 버튼에 할당하여 간단히 출력 신호를 켜거나 끄도록 설정할 수 있습니다.
+By assigning the output signal of the controller to the signal keys \(&lt;shift+F1 - F8&gt;\) of the teach pendant, you can perform setting in a way to turn on or output signal.
 
-1. \[2: 제어 파라미터 &gt; 2: 입출력 신호 설정 &gt; 5: 키 신호 출력\] 메뉴를 터치하십시오.
-2. 버튼에 표시할 기능 이름과 옵션을 설정한 후 \[확인\] 버튼을 터치하십시오.
+1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 5: Key Signal Output\] menu. 
 
-![](../../../.gitbook/assets/image%20%2845%29.png)
+2.	Set the label, signal, and function to the manual output keys \(&lt;F1 - F8&gt;\) of the teach pendant, and then touch the \[OK\] button.
 
-* \[fb\] / \[do\]: 숫자와 소수점만으로 신호 출력 변수값을 간단히 입력합니다.
+![](../../../.gitbook/assets/image%20%28452%29.png)
 
-예를 들어, 2.9를 입력한 후 &lt;enter&gt; 키를 누르십시오. fb2.do9로 변환되어 나타납니다. 소수점 없이 9를 입력하고 &lt;enter&gt; 키를 누르면 do9로 변환됩니다.
+
+
+* \[fb\]/\[do\]: You can easily input the signal output variable value by using numbers and decimal point only.
+
+
+
+For example, input 2.9 and press the &lt;enter&gt; key. Then, it will be converted to and displayed as fb2.do9. If you input 9 without decimal point and press the &lt;enter&gt; key, it will be converted to do9.
 
 {% hint style="info" %}
-Hi6 티치 펜던트의 사용자키 영역에서도 원하는 출력 신호를 버튼에 등록할 수 있습니다. 자세한 내용은 “2.6.2.1 키 신호 출력 기능 영역”를 참조하세요.
+You can register the desired output signal with a button in the user key area of Hi6 teach pendant. For details, refer to “2.6.2.1 Key Signal Output Function Area.”
 {% endhint %}
 
