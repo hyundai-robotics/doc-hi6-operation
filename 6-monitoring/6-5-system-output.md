@@ -6,9 +6,9 @@ You can check the signals related to the robot operation and check the status of
 
 
 
-![Figure 37 System Output - ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28438%29.png)
+![Figure 37 System Output - ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28441%29.png)
 
-![Figure 38 System Output &#x2013; Sequence Status](../.gitbook/assets/image%20%28408%29.png)
+![Figure 38 System Output &#x2013; Sequence Status](../.gitbook/assets/image%20%28410%29.png)
 
 * In the ON/OFF status and sequence status, the signals currently being outputted will be displayed in yellow.
 * In the sequence status, only the status of the controller sequence signals will be displayed.
@@ -25,7 +25,7 @@ You can select the desired signal and force it to be outputted.
 
 2.	Touch a signal to select it in the signal window, and then touch the \[Manual Output\] button.
 
-![](../.gitbook/assets/image%20%28434%29.png)
+![](../.gitbook/assets/image%20%28437%29.png)
 
 3.	After checking the output conditions in the manual output confirmation window, touch the \[ENTER\] button.
 

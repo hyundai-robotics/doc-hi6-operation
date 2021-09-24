@@ -2,7 +2,7 @@
 
 In the panel selection window, touch \[Help\]. Then, you can check the usage information of the Hi6 controller in the help window of the controller.
 
-![Figure 48 Help](../.gitbook/assets/image%20%28436%29.png)
+![Figure 48 Help](../.gitbook/assets/image%20%28439%29.png)
 
 <table>
   <thead>

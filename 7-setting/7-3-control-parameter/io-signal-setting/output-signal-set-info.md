@@ -110,7 +110,7 @@ Error/Warning output bit, Error/Warning output selection and Error/Warning outpu
 
 For the error/warning output bit, error/warning output strobe, overall abnormality, operation error, and warning occurrence signals, refer to the following sequence.
 
-![Figure 53 16Bit Output](../../../.gitbook/assets/image%20%28441%29.png)
+![Figure 53 16Bit Output](../../../.gitbook/assets/image%20%28445%29.png)
 
 #### External reset ack
 

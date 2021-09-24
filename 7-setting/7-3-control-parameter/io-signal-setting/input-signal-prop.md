@@ -6,7 +6,7 @@ You can set the logic and name for a general input signal.
 
 2.	Check and set the general input signal list, and then touch the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%28416%29.png)
+![](../../../.gitbook/assets/image%20%28418%29.png)
 
 * \[Append\]: You can add a new general input signal to the list. 
 * \[Delete\]: You can delete the general input signal from the list.
