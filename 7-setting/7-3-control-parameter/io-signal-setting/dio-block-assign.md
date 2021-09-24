@@ -6,7 +6,7 @@ You can set the method of using the controller’s general input/output signals.
 
 2.	Set the connection with the DIO block of the selected FB address, and then touch the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%28426%29.png)
+![](../../../.gitbook/assets/image%20%28427%29.png)
 
 
 

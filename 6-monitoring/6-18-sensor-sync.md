@@ -4,7 +4,7 @@ Touch \[Sensor Sync\] in the panel selection window. Then, the sensor sync windo
 
 You can check the information related to the conveyor and press sync functions. The sensor sync function can be activated by setting the sync status as conveyor or press in the \[Set up&gt; 4: Application Parameter &gt; 4: Sensor Sync\] menu.
 
-![Figure 49 Sensor Sync Monitoring](../.gitbook/assets/image%20%28412%29.png)
+![Figure 49 Sensor Sync Monitoring](../.gitbook/assets/image%20%28413%29.png)
 
 <table>
   <thead>

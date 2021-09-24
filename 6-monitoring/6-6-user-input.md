@@ -55,5 +55,5 @@ You can check the status of public input signals that are inputted through the C
   The flow of the input signals is as follows.
 {% endhint %}
 
-![](../.gitbook/assets/image%20%28408%29.png)
+![](../.gitbook/assets/image%20%28409%29.png)
 

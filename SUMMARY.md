@@ -136,7 +136,7 @@
       * [7.3.2.9 DIO Block Allocation](7-setting/7-3-control-parameter/io-signal-setting/dio-block-assign.md)
       * [7.3.2.10 Multiple Signal Output](7-setting/7-3-control-parameter/io-signal-setting/multi-signal-output.md)
       * [7.3.2.11 Multiple Signals Input](7-setting/7-3-control-parameter/io-signal-setting/multi-signal-input.md)
-    * [7.3.3 시리얼 포트](7-setting/7-3-control-parameter/serial-port.md)
+    * [7.3.3 Serial Port](7-setting/7-3-control-parameter/serial-port.md)
     * [7.3.4 로봇 준비 조건](7-setting/7-3-control-parameter/robot-ready-cond.md)
     * [7.3.5 원위치 등록](7-setting/7-3-control-parameter/home-position.md)
     * [7.3.6 좌표계 등록](7-setting/7-3-control-parameter/cordsys-reg/README.md)

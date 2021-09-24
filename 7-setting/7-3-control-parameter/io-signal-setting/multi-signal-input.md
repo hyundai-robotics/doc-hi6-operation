@@ -8,7 +8,7 @@ The data is in binary format and will be determined by the input on or off. For 
 
 2.	Set the name, signals, and strobe of the input signal group.
 
-![](../../../.gitbook/assets/image%20%28409%29.png)
+![](../../../.gitbook/assets/image%20%28410%29.png)
 
 
 
