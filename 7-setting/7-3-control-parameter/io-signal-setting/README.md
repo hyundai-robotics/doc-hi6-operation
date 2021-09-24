@@ -4,5 +4,5 @@
 
 2.	Select the desired menu and set the input/output signal attributes and signal assignment, etc.
 
-![](../../../.gitbook/assets/image%20%28442%29.png)
+![](../../../.gitbook/assets/image%20%28443%29.png)
 

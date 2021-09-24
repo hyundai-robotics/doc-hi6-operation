@@ -1,14 +1,14 @@
-# 7.3.9.3 모니터링
+# 7.3.9.3 Monitoring
 
-산업용 통신에서 사용 설정된 펌웨어와 통신의 설정 정보 및 동작 상태를 모니터링합니다.
+You can monitor the setting information and operation status of the firmware and communication the use of which you have set in the industrial communication menu.
 
-1.	\[메뉴\] 버튼 &gt; \[19: 산업용 통신 모니터링\] 메뉴를 터치하십시오. 보드별 산업용 통신 모니터링 화면이 나타납니다.
+1.	Touch \[Menu\] button &gt; \[19: Industrial Communication Monitoring\] menu. Then the screen for monitoring the industrial communication of each board will appear.
 
-2.	원하는 탭을 선택하여 펌웨어, 통신 장치 및 통신 구성의 상세 정보를 확인하십시오.
+2.	By selecting the desired tab, you can check the detailed information of the firmware, communication devices and communication configuration. 
 
-![](../../../.gitbook/assets/image%20%28195%29.png)
+![](../../../.gitbook/assets/image%20%28450%29.png)
 
 {% hint style="info" %}
-\[재시작\] 버튼을 이용하여 PCI 통신 카드의 산업용 통신을 다시 시작할 수 있습니다.
+You can restart the industrial communication of the PCI communication card by using the \[Restart\] button.
 {% endhint %}
 

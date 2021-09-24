@@ -1,14 +1,16 @@
-# 7.3.9 산업용 통신 \(필드버스\)
+# 7.3.9 Industrial Communication \(fieldbus\)
 
-산업용 통신\(필드버스; Fieldbus\)을 사용 설정합니다.
+You can perform the setting of the industrial communication \(fieldbus\) to use it.
 
-1.	사용할 통신에 따라 “Hi6 제어기 보수 설명서”를 참조하여 PCI 카드 장착 및 슬롯 번호\(1 ~ 4\)를 설정하십시오.
+1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the “Hi6 Controller Maintenance Manual”.
 
-2.	“7.3.9.1 펌웨어 설정”을 참조하여 산업용 통신 펌웨어를 설정하십시오.
+2.	Set the industrial communication firmware by referring to “7.3.9.1 Firmware Setting”.
 
-3.	제어기의 전원을 끈 후 다시 켜십시오.
+3.	Turn off the power of the controller, and then turn it back on.
 
-4.	필요한 경우, “7.3.9.2 산업용 통신 설정”을 참조하여 부가 설정을 수행하십시오.
+4.	If necessary, carry out additional setting by referring to “7.3.9.2 Industrial Communication Setting”.
+
+
 
 
 

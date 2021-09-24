@@ -1,40 +1,24 @@
-# 7.3.9.1 펌웨어 설정
+# 7.3.9.1 Firmware Setting
 
-산업용 통신에 사용할 펌웨어를 설정합니다.
+You can set the firmware to be used for the industrial communication.
 
-1.	\[2: 제어 파라미터 &gt; 11: 산업용 통신 &gt; 1: 펌웨어 설정 &gt; 1 채널\] 메뉴를 터치하십시오. 펌웨어 설정 화면이 나타납니다.
+1.	Touch the \[2: Control Parameter &gt; 11: Industrial Communication &gt; 1: Firmware Setting &gt; 1 Channel\] menu. Then, the firmware setting screen will appear.
 
-2.	탭을 선택하고 통신 방식\(Master / Slave\)과 프로토콜을 설정한 후 \[OK\] 버튼을 터치하십시오. 펌웨어 설정이 저장됩니다.
+2.	Select the desired tab and then set the communication method \(Master / Slave\) and protocol. After that, tap the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%28196%29.png)
-
-![](../../../.gitbook/assets/image%20%28140%29.png)
-
-* \[적용\]: 선택된 탭의 펌웨어 설정을 완료합니다.
-* \[초기화\]: 선택된 탭에 설정한 펌웨어 정보를 초기화합니다.
+![](../../../.gitbook/assets/image%20%28419%29.png)
 
 
 
 {% hint style="warning" %}
-펌웨어 정보를 초기화하면 해당 슬롯에 설정된 CONFIG 파일도 함께 초기화되므로 주의하십시오.
+When the firmware setting is completed, the CONFIG files set in the slot \#1 - \#4 will be all deleted. When you want to change the communication firmware in the middle of using it, you should back up the existing CONFIG setting separately and use it after restoring it. 
 {% endhint %}
 
-{% hint style="info" %}
-탭의 슬롯 번호는 PCI 통신 카드의 로터리 스위치 번호입니다.
-{% endhint %}
-
-3.	\[적용\] 버튼을 터치하십시오. 펌웨어 설정이 완료됩니다.
+3.	Turn off the power of the controller, and then turn it back on.
 
 {% hint style="warning" %}
-* 펌웨어 설정을 완료하면 해당 슬롯에 설정된 CONGIF 파일이 모두 삭제됩니다. 사용 중 통신 펌웨어를 변경하려면 기존의 CONFIG 설정을 별도로 백업해 두고 필요한 경우 복원하여 사용하십시오.
-* \[적용\] 버튼을 터치해야만 설정한 펌웨어 정보가 적용됩니다.
+* When you perform the setting of the firmware to use it, the setting value will be applied to the system only after you turn off the power of the controller and then turn it back on.
 {% endhint %}
 
-4.	2 ~ 3번 절차를 반복하여 모든 탭의 펌웨어 설정을 완료하십시오.
 
-5.	제어기의 전원을 끈 후 다시 켜십시오. 설정한 펌웨어 정보가 시스템에 적용됩니다.
-
-{% hint style="info" %}
-펌웨어의 사용 설정 시 제어기의 전원을 끈 후 다시 켜야만 설정값이 시스템에 적용됩니다.
-{% endhint %}
 
