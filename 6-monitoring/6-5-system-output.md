@@ -6,7 +6,7 @@ You can check the signals related to the robot operation and check the status of
 
 
 
-![Figure 37 System Output - ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28425%29.png)
+![Figure 37 System Output - ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28426%29.png)
 
 ![Figure 38 System Output &#x2013; Sequence Status](../.gitbook/assets/image%20%28405%29.png)
 

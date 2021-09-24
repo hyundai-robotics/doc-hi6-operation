@@ -1,10 +1,10 @@
-# 7.3    제어 파라미터
+# 7.3 Control Parameter
 
-제어기의 각종 조건을 설정하고 입출력 신호, 통신 정보, 로봇 준비 OK 신호 조건, 원위치 신호 및 좌표계를 설정합니다.
+You can set various conditions of the controller and set the input/output signal, communication information, robot ready OK signal condition, home position signal, and the coordinate system.
 
-1.	\[2: 제어 파라미터\] 메뉴를 터치하십시오. 제어 파라미터 메뉴가 나타납니다.
+1.	Touch the \[2: Control Parameter\] menu. Then, the control parameter menu will appear. 
 
-2.	원하는 메뉴를 선택하여 제어기의 각종 조건을 확인 및 설정하십시오.
+2.	Select the desired menu and check and set various conditions of the controller.
 
-![](../../.gitbook/assets/image%20%28190%29.png)
+![](../../.gitbook/assets/image%20%28423%29.png)
 
