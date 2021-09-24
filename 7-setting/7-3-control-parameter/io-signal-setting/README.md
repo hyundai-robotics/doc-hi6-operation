@@ -1,8 +1,8 @@
-# 7.3.2 입출력 신호 설정
+# 7.3.2 Input/Output Signal Setting
 
-1.	\[2: 제어 파라미터 &gt; 2: 입출력 신호 설정\] 메뉴를 터치하십시오. 입출력 신호 설정 메뉴가 나타납니다.
+1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting\] menu. Then, the input/output signal setting menu will appear.
 
-2.	원하는 메뉴를 선택하여 입출력 신호의 속성, 신호 할당 등을 설정하십시오.
+2.	Select the desired menu and set the input/output signal attributes and signal assignment, etc.
 
-![](../../../.gitbook/assets/image%20%28188%29.png)
+![](../../../.gitbook/assets/image%20%28422%29.png)
 
