@@ -1,124 +1,182 @@
-# 7.3.2.7 출력 신호 설정 정보
+# 7.3.2.7 Output Signal Setting Information
 
-* 원격\(Remote\) 모드
+#### Remote mode
 
-티치 펜던트의 모드 스위치가 원격\(![](../../../.gitbook/assets/sb-remote.png)\)으로 선택된 상태로 입력 신호 할당에서 원격 모드에 설정된 신호가 on으로 입력되었을 때 비로소 원격 모드 상태가 됩니다. 이 상태를 외부로 출력하고자 할 때 사용합니다.
+With the mode switch of the teach pendant selected to remote \(![](../../../.gitbook/assets/sb-remote.png)\), the signal set in the input signal assign section should be inputted in the state of on in order to activate the remote state. This function is used to output the state to the outside. 
 
-* 수동\(Teach\) 모드
 
-제어기의 조작 모드가 수동 모드인 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 자동\(Playback\) 모드
+#### Manual \(Teach\) mode
 
-제어기의 조작 모드가 자동 모드인 상태를 외부로 출력하고자 할 때 사용합니다.
+This function is used to output the state to the outside that the operation mode of the controller is manual.
 
-* 모터 ON
 
-MOTOR ON 입력에 의해 각각의 모터에 전원이 공급되고 구동할 준비가 되었을 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 로봇 준비 OK
+#### Auto \(Playback\) mode
 
-현재 제어기의 상태가 \[설정 &gt; 2: 제어 파라미터 &gt; 4: 로봇 준비 조건\] 메뉴에서 설정된 조건이 모두 만족할 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
+This function is used to output the state to the outside that the operation mode of the controller is automatic.
 
-* 기동 중
 
-수동 모드에서 스텝 전후진 동작이나 자동 모드에서 기동 입력에 의해 로봇이 기동할 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 로봇 동작 중\(Moving\)
+#### Motor on 
 
-로봇이 이동 중일 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
+When power is supplied to each motor by the input of the motor on signal and the driving is ready, this function is used to output the state to the outside.
 
-* 일시 정지 중\(Hold\)
 
-기동 중 신호의 출력과 상반되게 로봇이 정지 중일 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 비상 정지 중
+#### Robot ready OK
 
-티치 펜던트 또는 제어기 전면에 장착된 비상 정지 버튼이 입력된 상태를 외부로 출력하고자 할 때 사용합니다.
+When the current controller status satisfies all conditions set in the \[Set Up&gt; 2: Control Parameter&gt; 4: Robot Ready Condition\] menu, this function is used to output the state to the outside. 
 
-* 비상 정지 중\(외부\)
 
-시스템 보드와 연결된 외부 비상 정지가 입력된 상태를 외부로 출력하고자 할 때 사용합니다
 
-* 저속 모드 중
+#### Robot starting
 
-입력 신호 할당에서 저속 지령에 설정된 신호가 on인 경우나 수동 모드에서는 로봇이 안전 속도에서 동작하며 이 상태를 외부로 출력하고자 할 때 사용합니다.
+When the robot is started by the step forward/backward operation in manual mode or by the input of the start signal in automatic mode, this function is used to output this state to the outside.
 
-* 프로그램 END
 
-작업 프로그램에서 사이클 END가 수행되면 이 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 종합 이상
+#### Robot moving
 
-제어기에서 발생되는 에러는 시스템 오류에 의해 발생하는 에러와 사용자의 조작 실수에 의해 발생하는 에러로 구분됩니다. 시스템 오류에 의해 에러가 발생할 때 이 상태를 외부로 출력하고자 할 때 사용합니다. 시스템 오류에 의해 발생하는 에러는 1 ~ 999와 2000 ~ 7999 이내에 해당합니다.
+When the robot is moving, this function is used to output this state to the outside.
 
-* 조작 에러
 
-제어기에서 발생되는 에러는 시스템 오류에 의해 발생하는 에러와 사용자의 조작 실수에 의해 발생하는 에러로 구분됩니다. 사용자의 조작 실수에 의해 에러가 발생할 때 이 상태를 외부로 출력하고자 할 때 사용합니다. 참고로 시스템 오류에 의해 발생하는 에러는 1 ~ 999와 2000 ~ 7999 이내에 해당합니다.
 
-* 경고 발생
+#### Robot stop \(Hold\)
 
-제어기에서 경고가 발생하면 이 상태를 외부로 출력하고자 할 때 사용합니다.
+When the robot is stopped, contrary to the output of the start signal, this function is used to output this state to the outside.
 
-* 충돌 센서
 
-입력 신호 할당에 설정된 충돌 센서 입력이 on되어 로봇에 충돌이 발생되었을 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 스텝 SET 경보
+#### Emergency stop
 
-자동 모드에서 현재 선택된 커서의 위치가 이전에 실행했던 위치와 다른 경우는 위험할 수 있으므로 이 상태를 외부로 출력하고자 할 때 사용합니다.
+When there is an input signal from the emergency stop button mounted on the front of the teach pendant or of the controller is inputted, this function is used to output the state to the outside.
 
-* 인터록 이상
 
-작업 프로그램의 WAIT 명령문에서 대기한 시간이 \[시스템 &gt; 2: 제어 파리미터 &gt; 1: 제어 환경 설정\] 메뉴의 \[인터록 이상 시간\] 옵션에 설정된 시간을 초과하면 이 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 에러/경고 출력 Bit, 에러/경고 출력 선택, 에러/경고 출력 STRB
+#### Emergency stop \(External\)
 
-에러/경고 출력 Bit, 에러/경고 출력 STRB, 종합 이상, 조작 에러, 경고 발생 신호는 다음의 시퀀스를 참조하십시오.
+This function is used to output to the outside the signal from an external emergency stop device connected to the system board. 
 
-그림 54 16비트 출력
 
-* 외부 RESET ACK
 
-입력 신호 할당에 설정된 외부 RESET 신호가 on되면 이 상태를 외부로 출력하고자 할 때 사용합니다. 이 신호는 200ms동안 on된 후 자동으로 off됩니다.
+#### Low speed mode 
 
-* 프로그램 에코 Bit
+When the signal set for the low speed command in the input signal assign section is turned on or when the robot operates at a safe speed in manual mode, this function is used to output this state to the outside.
 
-입력 신호 할당에 설정된 프로그램 선택 Bit에 의해 프로그램이 선택되었을 때 선택된 프로그램 번호를 외부로 출력하고자 할 때 사용합니다.
 
-* 프로그램 ACK
 
-원격 모드에서 외부 기동 입력에 의해 로봇이 기동할 때 이 상태를 외부로 출력하고자 할 때 사용합니다. 이 신호는 200ms동안 on된 후 자동으로 off됩니다.
+#### Program end 
 
-* 아크 용접 이상
+When the end cycle is performed in the job program, this function is used to output this state to the outside.
 
-아크 용접과 관련하여 에러가 발생한 경우에 이 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 아크 용착 경보
 
-아크 용접 중 용착이 발생한 경우에 이 상태를 외부로 출력하고자 할 때 사용합니다. 이 신호는 200ms동안 on된 후 자동으로 off됩니다.
+#### Overall error
 
-* 로봇락 상태\(유효=ON\)
+Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user’s mistakes in operation. When an error occurs because of a system error, this function is used to output this state to the outside. The errors caused by system errors range from 1 to 999 and 2000 to 7999.
 
-\[조건설정\]에서 로봇 Lock 설정 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 필드버스 이상, 필드버스 IDLE
 
-CC-LINK, 디바이스넷 등의 필드 버스 통신 보드를 사용할 때 통신의 상태를 외부로 출력하고자 할 때 사용합니다.
+#### Operation error
 
-* 배터리\(백업, 엔코더\) 전압저하
+Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user’s mistakes in operation. When an error occurs because of the user’s mistakes in operation, this function is used to output this state to the outside. For information, the errors caused by system errors range from 1 to 999 and 2000 to 7999.
 
-메인 보드에 장착된 SRAM 상태를 유지하기 위한 백업 배터리나 각각의 모터에 장착된 엔코더 값을 유지하기 위한 엔코더 배터리에 전압 저하가 발생한 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 토크모니터링
 
-로봇 6축에 인가되는 토크값을 외부로 출력하고자 할 때 사용합니다. 외부로 출력되는 토크값은 1/2 배율의 % 값입니다.
+#### Warning
 
-* 그리스 주유 알람
+When a warning occurs in the controller, this function is used to output this state to the outside.
 
-그리스 주유가 필요한 상태를 외부로 출력하고자 할 때 사용합니다.
 
-* 평균 부하율 이상 알람
 
-로봇이 작업 중 평균치 부하율을 초과하였는지 상태를 외부로 출력하고자 할 때 사용합니다.
+#### Collision sensor 
+
+When the input of the collision sensor signal set in the input signal assign section is turned on and it is confirmed that a collision has occurred in the robot, this function is used to output this state to the outside.
+
+
+
+#### Step set warning 
+
+In automatic mode, it can be dangerous if the currently selected position of the cursor is different from the position in which the execution was performed previously. This function is used to output this state to the outside.
+
+
+
+#### Interlock abnormal warning
+
+When the waiting time in the wait statement of the job program exceeds the time set in the \[Interlock Abnormal Time\] option in the \[System&gt; 2: Control Parameter&gt; 1: Control Environment Setting\] menu, this function is used to output this state to the outside.
+
+Error/Warning output bit, Error/Warning output selection and Error/Warning output strobe
+
+For the error/warning output bit, error/warning output strobe, overall abnormality, operation error, and warning occurrence signals, refer to the following sequence.
+
+![Figure 53 16Bit Output](../../../.gitbook/assets/image%20%28440%29.png)
+
+#### External reset ack
+
+When the external reset signal set in the input signal assign section is turned on, this function is used to output this state to the outside. This signal will be turned on for 200 ms and then turned off automatically.
+
+
+
+#### Program echo bit 
+
+When a program is selected by the program selection bit set in the input signal assign section, this function is used to output the selected program number to the outside. 
+
+
+
+#### Program ack 
+
+When the robot is started by an input of the external startup signal in remote mode, this function is used to output the state to the outside. The signal will be turned on for 200 ms and then turned off automatically.
+
+
+
+#### Arc welding abnormal
+
+When an error related to arc welding occurs, this function is used to output this status to the outside.
+
+
+
+#### Arc deposition warning
+
+When welding deposition occurs during arc welding, this function is used to output this state to the outside. This signal will be turned on for 200ms and then turned off automatically.
+
+
+
+#### Robot lock state \(Valid=ON\)
+
+This function is used to output to the outside the robot lock setting status in \[Condition Setting\].
+
+
+
+#### Field bus abnormal, and field bus idle
+
+When a fieldbus communication board such as CC-LINK and DeviceNet is used, this function is used to output the communication state to the outside.
+
+
+
+#### Battery \(backup, encoder\) voltage drop
+
+When there is a voltage drop in the backup battery to maintain the state of the SRAM installed on the main board or a voltage drop in the encoder battery to maintain the value of the encoder installed on each motor, this function is used to output to the outside.
+
+
+
+#### Torque monitoring
+
+This function is used to output to the outside the torque value that is applied to the six axes of the robot. The torque value that will be outputted to the outside is a % value in the multiplier of 1/2.
+
+
+
+#### Grease injection alarm
+
+This function is used to output to the outside the condition that requires grease injection.
+
+
+
+#### Average load factor abnormality alarm 
+
+This function is used to output to the outside the status regarding whether the robot has exceeded the average load factor during operation.
+
+
+
+
 

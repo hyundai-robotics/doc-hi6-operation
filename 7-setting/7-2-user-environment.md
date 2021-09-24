@@ -6,7 +6,7 @@ You can check and set various user conditions.
 
 2.	After setting the user environment, touch the \[OK\] button.
 
-![](../.gitbook/assets/image%20%28441%29.png)
+![](../.gitbook/assets/image%20%28443%29.png)
 
 * \[1: Pose Record Type\]: You can set the type of the position recording of the step to be recorded as a hidden pose.
   * 
