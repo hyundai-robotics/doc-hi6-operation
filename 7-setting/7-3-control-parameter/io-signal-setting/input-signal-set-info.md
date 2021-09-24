@@ -1,76 +1,110 @@
-# 7.3.2.5 입력 신호 설정 정보
+# 7.3.2.5 Input Signal Setting Information
 
-* 원격\(Remote\) 모드
+#### Remote mode
 
-티치 펜던트의 모드 스위치가 원격\(![](../../../.gitbook/assets/sb-remote.png)\)으로 선택된 상태에서 원격 모드로 선택되기 위해서는 해당 신호가 on 되어야 합니다. 해당 신호가 off되면 내부 모드로 선택됩니다. 일반적으로 티치 펜던트의 모드 스위치를 원격\(![](../../../.gitbook/assets/sb-remote.png)\)으로 선택하면 사용자는 원격 모드로 선택되기를 원하기 때문에 기본값은 254로 지정하였고 입력 신호 속성에 해당 신호는 부논리로 지정됩니다.
+When the mode switch of the teach pendant is selected to remote \(![](../../../.gitbook/assets/sb-remote.png)\), the corresponding signal should be turned on for the remote mode to be selected. If the corresponding signal is turned off, the internal mode will be selected. In general, if the mode switch of the teach pendant is selected to be remote \(![](../../../.gitbook/assets/sb-remote.png)\), the user wants to select the remote mode, which is why the basic value is set to 254, and the corresponding signal will be designated as negative logic in the input signal attribute.
 
-* 수동\(Teach\) 모드
 
-원격 모드로 선택된 상태에서 해당 신호가 on되면 원격에서 수동으로 로봇을 조작하는 상태가 됩니다. 그런데 일반적으로 이 상태에서 로봇을 조작하는 경우는 없으므로 거의 사용하지 않습니다.
 
-* 자동\(Playback\) 모드
+#### Manual \(Teach\) mode
 
-원격 모드로 선택된 상태에서 해당 신호가 on되면 원격에서 자동으로 로봇을 조작하는 상태가 됩니다. 그런데 일반적으로 사용자는 티치펜던트의 모드 스위치를 원격\(![](../../../.gitbook/assets/sb-remote.png)\)으로 선택하면 원격에서 자동으로 로봇을 조작하기를 원하기 때문에 기본값은 255로 지정하였고 신호 속성에 해당 신호는 부논리로 지정됩니다.
+While the remote mode is selected, if the corresponding signal is turned on, you will be in a state in which the robot will be operated manually in remote mode. However, in general, there is no case of operating the robot in this state, and this mode is rarely used. 
 
-* 외부 기동
 
-원격 자동 모드에서 로봇을 기동\(start\)하기 위해 사용합니다.
 
-* 외부 정지
+#### Auto \(Playback\) mode 
 
-원격 자동 모드에서 로봇을 정지\(stop\)하기 위해 사용합니다.
+While the remote mode is selected, if the corresponding signal is turned on, you will be in a state in which the robot will be operated automatically in remote mode. However, in general, if the mode switch of the teach pendant is selected to remote \(![](../../../.gitbook/assets/sb-remote.png)\), the user wants to operate the robot automatically in remote mode, which is why the basic value is set to 255, and the corresponding signal will be designated as negative logic in the signal attribute.
 
-* 외부 프로그램 선택
 
-외부에서 기동 동작 시 프로그램 선택 Bit를 읽어 외부 프로그램으로 확정하는 시점은 프로그램 스트로브\(Strobe\) 신호의 사용 여부에 따라 달라집니다.
 
-* 프로그램 스트로브 신호 사용이 유효인 경우: 외부 기동 입력 시 프로그램 스트포브 신호가 On이면 프로그램 선택 Bit를 읽고, 이 값을 프로그램 번호로 확정합니다.  
+#### External start
 
-![&#xADF8;&#xB9BC; 52 &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC2A4;&#xD2B8;&#xB85C;&#xBE0C;&#xC2E0;&#xD638; &amp;lt;&#xC720;&#xD6A8;&amp;gt; &#xC2DC; &#xC678;&#xBD80; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC120;&#xD0DD; &#xC120;&#xB3C4;](../../../.gitbook/assets/io-signal-strobe1.png)
+This is used to start the robot in remote auto mode.
 
-* 프로그램 스트로브 신호 사용이 무효인 경우: 외부 기동 입력 후 프로그램 선택 Bit를 읽고, 이 값이 90 ms 동안 변경되지 않는 경우에 프로그램 번호로 확정합니다.
 
-![&#xADF8;&#xB9BC; 53 &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC2A4;&#xD2B8;&#xB85C;&#xBE0C;&#xC2E0;&#xD638; &amp;lt;&#xBB34;&#xD6A8;&amp;gt; &#xC2DC; &#xC678;&#xBD80; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xC120;&#xD0DD; &#xC120;&#xB3C4;](../../../.gitbook/assets/io-signal-strobe2.png)
 
-* 프로그램 선택 Bit와 Binary/Discrete \(OFF→Binary\)
+#### External stop 
 
-프로그램 선택Bit는 외부 기동 신호가 입력되었을 때, 실행할 프로그램을 선택하기 위한 신호 조합입니다. 현재 TP에서 프로그램 HEADER 혹은 END에 커서가 있을 때에만 적용되며, 프로그램 수행 중에는 수행 중인 프로그램을 끝까지 수행하게 됩니다. Binary/Discrete 신호는 프로그램 선택 Bit의 해석을 결정해주는 옵션이며, 0인 경우 Binary로 인식하고, 1인 경우에는 Discrete로 인식합니다. 예를 들어, 프로그램 선택 Bit가 다음과 같이 설정된 경우, 입력에 따른 수행 JOB 예는 다음과 같습니다.
+This is used to stop the robot in remote auto mode.
 
-![](../../../.gitbook/assets/image%20%28181%29.png)
 
-* 외부 RESET
 
-외부 신호에 의해 티치 펜던트에서 R0 스텝 카운터 리셋 기능을 실행한 것과 동일하게 동작하기 위해 사용합니다. 로봇이 기동 중인 경우에는 이 기능이 동작하지 않으며, 이 기능이 정상적으로 동작하면 프로그램의 처음으로 실행 위치를 이동하고 각종 에러나 경고의 발생 상태를 클리어합니다. 이 기능에 대한 내용은 “8.2 R0 스텝 카운터 리셋”을 참조하십시오.
+#### Selection of an external program 
 
-* 저속 지령
+When the robot is externally started up, the timing of reading the program selection bit and determining it as an external program depends on whether to use the strobe signal.
 
-외부 신호에 의해 로봇의 이동 속도를 안전 속도\(250mm/s\) 이내로 제한하기 위해 사용합니다.
+* When the program strobe signal use is set as enable: If the program strobe signal is on while there is an external startup input, the program selection bit will be read, and the read value will be determined as the program number.
 
-* 충돌 센서
+![Figure 51 Diagram of the Selection of an External Program When the Program Strobe Signal is Set as &amp;lt;Enable&amp;gt;](../../../.gitbook/assets/image%20%28425%29.png)
 
-로봇의 충돌을 검지하고 로봇을 정지하기 위해 사용합니다. \[시스템 &gt; 1: 사용자 환경 &gt; 6: 충돌센서\] 메뉴의 설정과 연계하여 로봇을 정지할 때 조건과 신호의 논리가 결정됩니다.
+* When the program strobe signal use is set as disable: After there is an external startup input, the program selection bit will be read, and if this value does not change for 90 ms, it will be determined as the program number.
 
-* 에러/경보 신호 클리어
+![](../../../.gitbook/assets/image%20%28447%29.png)
 
-외부 신호에 의해 각종 에러나 경고의 발생 상태를 클리어합니다.
+#### 
 
-* 조이스틱 모드
+#### Program selection bit and binary/discrete \(off → binary\)
 
-로봇을 수동으로 조그하기 위해 사용합니다. 일반적으로 LCD 매크로 검사 장비에서 사용되며 사용을 위해서는 별도의 기능 설명서를 참고하시기 바랍니다.
+The program selection bit is a combination of signals to select a program to execute when an external start signal is inputted. It is applied only when a step is pointed in Header or in the End currently in the TP. When a program is being executed, the program will be executed to the end.
 
-* 도어 스위치
+Binary/Discrete signal is an option that determines the interpretation of the program selection bit, and if it is 0, it will be recognized as binary, and if it is 1, it will be recognized as discrete.
 
-안전 펜스의 도어가 개방되었을 때 이동 중인 로봇을 정지하기 위해 사용합니다.
+For example, if the program selection bit is set as follows, an example of JOB to execute according to the input is as follows.
 
-* 화면보호 해제
+![](../../../.gitbook/assets/image%20%28423%29.png)
 
-티치 펜던트를 조작하지 않으면 \[메뉴 &gt; 11: 티치 펜던트 옵션\] 메뉴에서 설정한 화면꺼짐 시간이 경과되면 티치 펜던트가 화면보호 상태로 전환됩니다. 외부 신호에 의해 티치 펜던트의 화면을 켜기 위해 사용합니다.
+#### 
 
-* 외부 모터 on
+#### External reset
 
-외부 조작 패널에서 모터 on을 수행하기 위해 사용합니다.
+This function is used to perform the same operation as executing the R0 step counter reset function from the teach pendant by an external signal. When the robot is starting up, this function will not operate. If this function operates normally, the execution position will move to the beginning of the program, and the occurrence status of various errors or warnings will be cleared. Refer to “8.2 R0 for Resetting the Step Counter” for information on this function.
 
-* 외부 모터 off
+#### 
 
-외부 조작 패널에서 모터 off를 수행하기 위해 사용합니다.
+#### Low speed command
+
+This function is used to limit the robot’s moving speed to within the safe speed \(250 mm/s\) by an external signal.
+
+
+
+#### Collision sensor
+
+This function is used to detect the collision of the robot and stop the robot. In conjunction with the settings in the \[System&gt; 1: User Environment&gt; 6: Collision Sensor\] menu, conditions and signal logic for stopping the robot will be determined.
+
+
+
+#### Error/Warning signal clearing
+
+This function is used to clear the occurrence status of various errors and warnings by an external signal. 
+
+#### 
+
+#### Joystick mode
+
+This function is used to manually jog the robot. It is generally used in LCD macro inspection equipment. Refer to a separate function manual for using the function.
+
+
+
+#### Door switch
+
+This function is used to stop the robot in movement when the door of the safety fence is opened.
+
+
+
+#### Screen saver deactivation
+
+If the teach pendant is not operated, the teach pendant will switch to the screen saver state when the screen off time set in the \[Menu&gt; 11: Teach Pendant Option\] menu has elapsed. This function is used to turn on the screen of the teach pendant by an external signal.
+
+
+
+#### External motor on
+
+This function is used to turn on the motor from an external operation panel.
+
+
+
+#### External motor off
+
+This function is used to turn off the motor from an external operation panel.
 

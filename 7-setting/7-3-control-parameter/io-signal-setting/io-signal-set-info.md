@@ -1,25 +1,32 @@
-# 7.3.2.3    입출력 신호 설정 정보
+# 7.3.2.3 Input/Output Signal Setting Information
 
-* \[신호\]: 속성을 적용할 신호입니다. fb 블록의 신호는 블록 번호와 소수점, 신호 번호의 순으로 입력하여 지정합니다. 예를 들어, fb1 블록의 35번 신호를 지정하려면 1.35를 입력하여 설정할 수 있습니다.
-* \[부논리\]: 범용 입출력 신호의 정논리와 부논리는 다음과 같습니다.
+* \[Signal\]: The signal to apply the attribute to. The fb block signal can be designated by inputting the block number, decimal point, and signal number in sequence.
 
-![](../../../.gitbook/assets/image%20%28186%29.png)
+  For example, if you want to designate the signal 35 of the block fb1, you can set it by inputting 1.35.
 
-* \[펄스 횟수\]: 펄스 횟수입니다. 1 ~ 100 사이의 값으로 설정하면 펄스 출력하고 0으로 설정하면 지연 출력합니다.
-* \[펄스ON\]/\[펄스OFF\]: 펄스 출력 또는 지연 출력 시, 출력 신호의 On 시간과 Off 시간입니다. 펄스 속성값에 따른 펄스 출력 예는 다음과 같습니다.
-* 펄스 출력 - 횟수: 3, ON 시간: 1 초, OFF 시간; 0.2 초
+* 
+  \[Negative Logic\]: The positive logic and negative logic of the general input/output signal are as follows.
 
-![](../../../.gitbook/assets/image%20%28189%29.png)
+![](../../../.gitbook/assets/image%20%28439%29.png)
+
+* \[Pulse Count\]: Pulse count. This is the count of pulses. If it is set to a value between 1 and 100, pulse output will occur, and if set to 0, a delayed output will occur.
+* 
+  \[Pulse On\]/\[Pulse Off\]: This is the On status time and Off status time of the output signal when pulse output or delayed output occurs.
+
+  The example of the pulse output according to the pulse attribute value is as follows.
+
+* 
+  Pulse output: Count: 3. On status time: 1 second. Off status time: 0.2 seconds
+
+![](../../../.gitbook/assets/image%20%28448%29.png)
 
 
 
-* 지연 출력 - 횟수: 0, ON 시간: 1 초, OFF 시간; 0.5 초
+* Delayed output: Count: 0. On status time: 1 second. Off status time: 0.5 seconds
 
+![](../../../.gitbook/assets/image%20%28446%29.png)
 
-
-![](../../../.gitbook/assets/image%20%28183%29.png)
-
-* \[명칭\]: 범용 입출력 신호의 명칭입니다.
+* \[Name\]: Name of the general input/output signal
 
 
 

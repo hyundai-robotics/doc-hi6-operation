@@ -1,17 +1,24 @@
-# 7.3.2.4 입력 신호 할당
+# 7.3.2.4 Input Signal Assignment
 
-제어기 입력 신호를 이용해 제어기의 상태나 동작을 원격으로 제어할 수 있습니다. 원격 제어 항목에 입력 신호 번호를 할당하는 방법은 다음과 같습니다.
+You can remotely control the controller’s state or operation using the controller input signal. The method of assigning the input signal number in the remote-control item is as follows.
 
-1.	\[2: 제어 파라미터 &gt; 2: 입출력 신호 설정 &gt; 3: 입력 신호 할당\] 메뉴를 터치하십시오.
+1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 3: Input Signal Assign\] menu. 
 
-2.	원격 제어 항목에 입력 신호 번호를 입력한 후 \[OK\] 버튼을 터치하십시오.
+2.	After inputting the input signal number in the remote control item, touch the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%28187%29.png)
+![](../../../.gitbook/assets/image%20%28403%29.png)
 
-* \[ALL 초기화\]: 모든 원격 제어 항목에 할당된 입력 신호의 번호를 초기화합니다.
-* \[ONE 초기화\]: 선택된 원격 제어 항목에 할당된 입력 신호의 번호를 초기화합니다.
-* \[채널 초기화\]: 설정한 입력 신호의 입력 채널을 초기화합니다. 채널은 fb0 ~ fb9로 구성되며, fb0인 경우 fb0가 생략되어 표시됩니다.
-* \[S\]: 원격 제어를 시스템 입력 신호로 사용할 경우, 시스템 신호를 지정합니다. 시스템 신호는 알파벳 s에 신호 번호를 조합하여 “s+숫자”로 구성됩니다. 예를 들어, 시스템 신호 49는 s49로 설정합니다.
+* \[Reset All\]: You can reset the numbers of the input signals assigned to all remote control items. 
+* 
+  \[Reset One\]: You can reset the number of the input signal assigned to the selected remote control item. 
+
+* 
+  \[Reset Channel\]: You can initialize the input channel for the set input signal. The channel consists of fb0 to fb9, and fb0 will be omitted in the display in the case of fb0.
+
+* 
+  \[S\]: You can designate the system signal when using the remote control as a system input signal. The system signal consists of “s+number,” which combines the letter s with the signal number. For example, you can set the system signal 49 as s49.
+
+
 
 
 
