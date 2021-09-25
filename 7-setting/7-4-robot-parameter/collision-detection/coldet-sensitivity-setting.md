@@ -1,44 +1,42 @@
-# 7.4.8.1 충돌검지 민감도 설정
+# 7.4.8.1 Collision Detection Sensitivity Setting
 
-충돌검지 민감도는 JOB 프로그램에서 명령어로 조정할 수 있습니다.
+The collision detection sensitivity can be adjusted using the command in the JOB program.
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xD56D;&#xBAA9;</th>
-      <th style="text-align:left">&#xB0B4;&#xC6A9;</th>
+      <th style="text-align:left">Item</th>
+      <th style="text-align:left">Contents</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">&#xBA85;&#xB839;&#xC5B4;</td>
+      <td style="text-align:left">Command</td>
       <td style="text-align:left">ColDet Sensitivity</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xC124;&#xBA85;</td>
-      <td style="text-align:left">&#xCDA9;&#xB3CC;&#xAC80;&#xC9C0; &#xBBFC;&#xAC10;&#xB3C4; &#xBCC0;&#xACBD;</td>
+      <td style="text-align:left">Description</td>
+      <td style="text-align:left">Changing the collision detection sensitivity</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xC785;&#xB825; &#xBC29;&#xBC95;</td>
+      <td style="text-align:left">How to input</td>
       <td style="text-align:left">command &#x2192; MOTION &#x2192; colsense</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBB38;&#xBC95;</td>
+      <td style="text-align:left">Syntax</td>
       <td style="text-align:left">ColDet Sensitivity=100</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xD30C;&#xB77C;&#xBBF8;&#xD130;</td>
-      <td style="text-align:left">0 ~ 200 (0: &#xAE30;&#xB2A5; &#xBB34;&#xD6A8;, &#xBBFC;&#xAC10;&#xB3C4;
-        &#xAC12;&#xC774; &#xD074;&#xC218;&#xB85D; &#xCDA9;&#xACA9;&#xC5D0; &#xBBFC;&#xAC10;&#xD558;&#xAC8C;
-        &#xB3D9;&#xC791;)</td>
+      <td style="text-align:left">Parameter</td>
+      <td style="text-align:left">0&#x2013;200 (0: Function disabled. The larger the sensitivity value,
+        the more sensitive it is to impact.)</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xC608;</td>
+      <td style="text-align:left">Example</td>
       <td style="text-align:left">
-        <p>[&#xCDA9;&#xB3CC;&#xAC80;&#xC9C0;] &#xBA54;&#xB274;&#xC5D0;&#xC11C; &#xBBFC;&#xAC10;&#xB3C4;&#xB97C;
-          100%&#xB85C; &#xC124;&#xC815;&#xD55C; &#xACBD;&#xC6B0;</p>
-        <p>S1 ~ S2: &#xBBFC;&#xAC10;&#xB3C4; 100%&#xB85C; &#xAC80;&#xC9C0; / S3 ~
-          S4: &#xBBFC;&#xAC10;&#xB3C4; 50%&#xB85C; &#xAC80;&#xC9C0;</p>
+        <p>[Impact Detection] When the sensitivity is set to 100% in the menu</p>
+        <p>S1 - S2: Detection based on the sensitivity of 100% S3&#x2013;S4: Detection
+          based on a sensitivity of 50%</p>
         <p>
           <img src="../../../.gitbook/assets/coldet-sensitivity.png" alt/>
         </p>
@@ -48,14 +46,14 @@
 </table>
 
 {% hint style="warning" %}
-민감도를 너무 높게 설정하면 오검지가 발생할 수 있습니다. 또한 민감도를 너무 낮게 설정하면 충돌을 검지하지 못할 수 있습니다.
+If the sensitivity is set too high, false detection may occur. Moreover, if the sensitivity is set too low, collisions detection may not be performed.
 {% endhint %}
 
 {% hint style="info" %}
-* 명령어가 없을 경우 \[충돌검지\] 메뉴에서 설정한 기본 민감도로 충돌을 검지합니다.
-* 명령어로 설정한 민감도는 다음의 경우에서 기본 민감도로 초기화됩니다.
-  * 메인 프로그램의 END 명령어를 만남
-  * 스텝/펑션 변경
-  * 스텝 카운터 리셋
+* If there is no command, collision will be detected based on the basic sensitivity set in the \[Impact Detection\] menu.
+* The sensitivity set by the command will be initialized to the basic sensitivity in the following cases.
+  * When encountering the END command of the main program
+  * When changing the step/function
+  * When resetting the step counter
 {% endhint %}
 

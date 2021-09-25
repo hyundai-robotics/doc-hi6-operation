@@ -6,7 +6,7 @@ You can register the mechanical origin position of each axis.
 
 2.	Register the mechanical origin position of each axis.
 
-![](../../.gitbook/assets/image%20%28477%29.png)
+![](../../.gitbook/assets/image%20%28478%29.png)
 
 
 

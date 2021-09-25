@@ -6,7 +6,7 @@ You can set various data related to robot operation as well as information such 
 
 2.	You can check and set various parameters of the manipulator by selecting the desired menu.
 
-![](../../.gitbook/assets/image%20%28476%29.png)
+![](../../.gitbook/assets/image%20%28477%29.png)
 
 
 

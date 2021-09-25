@@ -1,11 +1,17 @@
-# 7.4.9.1 조그인칭 기능의 주요 기능
+# 7.4.9.1 Main Functions of the Jog Inching Function
 
-* 인칭 가능 좌표계
-  * 축 좌표계 인칭: 각 축의 이동 거리\(㎜\)와 각도\(deg\)를 지정한 만큼만 이동합니다.
-  * 직교 좌표계 인칭
-  * 툴 좌표계 인칭
-  * 사용자 좌표계 인칭: X, Y, Z 위치\(㎜\)와 Rx, Ry, Rz 자세\(deg\)에 대해 지정한 만큼만 이동합니다.
-* 인칭 거리 속도 레벨 기존의 조그 속도와 동일한 레벨에 인칭 거리를 설정할 수 있어 8 단계의 속도를 선택할 수 있으며 각 단계에 인칭 거리를 설정할 수 있습니다.
+* Inching applicable coordinate systems
+  * 
+    Inching in the joint coordinate system: Movement will take place as much as the distance \(mm\) and angle \(deg\) designated for each joint.
+
+  * Inching in the Cartesian coordinate system
+  * Inching in the tool coordinate system 
+  * Inching in the user coordinate system: Movement will take place as much as the amount designated for the X, Y, and Z positions \(mm\) and Rx, Ry, and Rz postures\(deg\).
+* Inching level 
+
+  You can set the inching distance at the same level as the existing jog speed, so you can select eight levels of speed, and you can set the inching distance for each level.
+
+
 
 
 

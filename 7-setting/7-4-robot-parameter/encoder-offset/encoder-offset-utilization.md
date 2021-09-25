@@ -6,7 +6,7 @@ After system initialization, directly input the encoder offset value as a hex va
 
 If the encoder offset value is recorded as the axis position value \(mm or degree\), you need to input the axis position value into the input window that will appear when you touch the \[Reset One\] button while pressing the &lt;Shift&gt; key.
 
-![](../../../.gitbook/assets/image%20%28482%29.png)
+![](../../../.gitbook/assets/image%20%28484%29.png)
 
 
 

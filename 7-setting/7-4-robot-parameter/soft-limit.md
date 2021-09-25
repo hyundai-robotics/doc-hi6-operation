@@ -6,7 +6,7 @@ You can adjust the operation range of each axis according to the robot’s use e
 
 2.	Set the operation range of each axis.
 
-![](../../.gitbook/assets/image%20%28483%29.png)
+![](../../.gitbook/assets/image%20%28485%29.png)
 
 
 

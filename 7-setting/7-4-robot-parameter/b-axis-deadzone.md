@@ -8,7 +8,7 @@ Set the B-axis no-use area.
 
 2.	After setting the angle for determining the no-use area and setting the interpolation handling mode, touch the \[OK\] button.
 
-![](../../.gitbook/assets/image%20%28480%29.png)
+![](../../.gitbook/assets/image%20%28482%29.png)
 
 
 

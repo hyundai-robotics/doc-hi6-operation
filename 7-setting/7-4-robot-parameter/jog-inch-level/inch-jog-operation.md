@@ -1,18 +1,18 @@
-# 7.4.9.2 인칭 조그 조작
+# 7.4.9.2 Inching Jog Operation
 
-인칭 기능은 조그키 ONE PUSH 당 최대 이동 거리를 초과하여 움직이지 않게 하는 기능입니다.
+The inching function is a function that does not allow the movement to take place beyond the maximum moving distance per one push of the jog key. 
 
-인칭 거리에 도달한 이후에도 계속 조그키를 누르고 있다가 손을 떼면 로봇이 인칭 거리까지 감속하여 정지하고 움직이지 않습니다.
+Even after reaching the inching distance, if you keep pressing the jog key and then release your hand, the robot will decelerate to the inching distance, and then stop.
 
-![&#xADF8;&#xB9BC; 64 &#xC778;&#xCE6D; &#xAC70;&#xB9AC; &#xB3C4;&#xB2EC; &#xD6C4; &#xD0A4;&#xC5D0;&#xC11C; &#xC190;&#xC744; &#xB5C0; &#xACBD;&#xC6B0;](../../../.gitbook/assets/image%20%28209%29.png)
+![Figure 63 When Releasing the Key After Reaching the Inching Distance](../../../.gitbook/assets/image%20%28487%29.png)
 
 
 
-인칭 거리에 도달하기 전에 조그키에서 손을 뗀 경우에는 조그키에서 손을 뗀 시점부터 로봇이 감속하여 정지합니다. 이때는 일반 조그 모드와 동일합니다.
+If you release the jog key before reaching the inching distance, the robot will decelerate, starting from the time you release the jog key, and then stop. At this time, the mode will be the same as the general jog mode.
 
-![&#xADF8;&#xB9BC; 65 &#xC778;&#xCE6D; &#xAC70;&#xB9AC; &#xB3C4;&#xB2EC; &#xC804; &#xD0A4;&#xC5D0;&#xC11C; &#xC190;&#xC744; &#xB5C0; &#xACBD;&#xC6B0;](../../../.gitbook/assets/image%20%28216%29.png)
+![Figure 64 When Releasing the Hand Before Reaching the Inching Distance](../../../.gitbook/assets/image%20%28473%29.png)
 
 {% hint style="info" %}
-축 좌표계에서 속도 레벨 1은 엔코더 1 bit씩 이동하도록 고정되어 있습니다.
+In the joint coordinate system, the speed level 1 is fixed to a mode that the robot will move by 1 bit of the encoder.
 {% endhint %}
 
