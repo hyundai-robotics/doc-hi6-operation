@@ -1,10 +1,12 @@
-# 7.6.3 용도 설정
+# 7.6.3 Usage Setting
 
-작업 용도를 선택하고 작업 용도에 맞게 사용자 키 및 입출력 할당 신호를 초기화합니다.
+You can select the operation usage and initialize the user key and input/output assignment signals according to the operation usage.
 
-1.	\[5: 초기화 &gt; 3: 용도설정\] 메뉴를 터치하십시오.
+1.	Touch the \[5: Initialize &gt; 3: Usage Setting\] menu.
 
-2.	작업 용도를 선택하고 용도에 맞춰 환경 조건을 설정한 후 \[OK\] 버튼을 터치하십시오. 선택한 작업 용도 관련 명령어를 사용할 수 있으며 관련 메뉴에 접근할 수 있습니다.
+2.	After selecting the operation usage and setting the environment conditions according to the usage, touch the \[OK\] button. Then, you can use commands related to the selected operation usage and access the relevant menus.
+
+
 
 
 

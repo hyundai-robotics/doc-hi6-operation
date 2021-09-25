@@ -8,7 +8,7 @@ If the robot controller does not operate normally, initialize the system. The sy
 
 2.	Select the desired menu, and then perform the initial setting of the robot system, and then initialize the serial encoder.
 
-![](../../.gitbook/assets/image%20%28490%29.png)
+![](../../.gitbook/assets/image%20%28491%29.png)
 
 
 
