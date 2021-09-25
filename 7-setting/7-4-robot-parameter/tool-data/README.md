@@ -1,35 +1,37 @@
-# 7.4.1 툴 데이터
+# 7.4.1	Tool Data
 
-로봇의 R1축 플랜지\(Flange\)를 기준으로 TCP \(Tool Center Point\)의 거리와 각도를 설정하고, 툴의 중량, 무게 중심과 이너셔를 등록합니다. \[1: 툴 데이터\] 메뉴를 이용해 수동으로 등록할 수 있습니다.
+You can set the distance and angle of the TCP based on the robot’s R1-axis flange and register the tool’s weight, center of gravity, and inertia. You can perform registration manually using the \[1: Tool data\] menu.
 
-다른 방법으로, 툴 길이는 자동 캘리브레이션 기능을 이용하여 설정할 수 있고, 툴의 중량과 무게 중심, 이셔너는 부하추정 기능을 이용하여 등록할 수 있습니다.
+In another way, the tool length can be set using the automatic calibration function, and the tool’s weight, center of gravity, and inertia can be registered using the load estimation function.
 
-직선 또는 원호와 같은 보간 동작 시에는 TCP 점을 기준으로 궤적을 생성하므로 티칭 작업 전에는 툴의 길이와 각도를 정확하게 설정해야 합니다.
+In the case of interpolation operation such as linear or circular interpolation, the trajectory will be created based on the TCP, so the length and angle of the tool should be accurately set before the teaching.
 
-Hi6 제어기는 로봇의 동역학을 기반으로 제어합니다. 툴의 중량과 중심, 이너셔를 정확하게 설정해야 로봇이 빠르고 안전하게 동작할 수 있습니다. 툴의 중량과 중심, 이너셔 값이 정확하지 않거나 틀린 경우, 로봇의 성능과 수명에 심각한 문제가 발생할 수 있습니다.
+The Hi6 controller performs control based on the dynamics of the robot. The robot can operate quickly and safely only when the weight, center, and inertia of the tool are correctly set. If the weight, center, and inertia values of the tool are incorrect or wrong, serious problems may occur in the performance and service life of the robot.
 
-특히 툴 체인지 기능을 사용하는 경우에는 각 툴에 대한 정보뿐만 아니라 분리된 상태의 툴에도 할당한 별도의 번호까지 모든 툴 체인저 관련 툴 정보를 입력하여 사용해야 합니다. 그리고 핸들링 작업 시에도 작업물의 탈착 상태를 각 툴 번호에 할당하여 사용해야 합니다.
+In particular, in the case of using the tool change function, all tool information related to tool change, not only the information about each tool, but also separate numbers assigned to disconnected tools, should be inputted for the use. Moreover, even during the handling operation, the attachment/detachment status of the workpiece should be assigned to each tool number for the use.
 
-툴의 길이는 플랜지 좌표계에서 방향별 길이입니다. \(X축 방향 길이: Xt / Y축 방향 길이: Yt / Z축 방향 길이: Zt\)
-
-![&#xADF8;&#xB9BC; 61 &#xB85C;&#xBD07; &#xD615;&#xD0DC;&#xBCC4; &#xD50C;&#xB79C;&#xC9C0; &#xC88C;&#xD45C;&#xACC4;](../../../.gitbook/assets/image%20%28213%29%20%282%29.png)
-
-툴의 각도는 플랜지 좌표계에서 방향별 자세 변환량입니다. \(X축 방향 각도: Rx / Y축 방향 각도: Ry / Z축 방향 각도: Rz\)
-
-![&#xADF8;&#xB9BC; 62 &#xD234; &#xAC01;&#xB3C4;: Rotating Rx \(&#xC88C;\) / Rotating Ry \(&#xC911;&#xAC04;\) / Rotating Rz \(&#xC6B0;\)](../../../.gitbook/assets/image%20%28211%29.png)
-
-즉, 툴의 길이 및 각도는 플랜지 좌표계를 기준으로 설정됩니다. 툴 길이는 플랜지 좌표계의 중심에서 TCP까지의 거리를 설정합니다. 
+The length of the tool is the length in each direction in the flange coordinate system. \(Length in X-axis direction: Xt / Length in Y-axis direction: Yt / Length in Z-axis direction: Zt\)
 
 
 
-툴의 자세는 위와 같이 설정된 툴 각도에 따라 툴 플랜지 좌표계를 기준으로 X, Y, Z 방향을 순차적으로 회전시킨 값입니다.
+![Figure 60 Flange Coordinate System for Each Robot Type](../../../.gitbook/assets/image%20%28213%29%20%282%29.png)
+
+The angle of the tool is the posture conversion amount in each direction in the flange coordinate system. \(Angle in X-axis direction: Rx / Angle in Y-axis direction: Ry / Angle in Z-axis direction: Rz\)
+
+![Figure 61 Tool Angle: Rotating Rx \(Left\) / Rotating Ry \(Middle\) / Rotating Rz \(Right\)](../../../.gitbook/assets/image%20%28211%29.png)
+
+The length and angle of the tool will be set based on the flange coordinate system. The tool length can be set as the distance from the center of the flange coordinate system to the TCP.
+
+The tool posture is a value acquired by performing rotation sequentially in the X, Y, and Z directions based on the tool flange coordinate system according to the tool angle set as above.
 
 Rxyz = Rot\(z, Rz\)Rot\(y, Ry\)Rot\(x, Rx\)
 
-* Rxyz: 툴 플랜지를 기준으로 한 툴의 자세 회전 행렬
-* Rot\(z, Rz\): 플랜지 좌표계의 Z축으로 Rz만큼 회전시키는 회전 행렬
-* Rot\(y, Ry\): 플랜지 좌표계의 Y축으로 Ry만큼 회전시키는 회전 행렬
-* Rot\(x, Rx\): 플랜지 좌표계의 X축으로 Rx만큼 회전시키는 회전 행렬
+* Rxyz: Tool posture rotation matrix based on the tool flange
+* Rot\(z, Rz\): Rotation matrix that rotation occurs as much as Rz in the Z-axis direction of the flange coordinate system 
+* Rot\(y, Ry\): Rotation matrix that rotation occurs as much as Ry in the Y-axis direction of the flange coordinate system
+* Rot\(x, Rx\): Rotation matrix that rotation occurs as much as Rx in the X-axis direction of the flange coordinate system
+
+
 
 
 

@@ -1,10 +1,12 @@
-# 7.4 로봇 파라미터
+# 7.4 Robot Parameters
 
-로봇 동작과 관련된 각종 데이터와 축별 원점, 동작 범위 등의 정보를 설정합니다.
+You can set various data related to robot operation as well as information such as the origin and operation range of each axis.
 
-1.	\[3: 로봇 파라미터\] 메뉴를 터치하십시오. 로봇 파라미터 메뉴가 나타납니다.
+1.	Touch the \[3: Robot Parameter\] menu. Then, the robot parameter menu will appear. 
 
-2.	원하는 메뉴를 선택하여 로봇 본체의 각종 파라미터를 확인하고 설정하십시오.
+2.	You can check and set various parameters of the manipulator by selecting the desired menu.
 
-![](../../.gitbook/assets/image%20%28205%29.png)
+![](../../.gitbook/assets/image%20%28472%29.png)
+
+
 
