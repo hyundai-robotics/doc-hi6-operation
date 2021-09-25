@@ -1,60 +1,86 @@
-# 7.6.6 메커니즘 설정
+# 7.6.6 Mechanism Setting
 
-메커니즘은 조그 조작 시 조그키가 할당되는 그룹으로 활용됩니다. 또한 스텝의 위치 기록 또는 편집 시 개별적으로 구분짓는 최소 단위 축들의 집합입니다. 메커니즘을 설정하면 각 축의 그룹별로 메커니즘 번호\(M\# \)가 할당됩니다.
+Mechanism will be used as a group during the jog operation which the jog keys are to be assigned to. In addition, mechanism is also a set of units, each of which is to be differentiated in the process of recording or editing the position of a step. When the mechanisms are set, mechanism numbers \(M\#\) will be assigned for individual groups of axes.
 
-엔드리스 기능의 사용 여부 및 포지셔너 그룹을 설정하는 방법은 다음과 같습니다.
+The method to set the use of the endless function and set the position group is as follows.
 
-1.	\[5: 초기화 &gt; 6: 메터니즘 설정\] 메뉴를 터치하십시오.
+1.	Touch the \[5: Initialize &gt; 6: Mechanism Setting\] menu.
 
-2.	축별로 메커니즘 번호와 포지셔너 그룹 번호, 엔드리스 기능의 사용 여부를 설정한 후 \[OK\] 버튼을 터치하십시오.
+2.	After setting the mechanism number, positioner group number, and the use of the endless function for each axis, touch the \[OK\] button.
 
-![](../../.gitbook/assets/image%20%28235%29.png)
+![](../../.gitbook/assets/image%20%28499%29.png)
 
-* \[메커니즘\]: 드롭다운 메뉴를 터치하여 축의 메커니즘 번호를 설정합니다.
-  * 축 사양이 로봇인 경우 메커니즘 번호가 M0으로 고정됩니다.
-  * 부가축부터 메커니즘 번호를 M1 ~ M7 사이의 값으로 지정할 수 있습니다.
-  * 동일한 메커니즘 번호로 설정된 축은 동일한 그룹으로 관리됩니다.
-  * 부가축의 조그를 위해서 \[메커니즘\] 버튼을 이용하여 메커니즘 그룹을 전환합니다. 이때 조그키를 누르면 해당 메커니즘의 축의 순서대로 조그가 됩니다.
-* \[포지셔너그룹\]: 포지셔너 그룹 번호를 설정합니다. 축 사양이 포지셔너로 설정된 축만 포지셔너 그룹 번호를 설정할 수 있습니다.
-* \[엔드리스\]: 축에서 엔드리스 기능의 사용 여부를 설정합니다.
+
+
+* \[Mech\]: By touching the drop-down menu, you can set the mechanism number of the axis.
+  * If the axis specification is a robot, the mechanism number will be fixed as M0.
+  * 
+    Starting with the additional axis, you can designate the mechanism number to a value ranging between M1 and M7.
+
+  * 
+    The axes set with the same mechanism number will be managed as the same group.
+
+  * 
+    To jog the additional axis, you can switch between mechanisms using the \[Mech\] button. At this time, if you press the jog key, jogging will take place in the order of the axes of the relevant mechanism.
+* 
+  \[Positioner Group\]: You can set the positioner group number. The position group number can be set only for the axes whose specification is set as positioner.
+
+* 
+  \[Endless\]: You can set whether to use the endless function on the axis.
+
+
 
 {% hint style="info" %}
-설정된 메커니즘 단위는 멀티태스킹에서 개별 태스크에 할당되어 구동될 수 있는 최소 단위입니다. 개별 태스크에는 복합적인 메커니즘의 조합이 할당될 수 있습니다.
+A set mechanism unit is the minimum unit that can be assigned to each task and can be driven. To each task, a complex combination of mechanisms can be assigned to individual tasks.
 {% endhint %}
 
 #### 
 
-#### 포지셔너 그룹 지정 규칙
+#### Position Group Designation Rules
 
-* 낮은 축부터 순서대로 그룹을 지정하십시오.
-* 동기를 하지 않는 그룹은 무효로 지정하십시오.
-* 포지셔너의 동일 그룹은 2축까지만 지원합니다. 3축을 동일 그룹으로 지정하지 마십시오.
-* 그룹 설정을 재정의하면 이전에 지정되었던 포지셔너의 캘리브레이션 데이터가 무효화되므로 포지셔너의 캘리브레이션을 재실행하십시오.
+* Designate the group in order starting with the lower axis.
+* 
+  Designate the group not in sync as disable.
 
-#### 메커니즘 조그 규칙
+* 
+  In the case of the positioner, only up to axis 2 will be supported for the same group. Do not designate axis 3 as the same group.
 
-* Hi6 제어기는 총 8개의 조그키를 제공합니다.
-* 메커니즘은 조그 조작 시 하나의 그룹으로 활용됩니다.
-* 메커니즘 번호를 \[M0\]으로 선택할 경우에는 예외적으로 7/8축 조그키가 동작하며, 다음 메커니즘을 포함한 총 축의 수가 8축 이내인 범위에서 M1 및 M2를 조작할 수 있습니다. 이 경우에도 메커니즘 번호를 \[M1\]으로 설정하면 M1의 구성 요소만 별도로 조그 조작할 수 있습니다.
-* 활용 예는 다음과 같습니다.
+* 
+  Redefining the group setting will disable the previously designated positioner calibration data, so you should execute the positioner calibration again.
 
-예1\) M0: Robot \(1 ~ 6축\), M1: 주행축\(7축\), M2: 서보건\(8축\)
 
-* \[M0\] 선택 ⇒ 1 ~ 6축 조그키: M0, 7축 조그키: M1, 8축 조그키: M2
-* \[M1\] 선택 ⇒ 1축 조그키: M1
-* \[M2\] 선택 ⇒ 1축 조그키: M2
 
-예2\) M0: Robot \(1 ~ 6축\), M1: 주행축\(7축\), M2: 서보건\(8 ~ 9축\)
+#### Mechanism Jog Rules 
 
-* \[M0\] 선택 ⇒ 1 ~ 6축 조그키: M0, 7축 조그키: M1
-* \[M1\] 선택 ⇒ 1축 조그키: M1
-* \[M2\] 선택 ⇒ 1 ~ 2축 조그키: M2
+* The Hi6 controller provides eight jog keys in total.
+* 
+  Mechanisms will be utilized as one group during the jog operation.
 
-예3\) M0: Robot \(1 ~ 7축\), M1: 주행축\(8축\), M2: 서보건\(9 ~ 10축\)
+* 
+  If you select the mechanism number as \[M0\], the jog keys for the axes 7 and 8 will be operating as an exceptional case, and it is possible to operate M1 and M2 within a range in which the total number of axes including the next mechanism is eight or less. Even in this case, if you set the mechanism number as \[M1\], you can perform the jog operation for the configuration elements of M1. 
 
-* \[M0\] 선택 ⇒ 1 ~ 7축 조그키: M0, 8축 조그키: M1
-* \[M1\] 선택 ⇒ 1축 조그키: M1
-* \[M2\] 선택 ⇒ 1축 조그키: M2
+* 
+  The following shows the example of the usage.
+
+  Example 1\) M0: Robot \(Axes 1–6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axis 8\)
+
+  * Select \[M0\] ⇒ Jog key for axes 1–6: M0. Jog key for axis 7: M1. Jog key for axis 8: M2
+  * Select \[M1\] ⇒ Jog key for axis 1: M1
+  * Select \[M2\] ⇒ Jog key for axis 1: M2
+
+  Example 2\) M0: Robot \(Axes 1–6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axes 8–9\)
+
+  * Select \[M0\] ⇒ Jog key for axes 1–6: M0. Jog key for axis 7: M1
+  * Select \[M1\] ⇒ Jog key for axis 1: M1
+  * Select \[M2\] ⇒ Jog key for axes 1–2: M2
+
+  Example 3\) M0: Robot \(Axes 1–7\). M1: Travel axis \(Axis 8\). M2: Servo gun \(Axes 9–10\)
+
+  * Select \[M0\] ⇒ Jog key for axes 1–7: M0. Jog key for axis 8: M1
+  * Select \[M1\] ⇒ Jog key for axis 1: M1
+  * Select \[M2\] ⇒ Jog key for axis 1: M2
+
+
 
 
 
