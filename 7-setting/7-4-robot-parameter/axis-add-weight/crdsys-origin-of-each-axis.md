@@ -1,6 +1,6 @@
-# 7.4.7.1 각 축의 좌표계 원점
+# 7.4.7.1 Coordinate System Origin of Each Axis
 
-각 축의 X, Y, Z 방향은 로봇 좌표계와 동일한 방향으로 설정되어 있습니다. 각 축의 좌표계 원점은 다음을 참조하십시오.
+The X, Y, and Z directions of each axis are set in the same direction as the robot coordinate system. Refer to the following about the coordinate system origin of each axis.
 
-![&#xADF8;&#xB9BC; 63 &#xB85C;&#xBD07; &#xD615;&#xD0DC;&#xBCC4; &#xAC01; &#xCD95;&#xC758; &#xC88C;&#xD45C;&#xACC4; &#xC6D0;&#xC810;](../../../.gitbook/assets/image%20%28220%29.png)
+![Figure 62 Coordinate System Origin of Each Axis for Each Robot Configuration ](../../../.gitbook/assets/image%20%28475%29.png)
 

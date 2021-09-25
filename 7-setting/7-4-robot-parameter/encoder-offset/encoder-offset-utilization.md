@@ -1,14 +1,16 @@
-# 7.4.4.1 엔코더 옵셋값 활용
+# 7.4.4.1 Encoder Offset Value Utilization
 
-현재의 작업 프로그램을 백업하고 시스템을 초기화\(\[설정 &gt; 5: 초기화 &gt; 1: 시스템 초기화\]\)한 후에도 기존의 프로그램을 계속해서 사용하려면 로봇은 초기화 이전의 기준 위치 정보를 유지해야 합니다. 엔코더 옵셋값을 기록해 두면 로봇의 이전 위치 정보를 불러 올 수 있습니다.
+To continue using the existing program even after the current job program is backed up and the system is initialized \(\[Set up &gt; 5: Initialize&gt; 1: System Initialization\]\), the robot should maintain the reference position information that existed before initialization. If you record the encoder offset value, the previous position information of the robot can be retrieved.
 
-시스템 초기화 후에 엔코더 옵셋값을 헥사값으로 직접 입력하십시오. 소프트 키보드를 이용하여 간편히 입력할 수 있습니다.
+After system initialization, directly input the encoder offset value as a hex value. It will be easy to input the value if you use the soft keyboard.
 
-만약, 엔코더 옵셋값을 축 위치값\(mm 또는 degree\)으로 기록해 둔 경우에는, &lt;Shift&gt; 키를 누른 상태에서 \[ONE 초기화\] 버튼을 터치하여 나타난 입력창에 축 위치값을 입력한 후 \[확인\] 버튼을 터치하십시오.
+If the encoder offset value is recorded as the axis position value \(mm or degree\), you need to input the axis position value into the input window that will appear when you touch the \[Reset One\] button while pressing the &lt;Shift&gt; key.
 
-![](../../../.gitbook/assets/image%20%28208%29.png)
+![](../../../.gitbook/assets/image%20%28482%29.png)
+
+
 
 {% hint style="info" %}
-축 위치 입력창의 기본 설정값은 기준 자세 값입니다. 축 위치 값을 입력하지 않고 저장하면 현재 엔코더의 위치가 원점 위치\(0X400000\)로 설정됩니다.
+The basic setting value in the axis position input window is the reference position value. If you save without inputting the axis position value, the current encoder position will be set as the origin position \(0X400000\).
 {% endhint %}
 

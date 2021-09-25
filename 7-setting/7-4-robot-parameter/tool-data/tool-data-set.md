@@ -6,7 +6,7 @@
 
 2.	Set the tool data name, weight, detailed conditions of each axis, and allowable ratio.
 
-![](../../../.gitbook/assets/image%20%28473%29.png)
+![](../../../.gitbook/assets/image%20%28479%29.png)
 
 
 
