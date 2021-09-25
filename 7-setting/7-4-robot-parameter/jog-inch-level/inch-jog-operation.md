@@ -4,7 +4,7 @@ The inching function is a function that does not allow the movement to take plac
 
 Even after reaching the inching distance, if you keep pressing the jog key and then release your hand, the robot will decelerate to the inching distance, and then stop.
 
-![Figure 63 When Releasing the Key After Reaching the Inching Distance](../../../.gitbook/assets/image%20%28487%29.png)
+![Figure 63 When Releasing the Key After Reaching the Inching Distance](../../../.gitbook/assets/image%20%28488%29.png)
 
 
 

@@ -1,12 +1,14 @@
-# 7.5 응용 파라미터
+# 7.5 Application Parameters
 
-1.	\[4: 응용 파라미터\] 메뉴를 터치하십시오. 응용 파라미터 메뉴가 나타납니다.
+1.	Touch the \[4: Application Parameter\] menu. Then, the application parameter menu will appear.
 
-2.	원하는 메뉴를 선택하여 로봇 응용 기능의 사용을 위한 각종 파라미터를 확인하고 설정하십시오.
+2.	Select the desired menu, and then check and set various parameters for the use of the application functions of the robot.
 
-![](../.gitbook/assets/image%20%28218%29.png)
+![](../.gitbook/assets/image%20%28483%29.png)
+
+
 
 {% hint style="info" %}
-각 메뉴의 사용 방법에 대한 자세한 내용은 별도의 응용 기능별 “기능 설명서”를 참조하십시오.
+For details on how to use each menu, refer to the “Function Manual” for each application function.
 {% endhint %}
 
