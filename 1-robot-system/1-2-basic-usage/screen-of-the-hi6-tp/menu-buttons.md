@@ -115,9 +115,8 @@
           &#xD130;&#xCE58;&#xD558;&#xC2ED;&#xC2DC;&#xC624;. &#xD604;&#xC7AC; &#xCEE4;&#xC11C;
           &#xC704;&#xCE58;&#xC758; &#xBC14;&#xB85C; &#xC544;&#xB798;&#xC5D0; &#xBA85;&#xB839;&#xBB38;&#xC774;
           &#xC785;&#xB825;&#xB429;&#xB2C8;&#xB2E4;. &#xBA85;&#xB839; &#xC785;&#xB825;&#xC5D0;
-          &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;
-          <a
-          href="../../../3-programming/3-2-prog-edit/statement-input/">3.2.2 &#xBA85;&#xB839;&#xBB38; &#xC785;&#xB825;</a>&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
+          &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;3.2.2
+          &#xBA85;&#xB839;&#xBB38; &#xC785;&#xB825;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
         <p>
           <img src="../../../.gitbook/assets/bt-delete.png" alt/>(<b>&lt;shift&gt;</b> &#xD0A4; &#xC870;&#xD569; &#xC2DC;) &#xC704;&#xCE58;
           &#xC218;&#xC815;: JOB &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC5D0;&#xC11C;
@@ -143,7 +142,7 @@
           &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xB294; &#xBE14;&#xB85D; &#xD3B8;&#xC9D1;
           &#xBAA8;&#xB4DC;&#xB85C; &#xC9C4;&#xC785;&#xD569;&#xB2C8;&#xB2E4;. &#xBE14;&#xB85D;
           &#xD3B8;&#xC9D1;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740;
-          &#x201C;<a href="../../../3-programming/3-2-prog-edit/statement-edit/block-edit-mode.md">3.2.4.5 &#xBE14;&#xB85D; &#xD3B8;&#xC9D1; &#xBAA8;&#xB4DC;</a>&#x201D;&#xB97C;
+          &#x201C;3.2.4.5 &#xBE14;&#xB85D; &#xD3B8;&#xC9D1; &#xBAA8;&#xB4DC;&#x201D;&#xB97C;
           &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
       </td>
     </tr>

@@ -20,8 +20,8 @@
         &#xD39C;&#xB358;&#xD2B8;&#xC758; &#xD1B5;&#xC2E0; &#xC0C1;&#xD0DC;&#xC640;
         &#xC6B4;&#xC804; &#xBAA8;&#xB4DC;, &#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758;
         &#xC0C1;&#xD0DC;&#xC640; &#xBA54;&#xCEE4;&#xB2C8;&#xC998;&#xC744; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.
-        &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;<a href="status-bar.md">1.2.4.1 &#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904;</a>&#x201D;&#xC744;
-        &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
+        &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.1 &#xC0C1;&#xD0DC;
+        &#xD45C;&#xC2DC;&#xC904;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -29,8 +29,8 @@
       </td>
       <td style="text-align:left">&#xAE30;&#xB2A5; &#xBC84;&#xD2BC;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC124;&#xC815;&#xAC12;&#xC744;
         &#xD655;&#xC778;&#xD558;&#xACE0; &#xBCC0;&#xACBD;&#xD569;&#xB2C8;&#xB2E4;.
-        &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;<a href="function-buttons.md">1.2.4.3 &#xAE30;&#xB2A5; &#xBC84;&#xD2BC;</a>&#x201D;&#xC744;
-        &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
+        &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.3 &#xAE30;&#xB2A5;
+        &#xBC84;&#xD2BC;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -49,8 +49,8 @@
       <td style="text-align:left">&#xBA54;&#xB274; &#xBC84;&#xD2BC;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xBA54;&#xB274;&#xC758;
         &#xC124;&#xC815;&#xAC12;&#xC744; &#xD655;&#xC778; &#xBC0F; &#xBCC0;&#xACBD;&#xD558;&#xACE0;,
         &#xB2E4;&#xC591;&#xD55C; &#xAE30;&#xB2A5;&#xC744; &#xC2E4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;.
-        &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;<a href="menu-buttons.md">1.2.4.4 &#xBA54;&#xB274; &#xBC84;&#xD2BC;</a>&#x201D;&#xC744;
-        &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
+        &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.4 &#xBA54;&#xB274;
+        &#xBC84;&#xD2BC;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -68,7 +68,7 @@
       </td>
       <td style="text-align:left">
         <p>&#xC774;&#xB825; &#xD45C;&#xC2DC;&#xC904;&#xC785;&#xB2C8;&#xB2E4;. &#xC790;&#xC138;&#xD55C;
-          &#xB0B4;&#xC6A9;&#xC740; &#x201C;<a href="log-bar.md">1.2.4.2 &#xC774;&#xB825; &#xD45C;&#xC2DC;&#xC904;</a>&#x201D;&#xC744;
+          &#xB0B4;&#xC6A9;&#xC740; &#x201C;1.2.3.2 &#xC774;&#xB825; &#xD45C;&#xC2DC;&#xC904;&#x201D;&#xC744;
           &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
         <ul>
           <li>&#xD604;&#xC7AC; &#xC2DC;&#xAC04; &#xC815;&#xBCF4;&#xC640; &#xD2F0;&#xCE58;

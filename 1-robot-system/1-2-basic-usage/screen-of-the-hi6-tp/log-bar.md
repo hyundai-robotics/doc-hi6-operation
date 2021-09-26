@@ -20,8 +20,8 @@
         &#xB0A0;&#xC9DC;&#xC640; &#xC2DC;&#xAC04; &#xC815;&#xBCF4;&#xB97C; &#xBCC0;&#xACBD;&#xD560;
         &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB0A0;&#xC9DC;&#xC640; &#xC2DC;&#xAC04;
         &#xC815;&#xBCF4; &#xBCC0;&#xACBD;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C;
-        &#xB0B4;&#xC6A9;&#xC740; &#x201C;<a href="../../../4-menu/4-5-date-time-setting.md">4.5 &#xB0A0;&#xC9DC; &#xBC0F; &#xC2DC;&#xAC04; &#xC124;&#xC815;</a>&#x201D;&#xC744;
-        &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
+        &#xB0B4;&#xC6A9;&#xC740; &#x201C;4.5 &#xB0A0;&#xC9DC; &#xBC0F; &#xC2DC;&#xAC04;
+        &#xC124;&#xC815;&#x201D;&#xC744; &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -48,7 +48,7 @@
             &#xBC1C;&#xC0DD; &#xC774;&#xB825;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218;
             &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
           <li>&#xC54C;&#xB9BC; &#xBA54;&#xC2DC;&#xC9C0;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C;
-            &#xB0B4;&#xC6A9;&#xC740; &#x201C;<a href="../../../2-operation/2-5-error-info/">2.5 &#xC5D0;&#xB7EC; &#xC815;&#xBCF4;</a>&#x201D;&#xB97C;
+            &#xB0B4;&#xC6A9;&#xC740; &#x201C;2.5 &#xC5D0;&#xB7EC; &#xC815;&#xBCF4;&#x201D;&#xB97C;
             &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
         </ul>
       </td>
@@ -61,7 +61,7 @@
         <p>&#xD654;&#xBA74;&#xC5D0; &#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC;&#xB97C;
           &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;. &#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC;&#xC758;
           &#xC0AC;&#xC6A9; &#xBC29;&#xBC95;&#xC5D0; &#xB300;&#xD55C; &#xC790;&#xC138;&#xD55C;
-          &#xB0B4;&#xC6A9;&#xC740; &#x201C;<a href="../../../3-programming/3-2-prog-edit/statement-edit/softkeyboard.md">3.2.4.4 &#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC;</a>&#x201D;&#xB97C;
+          &#xB0B4;&#xC6A9;&#xC740; &#x201C;3.2.4.4 &#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC;&#x201D;&#xB97C;
           &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</p>
         <ul>
           <li>&#xC18C;&#xD504;&#xD2B8; &#xD0A4;&#xBCF4;&#xB4DC; &#xC0AC;&#xC6A9; &#xC911;&#xC5D0;
