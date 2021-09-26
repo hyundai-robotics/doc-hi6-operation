@@ -54,8 +54,7 @@
                 &#xB610;&#xB294; &#xB85C;&#xBD07;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xB41C;
                 &#xACBD;&#xC6B0;&#xC5D0;&#xB9CC; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
               <li>&#xB85C;&#xBD07; &#xAD6C;&#xC131; &#xD615;&#xD0DC;&#xC5D0; &#xB300;&#xD55C;
-                &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;2.3.2 &#xC2A4;&#xD15D;
-                &#xC704;&#xCE58; &#xAE30;&#xB85D; &#xBC0F; &#xBCC0;&#xACBD;&#x201D;&#xC744;
+                &#xC790;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#x201C;<a href="../../2-operation/2-3-step/step-pose-modify/">2.3.2 &#xC2A4;&#xD15D; &#xC704;&#xCE58; &#xAE30;&#xB85D; &#xBC0F; &#xBCC0;&#xACBD;</a>&#x201D;&#xC744;
                 &#xCC38;&#xC870;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
             </ul>
           </li>
