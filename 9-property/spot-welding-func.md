@@ -1,11 +1,12 @@
-# 9.3 스폿용접 펑션
+# 9.3 Spot Welding Function
 
-프로그램 작성 중 SPOT 명령문을 기록했을 때, 수동 모드에서 스폿용접 펑션 위치에 커서를 두고 \[속성\] 버튼을 터치하면 응용 파라미터의 설정 메뉴 화면에서 \[1: 스폿용접\] 메뉴가 하이라이트 표시됩니다. 스폿용접 기능을 이용하면, 서보건으로 스폿용접할 때, 용접 조건과 용접 시퀀스의 내용을 빠르게 수정할 수 있습니다.
+When writing the SPOT command while writing the program, if you place the cursor on the spot welding function position in manual mode and touch the \[property\] button, then the \[1: Spot Welding\] menu will be highlighted in the application parameter setting menu screen. Using the spot welding function, you can quickly modify the contents of the welding conditions and also of the welding sequence when performing spot welding.
 
-![&#xADF8;&#xB9BC; 77 &#xC2A4;&#xD3FF;&#xC6A9;&#xC811; &#xD391;&#xC158;](../.gitbook/assets/image%20%28278%29.png)
+![Figure 76 Spot Welding Function](../.gitbook/assets/image%20%28543%29.png)
 
 {% hint style="info" %}
-* \[설정\] 버튼 &gt; \[4: 응용 파라미터 &gt; 1: 스폿용접\] 메뉴를 터치하여 스폿용접 기능을 사용할 수 있습니다.
-* 스폿용접 기능에 대한 자세한 내용은 “Hi6 제어기 스폿용접 기능 설명서”를 참조하십시오.
+* You can use the spot welding function by touching the \[Set Up\] button &gt; \[4: Application Parameter &gt; 1: Spot Welding\].
+* 
+  For details on the spot welding function, refer to the “Hi6 Controller Spot Welding Function Manual.”
 {% endhint %}
 

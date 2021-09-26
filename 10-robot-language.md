@@ -1,8 +1,6 @@
-# 10. 로봇 언어
+# 10. Robot Language
 
-로봇 언어에 대한 자세한 내용은 “Hi6 로봇언어 기능 설명서”를 참조하십시오.
+For details on the robot language, refer to the “Hi6 Robot Controller Function Manual. - Robot Language HRScript”
 
-{% embed url="https://hyundai-robotics.gitbook.io/hi6-hrscript/" %}
-
-
+{% embed url="https://hyundai-robotics.gitbook.io/hi6-robot-language/v/english/" %}
 

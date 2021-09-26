@@ -6,7 +6,7 @@ You can edit the pose variable value in the move statement, including the pose v
 
 2.	Check and modify the current pose variable.
 
-![](../../.gitbook/assets/image%20%28546%29.png)
+![](../../.gitbook/assets/image%20%28547%29.png)
 
 
 

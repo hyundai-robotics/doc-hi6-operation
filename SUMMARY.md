@@ -206,9 +206,9 @@
   * [9.2 Move-Step Position](9-property/move-step-position/README.md)
     * [9.2.1 Hidden Pose Move Statement](9-property/move-step-position/hidden-pose-move.md)
     * [9.2.2 Pose Recording Move Statement and Pose Assign Statement](9-property/move-step-position/pose-rec-move.md)
-  * [9.3 스폿용접 펑션](9-property/spot-welding-func.md)
-* [10. 로봇 언어](10-robot-language.md)
-* [별첨](11-appendices/README.md)
-  * [산업안전보건기준에 관한 규칙 및 안전검사 고시](11-appendices/rules-occupational-safety.md)
+  * [9.3 Spot Welding Function](9-property/spot-welding-func.md)
+* [10. Robot Language](10-robot-language.md)
+* [Appendices](11-appendices/README.md)
+  * [Rules on Occupational Safety and Health Standards, and Notice for Safety Inspection](11-appendices/rules-occupational-safety.md)
 * [품질 보증](undefined.md)
 
