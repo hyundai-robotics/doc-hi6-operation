@@ -2,7 +2,7 @@
 
 If you jog the base axis after performing base axis calibration, the distance traveled in the created direction vector of the base axis will be converted into the current coordinate value.
 
-![Figure 73 Operation After Calibration of the Base Axis](../../../.gitbook/assets/image%20%28522%29.png)
+![Figure 73 Operation After Calibration of the Base Axis](../../../.gitbook/assets/image%20%28524%29.png)
 
 1.	Touch the \[+\] button at the top right of the panel stack in the work area, and then touch \[Pose\] in the panel selection window.
 

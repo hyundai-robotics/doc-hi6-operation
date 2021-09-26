@@ -6,7 +6,7 @@
 
 3.	While moving 200 mm or more in the same direction as the direction you moved in step 2, record the same point as the third and fourth steps.
 
-![](../../../.gitbook/assets/image%20%28520%29.png)
+![](../../../.gitbook/assets/image%20%28522%29.png)
 
 
 
