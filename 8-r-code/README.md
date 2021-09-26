@@ -1,8 +1,10 @@
-# 8. R코드
+# 8. R Codes
 
-프로그램의 내용 수정이나 제어기의 설정 상태 변경과 같이 자주 사용하는 기능의 조작 절차를 특정한 서비스 코드\(R코드\)로 지정해 두고 간편하게 사용할 수 있습니다.
+When it comes to the operating procedures for frequently used functions, such as modifying the contents of a program or changing the setting status of a controller, you can use them easily by designating specific service codes \(R codes\). 
 
-R코드는 Reset\(리셋\)과 Rapid\(빠른\)의 R에 번호를 조합하여 “R+No.” 형식으로 구성됩니다.
+R codes are configured in the “R+No.” format, which combines R, representing Reset and Rapid, with a number.
+
+
 
 
 

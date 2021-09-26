@@ -38,7 +38,7 @@
 
 4.	Touch the \[Set Up\] button &gt; \[3: Robot Parameter &gt; 4: Encoder Offset\] menu.
 
-![](../../.gitbook/assets/image%20%28520%29.png)
+![](../../.gitbook/assets/image%20%28525%29.png)
 
 5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.
 

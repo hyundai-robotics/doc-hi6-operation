@@ -24,7 +24,7 @@ The method to use the axis origin and tool length optimization function is as fo
 
 2.	Select an optimization target and set detailed options.
 
-![](../../.gitbook/assets/image%20%28519%29.png)
+![](../../.gitbook/assets/image%20%28523%29.png)
 
 
 

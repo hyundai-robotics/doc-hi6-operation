@@ -23,7 +23,7 @@ The tool data setting information is as follows.
 
 However, in many cases, it is difficult to determine the physical properties of the tool such as mass, inertia, and center of gravity of the tool from CAD data. At this time, you can check the physical properties of the tool using the load estimation function in the robot controller.
 
-![Figure 71 Load Estimation Function](../../.gitbook/assets/image%20%28517%29.png)
+![Figure 71 Load Estimation Function](../../.gitbook/assets/image%20%28521%29.png)
 
 1.	Touch the \[6: Auto Calibration &gt; 4: Load Estimation Function\] menu.
 
