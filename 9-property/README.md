@@ -1,6 +1,6 @@
-# 9. 속성
+# 9. Property
 
-아크용접 작업 프로그램을 티칭할 경우 전압, 전류 등 용접 관련 조건뿐만 아니라 위빙과 Retry/Restart, 용접기의 특성 등 아크 전용 기능의 세부적인 설정이 필요합니다. 또한 기본적으로 스텝이나 보조점의 위치를 확인할 경우도 있습니다.
+When teaching a job program for a welding operation, you should set the arc welding-specific details, such as weaving, retry/restart, and characteristics of the welder, in addition to welding conditions such as voltage and current. Moreover, there are cases in which you should check the position of a step or an auxiliary point.
 
 
 
