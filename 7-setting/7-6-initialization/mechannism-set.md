@@ -8,7 +8,7 @@ The method to set the use of the endless function and set the position group is 
 
 2.	After setting the mechanism number, positioner group number, and the use of the endless function for each axis, touch the \[OK\] button.
 
-![](../../.gitbook/assets/image%20%28510%29.png)
+![](../../.gitbook/assets/image%20%28515%29.png)
 
 
 

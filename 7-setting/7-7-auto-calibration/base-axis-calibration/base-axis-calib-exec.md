@@ -4,7 +4,7 @@
 
 2.	After inputting the program number for the base axis calibration, touch the \[Auto Setting\] button.
 
-![](../../../.gitbook/assets/image%20%28494%29.png)
+![](../../../.gitbook/assets/image%20%28495%29.png)
 
 3.	After checking the installation direction vector value of the base axis, touch the \[OK\] button.
 

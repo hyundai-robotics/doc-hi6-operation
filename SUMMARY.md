@@ -185,7 +185,7 @@
       * [7.7.4.3 Base Axis Calibration Execution](7-setting/7-7-auto-calibration/base-axis-calibration/base-axis-calib-exec.md)
       * [7.7.4.4 Operation After Base Axis Calibration](7-setting/7-7-auto-calibration/base-axis-calibration/operation-after-base-calib.md)
     * [7.7.5 Gravity Direction Auto Setting](7-setting/7-7-auto-calibration/gravity-direction-auto-set.md)
-    * [7.7.6 로봇과 툴 캘리브레이션](7-setting/7-7-auto-calibration/robot-tool-calibration.md)
+    * [7.7.6 Calibration of the Robot and Tool](7-setting/7-7-auto-calibration/robot-tool-calibration.md)
 * [8. R코드](8-r-code/README.md)
   * [8.1 R 코드 사용](8-r-code/use-r-code.md)
   * [8.2 R0 스텝 카운터 리셋](8-r-code/r0.md)
