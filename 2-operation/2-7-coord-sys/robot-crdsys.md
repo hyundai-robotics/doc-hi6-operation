@@ -15,7 +15,7 @@
 ![](../../.gitbook/assets/image%20%2862%29.png)
 
 {% hint style="info" %}
-* For details on the robot’s progress direction in relation to the jog keys, refer to “2.7.1 Jog Keys.” 
+* For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](jog-key.md).” 
 * 
   If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
 

@@ -58,7 +58,7 @@ For example, if the program selection bit is set as follows, an example of JOB t
 
 #### External reset
 
-This function is used to perform the same operation as executing the R0 step counter reset function from the teach pendant by an external signal. When the robot is starting up, this function will not operate. If this function operates normally, the execution position will move to the beginning of the program, and the occurrence status of various errors or warnings will be cleared. Refer to “8.2 R0 for Resetting the Step Counter” for information on this function.
+This function is used to perform the same operation as executing the R0 step counter reset function from the teach pendant by an external signal. When the robot is starting up, this function will not operate. If this function operates normally, the execution position will move to the beginning of the program, and the occurrence status of various errors or warnings will be cleared. Refer to “[8.2 R0 for Resetting the Step Counter](../../../8-r-code/r0.md)” for information on this function.
 
 #### 
 

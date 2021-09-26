@@ -18,14 +18,14 @@ You can control the operation of the robot or manage devices that interoperate w
       </td>
       <td style="text-align:left">The status bar displays the communication status and operation mode of
         the teach pendant and the status and mechanism of the robot system. For
-        details, refer to &#x201C;<b>1.2.3.1 Status Bar.</b>&#x201D;</td>
+        details, refer to &#x201C;<a href="status-bar.md"><b>1.2.4.1 Status Bar</b></a>&#x201D;</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c2.png" alt/>
       </td>
       <td style="text-align:left">You can check and change the setting values using the function buttons.
-        For details, refer to &#x201C;<b>1.2.3.3 Function</b>  <b>Buttons.</b>&#x201D;</td>
+        For details, refer to &#x201C;<a href="function-buttons.md"><b>1.2.4.3 Function</b> <b>Buttons</b></a>&#x201D;</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -40,7 +40,7 @@ You can control the operation of the robot or manage devices that interoperate w
         <img src="../../../.gitbook/assets/c4.png" alt/>
       </td>
       <td style="text-align:left">You can check and change the setting values of the menus and execute various
-        functions using the menu buttons. For details, refer to &#x201C;<b>1.2.3.4 Menu Buttons.</b>&#x201D;</td>
+        functions using the menu buttons. For details, refer to &#x201C;<a href="menu-buttons.md"><b>1.2.4.4 Menu Buttons</b></a>&#x201D;</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -54,7 +54,7 @@ You can control the operation of the robot or manage devices that interoperate w
         <img src="../../../.gitbook/assets/c6.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Taskbar. For details, refer to &#x201C;<b>1.2.3.2 Log bar.</b>&#x201D;</p>
+        <p>Taskbar. For details, refer to &#x201C;<a href="log-bar.md"><b>1.2.4.2 Log bar</b></a>&#x201D;</p>
         <ul>
           <li>It displays the current time information and the memory usage status of
             the teach pendant. You can also check error messages or warning messages.</li>

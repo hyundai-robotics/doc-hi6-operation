@@ -30,7 +30,7 @@ You can easily input the signal output variable value using the \[fb\] button an
 ![](../../../.gitbook/assets/image%20%28331%29.png)
 
 {% hint style="info" %}
-You can also assign the desired output signals to the buttons in the key signal output function area in the \[Set Up&gt; Control Parameter&gt; Input/Output Signal Setting&gt; Key Signal Output\] menu. For details, refer to “7.3.2.8 Key Signal Output.”
+You can also assign the desired output signals to the buttons in the key signal output function area in the \[Set Up&gt; Control Parameter&gt; Input/Output Signal Setting&gt; Key Signal Output\] menu. For details, refer to “[7.3.2.8 Key Signal Output](../../../7-setting/7-3-control-parameter/io-signal-setting/key-signal-output.md).”
 {% endhint %}
 
 

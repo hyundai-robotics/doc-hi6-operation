@@ -21,7 +21,7 @@ During the linear interpolation, under certain conditions, the robot cannot auto
 {% hint style="info" %}
 Singular postures in which the posture interpolation cannot be performed are as follows.
 
-* If the B-axis is near the dead zone: For details on the dead zone setting, refer to “7.4.5 B-axis No-Use Area.”
+* If the B-axis is near the dead zone: For details on the dead zone setting, refer to “[7.4.5 B-axis Deadzone](../../../7-setting/7-4-robot-parameter/b-axis-deadzone.md).”
 * When the sign of the B-axis changes: When the sign of the B-axis angle switches \( - → + \) or \( + → - \)
 * When the angle variation of the R2 and R1 axes exceeds 180 degrees
 * When the center of the B-axis \(axis 5\) or the tooltip passes the center of rotation of the S-axis \(axis 1\): There may be an error in the trajectory as well as in the posture.
@@ -54,7 +54,7 @@ In this way, by determining the interpolation method of the step in consideratio
 
   This method will be used when the robot owns the workpiece and perform the work using an externally fixed tool. In this case, the interpolation will be performed based on the workpiece owned by the robot.
 
-  For details on the types of interpolation for stationary tools, refer to “7.3.6.2 Stationary Tool Coordinate System.”
+  For details on the types of interpolation for stationary tools, refer to “[7.3.6.2 Stationary Tool Coordinate System](../../../7-setting/7-3-control-parameter/cordsys-reg/stationary-tool-crdsys.md).”
 
 
 

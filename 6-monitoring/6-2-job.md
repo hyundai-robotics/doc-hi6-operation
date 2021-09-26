@@ -40,7 +40,7 @@ Touch \[JOB\] in the panel selection window. Then, the JOB program window will a
 </table>
 
 {% hint style="info" %}
-For details on how to manage and write programs, refer to “3 Program Writing.”
+For details on how to manage and write programs, refer to “[3 Program Writing](../3-programming/).”
 {% endhint %}
 
 

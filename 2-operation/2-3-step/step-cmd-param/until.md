@@ -7,7 +7,7 @@ The value of the conditional expression “after until” can be checked through
 ![Figure 21 Example of Stop Conditions](../../../.gitbook/assets/image%20%2846%29%20%281%29%20%282%29%20%281%29.png)
 
 {% hint style="info" %}
-For details on the robot language, refer to the “Robot Language Function Manual.”
+For details on the robot language, refer to the “[Robot Language Function Manual](https://hyundai-robotics.gitbook.io/hi6-robot-language/v/english/).”
 {% endhint %}
 
 

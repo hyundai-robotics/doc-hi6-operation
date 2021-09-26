@@ -18,7 +18,7 @@ To set the execution unit for the step forward/backward operation, touch the \[r
 
 When the execution unit is set as cmd or step, the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing back in automatic mode.
 
-When you set the execution unit as cmd or step and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to “2.3.1.4 Accuracy.”
+When you set the execution unit as cmd or step and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to “[2.3.1.4 Accuracy](../2-3-step/step-cmd-param/accuracy.md).”
 
 ![Figure 11 Playback Forward/Backward Path When cmd/step Setting is Performed](../../.gitbook/assets/image%20%28312%29.png)
 
