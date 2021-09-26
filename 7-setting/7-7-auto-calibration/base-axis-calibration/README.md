@@ -6,7 +6,7 @@ It is almost impossible to install the base axis to exactly match one direction 
 
 After the robot is installed on the base axis, this function makes it possible to perform position interpolation by finding the direction vector of any base axis on which the robot is installed.
 
-![Figure 72 Base Axis Calibration](../../../.gitbook/assets/image%20%28496%29.png)
+![Figure 72 Base Axis Calibration](../../../.gitbook/assets/image%20%28497%29.png)
 
 In general, the base axis is used to move the robot to the operation position. In special cases, the base axis can also be used in a case in which a linear trajectory should be guaranteed while the robot is moving on the base axis.
 

@@ -8,7 +8,7 @@ The robot and tool calibration function will be used in an environment where the
 
 2.	Organize the measured robot’s position data \(measuring point data\) in X, Y, and Z formats, and then create a file \(Format: ASCII Extension: MSR\). 
 
-![](../../.gitbook/assets/image%20%28515%29.png)
+![](../../.gitbook/assets/image%20%28518%29.png)
 
 3.	After saving the position data file into a removable storage device, connect the removable storage device to the teach pendant. The \[USB\] icon \( \) will appear in the status bar of the Hi6 teach pendant screen.
 
@@ -16,7 +16,7 @@ The robot and tool calibration function will be used in an environment where the
 
 5.	Touch the \[Explorer\] button to select a position data file and set the robot program used for the measurement.
 
-![](../../.gitbook/assets/image%20%28532%29.png)
+![](../../.gitbook/assets/image%20%28536%29.png)
 
 
 
@@ -24,7 +24,7 @@ The robot and tool calibration function will be used in an environment where the
 
 7.	Touch the \[Execute\] button on the robot and tool calibration execution screen. Then, the calibration results will appear.
 
-![](../../.gitbook/assets/image%20%28518%29.png)
+![](../../.gitbook/assets/image%20%28522%29.png)
 
 
 
@@ -32,7 +32,7 @@ The robot and tool calibration function will be used in an environment where the
 
 9.	Touch the \[3: Robot Parameter &gt; 1: Tool Data\] menu. Then, you can check the robot calibration execution result.
 
-![](../../.gitbook/assets/image%20%28494%29.png)
+![](../../.gitbook/assets/image%20%28495%29.png)
 
 {% hint style="info" %}
 The axis origin and tool length X, Y, and Z values of the axes 2–5 \(H, V, R2, and B axes\) of the calibration parameter are selected. To calibrate the tool only, perform execution after deselecting the value of each axis.
