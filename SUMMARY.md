@@ -194,7 +194,7 @@
   * [8.5 R210 for Selecting a Spot Gun Number](8-r-code/r210.md)
   * [8.6 R211 for Setting the Servo Gun Squeeze Force](8-r-code/r211.md)
   * [8.7 R212 for Presetting the Servo Gun Moving Electrode Wear Volume](8-r-code/r212.md)
-  * [8.8 R213 서보건 고정전극 마모량 프리셋](8-r-code/r213.md)
+  * [8.8 R213 for Presetting the Servo Gun Fixed Electrode Wear Volume](8-r-code/r213.md)
   * [8.9 R214 동시 용접건 선택](8-r-code/r214.md)
   * [8.10 R215 스폿용접조건 가압력 설정](8-r-code/r215.md)
   * [8.11 R220 패널 두께 설정\(Sv\)](8-r-code/r220.md)

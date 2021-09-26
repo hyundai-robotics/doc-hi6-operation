@@ -10,9 +10,9 @@
 
 2.	Touch the \[Set Up\] button &gt; \[5: Initialize &gt; 1: System format\] menu.
 
-![](../../.gitbook/assets/image%20%28530%29.png)
+![](../../.gitbook/assets/image%20%28531%29.png)
 
 3.	After checking the saved data, touch the \[Initialize\] button. All data and programs including control parameter files and machine parameter files will be deleted, and the initial setting values will be restored.
 
-![](../../.gitbook/assets/image%20%28529%29.png)
+![](../../.gitbook/assets/image%20%28530%29.png)
 

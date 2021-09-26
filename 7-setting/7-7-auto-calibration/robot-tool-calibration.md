@@ -16,7 +16,7 @@ The robot and tool calibration function will be used in an environment where the
 
 5.	Touch the \[Explorer\] button to select a position data file and set the robot program used for the measurement.
 
-![](../../.gitbook/assets/image%20%28531%29.png)
+![](../../.gitbook/assets/image%20%28532%29.png)
 
 
 
