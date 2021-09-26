@@ -210,5 +210,5 @@
 * [10. Robot Language](10-robot-language.md)
 * [Appendices](11-appendices/README.md)
   * [Rules on Occupational Safety and Health Standards, and Notice for Safety Inspection](11-appendices/rules-occupational-safety.md)
-* [품질 보증](undefined.md)
+* [Quality Assurance](undefined.md)
 
