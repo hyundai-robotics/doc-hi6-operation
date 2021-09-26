@@ -16,7 +16,7 @@
 
 실행 단위가 **cmd** 또는 **step**으로 설정되어 있을 때, 로봇은 설정된 Accuracy 영역을 무시하고 기록된 스텝까지 도달하지만 **end**로 설정되어 있을 경우에 로봇은 자동 모드에서의 재생 시와 동일한 경로로 동작합니다.
 
-실행 단위를 **cmd** 또는 **step**으로 설정하고 스텝 전후진을 수행할 때는 코너링이 없는 경로상에서 로봇이 동작합니다. 코너링에 대한 자세한 내용은 “2.3.1.4 Accuracy”를 참조하십시오.
+실행 단위를 **cmd** 또는 **step**으로 설정하고 스텝 전후진을 수행할 때는 코너링이 없는 경로상에서 로봇이 동작합니다. 코너링에 대한 자세한 내용은 “[2.3.1.4 Accuracy](../2-3-step/step-cmd-param/accuracy.md)”를 참조하십시오.
 
 ![&#xADF8;&#xB9BC; 12 cmd/step &#xC124;&#xC815; &#xC2DC; &#xC7AC;&#xC0DD; &#xC804;&#xD6C4;&#xC9C4; &#xACBD;&#xB85C;](../../.gitbook/assets/path-cmd-step-pback-fwd-bwd.png)
 
