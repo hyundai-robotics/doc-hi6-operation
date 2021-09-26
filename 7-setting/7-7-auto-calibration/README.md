@@ -1,10 +1,10 @@
-# 7.7 자동 캘리브레이션
+# 7.7 Auto Calibration
 
-올바른 로봇 사용을 위해 교시된 프로그램 및 자동으로 동작하는 움직임을 이용하여 로봇의 축 원점, 툴 길이, 부하 질량, 베이스축 방향을 찾을 수 있습니다. 이렇게 캘리브레이션된 값은 로봇에 자동으로 반영됩니다.
+To use the robot correctly, the robot’s axis origin, tool length, load mass, and base axis direction can be found using the taught programs and using the movements that will be executed automatically. Those calibrated values will be automatically reflected in the robot.
 
-1.	\[6: 자동 캘리브레이션\] 메뉴를 터치하십시오. 자동 캘리브레이션 메뉴가 나타납니다.
+1.	Touch the \[6: Auto Calibration\] menu. Then, the automatic calibration menu will appear.
 
-2.	원하는 메뉴를 선택하여 로봇의 축 원점, 툴 길이, 부하 질량, 베이스축 방향 등의 캘리브레이션을 수행하십시오.
+2.	Calibrate the robot’s axis origin, tool length, load mass, base axis direction, etc. by selecting the desired menu,
 
-![](../../.gitbook/assets/image%20%28257%29.png)
+![](../../.gitbook/assets/image%20%28493%29.png)
 

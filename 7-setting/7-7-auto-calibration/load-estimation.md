@@ -1,50 +1,55 @@
-# 7.7.3 부하추정 기능
+# 7.7.3 Load Estimation Function
 
-부하추정 기능이란 로봇의 선단에 부착된 툴의 물성치\(질량, 중심 위치, 이너셔\(Inertia\)\)를 일정한 동작을 거쳐 자동으로 산출하는 기능입니다.
+Load estimation is a function that automatically calculates the physical properties \(mass, center position, inertia\) of the tool attached to the front end of the robot through a certain operation.
 
-제어기에는 로봇 본체의 정보\(각 링크의 질량, 질량 중심, 이너셔\)가 등록되어 있습니다. 그러나 툴은 필요에 따라 로봇의 선단에 부착하여 사용하므로 툴 정보를 입력해야 합니다. 로봇을 안전하게 사용하기 위해 필요한 툴의 물성치 정보에는 툴 질량\(㎏\), 중심 위치, 이셔너가 있습니다.
+The manipulator information \(mass, center of mass, inertia of each link\) is registered in the controller. However, as a tool will be used after being attached to the front end of the robot when necessary, the tool information should be inputted. The information on the tool physical properties includes tool mass \(kg\), center position, and inertia that are necessary to safely use the robot.
 
-CAD 데이터에 툴의 물성치 정보가 있으면 작업 프로그램의 \[설정\] 버튼 &gt; \[3: 로봇 파라미터 &gt; 1: 툴 데이터\] 메뉴를 터치하여 툴 질량과 중심, 이너셔를 직접 입력할 수 있습니다.
+If the CAD data contains the physical properties information of the tool, you can directly input the tool mass, center position, and inertia by touching the \[Set Up\] button &gt; \[3: Robot Parameter &gt; 1: Tool Data\] menu of the job program.
 
-![](../../.gitbook/assets/image%20%28241%29.png)
+![](../../.gitbook/assets/image%20%28490%29.png)
 
-툴 데이터의 설정 정보는 다음과 같습니다.
 
-![](../../.gitbook/assets/image%20%28237%29.png)
 
-* \[중량\]: 로봇 선단에 장착되는 툴의 총 중량\(㎏\)입니다.
-* \[중심\]: 로봇 플랜지 면의 중심에서 툴의 무게 중심 위치까지의 x, y, z 방향의 거리\(㎜\)입니다.
-* \[이너셔\]: 툴 좌표에 대한 툴의 관성 모멘트\(㎏·㎡\)입니다. 관성 모멘트는 무게 중심을 기준으로 x, y, z축 둘레의 질량 분포에 따라 결정되고 부하 질량이 회전축에서 멀리 분포할수록 커집니다.
-* 툴 데이터 좌표계: 이너셔와 중심은 x, y, z축 방향에 대한 값으로 표기합니다.
+The tool data setting information is as follows.
 
-그러나 많은 경우, CAD 데이터에서 툴의 질량과 이너셔, 무게 중심 등의 물성치를 확인하기 어렵습니다. 이때, 로봇 제어기에서 부하추정 기능을 이용하여 툴의 물성치를 확인할 수 있습니다.
+![Figure 70 Tool Data](../../.gitbook/assets/image%20%28498%29.png)
 
-![](../../.gitbook/assets/image%20%28256%29.png)
+* \[Weight\]: The total weight \(kg\) of the tool installed at the front end of the robot
+* \[Center\]: The distance \(mm\) in the x, y, z directions from the center of the robot flange face to the position of the center of gravity of the tool
+* \[Inertia\]: The moment of inertia of the tool with respect to the tool coordinate \(kg/m2\). The moment of inertia will be determined by the mass distribution around the x, y, and z axes based on the center of gravity, and will increase as the load mass is distributed farther from the rotation axis.
+* Tool data coordinate system: Inertia and center will be expressed as values with respect to the x-, y-, and z-axis directions.
 
-1.	\[6: 자동 캘리브레이션 &gt; 4: 부하추정 기능\] 메뉴를 터치하십시오.
 
-2.	\[축별 부가중량\] 버튼을 터치한 후 축별 부가 중량 정보를 입력하십시오.
 
-부가 중량이 있는 상태에서 부하추정 기능을 수행하면 로봇에 장착된 모든 중량물이 선단에 있는 것으로 판단합니다. 정확한 부하추정을 위해 축별 부가 중량 정보를 입력해야 합니다.
+However, in many cases, it is difficult to determine the physical properties of the tool such as mass, inertia, and center of gravity of the tool from CAD data. At this time, you can check the physical properties of the tool using the load estimation function in the robot controller.
 
-3.	로봇의 주축을 움직여 로봇을 안전한 영역으로 이동시킨 후 \[주축 자세지정\] 버튼을 터치하십시오.
+![Figure 71 Load Estimation Function](../../.gitbook/assets/image%20%28506%29.png)
 
-4.	\[손목축 동작영역\] 버튼을 터치한 후 부하추정 동작에서 사용할 손목축의 동작 영역을 지정하십시오. 주변 시설이나 로봇 본체와 간섭이 발생하지 않는 동작 영역에서 부하추정을 수행할 수 있습니다.
+1.	Touch the \[6: Auto Calibration &gt; 4: Load Estimation Function\] menu.
 
-\[손목축 동작영역\] 버튼이 지원되지 않을 경우, 이 단계를 생략하고 다음 단계를 수행하십시오
+2.	After touching the \[Add. Weight on Each Axis\] button, input the information of the additional weight of each axis.
 
-5.	\[확인운전\] 버튼을 터치하십시오. 로봇이 저속으로 동작하는 동안 주변 시설이나 로봇 본체의 간섭 여부를 확인할 수 있습니다.
+If the load estimation function is performed while there is additional weight, it will be determined that all the weight objects mounted onto the robot are at the front end. For accurate load estimation, the information on the additional weight of each axis should be inputted.
 
-6.	로봇에 장착된 툴의 번호를 입력한 후 \[정상운전\] 버튼을 터치하십시오. 부하추정을 수행하여 툴의 물성치가 산출됩니다.
+3.	After moving the robot to a safe area by moving the main axis of the robot, touch the \[Set pose\] button.
 
-7.	부하추정 결과를 확인한 후 \[종료\] 버튼을 터치하십시오. 산출된 툴의 물성치가 툴 번호에 등록됩니다.
+4.	After touching the \[Wrist Axis Operation Area\] button, designate the operation area of the wrist axis to be used in the load estimation operation. Load estimation can be performed in an operation area that there is no interference not only with nearby facilities but also with the manipulator.
+
+If the \[Wrist Axis Operation Area\] button is not supported, skip this step, and perform the next step.
+
+5.	Touch the \[Play check\] button. Then, while the robot is operating at a low speed, you can check for any interference with nearby facilities or the manipulator.
+
+6.	After inputting the number of the tool mounted onto the robot, touch the \[Play Normal\] button. Then, load estimation will be performed, allowing the physical properties of the tool to be calculated.
+
+7.	After checking the load estimation result, touch the \[End\] button. Then, the calculated physical properties of the tool will be registered in the tool number.
 
 {% hint style="info" %}
-* 부가 중량이란 로봇 선단에 장착되는 툴을 제외한, 용접 드레싱 및 용접 신호선 중계 박스 등과 같이 사용자가 로봇에 장착하는 모든 장치의 무게입니다.
-* 손목축 동작영역 기능은 일부 로봇에서는 지원되지 않습니다.
-* 손목축 동작영역 기능의 설정값에 따라 부하추정 기능이 실행되지 않을 수 있으니 주의하십시오.
+* Additional weight is the overall weight of all devices that the user attaches to the robot, such as a welding dressing device and welding signal line relay box, except for the tool mounted at the front end of the robot.
 * 
-  부하추정 기능에 대한 자세한 내용은 “부하추정 기능 설명서”를 참조하십시오.
+  The wrist axis operation area function will not be supported in some robots.
+
+* It requires your attention that the load estimation function may not be executed depending on the setting values of the wrist axis operation area function.
+* For details on the load estimation function, refer to the “Load Estimation Function Manual.”
 {% endhint %}
 
 

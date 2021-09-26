@@ -1,23 +1,23 @@
-# 7.7.2 포지셔너 캘리브레이션
+# 7.7.2 Positioner Calibration
 
-포지셔너\(Positioner\) 캘리브레이션은 로봇 외부에 설치된 지그 장치 동작에 동기화하여 로봇이 추종하거나 그 지그 장치에 대해 상대적인 직선 또는 원호 동작을 가능하게 하는 기능입니다. 포지셔너 캘리브레이션 기능에 적용되는 외부 지그 장치를 포지셔너 또는 스테이션\(Station\)이라고 합니다.
+Positioner calibration is a function that enables the robot to perform a synchronized follow-up with the operation of a jig device installed outside the robot or to perform a linear or circular operation relative to the jig device. The external jig device in which the positioner calibration function will be applied to is called a positioner or station.
 
-포지셔너 캘리브레이션 기능을 이용하면 로봇 작업 영역의 제한으로 인한 작업의 어려움을 보완할 수 있습니다. 즉, 작업물이 포지셔너 위에 고정되어 있는 상태에서 포지셔너가 이동하더라도 로봇은 이 포지셔너의 움직임을 추종하면서 작업물 위에서 직선 또는 원호 동작을 할 수 있습니다.
+Using the positioner calibration function makes it possible to compensate for the operational difficulties because of the limitation of the robot operation area. In other words, even if the positioner moves while the workpiece is fixed onto it, the robot can still perform a linear or circular operation on the workpiece by following up with the movement of the positioner.
 
-1축 포지셔너는 3 점, 2축 포지셔녀는 5 점을 교시하여 포지셔너의 캘리브레이션을 수행하면 간단히 포지셔너의 좌표계를 설정할 수 있습니다.
+You can simply set the positioner’s coordinate system by performing the positioner calibration by teaching three points for a 1-axis positioner and five points for a 2-axis positioning.
 
-![&#xADF8;&#xB9BC; 69 1&#xCD95; &#xD45C;&#xC9C0;&#xC154;&#xB108;\(&#xC88C;\) / 2&#xCD95; &#xD3EC;&#xC9C0;&#xC154;&#xB108;\(&#xC6B0;\)](../../.gitbook/assets/image%20%28244%29.png)
+![Figure 68 1-Axis Positioner \(Left\) / 2-Axis Positioner \(Right\)](../../.gitbook/assets/image%20%28244%29.png)
 
-포지셔너 캘리브레이션 기능의 주요 기능 정보는 다음과 같습니다.
+The information on the main functions of the positioner calibration is as follows.
 
-| 주요 기능 | 설명 |
+| Main Functions | Description |
 | :--- | :--- |
-| 포지셔너 그룸 | 1 ~ 4 그룹 지원 |
-| 포지셔너 축 수 | 1축 포지셔너, 2축 포지셔너 지원\(회전축\) |
-| 보간 방식 | 직선 보간, 원호 보간 지원 |
+| Positioner group | 1–4 groups are supported |
+| Positioner axis count | 1-axis positioner and 2-axis positioner are supported \(rotation axis\) |
+| Interpolation mode | Linear interpolation and circular interpolation are supported |
 
 {% hint style="info" %}
-* 포지셔너 캘리브레이션 기능은 포지셔너 그룹이 설정된 상태에서 사용할 수 있습니다.
-* 자세한 내용은 “Hi6 제어기 포지셔너 동기 기능 설명서”를 참조하십시오.
+* The positioner calibration function can be used while the positioner group is set.
+* For more details, refer to the “Hi6 Controller Positioner Sync Function Manual.”
 {% endhint %}
 

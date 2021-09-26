@@ -1,10 +1,12 @@
-# 7.7.4 베이스축 캘리브레이션
+# 7.7.4 Base Axis Calibration
 
-베이스축 캘리브레이션 기능은 축의 설치 방향을 캘리브레이션하는 기능입니다.
+Base axis calibration is a function to calibrate the installation direction of the axis.
 
-로봇 좌표계의 한 방향\(X, Y, Z\)과 정확히 일치하도록 베이스 축을 설치하는 것은 거의 불가능합니다. 베이스축 캘리브레이션 기능을 이용하여 제어기에서 베이스 축의 방향을 계산하여 베이스 축을 포함한 시스템의 직선보간 궤적 성능을 향상시킬 수 있습니다.
+It is almost impossible to install the base axis to exactly match one direction \(X, Y, or Z\) of the robot coordinate system. When you calculate the direction of the base axis in the controller using the base axis calibration function, you can improve the performance of the linear interpolation trajectory of the system including the base axis.
 
-로봇을 베이스 축에 설치한 후 로봇이 설치된 임의의 베이스 축의 방향 벡터를 찾아 위치보간을 수행할 수 있게 합니다.
+After the robot is installed on the base axis, this function makes it possible to perform position interpolation by finding the direction vector of any base axis on which the robot is installed.
+
+
 
 ![&#xADF8;&#xB9BC; 73 &#xBCA0;&#xC774;&#xC2A4; &#xCD95; &#xCE98;&#xB9AC;&#xBE0C;&#xB808;&#xC774;&#xC158;](../../../.gitbook/assets/image%20%28246%29.png)
 
