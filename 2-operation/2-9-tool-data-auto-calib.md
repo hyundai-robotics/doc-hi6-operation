@@ -15,6 +15,6 @@
 ![](../.gitbook/assets/image%20%28107%29.png)
 
 {% hint style="info" %}
-이 기능에 대한 자세한 내용은 “7.4.1 툴 데이터”를 참조하십시오.
+이 기능에 대한 자세한 내용은 “[7.4.1 툴 데이터](../7-setting/7-4-robot-parameter/tool-data/)”를 참조하십시오.
 {% endhint %}
 
