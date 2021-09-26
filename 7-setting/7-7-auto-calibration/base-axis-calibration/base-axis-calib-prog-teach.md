@@ -1,16 +1,21 @@
-# 7.7.4.2 베이스축 캘리브레이션 프로그램 티칭
+# 7.7.4.2 Base Axis Calibration Program Teaching
 
-1.	공간 상의 기준점을 마련하여 첫 번째 기준점을 기록하십시오.
+1.	Make a reference point in space, and then record the first reference point.
 
-2.	베이스 축을 200 ㎜ 이상 이동하여 동일점을 두 번째 스텝으로 기록하십시오.
+2.	Move the base axis more than 200 mm and record the same point as the second step.
 
-3.	2번 단계에서 이동한 방향과 동일한 방향으로 200 ㎜ 이상씩 이동하며 동일점을 세 번째와 네 번째 스텝으로 기록하십시오.
+3.	While moving 200 mm or more in the same direction as the direction you moved in step 2, record the same point as the third and fourth steps.
 
-![](../../../.gitbook/assets/image%20%28229%29.png)
+![](../../../.gitbook/assets/image%20%28511%29.png)
+
+
 
 {% hint style="warning" %}
-* 로봇 캘리브레이션\(축 원점 및 툴 길이 최적화\)이 완료된 툴을 이용하여 주행축 캘리브레이션 프로그램을 티칭하십시오.
-* 스텝 기록 시 베이스축 캘리브레이션을 위한 툴 번호로 기록하십시오.
-* 기록 스텝 간 베이스축의 이동 거리는 가능한 한 멀게 설정하여 위치를 기록하십시오.
+* Teach the travel axis calibration program using a tool for which robot calibration \(optimization of the axis origin and tool length\) has been completed.
+* 
+  When recording a step, record it using a tool number for base axis calibration.
+
+* 
+  Record the position by setting the moving distance of the base axis between recording steps as far as possible.
 {% endhint %}
 

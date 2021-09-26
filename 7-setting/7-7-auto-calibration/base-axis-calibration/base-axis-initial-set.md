@@ -1,19 +1,22 @@
-# 7.7.4.1 베이스 축 초기 설정
+# 7.7.4.1 Base Axis Initial Setting
 
-1.	수동 모드에서 초기 화면 우측의 \[설정\] 버튼 &gt; \[5: 초기화 &gt; 5: 부가축 파라미터 설정\] 메뉴를 터치하십시오.
+1.	In manual mode, touch the \[Set up\] button &gt; \[5: Initialize&gt; 5: Additional Axis Parameter Setting\] menu on the right side of the initial screen.
 
-2.	부가축의 사양 및 구성 등 파라미터를 설정한 후 \[OK\] 버튼을 터치하십시오.
+2.	After setting the parameters such as the specifications and configuration of the additional axis, touch the \[OK\] button.
 
-* \[축 사양\]: 부가축의 사양을 베이스로 선택합니다.
-* \[축 구성\]: 부가축의 메커니즘 형태를 임의로 선택합니다.
-* 그외 파라미터: 기구 설계치와 제어기 구성 사양에 맞게 설정합니다.
+* \[Axis Specification\]: You can select the specification of the additional axis as base.
+* \[Axis Configuration\]: You can select the mechanism of the additional axis as any.
+* Other parameters: You can set other parameters according to the instrumental design value and controller configuration specifications.
+
+
 
 {% hint style="info" %}
-* 시스템 초기화 시에도 부가축 설정 메뉴가 나타나 베이스 축의 초기 설정을 할 수 있습니다.
-* 부가축 파라미터 설정 메뉴는 일반 사용자에게 지원되지 않는 엔지니어용 기능입니다. 부가축 파라미터 설정 메뉴에 대한 자세한 내용은 엔지니어에게 문의하시기 바랍니다.
+* When the system is initialized, the additional axis setting menu will appear, allowing you to perform the initial setting of the base axis.
+* 
+  The additional axis parameter setting menu is a function for engineers, so it will not be supported for general users. For details on the additional axis parameter setting menu, contact the engineer for inquiry.
 {% endhint %}
 
 {% hint style="warning" %}
-첫 번째 베이스 축에 한하여 캘리브레이션 기능을 사용할 수 있으며 부가축 파라미터 설정 시 축 구성을 임의로 설정할 수 있습니다. 첫 번째 베이스 축을 제외한 나머지 베이스 축에는 축 구성을 임의로 설정하지 마십시오.
+You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. Do not set the axis configuration as any for the other base axes except for the first base axis.
 {% endhint %}
 

@@ -1,10 +1,10 @@
-# 7.7.4.3 베이스축 캘리브레이션 실행
+# 7.7.4.3 Base Axis Calibration Execution
 
-1.	\[6: 자동 캘리브레이션 &gt; 6: 베이스축 캘리브레이션\] 메뉴를 터치하십시오.
+1.	Touch the \[6: Auto Calibration &gt; 6: Base Axis Calibration\] menu.
 
-2.	베이스축 캘리브레이션용 프로그램 번호를 입력한 후 \[자동설정\] 버튼을 터치하십시오.
+2.	After inputting the program number for the base axis calibration, touch the \[Auto Setting\] button.
 
-![](../../../.gitbook/assets/image%20%28259%29.png)
+![](../../../.gitbook/assets/image%20%28494%29.png)
 
-3.	베이스축의 설치 방향 벡터값을 확인한 후 \[OK\] 버튼을 터치하십시오.
+3.	After checking the installation direction vector value of the base axis, touch the \[OK\] button.
 

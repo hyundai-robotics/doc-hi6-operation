@@ -1,20 +1,24 @@
-# 7.7.5 중력방향 자동 설정
+# 7.7.5 Gravity Direction Auto Setting
 
-Hi6 제어기는 동역학 기반의 제어기이므로 중력 방향을 설정하는 것이 중요합니다.
+The Hi6 controller is based on dynamics, so it is important to set the gravity direction.
 
-일반적으로 로봇의 설치 방향은 다음과 같이 중력 방향에 수직입니다. 로봇이 지면에 비스듬한 방향으로 설치된 경우 중력 방향을 로봇 제어기에 설정해야 합니다. 이때 중력 방향 자동 설정 기능을 사용할 수 있습니다.
+In general, the robot installation direction is perpendicular to the gravity direction as follows. If the robot is installed obliquely to the ground, the gravity direction should be set in the robot controller. At this time, you can use the automatic gravity direction setting function.
 
-![&#xADF8;&#xB9BC; 75 &#xC9C0;&#xBA74;&#xC5D0; &#xB193;&#xC778; &#xB85C;&#xBD07;&#xC758; &#xC911;&#xB825; &#xBC29;&#xD5A5;\(&#xC88C;\) / &#xACBD;&#xC0AC;&#xBA74;&#xC5D0; &#xB193;&#xC778; &#xB85C;&#xBD07;&#xC758; &#xC911;&#xB825; &#xBC29;&#xD5A5;\(&#xC6B0;\)](../../.gitbook/assets/image%20%28226%29.png)
+![Figure 74 Gravity Direction of the Robot Placed on a Floor \(Left\) / Gravity Direction of the Robot Placed on a Slope \(Right\)](../../.gitbook/assets/image%20%28502%29.png)
 
-중력 방향을 설정하는 방법은 다음과 같습니다.
 
-1.	외부에 추를 달아 중력 방향을 표시하고 중력의 작용 방향으로 두 점\(Step1, Step2\)을 교시하십시오.
 
-2.	\[6: 자동 캘리브레이션 &gt; 8: 중력방향 자동 설정\] 메뉴를 터치하십시오.
+How to set the gravity direction is as follows.
 
-3.	프로그램 번호를 입력한 후 \[실행\] 버튼을 터치하십시오. 방향 벡터가 계산되어 나타납니다.
+1.	Attach a weight to the outside to indicate the gravity direction, and then teach two points \(Step 1, Step 2\) in the direction of the gravitational action.
 
-![](../../.gitbook/assets/image%20%28250%29.png)
+2.	Touch the \[6: Auto Calibration &gt; 8: Automatic setting of gravity direction\] menu.
 
-4.	방향 벡터값을 확인한 후 \[OK\] 버튼을 터치하십시오. 이 방향이 중력 방향으로 재설정됩니다.
+3.	After inputting the program number, touch the \[Execute\] button. Then, the direction vector will be calculated and displayed.
+
+![](../../.gitbook/assets/image%20%28505%29.png)
+
+
+
+4.	After checking the direction vector value, touch the \[OK\] button. Then, the direction will be set as the gravity direction.
 

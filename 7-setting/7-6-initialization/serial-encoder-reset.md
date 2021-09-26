@@ -6,7 +6,7 @@ The serial encoder stores the encoder rotation speed information in the internal
 
 2.	Set the encoder resetting mode for each axis and check the status, and then execute the resetting.
 
-![](../../.gitbook/assets/image%20%28497%29.png)
+![](../../.gitbook/assets/image%20%28499%29.png)
 
 <table>
   <thead>
