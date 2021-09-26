@@ -1,4 +1,4 @@
-# 9.2 move-스텝 위치
+# 9.2 Move-Step Position
 
-작업 프로그램에서 현재 선택된 행에 있는 스텝의 위치를 확인하거나 수정합니다.
+You can check or modify the position of the step in the currently selected line in the JOB program.
 
