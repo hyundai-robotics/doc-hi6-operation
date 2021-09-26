@@ -44,18 +44,21 @@
           &#xD655;&#xC778;&#xD558;&#xACE0; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
         <ul>
           <li>[&#xCD5C;&#xC801;&#xD654; &#xC120;&#xD0DD;]: &#xCD5C;&#xC801;&#xD654;
-            &#xB300;&#xC0C1;&#xC744; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xD234; &#xAE38;&#xC774;]: &#xB85C;&#xBD07;&#xC758; &#xD234; &#xAE38;&#xC774;
-            &#xAC12;&#xC744; &#xBCF4;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xB85C;&#xBD07;
-            &#xC6D0;&#xC810;&#xC774; &#xC815;&#xD655;&#xD788; &#xC124;&#xC815;&#xB41C;
-            &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xD234; &#xAE38;&#xC774;&#xB9CC; &#xBCF4;&#xC815;&#xD560;
-            &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xCD95; &#xC6D0;&#xC810; &#xBC0F; &#xD234; &#xAE38;&#xC774;]: &#xB85C;&#xBD07;&#xC758;
-            &#xC6D0;&#xC810;&#xACFC; &#xD234; &#xAE38;&#xC774; &#xAC12;&#xC744; &#xBAA8;&#xB450;
-            &#xBCF4;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xD1B5;&#xC0C1;&#xC801;&#xC73C;&#xB85C;
-            &#xB85C;&#xBD07;&#xC744; &#xC124;&#xCE58;&#xD558;&#xACE0; &#xCD5C;&#xCD08;&#xC5D0;
-            &#xC815;&#xD655;&#xD55C; &#xC6D0;&#xC810;&#xC744; &#xC124;&#xC815;&#xD558;&#xACE0;&#xC790;
-            &#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</li>
+            &#xB300;&#xC0C1;&#xC744; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.
+            <ul>
+              <li>[&#xD234; &#xAE38;&#xC774;]: &#xB85C;&#xBD07;&#xC758; &#xD234; &#xAE38;&#xC774;
+                &#xAC12;&#xC744; &#xBCF4;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xB85C;&#xBD07;
+                &#xC6D0;&#xC810;&#xC774; &#xC815;&#xD655;&#xD788; &#xC124;&#xC815;&#xB41C;
+                &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xD234; &#xAE38;&#xC774;&#xB9CC; &#xBCF4;&#xC815;&#xD560;
+                &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+              <li>[&#xCD95; &#xC6D0;&#xC810; &#xBC0F; &#xD234; &#xAE38;&#xC774;]: &#xB85C;&#xBD07;&#xC758;
+                &#xC6D0;&#xC810;&#xACFC; &#xD234; &#xAE38;&#xC774; &#xAC12;&#xC744; &#xBAA8;&#xB450;
+                &#xBCF4;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xD1B5;&#xC0C1;&#xC801;&#xC73C;&#xB85C;
+                &#xB85C;&#xBD07;&#xC744; &#xC124;&#xCE58;&#xD558;&#xACE0; &#xCD5C;&#xCD08;&#xC5D0;
+                &#xC815;&#xD655;&#xD55C; &#xC6D0;&#xC810;&#xC744; &#xC124;&#xC815;&#xD558;&#xACE0;&#xC790;
+                &#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</li>
+            </ul>
+          </li>
           <li>[&#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xBC88;&#xD638;]: &#xB3D9;&#xC77C;&#xC810;&#xC744;
             &#xC5EC;&#xB7EC; &#xC790;&#xC138;&#xB85C; &#xAE30;&#xB85D;&#xD55C; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC758;
             &#xBC88;&#xD638;&#xB97C; &#xC124;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</li>
@@ -99,8 +102,8 @@
 
 {% hint style="info" %}
 * 로봇 각 축의 원점 및 툴 길이는 설정 메뉴에서도 설정할 수 있습니다.
-* 툴 길이: \[설정 &gt; 3: 로봇 파라미터 &gt; 1: 툴 데이터\]
-* 각 축의 원점: \[설정 &gt; 3: 로봇 파라미터 &gt; 2: 축 원점\]
+  * 툴 길이: \[설정 &gt; 3: 로봇 파라미터 &gt; 1: 툴 데이터\]
+  * 각 축의 원점: \[설정 &gt; 3: 로봇 파라미터 &gt; 2: 축 원점\]
 * 각도보정 기능\(\[설정 &gt; 3: 로봇 파라미터 &gt; 1: 툴 데이터\]\)을 이용해 툴 각도를 보정할 경우, 축 원점 및 툴 길이 최적화 기능을 먼저 실행한 후 각도 보정을 실행하십시오. 정확한 툴 데이터를 설정할 수 있습니다.
 {% endhint %}
 
