@@ -1,4 +1,4 @@
-# 6.5	System Output
+# 6.5    System Output
 
 Touch \[System Output\] in the panel selection window. Then, the output signal window will appear.
 

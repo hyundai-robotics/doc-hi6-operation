@@ -1,4 +1,4 @@
-# 7.4.1	Tool Data
+# 7.4.1    Tool Data
 
 You can set the distance and angle of the TCP based on the robot’s R1-axis flange and register the tool’s weight, center of gravity, and inertia. You can perform registration manually using the \[1: Tool data\] menu.
 
@@ -14,7 +14,7 @@ The length of the tool is the length in each direction in the flange coordinate 
 
 
 
-![Figure 60 Flange Coordinate System for Each Robot Type](../../../.gitbook/assets/image%20%28213%29%20%282%29.png)
+![Figure 60 Flange Coordinate System for Each Robot Type](../../../.gitbook/assets/image%20%28213%29%20%282%29%20%282%29.png)
 
 The angle of the tool is the posture conversion amount in each direction in the flange coordinate system. \(Angle in X-axis direction: Rx / Angle in Y-axis direction: Ry / Angle in Z-axis direction: Rz\)
 
