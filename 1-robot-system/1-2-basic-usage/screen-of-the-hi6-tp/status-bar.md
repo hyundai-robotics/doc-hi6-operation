@@ -1,12 +1,12 @@
 # 1.2.4.1 상태 표시줄
 
-![&#xADF8;&#xB9BC; 9 &#xC0C1;&#xD0DC; &#xD45C;&#xC2DC;&#xC904;](../../../.gitbook/assets/image%20%281%29.png)
+![그림 9 상태 표시줄](../../../.gitbook/assets/image%20%281%29.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -14,40 +14,40 @@
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">&#xB85C;&#xBD07; &#xC81C;&#xC5B4;&#xAE30; &#xD50C;&#xB7AB;&#xD3FC;&#xC758;
-        &#xC774;&#xB984;&#xC785;&#xB2C8;&#xB2E4;.</td>
+      <td style="text-align:left">로봇 제어기 플랫폼의
+        이름입니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">&#xD2F0;&#xCE58; &#xD39C;&#xB358;&#xD2B8;&#xC640; &#xB85C;&#xBD07; &#xC81C;&#xC5B4;&#xAE30;
-        &#xBCF8;&#xCCB4;&#xC758; COM &#xBAA8;&#xB4C8; &#xAC04; &#xC774;&#xB354;&#xB137;
-        &#xD1B5;&#xC2E0;&#xC758; &#xC0C1;&#xD0DC;&#xB97C; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.
+      <td style="text-align:left">티치 펜던트와 로봇 제어기
+        본체의 COM 모듈 간 이더넷
+        통신의 상태를 표시합니다.
         (
-        <img src="../../../.gitbook/assets/flag-comm-ok.png" alt/>: &#xC815;&#xC0C1; /
+        <img src="../../../.gitbook/assets/flag-comm-ok.png" alt/>: 정상 /
         <img src="../../../.gitbook/assets/flag-comm-ng.png"
-        alt/>: &#xC751;&#xB2F5; &#xC5C6;&#xC74C;)</td>
+        alt/>: 응답 없음)</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>&#xB85C;&#xBD07;&#xC758; &#xC6B4;&#xC804; &#xBC29;&#xC2DD;&#xC744; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>로봇의 운전 방식을 표시합니다.</p>
         <ul>
-          <li><b>&#xC218;&#xB3D9;</b>: &#xC870;&#xADF8;&#xB85C; &#xB85C;&#xBD07;&#xC744;
-            &#xC81C;&#xC5B4;&#xD558;&#xACE0;, JOB &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744;
-            &#xC791;&#xC131;&#xD558;&#xB294; &#xB85C;&#xBD07; &#xAD50;&#xC2DC; &#xBAA8;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.</li>
-          <li><b>&#xC790;&#xB3D9;</b>: JOB &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744;
-            &#xC7AC;&#xC0DD;&#xD558;&#xC5EC; &#xB85C;&#xBD07;&#xC744; &#xC790;&#xB3D9;&#xC73C;&#xB85C;
-            &#xC6B4;&#xC804;&#xD558;&#xB294; &#xBAA8;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.</li>
-          <li><b>&#xC6D0;&#xACA9;&#xC218;&#xB3D9;</b>: &#xBAA8;&#xB4DC;&#xB97C; &#xC6D0;&#xACA9;&#xC5D0;&#xC11C;
-            I/O&#xC2E0;&#xD638;&#xB85C; &#xACB0;&#xC815;&#xD558;&#xB294; &#xC0C1;&#xD0DC;&#xC785;&#xB2C8;&#xB2E4;.
-            (&#xD604;&#xC7AC; &#xC0C1;&#xD0DC;: &#xC218;&#xB3D9; &#xBAA8;&#xB4DC;)</li>
-          <li><b>&#xC6D0;&#xACA9;&#xC790;&#xB3D9;</b>: &#xBAA8;&#xB4DC;&#xB97C; &#xC6D0;&#xACA9;&#xC5D0;&#xC11C;
-            I/O&#xC2E0;&#xD638;&#xB85C; &#xACB0;&#xC815;&#xD558;&#xB294; &#xC0C1;&#xD0DC;&#xC785;&#xB2C8;&#xB2E4;.
-            (&#xD604;&#xC7AC; &#xC0C1;&#xD0DC;: &#xC790;&#xB3D9; &#xBAA8;&#xB4DC;)</li>
+          <li><b>수동</b>: 조그로 로봇을
+            제어하고, JOB 프로그램을
+            작성하는 로봇 교시 모드입니다.</li>
+          <li><b>자동</b>: JOB 프로그램을
+            재생하여 로봇을 자동으로
+            운전하는 모드입니다.</li>
+          <li><b>원격수동</b>: 모드를 원격에서
+            I/O신호로 결정하는 상태입니다.
+            (현재 상태: 수동 모드)</li>
+          <li><b>원격자동</b>: 모드를 원격에서
+            I/O신호로 결정하는 상태입니다.
+            (현재 상태: 자동 모드)</li>
         </ul>
       </td>
     </tr>
@@ -55,27 +55,27 @@
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c4.png" alt/>
       </td>
-      <td style="text-align:left">&#xB85C;&#xBD07; &#xC2DC;&#xC2A4;&#xD15C;&#xC758; &#xB2E4;&#xC591;&#xD55C;
-        &#xC0C1;&#xD0DC;&#xB97C; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</td>
+      <td style="text-align:left">로봇 시스템의 다양한
+        상태를 표시합니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c5.png" alt/>
       </td>
-      <td style="text-align:left">&#xB85C;&#xBD07;&#xC758; &#xB3D9;&#xC791; &#xC0C1;&#xD0DC;&#xB97C; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.
+      <td style="text-align:left">로봇의 동작 상태를 표시합니다.
         (
-        <img src="../../../.gitbook/assets/flag-mot-on.png" alt/>: &#xBAA8;&#xD130; ON /
+        <img src="../../../.gitbook/assets/flag-mot-on.png" alt/>: 모터 ON /
         <img src="../../../.gitbook/assets/flag-start.png"
-        alt/>: &#xB85C;&#xBD07; &#xC7AC;&#xC0DD; &#xC911; /
+        alt/>: 로봇 재생 중 /
         <img src="../../../.gitbook/assets/flag-stop.png"
-        alt/>: &#xB85C;&#xBD07; &#xC815;&#xC9C0;)</td>
+        alt/>: 로봇 정지)</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">&#xC120;&#xD0DD;&#xB41C; &#xB85C;&#xBD07; &#xBA54;&#xCEE4;&#xB2C8;&#xC998;&#xC758;
-        &#xBAA8;&#xB378;&#xBA85;&#xC744; &#xD45C;&#xC2DC;&#xD569;&#xB2C8;&#xB2E4;.</td>
+      <td style="text-align:left">선택된 로봇 메커니즘의
+        모델명을 표시합니다.</td>
     </tr>
   </tbody>
 </table>

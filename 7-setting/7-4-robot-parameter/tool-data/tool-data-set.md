@@ -10,8 +10,8 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -19,11 +19,11 @@
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">&#xD234; &#xB370;&#xC774;&#xD130; &#xBAA9;&#xB85D;&#xC5D0;&#xC11C; &#xC120;&#xD0DD;&#xD55C;
-        &#xD234; &#xB370;&#xC774;&#xD130;&#xC758; &#xC0C1;&#xC138; &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;.
-        &#xD234; &#xB370;&#xC774;&#xD130; &#xC774;&#xB984;&#xACFC; &#xC124;&#xBA85;,
-        &#xC911;&#xB7C9;, &#xCD95;&#xBCC4; &#xC0C1;&#xC138; &#xC870;&#xAC74;, &#xD5C8;&#xC6A9;
-        &#xBE44;&#xC728;&#xC744; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
+      <td style="text-align:left">툴 데이터 목록에서 선택한
+        툴 데이터의 상세 정보입니다.
+        툴 데이터 이름과 설명,
+        중량, 축별 상세 조건, 허용
+        비율을 설정할 수 있습니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -31,37 +31,37 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[&#xC790;&#xB3D9;&#xBCF4;&#xC815;]: &#xC0C8;&#xB85C;&#xC6B4; &#xD234;
-            &#xB370;&#xC774;&#xD130;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xAC70;&#xB098;
-            &#xAE30;&#xC874;&#xC758; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744; &#xD65C;&#xC6A9;&#xD558;&#xC5EC;
-            &#xD234; &#xB370;&#xC774;&#xD130;&#xB97C; &#xAC04;&#xB2E8;&#xD788; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.
+          <li>[자동보정]: 새로운 툴
+            데이터를 생성하거나
+            기존의 프로그램을 활용하여
+            툴 데이터를 간단히 생성합니다.
             <br
-            />&#xAE30;&#xC874;&#xC5D0; &#xD2F0;&#xCE6D;&#xB418;&#xC5B4; &#xC788;&#xB294;
-            &#xC2A4;&#xD15D; &#xC704;&#xCE58;&#xC5D0; &#xC0C8;&#xB85C; &#xC124;&#xC815;&#xD558;&#xB824;&#xBA74;
-            &#xD234;&#xC744; &#xC704;&#xCE58;&#xC2DC;&#xD0A8; &#xD6C4; &#xC790;&#xB3D9;
-            &#xBCF4;&#xC815; &#xAE30;&#xB2A5;&#xC744; &#xC2E4;&#xD589;&#xD558;&#xBA74;
-            &#xC0C8;&#xB85C;&#xC6B4; &#xD234;&#xC758; &#xAE38;&#xC774;&#xC640; &#xAC01;&#xB3C4;&#xAC00;
-            &#xC0DD;&#xC131;&#xB429;&#xB2C8;&#xB2E4;.
+            />기존에 티칭되어 있는
+            스텝 위치에 새로 설정하려면
+            툴을 위치시킨 후 자동
+            보정 기능을 실행하면
+            새로운 툴의 길이와 각도가
+            생성됩니다.
             <br />
             <img src="../../../.gitbook/assets/tool-angle-auto-calib (1).png" alt/>
             <br />
             <ul>
-              <li>[&#xAE30;&#xC874; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xBC88;&#xD638;]:
-                &#xD234; &#xBCC0;&#xD615;&#xC774; &#xC77C;&#xC5B4;&#xB098;&#xAE30; &#xC804;
-                &#xD2F0;&#xCE6D;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xD504;&#xB85C;&#xADF8;&#xB7A8;
-                &#xBC88;&#xD638;&#xB97C; &#xC785;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</li>
-              <li>[&#xAE30;&#xC874; &#xC2A4;&#xD15D; &#xBC88;&#xD638;]: &#xD234; &#xB370;&#xC774;&#xD130;
-                &#xC790;&#xB3D9; &#xBCF4;&#xC815;&#xC744; &#xC2DC;&#xD589;&#xD560; &#xC2A4;&#xD15D;
-                &#xBC88;&#xD638;&#xB97C; &#xC785;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</li>
-              <li>[&#xC124;&#xC815;&#xD560; &#xD234; &#xBC88;&#xD638;]: &#xC0C8;&#xB85C;
-                &#xC124;&#xC815;&#xD560; &#xD234;&#xC758; &#xBC88;&#xD638;&#xB97C; &#xC785;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.
+              <li>[기존 프로그램 번호]:
+                툴 변형이 일어나기 전
+                티칭되어 있는 프로그램
+                번호를 입력합니다.</li>
+              <li>[기존 스텝 번호]: 툴 데이터
+                자동 보정을 시행할 스텝
+                번호를 입력합니다.</li>
+              <li>[설정할 툴 번호]: 새로
+                설정할 툴의 번호를 입력합니다.
                 <br
                 />
               </li>
             </ul>
           </li>
-          <li>[&#xAC01;&#xB3C4;&#xBCF4;&#xC815;]: &#xD234;&#xC758; &#xAC01;&#xB3C4;&#xB97C;
-            &#xBCF4;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.
+          <li>[각도보정]: 툴의 각도를
+            보정합니다.
             <br />
             <img src="../../../.gitbook/assets/tool-angle-auto-calib.png" alt/>
           </li>
@@ -74,24 +74,24 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: &#xBCC0;&#xACBD; &#xB0B4;&#xC6A9;&#xC744; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[+]/[-]: &#xC0C8;&#xB85C;&#xC6B4; &#xD234; &#xB370;&#xC774;&#xD130;&#xB97C;
-            &#xCD94;&#xAC00;&#xD558;&#xAC70;&#xB098; &#xD234; &#xB370;&#xC774;&#xD130;&#xB97C;
-            &#xC0AD;&#xC81C;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>&#xD234; &#xB370;&#xC774;&#xD130; &#xBAA9;&#xB85D;&#xC785;&#xB2C8;&#xB2E4;.
-            &#xD234; &#xB370;&#xC774;&#xD130; &#xC774;&#xB984;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xBA74;
-            &#xC0C1;&#xC138; &#xC815;&#xBCF4;&#xB97C; &#xD655;&#xC778; &#xBC0F; &#xD3B8;&#xC9D1;&#xD560;
-            &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xD398;&#xC774;&#xC9C0; &#xBCF5;&#xC0AC;]/[&#xD398;&#xC774;&#xC9C0;
-            &#xBD99;&#xC5EC;&#xB123;&#xAE30;]: &#xD234; &#xB370;&#xC774;&#xD130; &#xC815;&#xBCF4;&#xB97C;
-            &#xBCF5;&#xC0AC;&#xD558;&#xC5EC; &#xB2E4;&#xB978; &#xD234; &#xB370;&#xC774;&#xD130;&#xC5D0;
-            &#xBD99;&#xC5EC; &#xB123;&#xC2B5;&#xB2C8;&#xB2E4;.
-            <br />&#xBAA9;&#xB85D;&#xC5D0;&#xC11C; &#xBCF5;&#xC0AC;&#xD560; &#xD234; &#xB370;&#xC774;&#xD130;
-            &#xC815;&#xBCF4;&#xC758; &#xC774;&#xB984;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xACE0;
-            [&#xD398;&#xC774;&#xC9C0; &#xBCF5;&#xC0AC;] &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD55C;
-            &#xD6C4; &#xAC12;&#xC744; &#xC801;&#xC6A9;&#xD560; &#xD234; &#xB370;&#xC774;&#xD130;&#xC758;
-            &#xC774;&#xB984;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xACE0; [&#xD398;&#xC774;&#xC9C0;
-            &#xBD99;&#xC5EC;&#xB123;&#xAE30;] &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
+          <li>[OK]: 변경 내용을 저장합니다.</li>
+          <li>[+]/[-]: 새로운 툴 데이터를
+            추가하거나 툴 데이터를
+            삭제합니다.</li>
+          <li>툴 데이터 목록입니다.
+            툴 데이터 이름을 선택하면
+            상세 정보를 확인 및 편집할
+            수 있습니다.</li>
+          <li>[페이지 복사]/[페이지
+            붙여넣기]: 툴 데이터 정보를
+            복사하여 다른 툴 데이터에
+            붙여 넣습니다.
+            <br />목록에서 복사할 툴 데이터
+            정보의 이름을 선택하고
+            [페이지 복사] 버튼을 터치한
+            후 값을 적용할 툴 데이터의
+            이름을 선택하고 [페이지
+            붙여넣기] 버튼을 터치하십시오.</li>
         </ul>
       </td>
     </tr>

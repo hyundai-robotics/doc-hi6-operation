@@ -9,8 +9,8 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -18,21 +18,21 @@
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">&#xB85C;&#xBD07;&#xACFC; &#xC81C;&#xC5B4;&#xAE30;&#xC758; &#xC2DC;&#xC2A4;&#xD15C;
-        &#xD658;&#xACBD;(&#xC18C;&#xD504;&#xD2B8;&#xC6E8;&#xC5B4; &#xBC84;&#xC804;)
-        &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;.</td>
+      <td style="text-align:left">로봇과 제어기의 시스템
+        환경(소프트웨어 버전)
+        정보입니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../.gitbook/assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>&#xAE30;&#xB2A5; &#xBC84;&#xD2BC;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xC2DC;&#xC2A4;&#xD15C;
-          &#xD658;&#xACBD;&#xC744; &#xD3B8;&#xC9D1;&#xD558;&#xACE0; &#xAD00;&#xB9AC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>기능 버튼을 이용해 시스템
+          환경을 편집하고 관리합니다.</p>
         <ul>
-          <li>[OK]: &#xBCC0;&#xACBD; &#xB0B4;&#xC6A9;&#xC744; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xBC84;&#xC804;&#xC5C5;]: &#xC81C;&#xC5B4;&#xAE30; &#xAC01; &#xBAA8;&#xB4C8;&#xC758;
-            &#xBC84;&#xC804;&#xC744; &#xC5C5;&#xB370;&#xC774;&#xD2B8;&#xD569;&#xB2C8;&#xB2E4;.</li>
+          <li>[OK]: 변경 내용을 저장합니다.</li>
+          <li>[버전업]: 제어기 각 모듈의
+            버전을 업데이트합니다.</li>
         </ul>
       </td>
     </tr>

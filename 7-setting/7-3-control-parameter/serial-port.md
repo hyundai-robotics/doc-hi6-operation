@@ -10,8 +10,8 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xBC88;&#xD638;</th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
@@ -19,10 +19,10 @@
       <td style="text-align:left">
         <img src="../../.gitbook/assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">&#xC2DC;&#xB9AC;&#xC5BC; &#xD3EC;&#xD2B8; &#xBAA9;&#xB85D;&#xC5D0;&#xC11C;
-        &#xC120;&#xD0DD;&#xD55C; &#xD3EC;&#xD2B8;&#xC758; &#xC0C1;&#xC138; &#xC815;&#xBCF4;&#xC785;&#xB2C8;&#xB2E4;.
-        &#xD3EC;&#xD2B8; &#xC774;&#xB984;&#xACFC; &#xD30C;&#xB77C;&#xBBF8;&#xD130;
-        &#xAC12;&#xC744; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
+      <td style="text-align:left">시리얼 포트 목록에서
+        선택한 포트의 상세 정보입니다.
+        포트 이름과 파라미터
+        값을 설정할 수 있습니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -30,25 +30,25 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: &#xBCC0;&#xACBD; &#xB0B4;&#xC6A9;&#xC744; &#xC800;&#xC7A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>[+]/[-]: &#xC0C8;&#xB85C;&#xC6B4; &#xC2DC;&#xB9AC;&#xC5BC; &#xD3EC;&#xD2B8;&#xB97C;
-            &#xCD94;&#xAC00;&#xD558;&#xAC70;&#xB098; &#xC2DC;&#xB9AC;&#xC5BC; &#xD3EC;&#xD2B8;&#xB97C;
-            &#xC0AD;&#xC81C;&#xD569;&#xB2C8;&#xB2E4;.</li>
-          <li>&#xC2DC;&#xB9AC;&#xC5BC; &#xD3EC;&#xD2B8; &#xBAA9;&#xB85D;&#xC785;&#xB2C8;&#xB2E4;.
-            &#xD3EC;&#xD2B8; &#xC774;&#xB984;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xBA74;
-            &#xC0C1;&#xC138; &#xC815;&#xBCF4;&#xB97C; &#xD655;&#xC778; &#xBC0F; &#xD3B8;&#xC9D1;&#xD560;
-            &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
-          <li>[&#xD398;&#xC774;&#xC9C0; &#xBCF5;&#xC0AC;]/[&#xD398;&#xC774;&#xC9C0;
-            &#xBD99;&#xC5EC;&#xB123;&#xAE30;]: &#xC2DC;&#xB9AC;&#xC5BC; &#xD3EC;&#xD2B8;
-            &#xC815;&#xBCF4;&#xB97C; &#xBCF5;&#xC0AC;&#xD558;&#xC5EC; &#xB2E4;&#xB978;
-            &#xD3EC;&#xD2B8;&#xC5D0; &#xBD99;&#xC5EC; &#xB123;&#xC2B5;&#xB2C8;&#xB2E4;.
+          <li>[OK]: 변경 내용을 저장합니다.</li>
+          <li>[+]/[-]: 새로운 시리얼 포트를
+            추가하거나 시리얼 포트를
+            삭제합니다.</li>
+          <li>시리얼 포트 목록입니다.
+            포트 이름을 선택하면
+            상세 정보를 확인 및 편집할
+            수 있습니다.</li>
+          <li>[페이지 복사]/[페이지
+            붙여넣기]: 시리얼 포트
+            정보를 복사하여 다른
+            포트에 붙여 넣습니다.
             <br
-            />&#xBAA9;&#xB85D;&#xC5D0;&#xC11C; &#xBCF5;&#xC0AC;&#xD560; &#xD3EC;&#xD2B8;
-            &#xC815;&#xBCF4;&#xC758; &#xC774;&#xB984;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xACE0;
-            [&#xD398;&#xC774;&#xC9C0; &#xBCF5;&#xC0AC;] &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD55C;
-            &#xD6C4; &#xAC12;&#xC744; &#xC801;&#xC6A9;&#xD560; &#xD3EC;&#xD2B8;&#xC758;
-            &#xC774;&#xB984;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xACE0; [&#xD398;&#xC774;&#xC9C0;
-            &#xBD99;&#xC5EC;&#xB123;&#xAE30;] &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD558;&#xC2ED;&#xC2DC;&#xC624;.</li>
+            />목록에서 복사할 포트
+            정보의 이름을 선택하고
+            [페이지 복사] 버튼을 터치한
+            후 값을 적용할 포트의
+            이름을 선택하고 [페이지
+            붙여넣기] 버튼을 터치하십시오.</li>
         </ul>
       </td>
     </tr>

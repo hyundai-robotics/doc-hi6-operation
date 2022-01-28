@@ -17,48 +17,48 @@ Hi6 티치 펜던트 화면 우측의 메뉴 버튼을 이용하여 포즈를 �
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">&#xD3EC;&#xC988; &#xBCC0;&#xC218;</th>
-      <th style="text-align:left">&#xC26C;&#xD504;&#xD2B8; &#xBCC0;&#xC218;</th>
+      <th style="text-align:left">포즈 변수</th>
+      <th style="text-align:left">쉬프트 변수</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">(X, Y, Z, Rx, Ry, Rz, {&#xC88C;&#xD45C;&#xACC4;}, {config.})</td>
-      <td style="text-align:left">(X, Y, Z, Rx, Ry, Rz, {&#xC88C;&#xD45C;&#xACC4;})</td>
+      <td style="text-align:left">(X, Y, Z, Rx, Ry, Rz, {좌표계}, {config.})</td>
+      <td style="text-align:left">(X, Y, Z, Rx, Ry, Rz, {좌표계})</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <p>{&#xC88C;&#xD45C;&#xACC4;}:
-          <br />&quot;base&quot; = &#xBCA0;&#xC774;&#xC2A4; &#xC88C;&#xD45C;&#xACC4;
+        <p>{좌표계}:
+          <br />&quot;base&quot; = 베이스 좌표계
           <br
           />
         </p>
-        <p>&quot;robot&quot; = &#xB85C;&#xBD07; &#xC88C;&#xD45C;&#xACC4;
+        <p>&quot;robot&quot; = 로봇 좌표계
           <br />
         </p>
-        <p>&quot;user{n}&quot; = &#xC0AC;&#xC6A9;&#xC790; &#xC88C;&#xD45C;&#xACC4;(n&#xC740;
-          &#xBC88;&#xD638;)
+        <p>&quot;user{n}&quot; = 사용자 좌표계(n은
+          번호)
           <br />
         </p>
-        <p>&quot;joint&quot; = &#xCD95; &#xC88C;&#xD45C;&#xACC4;
+        <p>&quot;joint&quot; = 축 좌표계
           <br />
         </p>
-        <p>&quot;encoder&quot;= &#xC5D4;&#xCF54;&#xB354;</p>
+        <p>&quot;encoder&quot;= 엔코더</p>
       </td>
       <td style="text-align:left">
-        <p>{&#xC88C;&#xD45C;&#xACC4;}:</p>
-        <p>&quot;base&quot; = &#xBCA0;&#xC774;&#xC2A4; &#xC88C;&#xD45C;&#xACC4;
+        <p>{좌표계}:</p>
+        <p>&quot;base&quot; = 베이스 좌표계
           <br
           />
         </p>
-        <p>&quot;robot&quot; = &#xB85C;&#xBD07; &#xC88C;&#xD45C;&#xACC4;
+        <p>&quot;robot&quot; = 로봇 좌표계
           <br />
         </p>
-        <p>&quot;user{n}&quot; = &#xC0AC;&#xC6A9;&#xC790; &#xC88C;&#xD45C;&#xACC4;(n&#xC740;
-          &#xBC88;&#xD638;)
+        <p>&quot;user{n}&quot; = 사용자 좌표계(n은
+          번호)
           <br />
         </p>
-        <p>&quot;joint&quot; = &#xCD95; &#xC88C;&#xD45C;&#xACC4;</p>
+        <p>&quot;joint&quot; = 축 좌표계</p>
       </td>
     </tr>
   </tbody>

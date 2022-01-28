@@ -76,7 +76,7 @@ MOTOR ON 입력에 의해 각각의 모터에 전원이 공급되고 구동할 �
 
 에러/경고 출력 Bit, 에러/경고 출력 STRB, 종합 이상, 조작 에러, 경고 발생 신호는 다음의 시퀀스를 참조하십시오.
 
-![&#xADF8;&#xB9BC; 54 16&#xBE44;&#xD2B8; &#xCD9C;&#xB825;](../../../.gitbook/assets/image%20%28550%29.png)
+![그림 54 16비트 출력](../../../.gitbook/assets/image%20%28550%29.png)
 
 * 외부 RESET ACK
 

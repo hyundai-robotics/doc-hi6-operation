@@ -12,11 +12,11 @@ Hi6 제어기는 로봇의 동역학을 기반으로 제어합니다. 툴의 중
 
 툴의 길이는 플랜지 좌표계에서 방향별 길이입니다. \(X축 방향 길이: Xt / Y축 방향 길이: Yt / Z축 방향 길이: Zt\)
 
-![&#xADF8;&#xB9BC; 61 &#xB85C;&#xBD07; &#xD615;&#xD0DC;&#xBCC4; &#xD50C;&#xB79C;&#xC9C0; &#xC88C;&#xD45C;&#xACC4;](../../../.gitbook/assets/image%20%28213%29.png)
+![그림 61 로봇 형태별 플랜지 좌표계](../../../.gitbook/assets/image%20%28213%29.png)
 
 툴의 각도는 플랜지 좌표계에서 방향별 자세 변환량입니다. \(X축 방향 각도: Rx / Y축 방향 각도: Ry / Z축 방향 각도: Rz\)
 
-![&#xADF8;&#xB9BC; 62 &#xD234; &#xAC01;&#xB3C4;: Rotating Rx \(&#xC88C;\) / Rotating Ry \(&#xC911;&#xAC04;\) / Rotating Rz \(&#xC6B0;\)](../../../.gitbook/assets/image%20%28211%29.png)
+![그림 62 툴 각도: Rotating Rx \(좌\) / Rotating Ry \(중간\) / Rotating Rz \(우\)](../../../.gitbook/assets/image%20%28211%29.png)
 
 즉, 툴의 길이 및 각도는 플랜지 좌표계를 기준으로 설정됩니다. 툴 길이는 플랜지 좌표계의 중심에서 TCP까지의 거리를 설정합니다.
 
