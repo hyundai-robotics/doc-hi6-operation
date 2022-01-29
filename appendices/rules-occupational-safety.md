@@ -2,7 +2,8 @@
 
 당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시\(검사 대상일 경우\)의 검사 기준을 고려하여 설치하여야 한다.
 
-{% embed url="https://hyundai-robotics.gitbook.io/rules-on-occupational-safety-and-health-standards/" %}
+<embed src="https://hrbook-asoe72.web.app/#/view/rules-on-occupational-safety-and-health-standards/korean/README">
+
 
 
 
