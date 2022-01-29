@@ -1,0 +1,132 @@
+{
+  "name": "",
+  "isOrdered": true,
+  "folders": {
+    "about-this-manual": {
+      "name": "about-this-manual",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "appendices": {
+      "name": "appendices",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "conditional-setting": {
+      "name": "conditional-setting",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "menu": {
+      "name": "menu",
+      "isOrdered": true,
+      "folders": {
+        "file-manager": {
+          "name": "file-manager",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        },
+        "program-conversion": {
+          "name": "program-conversion",
+          "isOrdered": true,
+          "folders": {
+            "step-copy": {
+              "name": "step-copy",
+              "isOrdered": true,
+              "folders": {},
+              "files": {}
+            }
+          },
+          "files": {
+            "README": 0,
+            "mirror-image": 1,
+            "rec-condition": 2,
+            "rec-conversion": 3,
+            "rec-crdsys": 4,
+            "rec-position": 5,
+            "rec-speed": 6
+          }
+        },
+        "system-diagnosis": {
+          "name": "system-diagnosis",
+          "isOrdered": true,
+          "folders": {},
+          "files": {}
+        }
+      },
+      "files": {
+        "menu-usage": 0,
+        "date-time-setting": 1,
+        "README": 2
+      }
+    },
+    "monitoring": {
+      "name": "monitoring",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "operation": {
+      "name": "operation",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "programming": {
+      "name": "programming",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "property": {
+      "name": "property",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "r-code": {
+      "name": "r-code",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "robot-system": {
+      "name": "robot-system",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "setting": {
+      "name": "setting",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "_backup": {
+      "name": "_backup",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    },
+    "_img": {
+      "name": "_img",
+      "isOrdered": true,
+      "folders": {},
+      "files": {}
+    }
+  },
+  "files": {
+    "operation": 0,
+    "menu": 1,
+    "programming": 2,
+    "property": 3,
+    "quality-assurance": 4,
+    "README": 5,
+    "robot-language": 6,
+    "SUMMARY": 7
+  }
+}
