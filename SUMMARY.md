@@ -186,7 +186,7 @@
       * [7.7.4.4 베이스축 캘리브레이션 후 조작](setting/auto-calibration/base-axis-calibration/operation-after-base-calib.md)
     * [7.7.5 중력방향 자동 설정](setting/auto-calibration/gravity-direction-auto-set.md)
     * [7.7.6 로봇과 툴 캘리브레이션](setting/auto-calibration/robot-tool-calibration.md)
-* [8. R코드](code/README.md)
+* [8. R코드](r-code/README.md)
   * [8.1 R 코드 사용](r-code/use-r-code.md)
   * [8.2 R0 스텝 카운터 리셋](r-code/r0.md)
   * [8.3 R115 프로그램 복사](r-code/r115.md)
