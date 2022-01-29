@@ -209,6 +209,6 @@
   * [9.3 스폿용접 펑션](property/spot-welding-func.md)
 * [10. 로봇 언어](robot-language.md)
 * [별첨](appendices/README.md)
-  * [산업안전보건기준에 관한 규칙 및 안전검사 고시](appendices/rules-occupational-safety.md)
-* [품질 보증](quality-assurance.md)
+  * [산업안전보건기준에 관한 규칙 및 안전검사 고시](https://hrbook-asoe72.web.app/#/view/rules-on-occupational-safety-and-health-standards/korean/README)
+* [품질 보증](https://hrbook-asoe72.web.app/#/view/quality-assurance/korean/README)
 
