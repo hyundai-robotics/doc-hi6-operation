@@ -46,7 +46,7 @@ You can edit the pose variable value in the move statement, including the pose v
             <ul>
               <li>This function can only be used when the coordinate system type is set
                 as a base or robot.</li>
-              <li>For details on the robot configuration, refer to &#x201C;<a href="../../2-operation/2-3-step/step-pose-modify/">2.3.2 Recording and Changing a Step Position</a><b>.</b>&#x201D;</li>
+              <li>For details on the robot configuration, refer to &#x201C;<a href="../../operation/step/step-pose-modify/">2.3.2 Recording and Changing a Step Position</a><b>.</b>&#x201D;</li>
             </ul>
           </li>
         </ul>

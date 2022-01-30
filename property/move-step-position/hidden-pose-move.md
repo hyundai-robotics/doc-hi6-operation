@@ -70,6 +70,6 @@ You can check or modify the position of the current step in the hidden pose move
 {% hint style="info" %}
 * If \[Robot Configuration\] is set as undesignated, the robot will designate a configuration the very closest to the current position of the robot.
 * 
-  For the designation according to the robot configuration, refer to “[2.3.2.2 Base and Robot Recording Coordinates](../../2-operation/2-3-step/step-pose-modify/base-robot-crd-sys.md).”
+  For the designation according to the robot configuration, refer to “[2.3.2.2 Base and Robot Recording Coordinates](../../operation/step/step-pose-modify/base-robot-crd-sys.md).”
 {% endhint %}
 

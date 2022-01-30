@@ -11,14 +11,16 @@ To set the execution unit for the step forward/backward operation, touch the \[r
 ![](../../.gitbook/assets/image%20%28303%29.png)
 
 * **\[cmd\]:** Will execute the command line by line
-* **\[step\]:** Will execute step by step  ****
-* **\[end\]:** Will execute up to the end statement  ****
+* **\[step\]:** Will execute step by step
+  ****
+* **\[end\]:** Will execute up to the end statement
+  ****
 
 
 
-When the execution unit is set as cmd or step, the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing back in automatic mode.
+When the execution unit is set as cmd or step, the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing b/n automatic mode.
 
-When you set the execution unit as cmd or step and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to “[2.3.1.4 Accuracy](../2-3-step/step-cmd-param/accuracy.md).”
+When you set the execution unit as cmd or step and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to “[2.3.1.4 Accuracy](../step/step-cmd-param/accuracy.md).”
 
 ![Figure 11 Playback Forward/Backward Path When cmd/step Setting is Performed](../../.gitbook/assets/image%20%28312%29.png)
 
@@ -30,7 +32,8 @@ When the robot stops at cornering and then executes the forward operation, the r
 
 ![Figure 13 Example of the Robot Path Change During Step Forward/Backward Operation](../../.gitbook/assets/image%20%28333%29.png)
 
-You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the \[run to\] button on the left side of the Hi6 teach pendant screen, set the speed value and function execution option in the setting window.
+
+You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the \[run to\] button on the left side of the Hi6 teach pendant screen, set the speed value and function execution option in the setting window.
 
 
 

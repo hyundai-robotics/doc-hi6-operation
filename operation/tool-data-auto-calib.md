@@ -15,6 +15,6 @@ After determining the axis origin and tool length through automatic calibration,
 ![](../.gitbook/assets/image%20%28322%29.png)
 
 {% hint style="info" %}
-For details on this function, refer to “[7.4.1 Tool Data](../7-setting/7-4-robot-parameter/tool-data/).”
+For details on this function, refer to “[7.4.1 Tool Data](../setting/robot-parameter/tool-data/).”
 {% endhint %}
 

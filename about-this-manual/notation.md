@@ -38,12 +38,3 @@ In this section are some helpful tips or additional information that could be us
 {% hint style="info" %}
 When the ![](../.gitbook/assets/eng-mode%20%281%29.png)icon blinks in the status bar, it means that you are in engineer mode.
 {% endhint %}
-
-
-
-
-
-### 
-
-
-

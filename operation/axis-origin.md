@@ -19,7 +19,8 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 ![](../.gitbook/assets/image%20%28314%29.png)
 
-3.	Press the &lt;motor&gt; key on the teach pendant, and then the motor lamp will blink.
+
+3.	Press the &lt;motor&gt; key on the teach pendant, and then the motor lamp will blink.
 
 * If the motor is not turned on, check the error message on the log bar and resolve the trouble.
 
@@ -31,7 +32,8 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 ![](../.gitbook/assets/image%20%28316%29.png)
 
-7.	Change the robot’s posture and repeat the above steps 5–6 more than four times.
+
+7.	Change the robot’s posture and repeat the above steps 5–6 more than four times.
 
 * Change the robot’s posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
 
@@ -39,13 +41,14 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 ![](../.gitbook/assets/image%20%28324%29.png)
 
-9.	Set the program number, tool number, and step position error allowable range created for the automatic calibration, and then touch the \[Execute\] button. Then the selected axis origin and tool length will be set.
+
+9.	Set the program number, tool number, and step position error allowable range created for the automatic calibration, and then touch the \[Execute\] button. Then the selected axis origin and tool length will be set.
 
 ![](../.gitbook/assets/image%20%28330%29.png)
 
-* You should select Tool Length in the \[Optimization Selection\] option, starting from the automatic calibration of the second tool, when you use multiple tools. If you select Axis Origin and Tool Length, the previously set tool information will not match.
+* You should select Tool Length in the \[Optimization Selection\] option, starting from the au/atic ca/tion of the second tool, when you use multiple tools. If you select Axis Origin and Tool Length, the previously set tool information will not match.
 
 {% hint style="info" %}
-For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../7-setting/7-7-auto-calibration/axis-origin-tool-length-optimization.md).”
+For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../setting/auto-calibration/axis-origin-tool-length-optimization.md).”
 {% endhint %}
 

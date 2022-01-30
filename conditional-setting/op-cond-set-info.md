@@ -8,7 +8,7 @@
 
   * Continuous: The job program will operate continuously and repeatedly. If there is an external stop operation, the robot will stop.
 * 
-  \[2: Step FWD/BWD maximum speed\]: You can set the speed limit for a step forward/backward. For details on this option, refer to “[2.1 Manual Operation](../2-operation/2-1-manual-operation/).”
+  \[2: Step FWD/BWD maximum speed\]: You can set the speed limit for a step forward/backward. For details on this option, refer to “[2.1 Manual Operation](../operation/manual-operation/).”
 
 * 
   \[3: Function execution during Step FWD\]: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
@@ -38,7 +38,8 @@ While in the step backward operation, only the input wait signal function will b
 * 
   \[6: Playback speed rate\]: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot’s moving speed against the speed recorded in the step in batch.
 
-
+
+
 
 {% hint style="info" %}
 If a low-speed command is inputted through an external input during automatic operation, the automatic operation speed ratio will not be applied, but the manual maximum speed \(250 mm/s\) will be applied.
@@ -50,10 +51,11 @@ If a low-speed command is inputted through an external input during automatic op
   * 
     Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../.gitbook/assets/bt-st0s.png)\).
 
-
+
+
 
 {% hint style="info" %}
-If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to “[7.3.6.2 Stationary Tool Coordinate System](../7-setting/7-3-control-parameter/cordsys-reg/stationary-tool-crdsys.md).”
+If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to “[7.3.6.2 Stationary Tool Coordinate System](../setting/control-parameter/cordsys-reg/stationary-tool-crdsys.md).”
 {% endhint %}
 
 * \[9: Select user Coordinate System Designation\]: You can set the user coordinate system number \(0–10\) for Cartesian operation during manual jog operation. Then, the robot will operate based on the Cartesian coordinate system in the directions of X, Y, and Z axes of the designated user coordinate system, and the coordinate values of the user coordinate system selected during the monitoring of the pose will be displayed as X, Y, and Z coordinate values of the front end of the tool.

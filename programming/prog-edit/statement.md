@@ -14,7 +14,7 @@ A statement is largely divided into a command and a parameter, which is an addit
 | ![](../../.gitbook/assets/c2.png)  | Command | ![](../../.gitbook/assets/c4.png)  | Comment |
 
 {% hint style="info" %}
-For details on parameters, refer to “[2.3.1 Step Statement Parameters](../../2-operation/2-3-step/step-cmd-param/).”
+For details on parameters, refer to “[2.3.1 Step Statement Parameters](../../operation/step/step-cmd-param/).”
 {% endhint %}
 
 When you input a statement, basic setting values will be automatically inputted into the default parameters and can be changed. Optional parameters are marked with a symbol \( \_ \), and you can input the parameter values by selecting the parameters. Moreover, parameters that can be inputted will be displayed as buttons on the right side of the screen.

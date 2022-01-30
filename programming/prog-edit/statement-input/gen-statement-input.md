@@ -10,9 +10,4 @@
 
 * In the case of command with multiple parameter forms, a check mark \(![](../../../.gitbook/assets/icon-ok.png)\) will appear on the right. You can check and select the parameter form by touching the command in the list. 
 * 
-  For details on each statement, refer to the “[Hi6 Robot Language Function Manual](https://hyundai-robotics.gitbook.io/hi6-robot-language/v/english/).”
-
-
-
-
-
+  For details on each statement, refer to the “[Hi6 Robot Language Function Manual](https://hrbook-asoe72.web.app/#/view/doc-hrscript/english/README).”
