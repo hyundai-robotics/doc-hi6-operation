@@ -2,4 +2,4 @@
 
 The industrial robot should be installed in consideration of the inspection standards both of the Rules on Occupational Safety and Health Standards and of the Notice for Safety Inspection \(if subject to inspection\).
 
-"[Rules on Occupational Safety and Health Standards](http://localhost:5000/#/view/rules-on-occupational-safety-and-health-standards/english/README)"
+"[Rules on Occupational Safety and Health Standards](https://hrbook-asoe72.web.app/#/view/rules-on-occupational-safety-and-health-standards/english/README)"
