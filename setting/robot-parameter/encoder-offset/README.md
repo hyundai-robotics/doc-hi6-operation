@@ -6,7 +6,7 @@ The current encoder position can be set as the encoder origin position \(positio
 
 2.	Set the encoder offset value by adjusting the position of each axis. The encoder offset value will be recorded as a hex value \(a hexadecimal number\).
 
-![](../../../.gitbook/assets/image%20%28472%29.png)
+![](../../../_assets/image%20%28472%29.png)
 
 
 
@@ -20,7 +20,7 @@ The current encoder position can be set as the encoder origin position \(positio
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Detailed information on the encoder offset value of each axis. You can
         set the calibrated encoder value, current encoder value, and current position
@@ -28,7 +28,7 @@ The current encoder position can be set as the encoder origin position \(positio
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

@@ -6,7 +6,7 @@ By registering the robot’s arbitrary posture as the home position, you can all
 
 2.	Select the home position tab, and then set the use, output signal, axis angle, and range.
 
-![](../../.gitbook/assets/image%20%28466%29.png)
+![](../../_assets/image%20%28466%29.png)
 
 
 
@@ -20,7 +20,7 @@ By registering the robot’s arbitrary posture as the home position, you can all
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Detailed information on the home position selected in the tab. You can
@@ -40,7 +40,7 @@ By registering the robot’s arbitrary posture as the home position, you can all
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

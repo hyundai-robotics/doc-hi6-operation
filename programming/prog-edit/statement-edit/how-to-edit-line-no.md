@@ -8,7 +8,7 @@ The line number can be set to any number between 1 and 9999.
 
 
 
-![](../../../.gitbook/assets/image%20%28352%29.png)
+![](../../../_assets/image%20%28352%29.png)
 
 2.	In the address area, select a line by pressing the &lt;↓/↑&gt; key and then edit the line number.
 
@@ -16,13 +16,14 @@ The line number can be set to any number between 1 and 9999.
 
 
 
-![](../../../.gitbook/assets/image%20%28356%29.png)
+![](../../../_assets/image%20%28356%29.png)
 
 * To delete a line number, press the &lt;BS&gt; key. Then, the address value of the line number will be removed from the input area.
 
-3.	Press the &lt;enter&gt; key to complete the editing. The contents of the change will be saved in the JOB program.
 
-![](../../../.gitbook/assets/image%20%2867%29.png)
+3.	Press the &lt;enter&gt; key to complete the editing. The contents of the change will be saved in the JOB program.
+_assets
+![](../../../_assets/image%20%2867%29.png)
 
 
 

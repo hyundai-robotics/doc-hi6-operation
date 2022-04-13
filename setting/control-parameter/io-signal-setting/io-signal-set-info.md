@@ -7,7 +7,7 @@
 * 
   \[Negative Logic\]: The positive logic and negative logic of the general input/output signal are as follows.
 
-![](../../../.gitbook/assets/image%20%28457%29.png)
+![](../../../_assets/image%20%28457%29.png)
 
 * \[Pulse Count\]: Pulse count. This is the count of pulses. If it is set to a value between 1 and 100, pulse output will occur, and if set to 0, a delayed output will occur.
 * 
@@ -18,13 +18,13 @@
 * 
   Pulse output: Count: 3. On status time: 1 second. Off status time: 0.2 seconds
 
-![](../../../.gitbook/assets/image%20%28468%29.png)
+![](../../../_assets/image%20%28468%29.png)
 
 
 
 * Delayed output: Count: 0. On status time: 1 second. Off status time: 0.5 seconds
 
-![](../../../.gitbook/assets/image%20%28464%29.png)
+![](../../../_assets/image%20%28464%29.png)
 
 * \[Name\]: Name of the general input/output signal
 

@@ -6,7 +6,7 @@ A path that is newly created within the accuracy range \(0–7\) according to th
 
 
 
-![Figure 18 Change of the Path P2 Because of Accuracy](../../../.gitbook/assets/image%20%2853%29.png)
+![Figure 18 Change of the Path P2 Because of Accuracy](../../../_assets/image%20%2853%29.png)
 
 Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression “Accuracy ≤ min \(P1-P2, P2-P3\) / 2” in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
 
@@ -16,7 +16,7 @@ In the case of a robot, the value of the applicable accuracy level will be defin
 
 The figure below shows how the cornering path is created according to the value of the accuracy level. If there is a general 6-axis articulated robot and an additional axis, the value of accuracy level can be set individually for TCP \(tooltip distance\), ORN \(position angle\), and AUX \(additional axis distance\). Because all the values of relevant accuracy levels should be satisfied, the cornering path will be created based on the smallest value among TCP, ORN, and AUX. The cornering path will be created in a constant curve, regardless of the speed variation, while satisfying the convex hull property. However, errors of several millimeters \(mm\) may occur at low speed and high speed because of servo delay.
 
-![Figure 19 Creation of the Cornering Path According to the Value of Accuracy Level](../../../.gitbook/assets/image%20%2879%29.png)
+![Figure 19 Creation of the Cornering Path According to the Value of Accuracy Level](../../../_assets/image%20%2879%29.png)
 
 {% hint style="info" %}
 The mode of creating the cornering path according to the value of accuracy level will be applied to all types of interpolation in the same manner. In the case of P interpolation, the TCP distance accuracy will be applied, but errors may occur.
@@ -24,5 +24,5 @@ The mode of creating the cornering path according to the value of accuracy level
 
 The cornering path will not exceed the convex polygon area because of the convex hull property, as shown below.
 
-![Figure 20 All Points on the Cornering Path within the Convex Polygon Area](../../../.gitbook/assets/image%20%2887%29.png)
+![Figure 20 All Points on the Cornering Path within the Convex Polygon Area](../../../_assets/image%20%2887%29.png)
 

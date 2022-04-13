@@ -6,7 +6,7 @@ You can copy part of a program to another program or the same program. The funct
 
 2.	After setting the step copying option, touch the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%28221%29.png)
+![](../../../_assets/image%20%28221%29.png)
 
 * \[Source program\]/\[Target program\]: You can set the number of the original program of which you want to copy the step and the number of the new program that you want to create by pasting the copied step. If you set the target program number as the same number as the original program number, the original program will be overwritten by and replaced with the new program.
 * \[Start Step\]/\[End Step\]: You can set the range of steps that you want to copy \(Initial setting value: 1/last step\).

@@ -6,7 +6,7 @@ You can edit the pose variable value in the move statement, including the pose v
 
 2.	Check and modify the current pose variable.
 
-![](../../.gitbook/assets/image%20%28547%29.png)
+![](../../_assets/image%20%28547%29.png)
 
 
 
@@ -22,7 +22,7 @@ You can edit the pose variable value in the move statement, including the pose v
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Current pose variable information. You can check and set the name, coordinate
@@ -54,7 +54,7 @@ You can edit the pose variable value in the move statement, including the pose v
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

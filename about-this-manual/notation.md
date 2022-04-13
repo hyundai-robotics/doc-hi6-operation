@@ -6,7 +6,7 @@ In this manual, the following notation conventions and safety instructions are u
 
 Figures are used to help you understand how to operate the product and illustrate what you can see on the screen. For the description of figures, numbers will be marked for the relevant parts, and the corresponding contents will be described as follows.
 
-![](../.gitbook/assets/image%20%28281%29.png)
+![](../_assets/image%20%28281%29.png)
 
 ## GUI \(Graphical User Interface\)
 
@@ -36,5 +36,5 @@ It provides shortcuts to relevant information within the manual. A cross-referen
 In this section are some helpful tips or additional information that could be useful when you use the product as follows.
 
 {% hint style="info" %}
-When the ![](../.gitbook/assets/eng-mode%20%281%29.png)icon blinks in the status bar, it means that you are in engineer mode.
+When the ![](../_assets/eng-mode%20%281%29.png)icon blinks in the status bar, it means that you are in engineer mode.
 {% endhint %}

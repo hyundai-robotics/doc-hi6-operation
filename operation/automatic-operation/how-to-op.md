@@ -8,29 +8,30 @@ It is the method to teach the robot the contents of the work and then make it pe
 
 
 
-![](../../.gitbook/assets/mode-sw-auto.png)
+![](../../_assets/mode-sw-auto.png)
 
 3.	On the status bar of the Hi6 teach pendant screen, check whether the operation mode is set to automatic mode.
 
 
 
-![](../../.gitbook/assets/image%20%28301%29.png)
+![](../../_assets/image%20%28301%29.png)
 
 * If it is set to manual mode, turn the mode switch of the teach pendant to set the operation mode to automatic mode.
 
 4.	Touch the \[Recording Condition\] button on the left side of the initial screen. Then, the condition setting window will appear.
 
-![](../../.gitbook/assets/image%20%28332%29.png)
+![](../../_assets/image%20%28332%29.png)
 
 
 
 5.	Set the program repetition option and robot operation speed.
 
-![](../../.gitbook/assets/image%20%28305%29.png)
+![](../../_assets/image%20%28305%29.png)
 
 * **\[1: Operation Cycle type\]:** You can set whether to repeat the program that will be executed during automatic operation.
 * **\[6: Playback speed rate\]:** You can set the operation speed \(%\) of the robot when a program is played back in automatic mode.  
-  For example, if the operation speed is set to 100, the robot will move at the recorded speed of the step, and if it is set to 50, the robot will move at the ratio of 50% of the recorded speed.  ****
+  For example, if the operation speed is set to 100, the robot will move at the recorded speed of the step, and if it is set to 50, the robot will move at the ratio of 50% of the recorded speed.
+  ****
 
 
 

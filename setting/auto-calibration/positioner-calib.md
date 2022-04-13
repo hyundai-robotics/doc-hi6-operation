@@ -6,7 +6,7 @@ Using the positioner calibration function makes it possible to compensate for th
 
 You can simply set the positioner’s coordinate system by performing the positioner calibration by teaching three points for a 1-axis positioner and five points for a 2-axis positioning.
 
-![Figure 68 1-Axis Positioner \(Left\) / 2-Axis Positioner \(Right\)](../../.gitbook/assets/image%20%28244%29.png)
+![Figure 68 1-Axis Positioner \(Left\) / 2-Axis Positioner \(Right\)](../../_assets/image%20%28244%29.png)
 
 The information on the main functions of the positioner calibration is as follows.
 

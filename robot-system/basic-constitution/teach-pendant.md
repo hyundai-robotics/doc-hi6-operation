@@ -6,7 +6,7 @@ TP600 is a model developed exclusively for the Hi6 controller and provides a lar
 
 
 
-![Figure 5 Front \(Left\) / Back \(Right\) of TP600](../../.gitbook/assets/image%20%2816%29.png)
+![Figure 5 Front \(Left\) / Back \(Right\) of TP600](../../_assets/image%20%2816%29.png)
 
 
 
@@ -21,14 +21,14 @@ TP600 is a model developed exclusively for the Hi6 controller and provides a lar
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Operation key</td>
       <td style="text-align:left">Controls the robot&#x2019;s operation, inputs commands, or selects a menu</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">Display</td>
       <td style="text-align:left">The touch screen enables you to check and change the operation status
@@ -36,40 +36,40 @@ TP600 is a model developed exclusively for the Hi6 controller and provides a lar
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c3.png" alt/>
+        <img src="../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">Mode switch</td>
       <td style="text-align:left">You can turn the mode switch to select the operation mode (
-        <img src="../../.gitbook/assets/sb-manual.png"
+        <img src="../../_assets/sb-manual.png"
         alt/>manual,
-        <img src="../../.gitbook/assets/sb-auto.png" alt/>automatic,
-        <img src="../../.gitbook/assets/sb-remote.png" alt/>remote). If you remove the mode switch from the teach pendant, the selected
+        <img src="../../_assets/sb-auto.png" alt/>automatic,
+        <img src="../../_assets/sb-remote.png" alt/>remote). If you remove the mode switch from the teach pendant, the selected
         operation mode will be locked.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c4.png" alt/>
+        <img src="../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">Emergency stop switch</td>
       <td style="text-align:left">Causes the robot to stop operating when pressed in case of an emergency</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c5.png" alt/>
+        <img src="../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">Jog dial</td>
       <td style="text-align:left">Can be used to set the menu</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c6.png" alt/>
+        <img src="../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">Mounting bracket</td>
       <td style="text-align:left">Holds or hangs the teach pendant to store it</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c7.png" alt/>
+        <img src="../../_assets/c7.png" alt/>
       </td>
       <td style="text-align:left">Enabling switch</td>
       <td style="text-align:left">
@@ -84,14 +84,14 @@ TP600 is a model developed exclusively for the Hi6 controller and provides a lar
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c8.png" alt/>
+        <img src="../../_assets/c8.png" alt/>
       </td>
       <td style="text-align:left">Cable connection connector</td>
       <td style="text-align:left">A connector for connecting the cable to the controller</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c9.png" alt/>
+        <img src="../../_assets/c9.png" alt/>
       </td>
       <td style="text-align:left">USB connection port</td>
       <td style="text-align:left">Can be used to connect a device that can be accessed by USB communication
@@ -102,7 +102,7 @@ TP600 is a model developed exclusively for the Hi6 controller and provides a lar
 
 TP630 is a model to which the same operation key usage environment as that of the existing Hi5a controller is applied, and it provides a screen with a layout similar to that of the TP600.
 
-![Figure 6 Front \(Left\) / Back \(Right\) of TP630](../../.gitbook/assets/image%20%2831%29.png)
+![Figure 6 Front \(Left\) / Back \(Right\) of TP630](../../_assets/image%20%2831%29.png)
 
 #### Operation Keys
 
@@ -119,7 +119,7 @@ TP630 is a model to which the same operation key usage environment as that of th
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-shift.png" alt/>
+        <img src="../../_assets/key-shift.png" alt/>
       </td>
       <td style="text-align:left">shift</td>
       <td style="text-align:left">
@@ -133,7 +133,7 @@ TP630 is a model to which the same operation key usage environment as that of th
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-ctrl.png" alt/>
+        <img src="../../_assets/key-ctrl.png" alt/>
       </td>
       <td style="text-align:left">ctrl</td>
       <td style="text-align:left">Pressing the <b>&lt;ctrl&gt;</b> key together with a specific key will execute
@@ -141,7 +141,7 @@ TP630 is a model to which the same operation key usage environment as that of th
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-up-dn.png" alt/>
+        <img src="../../_assets/key-up-dn.png" alt/>
       </td>
       <td style="text-align:left">up/down</td>
       <td style="text-align:left">Pressing the <b>&lt;&#x2193;/&#x2191;&gt; </b>key in manual mode will make
@@ -149,7 +149,7 @@ TP630 is a model to which the same operation key usage environment as that of th
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-stop.png" alt/>
+        <img src="../../_assets/key-stop.png" alt/>
       </td>
       <td style="text-align:left">stop</td>
       <td style="text-align:left">
@@ -165,7 +165,7 @@ TP630 is a model to which the same operation key usage environment as that of th
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-start.png" alt/>
+        <img src="../../_assets/key-start.png" alt/>
       </td>
       <td style="text-align:left">start</td>
       <td style="text-align:left">Pressing the <b>&lt;start&gt;</b> key will start the automatic operation
@@ -175,7 +175,7 @@ TP630 is a model to which the same operation key usage environment as that of th
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-mot-on.png" alt/>
+        <img src="../../_assets/key-mot-on.png" alt/>
       </td>
       <td style="text-align:left">motor</td>
       <td style="text-align:left">
@@ -190,7 +190,7 @@ TP630 is a model to which the same operation key usage environment as that of th
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-enter.png" alt/>
+        <img src="../../_assets/key-enter.png" alt/>
       </td>
       <td style="text-align:left">enter</td>
       <td style="text-align:left">
@@ -207,7 +207,7 @@ TP630 is a model to which the same operation key usage environment as that of th
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-esc.png" alt/>
+        <img src="../../_assets/key-esc.png" alt/>
       </td>
       <td style="text-align:left">esc</td>
       <td style="text-align:left">
@@ -220,7 +220,7 @@ TP630 is a model to which the same operation key usage environment as that of th
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-left-right.png" alt/>
+        <img src="../../_assets/key-left-right.png" alt/>
       </td>
       <td style="text-align:left">left/right</td>
       <td style="text-align:left">
@@ -233,7 +233,7 @@ TP630 is a model to which the same operation key usage environment as that of th
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-num.png" alt/>
+        <img src="../../_assets/key-num.png" alt/>
       </td>
       <td style="text-align:left">
         <p>number key</p>

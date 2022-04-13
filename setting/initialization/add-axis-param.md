@@ -8,7 +8,7 @@ The method to set parameters such as the specification and configuration of the 
 
 2.	Set the parameters such as the specification and configuration of the additional axes.
 
-![](../../.gitbook/assets/image%20%28499%29.png)
+![](../../_assets/image%20%28499%29.png)
 
 
 
@@ -24,7 +24,7 @@ The method to set parameters such as the specification and configuration of the 
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Detailed parameter setting information of the additional axis. You can
@@ -71,7 +71,7 @@ The method to set parameters such as the specification and configuration of the 
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

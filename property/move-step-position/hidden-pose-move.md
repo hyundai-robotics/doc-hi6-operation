@@ -6,7 +6,7 @@ You can check or modify the position of the current step in the hidden pose move
 
 2.	Check and modify the current step position.
 
-![](../../.gitbook/assets/image%20%28544%29.png)
+![](../../_assets/image%20%28544%29.png)
 
 
 
@@ -20,7 +20,7 @@ You can check or modify the position of the current step in the hidden pose move
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Position information of the current step. You can check and set the name,
@@ -44,7 +44,7 @@ You can check or modify the position of the current step in the hidden pose move
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

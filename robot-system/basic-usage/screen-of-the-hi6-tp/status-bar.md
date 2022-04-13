@@ -1,6 +1,6 @@
 # 1.2.4.1 Status Bar
 
-![Figure 8 Status Bar](../../../.gitbook/assets/image%20%28284%29.png)
+![Figure 8 Status Bar](../../../_assets/image%20%28284%29.png)
 
 <table>
   <thead>
@@ -12,23 +12,23 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">The name of the robot controller platform</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">Displays the status of Ethernet communication between the teach pendant
         and the COM module of the main body of the robot controller (
-        <img src="../../../.gitbook/assets/flag-comm-ok.png"
+        <img src="../../../_assets/flag-comm-ok.png"
         alt/>: Normal /
-        <img src="../../../.gitbook/assets/flag-comm-ng.png" alt/>: No response)</td>
+        <img src="../../../_assets/flag-comm-ng.png" alt/>: No response)</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Displays the operation mode of the robot</p>
@@ -46,24 +46,24 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">Displays the various states of the robot system</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c5.png" alt/>
+        <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">Displays the operation status of the robot (
-        <img src="../../../.gitbook/assets/flag-mot-on.png"
+        <img src="../../../_assets/flag-mot-on.png"
         alt/>: Motor ON /
-        <img src="../../../.gitbook/assets/flag-start.png" alt/>: Robot is playing back /
-        <img src="../../../.gitbook/assets/flag-stop.png"
+        <img src="../../../_assets/flag-start.png" alt/>: Robot is playing back /
+        <img src="../../../_assets/flag-stop.png"
         alt/>: Robot has stopped)</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c6.png" alt/>
+        <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">Displays the model name of the selected robot mechanism</td>
     </tr>

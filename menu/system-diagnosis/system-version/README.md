@@ -4,7 +4,7 @@
 
 2.	Check and manage the system environment \(software version\) information of the robot and controller.
 
-![](../../../.gitbook/assets/image%20%28390%29.png)
+![](../../../_assets/image%20%28390%29.png)
 
 <table>
   <thead>
@@ -16,13 +16,13 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">System environment (software version) information of the robot and controller</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Edit and manage the system environment using the function buttons.</p>

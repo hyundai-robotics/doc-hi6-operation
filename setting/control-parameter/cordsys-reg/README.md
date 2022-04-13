@@ -4,7 +4,7 @@
 
 2.	By selecting the desired menu, you can set the coordinate system with respect to the user coordinate system or the stationary tool coordinate system.
 
-![](../../../.gitbook/assets/image%20%28401%29.png)
+![](../../../_assets/image%20%28401%29.png)
 
 
 

@@ -38,7 +38,7 @@ The collision detection sensitivity can be adjusted using the command in the JOB
         <p>S1 - S2: Detection based on the sensitivity of 100% S3&#x2013;S4: Detection
           based on a sensitivity of 50%</p>
         <p>
-          <img src="../../../.gitbook/assets/coldet-sensitivity.png" alt/>
+          <img src="../../../_assets/coldet-sensitivity.png" alt/>
         </p>
       </td>
     </tr>

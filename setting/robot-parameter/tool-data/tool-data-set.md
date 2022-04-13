@@ -1,12 +1,13 @@
 # 7.4.1.1 Tool Data Setting
 
-The manual method of setting the distance and angle of TCP based on the robot’s R1-axis flange and registering the tool’s weight, center of gravity, and inertia is as follows.
+
+The manual method of setting the distance and angle of TCP based on the robot’s R1-axis flange and registering the tool’s weight, center of gravity, and inertia is as follows.
 
 1.	Touch the \[3: Robot Parameter &gt; 1: Tool Data\] menu.
 
 2.	Set the tool data name, weight, detailed conditions of each axis, and allowable ratio.
-
-![](../../../.gitbook/assets/image%20%28480%29.png)
+_assets
+![](../../../_assets/image%20%28480%29.png)
 
 
 
@@ -21,16 +22,16 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+      <td style="text-align_assets
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Detailed information on the tool data selected from the tool data list.
         You can set the tool data name and description, weight, detailed conditions
         of each axis, and allowable ratio.</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+      <td style="text-align_assets
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -39,8 +40,8 @@
             newly at the previously taught step position, you should first place the
             tool, and then execute the automatic calibration function to create tool
             length and angle newly.
-            <br />
-            <img src="../../../.gitbook/assets/tool-data-auto-calib-en.png" alt/>
+            <br />_assets
+            <img src="../../../_assets/tool-data-auto-calib-en.png" alt/>
             <br />
           </li>
           <li>[Previous Program Number]: You can input the program number taught before
@@ -50,16 +51,16 @@
           <li>[Tool Number to Set]: You can input the tool number to be newly set.</li>
           <li>
             <p>[Angle Calibration]: You can calibrate the angle of the tool.</p>
-            <p>
-              <img src="../../../.gitbook/assets/tool-angle-auto-calib-en.png" alt/>
+            <p>_assets
+              <img src="../../../_assets/tool-angle-auto-calib-en.png" alt/>
             </p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+      <td style="text-align_assets
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

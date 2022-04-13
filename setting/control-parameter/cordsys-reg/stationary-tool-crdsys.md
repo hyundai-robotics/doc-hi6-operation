@@ -4,7 +4,7 @@ A robot tool is a tool attached to the front end of the robot. In general, robot
 
 On the other hand, in the case of a stationary tool, the tool is attached to the outside, not the robot. In this case, the robot handles the workpiece and places it on an externally fixed tool to operate. A typical operation using a stationary tool is the sealing operation. Normally, in the sealing operation, when the external tool discharges a certain amount of solvent required for sealing, the robot holds the workpiece and creates the required trajectory to operate.
 
-![Figure 57 Example of a Sealing Operation](../../../.gitbook/assets/image%20%28399%29.png)
+![Figure 57 Example of a Sealing Operation](../../../_assets/image%20%28399%29.png)
 
 To create the required trajectory, the robot performs linear \(L\) and circular \(C\) interpolations based on the externally attached tool, not based on the tool attached to itself. At this time, the stationary tool interpolation function will be used.
 
@@ -18,7 +18,7 @@ The method to set the stationary tool coordinate system is as follows.
 
 2.	Select the desired tab and register the position of the stationary tool coordinate system. 
 
-![](../../../.gitbook/assets/image%20%28402%29.png)
+![](../../../_assets/image%20%28402%29.png)
 
 
 
@@ -32,14 +32,14 @@ The method to set the stationary tool coordinate system is as follows.
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">You can set a total of four stationary tool coordinate systems (tool 0
         - tool 3) by selecting a tab.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -58,7 +58,7 @@ The method to set the stationary tool coordinate system is as follows.
 
 After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the \[Auto Setting\] button. Then, the current TCP position will be registered.
 
-![Figure 58 Method of Teaching Using the \[Auto Setting\] Button](../../../.gitbook/assets/image%20%28415%29.png)
+![Figure 58 Method of Teaching Using the \[Auto Setting\] Button](../../../_assets/image%20%28415%29.png)
 
 
 
@@ -68,7 +68,7 @@ To perform the recording for the stationary tool interpolation step, you should 
 
 For example, if you register and use the stationary tool coordinate system No. 1, you can create a program as follows.
 
-![Figure 59 Example of Writing a Program When Using the Stationary Tool Coordinate System \#1](../../../.gitbook/assets/image%20%28404%29.png)
+![Figure 59 Example of Writing a Program When Using the Stationary Tool Coordinate System \#1](../../../_assets/image%20%28404%29.png)
 
 {% hint style="info" %}
 In the case of using the stationary servo gun, the stationary tool interpolation function is not required. This is because, in the servo gun welding, the moving path of the workpiece for the stationary servo gun does not need to be formed in a linear line or arc while only the welding point is important.

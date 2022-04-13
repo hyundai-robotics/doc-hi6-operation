@@ -1,6 +1,6 @@
 # 1.2.4.2 Log Bar
 
-![Figure 9 Log Bar](../../../.gitbook/assets/image%20%28287%29.png)
+![Figure 9 Log Bar](../../../_assets/image%20%28287%29.png)
 
 <table>
   <thead>
@@ -12,7 +12,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Displays the date and time information. If you touch the <b>[Menu]</b> button
         &gt; <b>[08: Setting of Date and Time]</b> menu, you can change the date
@@ -21,7 +21,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -40,18 +40,18 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Displays a soft keyboard on the screen. For details on how to use the
           soft keyboard, refer to &#x201C;<b>3.2.4.4 Soft Keyboard.</b>&#x201D;</p>
         <ul>
           <li>If you touch the <b>[</b>
-            <img src="../../../.gitbook/assets/bt-dock-softkb.png"
+            <img src="../../../_assets/bt-dock-softkb.png"
             alt/><b>]</b> button while using the soft keyboard, you can move the keyboard
             to the top of the screen.</li>
           <li>To hide the soft keyboard, touch the <b>[</b>
-            <img src="../../../.gitbook/assets/bt-softkb.png"
+            <img src="../../../_assets/bt-softkb.png"
             alt/><b>]</b> button.</li>
         </ul>
       </td>

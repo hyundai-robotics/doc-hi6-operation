@@ -6,7 +6,7 @@ You can check the history as the execution history and time stamps of the job pr
 
 
 
-![Figure 43 History](../.gitbook/assets/image%20%28439%29.png)
+![Figure 43 History](../_assets/image%20%28439%29.png)
 
 <table>
   <thead>
@@ -18,24 +18,24 @@ You can check the history as the execution history and time stamps of the job pr
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
           <li>[
-            <img src="../.gitbook/assets/bt-refresh.png" alt/>]: You can refresh the execution history.</li>
+            <img src="../_assets/bt-refresh.png" alt/>]: You can refresh the execution history.</li>
           <li>[
-            <img src="../.gitbook/assets/bt-lock.png" alt/>]: You can turn off the notification for a new history. The history will
+            <img src="../_assets/bt-lock.png" alt/>]: You can turn off the notification for a new history. The history will
             not be updated, and the current status will be maintained until the lock
             icon is turned off.</li>
           <li>[
-            <img src="../.gitbook/assets/bt-trash.png" alt/>]: You can clear the history displayed on the screen.</li>
+            <img src="../_assets/bt-trash.png" alt/>]: You can clear the history displayed on the screen.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">This shows the execution history and time stamp of the job program. You
         can check the history of the executed job programs.</td>

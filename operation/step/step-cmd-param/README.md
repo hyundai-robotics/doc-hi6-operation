@@ -8,7 +8,7 @@ The step statement is configured as follows.
 
 
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](../../../_assets/image%20%2877%29.png)
 
 <table>
   <thead>
@@ -21,7 +21,7 @@ The step statement is configured as follows.
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Interpolation</td>
       <td style="text-align:left">
@@ -33,7 +33,7 @@ The step statement is configured as follows.
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">Pose</td>
       <td style="text-align:left">
@@ -45,14 +45,14 @@ The step statement is configured as follows.
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">Speed</td>
       <td style="text-align:left">Operation speed of the robot (Unit: mm/sec, cm/min, %, sec)</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">Accuracy</td>
       <td style="text-align:left">A value of the allowable error (0&#x2013;7) between the current position
@@ -61,14 +61,14 @@ The step statement is configured as follows.
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c5.png" alt/>
+        <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">Tool number</td>
       <td style="text-align:left">Number of the tool in use (0&#x2013;31)</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c6.png" alt/>
+        <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">Stop condition</td>
       <td style="text-align:left">A condition for the robot to stop moving to execute the next command (step
@@ -76,7 +76,7 @@ The step statement is configured as follows.
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c7.png" alt/>
+        <img src="../../../_assets/c7.png" alt/>
       </td>
       <td style="text-align:left">Comment</td>
       <td style="text-align:left">Description of the step</td>

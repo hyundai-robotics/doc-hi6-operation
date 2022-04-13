@@ -4,11 +4,11 @@ Select one or multiple files to copy, move, or delete.
 
 1.	Select a folder in the folder list using the jog dial on the teach pendant. A list of files saved in the selected folder will appear.
 
-![](../../.gitbook/assets/image%20%28366%29.png)
+![](../../_assets/image%20%28366%29.png)
 
 2.	Select the desired file in the file list by touching it.
 
-![](../../.gitbook/assets/image%20%28377%29.png)
+![](../../_assets/image%20%28377%29.png)
 
 * You can select multiple files one by one by touching each file while pressing the &lt;ctrl&gt; key.
 * If you touch two files while pressing the &lt;shift&gt; key, you can select all files between the two files at once.
@@ -25,13 +25,14 @@ Select one or multiple files to copy, move, or delete.
 
 4.	To paste a file into a folder, select the folder using the jog dial and then touch the \[Paste\] button. Then, the file will be pasted to the selected folder.
 
-![](../../.gitbook/assets/image%20%28370%29.png)
+![](../../_assets/image%20%28370%29.png)
 
-If the selected folder has a file with a duplicate name, a duplication notification window will appear. Handle it by setting whether to overwrite it.
 
-![](../../.gitbook/assets/image%20%28376%29.png)
+If the selected folder has a file with a duplicate name, a duplication notification window will appear. Handle it by setting whether to overwrite it.
+_assets
+![](../../_assets/image%20%28376%29.png)
 
 * To delete a file, touch the \[Delete\] button, and then touch the \[ENTER\] button in the confirmation window.
-
-![](../../.gitbook/assets/image%20%28395%29.png)
+_assets
+![](../../_assets/image%20%28395%29.png)
 

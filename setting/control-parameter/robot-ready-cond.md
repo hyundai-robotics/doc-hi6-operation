@@ -6,7 +6,7 @@ When the robot ready is completed, set the conditions for signal output in the \
 
 2.	After setting the robot ready condition, touch the \[OK\] button.
 
-![](../../.gitbook/assets/image%20%28467%29.png)
+![](../../_assets/image%20%28467%29.png)
 
 
 

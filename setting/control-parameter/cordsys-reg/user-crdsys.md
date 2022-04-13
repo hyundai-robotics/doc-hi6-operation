@@ -4,9 +4,10 @@ The user coordinate system is a coordinate system that is to be set at a positio
 
 Teach three reference steps by following the procedures below.
 
-![Figure 56 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../.gitbook/assets/image%20%28427%29.png)
+![Figure 56 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image%20%28427%29.png)
 
-1.	Define the origin of the user coordinate system: Teach an arbitrary point.
+
+1.	Define the origin of the user coordinate system: Teach an arbitrary point.
 
 2.	Define the X axis in the user coordinate system: Teach an arbitrary point on the X-axis line in a way that the arbitrary point can be 200 mm as distant as possible from the origin.
 
@@ -32,8 +33,8 @@ The method to register the user coordinate system by designating the taught prog
 1.	Touch the \[2: Control Parameter &gt; 6: Coordinate System Registration &gt; 1: User Coordinate System\] menu.
 
 2.	Set the user coordinate system name and program number, and the distance and angle from each axis origin.
-
-![](../../../.gitbook/assets/image%20%28442%29.png)
+_assets
+![](../../../_assets/image%20%28442%29.png)
 
 <table>
   <thead>
@@ -44,16 +45,16 @@ The method to register the user coordinate system by designating the taught prog
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+      <td style="text-align_assets
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Detailed information on the coordinate system selected from the user coordinate
         system list. You can set the coordinate system name and description, the
         taught program number, and the distance and angle from each axis origin.</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+      <td style="text-align_assets
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

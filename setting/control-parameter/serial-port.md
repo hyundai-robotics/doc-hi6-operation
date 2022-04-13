@@ -6,7 +6,7 @@ You can set the information required for serial port communication.
 
 2.	Set the parameters for each serial port.
 
-![](../../.gitbook/assets/image%20%28412%29.png)
+![](../../_assets/image%20%28412%29.png)
 
 
 
@@ -20,14 +20,14 @@ You can set the information required for serial port communication.
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Detailed information on the port selected from the serial port list. You
         can set the port name and parameter values.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

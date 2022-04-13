@@ -4,7 +4,7 @@ Touch \[public Output\] in the panel selection window. Then, the public output s
 
 You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
 
-![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../.gitbook/assets/image%20%28444%29.png)
+![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../_assets/image%20%28444%29.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@ You can check the status of public output signals that are outputted through the
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Displays the status of general output signals</p>
@@ -29,7 +29,7 @@ You can check the status of public output signals that are outputted through the
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -56,7 +56,7 @@ You can check the status of public output signals that are outputted through the
   The flow of the output signals is as follows.
 {% endhint %}
 
-![](../.gitbook/assets/image%20%28409%29.png)
+![](../_assets/image%20%28409%29.png)
 
 #### 
 
@@ -68,17 +68,18 @@ You can select the desired signal and force it to be outputted.
 
 2.	Touch a signal to select it in the signal window, and then touch the \[Manual Output\] button.
 
-![](../.gitbook/assets/image%20%28437%29.png)
+![](../_assets/image%20%28437%29.png)
 
-3.	After checking the output conditions in the manual output confirmation window, touch the \[ENTER\] button.
 
-![](../.gitbook/assets/image%20%28463%29.png)
+3.	After checking the output conditions in the manual output confirmation window, touch the \[ENTER\] button.
+_assets
+![](../_assets/image%20%28463%29.png)
 
 | FbN | doN | =1/0 |
 | :---: | :---: | :---: |
 | N: Number of the FB block to monitor | N: Number of the signal to output | Output status \(1: Output, 0: No output\) |
 
 4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
-
-![](../.gitbook/assets/image%20%28426%29.png)
+_assets
+![](../_assets/image%20%28426%29.png)
 

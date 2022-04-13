@@ -8,7 +8,7 @@ The data is in binary format and will be determined by the input on or off. For 
 
 2.	Set the name, signals, and strobe of the input signal group.
 
-![](../../../.gitbook/assets/image%20%28414%29.png)
+![](../../../_assets/image%20%28414%29.png)
 
 
 
@@ -24,7 +24,7 @@ The data is in binary format and will be determined by the input on or off. For 
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Detailed information on the group selected from the input signal group
@@ -41,7 +41,7 @@ The data is in binary format and will be determined by the input on or off. For 
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -63,7 +63,7 @@ The data is in binary format and will be determined by the input on or off. For 
 
 For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
 
-![Figure 55 Example of Job Program Execution](../../../.gitbook/assets/image%20%28407%29.png)
+![Figure 55 Example of Job Program Execution](../../../_assets/image%20%28407%29.png)
 
 After starting from S1 toward S2, the robot executes the wait statement. If the wait condition is satisfied before the accuracy of S2 is ok, the robot will move to the path in red. If this is not the case, the robot will wait until the wait condition is satisfied.
 

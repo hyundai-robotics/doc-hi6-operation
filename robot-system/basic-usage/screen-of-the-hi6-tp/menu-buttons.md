@@ -14,7 +14,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Mechanism: You can check and set the selected mechanism.</p>
@@ -26,10 +26,10 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/rbt-bar-en.png" alt/>
+        <img src="../../../_assets/rbt-bar-en.png" alt/>
       </td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Coordinate System: You can check and set the reference coordinate system
@@ -40,19 +40,19 @@
           the right side of the screen.</p>
         <ul>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-joint-en.png" alt/>Joint Coordinate System: The name of each joint will be displayed on the
+            <img src="../../../_assets/bt-crd-joint-en.png" alt/>Joint Coordinate System: The name of each joint will be displayed on the
             jog bar. If you touch the [-/+] button on the right side of the joint name,
             you can move the corresponding joint.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-robot-en.png" alt/>Robot Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
+            <img src="../../../_assets/bt-crd-robot-en.png" alt/>Robot Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
             be displayed on the jog bar. Based on the robot coordinate system, the
             tooltip (TCP, Tool Center Point) of the robot can be moved or rotated.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-user.png" alt/>User Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
+            <img src="../../../_assets/bt-crd-user.png" alt/>User Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
             be displayed on the jog bar. The tooltip of the robot can be moved and
             rotated based on the user coordinate system.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-tool (1) (1) (2).png" alt/>Tool Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
+            <img src="../../../_assets/bt-crd-tool (1) (1) (2).png" alt/>Tool Coordinate System: X, Y, Z, RX, RY, RZ, and additional axes will
             be displayed on the jog bar. The tooltip of the robot can be moved and
             rotated based on the tool coordinate system.</li>
         </ul>
@@ -61,7 +61,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Record: You can input the move statement in the JOB program.</p>
@@ -76,7 +76,7 @@
             statement can be edited later.</li>
         </ul>
         <p>
-          <img src="../../../.gitbook/assets/bt-pos-mod-en.png" alt/>(In combination with the &lt;shift&gt; key) Position Correction: Apply
+          <img src="../../../_assets/bt-pos-mod-en.png" alt/>(In combination with the &lt;shift&gt; key) Position Correction: Apply
           the robot&#x2019;s current posture as the target pose of the step in the
           JOB program.</p>
       </td>
@@ -84,7 +84,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Command Inputting: Input the desired command.</p>
@@ -93,21 +93,21 @@
           current cursor position. For details on inputting the commands, refer to
           &#x201C;<b>3.2.2 Statement Inputting.</b>&#x201D;</p>
         <p>
-          <img src="../../../.gitbook/assets/bt-delete-en.png" alt/>(In combination with the &lt;shift&gt; key)</p>
+          <img src="../../../_assets/bt-delete-en.png" alt/>(In combination with the &lt;shift&gt; key)</p>
         <p>Deletion: You can delete the statement in the JOB program.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c5.png" alt/>
+        <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Attribute: You can check the attributes of a statement.</p>
         <p>After selecting a statement by touching it, touch the <b>[Attribute</b>]
           button. Then, the attribute window for the statement will appear.</p>
         <p>
-          <img src="../../../.gitbook/assets/bt-block-edit-en.png" alt/>(In combination with the &lt;shift&gt; key) Block Editing: You can enter
+          <img src="../../../_assets/bt-block-edit-en.png" alt/>(In combination with the &lt;shift&gt; key) Block Editing: You can enter
           the block editing mode where you can perform copying, cutting, and pasting
           in the JOB program. For details on block editing, refer to &#x201C;3.2.4.5
           Block Editing Mode.&#x201D;</p>
@@ -116,14 +116,14 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c6.png" alt/>
+        <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">[Menu]: You can use the service function menus in the program.</td>
     </tr>
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c7.png" alt/>
+        <img src="../../../_assets/c7.png" alt/>
       </td>
       <td style="text-align:left">[Set up]: You can set the user environment using the system menu of the
         program.</td>
@@ -131,7 +131,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c8.png" alt/>
+        <img src="../../../_assets/c8.png" alt/>
       </td>
       <td style="text-align:left">Favorites: You can quickly execute predesignated functions using code
         numbers. Touch the <b>[Favorites]</b> button, input the code number, and
@@ -140,7 +140,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c9.png" alt/>
+        <img src="../../../_assets/c9.png" alt/>
       </td>
       <td style="text-align:left">
         <p>User Key: You can use the function assigned, as a button, to the user

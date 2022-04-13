@@ -4,7 +4,7 @@ In the panel selection window, touch \[Program reserve\]. Then, the scheduled pr
 
 When programs are scheduled through external signals and executed in the scheduled order, you can check and change the status in the list of scheduled programs.
 
-![Figure 50 Program reserve](../.gitbook/assets/image%20%28433%29.png)
+![Figure 50 Program reserve](../_assets/image%20%28433%29.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@ When programs are scheduled through external signals and executed in the schedul
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>A list of scheduled programs. You can schedule 1&#x2013;20 programs.</p>
@@ -30,7 +30,7 @@ When programs are scheduled through external signals and executed in the schedul
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

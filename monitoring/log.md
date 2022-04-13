@@ -4,7 +4,7 @@ Touch \[Log\] in the panel selection window. Then, the log window will appear.
 
 You can check the logs of errors, warnings, notification, operations, operations by the user, I/O, and executions.
 
-![Figure 42 Log](../.gitbook/assets/image%20%28458%29.png)
+![Figure 42 Log](../_assets/image%20%28458%29.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@ You can check the logs of errors, warnings, notification, operations, operations
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>You can set the type of log to be displayed in the list. If you touch
@@ -48,7 +48,7 @@ You can check the logs of errors, warnings, notification, operations, operations
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -57,23 +57,23 @@ You can check the logs of errors, warnings, notification, operations, operations
             the number of logs, the latest logs as many as that number will be recalled
             and displayed on the screen.</li>
           <li>[
-            <img src="../.gitbook/assets/bt-menu.png" alt/>]: You can open the pop-up menu.</li>
+            <img src="../_assets/bt-menu.png" alt/>]: You can open the pop-up menu.</li>
           <li>Save as log file: You can save the latest logs of the memory buffer as
             a file.</li>
           <li>Clear log file: You can clear the logs in memory buffer and delete all
             the log files. (Deleted files cannot be restored.)</li>
           <li>[
-            <img src="../.gitbook/assets/bt-lock.png" alt/>]: You can turn off the notification for a new log. The log will not be
+            <img src="../_assets/bt-lock.png" alt/>]: You can turn off the notification for a new log. The log will not be
             updated, and the current status will be maintained until the lock icon
             is turned off.</li>
           <li>[
-            <img src="../.gitbook/assets/bt-trash.png" alt/>]: You can delete the log displayed on the screen.</li>
+            <img src="../_assets/bt-trash.png" alt/>]: You can delete the log displayed on the screen.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c3.png" alt/>
+        <img src="../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">A list of the logs of selected types. You can check the detailed information
         of the logs for individual types.</td>

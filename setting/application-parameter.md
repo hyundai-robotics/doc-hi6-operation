@@ -4,7 +4,7 @@
 
 2.	Select the desired menu, and then check and set various parameters for the use of the application functions of the robot.
 
-![](../.gitbook/assets/image%20%28483%29.png)
+![](../_assets/image%20%28483%29.png)
 
 
 

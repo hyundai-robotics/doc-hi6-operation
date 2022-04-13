@@ -8,11 +8,11 @@ Interpolation refers to the interpolated path between steps, and the interpolati
 
 
 
-![Figure 14 Example of the Tooltip Path in P-PTP Interpolation](../../../.gitbook/assets/image%20%2873%29.png)
+![Figure 14 Example of the Tooltip Path in P-PTP Interpolation](../../../_assets/image%20%2873%29.png)
 
 * L-Linear interpolation It moves in a linear line between two steps in Cartesian space. It is used for a case in which a linear path is needed, such as an arc welding section. The movement will take place while the wrist posture changes automatically as follows.
 
-![Figure 15 Example of L-Linear Interpolation](../../../.gitbook/assets/image%20%2848%29.png)
+![Figure 15 Example of L-Linear Interpolation](../../../_assets/image%20%2848%29.png)
 
 During the linear interpolation, under certain conditions, the robot cannot automatically change the wrist posture, and such a condition is called the singular posture.
 
@@ -42,13 +42,13 @@ Singular postures in which the posture interpolation cannot be performed are as 
 
 
 
-![Figure 16 Example 1 of C-Circular Interpolation](../../../.gitbook/assets/image%20%28338%29.png)
+![Figure 16 Example 1 of C-Circular Interpolation](../../../_assets/image%20%28338%29.png)
 
 If you use the criteria of selecting three points required for determining the circle, you can create a program through the double registration of the same point, even in the case of a continuous arc.
 
 In this way, by determining the interpolation method of the step in consideration of the path to move along and using the same point dual registration function, you can create a program as desired.
 
-![Figure 17 Example 2 of C-Circular Interpolation](../../../.gitbook/assets/image%20%28302%29.png)
+![Figure 17 Example 2 of C-Circular Interpolation](../../../_assets/image%20%28302%29.png)
 
 * Stationary tool interpolation
 

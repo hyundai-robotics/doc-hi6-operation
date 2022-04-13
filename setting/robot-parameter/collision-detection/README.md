@@ -21,7 +21,7 @@ The following shows how to set the collision detection function.
 
 2.	Set whether to use the collision detection function, and set the sensitivity, etc.
 
-![](../../../.gitbook/assets/image%20%28481%29.png)
+![](../../../_assets/image%20%28481%29.png)
 
 
 
@@ -35,7 +35,7 @@ The following shows how to set the collision detection function.
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>This is information on the use options of the collision detection function.
@@ -58,7 +58,7 @@ The following shows how to set the collision detection function.
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

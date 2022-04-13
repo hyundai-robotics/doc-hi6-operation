@@ -6,7 +6,7 @@ By assigning the output signal of the controller to the signal keys \(&lt;shift+
 
 2.	Set the label, signal, and function to the manual output keys \(&lt;F1 - F8&gt;\) of the teach pendant, and then touch the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%28469%29.png)
+![](../../../_assets/image%20%28469%29.png)
 
 
 

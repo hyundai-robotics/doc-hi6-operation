@@ -6,7 +6,7 @@ You can limit the operation by designating the moving distance. This is useful w
 
 2.	After setting the distance and angle for each jog inching level, touch the \[OK\] button.
 
-![](../../../.gitbook/assets/image%20%28487%29.png)
+![](../../../_assets/image%20%28487%29.png)
 
 
 

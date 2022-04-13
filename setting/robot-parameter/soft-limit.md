@@ -6,7 +6,7 @@ You can adjust the operation range of each axis according to the robot’s use e
 
 2.	Set the operation range of each axis.
 
-![](../../.gitbook/assets/image%20%28486%29.png)
+![](../../_assets/image%20%28486%29.png)
 
 
 
@@ -20,7 +20,7 @@ You can adjust the operation range of each axis according to the robot’s use e
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Detailed information on the operation range of each axis. You can set
         the minimum and maximum operation ranges of an axis and the current axis
@@ -28,7 +28,7 @@ You can adjust the operation range of each axis according to the robot’s use e
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

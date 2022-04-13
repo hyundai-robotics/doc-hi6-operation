@@ -6,7 +6,7 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 
 2.	Set the tooltip position \(TCP\) and posture for each accuracy level.
 
-![](../../.gitbook/assets/image%20%28479%29.png)
+![](../../_assets/image%20%28479%29.png)
 
 
 
@@ -20,7 +20,7 @@ You can set the detailed conditions of the accuracy level, which refers to the a
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Detailed information for each level. You can set the tooltip position
@@ -43,7 +43,7 @@ You can set the detailed conditions of the accuracy level, which refers to the a
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

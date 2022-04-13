@@ -6,11 +6,11 @@ In the statement area, you can check and edit statements by switching the status
 
 * Statement cursor Status: You can check a statement while the entire line of the statement is selected.
 
-![](../../../.gitbook/assets/image%20%2841%29.png)
+![](../../../_assets/image%20%2841%29.png)
 
 * Word cursor Status: You can check and edit a statement while the individual parameters of the statement are selected.
 
-![](../../../.gitbook/assets/image%20%2864%29.png)
+![](../../../_assets/image%20%2864%29.png)
 
 
 

@@ -2,7 +2,7 @@
 
 The work area is an area where you can perform various tasks, such as editing JOB programs and checking the monitoring information.
 
-![Figure 10 Layout of the Work Area](../../../.gitbook/assets/image%20%28309%29.png)
+![Figure 10 Layout of the Work Area](../../../_assets/image%20%28309%29.png)
 
 <table>
   <thead>
@@ -14,7 +14,7 @@ The work area is an area where you can perform various tasks, such as editing JO
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>The work area consists of two-panel stacks: top and bottom.</p>
@@ -28,7 +28,7 @@ The work area is an area where you can perform various tasks, such as editing JO
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Panel stack. The names of all currently open panels are displayed, and
@@ -46,7 +46,7 @@ The work area is an area where you can perform various tasks, such as editing JO
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

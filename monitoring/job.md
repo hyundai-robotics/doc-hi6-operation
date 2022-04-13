@@ -2,7 +2,7 @@
 
 Touch \[JOB\] in the panel selection window. Then, the JOB program window will appear. You can check a program, and then edit or delete it or create one.
 
-![Figure 33 JOB Program](../.gitbook/assets/image%20%28397%29.png)
+![Figure 33 JOB Program](../_assets/image%20%28397%29.png)
 
 
 
@@ -16,14 +16,14 @@ Touch \[JOB\] in the panel selection window. Then, the JOB program window will a
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Displays the basic information and statement of a program. You can check
         and edit the details of the statement.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

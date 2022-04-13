@@ -4,11 +4,11 @@ When a statement is inputted using the \[Record\] button, the current posture of
 
 1.	Touch the \[Rec.cond.\] button on the left side of the Hi6 teach pendant screen. Then, the recording condition setting window will appear.
 
-![](../../../.gitbook/assets/image%20%2856%29.png)
+![](../../../_assets/image%20%2856%29.png)
 
-2.	After setting the interpolation, moving speed and unit, accuracy, and tool number, touch the \[OK\] button \(![](../../../.gitbook/assets/icon-ok.png)\).
+2.	After setting the interpolation, moving speed and unit, accuracy, and tool number, touch the \[OK\] button \(![](../../../_assets/icon-ok.png)\).
 
-![](../../../.gitbook/assets/image%20%28348%29.png)
+![](../../../_assets/image%20%28348%29.png)
 
 * When position recording is performed, the move statement will be recorded based on the condition set in the recording condition.
 * In the mechanism set, you can designate the configuration of the mechanism to be stored when position recording is performed.
@@ -17,7 +17,7 @@ If you briefly touch the \[mechsets\] button, the predefined mechanism set numbe
 
 If you touch and hold the \[mechsets\] button, you can modify the existing set configuration in the Mechanism Set setting window, or add or delete a mechanism set by using the \[+\] or \[-\] button.
 
-![](../../../.gitbook/assets/image%20%28351%29.png)
+![](../../../_assets/image%20%28351%29.png)
 
 
 

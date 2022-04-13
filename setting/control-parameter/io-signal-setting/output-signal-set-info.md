@@ -2,7 +2,7 @@
 
 #### Remote mode
 
-With the mode switch of the teach pendant selected to remote \(![](../../../.gitbook/assets/sb-remote.png)\), the signal set in the input signal assign section should be inputted in the state of on in order to activate the remote state. This function is used to output the state to the outside. 
+With the mode switch of the teach pendant selected to remote \(![](../../../_assets/sb-remote.png)\), the signal set in the input signal assign section should be inputted in the state of on in order to activate the remote state. This function is used to output the state to the outside. 
 
 
 
@@ -110,7 +110,7 @@ Error/Warning output bit, Error/Warning output selection and Error/Warning outpu
 
 For the error/warning output bit, error/warning output strobe, overall abnormality, operation error, and warning occurrence signals, refer to the following sequence.
 
-![Figure 53 16Bit Output](../../../.gitbook/assets/image%20%28456%29.png)
+![Figure 53 16Bit Output](../../../_assets/image%20%28456%29.png)
 
 #### External reset ack
 

@@ -6,7 +6,7 @@ You can set various conditions of the controller and perform necessary operation
 
 2.	After setting the control environment conditions of the controller, touch the \[OK\] button.
 
-![](../../.gitbook/assets/image%20%28471%29.png)
+![](../../_assets/image%20%28471%29.png)
 
 * \[1: Power Saving Function\]: You can set whether to use the power saving function and set the wait time.
 

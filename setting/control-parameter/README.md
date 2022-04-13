@@ -6,5 +6,5 @@ You can set various conditions of the controller and set the input/output signal
 
 2.	Select the desired menu and check and set various conditions of the controller.
 
-![](../../.gitbook/assets/image%20%28447%29.png)
+![](../../_assets/image%20%28447%29.png)
 

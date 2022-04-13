@@ -2,11 +2,11 @@
 
 1.	In manual or automatic mode, touch the \[Set up\] button on the right side of the initial screen. Then, the program’s settings menus will be displayed.
 
-![](../.gitbook/assets/image%20%28424%29.png)
+![](../_assets/image%20%28424%29.png)
 
 2.	You can check and set the user information and various parameter information by selecting the desired menus.
 
-![](../.gitbook/assets/image%20%28410%29.png)
+![](../_assets/image%20%28410%29.png)
 
 * \[1: User Environment\]: You can check and set various user conditions.
 * 
