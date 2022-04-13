@@ -5,7 +5,7 @@
 1. \[2: 제어 파라미터 &gt; 3: 시리얼 포트\] 메뉴를 터치하십시오.
 2. 시리얼 포트별 파라미터를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28204%29.png)
+![](../../_assets/image%20%28204%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">시리얼 포트 목록에서
         선택한 포트의 상세 정보입니다.
@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

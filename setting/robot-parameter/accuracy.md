@@ -5,7 +5,7 @@
 1. \[3: 로봇 파라미터 &gt; 6: Accuracy\] 메뉴를 터치하십시오.
 2. Accuracy 레벨별 툴 끝 위치\(TCP\)와 자세를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28215%29.png)
+![](../../_assets/image%20%28215%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Accuracy 레벨별 상세 정보입니다.
@@ -55,7 +55,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

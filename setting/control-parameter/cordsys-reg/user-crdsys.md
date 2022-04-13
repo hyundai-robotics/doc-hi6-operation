@@ -4,7 +4,7 @@
 
 다음 절차에 따라 3개의 기준 스텝을 티칭하십시오.
 
-![그림 57 사용자 좌표계 정의를 위한 3개의 기준 스텝 티칭 방법](../../../.gitbook/assets/image%20%28197%29.png)
+![그림 57 사용자 좌표계 정의를 위한 3개의 기준 스텝 티칭 방법](../../../_assets/image%20%28197%29.png)
 
 1. 사용자 좌표계의 원점 정의: 임의의 한 점을 티칭하십시오.
 2. 사용자 좌표계의 X축 정의: 가능한 한 원점과의 거리가 200 ㎜ 이상 떨어진 지점의 X축 선상에 임의의 한 점을 티칭하십시오.
@@ -28,7 +28,7 @@
 1. \[2: 제어 파라미터 &gt; 6: 좌표계 등록 &gt; 1: 사용자 좌표계\] 메뉴를 터치하십시오.
 2. 사용자 좌표계 이름과 프로그램 번호, 축별 원점과의 거리 및 각도를 설정하십시오.
 
-![](../../../.gitbook/assets/image%20%28153%29.png)
+![](../../../_assets/image%20%28153%29.png)
 
 <table>
   <thead>
@@ -40,7 +40,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">사용자 좌표계 목록에서
         선택한 좌표계의 상세
@@ -51,7 +51,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

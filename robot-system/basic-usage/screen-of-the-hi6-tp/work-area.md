@@ -2,7 +2,7 @@
 
 JOB 프로그램을 편집하고 모니터링 정보를 확인하는 등 다양한 작업을 수행하는 작업 영역입니다.
 
-![그림 11 작업 영역 구성](../../../.gitbook/assets/image%20%2824%29.png)
+![그림 11 작업 영역 구성](../../../_assets/image%20%2824%29.png)
 
 <table>
   <thead>
@@ -14,7 +14,7 @@ JOB 프로그램을 편집하고 모니터링 정보를 확인하는 등 다양�
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>작업 영역은 상하, 두 개의
@@ -32,7 +32,7 @@ JOB 프로그램을 편집하고 모니터링 정보를 확인하는 등 다양�
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>패널 스택입니다. 현재
@@ -60,7 +60,7 @@ JOB 프로그램을 편집하고 모니터링 정보를 확인하는 등 다양�
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

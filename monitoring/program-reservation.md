@@ -4,7 +4,7 @@
 
 외부 신호에 의해 프로그램을 예약하고 예약 순서에 따라 프로그램을 수행할 때, 예약 프로그램 목록에서 상태를 확인하고 변경할 수 있습니다.
 
-![그림 51 프로그램 예약 실행 화면](../.gitbook/assets/image%20%28179%29%20%281%29%20%282%29.png)
+![그림 51 프로그램 예약 실행 화면](../_assets/image%20%28179%29%20%281%29%20%282%29.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>예약 프로그램 목록입니다.
@@ -34,7 +34,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

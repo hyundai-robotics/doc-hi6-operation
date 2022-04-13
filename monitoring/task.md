@@ -4,7 +4,7 @@
 
 태스크별 동작 주기와 실행 시간 정보를 확인할 수 있습니다.
 
-![그림 46 태스크](../.gitbook/assets/image%20%28172%29.png)
+![그림 46 태스크](../_assets/image%20%28172%29.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -30,7 +30,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">태스크별 동작 주기와
         실행 시간 정보를 표시합니다</td>

@@ -5,7 +5,7 @@
 1. \[2: 제어 파라미터 &gt; 5: 원위치 등록\] 메뉴를 터치하십시오.
 2. 원위치 탭을 선택하고 사용 여부와 출력 신호, 축각도와 범위를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28124%29.png)
+![](../../_assets/image%20%28124%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>탭에서 선택한 원위치의
@@ -47,7 +47,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

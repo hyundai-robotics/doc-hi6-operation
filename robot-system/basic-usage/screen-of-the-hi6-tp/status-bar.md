@@ -1,6 +1,6 @@
 # 1.2.4.1 상태 표시줄
 
-![그림 9 상태 표시줄](../../../.gitbook/assets/image%20%281%29.png)
+![그림 9 상태 표시줄](../../../_assets/image%20%281%29.png)
 
 <table>
   <thead>
@@ -12,26 +12,26 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">로봇 제어기 플랫폼의
         이름입니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">티치 펜던트와 로봇 제어기
         본체의 COM 모듈 간 이더넷
         통신의 상태를 표시합니다.
         (
-        <img src="../../../.gitbook/assets/flag-comm-ok.png" alt/>: 정상 /
-        <img src="../../../.gitbook/assets/flag-comm-ng.png"
+        <img src="../../../_assets/flag-comm-ok.png" alt/>: 정상 /
+        <img src="../../../_assets/flag-comm-ng.png"
         alt/>: 응답 없음)</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p>로봇의 운전 방식을 표시합니다.</p>
@@ -53,26 +53,26 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">로봇 시스템의 다양한
         상태를 표시합니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c5.png" alt/>
+        <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">로봇의 동작 상태를 표시합니다.
         (
-        <img src="../../../.gitbook/assets/flag-mot-on.png" alt/>: 모터 ON /
-        <img src="../../../.gitbook/assets/flag-start.png"
+        <img src="../../../_assets/flag-mot-on.png" alt/>: 모터 ON /
+        <img src="../../../_assets/flag-start.png"
         alt/>: 로봇 재생 중 /
-        <img src="../../../.gitbook/assets/flag-stop.png"
+        <img src="../../../_assets/flag-stop.png"
         alt/>: 로봇 정지)</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c6.png" alt/>
+        <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">선택된 로봇 메커니즘의
         모델명을 표시합니다.</td>

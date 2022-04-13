@@ -40,7 +40,7 @@
         <p>S1 ~ S2: 민감도 100%로 검지 / S3 ~
           S4: 민감도 50%로 검지</p>
         <p>
-          <img src="../../../.gitbook/assets/coldet-sensitivity.png" alt/>
+          <img src="../../../_assets/coldet-sensitivity.png" alt/>
         </p>
       </td>
     </tr>

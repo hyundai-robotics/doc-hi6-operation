@@ -26,7 +26,7 @@
         <p>(프로그램2)</p>
       </td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/step-copy-fwd-prv.png" alt/>
+        <img src="../../../_assets/step-copy-fwd-prv.png" alt/>
       </td>
     </tr>
     <tr>
@@ -34,7 +34,7 @@
       <td style="text-align:left">복사 결과</td>
       <td style="text-align:left">프로그램2</td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/step-copy-fwd-nxt.png" alt/>
+        <img src="../../../_assets/step-copy-fwd-nxt.png" alt/>
       </td>
     </tr>
     <tr>
@@ -49,7 +49,7 @@
         <p>(프로그램2)</p>
       </td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/step-copy-bwd-prv.png" alt/>
+        <img src="../../../_assets/step-copy-bwd-prv.png" alt/>
       </td>
     </tr>
     <tr>
@@ -57,7 +57,7 @@
       <td style="text-align:left">복사 결과</td>
       <td style="text-align:left">프로그램2</td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/step-copy-bwd-nxt.png" alt/>
+        <img src="../../../_assets/step-copy-bwd-nxt.png" alt/>
       </td>
     </tr>
   </tbody>

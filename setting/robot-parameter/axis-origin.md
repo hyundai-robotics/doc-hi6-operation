@@ -5,7 +5,7 @@
 1. \[3: 로봇 파라미터 &gt; 2: 축 원점\] 메뉴를 터치하십시오.
 2. 각 축의 기구학적 원점 위치를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28212%29.png)
+![](../../_assets/image%20%28212%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>각 축의 기구학적 원점
@@ -38,7 +38,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

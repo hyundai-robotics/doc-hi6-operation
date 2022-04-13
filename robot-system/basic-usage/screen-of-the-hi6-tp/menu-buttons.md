@@ -12,7 +12,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>메커니즘(mechanism): 선택된
@@ -29,10 +29,10 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/rbt-bar.png" alt/>
+        <img src="../../../_assets/rbt-bar.png" alt/>
       </td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>좌표계(coordinate system): 조그 수행의
@@ -47,25 +47,25 @@
           나타납니다.</p>
         <ul>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-joint.png" alt/>축(Joint) 좌표계: 조그 막대에
+            <img src="../../../_assets/bt-crd-joint.png" alt/>축(Joint) 좌표계: 조그 막대에
             각 축의 이름이 표시됩니다.
             축 이름 우측의 <b>[-/+]</b> 버튼을
             터치하면 해당하는 축을
             움직일 수 있습니다.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-robot.png" alt/>로봇(Robot) 좌표계: 조그 막대에
+            <img src="../../../_assets/bt-crd-robot.png" alt/>로봇(Robot) 좌표계: 조그 막대에
             X, Y, Z, RX, RY, RZ와 부가축이 표시됩니다.
             로봇 좌표계를 기준으로
             로봇의 툴 끝(TCP, Tool Center Point)을
             이동 및 회전할 수 있습니다.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-user.png" alt/>사용자(User) 좌표계: 조그
+            <img src="../../../_assets/bt-crd-user.png" alt/>사용자(User) 좌표계: 조그
             막대에 X, Y, Z, RX, RY, RZ와 부가축이
             표시됩니다. 사용자 좌표계를
             기준으로 로봇의 툴 끝(TCP)을
             이동 및 회전할 수 있습니다.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-crd-tool (1) (1) (2).png" alt/>툴(Tool) 좌표계: 조그 막대에
+            <img src="../../../_assets/bt-crd-tool (1) (1) (2).png" alt/>툴(Tool) 좌표계: 조그 막대에
             X, Y, Z, RX, RY, RZ와 부가축이 표시됩니다.
             툴 좌표계를 기준으로
             로봇의 툴 끝(TCP)을 이동
@@ -76,7 +76,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p>기록(RECord): JOB 프로그램에서
@@ -96,7 +96,7 @@
             수 있습니다.</li>
         </ul>
         <p>
-          <img src="../../../.gitbook/assets/bt-pos-mod.png" alt/>(<b>&lt;shift&gt;</b> 키 조합 시) 위치
+          <img src="../../../_assets/bt-pos-mod.png" alt/>(<b>&lt;shift&gt;</b> 키 조합 시) 위치
           수정: JOB 프로그램에서
           로봇의 현재 자세를 스텝의
           타겟 포즈로 적용합니다.</p>
@@ -105,7 +105,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
         <p>명령 입력: 원하는 명령어를
@@ -119,7 +119,7 @@
           <a
           href="../../../programming/prog-edit/statement-input/">3.2.2 명령문 입력</a>”을 참조하십시오.</p>
         <p>
-          <img src="../../../.gitbook/assets/bt-delete.png" alt/>(<b>&lt;shift&gt;</b> 키 조합 시) 위치
+          <img src="../../../_assets/bt-delete.png" alt/>(<b>&lt;shift&gt;</b> 키 조합 시) 위치
           수정: JOB 프로그램에서
           로봇의 현재 자세를 스텝의
           타겟 포즈로 적용합니다.</p>
@@ -128,7 +128,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c5.png" alt/>
+        <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">
         <p>속성: 명령문의 속성을
@@ -137,7 +137,7 @@
           후 <b>[속성]</b> 버튼을 터치하십시오.
           명령문의 속성창이 나타납니다.</p>
         <p>
-          <img src="../../../.gitbook/assets/bt-block-edit.png" alt/>(<b>&lt;shift&gt;</b> 키 조합 시) 블록
+          <img src="../../../_assets/bt-block-edit.png" alt/>(<b>&lt;shift&gt;</b> 키 조합 시) 블록
           편집: JOB 프로그램에서
           복사하기, 잘라내기, 붙여넣기를
           수행할 수 있는 블록 편집
@@ -150,7 +150,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c6.png" alt/>
+        <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left"><b>[메뉴]</b>: 프로그램의 서비스
         기능 메뉴를 사용합니다.</td>
@@ -158,7 +158,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c7.png" alt/>
+        <img src="../../../_assets/c7.png" alt/>
       </td>
       <td style="text-align:left"><b>[설정]</b>: 프로그램의 시스템
         메뉴를 이용해 사용 환경을
@@ -167,7 +167,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c8.png" alt/>
+        <img src="../../../_assets/c8.png" alt/>
       </td>
       <td style="text-align:left">
         <p>즐겨찾기: 코드 번호를
@@ -182,7 +182,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c9.png" alt/>
+        <img src="../../../_assets/c9.png" alt/>
       </td>
       <td style="text-align:left">
         <p>사용자키: 사용자키 영역에

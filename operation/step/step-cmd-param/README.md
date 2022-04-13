@@ -6,7 +6,7 @@
 
 스텝 명령문은 다음과 같이 구성됩니다.
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](../../../_assets/image%20%2877%29.png)
 
 <table>
   <thead>
@@ -19,7 +19,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">보간</td>
       <td style="text-align:left">
@@ -33,7 +33,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">포즈</td>
       <td style="text-align:left">
@@ -47,7 +47,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">속도</td>
       <td style="text-align:left">로봇의 운전 속도(단위:
@@ -55,7 +55,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">Accuracy</td>
       <td style="text-align:left">로봇이 목표 스텝으로
@@ -65,7 +65,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c5.png" alt/>
+        <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">툴 번호</td>
       <td style="text-align:left">사용하는 툴의 번호(0 ~
@@ -73,7 +73,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c6.png" alt/>
+        <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">정지 조건</td>
       <td style="text-align:left">로봇이 다음 명령(스텝
@@ -83,7 +83,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c7.png" alt/>
+        <img src="../../../_assets/c7.png" alt/>
       </td>
       <td style="text-align:left">주석</td>
       <td style="text-align:left">스텝에 대한 설명</td>

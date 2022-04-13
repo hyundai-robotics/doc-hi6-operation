@@ -4,7 +4,7 @@
 
 에러, 경고, 알림, 운전, 사용자 작동, I/O, 실행에 대한 이력을 확인할 수 있습니다.
 
-![그림 43 이력](../.gitbook/assets/image%20%28169%29.png)
+![그림 43 이력](../_assets/image%20%28169%29.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>목록에 표시할 이력의
@@ -64,7 +64,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -76,7 +76,7 @@
             최근 이력을 다시 불러와
             화면에 표시합니다.</li>
           <li>[
-            <img src="../.gitbook/assets/bt-menu.png" alt/>]: 팝업 메뉴를 엽니다.
+            <img src="../_assets/bt-menu.png" alt/>]: 팝업 메뉴를 엽니다.
             <ul>
               <li>log 파일로 저장: 메모리
                 버퍼의 최신 이력을 파일로
@@ -88,19 +88,19 @@
             </ul>
           </li>
           <li>[
-            <img src="../.gitbook/assets/bt-lock.png" alt/>]: 새로운 이력의 알림을
+            <img src="../_assets/bt-lock.png" alt/>]: 새로운 이력의 알림을
             끕니다. 잠금 표시를 풀
             때까지 이력은 갱신되지
             않고 현재 상태가 유지됩니다.</li>
           <li>[
-            <img src="../.gitbook/assets/bt-trash.png" alt/>]: 화면에 표시된 이력을
+            <img src="../_assets/bt-trash.png" alt/>]: 화면에 표시된 이력을
             클리어합니다.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c3.png" alt/>
+        <img src="../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">선택한 유형의 이력 목록입니다.
         유형별 이력의 상세 정보를

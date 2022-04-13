@@ -2,7 +2,7 @@
 
 로봇의 동작을 제어하거나 로봇과 연동된 장치를 관리할 수 있습니다. Hi6 티치 펜던트 화면은 다음과 같이 구성됩니다.
 
-![](../../../.gitbook/assets/image%20%2834%29.png)
+![](../../../_assets/image%20%2834%29.png)
 
 <table>
   <thead>
@@ -14,7 +14,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">상태 표시줄입니다. 티치
         펜던트의 통신 상태와
@@ -25,7 +25,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">기능 버튼을 이용해 설정값을
         확인하고 변경합니다.
@@ -34,7 +34,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">작업 영역입니다. JOB 프로그램을
         편집하고 모니터링 정보를
@@ -44,7 +44,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">메뉴 버튼을 이용해 메뉴의
         설정값을 확인 및 변경하고,
@@ -54,7 +54,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c5.png" alt/>
+        <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">조그 막대입니다. [좌표계]
         버튼으로 선택한 조그
@@ -64,7 +64,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c6.png" alt/>
+        <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">
         <p>이력 표시줄입니다. 자세한

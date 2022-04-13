@@ -5,7 +5,7 @@
 1. \[3: 로봇 파라미터 &gt; 3: 소프트 리밋\] 메뉴를 터치하십시오.
 2. 각 축의 동작 범위를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28214%29.png)
+![](../../_assets/image%20%28214%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">각 축의 동작 범위의 상세
         정보입니다. 축의 최소와
@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

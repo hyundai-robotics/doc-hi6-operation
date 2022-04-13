@@ -7,7 +7,7 @@
 1. \[2: 제어 파라미터 &gt; 2: 입출력 신호 설정 &gt; 8: 복수 신호 입력\] 메뉴를 터치하십시오.
 2. 입력 신호 그룹의 이름과 신호를 설정하십시오.
 
-![](../../../.gitbook/assets/image%20%2846%29.png)
+![](../../../_assets/image%20%2846%29.png)
 
 <table>
   <thead>
@@ -19,7 +19,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>입력 신호 그룹 목록에서
@@ -41,7 +41,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -72,7 +72,7 @@
 
 예를 들어, 위의 화면의 설정과 같이 구성된 작업 프로그램이 실행되면 다음과 같이 동작합니다.
 
-![그림 56 작업 프로그램 실행 예](../../../.gitbook/assets/image%20%2850%29.png)
+![그림 56 작업 프로그램 실행 예](../../../_assets/image%20%2850%29.png)
 
 S1에서 S2로 출발한 후 wait 명령문을 실행합니다. S2의 accuracy ok가 되기 이전에 wait 조건이 만족하면 빨간색 경로로 로봇이 이동하지만 그렇지 않는 경우 S2 위치에서 wait 조건이 만족할 때까지 계속 대기합니다.
 

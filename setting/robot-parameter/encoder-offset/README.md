@@ -5,7 +5,7 @@
 1. \[3: 로봇 파라미터 &gt; 4: 엔코더 옵셋\] 메뉴를 터치하십시오.
 2. 각 축의 위치를 조정하여 엔코더 옵셋값을 설정하십시오. 엔코더 옵셋값은 헥사값\(Hexa값, 16진수\)으로 기록됩니다.
 
-![](../../../.gitbook/assets/image%20%28222%29.png)
+![](../../../_assets/image%20%28222%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">각 축의 엔코더 옵셋값의
         상세 정보입니다. 축의
@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

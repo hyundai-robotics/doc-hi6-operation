@@ -2,7 +2,7 @@
 
 패널 선택창에서 \[job\]을 터치하십시오. JOB 프로그램창이 나타납니다. 프로그램을 확인하고 편집 및 삭제하거나 작성할 수 있습니다.
 
-![그림 34 JOB 프로그램](../.gitbook/assets/image%20%28156%29.png)
+![그림 34 JOB 프로그램](../_assets/image%20%28156%29.png)
 
 <table>
   <thead>
@@ -14,7 +14,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">프로그램의 기본 정보와
         명령문을 표시합니다.
@@ -23,7 +23,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../.gitbook/assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

@@ -1,6 +1,6 @@
 # 1.2.4.2 이력 표시줄
 
-![그림 10 이력 표시줄](../../../.gitbook/assets/image%20%2822%29.png)
+![그림 10 이력 표시줄](../../../_assets/image%20%2822%29.png)
 
 <table>
   <thead>
@@ -12,7 +12,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">날짜와 시간 정보가 표시됩니다.
         [메뉴] 버튼 &gt; [08: 날짜, 시간
@@ -25,7 +25,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -55,7 +55,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p>화면에 소프트 키보드를
@@ -66,12 +66,12 @@
         <ul>
           <li>소프트 키보드 사용 중에
             [
-            <img src="../../../.gitbook/assets/bt-dock-softkb.png" alt/>] 버튼을 터치하면 키보드의
+            <img src="../../../_assets/bt-dock-softkb.png" alt/>] 버튼을 터치하면 키보드의
             위치를 화면 상단으로
             이동할 수 있습니다.</li>
           <li>소프트 키보드를 숨기려면,
             [
-            <img src="../../../.gitbook/assets/bt-softkb.png" alt/>] 버튼을 터치하십시오.</li>
+            <img src="../../../_assets/bt-softkb.png" alt/>] 버튼을 터치하십시오.</li>
         </ul>
       </td>
     </tr>

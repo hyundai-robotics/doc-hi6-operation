@@ -18,7 +18,7 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
 1. \[3: 로봇 파라미터 &gt; 14: 충돌검지\] 메뉴를 터치하십시오.
 2. 충돌검지 기능의 사용 여부와 민감도 등을 설정하십시오.
 
-![](../../../.gitbook/assets/image%20%28210%29.png)
+![](../../../_assets/image%20%28210%29.png)
 
 <table>
   <thead>
@@ -30,7 +30,7 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>충돌검지 기능의 사용
@@ -65,7 +65,7 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

@@ -7,7 +7,7 @@
 1. \[5: 초기화 &gt; 5: 부가축 파라미터 설정\] 메뉴를 터치하십시오.
 2. 부가축의 사양 및 구성 등 파라미터를 설정하십시오.
 
-![](../../.gitbook/assets/image%20%28236%29.png)
+![](../../_assets/image%20%28236%29.png)
 
 <table>
   <thead>
@@ -19,7 +19,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>부가축의 상세 파라미터
@@ -83,7 +83,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

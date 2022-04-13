@@ -5,7 +5,7 @@
 1. 숨은 포즈로 기록된 이동 명령\(move문\)에서 \[속성\] 버튼을 터치하십시오. 현재 스텝의 위치가 나타납니다.
 2. 현재 스텝의 위치를 확인하고 수정하십시오.
 
-![](../../.gitbook/assets/image%20%28275%29.png)
+![](../../_assets/image%20%28275%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>현재 스텝의 위치 정보입니다.
@@ -46,7 +46,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

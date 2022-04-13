@@ -5,7 +5,7 @@
 1. \[3: 로봇 파라미터 &gt; 1: 툴 데이터\] 메뉴를 터치하십시오.
 2. 툴 데이터의 이름과 중량, 축별 상세 조건, 허용 비율을 설정하십시오.
 
-![](../../../.gitbook/assets/image%20%28223%29.png)
+![](../../../_assets/image%20%28223%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">툴 데이터 목록에서 선택한
         툴 데이터의 상세 정보입니다.
@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -43,7 +43,7 @@
             새로운 툴의 길이와 각도가
             생성됩니다.
             <br />
-            <img src="../../../.gitbook/assets/tool-angle-auto-calib (1).png" alt/>
+            <img src="../../../_assets/tool-angle-auto-calib (1).png" alt/>
             <br />
             <ul>
               <li>[기존 프로그램 번호]:
@@ -63,14 +63,14 @@
           <li>[각도보정]: 툴의 각도를
             보정합니다.
             <br />
-            <img src="../../../.gitbook/assets/tool-angle-auto-calib.png" alt/>
+            <img src="../../../_assets/tool-angle-auto-calib.png" alt/>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

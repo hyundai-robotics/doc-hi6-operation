@@ -5,7 +5,7 @@
 1. \[5: 초기화 &gt; 4: 시리얼 엔코더 리셋\] 메뉴를 터치하십시오.
 2. 각 축의 엔코더 리셋 모드를 설정하고 상태를 확인한 후 리셋을 실행하십시오.
 
-![](../../.gitbook/assets/image%20%28231%29.png)
+![](../../_assets/image%20%28231%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>축별로 엔코더 리셋 사용
@@ -37,7 +37,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

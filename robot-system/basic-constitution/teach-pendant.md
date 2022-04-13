@@ -4,7 +4,7 @@
 
 TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스크린을 제공합니다.
 
-![그림 6 TP600 앞면\(좌\) / 뒷면\(우\)](../../.gitbook/assets/image%20%2816%29.png)
+![그림 6 TP600 앞면\(좌\) / 뒷면\(우\)](../../_assets/image%20%2816%29.png)
 
 <table>
   <thead>
@@ -17,7 +17,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">조작키2</td>
       <td style="text-align:left">로봇의 동작을 제어하고
@@ -26,7 +26,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">디스플레이</td>
       <td style="text-align:left">터치 스크린으로 로봇의
@@ -35,21 +35,21 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c3.png" alt/>
+        <img src="../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">모드 스위치</td>
       <td style="text-align:left">모드 스위치를 돌려 운전
         모드(
-        <img src="../../.gitbook/assets/sb-manual.png" alt/>수동/
-        <img src="../../.gitbook/assets/sb-auto.png" alt/>자동/
-        <img src="../../.gitbook/assets/sb-remote.png" alt/>원격)를 선택합니다. 티치
+        <img src="../../_assets/sb-manual.png" alt/>수동/
+        <img src="../../_assets/sb-auto.png" alt/>자동/
+        <img src="../../_assets/sb-remote.png" alt/>원격)를 선택합니다. 티치
         펜던트에서 모드 스위치
         키를 빼면 선택된 운전
         모드로 잠금 설정됩니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c4.png" alt/>
+        <img src="../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">비상 정지 스위치</td>
       <td style="text-align:left">긴급 상황 발생 시 비상
@@ -58,7 +58,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c5.png" alt/>
+        <img src="../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">조그 다이얼</td>
       <td style="text-align:left">조그 다이얼을 돌려 메뉴를
@@ -66,7 +66,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c6.png" alt/>
+        <img src="../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">마운팅 브래킷</td>
       <td style="text-align:left">티치 펜던트를 들거나
@@ -74,7 +74,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c7.png" alt/>
+        <img src="../../_assets/c7.png" alt/>
       </td>
       <td style="text-align:left">인에이블링 스위치</td>
       <td
@@ -93,7 +93,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c8.png" alt/>
+        <img src="../../_assets/c8.png" alt/>
       </td>
       <td style="text-align:left">케이블 연결 커넥터</td>
       <td
@@ -102,7 +102,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/c9.png" alt/>
+        <img src="../../_assets/c9.png" alt/>
       </td>
       <td style="text-align:left">USB 연결 포트</td>
       <td style="text-align:left">이동식 저장 장치 등 USB
@@ -114,7 +114,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
 
 TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한 모델로 TP600의 화면과 유사한 구성의 화면을 제공합니다.
 
-![그림 7 TP630 앞면\(좌\) / 뒷면\(우\)](../../.gitbook/assets/image%20%2831%29.png)
+![그림 7 TP630 앞면\(좌\) / 뒷면\(우\)](../../_assets/image%20%2831%29.png)
 
 ## 조작키
 
@@ -129,7 +129,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-shift.png" alt/>
+        <img src="../../_assets/key-shift.png" alt/>
       </td>
       <td style="text-align:left">shift</td>
       <td style="text-align:left">
@@ -146,7 +146,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-ctrl.png" alt/>
+        <img src="../../_assets/key-ctrl.png" alt/>
       </td>
       <td style="text-align:left">ctrl</td>
       <td style="text-align:left">&lt;ctrl&gt; 키를 특정 키와 함께
@@ -155,7 +155,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-up-dn.png" alt/>
+        <img src="../../_assets/key-up-dn.png" alt/>
       </td>
       <td style="text-align:left">위/아래</td>
       <td style="text-align:left">수동 모드에서 &lt;↓/↑&gt;
@@ -164,7 +164,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-stop.png" alt/>
+        <img src="../../_assets/key-stop.png" alt/>
       </td>
       <td style="text-align:left">정지</td>
       <td style="text-align:left">
@@ -184,7 +184,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-start.png" alt/>
+        <img src="../../_assets/key-start.png" alt/>
       </td>
       <td style="text-align:left">시작</td>
       <td style="text-align:left">&lt;시작&gt; 키를 누르면 로봇에
@@ -196,7 +196,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-mot-on.png" alt/>
+        <img src="../../_assets/key-mot-on.png" alt/>
       </td>
       <td style="text-align:left">모터</td>
       <td style="text-align:left">
@@ -214,7 +214,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-enter.png" alt/>
+        <img src="../../_assets/key-enter.png" alt/>
       </td>
       <td style="text-align:left">enter</td>
       <td style="text-align:left">
@@ -235,7 +235,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-esc.png" alt/>
+        <img src="../../_assets/key-esc.png" alt/>
       </td>
       <td style="text-align:left">esc</td>
       <td style="text-align:left">
@@ -251,7 +251,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-left-right.png" alt/>
+        <img src="../../_assets/key-left-right.png" alt/>
       </td>
       <td style="text-align:left">왼쪽/오른쪽</td>
       <td style="text-align:left">
@@ -266,7 +266,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../.gitbook/assets/key-num.png" alt/>
+        <img src="../../_assets/key-num.png" alt/>
       </td>
       <td style="text-align:left">
         <p>숫자키</p>

@@ -4,15 +4,15 @@
 
 1.	\[설정\] 버튼 &gt; \[3: 로봇 파라미터 &gt; 1: 툴 데이터\] 메뉴를 터치하십시오.
 
-![](../.gitbook/assets/image%20%2897%29.png)
+![](../_assets/image%20%2897%29.png)
 
 2.	\[자동보정\] 버튼을 터치한 후 조그키를 이용하여 툴 끝을 원래의 위치로 이동하십시오.
 
-![](../.gitbook/assets/image%20%2883%29.png)
+![](../_assets/image%20%2883%29.png)
 
 3.	미리 결정해 둔 기준점의 프로그램 번호, 스텝 번호, 설정할 툴 번호를 확인한 후 \[실행\] 버튼을 터치하십시오.
 
-![](../.gitbook/assets/image%20%28107%29.png)
+![](../_assets/image%20%28107%29.png)
 
 {% hint style="info" %}
 이 기능에 대한 자세한 내용은 “[7.4.1 툴 데이터](../setting/robot-parameter/tool-data/)”를 참조하십시오.

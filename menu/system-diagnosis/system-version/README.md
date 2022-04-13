@@ -4,7 +4,7 @@
 
 1. 로봇과 제어기의 시스템 환경 정보를 확인하고 관리하십시오.
 
-![](../../../.gitbook/assets/image%20%28139%29.png)
+![](../../../_assets/image%20%28139%29.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">로봇과 제어기의 시스템
         환경(소프트웨어 버전)
@@ -24,7 +24,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>기능 버튼을 이용해 시스템

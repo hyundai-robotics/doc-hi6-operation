@@ -12,7 +12,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>[기록조건] 버튼: move 문 기록
@@ -22,15 +22,15 @@
           속도와 단위, Accuracy, 툴 번호를
           입력하고 [확인] 버튼(
           <img
-          src="../../../.gitbook/assets/icon-ok.png" alt/>)을 터치하십시오.</p>
+          src="../../../_assets/icon-ok.png" alt/>)을 터치하십시오.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/lbt-bar.png" alt/>
+        <img src="../../../_assets/lbt-bar.png" alt/>
       </td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>[실행단위] 버튼: 수동
@@ -42,20 +42,20 @@
           버튼을 반복해서 터치하십시오.</p>
         <ul>
           <li>
-            <img src="../../../.gitbook/assets/bt-runto-cmd.png" alt/>[cmd]: 명령어 한 행씩 실행합니다.</li>
+            <img src="../../../_assets/bt-runto-cmd.png" alt/>[cmd]: 명령어 한 행씩 실행합니다.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-runto-step.png" alt/>[step]: 한 스텝씩 실행합니다.</li>
+            <img src="../../../_assets/bt-runto-step.png" alt/>[step]: 한 스텝씩 실행합니다.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-runto-end.png" alt/>[end]: end 명령문까지 실행합니다.</li>
+            <img src="../../../_assets/bt-runto-end.png" alt/>[end]: end 명령문까지 실행합니다.</li>
           <li>자동 모드: [실행단위]
             버튼을 터치한 후 설정창에서
             옵션을 설정하십시오.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-spd_manual (3) (3) (3) (3).png"
+            <img src="../../../_assets/bt-spd_manual (3) (3) (3) (3).png"
             alt/>[1cycle]: end 명령문까지 실행
             후 정지합니다.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-runto-cont.png" alt/>[cont]: end 명령문까지 실행
+            <img src="../../../_assets/bt-runto-cont.png" alt/>[cont]: end 명령문까지 실행
             후 스텝 0부터 다시 실행합니다.</li>
         </ul>
       </td>
@@ -63,7 +63,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p>[속도조절] 버튼: 사용자의
@@ -75,11 +75,11 @@
           속도 비율을 설정하십시오.</p>
         <ul>
           <li>
-            <img src="../../../.gitbook/assets/bt-spd_manual (3) (3) (3) (3) (2).png"
+            <img src="../../../_assets/bt-spd_manual (3) (3) (3) (3) (2).png"
             alt/>수동 모드: 스텝 FWD/BWD 제한
             속도(㎜/sec)를 표시합니다.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-spd_manual (3) (3) (3) (3) (1).png"
+            <img src="../../../_assets/bt-spd_manual (3) (3) (3) (3) (1).png"
             alt/>자동 모드: 재생 속도(%)를
             표시합니다.</li>
         </ul>
@@ -88,7 +88,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
         <p>[조그 속도 레벨/조그 인칭]
@@ -97,8 +97,8 @@
           사용 모드를 설정합니다.</p>
         <ul>
           <li>[
-            <img src="../../../.gitbook/assets/bt-spd-up.png" alt/>/
-            <img src="../../../.gitbook/assets/bt-spd-dn.png" alt/>]: 원하는 축별 또는 직교
+            <img src="../../../_assets/bt-spd-up.png" alt/>/
+            <img src="../../../_assets/bt-spd-dn.png" alt/>]: 원하는 축별 또는 직교
             조그의 속도 레벨(1: 저속
             ~ 8: 고속)이 나타날 때까지
             버튼을 반복하여 터치하십시오.
@@ -106,8 +106,8 @@
             최저 또는 최고 레벨을
             한 번에 설정할 수 있습니다.</li>
           <li>
-            <img src="../../../.gitbook/assets/bt-jog-1.png" alt/>
-            <img src="../../../.gitbook/assets/bt-jog-inch.png" alt/>[1]: 레벨 값을 터치하면
+            <img src="../../../_assets/bt-jog-1.png" alt/>
+            <img src="../../../_assets/bt-jog-inch.png" alt/>[1]: 레벨 값을 터치하면
             레벨 값의 좌측 상단에
             inch 표시가 나타나고 인칭
             모드로 전환됩니다. 일반
@@ -120,7 +120,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c5.png" alt/>
+        <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">
         <p>[툴] 버튼: 선택된 툴 번호를
@@ -134,12 +134,12 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c6.png" alt/>
+        <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">
         <p>
-          <img src="../../../.gitbook/assets/bt-gun-off.png" alt/>
-          <img src="../../../.gitbook/assets/bt-gun-on.png" alt/>[건] 버튼: 선택된 건 번호를
+          <img src="../../../_assets/bt-gun-off.png" alt/>
+          <img src="../../../_assets/bt-gun-on.png" alt/>[건] 버튼: 선택된 건 번호를
           확인하고 건의 ON/OFF 상태를
           설정합니다.</p>
         <p>건 번호를 확인하고 [건]
@@ -152,7 +152,7 @@
     <tr>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <img src="../../../.gitbook/assets/c7.png" alt/>
+        <img src="../../../_assets/c7.png" alt/>
       </td>
       <td style="text-align:left">[도움말] 버튼: 선택된
         명령문이나 에러 메시지

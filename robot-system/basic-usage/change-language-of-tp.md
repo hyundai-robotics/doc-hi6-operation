@@ -4,21 +4,21 @@
 
 1.	우버튼 막대의 \[메뉴\] 버튼을 클릭하십시오.
 
-![](../../.gitbook/assets/image%20%28291%29.png)
+![](../../_assets/image%20%28291%29.png)
 
 2.	\[9: TP 응용프로그램 종료\]를 선택하십시오.
 
-![](../../.gitbook/assets/image%20%28293%29.png)
+![](../../_assets/image%20%28293%29.png)
 
 3.	우 상단의 지구본 아이콘을 클릭하십시오.
 
-![](../../.gitbook/assets/image%20%28289%29.png)
+![](../../_assets/image%20%28289%29.png)
 
 4.	팝업 메뉴에서 \[English\]를 선택하십시오.
 
-![](../../.gitbook/assets/image%20%28282%29.png)
+![](../../_assets/image%20%28282%29.png)
 
 5.	우하단의 \[run TP\] 버튼을 클릭하고, 8초 정도 기다리십시오.
 
-![](../../.gitbook/assets/image%20%28294%29.png)
+![](../../_assets/image%20%28294%29.png)
 
