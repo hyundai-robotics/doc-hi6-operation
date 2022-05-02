@@ -6,7 +6,7 @@ TP600 is a model developed exclusively for the Hi6 controller and provides a lar
 
 
 
-![Figure 5 Front \(Left\) / Back \(Right\) of TP600](../../_assets/image%20%2816%29.png)
+![Figure 5 Front \(Left\) / Back \(Right\) of TP600](../../_assets/image_16.png)
 
 
 
@@ -102,7 +102,7 @@ TP600 is a model developed exclusively for the Hi6 controller and provides a lar
 
 TP630 is a model to which the same operation key usage environment as that of the existing Hi5a controller is applied, and it provides a screen with a layout similar to that of the TP600.
 
-![Figure 6 Front \(Left\) / Back \(Right\) of TP630](../../_assets/image%20%2831%29.png)
+![Figure 6 Front \(Left\) / Back \(Right\) of TP630](../../_assets/image_31.png)
 
 #### Operation Keys
 

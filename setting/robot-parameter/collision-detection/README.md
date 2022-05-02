@@ -21,7 +21,7 @@ The following shows how to set the collision detection function.
 
 2.	Set whether to use the collision detection function, and set the sensitivity, etc.
 
-![](../../../_assets/image%20%28481%29.png)
+![](../../../_assets/image_481.png)
 
 
 

@@ -10,7 +10,7 @@ To start up the robot, power should be supplied to the robot controller.
 
 Turn the power switch on the left side of the robot controller to the ON direction to connect the main power of the controller. When the power is connected, the robot system will boot, and the display of the teach pendant will be turned on together with all the devices.
 
-![](../../../_assets/image%20%2812%29.png)
+![](../../../_assets/image_12.png)
 
 #### Collaborative Robot Controller
 
@@ -20,7 +20,7 @@ Push upward the switch on the power breaker. When power is connected, the robot 
 
 
 
-![](../../../_assets/image%20%2823%29.png)
+![](../../../_assets/image_23.png)
 
 ### 
 

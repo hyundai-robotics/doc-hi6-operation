@@ -5,11 +5,11 @@ You can rename a file or folder. You can also rename multiple files or folders a
 1.	Touch the desired file \(or folder\) in the file \(or folder\) list to select it, and then touch the \[Rename\] button on the right side of the screen.
 
 _assets
-![](../../_assets/image%20%2881%29.png)
+![](../../_assets/image_81.png)
 
 2.	Input the file \(or folder\) name in the input area.
 _assets
-![](../../_assets/image%20%28393%29.png)
+![](../../_assets/image_393.png)
 
 * You can input the number simply by using the operation keys on the teach pendant. \(&lt;←/→&gt; keys: For moving the cursor. Number keys: For inputting a number\)
 * _assets

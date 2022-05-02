@@ -4,15 +4,15 @@ After determining the axis origin and tool length through automatic calibration,
 
 1.	Touch the \[Set up\] button &gt; \[3: Robot Parameter&gt; 1: Tool Data\] menu.
 
-![](../_assets/image%20%28340%29.png)
+![](../_assets/image_340.png)
 
 2.	After touching the \[Auto Calibration\] button, move the tooltip to the original position using the jog key.
 
-![](../_assets/image%20%28341%29.png)
+![](../_assets/image_341.png)
 
 3.	 After checking the program number of the predetermined reference point, the step number, and the tool number, touch the \[Execute\] button.
 
-![](../_assets/image%20%28322%29.png)
+![](../_assets/image_322.png)
 
 {% hint style="info" %}
 For details on this function, refer to “[7.4.1 Tool Data](../setting/robot-parameter/tool-data/).”

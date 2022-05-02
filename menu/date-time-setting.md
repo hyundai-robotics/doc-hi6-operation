@@ -6,7 +6,7 @@ You can set the date and time of the controller.
 
 2.	After setting the date and time information, touch the \[OK\] button.
 
-![](../_assets/image%20%28361%29.png)
+![](../_assets/image_361.png)
 
 
 

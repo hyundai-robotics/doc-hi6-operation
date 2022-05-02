@@ -2,7 +2,7 @@
 
 1.	Touch the \[Speed Adjustment\] button on the upper left on the initial screen. Then, the operation conditions setting window will appear.
 
-![](../_assets/image%20%28365%29.png)
+![](../_assets/image_365.png)
 
 {% hint style="info" %}
 On the \[Speed Adjustment\] button, the speed limit \(mm/sec\) will be displayed while in manual mode, and the playback speed \(%\) will be displayed in automatic mode.
@@ -12,7 +12,7 @@ On the \[Speed Adjustment\] button, the speed limit \(mm/sec\) will be displayed
 
 2.	Change the operation condition setting values by repeating the following procedure, and then touch the \[OK\] button.
 
-![](../_assets/image%20%28371%29.png)
+![](../_assets/image_371.png)
 
 a.	Turn the jog dial on the teach pendant. Then, the cursor will move.
 

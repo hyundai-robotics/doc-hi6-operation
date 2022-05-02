@@ -2,7 +2,7 @@
 
 | Joint Coordinate System | Robot Coordinate System | User Coordinate System | **Tool Coordinate System** |
 | :---: | :---: | :---: | :---: |
-|  ![](../../_assets/bt-crd2-joint-en.png)  | ![](../../_assets/bt-crd2-robot-en.png)  | ![](../../_assets/bt-crd2-user-en%20%281%29.png)  | ![](../../_assets/bt-crd2-tool-en.png)  |
+|  ![](../../_assets/bt-crd2-joint-en.png)  | ![](../../_assets/bt-crd2-robot-en.png)  | ![](../../_assets/bt-crd2-user-en.png)  | ![](../../_assets/bt-crd2-tool-en.png)  |
 
 1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
 
@@ -12,13 +12,13 @@
 
 * If a torch is attached to the robot
 
-![](../../_assets/image%20%2868%29.png)
+![](../../_assets/image_68.png)
 
 
 
 * If no torch is attached to the robot
 
-![](../../_assets/image%20%2892%29.png)
+![](../../_assets/image_92.png)
 
 {% hint style="info" %}
 For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](jog-key.md).”

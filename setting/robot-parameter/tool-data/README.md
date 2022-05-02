@@ -14,11 +14,11 @@ The length of the tool is the length in each direction in the flange coordinate 
 
 
 
-![Figure 60 Flange Coordinate System for Each Robot Type](../../../_assets/image%20%28213%29%20%282%29%20%282%29.png)
+![Figure 60 Flange Coordinate System for Each Robot Type](../../../_assets/image_213.png)
 
 The angle of the tool is the posture conversion amount in each direction in the flange coordinate system. \(Angle in X-axis direction: Rx / Angle in Y-axis direction: Ry / Angle in Z-axis direction: Rz\)
 
-![Figure 61 Tool Angle: Rotating Rx \(Left\) / Rotating Ry \(Middle\) / Rotating Rz \(Right\)](../../../_assets/image%20%28211%29.png)
+![Figure 61 Tool Angle: Rotating Rx \(Left\) / Rotating Ry \(Middle\) / Rotating Rz \(Right\)](../../../_assets/image_211.png)
 
 The length and angle of the tool will be set based on the flange coordinate system. The tool length can be set as the distance from the center of the flange coordinate system to the TCP.
 

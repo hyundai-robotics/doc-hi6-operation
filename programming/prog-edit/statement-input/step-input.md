@@ -4,7 +4,7 @@ To input the current posture of the robot as a move command, touch the \[Record\
 
 
 
-![](../../../_assets/image%20%28350%29.png)
+![](../../../_assets/image_350.png)
 
 When you input a command using the \[Record\] button, the pose variable will not appear in the step, unlike the general command inputting mode, so it is called a hidden pose.
 

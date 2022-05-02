@@ -4,7 +4,7 @@ The Hi6 controller is based on dynamics, so it is important to set the gravity d
 
 In general, the robot installation direction is perpendicular to the gravity direction as follows. If the robot is installed obliquely to the ground, the gravity direction should be set in the robot controller. At this time, you can use the automatic gravity direction setting function.
 
-![Figure 74 Gravity Direction of the Robot Placed on a Floor \(Left\) / Gravity Direction of the Robot Placed on a Slope \(Right\)](../../_assets/image%20%28507%29.png)
+![Figure 74 Gravity Direction of the Robot Placed on a Floor \(Left\) / Gravity Direction of the Robot Placed on a Slope \(Right\)](../../_assets/image_507.png)
 
 
 
@@ -16,7 +16,7 @@ How to set the gravity direction is as follows.
 
 3.	After inputting the program number, touch the \[Execute\] button. Then, the direction vector will be calculated and displayed.
 
-![](../../_assets/image%20%28510%29.png)
+![](../../_assets/image_510.png)
 
 
 

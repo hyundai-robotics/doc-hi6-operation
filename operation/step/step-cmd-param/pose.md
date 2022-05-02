@@ -6,11 +6,11 @@ The method to input a pose using the menu button on the right side of the Hi6 te
 
 * After touching the \[Command\] button, select \[Motion\] and then input the statement.
 
-![](../../../_assets/image%20%28306%29.png)
+![](../../../_assets/image_306.png)
 
 * After touching the \[property\] button, set the attributes of the current robot pose and then touch the \[Apply\] button.
 
-![](../../../_assets/image%20%28328%29.png)
+![](../../../_assets/image_328.png)
 
 The pose variable and shift variable will be saved in the following formats.
 

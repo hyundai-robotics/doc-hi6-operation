@@ -6,17 +6,17 @@ This function helps restore the project \(project/\) and history \(log/\) that a
 
 
 
-![](../../_assets/image%20%28385%29.png)
+![](../../_assets/image_385.png)
 
 2.	By using the teach pendant’s jog dial, select the \[MAIN\] folder in the folder list, and then touch the \[Paste\] button.
 
-![](../../_assets/image%20%28381%29.png)
+![](../../_assets/image_381.png)
 
 
 
 3.	In the duplicate notification window, touch the checkbox for \[All\] to select it, and then touch the \[OK\] button. The backup data will be restored on the main board.
 
-![](../../_assets/image%20%28360%29.png)
+![](../../_assets/image_360.png)
 
 4.	Turn the power of the controller back on.
 

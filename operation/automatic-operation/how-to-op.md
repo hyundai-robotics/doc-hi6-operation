@@ -14,19 +14,19 @@ It is the method to teach the robot the contents of the work and then make it pe
 
 
 
-![](../../_assets/image%20%28301%29.png)
+![](../../_assets/image_301.png)
 
 * If it is set to manual mode, turn the mode switch of the teach pendant to set the operation mode to automatic mode.
 
 4.	Touch the \[Recording Condition\] button on the left side of the initial screen. Then, the condition setting window will appear.
 
-![](../../_assets/image%20%28332%29.png)
+![](../../_assets/image_332.png)
 
 
 
 5.	Set the program repetition option and robot operation speed.
 
-![](../../_assets/image%20%28305%29.png)
+![](../../_assets/image_305.png)
 
 * **\[1: Operation Cycle type\]:** You can set whether to repeat the program that will be executed during automatic operation.
 * **\[6: Playback speed rate\]:** You can set the operation speed \(%\) of the robot when a program is played back in automatic mode.  

@@ -2,7 +2,7 @@
 
 It will be used in manual mode. When you are holding the enabling switch while the motor is turned on, the &lt;enter&gt;, &lt;esc&gt;, and &lt;←/→&gt; keys and number keys on the teach pendant will operate as “jog keys.”
 
-![Figure 25 Jog Keys on the Teach Pendant](../../_assets/image%20%2895%29.png)
+![Figure 25 Jog Keys on the Teach Pendant](../../_assets/image_95.png)
 
 * The name of the axis assigned to each key will be displayed in the jog bar at the right edge of the display.
 * The operation keys on the right are for the direction of increase \(+\), and the operation keys on the left are for the direction of decrease \(-\).

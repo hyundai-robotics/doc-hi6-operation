@@ -4,7 +4,7 @@ The optimization of axis origin and tool length is a function to calibrate the o
 
 Prepare two pointed tips. Fix one on the outside and the other on the tool. Then, while changing only the posture of the tooltip of the robot based on the outside fixed tip, you need to record several points using the robot program. At this time, you need to teach seven points to find the axis origin and tool length, and four points or more to find only the tool length.
 
-![Figure 67 Method of Teaching for the Axis Origin and Tool Length Optimization Function](../../_assets/image%20%28228%29.png)
+![Figure 67 Method of Teaching for the Axis Origin and Tool Length Optimization Function](../../_assets/image_228.png)
 
 Using the axis origin and tool length optimization function, you can find the optimized tool lengths X, Y, and Z and the optimized origin of the robot H, V, R2, and B axes as well, even when no CAD data is available for them.
 
@@ -24,7 +24,7 @@ The method to use the axis origin and tool length optimization function is as fo
 
 2.	Select an optimization target and set detailed options.
 
-![](../../_assets/image%20%28529%29.png)
+![](../../_assets/image_529.png)
 
 
 

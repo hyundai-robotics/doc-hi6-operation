@@ -6,7 +6,7 @@ Event information or status information that occurred in the controller can be t
 
 2.	After inputting the output signal number in the information item, touch the \[OK\] button.
 
-![](../../../_assets/image%20%28432%29.png)
+![](../../../_assets/image_432.png)
 
 
 

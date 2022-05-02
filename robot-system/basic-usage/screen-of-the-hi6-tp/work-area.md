@@ -2,7 +2,7 @@
 
 The work area is an area where you can perform various tasks, such as editing JOB programs and checking the monitoring information.
 
-![Figure 10 Layout of the Work Area](../../../_assets/image%20%28309%29.png)
+![Figure 10 Layout of the Work Area](../../../_assets/image_309.png)
 
 <table>
   <thead>

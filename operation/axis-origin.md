@@ -17,7 +17,7 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 
 
-![](../_assets/image%20%28314%29.png)
+![](../_assets/image_314.png)
 
 
 3.	Press the &lt;motor&gt; key on the teach pendant, and then the motor lamp will blink.
@@ -30,7 +30,7 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 6.	Record the step by touching the \[Record\] button on the right side of the Hi6 teach pendant screen.
 
-![](../_assets/image%20%28316%29.png)
+![](../_assets/image_316.png)
 
 
 7.	Change the robot’s posture and repeat the above steps 5–6 more than four times.
@@ -39,12 +39,12 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 8.	Touch the \[Set up\] button &gt; \[6: Auto Calibration &gt; 1: Optimize axis origin and tool length\] menu.
 
-![](../_assets/image%20%28324%29.png)
+![](../_assets/image_324.png)
 
 
 9.	Set the program number, tool number, and step position error allowable range created for the automatic calibration, and then touch the \[Execute\] button. Then the selected axis origin and tool length will be set.
 
-![](../_assets/image%20%28330%29.png)
+![](../_assets/image_330.png)
 
 * You should select Tool Length in the \[Optimization Selection\] option, starting from the au/atic ca/tion of the second tool, when you use multiple tools. If you select Axis Origin and Tool Length, the previously set tool information will not match.
 

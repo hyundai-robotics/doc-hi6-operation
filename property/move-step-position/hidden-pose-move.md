@@ -6,7 +6,7 @@ You can check or modify the position of the current step in the hidden pose move
 
 2.	Check and modify the current step position.
 
-![](../../_assets/image%20%28544%29.png)
+![](../../_assets/image_544.png)
 
 
 

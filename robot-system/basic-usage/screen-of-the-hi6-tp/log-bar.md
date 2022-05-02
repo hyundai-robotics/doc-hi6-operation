@@ -1,6 +1,6 @@
 # 1.2.4.2 Log Bar
 
-![Figure 9 Log Bar](../../../_assets/image%20%28287%29.png)
+![Figure 9 Log Bar](../../../_assets/image_287.png)
 
 <table>
   <thead>

@@ -4,7 +4,7 @@ In the panel selection window, touch \[System character\]. Then, the system char
 
 You can check all the various data of the robot system or only the data of a specific type of information.
 
-![Figure 44 System character](../_assets/image%20%28441%29.png)
+![Figure 44 System character](../_assets/image_441.png)
 
 | No. | Description |
 | :--- | :--- |
@@ -16,7 +16,7 @@ System character monitoring function is only available in engineer mode.
 {% endhint %}
 
 {% hint style="warning" %}
-* In Engineer Mode, the Engineer Mode icon \(![](../_assets/eng-mode%20%281%29.png)\) will blink on the status bar.
+* In Engineer Mode, the Engineer Mode icon \(![](../_assets/eng-mode.png)\) will blink on the status bar.
 * Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
 {% endhint %}
 
@@ -28,9 +28,9 @@ You can initialize the maximum value of the data by selecting the type of inform
 
 1.	Touch the \[Clear\] button at the bottom of the system properties window.
 
-![](../_assets/image%20%28420%29.png)
+![](../_assets/image_420.png)
 
 2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized.
 
-![](../_assets/image%20%28421%29.png)
+![](../_assets/image_421.png)
 

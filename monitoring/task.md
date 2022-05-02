@@ -4,7 +4,7 @@ In the panel selection window, touch \[Task monitor\]. Then, the task window wil
 
 You can check the operation cycle and execution time information for each task.
 
-![Figure 45 Task monitor](../_assets/image%20%28422%29.png)
+![Figure 45 Task monitor](../_assets/image_422.png)
 
 <table>
   <thead>

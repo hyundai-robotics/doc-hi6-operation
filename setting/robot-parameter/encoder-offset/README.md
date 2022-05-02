@@ -6,7 +6,7 @@ The current encoder position can be set as the encoder origin position \(positio
 
 2.	Set the encoder offset value by adjusting the position of each axis. The encoder offset value will be recorded as a hex value \(a hexadecimal number\).
 
-![](../../../_assets/image%20%28472%29.png)
+![](../../../_assets/image_472.png)
 
 
 

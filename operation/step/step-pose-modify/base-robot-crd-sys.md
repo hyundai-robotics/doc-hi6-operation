@@ -16,13 +16,13 @@ Collaborative robots can be restricted by the soft limit because of their mechan
 * back: The tooltip of the robot is in the – direction on the X-axis of the robot coordinate system, meaning the rear. If this is not designated, the tooltip will be in the + direction, meaning the front. 
 * down: Relationship between the H-axis and V-axis. If this is designated, the result will be the bottom. If this is not designated, the result will be top.
 
-![Figure 22 Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../_assets/image%20%2858%29%20%281%29%20%282%29%20%282%29%20%282%29.png)
+![Figure 22 Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../_assets/image_58_1.png)
 
 
 
 * flip: Flip with the B-axis coordinate being a + value. If this is not designated, the result will be non-flip with a - value. The red arrow in the figure shows the direction of the top of the wrist axis.
 
-![Figure 23 Flip \(Left\) / Non-flip \(Right\) Posture](../../../_assets/image%20%2875%29.png)
+![Figure 23 Flip \(Left\) / Non-flip \(Right\) Posture](../../../_assets/image_75.png)
 
 * S \(\|S\|&gt;=180\): The absolute value of the S-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
 * 

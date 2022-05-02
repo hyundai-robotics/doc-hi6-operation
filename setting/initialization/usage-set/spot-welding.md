@@ -2,7 +2,7 @@
 
 If you select the operation usage as spot welding, you can use the commands related to spot welding and access the menu related to spot welding.
 
-![Figure 65 Operation Usage &#x2013; Spot Welding](../../../_assets/image%20%28492%29.png)
+![Figure 65 Operation Usage &#x2013; Spot Welding](../../../_assets/image_492.png)
 
 1.	Set \[Spot Welding\] as enable. Then, other usages will be handled as disable.
 

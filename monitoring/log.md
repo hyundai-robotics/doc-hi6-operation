@@ -4,7 +4,7 @@ Touch \[Log\] in the panel selection window. Then, the log window will appear.
 
 You can check the logs of errors, warnings, notification, operations, operations by the user, I/O, and executions.
 
-![Figure 42 Log](../_assets/image%20%28458%29.png)
+![Figure 42 Log](../_assets/image_458.png)
 
 <table>
   <thead>

@@ -8,7 +8,7 @@ You can simply turn on/off the desired output signal by registering it with a bu
 
 3.	After setting the function name and option to display on the button, touch the \[OK\] button.
 
-![](../../../_assets/image%20%28310%29.png)
+![](../../../_assets/image_310.png)
 
 
 
@@ -27,7 +27,7 @@ You can easily input the signal output variable value using the \[fb\] button an
 
 4.	Check the buttons in the key signal output function area, and touch each button to make sure that the set value is properly applied.
 
-![](../../../_assets/image%20%28331%29.png)
+![](../../../_assets/image_331.png)
 
 {% hint style="info" %}
 You can also assign the desired output signals to the buttons in the key signal output function area in the \[Set Up&gt; Control Parameter&gt; Input/Output Signal Setting&gt; Key Signal Output\] menu. For details, refer to “[7.3.2.8 Key Signal Output](../../../setting/control-parameter/io-signal-setting/key-signal-output.md).”

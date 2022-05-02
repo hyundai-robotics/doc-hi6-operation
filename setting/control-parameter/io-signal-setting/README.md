@@ -4,5 +4,5 @@
 
 2.	Select the desired menu and set the input/output signal attributes and signal assignment, etc.
 
-![](../../../_assets/image%20%28443%29.png)
+![](../../../_assets/image_443.png)
 

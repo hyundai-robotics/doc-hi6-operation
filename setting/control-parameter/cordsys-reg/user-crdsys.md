@@ -4,7 +4,7 @@ The user coordinate system is a coordinate system that is to be set at a positio
 
 Teach three reference steps by following the procedures below.
 
-![Figure 56 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image%20%28427%29.png)
+![Figure 56 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
 
 
 1.	Define the origin of the user coordinate system: Teach an arbitrary point.
@@ -34,7 +34,7 @@ The method to register the user coordinate system by designating the taught prog
 
 2.	Set the user coordinate system name and program number, and the distance and angle from each axis origin.
 _assets
-![](../../../_assets/image%20%28442%29.png)
+![](../../../_assets/image_442.png)
 
 <table>
   <thead>

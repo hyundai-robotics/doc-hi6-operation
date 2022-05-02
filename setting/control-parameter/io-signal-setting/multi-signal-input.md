@@ -8,7 +8,7 @@ The data is in binary format and will be determined by the input on or off. For 
 
 2.	Set the name, signals, and strobe of the input signal group.
 
-![](../../../_assets/image%20%28414%29.png)
+![](../../../_assets/image_414.png)
 
 
 
@@ -63,7 +63,7 @@ The data is in binary format and will be determined by the input on or off. For 
 
 For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
 
-![Figure 55 Example of Job Program Execution](../../../_assets/image%20%28407%29.png)
+![Figure 55 Example of Job Program Execution](../../../_assets/image_407.png)
 
 After starting from S1 toward S2, the robot executes the wait statement. If the wait condition is satisfied before the accuracy of S2 is ok, the robot will move to the path in red. If this is not the case, the robot will wait until the wait condition is satisfied.
 

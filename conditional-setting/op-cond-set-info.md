@@ -65,11 +65,11 @@ If you select the stationary tool as the interpolation reference, you must set t
 * 
   If 0 is set, the robot coordinate system icon \(![](../_assets/icon-crd-rob.png)\) will be displayed on the \[Coordinate System\] button on the right side of the screen. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed.
 
-![](../_assets/image%20%28364%29.png)
+![](../_assets/image_126_en.png)
 
 * If a number between 1 and 10 is set, the user coordinate system icon \(![](../_assets/icon-crd-user.png)\) will be displayed on the \[Coordinate System\] button. The coordinate values that are changed by using the &lt;Axis Operation&gt; key will be based on the user coordinate system.
 
-![](../_assets/image%20%28363%29.png)
+![](../_assets/image_134_en.png)
 
 
 

@@ -1,6 +1,6 @@
 # 1.2.4.1 Status Bar
 
-![Figure 8 Status Bar](../../../_assets/image%20%28284%29.png)
+![Figure 8 Status Bar](../../../_assets/image_284.png)
 
 <table>
   <thead>

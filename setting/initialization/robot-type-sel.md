@@ -4,7 +4,7 @@
 
 2.	Select a robot in the robot model selection window, and then touch the \[OK\] button.
 
-![](../../_assets/image%20%28506%29.png)
+![](../../_assets/image_506.png)
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-![](../../_assets/image%20%28508%29.png)
+![](../../_assets/image_508.png)
 
 {% hint style="warning" %}
 * The manipulator and controller are shipped as one system. For this reason, the robot controller is equipped with a drive suitable for the drive capacity of the robot that is part of the system.
@@ -29,20 +29,20 @@
 
 3.	After touching the \[Favorites\] button at the bottom right of the Hi6 teach pendant screen, input 314 in the input area of the favorites window, and then touch the \[OK\] button.
 
-![](../../_assets/image%20%28498%29.png)
+![](../../_assets/image_498.png)
 
 {% hint style="warning" %}
-* In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode%20%281%29.png)\) will blink on the status bar.
+* In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
 * Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
 {% endhint %}
 
 4.	Touch the \[Set Up\] button &gt; \[3: Robot Parameter &gt; 4: Encoder Offset\] menu.
 
-![](../../_assets/image%20%28533%29.png)
+![](../../_assets/image_533.png)
 
 5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.
 
-![](../../_assets/image%20%28490%29.png)
+![](../../_assets/image_490.png)
 
 {% hint style="info" %}
 * You should perform an encoder offset setting normally after moving the robot to the reference position.

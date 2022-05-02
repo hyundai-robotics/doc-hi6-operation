@@ -6,7 +6,7 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 
 2.	Set the tooltip position \(TCP\) and posture for each accuracy level.
 
-![](../../_assets/image%20%28479%29.png)
+![](../../_assets/image_479.png)
 
 
 

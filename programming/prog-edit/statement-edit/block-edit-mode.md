@@ -6,17 +6,17 @@ You can copy, move, and delete a line or multiple lines of the program by design
 
 2.	Place the cursor on the desired line using the &lt;↓/↑&gt; keys on the teach pendant and then press the &lt;enter&gt; key. Then, the line on which the cursor is placed will be selected as the start line of the block.
 
-![](../../../_assets/image%20%28354%29.png)
+![](../../../_assets/image_354.png)
 
 
 
 3.	Move the cursor by turning the jog dial on the teach pendant. Then, the section from the start line to the line to which the cursor is moved to will be selected as a block.
 
-![](../../../_assets/image%20%28343%29.png)
+![](../../../_assets/image_343.png)
 
 4.	You can edit the statement in the area that is selected as a block using the function buttons on the right side of the screen.
 
-![](../../../_assets/image%20%28345%29.png)
+![](../../../_assets/image_345.png)
 
 * \[Cut\]: You can cut the area selected as a block and save it in the clipboard so that it can be pasted to another location.
 * \[Copy\]: You can copy the area selected as a block and save it in the clipboard so that it can be pasted to another location.

@@ -2,7 +2,7 @@
 
 #### Vertical Articulated Robot Controller 
 
-![Figure 4 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image%20%2833%29.png)
+![Figure 4 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_33.png)
 
 | No. | Name | Description |
 | :--- | :--- | :--- |
@@ -14,7 +14,7 @@
 
 #### Collaborative Robot Controller
 
-![Figure 5 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image%20%2815%29.png)
+![Figure 5 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_15.png)
 
 
 

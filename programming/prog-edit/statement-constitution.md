@@ -2,7 +2,7 @@
 
 A statement consists of an address area and a statement area. 
 
-![Figure 28 Areas Comprising a Statement](../../_assets/image%20%28106%29.png)
+![Figure 28 Areas Comprising a Statement](../../_assets/image_106.png)
 
 | No. | Area | Description |
 | :--- | :--- | :--- |
@@ -11,7 +11,7 @@ A statement consists of an address area and a statement area.
 
 You can move the cursor position between the address area and the statement area by pressing the &lt;←/→&gt; key on the teach pendant. Pressing the &lt;↓/↑&gt; key will allow you to move the cursor up and down between the lines within the selected area.
 
-![Figure 29 Moving the Cursor Between Areas \(Left: Address Area. Right: Statement Area\)](../../_assets/image%20%2886%29.png)
+![Figure 29 Moving the Cursor Between Areas \(Left: Address Area. Right: Statement Area\)](../../_assets/image_86.png)
 
 
 

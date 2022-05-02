@@ -6,7 +6,7 @@
 
 3.	While moving 200 mm or more in the same direction as the direction you moved in step 2, record the same point as the third and fourth steps.
 
-![](../../../_assets/image%20%28526%29.png)
+![](../../../_assets/image_526.png)
 
 
 

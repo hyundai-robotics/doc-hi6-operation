@@ -2,7 +2,7 @@
 
 Touch \[JOB\] in the panel selection window. Then, the JOB program window will appear. You can check a program, and then edit or delete it or create one.
 
-![Figure 33 JOB Program](../_assets/image%20%28397%29.png)
+![Figure 33 JOB Program](../_assets/image_397.png)
 
 
 

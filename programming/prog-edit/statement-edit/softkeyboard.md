@@ -6,7 +6,7 @@ You can easily input variables, expressions, and strings using the soft keyboard
 
 2.	You can input variables, expressions, and strings in the input area using the soft keyboard. The existing parameter values will be removed, and the inputted texts will be displayed.
 
-![](../../../_assets/image%20%2878%29.png)
+![](../../../_assets/image_78.png)
 
 * If you touch the \[ / \] button on the left side of the input area, you can move the cursor position, allowing you to insert the text at the desired position.
 * You can input numbers and special characters by touching the \[![](../../../_assets/bt-123.png)/![](../../../_assets/bt-symbol.png)\] button.

@@ -6,7 +6,7 @@ You can set the firmware to be used for the industrial communication.
 
 2.	Select the desired tab and then set the communication method \(Master / Slave\) and protocol. After that, tap the \[OK\] button.
 
-![](../../../_assets/image%20%28419%29.png)
+![](../../../_assets/image_419.png)
 
 
 

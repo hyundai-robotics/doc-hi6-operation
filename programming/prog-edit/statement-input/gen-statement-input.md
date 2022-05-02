@@ -2,11 +2,11 @@
 
 1.	In manual mode, touch the \[Command\] button on the right side of the initial screen. Then, the command inputting window will appear.
 
-![](../../../_assets/image%20%28349%29.png)
+![](../../../_assets/image_349.png)
 
 2.	Touch a statement group or input command and then select the command from the list. The statement will be inputted immediately below the current cursor position.
 
-![](../../../_assets/image%20%28358%29.png)
+![](../../../_assets/image_358.png)
 
 * In the case of command with multiple parameter forms, a check mark \(![](../../../_assets/icon-ok.png)\) will appear on the right. You can check and select the parameter form by touching the command in the list. 
 * 

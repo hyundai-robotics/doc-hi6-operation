@@ -6,7 +6,7 @@ By registering the robot’s arbitrary posture as the home position, you can all
 
 2.	Select the home position tab, and then set the use, output signal, axis angle, and range.
 
-![](../../_assets/image%20%28466%29.png)
+![](../../_assets/image_466.png)
 
 
 

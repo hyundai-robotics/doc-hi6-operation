@@ -8,7 +8,7 @@ The step statement is configured as follows.
 
 
 
-![](../../../_assets/image%20%2877%29.png)
+![](../../../_assets/image_77.png)
 
 <table>
   <thead>

@@ -8,7 +8,7 @@ The method to set parameters such as the specification and configuration of the 
 
 2.	Set the parameters such as the specification and configuration of the additional axes.
 
-![](../../_assets/image%20%28499%29.png)
+![](../../_assets/image_499.png)
 
 
 

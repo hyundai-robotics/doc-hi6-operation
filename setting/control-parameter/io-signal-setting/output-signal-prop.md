@@ -6,7 +6,7 @@ You can set the logic, pulse, and name for a general input signal.
 
 2.	Check and set the general input signal list, and then touch the \[OK\] button.
 
-![](../../../_assets/image%20%28440%29.png)
+![](../../../_assets/image_440.png)
 
 * \[Append\]: You can add a new general output signal to the list.
 * \[Delete\]: You can delete the general output signal from the list.

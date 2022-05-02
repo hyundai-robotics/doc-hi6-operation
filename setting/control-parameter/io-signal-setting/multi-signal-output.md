@@ -8,7 +8,7 @@ The data is in binary format and determines whether the output will be on or off
 
 2.	Set the name, signals, and strobe of the output signal group. 
 
-![](../../../_assets/image%20%28452%29.png)
+![](../../../_assets/image_452.png)
 
 
 
@@ -63,7 +63,7 @@ The data is in binary format and determines whether the output will be on or off
 
 For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
 
-![Figure 54 Example of Job Program Execution](../../../_assets/image%20%28429%29.png)
+![Figure 54 Example of Job Program Execution](../../../_assets/image_429.png)
 
 When the robot starts from S1 toward S2 and the accuracy of S2 is OK, the strobe signal will be outputted together with the signal of the designated group. The strobe signal will be turned off after 200 ms. \(The strobe signal is a pulse signal of 200 ms.\)
 

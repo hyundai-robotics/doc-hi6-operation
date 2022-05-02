@@ -7,7 +7,7 @@ You can manage files in the main board’s internal memory, teach pendant, or re
 
 2.	Check and manage the folder structure and saved files by device.
 _assets
-![](../../_assets/image%20%28372%29.png)
+![](../../_assets/image_372.png)
 
 
 
@@ -20,7 +20,7 @@ _assets
   </thead>
   <tbody>
     <tr>
-      <td style="text-al_assets
+      <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
@@ -50,7 +50,7 @@ _assets
       </td>
     </tr>
     <tr>
-      <td style="text-al_assets
+      <td style="text-align:left">
         <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">Shows the list of the files saved in the selected folder. You can check
@@ -58,7 +58,7 @@ _assets
         of each file.</td>
     </tr>
     <tr>
-      <td style="text-al_assets
+      <td style="text-align:left">
         <img src="../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">You can manage files and folders using the function buttons.</td>

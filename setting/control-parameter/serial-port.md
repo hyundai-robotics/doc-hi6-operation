@@ -6,7 +6,7 @@ You can set the information required for serial port communication.
 
 2.	Set the parameters for each serial port.
 
-![](../../_assets/image%20%28412%29.png)
+![](../../_assets/image_412.png)
 
 
 

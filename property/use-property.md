@@ -2,7 +2,7 @@
 
 If you use the \[property\] button on the right side of the Hi6 teach pendant screen, you can quickly and easily set the conditions and check the position simply by a single button operation.
 
-![Figure 75 Function for the \[Attributes\] Button](../_assets/image%20%28540%29.png)
+![Figure 75 Function for the \[Attributes\] Button](../_assets/image_540.png)
 
 For example, if you touch the \[property\] button while the cursor is on the arcon statement that is for the Arc On function, the contents of the condition number used in the current statement among the welding start conditions will be displayed. On the screen, you can check or change the details of the welding start conditions. Moreover, if there is another condition file associated with the concerned condition file, you can move directly to it. In other words, the \[property\] button allows you to check and change the details of the contents related to a specific statement such as condition file or step position quickly and easily. 
 

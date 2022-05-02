@@ -4,11 +4,11 @@ Protect your important files by performing a setting that can make it impossible
 
 1.	Select the file and touch the \[property\] button. Then, the attribute setting window will appear.
 
-![](../../_assets/image%20%28380%29.png)
+![](../../_assets/image_380.png)
 
 2.	Check the file name and touch the \[Read Only\] checkbox to select it and then touch the \[OK\] button. A protection mark \(W\_\) will appear in the attributes of the file list.
 
-![](../../_assets/image%20%28238%29.png)
+![](../../_assets/image_238.png)
 
 
 

@@ -6,7 +6,7 @@ You can remotely control the controller’s state or operation using the control
 
 2.	After inputting the input signal number in the remote control item, touch the \[OK\] button.
 
-![](../../../_assets/image%20%28408%29.png)
+![](../../../_assets/image_408.png)
 
 * \[Reset All\]: You can reset the numbers of the input signals assigned to all remote control items. 
 * 

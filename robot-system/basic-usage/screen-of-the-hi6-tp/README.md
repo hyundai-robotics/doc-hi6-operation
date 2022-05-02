@@ -2,7 +2,7 @@
 
 You can control the operation of the robot or manage devices that interoperate with the robot. The Hi6 teach pendant screen is configured as follows.
 
-![Figure 7 Configuration of the Hi6 Teach Pendant](../../../_assets/image%20%28283%29.png)
+![Figure 7 Configuration of the Hi6 Teach Pendant](../../../_assets/image_283.png)
 
 <table>
   <thead>
