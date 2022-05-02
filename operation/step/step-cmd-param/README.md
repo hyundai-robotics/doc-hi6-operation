@@ -6,7 +6,7 @@
 
 스텝 명령문은 다음과 같이 구성됩니다.
 
-![](../../../_assets/image%20%2877%29.png)
+![](../../../_assets/image_77.png)
 
 <table>
   <thead>
