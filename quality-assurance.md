@@ -1,3 +1,3 @@
 # Quality Assurance
 
-"[Quality Assurance](https://hrbook-asoe72.web.app/#/view/quality-assurance/english/README)"
+"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/english/README)"
