@@ -7,7 +7,4 @@
 ![](../../../_assets/image_47_1.png)
 
 * 여러 개의 인수 형태를 가진 명령어의 경우, 우측에 체크 표시\( V \)가 나타납니다. 목록에서 명령어를 터치하면 인수 형태를 확인하고 선택할 수 있습니다.
-* 각 명령문에 대한 자세한 내용은 별도의 “[Hi6 로봇언어 기능 설명서](https://hyundai-robotics.gitbook.io/hi6-robot-language/)”를 참조하십시오.
-
-
-
+* 각 명령문에 대한 자세한 내용은 "[Hi6 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/README)"를 참조하십시오.

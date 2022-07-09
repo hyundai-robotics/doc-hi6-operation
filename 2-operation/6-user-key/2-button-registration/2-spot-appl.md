@@ -2,3 +2,4 @@
 
 스폿 응용 기능에 대한 자세한 내용은 별도의 “Hi6 제어기 스폿용접 기능 설명서”를 참조하십시오.
 
+* 각 명령문에 대한 자세한 내용은 별도의 "[Hi6 로봇언어 기능 설명서 - 스폿 용접](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/README)"를 참조하십시오.
