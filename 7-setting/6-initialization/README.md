@@ -21,7 +21,7 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 * 
   When the system is initialized, all data and programs saved in the controller will be deleted. Before initializing the system, you should back up your data and programs and restore them if necessary.
 
-  For details on Data Backup and Restoration, refer to “[4.2.5 Data Backup](../../menu/file-manager/data-backup.md)” and “[4.2.6 Data Restoration](../../menu/file-manager/data-restore.md)”.
+  For details on Data Backup and Restoration, refer to ???[4.2.5 Data Backup](../../4-menu/2-file-manager/5-data-backup.md)??? and ???[4.2.6 Data Restoration](../../4-menu/2-file-manager/6-data-restore.md)???.
 {% endhint %}
 
 

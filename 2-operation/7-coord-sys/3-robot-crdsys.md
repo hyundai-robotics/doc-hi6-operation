@@ -1,4 +1,4 @@
-# 2.7.3 Robot Coordinate System
+﻿# 2.7.3 Robot Coordinate System
 
 | Joint Coordinate System | **Robot Coordinate System** | User Coordinate System | Tool Coordinate System |
 | :---: | :---: | :---: | :---: |
@@ -15,7 +15,7 @@
 ![](../../_assets/image_62.png)
 
 {% hint style="info" %}
-* For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](jog-key.md).” 
+* For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](1-jog-key.md).” 
 * 
   If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
 

@@ -1,4 +1,4 @@
-# 2.8 Optimization of the Axis Origin and Tool Length
+﻿# 2.8 Optimization of the Axis Origin and Tool Length
 
 You can make it possible for the axis integer and tool length to be automatically set to improve the accuracy of the linear interpolation trajectory and coordinate shifting.
 
@@ -49,6 +49,6 @@ The following shows how to set the optimization of the axis origin and tool leng
 * You should select Tool Length in the \[Optimization Selection\] option, starting from the au/atic ca/tion of the second tool, when you use multiple tools. If you select Axis Origin and Tool Length, the previously set tool information will not match.
 
 {% hint style="info" %}
-For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../setting/auto-calibration/axis-origin-tool-length-optimization.md).”
+For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../7-setting/7-auto-calibration/1-axis-origin-tool-length-optimization.md).”
 {% endhint %}
 

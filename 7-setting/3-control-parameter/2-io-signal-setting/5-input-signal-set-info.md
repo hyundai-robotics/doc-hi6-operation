@@ -44,7 +44,7 @@ When the robot is externally started up, the timing of reading the program selec
 
 #### 
 
-#### Program selection bit and binary/discrete \(off ‚Üí binary\)
+#### Program selection bit and binary/discrete \(off ?Üí binary\)
 
 The program selection bit is a combination of signals to select a program to execute when an external start signal is inputted. It is applied only when a step is pointed in Header or in the End currently in the TP. When a program is being executed, the program will be executed to the end.
 
@@ -58,13 +58,13 @@ For example, if the program selection bit is set as follows, an example of JOB t
 
 #### External reset
 
-This function is used to perform the same operation as executing the R0 step counter reset function from the teach pendant by an external signal. When the robot is starting up, this function will not operate. If this function operates normally, the execution position will move to the beginning of the program, and the occurrence status of various errors or warnings will be cleared. Refer to ‚Äú[8.2 R0 for Resetting the Step Counter](../../../r-code/r0.md)‚Äù for information on this function.
+This function is used to perform the same operation as executing the R0 step counter reset function from the teach pendant by an external signal. When the robot is starting up, this function will not operate. If this function operates normally, the execution position will move to the beginning of the program, and the occurrence status of various errors or warnings will be cleared. Refer to ???[8.2 R0 for Resetting the Step Counter](../../../8-r-code/2-r0.md)??? for information on this function.
 
 #### 
 
 #### Low speed command
 
-This function is used to limit the robot‚Äôs moving speed to within the safe speed \(250 mm/s\) by an external signal.
+This function is used to limit the robot??ôs moving speed to within the safe speed \(250 mm/s\) by an external signal.
 
 
 

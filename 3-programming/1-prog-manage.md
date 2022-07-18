@@ -1,4 +1,4 @@
-# 3.1 Program Management
+﻿# 3.1 Program Management
 
 While the robot is stopped, you can create, modify, and delete programs.
 
@@ -23,7 +23,7 @@ While the robot is stopped, you can create, modify, and delete programs.
 ![](../_assets/image_357.png)
 
 * You can delete a program from the file list \(\[Menu&gt; 5: File Management\]\). For details, refer to “[4.2 File Management](../menu/file-manager/).”
-* You can quickly delete a program using the R code \(R117\). For details, refer to “[8.4 R117 for Deleting a Program](../r-code/r117.md).”
+* You can quickly delete a program using the R code \(R117\). For details, refer to “[8.4 R117 for Deleting a Program](../8-r-code/4-r117.md).”
 
 
 

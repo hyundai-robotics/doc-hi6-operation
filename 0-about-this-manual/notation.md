@@ -27,9 +27,9 @@ Keys that are to be pressed on the operation part of the teach pendant to operat
 
 ## Cross Reference 
 
-It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks \(“ ”\) in bold as follows.
+It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks \(??? ???\) in bold as follows.
 
-* For details on how to change the date and time information, refer to “[4.5 Setting of Date and Time.](../menu/date-time-setting.md)”
+* For details on how to change the date and time information, refer to ???[4.5 Setting of Date and Time.](../4-menu/5-date-time-setting.md)???
 
 ## Note
 

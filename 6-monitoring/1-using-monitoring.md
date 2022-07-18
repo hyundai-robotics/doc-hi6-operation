@@ -4,7 +4,7 @@
 
 ![](../_assets/image_384.png)
 
-2.	íŒ¨ë„ ì„ íƒì°½ì—ì„œ ì›í•˜ëŠ” ëª¨ë‹ˆí„°ë§ í•­ëª©ì„ ì„ íƒí•˜ì—¬ ë¡œë´‡ ì‹œìŠ¤í…œì˜ ìƒíƒœì™€ ì œì–´ê¸°ì˜ ê°ì¢… ë°ì´í„°ë¥¼ í™•ì¸í•˜ì‹­ì‹œì˜¤.
+2.	?Œ¨?„ ?„ ?ƒì°½ì—?„œ ?›?•˜?Š” ëª¨ë‹ˆ?„°ë§? ?•­ëª©ì„ ?„ ?ƒ?•˜?—¬ ë¡œë´‡ ?‹œ?Š¤?…œ?˜ ?ƒ?ƒœ??? ? œ?–´ê¸°ì˜ ê°ì¢… ?°?´?„°ë¥? ?™•?¸?•˜?‹­?‹œ?˜¤.
 
 ![](../_assets/image_383.png)
 
@@ -14,7 +14,7 @@
   The items that can be monitored will be displayed differently depending on the setting of the controller.
 
 * 
-  For details on how to use the panel stack and window of the work area, refer to â€œ[1.2.4.5 Work area](../robot-system/basic-usage/screen-of-the-hi6-tp/work-area.md).â€
+  For details on how to use the panel stack and window of the work area, refer to ???[1.2.4.5 Work area](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/5-work-area.md).???
 {% endhint %}
 
 
