@@ -68,9 +68,9 @@ Keys that are to be pressed on the operation part of the teach pendant to operat
 
 ## Cross Reference 
 
-It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks \(“ ”\) in bold as follows.
+It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks \(??? ???\) in bold as follows.
 
-* For details on how to change the date and time information, refer to “[4.5 Setting of Date and Time.](../menu/date-time-setting.md)”
+* For details on how to change the date and time information, refer to ???[4.5 Setting of Date and Time.](../4-menu/5-date-time-setting.md)???
 
 ## Note
 
@@ -1284,7 +1284,7 @@ To set the execution unit for the step forward/backward operation, touch the \[r
 
 When the execution unit is set as cmd or step, the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing b/n automatic mode.
 
-When you set the execution unit as cmd or step and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to “[2.3.1.4 Accuracy](../step/step-cmd-param/accuracy.md).”
+When you set the execution unit as cmd or step and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to ???[2.3.1.4 Accuracy](../3-step/1-step-cmd-param/4-accuracy.md).???
 
 ![Figure 11 Playback Forward/Backward Path When cmd/step Setting is Performed](../../_assets/path-cmd-step-pback-fwd-bwd-en.png)
 
@@ -1494,8 +1494,8 @@ During the linear interpolation, under certain conditions, the robot cannot auto
 {% hint style="info" %}
 Singular postures in which the posture interpolation cannot be performed are as follows.
 
-* If the B-axis is near the dead zone: For details on the dead zone setting, refer to “[7.4.5 B-axis Deadzone](../../../setting/robot-parameter/b-axis-deadzone.md).”
-* When the sign of the B-axis changes: When the sign of the B-axis angle switches \( - → + \) or \( + → - \)
+* If the B-axis is near the dead zone: For details on the dead zone setting, refer to ???[7.4.5 B-axis Deadzone](../../../7-setting/4-robot-parameter/5-b-axis-deadzone.md).???
+* When the sign of the B-axis changes: When the sign of the B-axis angle switches \( - ?�� + \) or \( + ?�� - \)
 * When the angle variation of the R2 and R1 axes exceeds 180 degrees
 * When the center of the B-axis \(axis 5\) or the tooltip passes the center of rotation of the S-axis \(axis 1\): There may be an error in the trajectory as well as in the posture.
 * When the angle variation of the S-axis exceeds 180 degrees
@@ -1527,7 +1527,7 @@ In this way, by determining the interpolation method of the step in consideratio
 
   This method will be used when the robot owns the workpiece and perform the work using an externally fixed tool. In this case, the interpolation will be performed based on the workpiece owned by the robot.
 
-  For details on the types of interpolation for stationary tools, refer to “[7.3.6.2 Stationary Tool Coordinate System](../../../setting/control-parameter/cordsys-reg/stationary-tool-crdsys.md).”
+  For details on the types of interpolation for stationary tools, refer to ???[7.3.6.2 Stationary Tool Coordinate System](../../../7-setting/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md).???
 
 
 
@@ -1607,15 +1607,15 @@ The operation speed of the robot can be displayed using the following four types
 
 It will determine the accuracy \(the degree of approach to the recorded position\) at which the robot passes through the step when progressing the target step. When the robot moves to the target step, if the error between the current position and the recorded position that occurs when the robot moves to the target step is less than a certain value, the robot will move to the next step. The value of the allowable error at this time is called accuracy.
 
-A path that is newly created within the accuracy range \(0–7\) according to the accuracy is called a cornering path. In general, the higher the accuracy, the faster the cornering speed, which is advantageous in terms of moving time.
+A path that is newly created within the accuracy range \(0???7\) according to the accuracy is called a cornering path. In general, the higher the accuracy, the faster the cornering speed, which is advantageous in terms of moving time.
 
 
 
 ![Figure 18 Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
 
-Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression “Accuracy ≤ min \(P1-P2, P2-P3\) / 2” in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
+Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression ??�Accuracy ?�� min \(P1-P2, P2-P3\) / 2??? in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
 
-In the case of a robot, the value of the applicable accuracy level will be defined based on the tooltip distance and posture angle of the robot. When it comes to additional axes, the value in the case of the linear axis will be defined based on the length, and the value in the case of the rotation axis will be defined based on the angle. You can directly change the values in the \[Set up&gt; 3: Robot Parameter&gt; 6: Accuracy\] menu. For details on the value of the accuracy level, refer to “[7.4.6 Accuracy](../../../setting/robot-parameter/accuracy.md).”
+In the case of a robot, the value of the applicable accuracy level will be defined based on the tooltip distance and posture angle of the robot. When it comes to additional axes, the value in the case of the linear axis will be defined based on the length, and the value in the case of the rotation axis will be defined based on the angle. You can directly change the values in the \[Set up&gt; 3: Robot Parameter&gt; 6: Accuracy\] menu. For details on the value of the accuracy level, refer to ???[7.4.6 Accuracy](../../../7-setting/4-robot-parameter/6-accuracy.md).???
 
 
 
@@ -1854,7 +1854,7 @@ You can easily input the signal output variable value using the \[fb\] button an
 ![](../../../_assets/image_331.png)
 
 {% hint style="info" %}
-You can also assign the desired output signals to the buttons in the key signal output function area in the \[Set Up&gt; Control Parameter&gt; Input/Output Signal Setting&gt; Key Signal Output\] menu. For details, refer to “[7.3.2.8 Key Signal Output](../../../setting/control-parameter/io-signal-setting/key-signal-output.md).”
+You can also assign the desired output signals to the buttons in the key signal output function area in the \[Set Up&gt; Control Parameter&gt; Input/Output Signal Setting&gt; Key Signal Output\] menu. For details, refer to ???[7.3.2.8 Key Signal Output](../../../7-setting/3-control-parameter/2-io-signal-setting/8-key-signal-output.md).???
 {% endhint %}
 
 
@@ -1940,7 +1940,7 @@ For details on the robot’s progress direction in relation to the jog keys, ref
 ![](../../_assets/image_62.png)
 
 {% hint style="info" %}
-* For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](jog-key.md).” 
+* For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](1-jog-key.md).” 
 * 
   If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
 
@@ -1963,7 +1963,7 @@ Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
 1.	On the right side of the initial screen, touch the \[Set up\] button &gt; \[2: Control Parameter&gt; 7: Coordinate System Registration&gt; 1: User Coordinate System\] menu and then register the user coordinate system.
 
 {% hint style="info" %}
-For details on how to register the user coordinate system, refer to “[7.3.6.1 User Coordinate System](../../setting/control-parameter/cordsys-reg/user-crdsys.md).”
+For details on how to register the user coordinate system, refer to “[7.3.6.1 User Coordinate System](../../7-setting/3-control-parameter/6-cordsys-reg/1-user-crdsys.md).”
 {% endhint %}
 
 2.	Touch the \[Speed Adjustment\] button at the top left of the initial screen and then set the coordinate system in the \[9: Select user coordinate\] option. You can choose the user coordinate system instead of the Cartesian coordinate system.
@@ -1975,7 +1975,7 @@ For details on how to register the user coordinate system, refer to “[7.3.6.1 
 ![](../../_assets/image_103.png)
 
 {% hint style="info" %}
-For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](jog-key.md).” 
+For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](1-jog-key.md).” 
 {% endhint %}
 
 # 2.7.5 Tool Coordinate System
@@ -2001,7 +2001,7 @@ For details on the robot’s progress direction in relation to the jog keys, ref
 ![](../../_assets/image_92.png)
 
 {% hint style="info" %}
-For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](jog-key.md).”
+For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](1-jog-key.md).”
 {% endhint %}
 
 # 2.8 Optimization of the Axis Origin and Tool Length
@@ -2055,7 +2055,7 @@ The following shows how to set the optimization of the axis origin and tool leng
 * You should select Tool Length in the \[Optimization Selection\] option, starting from the au/atic ca/tion of the second tool, when you use multiple tools. If you select Axis Origin and Tool Length, the previously set tool information will not match.
 
 {% hint style="info" %}
-For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../setting/auto-calibration/axis-origin-tool-length-optimization.md).”
+For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../7-setting/7-auto-calibration/1-axis-origin-tool-length-optimization.md).”
 {% endhint %}
 
 # 2.9 Tool Data Automatic Calibration
@@ -2107,7 +2107,7 @@ While the robot is stopped, you can create, modify, and delete programs.
 ![](../_assets/image_357.png)
 
 * You can delete a program from the file list \(\[Menu&gt; 5: File Management\]\). For details, refer to “[4.2 File Management](../menu/file-manager/).”
-* You can quickly delete a program using the R code \(R117\). For details, refer to “[8.4 R117 for Deleting a Program](../r-code/r117.md).”
+* You can quickly delete a program using the R code \(R117\). For details, refer to “[8.4 R117 for Deleting a Program](../8-r-code/4-r117.md).”
 
 
 
@@ -2911,7 +2911,7 @@ c.	Press the &lt;enter&gt; key. Then, the contents of the change will be applied
 
   * Continuous: The job program will operate continuously and repeatedly. If there is an external stop operation, the robot will stop.
 * 
-  \[2: Step FWD/BWD maximum speed\]: You can set the speed limit for a step forward/backward. For details on this option, refer to “[2.1 Manual Operation](../operation/manual-operation/).”
+  \[2: Step FWD/BWD maximum speed\]: You can set the speed limit for a step forward/backward. For details on this option, refer to ???[2.1 Manual Operation](../operation/manual-operation/).???
 
 * 
   \[3: Function execution during Step FWD\]: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
@@ -2939,7 +2939,7 @@ While in the step backward operation, only the input wait signal function will b
   * Enable: Will execute path recovery without confirming with the user whether to execute path recovery
 
 * 
-  \[6: Playback speed rate\]: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot’s moving speed against the speed recorded in the step in batch.
+  \[6: Playback speed rate\]: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot??�s moving speed against the speed recorded in the step in batch.
 
 
 
@@ -2958,10 +2958,10 @@ If a low-speed command is inputted through an external input during automatic op
 
 
 {% hint style="info" %}
-If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to “[7.3.6.2 Stationary Tool Coordinate System](../setting/control-parameter/cordsys-reg/stationary-tool-crdsys.md).”
+If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to ???[7.3.6.2 Stationary Tool Coordinate System](../7-setting/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md).???
 {% endhint %}
 
-* \[9: Select user Coordinate System Designation\]: You can set the user coordinate system number \(0–10\) for Cartesian operation during manual jog operation. Then, the robot will operate based on the Cartesian coordinate system in the directions of X, Y, and Z axes of the designated user coordinate system, and the coordinate values of the user coordinate system selected during the monitoring of the pose will be displayed as X, Y, and Z coordinate values of the front end of the tool.
+* \[9: Select user Coordinate System Designation\]: You can set the user coordinate system number \(0???10\) for Cartesian operation during manual jog operation. Then, the robot will operate based on the Cartesian coordinate system in the directions of X, Y, and Z axes of the designated user coordinate system, and the coordinate values of the user coordinate system selected during the monitoring of the pose will be displayed as X, Y, and Z coordinate values of the front end of the tool.
 
 
 
@@ -2996,7 +2996,7 @@ You can check the status of the robot system and various data of the controller.
 
 ![](../_assets/image_384.png)
 
-2.	패널 선택창에서 원하는 모니터링 항목을 선택하여 로봇 시스템의 상태와 제어기의 각종 데이터를 확인하십시오.
+2.	?��?�� ?��?��창에?�� ?��?��?�� 모니?���? ?��목을 ?��?��?��?�� 로봇 ?��?��?��?�� ?��?��??? ?��?��기의 각종 ?��?��?���? ?��?��?��?��?��?��.
 
 ![](../_assets/image_383.png)
 
@@ -3006,7 +3006,7 @@ You can check the status of the robot system and various data of the controller.
   The items that can be monitored will be displayed differently depending on the setting of the controller.
 
 * 
-  For details on how to use the panel stack and window of the work area, refer to “[1.2.4.5 Work area](../robot-system/basic-usage/screen-of-the-hi6-tp/work-area.md).”
+  For details on how to use the panel stack and window of the work area, refer to ???[1.2.4.5 Work area](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/5-work-area.md).???
 {% endhint %}
 
 
@@ -3536,7 +3536,7 @@ You can check the operation cycle and execution time information for each task.
 
 In the panel selection window, touch \[Soft Keyboard\]. Then, a soft keyboard window will appear. 
 
-You can input variables, expressions, and strings, which include numbers, characters, symbols, and special symbols. For details on how to use the soft keyboard, refer to “[3.2.4.4 Soft Keyboard](../programming/prog-edit/statement-edit/softkeyboard.md).”
+You can input variables, expressions, and strings, which include numbers, characters, symbols, and special symbols. For details on how to use the soft keyboard, refer to ???[3.2.4.4 Soft Keyboard](../3-programming/2-prog-edit/4-statement-edit/4-softkeyboard.md).???
 
 ![Figure 46 Soft Keyboard](../_assets/image_435.png)
 
@@ -3976,7 +3976,7 @@ When the robot is externally started up, the timing of reading the program selec
 
 #### 
 
-#### Program selection bit and binary/discrete \(off → binary\)
+#### Program selection bit and binary/discrete \(off ?�� binary\)
 
 The program selection bit is a combination of signals to select a program to execute when an external start signal is inputted. It is applied only when a step is pointed in Header or in the End currently in the TP. When a program is being executed, the program will be executed to the end.
 
@@ -3990,13 +3990,13 @@ For example, if the program selection bit is set as follows, an example of JOB t
 
 #### External reset
 
-This function is used to perform the same operation as executing the R0 step counter reset function from the teach pendant by an external signal. When the robot is starting up, this function will not operate. If this function operates normally, the execution position will move to the beginning of the program, and the occurrence status of various errors or warnings will be cleared. Refer to “[8.2 R0 for Resetting the Step Counter](../../../r-code/r0.md)” for information on this function.
+This function is used to perform the same operation as executing the R0 step counter reset function from the teach pendant by an external signal. When the robot is starting up, this function will not operate. If this function operates normally, the execution position will move to the beginning of the program, and the occurrence status of various errors or warnings will be cleared. Refer to ???[8.2 R0 for Resetting the Step Counter](../../../8-r-code/2-r0.md)??? for information on this function.
 
 #### 
 
 #### Low speed command
 
-This function is used to limit the robot’s moving speed to within the safe speed \(250 mm/s\) by an external signal.
+This function is used to limit the robot??�s moving speed to within the safe speed \(250 mm/s\) by an external signal.
 
 
 
@@ -4268,7 +4268,7 @@ By assigning the output signal of the controller to the signal keys \(&lt;shift+
 For example, input 2.9 and press the &lt;enter&gt; key. Then, it will be converted to and displayed as fb2.do9. If you input 9 without decimal point and press the &lt;enter&gt; key, it will be converted to do9.
 
 {% hint style="info" %}
-You can register the desired output signal with a button in the user key area of Hi6 teach pendant. For details, refer to “[2.6.2.1 Key Signal Output Function Area](../../../operation/user-key/button-registration/key-signal-output.md).”
+You can register the desired output signal with a button in the user key area of Hi6 teach pendant. For details, refer to ???[2.6.2.1 Key Signal Output Function Area](../../../2-operation/6-user-key/2-button-registration/1-key-signal-output.md).???
 {% endhint %}
 
 # 7.3.2.9 DIO Block Allocation
@@ -5467,7 +5467,7 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 * 
   When the system is initialized, all data and programs saved in the controller will be deleted. Before initializing the system, you should back up your data and programs and restore them if necessary.
 
-  For details on Data Backup and Restoration, refer to “[4.2.5 Data Backup](../../menu/file-manager/data-backup.md)” and “[4.2.6 Data Restoration](../../menu/file-manager/data-restore.md)”.
+  For details on Data Backup and Restoration, refer to ???[4.2.5 Data Backup](../../4-menu/2-file-manager/5-data-backup.md)??? and ???[4.2.6 Data Restoration](../../4-menu/2-file-manager/6-data-restore.md)???.
 {% endhint %}
 
 
@@ -6707,7 +6707,7 @@ You can check or modify the position of the current step in the hidden pose move
 {% hint style="info" %}
 * If \[Robot Configuration\] is set as undesignated, the robot will designate a configuration the very closest to the current position of the robot.
 * 
-  For the designation according to the robot configuration, refer to “[2.3.2.2 Base and Robot Recording Coordinates](../../operation/step/step-pose-modify/base-robot-crd-sys.md).”
+  For the designation according to the robot configuration, refer to ???[2.3.2.2 Base and Robot Recording Coordinates](../../2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md).???
 {% endhint %}
 
 # 9.2.2 Pose Recording Move Statement and Pose Assign Statement
