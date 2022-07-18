@@ -11,7 +11,7 @@
 {% hint style="info" %}
 * 패널 선택창에 모니터링 가능한 모든 항목이 나타납니다.
 * 모니터링 가능한 항목은 제어기 설정에 따라 다르게 나타납니다.
-* 작업 영역의 패널 스택과 창의 사용 방법에 대한 자세한 내용은 “[1.2.4.5 작업 영역](../robot-system/basic-usage/screen-of-the-hi6-tp/work-area.md)”을 참조하십시오.
+* 작업 영역의 패널 스택과 창의 사용 방법에 대한 자세한 내용은 “[1.2.4.5 작업 영역](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/5-work-area.md)”을 참조하십시오.
 {% endhint %}
 
 

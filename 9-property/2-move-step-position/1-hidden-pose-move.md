@@ -73,6 +73,6 @@
 
 {% hint style="info" %}
 * \[로봇 구성 형태\]를 미지정으로 설정하는 경우 로봇은 현재 위치에서 가장 가깝게 로봇 형태를 지정합니다.
-* 로봇 구성 형태에 따른 지정은 “[2.3.2.2 베이스 및 로봇 기록 좌표](../../operation/step/step-pose-modify/base-robot-crd-sys.md)”를 참조하십시오.
+* 로봇 구성 형태에 따른 지정은 “[2.3.2.2 베이스 및 로봇 기록 좌표](../../2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)”를 참조하십시오.
 {% endhint %}
 
