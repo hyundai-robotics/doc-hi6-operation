@@ -4,5 +4,5 @@
 
 2.	원하는 메뉴를 선택하여 입출력 신호의 속성, 신호 할당 등을 설정하십시오.
 
-![](../../../_assets/image_188.png)
+![](../../../_assets/tp630/ctrl-inoutsing-menu.png)
 

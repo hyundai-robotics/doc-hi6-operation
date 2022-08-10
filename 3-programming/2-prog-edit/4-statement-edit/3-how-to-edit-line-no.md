@@ -6,20 +6,21 @@
 
 * 명령문 영역에서 문장 커서 상태일 경우 &lt;←&gt; 키를 누르면 커서가 주소 영역으로 이동할 수 있습니다. 
 
-![](../../../_assets/image_108.png)
+![](../../../_assets/tp630/pane-prog-linenum.png)
 
 2.	주소 영역에서 &lt;↓/↑&gt; 키를 눌러 행을 선택한 후 행 번호를 편집하십시오.
 
 * 행 번호를 입력하려면, 숫자키를 이용하여 입력 영역에 행 번호를 입력하십시오. 
 
-![](../../../_assets/image_63.png)
+![](../../../_assets/tp630/pane-prog-linenum1.png)
 
 * 행 번호를 삭제하려면, &lt;BS&gt; 키를 누르십시오. 입력 영역에서 행 번호의 주소값이 제거됩니다.
 
 
+
 3.	&lt;enter&gt; 키를 눌러 편집을 완료하십시오. 변경 내용이 JOB 프로그램에 저장됩니다.
-_assets
-![](../../../.gitbook/assets/image_67.png)
+
+![](../../../_assets/tp630/pane-prog-linenum2.png)
 
 
 

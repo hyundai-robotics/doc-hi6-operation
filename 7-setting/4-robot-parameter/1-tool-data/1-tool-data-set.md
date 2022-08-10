@@ -5,7 +5,7 @@
 1. \[3: 로봇 파라미터 &gt; 1: 툴 데이터\] 메뉴를 터치하십시오.
 2. 툴 데이터의 이름과 중량, 축별 상세 조건, 허용 비율을 설정하십시오.
 
-![](../../../_assets/image_223.png)
+![](../../../_assets/tp630/robot-tool.png)
 
 <table>
   <thead>
@@ -43,7 +43,7 @@
             새로운 툴의 길이와 각도가
             생성됩니다.
             <br />
-            <img src="../../../_assets/tool-data-auto-calib.png" alt/>
+            <img src="../../../_assets/tp630/robot-tool-autocal.png" alt/>
             <br />
             <ul>
               <li>[기존 프로그램 번호]:
@@ -63,7 +63,7 @@
           <li>[각도보정]: 툴의 각도를
             보정합니다.
             <br />
-            <img src="../../../_assets/tool-angle-auto-calib.png" alt/>
+            <img src="../../../_assets/tp630/robot-tool-anglecal.png" alt/>
           </li>
         </ul>
       </td>
@@ -74,7 +74,7 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: 변경 내용을 저장합니다.</li>
+          <li>[확인]: 변경 내용을 저장합니다.</li>
           <li>[+]/[-]: 새로운 툴 데이터를
             추가하거나 툴 데이터를
             삭제합니다.</li>

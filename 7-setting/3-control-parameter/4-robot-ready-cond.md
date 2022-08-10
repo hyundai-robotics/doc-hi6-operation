@@ -6,5 +6,5 @@
 
 2.	로봇 준비 조건을 설정한 후 \[OK\] 버튼을 터치하십시오.
 
-![](../../_assets/image_88.png)
+![](../../_assets/tp630/ctrl-robot-readycond.png)
 

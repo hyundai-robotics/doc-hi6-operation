@@ -1,18 +1,29 @@
 ﻿# 6.2 job
 
-패널 선택창에서 \[job\]을 터치하십시오. JOB 프로그램창이 나타납니다. 프로그램을 확인하고 편집 및 삭제하거나 작성할 수 있습니다.
+SHIFT+[프로그램]키를 누르면 프로그램 선택창이 나타납니다. 해당 창에서 프로그램을 생성, 삭제 및 선택할 수 있습니다.
 
-![그림 34 JOB 프로그램](../_assets/image_156.png)
+![](../_assets/tp630/k-prg-select.png)
+
+선택된 프로그램이 화면에 보이면 명령어 추가 등 편집할 수 있습니다.  
+
+![](../_assets/tp630/pane-job.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">번호</th>
+      <th style="text-align:left">번호/키</th>
       <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">
+        <img src="../_assets/tp630/k-prog-step.png" alt/>
+      </td>
+      <td style="text-align:left">SHIFT+[프로그램]:  작성된 프로그램
+            목록에서 프로그램을 선택하거나 삭제합니다.</td>
+    </tr>
+     <tr>
       <td style="text-align:left">
         <img src="../_assets/c1.png" alt/>
       </td>
@@ -27,12 +38,6 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[프로그램]: 작성된 프로그램
-            목록에서 프로그램을
-            선택하거나 삭제합니다.
-            <br
-            />
-          </li>
           <li>[…]: 자동 들여쓰기가
             잘못 적용된 경우 JOB 프로그램의
             자동 들여쓰기를 다시

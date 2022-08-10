@@ -5,7 +5,7 @@
 1. \[3: 로봇 파라미터 &gt; 6: Accuracy\] 메뉴를 터치하십시오.
 2. Accuracy 레벨별 툴 끝 위치\(TCP\)와 자세를 설정하십시오.
 
-![](../../_assets/image_215.png)
+![](../../_assets/tp630/robot-accuracy.png)
 
 <table>
   <thead>
@@ -59,8 +59,8 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: 변경 내용을 저장합니다.</li>
-          <li>[ALL 초기화]: 모든 Accuracy 레벨의
+          <li>[확인]: 변경 내용을 저장합니다.</li>
+          <li>[전체 초기화]: 모든 Accuracy 레벨의
             TCP 거리와 자세를 초기화합니다.</li>
         </ul>
       </td>

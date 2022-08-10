@@ -6,7 +6,7 @@
 
 그림은 제품 조작 방법의 이해를 돕고 화면을 설명하는데 사용합니다. 그림을 설명할 때에는 다음과 같이 해당 부분에 숫자를 표기하고 그에 대응하는 내용을 설명합니다.
 
-![](../_assets/image_1.png)
+![](../_assets/tp630/pane-prog-cmd-param.png)
 
 ## GUI \(Graphical User Interface\)
 
