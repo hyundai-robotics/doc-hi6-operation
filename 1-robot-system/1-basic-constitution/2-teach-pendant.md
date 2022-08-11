@@ -1,10 +1,10 @@
 ﻿# 1.1.2 티치 펜던트
 
-티치 펜던트는 TP600과 TP630을 지원합니다. 본 조작 설명서에서는 TP630 모델을 기준으로 사용 방법을 설명합니다.
+티치 펜던트는 TP600과 TP630을 지원합니다. 본 조작 설명서에서는 _TP630_ 모델을 기준으로 사용 방법을 설명합니다.
 
-TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스크린을 제공합니다.
+TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합니다.
 
-![그림 6 TP600 앞면\(좌\) / 뒷면\(우\)](../../_assets/image_16.png)
+![그림 6 TP600 앞면\(좌\) / 뒷면\(우\)](../../_assets/tp630/TP-hw.png)
 
 <table>
   <thead>
@@ -19,7 +19,7 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
       <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">조작키2</td>
+      <td style="text-align:left">조작키</td>
       <td style="text-align:left">로봇의 동작을 제어하고
         명령을 입력하거나 메뉴를
         선택하고 설정합니다.</td>
@@ -27,15 +27,6 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">디스플레이</td>
-      <td style="text-align:left">터치 스크린으로 로봇의
-        동작 상태와 설정 정보를
-        확인 및 변경합니다.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">모드 스위치</td>
       <td style="text-align:left">모드 스위치를 돌려 운전
@@ -46,6 +37,15 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
         펜던트에서 모드 스위치
         키를 빼면 선택된 운전
         모드로 잠금 설정됩니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">디스플레이</td>
+      <td style="text-align:left">터치 스크린으로 로봇의
+        동작 상태와 설정 정보를
+        확인 및 변경합니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -60,9 +60,10 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
       <td style="text-align:left">
         <img src="../../_assets/c5.png" alt/>
       </td>
-      <td style="text-align:left">조그 다이얼</td>
-      <td style="text-align:left">조그 다이얼을 돌려 메뉴를
-        설정합니다.</td>
+      <td style="text-align:left">USB 연결 포트</td>
+      <td style="text-align:left">이동식 저장 장치 등 USB
+        통신으로 접속 가능한
+        장치를 연결합니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -100,21 +101,10 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
       style="text-align:left">제어기와 연결하기 위한
         케이블을 연결하는 커넥터입니다.</td>
     </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../_assets/c9.png" alt/>
-      </td>
-      <td style="text-align:left">USB 연결 포트</td>
-      <td style="text-align:left">이동식 저장 장치 등 USB
-        통신으로 접속 가능한
-        장치를 연결합니다.</td>
-    </tr>
   </tbody>
 </table>
 
-TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한 모델로 TP600의 화면과 유사한 구성의 화면을 제공합니다.
 
-![그림 7 TP630 앞면\(좌\) / 뒷면\(우\)](../../_assets/image_31.png)
 
 ## 조작키
 
@@ -129,7 +119,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/key-shift.png" alt/>
+        <img src="../../_assets/tp630/k-shift.png" alt/>
       </td>
       <td style="text-align:left">shift</td>
       <td style="text-align:left">
@@ -146,7 +136,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/key-ctrl.png" alt/>
+        <img src="../../_assets/tp630/k-ctrl.png" alt/>
       </td>
       <td style="text-align:left">ctrl</td>
       <td style="text-align:left">&lt;ctrl&gt; 키를 특정 키와 함께
@@ -155,7 +145,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/key-up-dn.png" alt/>
+        <img src="../../_assets/tp630/k-bwd-fwd.png" alt/>
       </td>
       <td style="text-align:left">위/아래</td>
       <td style="text-align:left">수동 모드에서 &lt;↓/↑&gt;
@@ -164,57 +154,69 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/key-stop.png" alt/>
+        <img src="../../_assets/tp630/k-esc.png" alt/>
       </td>
-      <td style="text-align:left">정지</td>
+      <td style="text-align:left">esc</td>
       <td style="text-align:left">
-        <p>&lt;정지&gt; 키를 누르면 자동
-          운전 중인 로봇이 일시적으로
-          멈춥니다.</p>
         <ul>
-          <li>로봇이 정지하면 정지
-            램프가 켜지고 시작 램프가
-            꺼집니다.</li>
-          <li>로봇은 작성된 프로그램의
-            경로 수행 중에 정지된
-            상태이므로 주변 장치와
-            충돌할 위험은 없습니다.</li>
+          <li>키 입력이나 진행 중인
+            각종 기능을 취소합니다.</li>
+          <li>&lt;esc&gt; 키를 누르면 변경
+            내용을 저장하지 않고
+            상위 레벨로 전환할 수
+            있습니다.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/key-start.png" alt/>
+        <img src="../../_assets/tp630/k-axes.png" alt/>
       </td>
-      <td style="text-align:left">시작</td>
-      <td style="text-align:left">&lt;시작&gt; 키를 누르면 로봇에
-        작성된 프로그램의 자동
-        운전을 시작합니다. 로봇의
-        자동 운전이 시작되면
-        시작 램프가 켜지고 정지
-        램프가 꺼집니다.</td>
-    </tr>
-    <tr>
+      <td style="text-align:left">esc</td>
       <td style="text-align:left">
-        <img src="../../_assets/key-mot-on.png" alt/>
-      </td>
-      <td style="text-align:left">모터</td>
-      <td style="text-align:left">
-        <p>로봇 각 축의 모터에 서보
-          전원을 공급합니다.</p>
         <ul>
-          <li>수동 모드에서 &lt;모터&gt;
-            키를 누르면 모터 램프가
-            깜빡입니다.</li>
-          <li>자동 모드에서 &lt;모터&gt;
-            키를 누르면 모터 램프가
-            켜집니다.</li>
+          <li>키 입력이나 진행 중인
+            각종 기능을 취소합니다.</li>
+          <li>&lt;esc&gt; 키를 누르면 변경
+            내용을 저장하지 않고
+            상위 레벨로 전환할 수
+            있습니다.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/key-enter.png" alt/>
+        <img src="../../_assets/tp630/k-direction.png" alt/>
+      </td>
+      <td style="text-align:left">왼쪽/오른쪽</td>
+      <td style="text-align:left">
+        <ul>
+          <li>텍스트 입력 시, 커서를
+            이전 또는 다음으로 이동합니다.</li>
+          <li>단어 커서 상태에서 &lt;←/→&gt;
+            키를 누르면 기록된 스텝이나
+            다른 기능 인수로 이동합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-r.png" alt/>
+      </td>
+      <td style="text-align:left">왼쪽/오른쪽</td>
+      <td style="text-align:left">
+        <ul>
+          <li>텍스트 입력 시, 커서를
+            이전 또는 다음으로 이동합니다.</li>
+          <li>단어 커서 상태에서 &lt;←/→&gt;
+            키를 누르면 기록된 스텝이나
+            다른 기능 인수로 이동합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-enter.png" alt/>
       </td>
       <td style="text-align:left">enter</td>
       <td style="text-align:left">
@@ -235,38 +237,165 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 적용한
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/key-esc.png" alt/>
+        <img src="../../_assets/tp630/k-motor-on.png" alt/>
       </td>
-      <td style="text-align:left">esc</td>
+      <td style="text-align:left">모터</td>
       <td style="text-align:left">
+        <p>로봇 각 축의 모터에 서보
+          전원을 공급합니다.</p>
         <ul>
-          <li>키 입력이나 진행 중인
-            각종 기능을 취소합니다.</li>
-          <li>&lt;esc&gt; 키를 누르면 변경
-            내용을 저장하지 않고
-            상위 레벨로 전환할 수
-            있습니다.</li>
+          <li>수동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            깜빡입니다.</li>
+          <li>자동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            켜집니다.</li>
+        </ul>
+      </td>
+    </tr>
+   <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-start.png" alt/>
+      </td>
+      <td style="text-align:left">시작</td>
+      <td style="text-align:left">&lt;시작&gt; 키를 누르면 로봇에
+        작성된 프로그램의 자동
+        운전을 시작합니다. 로봇의
+        자동 운전이 시작되면
+        시작 램프가 켜지고 정지
+        램프가 꺼집니다.</td>
+    </tr>
+   <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-stop.png" alt/>
+      </td>
+      <td style="text-align:left">정지</td>
+      <td style="text-align:left">
+        <p>&lt;정지&gt; 키를 누르면 자동
+          운전 중인 로봇이 일시적으로
+          멈춥니다.</p>
+        <ul>
+          <li>로봇이 정지하면 정지
+            램프가 켜지고 시작 램프가
+            꺼집니다.</li>
+          <li>로봇은 작성된 프로그램의
+            경로 수행 중에 정지된
+            상태이므로 주변 장치와
+            충돌할 위험은 없습니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-previous.png" alt/>
+      </td>
+      <td style="text-align:left">모터</td>
+      <td style="text-align:left">
+        <p>로봇 각 축의 모터에 서보
+          전원을 공급합니다.</p>
+        <ul>
+          <li>수동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            깜빡입니다.</li>
+          <li>자동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            켜집니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-gun.png" alt/>
+      </td>
+      <td style="text-align:left">모터</td>
+      <td style="text-align:left">
+        <p>로봇 각 축의 모터에 서보
+          전원을 공급합니다.</p>
+        <ul>
+          <li>수동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            깜빡입니다.</li>
+          <li>자동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            켜집니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-crdsys.png" alt/>
+      </td>
+      <td style="text-align:left">모터</td>
+      <td style="text-align:left">
+        <p>로봇 각 축의 모터에 서보
+          전원을 공급합니다.</p>
+        <ul>
+          <li>수동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            깜빡입니다.</li>
+          <li>자동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            켜집니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-record.png" alt/>
+      </td>
+      <td style="text-align:left">모터</td>
+      <td style="text-align:left">
+        <p>로봇 각 축의 모터에 서보
+          전원을 공급합니다.</p>
+        <ul>
+          <li>수동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            깜빡입니다.</li>
+          <li>자동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            켜집니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-prog-step.png" alt/>
+      </td>
+      <td style="text-align:left">모터</td>
+      <td style="text-align:left">
+        <p>로봇 각 축의 모터에 서보
+          전원을 공급합니다.</p>
+        <ul>
+          <li>수동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            깜빡입니다.</li>
+          <li>자동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            켜집니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-unit-mech.png" alt/>
+      </td>
+      <td style="text-align:left">모터</td>
+      <td style="text-align:left">
+        <p>로봇 각 축의 모터에 서보
+          전원을 공급합니다.</p>
+        <ul>
+          <li>수동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            깜빡입니다.</li>
+          <li>자동 모드에서 &lt;모터&gt;
+            키를 누르면 모터 램프가
+            켜집니다.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/key-left-right.png" alt/>
-      </td>
-      <td style="text-align:left">왼쪽/오른쪽</td>
-      <td style="text-align:left">
-        <ul>
-          <li>텍스트 입력 시, 커서를
-            이전 또는 다음으로 이동합니다.</li>
-          <li>단어 커서 상태에서 &lt;←/→&gt;
-            키를 누르면 기록된 스텝이나
-            다른 기능 인수로 이동합니다.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../_assets/key-num.png" alt/>
+        <img src="../../_assets/tp630/k-number.png" alt/>
       </td>
       <td style="text-align:left">
         <p>숫자키</p>
