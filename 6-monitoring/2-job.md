@@ -1,6 +1,6 @@
 ﻿# 6.2 job
 
-SHIFT+[프로그램]키를 누르면 프로그램 선택창이 나타납니다. 해당 창에서 프로그램을 생성, 삭제 및 선택할 수 있습니다.
+<**SHIFT**>+<**프로그램**>키를 누르면 프로그램 선택창이 나타납니다. 해당 창에서 프로그램을 생성, 삭제 및 선택할 수 있습니다.
 
 ![](../_assets/tp630/k-prg-select.png)
 
@@ -20,7 +20,7 @@ SHIFT+[프로그램]키를 누르면 프로그램 선택창이 나타납니다. 
       <td style="text-align:left">
         <img src="../_assets/tp630/k-prog-step.png" alt/>
       </td>
-      <td style="text-align:left">SHIFT+[프로그램]:  작성된 프로그램
+      <td style="text-align:left"><<b>SHIFT</b>>+<<b>프로그램</b>>:  작성된 프로그램
             목록에서 프로그램을 선택하거나 삭제합니다.</td>
     </tr>
      <tr>

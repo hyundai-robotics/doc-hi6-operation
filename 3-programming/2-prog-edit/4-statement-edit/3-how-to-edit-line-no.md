@@ -15,7 +15,7 @@
   
 ![](../../../_assets/tp630/pane-prog-linenum1.png)
 
-3.	&lt;enter&gt; 키를 눌러 편집을 완료하십시오. 변경 내용이 JOB 프로그램에 저장됩니다.
+3.	<<b>ENTER</b>> 키를 눌러 편집을 완료하십시오. 변경 내용이 JOB 프로그램에 저장됩니다.
 
 ![](../../../_assets/tp630/pane-prog-linenum2.png)
 

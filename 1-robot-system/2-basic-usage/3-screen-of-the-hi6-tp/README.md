@@ -1,111 +1,19 @@
 ﻿# 1.2.3 Hi6 티치 펜던트 화면
 
-로봇의 동작을 제어하거나 로봇과 연동된 장치를 관리할 수 있습니다. Hi6 TP630 티치 펜던트 화면은 다음과 같이 10개의 화면 창으로 구성됩니다. 자세한 설명은 이어지는 각각의 세부 챕터를 참고하십시오.
-
+로봇의 동작을 제어하거나 로봇과 연동된 장치를 관리할 수 있습니다. Hi6 TP630 티치 펜던트 화면은 다음과 같이 10개의 화면 창으로 구성됩니다.
 <br>
 
 ![](../../../_assets/tp630/TP-main.png)
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left">제목 표시줄입니다. 티치
-        펜던트의 통신 상태와
-        운전 모드, 로봇 시스템의
-        상태와 메커니즘을 표시합니다.
-        자세한 내용은 “<a href="status-bar.md">1.2.4.1 상태 표시줄</a>”을
-        참조하십시오.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">상태 표시줄입니다. 티치
-        펜던트의 통신 상태와
-        운전 모드, 로봇 시스템의
-        상태와 메커니즘을 표시합니다.
-        자세한 내용은 “<a href="status-bar.md">1.2.4.1 상태 표시줄</a>”을
-        참조하십시오.
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c3.png" alt/>
-      </td>
-      <td style="text-align:left">R버튼 막대입니다. </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c4.png" alt/>
-      </td>
-      <td style="text-align:left">모니터링 창입니다.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c5.png" alt/>
-      </td>
-      <td style="text-align:left">기능 버튼을 이용해 설정값을
-        확인하고 변경합니다.
-        자세한 내용은 “<a href="function-buttons.md">1.2.4.3 기능 버튼</a>”을 참조하십시오.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c6.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <p>입력 표시줄입니다. 자세한
-          내용은 “<a href="log-bar.md">1.2.4.2 이력 표시줄</a>”을
-          참조하십시오.</p>
-        <ul>
-          <li>현재 시간 정보와 티치
-            펜던트의 메모리 사용
-            현황이 표시됩니다. 또한
-            에러 메시지 또는 경고
-            메시지를 확인할 수 있습니다.</li>
-          <li>화면에 소프트 키보드를
-            표시하거나 숨깁니다.
-            소프트 키보드 사용 중에는
-            키보드의 위치를 화면의
-            상단으로 이동할 수 있습니다.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c7.png" alt/>
-      </td>
-      <td style="text-align:left">안내 표시줄입니다.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c8.png" alt/>
-      </td>
-      <td style="text-align:left">작업 영역입니다. JOB 프로그램을
-        편집하고 모니터링 정보를
-        확인하는 등 다양한 작업을
-        수행합니다. 여러 작업을
-        동시에 수행할 수 있습니다.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c9.png" alt/>
-      </td>
-      <td style="text-align:left">기록조건 표시줄입니다. 기록할 스텝의 조건을 표시합니다.</td>
-    </tr> 
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c10.png" alt/>
-      </td>
-      <td style="text-align:left">L버튼 막대입니다.</td>
-    </tr>
-  </tbody>
-</table>
+| 번호 | 설명 | 
+| :--- | :--- | 
+| ![](../../../_assets/c1.png) | 제목 표시줄 : 티치펜던트의 통신 상태와 운전 모드, 로봇 시스템의 상태와 메커니즘을 표시합니다. ([1.2.3.1 제목 표시줄](1-title-area.md)) |
+| ![](../../../_assets/c2.png) | 상태 표시줄입니다 : 현재 로봇의 운동 모드 및 각종 설정을 표시합니다.  ([1.2.3.2 상태 표시줄](2-status-bar.md)) |
+| ![](../../../_assets/c3.png) | R버튼 막대 : 화면 우측 메뉴 그룹입니다.  ([1.2.3.3 R(Right)버튼 막대](3-Rbt-bar.md)) |
+| ![](../../../_assets/c4.png) | 모니터링 창 : 운전 중 각종 가동 정보를 보여줍니다.  ([1.2.3.4 모니터링 창](4-mon-area.md)) |
+| ![](../../../_assets/c5.png) | 기능버튼 막대 : 화면 하단 메뉴 그룹입니다. 주요 설정 및 모니터링 기능을 지원합니다.  ([1.2.3.5 기능버튼 막대](5-function-buttons.md)) |
+| ![](../../../_assets/c6.png) | 입력 표시줄 : 작업 편집창에 명령어를 입력할 수 있습니다. ([1.2.3.6 입력 표시줄](6-input-area.md)) |
+| ![](../../../_assets/c7.png) | 안내 표시줄 : 조작 중 각종 안내 메시지를 보여줍니다.  ([1.2.3.8 안내 표시줄](7-guide-area.md)) |
+| ![](../../../_assets/c8.png) | 작업 편집창 : JOB 프로그램을 편집하는 영역입니다.  ([1.2.3.8 작업 편집창](8-work-area.md)) |
+| ![](../../../_assets/c9.png) | 기록조건 표시줄 : 기록할 스텝의 조건을 표시합니다.  ([1.2.3.9 기록조건 표시줄](9-record-cnd-area.md)) |
+| ![](../../../_assets/c10.png) | L버튼 막대  : 화면 좌측 메뉴 그룹입니다.  ([1.2.3.10 L버튼 막대](10-Lbt-bar.md)) |

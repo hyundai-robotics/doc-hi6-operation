@@ -5,7 +5,7 @@
 ![그림 77 스폿용접 펑션](../_assets/tp630/app-spot-menu.png)
 
 {% hint style="info" %}
-* \[설정\] 버튼 &gt; \[4: 응용 파라미터 &gt; 1: 스폿용접\] 메뉴를 터치하여 스폿용접 기능을 사용할 수 있습니다.
+* \[**시스템**\] 버튼 &gt; \[4: 응용 파라미터 &gt; 1: 스폿용접\] 메뉴를 터치하여 스폿용접 기능을 사용할 수 있습니다.
 * 스폿용접 기능에 대한 자세한 내용은 “[Hi6 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/README)”를 참조하십시오.
 {% endhint %}
 

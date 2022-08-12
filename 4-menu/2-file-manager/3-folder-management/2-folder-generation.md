@@ -4,7 +4,7 @@
 
 ![](../../../_assets/tp630/fld-create.png)
 
-2.	새 폴더의 이름을 입력한 후 &lt;enter&gt; 키를 누르십시오.
+2.	새 폴더의 이름을 입력한 후 <<b>ENTER</b>> 키를 누르십시오.
 
 ![](../../../_assets/tp630/fld-create-rename.png)
 

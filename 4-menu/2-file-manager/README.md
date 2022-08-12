@@ -28,7 +28,7 @@
           이동식 저장 장치가 연결된 경우에만 나타납니다.</li>
         <li> 티치 펜던트의 방향키로 폴더 목록에서 커서를 이동할 수 있습니다.</li>
         <li> 폴더 목록에서 [<img src="../../_assets/icon-gt.png" alt/>] 또는 [
-          <img src="../../_assets/icon-wedge.png" alt/>]를 선택한 후 &lt;enter&gt; 키를 누르면 하위 폴더를 표시하거나 숨길 수 있습니다.</li>
+          <img src="../../_assets/icon-wedge.png" alt/>]를 선택한 후 <<b>ENTER</b>> 키를 누르면 하위 폴더를 표시하거나 숨길 수 있습니다.</li>
         <li> 폴더를 선택하면 폴더에 저장된 파일의 목록을 확인할 수 있습니다.</li>
       </td>
     </tr>

@@ -125,7 +125,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
       <td style="text-align:left">
       <P>키의 상부(연두색)에 표시된 기능을 실행할 때는 함께 사용합니다. </P>
         <ul>
-          <li>&lt;shift&gt; 키를 특정 키와 함께
+          <li><<b>SHIFT</b>> 키를 특정 키와 함께
             누르면 해당 키의 기능이
             전환됩니다.</li>
           <li>[스텝 전/후진] 기능 조작시 이 키를 함께 누르면, 고속 스텝 전/후진 기능이 동작합니다.</li>
@@ -142,7 +142,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
         <img src="../../_assets/tp630/k-ctrl.png" alt/>
       </td>
       <td style="text-align:left">CTRL</td>
-      <td style="text-align:left">&lt;CTRL&gt; 키를 특정 키와 함께
+      <td style="text-align:left"><<b>CTRL</b>> 키를 특정 키와 함께
         누르면 해당 키에 정의된
         기능이 실행됩니다.</td>
     </tr>
@@ -155,7 +155,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
       <p>수동모드에서 스텝단위로 전진 또는 후진할 때 사용합니다. </P>
       <ul>
           <li>자세한 내용은 [<b>조건설정</b>] → [2: 스텝 전/후진시 최고속]을 참고하십시오.</li>
-          <li>[<b>SHIFT</b>]키와 함께 누르면 고속 스텝 전/후진 기능이 동작합니다.
+          <li><<b>SHIFT</b>>키와 함께 누르면 고속 스텝 전/후진 기능이 동작합니다.
       </ul>
    </td>
     </tr>
@@ -169,7 +169,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
         <ul>
           <li>키 입력이나 진행 중인
             각종 기능을 취소합니다.</li>
-          <li>&lt;esc&gt; 키를 누르면 변경
+          <li><<b>ESC</b>> 키를 누르면 변경
             내용을 저장하지 않고
             상위 레벨로 전환할 수
             있습니다.</li>
@@ -209,12 +209,12 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
       <td style="text-align:left">
         <img src="../../_assets/tp630/k-r.png" alt/>
       </td>
-      <td style="text-align:left">R..[NO]</td>
+      <td style="text-align:left">R코드</td>
       <td style="text-align:left">
         <P>코드별로 정의된 기능을 신속히 수행합니다. </P>
         <ul>
           <li>R 코드로 등록된 기능을 수행하거나RESET기능이 필요할 때 사용합니다.</li>
-          <li>[R..(NO)]를 누른 후 [ENTER(YES)]키를 누르면, R코드의 “R0 : 스텝카운터 리셋”과 동일한 RESET 기능이 수행됩니다. 자세한 설명은 R코드 기능을 참고하십시오.</li>
+          <li>[R..(NO)]를 누른 후 <<b>ENTER</b>>키를 누르면, R코드의 “R0 : 스텝카운터 리셋”과 동일한 RESET 기능이 수행됩니다. 자세한 설명은 R코드 기능을 참고하십시오.</li>
           <li>허락/거부(Yes/No)의 응답에 대해 거부(No)를 선택할 때 사용합니다.</li>
         </ul>
       </td>
@@ -223,19 +223,19 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
       <td style="text-align:left">
         <img src="../../_assets/tp630/k-enter.png" alt/>
       </td>
-      <td style="text-align:left">enter</td>
+      <td style="text-align:left">Enter</td>
       <td style="text-align:left">
       <P>입력 정보가 반영됩니다. </P>
         <ul>
-          <li>수치 입력 시 &lt;enter&gt; 키를
+          <li>수치 입력 시 <<b>ENTER</b>> 키를
             누르면 입력값이 설정에
             적용됩니다.</li>
           <li>허락/거부(Yes/No)의 응답에
-            대해 &lt;enter&gt; 키를 누르면
+            대해 <<b>ENTER</b>> 키를 누르면
             허락(Yes)이 선택됩니다.</li>
           <li>수동 모드에서 명령문
             수정 시, 문장 커서 상태에서
-            &lt;enter&gt; 키를 누르면 명령문
+            <<b>ENTER</b>> 키를 누르면 명령문
             인수를 편집할 수 있는
             단어 커서 상태로 전환됩니다.</li>
         </ul>
@@ -245,15 +245,15 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
       <td style="text-align:left">
         <img src="../../_assets/tp630/k-motor-on.png" alt/>
       </td>
-      <td style="text-align:left">모터</td>
+      <td style="text-align:left">모터온</td>
       <td style="text-align:left">
         <p>로봇 각 축의 모터에 서보
           전원을 공급합니다.</p>
         <ul>
-          <li>수동 모드에서 &lt;모터&gt;
+          <li>수동 모드에서 <<b>모터온</b>>
             키를 누르면 모터 램프가
             깜빡입니다.</li>
-          <li>자동 모드에서 &lt;모터&gt;
+          <li>자동 모드에서 <<b>모터온</b>>
             키를 누르면 모터 램프가
             켜집니다.</li>
         </ul>
@@ -264,7 +264,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
         <img src="../../_assets/tp630/k-start.png" alt/>
       </td>
       <td style="text-align:left">시작</td>
-      <td style="text-align:left">&lt;시작&gt; 키를 누르면 로봇에
+      <td style="text-align:left"><<b>시작</b>> 키를 누르면 로봇에
         작성된 프로그램의 자동
         운전을 시작합니다. 로봇의
         자동 운전이 시작되면
@@ -277,7 +277,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
       </td>
       <td style="text-align:left">정지</td>
       <td style="text-align:left">
-        <p>&lt;정지&gt; 키를 누르면 자동
+        <p><<b>정지</b>> 키를 누르면 자동
           운전 중인 로봇이 일시적으로
           멈춥니다.</p>
         <ul>
@@ -297,7 +297,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
       </td>
       <td style="text-align:left">지난화면</td>
       <td style="text-align:left">
-        <p>지난 이력을 보여줍니다.</p>
+        <p>지난 운전 이력을 보여줍니다.</p>
         <ul>
           <li>작업 명령문의 실행 이력이나 에러 이력, 메시지 이력 등이 기록되는 지난 화면 대화상자를 나타냅니다.</li>
           <li>한 번 누르면, 메인보드가 출력하는 이력을 보여주고, 한 번 더 누르면 티치펜던트가 출력하는 이력을 보여줍니다.</li>
@@ -354,7 +354,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
         <p>스텝을 선택할 때 사용합니다.</p>
         <ul>
           <li><<b>SHIFT</b>>키와 함께 누르면 프로그램을 선택하는데 사용합니다. </li>
-          <li>[프로그램]키를 2번 누르면, 프로그램 목록이 표시됩니다.</li>
+          <li><<b>프로그램</b>>키를 2번 누르면, 프로그램 목록이 표시됩니다.</li>
         </ul>
       </td>
     </tr>
@@ -385,11 +385,11 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
             부호(- / +)나 쉼표(,)를 입력하거나,
             명령문 또는 인수를 삭제할
             수 있습니다.</li>
-          <li>&lt;BS&gt;: Backspace. 커서가 입력된
+          <li><<b>BS</b>>: Backspace. 커서가 입력된
             위치에서 텍스트를 한
             글자씩 지웁니다. 또한
             명령어 편집 시 인수를
-            선택하고 &lt;BS&gt; 키를 누르면
+            선택하고 <<b>BS</b>> 키를 누르면
             인수 값 전체를 삭제할
             수 있습니다.</li>
         </ul>
