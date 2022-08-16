@@ -44,7 +44,7 @@
         <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>커서를 특정 명령문에 위치한 상태에서 누르면 그 명령문과 관계된 Quick Open 기능이 실행됩니다. </p>
+        <p>커서를 특정 명령문에 위치한 상태에서 누르면 그 명령문과 관계된 속성(Quick Open) 기능이 실행됩니다. </p>
       </td>
     </tr>
     <tr>

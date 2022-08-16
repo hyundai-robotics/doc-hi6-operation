@@ -53,6 +53,7 @@
     * [2.6.2 영역별 버튼 등록](2-operation/6-user-key/2-button-registration/README.md)
       * [2.6.2.1 키 신호 출력 기능 영역](2-operation/6-user-key/2-button-registration/1-key-signal-output.md)
       * [2.6.2.2 스폿 응용 기능 영역](2-operation/6-user-key/2-button-registration/2-spot-appl.md)
+      * [2.6.2.2 아크 응용 기능 영역](2-operation/6-user-key/2-button-registration/3-arc-appl.md)
   * [2.7 좌표계](2-operation/7-coord-sys/README.md)
     * [2.7.1 조그키](2-operation/7-coord-sys/1-jog-key.md)
     * [2.7.2 축 좌표계](2-operation/7-coord-sys/2-joint-crdsys.md)
