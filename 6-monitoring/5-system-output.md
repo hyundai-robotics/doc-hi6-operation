@@ -23,7 +23,7 @@
 
 ![](../_assets/tp630/pane-system-output1.png)
 
-3. 수동 출력 확인창에서 출력 조건을 확인한 후 \[확인\] 버튼을 터치하십시오.
+3. 수동 출력 확인창에서 출력 조건을 확인한 후 \[**확인**\] 버튼을 터치하십시오.
 
 ![](../_assets/tp630/pane-system-output-manual-pop.png)
 

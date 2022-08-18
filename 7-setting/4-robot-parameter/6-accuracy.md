@@ -59,7 +59,7 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[확인]: 변경 내용을 저장합니다.</li>
+          <li>[**확인**]: 변경 내용을 저장합니다.</li>
           <li>[전체 초기화]: 모든 Accuracy 레벨의
             TCP 거리와 자세를 초기화합니다.</li>
         </ul>
