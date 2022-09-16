@@ -1,4 +1,4 @@
-﻿# 2.7.2 축 좌표계
+﻿# 2.8.2 축 좌표계
 
 <table>
 	<th style="background:lightgreen">축 좌표계</th>
