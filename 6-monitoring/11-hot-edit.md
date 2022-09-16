@@ -26,7 +26,7 @@
 3) \[위치수정\] 키: 'Hot Edit중에는 금지된 조작입니다.'  메시지 표시
 
 
-![그림 44 hot edit](../_assets/tp630/pane-hot-edit-1.png)
+![](../_assets/tp630/pane-hot-edit-1.png)
 
 <br>
 
@@ -34,7 +34,7 @@
 
 프로그램 편집을 완료했다면, 안내표시줄 왼쪽의 ![](../_assets/tp630/bt-menu.png) 버튼을 클릭하여 팝업 메뉴를 열고 'hotedit: 적용 요청'을 선택하십시오.
 
-![그림 45 hot edit](../_assets/tp630/pane-hot-edit-apply2.png)
+![](../_assets/tp630/pane-hot-edit-apply2.png)
 
 <br>
 
