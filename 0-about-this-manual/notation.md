@@ -1,4 +1,4 @@
-# Notation Convention
+﻿# Notation Convention
 
 In this manual, the following notation conventions and safety instructions are used to help you understand the contents.
 
@@ -6,7 +6,7 @@ In this manual, the following notation conventions and safety instructions are u
 
 Figures are used to help you understand how to operate the product and illustrate what you can see on the screen. For the description of figures, numbers will be marked for the relevant parts, and the corresponding contents will be described as follows.
 
-![](../_assets/image_1_en.png)
+![](../_assets/tp630/pane-prog-cmd-param.png)
 
 ## GUI \(Graphical User Interface\)
 
@@ -27,9 +27,9 @@ Keys that are to be pressed on the operation part of the teach pendant to operat
 
 ## Cross Reference 
 
-It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks \(??? ???\) in bold as follows.
+It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks (" ") in bold as follows.
 
-* For details on how to change the date and time information, refer to ???[4.5 Setting of Date and Time.](../4-menu/5-date-time-setting.md)???
+* For details on how to change the date and time information, refer to "[4.5 Setting of Date and Time.](../4-menu/5-date-time-setting.md)".
 
 ## Note
 

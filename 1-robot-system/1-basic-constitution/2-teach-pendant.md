@@ -1,4 +1,4 @@
-# 1.1.2 Teach Pendant
+﻿# 1.1.2 Teach Pendant
 
 TP600 and TP630 teach pendants are supported. This operation manual describes how to use a teach pendant based on the TP600 model.
 
@@ -6,7 +6,7 @@ TP600 is a model developed exclusively for the Hi6 controller and provides a lar
 
 
 
-![Figure 5 Front \(Left\) / Back \(Right\) of TP600](../../_assets/image_16.png)
+![Figure 5 Front \(Left\) / Back \(Right\) of TP600](../../_assets/tp630/TP-hw.png)
 
 
 

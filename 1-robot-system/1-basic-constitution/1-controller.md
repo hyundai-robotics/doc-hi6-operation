@@ -18,7 +18,7 @@
 
 
 
-| o. | Name | Description |
+| # | Name | Description |
 | :--- | :--- | :--- |
 | ![](../../_assets/c1.png) | Robot cable connector | A connector that has built-in communication and power lines, making it possible to connect the controller to the equipment. |
 | ![](../../_assets/c2.png) | Power connector | A connector that supplies power to the controller. |
