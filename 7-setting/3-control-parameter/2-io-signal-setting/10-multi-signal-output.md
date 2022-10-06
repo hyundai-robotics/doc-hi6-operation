@@ -8,7 +8,7 @@ The data is in binary format and determines whether the output will be on or off
 
 2.	Set the name, signals, and strobe of the output signal group. 
 
-![](../../../_assets/image_452.png)
+    ![](../../../_assets/tp630/ctrl-multi-outsignal_eng.png)
 
 
 

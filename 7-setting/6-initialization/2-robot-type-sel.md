@@ -1,10 +1,10 @@
-# 7.6.2 Robot Type Selection
+﻿# 7.6.2 Robot Type Selection
 
 1.	Touch the \[5: Initialize &gt; 2: Robot Type Selection\] menu. Or touch the \[Mechanism\] button at the top right of the Hi6 teach pendant screen.
 
 2.	Select a robot in the robot model selection window, and then touch the \[OK\] button.
 
-![](../../_assets/image_506.png)
+    ![](../../_assets/tp630/init-robot-select_eng.png)
 
 
 
@@ -16,9 +16,7 @@
 * 
   If you select a system that includes additional axes such as a travel axis or a servo gun, you should set the number of additional axes. If a system consists of only robot axes without additional axes, input 0. 
 
-
-
-![](../../_assets/image_508.png)
+  ![](../../_assets/tp630/init-addaxis-pop_eng.png)
 
 {% hint style="warning" %}
 * The manipulator and controller are shipped as one system. For this reason, the robot controller is equipped with a drive suitable for the drive capacity of the robot that is part of the system.
@@ -29,7 +27,7 @@
 
 3.	After touching the \[Favorites\] button at the bottom right of the Hi6 teach pendant screen, input 314 in the input area of the favorites window, and then touch the \[OK\] button.
 
-![](../../_assets/image_498.png)
+    ![](../../_assets/tp630/pop-rcode-314_eng.png)
 
 {% hint style="warning" %}
 * In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
@@ -38,11 +36,10 @@
 
 4.	Touch the \[Set Up\] button &gt; \[3: Robot Parameter &gt; 4: Encoder Offset\] menu.
 
-![](../../_assets/image_533.png)
 
 5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.
 
-![](../../_assets/image_490.png)
+    ![](../../_assets/tp630/robot-encoder-offset__eng.png)
 
 {% hint style="info" %}
 * You should perform an encoder offset setting normally after moving the robot to the reference position.

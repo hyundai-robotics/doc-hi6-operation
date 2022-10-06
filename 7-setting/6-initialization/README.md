@@ -1,4 +1,4 @@
-# 7.6 Initialize
+# 7.6 Initialization
 
 If the robot controller does not operate normally, initialize the system. The system initialization must be performed by an engineer who has experience in initial setting of the robots of Hyundai Robotics.
 
@@ -8,7 +8,7 @@ If the robot controller does not operate normally, initialize the system. The sy
 
 2.	Select the desired menu, and then perform the initial setting of the robot system, and then initialize the serial encoder.
 
-![](../../_assets/image_493.png)
+    ![](../../_assets/tp630/init-menu_eng.png)
 
 
 

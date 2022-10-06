@@ -1,4 +1,4 @@
-# 7.3.2.1 Input Signal Attribute
+﻿# 7.3.2.1 Input Signal Attribute
 
 You can set the logic and name for a general input signal.
 
@@ -6,7 +6,7 @@ You can set the logic and name for a general input signal.
 
 2.	Check and set the general input signal list, and then touch the \[OK\] button.
 
-![](../../../_assets/image_425.png)
+    ![](../../../_assets/tp630/ctrl-insignal-attri_eng.png)
 
 * \[Append\]: You can add a new general input signal to the list. 
 * \[Delete\]: You can delete the general input signal from the list.

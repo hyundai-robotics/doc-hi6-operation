@@ -8,7 +8,7 @@ The data is in binary format and will be determined by the input on or off. For 
 
 2.	Set the name, signals, and strobe of the input signal group.
 
-![](../../../_assets/image_414.png)
+    ![](../../../_assets/tp630/ctrl-multi-insignal_eng.png)
 
 
 

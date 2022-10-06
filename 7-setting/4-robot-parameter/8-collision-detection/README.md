@@ -17,11 +17,11 @@ However, the collision detection function detects the collision on the robot axi
 
 The following shows how to set the collision detection function.
 
-1.	Touch the \[3: Robot Parameter &gt; 14: Impact Detection\] menu.
+1.	Touch the \[3: Robot Parameter > 35: Advanced function >  14: Impact Detection\] menu.
 
 2.	Set whether to use the collision detection function, and set the sensitivity, etc.
 
-![](../../../_assets/image_481.png)
+    ![](../../../_assets/tp630/robot-collision_eng.png)
 
 
 

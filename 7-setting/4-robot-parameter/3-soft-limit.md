@@ -6,7 +6,7 @@ You can adjust the operation range of each axis according to the robot’s use e
 
 2.	Set the operation range of each axis.
 
-![](../../_assets/image_486.png)
+    ![](../../_assets/tp630/robot-softlimit_eng.png)
 
 
 

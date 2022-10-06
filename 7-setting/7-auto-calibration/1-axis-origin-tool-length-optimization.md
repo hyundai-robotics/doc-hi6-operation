@@ -1,4 +1,4 @@
-# 7.7.1 Optimize Axis Origin and Tool Length
+﻿# 7.7.1 Optimize Axis Origin and Tool Length
 
 The optimization of axis origin and tool length is a function to calibrate the origin and tool length of each axis of the robot without using an external measuring sensor.
 
@@ -24,7 +24,7 @@ The method to use the axis origin and tool length optimization function is as fo
 
 2.	Select an optimization target and set detailed options.
 
-![](../../_assets/image_529.png)
+![](../../_assets/tp630/system-calib-tool_eng.png)
 
 
 

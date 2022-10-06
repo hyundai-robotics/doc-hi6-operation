@@ -4,5 +4,5 @@
 
 2.	Select the desired menu and set the input/output signal attributes and signal assignment, etc.
 
-![](../../../_assets/image_443.png)
+![](../../../_assets/tp630/ctrl-inoutsing-menu_eng.png)
 

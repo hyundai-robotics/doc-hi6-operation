@@ -1,4 +1,4 @@
-# 7.3.2.8 Key Signal Output
+﻿# 7.3.2.8 Key Signal Output
 
 By assigning the output signal of the controller to the signal keys \(&lt;shift+F1 - F8&gt;\) of the teach pendant, you can perform setting in a way to turn on or output signal.
 
@@ -6,7 +6,7 @@ By assigning the output signal of the controller to the signal keys \(&lt;shift+
 
 2.	Set the label, signal, and function to the manual output keys \(&lt;F1 - F8&gt;\) of the teach pendant, and then touch the \[OK\] button.
 
-![](../../../_assets/image_469.png)
+    ![](../../../_assets/tp630/ctrl-key-outsignal_eng.png)
 
 
 

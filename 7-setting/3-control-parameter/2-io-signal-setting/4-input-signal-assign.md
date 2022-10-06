@@ -1,4 +1,4 @@
-# 7.3.2.4 Input Signal Assignment
+﻿# 7.3.2.4 Input Signal Assignment
 
 You can remotely control the controller’s state or operation using the controller input signal. The method of assigning the input signal number in the remote-control item is as follows.
 
@@ -6,7 +6,7 @@ You can remotely control the controller’s state or operation using the control
 
 2.	After inputting the input signal number in the remote control item, touch the \[OK\] button.
 
-![](../../../_assets/image_408.png)
+    ![](../../../_assets/tp630/ctrl-insignal-assign_eng.png)
 
 * \[Reset All\]: You can reset the numbers of the input signals assigned to all remote control items. 
 * 

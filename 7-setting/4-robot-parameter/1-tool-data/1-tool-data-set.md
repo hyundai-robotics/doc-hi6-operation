@@ -6,11 +6,8 @@ The manual method of setting the distance and angle of TCP based on the robot’
 1.	Touch the \[3: Robot Parameter &gt; 1: Tool Data\] menu.
 
 2.	Set the tool data name, weight, detailed conditions of each axis, and allowable ratio.
-_assets
-![](../../../_assets/image_480.png)
 
-
-
+    ![](../../../_assets/tp630/robot-tool_eng.png)
 
 
 <table>
@@ -36,24 +33,24 @@ _assets
       <td style="text-align:left">
         <ul>
           <li><b>[Auto Calibration]</b>: You can create new tool data or can create
-            tool data simply by using an existing program. If you want to perform setting
-            newly at the previously taught step position, you should first place the
-            tool, and then execute the automatic calibration function to create tool
-            length and angle newly.
+            tool data simply by using an existing program. If you want to perform setting newly at the previously taught step position, you should first place the tool, and then execute the automatic calibration function to create tool length and angle newly.
             <br />
-            <img src="../../../_assets/tool-data-auto-calib-en.png" alt/>
+            <img src="../../../_assets/tp630/robot-tool-autocal_eng.png" alt/>
             <br />
           </li>
-          <li>[Previous Program Number]: You can input the program number taught before
-            tool deformation occurs.</li>
-          <li>[Previous Step Number]: You can input the step number for which automatic
-            tool data calibration will be performed.</li>
-          <li>[Tool Number to Set]: You can input the tool number to be newly set.</li>
+          <ul>
+            <li>[Previous Program Number]: You can input the program number taught before tool deformation occurs.</li>
+            <li>[Previous Step Number]: You can input the step number for which automatic tool data calibration will be performed.</li>
+            <li>[Tool Number to Set]: You can input the tool number to be newly set.</li>
+          </ul>
           <li>
             <p>[Angle Calibration]: You can calibrate the angle of the tool.</p>
             <p>
-              <img src="../../../_assets/tool-angle-auto-calib-en.png" alt/>
+              <img src="../../../_assets/tp630/robot-tool-anglecal_eng.png" alt/>
             </p>
+          </li>
+          <li>[Apply CAD data]: If you have the CAD data of the tool and edit the tool data with that, then it is regarded as the completion of load estimation.
+            <br />
           </li>
         </ul>
       </td>

@@ -8,7 +8,7 @@ Set the B-axis no-use area.
 
 2.	After setting the angle for determining the no-use area and setting the interpolation handling mode, touch the \[OK\] button.
 
-![](../../_assets/image_482.png)
+    ![](../../_assets/tp630/robot-baxis-deadz_eng.png)
 
 
 

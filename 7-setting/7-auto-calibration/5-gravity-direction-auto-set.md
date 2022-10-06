@@ -1,4 +1,4 @@
-# 7.7.5 Gravity Direction Auto Setting
+﻿# 7.7.5 Gravity Direction Auto Setting
 
 The Hi6 controller is based on dynamics, so it is important to set the gravity direction.
 
@@ -16,8 +16,7 @@ How to set the gravity direction is as follows.
 
 3.	After inputting the program number, touch the \[Execute\] button. Then, the direction vector will be calculated and displayed.
 
-![](../../_assets/image_510.png)
-
+    ![](../../_assets/tp630/system-calib-gravity_eng.png)
 
 
 4.	After checking the direction vector value, touch the \[OK\] button. Then, the direction will be set as the gravity direction.

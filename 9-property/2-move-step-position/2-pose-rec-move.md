@@ -1,4 +1,4 @@
-# 9.2.2 Pose Recording Move Statement and Pose Assign Statement
+﻿# 9.2.2 Pose Recording Move Statement and Pose Assign Statement
 
 You can edit the pose variable value in the move statement, including the pose variable or the pose variable assign statement.
 
@@ -6,8 +6,7 @@ You can edit the pose variable value in the move statement, including the pose v
 
 2.	Check and modify the current pose variable.
 
-![](../../_assets/image_547.png)
-
+![](../../_assets/tp630/step-pose-global_eng.png)
 
 
 

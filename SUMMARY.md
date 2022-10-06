@@ -1,4 +1,4 @@
-# Table of contents
+﻿# Table of contents
 
 * [Hi6 Robot Controller Operation Manual](README.md)
 * [About the Manual](0-about-this-manual/README.md)
@@ -133,7 +133,7 @@
       * [7.3.2.6 Output Signal Assignment](7-setting/3-control-parameter/2-io-signal-setting/6-output-signal-assign.md)
       * [7.3.2.7 Output Signal Setting Information](7-setting/3-control-parameter/2-io-signal-setting/7-output-signal-set-info.md)
       * [7.3.2.8 Key Signal Output](7-setting/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)
-      * [7.3.2.9 DIO Block Allocation](7-setting/3-control-parameter/2-io-signal-setting/9-dio-block-assign.md)
+      * [7.3.2.9 FB Block Allocation](7-setting/3-control-parameter/2-io-signal-setting/9-dio-block-assign.md)
       * [7.3.2.10 Multiple Signal Output](7-setting/3-control-parameter/2-io-signal-setting/10-multi-signal-output.md)
       * [7.3.2.11 Multiple Signals Input](7-setting/3-control-parameter/2-io-signal-setting/11-multi-signal-input.md)
     * [7.3.3 Serial Port](7-setting/3-control-parameter/3-serial-port.md)
@@ -166,7 +166,7 @@
       * [7.4.9.1 Main Functions of the Jog Inching Function](7-setting/4-robot-parameter/9-jog-inch-level/1-jog-inch-main-funcs.md)
       * [7.4.9.2 Inching Jog Operation](7-setting/4-robot-parameter/9-jog-inch-level/2-inch-jog-operation.md)
   * [7.5 Application Parameters](7-setting/5-application-parameter.md)
-  * [7.6 Initialize](7-setting/6-initialization/README.md)
+  * [7.6 Initialization](7-setting/6-initialization/README.md)
     * [7.6.1 System Format](7-setting/6-initialization/1-system-format.md)
     * [7.6.2 Robot Type Selection](7-setting/6-initialization/2-robot-type-sel.md)
     * [7.6.3 Usage Setting](7-setting/6-initialization/3-usage-set/README.md)

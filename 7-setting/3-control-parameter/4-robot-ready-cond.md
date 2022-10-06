@@ -1,4 +1,4 @@
-# 7.3.4 Robot Ready Condition
+﻿# 7.3.4 Robot Ready Condition
 
 When the robot ready is completed, set the conditions for signal output in the \[Robot Ready OK\] item of the \[Set up&gt; 2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 4: Output Signal Assign\] menu.
 
@@ -6,7 +6,7 @@ When the robot ready is completed, set the conditions for signal output in the \
 
 2.	After setting the robot ready condition, touch the \[OK\] button.
 
-![](../../_assets/image_467.png)
+![](../../_assets/tp630/ctrl-robot-readycond_eng.png)
 
 
 

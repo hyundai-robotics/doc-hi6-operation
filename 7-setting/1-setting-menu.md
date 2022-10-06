@@ -2,11 +2,11 @@
 
 1.	In manual or automatic mode, touch the \[Set up\] button on the right side of the initial screen. Then, the program’s settings menus will be displayed.
 
-![](../_assets/bt-setup-en.png)
+![](../_assets/tp630/sbt-system_eng.png)
 
 2.	You can check and set the user information and various parameter information by selecting the desired menus.
 
-![](../_assets/image_410.png)
+![](../_assets/tp630/sbt-system-menu_eng.png)
 
 * \[1: User Environment\]: You can check and set various user conditions.
 * 

@@ -4,9 +4,10 @@
 
 2.	Select the desired menu, and then check and set various parameters for the use of the application functions of the robot.
 
-![](../_assets/image_483.png)
+    ![](../_assets/tp630/app-menu_eng.png)
 
 
+<br>
 
 {% hint style="info" %}
 For details on how to use each menu, refer to the “Function Manual” for each application function.

@@ -1,4 +1,4 @@
-# 7.6.5 Additional Axis Parameter Setting
+﻿# 7.6.5 Additional Axis Parameter Setting
 
 Additional axes that can be used in addition to the robot itself include the robot’s base axis \(travel axis\), servo gun axis, positioner axis, and jig axis. For details on the specification of each additional axis, refer to the “Additional Axis Function Manual.”
 
@@ -8,7 +8,7 @@ The method to set parameters such as the specification and configuration of the 
 
 2.	Set the parameters such as the specification and configuration of the additional axes.
 
-![](../../_assets/image_499.png)
+![](../../_assets/tp630/init-addaxis_eng.png)
 
 
 
@@ -75,19 +75,20 @@ The method to set parameters such as the specification and configuration of the 
       </td>
       <td style="text-align:left">
         <ul>
+          <li>[Batch edit]: You can edit the BD and Axis numbers of multi addtional axes at one page.</li>
+          <li>[Rotation radius]: You can add a new additional axis or delete an additional axis.</li>
+          <li>[Reduction ratio calibration]: You can calibrate the difference between the real axis position and the displayed.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
           <li>[OK]: You can save the changes.</li>
           <li>[+]/[-]: You can add a new additional axis or delete an additional axis.</li>
-          <li>A list of additional axes. If you select the additional axis name, you
-            can check and edit detailed parameters.</li>
-          <li>[Copy page]/[Paste page]:
-            <br />You can copy the information of the additional axis and paste it into
-            the data of another additional axis.
-            <br />After selecting the information name of the additional axis to be copied
-            from the list and then touching the <b>[Copy page]</b> button, select the
-            name of the additional axis to which the value is to be applied, and then
-            touch the <b>[Paste page]</b> button.</li>
-          <li>[Rotation Radius]: If the additional axis is a rotation axis, you can
-            set the rotation radius to limit the linear speed when jogging.</li>
         </ul>
       </td>
     </tr>

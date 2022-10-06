@@ -1,4 +1,4 @@
-# 7.7.3 Load Estimation Function
+﻿# 7.7.3 Load Estimation Function
 
 Load estimation is a function that automatically calculates the physical properties \(mass, center position, inertia\) of the tool attached to the front end of the robot through a certain operation.
 
@@ -6,7 +6,7 @@ The manipulator information \(mass, center of mass, inertia of each link\) is re
 
 If the CAD data contains the physical properties information of the tool, you can directly input the tool mass, center position, and inertia by touching the \[Set Up\] button &gt; \[3: Robot Parameter &gt; 1: Tool Data\] menu of the job program.
 
-![](../../_assets/image_491.png)
+![](../../_assets/tp630/robot-tool_1_eng.png)
 
 
 
@@ -23,7 +23,7 @@ The tool data setting information is as follows.
 
 However, in many cases, it is difficult to determine the physical properties of the tool such as mass, inertia, and center of gravity of the tool from CAD data. At this time, you can check the physical properties of the tool using the load estimation function in the robot controller.
 
-![Figure 71 Load Estimation Function](../../_assets/image_527.png)
+![Figure 71 Load Estimation Function](../../_assets/tp630/system-calib-load_eng.png)
 
 1.	Touch the \[6: Auto Calibration &gt; 4: Load Estimation Function\] menu.
 

@@ -1,4 +1,4 @@
-# 7.6.3 Usage Setting
+﻿# 7.6.3 Usage Setting
 
 You can select the operation usage and initialize the user key and input/output assignment signals according to the operation usage.
 

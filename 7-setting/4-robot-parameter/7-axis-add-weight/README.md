@@ -1,4 +1,4 @@
-# 7.4.7 Additional Weight of Each Axis
+﻿# 7.4.7 Additional Weight of Each Axis
 
 You can register information on a transformer or wiring support mounted on the basic axis of the robot.
 
@@ -6,7 +6,7 @@ You can register information on a transformer or wiring support mounted on the b
 
 2.	Select the basic axis tab, set the information of the mounted additional weight, and then touch the \[OK\] button. 
 
-![](../../../_assets/image_475.png)
+    ![](../../../_assets/tp630/robot-addweight_eng.png)
 
 
 

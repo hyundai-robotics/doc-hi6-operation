@@ -1,14 +1,14 @@
-# 7.6.6 Mechanism Setting
+﻿# 7.6.6 Mechanism Setting
 
 Mechanism will be used as a group during the jog operation which the jog keys are to be assigned to. In addition, mechanism is also a set of units, each of which is to be differentiated in the process of recording or editing the position of a step. When the mechanisms are set, mechanism numbers \(M\#\) will be assigned for individual groups of axes.
 
 The method to set the use of the endless function and set the position group is as follows.
 
-1.	Touch the \[5: Initialize &gt; 6: Mechanism Setting\] menu.
+1.	Touch the \[5: Initialization &gt; 6: Mechanism Setting\] menu.
 
 2.	After setting the mechanism number, positioner group number, and the use of the endless function for each axis, touch the \[OK\] button.
 
-![](../../_assets/image_524.png)
+    ![](../../_assets/tp630/robot-mechanism_eng.png)
 
 
 

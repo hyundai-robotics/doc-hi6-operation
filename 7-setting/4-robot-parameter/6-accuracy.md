@@ -1,4 +1,4 @@
-# 7.4.6 Accuracy
+﻿# 7.4.6 Accuracy
 
 You can set the detailed conditions of the accuracy level, which refers to the accuracy of passing through the step when the robot progresses the target step.
 
@@ -6,7 +6,7 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 
 2.	Set the tooltip position \(TCP\) and posture for each accuracy level.
 
-![](../../_assets/image_479.png)
+    ![](../../_assets/tp630/robot-accuracy_eng.png)
 
 
 

@@ -6,7 +6,7 @@ You can set various data related to robot operation as well as information such 
 
 2.	You can check and set various parameters of the manipulator by selecting the desired menu.
 
-![](../../_assets/image_477.png)
+    ![](../../_assets/tp630/robot-menu_eng.png)
 
 
 

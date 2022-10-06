@@ -1,4 +1,4 @@
-# 9.2.1 Hidden Pose Move Statement
+﻿# 9.2.1 Hidden Pose Move Statement
 
 You can check or modify the position of the current step in the hidden pose move statement \(step recorded using the \[Record\] button, that is, a move statement that does not include a pose variable\).
 
@@ -6,7 +6,7 @@ You can check or modify the position of the current step in the hidden pose move
 
 2.	Check and modify the current step position.
 
-![](../../_assets/image_544.png)
+![](../../_assets/tp630/step-info_eng.png)
 
 
 

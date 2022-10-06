@@ -1,4 +1,4 @@
-# 7.3.2.6 Output Signal Assignment
+﻿# 7.3.2.6 Output Signal Assignment
 
 Event information or status information that occurred in the controller can be transmitted to the outside through the controller output signal. The method of assigning output signals to the information to be transmitted to the outside is as follows.
 
@@ -6,7 +6,7 @@ Event information or status information that occurred in the controller can be t
 
 2.	After inputting the output signal number in the information item, touch the \[OK\] button.
 
-![](../../../_assets/image_432.png)
+    ![](../../../_assets/tp630/ctrl-outsignal-assign_eng.png)
 
 
 

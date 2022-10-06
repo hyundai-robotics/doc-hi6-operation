@@ -2,7 +2,7 @@
 
 If you select the operation usage as Arc welding, you can use commands related to arc welding and access the menus related to arc welding.
 
-![Figure 66 Operation Usage &#x2013; Arc Welding](../../../_assets/image_509.png)
+![](../../../_assets/tp630/init-usage-arc_eng.png)
 
 1.	Set the welding machine type \(analog or digital\) in \[Arc Welding\]. Other usages will be handled as disable, and a list of welders supported by the system will appear at the bottom of the screen.
 
