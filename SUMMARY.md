@@ -145,7 +145,7 @@
       * [7.3.2.6 출력 신호 할당](7-setting/3-control-parameter/2-io-signal-setting/6-output-signal-assign.md)
       * [7.3.2.7 출력 신호 설정 정보](7-setting/3-control-parameter/2-io-signal-setting/7-output-signal-set-info.md)
       * [7.3.2.8 키 신호 출력](7-setting/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)
-      * [7.3.2.9 DIO 블록 할당](7-setting/3-control-parameter/2-io-signal-setting/9-dio-block-assign.md)
+      * [7.3.2.9 FB 블록 할당](7-setting/3-control-parameter/2-io-signal-setting/9-dio-block-assign.md)
       * [7.3.2.10 복수 신호 출력](7-setting/3-control-parameter/2-io-signal-setting/10-multi-signal-output.md)
       * [7.3.2.11 복수 신호 입력](7-setting/3-control-parameter/2-io-signal-setting/11-multi-signal-input.md)
     * [7.3.3 시리얼 포트](7-setting/3-control-parameter/3-serial-port.md)
