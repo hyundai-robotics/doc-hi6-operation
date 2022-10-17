@@ -1,4 +1,4 @@
-# 4.3.2 Recording Speed Conversion
+﻿# 4.3.2 Recording Speed Conversion
 
 You can change the recording speed for a specific step of the program and apply it to the existing program, or create a new program.
 
@@ -6,7 +6,7 @@ You can change the recording speed for a specific step of the program and apply 
 
 2.	After setting the recording speed option, touch the \[OK\] button.
 
-![](../../_assets/image_398.png)
+    ![](../../_assets/tp630/prg-speed-modi_eng.png)
 
 * \[Source program\]/\[Target program\]: You can input the number of the original program \(Initial setting value: The currently selected program\) whose recording speed you want to change and the number of the new program you want to save after the change of recording speed. If you set the number of the target program to match the same number as that of the original program, the original program will be overwritten by and replaced with a new program.
 * \[Start Step\]/\[End Step\]: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of the recording speed.

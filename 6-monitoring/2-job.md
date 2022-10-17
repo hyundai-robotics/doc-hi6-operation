@@ -1,10 +1,12 @@
-# 6.2 job
+﻿# 6.2 job
 
-Touch \[JOB\] in the panel selection window. Then, the JOB program window will appear. You can check a program, and then edit or delete it or create one.
+Touch \[job\] in the panel selection window. For the total program list, <**SHIFT**>+<**PROG**> keys lead to the program selection window. Then, you can create, delete, and select a program.
 
-![Figure 33 JOB Program](../_assets/image_397.png)
+![](../_assets/tp630/k-prg-select_eng.png)
 
+You can modify the selected job program in the task edit window.
 
+![](../_assets/tp630/pane-job_eng.png)
 
 <table>
   <thead>
@@ -16,10 +18,18 @@ Touch \[JOB\] in the panel selection window. Then, the JOB program window will a
   <tbody>
     <tr>
       <td style="text-align:left">
+        <img src="../_assets/tp630/k-prog-step_eng.png" alt/>
+      </td>
+      <td style="text-align:left"> <ul>  <<b>SHIFT</b>>+<<b>PROG</b>> : In the program selection window, you can create, delete, or select a program. </ul> </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
         <img src="../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Displays the basic information and statement of a program. You can check
-        and edit the details of the statement.</td>
+      <td style="text-align:left">
+        <ul> Basic information and commands are displayed. You can check and modify details of each command.
+        </ul>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -27,9 +37,7 @@ Touch \[JOB\] in the panel selection window. Then, the JOB program window will a
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[Program]</b>: You can select or delete a program from the created
-            program list.
-            <br /><b>[&#x2026;]</b>: If the automatic indentation is applied incorrectly,
+          <li> <b>[&#x2026;]</b>: If the automatic indentation is applied incorrectly,
             the automatic indentation in the JOB program can be performed again.</li>
           <li>When a program is written, the parameter value of the selected statement
             will be displayed in the input area.</li>

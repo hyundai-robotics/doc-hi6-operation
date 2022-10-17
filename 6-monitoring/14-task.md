@@ -1,10 +1,11 @@
-# 6.14 Task monitor
+﻿# 6.14 Task monitor
+
 
 In the panel selection window, touch \[Task monitor\]. Then, the task window will appear.
 
 You can check the operation cycle and execution time information for each task.
 
-![Figure 45 Task monitor](../_assets/image_422.png)
+![Figure 45 Task monitor](../_assets/tp630/pane-task_eng.png)
 
 <table>
   <thead>
@@ -19,18 +20,21 @@ You can check the operation cycle and execution time information for each task.
         <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <ul>
-          <li><b>[Cycle Time]/[Execution Time]</b>: You can change the information type
-            for each task.</li>
-          <li><b>[Initialization]</b>: You can initialize the displayed information.</li>
-        </ul>
+          <ul>Displays the operation cycle and execution time information for each task </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Displays the operation cycle and execution time information for each task</td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>[cycle time]/[execution time]</b>: You can change the information type
+            for each task.</li>
+          <li><b>[initialization]</b>: You can initialize the displayed information.</li>
+          <li><b>[counter]</b>: You can regard the task as normal by checking the increasing counter.</li>
+        </ul>
+      </td>
     </tr>
   </tbody>
 </table>

@@ -1,10 +1,14 @@
-# 6.19 Program reserve
+# 6.19 Program reservation execution
 
-In the panel selection window, touch \[Program reserve\]. Then, the scheduled program execution window will appear. 
+For this monitoring, pre-setting is required. You have to select the register number as 20EA or 1EA in the page of [system > 2:Control parameter > 7:Program reservation execution]'.
+
+![](../_assets/tp630/ctrl-prog-reserve_eng.png)
+
+In the panel selection window, touch \[program reserve\]. Then, the scheduled program execution window will appear. 
 
 When programs are scheduled through external signals and executed in the scheduled order, you can check and change the status in the list of scheduled programs.
 
-![Figure 50 Program reserve](../_assets/image_433.png)
+![Figure 50 Program reserve](../_assets/tp630/pane-prog-reserv_eng.png)
 
 <table>
   <thead>

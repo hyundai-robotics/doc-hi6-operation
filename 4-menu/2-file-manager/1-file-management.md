@@ -1,14 +1,14 @@
-# 4.2.1 File Management
+﻿# 4.2.1 File Management
 
 Select one or multiple files to copy, move, or delete.
 
 1.	Select a folder in the folder list using the jog dial on the teach pendant. A list of files saved in the selected folder will appear.
 
-![](../../_assets/image_366.png)
+    ![](../../_assets/tp630/fl-folder-select_eng.png)
 
 2.	Select the desired file in the file list by touching it.
 
-![](../../_assets/image_377.png)
+    ![](../../_assets/tp630/fl-file-select_eng.png)
 
 * You can select multiple files one by one by touching each file while pressing the &lt;ctrl&gt; key.
 * If you touch two files while pressing the &lt;shift&gt; key, you can select all files between the two files at once.
@@ -25,14 +25,15 @@ Select one or multiple files to copy, move, or delete.
 
 4.	To paste a file into a folder, select the folder using the jog dial and then touch the \[Paste\] button. Then, the file will be pasted to the selected folder.
 
-![](../../_assets/image_370.png)
+    ![](../../_assets/tp630/fl-copy_eng.png)
 
 
-If the selected folder has a file with a duplicate name, a duplication notification window will appear. Handle it by setting whether to overwrite it.
-_assets
-![](../../_assets/image_376.png)
+* If the selected folder has a file with a duplicate name, a duplication notification window will appear. Handle it by setting whether to overwrite it.
+
+    ![](../../_assets/tp630/fl-copy-pop_eng.png)
+
 
 * To delete a file, touch the \[Delete\] button, and then touch the \[ENTER\] button in the confirmation window.
-_assets
-![](../../_assets/image_395.png)
+
+    ![](../../_assets/tp630/fl-delete-pop_eng.png)
 

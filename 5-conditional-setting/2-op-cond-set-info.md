@@ -1,4 +1,4 @@
-# 5.2 Information of Operation Conditions Setting
+ï»¿# 5.2 Information of Operation Conditions Setting
 
 
 
@@ -36,7 +36,7 @@ While in the step backward operation, only the input wait signal function will b
   * Enable: Will execute path recovery without confirming with the user whether to execute path recovery
 
 * 
-  \[6: Playback speed rate\]: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot??™s moving speed against the speed recorded in the step in batch.
+  \[6: Playback speed rate\]: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot??ï¿½s moving speed against the speed recorded in the step in batch.
 
 
 
@@ -49,7 +49,7 @@ If a low-speed command is inputted through an external input during automatic op
 * \[8: Interpolation base\]: You can set a tool that will be the reference during the manual jogging of the robot. In general, a robot tool is used as an interpolation reference.
   * Robot Tool: Interpolation operation will be executed based on the tool attached to the front end of the robot.
   * 
-    Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../_assets/bt-st0s.png)\).
+    Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../_assets/tp630/sbt-crd-st0-small_eng.png)\).
 
 
 
@@ -63,13 +63,13 @@ If you select the stationary tool as the interpolation reference, you must set t
 
 
 * 
-  If 0 is set, the robot coordinate system icon \(![](../_assets/icon-crd-rob.png)\) will be displayed on the \[Coordinate System\] button on the right side of the screen. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed.
+  If 0 is set, the robot coordinate system icon \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) will be displayed on the \[Coordinate System\] button on the right side of the screen. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed.
 
-![](../_assets/image_126_en.png)
+  ![](../_assets/tp630/pane-pose-robotcoord_eng.png)
 
-* If a number between 1 and 10 is set, the user coordinate system icon \(![](../_assets/icon-crd-user.png)\) will be displayed on the \[Coordinate System\] button. The coordinate values that are changed by using the &lt;Axis Operation&gt; key will be based on the user coordinate system.
+* If a number between 1 and 10 is set, the user coordinate system icon \(![](../_assets/tp630/sbt-crd-user-small_eng.png)\) will be displayed on the \[Coordinate System\] button. The coordinate values that are changed by using the &lt;Axis Operation&gt; key will be based on the user coordinate system.
 
-![](../_assets/image_134_en.png)
+  ![](../_assets/tp630/pane-pose-usrcoord_eng.png)
 
 
 

@@ -6,7 +6,9 @@ You can write a new program by modifying the conditions and location of the crea
 
 2.	Select the desired menu and then modify the program conditions and location, or write a new program.
 
-![](../../_assets/image_359.png)
+    ![](../../_assets/tp630/prg-modi-menu_eng.png)
+
+<br>
 
 {% hint style="info" %}
 During the startup of the robot, the use of the menus \[4: The reference coordinate system\], \[5: Coordinate transformation\], \[6: Mirror Image\], and \[7: Step Copy\] will be restricted.

@@ -1,10 +1,10 @@
-# 6.13 System Character
+﻿# 6.13 System Character
 
 In the panel selection window, touch \[System character\]. Then, the system character window will appear. 
 
 You can check all the various data of the robot system or only the data of a specific type of information.
 
-![Figure 44 System character](../_assets/image_441.png)
+![](../_assets/tp630/pane-syscharacter_eng.png)
 
 | No. | Description |
 | :--- | :--- |
@@ -20,17 +20,16 @@ System character monitoring function is only available in engineer mode.
 * Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
 {% endhint %}
 
-### 
+<Br> 
 
-#### Initialization
+### Initialization
 
 You can initialize the maximum value of the data by selecting the type of information you want.
 
 1.	Touch the \[Clear\] button at the bottom of the system properties window.
 
-![](../_assets/image_420.png)
 
 2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized.
 
-![](../_assets/image_421.png)
+    ![](../_assets/tp630/pane-syscharacter-clear_eng.png)
 

@@ -1,4 +1,4 @@
-# 4.3.6 Mirror Image
+﻿# 4.3.6 Mirror Image
 
 You can write a program in which the position of the S axis and the posture of the wrist axis are symmetrical based on the Y-Z plane at the 0° position of the S axis of the robot.
 
@@ -18,7 +18,7 @@ The use of the \[6: Mirror Image\] menu will be restricted during the startup of
 
 * \[Source program\]/\[Target program\]: You can set the number of the existing program and the number of the new program that is to be created through conversion using a mirror image.
 
-![](../../_assets/image_194.png)
+    ![](../../_assets/tp630/prg-mirror-img.png)
 
 
 

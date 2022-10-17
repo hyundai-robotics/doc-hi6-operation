@@ -1,4 +1,4 @@
-# 4.2 File Management
+﻿# 4.2 File Management
 
 
 You can manage files in the main board’s internal memory, teach pendant, or removable storage device.
@@ -6,8 +6,8 @@ You can manage files in the main board’s internal memory, teach pendant, or re
 1.	Touch the \[5: File Manager\] menu. Then, a list of folders of each device and a list of files saved in the selected folder will appear.
 
 2.	Check and manage the folder structure and saved files by device.
-_assets
-![](../../_assets/image_372.png)
+
+    ![](../../_assets/tp630/fl-manage_eng.png)
 
 
 

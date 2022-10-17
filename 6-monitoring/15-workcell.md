@@ -1,4 +1,8 @@
-# 6.16 workcell
+# 6.15 workcell
+
+This function is under development. As soon as completed, the content will be updated.
+
+---
 
 In the panel selection window, touch \[Work Cell\]. Then, the robot’s current posture will appear on the 3D screen.
 

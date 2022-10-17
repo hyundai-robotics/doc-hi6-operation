@@ -1,12 +1,12 @@
-# 4.2.3.1 Folder Deletion
+﻿# 4.2.3.1 Folder Deletion
 
-1.	Select a folder in the folder list using the jog dial on the teach pendant and then touch the \[Delete\] button on the right side of the screen.
+1.	Select a folder in the folder list using the jog dial on the teach pendant and then touch the ![](../../../_assets/tp630/k-delete_eng.png) key on the right bottom of the key pad.
 
-![](../../../_assets/image_373.png)
+    ![](../../../_assets/tp630/fld-delete_eng.png)
 
 2.	In the confirmation window, touch the \[ENTER\] button. The selected folder and all files saved in it will be deleted.
 
-![](../../../_assets/image_386.png)
+    ![](../../../_assets/tp630/fld-delete-pop_eng.png)
 
 
 

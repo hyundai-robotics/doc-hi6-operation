@@ -1,10 +1,11 @@
-# 4.4.1 System Version
+﻿# 4.4.1 System Version
 
 1.	Touch the \[7: System Diagnosis &gt; 1: System version\] menu. Then, the system environment setting window will appear.
 
 2.	Check and manage the system environment \(software version\) information of the robot and controller.
 
-![](../../../_assets/image_390.png)
+![](../../../_assets/tp630/svc-system-version_eng.png)
+
 
 <table>
   <thead>
