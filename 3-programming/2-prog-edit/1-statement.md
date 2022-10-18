@@ -20,27 +20,3 @@
 ![그림 28 명령문 편집 - 인수값 입력](../../_assets/tp630/pane-prog-move-option.png)
 
 명령어 인수를 편집할 때는 티치 펜던트의 조작키와 화면 하단의 메뉴 버튼을 이용하거나 소프트 키보드를 이용하여 변수나 수식, 문자열을 편집할 수 있습니다.
-
-<table>
-  <tr>
-    <td>내용</td>
-    <td>내용</td>
-  </tr>
-  <tr>
-    <td colspan="2">내용</td>
-  </tr>
-</table>
-
-
-<table>
-  <tr>
-    <td rowspan="3">내용</td>
-    <td>내용</td>
-  </tr>
-  <tr>
-    <td>내용</td>
-  </tr>
-  <tr>
-    <td>내용</td>
-  </tr>
-</table>

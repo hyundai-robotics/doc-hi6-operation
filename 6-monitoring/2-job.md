@@ -1,10 +1,10 @@
 ﻿# 6.2 job
 
-<**SHIFT**>+<**프로그램**>키를 누르면 프로그램 선택창이 나타납니다. 해당 창에서 프로그램을 생성, 삭제 및 선택할 수 있습니다.
+패널 선택창에서 \[job\]을 터치하십시오. 전체 프로그램 리스트를 보기 위해서는 <**SHIFT**>+<**프로그램**>키를 누르면 프로그램 선택창이 나타납니다.
 
 ![](../_assets/tp630/k-prg-select.png)
 
-선택된 프로그램이 화면에 보이면 명령어 추가 등 편집할 수 있습니다.  
+선택된 프로그램이 화면에 보이면 명령어 추가, 수정 등 편집을 수행할 수 있습니다.  
 
 ![](../_assets/tp630/pane-job.png)
 
@@ -20,17 +20,15 @@
       <td style="text-align:left">
         <img src="../_assets/tp630/k-prog-step.png" alt/>
       </td>
-      <td style="text-align:left"><<b>SHIFT</b>>+<<b>프로그램</b>>:  작성된 프로그램
-            목록에서 프로그램을 선택하거나 삭제합니다.</td>
+      <td style="text-align:left"> <ul> <<b>SHIFT</b>>+<<b>프로그램</b>>:  프로그램 목록에서 프로그램을 생성, 삭제, 선택합니다. <ul/></td>
     </tr>
      <tr>
       <td style="text-align:left">
         <img src="../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">프로그램의 기본 정보와
-        명령문을 표시합니다.
-        명령문의 상세 정보를
-        확인하고 편집할 수 있습니다.</td>
+      <td style="text-align:left"><ul>프로그램의 기본 정보와
+        명령문을 표시합니다. 명령문의 상세 정보를
+        확인하고 편집할 수 있습니다.<ul/></td>
     </tr>
     <tr>
       <td style="text-align:left">
