@@ -12,6 +12,6 @@
 예를 들어, 2.9를 입력한 후 <<b>ENTER</b>> 키를 누르십시오. fb2.do9로 변환되어 나타납니다. 소수점 없이 9를 입력하고 <<b>ENTER</b>> 키를 누르면 do9로 변환됩니다.
 
 {% hint style="info" %}
-Hi6 티치 펜던트의 사용자키 영역에서도 원하는 출력 신호를 버튼에 등록할 수 있습니다. 자세한 내용은 “[2.8.2.1 키 신호 출력 기능 영역](../../../2-operation/8-user-key/2-button-registration/1-key-signal-output.md)”를 참조하십시오.
+Hi6 티치 펜던트의 사용자키 영역에서도 원하는 출력 신호를 버튼에 등록할 수 있습니다. 자세한 내용은 “[2.7.2.1 키 신호 출력 기능 영역](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)”를 참조하십시오.
 {% endhint %}
 

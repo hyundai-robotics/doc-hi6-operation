@@ -74,15 +74,7 @@
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[num.]: 드롭다운 메뉴를 터치하여
-            목록에 표시할 이력의
-            수(30, 100, 200, 500, 1000)를 조정할 수
-            있습니다. 이력의 수를
-            선택하면 해당 개수만큼의
-            최근 이력을 다시 불러와
-            화면에 표시합니다.</li>
-          <li>[
-            <img src="../_assets/bt-menu.png" alt/>]: 팝업 메뉴를 엽니다.
+          <li>[<img src="../_assets/bt-menu.png" alt/>]: 팝업 메뉴를 엽니다.
             <ul>
               <li>log 파일로 저장: 메모리
                 버퍼의 최신 이력을 파일로
@@ -108,9 +100,9 @@
       <td style="text-align:left">
         <img src="../_assets/c3.png" alt/>
       </td>
-      <td style="text-align:left">선택한 유형의 이력 목록입니다.
+      <td style="text-align:left"><ul>선택한 유형의 이력 목록입니다.
         유형별 이력의 상세 정보를
-        확인할 수 있습니다.</td>
+        확인할 수 있습니다.</ul></td>
     </tr>
   </tbody>
 </table>
