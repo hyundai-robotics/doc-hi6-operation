@@ -1,4 +1,4 @@
-# About the Manual
+﻿# About the Manual
 
 This manual describes the basics and structure of Hyundai Robotics’ Hi6 controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
 

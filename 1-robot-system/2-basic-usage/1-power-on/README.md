@@ -1,4 +1,4 @@
-# 1.2.1 Turning On the Power
+﻿# 1.2.1 Turning On the Power
 
 {% hint style="info" %}
 The method of turning on and off the power may differ depending on the type of controller.

@@ -1,8 +1,8 @@
-# 2.3.2.2 Base and Robot Recording Coordinates
+﻿# 2.3.2.2 Base and Robot Recording Coordinates
 
 The position and posture of the robot can be displayed differently depending on the coordinate system. If there is no travel axis, the base coordinate and the robot coordinate will generally be the same. If the travel axis is defined, the position and posture of the robot tool will be displayed differently depending on whether it is the base coordinate and the robot coordinate.
 
-In manual mode, if the \[1: Pose Recording Form\] option in the \[Set up&gt; 1: User Environment\] menu is set to base or robot, touch the \[property\] button in the move statement. You can check the position and posture of the robot tool in the attributes window.
+In manual mode, if the \[1: Pose Recording Form\] option in the \[system&gt; 1: User Environment\] menu is set to base or robot, touch the \[property\] button in the move statement. You can check the position and posture of the robot tool in the attributes window.
 
 {% hint style="info" %}
 If you would like to change the pose recording form, please contact our customer support team to ask an expert or an engineer.

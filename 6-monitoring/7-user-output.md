@@ -71,7 +71,7 @@ You can select the desired signal and force it to be outputted.
     ![](../_assets/tp630/pane-univoutsig_eng.png)
 
 
-3.	After checking the output conditions in the manual output confirmation window, touch the \[ENTER\] button.
+3.	After checking the output conditions in the manual output confirmation window, touch the <**ENTER**> button.
 
     ![](../_assets/tp630/pane-univoutsig-manual_eng.png)
 

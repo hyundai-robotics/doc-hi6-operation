@@ -1,4 +1,4 @@
-# 6.8 Global Variables
+﻿# 6.8 Global Variables
 
 You can check the global variables defined as global in the JOB program. You can also select and change a variable value.
 

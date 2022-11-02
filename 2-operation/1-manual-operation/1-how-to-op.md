@@ -1,4 +1,4 @@
-# 2.1.1 Operation Method
+﻿# 2.1.1 Operation Method
 
 The method of instructing the contents of the work to the robot using the jog key and checking the contents of the instructed work are as follows.
 
@@ -6,27 +6,23 @@ The method of instructing the contents of the work to the robot using the jog ke
 
 2.	Set the operation mode to manual mode by turning the mode switch of the teach pendant.
 
-
-
-
-
-![](../../_assets/image_40.png)
+    ![](../../_assets/tp630/TP-hw-switch-manual.png)
 
 3.	In the status bar of the Hi6 teach pendant screen, check whether the operation mode is set to manual mode.
 
-![](../../_assets/image_325.png)
+    ![](../../_assets/tp630/sbar-mode_eng.png)
 
-* If it is set to automatic mode, set the operation mode to manual mode by turning the mode switch of the teach pendant.
+    * If it is set to automatic mode, set the operation mode to manual mode by turning the mode switch of the teach pendant.
 
-4.	Touch the \[Program\] button in the JOB program window. Then, the program selection window will appear.
+4.	Touch the <<b>PROG</b>> key with \<**SHIFT**\>. Then, the program selection window will appear.
 
-![](../../_assets/image_329.png)
+    ![](../../_assets/tp630/k-prog-step_eng.png)
 
 
 
-5.	Select a program from the list in the program selection window or input the program number and then touch the \[OK\] button.
+5.	Select a program from the list in the program selection window or input a program number and then press <**ENTER**> key.
 
-![](../../_assets/image_317.png)
+    ![](../../_assets/tp630/k-prg-select_eng.png)
 
 6.	Press the &lt;motor&gt; key on the teach pendant. Then, the motor lamp will blink, and the servo power will be ready to be supplied to the motor of each axis of the robot.
 
@@ -34,9 +30,9 @@ The method of instructing the contents of the work to the robot using the jog ke
 
 8.	Operate the robot according to the speed level or movement conditions of the coordinate system using the jog key.
 
-* To save the robot’s location, touch the \[Record\] button at the desired location. Then the step will be recorded.
-* To record the function required for the step, touch the \[Command Inputting\] button.
-* To check the robot’s location while manually moving it forward or backward, press the &lt; ↓ / ↑ &gt; key. While you are pressing the &lt; ↓ / ↑ &gt; key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
+    * To save the robot’s location, touch the <<b>REC</b>> key at the desired location. Then the step will be recorded.
+    * To record the function required for the step, touch the \[cmd.input\] button.
+    * To check the robot’s location while manually moving it forward or backward, press the &lt; ↓ / ↑ &gt; key. While you are pressing the &lt; ↓ / ↑ &gt; key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
 
 
 

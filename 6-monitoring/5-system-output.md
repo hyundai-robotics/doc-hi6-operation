@@ -15,7 +15,7 @@ You can check the signals related to the robot operation and check the status of
 
 
 
-#### Manual Output
+### Manual Output
 
 You can select the desired signal and force it to be outputted.
 

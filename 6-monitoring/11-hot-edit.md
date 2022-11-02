@@ -1,4 +1,4 @@
-# 6.11 Hot Edit
+﻿# 6.11 Hot Edit
 
 This is the function to edit the program without stopping it, while playback is still running. 
 

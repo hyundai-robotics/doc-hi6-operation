@@ -1,4 +1,4 @@
-# Safety Cautions
+﻿# Safety Cautions
 
 Before using the product, you must read the following safety cautions for proper use, user safety, and prevention of property damage.
 

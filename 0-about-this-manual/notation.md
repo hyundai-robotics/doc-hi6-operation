@@ -12,8 +12,8 @@ Figures are used to help you understand how to operate the product and illustrat
 
 On the GUI, menu names and button names are enclosed in square brackets \(\[ \]\) and displayed in bold. When you need to select multiple menus in order, mark them with the &gt; symbol between the names.
 
-* Menu with a name: Touch the \[Menu\] button on the initial screen in manual or automatic mode.
-* Multiple menus: Touch the \[Set Up\] button &gt; \[5: Initialize &gt; 7: Unit Setting\] menu on the initial screen in manual mode.
+* Menu with a name: Touch the \[service\] button on the initial screen in manual or automatic mode.
+* Multiple menus: Touch the \[system &gt; 5: Initialize &gt; 7: Unit Setting\] menu on the initial screen in manual mode.
 
 
 
@@ -29,7 +29,7 @@ Keys that are to be pressed on the operation part of the teach pendant to operat
 
 It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks (" ") in bold as follows.
 
-* For details on how to change the date and time information, refer to "[4.5 Setting of Date and Time.](../4-menu/5-date-time-setting.md)".
+* For details on how to change the date and time information, refer to "[4.5 Setting of Date and Time.](../4-service/5-date-time-setting.md)".
 
 ## Note
 

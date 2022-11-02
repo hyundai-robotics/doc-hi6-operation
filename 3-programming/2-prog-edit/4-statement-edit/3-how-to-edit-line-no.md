@@ -1,4 +1,4 @@
-# 3.2.4.3 Line Number Editing Method
+﻿# 3.2.4.3 Line Number Editing Method
 
 The line number can be set to any number between 1 and 9999.
 
@@ -6,9 +6,7 @@ The line number can be set to any number between 1 and 9999.
 
 * If the cursor is in the statement cursor status while in the statement area, press the &lt;←&gt; key to move the cursor to the address area.
 
-
-
-![](../../../_assets/image_352.png)
+    ![](../../../_assets/tp630/pane-prog-linenum.png)
 
 2.	In the address area, select a line by pressing the &lt;↓/↑&gt; key and then edit the line number.
 
@@ -16,14 +14,14 @@ The line number can be set to any number between 1 and 9999.
 
 
 
-![](../../../_assets/image_356.png)
+    ![](../../../_assets/tp630/pane-prog-linenum1.png)
 
 * To delete a line number, press the &lt;BS&gt; key. Then, the address value of the line number will be removed from the input area.
 
 
-3.	Press the &lt;enter&gt; key to complete the editing. The contents of the change will be saved in the JOB program.
-_assets
-![](../../../_assets/image_67.png)
+3.	Press the <<b>ENTER</b>> key to complete the editing. The contents of the change will be saved in the JOB program.
+
+    ![](../../../_assets/tp630/pane-prog-linenum2.png)
 
 
 

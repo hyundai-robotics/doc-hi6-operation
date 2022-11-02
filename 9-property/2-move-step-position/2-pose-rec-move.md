@@ -6,7 +6,7 @@ You can edit the pose variable value in the move statement, including the pose v
 
 2.	Check and modify the current pose variable.
 
-![](../../_assets/tp630/step-pose-global_eng.png)
+    ![](../../_assets/tp630/step-pose-global_eng.png)
 
 
 
@@ -31,7 +31,7 @@ You can edit the pose variable value in the move statement, including the pose v
           <li>Coordinate value: The coordinate value of the current pose variable
             <ul>
               <li>Select an item using the cursor key.</li>
-              <li>After inputting a value in the desired item, press the <b>&lt;enter&gt;</b> key
+              <li>After inputting a value in the desired item, press the <b><<b>ENTER</b>></b> key
                 to reflect the change.</li>
               <li>If the coordinate system format is set as an encoder, the coordinate value
                 will not be changed.</li>
@@ -72,9 +72,9 @@ You can edit the pose variable value in the move statement, including the pose v
   </tbody>
 </table>
 
-3.	Touch the \[Record\] button. Then, the change will be saved in the job program, and the operation will end.
+3.	Touch the \[OK\] button. Then, the change will be saved in the job program, and the operation will end.
 
-* If you end the operation by pressing the &lt;esc&gt; key, the change will not be saved. 
+* If you end the operation by pressing the <**ESC**> key, the change will not be saved. 
 
 
 

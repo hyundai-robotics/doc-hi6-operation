@@ -1,8 +1,8 @@
-# 6.16 Sensor Sync
+﻿# 6.16 Sensor Sync
 
 Touch \[Sensor Sync\] in the panel selection window. Then, the sensor sync window will appear.
 
-You can check the information related to the conveyor and press sync functions. The sensor sync function can be activated by setting the sync status as conveyor or press in the \[Set up&gt; 4: Application Parameter &gt; 4: Sensor Sync\] menu.
+You can check the information related to the conveyor and press sync functions. The sensor sync function can be activated by setting the sync status as conveyor or press in the \[system &gt; 4: Application Parameter &gt; 4: Sensor Sync\] menu.
 
 ![Figure 49 Sensor Sync Monitoring](../_assets/tp630/pane-sensorsynch_eng.png)
 

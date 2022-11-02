@@ -1,4 +1,4 @@
-# 2.3 Step
+﻿# 2.3 Step
 
 A step refers to a specific posture \(the position of each axis or the position of the tooltip\) that is to be recorded in the job program and taken by the robot. In other words, a step is one position that the robot will reach through a movement.
 

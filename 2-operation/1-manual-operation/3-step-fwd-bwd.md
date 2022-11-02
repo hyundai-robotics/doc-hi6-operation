@@ -1,14 +1,14 @@
-# 2.1.3 Step Forward/Backward
+﻿# 2.1.3 Step Forward/Backward
 
 The step forward/backward is one of the methods of operating the robot in manual mode and refers to the act of playing back a recorded program. By manipulating the robot in the step forward/backward operation, you can check the recorded program path and mutual interlock relationship at a range of safe speed.
 
 The execution unit for the step forward/backward operation can be checked and set from the \[run to\] button on the left side of the Hi6 teach pendant screen.
 
-![](../../_assets/image_318.png)
+![](../../_assets/tp630/lbt-runto_eng.png)  
 
 To set the execution unit for the step forward/backward operation, touch the \[run to\] button repeatedly until the desired option appears.
 
-![](../../_assets/image_303.png)
+![](../../_assets/tp630/lbt-runto-sw_eng.png)
 
 * **\[cmd\]:** Will execute the command line by line
 * **\[step\]:** Will execute step by step
@@ -18,9 +18,9 @@ To set the execution unit for the step forward/backward operation, touch the \[r
 
 
 
-When the execution unit is set as cmd or step, the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing b/n automatic mode.
+When the execution unit is set as 'cmd' or 'step', the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing b/n automatic mode.
 
-When you set the execution unit as cmd or step and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to ???[2.3.1.4 Accuracy](../3-step/1-step-cmd-param/4-accuracy.md).???
+When you set the execution unit as 'cmd' or 'step' and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to "[2.3.1.4 Accuracy](../3-step/1-step-cmd-param/4-accuracy.md)".
 
 ![Figure 11 Playback Forward/Backward Path When cmd/step Setting is Performed](../../_assets/path-cmd-step-pback-fwd-bwd-en.png)
 
@@ -37,7 +37,7 @@ You can set the maximum speed for the step forward/backward operation and set wh
 
 
 
-![](../../_assets/cond-set-step-fwd-bwd-spd-en.png)
+![](../../_assets/tp630/cond-set-step-fwd-bwd-spd_eng.png)
 
 * \[2: Step FWD/BWD maximum speed\]: Same as the value set for the speed in manual operation
 * \[3: Function execution during step FWD\]: You can select the function execution option.

@@ -1,8 +1,8 @@
-# 6.9 Local Variables
+﻿# 6.9 Local Variables
 
-You can check the local variables defined as var in the JOB program. You can also select and change a variable value.
+You can check the local variables defined as 'var' in the JOB program. You can also select and change a variable value.
 
-1.	Execute the program that includes the local variables defined as var, and then touch the \[+\] button at the top right of the panel stack in the work area.
+1.	Execute the program that includes the local variables defined as 'var', and then touch the \[+\] button at the top right of the panel stack in the work area.
 
     ![](../_assets/tp630/pane-prog-lvar_eng.png)
 

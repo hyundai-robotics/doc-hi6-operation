@@ -1,4 +1,4 @@
-# 1.2.1.1 Input of the Power to the Motor and the Operable Status
+﻿# 1.2.1.1 Input of the Power to the Motor and the Operable Status
 
 The status of the mode switch and safety plug of the teach pendant determines the input of power to the motor and the operable status.
 

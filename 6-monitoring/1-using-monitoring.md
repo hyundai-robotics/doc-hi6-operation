@@ -14,7 +14,7 @@
   The items that can be monitored will be displayed differently depending on the setting of the controller. 
 
 * 
-  For details on how to use the panel stack and window of the work area, refer to ???[1.2.4.5 Work area](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/5-work-area.md).???
+  For details on how to use the panel stack and window of the work area, refer to "[1.2.3.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area.md)".
 {% endhint %}
 
 

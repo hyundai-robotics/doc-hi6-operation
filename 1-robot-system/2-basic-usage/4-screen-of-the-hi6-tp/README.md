@@ -1,70 +1,20 @@
-# 1.2.4 Screen of the Hi6 Teach Pendant
+﻿# 1.2.4 Screen of the Hi6 Teach Pendant
 
-You can control the operation of the robot or manage devices that interoperate with the robot. The Hi6 teach pendant screen is configured as follows.
+Following figure represents the screen displayed on teach pendant. Teach pendant screen of Hi6 controller is composed of 10 screen windows of color touch screens.
+<br>
 
-![Figure 7 Configuration of the Hi6 Teach Pendant](../../../_assets/image_283.png)
+![](../../../_assets/tp630/TP-main_eng.png)
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left">The status bar displays the communication status and operation mode of
-        the teach pendant and the status and mechanism of the robot system. For
-        details, refer to &#x201C;<a href="status-bar.md"><b>1.2.4.1 Status Bar</b></a>&#x201D;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">You can check and change the setting values using the function buttons.
-        For details, refer to &#x201C;<a href="function-buttons.md"><b>1.2.4.3 Function</b> <b>Buttons</b></a>&#x201D;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c3.png" alt/>
-      </td>
-      <td style="text-align:left">Work area. You can perform various tasks such as editing the JOB program
-        and checking the monitoring information. You can perform multiple tasks
-        simultaneously.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c4.png" alt/>
-      </td>
-      <td style="text-align:left">You can check and change the setting values of the menus and execute various
-        functions using the menu buttons. For details, refer to &#x201C;<a href="menu-buttons.md"><b>1.2.4.4 Menu Buttons</b></a>&#x201D;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c5.png" alt/>
-      </td>
-      <td style="text-align:left">The jog bar displays the name of the axis newly selected according to
-        the reference coordinate system of the jog execution selected using the <b>[Crd. Sys]</b> button.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c6.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <p>Taskbar. For details, refer to &#x201C;<a href="log-bar.md"><b>1.2.4.2 Log bar</b></a>&#x201D;</p>
-        <ul>
-          <li>It displays the current time information and the memory usage status of
-            the teach pendant. You can also check error messages or warning messages.</li>
-          <li>You can display the keyboard on the screen or hide it. While using the
-            soft keyboard, you can move the keyboard to the top of the screen.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-### 
+| No. | Description | 
+| :--- | :--- | 
+| ![](../../../_assets/c1.png) | Title display window : various status icons of TP communication, robot system, mechanism, etc. ([1.2.3.1 Title display window](1-title-area.md)) |
+| ![](../../../_assets/c2.png) | Status display window: a operating mode and settings ([1.2.3.2 Status display window](2-status-bar.md)) |
+| ![](../../../_assets/c3.png) | R button bar : the menu group of the right side on the main screen  ([1.2.3.3 R button bar](3-Rbt-bar.md)) |
+| ![](../../../_assets/c4.png) | Monitor window : running data during operations  ([1.2.3.4 Monitor window](4-mon-area.md)) |
+| ![](../../../_assets/c5.png) | Function button bar : the menu group of the bottom side on the main screen, which supports main settings and monitoring  ([1.2.3.5 Function button bar](5-function-buttons.md)) |
+| ![](../../../_assets/c6.png) | Input display window : direct typing area for the task edit window ([1.2.3.6 Input display window](6-input-area.md)) |
+| ![](../../../_assets/c7.png) | Guide display window : guide messages during operations  ([1.2.3.7 Guide display window](7-guide-area.md)) |
+| ![](../../../_assets/c8.png) | Task edit window : the area for editing JOB programs  ([1.2.3.8 Task edit window](8-work-area.md)) |
+| ![](../../../_assets/c9.png) | Record condition display window : the  conditions of recording steps  ([1.2.3.9 Record condition display window](9-record-cnd-area.md)) |
+| ![](../../../_assets/c10.png) | L button bar  : the menu group of the left side on the main screen  ([1.2.3.10 L button bar](10-Lbt-bar.md)) |
 

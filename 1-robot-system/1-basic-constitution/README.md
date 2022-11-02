@@ -1,4 +1,4 @@
-# 1.1 Basic Configuration
+﻿# 1.1 Basic Configuration
 
 Industrial robots are “machines that are equipped with manipulation and movement functions based on automatic control for them to perform various works by using programs at an industrial site.” The collaborative robot is a type of industrial robot.
 

@@ -1,4 +1,4 @@
-# 6.6 Public Input
+﻿# 6.6 Public Input
 
 Touch \[public Input\] in the panel selection window. Then, the public input signal window will appear. 
 

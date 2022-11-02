@@ -1,4 +1,4 @@
-# 3.2.1 Statements
+﻿# 3.2.1 Statements
 
 A general program consists of a step command that instructs the robot to move and a function command that instructs the robot to carry out work after the movement.
 
@@ -17,9 +17,9 @@ A statement is largely divided into a command and a parameter, which is an addit
 For details on parameters, refer to “[2.3.1 Step Statement Parameters](../../operation/step/step-cmd-param/).”
 {% endhint %}
 
-When you input a statement, basic setting values will be automatically inputted into the default parameters and can be changed. Optional parameters are marked with a symbol \( \_ \), and you can input the parameter values by selecting the parameters. Moreover, parameters that can be inputted will be displayed as buttons on the right side of the screen.
+When you input a statement, basic setting values will be automatically inputted into the default parameters and can be changed. Optional parameters are marked with a symbol \( \_ \), and you can input the parameter values by selecting the parameters. Moreover, parameters that can be inputted will be displayed as buttons on the function button bar.
 
-![Figure 27 Editing a Command &#x2013; Inputting Parameter Values](../../_assets/image_355.png)
+![Figure 27 Editing a Command &#x2013; Inputting Parameter Values](../../_assets/tp630/pane-prog-move-option.png)
 
-When editing the command parameters, you can edit variables, expressions, and strings by using the operation keys on the teach pendant and the menu buttons on the right side of the screen, or by using the soft keyboard.
+When editing the command parameters, you can edit variables, expressions, and strings by using the operation keys on the teach pendant and the menu buttons on the bottom of the screen, or by using the soft keyboard.
 

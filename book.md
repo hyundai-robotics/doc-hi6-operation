@@ -70,7 +70,7 @@ Keys that are to be pressed on the operation part of the teach pendant to operat
 
 It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks \(??? ???\) in bold as follows.
 
-* For details on how to change the date and time information, refer to ???[4.5 Setting of Date and Time.](../4-menu/5-date-time-setting.md)???
+* For details on how to change the date and time information, refer to ???[4.5 Setting of Date and Time.](../4-service/5-date-time-setting.md)???
 
 ## Note
 
@@ -403,11 +403,11 @@ TP630 is a model to which the same operation key usage environment as that of th
       <td style="text-align:left">enter</td>
       <td style="text-align:left">
         <ul>
-          <li>If you press the <b>&lt;enter&gt;</b> key when inputting a number, the input
+          <li>If you press the <b><<b>ENTER</b>></b> key when inputting a number, the input
             value will be applied to the setting.</li>
-          <li>If you press the <b>&lt;enter&gt;</b> key for a response of Yes/No, Yes
+          <li>If you press the <b><<b>ENTER</b>></b> key for a response of Yes/No, Yes
             will be selected.</li>
-          <li>When editing a statement in manual mode, if you press the <b>&lt;enter&gt;</b> key
+          <li>When editing a statement in manual mode, if you press the <b><<b>ENTER</b>></b> key
             while in the statement cursor, the cursor will switch to the word cursor
             that enables you to edit the parameters of the statement.</li>
         </ul>
@@ -1092,7 +1092,7 @@ You can control the operation of the robot or manage devices that interoperate w
       <td style="text-align:left">
         <img src="../../../_assets/c7.png" alt/>
       </td>
-      <td style="text-align:left">[Set up]: You can set the user environment using the system menu of the
+      <td style="text-align:left">[system]: You can set the user environment using the system menu of the
         program.</td>
     </tr>
     <tr>
@@ -1494,7 +1494,7 @@ During the linear interpolation, under certain conditions, the robot cannot auto
 {% hint style="info" %}
 Singular postures in which the posture interpolation cannot be performed are as follows.
 
-* If the B-axis is near the dead zone: For details on the dead zone setting, refer to ???[7.4.5 B-axis Deadzone](../../../7-setting/4-robot-parameter/5-b-axis-deadzone.md).???
+* If the B-axis is near the dead zone: For details on the dead zone setting, refer to ???[7.4.5 B-axis Deadzone](../../../7-system/4-robot-parameter/5-b-axis-deadzone.md).???
 * When the sign of the B-axis changes: When the sign of the B-axis angle switches \( - ?�� + \) or \( + ?�� - \)
 * When the angle variation of the R2 and R1 axes exceeds 180 degrees
 * When the center of the B-axis \(axis 5\) or the tooltip passes the center of rotation of the S-axis \(axis 1\): There may be an error in the trajectory as well as in the posture.
@@ -1527,7 +1527,7 @@ In this way, by determining the interpolation method of the step in consideratio
 
   This method will be used when the robot owns the workpiece and perform the work using an externally fixed tool. In this case, the interpolation will be performed based on the workpiece owned by the robot.
 
-  For details on the types of interpolation for stationary tools, refer to ???[7.3.6.2 Stationary Tool Coordinate System](../../../7-setting/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md).???
+  For details on the types of interpolation for stationary tools, refer to ???[7.3.6.2 Stationary Tool Coordinate System](../../../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md).???
 
 
 
@@ -1615,7 +1615,7 @@ A path that is newly created within the accuracy range \(0???7\) according to th
 
 Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression ??�Accuracy ?�� min \(P1-P2, P2-P3\) / 2??? in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
 
-In the case of a robot, the value of the applicable accuracy level will be defined based on the tooltip distance and posture angle of the robot. When it comes to additional axes, the value in the case of the linear axis will be defined based on the length, and the value in the case of the rotation axis will be defined based on the angle. You can directly change the values in the \[Set up&gt; 3: Robot Parameter&gt; 6: Accuracy\] menu. For details on the value of the accuracy level, refer to ???[7.4.6 Accuracy](../../../7-setting/4-robot-parameter/6-accuracy.md).???
+In the case of a robot, the value of the applicable accuracy level will be defined based on the tooltip distance and posture angle of the robot. When it comes to additional axes, the value in the case of the linear axis will be defined based on the length, and the value in the case of the rotation axis will be defined based on the angle. You can directly change the values in the \[system&gt; 3: Robot Parameter&gt; 6: Accuracy\] menu. For details on the value of the accuracy level, refer to ???[7.4.6 Accuracy](../../../7-system/4-robot-parameter/6-accuracy.md).???
 
 
 
@@ -1656,7 +1656,7 @@ You can record or change the robot position and posture of the recorded step usi
 
 # 2.3.2.1 Axis Angle Recording Coordinate
 
-In manual mode, if the \[1: Pose Recording Form\] option in the \[Set up&gt; 1: User Environment\] menu is set to axis angle, touch the \[property\] button in the move statement. The following attributes window will appear. The position of the robot recorded by the encoder can only be checked, and the position data cannot be modified.
+In manual mode, if the \[1: Pose Recording Form\] option in the \[system&gt; 1: User Environment\] menu is set to axis angle, touch the \[property\] button in the move statement. The following attributes window will appear. The position of the robot recorded by the encoder can only be checked, and the position data cannot be modified.
 
 ![](../../../_assets/image_336.png)
 
@@ -1666,7 +1666,7 @@ In manual mode, if the \[1: Pose Recording Form\] option in the \[Set up&gt; 1: 
 
 The position and posture of the robot can be displayed differently depending on the coordinate system. If there is no travel axis, the base coordinate and the robot coordinate will generally be the same. If the travel axis is defined, the position and posture of the robot tool will be displayed differently depending on whether it is the base coordinate and the robot coordinate.
 
-In manual mode, if the \[1: Pose Recording Form\] option in the \[Set up&gt; 1: User Environment\] menu is set to base or robot, touch the \[property\] button in the move statement. You can check the position and posture of the robot tool in the attributes window.
+In manual mode, if the \[1: Pose Recording Form\] option in the \[system&gt; 1: User Environment\] menu is set to base or robot, touch the \[property\] button in the move statement. You can check the position and posture of the robot tool in the attributes window.
 
 {% hint style="info" %}
 If you would like to change the pose recording form, please contact our customer support team to ask an expert or an engineer.
@@ -1846,7 +1846,7 @@ You can simply turn on/off the desired output signal by registering it with a bu
 
 
 {% hint style="info" %}
-You can easily input the signal output variable value using the \[fb\] button and the \[do\] button. For example, input 2.9 and press the &lt;enter&gt; key. It will be converted to and displayed as fb2.do9. If you input 9 without decimal point and press the &lt;enter&gt; key, it will be converted to do9.
+You can easily input the signal output variable value using the \[fb\] button and the \[do\] button. For example, input 2.9 and press the <<b>ENTER</b>> key. It will be converted to and displayed as fb2.do9. If you input 9 without decimal point and press the <<b>ENTER</b>> key, it will be converted to do9.
 {% endhint %}
 
 4.	Check the buttons in the key signal output function area, and touch each button to make sure that the set value is properly applied.
@@ -1854,7 +1854,7 @@ You can easily input the signal output variable value using the \[fb\] button an
 ![](../../../_assets/image_331.png)
 
 {% hint style="info" %}
-You can also assign the desired output signals to the buttons in the key signal output function area in the \[Set Up&gt; Control Parameter&gt; Input/Output Signal Setting&gt; Key Signal Output\] menu. For details, refer to ???[7.3.2.8 Key Signal Output](../../../7-setting/3-control-parameter/2-io-signal-setting/8-key-signal-output.md).???
+You can also assign the desired output signals to the buttons in the key signal output function area in the \[Set Up&gt; Control Parameter&gt; Input/Output Signal Setting&gt; Key Signal Output\] menu. For details, refer to ???[7.3.2.8 Key Signal Output](../../../7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md).???
 {% endhint %}
 
 
@@ -1867,7 +1867,7 @@ For details on the spot application function, refer to the “Hi6 Controller Spo
 
 Coordinates in space are used to determine the direction of the robot’s movement. Hi6 controller has the joint coordinate system, robot coordinate system, user coordinate system, and tool coordinate system.
 
-* Joint coordinate system: You can move the corresponding joint when touching the \[-/+\] button on the right side of the joint name The buttons on the right are for the + direction, and the buttons on the left are for the - direction. For example, when you move the first joint in the joint coordinate system, the &lt;esc&gt; key will be for the + direction, and the &lt;enter&gt; key will be for the – direction. When you move the second joint, the &lt;→&gt; key will be for the + direction, and the &lt;←&gt; key will be for the – direction.
+* Joint coordinate system: You can move the corresponding joint when touching the \[-/+\] button on the right side of the joint name The buttons on the right are for the + direction, and the buttons on the left are for the - direction. For example, when you move the first joint in the joint coordinate system, the &lt;esc&gt; key will be for the + direction, and the <<b>ENTER</b>> key will be for the – direction. When you move the second joint, the &lt;→&gt; key will be for the + direction, and the &lt;←&gt; key will be for the – direction.
 
 
 
@@ -1879,7 +1879,7 @@ Coordinates in space are used to determine the direction of the robot’s moveme
 
 # 2.7.1 Jog Keys
 
-It will be used in manual mode. When you are holding the enabling switch while the motor is turned on, the &lt;enter&gt;, &lt;esc&gt;, and &lt;←/→&gt; keys and number keys on the teach pendant will operate as “jog keys.”
+It will be used in manual mode. When you are holding the enabling switch while the motor is turned on, the <<b>ENTER</b>>, &lt;esc&gt;, and &lt;←/→&gt; keys and number keys on the teach pendant will operate as “jog keys.”
 
 ![Figure 25 Jog Keys on the Teach Pendant](../../_assets/image_95.png)
 
@@ -1960,10 +1960,10 @@ Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
 | :---: | :---: | :---: | :---: |
 |  ![](../../_assets/bt-crd2-joint-en.png)  | ![](../../_assets/bt-crd2-robot-en.png)  | ![](../../_assets/bt-crd2-user-en.png)  | ![](../../_assets/bt-crd2-tool-en.png)  |
 
-1.	On the right side of the initial screen, touch the \[Set up\] button &gt; \[2: Control Parameter&gt; 7: Coordinate System Registration&gt; 1: User Coordinate System\] menu and then register the user coordinate system.
+1.	On the right side of the initial screen, touch the \[system\] button &gt; \[2: Control Parameter&gt; 7: Coordinate System Registration&gt; 1: User Coordinate System\] menu and then register the user coordinate system.
 
 {% hint style="info" %}
-For details on how to register the user coordinate system, refer to “[7.3.6.1 User Coordinate System](../../7-setting/3-control-parameter/6-cordsys-reg/1-user-crdsys.md).”
+For details on how to register the user coordinate system, refer to “[7.3.6.1 User Coordinate System](../../7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md).”
 {% endhint %}
 
 2.	Touch the \[Speed Adjustment\] button at the top left of the initial screen and then set the coordinate system in the \[9: Select user coordinate\] option. You can choose the user coordinate system instead of the Cartesian coordinate system.
@@ -2043,7 +2043,7 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 * Change the robot’s posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
 
-8.	Touch the \[Set up\] button &gt; \[6: Auto Calibration &gt; 1: Optimize axis origin and tool length\] menu.
+8.	Touch the \[system\] button &gt; \[6: Auto Calibration &gt; 1: Optimize axis origin and tool length\] menu.
 
 ![](../_assets/image_324.png)
 
@@ -2055,14 +2055,14 @@ The following shows how to set the optimization of the axis origin and tool leng
 * You should select Tool Length in the \[Optimization Selection\] option, starting from the au/atic ca/tion of the second tool, when you use multiple tools. If you select Axis Origin and Tool Length, the previously set tool information will not match.
 
 {% hint style="info" %}
-For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../7-setting/7-auto-calibration/1-axis-origin-tool-length-optimization.md).”
+For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md).”
 {% endhint %}
 
 # 2.9 Tool Data Automatic Calibration
 
 After determining the axis origin and tool length through automatic calibration, etc., if the tool is deformed, you can simply determine new tool data. At this time, the axis origin should have been determined and maintained. In addition, a fixed reference point should be taught after the tool length is determined and the angle calibration is completed. If tool deformation occurs, place the tool in the same position at the reference point designated prior to the deformation, and then perform automatic tool data calibration.
 
-1.	Touch the \[Set up\] button &gt; \[3: Robot Parameter&gt; 1: Tool Data\] menu.
+1.	Touch the \[system\] button &gt; \[3: Robot Parameter&gt; 1: Tool Data\] menu.
 
 ![](../_assets/image_340.png)
 
@@ -2237,7 +2237,7 @@ The following shows how to edit a statement.
 
 1.	In the JOB program window, select the statement area by pressing the &lt;←/→&gt; key on the teach pendant. The statement area will be selected while in the statement cursor status.
 
-2.	Press the &lt;enter&gt; key on the teach pendant while in the statement cursor status. Then, switching to the statement cursor status will occur and a parameter will be selected, and the selected parameter value will appear in the input area at the bottom.
+2.	Press the <<b>ENTER</b>> key on the teach pendant while in the statement cursor status. Then, switching to the statement cursor status will occur and a parameter will be selected, and the selected parameter value will appear in the input area at the bottom.
 
 3.	Edit the parameter value using the operation keys on the teach pendant and the menu buttons on the right side of the screen.
 
@@ -2245,13 +2245,13 @@ The following shows how to edit a statement.
 * Parameters that can be inputted will be displayed as buttons on the right side of the screen. You can easily input parameters by selecting the desired buttons.
 * You can edit variables, expressions, and strings using the soft keyboard. 
 
-4.	Press the &lt;enter&gt; key. Then, the contents of the change will be applied, allowing the parameter value of the statement to be changed and the cursor to move to the next parameter.
+4.	Press the <<b>ENTER</b>> key. Then, the contents of the change will be applied, allowing the parameter value of the statement to be changed and the cursor to move to the next parameter.
 
 * To cancel the change, press the &lt;esc&gt; key.
 
 5.	You can edit another parameter by repeating the above steps 2–3.
 
-6.	Press the &lt;enter&gt; key to complete the editing. The changes will be saved in the JOB program, and the cursor will return to the statement cursor status.
+6.	Press the <<b>ENTER</b>> key to complete the editing. The changes will be saved in the JOB program, and the cursor will return to the statement cursor status.
 
 
 
@@ -2261,7 +2261,7 @@ The following shows how to edit a statement.
 
 With an example of changing the interpolation parameter from P \(joint interpolation\) to L \(linear interpolation\), the following describes how to edit a statement.
 
-1.	Press the &lt;enter&gt; key on the teach pendant while in the statement cursor status. Then, the statement cursor will change to the word cursor status, allowing the P \(joint interpolation\), which is the interpolation parameter of the move statement, to be selected. In the input area, P, which is the current setting value of interpolation, will be displayed and the interpolation parameter that can be inputted will be displayed as buttons on the right side of the screen.
+1.	Press the <<b>ENTER</b>> key on the teach pendant while in the statement cursor status. Then, the statement cursor will change to the word cursor status, allowing the P \(joint interpolation\), which is the interpolation parameter of the move statement, to be selected. In the input area, P, which is the current setting value of interpolation, will be displayed and the interpolation parameter that can be inputted will be displayed as buttons on the right side of the screen.
 
 ![](../../../_assets/image_51.png)
 
@@ -2269,11 +2269,11 @@ With an example of changing the interpolation parameter from P \(joint interpola
 
 ![](../../../_assets/image_59.png)
 
-3.	Press the &lt;enter&gt; key. The interpolation parameter of the statement will change to L, and then the cursor will move to the next parameter, allowing the moving speed to be selected.
+3.	Press the <<b>ENTER</b>> key. The interpolation parameter of the statement will change to L, and then the cursor will move to the next parameter, allowing the moving speed to be selected.
 
 ![](../../../_assets/image_69.png)
 
-4.	Press the &lt;enter&gt; key to complete editing. The contents of the change will be saved in the JOB program, and then the cursor will return to the statement cursor status.
+4.	Press the <<b>ENTER</b>> key to complete editing. The contents of the change will be saved in the JOB program, and then the cursor will return to the statement cursor status.
 
 
 
@@ -2300,7 +2300,7 @@ The line number can be set to any number between 1 and 9999.
 * To delete a line number, press the &lt;BS&gt; key. Then, the address value of the line number will be removed from the input area.
 
 
-3.	Press the &lt;enter&gt; key to complete the editing. The contents of the change will be saved in the JOB program.
+3.	Press the <<b>ENTER</b>> key to complete the editing. The contents of the change will be saved in the JOB program.
 _assets
 ![](../../../_assets/image_67.png)
 
@@ -2339,7 +2339,7 @@ You can copy, move, and delete a line or multiple lines of the program by design
 
 1.	While pressing the &lt;shift&gt; key on the teach pendant, touch the \[Block Editing\] button on the right side of the JOB program window. Then, the block editing mode will be activated.
 
-2.	Place the cursor on the desired line using the &lt;↓/↑&gt; keys on the teach pendant and then press the &lt;enter&gt; key. Then, the line on which the cursor is placed will be selected as the start line of the block.
+2.	Place the cursor on the desired line using the &lt;↓/↑&gt; keys on the teach pendant and then press the <<b>ENTER</b>> key. Then, the line on which the cursor is placed will be selected as the start line of the block.
 
 ![](../../../_assets/image_354.png)
 
@@ -2438,7 +2438,7 @@ _assets
             the teach pendant.</li>
           <li>If you select _assets
             <img src="../../_assets/icon-gt.png" alt/>] or [
-            <img src="../../_assets/icon-wedge.png" alt/>] in the folder list and press the <b>&lt;enter&gt;</b> key, you can show
+            <img src="../../_assets/icon-wedge.png" alt/>] in the folder list and press the <b><<b>ENTER</b>></b> key, you can show
             or hide subfolders.</li>
           <li>When you select a folder, you can check the list of files saved in the
             folder.</li>
@@ -2526,7 +2526,7 @@ _assets
 * _assets
   To input a text including numbers, touch the \[ ![](../../_assets/bt-dock-softkb.png) \] button on the log bar to use the soft keyboard.
 
-3.	Press the &lt;enter&gt; key. Then, the new name you inputted in the list will appear.
+3.	Press the <<b>ENTER</b>> key. Then, the new name you inputted in the list will appear.
 
 {% hint style="info" %}
 * You can also rename a protected file.
@@ -2563,7 +2563,7 @@ You can delete a folder or add a new one.
 
 ![](../../../_assets/image_362.png)
 
-2.	Input the name of the new folder and then press the &lt;enter&gt; key.
+2.	Input the name of the new folder and then press the <<b>ENTER</b>> key.
 
 ![](../../../_assets/image_304.png)
 
@@ -2897,7 +2897,7 @@ a.	Turn the jog dial on the teach pendant. Then, the cursor will move.
 
 b.	Turn the jog dial to select the desired option, or press the numeric keys to input a number.
 
-c.	Press the &lt;enter&gt; key. Then, the contents of the change will be applied, causing the setting value to be changed, and then the cursor will move to the next item.
+c.	Press the <<b>ENTER</b>> key. Then, the contents of the change will be applied, causing the setting value to be changed, and then the cursor will move to the next item.
 
 
 
@@ -2958,7 +2958,7 @@ If a low-speed command is inputted through an external input during automatic op
 
 
 {% hint style="info" %}
-If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to ???[7.3.6.2 Stationary Tool Coordinate System](../7-setting/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md).???
+If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to ???[7.3.6.2 Stationary Tool Coordinate System](../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md).???
 {% endhint %}
 
 * \[9: Select user Coordinate System Designation\]: You can set the user coordinate system number \(0???10\) for Cartesian operation during manual jog operation. Then, the robot will operate based on the Cartesian coordinate system in the directions of X, Y, and Z axes of the designated user coordinate system, and the coordinate values of the user coordinate system selected during the monitoring of the pose will be displayed as X, Y, and Z coordinate values of the front end of the tool.
@@ -2977,7 +2977,7 @@ If you select the stationary tool as the interpolation reference, you must set t
 
 
 {% hint style="info" %}
-You can register the user coordinate system number in the \[Set up &gt; 2: Control Parameter &gt; 7: Coordinate System Registration &gt;1: User Coordinate System\].
+You can register the user coordinate system number in the \[system &gt; 2: Control Parameter &gt; 7: Coordinate System Registration &gt;1: User Coordinate System\].
 {% endhint %}
 
 
@@ -3599,7 +3599,7 @@ In the panel selection window, touch \[Help\]. Then, you can check the usage inf
 
 Touch \[Sensor Sync\] in the panel selection window. Then, the sensor sync window will appear.
 
-You can check the information related to the conveyor and press sync functions. The sensor sync function can be activated by setting the sync status as conveyor or press in the \[Set up&gt; 4: Application Parameter &gt; 4: Sensor Sync\] menu.
+You can check the information related to the conveyor and press sync functions. The sensor sync function can be activated by setting the sync status as conveyor or press in the \[system&gt; 4: Application Parameter &gt; 4: Sensor Sync\] menu.
 
 ![Figure 49 Sensor Sync Monitoring](../_assets/image_418.png)
 
@@ -3706,7 +3706,7 @@ In the settings item, you can check and set the user information and various par
 
 # 7.1 Use of the Menus in Settings
 
-1.	In manual or automatic mode, touch the \[Set up\] button on the right side of the initial screen. Then, the program’s settings menus will be displayed.
+1.	In manual or automatic mode, touch the \[system\] button on the right side of the initial screen. Then, the program’s settings menus will be displayed.
 
 ![](../_assets/bt-setup-en.png)
 
@@ -3780,7 +3780,7 @@ If the program being played back is modified externally \(PC\) and downloaded to
 
 
 {% hint style="info" %}
-* If you enter the \[Set up\] menu while the motor is turned off because of the operation of the collision sensor, the motor ON and jog operations can be performed. This function can be used to move the robot that suffered a collision.
+* If you enter the \[system\] menu while the motor is turned off because of the operation of the collision sensor, the motor ON and jog operations can be performed. This function can be used to move the robot that suffered a collision.
 * If the collision sensor operates while \[Sensor\] is set as stop, the robot can perform only jogging.
 {% endhint %}
 
@@ -4265,10 +4265,10 @@ By assigning the output signal of the controller to the signal keys \(&lt;shift+
 
 
 
-For example, input 2.9 and press the &lt;enter&gt; key. Then, it will be converted to and displayed as fb2.do9. If you input 9 without decimal point and press the &lt;enter&gt; key, it will be converted to do9.
+For example, input 2.9 and press the <<b>ENTER</b>> key. Then, it will be converted to and displayed as fb2.do9. If you input 9 without decimal point and press the <<b>ENTER</b>> key, it will be converted to do9.
 
 {% hint style="info" %}
-You can register the desired output signal with a button in the user key area of Hi6 teach pendant. For details, refer to ???[2.6.2.1 Key Signal Output Function Area](../../../2-operation/6-user-key/2-button-registration/1-key-signal-output.md).???
+You can register the desired output signal with a button in the user key area of Hi6 teach pendant. For details, refer to ???[2.6.2.1 Key Signal Output Function Area](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md).???
 {% endhint %}
 
 # 7.3.2.9 DIO Block Allocation
@@ -4495,7 +4495,7 @@ Refer to the following information when setting the usage of the serial port.
 
 # 7.3.4 Robot Ready Condition
 
-When the robot ready is completed, set the conditions for signal output in the \[Robot Ready OK\] item of the \[Set up&gt; 2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 4: Output Signal Assign\] menu.
+When the robot ready is completed, set the conditions for signal output in the \[Robot Ready OK\] item of the \[system&gt; 2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 4: Output Signal Assign\] menu.
 
 1.	Touch the \[2: Control Parameter &gt; 4: Robot Ready Condition\] menu. 
 
@@ -5127,7 +5127,7 @@ The encoder offset value is set at the time of the shipping from the factory. Re
 
 # 7.4.4.1 Encoder Offset Value Utilization
 
-To continue using the existing program even after the current job program is backed up and the system is initialized \(\[Set up &gt; 5: Initialize&gt; 1: System Initialization\]\), the robot should maintain the reference position information that existed before initialization. If you record the encoder offset value, the previous position information of the robot can be retrieved.
+To continue using the existing program even after the current job program is backed up and the system is initialized \(\[system &gt; 5: Initialize&gt; 1: System Initialization\]\), the robot should maintain the reference position information that existed before initialization. If you record the encoder offset value, the previous position information of the robot can be retrieved.
 
 After system initialization, directly input the encoder offset value as a hex value. It will be easy to input the value if you use the soft keyboard.
 
@@ -5467,7 +5467,7 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 * 
   When the system is initialized, all data and programs saved in the controller will be deleted. Before initializing the system, you should back up your data and programs and restore them if necessary.
 
-  For details on Data Backup and Restoration, refer to ???[4.2.5 Data Backup](../../4-menu/2-file-manager/5-data-backup.md)??? and ???[4.2.6 Data Restoration](../../4-menu/2-file-manager/6-data-restore.md)???.
+  For details on Data Backup and Restoration, refer to ???[4.2.5 Data Backup](../../4-service/2-file-manager/5-data-backup.md)??? and ???[4.2.6 Data Restoration](../../4-service/2-file-manager/6-data-restore.md)???.
 {% endhint %}
 
 
@@ -6050,7 +6050,7 @@ In general, the base axis is used to move the robot to the operation position. I
 
 # 7.7.4.1 Base Axis Initial Setting
 
-1.	In manual mode, touch the \[Set up\] button &gt; \[5: Initialize&gt; 5: Additional Axis Parameter Setting\] menu on the right side of the initial screen.
+1.	In manual mode, touch the \[system\] button &gt; \[5: Initialize&gt; 5: Additional Axis Parameter Setting\] menu on the right side of the initial screen.
 
 2.	After setting the parameters such as the specifications and configuration of the additional axis, touch the \[OK\] button.
 
@@ -6205,7 +6205,7 @@ The method to execute a specified function using an R code is as follows.
 
 
 
-2.	Select a code number from the list or input the code number in the input area, and then touch the \[OK\] button or press the &lt;enter&gt; key. Then, the function designated to the selected R code will be executed.
+2.	Select a code number from the list or input the code number in the input area, and then touch the \[OK\] button or press the <<b>ENTER</b>> key. Then, the function designated to the selected R code will be executed.
 
 ![](../_assets/image_523.png)
 
@@ -6215,7 +6215,7 @@ The method to execute a specified function using an R code is as follows.
 
 # 8.2 R0 for Resetting the Step Counter
 
-After inputting 0 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key.
+After inputting 0 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_511.png)
 
@@ -6237,9 +6237,9 @@ R0 code cannot be used during the startup of the robot.
 
 You can copy the JOB program on the mainboard to another program on the mainboard. After inputting the number of the program that you want to copy, input the program number to which you want to copy the copied program.
 
-1.	After inputting 115 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key.
+1.	After inputting 115 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
-2.	After inputting the number of the program \(original\) that you want to copy and also the number of the program \(target\) to which you want to copy the copied program, touch the \[OK\] button or press the &lt;enter&gt; key. Then, the program will be copied.
+2.	After inputting the number of the program \(original\) that you want to copy and also the number of the program \(target\) to which you want to copy the copied program, touch the \[OK\] button or press the <<b>ENTER</b>> key. Then, the program will be copied.
 
 ![](../_assets/image_531.png)
 
@@ -6259,16 +6259,16 @@ Code R115 cannot be used in automatic mode. It must be used in manual mode.
 
 You can individually delete the programs in the internal memory.
 
-1.	After inputting 117 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key.
+1.	After inputting 117 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
-2.	After inputting the number of the program that you want to delete, touch the \[OK\] button or press the &lt;enter&gt; key. Then, the deletion confirmation window will appear.
+2.	After inputting the number of the program that you want to delete, touch the \[OK\] button or press the <<b>ENTER</b>> key. Then, the deletion confirmation window will appear.
 
 ![](../_assets/image_517.png)
 
 * If there is no file to delete, a notification message \(“No File Exists.”\) will appear. 
 * If you want to delete a protected program, a notification message \(“A Protected File.”\) will appear.
 
-3.	In the deletion confirmation window, touch the \[OK\] button or press the &lt;enter&gt; key. Then, the selected program will be deleted.
+3.	In the deletion confirmation window, touch the \[OK\] button or press the <<b>ENTER</b>> key. Then, the selected program will be deleted.
 
 {% hint style="info" %}
 The R117 code cannot be used in automatic mode. It must be used in manual mode.
@@ -6278,9 +6278,9 @@ The R117 code cannot be used in automatic mode. It must be used in manual mode.
 
 You can select the spot guns to use when using multiple spot welding guns \(servo guns or pneumatic guns\).
 
-1.	After inputting 210 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key.
+1.	After inputting 210 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
-2.	After inputting the number of the spot gun to use, touch the \[OK\] button or press the &lt;enter&gt; key.
+2.	After inputting the number of the spot gun to use, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_512.png)
 
@@ -6299,9 +6299,9 @@ You can select the spot guns to use when using multiple spot welding guns \(serv
 
 You can manually set the squeeze force when executing the servo gun squeeze. 
 
-1.	After inputting 211 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key.
+1.	After inputting 211 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
-2.	After inputting the squeeze force, touch the \[OK\] button or press the &lt;enter&gt; key.
+2.	After inputting the squeeze force, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_525.png)
 
@@ -6324,9 +6324,9 @@ You can manually set the squeeze force when executing the servo gun squeeze.
 
 You can manually set the servo gun moving electrode wear volume.
 
-1.	After inputting 212 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key. 
+1.	After inputting 212 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key. 
 
-2.	After inputting the moving electrode wear volume, touch the \[OK\] button or press the &lt;enter&gt; key.
+2.	After inputting the moving electrode wear volume, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_530.png)
 
@@ -6344,9 +6344,9 @@ It requires your attention that if the setting value is set larger or smaller th
 
 You can manually set the servo gun fixed electrode wear volume. 
 
-1.	After inputting 213 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key. 
+1.	After inputting 213 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key. 
 
-2.	After inputting the fixed electrode wear volume, touch the \[OK\] button or press the &lt;enter&gt; key.
+2.	After inputting the fixed electrode wear volume, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_532.png)
 
@@ -6364,9 +6364,9 @@ It requires your attention that if the setting value is set larger or smaller th
 
 You can select the numbers of spot welding guns \(servo guns or pneumatic guns\) that are to be used in a welding operation in which multiple spot welding guns will be used at the same time.
 
-1.	After inputting 214 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key. 
+1.	After inputting 214 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key. 
 
-2.	After inputting the numbers of the welding guns to use simultaneously, touch the \[OK\] button or press the &lt;enter&gt; key.
+2.	After inputting the numbers of the welding guns to use simultaneously, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_489.png)
 
@@ -6390,15 +6390,15 @@ You can select the numbers of spot welding guns \(servo guns or pneumatic guns\)
 
 You can set the squeeze force required for servo gun welding in the welding condition table. You can also set the squeeze force in the \[Set Up &gt; 4: Application Parameter &gt; 1: Spot Welding &gt; 4: Welding Data \(Condition, Sequence\) &gt; 2: Welding Condition\] menu.
 
-1.	After inputting 215 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key. 
+1.	After inputting 215 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key. 
 
-2.	After inputting the welding condition number, touch the \[OK\] button or press the &lt;enter&gt; key.
+2.	After inputting the welding condition number, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_515.png)
 
 
 
-3.	After inputting the servo gun squeeze force, touch the \[OK\] button or press the &lt;enter&gt; key.
+3.	After inputting the servo gun squeeze force, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_500.png)
 
@@ -6408,9 +6408,9 @@ You can manually set the panel thickness to record the servo gun spot welding st
 
 If you execute the one-touch recording in which the MOVE and SPOT statements are to be simultaneously recorded while only the servo gun fixed electrode is in the state of being in contact with the panel, the position of the moving electrode will be automatically recorded in the MOVE statement in consideration of the panel thickness and wear volume.
 
-1.	After inputting 220 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key. 
+1.	After inputting 220 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key. 
 
-2.	After inputting the panel thickness, touch the \[OK\] button or press the &lt;enter&gt; key.
+2.	After inputting the panel thickness, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_542.png)
 
@@ -6434,14 +6434,14 @@ R358 servo tool change parameters and the examples are as follows.
 
 The method to change the servo tool using the R358 code is as follows.
 
-1.	After inputting 358 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key.
+1.	After inputting 358 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
-2.	After inputting the change operation number \(0: Disconnect, 1: Connect, 2: Fix\), touch the \[OK\] button or press the &lt;enter&gt; key.
+2.	After inputting the change operation number \(0: Disconnect, 1: Connect, 2: Fix\), touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_545.png)
 
 
-3.	After inputting the number of the welding gun to change, touch the \[OK\] button or press the &lt;enter&gt; key. The selected weld gun number will be displayed on the \[Gun\] button on the left side of the Hi6 teach pendant screen.
+3.	After inputting the number of the welding gun to change, touch the \[OK\] button or press the <<b>ENTER</b>> key. The selected weld gun number will be displayed on the \[Gun\] button on the left side of the Hi6 teach pendant screen.
 _assets
 ![](../_assets/image_537.png)
 
@@ -6460,9 +6460,9 @@ _assets
 
 If the servo gun is applied in the servo tool change system, you need to execute this function to reset the encoder of the servo tool axis when installing the servo tool for the first time.
 
-1.	After inputting 359 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key.
+1.	After inputting 359 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
-2.	After inputting 1, touch the \[OK\] button or press the &lt;enter&gt; key. Then, the power will be supplied to the encoder.
+2.	After inputting 1, touch the \[OK\] button or press the <<b>ENTER</b>> key. Then, the power will be supplied to the encoder.
 
 ![](../_assets/image_549.png)
 
@@ -6489,14 +6489,14 @@ R361 jog inching level setting information is as follows.
 
 The method to change the inching distance of the currently set level is as follows.
 
-1.	After inputting 361 in the favorites window, touch the \[OK\] button or press the &lt;enter&gt; key.
+1.	After inputting 361 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
-2.	After inputting the unit of the jog inching level \(0: Distance. 1: Angle\), touch the \[OK\] button or press the &lt;enter&gt; key.
+2.	After inputting the unit of the jog inching level \(0: Distance. 1: Angle\), touch the \[OK\] button or press the <<b>ENTER</b>> key.
 
 ![](../_assets/image_539.png)
 
 
-3.	1을 입력한 경우, 인칭 각도를 입력한 후 \[확인\] 버튼을 터치하거나 &lt;enter&gt; 키를 누르십시오.
+3.	1을 입력한 경우, 인칭 각도를 입력한 후 \[확인\] 버튼을 터치하거나 <<b>ENTER</b>> 키를 누르십시오.
 _assets
 ![](../_assets/image_548.png)
 
@@ -6664,11 +6664,11 @@ You can check or modify the position of the current step in the hidden pose move
           coordinate value and coordinate system format, etc.</p>
         <ul>
           <li>[Name]: Number of the current step. After inputting the step number, press
-            the <b>&lt;enter&gt; </b>key to move to the concerned step.</li>
+            the <b><<b>ENTER</b>> </b>key to move to the concerned step.</li>
           <li>Coordinate Value: Current coordinate value of the current step
             <ul>
               <li>Select an item using the cursor key.</li>
-              <li>After inputting a value in the desired item, press the &lt;enter&gt; key
+              <li>After inputting a value in the desired item, press the <<b>ENTER</b>> key
                 to reflect the change.</li>
               <li>If the coordinate system format is set as an encoder, the coordinate value
                 will not be changed.</li>
@@ -6744,7 +6744,7 @@ You can edit the pose variable value in the move statement, including the pose v
           <li>Coordinate value: The coordinate value of the current pose variable
             <ul>
               <li>Select an item using the cursor key.</li>
-              <li>After inputting a value in the desired item, press the <b>&lt;enter&gt;</b> key
+              <li>After inputting a value in the desired item, press the <b><<b>ENTER</b>></b> key
                 to reflect the change.</li>
               <li>If the coordinate system format is set as an encoder, the coordinate value
                 will not be changed.</li>
@@ -6787,7 +6787,7 @@ You can edit the pose variable value in the move statement, including the pose v
 
 3.	Touch the \[Record\] button. Then, the change will be saved in the job program, and the operation will end.
 
-* If you end the operation by pressing the &lt;esc&gt; key, the change will not be saved. 
+* If you end the operation by pressing the <**ESC**> key, the change will not be saved. 
 
 
 

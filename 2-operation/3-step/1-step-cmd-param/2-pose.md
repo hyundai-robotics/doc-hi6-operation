@@ -1,16 +1,22 @@
 # 2.3.1.2 Pose
 
-A pose is a parameter to record the position. If you input a move, the movement command, by using the \[Command\] button, you should designate the pose expression in the tg \(target\) parameter. When the move statement is inputted using the \[Record\] button, the tg parameter will not appear. At the moment of touching the \[Record\] button, the position and posture of the manipulator will be recorded, but they will not be displayed on the JOB editing screen, which is why they are called a hidden pose.
+A pose is a parameter to record the position. If you input a move, the movement command, by using the \[Command\] button, you should designate the pose expression in the tg \(target\) parameter. When the move statement is inputted using the <<b>REC</b>> key, the tg parameter will not appear. At the moment of touching the <<b>REC</b>> key, the position and posture of the manipulator will be recorded, but they will not be displayed on the JOB editing screen, which is why they are called a hidden pose.
 
-The method to input a pose using the menu button on the right side of the Hi6 teach pendant screen is as follows.
+The method to input a pose is as follows.
 
-* After touching the \[Command\] button, select \[Motion\] and then input the statement.
+1. Declare a pose variable, po1.
+   select [cmd.input > var_io > global or var] menu, and then input 'po1'.
+2. Initialize the pose variable as a pose type, using [**cur.pose**] button.
+3. Execute the declare and initialization commands so that periods are marked at the front of each command.
+4. After touching the \[cmd.input\] button, select \[motion\] and then input the statement.
 
-![](../../../_assets/image_306.png)
+    ![](../../../_assets/tp630/fbt-cmd-input-motion_eng.png)
 
-* After touching the \[property\] button, set the attributes of the current robot pose and then touch the \[Apply\] button.
+5. After touching the \[property\] button, set the attributes of the current robot pose and then touch the \[Apply\] button.
 
-![](../../../_assets/image_328.png)
+    ![](../../../_assets/tp630/prg-step-pose_eng.png)
+
+<br>
 
 The pose variable and shift variable will be saved in the following formats.
 

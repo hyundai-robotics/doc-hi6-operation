@@ -8,7 +8,7 @@
 
   * Continuous: The job program will operate continuously and repeatedly. If there is an external stop operation, the robot will stop.
 * 
-  \[2: Step FWD/BWD maximum speed\]: You can set the speed limit for a step forward/backward. For details on this option, refer to ???[2.1 Manual Operation](../operation/manual-operation/).???
+  \[2: Step FWD/BWD maximum speed\]: You can set the speed limit for a step forward/backward. For details on this option, refer to "[2.1 Manual Operation](../operation/manual-operation/)".
 
 * 
   \[3: Function execution during Step FWD\]: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
@@ -36,7 +36,7 @@ While in the step backward operation, only the input wait signal function will b
   * Enable: Will execute path recovery without confirming with the user whether to execute path recovery
 
 * 
-  \[6: Playback speed rate\]: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot??�s moving speed against the speed recorded in the step in batch.
+  \[6: Playback speed rate\]: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot moving speed against the speed recorded in the step in batch.
 
 
 
@@ -55,15 +55,15 @@ If a low-speed command is inputted through an external input during automatic op
 
 
 {% hint style="info" %}
-If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to ???[7.3.6.2 Stationary Tool Coordinate System](../7-setting/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md).???
+If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to "[7.3.6.2 Stationary Tool Coordinate System](../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)".
 {% endhint %}
 
-* \[9: Select user Coordinate System Designation\]: You can set the user coordinate system number \(0???10\) for Cartesian operation during manual jog operation. Then, the robot will operate based on the Cartesian coordinate system in the directions of X, Y, and Z axes of the designated user coordinate system, and the coordinate values of the user coordinate system selected during the monitoring of the pose will be displayed as X, Y, and Z coordinate values of the front end of the tool.
+* \[9: Select user Coordinate System Designation\]: You can set the user coordinate system number \(0~10\) for Cartesian operation during manual jog operation. Then, the robot will operate based on the Cartesian coordinate system in the directions of X, Y, and Z axes of the designated user coordinate system, and the coordinate values of the user coordinate system selected during the monitoring of the pose will be displayed as X, Y, and Z coordinate values of the front end of the tool.
 
 
 
 * 
-  If 0 is set, the robot coordinate system icon \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) will be displayed on the \[Coordinate System\] button on the right side of the screen. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed.
+  If 0 is set, the robot coordinate system icon \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) will be displayed on the \[Coordinate System\] button on the status display window. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed.
 
   ![](../_assets/tp630/pane-pose-robotcoord_eng.png)
 
@@ -74,7 +74,7 @@ If you select the stationary tool as the interpolation reference, you must set t
 
 
 {% hint style="info" %}
-You can register the user coordinate system number in the \[Set up &gt; 2: Control Parameter &gt; 7: Coordinate System Registration &gt;1: User Coordinate System\].
+You can register the user coordinate system number in the \[system &gt; 2: Control Parameter &gt; 7: Coordinate System Registration &gt;1: User Coordinate System\].
 {% endhint %}
 
 
