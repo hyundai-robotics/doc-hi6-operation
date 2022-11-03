@@ -7,6 +7,6 @@ When writing the SPOT command while writing the program, if you place the cursor
 {% hint style="info" %}
 * You can use the spot welding function by touching the \[system\] button &gt; \[4: Application Parameter &gt; 1: Spot Welding\].
 * 
-  For details on the spot welding function, refer to the “[Hi6 Controller Spot Welding Function Manual]().”
+  For details on the spot welding function, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
 {% endhint %}
 
