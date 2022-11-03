@@ -14,7 +14,7 @@ The following shows how to edit a statement.
 
 4.	Press the <<b>ENTER</b>> key. Then, the contents of the change will be applied, allowing the parameter value of the statement to be changed and the cursor to move to the next parameter.
 
-* To cancel the change, press the &lt;esc&gt; key.
+* To cancel the change, press the <**ESC**> key.
 
 5.	You can edit another parameter by repeating the above steps 2–3.
 

@@ -14,7 +14,7 @@ Select one or multiple files to copy, move, or delete.
 * If you touch two files while pressing the <**SHIFT**> key, you can select all files between the two files at once.
 * If you touch the \[Select All\] button on the function button bar of the screen, you can select all files at once.
 
-  Press the &lt;esc&gt; key to cancel the file selection.
+  Press the <**ESC**> key to cancel the file selection.
 
 3.	You can copy, move, or delete the selected file using the function buttons on the function button bar of the screen.
 

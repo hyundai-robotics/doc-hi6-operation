@@ -6,7 +6,7 @@ You can check and set various user conditions.
 
 2.	After setting the user environment, touch the \[OK\] button.
 
-![](../_assets/tp630/system-user-environ_eng.png)
+    ![](../_assets/tp630/system-user-environ_eng.png)
 
 * \[1: Pose record type\]: You can set the type of the position recording of the step to be recorded as a hidden pose. ("[2.3.1.2 Pose](../2-operation/3-step/1-step-cmd-param/2-pose.md)")
   * \[Base\]/\[Robot\]/\[Axis Angle\]: You can record the position of the step based on the base coordinate, robot, and axis angle values.

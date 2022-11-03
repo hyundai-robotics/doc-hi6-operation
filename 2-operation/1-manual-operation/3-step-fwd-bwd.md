@@ -11,16 +11,15 @@ To set the execution unit for the step forward/backward operation, touch the \[r
 ![](../../_assets/tp630/lbt-runto-sw_eng.png)
 
 * **\[cmd\]:** Will execute the command line by line
-* **\[step\]:** Will execute step by step
-  ****
-* **\[end\]:** Will execute up to the end statement
-  ****
+* **\[Step\]:** Will execute step by step
+* **\[End\]:** Will execute up to the end statement
+****
 
+<Br>
 
+When the execution unit is set as 'Cmd' or 'Step', the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing b/n automatic mode.
 
-When the execution unit is set as 'cmd' or 'step', the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing b/n automatic mode.
-
-When you set the execution unit as 'cmd' or 'step' and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to "[2.3.1.4 Accuracy](../3-step/1-step-cmd-param/4-accuracy.md)".
+When you set the execution unit as 'Cmd' or 'Step' and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to "[2.3.1.4 Accuracy](../3-step/1-step-cmd-param/4-accuracy.md)".
 
 ![Figure 11 Playback Forward/Backward Path When cmd/step Setting is Performed](../../_assets/path-cmd-step-pback-fwd-bwd-en.png)
 

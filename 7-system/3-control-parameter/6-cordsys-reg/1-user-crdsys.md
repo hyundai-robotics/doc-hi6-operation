@@ -34,7 +34,7 @@ The method to register the user coordinate system by designating the taught prog
 
 2.	Set the user coordinate system name and program number, and the distance and angle from each axis origin.
 
-  ![](../../../_assets/tp630/ctrl-user-coord_eng.png)
+    ![](../../../_assets/tp630/ctrl-user-coord_eng.png)
 
 <table>
   <thead>

@@ -57,7 +57,7 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 </table>
 
 {% hint style="info" %}
-* If you approach the accuracy level based on your understanding of the contents of “2.3 Step,” you can use it more easily.
+* If you approach the accuracy level based on your understanding of the contents of “[2.3 Step](../../2-operation/3-step/README.md),” you can use it more easily.
 * In the welding step that uses a servo gun or an equalizerless gun, the controller will automatically perform restriction regardless of the set accuracy level. 
 
 

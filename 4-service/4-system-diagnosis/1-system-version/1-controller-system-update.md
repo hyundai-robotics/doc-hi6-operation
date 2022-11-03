@@ -8,15 +8,15 @@ You can update the version of each module of the controller using the integrated
 
 3.	Select the \[Version Up\] mode by touching the drop-down menu, select the integrated compressed file using the \[Open\] button, and then touch the \[OK\] button.
 
-![](../../../_assets/image_311.png)
+    ![](../../../_assets/image_311.png)
 
 
 
 4.	After selecting the module that you want to update, touch the \[OK\] button. Then, the update will start.
 
-![](../../../_assets/image_255.png)
+    ![](../../../_assets/image_255.png)
 
 5.	When the update is completed, touch the \[OK\] button. Then, the version upgrade program execution window will be closed, and the controller will automatically restart.
 
-![](../../../_assets/image_367.png)
+    ![](../../../_assets/image_367.png)
 

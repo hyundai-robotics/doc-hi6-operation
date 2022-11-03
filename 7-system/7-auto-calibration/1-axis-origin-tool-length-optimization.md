@@ -24,7 +24,7 @@ The method to use the axis origin and tool length optimization function is as fo
 
 2.	Select an optimization target and set detailed options.
 
-![](../../_assets/tp630/system-calib-tool_eng.png)
+    ![](../../_assets/tp630/system-calib-tool_eng.png)
 
 
 

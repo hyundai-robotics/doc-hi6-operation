@@ -8,7 +8,7 @@ This window shows the status of the robot system at the top side of the main scr
 ![](../../../_assets/tp630/TP-main-title.png)
 
 
-| No. | description | 
+| No. | Description | 
 | :--- | :--- | 
 | ![](../../../_assets/c1.png) | networking status(![](../../../_assets/flag-comm-ok.png) : OK, ![](../../../_assets/flag-comm-ng.png) : Not OK)|
 | ![](../../../_assets/c2.png) | multi-robot number (R# : R+robot#) |

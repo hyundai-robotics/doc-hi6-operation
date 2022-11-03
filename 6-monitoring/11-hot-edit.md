@@ -20,12 +20,12 @@ Touch the \[hot edit\] button at the panel, and Hot Edit window of the current p
 
 Although the operation is the same as that of manual mode, the following functions cannot be used.
 
-1) [Axis operation] key use : Ignores the input of the relevant key.
-2) <REC> key (Record hidden pose MOVE) : Displays the “Operation not allowed while in Hot Edit” message.
-4) <POS. MOD> key : Displays the “Operation not allowed while in Hot Edit” message.
+1) <**Axis operation**>** key use : Ignores the input of the relevant key.
+2) <**REC**> key (Record hidden pose MOVE) : Displays the “Operation not allowed while in Hot Edit” message.
+3) <**POS. MOD**> key : Displays the “Operation not allowed while in Hot Edit” message.
 
 
-![](../_assets/tp630/pane-hot-edit-1_eng.png)
+    ![](../_assets/tp630/pane-hot-edit-1_eng.png)
 
 <br>
 
@@ -72,12 +72,15 @@ The actual timing of the reflection is displayed in the following table.
   A current status symbol is displayed on the right side of the title bar in the Hot Edit window.
 
   \'*' symbol means that the teaching program has been modified and is different from the current running program.  
+  
   ![](../_assets/tp630/pane-hot-edit-apply3.png)
 
   \'>' symbol means that Hot Edit has been requested, while the program is running. 
+
   ![](../_assets/tp630/pane-hot-edit-apply4.png)
 
-  Blank symbol means that the request has not been reflected yet, or has already been reflected and so the program is the same as the running one.  
+  ' '(blank) symbol means that the request has not been reflected yet, or has already been reflected and so the program is the same as the running one.  
+  
   ![](../_assets/tp630/pane-hot-edit-apply5.png)
 
 
@@ -85,4 +88,4 @@ The actual timing of the reflection is displayed in the following table.
 
 ### Different program selection
 
-When you press the <SHIFT> + <PROG> key, you can select a different program. You can also create a new program.
+When you press the <**SHIFT**> + <**PROG**> key, you can select a different program. You can also create a new program.

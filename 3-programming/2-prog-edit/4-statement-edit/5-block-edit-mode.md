@@ -27,7 +27,7 @@ You can copy, move, and delete a line or multiple lines of the program by design
 * 
   \[delete\]: You can delete the selected area.
 
-5.	When you complete editing a block, press the &lt;esc&gt; key on the teach pendant or touch the \[close\] button on the function button bar to exit the block editing mode.
+5.	When you complete editing a block, press the <**ESC**> key on the teach pendant or touch the \[close\] button on the function button bar to exit the block editing mode.
 
 
 

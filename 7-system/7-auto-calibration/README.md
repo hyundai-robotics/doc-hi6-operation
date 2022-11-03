@@ -6,5 +6,5 @@ To use the robot correctly, the robot’s axis origin, tool length, load mass, a
 
 2.	Calibrate the robot’s axis origin, tool length, load mass, base axis direction, etc. by selecting the desired menu,
 
-![](../../_assets/tp630/system-calib-menu_eng.png)
+    ![](../../_assets/tp630/system-calib-menu_eng.png)
 
