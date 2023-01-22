@@ -8,5 +8,5 @@
 <br>
 
 {% hint style="info" %}
- 상세 내용은 “[3.1 모니터링](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/3-Related-functions/3-1-monitoring/README)”를 참조하십시오.
+ 상세 내용은 스폿 용접 기능 설명서의 “[3.1 모니터링](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/3-Related-functions/3-1-monitoring/README)”를 참조하십시오.
 {% endhint %}
