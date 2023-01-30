@@ -160,7 +160,7 @@
       * [7.3.9.1 펌웨어 설정](7-setting/3-control-parameter/9-industrial-comm/1-firmware-set.md)
       * [7.3.9.2 산업용 통신 설정](7-setting/3-control-parameter/9-industrial-comm/2-industrial-comm-set.md)
       * [7.3.9.3 모니터링](7-setting/3-control-parameter/9-industrial-comm/3-monitoring.md)
-    * [7.3.10 네트워크 설정](7-setting/3-control-parameter/10-network-setting.md)
+    * [7.3.10 네트워크](7-setting/3-control-parameter/10-network-setting.md)
   * [7.4 로봇 파라미터](7-setting/4-robot-parameter/README.md)
     * [7.4.1 툴 데이터](7-setting/4-robot-parameter/1-tool-data/README.md)
       * [7.4.1.1 툴 데이터 설정](7-setting/4-robot-parameter/1-tool-data/1-tool-data-set.md)
