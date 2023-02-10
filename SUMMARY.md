@@ -132,6 +132,8 @@
   * [6.23 Servo Tool Change](6-monitoring/23-tool-change.md)
   * [6.24 EtherCAT device](6-monitoring/24-EC-device-info.md)
   * [6.25 Hardware](6-monitoring/25-hw-monitoring.md)
+  * [6.26 Coldet Monitoring](6-monitoring/26-coldet-monitoring.md)
+
 * [7. System](7-system/README.md)
   * [7.1 Use of the Menus in System](7-system/1-setting-menu.md)
   * [7.2 User Environment](7-system/2-user-environment.md)
