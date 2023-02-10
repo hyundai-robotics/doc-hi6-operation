@@ -131,6 +131,8 @@
   * [6.23 서보툴 체인지](6-monitoring/23-tool-change.md)
   * [6.24 EtherCAT 장치](6-monitoring/24-EC-device-info.md)
   * [6.25 하드웨어](6-monitoring/25-hw-monitoring.md)
+  * [6.26 충돌검지모니터링](6-monitoring/26-coldet-monitoring.md)
+  
 * [7. 시스템](7-setting/README.md)
   * [7.1 시스템 메뉴 사용](7-setting/1-setting-menu.md)
   * [7.2 사용자 환경](7-setting/2-user-environment.md)
