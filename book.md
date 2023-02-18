@@ -245,9 +245,9 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
         <img src="../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">USB 연결 포트</td>
-      <td style="text-align:left">이동식 저장 장치 등 USB
-        통신으로 접속 가능한
-        장치를 연결합니다.</td>
+      <td style="text-align:left">이동식 저장 장치 등 USB 통신으로 접속 가능한 장치를 연결합니다.<br>
+        주로 대용량 USB에 사용되는 exFAT포맷은 지원하지 않으므로 유의하십시오.
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -3180,20 +3180,134 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 # 6.8 전역변수
 
-JOB 프로그램에 global로 정의된 전역 변수를 확인합니다. 또한 변수값을 선택하여 변경할 수 있습니다.
+모든 전역 변수의 목록을 표시해줍니다. 변수를 생성/삭제하고, 타입과 값을 편집할 수도 있습니다.
 
-1.	global로 정의된 전역 변수가 포함된 프로그램을 실행한 후 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
+&nbsp;
 
-![](../_assets/tp630/pane-prog-gvar.png)
+## 전역변수창 열기
 
-2.	패널 선택창에서 \[전역변수\]를 터치하십시오. 프로그램에 포함된 전역 변수 목록이 새 창에 나타납니다.
+1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
+
+![](../_assets/tp630/panel-split.png)
+&nbsp;
+![](../_assets/tp630/panel-sel.png)
+
+2. 패널 선택창에서 \[전역변수\]를 터치하십시오. 전역변수 창이 열립니다.
 
 ![](../_assets/tp630/pane-gvar.png)
 
-3.	변수 이름과 유형, 값을 확인하십시오. 변수값을 선택하여 변경할 수도 있습니다.
+![](../_assets/tp630/panel-gvar/panel-gvar0.png)
 
-![](../_assets/tp630/pane-gvar-mon.png)
 
+## 변수 찾기
+
+변수의 개수가 많아서 원하는 변수를 찾기가 어려울 때는 상단의 필터에 변수의 이름을 일부만 타이핑하십시오. 입력한 필터 문자열로 시작하는 변수만 화면에 표시되므로, 변수를 쉽게 찾을 수 있습니다.
+
+![](../_assets/tp630/panel-gvar/gv-find.png)
+
+
+## 변수 값 변경하기 (bool, 정수, 실수, 문자열 타입의 경우)
+
+원하는 변수의 값 열을 선택하고 새로운 값을 타이핑하십시오.
+ENTER키를 누르면 입력한 값이 해당 변수에 대입됩니다.
+
+![](../_assets/tp630/panel-gvar/gv-edit-value.png)
+
+
+## 변수 값 변경하기 (포즈, 시프트 타입의 경우)
+
+원하는 포즈나 시프트 변수의 값 열을 선택합니다.
+
+![](../_assets/tp630/panel-gvar/gv-edit-pose1.png)
+
+ENTER키를 누르면 포즈 혹은 시프트 속성 창이 열립니다.
+편집을 수행한 후, F7: 확인 버튼을 클릭합니다.
+
+![](../_assets/tp630/panel-gvar/gv-edit-pose2.png)
+
+
+## 변수 타입 변경하기
+
+원하는 변수의 타입 열을 선택하고 ENTER키를 누릅니다. 아래와 같이 변수 생성하기 대화상자가 나타납니다.
+
+![](../_assets/tp630/panel-gvar/gv-edit-type.png)
+
+![](../_assets/tp630/panel-gvar/gv-create-var.png)
+
+타입 리스트에서 원하는 타입을 선택하고 확인 버튼을 클릭하면, 해당 변수의 타입이 변경됩니다. 타입이 바뀌면 값은 초기화 되므로 유의하십시오.
+
+여러 개의 변수에 대해 타입을 선택한 후 ENTER키를 눌러 한꺼번에 변경할 수도 있습니다.
+(SHIFT+상하 화살표키를 눌러 연속된 여러 개의 셀을 선택할 수 있습니다. 혹은 CTRL키를 누른 채 원하는 셀들을 여러 개 터치하여 선택할 수 있습니다.)
+
+![](../_assets/tp630/panel-gvar/gv-sel-multi-type.png)
+
+
+## 변수 이름 변경하기
+
+원하는 변수의 이름 열을 선택한 후 소프트키보드를 열어 새로운 이름을 타이핑하십시오.
+ENTER키를 누르면 입력한 이름으로 변경됩니다.
+
+![](../_assets/tp630/panel-gvar/gv-edit-name.png)
+
+
+## 변수 생성하기
+
+상단의 필터에 변수의 생성할 변수의 이름을 입력합니다.
+
+![](../_assets/tp630/panel-gvar/gv-new.png)
+
+중복된 이름의 변수가 없는 것을 확인한 후 필터 옆의 + 버튼을 클릭하면, 변수가 디폴트 타입 int(정수)로 생성됩니다. 위에서 설명한 방법으로 생성된 변수를 원하는 타입으로 변경하십시오.
+
+![](../_assets/tp630/panel-gvar/gv-new2.png)
+
+
+## 변수 삭제하기
+
+삭제할 변수를 선택합니다.
+DEL(CTRL+BACKSPACE) 키를 누르면 확인/취소 대화상자가 나타납니다. 변수명을 확인한 후, 확인 버튼을 누르십시오.
+
+![](../_assets/tp630/panel-gvar/gv-delete.png)
+
+## 배열 생성하기
+
+pos라는 이름의 5x200의 2차원 포즈 배열 변수를 생성하는 예로 설명하겠습니다.
+위에서 설명한 방법으로 pos라는 이름의 변수를 생성합니다.
+
+![](../_assets/tp630/panel-gvar/gv-new-arr1.png)
+
+
+타입 열을 선택하고 ENTER키를 누릅니다. 아래와 같이 변수 생성하기 대화상자가 나타납니다.
+
+![](../_assets/tp630/panel-gvar/gv-new-arr2.png)
+
+타입 리스트에서 포즈를 선택합니다. 요소 개수에 5,200을 입력하고 확인 버튼을 누르면, pos의 타입이 Pose[5][200]의 배열로 변경됩니다.
+
+![](../_assets/tp630/panel-gvar/gv-new-arr3.png)
+
+
+## 배열 요소값 확인하고 변경하기
+
+배열 변수의 값은 [ ]로만 표시되고 요소들의 값은 표시되지 않습니다.
+값 열을 선택하고 ENTER키를 누르거나 F5: 하위레벨 버튼을 클릭하면 배열이 하위레벨로 펼쳐지면서 요소 값들을 볼 수 있습니다.  
+
+![](../_assets/tp630/panel-gvar/gv-arr-level1.png)
+
+배열 요소에 대해서도 위에서 설명한 방법으로 값이나 타입을 변경할 수 있습니다.  
+
+2차원 배열 pos에서 pos[0]~pos[4] 또한 배열들입니다. ENTER키나 F5키를 눌러 하위레벨로 계속 내려갈 수 있습니다. 현재 표시되고 있는 배열의 레벨과 인덱스는 전역변수창 제목막대에서 확인할 수 있습니다.
+
+F4: 상위레벨 버튼을 클릭하거나 ESC키를 누르면 다시 상위레벨로 올라갑니다.
+
+![](../_assets/tp630/panel-gvar/gv-arr-level2.png)
+
+배열은 동시에 100개의 요소만 표시되기 때문에, 기본적으로 [0]~[99] 인덱스 범위만 볼 수 있습니다. 좌상단의 시작 인덱스 편집박스의 값을 바꾸면 다른 범위의 요소도 확인 가능합니다. 예를 들어 요소가 200개인 배열 변수의 하위레벨에서 시작 인덱스에 190을 입력하면, [190]~[199]의 요소를 볼 수 있습니다.
+
+
+## 객체 속성값 확인하고 변경하기
+
+객체 변수의 값 열을 선택하고 ENTER키를 누르거나 F5: 하위레벨 버튼을 클릭하면 객체가 하위레벨로 펼쳐지면서 속성 값들을 볼 수 있습니다. 조작방식은 배열과 거의 유사합니다. 단 시작 인덱스 편집박스는 사용되지 않습니다.
+
+![](../_assets/tp630/panel-gvar/gv-obj2.png)
 # 6.9 지역변수
 
 JOB 프로그램에 var로 정의된 지역 변수를 확인합니다. 또한 변수값을 선택하여 변경할 수 있습니다.
@@ -3298,6 +3412,89 @@ JOB 프로그램에 var로 정의된 지역 변수를 확인합니다. 또한 �
   </tbody>
 </table>
 
+# 6.12 히스토리
+
+패널 선택창에서 \[히스토리\]를 터치하십시오. 히스토리창이 나타납니다.
+
+작업 프로그램의 실행 이력과 타임 스탬프가 함께 출력되어 히스토리를 확인할 수 있습니다.
+
+![그림 44 히스토리](../_assets/tp630/pane-history.png)
+
+
+
+# 6.13 호출 스택
+
+패널 선택창에서 \[호출 스택\]을 터치하면 호출 스택창이 나타납니다. 이 절의 내용을 이해하려면 먼저 hrscript의 `call`~`return`문과 지역변수에 대한 이해가 선행되어야 합니다.
+
+[call문, jump문과 서브프로그램](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/3-flowcontrol-subprogram/7-call-jump/README)
+
+[지역변수](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/3-flowcontrol-subprogram/8-local-global-var/1-local-var)
+
+
+### 로봇언어의 호출과 리턴
+
+로봇언어에서는 `call`문으로 서브 job 프로그램을 호출(call)할 수 있습니다. 서브 프로그램은 `end`나 `return`문을 수행할 때 자신을 호출한 call문의 다음 명령문 위치로 리턴(return)합니다. 예를 들어 아래 그림에서, 5번 job은 8번 job을 호출하여 수행하다가 `return`문을 만나서 다시 5번 job의 `call`문의 다음 명령문부터 수행을 계속해나가는 것을 볼 수 있습니다. 
+
+![서브 job의 호출(call)과 리턴(return)](../_assets/call-return.png)
+
+프로그램 옆에 그려진 그릇 모양은 호출 스택(call stack)이라는 저장공간입니다. 호출 스택에는 현재 수행되는 프로그램의 호출 프레임(call frame)이 쌓입니다. 호출 프레임 안에는 job 프로그램의 실매개변수와 지역변수 집합, 복귀할 주소(return address)가 저장됩니다.  
+서브 프로그램이 호출되면 새로운 호출 프레임이 최상단(top)에 쌓이기(push) 때문에, 자신을 호출한 프로그램의 지역변수는 보관되고 새로운 지역변수 공간이 준비됩니다.  
+서브 프로그램이 리턴되면 top 호출 프레임은 버리고(pop), 그 아래에 있던 호출 프레임이 다시 top이 됩니다. 호출 프레임에는 call 직전의 실매개변수, 지역변수가 그대로 보관되어 있고, 복귀할 위치 정보도 있기 때문에, 호출한 프로그램은 call 직전에 하던 작업을 그대로 이어 수행할 수 있습니다.
+
+
+### 호출 스택창
+
+호출 스택창으로 현재 호출 스택의 내용을 확인할 수 있습니다.
+<br><br>
+
+0001_main.job
+```python
+var n_work=10
+call 0005_init,12
+end
+```
+
+0005_init.job
+```python
+param mode
+var sensor_id
+call 0008_go_home
+for sensor_id=1 to 5
+  call 0009_check_sensor,sensor_id # --------- (A)
+next
+end
+```
+
+0008_go_home.job
+```python
+var pos1, pos2
+# do something
+end
+```
+
+0009_check_sensor.job
+```python
+param id
+var sensor_value
+# do something  --------- (B)
+end
+```
+
+job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 현재 프로그램이 5번 job의 `for`~`next` 루프 내부의 call문이 3번째 수행되어 (B) 위치까지 실행된 상태라고 한다면, 티치펜던트 화면은 아래 그림과 같은 상태일 것입니다.
+
+![job 편집, 호출 스택, 지역변수](../_assets/call-stack.png)
+
+
+호출 스택의 맨 아래 프레임에는 1번 job, 그 위의 프레임에는 5번 job, 최상단(top) 프레임에는 9번 job이 쌓여있습니다. > 모양의 커서는 9번 job을 가리키고 있고, 지역변수 창에는 매개변수 `id`와 지역변수 `sensor_value`의 값이 표시되고 있습니다. 따라서, 9번 job은 5번 job에 의해 호출됐고, 5번 job은 1번 job에 의해 호출됐다는 정보를 확인할 수 있습니다.  
+5번 job이 호출을 한 위치까지 보고 싶다면 5번 job의 프레임을 선택하고 `ENTER`키를 누르십시오, job 편집창의 커서가 즉각 (A) 위치로 이동하여 call을 수행한 위치를 보여주며, 지역변수 창에는 5번 job의 프레임 내용, 즉 매개변수 `mode`와 지역변수 `sensor_id`의 값이 각각 call 직전의 값인 12와 3으로 표시됩니다.
+
+![job 편집, 호출 스택, 지역변수- 2](../_assets/call-stack2.png)
+
+이와 같이 호출한 job의 프레임을 선택하여 이제까지 호출된 프로그램의 흐름을 쉽게 파악할 수 있습니다.
+
+{% hint style="warning" %}
+\[주의\] Step-FWD나 재생을 수행할 떄는 작업을 재개할 때는 > 커서를 반드시 최상단(top) 프레임 위치로 복구하십시오. 그러지 않으면, job 커서의 위치가 바뀐 것으로 간주되어 호출스택이 초기화된 채로 수행됩니다.
+{% endhint %}
 # 6.11 hot edit
 
 로봇 기동 중에도 라인을 정지하지 않고 job 프로그램을 편집할 수 있는 기능입니다. 
@@ -3384,16 +3581,6 @@ JOB 프로그램에 var로 정의된 지역 변수를 확인합니다. 또한 �
 ### 다른 프로그램 선택
 
 [SHIFT]+[프로그램]키를 누르면 다른 프로그램을 선택할 수 있습니다. 새 프로그램을 작성할 수도 있습니다.
-# 6.12 히스토리
-
-패널 선택창에서 \[히스토리\]를 터치하십시오. 히스토리창이 나타납니다.
-
-작업 프로그램의 실행 이력과 타임 스탬프가 함께 출력되어 히스토리를 확인할 수 있습니다.
-
-![그림 44 히스토리](../_assets/tp630/pane-history.png)
-
-
-
 # 6.13 시스템 특성
 
 패널 선택창에서 \[시스템 특성\]을 터치하십시오. 시스템 특성창이 나타납니다. 로봇 시스템의 다양한 데이터를 모두 확인하거나 특정한 정보 유형의 데이터만 확인할 수 있습니다.
@@ -3425,122 +3612,6 @@ JOB 프로그램에 var로 정의된 지역 변수를 확인합니다. 또한 �
 2. 초기화할 정보 유형을 터치하십시오. 선택한 항목의 최대값이 초기화됩니다.
 
 ![](../_assets/tp630/pane-syscharacter-clear.png)
-
-# 6.14 태스크
-
-패널 선택창에서 \[태스크\]를 터치하십시오. 태스크창이 나타납니다.
-
-태스크별 동작 주기와 실행 시간 정보를 확인할 수 있습니다.
-
-![그림 46 태스크](../_assets/tp630/pane-task.png)
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <ul>
-        태스크별 동작 주기와
-        실행 시간 정보를 표시합니다
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">
-      <ul>
-          <li>[사이클 시간]/[실행 시간]:
-            태스크별 정보 유형을
-            변경합니다.</li>
-          <li>[초기화]: 표시된 정보를
-            초기화합니다.</li>
-          <li>[카운터]: 태스크 모니터가 정상인 동안 카운터가 증가합니다..</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-# 6.16 workcell
-
-현재 기능 수정 중에 있습니다. 완료되는 대로 업데이트 예정입니다.
-
-<br>
-<br>
-<br>
-
-패널 선택창에서 \[workcell\]을 터치하십시오. 로봇의 현재 자세가 3D 화면에 나타납니다.
-
-협동로봇의 안전 기능을 설정하면 작업 영역\(![](../_assets/c1.png)\)과 툴 영역\(![](../_assets/c2.png)\), 툴 방향 제약\(![](../_assets/c3.png)\), 로봇 엘보우 영역\(![](../_assets/c4.png)\), 금지 영역\(![](../_assets/c5.png)\)의 설정 상태를 확인할 수 있습니다.
-
-![그림 48 workcell모니터링](../_assets/image_174.png)
-
-* 3D 화면 우측 하단의 \[확대/축소\] 아이콘\(![](../_assets/wc-zoom.png)\), \[이동\] 아이콘\(![](../_assets/wc-pan.png)\), 또는 \[회전\] 아이콘\(![](../_assets/wc-rotate.png)\)을 선택한 후 화면을 드래그하면 카메라가 조정됩니다.
-* 설정을 변경한 경우에는 workcell 창을 닫고 다시 열어야 변경한 설정값이 적용됩니다.
-
-# 6.16 센서 동기
-
-패널 선택창에서 \[센서 동기\]를 터치하십시오. 센서 동기창이 나타납니다.
-
-컨베이어 및 프레스 동기 기능과 관련된 정보를 확인할 수 있습니다. 센서 동기 기능은 \[**시스템** &gt; 4: 응용 파라미터 &gt; 4: 센서 동기\] 메뉴에서 동기 상태를 컨베이어 또는 프레스로 설정하면 활성화됩니다.
-
-![그림 50 센서 동기 모니터링](../_assets/tp630/pane-sensorsynch.png)
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left">선택한 센서의 컨베이어
-        및 프레스 동기 기능과
-        관련된 정보를 표시합니다.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li>[sensor #1]: 드롭다운 메뉴를
-            터치하여 모니터링할
-            센서를 선택합니다.</li>
-          <li>[수동 초기화]: 센서 관련
-            각종 데이터(엔코더 펄스,
-            센서 위치, 센서 속도, 작업물
-            진입 개수, 동기 재생 상태
-            등)를 수동으로 삭제합니다.</li>
-          <li>[리밋 스위치 작동]: 리밋
-            스위치를 수동으로 입력할
-            경우 사용합니다.</li>
-          <li>[작업 포지션 입력]: 센서의
-            위치값(직선 mm, 원형 deg)을
-            수동으로 입력합니다.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-{% hint style="info" %}
-센서 동기 기능에 대한 자세한 내용은 별도의 “Hi6 센서동기 기능 설명서”를 참조하십시오.
-{% endhint %}
 
 # 6.17 시스템 진단
 
@@ -3602,6 +3673,105 @@ JOB 프로그램에 var로 정의된 지역 변수를 확인합니다. 또한 �
 {% hint style="info" %}
 * \[가스압력 검사\] 화면은 가스스프링 압력 검사 기능을 지원하는 로봇에 대해서만 지원합니다.
 * 시스템 진단 기능에 대한 자세한 내용은 별도의 “Hi6 제어기 시스템 진단 기능 설명서”를 참조하십시오.
+{% endhint %}
+
+# 6.14 태스크
+
+패널 선택창에서 \[태스크\]를 터치하십시오. 태스크창이 나타납니다.
+
+태스크별 동작 주기와 실행 시간 정보를 확인할 수 있습니다.
+
+![그림 46 태스크](../_assets/tp630/pane-task.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+        태스크별 동작 주기와
+        실행 시간 정보를 표시합니다
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+      <ul>
+          <li>[사이클 시간]/[실행 시간]:
+            태스크별 정보 유형을
+            변경합니다.</li>
+          <li>[초기화]: 표시된 정보를
+            초기화합니다.</li>
+          <li>[카운터]: 태스크 모니터가 정상인 동안 카운터가 증가합니다..</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+# 6.16 센서 동기
+
+패널 선택창에서 \[센서 동기\]를 터치하십시오. 센서 동기창이 나타납니다.
+
+컨베이어 및 프레스 동기 기능과 관련된 정보를 확인할 수 있습니다. 센서 동기 기능은 \[**시스템** &gt; 4: 응용 파라미터 &gt; 4: 센서 동기\] 메뉴에서 동기 상태를 컨베이어 또는 프레스로 설정하면 활성화됩니다.
+
+![그림 50 센서 동기 모니터링](../_assets/tp630/pane-sensorsynch.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">선택한 센서의 컨베이어
+        및 프레스 동기 기능과
+        관련된 정보를 표시합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[sensor #1]: 드롭다운 메뉴를
+            터치하여 모니터링할
+            센서를 선택합니다.</li>
+          <li>[수동 초기화]: 센서 관련
+            각종 데이터(엔코더 펄스,
+            센서 위치, 센서 속도, 작업물
+            진입 개수, 동기 재생 상태
+            등)를 수동으로 삭제합니다.</li>
+          <li>[리밋 스위치 작동]: 리밋
+            스위치를 수동으로 입력할
+            경우 사용합니다.</li>
+          <li>[작업 포지션 입력]: 센서의
+            위치값(직선 mm, 원형 deg)을
+            수동으로 입력합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+센서 동기 기능에 대한 자세한 내용은 별도의 “Hi6 센서동기 기능 설명서”를 참조하십시오.
 {% endhint %}
 
 # 6.17 프로그램 예약실행
@@ -3679,38 +3849,28 @@ JOB 프로그램에 var로 정의된 지역 변수를 확인합니다. 또한 �
 
 {% hint style="info" %}
  상세 내용은 "멀티태스크 기능설명서"를 참조하여 주십시오.
-{% endhint %}# 6.20 스폿 용접 데이터
-
-패널 선택창에서 \[스폿\]을 터치하십시오. 스폿용접의 입출력 신호와 각종 데이터, 가동정보를 표시합니다. 
-
-
-![](../_assets/tp630/pane-spot.png) 
-
-<br>
-
-{% hint style="info" %}
- 상세 내용은 “[3.1 모니터링](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/3-Related-functions/3-1-monitoring/README)”를 참조하십시오.
-{% endhint %}# 6.21 아크 용접 데이터
-
-해당 내용은 아크 용접 기능 설명서의 “[7. 용접 데이터 모니터링](https://hrbook-hrc.web.app/#/view/doc-arc-weld/korean/7_Monitoring/README)”을 참조하십시오.# 6.22 메모리 변수
+{% endhint %}# 6.22 메모리 변수
 
 패널 선택창에서 \[메모리 변수\]를 터치하십시오. 내장PLC 릴레이들 중 로봇언어에서 접근 가능한 변수를 표시합니다. 
 
 
 
 
-![](../_assets/tp630/pane-memory-variables.png) # 6.23 서보툴 체인지
+![](../_assets/tp630/pane-memory-variables.png) # 6.26 충돌검지 모니터링
+ 
+ ![](../_assets/tp630/coldet_monitoring_pane.png)
+ ![](../_assets/tp630/coldet_monitoring.png)
+ 
 
-패널 선택창에서 \[서보툴 제인지\]을 터치하십시오. 서보툴 체인지 기능 사용 시 서보툴의 상태와 엔코더 전원투입 입/출력 상태를 표시합니다. 
+충돌검지 모니터링 
 
-
-![](../_assets/tp630/pane-tool-change.png) 
-
-<br>
-
-{% hint style="info" %}
- 상세 내용은 "서보툴 체인지 기능설명서"를 참조하여 주십시오.
-{% endhint %}# 6.24 EtherCAT 장치 
+ - [Sensitivity] : 비율 값으로 높을 수록 민감하게 충돌을 검지 (0: 무효) [0~200]
+   - Fig2. [System>3:Robot parameter>14:Impact Detection] General 탭에서 [Sensitivity] 값을 설정 할 수 있다. 
+ - [External Torque]-[Current] : 현재 추정되는 외력 토크 [Nm]
+ - [External Torque]-[Maximum] : 추정되는 외력 토크 중 최대값 [Nm]
+ - [Reference] : 충돌이라 판단하는 토크 임계값 [Nm]
+ - [Max/Ref] : [Maximum]값과 [Reference]값의 비율로서, 1 이상이 되면 해당 축에 충돌이 있다고 판단 
+# 6.24 EtherCAT 장치 
 
 패널 선택창에서 [EC. 장치정보]를 선택하십시오. Hi6 제어기 내/외부 EtherCAT 네트워크를 구성하는 슬레이브 장치 목록과  장치 연결 상태를 보여줍니다. EtherCAT 네트워크에서 제어기 메인보드는 EtherCAT 마스터로 동작합니다.
  
@@ -3731,7 +3891,7 @@ JOB 프로그램에 var로 정의된 지역 변수를 확인합니다. 또한 �
     -	pre-op: 비주기 메일박스를 이용한 통신만 가능한 상태
     -	safe-op: Slave 장치의 송신(Tx PDO) 데이터만 교신 가능한 상태
     -	operation: Slave 장치의 송수신(Tx/RxPDO) 데이터 모두 교신 가능한 상태
-# 6.25 하드웨어
+# 6.25 하드웨어 모니터링
 패널 선택창에서 [하드웨어 모니터링]을 선택하십시오. COM모듈 보드의 현재 전압, 온도 값을 모니터링 할 수 있습니다.
 허용 오차를 벗어날 경우 경고 메시지가 주기적(24h)으로 발생됩니다.
  
@@ -3740,7 +3900,32 @@ JOB 프로그램에 var로 정의된 지역 변수를 확인합니다. 또한 �
  
 - 허용 오차 값을 변경 하시려면, 해당 셀을 선택하여 편집하고 [저장 최소/최대] 버튼을 누르십시오.
 - 기본값으로 초기화 하시려면 [초기화 최소/최대] 버튼을 누르세요.
-# 7. 시스템
+# 6.20 스폿 용접 데이터
+
+패널 선택창에서 \[스폿\]을 터치하십시오. 스폿용접의 입출력 신호와 각종 데이터, 가동정보를 표시합니다. 
+
+
+![](../_assets/tp630/pane-spot.png) 
+
+<br>
+
+{% hint style="info" %}
+ 상세 내용은 스폿 용접 기능 설명서의 “[3.1 모니터링](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/3-Related-functions/3-1-monitoring/README)”를 참조하십시오.
+{% endhint %}
+# 6.23 서보툴 체인지
+
+패널 선택창에서 \[서보툴 제인지\]을 터치하십시오. 서보툴 체인지 기능 사용 시 서보툴의 상태와 엔코더 전원투입 입/출력 상태를 표시합니다. 
+
+
+![](../_assets/tp630/pane-tool-change.png) 
+
+<br>
+
+{% hint style="info" %}
+ 상세 내용은 "서보툴 체인지 기능설명서"를 참조하여 주십시오.
+{% endhint %}# 6.21 아크 용접 데이터
+
+해당 내용은 아크 용접 기능 설명서의 “[7. 용접 데이터 모니터링](https://hrbook-hrc.web.app/#/view/doc-arc-weld/korean/7_Monitoring/README)”을 참조하십시오.# 7. 시스템
 
 설정 항목에서는 사용자의 정보와 각종 파라미터 정보 등을 확인 및 설정할 수 있습니다.
 
@@ -4718,6 +4903,85 @@ S1에서 S2로 출발한 후 wait 명령문을 실행합니다. S2의 accuracy o
 \[재시작\] 버튼을 이용하여 PCI 통신 카드의 산업용 통신을 다시 시작할 수 있습니다.
 {% endhint %}
 
+# 7.3.10 네트워크
+
+이더넷 네트워크 설정을 할 수 있습니다.
+
+1.	\[2: 제어 파라미터 &gt; 9: 네트워크 &gt; 1: 사용환경 설정 \]으로 진입하십시오.
+
+2.	LAN(Public)에서 각 파라미터 설정이 가능합니다. 클래스 C형의 IP 주소를 바탕으로 구성하십시오.
+
+3.	Public LAN은 포트포워딩이 가능합니다.
+
+4.	설정 파라미터들은 제어기 재부팅시 적용됩니다.
+
+![](../../_assets/image_551.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">LAN 포트 설정 탭입니다. LAN(Public)은 수정이 가능하며, LAN1(이더캣), LAN2(T/P-main)은 수정이 불가능합니다.
+	  </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <br />포트설정을 변경합니다. IP, 서브넷 마스크, 게이트웨이는 수정이 가능합니다.
+          <li><b>IP : </b> 연결할 IP 주소를 설정합니다.</li>
+          <li><b>서브넷 마스크 : </b> 서브넷 마스크를 설정합니다. 클래스 C기준 255.255.255.0을 사용합니다.</li>
+          <li><b>게이트웨이 : </b>게이트웨이를 설정합니다. 3번째 정보까지는 IP주소와 동등합니다. 4번째 주소를 0 혹은 255로 설정하면 Broadcast가 가능합니다.
+          </li>
+        </ul>
+      </td>
+    </tr>
+	<tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>포트포워딩 선택 : </b> 포트포워딩 기능을 활성화합니다. 포트포워딩 기능은 LAN3(Public)탭에 있습니다. LAN1(이더캣)은 적용되지 않습니다.</li>
+        </ul>
+      </td>
+    </tr>
+	<tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>[OK]</b>: 설정을 저장합니다. 시스템을 재부팅한 후 변경사항이 적용됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+
+포트포워딩은 IP나 포트를 라우터를 통하여 다른 IP나 포트로 전달하는 기능입니다. Hi6 제어기는 포트포워딩 기능이 있습니다.
+
+예시) Device1(192.168.1.10 | 255.255.255.0 | 192.168.1.1)은 T/P(192.168.2.X | 255.255.255.0 | 192.168.2.X)와 3번째 주소값이 다름에도 연결이 가능합니다.
+
+아래의 정보는 포트포워딩 설정방법을 다룹니다.
+
+* 지원 IP : 클래스 C 형식(192.168.XX.XX) 장비들은 포트포워딩에 사용 가능합니다.
+* 지원 서브넷 : 각 포트는 3번째 스텝까지 같아야합니다. 이를테면 LAN3(Public)는 192.168.1.X IP와 연결됩니다.
+* 기본 게이트웨이 : 192.168.X.1이 초기 설정값이며, 192.168.X.255로 설정시 브로드캐스팅이 가능합니다.
+
+{% endhint %}
 # 7.4 로봇 파라미터
 
 로봇 동작과 관련된 각종 데이터와 축별 원점, 동작 범위 등의 정보를 설정합니다.
