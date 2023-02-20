@@ -95,7 +95,9 @@ TP600 is a model developed exclusively for the Hi6 controller and provides a lar
       </td>
       <td style="text-align:left">USB connection port</td>
       <td style="text-align:left">Can be used to connect a device that can be accessed by USB communication
-        such as a transportable storage device</td>
+        such as a transportable storage device.<br>
+        Please use the FAT32 or NTFS format. Note that exFAT format is not supported.
+        </td>
     </tr>
   </tbody>
 </table>
