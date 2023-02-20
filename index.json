@@ -46,1092 +46,1097 @@
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/README.md",
-		"char_ofs": 18063,
-		"byte_ofs": 30008
+		"char_ofs": 18072,
+		"byte_ofs": 30015
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/1-power-on/README.md",
-		"char_ofs": 18079,
-		"byte_ofs": 30037
+		"char_ofs": 18088,
+		"byte_ofs": 30044
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/1-power-on/1-input-of-the-power-to-the-mot.md",
-		"char_ofs": 18540,
-		"byte_ofs": 30993
+		"char_ofs": 18549,
+		"byte_ofs": 31000
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/2-power-off.md",
-		"char_ofs": 19544,
-		"byte_ofs": 32343
+		"char_ofs": 19553,
+		"byte_ofs": 32350
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/README.md",
-		"char_ofs": 20345,
-		"byte_ofs": 33988
+		"char_ofs": 20354,
+		"byte_ofs": 33995
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/1-title-area.md",
-		"char_ofs": 21612,
-		"byte_ofs": 35966
+		"char_ofs": 21621,
+		"byte_ofs": 35973
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/2-status-bar.md",
-		"char_ofs": 22293,
-		"byte_ofs": 36953
+		"char_ofs": 22302,
+		"byte_ofs": 36960
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/3-Rbt-bar.md",
-		"char_ofs": 24077,
-		"byte_ofs": 40271
+		"char_ofs": 24086,
+		"byte_ofs": 40278
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/4-mon-area.md",
-		"char_ofs": 25686,
-		"byte_ofs": 42563
+		"char_ofs": 25695,
+		"byte_ofs": 42570
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/5-function-buttons.md",
-		"char_ofs": 25916,
-		"byte_ofs": 42968
+		"char_ofs": 25925,
+		"byte_ofs": 42975
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/6-input-area.md",
-		"char_ofs": 27039,
-		"byte_ofs": 44886
+		"char_ofs": 27048,
+		"byte_ofs": 44893
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/7-guide-area.md",
-		"char_ofs": 27428,
-		"byte_ofs": 45567
+		"char_ofs": 27437,
+		"byte_ofs": 45574
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/8-work-area.md",
-		"char_ofs": 27709,
-		"byte_ofs": 46063
+		"char_ofs": 27718,
+		"byte_ofs": 46070
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/9-record-cnd-area.md",
-		"char_ofs": 28798,
-		"byte_ofs": 47534
+		"char_ofs": 28807,
+		"byte_ofs": 47541
 	},
 	{
 		"link": "1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/10-Lbt-bar.md",
-		"char_ofs": 29138,
-		"byte_ofs": 48006
+		"char_ofs": 29147,
+		"byte_ofs": 48013
 	},
 	{
 		"link": "2-operation/README.md",
-		"char_ofs": 31161,
-		"byte_ofs": 51154
+		"char_ofs": 31170,
+		"byte_ofs": 51161
 	},
 	{
 		"link": "2-operation/1-manual-operation/README.md",
-		"char_ofs": 31346,
-		"byte_ofs": 51582
+		"char_ofs": 31355,
+		"byte_ofs": 51589
 	},
 	{
 		"link": "2-operation/1-manual-operation/1-how-to-op.md",
-		"char_ofs": 31404,
-		"byte_ofs": 51721
+		"char_ofs": 31413,
+		"byte_ofs": 51728
 	},
 	{
 		"link": "2-operation/1-manual-operation/2-op-speed.md",
-		"char_ofs": 32510,
-		"byte_ofs": 53955
+		"char_ofs": 32519,
+		"byte_ofs": 53962
 	},
 	{
 		"link": "2-operation/1-manual-operation/3-step-fwd-bwd.md",
-		"char_ofs": 33531,
-		"byte_ofs": 55954
+		"char_ofs": 33540,
+		"byte_ofs": 55961
 	},
 	{
 		"link": "2-operation/2-automatic-operation/README.md",
-		"char_ofs": 35399,
-		"byte_ofs": 59740
+		"char_ofs": 35408,
+		"byte_ofs": 59747
 	},
 	{
 		"link": "2-operation/2-automatic-operation/1-how-to-op.md",
-		"char_ofs": 35462,
-		"byte_ofs": 59890
+		"char_ofs": 35471,
+		"byte_ofs": 59897
 	},
 	{
 		"link": "2-operation/2-automatic-operation/2-adjust-op-spd.md",
-		"char_ofs": 36274,
-		"byte_ofs": 61514
+		"char_ofs": 36283,
+		"byte_ofs": 61521
 	},
 	{
 		"link": "2-operation/3-step/README.md",
-		"char_ofs": 36815,
-		"byte_ofs": 62543
+		"char_ofs": 36824,
+		"byte_ofs": 62550
 	},
 	{
 		"link": "2-operation/3-step/1-step-cmd-param/README.md",
-		"char_ofs": 37175,
-		"byte_ofs": 63355
+		"char_ofs": 37184,
+		"byte_ofs": 63362
 	},
 	{
 		"link": "2-operation/3-step/1-step-cmd-param/1-interpolation.md",
-		"char_ofs": 39630,
-		"byte_ofs": 66572
+		"char_ofs": 39639,
+		"byte_ofs": 66579
 	},
 	{
 		"link": "2-operation/3-step/1-step-cmd-param/2-pose.md",
-		"char_ofs": 41524,
-		"byte_ofs": 70201
+		"char_ofs": 41533,
+		"byte_ofs": 70208
 	},
 	{
 		"link": "2-operation/3-step/1-step-cmd-param/3-speed.md",
-		"char_ofs": 43437,
-		"byte_ofs": 73026
+		"char_ofs": 43446,
+		"byte_ofs": 73033
 	},
 	{
 		"link": "2-operation/3-step/1-step-cmd-param/4-accuracy.md",
-		"char_ofs": 43895,
-		"byte_ofs": 74041
+		"char_ofs": 43904,
+		"byte_ofs": 74048
 	},
 	{
 		"link": "2-operation/3-step/1-step-cmd-param/5-tool-no.md",
-		"char_ofs": 45453,
-		"byte_ofs": 76952
+		"char_ofs": 45462,
+		"byte_ofs": 76959
 	},
 	{
 		"link": "2-operation/3-step/1-step-cmd-param/6-until.md",
-		"char_ofs": 45642,
-		"byte_ofs": 77270
+		"char_ofs": 45651,
+		"byte_ofs": 77277
 	},
 	{
 		"link": "2-operation/3-step/1-step-cmd-param/7-comment.md",
-		"char_ofs": 46024,
-		"byte_ofs": 77930
+		"char_ofs": 46033,
+		"byte_ofs": 77937
 	},
 	{
 		"link": "2-operation/3-step/2-step-pose-modify/README.md",
-		"char_ofs": 46200,
-		"byte_ofs": 78231
+		"char_ofs": 46209,
+		"byte_ofs": 78238
 	},
 	{
 		"link": "2-operation/3-step/2-step-pose-modify/1-joint-crd-sys.md",
-		"char_ofs": 46276,
-		"byte_ofs": 78396
+		"char_ofs": 46285,
+		"byte_ofs": 78403
 	},
 	{
 		"link": "2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md",
-		"char_ofs": 46570,
-		"byte_ofs": 78912
+		"char_ofs": 46579,
+		"byte_ofs": 78919
 	},
 	{
 		"link": "2-operation/4-r-code.md",
-		"char_ofs": 48543,
-		"byte_ofs": 82391
+		"char_ofs": 48552,
+		"byte_ofs": 82398
 	},
 	{
 		"link": "2-operation/5-error-info/README.md",
-		"char_ofs": 48810,
-		"byte_ofs": 82923
+		"char_ofs": 48819,
+		"byte_ofs": 82930
 	},
 	{
 		"link": "2-operation/5-error-info/1-error-type.md",
-		"char_ofs": 48958,
-		"byte_ofs": 83214
+		"char_ofs": 48967,
+		"byte_ofs": 83221
 	},
 	{
 		"link": "2-operation/5-error-info/2-error-handle.md",
-		"char_ofs": 49229,
-		"byte_ofs": 83716
+		"char_ofs": 49238,
+		"byte_ofs": 83723
 	},
 	{
 		"link": "2-operation/6-log.md",
-		"char_ofs": 49800,
-		"byte_ofs": 84798
+		"char_ofs": 49809,
+		"byte_ofs": 84805
 	},
 	{
 		"link": "2-operation/7-user-key/README.md",
-		"char_ofs": 52539,
-		"byte_ofs": 88901
+		"char_ofs": 52548,
+		"byte_ofs": 88908
 	},
 	{
 		"link": "2-operation/7-user-key/1-user-key-region.md",
-		"char_ofs": 52622,
-		"byte_ofs": 89093
+		"char_ofs": 52631,
+		"byte_ofs": 89100
 	},
 	{
 		"link": "2-operation/7-user-key/2-button-registration/README.md",
-		"char_ofs": 52997,
-		"byte_ofs": 89910
+		"char_ofs": 53006,
+		"byte_ofs": 89917
 	},
 	{
 		"link": "2-operation/7-user-key/2-button-registration/1-key-signal-output.md",
-		"char_ofs": 53071,
-		"byte_ofs": 90081
+		"char_ofs": 53080,
+		"byte_ofs": 90088
 	},
 	{
 		"link": "2-operation/7-user-key/2-button-registration/2-spot-appl.md",
-		"char_ofs": 54373,
-		"byte_ofs": 92526
+		"char_ofs": 54382,
+		"byte_ofs": 92533
 	},
 	{
 		"link": "2-operation/7-user-key/2-button-registration/3-arc-appl.md",
-		"char_ofs": 54522,
-		"byte_ofs": 92774
+		"char_ofs": 54531,
+		"byte_ofs": 92781
 	},
 	{
 		"link": "2-operation/8-coord-sys/README.md",
-		"char_ofs": 54669,
-		"byte_ofs": 93019
+		"char_ofs": 54678,
+		"byte_ofs": 93026
 	},
 	{
 		"link": "2-operation/8-coord-sys/1-jog-key.md",
-		"char_ofs": 54765,
-		"byte_ofs": 93240
+		"char_ofs": 54774,
+		"byte_ofs": 93247
 	},
 	{
 		"link": "2-operation/8-coord-sys/2-joint-crdsys.md",
-		"char_ofs": 55792,
-		"byte_ofs": 95349
+		"char_ofs": 55801,
+		"byte_ofs": 95356
 	},
 	{
 		"link": "2-operation/8-coord-sys/3-robot-crdsys.md",
-		"char_ofs": 56565,
-		"byte_ofs": 96481
+		"char_ofs": 56574,
+		"byte_ofs": 96488
 	},
 	{
 		"link": "2-operation/8-coord-sys/4-user-crdsys.md",
-		"char_ofs": 57600,
-		"byte_ofs": 98172
+		"char_ofs": 57609,
+		"byte_ofs": 98179
 	},
 	{
 		"link": "2-operation/8-coord-sys/5-tool-crdsys.md",
-		"char_ofs": 58762,
-		"byte_ofs": 99916
+		"char_ofs": 58771,
+		"byte_ofs": 99923
 	},
 	{
 		"link": "2-operation/9-axis-origin.md",
-		"char_ofs": 59598,
-		"byte_ofs": 101158
+		"char_ofs": 59607,
+		"byte_ofs": 101165
 	},
 	{
 		"link": "2-operation/10-tool-data-auto-calib.md",
-		"char_ofs": 61173,
-		"byte_ofs": 104258
+		"char_ofs": 61182,
+		"byte_ofs": 104265
 	},
 	{
 		"link": "3-programming/README.md",
-		"char_ofs": 61896,
-		"byte_ofs": 105594
+		"char_ofs": 61905,
+		"byte_ofs": 105601
 	},
 	{
 		"link": "3-programming/1-prog-manage.md",
-		"char_ofs": 61964,
-		"byte_ofs": 105759
+		"char_ofs": 61973,
+		"byte_ofs": 105766
 	},
 	{
 		"link": "3-programming/2-prog-edit/README.md",
-		"char_ofs": 62695,
-		"byte_ofs": 107144
+		"char_ofs": 62704,
+		"byte_ofs": 107151
 	},
 	{
 		"link": "3-programming/2-prog-edit/1-statement.md",
-		"char_ofs": 62801,
-		"byte_ofs": 107399
+		"char_ofs": 62810,
+		"byte_ofs": 107406
 	},
 	{
 		"link": "3-programming/2-prog-edit/2-statement-input/README.md",
-		"char_ofs": 63639,
-		"byte_ofs": 108902
+		"char_ofs": 63648,
+		"byte_ofs": 108909
 	},
 	{
 		"link": "3-programming/2-prog-edit/2-statement-input/1-gen-statement-input.md",
-		"char_ofs": 63655,
-		"byte_ofs": 108933
+		"char_ofs": 63664,
+		"byte_ofs": 108940
 	},
 	{
 		"link": "3-programming/2-prog-edit/2-statement-input/2-step-input.md",
-		"char_ofs": 64075,
-		"byte_ofs": 109700
+		"char_ofs": 64084,
+		"byte_ofs": 109707
 	},
 	{
 		"link": "3-programming/2-prog-edit/2-statement-input/3-rec-cond.md",
-		"char_ofs": 64274,
-		"byte_ofs": 110100
+		"char_ofs": 64283,
+		"byte_ofs": 110107
 	},
 	{
 		"link": "3-programming/2-prog-edit/3-statement-constitution.md",
-		"char_ofs": 64967,
-		"byte_ofs": 111467
+		"char_ofs": 64976,
+		"byte_ofs": 111474
 	},
 	{
 		"link": "3-programming/2-prog-edit/4-statement-edit/README.md",
-		"char_ofs": 65480,
-		"byte_ofs": 112344
+		"char_ofs": 65489,
+		"byte_ofs": 112351
 	},
 	{
 		"link": "3-programming/2-prog-edit/4-statement-edit/1-how-to-edit-statement.md",
-		"char_ofs": 65863,
-		"byte_ofs": 113111
+		"char_ofs": 65872,
+		"byte_ofs": 113118
 	},
 	{
 		"link": "3-programming/2-prog-edit/4-statement-edit/2-statement-edit-example.md",
-		"char_ofs": 66539,
-		"byte_ofs": 114607
+		"char_ofs": 66548,
+		"byte_ofs": 114614
 	},
 	{
 		"link": "3-programming/2-prog-edit/4-statement-edit/3-how-to-edit-line-no.md",
-		"char_ofs": 67159,
-		"byte_ofs": 115756
+		"char_ofs": 67168,
+		"byte_ofs": 115763
 	},
 	{
 		"link": "3-programming/2-prog-edit/4-statement-edit/4-softkeyboard.md",
-		"char_ofs": 67750,
-		"byte_ofs": 116837
+		"char_ofs": 67759,
+		"byte_ofs": 116844
 	},
 	{
 		"link": "3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md",
-		"char_ofs": 68493,
-		"byte_ofs": 118160
+		"char_ofs": 68502,
+		"byte_ofs": 118167
 	},
 	{
 		"link": "4-menu/README.md",
-		"char_ofs": 69411,
-		"byte_ofs": 120028
+		"char_ofs": 69420,
+		"byte_ofs": 120035
 	},
 	{
 		"link": "4-menu/1-menu-usage.md",
-		"char_ofs": 69467,
-		"byte_ofs": 120159
+		"char_ofs": 69476,
+		"byte_ofs": 120166
 	},
 	{
 		"link": "4-menu/2-file-manager/README.md",
-		"char_ofs": 69872,
-		"byte_ofs": 121024
+		"char_ofs": 69881,
+		"byte_ofs": 121031
 	},
 	{
 		"link": "4-menu/2-file-manager/1-file-management.md",
-		"char_ofs": 71880,
-		"byte_ofs": 124110
+		"char_ofs": 71889,
+		"byte_ofs": 124117
 	},
 	{
 		"link": "4-menu/2-file-manager/2-rename-file-folder.md",
-		"char_ofs": 72975,
-		"byte_ofs": 126276
+		"char_ofs": 72984,
+		"byte_ofs": 126283
 	},
 	{
 		"link": "4-menu/2-file-manager/3-folder-management/README.md",
-		"char_ofs": 73603,
-		"byte_ofs": 127477
+		"char_ofs": 73612,
+		"byte_ofs": 127484
 	},
 	{
 		"link": "4-menu/2-file-manager/3-folder-management/1-folder-removal.md",
-		"char_ofs": 73642,
-		"byte_ofs": 127565
+		"char_ofs": 73651,
+		"byte_ofs": 127572
 	},
 	{
 		"link": "4-menu/2-file-manager/3-folder-management/2-folder-generation.md",
-		"char_ofs": 73903,
-		"byte_ofs": 128013
+		"char_ofs": 73912,
+		"byte_ofs": 128020
 	},
 	{
 		"link": "4-menu/2-file-manager/4-file-protect.md",
-		"char_ofs": 74156,
-		"byte_ofs": 128445
+		"char_ofs": 74165,
+		"byte_ofs": 128452
 	},
 	{
 		"link": "4-menu/2-file-manager/5-data-backup.md",
-		"char_ofs": 74460,
-		"byte_ofs": 129006
+		"char_ofs": 74469,
+		"byte_ofs": 129013
 	},
 	{
 		"link": "4-menu/2-file-manager/6-data-restore.md",
-		"char_ofs": 74892,
-		"byte_ofs": 129767
+		"char_ofs": 74901,
+		"byte_ofs": 129774
 	},
 	{
 		"link": "4-menu/3-program-conversion/README.md",
-		"char_ofs": 75395,
-		"byte_ofs": 130681
+		"char_ofs": 75404,
+		"byte_ofs": 130688
 	},
 	{
 		"link": "4-menu/3-program-conversion/1-rec-condition.md",
-		"char_ofs": 75744,
-		"byte_ofs": 131363
+		"char_ofs": 75753,
+		"byte_ofs": 131370
 	},
 	{
 		"link": "4-menu/3-program-conversion/2-rec-speed.md",
-		"char_ofs": 76261,
-		"byte_ofs": 132449
+		"char_ofs": 76270,
+		"byte_ofs": 132456
 	},
 	{
 		"link": "4-menu/3-program-conversion/3-rec-position.md",
-		"char_ofs": 77069,
-		"byte_ofs": 134257
+		"char_ofs": 77078,
+		"byte_ofs": 134264
 	},
 	{
 		"link": "4-menu/3-program-conversion/4-rec-crdsys.md",
-		"char_ofs": 77656,
-		"byte_ofs": 135540
+		"char_ofs": 77665,
+		"byte_ofs": 135547
 	},
 	{
 		"link": "4-menu/3-program-conversion/5-rec-conversion.md",
-		"char_ofs": 78207,
-		"byte_ofs": 136745
+		"char_ofs": 78216,
+		"byte_ofs": 136752
 	},
 	{
 		"link": "4-menu/3-program-conversion/6-mirror-image.md",
-		"char_ofs": 79268,
-		"byte_ofs": 138964
+		"char_ofs": 79277,
+		"byte_ofs": 138971
 	},
 	{
 		"link": "4-menu/3-program-conversion/7-step-copy/README.md",
-		"char_ofs": 79887,
-		"byte_ofs": 140240
+		"char_ofs": 79896,
+		"byte_ofs": 140247
 	},
 	{
 		"link": "4-menu/3-program-conversion/7-step-copy/1-step-copy-example.md",
-		"char_ofs": 80747,
-		"byte_ofs": 142109
+		"char_ofs": 80756,
+		"byte_ofs": 142116
 	},
 	{
 		"link": "4-menu/4-system-diagnosis/README.md",
-		"char_ofs": 82499,
-		"byte_ofs": 144327
+		"char_ofs": 82508,
+		"byte_ofs": 144334
 	},
 	{
 		"link": "4-menu/4-system-diagnosis/1-system-version/README.md",
-		"char_ofs": 82572,
-		"byte_ofs": 144505
+		"char_ofs": 82581,
+		"byte_ofs": 144512
 	},
 	{
 		"link": "4-menu/4-system-diagnosis/1-system-version/1-controller-system-update.md",
-		"char_ofs": 83457,
-		"byte_ofs": 145726
+		"char_ofs": 83466,
+		"byte_ofs": 145733
 	},
 	{
 		"link": "4-menu/5-date-time-setting.md",
-		"char_ofs": 84068,
-		"byte_ofs": 146908
+		"char_ofs": 84077,
+		"byte_ofs": 146915
 	},
 	{
 		"link": "5-conditional-setting/README.md",
-		"char_ofs": 84452,
-		"byte_ofs": 147716
+		"char_ofs": 84461,
+		"byte_ofs": 147723
 	},
 	{
 		"link": "5-conditional-setting/1-op-cond-set.md",
-		"char_ofs": 84530,
-		"byte_ofs": 147909
+		"char_ofs": 84539,
+		"byte_ofs": 147916
 	},
 	{
 		"link": "5-conditional-setting/2-op-cond-set-info.md",
-		"char_ofs": 84943,
-		"byte_ofs": 148615
+		"char_ofs": 84952,
+		"byte_ofs": 148622
 	},
 	{
 		"link": "6-monitoring/README.md",
-		"char_ofs": 87354,
-		"byte_ofs": 153367
+		"char_ofs": 87363,
+		"byte_ofs": 153374
 	},
 	{
 		"link": "6-monitoring/1-using-monitoring.md",
-		"char_ofs": 87398,
-		"byte_ofs": 153474
+		"char_ofs": 87407,
+		"byte_ofs": 153481
 	},
 	{
 		"link": "6-monitoring/2-job.md",
-		"char_ofs": 87914,
-		"byte_ofs": 154410
+		"char_ofs": 87923,
+		"byte_ofs": 154417
 	},
 	{
 		"link": "6-monitoring/3-pose.md",
-		"char_ofs": 89296,
-		"byte_ofs": 156360
+		"char_ofs": 89305,
+		"byte_ofs": 156367
 	},
 	{
 		"link": "6-monitoring/4-system-input.md",
-		"char_ofs": 89440,
-		"byte_ofs": 156645
+		"char_ofs": 89449,
+		"byte_ofs": 156652
 	},
 	{
 		"link": "6-monitoring/5-system-output.md",
-		"char_ofs": 89801,
-		"byte_ofs": 157392
+		"char_ofs": 89810,
+		"byte_ofs": 157399
 	},
 	{
 		"link": "6-monitoring/6-user-input.md",
-		"char_ofs": 90673,
-		"byte_ofs": 159082
+		"char_ofs": 90682,
+		"byte_ofs": 159089
 	},
 	{
 		"link": "6-monitoring/7-user-output.md",
-		"char_ofs": 92294,
-		"byte_ofs": 161554
+		"char_ofs": 92303,
+		"byte_ofs": 161561
 	},
 	{
 		"link": "6-monitoring/8-global-variable.md",
-		"char_ofs": 94520,
-		"byte_ofs": 165076
+		"char_ofs": 94529,
+		"byte_ofs": 165083
 	},
 	{
 		"link": "6-monitoring/9-local-variable.md",
-		"char_ofs": 97642,
-		"byte_ofs": 170939
+		"char_ofs": 97637,
+		"byte_ofs": 170904
 	},
 	{
 		"link": "6-monitoring/10-op-info.md",
-		"char_ofs": 98060,
-		"byte_ofs": 171714
+		"char_ofs": 98055,
+		"byte_ofs": 171679
 	},
 	{
 		"link": "6-monitoring/11-history.md",
-		"char_ofs": 100186,
-		"byte_ofs": 174649
+		"char_ofs": 100181,
+		"byte_ofs": 174614
 	},
 	{
 		"link": "6-monitoring/12-call-stack.md",
-		"char_ofs": 100344,
-		"byte_ofs": 174972
+		"char_ofs": 100339,
+		"byte_ofs": 174937
 	},
 	{
 		"link": "6-monitoring/13-hot-edit.md",
-		"char_ofs": 102817,
-		"byte_ofs": 179407
+		"char_ofs": 102812,
+		"byte_ofs": 179372
 	},
 	{
 		"link": "6-monitoring/14-system-spec.md",
-		"char_ofs": 104525,
-		"byte_ofs": 182392
+		"char_ofs": 104520,
+		"byte_ofs": 182357
 	},
 	{
 		"link": "6-monitoring/15-system-digonosis.md",
-		"char_ofs": 105355,
-		"byte_ofs": 183969
+		"char_ofs": 105350,
+		"byte_ofs": 183934
 	},
 	{
 		"link": "6-monitoring/16-task.md",
-		"char_ofs": 106962,
-		"byte_ofs": 186401
+		"char_ofs": 106957,
+		"byte_ofs": 186366
 	},
 	{
 		"link": "6-monitoring/17-sensor-sync.md",
-		"char_ofs": 107855,
-		"byte_ofs": 187634
+		"char_ofs": 107850,
+		"byte_ofs": 187599
 	},
 	{
 		"link": "6-monitoring/18-program-reservation.md",
-		"char_ofs": 109154,
-		"byte_ofs": 189626
+		"char_ofs": 109149,
+		"byte_ofs": 189591
 	},
 	{
 		"link": "6-monitoring/19-multi-task.md",
-		"char_ofs": 110771,
-		"byte_ofs": 192246
+		"char_ofs": 110766,
+		"byte_ofs": 192211
 	},
 	{
 		"link": "6-monitoring/20-memory-variables.md",
-		"char_ofs": 111016,
-		"byte_ofs": 192701
+		"char_ofs": 111011,
+		"byte_ofs": 192666
 	},
 	{
 		"link": "6-monitoring/21-coldet-monitoring.md",
-		"char_ofs": 111151,
-		"byte_ofs": 192946
+		"char_ofs": 111146,
+		"byte_ofs": 192911
 	},
 	{
 		"link": "6-monitoring/22-EC-device-info.md",
-		"char_ofs": 111659,
-		"byte_ofs": 193685
+		"char_ofs": 111654,
+		"byte_ofs": 193650
 	},
 	{
 		"link": "6-monitoring/23-hw-monitoring.md",
-		"char_ofs": 112299,
-		"byte_ofs": 194885
+		"char_ofs": 112294,
+		"byte_ofs": 194850
 	},
 	{
 		"link": "6-monitoring/60-spot.md",
-		"char_ofs": 112573,
-		"byte_ofs": 195457
+		"char_ofs": 112568,
+		"byte_ofs": 195422
 	},
 	{
 		"link": "6-monitoring/61-tool-change.md",
-		"char_ofs": 112878,
-		"byte_ofs": 195931
+		"char_ofs": 112873,
+		"byte_ofs": 195896
 	},
 	{
 		"link": "6-monitoring/80-arc.md",
-		"char_ofs": 113101,
-		"byte_ofs": 196342
+		"char_ofs": 113096,
+		"byte_ofs": 196307
 	},
 	{
 		"link": "7-setting/README.md",
-		"char_ofs": 113242,
-		"byte_ofs": 196568
+		"char_ofs": 113237,
+		"byte_ofs": 196533
 	},
 	{
 		"link": "7-setting/1-setting-menu.md",
-		"char_ofs": 113302,
-		"byte_ofs": 196711
+		"char_ofs": 113297,
+		"byte_ofs": 196676
 	},
 	{
 		"link": "7-setting/2-user-environment.md",
-		"char_ofs": 113948,
-		"byte_ofs": 198068
+		"char_ofs": 113943,
+		"byte_ofs": 198033
 	},
 	{
 		"link": "7-setting/3-control-parameter/README.md",
-		"char_ofs": 116125,
-		"byte_ofs": 202497
+		"char_ofs": 116120,
+		"byte_ofs": 202462
 	},
 	{
 		"link": "7-setting/3-control-parameter/1-control-env-setting.md",
-		"char_ofs": 116345,
-		"byte_ofs": 202946
+		"char_ofs": 116340,
+		"byte_ofs": 202911
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/README.md",
-		"char_ofs": 117031,
-		"byte_ofs": 204417
+		"char_ofs": 117026,
+		"byte_ofs": 204382
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/1-input-signal-prop.md",
-		"char_ofs": 117219,
-		"byte_ofs": 204764
+		"char_ofs": 117214,
+		"byte_ofs": 204729
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/2-output-signal-prop.md",
-		"char_ofs": 117514,
-		"byte_ofs": 205327
+		"char_ofs": 117509,
+		"byte_ofs": 205292
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/3-io-signal-set-info.md",
-		"char_ofs": 117817,
-		"byte_ofs": 205906
+		"char_ofs": 117812,
+		"byte_ofs": 205871
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/4-input-signal-assign.md",
-		"char_ofs": 118410,
-		"byte_ofs": 206999
+		"char_ofs": 118405,
+		"byte_ofs": 206964
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/5-input-signal-set-info.md",
-		"char_ofs": 119002,
-		"byte_ofs": 208215
+		"char_ofs": 118997,
+		"byte_ofs": 208180
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/6-output-signal-assign.md",
-		"char_ofs": 121514,
-		"byte_ofs": 213522
+		"char_ofs": 121509,
+		"byte_ofs": 213487
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/7-output-signal-set-info.md",
-		"char_ofs": 122156,
-		"byte_ofs": 214847
+		"char_ofs": 122151,
+		"byte_ofs": 214812
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/8-key-signal-output.md",
-		"char_ofs": 125059,
-		"byte_ofs": 221305
+		"char_ofs": 125054,
+		"byte_ofs": 221270
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/9-dio-block-assign.md",
-		"char_ofs": 125690,
-		"byte_ofs": 222432
+		"char_ofs": 125685,
+		"byte_ofs": 222397
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/10-multi-signal-output.md",
-		"char_ofs": 126045,
-		"byte_ofs": 223046
+		"char_ofs": 126040,
+		"byte_ofs": 223011
 	},
 	{
 		"link": "7-setting/3-control-parameter/2-io-signal-setting/11-multi-signal-input.md",
-		"char_ofs": 128053,
-		"byte_ofs": 226267
+		"char_ofs": 128048,
+		"byte_ofs": 226232
 	},
 	{
 		"link": "7-setting/3-control-parameter/3-serial-port.md",
-		"char_ofs": 130086,
-		"byte_ofs": 229527
+		"char_ofs": 130081,
+		"byte_ofs": 229492
 	},
 	{
 		"link": "7-setting/3-control-parameter/4-robot-ready-cond.md",
-		"char_ofs": 131515,
-		"byte_ofs": 231716
+		"char_ofs": 131510,
+		"byte_ofs": 231681
 	},
 	{
 		"link": "7-setting/3-control-parameter/5-home-position.md",
-		"char_ofs": 131789,
-		"byte_ofs": 232207
+		"char_ofs": 131784,
+		"byte_ofs": 232172
 	},
 	{
 		"link": "7-setting/3-control-parameter/6-cordsys-reg/README.md",
-		"char_ofs": 133407,
-		"byte_ofs": 234723
+		"char_ofs": 133402,
+		"byte_ofs": 234688
 	},
 	{
 		"link": "7-setting/3-control-parameter/6-cordsys-reg/1-user-crdsys.md",
-		"char_ofs": 133587,
-		"byte_ofs": 235062
+		"char_ofs": 133582,
+		"byte_ofs": 235027
 	},
 	{
 		"link": "7-setting/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md",
-		"char_ofs": 136123,
-		"byte_ofs": 239522
+		"char_ofs": 136118,
+		"byte_ofs": 239487
 	},
 	{
 		"link": "7-setting/3-control-parameter/7-prog-reservation.md",
-		"char_ofs": 138347,
-		"byte_ofs": 243666
+		"char_ofs": 138342,
+		"byte_ofs": 243631
 	},
 	{
 		"link": "7-setting/3-control-parameter/8-auto-backup-restore.md",
-		"char_ofs": 138434,
-		"byte_ofs": 243870
+		"char_ofs": 138429,
+		"byte_ofs": 243835
 	},
 	{
 		"link": "7-setting/3-control-parameter/9-industrial-comm/README.md",
-		"char_ofs": 138527,
-		"byte_ofs": 244088
+		"char_ofs": 138522,
+		"byte_ofs": 244053
 	},
 	{
 		"link": "7-setting/3-control-parameter/9-industrial-comm/1-firmware-set.md",
-		"char_ofs": 138791,
-		"byte_ofs": 244643
+		"char_ofs": 138786,
+		"byte_ofs": 244608
 	},
 	{
 		"link": "7-setting/3-control-parameter/9-industrial-comm/2-industrial-comm-set.md",
-		"char_ofs": 139350,
-		"byte_ofs": 245681
+		"char_ofs": 139345,
+		"byte_ofs": 245646
 	},
 	{
 		"link": "7-setting/3-control-parameter/9-industrial-comm/3-monitoring.md",
-		"char_ofs": 139569,
-		"byte_ofs": 246087
+		"char_ofs": 139564,
+		"byte_ofs": 246052
 	},
 	{
 		"link": "7-setting/3-control-parameter/10-network-setting.md",
-		"char_ofs": 139911,
-		"byte_ofs": 246740
+		"char_ofs": 139906,
+		"byte_ofs": 246705
 	},
 	{
 		"link": "7-setting/4-robot-parameter/README.md",
-		"char_ofs": 142081,
-		"byte_ofs": 250013
+		"char_ofs": 142076,
+		"byte_ofs": 249978
 	},
 	{
 		"link": "7-setting/4-robot-parameter/1-tool-data/README.md",
-		"char_ofs": 142280,
-		"byte_ofs": 250423
+		"char_ofs": 142275,
+		"byte_ofs": 250388
 	},
 	{
 		"link": "7-setting/4-robot-parameter/1-tool-data/1-tool-data-set.md",
-		"char_ofs": 143586,
-		"byte_ofs": 253105
+		"char_ofs": 143581,
+		"byte_ofs": 253070
 	},
 	{
 		"link": "7-setting/4-robot-parameter/1-tool-data/2-tool-data-set-info.md",
-		"char_ofs": 146489,
-		"byte_ofs": 257593
+		"char_ofs": 146484,
+		"byte_ofs": 257558
+	},
+	{
+		"link": "7-setting/4-robot-parameter/1-tool-data/3-tool-data-high-load_mode.md",
+		"char_ofs": 147241,
+		"byte_ofs": 258908
 	},
 	{
 		"link": "7-setting/4-robot-parameter/2-axis-origin.md",
-		"char_ofs": 147246,
-		"byte_ofs": 258943
+		"char_ofs": 148369,
+		"byte_ofs": 261078
 	},
 	{
 		"link": "7-setting/4-robot-parameter/3-soft-limit.md",
-		"char_ofs": 148789,
-		"byte_ofs": 261362
+		"char_ofs": 149912,
+		"byte_ofs": 263497
 	},
 	{
 		"link": "7-setting/4-robot-parameter/4-encoder-offset/README.md",
-		"char_ofs": 149806,
-		"byte_ofs": 262818
+		"char_ofs": 150929,
+		"byte_ofs": 264953
 	},
 	{
 		"link": "7-setting/4-robot-parameter/4-encoder-offset/1-encoder-offset-utilization.md",
-		"char_ofs": 151099,
-		"byte_ofs": 264807
+		"char_ofs": 152222,
+		"byte_ofs": 266942
 	},
 	{
 		"link": "7-setting/4-robot-parameter/5-b-axis-deadzone.md",
-		"char_ofs": 151682,
-		"byte_ofs": 265987
+		"char_ofs": 152805,
+		"byte_ofs": 268122
 	},
 	{
 		"link": "7-setting/4-robot-parameter/6-accuracy.md",
-		"char_ofs": 152108,
-		"byte_ofs": 266873
+		"char_ofs": 153231,
+		"byte_ofs": 269008
 	},
 	{
 		"link": "7-setting/4-robot-parameter/7-axis-add-weight/README.md",
-		"char_ofs": 154004,
-		"byte_ofs": 269697
+		"char_ofs": 155127,
+		"byte_ofs": 271832
 	},
 	{
 		"link": "7-setting/4-robot-parameter/7-axis-add-weight/1-crdsys-origin-of-each-axis.md",
-		"char_ofs": 154380,
-		"byte_ofs": 270444
+		"char_ofs": 155503,
+		"byte_ofs": 272579
 	},
 	{
 		"link": "7-setting/4-robot-parameter/8-collision-detection/README.md",
-		"char_ofs": 154535,
-		"byte_ofs": 270744
+		"char_ofs": 155658,
+		"byte_ofs": 272879
 	},
 	{
 		"link": "7-setting/4-robot-parameter/8-collision-detection/1-coldet-sensitivity-setting.md",
-		"char_ofs": 156780,
-		"byte_ofs": 274718
+		"char_ofs": 157903,
+		"byte_ofs": 276853
 	},
 	{
 		"link": "7-setting/4-robot-parameter/9-jog-inch-level/README.md",
-		"char_ofs": 158272,
-		"byte_ofs": 276790
+		"char_ofs": 159395,
+		"byte_ofs": 278925
 	},
 	{
 		"link": "7-setting/4-robot-parameter/9-jog-inch-level/1-jog-inch-main-funcs.md",
-		"char_ofs": 158508,
-		"byte_ofs": 277251
+		"char_ofs": 159631,
+		"byte_ofs": 279386
 	},
 	{
 		"link": "7-setting/4-robot-parameter/9-jog-inch-level/2-inch-jog-operation.md",
-		"char_ofs": 158800,
-		"byte_ofs": 277859
+		"char_ofs": 159923,
+		"byte_ofs": 279994
 	},
 	{
 		"link": "7-setting/4-robot-parameter/12-system-maintenance/README.md",
-		"char_ofs": 159247,
-		"byte_ofs": 278757
+		"char_ofs": 160370,
+		"byte_ofs": 280892
 	},
 	{
 		"link": "7-setting/5-application-parameter.md",
-		"char_ofs": 160231,
-		"byte_ofs": 280770
+		"char_ofs": 161354,
+		"byte_ofs": 282905
 	},
 	{
 		"link": "7-setting/6-initialization/README.md",
-		"char_ofs": 160480,
-		"byte_ofs": 281260
+		"char_ofs": 161603,
+		"byte_ofs": 283395
 	},
 	{
 		"link": "7-setting/6-initialization/1-system-format.md",
-		"char_ofs": 161166,
-		"byte_ofs": 282624
+		"char_ofs": 162289,
+		"byte_ofs": 284759
 	},
 	{
 		"link": "7-setting/6-initialization/2-robot-type-sel.md",
-		"char_ofs": 161586,
-		"byte_ofs": 283405
+		"char_ofs": 162709,
+		"byte_ofs": 285540
 	},
 	{
 		"link": "7-setting/6-initialization/3-usage-set/README.md",
-		"char_ofs": 163628,
-		"byte_ofs": 287544
+		"char_ofs": 164751,
+		"byte_ofs": 289679
 	},
 	{
 		"link": "7-setting/6-initialization/3-usage-set/1-spot-welding.md",
-		"char_ofs": 163841,
-		"byte_ofs": 288014
+		"char_ofs": 164964,
+		"byte_ofs": 290149
 	},
 	{
 		"link": "7-setting/6-initialization/3-usage-set/2-arc-welding.md",
-		"char_ofs": 164088,
-		"byte_ofs": 288520
+		"char_ofs": 165211,
+		"byte_ofs": 290655
 	},
 	{
 		"link": "7-setting/6-initialization/4-serial-encoder-reset.md",
-		"char_ofs": 164533,
-		"byte_ofs": 289370
+		"char_ofs": 165656,
+		"byte_ofs": 291505
 	},
 	{
 		"link": "7-setting/6-initialization/5-add-axis-param.md",
-		"char_ofs": 166270,
-		"byte_ofs": 292370
+		"char_ofs": 167393,
+		"byte_ofs": 294505
 	},
 	{
 		"link": "7-setting/6-initialization/6-mechannism-set.md",
-		"char_ofs": 169356,
-		"byte_ofs": 297205
+		"char_ofs": 170479,
+		"byte_ofs": 299340
 	},
 	{
 		"link": "7-setting/7-auto-calibration/README.md",
-		"char_ofs": 171158,
-		"byte_ofs": 300882
+		"char_ofs": 172281,
+		"byte_ofs": 303017
 	},
 	{
 		"link": "7-setting/7-auto-calibration/1-axis-origin-tool-length-optimization.md",
-		"char_ofs": 171464,
-		"byte_ofs": 301541
+		"char_ofs": 172587,
+		"byte_ofs": 303676
 	},
 	{
 		"link": "7-setting/7-auto-calibration/2-positioner-calib.md",
-		"char_ofs": 174710,
-		"byte_ofs": 307233
+		"char_ofs": 175833,
+		"byte_ofs": 309368
 	},
 	{
 		"link": "7-setting/7-auto-calibration/3-load-estimation.md",
-		"char_ofs": 175504,
-		"byte_ofs": 308949
+		"char_ofs": 176627,
+		"byte_ofs": 311084
 	},
 	{
 		"link": "7-setting/7-auto-calibration/4-base-axis-calibration/README.md",
-		"char_ofs": 177328,
-		"byte_ofs": 312934
+		"char_ofs": 178451,
+		"byte_ofs": 315069
 	},
 	{
 		"link": "7-setting/7-auto-calibration/4-base-axis-calibration/1-base-axis-initial-set.md",
-		"char_ofs": 177847,
-		"byte_ofs": 314135
+		"char_ofs": 178970,
+		"byte_ofs": 316270
 	},
 	{
 		"link": "7-setting/7-auto-calibration/4-base-axis-calibration/2-base-axis-calib-prog-teach.md",
-		"char_ofs": 178463,
-		"byte_ofs": 315445
+		"char_ofs": 179586,
+		"byte_ofs": 317580
 	},
 	{
 		"link": "7-setting/7-auto-calibration/4-base-axis-calibration/3-base-axis-calib-exec.md",
-		"char_ofs": 178892,
-		"byte_ofs": 316349
+		"char_ofs": 180015,
+		"byte_ofs": 318484
 	},
 	{
 		"link": "7-setting/7-auto-calibration/4-base-axis-calibration/4-operation-after-base-calib.md",
-		"char_ofs": 179129,
-		"byte_ofs": 316803
+		"char_ofs": 180252,
+		"byte_ofs": 318938
 	},
 	{
 		"link": "7-setting/7-auto-calibration/5-gravity-direction-auto-set.md",
-		"char_ofs": 179629,
-		"byte_ofs": 317898
+		"char_ofs": 180752,
+		"byte_ofs": 320033
 	},
 	{
 		"link": "7-setting/7-auto-calibration/6-robot-tool-calibration.md",
-		"char_ofs": 180217,
-		"byte_ofs": 319119
+		"char_ofs": 181340,
+		"byte_ofs": 321254
 	},
 	{
 		"link": "8-r-code/README.md",
-		"char_ofs": 181388,
-		"byte_ofs": 321349
+		"char_ofs": 182511,
+		"byte_ofs": 323484
 	},
 	{
 		"link": "8-r-code/1-use-r-code.md",
-		"char_ofs": 181559,
-		"byte_ofs": 321723
+		"char_ofs": 182682,
+		"byte_ofs": 323858
 	},
 	{
 		"link": "8-r-code/2-r0.md",
-		"char_ofs": 181852,
-		"byte_ofs": 322275
+		"char_ofs": 182975,
+		"byte_ofs": 324410
 	},
 	{
 		"link": "8-r-code/3-r115.md",
-		"char_ofs": 182184,
-		"byte_ofs": 322898
+		"char_ofs": 183307,
+		"byte_ofs": 325033
 	},
 	{
 		"link": "8-r-code/4-r117.md",
-		"char_ofs": 182718,
-		"byte_ofs": 323990
+		"char_ofs": 183841,
+		"byte_ofs": 326125
 	},
 	{
 		"link": "8-r-code/5-r210.md",
-		"char_ofs": 183228,
-		"byte_ofs": 324998
+		"char_ofs": 184351,
+		"byte_ofs": 327133
 	},
 	{
 		"link": "8-r-code/6-r211.md",
-		"char_ofs": 184004,
-		"byte_ofs": 326476
+		"char_ofs": 185127,
+		"byte_ofs": 328611
 	},
 	{
 		"link": "8-r-code/7-r212.md",
-		"char_ofs": 184617,
-		"byte_ofs": 327625
+		"char_ofs": 185740,
+		"byte_ofs": 329760
 	},
 	{
 		"link": "8-r-code/8-r213.md",
-		"char_ofs": 185260,
-		"byte_ofs": 328799
+		"char_ofs": 186383,
+		"byte_ofs": 330934
 	},
 	{
 		"link": "8-r-code/9-r214.md",
-		"char_ofs": 185914,
-		"byte_ofs": 330000
+		"char_ofs": 187037,
+		"byte_ofs": 332135
 	},
 	{
 		"link": "8-r-code/10-r215.md",
-		"char_ofs": 186854,
-		"byte_ofs": 331839
+		"char_ofs": 187977,
+		"byte_ofs": 333974
 	},
 	{
 		"link": "8-r-code/11-r220.md",
-		"char_ofs": 187306,
-		"byte_ofs": 332640
+		"char_ofs": 188429,
+		"byte_ofs": 334775
 	},
 	{
 		"link": "8-r-code/12-r314.md",
-		"char_ofs": 187816,
-		"byte_ofs": 333573
+		"char_ofs": 188939,
+		"byte_ofs": 335708
 	},
 	{
 		"link": "8-r-code/13-r358.md",
-		"char_ofs": 188374,
-		"byte_ofs": 334667
+		"char_ofs": 189497,
+		"byte_ofs": 336802
 	},
 	{
 		"link": "8-r-code/14-r359.md",
-		"char_ofs": 189547,
-		"byte_ofs": 336984
+		"char_ofs": 190670,
+		"byte_ofs": 339119
 	},
 	{
 		"link": "8-r-code/15-r361.md",
-		"char_ofs": 190331,
-		"byte_ofs": 338530
+		"char_ofs": 191454,
+		"byte_ofs": 340665
 	},
 	{
 		"link": "9-property/README.md",
-		"char_ofs": 191090,
-		"byte_ofs": 339985
+		"char_ofs": 192213,
+		"byte_ofs": 342120
 	},
 	{
 		"link": "9-property/1-use-property.md",
-		"char_ofs": 191239,
-		"byte_ofs": 340325
+		"char_ofs": 192362,
+		"byte_ofs": 342460
 	},
 	{
 		"link": "9-property/2-move-step-position/README.md",
-		"char_ofs": 194573,
-		"byte_ofs": 345399
+		"char_ofs": 195696,
+		"byte_ofs": 347534
 	},
 	{
 		"link": "9-property/2-move-step-position/1-hidden-pose-move.md",
-		"char_ofs": 194636,
-		"byte_ofs": 345543
+		"char_ofs": 195759,
+		"byte_ofs": 347678
 	},
 	{
 		"link": "9-property/2-move-step-position/2-pose-rec-move.md",
-		"char_ofs": 196669,
-		"byte_ofs": 348727
+		"char_ofs": 197792,
+		"byte_ofs": 350862
 	},
 	{
 		"link": "9-property/3-spot-welding-func.md",
-		"char_ofs": 198960,
-		"byte_ofs": 352223
+		"char_ofs": 200083,
+		"byte_ofs": 354358
 	},
 	{
 		"link": "10-robot-language.md",
-		"char_ofs": 199398,
-		"byte_ofs": 353033
+		"char_ofs": 200521,
+		"byte_ofs": 355168
 	},
 	{
 		"link": "appendices/README.md",
-		"char_ofs": 199520,
-		"byte_ofs": 353227
+		"char_ofs": 200643,
+		"byte_ofs": 355362
 	},
 	{
 		"link": "appendices/rules-occupational-safety.md",
-		"char_ofs": 199531,
-		"byte_ofs": 353250
+		"char_ofs": 200654,
+		"byte_ofs": 355385
 	},
 	{
 		"link": "quality-assurance.md",
-		"char_ofs": 199751,
-		"byte_ofs": 353648
+		"char_ofs": 200874,
+		"byte_ofs": 355783
 	}
 ]

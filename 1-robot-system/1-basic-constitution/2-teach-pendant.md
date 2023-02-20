@@ -62,7 +62,7 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
       </td>
       <td style="text-align:left">USB 연결 포트</td>
       <td style="text-align:left">이동식 저장 장치 등 USB 통신으로 접속 가능한 장치를 연결합니다.<br>
-        주로 대용량 USB에 사용되는 exFAT포맷은 지원하지 않으므로 유의하십시오.
+        FAT32 포맷을 사용 바랍니다. exFAT, NTFS 포맷은 지원하지 않으므로 유의하십시오.
       </td>
     </tr>
     <tr>
