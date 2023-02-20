@@ -12,12 +12,11 @@
 
 
 로봇에 현재 적용 된 툴의 부하에 따른 고부하 모드 적용 상태는 아리의 그림 에서와 같이 확인 할 수 있습니다. 
-
 ![그림 64 툴 부하에 따른 고부하 모드 적용 상태 확인](../../../_assets/home_tool_no.png)
 
-|(../../../_assets/normal_mode_tool.png) | 일반 모드 툴 (일반 폰트)
-|(../../../_assets/high_load_exception_mode_tool.png)| 고부하 모드 (진한 폰트)
-|(../../../_assets/high_load_exception_mode_tool.png)| 고부하 예외모드 (붉은 색)
+![일반 모드 툴 (일반 폰트)](../../../_assets/normal_mode_tool.png)  
+![고부하 모드 (진한 폰트)](../../../_assets/high_load_exception_mode_tool.png)
+![고부하 예외모드 (붉은 색)](../../../_assets/high_load_exception_mode_tool.png)
 
 {% hint style="info" %}
 고부하 모드 허용 비율은 로봇 모델과 제어기 소프트웨어 버전에 따라 변경될 수 있습니다.
