@@ -289,9 +289,9 @@ TP600은 Hi6 제어기 전용으로 개발된 모델로 큰 화면의 터치 스
         <img src="../../_assets/c9.png" alt/>
       </td>
       <td style="text-align:left">USB 연결 포트</td>
-      <td style="text-align:left">이동식 저장 장치 등 USB
-        통신으로 접속 가능한
-        장치를 연결합니다.</td>
+      <td style="text-align:left">이동식 저장 장치 등 USB 통신으로 접속 가능한 장치를 연결합니다.<br>
+      FAT32나 NTFS 포맷을 사용 바랍니다. exFAT 포맷은 지원하지 않으므로 유의하십시오.
+      </td>
     </tr>
   </tbody>
 </table>
