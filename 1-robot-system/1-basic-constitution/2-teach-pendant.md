@@ -55,7 +55,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
       </td>
       <td style="text-align:left">USB connection port</td>
       <td style="text-align:left">Can be used to connect a device that can be accessed by USB communication such as a transportable storage device<br>
-      Note that the exFAT format often used for large-storage USBs is not supported.
+      Please use the FAT32 format. Note that exFAT, NTFS formats are not supported.
       </td>
     </tr>
     <tr>
