@@ -166,6 +166,7 @@
     * [7.4.1 툴 데이터](7-setting/4-robot-parameter/1-tool-data/README.md)
       * [7.4.1.1 툴 데이터 설정](7-setting/4-robot-parameter/1-tool-data/1-tool-data-set.md)
       * [7.4.1.2 툴 데이터 설정 정보](7-setting/4-robot-parameter/1-tool-data/2-tool-data-set-info.md)
+      * [7.4.1.3 고부하 모드](7-setting/4-robot-parameter/1-tool-data/3-tool-data-high-load_mode.md)
     * [7.4.2 축 원점](7-setting/4-robot-parameter/2-axis-origin.md)
     * [7.4.3 소프트 리밋](7-setting/4-robot-parameter/3-soft-limit.md)
     * [7.4.4 엔코더 옵셋](7-setting/4-robot-parameter/4-encoder-offset/README.md)
