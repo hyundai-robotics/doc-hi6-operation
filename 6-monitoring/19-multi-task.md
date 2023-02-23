@@ -8,5 +8,5 @@
 <br>
 
 {% hint style="info" %}
- 상세 내용은 "멀티태스크 기능설명서"를 참조하여 주십시오.
+ 상세 내용은 "[멀티태스크 기능설명서](https://hrbook-hrc.web.app/#/view/doc-multi-task/korean/README)"를 참조하여 주십시오.
 {% endhint %}
