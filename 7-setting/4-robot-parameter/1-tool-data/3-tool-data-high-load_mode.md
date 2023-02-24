@@ -16,9 +16,9 @@
 ![그림 64 툴 부하에 따른 고부하 모드 적용 상태 확인](../../../_assets/home_tool_no.png)
 
 
-![일반 모드 툴 (일반 폰트)](../../../_assets/tp630/nonormal_mode_tool.png)  : 일반 폰트
+![일반 모드 툴 (일반 폰트)](../../../_assets/tp630/normal_mode_tool.png)  : 일반 폰트
 
-![고부하 모드 (진한 폰트)](../../../_assets/tp630/hihigh_load_mode_tool.png) : 굵은 폰트
+![고부하 모드 (진한 폰트)](../../../_assets/tp630/high_load_mode_tool.png) : 굵은 폰트
 
 ![고부하 예외모드 (붉은 색)](../../../_assets/tp630/high_load_exception_mode_tool.png) : 붉은 색 폰트
 
