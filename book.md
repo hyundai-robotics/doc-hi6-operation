@@ -3542,13 +3542,14 @@ Predefined-variables have the following differences and constraints compared to 
 3) You can make a variable a predefined only in the Global Variables panel U/I. There are no robot language statements that make the variable a predefined.
 4) You cannot assign another value to an predefined-variable. When `weld_points` is a predef. 2-dimensional array;
 
-    - global weld_points : ignored.
-    - global weld_points=0 : 'Cannot assign' error occurred
-    - weld_points=0 : 'Cannot assign' error occurred
-    - weld_points[2]=Array[30]: New value can be assigned to an element.
-    - weld_points[2][1]="light": New value can be assigned to an element.
-    - weld_points[2][1].j2=90.5: New value can be assigned to an element.
-
+```python
+global weld_points  # ignored.
+global weld_points=0  # 'Cannot assign' error occurred
+weld_points=0  # 'Cannot assign' error occurred
+weld_points[2]=Array[30]  # New value can be assigned to an element.
+weld_points[2][1]="light"  # New value can be assigned to an element.
+weld_points[2][1].j2=90.5  # New value can be assigned to an element.
+```
 
 <br>
 
@@ -3560,7 +3561,7 @@ When you open the folder `MAIN/project/vars/predef/` in File-manager, a file nam
 
 Copy this file via USB memory or FTP and open it on your PC. The .csv file is a very simple text format standard that expresses comma-separated values.
 
-Refer to: https://en.wikipedia.org/wiki/Comma-separated_values
+Refer to: [Wikipedia: Comma-separated values](https://en.wikipedia.org/wiki/Comma-separated_values)
 
 The .csv file represents a single two-dimensional table. The columns are separated by commas and rows are spearated by line-feed.
 
