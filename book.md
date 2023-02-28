@@ -3337,12 +3337,14 @@ F4: 상위레벨 버튼을 클릭하거나 ESC키를 누르면 다시 상위레�
 3) 전역변수창 U/I로만 변수를 기정의로 만들 수 있습니다. 변수를 기정의로 만드는 로봇언어 명령문은 없습니다.
 4) 대입문으로 다른 값을 대입할 수 없습니다. `weld_points`가 predef 2차원 배열일 때;
 
-    - global weld_points : 무시됨.
-    - global weld_points=0 : 대입 불가 에러 발생
-    - weld_points=0 : 대입 불가 에러 발생
-    - weld_points[2]=Array[30] : 요소에 새로운 값 대입 가능
-    - weld_points[2][1]="light" : 요소에 새로운 값 대입 가능
-    - weld_points[2][1].j2=90.5 : 요소에 새로운 값 대입 가능
+```python
+global weld_points  # 무시됨.
+global weld_points=0  # 대입 불가 에러 발생
+weld_points=0  # 대입 불가 에러 발생
+weld_points[2]=Array[30]  # 요소에 새로운 값 대입 가능
+weld_points[2][1]="light"  # 요소에 새로운 값 대입 가능
+weld_points[2][1].j2=90.5  # 요소에 새로운 값 대입 가능
+```
 
 <br>
 
@@ -3354,7 +3356,7 @@ F4: 상위레벨 버튼을 클릭하거나 ESC키를 누르면 다시 상위레�
 
 이 파일을 USB 메모리나 FTP로 복사하여 PC에서 열어봅시다. .csv 파일은 Comma-Separated Values 즉, 쉼표로 구분된 값들을 표현하는 아주 단순한 표준 텍스트 포맷입니다.
 
-참고 : https://ko.wikipedia.org/wiki/CSV_(%ED%8C%8C%EC%9D%BC_%ED%98%95%EC%8B%9D)
+참고 : [위키백과: CSV (파일 형식)](https://ko.wikipedia.org/wiki/CSV_(%ED%8C%8C%EC%9D%BC_%ED%98%95%EC%8B%9D))
 
 .csv 파일은 하나의 2차원 표를 표현하는데, 열은 쉼표로 구분하고 행은 개행으로 구분합니다.
 
