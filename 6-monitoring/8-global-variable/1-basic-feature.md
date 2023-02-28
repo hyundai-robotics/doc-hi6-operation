@@ -1,22 +1,4 @@
-﻿# 6.8 Global Variables
-
-Displays a list of all global variables. You can also create/delete variables and edit types and values.
-
-
-## Open global variable panel
-
-1. Split the screen and press the [Select] button at the bottom left.
-
-![](../_assets/tp630/panel-split.png)
-&nbsp;
-![](../_assets/tp630/panel-sel.png)
-
-2. In the panel selection window, touch \[global variable\]. The `global variables` panel opens.
-
-![](../_assets/tp630/pane-gvar.png)
-
-
-![](../_assets/tp630/panel-gvar/panel-gvar0.png)
+﻿# 6.8.1 Basic features
 
 
 ## Finding a variable
@@ -128,5 +110,3 @@ Because the array displays only 100 elements at the same time, by default you ca
 Select the `value` column of the object variable and press the ENTER key or click the [F5: sub.level] button to expand the object to a lower level and view the property values. The operation method is similar to the array variable. However, the Startup Index editbox is not used.
 
 ![](../_assets/tp630/panel-gvar/gv-obj2.png)
-
-
