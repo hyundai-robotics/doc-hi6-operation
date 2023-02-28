@@ -3187,15 +3187,15 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
 
-![](../_assets/tp630/panel-split.png)
+![](../../_assets/tp630/panel-split.png)
 &nbsp;
-![](../_assets/tp630/panel-sel.png)
+![](../../_assets/tp630/panel-sel.png)
 
 2. 패널 선택창에서 \[전역변수\]를 터치하십시오. 전역변수 창이 열립니다.
 
-![](../_assets/tp630/pane-gvar.png)
+![](../../_assets/tp630/pane-gvar.png)
 
-![](../_assets/tp630/panel-gvar/panel-gvar0.png)
+![](../../_assets/tp630/panel-gvar/panel-gvar0.png)
 # 6.8.1 기본 기능
 
 ## 변수 찾기
