@@ -3535,9 +3535,6 @@ By specifying the variable as fixed, you can prevents this mistake.
 
 ![](../../_assets/tp630/panel-gvar/fixed-var.png)
 
-전역변수 창의 최상위 레벨에서 배열 변수를 선택하고 [F4: 고정 토글]을 누르면, 타입이 `array`에서 `F.array` (fixed-array)로 변경됩니다.
-고정 변수로 지정되면, 대입문으로 다른 값을 대입할 수 없습니다. `weld_points`가 fixed 2차원 배열일 때, 아래 각 대입문의 결과는 주석과 같습니다.
-
 If you select an array variable at the top level of the Global Variables window and press [F4: toggle fixed], the type changes from 'array' to 'F.array' (fixed-array).  
 If specified as a fixed variable, no other value can be assigned. When `weld_points` is a fixed 2-dimensional array, the result of each assignment statement below is the same as the comment.
 
@@ -3551,12 +3548,8 @@ weld_points[2][1]="light"  # new value can be assigned to an element
 weld_points[2][1].j2=90.5  # new value can be assigned to an property
 ```
 
-[F4: 고정 토글]을 한번 더 수행하면 고정이 해제되면서 `F.array`가 다시 `array`로 원상복구됩니다.
-
 If [F4: toggle fixed] is performed again, fixed will be released and `F.array` will be restored to `array`.
 # 6.8.3 Variable files
-
-변수 값들은 전원을 꺼도 보존되어야 하므로 파일로도 저장되는데, 전역변수는 종류에 따라 아래의 2가지 형태로 저장됩니다.
 
 Variable values are also saved as files because they must be preserved even when powered off, and global variables are stored in two forms, depending on the type:
 

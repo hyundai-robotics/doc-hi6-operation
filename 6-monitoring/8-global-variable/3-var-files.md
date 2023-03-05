@@ -1,7 +1,5 @@
 ﻿# 6.8.3 Variable files
 
-변수 값들은 전원을 꺼도 보존되어야 하므로 파일로도 저장되는데, 전역변수는 종류에 따라 아래의 2가지 형태로 저장됩니다.
-
 Variable values are also saved as files because they must be preserved even when powered off, and global variables are stored in two forms, depending on the type:
 
 <table>
