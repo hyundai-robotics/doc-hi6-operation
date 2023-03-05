@@ -3512,52 +3512,128 @@ Because the array displays only 100 elements at the same time, by default you ca
 Select the `value` column of the object variable and press the ENTER key or click the [F5: sub.level] button to expand the object to a lower level and view the property values. The operation method is similar to the array variable. However, the Startup Index editbox is not used.
 
 ![](../../_assets/tp630/panel-gvar/gv-obj2.png)
-# 6.8.2 Predefined-variable feature
+# 6.8.2 Array and object
 
-If you need to manage a fixed large amount of poses or shift data by editing it in a separate text file, it is efficient to create an predefined-variable.
+## Creating an array
 
-## Making a predefined-variable
+We will now use an example of generating a 5x200 two-dimensional pose array variable named `pos`.
+Create a variable named `pos` using the method described above.
 
-Let's take an example of a 100x100 global two-dimensional array poses named `weld_points`.
+![](../../_assets/tp630/panel-gvar/gv-new-arr1.png)
 
-Select `weld_points` and click the [F3: Predefined] button. If you select `toggle predef` from the pop-up menu, the type is changed from `array` to `pd.array` (predef.array).
 
-![](../../_assets/tp630/panel-gvar/predef0.png)
+Select the `type` column and press the ENTER key. The Create Variable dialog box appears as shown below.
 
-If you select `toggle predef` once more, `pd.array` will be restored to `array` again.
+![](../../_assets/tp630/panel-gvar/gv-new-arr2.png)
 
+Select `Pose` in the Type list. If you enter 5,200 for the number of elements and press the OK button, the type of pos changes to the array of Pose[5][200].
+
+![](../../_assets/tp630/panel-gvar/gv-new-arr3.png)
 
 {% hint style="warning" %}
 \[Warning\] Be aware that defining an array that is too large may take longer to save or load and may fail to save automatically in the event of a power failure.
 {% endhint %}
 
+
+## Viewing and changing the array element value
+
+The value of the array variable is displayed only as [], and the values of the elements are not displayed.
+Select the `value` column and press the ENTER key or click the [F5: sub.level] button to expand the array to a lower level and view the element values.
+
+![](../../_assets/tp630/panel-gvar/gv-arr-level1.png)
+
+You can also change the value or type for array elements in the way described above.  
+
+In a 2-dimensional array `pos`, `pos[0]` ~ `pos[4]` are also arrays. Press ENTER or [F5] to continue down to the lower level. The level and index of the array currently displayed can be found in the global variables panel's title bar.
+
+Click the [F4: up.level] button or press the ESC key to go back up to the higher level.
+
+![](../../_assets/tp630/panel-gvar/gv-arr-level2.png)
+
+Because the array displays only 100 elements at the same time, by default you can only see the range of [0] to [99] indexes. If you change the value of the Start Index editbox in the upper left corner, you can see other ranges of elements. For example, if you enter 190 in the Start Index at `/pos[4]`, you can see the elements of [190]~[199].
+
+## Viewing and changing object property values
+
+Select the `value` column of the object variable and press the ENTER key or click the [F5: sub.level] button to expand the object to a lower level and view the property values. The operation method is similar to the array variable. However, the Startup Index editbox is not used.
+
+![](../../_assets/tp630/panel-gvar/gv-obj2.png)
+
+
+
+
 <br>
 
-## Characteristics of an predefined-variable
+## Fixed-variable
 
-Predefined-variables have the following differences and constraints compared to general global variables;
+For example, you have created a large number of poses named `weld_points` in the Global Variables window, and by executing below assignment statement all data can be deleted.
 
-1) Saved as a .csv file in the folder `MAIN/project/vars/predef/`. It is an intuitive format that is easy to edit with a text editor.
-2) You can only make an array of global variables a predefined-variable. Primitive-types such as int and string or object-types cannot be made into predefined variables. Local variables are also impossible.
-3) You can make a variable a predefined only in the Global Variables panel U/I. There are no robot language statements that make the variable a predefined.
-4) You cannot assign another value to an predefined-variable. When `weld_points` is a predef. 2-dimensional array;
+```python
+weld_points=0
+```
+
+By specifying the variable as fixed, you can prevents this mistake.
+
+![](../../_assets/tp630/panel-gvar/fixed-var.png)
+
+전역변수 창의 최상위 레벨에서 배열 변수를 선택하고 [F4: 고정 토글]을 누르면, 타입이 `array`에서 `F.array` (fixed-array)로 변경됩니다.
+고정 변수로 지정되면, 대입문으로 다른 값을 대입할 수 없습니다. `weld_points`가 fixed 2차원 배열일 때, 아래 각 대입문의 결과는 주석과 같습니다.
+
+If you select an array variable at the top level of the Global Variables window and press [F4: toggle fixed], the type changes from 'array' to 'F.array' (fixed-array).  
+If specified as a fixed variable, no other value can be assigned. When `weld_points` is a fixed 2-dimensional array, the result of each assignment statement below is the same as the comment.
+
 
 ```python
 global weld_points  # ignored.
-global weld_points=0  # 'Cannot assign' error occurred
-weld_points=0  # 'Cannot assign' error occurred
-weld_points[2]=Array[30]  # New value can be assigned to an element.
-weld_points[2][1]="light"  # New value can be assigned to an element.
-weld_points[2][1].j2=90.5  # New value can be assigned to an element.
+global weld_points=0  # cannot assign error occurs
+weld_points=0  # cannot assign error occurs
+weld_points[2]=Array[30]  # new value can be assigned to an element
+weld_points[2][1]="light"  # new value can be assigned to an element
+weld_points[2][1].j2=90.5  # new value can be assigned to an property
 ```
+
+[F4: 고정 토글]을 한번 더 수행하면 고정이 해제되면서 `F.array`가 다시 `array`로 원상복구됩니다.
+
+If [F4: toggle fixed] is performed again, fixed will be released and `F.array` will be restored to `array`.
+# 6.8.3 Variable files
+
+변수 값들은 전원을 꺼도 보존되어야 하므로 파일로도 저장되는데, 전역변수는 종류에 따라 아래의 2가지 형태로 저장됩니다.
+
+Variable values are also saved as files because they must be preserved even when powered off, and global variables are stored in two forms, depending on the type:
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Pathname</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        Global root array variables
+      </td>
+      <td style="text-align:left">MAIN/project/vars/*.csv</td>
+      <td style="text-align:left">One file is created for each variable, and the file title is the same as the variable name.</td>
+    </tr>
+	 <tr>
+      <td style="text-align:left">
+        Other variables
+      </td>
+      <td style="text-align:left">MAIN/project/vars/vars.json</td>
+      <td style="text-align:left">All other global variables are saved as a single file.</td>
+    </tr>
+	</tbody>
+</table>
 
 <br>
 
-## predef/.csv file
 
-When you open the folder `MAIN/project/vars/predef/` in File-manager, a file named `weld_points.csv` is created. The variables specified as the predefined create a .csv file that is the same as the variable name, and when released from predefined, the file is automatically deleted.
+## vars/.csv file
 
-![](../../_assets/tp630/panel-gvar/predef1.png)
+When you open the folder `MAIN/project/vars/` in File-manager, a file named `weld_points.csv` is created. The variables specified as the predefined create a .csv file that is the same as the variable name, and when released from predefined, the file is automatically deleted.
+
+![](../../_assets/tp630/panel-gvar/csv0.png)
 
 Copy this file via USB memory or FTP and open it on your PC. The .csv file is a very simple text format standard that expresses comma-separated values.
 
@@ -3565,16 +3641,16 @@ Refer to: [Wikipedia: Comma-separated values](https://en.wikipedia.org/wiki/Comm
 
 The .csv file represents a single two-dimensional table. The columns are separated by commas and rows are spearated by line-feed.
 
-![](../../_assets/tp630/panel-gvar/predef2.png)
+![](../../_assets/tp630/panel-gvar/csv1.png)
 
 The csv file containing the procedure building up the `weld_points` two-dimensional array, in order.
 
 For each row, the 1st column is the index, the 2nd column is the type, and the 3rd ~ last columns are the values. The 1st row describes this as the header of the table.
 
-The 2nd row is the row that creates the top level, that is, `weld_points` itself. Therefore, the index column is empty, type is array, and number is 100. In other words, weld_points[100] is created, and 100 elements are filled with the default value of zeroes.
+The 2nd row is the row that creates the top level, that is, `weld_points` itself. Therefore, the index column is empty, type is array, and number is 10. In other words, weld_points[10] is created, and 10 elements are filled with the default value of zeroes.
 
 ```python
-, , array, 100
+, , array, 10
 ```
 
 The following rows generate and assign pose type values to the elements of `weld_points[0]`.
@@ -3597,12 +3673,12 @@ If 100 rows are performed for `weld_points[0]`, the following rows are followed 
 
 You can double-click the .csv file in File-manager to open it with Microsoft Excel and edit it. Save as `Ctrl+S` or `Save` button when editing is done.
 
-![](../../_assets/tp630/panel-gvar/predef3.png)
+![](../../_assets/tp630/panel-gvar/csv2.png)
 
 Saving in Excel results in unnecessary commas, as shown below, and the quotation marks in the coordinate-system disappear, resulting in a slight change in format. It can't be helped because Excel handles .csv like this. Anyway, the Hi6 controller also recognizes that kind of format, so it doesn't matter.
 
 ```python
-, , array,100,,,,,,
+, , array,10,,,,,,
 [0][0], array,100,,,,,,
 [0][0][0], Pose,0,90,10,0,20,0,
 [0][0][1], Pose,0,0,0,0,0,0,base
@@ -3616,12 +3692,12 @@ Saving in Excel results in unnecessary commas, as shown below, and the quotation
 
 ## Loading .csv
 
-You can overwrite the edited file into `MAIN/project/vars/predef/` again, but it is not automatically reflected in memory.
+You can overwrite the edited file into `MAIN/project/vars/` again, but it is not automatically reflected in memory.
 
-Click the [F3: predef] button in the Global Variables panel. If you select `load from predef/` from the pop-up menu, all files in the `predef/` folder will be reloaded into memory.
-(Variables with .csv files become predefined variables, and variables without .csv files are released from default variables.)
+When you click the [F2: load all] button in the Global Variables window, all variable files in the `vars/` folder are reloaded to memory.
+(Please note that deleting the variable file and clicking [F2: load all] will also delete the corresponding variable in memory.)
 
-![](../../_assets/tp630/panel-gvar/predef0.png)
+![](../../_assets/tp630/panel-gvar/fixed-var.png)
 # 6.9 Local Variables
 
 Displays a list of all local variables of the current call frame. You cannot create/delete variables or change the variable name or type, but you can edit values.
