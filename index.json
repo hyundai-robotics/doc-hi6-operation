@@ -1095,58 +1095,63 @@
 		"byte_ofs": 341422
 	},
 	{
-		"link": "8-r-code/14-r361.md",
+		"link": "8-r-code/14-r360.md",
 		"char_ofs": 334688,
 		"byte_ofs": 342896
 	},
 	{
+		"link": "8-r-code/15-r361.md",
+		"char_ofs": 337081,
+		"byte_ofs": 345361
+	},
+	{
 		"link": "9-property/README.md",
-		"char_ofs": 335758,
-		"byte_ofs": 343995
+		"char_ofs": 338151,
+		"byte_ofs": 346460
 	},
 	{
 		"link": "9-property/1-use-property.md",
-		"char_ofs": 336106,
-		"byte_ofs": 344352
+		"char_ofs": 338499,
+		"byte_ofs": 346817
 	},
 	{
 		"link": "9-property/2-move-step-position/README.md",
-		"char_ofs": 341051,
-		"byte_ofs": 349420
+		"char_ofs": 343444,
+		"byte_ofs": 351885
 	},
 	{
 		"link": "9-property/2-move-step-position/1-hidden-pose-move.md",
-		"char_ofs": 341178,
-		"byte_ofs": 349554
+		"char_ofs": 343571,
+		"byte_ofs": 352019
 	},
 	{
 		"link": "9-property/2-move-step-position/2-pose-rec-move.md",
-		"char_ofs": 344215,
-		"byte_ofs": 352669
+		"char_ofs": 346608,
+		"byte_ofs": 355134
 	},
 	{
 		"link": "9-property/3-spot-welding-func.md",
-		"char_ofs": 347382,
-		"byte_ofs": 355921
+		"char_ofs": 349775,
+		"byte_ofs": 358386
 	},
 	{
 		"link": "10-robot-language.md",
-		"char_ofs": 348261,
-		"byte_ofs": 356819
+		"char_ofs": 350654,
+		"byte_ofs": 359284
 	},
 	{
 		"link": "appendices/README.md",
-		"char_ofs": 348462,
-		"byte_ofs": 357026
+		"char_ofs": 350855,
+		"byte_ofs": 359491
 	},
 	{
 		"link": "appendices/rules-occupational-safety.md",
-		"char_ofs": 348481,
-		"byte_ofs": 357053
+		"char_ofs": 350874,
+		"byte_ofs": 359518
 	},
 	{
 		"link": "quality-assurance.md",
-		"char_ofs": 348941,
-		"byte_ofs": 357521
+		"char_ofs": 351334,
+		"byte_ofs": 359986
 	}
 ]
