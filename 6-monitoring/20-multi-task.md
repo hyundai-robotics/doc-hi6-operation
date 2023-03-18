@@ -1,4 +1,4 @@
-﻿# 6.19 Multi-task
+﻿# 6.20 Multi-task
 
 
 Touch \[multitask\] in the panel selection window.

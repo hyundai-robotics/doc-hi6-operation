@@ -1,4 +1,4 @@
-﻿# 6.17 System Diagnosis
+﻿# 6.16 System Diagnosis
 
 Touch \[system diagnosis\] in the panel selection window. Then, a window for brake diagnosis will appear.
 

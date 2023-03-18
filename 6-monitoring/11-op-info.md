@@ -1,4 +1,4 @@
-﻿# 6.10 Operation time
+﻿# 6.11 Operation time
 
 In the panel selection window, touch \[Operation time\]. Then, the controller’s operation information window will appear.
 

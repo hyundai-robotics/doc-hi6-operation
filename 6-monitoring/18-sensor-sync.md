@@ -1,4 +1,4 @@
-﻿# 6.16 Sensor Sync
+﻿# 6.18 Sensor Sync
 
 Touch \[Sensor Sync\] in the panel selection window. Then, the sensor sync window will appear.
 

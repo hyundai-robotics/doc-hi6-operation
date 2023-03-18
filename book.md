@@ -3674,7 +3674,62 @@ Displays a list of all local variables of the current call frame. You cannot cre
 
 
 
-# 6.10 Operation time
+# 6.10 Watch
+
+You can register variables or expressions to the watch panel to monitor or change values.
+
+
+## Open watch panel
+
+1. Split the screen and press the [Select] button at the bottom left.
+
+![](../_assets/tp630/panel-split.png)
+&nbsp;
+![](../_assets/tp630/panel-sel.png)
+
+2. Touch `Watch` in the panel selection window. Various data windows open.
+
+![](../_assets/tp630/panel-watch/panel-watch.png)
+
+![](../_assets/tp630/panel-watch/panel-watch-mon.png)
+
+
+## How to use
+
+Enter the desired variable or expression in the top input box and click the '+' button to enter the new item in the table.
+
+![](../_assets/tp630/panel-watch/panel-watch2.png)
+
+
+You can modify the variable name or expression that you entered by clicking the `Name` column one more time.
+
+![](../_assets/tp630/panel-watch/panel-watch-rename.png)
+
+If you click in the `Value` column to enter a new value, you will change the value of that variable. Changing the value of an expression is ignored.
+
+Select the `Value` column for the pose/shift variable or expression and press the `ENTER` key to open the Pose/Shift Properties window to view and modify the values.
+
+![](../_assets/tp630/panel-gvar/gv-edit-pose2.png)
+
+To delete a row, select the row and press the `SHIFT+DEL` key.
+
+If you press the [F7: Save all] button on the F-button at the bottom, the list of variables and expressions entered is saved in the `cfg/watch.json` file. This file is automatically loaded on power reboot.
+You can also edit this file by receiving it to an external PC, via FTP. If you overwrite the edited file with the `cfg/` folder and click the [F1: Load All] button, it will be applied to the Watch panel.
+
+![](../_assets/tp630/panel-watch/panel-watch-fbt.png)
+
+Click the [F2: swap up] and [F3: swap down] buttons to move the position of the currently selected row while exchanging it with the top and bottom rows.  
+
+There are a total of 10 pages in various data windows, so you can group and manage the variables or expressions you want to display. Click the [F4: Page] button to show the next page, and click the `SHIFT`+[F4: Page] button to show the previous page.
+
+The elements of array or object can be viewed with the [F6: sub.level] button or the `ENTER` key, and can go up to the upper level with the [F5: up.level] button or the `ESC` key.
+
+You can enter a value in the `Start Index` edit-box to display an array from a specific index. ([Global Variable](8-global-variable/README.md) window has the same method of operation.)
+
+{% {% hint style="warning" %}
+* To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
+{% {% endhint %}
+# 6.11 Operation time
 
 In the panel selection window, touch \[Operation time\]. Then, the controller’s operation information window will appear.
 
@@ -3769,7 +3824,7 @@ You can easily understand the flow of the program that has been called so far by
 
 {% hint style="warning" %}
 \[caution\] When performing Step-FWD or playback, be sure to restore the > cursor to the top frame position when resuming operations. Otherwise, the position of the job cursor is considered to have changed and the call stack is initialized.
-{% endhint %}# 6.11 Hot Edit
+{% endhint %}# 6.14 Hot Edit
 
 This is the function to edit the program without stopping it, while playback is still running. 
 
@@ -3860,7 +3915,7 @@ The actual timing of the reflection is displayed in the following table.
 ### Different program selection
 
 When you press the <**SHIFT**> + <**PROG**> key, you can select a different program. You can also create a new program.
-# 6.13 System Character
+# 6.15 System Character
 
 In the panel selection window, touch \[System character\]. Then, the system character window will appear. 
 
@@ -3895,7 +3950,7 @@ You can initialize the maximum value of the data by selecting the type of inform
 
     ![](../_assets/tp630/pane-syscharacter-clear_eng.png)
 
-# 6.17 System Diagnosis
+# 6.16 System Diagnosis
 
 Touch \[system diagnosis\] in the panel selection window. Then, a window for brake diagnosis will appear.
 
@@ -3958,7 +4013,7 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
 * Refer to "Hi6 system diagnosis manual" for more details.
 {% endhint %}
 
-# 6.14 Task monitor
+# 6.17 Task monitor
 
 
 In the panel selection window, touch \[Task monitor\]. Then, the task window will appear.
@@ -4003,7 +4058,7 @@ You can check the operation cycle and execution time information for each task.
 
 
 
-# 6.16 Sensor Sync
+# 6.18 Sensor Sync
 
 Touch \[Sensor Sync\] in the panel selection window. Then, the sensor sync window will appear.
 
@@ -4112,7 +4167,7 @@ When programs are scheduled through external signals and executed in the schedul
 * For details on the scheduled program execution, refer to the “Hi6 Controller Scheduled Program Execution Function Manual.”
 {% endhint %}
 
-# 6.19 Multi-task
+# 6.20 Multi-task
 
 
 Touch \[multitask\] in the panel selection window.
@@ -4124,13 +4179,7 @@ This displays the information of the programs that are run automatically in the 
 
 {% hint style="info" %}
  Refer to 『Hi6 Controller Multitasking Function Manual』for details.
-{% endhint %}# 6.22 Memory variables
-
-
-Touch \[memory variables\] in the panel selection window.
-Of internal PLC relays, the accessible variables from Robot Language are displayed.
-
-![](../_assets/tp630/pane-memory-variables_eng.png) # 6.26 Coldet Monitoring
+{% endhint %}# 6.22 Coldet Monitoring
 
  ![](../_assets/tp630/coldet_monitoring_pane.png)
  ![](../_assets/tp630/coldet_monitoring.png)
@@ -4142,7 +4191,7 @@ ColDet monitoring
  - [External Torque]-[Current] : Currently estimated external torque [Nm]
  - [External Torque]-[Maximum] : Maximum value of the current external torque[Nm]
  - [Reference] : Threshold torque value [Nm]
- - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. # 6.24 EtherCAT device
+ - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. # 6.23 EtherCAT device
 
 In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with Hi6 controller internally and externally. In the EtherCAT network, the controller main board works as a master.
 
@@ -4162,7 +4211,7 @@ In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel sh
     -	pre-op: a status where a slave device can communicate only by using non-periodic mail-box
     -	safe-op: a status where a slave device can communicate only transmitting data(Tx PDO)
     -	operation: a status where a slave device can communicate both transmitting and receiving data(Tx/RxPDO)
-# 6.25 Hardware
+# 6.24 Hardware
 
  In the panel selection window, touch \[hardware\]. You can monitor current voltage and temperature of the COM module. In the case that a status value is out of the tolerance, a warning message will be issued in the period of 24 hours.
 
@@ -4171,7 +4220,7 @@ In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel sh
  
 - If you want to change the tolerance, select the corresponding cell and edit it. Then, press the [Save Min/Max] button.
 - If you want to initialize with default values, press the [Reset Min/Max] button.
-# 6.20 Spot welding data
+# 6.25 Spot welding data
 
 Touch \[spot\] in the panel selection window.
 This displays the spot gun axis data, the input/output signals and operating information of spot welding.
@@ -4183,7 +4232,7 @@ This displays the spot gun axis data, the input/output signals and operating inf
 {% hint style="info" %}
  Refer to Spot Welding Manual's “[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/3-Related-functions/3-1-monitoring/README)” for more details.
 {% endhint %}
-# 6.23 Servo tool change
+# 6.26 Servo tool change
 
 
 In the panel selection window, touch \[servo tool change\]. This displays the state of the servo tool and the encoder power supply’s input/output state when the servo tool change function is used.
@@ -4194,7 +4243,7 @@ In the panel selection window, touch \[servo tool change\]. This displays the st
 
 {% hint style="info" %}
  Refer to "Hi6 Controller Servo Tool Change Function Manual" for more details.
-{% endhint %}# 6.21 Arc welding data
+{% endhint %}# 6.27 Arc welding data
 
 Refer to Arc Welding Manual's “[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/7_Monitoring/README)”.
 # 7. System

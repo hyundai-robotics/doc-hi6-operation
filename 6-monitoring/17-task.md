@@ -1,4 +1,4 @@
-﻿# 6.14 Task monitor
+﻿# 6.17 Task monitor
 
 
 In the panel selection window, touch \[Task monitor\]. Then, the task window will appear.
