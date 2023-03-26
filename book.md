@@ -3493,20 +3493,20 @@ Excel에서 저장하면 아래와 같이 불필요한 쉼표도 생기고, 좌�
 
 값 열을 클릭하여 새로운 값을 입력하면, 해당 변수의 값을 변경하게 됩니다. 수식의 값을 변경하는 행위는 무시됩니다.
 
-포즈/시프트 변수 혹은 수식은 포즈/시프트 속성 창이 열리면서 값을 확인할 수 있고, 변수의 경우는 값을 수정할 수 있습니다.
+포즈/시프트 변수 혹은 수식의 값 열을 선택하고 `ENTER`키를 누르면 포즈/시프트 속성 창이 열리면서 값을 확인하고 수정할 수 있습니다.
 
 ![](../_assets/tp630/panel-gvar/gv-edit-pose2.png)
 
 특정 행에 대해 `SHIFT+DEL`키를 누르면, 해당 행을 삭제합니다.
 
-하단의 F버튼에서 `전부 저장하기` 버튼을 누르면, 작성된 변수, 수식 목록을 `cfg/watch.json` 파일에 저장합니다. 이 파일은 전원 재부팅 시 자동으로 불러옵니다.
-이 파일을 FTP 등을 통해 외부 PC에서 전송 받아 편집할 수도 있습니다. 편집된 파일을 다시 cfg/ 폴더로 덮어쓴 후 `전부 불러오기` 버튼을 클릭하면 각종 데이터 창에 반영됩니다.
+하단의 F버튼에서 [F7: 전부 저장하기] 버튼을 누르면, 작성된 변수, 수식 목록을 `cfg/watch.json` 파일에 저장합니다. 이 파일은 전원 재부팅 시 자동으로 불러옵니다.
+이 파일을 FTP 등을 통해 외부 PC로 전송 받아 편집할 수도 있습니다. 편집된 파일을 다시 `cfg/` 폴더로 덮어쓴 후 [F1: 전부 불러오기] 버튼을 클릭하면 각종 데이터 창에 반영됩니다.
 
 ![](../_assets/tp630/panel-watch/panel-watch-fbt.png)
 
-`위로 교환`, `아래로 교환` 버튼을 클릭하면 현재 선택된 행의 위치를 위, 아래의 행과 교환하면서 이동 시킬 수 있습니다.  
+[F2: 위로 교환], [F3: 아래로 교환] 버튼을 클릭하면 현재 선택된 행의 위치를 위, 아래의 행과 교환하면서 이동 시킬 수 있습니다.  
 
-각종 데이터 창에는 총 10개의 페이지가 있어, 표시하고 싶은 변수나 수식을 그룹핑해 관리할 수 있습니다. `페이지` 버튼을 클릭하면 다음 페이지를 보여주고, `SHIFT`+`페이지` 버튼을 클릭하면 이전 페이지를 보여줍니다.
+각종 데이터 창에는 총 10개의 페이지가 있어, 표시하고 싶은 변수나 수식을 그룹핑해 관리할 수 있습니다. [F4: 페이지] 버튼을 클릭하면 다음 페이지를 보여주고, `SHIFT`+[F4: 페이지] 버튼을 클릭하면 이전 페이지를 보여줍니다.
 
 배열이나 객체는 [F6: 하위레벨] 버튼이나 `ENTER`키로 하위 요소들을 볼 수 있으며, [F5: 상위레벨] 버튼이나 `ESC`키로 상위레벨로 올라갈 수 있습니다.
 
@@ -5700,25 +5700,34 @@ B축의 비사용 구역을 설정합니다.
 
 # 7.4.8 충돌검지
 
-Hi6 제어기에는 로봇이 비정상적인 조건에서 동작하게 되거나 이상 동작을 하게 될 때의 안전 장치로 과전류, 과부하, 과속도, 위치 편차 에러 검지 기능과 충돌검지 기능이 있습니다. 이 두 기능이 상호 보완적으로 작용하여 로봇의 안전성을 높입니다.
+로봇 작업 중에 충돌이 발생하는 경우, 충돌의 피해를 최소화하기 위해 로봇 동작 중에 정상적으로 발생하는 토크와 현재 발생되고 있는 토크를 비교하여 비정상적인 토크가 발생하면 에러로 처리하는 기능을 충돌 검지라 합니다. 
 
-Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공합니다. 모델 기반의 충돌검지 기능은 로봇이 동작 중에 정상적으로 발생해야 하는 토크와 실제 측정되는 토크의 차이를 로봇의 동역학 모델을 기반으로 계산하여 충돌을 검지합니다. 민감도를 설정하여 충돌에 대한 반응성을 조절할 수 있으며 로봇이 저속으로 움직일 때 발생하는 외부와의 접촉도 검지할 수 있습니다.
 
-그러나 충돌검지 기능은 로봇 축에서의 충돌을 검지하므로 로봇에 충격이 전달되지 않는 경우에는 충돌이 검지되지 않습니다. 이외에 충돌검지 기능 사용 시 주의해야 할 사항은 다음과 같습니다.
+Hi6 제어기에는 로봇이 비정상적인 조건에서 동작하게 되거나 이상 동작을 하게 될 때의 안전장치로서 기존에 있던 과전류, 과부하, 과속도 및 위치편차에러 검지 기능과 충돌검지 기능이 상호 보완적으로 작요앟여 로봇의 안정성을 높이는 역할을 합니다. 
 
+\[3: 로봇 파라미터 &gt; 14: 충돌 검지\] 메뉴를 터치하십시오.
+
+{% hint style="info" %}
 * 충돌검지 기능은 모터가 켜진 상태에서만 동작합니다.
-* 반드시 부하추정을 실행한 후에 충돌검지 기능을 사용하십시오.
+* 반드시 정확한 툴/부가 중량 설정 or 부하추정을 실행한 후에 충돌검지 기능을 사용하십시오.
 * 툴 중량 및 축별 부가 중량이 실제와 다를 경우, 오검지가 발생할 수 있습니다.
 * 부하추정 및 센서기반/센서리스 힘 제어 기능 수행 시 충돌을 검지하지 않습니다.
 * 로봇에 부착되지 않은 포지셔너, 정치건, 지그 등의 충돌은 검지할 수 없습니다.
 * 특주형 로봇은 모델 기반의 충돌검지 기능을 지원하지 않습니다.
 
-충돌검지 기능을 설정하는 방법은 다음과 같습니다.
+{% endhint %}
 
-1. \[3: 로봇 파라미터 > 36: 고급기능 &gt; 14: 충돌검지\] 메뉴를 터치하십시오.
-2. 충돌검지 기능의 사용 여부와 민감도 등을 설정하십시오.
 
-![](../../../_assets/tp630/robot-collision.png)
+![](../../../_assets/tp630/coldet/robot_impact_detection.png)
+# 7.4.8.1 모델기반 충돌검지
+
+모델기반 충돌검지 기능은 로봇이 동작 중에 정상적으로 발생해야 하는 토크와 실제 측정되는 토크의 차이를 로봇의 동역학 모델을 기반으로 계산하여 충돌을 검지합니다. 민감도를 설정하여 충돌에 대한 반응성을 조절할 수 있으며, 로봇이 저속으로 움직일 때에 발생하는 외부와의 접촉에 대해서도 검지 가능합니다. 
+
+
+1. \[3: 로봇 파라미터 &gt; 14: 충돌 검지 &gt; 1: 모델 기반 충돌 검지\] 메뉴를 터치하십시오.
+
+
+![](../../../_assets/tp630/coldet/model_based_coldet_tab_general.png)
 
 <table>
   <thead>
@@ -5730,115 +5739,139 @@ Hi6 제어기에는 모델 기반의 충돌검지 기능을 기본으로 제공�
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">
-        <p>충돌검지 기능의 사용
-          옵션 정보입니다. 이 기능의
-          사용 여부와 민감도, 저속
-          충돌검지 기능 사용 여부를
-          설정할 수 있습니다.</p>
-        <ul>
-          <li>[기능 사용]: 충돌검지
-            기능의 사용 여부를 설정합니다.</li>
-          <li>[민감도]: 충돌검지 민감도를
-            설정합니다. 값이 클수록
-            충격에 민감하게 동작합니다.(기본
-            설정값: 100%)</li>
-          <li>[저속 충돌 검지]: 저속
-            충돌검지 기능의 사용
-            여부를 설정합니다.
-            <ul>
-              <li>[기준 시간]: 충돌로 판단하기
-                위한 기준 시간을 설정합니다.
-                기준 시간 동안 충격력이
-                발생하면 충돌로 판단합니다.</li>
-              <li>[링크 속도]: 저속으로
-                판단하기 위한 기준 속도를
-                설정합니다. 기준 링크
-                속도 이하에서만 저속
-                충돌을 검사합니다.</li>
-            </ul>
-          </li>
-        </ul>
-      </td>
+      <td style="text-align:left">모델 기반 충돌 검지 기능 사용 유무를 설정합니다.</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c2.png" alt/>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">
-        <ul>
-          <li>[**확인**]: 변경 내용을 저장합니다.</li>
-          <li>[전체 초기화]: 모든 사용 옵션
-            설정값을 초기화합니다.</li>
-        </ul>
+      <td style="text-align:left">축 전체 기본 민감도를 의미하며 값이 높을수록 민감하게 충돌음 감지하게 됩니다.
+      (기본값:100, 최대값:200)  </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c3.png" alt/>
       </td>
+      <td style="text-align:left">저속 충돌검지 기능 사용 유무를 설정 합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">저속 충돌을 검지하기 위한 설정 시간으로, 이 기준 시간 이상으로 충돌이 가해지면 충돌로 인식합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">링크 속도가 설정값 보다 작을 때에만 저속 충돌로 판단합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">기본 설정값으로 초기화 합니다.</td>
     </tr>
   </tbody>
 </table>
 
-# 7.4.8.1 충돌검지 민감도 설정
 
-충돌검지 민감도는 JOB 프로그램에서 명령어로 조정할 수 있습니다.
+![](../../../_assets/tp630/coldet/model_based_coldet_tab_axis.png)
+
+{% hint style="info" %}
+축별 설정 탭은 엔지니어링 모드 이상에서만 활성화 됩니다. 
+{% endhint %}
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">항목</th>
-      <th style="text-align:left">내용</th>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">명령어</td>
-      <td style="text-align:left">ColDet Sensitivity</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">설명</td>
-      <td style="text-align:left">충돌검지 민감도 변경</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">입력 방법</td>
-      <td style="text-align:left">command → MOTION → colsense</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">문법</td>
-      <td style="text-align:left">ColDet Sensitivity=100</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">파라미터</td>
-      <td style="text-align:left">0 ~ 200 (0: 기능 무효, 민감도
-        값이 클수록 충격에 민감하게
-        동작)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">예</td>
       <td style="text-align:left">
-        <p>[충돌검지] 메뉴에서 민감도를
-          100%로 설정한 경우</p>
-        <p>S1 ~ S2: 민감도 100%로 검지 / S3 ~
-          S4: 민감도 50%로 검지</p>
-        <p>
-          <img src="../../../_assets/coldet-sensitivity.png" alt/>
-        </p>
+        <img src="../../_assets/c1.png" alt/>
       </td>
+      <td style="text-align:left">축별 검지 기준값 대비 비율(%)로서 값이 낮을 수록 민감하게 반응합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">차단 주파수 값으로 일반적으로 로봇의 제어 환경값으로 설정됩니다. 임의의 축을 0으로 설정하면, 해당 축은 충돌 검지 기능이 비활성화 됩니다.(최대값:100) </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">기본 설정값으로 초기화 합니다.</td>
     </tr>
   </tbody>
 </table>
 
-{% hint style="warning" %}
-민감도를 너무 높게 설정하면 오검지가 발생할 수 있습니다. 또한 민감도를 너무 낮게 설정하면 충돌을 검지하지 못할 수 있습니다.
-{% endhint %}
-
 {% hint style="info" %}
-* 명령어가 없을 경우 \[충돌검지\] 메뉴에서 설정한 기본 민감도로 충돌을 검지합니다.
-* 명령어로 설정한 민감도는 다음의 경우에서 기본 민감도로 초기화됩니다.
-  * 메인 프로그램의 END 명령어를 만남
-  * 스텝/펑션 변경
-  * 스텝 카운터 리셋
+축 별 최종 민감도값은 축별 민감도 값에 비례하고, 축 전체 기본 민감도와 반비례 합니다.    
 {% endhint %}
+# 7.4.8.2 충돌검지 (축별) 설정
 
+충돌검지 기능은 로봇 각축에 발생하는 외란토크와 외란토크의 변화율을 감시하여 측정된 값이 설정치를 초과할 때 에러로 처리 합니다. 
+
+* 외란토크가 설정치를 초과하면 \[E0160 (O축)충돌 검지\]
+* 외란토크 변화율이 설정치를 초과하면 \[E0161 (O축)충격 검지\] 로 표시합니다. 
+
+
+![](../../../_assets/tp630/coldet/collision_detection_of_axis.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">축별 충돌 검지 기능 사용 유무를 설정합니다. 유효인 상태라도 로봇 정지 상태이거나 스폿 GUN 가압 중에는 기능이 동작하지 않습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left"> [측정값] 충돌검지(coldet level.id) 명령이 유효한 구간에서 발생한 "외란토크" 최대값을 표시합니다. [설정값] 사용자는 이 값을 참고하여 각 레벨의 충돌검지를 위한 "외란토크" 값으로 설정 가능합니다. </td>
+      </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">[측정값] 충돌검지(coldet level.id) 명령이 유효한 구간에서 발생한 "외란토크 변화율" 최대값을 표시합니다. [설정값] 사용자는 이 값을 참고하여 각 레벨의 충돌검지를 위한 "외란토크 변화율" 값으로 설정 가능합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">각 축의 외란토크와 외란토크 변화율의 측정치(최대값)을 다시 측정하게 됩니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">각 축에 설정된 레벨값 전체를 초기값으로 설정하고하 할 때 사용합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../_assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">레벨을 더 추가 하고자 할때 사용합니다. 설정할 수 있는 최대 레벨의 개수는 16개 입니다.</td>
+    </tr>
+  </tbody>
+</table>
 # 7.4.9 조그인칭 레벨 설정
 
 이동 거리를 지정하여 동작을 제한할 수 있습니다. 수동 모드에서 조그키로 원하는 거리만큼 이동할 때 유용합니다.
