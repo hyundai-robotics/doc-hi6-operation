@@ -1853,11 +1853,11 @@ By assigning the desired functions to the buttons in the user button area on the
 
 # 2.7.1 Switching of the User Key Area
 
-Touch the \[user key\] button on the R button bar of the Hi6 teach pendant screen until the desired area appears. Then, the menu button area will be switched to the user button area. In the user key area, the key signal output function and the spot application function are assigned and provided by default.
+Touch the `[user key]` button on the R button bar of the Hi6 teach pendant screen until the desired area appears. Then, the menu button area will be switched to the user button area. In the user key area, the key signal output function and the spot application function are assigned and provided by default.
 
-![](../../_assets/tp630/user-bar_eng.png)
+![](../../_assets/tp630/user-bar/user-bar.png)
 
-* If you press the \[user key\] button while pressing the &lt;shift&gt; key, you can switch the area in the opposite direction.
+* If you press the `[user key]` button while pressing the `shift` key, you can switch the area in the opposite direction.
   
 * The key signal output function area will stay empty as the initial state in which no button is registered.
 
@@ -1869,10 +1869,7 @@ Touch the \[user key\] button on the R button bar of the Hi6 teach pendant scree
 
 # 2.7.2 Button Registration for Each Area
 
-You can register the desired function in the user key area with a button. Up to eight functions can be registered.
-
-
-
+You can register the desired function in the user key area with a button.
 # 2.7.2.1 Key Signal Output Function Area
 
 You can simply turn on/off the desired output signal by registering it with a button.
@@ -1910,14 +1907,29 @@ You can also assign the desired output signals to the buttons in the key signal 
 
 
 
-# 2.7.2.2 Spot Application Function Area
+# 2.7.2.2 Robot application user-key configuration
 
-For details on the spot application function, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
+Touch the `[user key]` button on the R button bar of the Hi6 teach pendant screen until the desired area appears. Then, the F button area will be switched to the robot application user-key area, such as spotweld-bar and arcweld-bar.
 
-# 2.7.2.3 Arc Application Function Area
 
-For details on the arc application function, refer to the “[Hi6 Controller Arc Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/README)”.
 
+![](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
+
+Press the `ctrl` key and press the `user-key` button to open a configuraiton screen where you can adjust the layout of the user buttons.
+
+The list at the bottom of the screen is a list of selectable F buttons, and you can move the cursor with `[Arrow Up]`/`[Arrow Down]`.
+
+The top of the screen is the layout of the user buttons, and you can move the cursor with `[Arrow Left]`/`[Arrow Right]`.
+
+Press the `[ENTER]` key or the `[F1:Select]` button to place the selected F button in the selected position.
+If you press the `[DEL]` key or the `[F2:Delete]` button, the button in the selected position will be deleted and empty.
+
+After completing the placement, press the `[F7:OK]` button to save the user button layout.
+
+
+* For details on the spot application function, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
+
+* For details on the arc application function, refer to the "[Hi6 Controller Arc Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/README)".
 # 2.8 Coordinate System
 
 Coordinates in space are used to determine the direction of the robot’s movement. Hi6 controller has the joint coordinate system, robot coordinate system, user coordinate system, and tool coordinate system.
