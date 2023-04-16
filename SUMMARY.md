@@ -174,6 +174,7 @@
     * [7.4.3 소프트 리밋](7-setting/4-robot-parameter/3-soft-limit.md)
     * [7.4.4 엔코더 옵셋](7-setting/4-robot-parameter/4-encoder-offset/README.md)
       * [7.4.4.1 엔코더 옵셋값 활용](7-setting/4-robot-parameter/4-encoder-offset/1-encoder-offset-utilization.md)
+      * [7.4.4.2 축별 원위치 복원](7-setting/4-robot-parameter/4-encoder-offset/2-axis-posi-restore.md)
     * [7.4.5 B축 비사용구역](7-setting/4-robot-parameter/5-b-axis-deadzone.md)
     * [7.4.6 Accuracy](7-setting/4-robot-parameter/6-accuracy.md)
     * [7.4.7 축별 부가중량](7-setting/4-robot-parameter/7-axis-add-weight/README.md)
