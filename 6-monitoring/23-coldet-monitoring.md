@@ -1,4 +1,4 @@
-﻿# 6.22 충돌검지 모니터링
+﻿# 6.23 충돌검지 모니터링
  
  ![](../_assets/tp630/coldet_monitoring_pane.png)
  ![](../_assets/tp630/coldet_monitoring.png)
