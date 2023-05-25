@@ -4179,7 +4179,73 @@ When programs are scheduled through external signals and executed in the schedul
 * For details on the scheduled program execution, refer to the “Hi6 Controller Scheduled Program Execution Function Manual.”
 {% endhint %}
 
-# 6.20 Multi-task
+# 6.20 Forced IO
+
+You can register IO relay variables in the Force IO panel to force some changed IO values.
+
+{% hint style="warning" %}
+* This function is only for testing or problem analysis.
+* Misoperation of forced IO function can cause serious accidents such as collisions, drops, and casualties. Use with caution only if you fully understand the system's IO connections and clearly predict the consequences of the forced value change.
+* After testing and problem analysis, be sure to clear the forced IO completely and restore it to a normal IO state.
+
+{% endhint %}
+
+## Opening forced IO panel
+
+1. Split the screen and press the [Select] button on the bottom left.
+
+![](../_assets/tp630/panel-split.png)
+&nbsp;
+![](../_assets/tp630/panel-sel.png)
+
+2. Double-click `forced io` in the panel selection window. Forced I/O panel opens.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io.png)
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
+
+
+## How to use
+
+Select the `Name` column, type the desired IO Relay variable name, and press the `ENTER` key to register the variable in the table.  
+(You can modify the variable name you entered by clicking the Name column once more.)
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-name.png)
+
+Select the `Value` column, type the new IO value you want to apply, and press the `ENTER` key.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-val.png)
+
+If you have more forced IO entries to apply, enter them in the same way. You can enter up to 100 entries.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-multi.png)
+
+The * mark on the panel title bar means that the table has been modified and this modification has not yet been applied.
+Press the [F7: Apply] button to apply the forced IO.
+The moment you press the `OK` button in the warning message box, all forced I/O entries are applied.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-apply.png)
+
+The * mark on the panel title bar disappears, and you can see that the forced IO value is applied.
+A red F mark flashes on the title bar. It is a warning that forced IO is being applied.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
+
+
+* Press `SHIFT+DEL` to delete an item during editing.
+* You can change the order of the items by pressing the [F5: Swap Up], [F6: Swap Down] buttons.
+* If you click [F3: Cancel edit] while editing a table, it will reload the last applied state.
+
+After completing the test and problem analysis, be sure to press the [F2: Clear] button to fully clear the forced IO.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-clear.png)
+
+{% hint style="warning" %}
+* If multiple entries force conflicting values for the same relay (or overlaid bits), they are forced to the value of the lower item of the table.
+* When the Hi6 controller is powered off, all contents registered as forced IO are cleared.
+
+{% endhint %}
+# 6.21 Multi-task
 
 
 Touch \[multitask\] in the panel selection window.
@@ -4191,7 +4257,13 @@ This displays the information of the programs that are run automatically in the 
 
 {% hint style="info" %}
  Refer to 『Hi6 Controller Multitasking Function Manual』for details.
-{% endhint %}# 6.22 Coldet Monitoring
+{% endhint %}# 6.22 Memory variables
+
+
+Touch \[memory variables\] in the panel selection window.
+Of internal PLC relays, the accessible variables from Robot Language are displayed.
+
+![](../_assets/tp630/pane-memory-variables_eng.png) # 6.23 Coldet Monitoring
 
  ![](../_assets/tp630/coldet_monitoring_pane.png)
  ![](../_assets/tp630/coldet_monitoring.png)
@@ -4203,7 +4275,7 @@ ColDet monitoring
  - [External Torque]-[Current] : Currently estimated external torque [Nm]
  - [External Torque]-[Maximum] : Maximum value of the current external torque[Nm]
  - [Reference] : Threshold torque value [Nm]
- - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. # 6.23 EtherCAT device
+ - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. # 6.24 EtherCAT device
 
 In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with Hi6 controller internally and externally. In the EtherCAT network, the controller main board works as a master.
 
@@ -4223,7 +4295,7 @@ In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel sh
     -	pre-op: a status where a slave device can communicate only by using non-periodic mail-box
     -	safe-op: a status where a slave device can communicate only transmitting data(Tx PDO)
     -	operation: a status where a slave device can communicate both transmitting and receiving data(Tx/RxPDO)
-# 6.24 Hardware
+# 6.25 Hardware
 
  In the panel selection window, touch \[hardware\]. You can monitor current voltage and temperature of the COM module. In the case that a status value is out of the tolerance, a warning message will be issued in the period of 24 hours.
 
@@ -4232,7 +4304,7 @@ In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel sh
  
 - If you want to change the tolerance, select the corresponding cell and edit it. Then, press the [Save Min/Max] button.
 - If you want to initialize with default values, press the [Reset Min/Max] button.
-# 6.25 Spot welding data
+# 6.26 Spot welding data
 
 Touch \[spot\] in the panel selection window.
 This displays the spot gun axis data, the input/output signals and operating information of spot welding.
@@ -4244,7 +4316,7 @@ This displays the spot gun axis data, the input/output signals and operating inf
 {% hint style="info" %}
  Refer to Spot Welding Manual's “[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/3-Related-functions/3-1-monitoring/README)” for more details.
 {% endhint %}
-# 6.26 Servo tool change
+# 6.27 Servo tool change
 
 
 In the panel selection window, touch \[servo tool change\]. This displays the state of the servo tool and the encoder power supply’s input/output state when the servo tool change function is used.
@@ -4255,7 +4327,7 @@ In the panel selection window, touch \[servo tool change\]. This displays the st
 
 {% hint style="info" %}
  Refer to "Hi6 Controller Servo Tool Change Function Manual" for more details.
-{% endhint %}# 6.27 Arc welding data
+{% endhint %}# 6.28 Arc welding data
 
 Refer to Arc Welding Manual's “[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/7_Monitoring/README)”.
 # 7. System

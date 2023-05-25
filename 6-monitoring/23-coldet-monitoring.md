@@ -1,4 +1,4 @@
-﻿# 6.22 Coldet Monitoring
+﻿# 6.23 Coldet Monitoring
 
  ![](../_assets/tp630/coldet_monitoring_pane.png)
  ![](../_assets/tp630/coldet_monitoring.png)

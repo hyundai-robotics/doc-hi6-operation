@@ -1,4 +1,4 @@
-﻿# 6.21 Memory variables
+﻿# 6.22 Memory variables
 
 
 Touch \[memory variables\] in the panel selection window.
