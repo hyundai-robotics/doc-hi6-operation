@@ -13,12 +13,12 @@ Select `[fn input]` or `[fn output]` in the panel selection window. The fn input
 
 Please refer to the link below for how to set up fn object.
 
-[7.3.2.12 fn block allocation](../7-setting/3-control-parameter/2-io-signal-setting/12-fn-block.md)
+[7.3.2.12 fn block allocation](../7-setting/3-control-parameter/2-io-signal-setting/12-fn-block)
 
 
 Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to be displayed.
 
-The use of the remaining F buttons is the same as the [Public Input](6-user-input.md ) and [Public Output](7-user-output.md ) monitoring windows.
+The use of the remaining F buttons is the same as the [Public Input](6-user-input) and [Public Output](7-user-output) monitoring windows.
 
 
 ![](../_assets/io/io_fn_mon.png)
