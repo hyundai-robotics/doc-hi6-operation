@@ -1,4 +1,4 @@
-﻿# 6.8.2 Array and object
+﻿# 6.9.2 Array and object
 
 ## Creating an array
 

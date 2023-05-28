@@ -3392,7 +3392,32 @@ You can select the desired signal and force it to be outputted.
 
     ![](../_assets/tp630/pane-univoutsig-onoff_eng.png)
 
-# 6.8 Global Variables
+# 6.8 fn input, fn output
+
+You can define fn objects by specifying specific areas of fb objects.
+If the Hi6 controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
+
+The set fn objects can be used in the same way as the fb objects in the robot language and the embedded PLC.
+
+
+![](../_assets/io/io_fn.png)
+
+
+Select `[fn input]` or `[fn output]` in the panel selection window. The fn input or output panel appears and you can check the values of the input and output signals of each fn object.
+
+Please refer to the link below for how to set up fn object.
+
+[7.3.2.12 fn block allocation](../7-setting/3-control-parameter/2-io-signal-setting/12-fn-block.md)
+
+
+Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to be displayed.
+
+The use of the remaining F buttons is the same as the [Public Input](6-user-input.md ) and [Public Output](6-user-input.md ) monitoring windows.
+
+
+![](../_assets/io/io_fn_mon.png)
+
+# 6.9 Global Variables
 
 Displays a list of all global variables. You can also create/delete variables and edit types and values.
 
@@ -3412,7 +3437,7 @@ Displays a list of all global variables. You can also create/delete variables an
 
 ![](../../_assets/tp630/panel-gvar/panel-gvar0.png)
 
-# 6.8.1 Basic features
+# 6.9.1 Basic features
 
 
 ## Finding a variable
@@ -3484,7 +3509,7 @@ Press the DEL (CTRL+BACKSPACE) key to display the OK/Cancel dialog box. After co
 
 ![](../../_assets/tp630/panel-gvar/gv-delete.png)
 
-# 6.8.2 Array and object
+# 6.9.2 Array and object
 
 ## Creating an array
 
@@ -3561,7 +3586,7 @@ weld_points[2][1].j2=90.5  # new value can be assigned to an property
 ```
 
 If [F4: toggle fixed] is performed again, fixed will be released and `F.array` will be restored to `array`.
-# 6.8.3 Variable files
+# 6.9.3 Variable files
 
 Variable values are also saved as files because they must be preserved even when powered off, and global variables are stored in two forms, depending on the type:
 
@@ -3663,7 +3688,7 @@ When you click the [F2: load all] button in the Global Variables window, all var
 (Please note that deleting the variable file and clicking [F2: load all] will also delete the corresponding variable in memory.)
 
 ![](../../_assets/tp630/panel-gvar/fixed-var.png)
-# 6.9 Local Variables
+# 6.10 Local Variables
 
 Displays a list of all local variables of the current call frame. You cannot create/delete variables or change the variable name or type, but you can edit values.
 
@@ -3686,7 +3711,7 @@ Displays a list of all local variables of the current call frame. You cannot cre
 
 
 
-# 6.10 Watch
+# 6.11 Watch
 
 You can register variables or expressions to the watch panel to monitor or change values.
 
@@ -3741,7 +3766,7 @@ You can enter a value in the `Start Index` edit-box to display an array from a s
 {% {% hint style="warning" %}
 * To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
 {% {% endhint %}
-# 6.11 Operation time
+# 6.12 Operation time
 
 In the panel selection window, touch \[Operation time\]. Then, the controller’s operation information window will appear.
 
@@ -3755,7 +3780,7 @@ The timing of reflection in accordance with the conditions of individual items i
 
 ![](../_assets/image_449.png)
 
-# 6.12 History
+# 6.13 History
 
 In the panel selection window, touch \[history\]. The history window will appear. 
 
@@ -3764,7 +3789,7 @@ You can check the history in which the execution log and time stamps of the job 
 
 
 ![](../_assets/tp630/pane-history_eng.png)
-# 6.13 call stack
+# 6.14 call stack
 
 Touch \[Call Stack] in the panel selection window to display the Call Stack window. In order to understand the contents of this section, an understanding of the `call`~`return` statement and local variables of the hrscript must be preceded.
 
@@ -3836,7 +3861,7 @@ You can easily understand the flow of the program that has been called so far by
 
 {% hint style="warning" %}
 \[caution\] When performing Step-FWD or playback, be sure to restore the > cursor to the top frame position when resuming operations. Otherwise, the position of the job cursor is considered to have changed and the call stack is initialized.
-{% endhint %}# 6.14 Hot Edit
+{% endhint %}# 6.15 Hot Edit
 
 This is the function to edit the program without stopping it, while playback is still running. 
 
@@ -3927,7 +3952,7 @@ The actual timing of the reflection is displayed in the following table.
 ### Different program selection
 
 When you press the <**SHIFT**> + <**PROG**> key, you can select a different program. You can also create a new program.
-# 6.15 System Character
+# 6.16 System Character
 
 In the panel selection window, touch \[System character\]. Then, the system character window will appear. 
 
@@ -3962,7 +3987,7 @@ You can initialize the maximum value of the data by selecting the type of inform
 
     ![](../_assets/tp630/pane-syscharacter-clear_eng.png)
 
-# 6.16 System Diagnosis
+# 6.17 System Diagnosis
 
 Touch \[system diagnosis\] in the panel selection window. Then, a window for brake diagnosis will appear.
 
@@ -4025,7 +4050,7 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
 * Refer to "Hi6 system diagnosis manual" for more details.
 {% endhint %}
 
-# 6.17 Task monitor
+# 6.18 Task monitor
 
 
 In the panel selection window, touch \[Task monitor\]. Then, the task window will appear.
@@ -4070,7 +4095,7 @@ You can check the operation cycle and execution time information for each task.
 
 
 
-# 6.18 Sensor Sync
+# 6.19 Sensor Sync
 
 Touch \[Sensor Sync\] in the panel selection window. Then, the sensor sync window will appear.
 
@@ -4120,7 +4145,7 @@ You can check the information related to the conveyor and press sync functions. 
 For details on the sensor sync function, refer to the “Hi6 Sensor Sync Function Manual.”
 {% endhint %}
 
-# 6.19 Program reservation execution
+# 6.20 Program reservation execution
 
 For this monitoring, pre-setting is required. You have to select the register number as 20EA or 1EA in the page of [system > 2:Control parameter > 7:Program reservation execution]'.
 
@@ -4179,7 +4204,7 @@ When programs are scheduled through external signals and executed in the schedul
 * For details on the scheduled program execution, refer to the “Hi6 Controller Scheduled Program Execution Function Manual.”
 {% endhint %}
 
-# 6.20 Forced IO
+# 6.21 Forced IO
 
 You can register IO relay variables in the Force IO panel to force some changed IO values.
 
@@ -4245,7 +4270,7 @@ After completing the test and problem analysis, be sure to press the [F2: Clear]
 * When the Hi6 controller is powered off, all contents registered as forced IO are cleared.
 
 {% endhint %}
-# 6.21 Multi-task
+# 6.22 Multi-task
 
 
 Touch \[multitask\] in the panel selection window.
@@ -4257,13 +4282,13 @@ This displays the information of the programs that are run automatically in the 
 
 {% hint style="info" %}
  Refer to 『Hi6 Controller Multitasking Function Manual』for details.
-{% endhint %}# 6.22 Memory variables
+{% endhint %}# 6.23 Memory variables
 
 
 Touch \[memory variables\] in the panel selection window.
 Of internal PLC relays, the accessible variables from Robot Language are displayed.
 
-![](../_assets/tp630/pane-memory-variables_eng.png) # 6.23 Coldet Monitoring
+![](../_assets/tp630/pane-memory-variables_eng.png) # 6.24 Coldet Monitoring
 
  ![](../_assets/tp630/coldet_monitoring_pane.png)
  ![](../_assets/tp630/coldet_monitoring.png)
@@ -4275,7 +4300,7 @@ ColDet monitoring
  - [External Torque]-[Current] : Currently estimated external torque [Nm]
  - [External Torque]-[Maximum] : Maximum value of the current external torque[Nm]
  - [Reference] : Threshold torque value [Nm]
- - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. # 6.24 EtherCAT device
+ - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. # 6.25 EtherCAT device
 
 In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with Hi6 controller internally and externally. In the EtherCAT network, the controller main board works as a master.
 
@@ -4295,7 +4320,7 @@ In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel sh
     -	pre-op: a status where a slave device can communicate only by using non-periodic mail-box
     -	safe-op: a status where a slave device can communicate only transmitting data(Tx PDO)
     -	operation: a status where a slave device can communicate both transmitting and receiving data(Tx/RxPDO)
-# 6.25 Hardware
+# 6.26 Hardware
 
  In the panel selection window, touch \[hardware\]. You can monitor current voltage and temperature of the COM module. In the case that a status value is out of the tolerance, a warning message will be issued in the period of 24 hours.
 
@@ -5055,6 +5080,113 @@ For example, when a job program configured as the setting in the screen above is
 
 After starting from S1 toward S2, the robot executes the wait statement. If the wait condition is satisfied before the accuracy of S2 is ok, the robot will move to the path in red. If this is not the case, the robot will wait until the wait condition is satisfied.
 
+# 7.3.2.12 fn block allocation
+
+You can define fn objects by specifying specific areas of fb objects.
+If the Hi6 controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
+
+The set fn objects can be used in the same way as the fb objects in the robot language and the embedded PLC.
+
+![](../../../_assets/io/io_fn.png)
+
+
+1. Select the menu `[2: Control Parameter - 2: Input/Output signal settings - 9: Fn block allocation]`.
+
+2. If it's still before the fn setup, the screen is empty. Click the + button on the right to add a new fn object. The fn index number automatically increases from 0 to 63.
+
+3. To change the fn index number, type the new name and click the `[F7: OK]` or `SHIFT+[F7:Apply]` button.
+  ![](../../../_assets/io/io_fn_rename.png)
+
+4. For each fn object, set the area of the input signal and the output signal separately.
+
+5. In the `fb#` column, set the index number (0-9) of fb object on which place the fn area.
+
+6. In the `byte base` column, specify the byte index to start the fn region within the fb object.
+
+7. In the `N.bytes` column, specify the size of the fn region in bytes.
+
+
+&nbsp;  
+
+For example, if set as shown in the figure below;
+
+![](../../../_assets/io/io_fn_fn0.png)
+
+![](../../../_assets/io/io_fn_fn3.png)
+
+&nbsp;  
+
+It is mapped as shown in the table below.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>fn0</th>
+      <th>fb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Input</td>
+      <td>
+        fn0.dib[0~2]<br>
+        fn0.xb[0~2]
+      </td>
+      <td>
+        fb1.dib[2~4]<br>
+        fb1.xb[2~4]
+      </td>
+    </tr>
+    <tr>
+      <td>Output</td>
+      <td>
+        fn0.dob[0~3]<br>
+        fn0.yb[0~3]
+      </td>
+      <td>
+        fb2.dob[3~6]<br>
+        fb2.yb[3~6]
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>fn3</th>
+      <th>fb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Input</td>
+      <td>
+        -
+      </td>
+      <td>
+        -
+      </td>
+    </tr>
+    <tr>
+      <td>Output</td>
+      <td>
+        fn3.dob[0~4]<br>
+        fn3.yb[0~4]
+      </td>
+      <td>
+        fb3.dob[4~8]<br>
+        fb3.yb[4~8]
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+You can open the fn input / output monitoring panel to view or manually output the current value of the dio or xy relay for each fn object. See the link below for more information.
+
+[6.8 fn input, fn output](../../../6-monitoring/8-fn-io.md)
 # 7.3.3 Serial Port
 
 You can set the information required for serial port communication.

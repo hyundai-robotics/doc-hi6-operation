@@ -1,4 +1,4 @@
-﻿# 6.10 Watch
+﻿# 6.11 Watch
 
 You can register variables or expressions to the watch panel to monitor or change values.
 

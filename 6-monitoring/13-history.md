@@ -1,4 +1,4 @@
-﻿# 6.12 History
+﻿# 6.13 History
 
 In the panel selection window, touch \[history\]. The history window will appear. 
 

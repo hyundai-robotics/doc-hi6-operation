@@ -1,4 +1,4 @@
-﻿# 6.15 System Character
+﻿# 6.16 System Character
 
 In the panel selection window, touch \[System character\]. Then, the system character window will appear. 
 

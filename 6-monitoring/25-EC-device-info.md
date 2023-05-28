@@ -1,4 +1,4 @@
-﻿# 6.24 EtherCAT device
+﻿# 6.25 EtherCAT device
 
 In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with Hi6 controller internally and externally. In the EtherCAT network, the controller main board works as a master.
 

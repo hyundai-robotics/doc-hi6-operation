@@ -1,4 +1,4 @@
-﻿# 6.13 call stack
+﻿# 6.14 call stack
 
 Touch \[Call Stack] in the panel selection window to display the Call Stack window. In order to understand the contents of this section, an understanding of the `call`~`return` statement and local variables of the hrscript must be preceded.
 

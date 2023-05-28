@@ -1,4 +1,4 @@
-﻿# 6.8.3 Variable files
+﻿# 6.9.3 Variable files
 
 Variable values are also saved as files because they must be preserved even when powered off, and global variables are stored in two forms, depending on the type:
 

@@ -1,4 +1,4 @@
-﻿# 6.20 Forced IO
+﻿# 6.21 Forced IO
 
 You can register IO relay variables in the Force IO panel to force some changed IO values.
 

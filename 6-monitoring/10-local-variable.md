@@ -1,4 +1,4 @@
-﻿# 6.9 Local Variables
+﻿# 6.10 Local Variables
 
 Displays a list of all local variables of the current call frame. You cannot create/delete variables or change the variable name or type, but you can edit values.
 

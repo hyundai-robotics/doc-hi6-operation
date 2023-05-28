@@ -1,4 +1,4 @@
-﻿# 6.19 Program reservation execution
+﻿# 6.20 Program reservation execution
 
 For this monitoring, pre-setting is required. You have to select the register number as 20EA or 1EA in the page of [system > 2:Control parameter > 7:Program reservation execution]'.
 

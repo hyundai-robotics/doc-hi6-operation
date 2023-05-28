@@ -1,4 +1,4 @@
-﻿# 6.8 Global Variables
+﻿# 6.9 Global Variables
 
 Displays a list of all global variables. You can also create/delete variables and edit types and values.
 
