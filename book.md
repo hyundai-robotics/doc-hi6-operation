@@ -3205,11 +3205,11 @@ fn객체를 설정한 경우, 각 fn객체의 입력, 출력 신호의 상태를
 
 fn객체 설정 방법은 아래 링크를 참조하십시오.
 
-[7.3.2.12 fn 블럭 할당](../7-setting/3-control-parameter/2-io-signal-setting/12-fn-block.md)
+[7.3.2.12 fn 블럭 할당](../7-setting/3-control-parameter/2-io-signal-setting/12-fn-block)
 
 [F6:이전] / [F7:다음] 버튼을 클릭하면 표시할 fn객체의 번호를 변경할 수 있습니다.
 
-나머지 F버튼들의 사용방법은 [범용 입력](6-user-input.md), [범용 출력](7-user-output.md) 모니터링 창과 동일합니다.
+나머지 F버튼들의 사용방법은 [범용 입력](6-user-input), [범용 출력](7-user-output) 모니터링 창과 동일합니다.
 
 
 
@@ -4957,7 +4957,7 @@ Hi6 제어기가 필드버스 master이고, 여러 개의 필드버스 slave장�
 
 fn 입력, fn 출력 모니터링 창을 열어, 각 fn객체의 dio 혹은 xy 릴레이 현재값을 확인하거나 수동출력할 수 있습니다. 자세한 내용은 아래 링크를 참고하십시오.
 
-[6.8 fn 입력, fn 출력](../../../6-monitoring/8-fn-io.md)
+[6.8 fn 입력, fn 출력](../../../6-monitoring/8-fn-io)
 # 7.3.3 시리얼 포트
 
 시리얼 포트 통신에 필요한 정보를 설정합니다.
