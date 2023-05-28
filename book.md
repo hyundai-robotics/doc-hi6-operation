@@ -3412,7 +3412,7 @@ Please refer to the link below for how to set up fn object.
 
 Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to be displayed.
 
-The use of the remaining F buttons is the same as the [Public Input](6-user-input.md ) and [Public Output](6-user-input.md ) monitoring windows.
+The use of the remaining F buttons is the same as the [Public Input](6-user-input.md ) and [Public Output](6-user-output.md ) monitoring windows.
 
 
 ![](../_assets/io/io_fn_mon.png)
