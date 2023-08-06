@@ -4,7 +4,7 @@ Touch \[public Output\] in the panel selection window. Then, the public output s
 
 You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
 
-![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../_assets/tp630/pane-univoutsig-mode_eng.png)
+![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@ You can check the status of public output signals that are outputted through the
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Displays the status of general output signals</p>
@@ -29,7 +29,7 @@ You can check the status of public output signals that are outputted through the
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -56,7 +56,7 @@ You can check the status of public output signals that are outputted through the
   The flow of the output signals is as follows.
 {% endhint %}
 
-![](../_assets/user-input-flow_en.png)
+![](../../_assets/user-input-flow_en.png)
 
 #### 
 
@@ -68,12 +68,12 @@ You can select the desired signal and force it to be outputted.
 
 2.	Touch a signal to select it in the signal window, and then touch the \[Manual Output\] button.
 
-    ![](../_assets/tp630/pane-univoutsig_eng.png)
+    ![](../../_assets/tp630/pane-univoutsig_eng.png)
 
 
 3.	After checking the output conditions in the manual output confirmation window, touch the <**ENTER**> button.
 
-    ![](../_assets/tp630/pane-univoutsig-manual_eng.png)
+    ![](../../_assets/tp630/pane-univoutsig-manual_eng.png)
 
 | FbN | doN | =1/0 |
 | :---: | :---: | :---: |
@@ -81,5 +81,5 @@ You can select the desired signal and force it to be outputted.
 
 4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
 
-    ![](../_assets/tp630/pane-univoutsig-onoff_eng.png)
+    ![](../../_assets/tp630/pane-univoutsig-onoff_eng.png)
 

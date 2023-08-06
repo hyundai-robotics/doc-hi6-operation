@@ -11,7 +11,7 @@ This is the function to edit the program without stopping it, while playback is 
 
 Touch the \[hot edit\] button at the panel, and Hot Edit window of the current program will be open.
 
-![](../_assets/tp630/pane-hot-edit-0_eng.png)
+![](../../_assets/tp630/pane-hot-edit-0_eng.png)
 
 <br>
 
@@ -25,15 +25,15 @@ Although the operation is the same as that of manual mode, the following functio
 3) <**POS. MOD**> key : Displays the “Operation not allowed while in Hot Edit” message.
 
 
-    ![](../_assets/tp630/pane-hot-edit-1_eng.png)
+    ![](../../_assets/tp630/pane-hot-edit-1_eng.png)
 
 <br>
 
 ### Reflection 
 
-If you have finished the program edit, click the button ![](../_assets/tp630/bt-menu.png) on the left side of the guide display bar to open the pop-up menu, and select [hotedit: request to apply].
+If you have finished the program edit, click the button ![](../../_assets/tp630/bt-menu.png) on the left side of the guide display bar to open the pop-up menu, and select [hotedit: request to apply].
 
-![](../_assets/tp630/pane-hot-edit-apply2_eng.png)
+![](../../_assets/tp630/pane-hot-edit-apply2_eng.png)
 
 <br>
 
@@ -73,15 +73,15 @@ The actual timing of the reflection is displayed in the following table.
 
   \'*' symbol means that the teaching program has been modified and is different from the current running program.  
   
-  ![](../_assets/tp630/pane-hot-edit-apply3.png)
+  ![](../../_assets/tp630/pane-hot-edit-apply3.png)
 
   \'>' symbol means that Hot Edit has been requested, while the program is running. 
 
-  ![](../_assets/tp630/pane-hot-edit-apply4.png)
+  ![](../../_assets/tp630/pane-hot-edit-apply4.png)
 
   ' '(blank) symbol means that the request has not been reflected yet, or has already been reflected and so the program is the same as the running one.  
   
-  ![](../_assets/tp630/pane-hot-edit-apply5.png)
+  ![](../../_assets/tp630/pane-hot-edit-apply5.png)
 
 
 <Br>

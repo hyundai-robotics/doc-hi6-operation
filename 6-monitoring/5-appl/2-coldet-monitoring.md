@@ -1,7 +1,7 @@
 ﻿# 6.5.2 Coldet Monitoring
 
- ![](../_assets/tp630/coldet_monitoring_pane.png)
- ![](../_assets/tp630/coldet_monitoring.png)
+ ![](../../_assets/tp630/coldet_monitoring_pane.png)
+ ![](../../_assets/tp630/coldet_monitoring.png)
  
 ColDet monitoring 
 

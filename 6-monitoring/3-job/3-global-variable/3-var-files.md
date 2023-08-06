@@ -35,7 +35,7 @@ Variable values are also saved as files because they must be preserved even when
 
 When you open the folder `MAIN/project/vars/` in File-manager, a file named `weld_points.csv` is created. The variables specified as the predefined create a .csv file that is the same as the variable name, and when released from predefined, the file is automatically deleted.
 
-![](../../_assets/tp630/panel-gvar/csv0.png)
+![](../../../_assets/tp630/panel-gvar/csv0.png)
 
 Copy this file via USB memory or FTP and open it on your PC. The .csv file is a very simple text format standard that expresses comma-separated values.
 
@@ -43,7 +43,7 @@ Refer to: [Wikipedia: Comma-separated values](https://en.wikipedia.org/wiki/Comm
 
 The .csv file represents a single two-dimensional table. The columns are separated by commas and rows are spearated by line-feed.
 
-![](../../_assets/tp630/panel-gvar/csv1.png)
+![](../../../_assets/tp630/panel-gvar/csv1.png)
 
 The csv file containing the procedure building up the `weld_points` two-dimensional array, in order.
 
@@ -75,7 +75,7 @@ If 100 rows are performed for `weld_points[0]`, the following rows are followed 
 
 You can double-click the .csv file in File-manager to open it with Microsoft Excel and edit it. Save as `Ctrl+S` or `Save` button when editing is done.
 
-![](../../_assets/tp630/panel-gvar/csv2.png)
+![](../../../_assets/tp630/panel-gvar/csv2.png)
 
 Saving in Excel results in unnecessary commas, as shown below, and the quotation marks in the coordinate-system disappear, resulting in a slight change in format. It can't be helped because Excel handles .csv like this. Anyway, the Hi6 controller also recognizes that kind of format, so it doesn't matter.
 
@@ -99,4 +99,4 @@ You can overwrite the edited file into `MAIN/project/vars/` again, but it is not
 When you click the [F2: load all] button in the Global Variables window, all variable files in the `vars/` folder are reloaded to memory.
 (Please note that deleting the variable file and clicking [F2: load all] will also delete the corresponding variable in memory.)
 
-![](../../_assets/tp630/panel-gvar/fixed-var.png)
+![](../../../_assets/tp630/panel-gvar/fixed-var.png)

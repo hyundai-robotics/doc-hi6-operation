@@ -2,9 +2,9 @@
 
 Touch \[system diagnosis\] in the panel selection window. Then, a window for brake diagnosis will appear.
 
-![](../_assets/tp630/pane-sys-diagnosis-brake_eng.png)
+![](../../_assets/tp630/pane-sys-diagnosis-brake_eng.png)
 
-![](../_assets/tp630/pane-sys-diagnosis-gasp_eng.png)
+![](../../_assets/tp630/pane-sys-diagnosis-gasp_eng.png)
 
 
 
@@ -19,7 +19,7 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>[system diagnosis] In case where the panel is touched, you can switch the panel into another diagnosis by pushing the below items.</p>
@@ -31,7 +31,7 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Under each condition of brake hold or release, current torque, maximum torque, reference torque, and torque-applied ratio are displayed.</p>
@@ -43,7 +43,7 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c3.png" alt/>
+        <img src="../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p> Reference pressure and estimated pressure of the gas spring are displayed.</p>

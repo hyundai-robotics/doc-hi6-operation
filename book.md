@@ -3100,8 +3100,6 @@ You can register the user coordinate system number in the \[system &gt; 2: Contr
 
 You can check the status of the robot system and various data of the controller.
 
-# 6.1 Use of the Monitoring Function
-
 1.	In order, touch the \[pane layout\] button at the top right of the panel,[split] at the bottom, and [select] at the left bottom. The panel selection window will appear.
 
     ![](../_assets/tp630/rbt-window-divide_eng.png)
@@ -3118,81 +3116,46 @@ You can check the status of the robot system and various data of the controller.
 * 
   For details on how to use the panel stack and window of the work area, refer to "[1.2.3.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area.md)".
 {% endhint %}
+# 6.1 Basic
 
-
-
-
-
-
-
-# 6.2 job
-
-Touch \[job\] in the panel selection window. For the total program list, <**SHIFT**>+<**PROG**> keys lead to the program selection window. Then, you can create, delete, and select a program.
-
-![](../_assets/tp630/k-prg-select_eng.png)
-
-You can modify the selected job program in the task edit window.
-
-![](../_assets/tp630/pane-job_eng.png)
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/tp630/k-prog-step_eng.png" alt/>
-      </td>
-      <td style="text-align:left"> <ul>  <<b>SHIFT</b>>+<<b>PROG</b>> : In the program selection window, you can create, delete, or select a program. </ul> </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <ul> Basic information and commands are displayed. You can check and modify details of each command.
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li> <b>[&#x2026;]</b>: If the automatic indentation is applied incorrectly,
-            the automatic indentation in the JOB program can be performed again.</li>
-          <li>When a program is written, the parameter value of the selected statement
-            will be displayed in the input area.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-{% hint style="info" %}
-For details on how to manage and write programs, refer to “[3 Program Writing](../programming/).”
-{% endhint %}
-
-
-
-# 6.3 Pose
+# 6.1.1 Pose
 
 Touch \[Pose\] in the panel selection window. Then, the robot pose information window will appear. You can check the current angle of each axis of the robot, the coordinate value of the tool center point \(TCP\), and the current value and command value of the encoder.
 
-![](../_assets/tp630/pane-pose_eng.png)
+![](../../_assets/tp630/pane-pose_eng.png)
 
-# 6.4 System Input
+# 6.3.2 Operation time
+
+In the panel selection window, touch \[Operation time\]. Then, the controller’s operation information window will appear.
+
+You can check the accumulated time and number of cycles for each operation of the controller created immediately after system initialization, power input, and the start of the recent cycle. You can initialize the operation information by touching the \[Clear\] button for each item at the bottom of the information.
+
+![Figure 41 Operation information](../../_assets/tp630/pane-operating_eng.png)
+
+
+
+The timing of reflection in accordance with the conditions of individual items is as follows.
+
+![](../../_assets/image_449.png)
+
+# 6.1.3 History
+
+In the panel selection window, touch \[history\]. The history window will appear. 
+
+You can check the history in which the execution log and time stamps of the job program are outputted.
+
+
+
+![](../../_assets/tp630/pane-history_eng.png)
+# 6.2 IO, PLC, Communication
+
+# 6.2.1 System Input
 
 In the panel selection window, touch \[System Input\]. Then, the input signal window will appear. 
 
 You can check the status of signals related to the robot operation and the status of the input signals preassigned to detect any abnormality that occurs to the robot and the controller.
 
-![](../_assets/tp630/pane-system-input_eng.png)
+![](../../_assets/tp630/pane-system-input_eng.png)
 
 
 
@@ -3207,7 +3170,7 @@ You can check the status of signals related to the robot operation and the statu
 
 
 
-# 6.5    System Output
+# 6.2.2 System Output
 
 Touch \[System Output\] in the panel selection window. Then, the output signal window will appear.
 
@@ -3215,7 +3178,7 @@ You can check the signals related to the robot operation and check the status of
 
 
 
-![](../_assets/tp630/pane-system-output_eng.png)
+![](../../_assets/tp630/pane-system-output_eng.png)
 
 * In the ON/OFF status and sequence status, the signals currently being outputted will be displayed in yellow.
 * In the sequence status, only the status of the controller sequence signals will be displayed.
@@ -3232,11 +3195,11 @@ You can select the desired signal and force it to be outputted.
 
 2.	Touch a signal to select it in the signal window, and then touch the \[Manual Output\] button.
 
-    ![](../_assets/tp630/pane-system-output1_eng.png)
+    ![](../../_assets/tp630/pane-system-output1_eng.png)
 
 3.	After checking the output conditions in the manual output confirmation window, touch the \[ENTER\] button.
 
-    ![](../_assets/tp630/pane-system-output-manual-pop_eng.png)
+    ![](../../_assets/tp630/pane-system-output-manual-pop_eng.png)
 
 
     | soN | =1/0 |
@@ -3246,15 +3209,15 @@ You can select the desired signal and force it to be outputted.
 
 4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
 
-    ![](../_assets/tp630/pane-system-output2_eng.png)
+    ![](../../_assets/tp630/pane-system-output2_eng.png)
 
-# 6.6 Public Input
+# 6.2.3 Public Input
 
 Touch \[public Input\] in the panel selection window. Then, the public input signal window will appear. 
 
 You can check the status of public input signals that are inputted through the CNIN connector of the I/O board in the controller.
 
-![](../_assets/tp630/pane-public-input_eng.png)
+![](../../_assets/tp630/pane-public-input_eng.png)
 
 <table>
   <thead>
@@ -3266,7 +3229,7 @@ You can check the status of public input signals that are inputted through the C
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Displays the status of general input signals</p>
@@ -3279,7 +3242,7 @@ You can check the status of public input signals that are inputted through the C
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -3305,15 +3268,15 @@ You can check the status of public input signals that are inputted through the C
   The flow of the input signals is as follows.
 {% endhint %}
 
-![](../_assets/user-input-flow_en.png)
+![](../../_assets/user-input-flow_en.png)
 
-# 6.7 Public Output
+# 6.2.4 Public Output
 
 Touch \[public Output\] in the panel selection window. Then, the public output signal window will appear. 
 
 You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
 
-![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../_assets/tp630/pane-univoutsig-mode_eng.png)
+![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
 
 <table>
   <thead>
@@ -3325,7 +3288,7 @@ You can check the status of public output signals that are outputted through the
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Displays the status of general output signals</p>
@@ -3338,7 +3301,7 @@ You can check the status of public output signals that are outputted through the
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -3365,7 +3328,7 @@ You can check the status of public output signals that are outputted through the
   The flow of the output signals is as follows.
 {% endhint %}
 
-![](../_assets/user-input-flow_en.png)
+![](../../_assets/user-input-flow_en.png)
 
 #### 
 
@@ -3377,12 +3340,12 @@ You can select the desired signal and force it to be outputted.
 
 2.	Touch a signal to select it in the signal window, and then touch the \[Manual Output\] button.
 
-    ![](../_assets/tp630/pane-univoutsig_eng.png)
+    ![](../../_assets/tp630/pane-univoutsig_eng.png)
 
 
 3.	After checking the output conditions in the manual output confirmation window, touch the <**ENTER**> button.
 
-    ![](../_assets/tp630/pane-univoutsig-manual_eng.png)
+    ![](../../_assets/tp630/pane-univoutsig-manual_eng.png)
 
 | FbN | doN | =1/0 |
 | :---: | :---: | :---: |
@@ -3390,9 +3353,9 @@ You can select the desired signal and force it to be outputted.
 
 4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
 
-    ![](../_assets/tp630/pane-univoutsig-onoff_eng.png)
+    ![](../../_assets/tp630/pane-univoutsig-onoff_eng.png)
 
-# 6.8 fn input, fn output
+# 6.2.5 fn input, fn output
 
 You can define fn objects by specifying specific areas of fb objects.
 If the Hi6 controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
@@ -3400,7 +3363,7 @@ If the Hi6 controller is a fieldbus master, and there are multiple fieldbus slav
 The set fn objects can be used in the same way as the fb objects in the robot language and the embedded PLC.
 
 
-![](../_assets/io/io_fn.png)
+![](../../_assets/io/io_fn.png)
 
 
 Select `[fn input]` or `[fn output]` in the panel selection window. The fn input or output panel appears and you can check the values of the input and output signals of each fn object.
@@ -3415,9 +3378,249 @@ Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to
 The use of the remaining F buttons is the same as the [Public Input](6-user-input) and [Public Output](7-user-output) monitoring windows.
 
 
-![](../_assets/io/io_fn_mon.png)
+![](../../_assets/io/io_fn_mon.png)
 
-# 6.9 Global Variables
+# 6.2.6 Forced IO
+
+You can register IO relay variables in the Force IO panel to force some changed IO values.
+
+{% hint style="warning" %}
+* This function is only for testing or problem analysis.
+* Misoperation of forced IO function can cause serious accidents such as collisions, drops, and casualties. Use with caution only if you fully understand the system's IO connections and clearly predict the consequences of the forced value change.
+* After testing and problem analysis, be sure to clear the forced IO completely and restore it to a normal IO state.
+
+{% endhint %}
+
+## Opening forced IO panel
+
+1. Split the screen and press the [Select] button on the bottom left.
+
+![](../../_assets/tp630/panel-split.png)
+&nbsp;
+![](../../_assets/tp630/panel-sel.png)
+
+2. Double-click `forced io` in the panel selection window. Forced I/O panel opens.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io.png)
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
+
+
+## How to use
+
+Select the `Name` column, type the desired IO Relay variable name, and press the `ENTER` key to register the variable in the table.  
+(You can modify the variable name you entered by clicking the Name column once more.)
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-name.png)
+
+Select the `Value` column, type the new IO value you want to apply, and press the `ENTER` key.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-val.png)
+
+If you have more forced IO entries to apply, enter them in the same way. You can enter up to 100 entries.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-multi.png)
+
+The * mark on the panel title bar means that the table has been modified and this modification has not yet been applied.
+Press the [F7: Apply] button to apply the forced IO.
+The moment you press the `OK` button in the warning message box, all forced I/O entries are applied.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-apply.png)
+
+The * mark on the panel title bar disappears, and you can see that the forced IO value is applied.
+A red F mark flashes on the title bar. It is a warning that forced IO is being applied.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
+
+
+* Press `SHIFT+DEL` to delete an item during editing.
+* You can change the order of the items by pressing the [F5: Swap Up], [F6: Swap Down] buttons.
+* If you click [F3: Cancel edit] while editing a table, it will reload the last applied state.
+
+After completing the test and problem analysis, be sure to press the [F2: Clear] button to fully clear the forced IO.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-clear.png)
+
+{% hint style="warning" %}
+* If multiple entries force conflicting values for the same relay (or overlaid bits), they are forced to the value of the lower item of the table.
+* When the Hi6 controller is powered off, all contents registered as forced IO are cleared.
+
+{% endhint %}
+# 6.2.7 Memory variables
+
+
+Touch \[memory variables\] in the panel selection window.
+Of internal PLC relays, the accessible variables from Robot Language are displayed.
+
+![](../../_assets/tp630/pane-memory-variables_eng.png) # 6.2.8 EtherCAT device
+
+In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with Hi6 controller internally and externally. In the EtherCAT network, the controller main board works as a master.
+
+![](../../_assets/tp630/pane-EC-device_eng.png) 
+
+
+-	ENI-Configured Slave Number: the number of slave devices composing the EtherCAT network 
+-	Connected Slave Number: the number of current connected slave devices, which is supposed to be the same as 'ENI-Configured Slave Number' 
+-	Device: the device name of the EtherCAT slave connected with the main board
+-	Address: a unique address on the EtherCAT network
+-	Connection
+    -	NG: network failure
+    -	OK: network success
+-	Mode
+    -	Unknown: a status where it impossible to check the current status due to network failure
+    -	Init: a status where the network channel has been initialized
+    -	pre-op: a status where a slave device can communicate only by using non-periodic mail-box
+    -	safe-op: a status where a slave device can communicate only transmitting data(Tx PDO)
+    -	operation: a status where a slave device can communicate both transmitting and receiving data(Tx/RxPDO)
+# 6.3 Job Program, Robot Language
+
+# 6.3.1 job
+
+Touch \[job\] in the panel selection window. For the total program list, <**SHIFT**>+<**PROG**> keys lead to the program selection window. Then, you can create, delete, and select a program.
+
+![](../../_assets/tp630/k-prg-select_eng.png)
+
+You can modify the selected job program in the task edit window.
+
+![](../../_assets/tp630/pane-job_eng.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">No.</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-prog-step_eng.png" alt/>
+      </td>
+      <td style="text-align:left"> <ul>  <<b>SHIFT</b>>+<<b>PROG</b>> : In the program selection window, you can create, delete, or select a program. </ul> </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul> Basic information and commands are displayed. You can check and modify details of each command.
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li> <b>[&#x2026;]</b>: If the automatic indentation is applied incorrectly,
+            the automatic indentation in the JOB program can be performed again.</li>
+          <li>When a program is written, the parameter value of the selected statement
+            will be displayed in the input area.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+For details on how to manage and write programs, refer to “[3 Program Writing](../programming/).”
+{% endhint %}
+
+
+
+# 6.3.2 Hot Edit
+
+This is the function to edit the program without stopping it, while playback is still running. 
+
+{% hint style="warning" %}
+* When you edit and apply the program that is currently in auto operation or program that will be called, it will be applied from the next cycle (After the program end is executed) and play back the robot with the edited program. Please take maximum precaution since the wrongly implemented editing can cause major accident such as collision between robot and jig.
+{% endhint %}
+<br><br>
+
+### Entry 
+
+Touch the \[hot edit\] button at the panel, and Hot Edit window of the current program will be open.
+
+![](../../_assets/tp630/pane-hot-edit-0_eng.png)
+
+<br>
+
+
+### Types of possible edit
+
+Although the operation is the same as that of manual mode, the following functions cannot be used.
+
+1) <**Axis operation**>** key use : Ignores the input of the relevant key.
+2) <**REC**> key (Record hidden pose MOVE) : Displays the “Operation not allowed while in Hot Edit” message.
+3) <**POS. MOD**> key : Displays the “Operation not allowed while in Hot Edit” message.
+
+
+    ![](../../_assets/tp630/pane-hot-edit-1_eng.png)
+
+<br>
+
+### Reflection 
+
+If you have finished the program edit, click the button ![](../../_assets/tp630/bt-menu.png) on the left side of the guide display bar to open the pop-up menu, and select [hotedit: request to apply].
+
+![](../../_assets/tp630/pane-hot-edit-apply2_eng.png)
+
+<br>
+
+The actual timing of the reflection is displayed in the following table.
+
+<table>
+<thead>
+  <tr>
+    <th>Status</th>
+    <th>Program</th>
+    <th>After request, reflection timing</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Not running</td>
+    <td>-</td>
+    <td>immediately applied</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Running</td>
+    <td>Not running program<br>(Job not included in call stack)</td>
+    <td>immediately applied</td>
+  </tr>
+  <tr>
+    <td>Running program<br>(Job included in call stack)</td>
+    <td>at start of the next cycle</td>
+  </tr>
+</tbody>
+</table>
+
+<br>
+
+### Title bar display
+
+  A current status symbol is displayed on the right side of the title bar in the Hot Edit window.
+
+  \'*' symbol means that the teaching program has been modified and is different from the current running program.  
+  
+  ![](../../_assets/tp630/pane-hot-edit-apply3.png)
+
+  \'>' symbol means that Hot Edit has been requested, while the program is running. 
+
+  ![](../../_assets/tp630/pane-hot-edit-apply4.png)
+
+  ' '(blank) symbol means that the request has not been reflected yet, or has already been reflected and so the program is the same as the running one.  
+  
+  ![](../../_assets/tp630/pane-hot-edit-apply5.png)
+
+
+<Br>
+
+### Different program selection
+
+When you press the <**SHIFT**> + <**PROG**> key, you can select a different program. You can also create a new program.
+# 6.3.3 Global Variables
 
 Displays a list of all global variables. You can also create/delete variables and edit types and values.
 
@@ -3426,25 +3629,25 @@ Displays a list of all global variables. You can also create/delete variables an
 
 1. Split the screen and press the [Select] button at the bottom left.
 
-![](../../_assets/tp630/panel-split.png)
+![](../../../_assets/tp630/panel-split.png)
 &nbsp;
-![](../../_assets/tp630/panel-sel.png)
+![](../../../_assets/tp630/panel-sel.png)
 
 2. In the panel selection window, touch \[global variable\]. The `global variables` panel opens.
 
-![](../../_assets/tp630/pane-gvar.png)
+![](../../../_assets/tp630/pane-gvar.png)
 
 
-![](../../_assets/tp630/panel-gvar/panel-gvar0.png)
+![](../../../_assets/tp630/panel-gvar/panel-gvar0.png)
 
-# 6.9.1 Basic features
+# 6.3.3.1 Basic features
 
 
 ## Finding a variable
 
 If it is difficult to find the desired variable due to a large number of variables, type only a few of the variable's name in the filter at the top. Only variables that start with the filter string you enter appear on the screen, making it easy to find them.
 
-![](../../_assets/tp630/panel-gvar/gv-find.png)
+![](../../../_assets/tp630/panel-gvar/gv-find.png)
 
 
 ## Changing the value of a variable (for bool, int, double, string type)
@@ -3452,34 +3655,34 @@ If it is difficult to find the desired variable due to a large number of variabl
 Select the `value` column for the desired variable and type the new value.
 Press the ENTER key to apply the entered value to the variable.
 
-![](../../_assets/tp630/panel-gvar/gv-edit-value.png)
+![](../../../_assets/tp630/panel-gvar/gv-edit-value.png)
 
 ## Changing the value of a variable (for pose, shift type)
 
 Select the `value` column for the desired pose or shift variable.
 
-![](../../_assets/tp630/panel-gvar/gv-edit-pose1.png)
+![](../../../_assets/tp630/panel-gvar/gv-edit-pose1.png)
 
 Press the ENTER key to open the Pose or Shift Property window.
 After edit it, click the [F7: OK] button.
 
-![](../../_assets/tp630/panel-gvar/gv-edit-pose2.png)
+![](../../../_assets/tp630/panel-gvar/gv-edit-pose2.png)
 
 
 ## Changing a variable type
 
 Select the `type` column for the desired variable and press ENTER. The Create Variable dialog box appears as shown below.
 
-![](../../_assets/tp630/panel-gvar/gv-edit-type.png)
+![](../../../_assets/tp630/panel-gvar/gv-edit-type.png)
 
-![](../../_assets/tp630/panel-gvar/gv-create-var.png)
+![](../../../_assets/tp630/panel-gvar/gv-create-var.png)
 
 Select the desired type from the Type list and click the OK button to change the type of the variable. Note that the value will be initialized if the type changes.
 
 You can also select a type for multiple variables and press ENTER to change them all at once.
 (You can select multiple consecutive cells by pressing the SHIFT+Up/Down arrow keys. Alternatively, you can select by touching multiple cells while holding down the CTRL key.)
 
-![](../../_assets/tp630/panel-gvar/gv-sel-multi-type.png)
+![](../../../_assets/tp630/panel-gvar/gv-sel-multi-type.png)
 
 
 ## Renaming a variable
@@ -3487,19 +3690,19 @@ You can also select a type for multiple variables and press ENTER to change them
 Select the `name` column for the variable you want, then open the soft keyboard to type the new name.
 Press the ENTER key to change it to the name you entered.
 
-![](../../_assets/tp630/panel-gvar/gv-edit-name.png)
+![](../../../_assets/tp630/panel-gvar/gv-edit-name.png)
 
 
 ## Creating a variable
 
 In the filter at the top, enter the name of the variable you want to create.
 
-![](../../_assets/tp630/panel-gvar/gv-new.png)
+![](../../../_assets/tp630/panel-gvar/gv-new.png)
 
 Verify that there are no variables with duplicate names, then click the + button next to the filter. The variable is created with the default type `int` (integer). Change the type of variables created using the method explained above.
 
 
-![](../../_assets/tp630/panel-gvar/gv-new2.png)
+![](../../../_assets/tp630/panel-gvar/gv-new2.png)
 
 
 ## Deleting a variable
@@ -3507,25 +3710,25 @@ Verify that there are no variables with duplicate names, then click the + button
 Select the variable you want to delete.
 Press the DEL (CTRL+BACKSPACE) key to display the OK/Cancel dialog box. After confirming the variable name, press the OK button.
 
-![](../../_assets/tp630/panel-gvar/gv-delete.png)
+![](../../../_assets/tp630/panel-gvar/gv-delete.png)
 
-# 6.9.2 Array and object
+# 6.3.3.2 Array and object
 
 ## Creating an array
 
 We will now use an example of generating a 5x200 two-dimensional pose array variable named `pos`.
 Create a variable named `pos` using the method described above.
 
-![](../../_assets/tp630/panel-gvar/gv-new-arr1.png)
+![](../../../_assets/tp630/panel-gvar/gv-new-arr1.png)
 
 
 Select the `type` column and press the ENTER key. The Create Variable dialog box appears as shown below.
 
-![](../../_assets/tp630/panel-gvar/gv-new-arr2.png)
+![](../../../_assets/tp630/panel-gvar/gv-new-arr2.png)
 
 Select `Pose` in the Type list. If you enter 5,200 for the number of elements and press the OK button, the type of pos changes to the array of Pose[5][200].
 
-![](../../_assets/tp630/panel-gvar/gv-new-arr3.png)
+![](../../../_assets/tp630/panel-gvar/gv-new-arr3.png)
 
 {% hint style="warning" %}
 \[Warning\] Be aware that defining an array that is too large may take longer to save or load and may fail to save automatically in the event of a power failure.
@@ -3537,7 +3740,7 @@ Select `Pose` in the Type list. If you enter 5,200 for the number of elements an
 The value of the array variable is displayed only as [], and the values of the elements are not displayed.
 Select the `value` column and press the ENTER key or click the [F5: sub.level] button to expand the array to a lower level and view the element values.
 
-![](../../_assets/tp630/panel-gvar/gv-arr-level1.png)
+![](../../../_assets/tp630/panel-gvar/gv-arr-level1.png)
 
 You can also change the value or type for array elements in the way described above.  
 
@@ -3545,7 +3748,7 @@ In a 2-dimensional array `pos`, `pos[0]` ~ `pos[4]` are also arrays. Press ENTER
 
 Click the [F4: up.level] button or press the ESC key to go back up to the higher level.
 
-![](../../_assets/tp630/panel-gvar/gv-arr-level2.png)
+![](../../../_assets/tp630/panel-gvar/gv-arr-level2.png)
 
 Because the array displays only 100 elements at the same time, by default you can only see the range of [0] to [99] indexes. If you change the value of the Start Index editbox in the upper left corner, you can see other ranges of elements. For example, if you enter 190 in the Start Index at `/pos[4]`, you can see the elements of [190]~[199].
 
@@ -3553,7 +3756,7 @@ Because the array displays only 100 elements at the same time, by default you ca
 
 Select the `value` column of the object variable and press the ENTER key or click the [F5: sub.level] button to expand the object to a lower level and view the property values. The operation method is similar to the array variable. However, the Startup Index editbox is not used.
 
-![](../../_assets/tp630/panel-gvar/gv-obj2.png)
+![](../../../_assets/tp630/panel-gvar/gv-obj2.png)
 
 
 
@@ -3570,7 +3773,7 @@ weld_points=0
 
 By specifying the variable as fixed, you can prevents this mistake.
 
-![](../../_assets/tp630/panel-gvar/fixed-var.png)
+![](../../../_assets/tp630/panel-gvar/fixed-var.png)
 
 If you select an array variable at the top level of the Global Variables window and press [F4: toggle fixed], the type changes from 'array' to 'F.array' (fixed-array).  
 If specified as a fixed variable, no other value can be assigned. When `weld_points` is a fixed 2-dimensional array, the result of each assignment statement below is the same as the comment.
@@ -3586,7 +3789,7 @@ weld_points[2][1].j2=90.5  # new value can be assigned to an property
 ```
 
 If [F4: toggle fixed] is performed again, fixed will be released and `F.array` will be restored to `array`.
-# 6.9.3 Variable files
+# 6.3.3.3 Variable files
 
 Variable values are also saved as files because they must be preserved even when powered off, and global variables are stored in two forms, depending on the type:
 
@@ -3623,7 +3826,7 @@ Variable values are also saved as files because they must be preserved even when
 
 When you open the folder `MAIN/project/vars/` in File-manager, a file named `weld_points.csv` is created. The variables specified as the predefined create a .csv file that is the same as the variable name, and when released from predefined, the file is automatically deleted.
 
-![](../../_assets/tp630/panel-gvar/csv0.png)
+![](../../../_assets/tp630/panel-gvar/csv0.png)
 
 Copy this file via USB memory or FTP and open it on your PC. The .csv file is a very simple text format standard that expresses comma-separated values.
 
@@ -3631,7 +3834,7 @@ Refer to: [Wikipedia: Comma-separated values](https://en.wikipedia.org/wiki/Comm
 
 The .csv file represents a single two-dimensional table. The columns are separated by commas and rows are spearated by line-feed.
 
-![](../../_assets/tp630/panel-gvar/csv1.png)
+![](../../../_assets/tp630/panel-gvar/csv1.png)
 
 The csv file containing the procedure building up the `weld_points` two-dimensional array, in order.
 
@@ -3663,7 +3866,7 @@ If 100 rows are performed for `weld_points[0]`, the following rows are followed 
 
 You can double-click the .csv file in File-manager to open it with Microsoft Excel and edit it. Save as `Ctrl+S` or `Save` button when editing is done.
 
-![](../../_assets/tp630/panel-gvar/csv2.png)
+![](../../../_assets/tp630/panel-gvar/csv2.png)
 
 Saving in Excel results in unnecessary commas, as shown below, and the quotation marks in the coordinate-system disappear, resulting in a slight change in format. It can't be helped because Excel handles .csv like this. Anyway, the Hi6 controller also recognizes that kind of format, so it doesn't matter.
 
@@ -3687,31 +3890,31 @@ You can overwrite the edited file into `MAIN/project/vars/` again, but it is not
 When you click the [F2: load all] button in the Global Variables window, all variable files in the `vars/` folder are reloaded to memory.
 (Please note that deleting the variable file and clicking [F2: load all] will also delete the corresponding variable in memory.)
 
-![](../../_assets/tp630/panel-gvar/fixed-var.png)
-# 6.10 Local Variables
+![](../../../_assets/tp630/panel-gvar/fixed-var.png)
+# 6.3.4 Local Variables
 
 Displays a list of all local variables of the current call frame. You cannot create/delete variables or change the variable name or type, but you can edit values.
 
 
 1. Split the screen and press the [Select] button at the bottom left.
 
-![](../_assets/tp630/panel-split.png)
+![](../../_assets/tp630/panel-split.png)
 &nbsp;
-![](../_assets/tp630/panel-sel.png)
+![](../../_assets/tp630/panel-sel.png)
 
 
 2. In the panel selection window, touch \[local variable\]. The `local variables` panel opens.
 
-![](../_assets/tp630/pane-lvar.png)
+![](../../_assets/tp630/pane-lvar.png)
 
 
 3. Check the variable name, type, and value. The way to change the value of a variable is the same as the global variable described in the previous section.
 
-![](../_assets/tp630/pane-lvar-mon.png)
+![](../../_assets/tp630/pane-lvar-mon.png)
 
 
 
-# 6.11 Watch
+# 6.3.5 Watch
 
 You can register variables or expressions to the watch panel to monitor or change values.
 
@@ -3720,40 +3923,40 @@ You can register variables or expressions to the watch panel to monitor or chang
 
 1. Split the screen and press the [Select] button at the bottom left.
 
-![](../_assets/tp630/panel-split.png)
+![](../../_assets/tp630/panel-split.png)
 &nbsp;
-![](../_assets/tp630/panel-sel.png)
+![](../../_assets/tp630/panel-sel.png)
 
 2. Touch `Watch` in the panel selection window. Various data windows open.
 
-![](../_assets/tp630/panel-watch/panel-watch.png)
+![](../../_assets/tp630/panel-watch/panel-watch.png)
 
-![](../_assets/tp630/panel-watch/panel-watch-mon.png)
+![](../../_assets/tp630/panel-watch/panel-watch-mon.png)
 
 
 ## How to use
 
 Enter the desired variable or expression in the top input box and click the '+' button to enter the new item in the table.
 
-![](../_assets/tp630/panel-watch/panel-watch2.png)
+![](../../_assets/tp630/panel-watch/panel-watch2.png)
 
 
 You can modify the variable name or expression that you entered by clicking the `Name` column one more time.
 
-![](../_assets/tp630/panel-watch/panel-watch-rename.png)
+![](../../_assets/tp630/panel-watch/panel-watch-rename.png)
 
 If you click in the `Value` column to enter a new value, you will change the value of that variable. Changing the value of an expression is ignored.
 
 Select the `Value` column for the pose/shift variable or expression and press the `ENTER` key to open the Pose/Shift Properties window to view and modify the values.
 
-![](../_assets/tp630/panel-gvar/gv-edit-pose2.png)
+![](../../_assets/tp630/panel-gvar/gv-edit-pose2.png)
 
 To delete a row, select the row and press the `SHIFT+DEL` key.
 
 If you press the [F7: Save all] button on the F-button at the bottom, the list of variables and expressions entered is saved in the `cfg/watch.json` file. This file is automatically loaded on power reboot.
 You can also edit this file by receiving it to an external PC, via FTP. If you overwrite the edited file with the `cfg/` folder and click the [F1: Load All] button, it will be applied to the Watch panel.
 
-![](../_assets/tp630/panel-watch/panel-watch-fbt.png)
+![](../../_assets/tp630/panel-watch/panel-watch-fbt.png)
 
 Click the [F2: swap up] and [F3: swap down] buttons to move the position of the currently selected row while exchanging it with the top and bottom rows.  
 
@@ -3766,30 +3969,7 @@ You can enter a value in the `Start Index` edit-box to display an array from a s
 {% {% hint style="warning" %}
 * To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
 {% {% endhint %}
-# 6.12 Operation time
-
-In the panel selection window, touch \[Operation time\]. Then, the controller’s operation information window will appear.
-
-You can check the accumulated time and number of cycles for each operation of the controller created immediately after system initialization, power input, and the start of the recent cycle. You can initialize the operation information by touching the \[Clear\] button for each item at the bottom of the information.
-
-![Figure 41 Operation information](../_assets/tp630/pane-operating_eng.png)
-
-
-
-The timing of reflection in accordance with the conditions of individual items is as follows.
-
-![](../_assets/image_449.png)
-
-# 6.13 History
-
-In the panel selection window, touch \[history\]. The history window will appear. 
-
-You can check the history in which the execution log and time stamps of the job program are outputted.
-
-
-
-![](../_assets/tp630/pane-history_eng.png)
-# 6.14 call stack
+# 6.3.6 call stack
 
 Touch \[Call Stack] in the panel selection window to display the Call Stack window. In order to understand the contents of this section, an understanding of the `call`~`return` statement and local variables of the hrscript must be preceded.
 
@@ -3802,7 +3982,7 @@ Touch \[Call Stack] in the panel selection window to display the Call Stack wind
 
 In robot language, you can call a sub job program with a `call` statement. When executing `end` or `return` statement, the subprogram returns to the next statement position of the `call` statement that called it. For example, in the figure below, you can see that job 5 calls job 8, run into a `return` statement, and then continues with the next statement of job 5's `call` statement.
 
-![call and return of sub jobs](../_assets/call-return.png)
+![call and return of sub jobs](../../_assets/call-return.png)
 
 The container shape drawn next to the program is a storage space called a call stack. The call stack builds up the call frames of the currently running program. The call frame contains a set of actual parameters and local variables and the return address for the job program.  
 Because a new call frame is pushed at the top when a subprogram is called, the local variables of the program that called it are kept and a new local variable space is prepared.  
@@ -3849,128 +4029,110 @@ end
 
 With the job-edit window, the call stack panel, and the local variable panel are open, if the current program is in the state where the `call` statement inside the `for`~`next` loop of job 5 is performed for the 3rd time and executed to the (B) position, the Teach Pendant screen will be in the state shown below.
 
-![job-edit, call stack, local variable](../_assets/call-stack.png)
+![job-edit, call stack, local variable](../../_assets/call-stack.png)
 
 
 The bottom frame of the call stack is job 1, the middle frame is job 5, and the top frame is job 9. The > shaped cursor points to job 9, and the values of the parameter `id` and the local variable `sensor_value` are displayed in the local variable panel. Therefore, you can check the information that job 9 was called by job 5, and job 5 was called by job 1.  
 If you want to see where job 5 called, select the frame of job 5 and press the `ENTER` key. The cursor in the job edit panel immediately moves to the (A) position to show where it was called. The local variable panel shows the frame contents of job 5, i.e., the parameter `mode` and the local variable `sensor_id`, as 12 and 3 values, respectively.
 
-![job-edit, call stack, local variable- 2](../_assets/call-stack2.png)
+![job-edit, call stack, local variable- 2](../../_assets/call-stack2.png)
 
 You can easily understand the flow of the program that has been called so far by selecting the frame of the called job.
 
 {% hint style="warning" %}
 \[caution\] When performing Step-FWD or playback, be sure to restore the > cursor to the top frame position when resuming operations. Otherwise, the position of the job cursor is considered to have changed and the call stack is initialized.
-{% endhint %}# 6.15 Hot Edit
+{% endhint %}# 6.3.7 Multi-task
 
-This is the function to edit the program without stopping it, while playback is still running. 
 
-{% hint style="warning" %}
-* When you edit and apply the program that is currently in auto operation or program that will be called, it will be applied from the next cycle (After the program end is executed) and play back the robot with the edited program. Please take maximum precaution since the wrongly implemented editing can cause major accident such as collision between robot and jig.
-{% endhint %}
-<br><br>
+Touch \[multitask\] in the panel selection window.
+This displays the information of the programs that are run automatically in the main task and the sub tasks 1 – 7, including the steps, functions, operating state, and work state.
 
-### Entry 
-
-Touch the \[hot edit\] button at the panel, and Hot Edit window of the current program will be open.
-
-![](../_assets/tp630/pane-hot-edit-0_eng.png)
+![](../../_assets/tp630/pane-multi-task_eng.png) 
 
 <br>
 
+{% hint style="info" %}
+ Refer to 『Hi6 Controller Multitasking Function Manual』for details.
+{% endhint %}# 6.3.8 Program reservation execution
 
-### Types of possible edit
+For this monitoring, pre-setting is required. You have to select the register number as 20EA or 1EA in the page of [system > 2:Control parameter > 7:Program reservation execution]'.
 
-Although the operation is the same as that of manual mode, the following functions cannot be used.
+![](../../_assets/tp630/ctrl-prog-reserve_eng.png)
 
-1) <**Axis operation**>** key use : Ignores the input of the relevant key.
-2) <**REC**> key (Record hidden pose MOVE) : Displays the “Operation not allowed while in Hot Edit” message.
-3) <**POS. MOD**> key : Displays the “Operation not allowed while in Hot Edit” message.
+In the panel selection window, touch \[program reserve\]. Then, the scheduled program execution window will appear. 
 
+When programs are scheduled through external signals and executed in the scheduled order, you can check and change the status in the list of scheduled programs.
 
-    ![](../_assets/tp630/pane-hot-edit-1_eng.png)
-
-<br>
-
-### Reflection 
-
-If you have finished the program edit, click the button ![](../_assets/tp630/bt-menu.png) on the left side of the guide display bar to open the pop-up menu, and select [hotedit: request to apply].
-
-![](../_assets/tp630/pane-hot-edit-apply2_eng.png)
-
-<br>
-
-The actual timing of the reflection is displayed in the following table.
+![Figure 50 Program reserve](../../_assets/tp630/pane-prog-reserv_eng.png)
 
 <table>
-<thead>
-  <tr>
-    <th>Status</th>
-    <th>Program</th>
-    <th>After request, reflection timing</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Not running</td>
-    <td>-</td>
-    <td>immediately applied</td>
-  </tr>
-  <tr>
-    <td rowspan="2">Running</td>
-    <td>Not running program<br>(Job not included in call stack)</td>
-    <td>immediately applied</td>
-  </tr>
-  <tr>
-    <td>Running program<br>(Job included in call stack)</td>
-    <td>at start of the next cycle</td>
-  </tr>
-</tbody>
+  <thead>
+    <tr>
+      <th style="text-align:left">No.</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>A list of scheduled programs. You can schedule 1&#x2013;20 programs.</p>
+        <ul>
+          <li>When a program being executed in remote mode is terminated, programs will
+            be automatically executed according to the scheduled order.</li>
+          <li>When the execution of scheduled programs is completed, those programs
+            will be deleted from the list.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>[Edit]</b>: You can edit the list of scheduled programs.</li>
+          <li><b>[Insert]</b>: You can add a program that will be executed on a schedule
+            to the list of scheduled programs.</li>
+          <li><b>[Delete]</b>: You can delete a scheduled program from the list of scheduled
+            programs.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
-<br>
-
-### Title bar display
-
-  A current status symbol is displayed on the right side of the title bar in the Hot Edit window.
-
-  \'*' symbol means that the teaching program has been modified and is different from the current running program.  
-  
-  ![](../_assets/tp630/pane-hot-edit-apply3.png)
-
-  \'>' symbol means that Hot Edit has been requested, while the program is running. 
-
-  ![](../_assets/tp630/pane-hot-edit-apply4.png)
-
-  ' '(blank) symbol means that the request has not been reflected yet, or has already been reflected and so the program is the same as the running one.  
-  
-  ![](../_assets/tp630/pane-hot-edit-apply5.png)
 
 
-<Br>
+{% hint style="info" %}
+* The \[Program reserve\] item will be activated only when the sync status of the sensor sync function among the application functions is set as conveyor or press.
+* The \[Program reserve\] item will not be activated if the \[Applied Register Count\] option in the \[system &gt; 2: Control Parameter &gt; 8: Program reserve\] menu is set as disable.
+* For details on the scheduled program execution, refer to the “Hi6 Controller Scheduled Program Execution Function Manual.”
+{% endhint %}
 
-### Different program selection
+# 6.4 System
 
-When you press the <**SHIFT**> + <**PROG**> key, you can select a different program. You can also create a new program.
-# 6.16 System Character
+# 6.4.1 System Character
 
 In the panel selection window, touch \[System character\]. Then, the system character window will appear. 
 
 You can check all the various data of the robot system or only the data of a specific type of information.
 
-![](../_assets/tp630/pane-syscharacter_eng.png)
+![](../../_assets/tp630/pane-syscharacter_eng.png)
 
 | No. | Description |
 | :--- | :--- |
-| ![](../_assets/c1.png) | Displays the data of the robot system. You can check the detailed data of a specific type by selecting individual types of information shown above. |
-| ![](../_assets/c2.png) | \[clear\]: For the rest of the items except for the motion of each axis, you can initialize the maximum value of the system data by type. |
+| ![](../../_assets/c1.png) | Displays the data of the robot system. You can check the detailed data of a specific type by selecting individual types of information shown above. |
+| ![](../../_assets/c2.png) | \[clear\]: For the rest of the items except for the motion of each axis, you can initialize the maximum value of the system data by type. |
 
 {% hint style="info" %}
 System character monitoring function is only available in engineer mode.
 {% endhint %}
 
 {% hint style="warning" %}
-* In Engineer Mode, the Engineer Mode icon \(![](../_assets/eng-mode.png)\) will blink on the status bar.
+* In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
 * Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
 {% endhint %}
 
@@ -3985,15 +4147,15 @@ You can initialize the maximum value of the data by selecting the type of inform
 
 2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized.
 
-    ![](../_assets/tp630/pane-syscharacter-clear_eng.png)
+    ![](../../_assets/tp630/pane-syscharacter-clear_eng.png)
 
-# 6.17 System Diagnosis
+# 6.4.2 System Diagnosis
 
 Touch \[system diagnosis\] in the panel selection window. Then, a window for brake diagnosis will appear.
 
-![](../_assets/tp630/pane-sys-diagnosis-brake_eng.png)
+![](../../_assets/tp630/pane-sys-diagnosis-brake_eng.png)
 
-![](../_assets/tp630/pane-sys-diagnosis-gasp_eng.png)
+![](../../_assets/tp630/pane-sys-diagnosis-gasp_eng.png)
 
 
 
@@ -4008,7 +4170,7 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>[system diagnosis] In case where the panel is touched, you can switch the panel into another diagnosis by pushing the below items.</p>
@@ -4020,7 +4182,7 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>Under each condition of brake hold or release, current torque, maximum torque, reference torque, and torque-applied ratio are displayed.</p>
@@ -4032,7 +4194,7 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c3.png" alt/>
+        <img src="../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p> Reference pressure and estimated pressure of the gas spring are displayed.</p>
@@ -4050,14 +4212,14 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
 * Refer to "Hi6 system diagnosis manual" for more details.
 {% endhint %}
 
-# 6.18 Task monitor
+# 6.4.3 Task monitor
 
 
 In the panel selection window, touch \[Task monitor\]. Then, the task window will appear.
 
 You can check the operation cycle and execution time information for each task.
 
-![Figure 45 Task monitor](../_assets/tp630/pane-task_eng.png)
+![Figure 45 Task monitor](../../_assets/tp630/pane-task_eng.png)
 
 <table>
   <thead>
@@ -4069,7 +4231,7 @@ You can check the operation cycle and execution time information for each task.
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
           <ul>Displays the operation cycle and execution time information for each task </ul>
@@ -4077,7 +4239,7 @@ You can check the operation cycle and execution time information for each task.
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -4095,13 +4257,24 @@ You can check the operation cycle and execution time information for each task.
 
 
 
-# 6.19 Sensor Sync
+# 6.4.4 Hardware
+
+ In the panel selection window, touch \[hardware\]. You can monitor current voltage and temperature of the COM module. In the case that a status value is out of the tolerance, a warning message will be issued in the period of 24 hours.
+
+ ![](../../_assets/tp630/pane-hw-monitoring_eng.png)
+ 
+ 
+- If you want to change the tolerance, select the corresponding cell and edit it. Then, press the [Save Min/Max] button.
+- If you want to initialize with default values, press the [Reset Min/Max] button.
+# 6.5 Advanced Features and Robot Application
+
+# 6.5.1 Sensor Sync
 
 Touch \[Sensor Sync\] in the panel selection window. Then, the sensor sync window will appear.
 
 You can check the information related to the conveyor and press sync functions. The sensor sync function can be activated by setting the sync status as conveyor or press in the \[system &gt; 4: Application Parameter &gt; 4: Sensor Sync\] menu.
 
-![Figure 49 Sensor Sync Monitoring](../_assets/tp630/pane-sensorsynch_eng.png)
+![Figure 49 Sensor Sync Monitoring](../../_assets/tp630/pane-sensorsynch_eng.png)
 
 <table>
   <thead>
@@ -4113,14 +4286,14 @@ You can check the information related to the conveyor and press sync functions. 
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left"> <ul>Displays the information related to the conveyor and press sync functions
         of the selected sensor</ul></td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -4145,153 +4318,10 @@ You can check the information related to the conveyor and press sync functions. 
 For details on the sensor sync function, refer to the “Hi6 Sensor Sync Function Manual.”
 {% endhint %}
 
-# 6.20 Program reservation execution
+# 6.5.2 Coldet Monitoring
 
-For this monitoring, pre-setting is required. You have to select the register number as 20EA or 1EA in the page of [system > 2:Control parameter > 7:Program reservation execution]'.
-
-![](../_assets/tp630/ctrl-prog-reserve_eng.png)
-
-In the panel selection window, touch \[program reserve\]. Then, the scheduled program execution window will appear. 
-
-When programs are scheduled through external signals and executed in the scheduled order, you can check and change the status in the list of scheduled programs.
-
-![Figure 50 Program reserve](../_assets/tp630/pane-prog-reserv_eng.png)
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <p>A list of scheduled programs. You can schedule 1&#x2013;20 programs.</p>
-        <ul>
-          <li>When a program being executed in remote mode is terminated, programs will
-            be automatically executed according to the scheduled order.</li>
-          <li>When the execution of scheduled programs is completed, those programs
-            will be deleted from the list.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li><b>[Edit]</b>: You can edit the list of scheduled programs.</li>
-          <li><b>[Insert]</b>: You can add a program that will be executed on a schedule
-            to the list of scheduled programs.</li>
-          <li><b>[Delete]</b>: You can delete a scheduled program from the list of scheduled
-            programs.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-{% hint style="info" %}
-* The \[Program reserve\] item will be activated only when the sync status of the sensor sync function among the application functions is set as conveyor or press.
-* The \[Program reserve\] item will not be activated if the \[Applied Register Count\] option in the \[system &gt; 2: Control Parameter &gt; 8: Program reserve\] menu is set as disable.
-* For details on the scheduled program execution, refer to the “Hi6 Controller Scheduled Program Execution Function Manual.”
-{% endhint %}
-
-# 6.21 Forced IO
-
-You can register IO relay variables in the Force IO panel to force some changed IO values.
-
-{% hint style="warning" %}
-* This function is only for testing or problem analysis.
-* Misoperation of forced IO function can cause serious accidents such as collisions, drops, and casualties. Use with caution only if you fully understand the system's IO connections and clearly predict the consequences of the forced value change.
-* After testing and problem analysis, be sure to clear the forced IO completely and restore it to a normal IO state.
-
-{% endhint %}
-
-## Opening forced IO panel
-
-1. Split the screen and press the [Select] button on the bottom left.
-
-![](../_assets/tp630/panel-split.png)
-&nbsp;
-![](../_assets/tp630/panel-sel.png)
-
-2. Double-click `forced io` in the panel selection window. Forced I/O panel opens.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io.png)
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
-
-
-## How to use
-
-Select the `Name` column, type the desired IO Relay variable name, and press the `ENTER` key to register the variable in the table.  
-(You can modify the variable name you entered by clicking the Name column once more.)
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-name.png)
-
-Select the `Value` column, type the new IO value you want to apply, and press the `ENTER` key.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-val.png)
-
-If you have more forced IO entries to apply, enter them in the same way. You can enter up to 100 entries.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-multi.png)
-
-The * mark on the panel title bar means that the table has been modified and this modification has not yet been applied.
-Press the [F7: Apply] button to apply the forced IO.
-The moment you press the `OK` button in the warning message box, all forced I/O entries are applied.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-apply.png)
-
-The * mark on the panel title bar disappears, and you can see that the forced IO value is applied.
-A red F mark flashes on the title bar. It is a warning that forced IO is being applied.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
-
-
-* Press `SHIFT+DEL` to delete an item during editing.
-* You can change the order of the items by pressing the [F5: Swap Up], [F6: Swap Down] buttons.
-* If you click [F3: Cancel edit] while editing a table, it will reload the last applied state.
-
-After completing the test and problem analysis, be sure to press the [F2: Clear] button to fully clear the forced IO.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-clear.png)
-
-{% hint style="warning" %}
-* If multiple entries force conflicting values for the same relay (or overlaid bits), they are forced to the value of the lower item of the table.
-* When the Hi6 controller is powered off, all contents registered as forced IO are cleared.
-
-{% endhint %}
-# 6.22 Multi-task
-
-
-Touch \[multitask\] in the panel selection window.
-This displays the information of the programs that are run automatically in the main task and the sub tasks 1 – 7, including the steps, functions, operating state, and work state.
-
-![](../_assets/tp630/pane-multi-task_eng.png) 
-
-<br>
-
-{% hint style="info" %}
- Refer to 『Hi6 Controller Multitasking Function Manual』for details.
-{% endhint %}# 6.23 Memory variables
-
-
-Touch \[memory variables\] in the panel selection window.
-Of internal PLC relays, the accessible variables from Robot Language are displayed.
-
-![](../_assets/tp630/pane-memory-variables_eng.png) # 6.24 Coldet Monitoring
-
- ![](../_assets/tp630/coldet_monitoring_pane.png)
- ![](../_assets/tp630/coldet_monitoring.png)
+ ![](../../_assets/tp630/coldet_monitoring_pane.png)
+ ![](../../_assets/tp630/coldet_monitoring.png)
  
 ColDet monitoring 
 
@@ -4300,59 +4330,30 @@ ColDet monitoring
  - [External Torque]-[Current] : Currently estimated external torque [Nm]
  - [External Torque]-[Maximum] : Maximum value of the current external torque[Nm]
  - [Reference] : Threshold torque value [Nm]
- - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. # 6.25 EtherCAT device
-
-In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with Hi6 controller internally and externally. In the EtherCAT network, the controller main board works as a master.
-
-![](../_assets/tp630/pane-EC-device_eng.png) 
-
-
--	ENI-Configured Slave Number: the number of slave devices composing the EtherCAT network 
--	Connected Slave Number: the number of current connected slave devices, which is supposed to be the same as 'ENI-Configured Slave Number' 
--	Device: the device name of the EtherCAT slave connected with the main board
--	Address: a unique address on the EtherCAT network
--	Connection
-    -	NG: network failure
-    -	OK: network success
--	Mode
-    -	Unknown: a status where it impossible to check the current status due to network failure
-    -	Init: a status where the network channel has been initialized
-    -	pre-op: a status where a slave device can communicate only by using non-periodic mail-box
-    -	safe-op: a status where a slave device can communicate only transmitting data(Tx PDO)
-    -	operation: a status where a slave device can communicate both transmitting and receiving data(Tx/RxPDO)
-# 6.26 Hardware
-
- In the panel selection window, touch \[hardware\]. You can monitor current voltage and temperature of the COM module. In the case that a status value is out of the tolerance, a warning message will be issued in the period of 24 hours.
-
- ![](../_assets/tp630/pane-hw-monitoring_eng.png)
- 
- 
-- If you want to change the tolerance, select the corresponding cell and edit it. Then, press the [Save Min/Max] button.
-- If you want to initialize with default values, press the [Reset Min/Max] button.
-# 6.26 Spot welding data
+ - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. # 6.5.10 Spot Welding Data
 
 Touch \[spot\] in the panel selection window.
 This displays the spot gun axis data, the input/output signals and operating information of spot welding.
 
-![](../_assets/tp630/pane-spot_eng.png) 
+![](../../_assets/tp630/pane-spot_eng.png) 
 
 <br>
 
 {% hint style="info" %}
  Refer to Spot Welding Manual's “[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/3-Related-functions/3-1-monitoring/README)” for more details.
 {% endhint %}
-# 6.27 Servo tool change
+# 6.5.11 Servo Tool Change
 
 
 In the panel selection window, touch \[servo tool change\]. This displays the state of the servo tool and the encoder power supply’s input/output state when the servo tool change function is used.
 
-![](../_assets/tp630/pane-tool-change_eng.png) 
+![](../../_assets/tp630/pane-tool-change_eng.png) 
 
 <br>
 
 {% hint style="info" %}
  Refer to "Hi6 Controller Servo Tool Change Function Manual" for more details.
-{% endhint %}# 6.28 Arc welding data
+{% endhint %}# 6.5.20 Arc Welding Data
 
 Refer to Arc Welding Manual's “[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/7_Monitoring/README)”.
 # 7. System

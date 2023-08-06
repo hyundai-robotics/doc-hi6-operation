@@ -2,11 +2,11 @@
 
 Touch \[job\] in the panel selection window. For the total program list, <**SHIFT**>+<**PROG**> keys lead to the program selection window. Then, you can create, delete, and select a program.
 
-![](../_assets/tp630/k-prg-select_eng.png)
+![](../../_assets/tp630/k-prg-select_eng.png)
 
 You can modify the selected job program in the task edit window.
 
-![](../_assets/tp630/pane-job_eng.png)
+![](../../_assets/tp630/pane-job_eng.png)
 
 <table>
   <thead>
@@ -18,13 +18,13 @@ You can modify the selected job program in the task edit window.
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/tp630/k-prog-step_eng.png" alt/>
+        <img src="../../_assets/tp630/k-prog-step_eng.png" alt/>
       </td>
       <td style="text-align:left"> <ul>  <<b>SHIFT</b>>+<<b>PROG</b>> : In the program selection window, you can create, delete, or select a program. </ul> </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <ul> Basic information and commands are displayed. You can check and modify details of each command.
@@ -33,7 +33,7 @@ You can modify the selected job program in the task edit window.
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

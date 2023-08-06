@@ -4,7 +4,7 @@ In the panel selection window, touch \[System Input\]. Then, the input signal wi
 
 You can check the status of signals related to the robot operation and the status of the input signals preassigned to detect any abnormality that occurs to the robot and the controller.
 
-![](../_assets/tp630/pane-system-input_eng.png)
+![](../../_assets/tp630/pane-system-input_eng.png)
 
 
 

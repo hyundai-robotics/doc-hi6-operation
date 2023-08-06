@@ -3,7 +3,7 @@
 Touch \[spot\] in the panel selection window.
 This displays the spot gun axis data, the input/output signals and operating information of spot welding.
 
-![](../_assets/tp630/pane-spot_eng.png) 
+![](../../_assets/tp630/pane-spot_eng.png) 
 
 <br>
 

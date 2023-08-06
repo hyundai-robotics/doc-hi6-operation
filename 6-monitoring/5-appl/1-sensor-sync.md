@@ -4,7 +4,7 @@ Touch \[Sensor Sync\] in the panel selection window. Then, the sensor sync windo
 
 You can check the information related to the conveyor and press sync functions. The sensor sync function can be activated by setting the sync status as conveyor or press in the \[system &gt; 4: Application Parameter &gt; 4: Sensor Sync\] menu.
 
-![Figure 49 Sensor Sync Monitoring](../_assets/tp630/pane-sensorsynch_eng.png)
+![Figure 49 Sensor Sync Monitoring](../../_assets/tp630/pane-sensorsynch_eng.png)
 
 <table>
   <thead>
@@ -16,14 +16,14 @@ You can check the information related to the conveyor and press sync functions. 
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left"> <ul>Displays the information related to the conveyor and press sync functions
         of the selected sensor</ul></td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

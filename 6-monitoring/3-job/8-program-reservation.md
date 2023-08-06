@@ -2,13 +2,13 @@
 
 For this monitoring, pre-setting is required. You have to select the register number as 20EA or 1EA in the page of [system > 2:Control parameter > 7:Program reservation execution]'.
 
-![](../_assets/tp630/ctrl-prog-reserve_eng.png)
+![](../../_assets/tp630/ctrl-prog-reserve_eng.png)
 
 In the panel selection window, touch \[program reserve\]. Then, the scheduled program execution window will appear. 
 
 When programs are scheduled through external signals and executed in the scheduled order, you can check and change the status in the list of scheduled programs.
 
-![Figure 50 Program reserve](../_assets/tp630/pane-prog-reserv_eng.png)
+![Figure 50 Program reserve](../../_assets/tp630/pane-prog-reserv_eng.png)
 
 <table>
   <thead>
@@ -20,7 +20,7 @@ When programs are scheduled through external signals and executed in the schedul
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>A list of scheduled programs. You can schedule 1&#x2013;20 programs.</p>
@@ -34,7 +34,7 @@ When programs are scheduled through external signals and executed in the schedul
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

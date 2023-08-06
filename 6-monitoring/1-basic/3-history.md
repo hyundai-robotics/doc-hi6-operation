@@ -6,4 +6,4 @@ You can check the history in which the execution log and time stamps of the job 
 
 
 
-![](../_assets/tp630/pane-history_eng.png)
+![](../../_assets/tp630/pane-history_eng.png)

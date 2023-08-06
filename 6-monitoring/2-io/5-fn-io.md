@@ -6,7 +6,7 @@ If the Hi6 controller is a fieldbus master, and there are multiple fieldbus slav
 The set fn objects can be used in the same way as the fb objects in the robot language and the embedded PLC.
 
 
-![](../_assets/io/io_fn.png)
+![](../../_assets/io/io_fn.png)
 
 
 Select `[fn input]` or `[fn output]` in the panel selection window. The fn input or output panel appears and you can check the values of the input and output signals of each fn object.
@@ -21,5 +21,5 @@ Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to
 The use of the remaining F buttons is the same as the [Public Input](6-user-input) and [Public Output](7-user-output) monitoring windows.
 
 
-![](../_assets/io/io_fn_mon.png)
+![](../../_assets/io/io_fn_mon.png)
 
