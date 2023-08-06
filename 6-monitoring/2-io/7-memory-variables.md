@@ -5,7 +5,7 @@
 
 
 
-![](../_assets/tp630/pane-memory-variables.png) 
+![](../../_assets/tp630/pane-memory-variables.png) 
 
 <table>
   <thead>
@@ -17,7 +17,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left"> 
       <ul>
@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

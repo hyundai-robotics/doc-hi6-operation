@@ -1,7 +1,7 @@
 ﻿# 6.5.2 충돌검지 모니터링
  
- ![](../_assets/tp630/coldet_monitoring_pane.png)
- ![](../_assets/tp630/coldet_monitoring.png)
+ ![](../../_assets/tp630/coldet_monitoring_pane.png)
+ ![](../../_assets/tp630/coldet_monitoring.png)
  
 
 충돌검지 모니터링 

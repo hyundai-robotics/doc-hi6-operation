@@ -5,7 +5,7 @@
 로봇의 운행과 관련된 신호와 브레이크 제어 상태를 확인할 수 있습니다.
 
 
-![그림 39 시스템 출력 - ON/OFF/값/시퀀스 상태](../_assets/tp630/pane-system-output.png)
+![그림 39 시스템 출력 - ON/OFF/값/시퀀스 상태](../../_assets/tp630/pane-system-output.png)
 
 * ON/OFF 상태와 시퀀스 상태에서 현재 입력 중인 신호는 노란색으로 표시됩니다.
 * 시퀀스 상태에서는 제어기 시퀀스 신호의 상태만 표시합니다.
@@ -21,11 +21,11 @@
 1. 시스템 출력 신호창 우측의 \[ON/OFF\] 또는 \[시퀀스\] 라디오 버튼을 터치하여 표시 방식을 ON/OFF 또는 시퀀스 상태로 설정하십시오.
 2. 신호창에서 신호를 터치하여 선택한 후 \[수동 출력\] 버튼을 터치하십시오.
 
-![](../_assets/tp630/pane-system-output1.png)
+![](../../_assets/tp630/pane-system-output1.png)
 
 3. 수동 출력 확인창에서 출력 조건을 확인한 후 \[**확인**\] 버튼을 터치하십시오.
 
-![](../_assets/tp630/pane-system-output-manual-pop.png)
+![](../../_assets/tp630/pane-system-output-manual-pop.png)
 
 
 

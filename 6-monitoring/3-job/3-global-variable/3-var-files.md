@@ -34,7 +34,7 @@
 
 파일관리자에서 `MAIN/project/vars/` 폴더를 열어보면 `weld_points.csv`라는 파일이 생성되어 있습니다. 최상위 레벨에서 배열 변수를 생성하면 변수명과 동일한 .csv 파일이 생성되며, 변수를 삭제하면 해당 파일은 자동으로 삭제됩니다.
 
-![](../../_assets/tp630/panel-gvar/csv0.png)
+![](../../../_assets/tp630/panel-gvar/csv0.png)
 
 이 파일을 USB 메모리나 FTP로 복사하여 PC에서 열어봅시다. .csv 파일은 Comma-Separated Values 즉, 쉼표로 구분된 값들을 표현하는 아주 단순한 표준 텍스트 포맷입니다.
 
@@ -42,7 +42,7 @@
 
 .csv 파일은 하나의 2차원 표를 표현하는데, 열은 쉼표로 구분하고 행은 개행으로 구분합니다.
 
-![](../../_assets/tp630/panel-gvar/csv1.png)
+![](../../../_assets/tp630/panel-gvar/csv1.png)
 
 기정의 변수를 저장한 csv 파일은 `weld_points` 2차원 배열을 만들어가는 과정이 순서대로 나열되어 있습니다.
 
@@ -74,7 +74,7 @@
 
 .csv 파일을 파일관리자에서 더블클릭하여, Microsof Excel로 열어 편집할 수 있습니다. 편집이 끝나면 저장 버튼이나 `Ctrl+S`로 저장하십시오.
 
-![](../../_assets/tp630/panel-gvar/csv2.png)
+![](../../../_assets/tp630/panel-gvar/csv2.png)
 
 Excel에서 저장하면 아래와 같이 불필요한 쉼표도 생기고, 좌표계의 따옴표도 사라져서 형식이 약간 변화합니다. Excel이 .csv를 처리하는 방식이므로 어쩔 수 없습니다. 어쨌든 Hi6 제어기는 아래의 형식도 인식하므로 상관없습니다.
 
@@ -98,4 +98,4 @@ Excel에서 저장하면 아래와 같이 불필요한 쉼표도 생기고, 좌�
 전역변수 창에서 [F2: 전부 불러오기] 버튼을 클릭하면, `vars/` 폴더의 모든 변수 파일을 메모리로 다시 불러옵니다.
 (변수 파일을 삭제하고 [F2: 전부 불러오기]를 클릭하면, 메모리의 해당 변수도 삭제되므로 주의하십시오.)
 
-![](../../_assets/tp630/panel-gvar/fixed-var.png)
+![](../../../_assets/tp630/panel-gvar/fixed-var.png)

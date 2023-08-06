@@ -2,13 +2,13 @@
 
 [**설정** > 2:제어 파라미터 > 7:프로그램 예약 실행] 항목에서 '적용 레지스터 개수'를 20개 또는 1개로 선택합니다. 
 
-![](../_assets/tp630/ctrl-prog-reserve.png)
+![](../../_assets/tp630/ctrl-prog-reserve.png)
 
 패널 선택창에서 \[프로그램 예약실행\]을 터치하십시오. 예약 실행창이 나타납니다.
 
 외부 신호에 의해 프로그램을 예약하고 예약 순서에 따라 프로그램을 수행할 때, 예약 프로그램 목록에서 상태를 확인하고 변경할 수 있습니다.
 
-![그림 51 프로그램 예약 실행 화면](../_assets/tp630/pane-prog-reserv.png)
+![그림 51 프로그램 예약 실행 화면](../../_assets/tp630/pane-prog-reserv.png)
 
 <table>
   <thead>
@@ -20,7 +20,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>예약 프로그램 목록입니다.
@@ -38,7 +38,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

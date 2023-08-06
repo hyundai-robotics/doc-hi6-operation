@@ -2,8 +2,8 @@
 
 패널 선택창에서 \[시스템 진단\]을 터치하십시오. 최초 실행 시 브레이크 검사 데이터 창이 나타납니다.
 
-![그림 51 브레이크 검사 화면](../_assets/tp630/pane-sys-diagnosis-brake.png)
-![그림 52 가스스프링 검사 화면](../_assets/tp630/pane-sys-diagnosis-gasp.png)
+![그림 51 브레이크 검사 화면](../../_assets/tp630/pane-sys-diagnosis-brake.png)
+![그림 52 가스스프링 검사 화면](../../_assets/tp630/pane-sys-diagnosis-gasp.png)
 
 
 
@@ -18,7 +18,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>[시스템 진단] 패널을 클릭한 상태에서 아래 버튼을 클릭하여 다른 검사 항목으로 전환할 수 있습니다.</p>
@@ -30,7 +30,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <p>브레이크 Hold/Release 시 현재 토크, 최대 토크, 기준 토크와 토크 적용 비율을 표시합니다.</p>
@@ -42,7 +42,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c3.png" alt/>
+        <img src="../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <p>가스스프링 압력 검사 시 압력 기준값 및 추정값을 표시합니다.</p>

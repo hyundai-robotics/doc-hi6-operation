@@ -4,7 +4,7 @@
 
 제어기 내 I/O 보드의 CNIN 커넥터를 통해 입력되는 신호인 범용 입력 신호의 상태를 확인할 수 있습니다.
 
-![그림 40 범용 입력 신호 - ON/OFF 상태\(좌\) / 값 상태\(우\)](../_assets/tp630/pane-univinsig-mode.png)
+![그림 40 범용 입력 신호 - ON/OFF 상태\(좌\) / 값 상태\(우\)](../../_assets/tp630/pane-univinsig-mode.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
         <p>범용 입력 신호의 상태를
@@ -33,7 +33,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -53,5 +53,5 @@
 * 입력 신호의 흐름은 다음과 같습니다. 
 {% endhint %}
 
-![](../_assets/user-input-flow.png)
+![](../../_assets/user-input-flow.png)
 

@@ -4,7 +4,7 @@
 
 컨베이어 및 프레스 동기 기능과 관련된 정보를 확인할 수 있습니다. 센서 동기 기능은 \[**시스템** &gt; 4: 응용 파라미터 &gt; 4: 센서 동기\] 메뉴에서 동기 상태를 컨베이어 또는 프레스로 설정하면 활성화됩니다.
 
-![그림 50 센서 동기 모니터링](../_assets/tp630/pane-sensorsynch.png)
+![그림 50 센서 동기 모니터링](../../_assets/tp630/pane-sensorsynch.png)
 
 <table>
   <thead>
@@ -16,7 +16,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">선택한 센서의 컨베이어
         및 프레스 동기 기능과
@@ -24,7 +24,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>

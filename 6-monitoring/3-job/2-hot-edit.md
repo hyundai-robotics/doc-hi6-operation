@@ -12,7 +12,7 @@
 
 패널 선택창에서 \[hot edit\]를 터치하십시오. 현재 선택된 job 프로그램의 hotedit 창이 열립니다.
 
-![그림 43 hot edit](../_assets/tp630/pane-hot-edit-0.png)
+![그림 43 hot edit](../../_assets/tp630/pane-hot-edit-0.png)
 
 <br>
 
@@ -26,15 +26,15 @@
 3) \[위치수정\] 키: 'Hot Edit중에는 금지된 조작입니다.'  메시지 표시
 
 
-![](../_assets/tp630/pane-hot-edit-1.png)
+![](../../_assets/tp630/pane-hot-edit-1.png)
 
 <br>
 
 ### 반영
 
-프로그램 편집을 완료했다면, 안내표시줄 왼쪽의 ![](../_assets/tp630/bt-menu.png) 버튼을 클릭하여 팝업 메뉴를 열고 'hotedit: 적용 요청'을 선택하십시오.
+프로그램 편집을 완료했다면, 안내표시줄 왼쪽의 ![](../../_assets/tp630/bt-menu.png) 버튼을 클릭하여 팝업 메뉴를 열고 'hotedit: 적용 요청'을 선택하십시오.
 
-![](../_assets/tp630/pane-hot-edit-apply2.png)
+![](../../_assets/tp630/pane-hot-edit-apply2.png)
 
 <br>
 
@@ -72,13 +72,13 @@
   hotedit 패널 제목막대의 우측에는 현재의 상태를 나타내는 기호가 표시됩니다.
 
   \* 기호는 교시 프로그램이 수정되어 가동 중인 프로그램과 달라졌음을 의미합니다.  
-  ![](../_assets/tp630/pane-hot-edit-apply3.png)
+  ![](../../_assets/tp630/pane-hot-edit-apply3.png)
 
   \> 기호는 가동 중 hotedit 적용이 요청된 상태를 의미합니다.  
-  ![](../_assets/tp630/pane-hot-edit-apply4.png)
+  ![](../../_assets/tp630/pane-hot-edit-apply4.png)
 
   기호 표시가 없으면 수정 전이거나 적용이 완료되어 가동 중인 프로그램과 동일함을 의미합니다.  
-  ![](../_assets/tp630/pane-hot-edit-apply5.png)
+  ![](../../_assets/tp630/pane-hot-edit-apply5.png)
 
 
 ### 다른 프로그램 선택

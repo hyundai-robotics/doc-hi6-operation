@@ -14,15 +14,15 @@
 
 1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
 
-![](../_assets/tp630/panel-split.png)
+![](../../_assets/tp630/panel-split.png)
 &nbsp;
-![](../_assets/tp630/panel-sel.png)
+![](../../_assets/tp630/panel-sel.png)
 
 2. 패널 선택창에서 `강제 io`를 더블클릭하십시오. 강제 I/O 창이 열립니다.
 
-![](../_assets/tp630/panel-forced-io/panel-forced-io.png)
+![](../../_assets/tp630/panel-forced-io/panel-forced-io.png)
 
-![](../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
 
 
 ## 사용 방법
@@ -30,26 +30,26 @@
 이름 열을 선택한 후 원하는 IO 릴레이 변수명을 타이핑하고 `ENTER` 키를 누르면, 테이블에 해당 변수가 등록됩니다.  
 (이름 칸을 한번 더 클릭하여 입력한 변수명을 수정할 수 있습니다.)
 
-![](../_assets/tp630/panel-forced-io/panel-forced-io-name.png)
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-name.png)
 
 
 값 열을 선택한 후 적용할 새 IO 값을 타이핑하고 `ENTER` 키를 누르십시오.
 
-![](../_assets/tp630/panel-forced-io/panel-forced-io-val.png)
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-val.png)
 
 적용할 강제 IO 항목이 더 있으면 마찬가지 방법으로 입력하십시오. 최대 100개의 항목을 입력할 수 있습니다.
 
-![](../_assets/tp630/panel-forced-io/panel-forced-io-multi.png)
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-multi.png)
 
 panel 제목 막대의 * 표시는 테이블이 수정되었고 이 수정 내용이 아직 적용되지 않았다는 의미입니다.
 강제 IO를 적용하려면 [F7: 적용] 버튼을 누르십시오.
 경고 메시지박스에서 `확인` 버튼을 누르는 순간 강제 I/O 항목들이 일괄 적용됩니다.
 
-![](../_assets/tp630/panel-forced-io/panel-forced-io-apply.png)
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-apply.png)
 
 
 panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것을 확인할 수 있습니다. 제목 막대에는 빨간색의 F가 점멸하는데, 이것은 강제 IO가 적용되고 있음을 경고하는 표시입니다.
-![](../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
 
 
 * 편집 중 항목을 삭제할 때는 `SHIFT+DEL`을 누르십시오.
@@ -59,7 +59,7 @@ panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것�
 
 시험 및 문제 분석이 끝나면, 반드시 [F2: 클리어] 버튼을 눌러 강제 IO를 전체 클리어하십시오.
 
-![](../_assets/tp630/panel-forced-io/panel-forced-io-clear.png)
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-clear.png)
 
 {% hint style="warning" %}
 * 여러 개의 항목이 같은 릴레이(혹은 겹쳐진 bit들)에 대해 서로 상반된 값을 강제한 경우, 테이블의 아래쪽 항목의 값으로 강제됩니다.

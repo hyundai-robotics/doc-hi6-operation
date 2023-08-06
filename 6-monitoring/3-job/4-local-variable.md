@@ -4,15 +4,15 @@
 
 1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
 
-![](../_assets/tp630/panel-split.png)
+![](../../_assets/tp630/panel-split.png)
 &nbsp;
-![](../_assets/tp630/panel-sel.png)
+![](../../_assets/tp630/panel-sel.png)
 
 
 2.	패널 선택창에서 \[지역변수\]를 터치하십시오. 프로그램에 포함된 지역 변수 목록이 새 창에 나타납니다.
 
-![](../_assets/tp630/pane-lvar.png)
+![](../../_assets/tp630/pane-lvar.png)
 
 3.	변수 이름과 타입, 값을 확인하십시오. 변수 값을 변경하는 방법은 앞 절에서 설명한 전역변수와 동일합니다.
 
-![](../_assets/tp630/pane-lvar-mon.png)
+![](../../_assets/tp630/pane-lvar-mon.png)

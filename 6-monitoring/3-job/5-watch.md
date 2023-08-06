@@ -7,40 +7,40 @@
 
 1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
 
-![](../_assets/tp630/panel-split.png)
+![](../../_assets/tp630/panel-split.png)
 &nbsp;
-![](../_assets/tp630/panel-sel.png)
+![](../../_assets/tp630/panel-sel.png)
 
 2. 패널 선택창에서 `각종 데이터`를 터치하십시오. 각종 데이터 창이 열립니다.
 
-![](../_assets/tp630/panel-watch/panel-watch.png)
+![](../../_assets/tp630/panel-watch/panel-watch.png)
 
-![](../_assets/tp630/panel-watch/panel-watch-mon.png)
+![](../../_assets/tp630/panel-watch/panel-watch-mon.png)
 
 
 ## 사용 방법
 
 상단의 입력칸에 원하는 변수나 수식을 입력하고 `+` 버튼을 클릭하면 테이블에 새로운 항목으로 입력됩니다.
 
-![](../_assets/tp630/panel-watch/panel-watch2.png)
+![](../../_assets/tp630/panel-watch/panel-watch2.png)
 
 
 이름 열을 한번 더 클릭하여 입력한 변수명이나 수식을 수정할 수 있습니다.
 
-![](../_assets/tp630/panel-watch/panel-watch-rename.png)
+![](../../_assets/tp630/panel-watch/panel-watch-rename.png)
 
 값 열을 클릭하여 새로운 값을 입력하면, 해당 변수의 값을 변경하게 됩니다. 수식의 값을 변경하는 행위는 무시됩니다.
 
 포즈/시프트 변수 혹은 수식의 값 열을 선택하고 `ENTER`키를 누르면 포즈/시프트 속성 창이 열리면서 값을 확인하고 수정할 수 있습니다.
 
-![](../_assets/tp630/panel-gvar/gv-edit-pose2.png)
+![](../../_assets/tp630/panel-gvar/gv-edit-pose2.png)
 
 특정 행에 대해 `SHIFT+DEL`키를 누르면, 해당 행을 삭제합니다.
 
 하단의 F버튼에서 [F7: 전부 저장하기] 버튼을 누르면, 작성된 변수, 수식 목록을 `cfg/watch.json` 파일에 저장합니다. 이 파일은 전원 재부팅 시 자동으로 불러옵니다.
 이 파일을 FTP 등을 통해 외부 PC로 전송 받아 편집할 수도 있습니다. 편집된 파일을 다시 `cfg/` 폴더로 덮어쓴 후 [F1: 전부 불러오기] 버튼을 클릭하면 각종 데이터 창에 반영됩니다.
 
-![](../_assets/tp630/panel-watch/panel-watch-fbt.png)
+![](../../_assets/tp630/panel-watch/panel-watch-fbt.png)
 
 [F2: 위로 교환], [F3: 아래로 교환] 버튼을 클릭하면 현재 선택된 행의 위치를 위, 아래의 행과 교환하면서 이동 시킬 수 있습니다.  
 
