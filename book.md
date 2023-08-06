@@ -2888,8 +2888,6 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 로봇 시스템의 상태와 제어기의 각종 데이터를 확인합니다.
 
-# 6.1 모니터링 기능 사용
-
 1.	화면 우측의 \[**창조정**\] 버튼과 하단의 [**분할**] 버튼을 터치한 후 왼쪽 하단의 [**선택**] 버튼까지 순서대로 터치 하십시오. 패널 선택창이 나타납니다.
 
 ![](../_assets/tp630/rbt-window-divide.png)
@@ -2903,78 +2901,27 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 * 패널 선택창에 모니터링 가능한 모든 항목이 나타납니다.
 * 모니터링 가능한 항목은 제어기 설정에 따라 다르게 나타납니다.
 * 작업 영역의 패널 스택과 창의 사용 방법에 대한 자세한 내용은 “[1.2.3.8 작업 편집창](../1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/8-work-area.md)”을 참조하십시오.
-{% endhint %}
+{% endhint %}# 6.1 기본
 
-
-
-
-
-
-
-# 6.2 job
-
-패널 선택창에서 \[job\]을 터치하십시오. 전체 프로그램 리스트를 보기 위해서는 <**SHIFT**>+<**프로그램**>키를 누르면 프로그램 선택창이 나타납니다.
-
-![](../_assets/tp630/k-prg-select.png)
-
-선택된 프로그램이 화면에 보이면 명령어 추가, 수정 등 편집을 수행할 수 있습니다.  
-
-![](../_assets/tp630/pane-job.png)
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">번호/키</th>
-      <th style="text-align:left">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/tp630/k-prog-step.png" alt/>
-      </td>
-      <td style="text-align:left"> <ul> <<b>SHIFT</b>>+<<b>프로그램</b>>:  프로그램 목록에서 프로그램을 생성, 삭제, 선택합니다. <ul/></td>
-    </tr>
-     <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left"><ul>프로그램의 기본 정보와
-        명령문을 표시합니다. 명령문의 상세 정보를
-        확인하고 편집할 수 있습니다.<ul/></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li>[…]: 자동 들여쓰기가
-            잘못 적용된 경우 JOB 프로그램의
-            자동 들여쓰기를 다시
-            수행합니다.
-            <br />
-          </li>
-          <li>프로그램 작성 시 선택한
-            명령문의 인수값은 입력
-            영역에 표시됩니다.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-{% hint style="info" %}
-프로그램의 관리 및 작성 방법에 대한 자세한 내용은 “[3 프로그램 작성](../3-programming/README.md)”을 참조하십시오.
-{% endhint %}
-
-# 6.3 포즈
+# 6.1.1 포즈
 
 패널 선택창에서 \[포즈\]를 터치하십시오. 로봇의 포즈 정보창이 나타납니다. 로봇 각 축의 현재 각도와 TCP의 좌표값, 엔코더의 현재값과 지령값을 확인할 수 있습니다.
 
 ![](../_assets/tp630/pane-pose.png)
 
-# 6.4 시스템 입력
+# 6.1.2 히스토리
+
+패널 선택창에서 \[히스토리\]를 터치하십시오. 히스토리창이 나타납니다.
+
+작업 프로그램의 실행 이력과 타임 스탬프가 함께 출력되어 히스토리를 확인할 수 있습니다.
+
+![그림 44 히스토리](../_assets/tp630/pane-history.png)
+
+
+
+# 6.2 IO, PLC, 통신
+
+# 6.2.1 시스템 입력
 
 패널 선택창에서 \[시스템 입력\]을 터치하십시오. 입력 신호창이 나타납니다.
 
@@ -2987,7 +2934,7 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 * 시퀀스 상태에서는 제어기 시퀀스 신호의 상태만 표시합니다.
 * \[ON/OFF\]/\[값\]/\[시퀀스\]: 하단의 [모드]] 버튼을 터치하여 입력 신호창의 표시 방식을 변경할 수 있습니다.
 
-# 6.5 시스템 출력
+# 6.2.2 시스템 출력
 
 패널 선택창에서 \[시스템 출력\]을 터치하십시오. 출력 신호창이 나타납니다.
 
@@ -3026,7 +2973,7 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 
 
-# 6.6 범용 입력
+# 6.2.3 범용 입력
 
 패널 선택창에서 \[범용 입력\]을 터치하십시오. 범용 입력 신호창이 나타납니다.
 
@@ -3083,7 +3030,7 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 ![](../_assets/user-input-flow.png)
 
-# 6.7 범용 출력
+# 6.2.4 범용 출력
 
 패널 선택창에서 \[범용 출력\]을 터치하십시오. 범용 출력 신호창이 나타납니다.
 
@@ -3163,7 +3110,7 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 ![](../_assets/tp630/pane-univoutsig-onoff.png)
 
-# 6.8 fn 입력, fn 출력
+# 6.2.5 fn 입력, fn 출력
 
 fb객체의 특정 영역을 지정하여 fn객체를 정의할 수 있습니다.
 Hi6 제어기가 필드버스 master이고, 여러 개의 필드버스 slave장치들이 있을 경우, 각 slave장치의 영역들을 하나씩의 fn객체로 설정해두면, 이 slave들을 직관적으로 다룰 수 있습니다.
@@ -3190,7 +3137,367 @@ fn객체 설정 방법은 아래 링크를 참조하십시오.
 
 ![그림 40 범용 입력 신호 - ON/OFF 상태\(좌\) / 값 상태\(우\)](../_assets/io/io_fn_mon.png)
 
-# 6.9 전역변수
+# 6.2.6 강제 IO (forced io)
+
+강제 IO 창에는 원하는 IO 릴레이 변수를 등록하여, 변경된 IO 값을 강제로 적용 할 수 있습니다.
+
+
+{% hint style="warning" %}
+* 시험 혹은 문제 분석을 위한 기능입니다.
+* 강제 IO의 오조작은 충돌, 낙하, 인명피해 등 심각한 사고를 유발할 수 있습니다. 해당 IO의 구성을 완전히 이해하고 값 변경의 결과를 명확히 예측하는 경우에만 신중을 기해 사용하십시오.
+* 시험 및 문제 분석이 끝나면, 반드시 강제 IO를 전체 클리어하여 정상적인 IO 상태로 복구해 주십시오.
+
+{% endhint %}
+
+## 강제 IO 창 열기
+
+1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
+
+![](../_assets/tp630/panel-split.png)
+&nbsp;
+![](../_assets/tp630/panel-sel.png)
+
+2. 패널 선택창에서 `강제 io`를 더블클릭하십시오. 강제 I/O 창이 열립니다.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io.png)
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
+
+
+## 사용 방법
+
+이름 열을 선택한 후 원하는 IO 릴레이 변수명을 타이핑하고 `ENTER` 키를 누르면, 테이블에 해당 변수가 등록됩니다.  
+(이름 칸을 한번 더 클릭하여 입력한 변수명을 수정할 수 있습니다.)
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-name.png)
+
+
+값 열을 선택한 후 적용할 새 IO 값을 타이핑하고 `ENTER` 키를 누르십시오.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-val.png)
+
+적용할 강제 IO 항목이 더 있으면 마찬가지 방법으로 입력하십시오. 최대 100개의 항목을 입력할 수 있습니다.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-multi.png)
+
+panel 제목 막대의 * 표시는 테이블이 수정되었고 이 수정 내용이 아직 적용되지 않았다는 의미입니다.
+강제 IO를 적용하려면 [F7: 적용] 버튼을 누르십시오.
+경고 메시지박스에서 `확인` 버튼을 누르는 순간 강제 I/O 항목들이 일괄 적용됩니다.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-apply.png)
+
+
+panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것을 확인할 수 있습니다. 제목 막대에는 빨간색의 F가 점멸하는데, 이것은 강제 IO가 적용되고 있음을 경고하는 표시입니다.
+![](../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
+
+
+* 편집 중 항목을 삭제할 때는 `SHIFT+DEL`을 누르십시오.
+* [F5: 위로 교환], [F6: 아래로 교환] 버튼을 눌러 항목의 순서를 바꿀 수 있습니다.
+* 테이블을 편집하다가 [F3: 편집 취소]를 누르면, 마지막으로 적용된 상태를 다시 불러옵니다.
+
+
+시험 및 문제 분석이 끝나면, 반드시 [F2: 클리어] 버튼을 눌러 강제 IO를 전체 클리어하십시오.
+
+![](../_assets/tp630/panel-forced-io/panel-forced-io-clear.png)
+
+{% hint style="warning" %}
+* 여러 개의 항목이 같은 릴레이(혹은 겹쳐진 bit들)에 대해 서로 상반된 값을 강제한 경우, 테이블의 아래쪽 항목의 값으로 강제됩니다.
+* Hi6 제어기의 전원을 끄면 강제 IO로 등록된 내용은 모두 클리어됩니다.
+
+{% endhint %}
+# 6.2.7 메모리 변수
+
+패널 선택창에서 \[메모리 변수\]를 터치하십시오. 내장PLC 릴레이들 중 로봇언어에서 접근 가능한 변수를 표시합니다. 
+
+
+
+
+![](../_assets/tp630/pane-memory-variables.png) 
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left"> 
+      <ul>
+          데이터 메모리(mw)와 시스템 메모리(sw)의 현재 값을 16진수, 부호있는 10진수, long형, float형 등으로 표시합니다.
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[시작주소]: 해당 버튼을 선택한 후 대화상자에 시작주소를 입력하면 입력주소를 화면 첫줄에 표시합니다.</li>
+          <li>[수동설정]: 화면의 원하는 주소셀을 선택한 후 해당 버튼을 누르면 원하는 값으로 기록할 수 있습니다.</li>
+          <li>[_mw/_sw]: 해당버튼을 누르면 mw변수와 sw변수를 전환하여 보여줍니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table># 6.2.8 EtherCAT 장치 
+
+패널 선택창에서 [EC. 장치정보]를 선택하십시오. Hi6 제어기 내/외부 EtherCAT 네트워크를 구성하는 슬레이브 장치 목록과  장치 연결 상태를 보여줍니다. EtherCAT 네트워크에서 제어기 메인보드는 EtherCAT 마스터로 동작합니다.
+ 
+
+![](../_assets/tp630/pane-EC-device.png) 
+
+
+-	ENI-구성된 슬레이브 번호: 제어기 EtherCAT 네트워크를 구성하는 슬레이브 장치 개수
+-	연결된 슬레이브 번호: 현재 연결된 슬레이브 장치 개수, 'ENI-구성된 슬레이브 번호' 개수와 동일해야 한다.
+-	디바이스: 메인보드와 연결된 EtherCAT 슬레이브 장치명
+-	주소: EtherCAT 네트워크 상 고유주소
+-	접속
+    -	NG: 통신불능
+    -	OK: 연결상태
+-	모드
+    -	Unknown: 통신불능 상태로 인해 현재 상태를 알 수 없음
+    -	Init: 통신 채널 초기화
+    -	pre-op: 비주기 메일박스를 이용한 통신만 가능한 상태
+    -	safe-op: Slave 장치의 송신(Tx PDO) 데이터만 교신 가능한 상태
+    -	operation: Slave 장치의 송수신(Tx/RxPDO) 데이터 모두 교신 가능한 상태
+# 6.3 job 프로그램, 로봇언어
+
+# 6.3.1 job
+
+패널 선택창에서 \[job\]을 터치하십시오. 전체 프로그램 리스트를 보기 위해서는 <**SHIFT**>+<**프로그램**>키를 누르면 프로그램 선택창이 나타납니다.
+
+![](../_assets/tp630/k-prg-select.png)
+
+선택된 프로그램이 화면에 보이면 명령어 추가, 수정 등 편집을 수행할 수 있습니다.  
+
+![](../_assets/tp630/pane-job.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호/키</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/tp630/k-prog-step.png" alt/>
+      </td>
+      <td style="text-align:left"> <ul> <<b>SHIFT</b>>+<<b>프로그램</b>>:  프로그램 목록에서 프로그램을 생성, 삭제, 선택합니다. <ul/></td>
+    </tr>
+     <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left"><ul>프로그램의 기본 정보와
+        명령문을 표시합니다. 명령문의 상세 정보를
+        확인하고 편집할 수 있습니다.<ul/></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[…]: 자동 들여쓰기가
+            잘못 적용된 경우 JOB 프로그램의
+            자동 들여쓰기를 다시
+            수행합니다.
+            <br />
+          </li>
+          <li>프로그램 작성 시 선택한
+            명령문의 인수값은 입력
+            영역에 표시됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+프로그램의 관리 및 작성 방법에 대한 자세한 내용은 “[3 프로그램 작성](../3-programming/README.md)”을 참조하십시오.
+{% endhint %}
+
+# 6.3.2 가동정보
+
+패널 선택창에서 \[가동정보\]를 터치하십시오. 제어기의 가동 정보창이 나타납니다.
+
+시스템 초기화와 전원 투입, 최근 사이클 시작 직후의 제어기 동작별 누적 시간과 사이클 횟수를 확인할 수 있습니다. 정보 하단의 항목별 \[클리어\] 버튼을 터치하면 가동 정보를 초기화할 수 있습니다.
+
+![그림 42 가동 정보](../_assets/tp630/pane-operating.png)
+
+항목별 조건에 따른 반영 시점은 다음과 같습니다.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">항목</th>
+      <th style="text-align:left">조건</th>
+      <th style="text-align:left">반영 시점</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">시스템 초기화 후</td>
+      <td style="text-align:left">측정 시간</td>
+      <td style="text-align:left">시스템 초기화 후부터
+        현재 시점 사이에 제어기가
+        가동한 시간</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">모터 ON 시간</td>
+      <td style="text-align:left">시스템 초기화 후부터
+        현재 시점 사이에 제어기의
+        모터가 켜져 있었던 시간</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">전원 투입 후</td>
+      <td style="text-align:left">측정 시간</td>
+      <td style="text-align:left">
+        <p>전원 투입 후부터 현재
+          시점 사이에 제어기가
+          가동한 시간</p>
+        <p>
+          <img src="../_assets/op-time1.png" alt/>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">사이클 기록 시간</td>
+      <td style="text-align:left">
+        <p>전원 투입 후부터 지난
+          사이클까지 제어기가
+          가동한 시간</p>
+        <p>
+          <img src="../_assets/op-time2.png" alt/>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">최근 사이클 시작 후</td>
+      <td
+      style="text-align:left">측정 시간</td>
+        <td style="text-align:left">
+          <p>사이클 시작(또는 전원
+            투입) 후부터 현재 시점
+            사이에 제어기가 가동한
+            시간</p>
+          <p>
+            <img src="../_assets/op-time3.png" alt/>
+          </p>
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">사이클 기록 시간</td>
+      <td style="text-align:left">
+        <p>사이클 시작(또는 전원
+          투입) 후부터 지난 사이클까지
+          제어기가 가동한 시간</p>
+        <p>
+          <img src="../_assets/op-time4.png" alt/>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+# 6.3.3 hot edit
+
+로봇 기동 중에도 라인을 정지하지 않고 job 프로그램을 편집할 수 있는 기능입니다. 
+
+
+{% hint style="warning" %}
+* 본 기능을 통해 현재 자동 운전 중인 프로그램, 혹은 호출될 프로그램을 수정하고 적용하면 다음 사이클(메인 프로그램 END 실행 이후 시점)부터 적용되어 수정된 프로그램으로 로봇을 재생합니다. 올바르지 않는 수정은 로봇과 지그간 충돌과 같은 심각한 사고를 유발할 수 있으므로 최대한 주의하십시오.
+{% endhint %}
+<br><br>
+
+### 진입
+
+패널 선택창에서 \[hot edit\]를 터치하십시오. 현재 선택된 job 프로그램의 hotedit 창이 열립니다.
+
+![그림 43 hot edit](../_assets/tp630/pane-hot-edit-0.png)
+
+<br>
+
+
+### 가능한 편집의 종류
+
+조작방식은 수동모드에서 조작과 동일하나, 아래의 기능은 사용할 수 없습니다. 
+
+1) \[축조작\] 키 사용: 해당 키 입력 무시
+2) \[기록\] 키 (숨은 포즈 MOVE의 기록): 'Hot Edit중에는 금지된 조작입니다.' 메시지 표시
+3) \[위치수정\] 키: 'Hot Edit중에는 금지된 조작입니다.'  메시지 표시
+
+
+![](../_assets/tp630/pane-hot-edit-1.png)
+
+<br>
+
+### 반영
+
+프로그램 편집을 완료했다면, 안내표시줄 왼쪽의 ![](../_assets/tp630/bt-menu.png) 버튼을 클릭하여 팝업 메뉴를 열고 'hotedit: 적용 요청'을 선택하십시오.
+
+![](../_assets/tp630/pane-hot-edit-apply2.png)
+
+<br>
+
+반영이 일어나는 시점은 아래 표와 같습니다.
+
+<table>
+<thead>
+  <tr>
+    <th>상태</th>
+    <th>프로그램</th>
+    <th>적용 요청 후, 적용 시점</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>정지 중</td>
+    <td>-</td>
+    <td>즉시 적용</td>
+  </tr>
+  <tr>
+    <td rowspan="2">재생 중</td>
+    <td>재생 중이 아닌 프로그램<br>(호출스택에 포함되지 않은 job)</td>
+    <td>즉시 적용</td>
+  </tr>
+  <tr>
+    <td>재생 중인 프로그램<br>(호출스택에 포함된 job)</td>
+    <td>다음 cycle 시작</td>
+  </tr>
+</tbody>
+</table>
+<br>
+
+### 제목막대 표시
+
+  hotedit 패널 제목막대의 우측에는 현재의 상태를 나타내는 기호가 표시됩니다.
+
+  \* 기호는 교시 프로그램이 수정되어 가동 중인 프로그램과 달라졌음을 의미합니다.  
+  ![](../_assets/tp630/pane-hot-edit-apply3.png)
+
+  \> 기호는 가동 중 hotedit 적용이 요청된 상태를 의미합니다.  
+  ![](../_assets/tp630/pane-hot-edit-apply4.png)
+
+  기호 표시가 없으면 수정 전이거나 적용이 완료되어 가동 중인 프로그램과 동일함을 의미합니다.  
+  ![](../_assets/tp630/pane-hot-edit-apply5.png)
+
+
+### 다른 프로그램 선택
+
+[SHIFT]+[프로그램]키를 누르면 다른 프로그램을 선택할 수 있습니다. 새 프로그램을 작성할 수도 있습니다.
+# 6.3.4 전역변수
 
 모든 전역 변수의 목록을 표시해줍니다. 변수를 생성/삭제하고, 타입과 값을 편집할 수도 있습니다.
 
@@ -3209,7 +3516,7 @@ fn객체 설정 방법은 아래 링크를 참조하십시오.
 ![](../../_assets/tp630/pane-gvar.png)
 
 ![](../../_assets/tp630/panel-gvar/panel-gvar0.png)
-# 6.9.1 기본 기능
+# 6.3.4.1 기본 기능
 
 ## 변수 찾기
 
@@ -3280,7 +3587,7 @@ DEL(CTRL+BACKSPACE) 키를 누르면 확인/취소 대화상자가 나타납니�
 
 ![](../../_assets/tp630/panel-gvar/gv-delete.png)
 
-# 6.9.2 배열과 객체
+# 6.3.4.2 배열과 객체
 
 ## 배열 생성하기
 
@@ -3355,7 +3662,7 @@ weld_points[2][1].j2=90.5  # 속성에 새로운 값 대입 가능
 ```
 
 [F4: 고정 토글]을 한번 더 수행하면 고정이 해제되면서 `F.array`가 다시 `array`로 원상복구됩니다.
-# 6.9.3 변수 파일
+# 6.3.4.3 변수 파일
 
 변수 값들은 전원을 꺼도 보존되어야 하므로 파일로도 저장되는데, 전역변수는 종류에 따라 아래의 2가지 형태로 저장됩니다.
 
@@ -3455,7 +3762,7 @@ Excel에서 저장하면 아래와 같이 불필요한 쉼표도 생기고, 좌�
 전역변수 창에서 [F2: 전부 불러오기] 버튼을 클릭하면, `vars/` 폴더의 모든 변수 파일을 메모리로 다시 불러옵니다.
 (변수 파일을 삭제하고 [F2: 전부 불러오기]를 클릭하면, 메모리의 해당 변수도 삭제되므로 주의하십시오.)
 
-![](../../_assets/tp630/panel-gvar/fixed-var.png)# 6.10 지역변수
+![](../../_assets/tp630/panel-gvar/fixed-var.png)# 6.3.5 지역변수
 
 현재 호출 프레임의 모든 지역 변수의 목록을 표시해줍니다. 변수를 생성/삭제하거나, 변수명, 타입을 변경할 수는 없지만 값을 편집할 수는 있습니다.
 
@@ -3473,7 +3780,7 @@ Excel에서 저장하면 아래와 같이 불필요한 쉼표도 생기고, 좌�
 3.	변수 이름과 타입, 값을 확인하십시오. 변수 값을 변경하는 방법은 앞 절에서 설명한 전역변수와 동일합니다.
 
 ![](../_assets/tp630/pane-lvar-mon.png)
-# 6.11 각종 데이터 (watch)
+# 6.3.6 각종 데이터 (watch)
 
 각종 데이터 창에는 원하는 변수나 수식들을 등록하여, 값을 모니터링하거나 변경할 수 있습니다.
 
@@ -3527,103 +3834,7 @@ Excel에서 저장하면 아래와 같이 불필요한 쉼표도 생기고, 좌�
 
 {% hint style="warning" %}
 * 결과값 표시를 갱신하기 위해 수식은 빠른 주기로 수행됩니다. mkucs()와 같이 시스템에 특정한 생성이나 변경을 유발하는 함수는 수식 내에 포함시키지 않도록 유의하십시오.
-{% endhint %}# 6.12 가동정보
-
-패널 선택창에서 \[가동정보\]를 터치하십시오. 제어기의 가동 정보창이 나타납니다.
-
-시스템 초기화와 전원 투입, 최근 사이클 시작 직후의 제어기 동작별 누적 시간과 사이클 횟수를 확인할 수 있습니다. 정보 하단의 항목별 \[클리어\] 버튼을 터치하면 가동 정보를 초기화할 수 있습니다.
-
-![그림 42 가동 정보](../_assets/tp630/pane-operating.png)
-
-항목별 조건에 따른 반영 시점은 다음과 같습니다.
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">항목</th>
-      <th style="text-align:left">조건</th>
-      <th style="text-align:left">반영 시점</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">시스템 초기화 후</td>
-      <td style="text-align:left">측정 시간</td>
-      <td style="text-align:left">시스템 초기화 후부터
-        현재 시점 사이에 제어기가
-        가동한 시간</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">모터 ON 시간</td>
-      <td style="text-align:left">시스템 초기화 후부터
-        현재 시점 사이에 제어기의
-        모터가 켜져 있었던 시간</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">전원 투입 후</td>
-      <td style="text-align:left">측정 시간</td>
-      <td style="text-align:left">
-        <p>전원 투입 후부터 현재
-          시점 사이에 제어기가
-          가동한 시간</p>
-        <p>
-          <img src="../_assets/op-time1.png" alt/>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">사이클 기록 시간</td>
-      <td style="text-align:left">
-        <p>전원 투입 후부터 지난
-          사이클까지 제어기가
-          가동한 시간</p>
-        <p>
-          <img src="../_assets/op-time2.png" alt/>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">최근 사이클 시작 후</td>
-      <td
-      style="text-align:left">측정 시간</td>
-        <td style="text-align:left">
-          <p>사이클 시작(또는 전원
-            투입) 후부터 현재 시점
-            사이에 제어기가 가동한
-            시간</p>
-          <p>
-            <img src="../_assets/op-time3.png" alt/>
-          </p>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">사이클 기록 시간</td>
-      <td style="text-align:left">
-        <p>사이클 시작(또는 전원
-          투입) 후부터 지난 사이클까지
-          제어기가 가동한 시간</p>
-        <p>
-          <img src="../_assets/op-time4.png" alt/>
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-# 6.13 히스토리
-
-패널 선택창에서 \[히스토리\]를 터치하십시오. 히스토리창이 나타납니다.
-
-작업 프로그램의 실행 이력과 타임 스탬프가 함께 출력되어 히스토리를 확인할 수 있습니다.
-
-![그림 44 히스토리](../_assets/tp630/pane-history.png)
-
-
-
-# 6.14 호출 스택
+{% endhint %}# 6.3.7 호출 스택
 
 패널 선택창에서 \[호출 스택\]을 터치하면 호출 스택창이 나타납니다. 이 절의 내용을 이해하려면 먼저 hrscript의 `call`~`return`문과 지역변수에 대한 이해가 선행되어야 합니다.
 
@@ -3696,286 +3907,18 @@ job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 
 {% hint style="warning" %}
 \[주의\] Step-FWD나 재생을 수행할 떄는 작업을 재개할 때는 > 커서를 반드시 최상단(top) 프레임 위치로 복구하십시오. 그러지 않으면, job 커서의 위치가 바뀐 것으로 간주되어 호출스택이 초기화된 채로 수행됩니다.
 {% endhint %}
-# 6.15 hot edit
+# 6.3.8 멀티 태스크
 
-로봇 기동 중에도 라인을 정지하지 않고 job 프로그램을 편집할 수 있는 기능입니다. 
+패널 선택창에서 \[멀티 태스크\]을 터치하십시오. 멀티 태스킹 사용 시 현재 메인 태스크와 서브 태스크 1-7에 자동 운전 중인 프로그램, 스텝, 펑션, 동작상태, 작업상태를 표시합니다. 
 
 
-{% hint style="warning" %}
-* 본 기능을 통해 현재 자동 운전 중인 프로그램, 혹은 호출될 프로그램을 수정하고 적용하면 다음 사이클(메인 프로그램 END 실행 이후 시점)부터 적용되어 수정된 프로그램으로 로봇을 재생합니다. 올바르지 않는 수정은 로봇과 지그간 충돌과 같은 심각한 사고를 유발할 수 있으므로 최대한 주의하십시오.
-{% endhint %}
-<br><br>
-
-### 진입
-
-패널 선택창에서 \[hot edit\]를 터치하십시오. 현재 선택된 job 프로그램의 hotedit 창이 열립니다.
-
-![그림 43 hot edit](../_assets/tp630/pane-hot-edit-0.png)
+![](../_assets/tp630/pane-multi-task.png) 
 
 <br>
-
-
-### 가능한 편집의 종류
-
-조작방식은 수동모드에서 조작과 동일하나, 아래의 기능은 사용할 수 없습니다. 
-
-1) \[축조작\] 키 사용: 해당 키 입력 무시
-2) \[기록\] 키 (숨은 포즈 MOVE의 기록): 'Hot Edit중에는 금지된 조작입니다.' 메시지 표시
-3) \[위치수정\] 키: 'Hot Edit중에는 금지된 조작입니다.'  메시지 표시
-
-
-![](../_assets/tp630/pane-hot-edit-1.png)
-
-<br>
-
-### 반영
-
-프로그램 편집을 완료했다면, 안내표시줄 왼쪽의 ![](../_assets/tp630/bt-menu.png) 버튼을 클릭하여 팝업 메뉴를 열고 'hotedit: 적용 요청'을 선택하십시오.
-
-![](../_assets/tp630/pane-hot-edit-apply2.png)
-
-<br>
-
-반영이 일어나는 시점은 아래 표와 같습니다.
-
-<table>
-<thead>
-  <tr>
-    <th>상태</th>
-    <th>프로그램</th>
-    <th>적용 요청 후, 적용 시점</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>정지 중</td>
-    <td>-</td>
-    <td>즉시 적용</td>
-  </tr>
-  <tr>
-    <td rowspan="2">재생 중</td>
-    <td>재생 중이 아닌 프로그램<br>(호출스택에 포함되지 않은 job)</td>
-    <td>즉시 적용</td>
-  </tr>
-  <tr>
-    <td>재생 중인 프로그램<br>(호출스택에 포함된 job)</td>
-    <td>다음 cycle 시작</td>
-  </tr>
-</tbody>
-</table>
-<br>
-
-### 제목막대 표시
-
-  hotedit 패널 제목막대의 우측에는 현재의 상태를 나타내는 기호가 표시됩니다.
-
-  \* 기호는 교시 프로그램이 수정되어 가동 중인 프로그램과 달라졌음을 의미합니다.  
-  ![](../_assets/tp630/pane-hot-edit-apply3.png)
-
-  \> 기호는 가동 중 hotedit 적용이 요청된 상태를 의미합니다.  
-  ![](../_assets/tp630/pane-hot-edit-apply4.png)
-
-  기호 표시가 없으면 수정 전이거나 적용이 완료되어 가동 중인 프로그램과 동일함을 의미합니다.  
-  ![](../_assets/tp630/pane-hot-edit-apply5.png)
-
-
-### 다른 프로그램 선택
-
-[SHIFT]+[프로그램]키를 누르면 다른 프로그램을 선택할 수 있습니다. 새 프로그램을 작성할 수도 있습니다.
-# 6.16 시스템 특성
-
-패널 선택창에서 \[시스템 특성\]을 터치하십시오. 시스템 특성창이 나타납니다. 로봇 시스템의 다양한 데이터를 모두 확인하거나 특정한 정보 유형의 데이터만 확인할 수 있습니다.
-
-![](../_assets/tp630/pane-syscharacter.png)
-
-| 번호 | 설명 |
-| :--- | :--- |
-| ![](../_assets/c1.png) | 로봇 시스템의 데이터를 표시합니다. 상단의 정보 유형을 선택하여 해당 유형의 상세 데이터를 확인할 수 있습니다. |
-| ![](../_assets/c2.png) | \[초기화\]: 축별 모션을 제외한 나머지 항목에 한하여, 시스템 데이터의 최대값을 유형별로 초기화할 수 있습니다. |
 
 {% hint style="info" %}
-시스템 특성 모니터링 기능은 엔지니어 모드에서만 사용할 수 있습니다.
-{% endhint %}
-
-{% hint style="warning" %}
-* 엔지니어 모드\(Engineer Mode\)에서는 상태 표시줄에 엔지니어 모드 아이콘\(![](../_assets/eng-mode.png)\)이 깜빡입니다.
-* 엔지니어 모드에서 잘못 설정하면 로봇 시스템에 심각한 문제가 발생할 수 있으므로 주의하시기 바랍니다.
-{% endhint %}
-
-<br>
-
-
-## 초기화
-
-원하는 정보 유형을 선택하여 데이터의 최대값을 초기화할 수 있습니다.
-
-1. 시스템 특성창 하단의 \[초기화\] 버튼을 터치하십시오.
-2. 초기화할 정보 유형을 터치하십시오. 선택한 항목의 최대값이 초기화됩니다.
-
-![](../_assets/tp630/pane-syscharacter-clear.png)
-
-# 6.17 시스템 진단
-
-패널 선택창에서 \[시스템 진단\]을 터치하십시오. 최초 실행 시 브레이크 검사 데이터 창이 나타납니다.
-
-![그림 51 브레이크 검사 화면](../_assets/tp630/pane-sys-diagnosis-brake.png)
-![그림 52 가스스프링 검사 화면](../_assets/tp630/pane-sys-diagnosis-gasp.png)
-
-
-
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <p>[시스템 진단] 패널을 클릭한 상태에서 아래 버튼을 클릭하여 다른 검사 항목으로 전환할 수 있습니다.</p>
-        <ul>
-          <li>[브레이크 검사]: 브레이크 검사 데이터 화면으로 전환합니다.</li>
-          <li>[가스압력 검사]: 가스스프링 압력 검사 데이터 화면으로 전환합니다.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <p>브레이크 Hold/Release 시 현재 토크, 최대 토크, 기준 토크와 토크 적용 비율을 표시합니다.</p>
-        <ul>
-          <li>검사 중 현재 토크값이 표시됩니다.</li>
-          <li>기준값 설정 모드인 경우 축 이름이 노란색으로 표시됩니다.</li>          
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c3.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <p>가스스프링 압력 검사 시 압력 기준값 및 추정값을 표시합니다.</p>
-        <ul>          
-          <li>[정지]: 정지상태 가스스프링 압력 검사 결과를 표시합니다.</li>
-          <li>[명령]: 가스스프링 압력 검사 명령을 수행한 결과를 표시합니다.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-{% hint style="info" %}
-* \[가스압력 검사\] 화면은 가스스프링 압력 검사 기능을 지원하는 로봇에 대해서만 지원합니다.
-* 시스템 진단 기능에 대한 자세한 내용은 별도의 “Hi6 제어기 시스템 진단 기능 설명서”를 참조하십시오.
-{% endhint %}
-
-# 6.18 태스크
-
-패널 선택창에서 \[태스크\]를 터치하십시오. 태스크창이 나타납니다.
-
-태스크별 동작 주기와 실행 시간 정보를 확인할 수 있습니다.
-
-![그림 46 태스크](../_assets/tp630/pane-task.png)
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <ul>
-        태스크별 동작 주기와
-        실행 시간 정보를 표시합니다
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">
-      <ul>
-          <li>[사이클 시간]/[실행 시간]:
-            태스크별 정보 유형을
-            변경합니다.</li>
-          <li>[초기화]: 표시된 정보를
-            초기화합니다.</li>
-          <li>[카운터]: 태스크 모니터가 정상인 동안 카운터가 증가합니다..</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-# 6.19 센서 동기
-
-패널 선택창에서 \[센서 동기\]를 터치하십시오. 센서 동기창이 나타납니다.
-
-컨베이어 및 프레스 동기 기능과 관련된 정보를 확인할 수 있습니다. 센서 동기 기능은 \[**시스템** &gt; 4: 응용 파라미터 &gt; 4: 센서 동기\] 메뉴에서 동기 상태를 컨베이어 또는 프레스로 설정하면 활성화됩니다.
-
-![그림 50 센서 동기 모니터링](../_assets/tp630/pane-sensorsynch.png)
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
-      </td>
-      <td style="text-align:left">선택한 센서의 컨베이어
-        및 프레스 동기 기능과
-        관련된 정보를 표시합니다.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li>[sensor #1]: 드롭다운 메뉴를
-            터치하여 모니터링할
-            센서를 선택합니다.</li>
-          <li>[수동 초기화]: 센서 관련
-            각종 데이터(엔코더 펄스,
-            센서 위치, 센서 속도, 작업물
-            진입 개수, 동기 재생 상태
-            등)를 수동으로 삭제합니다.</li>
-          <li>[리밋 스위치 작동]: 리밋
-            스위치를 수동으로 입력할
-            경우 사용합니다.</li>
-          <li>[작업 포지션 입력]: 센서의
-            위치값(직선 mm, 원형 deg)을
-            수동으로 입력합니다.</li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-{% hint style="info" %}
-센서 동기 기능에 대한 자세한 내용은 별도의 “Hi6 센서동기 기능 설명서”를 참조하십시오.
-{% endhint %}
-
-# 6.20 프로그램 예약실행
+ 상세 내용은 "[멀티태스크 기능설명서](https://hrbook-hrc.web.app/#/view/doc-multi-task/korean/README)"를 참조하여 주십시오.
+{% endhint %}# 6.3.9 프로그램 예약실행
 
 [**설정** > 2:제어 파라미터 > 7:프로그램 예약 실행] 항목에서 '적용 레지스터 개수'를 20개 또는 1개로 선택합니다. 
 
@@ -4039,93 +3982,49 @@ job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 
 * 프로그램 예약 실행에 대한 자세한 내용은 별도의 “Hi6 제어기 프로그램 예약 실행 기능 설명서”를 참조하십시오.
 {% endhint %}
 
-# 6.21 강제 IO (forced io)
+# 6.4 시스템 진단
 
-강제 IO 창에는 원하는 IO 릴레이 변수를 등록하여, 변경된 IO 값을 강제로 적용 할 수 있습니다.
+# 6.4.1 시스템 특성
 
+패널 선택창에서 \[시스템 특성\]을 터치하십시오. 시스템 특성창이 나타납니다. 로봇 시스템의 다양한 데이터를 모두 확인하거나 특정한 정보 유형의 데이터만 확인할 수 있습니다.
 
-{% hint style="warning" %}
-* 시험 혹은 문제 분석을 위한 기능입니다.
-* 강제 IO의 오조작은 충돌, 낙하, 인명피해 등 심각한 사고를 유발할 수 있습니다. 해당 IO의 구성을 완전히 이해하고 값 변경의 결과를 명확히 예측하는 경우에만 신중을 기해 사용하십시오.
-* 시험 및 문제 분석이 끝나면, 반드시 강제 IO를 전체 클리어하여 정상적인 IO 상태로 복구해 주십시오.
+![](../_assets/tp630/pane-syscharacter.png)
 
+| 번호 | 설명 |
+| :--- | :--- |
+| ![](../_assets/c1.png) | 로봇 시스템의 데이터를 표시합니다. 상단의 정보 유형을 선택하여 해당 유형의 상세 데이터를 확인할 수 있습니다. |
+| ![](../_assets/c2.png) | \[초기화\]: 축별 모션을 제외한 나머지 항목에 한하여, 시스템 데이터의 최대값을 유형별로 초기화할 수 있습니다. |
+
+{% hint style="info" %}
+시스템 특성 모니터링 기능은 엔지니어 모드에서만 사용할 수 있습니다.
 {% endhint %}
 
-## 강제 IO 창 열기
-
-1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
-
-![](../_assets/tp630/panel-split.png)
-&nbsp;
-![](../_assets/tp630/panel-sel.png)
-
-2. 패널 선택창에서 `강제 io`를 더블클릭하십시오. 강제 I/O 창이 열립니다.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io.png)
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
-
-
-## 사용 방법
-
-이름 열을 선택한 후 원하는 IO 릴레이 변수명을 타이핑하고 `ENTER` 키를 누르면, 테이블에 해당 변수가 등록됩니다.  
-(이름 칸을 한번 더 클릭하여 입력한 변수명을 수정할 수 있습니다.)
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-name.png)
-
-
-값 열을 선택한 후 적용할 새 IO 값을 타이핑하고 `ENTER` 키를 누르십시오.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-val.png)
-
-적용할 강제 IO 항목이 더 있으면 마찬가지 방법으로 입력하십시오. 최대 100개의 항목을 입력할 수 있습니다.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-multi.png)
-
-panel 제목 막대의 * 표시는 테이블이 수정되었고 이 수정 내용이 아직 적용되지 않았다는 의미입니다.
-강제 IO를 적용하려면 [F7: 적용] 버튼을 누르십시오.
-경고 메시지박스에서 `확인` 버튼을 누르는 순간 강제 I/O 항목들이 일괄 적용됩니다.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-apply.png)
-
-
-panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것을 확인할 수 있습니다. 제목 막대에는 빨간색의 F가 점멸하는데, 이것은 강제 IO가 적용되고 있음을 경고하는 표시입니다.
-![](../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
-
-
-* 편집 중 항목을 삭제할 때는 `SHIFT+DEL`을 누르십시오.
-* [F5: 위로 교환], [F6: 아래로 교환] 버튼을 눌러 항목의 순서를 바꿀 수 있습니다.
-* 테이블을 편집하다가 [F3: 편집 취소]를 누르면, 마지막으로 적용된 상태를 다시 불러옵니다.
-
-
-시험 및 문제 분석이 끝나면, 반드시 [F2: 클리어] 버튼을 눌러 강제 IO를 전체 클리어하십시오.
-
-![](../_assets/tp630/panel-forced-io/panel-forced-io-clear.png)
-
 {% hint style="warning" %}
-* 여러 개의 항목이 같은 릴레이(혹은 겹쳐진 bit들)에 대해 서로 상반된 값을 강제한 경우, 테이블의 아래쪽 항목의 값으로 강제됩니다.
-* Hi6 제어기의 전원을 끄면 강제 IO로 등록된 내용은 모두 클리어됩니다.
-
+* 엔지니어 모드\(Engineer Mode\)에서는 상태 표시줄에 엔지니어 모드 아이콘\(![](../_assets/eng-mode.png)\)이 깜빡입니다.
+* 엔지니어 모드에서 잘못 설정하면 로봇 시스템에 심각한 문제가 발생할 수 있으므로 주의하시기 바랍니다.
 {% endhint %}
-# 6.22 멀티 태스크
-
-패널 선택창에서 \[멀티 태스크\]을 터치하십시오. 멀티 태스킹 사용 시 현재 메인 태스크와 서브 태스크 1-7에 자동 운전 중인 프로그램, 스텝, 펑션, 동작상태, 작업상태를 표시합니다. 
-
-
-![](../_assets/tp630/pane-multi-task.png) 
 
 <br>
 
-{% hint style="info" %}
- 상세 내용은 "[멀티태스크 기능설명서](https://hrbook-hrc.web.app/#/view/doc-multi-task/korean/README)"를 참조하여 주십시오.
-{% endhint %}# 6.23 메모리 변수
 
-패널 선택창에서 \[메모리 변수\]를 터치하십시오. 내장PLC 릴레이들 중 로봇언어에서 접근 가능한 변수를 표시합니다. 
+## 초기화
+
+원하는 정보 유형을 선택하여 데이터의 최대값을 초기화할 수 있습니다.
+
+1. 시스템 특성창 하단의 \[초기화\] 버튼을 터치하십시오.
+2. 초기화할 정보 유형을 터치하십시오. 선택한 항목의 최대값이 초기화됩니다.
+
+![](../_assets/tp630/pane-syscharacter-clear.png)
+
+# 6.4.2 시스템 진단
+
+패널 선택창에서 \[시스템 진단\]을 터치하십시오. 최초 실행 시 브레이크 검사 데이터 창이 나타납니다.
+
+![그림 51 브레이크 검사 화면](../_assets/tp630/pane-sys-diagnosis-brake.png)
+![그림 52 가스스프링 검사 화면](../_assets/tp630/pane-sys-diagnosis-gasp.png)
 
 
 
-
-![](../_assets/tp630/pane-memory-variables.png) 
 
 <table>
   <thead>
@@ -4139,10 +4038,12 @@ panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것�
       <td style="text-align:left">
         <img src="../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left"> 
-      <ul>
-          데이터 메모리(mw)와 시스템 메모리(sw)의 현재 값을 16진수, 부호있는 10진수, long형, float형 등으로 표시합니다.
-      </ul>
+      <td style="text-align:left">
+        <p>[시스템 진단] 패널을 클릭한 상태에서 아래 버튼을 클릭하여 다른 검사 항목으로 전환할 수 있습니다.</p>
+        <ul>
+          <li>[브레이크 검사]: 브레이크 검사 데이터 화면으로 전환합니다.</li>
+          <li>[가스압력 검사]: 가스스프링 압력 검사 데이터 화면으로 전환합니다.</li>
+        </ul>
       </td>
     </tr>
     <tr>
@@ -4150,15 +4051,145 @@ panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것�
         <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
+        <p>브레이크 Hold/Release 시 현재 토크, 최대 토크, 기준 토크와 토크 적용 비율을 표시합니다.</p>
         <ul>
-          <li>[시작주소]: 해당 버튼을 선택한 후 대화상자에 시작주소를 입력하면 입력주소를 화면 첫줄에 표시합니다.</li>
-          <li>[수동설정]: 화면의 원하는 주소셀을 선택한 후 해당 버튼을 누르면 원하는 값으로 기록할 수 있습니다.</li>
-          <li>[_mw/_sw]: 해당버튼을 누르면 mw변수와 sw변수를 전환하여 보여줍니다.</li>
+          <li>검사 중 현재 토크값이 표시됩니다.</li>
+          <li>기준값 설정 모드인 경우 축 이름이 노란색으로 표시됩니다.</li>          
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>가스스프링 압력 검사 시 압력 기준값 및 추정값을 표시합니다.</p>
+        <ul>          
+          <li>[정지]: 정지상태 가스스프링 압력 검사 결과를 표시합니다.</li>
+          <li>[명령]: 가스스프링 압력 검사 명령을 수행한 결과를 표시합니다.</li>
         </ul>
       </td>
     </tr>
   </tbody>
-</table># 6.24 충돌검지 모니터링
+</table>
+
+{% hint style="info" %}
+* \[가스압력 검사\] 화면은 가스스프링 압력 검사 기능을 지원하는 로봇에 대해서만 지원합니다.
+* 시스템 진단 기능에 대한 자세한 내용은 별도의 “Hi6 제어기 시스템 진단 기능 설명서”를 참조하십시오.
+{% endhint %}
+
+# 6.4.3 태스크
+
+패널 선택창에서 \[태스크\]를 터치하십시오. 태스크창이 나타납니다.
+
+태스크별 동작 주기와 실행 시간 정보를 확인할 수 있습니다.
+
+![그림 46 태스크](../_assets/tp630/pane-task.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+        태스크별 동작 주기와
+        실행 시간 정보를 표시합니다
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+      <ul>
+          <li>[사이클 시간]/[실행 시간]:
+            태스크별 정보 유형을
+            변경합니다.</li>
+          <li>[초기화]: 표시된 정보를
+            초기화합니다.</li>
+          <li>[카운터]: 태스크 모니터가 정상인 동안 카운터가 증가합니다..</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+# 6.4.4 하드웨어 모니터링
+
+패널 선택창에서 [하드웨어 모니터링]을 선택하십시오. COM모듈 보드의 현재 전압, 온도 값을 모니터링 할 수 있습니다.
+허용 오차를 벗어날 경우 경고 메시지가 주기적(24h)으로 발생됩니다.
+ 
+ ![](../_assets/tp630/pane-hw-monitoring.png)
+ 
+ 
+- 허용 오차 값을 변경 하시려면, 해당 셀을 선택하여 편집하고 [저장 최소/최대] 버튼을 누르십시오.
+- 기본값으로 초기화 하시려면 [초기화 최소/최대] 버튼을 누르세요.
+# 6.5 고급기능 및 로봇응용
+
+# 6.5.1 센서 동기
+
+패널 선택창에서 \[센서 동기\]를 터치하십시오. 센서 동기창이 나타납니다.
+
+컨베이어 및 프레스 동기 기능과 관련된 정보를 확인할 수 있습니다. 센서 동기 기능은 \[**시스템** &gt; 4: 응용 파라미터 &gt; 4: 센서 동기\] 메뉴에서 동기 상태를 컨베이어 또는 프레스로 설정하면 활성화됩니다.
+
+![그림 50 센서 동기 모니터링](../_assets/tp630/pane-sensorsynch.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">선택한 센서의 컨베이어
+        및 프레스 동기 기능과
+        관련된 정보를 표시합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[sensor #1]: 드롭다운 메뉴를
+            터치하여 모니터링할
+            센서를 선택합니다.</li>
+          <li>[수동 초기화]: 센서 관련
+            각종 데이터(엔코더 펄스,
+            센서 위치, 센서 속도, 작업물
+            진입 개수, 동기 재생 상태
+            등)를 수동으로 삭제합니다.</li>
+          <li>[리밋 스위치 작동]: 리밋
+            스위치를 수동으로 입력할
+            경우 사용합니다.</li>
+          <li>[작업 포지션 입력]: 센서의
+            위치값(직선 mm, 원형 deg)을
+            수동으로 입력합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+센서 동기 기능에 대한 자세한 내용은 별도의 “Hi6 센서동기 기능 설명서”를 참조하십시오.
+{% endhint %}
+
+# 6.5.2 충돌검지 모니터링
  
  ![](../_assets/tp630/coldet_monitoring_pane.png)
  ![](../_assets/tp630/coldet_monitoring.png)
@@ -4172,38 +4203,7 @@ panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것�
  - [External Torque]-[Maximum] : 추정되는 외력 토크 중 최대값 [Nm]
  - [Reference] : 충돌이라 판단하는 토크 임계값 [Nm]
  - [Max/Ref] : [Maximum]값과 [Reference]값의 비율로서, 1 이상이 되면 해당 축에 충돌이 있다고 판단 
-# 6.25 EtherCAT 장치 
-
-패널 선택창에서 [EC. 장치정보]를 선택하십시오. Hi6 제어기 내/외부 EtherCAT 네트워크를 구성하는 슬레이브 장치 목록과  장치 연결 상태를 보여줍니다. EtherCAT 네트워크에서 제어기 메인보드는 EtherCAT 마스터로 동작합니다.
- 
-
-![](../_assets/tp630/pane-EC-device.png) 
-
-
--	ENI-구성된 슬레이브 번호: 제어기 EtherCAT 네트워크를 구성하는 슬레이브 장치 개수
--	연결된 슬레이브 번호: 현재 연결된 슬레이브 장치 개수, 'ENI-구성된 슬레이브 번호' 개수와 동일해야 한다.
--	디바이스: 메인보드와 연결된 EtherCAT 슬레이브 장치명
--	주소: EtherCAT 네트워크 상 고유주소
--	접속
-    -	NG: 통신불능
-    -	OK: 연결상태
--	모드
-    -	Unknown: 통신불능 상태로 인해 현재 상태를 알 수 없음
-    -	Init: 통신 채널 초기화
-    -	pre-op: 비주기 메일박스를 이용한 통신만 가능한 상태
-    -	safe-op: Slave 장치의 송신(Tx PDO) 데이터만 교신 가능한 상태
-    -	operation: Slave 장치의 송수신(Tx/RxPDO) 데이터 모두 교신 가능한 상태
-# 6.26 하드웨어 모니터링
-
-패널 선택창에서 [하드웨어 모니터링]을 선택하십시오. COM모듈 보드의 현재 전압, 온도 값을 모니터링 할 수 있습니다.
-허용 오차를 벗어날 경우 경고 메시지가 주기적(24h)으로 발생됩니다.
- 
- ![](../_assets/tp630/pane-hw-monitoring.png)
- 
- 
-- 허용 오차 값을 변경 하시려면, 해당 셀을 선택하여 편집하고 [저장 최소/최대] 버튼을 누르십시오.
-- 기본값으로 초기화 하시려면 [초기화 최소/최대] 버튼을 누르세요.
-# 6.27 스폿 용접 데이터
+# 6.5.10 스폿 용접 데이터
 
 패널 선택창에서 \[스폿\]을 터치하십시오. 스폿용접의 입출력 신호와 각종 데이터, 가동정보를 표시합니다. 
 
@@ -4216,7 +4216,7 @@ panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것�
  상세 내용은 스폿 용접 기능 설명서의 “[3.1 모니터링](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/3-Related-functions/3-1-monitoring/README)”를 참조하십시오.
 {% endhint %}
 
-# 6.28 서보툴 체인지
+# 6.5.11 서보툴 체인지
 
 패널 선택창에서 \[서보툴 제인지\]을 터치하십시오. 서보툴 체인지 기능 사용 시 서보툴의 상태와 엔코더 전원투입 입/출력 상태를 표시합니다. 
 
@@ -4229,7 +4229,7 @@ panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것�
  상세 내용은 "[서보툴 체인지 기능설명서](https://hrbook-hrc.web.app/#/view/doc-svtool-change/korean/README)"를 참조하여 주십시오.
 {% endhint %}
 
-# 6.29 아크 용접 데이터
+# 6.5.20 아크 용접 데이터
 
 해당 내용은 아크 용접 기능 설명서의 “[7. 용접 데이터 모니터링](https://hrbook-hrc.web.app/#/view/doc-arc-weld/korean/7_Monitoring/README)”을 참조하십시오.# 7. 시스템
 
