@@ -133,7 +133,7 @@
   * [6.4 시스템 진단](6-monitoring/4-system/README.md)
     * [6.4.1 시스템 특성](6-monitoring/4-system/1-system-spec.md)
     * [6.4.2 시스템 진단](6-monitoring/4-system/2-system-digonosis.md)
-    * [6.4.3 태스크](6-monitoring/4-system/3-task.md)
+    * [6.4.3 태스크](6-monitoring/4-system/3-system-task.md)
     * [6.4.4 하드웨어](6-monitoring/4-system/4-hw-monitoring.md)
   * [6.5 고급기능 및 로봇응용](6-monitoring/5-appl/README.md)
     * [6.5.1 센서 동기](6-monitoring/5-appl/1-sensor-sync.md)
