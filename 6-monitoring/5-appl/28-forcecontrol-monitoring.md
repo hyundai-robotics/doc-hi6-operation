@@ -2,10 +2,10 @@
  
 ![](../../_assets/tp630/force_monitoring.png)
 
-## 설명 
+## Description 
 * In case of sensorless force control, this monitoring data show [activated direction], [external force] and [incremental command position] 
  
-## 파라미터 
+## Parameters 
 
  - [activation] : activated direction(1), deactivated direction(0)  
     - in case of softxyz function : cartesian space coordinate
