@@ -142,6 +142,7 @@
     * [6.5.10 Spot Welding Data](6-monitoring/5-appl/10-spot.md)
     * [6.5.11 Servo Tool Change](6-monitoring/5-appl/11-tool-change.md)
     * [6.5.20 Arc Welding Data](6-monitoring/5-appl/20-arc.md)
+    * [6.5.28 Force Control Monitoring](6-monitoring/5-appl/28-forcecontrol-monitoring.md)
 * [7. System](7-system/README.md)
   * [7.1 Use of the Menus in System](7-system/1-setting-menu.md)
   * [7.2 User Environment](7-system/2-user-environment.md)
