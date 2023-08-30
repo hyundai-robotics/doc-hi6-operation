@@ -7304,7 +7304,7 @@ The following functions can be set up in engineer mode.
 
 * Be aware that incorrect settings in engineer mode can cause serious problems with the robot system. {% endhint %}
 
-# 8.12 R358 for Changing the Servo Tool
+# 8.13 R358 for Changing the Servo Tool
 
 You can manually connect and disconnect the servo tool in the servo tool change system. 
 
@@ -7341,7 +7341,7 @@ The method to change the servo tool using the R358 code is as follows.
 * For details on the servo tool change, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
 {% endhint %}
 
-# 8.13 R359 for Servo Tool Encoder Power On Relay
+# 8.14 R359 for Servo Tool Encoder Power On Relay
 
 If the servo gun is applied in the servo tool change system, you need to execute this function to reset the encoder of the servo tool axis when installing the servo tool for the first time.
 
@@ -7366,7 +7366,7 @@ If the servo gun is applied in the servo tool change system, you need to execute
 Never mechanically connect or disconnect the servo gun while the encoder power is forcibly supplied.
 {% endhint %}
 
-# 8.14 R360 Set CONTPATH manually
+# 8.15 R360 Set CONTPATH manually
 
 It manually changes the CONTPATH (continuous path) mode. The input ranges are 0, 1, and 2, and the description for each number is as follows. (Same as [contpath](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/5-moving-robot/6-contpath) statement.)
 
@@ -7435,7 +7435,7 @@ Here's how to operate it:
 3. The changed mode can be checked by the `CP0`, `CP1`, or `CP2` flag in the title-bar.
 
 ![](../_assets/tp630/flag-cp.png)
-# 8.15 R361 for Setting the Jog Inching Level
+# 8.16 R361 for Setting the Jog Inching Level
 
 R361 jog inching level setting information is as follows.
 
