@@ -4155,8 +4155,6 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
 
 ![](../../_assets/tp630/pane-sys-diagnosis-brake_eng.png)
 
-![](../../_assets/tp630/pane-sys-diagnosis-gasp_eng.png)
-
 
 
 
@@ -4176,7 +4174,6 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
         <p>[system diagnosis] In case where the panel is touched, you can switch the panel into another diagnosis by pushing the below items.</p>
         <ul>
           <li>[Brake check] displays the brake diagnosis data.</li>
-          <li>[Gas P. check] displays the gas spring pressure diagnosis data.</li>
         </ul>
       </td>
     </tr>
@@ -4192,23 +4189,10 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
         </ul>
       </td>
     </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../_assets/c3.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <p> Reference pressure and estimated pressure of the gas spring are displayed.</p>
-        <ul>          
-          <li>[Stop]: gas spring pressure in stationary-status diagnosis</li>
-          <li>[Cmd]: gas spring pressure after executing corresponding command.</li>
-        </ul>
-      </td>
-    </tr>
   </tbody>
 </table>
 
 {% hint style="info" %}
-* \[Gas P. check\] is allowed only to the diagnosis-supported robots.
 * Refer to "Hi6 system diagnosis manual" for more details.
 {% endhint %}
 
@@ -4356,7 +4340,24 @@ In the panel selection window, touch \[servo tool change\]. This displays the st
 {% endhint %}# 6.5.20 Arc Welding Data
 
 Refer to Arc Welding Manual's “[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/7_Monitoring/README)”.
-# 7. System
+# 6.5.28 force control monitoring
+ 
+![](../../_assets/tp630/force_monitoring.png)
+
+## Description 
+* In case of sensorless force control, this monitoring data show [activated direction], [external force] and [incremental command position] 
+ 
+## Parameters 
+
+ - [activation] : activated direction(1), deactivated direction(0)  
+    - in case of softxyz function : cartesian space coordinate
+    - in case of softjoint function : joint space coordinate
+ - [ext.force] : external force or torque   
+    - in case of softxyz function : force[N], moment[Nm] 
+    - in case of softjoint function : torque[Nm]
+ - [cmd.pose] : incremental command position 
+    - in case of softxyz function : position[mm], orientation[deg]
+    - in case of softjoint function : joint angle[deg]# 7. System
 
 In the 'system', you can check and set the user information and various parameter information.
 
@@ -7273,6 +7274,35 @@ If you execute the one-touch recording in which the MOVE and SPOT statements are
 {% hint style="info" %}
 For details on the manual setting of the panel thickness, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
 {% endhint %}
+
+# 8.12 R314 Engineer Mode
+
+In the R Code window, type 314 and then touch the `[OK]` button or press the `[ENTER]` key.
+
+![](../_assets/tp630/pop-rcode-314.png)
+
+After completion, the following display flashes in the upper right corner of the screen.
+
+![](../_assets/tp630/eng-mode.png)
+
+The following functions can be set up in engineer mode.
+
+* Axis origin (robot parameters) 
+* Soft limit (robot parameters) 
+* Encoder offset (Robot Parameters) 
+* Servo parameters (Robot Parameters) 
+* Acceleration and deceleration parameters (robot parameters) 
+* Jog inching level settings (Robot Parameters)
+* Servo tool change (Application parameters) 
+* System Initialization (Initialization)
+* Robot Type Selection (Initialization)
+* Additional axes Parameters (Initialization)
+* Axis lock (Initialize)
+* Other detailed applications
+
+{% hint style="warning" %}
+
+* Be aware that incorrect settings in engineer mode can cause serious problems with the robot system. {% endhint %}
 
 # 8.12 R358 for Changing the Servo Tool
 
