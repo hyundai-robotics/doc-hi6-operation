@@ -3370,7 +3370,7 @@ Select `[fn input]` or `[fn output]` in the panel selection window. The fn input
 
 Please refer to the link below for how to set up fn object.
 
-[7.3.2.12 fn block allocation](../7-system/3-control-parameter/2-io-signal-setting/12-fn-block)
+[7.3.2.12 fn block allocation](../../7-system/3-control-parameter/2-io-signal-setting/12-fn-block)
 
 
 Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to be displayed.
@@ -5188,7 +5188,7 @@ It is mapped as shown in the table below.
 
 You can open the fn input / output monitoring panel to view or manually output the current value of the dio or xy relay for each fn object. See the link below for more information.
 
-[6.8 fn input, fn output](../../../6-monitoring/8-fn-io.md)
+[6.8 fn input, fn output](../../../6-monitoring/2-io/5-fn-io.md)
 # 7.3.3 Serial Port
 
 You can set the information required for serial port communication.

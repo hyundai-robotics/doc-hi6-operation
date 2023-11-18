@@ -104,4 +104,4 @@ It is mapped as shown in the table below.
 
 You can open the fn input / output monitoring panel to view or manually output the current value of the dio or xy relay for each fn object. See the link below for more information.
 
-[6.8 fn input, fn output](../../../6-monitoring/8-fn-io.md)
+[6.8 fn input, fn output](../../../6-monitoring/2-io/5-fn-io.md)
