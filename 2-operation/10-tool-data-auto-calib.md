@@ -15,6 +15,6 @@
 ![](../_assets/tp630/tool-data-auto-calib2.png)
 
 {% hint style="info" %}
-이 기능에 대한 자세한 내용은 “[7.4.1 툴 데이터](../7-setting/4-robot-parameter/1-tool-data/README.md)”를 참조하십시오.
+이 기능에 대한 자세한 내용은 “[7.4.1 툴 데이터](../7-system/4-robot-parameter/1-tool-data/README.md)”를 참조하십시오.
 {% endhint %}
 

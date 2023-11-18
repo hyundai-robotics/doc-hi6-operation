@@ -28,7 +28,7 @@
 <br>
 
 {% hint style="info" %}
-\[**시스템** &gt; 제어 파라미터 &gt; 입출력 신호 설정 &gt; 키 신호 출력\] 메뉴에서도 원하는 출력 신호를 키 신호 출력 기능 영역의 버튼에 할당할 수 있습니다. 자세한 내용은 "[7.3.2.8 키 신호 출력](../../../7-setting/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)"을 참조하십시오.
+\[**시스템** &gt; 제어 파라미터 &gt; 입출력 신호 설정 &gt; 키 신호 출력\] 메뉴에서도 원하는 출력 신호를 키 신호 출력 기능 영역의 버튼에 할당할 수 있습니다. 자세한 내용은 "[7.3.2.8 키 신호 출력](../../../7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)"을 참조하십시오.
 
 {% endhint %}
 
