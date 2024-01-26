@@ -90,6 +90,7 @@
     * [4.2.5 Backup all](4-service/2-file-manager/5-data-backup.md)
     * [4.2.6 Restore all](4-service/2-file-manager/6-data-restore.md)
     * [4.2.7 Partial Restoration](4-service/2-file-manager/7-data-restore-partial.md)
+    * [4.2.8 toggle root](4-service/2-file-manager/8-toggle-root.md)
   * [4.3 Program Conversion](4-service/3-program-conversion/README.md)
     * [4.3.1 Recording Condition](4-service/3-program-conversion/1-rec-condition.md)
     * [4.3.2 Recording Speed Conversion](4-service/3-program-conversion/2-rec-speed.md)
