@@ -4,11 +4,11 @@
 
 1.	폴더 목록에서 티치 펜던트의 방향키를 이용해 폴더를 선택하십시오. 선택한 폴더에 저장된 파일 목록이 나타납니다. 
 
-![](../../_assets/tp630/fl-folder-select.png)
+![](../../_assets/tp630/file-manager/fl-folder-select.png)
 
 2.	파일 목록에서 원하는 파일을 터치하여 선택하십시오. 
 
-![](../../_assets/tp630/fl-file-select.png)
+![](../../_assets/tp630/file-manager/fl-file-select.png)
 
 * <<b>CTRL</b>> 키를 누른 상태에서 파일을 터치하면 여러 파일을 하나씩 선택할 수 있습니다.
 * <<b>SHIFT</b>> 키를 누른 상태에서 두 파일을 터치하면 두 파일 사이의 모든 파일을 한 번에 선택할 수 있습니다.
@@ -26,13 +26,13 @@
 
 4.	파일을 폴더에 붙여 넣기할 경우, 방향키로 폴더를 선택한 후 \[**붙여넣기**\] 버튼을 터치하십시오. 선택한 폴더에 파일이 붙여 넣기됩니다. 
 
-![](../../_assets/tp630/fl-copy.png)
+![](../../_assets/tp630/file-manager/fl-copy.png)
 
 * 선택한 폴더에 같은 이름의 파일이 있으면 중복 알림창이 나타납니다. 덮어쓰기 여부를 설정하여 처리하십시오. 
 
-![](../../_assets/tp630/fl-copy-pop.png)
+![](../../_assets/tp630/file-manager/fl-copy-pop.png)
 
 * 파일을 삭제할 경우, 우측아래 <**BS**> 키와 <**SHIFT**> 키를 누른 후 확인창에서 \[**확인**\] 버튼을 터치하십시오.
 
-![](../../_assets/tp630/fl-delete-pop.png)
+![](../../_assets/tp630/file-manager/fl-delete-pop.png)
 

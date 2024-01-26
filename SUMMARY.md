@@ -89,6 +89,7 @@
     * [4.2.5 전체 백업](4-service/2-file-manager/5-data-backup.md)
     * [4.2.6 전체 복원](4-service/2-file-manager/6-data-restore.md)
     * [4.2.7 부분적인 복원](4-service/2-file-manager/7-data-restore-partial.md)
+    * [4.2.8 토글 root](4-service/2-file-manager/8-toggle-root.md)
   * [4.3 프로그램 변환](4-service/3-program-conversion/README.md)
     * [4.3.1 기록 조건](4-service/3-program-conversion/1-rec-condition.md)
     * [4.3.2 기록 속도](4-service/3-program-conversion/2-rec-speed.md)

@@ -2317,7 +2317,7 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 1. \[5: 파일관리\] 메뉴를 터치하십시오. 장치별 폴더 목록과 선택한 폴더에 저장된 파일의 목록이 나타납니다.
 2. 장치별 폴더 구조와 저장된 파일을 확인하고 관리하십시오.
 
-![](../../_assets/tp630/fl-manage.png)
+![](../../_assets/tp630/file-manager/fl-manage.png)
 
 <table>
   <thead>
@@ -2375,11 +2375,11 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 1.	폴더 목록에서 티치 펜던트의 방향키를 이용해 폴더를 선택하십시오. 선택한 폴더에 저장된 파일 목록이 나타납니다. 
 
-![](../../_assets/tp630/fl-folder-select.png)
+![](../../_assets/tp630/file-manager/fl-folder-select.png)
 
 2.	파일 목록에서 원하는 파일을 터치하여 선택하십시오. 
 
-![](../../_assets/tp630/fl-file-select.png)
+![](../../_assets/tp630/file-manager/fl-file-select.png)
 
 * <<b>CTRL</b>> 키를 누른 상태에서 파일을 터치하면 여러 파일을 하나씩 선택할 수 있습니다.
 * <<b>SHIFT</b>> 키를 누른 상태에서 두 파일을 터치하면 두 파일 사이의 모든 파일을 한 번에 선택할 수 있습니다.
@@ -2397,15 +2397,15 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 4.	파일을 폴더에 붙여 넣기할 경우, 방향키로 폴더를 선택한 후 \[**붙여넣기**\] 버튼을 터치하십시오. 선택한 폴더에 파일이 붙여 넣기됩니다. 
 
-![](../../_assets/tp630/fl-copy.png)
+![](../../_assets/tp630/file-manager/fl-copy.png)
 
 * 선택한 폴더에 같은 이름의 파일이 있으면 중복 알림창이 나타납니다. 덮어쓰기 여부를 설정하여 처리하십시오. 
 
-![](../../_assets/tp630/fl-copy-pop.png)
+![](../../_assets/tp630/file-manager/fl-copy-pop.png)
 
 * 파일을 삭제할 경우, 우측아래 <**BS**> 키와 <**SHIFT**> 키를 누른 후 확인창에서 \[**확인**\] 버튼을 터치하십시오.
 
-![](../../_assets/tp630/fl-delete-pop.png)
+![](../../_assets/tp630/file-manager/fl-delete-pop.png)
 
 # 4.2.2 파일명 및 폴더명 변경
 
@@ -2414,11 +2414,11 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 1.	파일\(또는 폴더\) 목록에서 원하는 파일\(또는 폴더\)을 터치하여 선택한 후 화면 하단에서 \[**이름변경**\] 버튼을 터치하십시오.
 
 
-![](../../_assets/tp630/fld-rename-select.png)
+![](../../_assets/tp630/file-manager/fld-rename-select.png)
 
 2.	입력 영역에 파일\(또는 폴더\) 이름을 입력하십시오.
 
-![](../../_assets/tp630/fld-rename.png)
+![](../../_assets/tp630/file-manager/fld-rename.png)
 
 * 숫자는 티치 펜던트의 조작 키를 이용해 간단히 입력할 수 있습니다. (커서 이동, 숫자키: 숫자 입력)
 * 숫자를 포함한 텍스트를 입력하려면 이력 표시줄의 \[![](../../_assets/tp630/rbt-softkb.png)\] 버튼을 터치하여 소프트 키보드를 이용하십시오.
@@ -2441,11 +2441,11 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 1.	폴더 목록에서 티치 펜던트의 방향키를 이용해 폴더를 선택한 후 화면 우측 하단의 <**BS**> 키와 <**SHIFT**> 키를 함께 누르십시오. 
 
-![](../../../_assets/tp630/fld-delete.png)
+![](../../../_assets/tp630/file-manager/fld-delete.png)
 
 2.	확인창에서 \[**확인**\] 버튼을 터치하십시오. 선택한 폴더와 폴더에 저장된 파일이 모두 삭제됩니다.
 
-![](../../../_assets/tp630/fld-delete-pop.png)
+![](../../../_assets/tp630/file-manager/fld-delete-pop.png)
 
 
 
@@ -2453,11 +2453,11 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 1.	폴더 목록에서 티치 펜던트의 방향키를 이용해 폴더를 선택한 후 화면 하단의 \[**새 폴더**\] 버튼을 터치하십시오. 선택한 폴더의 하위에 새 폴더가 추가됩니다.
 
-![](../../../_assets/tp630/fld-create.png)
+![](../../../_assets/tp630/file-manager/fld-create.png)
 
 2.	새 폴더의 이름을 입력한 후 <<b>ENTER</b>> 키를 누르십시오.
 
-![](../../../_assets/tp630/fld-create-rename.png)
+![](../../../_assets/tp630/file-manager/fld-create-rename.png)
 
 # 4.2.4 파일 보호
 
@@ -2465,11 +2465,11 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 1.	파일을 선택한 후 \[**속성**\] 버튼을 터치하십시오. 속성 설정창이 나타납니다. 
 
-![](../../_assets/tp630/fl-attribute.png)
+![](../../_assets/tp630/file-manager/fl-attribute.png)
 
 2.	파일 이름을 확인하고 \[**읽기전용**\] 체크박스를 터치하여 선택한 후 \[**확인**\] 버튼을 터치하십시오. 파일 목록의 속성에 보호 표시\(W\_\)가 나타납니다.
 
-![](../../_assets/tp630/fl-attribute-pop.png)
+![](../../_assets/tp630/file-manager/fl-attribute-pop.png)
 
 
 
@@ -2479,15 +2479,15 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 1.	폴더 목록의 티치 펜던트\(T/P\) 또는 이동식 저장 장치\(USB\)에서 티치 펜던트의 방향키를 이용해 백업을 저장할 대상 폴더를 선택하십시오. 
 
-![](../../_assets/tp630/fl-backup-select.png)
+![](../../_assets/tp630/file-manager/fl-backup-select.png)
 
-2.	`SHIFT` 키를 누른 상태에서 화면 우측의 `[전체 백업]` 버튼을 클릭하십시오.
+2.	`SHIFT` 키를 누른 상태에서 화면 하단의 `[전체 백업]` 버튼을 클릭하십시오.
 
-![](../../_assets/tp630/fl-backup-button.png)
+![](../../_assets/tp630/file-manager/fl-backup-button.png)
 
 3.	`시작` 버튼 클릭해 백업을 시작하십시오. 백업\(약 1분 소요\)이 완료되면 결과창에서 백업 결과를 확인하십시오.
 
-![](../../_assets/tp630/fl-backup-pop.png)
+![](../../_assets/tp630/file-manager/fl-backup-pop.png)
 
 # 4.2.6 전체 복원
 
@@ -2495,17 +2495,17 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 1.	폴더 목록의 티치 펜던트\(T/P\) 또는 이동식 저장 장치\(USB\)에서 티치 펜던트의 방향키를 이용해 전체 백업했던 폴더를 선택하십시오.
 
-![](../../_assets/tp630/fl-backup-select.png)
+![](../../_assets/tp630/file-manager/fl-backup-select.png)
 
 
 2.	`SHIFT` 키를 누른 상태에서 화면 하단의 `[전체 복원]` 버튼을 클릭하십시오.
 
-![](../../_assets/tp630/fl-restore-button.png)
+![](../../_assets/tp630/file-manager/fl-restore-button.png)
 
 
 3.	`시작` 버튼 클릭해 복원을 시작하십시오. 복원\(약 1분 소요\)이 완료되면 결과창에서 복원 결과를 확인하십시오.
 
-![](../../_assets/tp630/fl-restore-report.png)
+![](../../_assets/tp630/file-manager/fl-restore-report.png)
 
 4.	제어기의 전원을 재투입하십시오.
 # 4.2.7 부분적인 복원
@@ -2514,20 +2514,37 @@ Hi6 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수
 
 1.	폴더 목록의 티치 펜던트\(T/P\) 또는 이동식 저장 장치\(USB\)에서 티치 펜던트의 방향키를 이용해 프로젝트 또는 이력이 백업된 폴더를 선택한 후 화면 우측의 \[**복사**\] 버튼을 터치하십시오.
 
-![](../../_assets/tp630/fl-restore-copy.png)
+![](../../_assets/tp630/file-manager/fl-restore-copy.png)
 
 
 2.	폴더 목록에서 티치 펜던트의 방향키를 이용해 \[MAIN\]을 선택한 후 화면 우측의 \[**붙여넣기**\] 버튼을 터치하십시오. 
 
-![](../../_assets/tp630/fl-restore-paste.png)
+![](../../_assets/tp630/file-manager/fl-restore-paste.png)
 
 
 3.	중복 알림창에서 \[전부\] 체크박스를 터치하여 선택한 후 \[**확인**\] 버튼을 터치하십시오. 메인 보드에 백업 데이터가 복원됩니다.
 
-![](../../_assets/tp630/fl-restore-pop.png)
+![](../../_assets/tp630/file-manager/fl-restore-pop.png)
 
  4.	제어기의 전원을 다시 켜십시오.
 
+# 4.2.8 토글 root
+
+{% hint style="info" %}
+V60.26-00 부터 지원됩니다.
+{% endhint %}
+
+파일관리자 좌측의 트리창에 표시되는 MAIN과 TP 노드는 사용자에게 접근이 허가된 home 폴더 이하 만을 보여줍니다. home 폴더 바깥 영역은 시스템 폴더들로서 사용자가 함부로 접근해서는 안됩니다.
+
+유지보수 작업 중 꼭 필요한 경우라면, 화면 하단의 `[토글 root]`버튼을 클릭하여 시스템 폴더 접근 가능 모드로 전환할 수 있습니다.
+
+접근 가능 모드에 진입하면 아래와 같은 경고 메시지가 표시되고, MAIN과 TP 노드가 최상단의 시스템 폴더까지 표시합니다.
+
+![](../../_assets/tp630/file-manager/fl-toggle-root0.png)
+
+![](../../_assets/tp630/file-manager/fl-toggle-root1.png)
+
+`[토글 root]`버튼을 한번 더 클릭하면, 접근 가능 모드가 해제됩니다.
 # 4.3 프로그램 변환
 
 작성된 프로그램의 조건 및 위치 등을 일괄 또는 개별적으로 수정하거나 좌표를 변환하여 새 프로그램을 작성합니다.

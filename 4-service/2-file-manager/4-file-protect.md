@@ -4,11 +4,11 @@
 
 1.	파일을 선택한 후 \[**속성**\] 버튼을 터치하십시오. 속성 설정창이 나타납니다. 
 
-![](../../_assets/tp630/fl-attribute.png)
+![](../../_assets/tp630/file-manager/fl-attribute.png)
 
 2.	파일 이름을 확인하고 \[**읽기전용**\] 체크박스를 터치하여 선택한 후 \[**확인**\] 버튼을 터치하십시오. 파일 목록의 속성에 보호 표시\(W\_\)가 나타납니다.
 
-![](../../_assets/tp630/fl-attribute-pop.png)
+![](../../_assets/tp630/file-manager/fl-attribute-pop.png)
 
 
 

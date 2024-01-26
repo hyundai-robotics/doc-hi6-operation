@@ -5,7 +5,7 @@
 1. \[5: 파일관리\] 메뉴를 터치하십시오. 장치별 폴더 목록과 선택한 폴더에 저장된 파일의 목록이 나타납니다.
 2. 장치별 폴더 구조와 저장된 파일을 확인하고 관리하십시오.
 
-![](../../_assets/tp630/fl-manage.png)
+![](../../_assets/tp630/file-manager/fl-manage.png)
 
 <table>
   <thead>
