@@ -7,7 +7,7 @@ You can manage files in the main board’s internal memory, teach pendant, or re
 
 2.	Check and manage the folder structure and saved files by device.
 
-    ![](../../_assets/tp630/fl-manage_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-manage_eng.png)
 
 
 

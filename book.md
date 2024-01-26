@@ -2506,7 +2506,7 @@ You can manage files in the main board’s internal memory, teach pendant, or re
 
 2.	Check and manage the folder structure and saved files by device.
 
-    ![](../../_assets/tp630/fl-manage_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-manage_eng.png)
 
 
 
@@ -2573,11 +2573,11 @@ Select one or multiple files to copy, move, or delete.
 
 1.	Select a folder in the folder list using the jog dial on the teach pendant. A list of files saved in the selected folder will appear.
 
-    ![](../../_assets/tp630/fl-folder-select_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-folder-select_eng.png)
 
 2.	Select the desired file in the file list by touching it.
 
-    ![](../../_assets/tp630/fl-file-select_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-file-select_eng.png)
 
 * You can select multiple files one by one by touching each file while pressing the <**CTRL**> key.
 * If you touch two files while pressing the <**SHIFT**> key, you can select all files between the two files at once.
@@ -2594,17 +2594,17 @@ Select one or multiple files to copy, move, or delete.
 
 4.	To paste a file into a folder, select the folder using the jog dial and then touch the \[Paste\] button. Then, the file will be pasted to the selected folder.
 
-    ![](../../_assets/tp630/fl-copy_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-copy_eng.png)
 
 
 * If the selected folder has a file with a duplicate name, a duplication notification window will appear. Handle it by setting whether to overwrite it.
 
-    ![](../../_assets/tp630/fl-copy-pop_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-copy-pop_eng.png)
 
 
 * To delete a file, touch the \[Delete\] button, and then touch the \[ENTER\] button in the confirmation window.
 
-    ![](../../_assets/tp630/fl-delete-pop_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-delete-pop_eng.png)
 
 # 4.2.2 Renaming of a File and Folder
 
@@ -2612,11 +2612,11 @@ You can rename a file or folder. You can also rename multiple files or folders a
 
 1.	Touch the desired file \(or folder\) in the file \(or folder\) list to select it, and then touch the \[rename\] button on the function button bar of the screen.
 
-    ![](../../_assets/tp630/fld-rename-select_eng.png)
+    ![](../../_assets/tp630/file-manager/fld-rename-select_eng.png)
 
 2.	Input the file \(or folder\) name in the input area.
 
-    ![](../../_assets/tp630/fld-rename_eng.png)
+    ![](../../_assets/tp630/file-manager/fld-rename_eng.png)
 
 * You can input the number simply by using the operation keys on the teach pendant. \(&lt;←/→&gt; keys: For moving the cursor. Number keys: For inputting a number\)
 * To input a text including numbers, touch the \[ ![](../../_assets/tp630/rbt-softkb_eng.png) \] button on the log bar to use the soft keyboard.
@@ -2644,11 +2644,11 @@ You can delete a folder or add a new one.
 
 1.	Select a folder in the folder list using the jog dial on the teach pendant and then touch the ![](../../../_assets/tp630/k-delete_eng.png) key of the key pad.
 
-    ![](../../../_assets/tp630/fld-delete.png)
+    ![](../../../_assets/tp630/file-manager/fld-delete.png)
 
 2.	In the confirmation window, touch the \[ENTER\] button. The selected folder and all files saved in it will be deleted.
 
-    ![](../../../_assets/tp630/fld-delete-pop_eng.png)
+    ![](../../../_assets/tp630/file-manager/fld-delete-pop_eng.png)
 
 
 
@@ -2656,11 +2656,11 @@ You can delete a folder or add a new one.
 
 1.	Select a folder in the folder list using the jog dial of the teach pendant and then touch the \[New Folder\] button on the function button bar. Then, a new folder will be added under the selected folder.
 
-    ![](../../../_assets/tp630/fld-create_eng.png)
+    ![](../../../_assets/tp630/file-manager/fld-create_eng.png)
 
 2.	Input the name of the new folder and then press the <<b>ENTER</b>> key.
 
-    ![](../../../_assets/tp630/fld-create-rename_eng.png)
+    ![](../../../_assets/tp630/file-manager/fld-create-rename_eng.png)
 
 
 # 4.2.4 File Protection
@@ -2669,11 +2669,11 @@ Protect your important files by performing a setting that can make it impossible
 
 1.	Select the file and touch the \[property\] button. Then, the attribute setting window will appear.
 
-    ![](../../_assets/tp630/fl-attribute_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-attribute_eng.png)
 
 2.	Check the file name and touch the \[Read Only\] checkbox to select it and then touch the \[OK\] button. A protection mark \(W\_\) will appear in the attributes of the file list.
 
-    ![](../../_assets/tp630/fl-attribute-pop_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-attribute-pop_eng.png)
 
 
 
@@ -2683,16 +2683,16 @@ You can backup the controller's files, such as the project, log.
 
 1. In the Teach Pendant\(T/P\) or USB Storage Device in the folder tree, use the direction keys on the Teach Pendant to select the target folder where you want to save the backup.
 
-    ![](../../_assets/tp630/fl-backup-select.png)
+    ![](../../_assets/tp630/file-manager/fl-backup-select.png)
 
 2. Press the `SHIFT` key and click the `[backup all]` button on the bottom of the screen.
 
 
-    ![](../../_assets/tp630/fl-backup-button.png)
+    ![](../../_assets/tp630/file-manager/fl-backup-button.png)
 
 3. Click the 'Start' button to `start` the backup. Once Backup\(approximately 1 minute\) is complete, check the results of the backup in the results window.
 
-    ![](../../_assets/tp630/fl-backup-pop.png)
+    ![](../../_assets/tp630/file-manager/fl-backup-pop.png)
 
 # 4.2.6 Restore all
 
@@ -2700,15 +2700,15 @@ You can restore files such as projects, logs which backed up with `backup all` f
 
 1. In the Teach Pendant\(T/P\) or removable storage\(USB\) in the folder list, select the folder that you backed up all using the direction keys on the Teach Pendant.
 
-    ![](../../_assets/tp630/fl-backup-select.png)
+    ![](../../_assets/tp630/file-manager/fl-backup-select.png)
 
 2. Press the `SHIFT` key and click the `restore all` button on the bottom of the screen.
 
-    ![](../../_assets/tp630/fl-restore-button.png)
+    ![](../../_assets/tp630/file-manager/fl-restore-button.png)
 
 3. Click the `Start` button to start the restoration. Once the restoration (It takes about 1 minute.) is complete, check the results of the restoration in the results window.
 
-    ![](../../_assets/tp630/fl-restore-report.png)
+    ![](../../_assets/tp630/file-manager/fl-restore-report.png)
 
 4. Turn off and on the power the controller.
 # 4.2.6 Partial Restoration
@@ -2718,17 +2718,17 @@ When restoring only some folders or files of backup data, use the `Copy` and `Pa
 
 1. By using the teach pendant’s jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device\(USB\), and then click the `[copy]` button.
 
-    ![](../../_assets/tp630/fl-restore-copy_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-restore-copy_eng.png)
 
 
 2. By using the teach pendant’s jog dial, select the \[MAIN\] folder in the folder list, and then touch the `[Paste]` button.
 
-    ![](../../_assets/tp630/fl-restore-paste_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-restore-paste_eng.png)
 
 
 3. In the duplicate notification window, touch the checkbox for \[All\] to select it, and then touch the \[OK\] button. The backup data will be restored on the main board.
 
-    ![](../../_assets/tp630/fl-restore-pop_eng.png)
+    ![](../../_assets/tp630/file-manager/fl-restore-pop_eng.png)
 
 4. Turn the power of the controller back on.
 
