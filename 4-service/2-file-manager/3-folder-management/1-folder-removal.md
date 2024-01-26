@@ -2,7 +2,7 @@
 
 1.	Select a folder in the folder list using the jog dial on the teach pendant and then touch the ![](../../../_assets/tp630/k-delete_eng.png) key of the key pad.
 
-    ![](../../../_assets/tp630/fld-delete_eng.png)
+    ![](../../../_assets/tp630/fld-delete.png)
 
 2.	In the confirmation window, touch the \[ENTER\] button. The selected folder and all files saved in it will be deleted.
 

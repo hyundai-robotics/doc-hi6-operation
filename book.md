@@ -2644,7 +2644,7 @@ You can delete a folder or add a new one.
 
 1.	Select a folder in the folder list using the jog dial on the teach pendant and then touch the ![](../../../_assets/tp630/k-delete_eng.png) key of the key pad.
 
-    ![](../../../_assets/tp630/fld-delete_eng.png)
+    ![](../../../_assets/tp630/fld-delete.png)
 
 2.	In the confirmation window, touch the \[ENTER\] button. The selected folder and all files saved in it will be deleted.
 
@@ -2677,43 +2677,60 @@ Protect your important files by performing a setting that can make it impossible
 
 
 
-# 4.2.5 Data Backup
+# 4.2.5 Backup all
 
-You can save the history of the memory buffer as a file, and back up the project \(project/\) and history \(log/\) folders.
+You can backup the controller's files, such as the project, log.
 
-1.	By using the jog dial on the teach pendant, select the folder where you want to save the backup data in the teach pendant \(T/P\) or removable storage device \(USB\) folder in the folder list.
+1. In the Teach Pendant\(T/P\) or USB Storage Device in the folder tree, use the direction keys on the Teach Pendant to select the target folder where you want to save the backup.
 
-    ![](../../_assets/tp630/fl-backup-select_eng.png)
+    ![](../../_assets/tp630/fl-backup-select.png)
 
-2.	While pressing the <**SHIFT**> key, touch the \[Select all\] button at the right side of the screen. The data backup will start.
+2. Press the `SHIFT` key and click the `[backup all]` button on the bottom of the screen.
 
-    ![](../../_assets/tp630/fl-backup-button_eng.png)
 
-3.	When data backup \(it will take about 30 seconds\) is completed, check the backup result in the notification window.
+    ![](../../_assets/tp630/fl-backup-button.png)
 
-    ![](../../_assets/tp630/fl-backup-pop_eng.png)
+3. Click the 'Start' button to `start` the backup. Once Backup\(approximately 1 minute\) is complete, check the results of the backup in the results window.
 
-# 4.2.6 Data Restoration
+    ![](../../_assets/tp630/fl-backup-pop.png)
 
-This function helps restore the project \(project/\) and history \(log/\) that are previously backed up.
+# 4.2.6 Restore all
 
-1.	By using the teach pendant’s jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device \(USB\), and then touch the \[Copy\] button.
+You can restore files such as projects, logs which backed up with `backup all` features to the system.
 
+1. In the Teach Pendant\(T/P\) or removable storage\(USB\) in the folder list, select the folder that you backed up all using the direction keys on the Teach Pendant.
+
+    ![](../../_assets/tp630/fl-backup-select.png)
+
+2. Press the `SHIFT` key and click the `restore all` button on the bottom of the screen.
+
+    ![](../../_assets/tp630/fl-restore-button.png)
+
+3. Click the `Start` button to start the restoration. Once the restoration (It takes about 1 minute.) is complete, check the results of the restoration in the results window.
+
+    ![](../../_assets/tp630/fl-restore-report.png)
+
+4. Turn off and on the power the controller.
+# 4.2.6 Partial Restoration
+
+When restoring only some folders or files of backup data, use the `Copy` and `Paste` feature.
+
+
+1. By using the teach pendant’s jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device\(USB\), and then click the `[copy]` button.
 
     ![](../../_assets/tp630/fl-restore-copy_eng.png)
 
-2.	By using the teach pendant’s jog dial, select the \[MAIN\] folder in the folder list, and then touch the \[Paste\] button.
+
+2. By using the teach pendant’s jog dial, select the \[MAIN\] folder in the folder list, and then touch the `[Paste]` button.
 
     ![](../../_assets/tp630/fl-restore-paste_eng.png)
 
 
-
-
-3.	In the duplicate notification window, touch the checkbox for \[All\] to select it, and then touch the \[OK\] button. The backup data will be restored on the main board.
+3. In the duplicate notification window, touch the checkbox for \[All\] to select it, and then touch the \[OK\] button. The backup data will be restored on the main board.
 
     ![](../../_assets/tp630/fl-restore-pop_eng.png)
 
-4.	Turn the power of the controller back on.
+4. Turn the power of the controller back on.
 
 # 4.3 Program Conversion
 

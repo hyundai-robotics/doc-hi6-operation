@@ -1,16 +1,17 @@
-﻿# 4.2.5 Data Backup
+﻿# 4.2.5 Backup all
 
-You can save the history of the memory buffer as a file, and back up the project \(project/\) and history \(log/\) folders.
+You can backup the controller's files, such as the project, log.
 
-1.	By using the jog dial on the teach pendant, select the folder where you want to save the backup data in the teach pendant \(T/P\) or removable storage device \(USB\) folder in the folder list.
+1. In the Teach Pendant\(T/P\) or USB Storage Device in the folder tree, use the direction keys on the Teach Pendant to select the target folder where you want to save the backup.
 
-    ![](../../_assets/tp630/fl-backup-select_eng.png)
+    ![](../../_assets/tp630/fl-backup-select.png)
 
-2.	While pressing the <**SHIFT**> key, touch the \[Select all\] button at the right side of the screen. The data backup will start.
+2. Press the `SHIFT` key and click the `[backup all]` button on the bottom of the screen.
 
-    ![](../../_assets/tp630/fl-backup-button_eng.png)
 
-3.	When data backup \(it will take about 30 seconds\) is completed, check the backup result in the notification window.
+    ![](../../_assets/tp630/fl-backup-button.png)
 
-    ![](../../_assets/tp630/fl-backup-pop_eng.png)
+3. Click the 'Start' button to `start` the backup. Once Backup\(approximately 1 minute\) is complete, check the results of the backup in the results window.
+
+    ![](../../_assets/tp630/fl-backup-pop.png)
 

@@ -1,22 +1,17 @@
-﻿# 4.2.6 Data Restoration
+﻿# 4.2.6 Restore all
 
-This function helps restore the project \(project/\) and history \(log/\) that are previously backed up.
+You can restore files such as projects, logs which backed up with `backup all` features to the system.
 
-1.	By using the teach pendant’s jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device \(USB\), and then touch the \[Copy\] button.
+1. In the Teach Pendant\(T/P\) or removable storage\(USB\) in the folder list, select the folder that you backed up all using the direction keys on the Teach Pendant.
 
+    ![](../../_assets/tp630/fl-backup-select.png)
 
-    ![](../../_assets/tp630/fl-restore-copy_eng.png)
+2. Press the `SHIFT` key and click the `restore all` button on the bottom of the screen.
 
-2.	By using the teach pendant’s jog dial, select the \[MAIN\] folder in the folder list, and then touch the \[Paste\] button.
+    ![](../../_assets/tp630/fl-restore-button.png)
 
-    ![](../../_assets/tp630/fl-restore-paste_eng.png)
+3. Click the `Start` button to start the restoration. Once the restoration (It takes about 1 minute.) is complete, check the results of the restoration in the results window.
 
+    ![](../../_assets/tp630/fl-restore-report.png)
 
-
-
-3.	In the duplicate notification window, touch the checkbox for \[All\] to select it, and then touch the \[OK\] button. The backup data will be restored on the main board.
-
-    ![](../../_assets/tp630/fl-restore-pop_eng.png)
-
-4.	Turn the power of the controller back on.
-
+4. Turn off and on the power the controller.
