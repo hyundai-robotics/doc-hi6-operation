@@ -1,0 +1,229 @@
+﻿/**
+    @date: 	2021-01-06
+    @author: HD Hyundai Robototics. choi, won-hyuk (asoe72@hyundai-robotics.com)
+*/
+
+@page {
+    size: A4;
+    margin-top: 20mm;
+    margin-bottom: 20mm;
+    margin-left: 20mm;
+    margin-right: 20mm;
+}
+
+@page:first {
+	@top-right {
+        content: none;
+	}
+	@bottom-left {
+        content: none;
+    }
+	@bottom-right {
+        content: none;
+    }
+	@bottom-right-corner {
+        content: none;
+    }
+}
+
+@page:left {
+    @top-left {
+        content: string(series-run);
+        font-size: 9pt;
+        color: rgb(128,128,128);
+    }
+    @bottom-right {
+        content: string(publisher-run);
+        font-size: 9pt;
+        color: rgb(128,128,128);
+    }
+    @bottom-left {
+        content: "_" string(title);
+        font-size: 9pt;
+        color: rgb(128,128,128);
+    }
+    @bottom-left-corner {
+        content: counter(page);
+        font-size: 9pt;
+        color: rgb(161, 142, 142);
+    }
+}
+
+@page:right {
+    @top-right {
+        content: string(title-run);
+        font-size: 9pt;
+        color: rgb(128,128,128);
+    }
+    @bottom-right {
+        content: string(h2-run);
+        margin: 0pt;
+        padding-right: 10pt;
+        font-size: 9pt;
+        color: rgb(128,128,128);
+    }
+    @bottom-right-corner {
+        content: counter(page);
+        font-size: 9pt;
+        color: rgb(128,128,128);
+    }
+}
+
+@media print {
+    .page-break, h1, h2 { page-break-before: always; }
+	#info-series { string-set: series-run content(text); }
+	#info-title { string-set: title-run content(text); }
+    #info-publisher { string-set: publisher-run content(text); }
+    body { margin: 0px; }
+}   
+
+@media only screen {
+    body { margin: 10px 30px 20px 20px; }
+}
+
+.book-cover {
+    position: absolute;
+    max-width: 125%;
+    top: -20mm;
+    left: -20mm;
+    width: 21.5cm;    /* A4 */
+    height: 29.7cm;
+    z-index: -1;
+}
+
+.book-series {
+    padding-top: 2.6cm;
+	padding-left: 0.1cm;
+	line-height: 0.5em;
+    color: rgb(0,176,80);
+    font-size: 20pt;
+}
+
+.book-title {
+    padding-left: 0.1cm;
+    line-height: 0.75em;
+    font-size: 30pt;
+    font-weight: 600;
+}
+
+#toc li a::after{
+    content: target-counter(attr(href), page);
+    float: right;
+}
+
+.book-tail-addr {
+    position: absolute;
+    top: 15cm;
+    font-size: 10pt;
+    line-height: 1.5em;
+}
+
+
+/* title ---------------------------- */
+
+h1 {
+    color: rgb(0,176,80);
+    margin-bottom: 4px;
+    font-size: 20pt;
+}
+
+h2 {
+    color: rgb(0,176,80);
+    margin-top: 2.5em;
+    margin-bottom: 0.8em;
+    font-size: 17pt;
+}
+
+h3 {
+    color: rgb(0,176,80);
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    font-size: 14pt;
+}
+
+h4 {
+    color: rgb(40, 40, 40);
+    margin-top: 1.8em;
+    margin-bottom: 0.8em;
+    font-size: 12pt;
+}
+
+p {
+    line-height: 180%;
+    font-size: 11pt;
+}
+
+hr {
+    margin-top: 0px;
+    border-top: none;
+    border-color: rgb(0,176,80);
+    height: 1px;
+}
+
+img {
+    max-width: 90%;
+}
+
+/* table --------------------------- */
+table {
+    border-collapse: collapse;
+    border: 1px solid #999999;
+    width: 100%;
+}
+
+th, td {
+    padding: 0.4em 0.3em;
+    min-width: 4em;
+    border: 1px solid #999999;
+    line-height: 140%;
+    font-size: 11pt;
+}
+
+tr {
+    break-inside: avoid;
+}
+
+th {
+    text-align: center !important;
+    background-color: #ddd;
+}
+
+.hint-box {
+    margin: 1em 0em;
+    padding: 3em;
+}
+
+.danger-box-left, .warning-box-left, .hint-box-right {
+    border-top: 1px solid;
+    border-bottom: 1px solid;    
+    padding: 1em;
+}
+
+.danger-box-left {
+    text-align: center;
+    background-color: red;
+    padding: 0em 1.5em;
+}
+
+.warning-box-left {
+    text-align: center;
+    background-color: orange;
+    padding: 0em 1.5em;
+}
+
+.info-box-left {
+    text-align: center;
+    background-color: lightblue;
+    padding: 0em 1.5em;
+}
+
+.codebox {
+    color: #111;
+    font-size: 1em;
+    border: 1px solid darkgray;
+    background-color: rgb(245, 245, 245);
+    line-height: 1.2em;
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+}
