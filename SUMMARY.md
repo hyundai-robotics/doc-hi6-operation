@@ -222,6 +222,7 @@
       * [7.7.4.4 베이스축 캘리브레이션 후 조작](7-system/7-auto-calibration/4-base-axis-calibration/4-operation-after-base-calib.md)
     * [7.7.5 중력방향 자동 설정](7-system/7-auto-calibration/5-gravity-direction-auto-set.md)
     * [7.7.6 로봇과 툴 캘리브레이션](7-system/7-auto-calibration/6-robot-tool-calibration.md)
+    * [7.7.7 부가축 자동튜닝](7-system/7-auto-calibration/7-Addaxis-autotuning.md)
 * [8. R코드](8-r-code/README.md)
   * [8.1 R 코드 사용](8-r-code/1-use-r-code.md)
   * [8.2 R0 스텝 카운터 리셋](8-r-code/2-r0.md)
