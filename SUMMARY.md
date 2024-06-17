@@ -187,6 +187,7 @@
       * [7.7.4.4 Operation After Base Axis Calibration](7-setting/7-auto-calibration/4-base-axis-calibration/4-operation-after-base-calib.md)
     * [7.7.5 Gravity Direction Auto Setting](7-setting/7-auto-calibration/5-gravity-direction-auto-set.md)
     * [7.7.6 Calibration of the Robot and Tool](7-setting/7-auto-calibration/6-robot-tool-calibration.md)
+    * [7.7.7 Additional Axis Autotuning](7-setting/7-auto-calibration/7-Addaxis-autotuning.md)
 * [8. R Codes](8-r-code/README.md)
   * [8.1 Use of R Codes](8-r-code/1-use-r-code.md)
   * [8.2 R0 for Resetting the Step Counter](8-r-code/2-r0.md)
