@@ -6193,6 +6193,8 @@ The axis origin and tool length X, Y, and Z values of the axes 2–5 \(H, V, R2,
 
 
 This function is used when additional axis does not have an appropriate gain set, resulting in noise or poor control performance. It finds the optimal gain by moving an additional axis within the user-defined range.
+
+
 ![](../../_assets/_7.7.7_additional_axis.jpg)
 
 <br>
