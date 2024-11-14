@@ -1,4 +1,4 @@
-# 7.3.10 네트워크
+# 7.3.10.1 사용환경 설정
 
 이더넷 네트워크 설정을 할 수 있습니다.
 
@@ -10,7 +10,7 @@
 
 4.	설정 파라미터들은 제어기 재부팅시 적용됩니다.
 
-![](../../_assets/image_551.png)
+![](../../../_assets/image_551.png)
 
 <table>
   <thead>
@@ -22,14 +22,14 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">LAN 포트 설정 탭입니다. LAN(Public)은 수정이 가능하며, LAN1(이더캣), LAN2(T/P-main)은 수정이 불가능합니다.
 	  </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -43,7 +43,7 @@
     </tr>
 	<tr>
       <td style="text-align:left">
-        <img src="../../_assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -53,7 +53,7 @@
     </tr>
 	<tr>
       <td style="text-align:left">
-        <img src="../../_assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
