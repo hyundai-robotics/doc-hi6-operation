@@ -175,7 +175,7 @@
       * [7.3.9.2 산업용 통신 설정](7-system/3-control-parameter/9-industrial-comm/2-industrial-comm-set.md)
       * [7.3.9.3 모니터링](7-system/3-control-parameter/9-industrial-comm/3-monitoring.md)
     * [7.3.10 네트워크](7-system/3-control-parameter/10-network-setting/README.md)
-      * [7.3.10.1 네트워크 설정](7-system/3-control-parameter/10-network-setting/1-environment-setting.md)
+      * [7.3.10.1 사용환경 설정](7-system/3-control-parameter/10-network-setting/1-environment-setting.md)
       * [7.3.10.1 NTP 클라이언트](7-system/3-control-parameter/10-network-setting/2-ntp-client.md)
   * [7.4 로봇 파라미터](7-system/4-robot-parameter/README.md)
     * [7.4.1 툴 데이터](7-system/4-robot-parameter/1-tool-data/README.md)
