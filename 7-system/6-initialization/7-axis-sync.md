@@ -8,7 +8,7 @@
 
 현재 설정된 축 동기 쌍을 변경하는 방법은 다음과 같습니다.
 
-![](../_assets/tp630/axis-synchronization.png)
+![](../../_assets/tp630/axis-synchronization.png)
 
 1. R321 동기 조그 기능이 활성화 되어 있다면 전부 \[**무효**\]로 변경합니다.
 
