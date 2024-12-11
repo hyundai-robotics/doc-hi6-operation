@@ -60,6 +60,7 @@
     * [2.8.3 로봇 좌표계](2-operation/8-coord-sys/3-robot-crdsys.md)
     * [2.8.4 사용자 좌표계](2-operation/8-coord-sys/4-user-crdsys.md)
     * [2.8.5 툴 좌표계](2-operation/8-coord-sys/5-tool-crdsys.md)
+    * [2.8.6 좌표축 정렬](2-operation/8-coord-sys/6-align-crdaxis.md)
   * [2.9 축 원점 및 툴 길이 최적화 설정](2-operation/9-axis-origin.md)
   * [2.10 툴 데이터 자동 보정](2-operation/10-tool-data-auto-calib.md)
 * [3. 프로그램 작성](3-programming/README.md)
