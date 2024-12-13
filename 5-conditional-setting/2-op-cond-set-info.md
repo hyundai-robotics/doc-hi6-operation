@@ -62,15 +62,11 @@ If you select the stationary tool as the interpolation reference, you must set t
 
 
 
-* 
-  If 0 is set, the robot coordinate system icon \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) will be displayed on the \[Coordinate System\] button on the status display window. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed.
-
+  * If 0 is set, the robot coordinate system icon \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) will be displayed on the \[Coordinate System\] button on the status display window. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed. <br>
   ![](../_assets/tp630/pane-pose-robotcoord_eng.png)
 
-* If a number between 1 and 10 is set, the user coordinate system icon \(![](../_assets/tp630/sbt-crd-user-small_eng.png)\) will be displayed on the \[Coordinate System\] button. The coordinate values that are changed by using the &lt;Axis Operation&gt; key will be based on the user coordinate system.
-
+  * If a number between 1 and 10 is set, the user coordinate system icon \(![](../_assets/tp630/sbt-crd-user-small_eng.png)\) will be displayed on the \[Coordinate System\] button. The coordinate values that are changed by using the &lt;Axis Operation&gt; key will be based on the user coordinate system. <br>
   ![](../_assets/tp630/pane-pose-usrcoord_eng.png)
-
 
 
 {% hint style="info" %}
@@ -78,8 +74,12 @@ You can register the user coordinate system number in the \[system &gt; 2: Contr
 {% endhint %}
 
 
+* \[10:Plc run mode\]: When the robot controller controls input/output signals using the embedded PLC, set the mode to control the embedded PLC. There are a total of 4 embedded PLC modes. For further details, please refer to the 『Hi6 Controller Embedded PLC Function Manual』.
 
-
-
+  * Off : Disables the function.
+  * Stop : Stops embedded PLC operation. When stopped, DI, Y, R relays are cleared.
+  * R - Stop(Remote Stop) : This is remote mode and stops the embedded PLC operation in HRLadder of the PC connected to the controller. When stopped, DI, Y, R relays are cleared.
+  * R - Run(Remote Run) : This is remote mode and the embedded PLC operation is executed from HRLadder on the PC connected to the controller.
+  * Run : The controller operates the PLC program downloaded to the controller. Only monitoring is possible in HRLadder on PC.
 
 
