@@ -53,8 +53,8 @@
 * \[10: PLC 동작 모드\]: 로봇 제어기가 내장 PLC를 사용하여 입출력 신호를 제어할 때, 내장 PLC를 제어하기 위한 모드를 설정합니다. 내장 PLC 모드는 모두 4가지가 있습니다. 자세한 내용은 『Hi6 제어기 내장 PLC 기능설명서』를 참고 하십시오.
 
   * Off : 기능을 무효로 설정합니다.
-  * Stop : 내장 PLC 동작을 정지시킵니다. Stop시 DI, Y, R relay가 clear됩니다.
-  * R-Stop (Remote Stop) : Remote 모드이며, 제어기에 연결된 PC의 HRLadder에서 내장 PLC 동작을 정지시킵니다. Stop시 DI, Y, R relay가 clear됩니다.
+  * Stop : 내장 PLC 동작을 정지시킵니다.
+  * R-Stop (Remote Stop) : Remote 모드이며, 제어기에 연결된 PC의 HRLadder에서 내장 PLC 동작을 정지시킵니다.
   * R-Run (Remote Run) : Remote 모드이며, 제어기에 연결된 PC의 HRLadder에서 내장 PLC 의 동작을 실행시킵니다.
   * Run : 제어기로 Download된 PLC 프로그램을 제어기가 동작합니다. PC의 HRLadder에서는 모니터링만 가능합니다.
 
