@@ -77,8 +77,8 @@ You can register the user coordinate system number in the \[system &gt; 2: Contr
 * \[10:Plc run mode\]: When the robot controller controls input/output signals using the embedded PLC, set the mode to control the embedded PLC. There are a total of 4 embedded PLC modes. For further details, please refer to the 『Hi6 Controller Embedded PLC Function Manual』.
 
   * Off : Disables the function.
-  * Stop : Stops embedded PLC operation. When stopped, DI, Y, R relays are cleared.
-  * R - Stop(Remote Stop) : This is remote mode and stops the embedded PLC operation in HRLadder of the PC connected to the controller. When stopped, DI, Y, R relays are cleared.
+  * Stop : Stops embedded PLC operation.
+  * R - Stop(Remote Stop) : This is remote mode and stops the embedded PLC operation in HRLadder of the PC connected to the controller. 
   * R - Run(Remote Run) : This is remote mode and the embedded PLC operation is executed from HRLadder on the PC connected to the controller.
   * Run : The controller operates the PLC program downloaded to the controller. Only monitoring is possible in HRLadder on PC.
 
