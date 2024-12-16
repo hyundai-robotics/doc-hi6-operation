@@ -1,4 +1,4 @@
-﻿# 7.3.9.3 Monitoring
+﻿# 7.3.11.3 Monitoring
 
 You can monitor the setting information and operation status of the firmware and communication the use of which you have set in the industrial communication menu.
 

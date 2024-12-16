@@ -1,4 +1,4 @@
-﻿# 7.3.9.2 Industrial Communication Setting
+﻿# 7.3.11.2 Industrial Communication Setting
 
 \(The function to be provided later\) If you set the communication method to CC-Link slave, you can set the detailed information for each type of communication inside the controller.
 

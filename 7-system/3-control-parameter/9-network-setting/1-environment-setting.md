@@ -1,4 +1,4 @@
-# 7.3.10 Network Setting
+# 7.3.9.1 Environment setting
 
 You can set the information required for Network Setting for LAN ports.
 

@@ -3109,15 +3109,11 @@ If you select the stationary tool as the interpolation reference, you must set t
 
 
 
-* 
-  If 0 is set, the robot coordinate system icon \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) will be displayed on the \[Coordinate System\] button on the status display window. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed.
-
+  * If 0 is set, the robot coordinate system icon \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) will be displayed on the \[Coordinate System\] button on the status display window. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed. <br>
   ![](../_assets/tp630/pane-pose-robotcoord_eng.png)
 
-* If a number between 1 and 10 is set, the user coordinate system icon \(![](../_assets/tp630/sbt-crd-user-small_eng.png)\) will be displayed on the \[Coordinate System\] button. The coordinate values that are changed by using the &lt;Axis Operation&gt; key will be based on the user coordinate system.
-
+  * If a number between 1 and 10 is set, the user coordinate system icon \(![](../_assets/tp630/sbt-crd-user-small_eng.png)\) will be displayed on the \[Coordinate System\] button. The coordinate values that are changed by using the &lt;Axis Operation&gt; key will be based on the user coordinate system. <br>
   ![](../_assets/tp630/pane-pose-usrcoord_eng.png)
-
 
 
 {% hint style="info" %}
@@ -3125,9 +3121,13 @@ You can register the user coordinate system number in the \[system &gt; 2: Contr
 {% endhint %}
 
 
+* \[10:Plc run mode\]: When the robot controller controls input/output signals using the embedded PLC, set the mode to control the embedded PLC. There are a total of 4 embedded PLC modes. For further details, please refer to the 『Hi6 Controller Embedded PLC Function Manual』.
 
-
-
+  * Off : Disables the function.
+  * Stop : Stops embedded PLC operation.
+  * R - Stop(Remote Stop) : This is remote mode and stops the embedded PLC operation in HRLadder of the PC connected to the controller. 
+  * R - Run(Remote Run) : This is remote mode and the embedded PLC operation is executed from HRLadder on the PC connected to the controller.
+  * Run : The controller operates the PLC program downloaded to the controller. Only monitoring is possible in HRLadder on PC.
 
 
 # 6. Monitoring
@@ -4501,26 +4501,47 @@ You can set various conditions of the controller and perform necessary operation
 
     ![](../../_assets/tp630/ctrl-environment-setting_eng.png)   
 
-* \[1: Power Saving Function\]: You can set whether to use the power saving function and set the wait time.
+* \[Power saving function\]: You can set whether to use the power saving function and set the wait time.
 
   While the power saving function is used, if the robot is in operation stop status while in the auto mode for a long period, such as waiting for startup or waiting for an input signal, the power supply to the motor will be cut off when the wait time has expired, helping save power consumption. When an operation command is inputted in the robot, the power saving function will be automatically deactivated, allowing the power to be supplied to the motor and the robot to operate.
-
-
 
 {% hint style="info" %}
 Delays may occur in the process of activating/deactivating the power-saving function. When operating while expecting the speed of the robot, you should set the power saving function as disable.
 {% endhint %}
 
-* \[2: Path Recovery on Auto Mode\]: You can set the allowable distance and allowable angle for path recovery in automatic mode.
+
+* \[Path recovery on auto Mode\]: You can set the allowable distance and allowable angle for path recovery in automatic mode.
 
   During path recovery, an error will be detected if the distance and angle exceed the set allowable range. If the allowable distance is set to 1, no path recovery will take place.
 
 
-* \[3: Cooling fan turn off time \]: You can set the allowable distance and allowable angle for path recovery in automatic mode.
+* \[Cooling fan turn off time \]: When the robot is in operation, the temperature inside the controller rises due to regenerative resistance, and the cooling fan must be operated to prevent this temperature rise.
 
-* \[4: Interlock error time\]: You can set the allowable distance and allowable angle for path recovery in automatic mode.
+  When the robot is not in operation, the temperature inside the controller no longer rises, so there is no reason for the cooling fan to operate at this time. Rather, when the cooling fan operates, there are only adverse effects such as shortened fan life, noise generation, and increased power consumption.
 
-* \[5: Gravity compensation function\]: You can set the allowable distance and allowable angle for path recovery in automatic mode.# 7.3.2 Input/Output Signal Setting
+  When the robot is in an operating state (motor on), the cooling fan must operate immediately. When the robot is in an inoperable state (motor ff, power saving operation), the cooling fan does not operate after a certain period of time has elapsed. If the cooling fan does not operate immediately, the temperature inside the controller rises due to the latent heat of the regenerative resistance.
+
+  The signal output for controlling the cooling fan on/off operation is set in the "Cooling fan control" item in the [System/Control parameter/Input/Output signal setting/Output signal assign] menu, and the circuit for controlling the cooling fan power is created with this output signal. It must be configured.
+
+  If "Cooling fan off operation time" is set to 0 or the "Cooling fan control" output signal is set to -1, the cooling fan always operates.
+
+
+* \[Interlock error time\]: This function sets the maximum waiting time for the input    signal. <br>
+  If the input signal standby time exceeds the specified time during playback, an interlock error signal is output. This specified time is the interlock abnormality time.
+
+  The interlock error signal is a signal assigned to “Interlock abnormal warning” in the [System/Control Parameter/Input/Output signal setting/Output signal assign] menu.
+
+
+* \[First step safety move\]: When starting the robot, set whether to limit the first step to a safe speed and move at the currently set speed.
+  * Enable : Move to the safe limit speed.
+  * Disable : Move to the currently set speed.
+
+  For safety reasons, it is basic for robots to move at a safe speed when starting the first step. Special work such as sealing or painting may cause quality problems, so use it only in these cases.
+
+
+* \[Plc execution time rate\]: When using a embedded PLC, you can adjust the PLC execution time inside the controller. The controller internally executes the PLC ladder program every 5ms, so set how much PLC execution is allocated. The larger this ratio leads the shorter the scan time of the PLC program. But if it is too large, the CPU execution time may be insufficient and a task execution time exceeded error may occur.
+
+# 7.3.2 Input/Output Signal Setting
 
 1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting\] menu. Then, the input/output signal setting menu will appear.
 
@@ -5526,71 +5547,13 @@ For details on how to execute scheduled programs, refer to the “Hi6 Controller
 
 For details on how to automatically back up and recover the controller’s data, refer to the “Hi6 Controller Automatic Backup Function Manual.”
 
-# 7.3.9 Industrial Communication \(fieldbus\)
+# 7.3.9 Network
 
-You can perform the setting of the industrial communication \(fieldbus\) to use it.
+1.  \[2: Control parameter &gt; 9: Network\] Touch the menu. The network settings menu will appear.
 
-1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the “Hi6 Controller Maintenance Manual”.
+2.  Select the desired menu to set up Environment setting, Service, etc.
 
-2.	Set the industrial communication firmware by referring to “[7.3.9.1 Firmware Setting](1-firmware-set.md)”.
-
-3.	Turn off the power of the controller, and then turn it back on.
-
-4.	If necessary, carry out additional setting by referring to “[7.3.9.2 Industrial Communication Setting](2-industrial-comm-set.md)”.
-
-
-
-
-
-# 7.3.9.1 Firmware Setting
-
-You can set the firmware to be used for the industrial communication.
-
-1.	Touch the \[2: Control Parameter &gt; 11: Industrial Communication &gt; 1: Firmware Setting &gt; 1 Channel\] menu. Then, the firmware setting screen will appear.
-
-2.	Select the desired tab and then set the communication method \(Master / Slave\) and protocol. After that, tap the \[OK\] button.
-
-    ![](../../../_assets/tp630/ctrl-industrial-channel_eng.png)
-
-
-
-{% hint style="warning" %}
-When the firmware setting is completed, the CONFIG files set in the slot \#1 - \#4 will be all deleted. When you want to change the communication firmware in the middle of using it, you should back up the existing CONFIG setting separately and use it after restoring it. 
-{% endhint %}
-
-3.	Turn off the power of the controller, and then turn it back on.
-
-{% hint style="warning" %}
-* When you perform the setting of the firmware to use it, the setting value will be applied to the system only after you turn off the power of the controller and then turn it back on.
-{% endhint %}
-
-
-
-# 7.3.9.2 Industrial Communication Setting
-
-\(The function to be provided later\) If you set the communication method to CC-Link slave, you can set the detailed information for each type of communication inside the controller.
-
-{% hint style="info" %}
-You can set the communication information by using the “Sycon.net” program on the Hyundai Robotics internet website \(www.hyundai-robotics.com\).
-{% endhint %}
-
-# 7.3.9.3 Monitoring
-
-You can monitor the setting information and operation status of the firmware and communication the use of which you have set in the industrial communication menu.
-
-1.	Touch \[service > 19: Industrial Communication Monitoring\] menu. Then the screen for monitoring the industrial communication of each board will appear.
-
-2.	By selecting the desired tab, you can check the detailed information of the firmware, communication devices and communication configuration. 
-
-    ![](../../../_assets/tp630/svc-industrial-mon_eng.png)
-
-<Br>
-
-{% hint style="info" %}
-You can restart the industrial communication of the PCI communication card by using the \[Restart\] button.
-{% endhint %}
-
-# 7.3.10 Network Setting
+# 7.3.9.1 Environment setting
 
 You can set the information required for Network Setting for LAN ports.
 
@@ -5669,6 +5632,138 @@ Refer to the following information when setting the usage of the Portforwarding.
 * Basic Gateway: 192.168.X.1 is initial condition gateway.
 
 {% endhint %}
+# 7.3.9.2 Service
+
+# 7.3.9.2.1 Modbus slave
+
+This section covers settings and monitoring when using the controller's Modbus TCP slave communication. <br>
+For more information, refer to “Hi6 Robot Controller Function Manual - Modbus”.
+
+# 7.3.9.2.3 NTP client
+
+The controller's time can be automatically synchronized with the NTP server. <br>
+For more information, refer to “Hi6 Robot Controller Function Manual - NTP time synchronization”.
+
+# 7.3.10 Register license key of option function
+
+# 7.3.10.1 What is a license key for optional functions?
+
+Among the functions of the Hi6 robot controller, certain optional functions are sold separately, and customers must purchase the optional functions to use them. The license key for the optional function is created by a separate license key generation program by combining the unique number assigned to the main board of the robot controller and the purchased option function, so the purchased function operates only on the purchased controller.
+Therefore, the main board of a robot controller using optional functions cannot be replaced with another controller.
+If something happens to the motherboard, we will provide you with a temporary key that can be used for 30 days in case you need to replace it with a spare part.
+In this case, you must contact our A/S to obtain an official license key at least 30 days in advance.
+ 
+* Feature configuration <br>
+  Setting whether to purchase optional features <br>
+  License key settings
+
+# 7.3.10.2 License key registration procedure
+
+* Purchase a license key for optional functions that matches your system serial number. The system serial number is located on the license registration screen.
+
+  ![](../../../_assets/tp630/license-key1.png)
+
+
+* First select whether to purchase the optional feature, then enter the license key.
+If the purchase selection and the license key do not match, an error will occur when executing the function.
+
+# 7.3.10.3 Register license key
+
+* Registration screen
+
+  ![](../../../_assets/tp630/license-key2.png)
+
+
+* If the license key has been entered correctly, “==> OK” will be displayed to the right of the license key input.
+
+* If “==> NG” is displayed, the license key is incorrect or the purchase option has been selected incorrectly.
+
+# 7.3.10.4 What is a temporary-key?
+
+* Temporary-key can only be used for 30 days and can only be issued once.
+
+* If the remaining date of the temporary key is less than 10 days, the following warning occurs every time the controller boots. <br>
+  "W0025 Only (0) days left for the optional function temporary license key free trial period."
+
+* The purpose of the temporary key is to use it until the license key is reissued by our A/S when a problem occurs in the main board of the controller using the optional function and it is replaced with a spare part.
+# 7.3.10.5 Temporary-key registration
+
+* A temporary key can be issued by pressing the [F] key.
+
+  ![](../../../_assets/tp630/license-key3.png)
+
+
+* If issued successfully, the remaining days for use are displayed as shown in the following screen.
+
+  ![](../../../_assets/tp630/license-key4.png)
+
+
+* Caution) If the remaining days are 0, the optional function can no longer be used, and after that, a temporary key is issued for 1 day use. Because the production line may be stopped due to optional functions, please be sure to contact us before the remaining days reach 0 to receive an official license key. 
+
+# 7.3.11 Industrial Communication \(fieldbus\)
+
+You can perform the setting of the industrial communication \(fieldbus\) to use it.
+
+1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the “Hi6 Controller Maintenance Manual”.
+
+2.	Set the industrial communication firmware by referring to “[7.3.11.1 Firmware Setting](1-firmware-set.md)”.
+
+3.	Turn off the power of the controller, and then turn it back on.
+
+4.	If necessary, carry out additional setting by referring to “[7.3.11.2 Industrial Communication Setting](2-industrial-comm-set.md)”.
+
+
+
+
+
+# 7.3.11.1 Firmware Setting
+
+You can set the firmware to be used for the industrial communication.
+
+1.	Touch the \[2: Control Parameter &gt; 11: Industrial Communication &gt; 1: Firmware Setting &gt; 1 Channel\] menu. Then, the firmware setting screen will appear.
+
+2.	Select the desired tab and then set the communication method \(Master / Slave\) and protocol. After that, tap the \[OK\] button.
+
+    ![](../../../_assets/tp630/ctrl-industrial-channel_eng.png)
+
+
+
+{% hint style="warning" %}
+When the firmware setting is completed, the CONFIG files set in the slot \#1 - \#4 will be all deleted. When you want to change the communication firmware in the middle of using it, you should back up the existing CONFIG setting separately and use it after restoring it. 
+{% endhint %}
+
+3.	Turn off the power of the controller, and then turn it back on.
+
+{% hint style="warning" %}
+* When you perform the setting of the firmware to use it, the setting value will be applied to the system only after you turn off the power of the controller and then turn it back on.
+{% endhint %}
+
+
+
+# 7.3.11.2 Industrial Communication Setting
+
+\(The function to be provided later\) If you set the communication method to CC-Link slave, you can set the detailed information for each type of communication inside the controller.
+
+{% hint style="info" %}
+You can set the communication information by using the “Sycon.net” program on the Hyundai Robotics internet website \(www.hyundai-robotics.com\).
+{% endhint %}
+
+# 7.3.11.3 Monitoring
+
+You can monitor the setting information and operation status of the firmware and communication the use of which you have set in the industrial communication menu.
+
+1.	Touch \[service > 19: Industrial Communication Monitoring\] menu. Then the screen for monitoring the industrial communication of each board will appear.
+
+2.	By selecting the desired tab, you can check the detailed information of the firmware, communication devices and communication configuration. 
+
+    ![](../../../_assets/tp630/svc-industrial-mon_eng.png)
+
+<Br>
+
+{% hint style="info" %}
+You can restart the industrial communication of the PCI communication card by using the \[Restart\] button.
+{% endhint %}
+
 # 7.4 Robot Parameters
 
 You can set various data related to robot operation as well as information such as the origin and operation range of each axis.

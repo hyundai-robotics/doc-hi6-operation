@@ -1,4 +1,4 @@
-﻿# 7.3.9.1 Firmware Setting
+﻿# 7.3.11.1 Firmware Setting
 
 You can set the firmware to be used for the industrial communication.
 
