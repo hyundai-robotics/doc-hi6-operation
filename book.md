@@ -7195,6 +7195,64 @@ The method to execute a specified function using an R code is as follows.
 
 
 
+<table style="text-align:left">
+  <thead>
+    <tr>
+      <th>R Code</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R0 : Reset task</td>
+      <td>Initialize the step counter and move to STEP0.</td>
+    </tr>
+    <tr>
+      <td>R1 : Reset error</td>
+      <td>Clears the status when an error or warning occurs.</td>
+    </tr>
+    <tr>
+      <td>R17 : Open file manager</td>
+      <td>Quickly launch [Service] -> [5: File manager]</td>
+    </tr>
+    <tr>
+      <td>R86 : Display free memory</td>
+      <td> Used to display the remaining memory of the T/P or motherboard at the top of the T/P screen.</td>
+    </tr>
+    <tr>
+      <td>R99 : Save</td>
+      <td>Saves historical data existing in memory as a file.</td>
+    </tr>
+    <tr>
+      <td>R115 : Copy job file</td>
+      <td>Copy the created job program to another job program.</td>
+    </tr>
+    <tr>
+      <td>R117 : Delete job file</td>
+      <td>This is a function to individually delete written job.</td>
+    </tr>
+    <tr>
+      <td>R286 : Display software version</td>
+      <td>Quickly launch [Service] -> [7: System diagnosis] -> [1: System version]</td>
+    </tr>
+    <tr>
+      <td>R321 : Axis sync. jog setting</td>
+      <td>Displays a settings screen to group arbitrary axes into one synchronization group and use the function to jog with a single jog key.</td>
+    </tr>
+    <tr>
+      <td>R360 : Set contpath manually</td>
+      <td>This is a function that forcibly changes the execution status of CONTPATH.</td>
+    </tr>
+    <tr>
+      <td>R361 : Set jog-inching level</td>
+      <td>Use this when you want to change the inching distance of the currently set level.</td>
+    </tr>
+    <tr>
+      <td>R362 : Axis control status change</td>
+      <td>Manually execute the control status (axisctrl on/off) of the auxiliary axis.</td>
+    </tr>
+  </tbody>
+</table>
 
 
 # 8.2 R0 for Resetting the Step Counter
@@ -7588,6 +7646,24 @@ The method to change the inching distance of the currently set level is as follo
 * R361 code cannot be used in automatic mode. It must be used in manual mode.
 * The inching distance set using the R361 code will be set for the currently set jog level. Therefore, if the current jog speed level is 8, the inching distance corresponding to 8 will be changed.
 * Jog inching is possible only when the jog inching key is activated \(LED On\).
+{% endhint %}
+
+# 8.17 R321 Axis sync. jog setting
+
+This is a function to group arbitrary axes into one synchronous group and jog them with a single jog key. 
+
+![](../_assets/tp630/init-axis-sync-jog.png)
+
+How to use the axis synchronous jog function is as follows.
+
+1. Set the axes you want to move with one key to the same synchronization group and press the \[**OK**\] button.
+2. Use axis synchronous jog using the jog key.
+3. When you finish using the axis synchronous jog function, set all synchronization groups to invalid.
+
+{% hint style="info" %}
+* This function is only effective when jogging. The synchronization function does not apply in automatic mode.
+* Synchronous jog pairs are not initialized across reboots.
+* The Pose value in the Cartesian coordinate system of the synchronous jog pair does not match the Pose situation of the actual robot (simple jog function).
 {% endhint %}
 
 # 9. Property

@@ -1136,127 +1136,132 @@
 	},
 	{
 		"link": "8-r-code/2-r0.md",
-		"char_ofs": 339434,
-		"byte_ofs": 347729
+		"char_ofs": 341303,
+		"byte_ofs": 349656
 	},
 	{
 		"link": "8-r-code/3-r115.md",
-		"char_ofs": 340036,
-		"byte_ofs": 348354
+		"char_ofs": 341905,
+		"byte_ofs": 350281
 	},
 	{
 		"link": "8-r-code/4-r117.md",
-		"char_ofs": 341100,
-		"byte_ofs": 349447
+		"char_ofs": 342969,
+		"byte_ofs": 351374
 	},
 	{
 		"link": "8-r-code/5-r210.md",
-		"char_ofs": 341995,
-		"byte_ofs": 350372
+		"char_ofs": 343864,
+		"byte_ofs": 352299
 	},
 	{
 		"link": "8-r-code/6-r211.md",
-		"char_ofs": 343323,
-		"byte_ofs": 351728
+		"char_ofs": 345192,
+		"byte_ofs": 353655
 	},
 	{
 		"link": "8-r-code/7-r212.md",
-		"char_ofs": 344427,
-		"byte_ofs": 352864
+		"char_ofs": 346296,
+		"byte_ofs": 354791
 	},
 	{
 		"link": "8-r-code/8-r213.md",
-		"char_ofs": 345563,
-		"byte_ofs": 354027
+		"char_ofs": 347432,
+		"byte_ofs": 355954
 	},
 	{
 		"link": "8-r-code/9-r214.md",
-		"char_ofs": 346698,
-		"byte_ofs": 355191
+		"char_ofs": 348567,
+		"byte_ofs": 357118
 	},
 	{
 		"link": "8-r-code/10-r215.md",
-		"char_ofs": 348562,
-		"byte_ofs": 357092
+		"char_ofs": 350431,
+		"byte_ofs": 359019
 	},
 	{
 		"link": "8-r-code/11-r220.md",
-		"char_ofs": 349334,
-		"byte_ofs": 357883
+		"char_ofs": 351203,
+		"byte_ofs": 359810
 	},
 	{
 		"link": "8-r-code/12-r314.md",
-		"char_ofs": 350302,
-		"byte_ofs": 358876
+		"char_ofs": 352171,
+		"byte_ofs": 360803
 	},
 	{
 		"link": "8-r-code/13-r358.md",
-		"char_ofs": 351274,
-		"byte_ofs": 359880
+		"char_ofs": 353143,
+		"byte_ofs": 361807
 	},
 	{
 		"link": "8-r-code/14-r359.md",
-		"char_ofs": 353479,
-		"byte_ofs": 362129
+		"char_ofs": 355348,
+		"byte_ofs": 364056
 	},
 	{
 		"link": "8-r-code/15-r360.md",
-		"char_ofs": 354921,
-		"byte_ofs": 363603
+		"char_ofs": 356790,
+		"byte_ofs": 365530
 	},
 	{
 		"link": "8-r-code/16-r361.md",
-		"char_ofs": 357314,
-		"byte_ofs": 366068
+		"char_ofs": 359183,
+		"byte_ofs": 367995
+	},
+	{
+		"link": "8-r-code/17-r321.md",
+		"char_ofs": 360253,
+		"byte_ofs": 369094
 	},
 	{
 		"link": "9-property/README.md",
-		"char_ofs": 358384,
-		"byte_ofs": 367167
+		"char_ofs": 361135,
+		"byte_ofs": 369997
 	},
 	{
 		"link": "9-property/1-use-property.md",
-		"char_ofs": 358732,
-		"byte_ofs": 367524
+		"char_ofs": 361483,
+		"byte_ofs": 370354
 	},
 	{
 		"link": "9-property/2-move-step-position/README.md",
-		"char_ofs": 363677,
-		"byte_ofs": 372592
+		"char_ofs": 366428,
+		"byte_ofs": 375422
 	},
 	{
 		"link": "9-property/2-move-step-position/1-hidden-pose-move.md",
-		"char_ofs": 363804,
-		"byte_ofs": 372726
+		"char_ofs": 366555,
+		"byte_ofs": 375556
 	},
 	{
 		"link": "9-property/2-move-step-position/2-pose-rec-move.md",
-		"char_ofs": 366841,
-		"byte_ofs": 375841
+		"char_ofs": 369592,
+		"byte_ofs": 378671
 	},
 	{
 		"link": "9-property/3-spot-welding-func.md",
-		"char_ofs": 370008,
-		"byte_ofs": 379093
+		"char_ofs": 372759,
+		"byte_ofs": 381923
 	},
 	{
 		"link": "10-robot-language.md",
-		"char_ofs": 370887,
-		"byte_ofs": 379991
+		"char_ofs": 373638,
+		"byte_ofs": 382821
 	},
 	{
 		"link": "appendices/README.md",
-		"char_ofs": 371088,
-		"byte_ofs": 380198
+		"char_ofs": 373839,
+		"byte_ofs": 383028
 	},
 	{
 		"link": "appendices/rules-occupational-safety.md",
-		"char_ofs": 371107,
-		"byte_ofs": 380225
+		"char_ofs": 373858,
+		"byte_ofs": 383055
 	},
 	{
 		"link": "quality-assurance.md",
-		"char_ofs": 371567,
-		"byte_ofs": 380693
+		"char_ofs": 374318,
+		"byte_ofs": 383523
 	}
 ]

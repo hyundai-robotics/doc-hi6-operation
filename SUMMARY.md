@@ -242,6 +242,7 @@
   * [8.14 R359 for Servo Tool Encoder Power On Relay](8-r-code/14-r359.md)
   * [8.15 R360 Set CONTPATH manually](8-r-code/15-r360.md)
   * [8.16 R361 for Setting the Jog Inching Level](8-r-code/16-r361.md)
+  * [8.17 R321 Axis sync. jog setting](8-r-code/17-r321.md)
 * [9. Property](9-property/README.md)
   * [9.1 Use of the property Function](9-property/1-use-property.md)
   * [9.2 Move-Step Position](9-property/2-move-step-position/README.md)
