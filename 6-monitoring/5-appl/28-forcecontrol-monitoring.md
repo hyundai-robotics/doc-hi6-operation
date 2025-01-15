@@ -3,16 +3,15 @@
 ![](../../_assets/tp630/force_monitoring.png)
 
 ## Description 
-* In case of sensorless force control, this monitoring data show [activated direction], [external force] and [incremental command position] 
+* In case of force control, this monitoring data show estimated [external force] 
  
 ## Parameters 
 
- - [activation] : activated direction(1), deactivated direction(0)  
-    - in case of softxyz function : cartesian space coordinate
-    - in case of softjoint function : joint space coordinate
- - [ext.force] : external force or torque   
-    - in case of softxyz function : force[N], moment[Nm] 
-    - in case of softjoint function : torque[Nm]
- - [cmd.pose] : incremental command position 
-    - in case of softxyz function : position[mm], orientation[deg]
-    - in case of softjoint function : joint angle[deg]
+ - [cartesian] : external force or torque in cartesian space
+    - in case of fctrl function : robot coordinate
+    - in case of softxyz function : robot coordinate
+    - in case of softjoint function : not shown 
+ - [joint] : external torque in joint space    
+    - in case of fctrl function : not shown
+    - in case of softxyz function : not shown
+    - in case of softjoint function : joint coordinate 
