@@ -3,8 +3,10 @@
  ![](../../_assets/tp630/coldet_monitoring_pane.png)
  ![](../../_assets/tp630/coldet_monitoring.png)
  
+## 설명 
+* 충돌검지 모니터링 
 
-충돌검지 모니터링 
+## 파라미터 
 
  - [Sensitivity] : 비율 값으로 높을 수록 민감하게 충돌을 검지 (0: 무효) [0~200]
    - Fig2. [System>3:Robot parameter>14:Impact Detection] General 탭에서 [Sensitivity] 값을 설정 할 수 있다. 
