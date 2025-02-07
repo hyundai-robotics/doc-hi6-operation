@@ -10,6 +10,6 @@
 <br>
 
 {% hint style="info" %}
-For details on how to use each menu, refer to the “Function Manual” for each application function.
+For items not covered in this manual, please refer to the “Function Manual” for each separate application function.
 {% endhint %}
 

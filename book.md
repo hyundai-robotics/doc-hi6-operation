@@ -4341,8 +4341,10 @@ For details on the sensor sync function, refer to the “Hi6 Sensor Sync Functio
  ![](../../_assets/tp630/coldet_monitoring_pane.png)
  ![](../../_assets/tp630/coldet_monitoring.png)
  
-ColDet monitoring 
+## Description 
+* ColDet monitoring 
 
+## Parameters 
  - [Sensitivity] : The higher the ratio value, the more sensitive the collision is detected. (0: Disabled) [0~200]
    - It can be set in the General tap [System>3:Robot parameter>14:Impact Detection]  
  - [External Torque]-[Current] : Currently estimated external torque [Nm]
@@ -4379,19 +4381,19 @@ Refer to Arc Welding Manual's “[7. Welding data monitoring](https://hrbook-hrc
 ![](../../_assets/tp630/force_monitoring.png)
 
 ## Description 
-* In case of sensorless force control, this monitoring data show [activated direction], [external force] and [incremental command position] 
+* In case of force control, this monitoring data show estimated [external force] 
  
 ## Parameters 
 
- - [activation] : activated direction(1), deactivated direction(0)  
-    - in case of softxyz function : cartesian space coordinate
-    - in case of softjoint function : joint space coordinate
- - [ext.force] : external force or torque   
-    - in case of softxyz function : force[N], moment[Nm] 
-    - in case of softjoint function : torque[Nm]
- - [cmd.pose] : incremental command position 
-    - in case of softxyz function : position[mm], orientation[deg]
-    - in case of softjoint function : joint angle[deg]# 7. System
+ - [cartesian] : external force or torque in cartesian space
+    - in case of fctrl function : robot coordinate
+    - in case of softxyz function : robot coordinate
+    - in case of softjoint function : not shown 
+ - [joint] : external torque in joint space    
+    - in case of fctrl function : not shown
+    - in case of softxyz function : not shown
+    - in case of softjoint function : joint coordinate 
+# 7. System
 
 In the 'system', you can check and set the user information and various parameter information.
 
@@ -6427,8 +6429,62 @@ The reducer rated and expected life are predicted reference values based on redu
 <br>
 
 {% hint style="info" %}
-For details on how to use each menu, refer to the “Function Manual” for each application function.
+For items not covered in this manual, please refer to the “Function Manual” for each separate application function.
 {% endhint %}
+
+# 7.5.16 Joystick mode
+
+This function is used to operate the robot with an external device such as a joystick. 
+
+![](../../../_assets/tp630/joystick_mode_menu.png)
+
+* Joystic jog enable <br>
+   In order to perform functions corresponding to joystick mode, the input signal must be set and must be turned ON. 
+
+* Execution type <br>
+   Select whether to perform the jogging motion with the input state of the set signal or the input state of Open-api. <br>
+   The jogging operation is exactly the same as the jogging key operation in the T/P's manual mode.
+
+
+{% hint style="info" %}
+* It operates only when the motor is on in auto mode.
+{% endhint %}
+# 7.5.16.1 Jogging(input signal)
+
+To jog the robot by signal input, set the input signal corresponding to each direction key. <br>
+In the section where the corresponding input signal is ON, the corresponding axis moves in the specified direction. <br>
+
+![](../../../_assets/tp630/jogging_in_signal.png)
+
+# 7.5.16.2 Jogging(open-api)
+
+Please refer to the separate manual for open-api communication. <br>
+Information about the url address and body used for robot jogging is as follows.
+
+* url : POST /project/robot/joystick/joy
+* body <br>
+    axis : Composed of double type array. axis[0] corresponds to J1. A value of -1 means movement to the left, and a value of +1 means movement to the right. <br>
+
+
+{% hint style="info" %}
+If no data is received for 300ms, the jogging motion will stop.  
+{% endhint %}
+# 7.5.16.3 Speed
+
+This function changes the speed level of robot jogging by signal input. <br>
+When the set input signal becomes ON, it changes to the corresponding speed level and also outputs the corresponding output signal as ON. <br>
+
+![](../../../_assets/tp630/speed_level.png)
+
+
+
+# 7.5.16.4 Moving
+
+This is a function that moves the axis of the robot specified by signal input to the specified position at the specified speed. <br>
+In the figure below, when the fb2.di34 signal is turned on, the robot moves at 10% speed so that the position of the robot's 6 axes is 30 degrees. <br>
+
+![](../../../_assets/tp630/robot_move.png)
+
 
 # 7.6 Initialization
 
