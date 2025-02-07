@@ -209,6 +209,7 @@
     * [7.4.10 시스템 유지보수](7-system/4-robot-parameter/12-system-maintenance/README.md)
 
   * [7.5 응용 파라미터](7-system/5-application-parameter/README.md)
+    * [7.5.10 명령문 독립 실행](7-system/5-application-parameter/10-cmd-idp-exe.md)
     * [7.5.16 조이스틱 모드](7-system/5-application-parameter/16-joystick-mode/README.md)
       * [7.5.16.1 조깅(입력신호)](7-system/5-application-parameter/16-joystick-mode/1-jogging-in-signal.md)
       * [7.5.16.2 조깅(open-api)](7-system/5-application-parameter/16-joystick-mode/2-jogging-open-api.md)
