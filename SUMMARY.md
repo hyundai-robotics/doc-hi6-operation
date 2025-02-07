@@ -208,7 +208,13 @@
       * [7.4.9.2 인칭 조그 조작](7-system/4-robot-parameter/9-jog-inch-level/2-inch-jog-operation.md)
     * [7.4.10 시스템 유지보수](7-system/4-robot-parameter/12-system-maintenance/README.md)
 
-  * [7.5 응용 파라미터](7-system/5-application-parameter.md)
+  * [7.5 응용 파라미터](7-system/5-application-parameter/README.md)
+    * [7.5.16 조이스틱 모드](7-system/5-application-parameter/16-joystick-mode/README.md)
+      * [7.5.16.1 조깅(입력신호)](7-system/5-application-parameter/16-joystick-mode/1-jogging-in-signal.md)
+      * [7.5.16.2 조깅(open-api)](7-system/5-application-parameter/16-joystick-mode/2-jogging-open-api.md)
+      * [7.5.16.3 속도](7-system/5-application-parameter/16-joystick-mode/3-speed-level.md)
+      * [7.5.16.4 로봇이동](7-system/5-application-parameter/16-joystick-mode/4-robot-move.md)
+
   * [7.6 초기화](7-system/6-initialization/README.md)
     * [7.6.1 시스템 초기화](7-system/6-initialization/1-system-format.md)
     * [7.6.2 로봇 타입 선택](7-system/6-initialization/2-robot-type-sel.md)
