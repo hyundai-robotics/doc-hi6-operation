@@ -3,5 +3,7 @@
 To jog the robot by signal input, set the input signal corresponding to each direction key. <br>
 In the section where the corresponding input signal is ON, the corresponding axis moves in the specified direction. <br>
 
+When an input signal is set to a coordinate system, if the input signal turns on, the matching coordinate system is selected. <br>
+
 ![](../../../_assets/tp630/jogging_in_signal.png)
 
