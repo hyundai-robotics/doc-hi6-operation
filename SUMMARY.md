@@ -210,6 +210,13 @@
 
   * [7.5 응용 파라미터](7-system/5-application-parameter/README.md)
     * [7.5.10 명령문 독립 실행](7-system/5-application-parameter/10-cmd-idp-exe.md)
+    * [7.5.13 사용자 정의 에러](7-system/5-application-parameter/13-user-def-error/README.md)
+      * [7.5.13.1 사용자 정의 에러 설정](7-system/5-application-parameter/13-user-def-error/1-setting.md)
+      * [7.5.13.2 사용자 정의 에러 예제](7-system/5-application-parameter/13-user-def-error/2-example.md)
+    * [7.5.14 사용자 정의 경고](7-system/5-application-parameter/14-user-def-warn/README.md)
+      * [7.5.14.1 사용자 정의 경고 설정](7-system/5-application-parameter/14-user-def-warn/1-setting.md)
+      * [7.5.14.2 사용자 정의 경고 예제](7-system/5-application-parameter/14-user-def-warn/2-example.md)
+
     * [7.5.16 조이스틱 모드](7-system/5-application-parameter/16-joystick-mode/README.md)
       * [7.5.16.1 조깅(입력신호)](7-system/5-application-parameter/16-joystick-mode/1-jogging-in-signal.md)
       * [7.5.16.2 조깅(open-api)](7-system/5-application-parameter/16-joystick-mode/2-jogging-open-api.md)
