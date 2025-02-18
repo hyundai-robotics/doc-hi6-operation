@@ -5,14 +5,17 @@
 ⛔ **슈퍼바이저 모드에서 부가축 자동튜닝 사용은 제한됩니다.**
 
 ## 개요
-![alt text](../../_assets/직동축.gif)
-![additional_axis](../../_assets/_7.7.7_additional_axis.jpg)
+
+| ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
+|---|---|
+| 직동축 모션 | 회전축 모션 |
+<!-- ![additional_axis](../../_assets/_7.7.7_additional_axis.jpg) -->
 
 사용자가 설정한 범위 내에서 부가축을 움직이면서 최적의 게인을 찾습니다. 이 기능은 부가축에 적절한 게인이 설정되어 있지 않아 소음이나 제어 성능이 나쁜 경우에 사용됩니다.
 
 ## 튜닝 상세 설명
 
-![aat_menu_display](../../_assets/_7.7.7_intro.png)
+![](../../_assets/_7.7.7_intro.png)
 
 ### ![c1](../../_assets/c1.png)  **튜닝 전 설정**
 
@@ -56,7 +59,7 @@ _(개발자나 특수한 상황에서만 사용)_
 
 </br>
 
-![supervisor](../../_assets/_7.7.7_supervisor.png)
+![](../../_assets/_7.7.7_supervisor.png)
 
 * **최소 게인 값(Kv)**: 게인이 서칭되는 시작 값을 변경할 수 있습니다. 특정 부가축의 발진 게인 값이 너무 작을 경우에 사용이 필요합니다. 임의로 변경하는 것은 허용되지 않습니다.
 * **모드**: 개발자용 UI입니다. 기본 디폴트 값(0)으로 사용하면 됩니다.
