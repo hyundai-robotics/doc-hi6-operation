@@ -6457,6 +6457,89 @@ For more information about multitasking, please refer to "[Hi6 Robot Controller 
 * Execution is possible only with the motor ON in auto mode.
 * When executing a move statement, the axis must be separated by a mechanism so that it is not used in the main task, or the axis control status must be disabled with axisctrl off.
 {% endhint %}
+# 7.5.13 User-Defined Error
+
+This function allows users to define errors for specific conditions in the Hi6 robot controller. When the defined conditions are met, the user-defined error is triggered.
+
+{% hint style="info" %}
+Supported from V60.30-00.
+{% endhint %}# 7.5.13.1 User-Defined Error Settings
+
+1. Touch the \[System &gt; 4: Application Parameters &gt; 13: User-Defined Error\] menu.<br><br>
+
+2. Click the "Create Sample File" button.<br>
+A file named "help_user_err.json" will be created in the MAIN/project directory.<br>
+![](../../../_assets/tp630/user-def-code/image1.png)
+
+3. When re-entering the settings screen, the user-defined errors written in the sample file will be displayed.<br>
+- Error Code: Specifies the error code to be triggered.
+- Condition Expression: Defines the condition for triggering the error. Any condition expression that can be used in an - if statement is allowed.
+- Message: Specifies the message displayed when the error occurs.
+- Motor Off: Determines whether the motor should turn off when a user-defined error occurs.<br>
+![](../../../_assets/tp630/user-def-code/image2.png)
+
+4. Insert a USB drive into the teaching pendant, access the File Manager menu, and copy the 'help_user_err.json' file to the USB storage path.<br><br>
+![](../../../_assets/tp630/user-def-code/image3.png)
+
+5. Open the file on a PC and edit the errors according to the sample file format (editing with Notepad is possible).<br><br>
+- E65###: Error Code (Range: E65001 ~ E65500)
+    - cnd: Condition expression
+    - msg: Cause message displayed in the error help
+    - remedy: Corrective action displayed in the error help
+    - mot_off: Motor off<br>
+![](../../../_assets/tp630/user-def-code/image4.png)
+
+6. Copy the edited file back to the teaching pendant.
+
+# 7.5.13.2 User-Defined Error Example
+
+1. Modify the 'help_user_err.json' file as shown below.<br>
+![](../../../_assets/tp630/user-def-code/image9.png)
+
+2. When the di5 signal is turned on to satisfy the condition expression, E65001 will be triggered.<br>
+![](../../../_assets/tp630/user-def-code/image10.png)
+
+3. Checking the error help will display the same content as written in the file.<br>
+![](../../../_assets/tp630/user-def-code/image11.png)# 7.5.14 User-Defined Warning
+
+This function allows users to define warnings for specific conditions in the Hi6 robot controller. When the defined conditions are met, the user-defined warning is triggered.
+
+{% hint style="info" %}
+Supported from V60.30-00.
+{% endhint %}# 7.5.14.1 User-Defined Error Settings
+
+1. Touch the \[System &gt; 4: Application Parameters &gt; 14: User-Defined Warning\] menu.<br><br>
+
+2. Click the 'Create Sample File' button.<br>
+* A file named 'help_user_warn.json' will be created in the MAIN/project directory.<br>
+![](../../../_assets/tp630/user-def-code/image5.png)
+
+3. When re-entering the settings screen, the user-defined warnings written in the sample file will be displayed.
+- Warning Code: Specifies the warning code to be triggered.
+- Condition Expression: Defines the condition for triggering the warning. Any condition expression that can be used in an if statement is allowed.
+- Message: Specifies the message displayed when the warning occurs.<br>
+![](../../../_assets/tp630/user-def-code/image6.png)
+
+4. Insert a USB drive into the teaching pendant, access the File Manager menu, and copy the 'help_user_warn.json' file to the USB storage path.<br><br>
+![](../../../_assets/tp630/user-def-code/image7.png)
+
+5. Open the file on a PC and edit the warnings according to the sample file format (editing with Notepad is possible).<br><br>
+- W65###: Warning Code (Range: W65001 ~ W65100)
+    - cnd: Condition expression
+    - msg: Cause message displayed in the warning help
+    - remedy: Corrective action displayed in the warning help<br>
+![](../../../_assets/tp630/user-def-code/image8.png)
+
+6. Copy the edited file back to the teaching pendant.# 7.5.14.2 User-Defined Warning Example
+
+1. Modify the 'help_user_warn.json' file as shown below.<br>
+![](../../../_assets/tp630/user-def-code/image12.png)
+
+2. When the di6 signal is turned on to satisfy the condition expression, W65001 will be triggered<br>
+![](../../../_assets/tp630/user-def-code/image13.png)
+
+3. Checking the warning help will display the same content as written in the file.<br>
+![](../../../_assets/tp630/user-def-code/image14.png)
 # 7.5.16 Joystick mode
 
 This function is used to operate the robot with an external device such as a joystick. 
@@ -6478,6 +6561,8 @@ This function is used to operate the robot with an external device such as a joy
 
 To jog the robot by signal input, set the input signal corresponding to each direction key. <br>
 In the section where the corresponding input signal is ON, the corresponding axis moves in the specified direction. <br>
+
+When an input signal is set to a coordinate system, if the input signal turns on, the matching coordinate system is selected. <br>
 
 ![](../../../_assets/tp630/jogging_in_signal.png)
 
