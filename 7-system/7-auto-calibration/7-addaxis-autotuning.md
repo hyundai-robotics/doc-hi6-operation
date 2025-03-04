@@ -2,10 +2,12 @@
 
 ❗❗ **Available from version V60.28-00.**
 </br>
-⛔ **Except in special cases, the use of addaxis autotuning in Supervisor mode is restricted.**
+**⛔ Do not use this function in supervisor mode except in special cases.**
 
 ## 1️⃣ Overview
+
 This function finds the optimal gain by moving the additional axis within the range set by the user. And it can be used when the additional axis does not have a proper gain set, resulting in noise or poor control performance.
+
 | ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
 |---|---|
 | Linear axis motion | Circular axis motion |
@@ -47,7 +49,7 @@ This function finds the optimal gain by moving the additional axis within the ra
 
 ## 3️⃣ Supervisor Mode
 
-⛔ **Except in special cases, the use of addaxis autotuning in Supervisor mode is restricted**</br>
+**⛔ Do not use this function in supervisor mode except in special cases.**</br>
 _(For use only by developer or in speicial situations)_.
 
 ![](../../_assets/_7.7.7_supervisor_en.png)
@@ -59,6 +61,7 @@ _(For use only by developer or in speicial situations)_.
 
 Since noise is difficult to analyze with data, tuning cannot be as precise as when a tuning specialist adjusts manually. If manual tuning is required, it can be done by adjusting the Kv gain.
 </br>
+
 * If the tuned gain results in noise, motion tracking performance may degrades, leading the large shake.
 * Conversely, if the Kv gain is too high, high-frequency noise may be generated from the motor.
 
