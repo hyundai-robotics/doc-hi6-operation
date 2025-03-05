@@ -176,6 +176,7 @@
       * [7.3.9.2 서비스](7-system/3-control-parameter/9-network-setting/2-service/README.md)
         * [7.3.9.2.1 모드버스 슬래이브](7-system/3-control-parameter/9-network-setting/2-service/1-modbus-slave.md)
         * [7.3.9.2.3 NTP 클라이언트](7-system/3-control-parameter/9-network-setting/2-service/3-ntp-client.md)              
+        * [7.3.9.2.4 이더넷 통신 연결](7-system/3-control-parameter/9-network-setting/2-service/4-enet-comm-setting.md)             
     * [7.3.10 옵션기능의 라이선스키 등록](7-system/3-control-parameter/10-license-key/README.md)
       * [7.3.10.1 옵션기능의 라이선스키란?](7-system/3-control-parameter/10-license-key/1-summary.md)
       * [7.3.10.2 라이선스키 등록 절차](7-system/3-control-parameter/10-license-key/2-registration-process.md)
