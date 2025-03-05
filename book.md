@@ -5646,6 +5646,47 @@ For more information, refer to “Hi6 Robot Controller Function Manual - Modbus�
 The controller's time can be automatically synchronized with the NTP server. <br>
 For more information, refer to “Hi6 Robot Controller Function Manual - NTP time synchronization”.
 
+# 7.3.9.2.4 Ethernet communication setting
+ 
+Before performing ethernet communication, you must first create and configure an Ethernet communication object.<br>
+Up to five Ethernet objects can be created and used, and the current communication status can also be monitored. <br>
+
+Currently used to perform Modbus master operations in HRScript. For more information on Modbus communication functions, please refer to the separate [Hi6 Robot Controller Function Manual - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/english/README).
+
+![](../../../../_assets/tp630/image32.png)
+
+You can force close the socket of the corresponding Ethernet object with the [Close] button, and perform a communication connection with the [Connect] button. <br>
+When the controller boots, it automatically establishes a communication connection with the configured Ethernet object. <br>
+
+
+*   **Name**
+
+    The name of the Ethernet communication object. Each name must be set to "enet0" ~ "enet4".
+
+
+*   **Protocol**
+
+    Select the communication protocol. 
+
+
+*   **IP address**
+
+    Sets the IP address used for communication. 
+
+
+*   **Local port**
+
+    Sets the local port number. 
+
+
+*   **Remote port**
+
+    Sets the remote port number. 
+
+
+*   **State**
+
+    Displays the status of the communication connection. 
 # 7.3.10 Register license key of option function
 
 # 7.3.10.1 What is a license key for optional functions?
@@ -7339,10 +7380,12 @@ The axis origin and tool length X, Y, and Z values of the axes 2–5 \(H, V, R2,
 
 ❗❗ **Available from version V60.28-00.**
 </br>
-⛔ **Except in special cases, the use of addaxis autotuning in Supervisor mode is restricted.**
+**⛔ Do not use this function in supervisor mode except in special cases.**
 
 ## 1️⃣ Overview
+
 This function finds the optimal gain by moving the additional axis within the range set by the user. And it can be used when the additional axis does not have a proper gain set, resulting in noise or poor control performance.
+
 | ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
 |---|---|
 | Linear axis motion | Circular axis motion |
@@ -7384,7 +7427,7 @@ This function finds the optimal gain by moving the additional axis within the ra
 
 ## 3️⃣ Supervisor Mode
 
-⛔ **Except in special cases, the use of addaxis autotuning in Supervisor mode is restricted**</br>
+**⛔ Do not use this function in supervisor mode except in special cases.**</br>
 _(For use only by developer or in speicial situations)_.
 
 ![](../../_assets/_7.7.7_supervisor_en.png)
@@ -7396,6 +7439,7 @@ _(For use only by developer or in speicial situations)_.
 
 Since noise is difficult to analyze with data, tuning cannot be as precise as when a tuning specialist adjusts manually. If manual tuning is required, it can be done by adjusting the Kv gain.
 </br>
+
 * If the tuned gain results in noise, motion tracking performance may degrades, leading the large shake.
 * Conversely, if the Kv gain is too high, high-frequency noise may be generated from the motor.
 
