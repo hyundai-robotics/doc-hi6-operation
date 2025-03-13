@@ -1191,142 +1191,142 @@
 	},
 	{
 		"link": "8-r-code/README.md",
-		"char_ofs": 350387,
-		"byte_ofs": 358952
+		"char_ofs": 350418,
+		"byte_ofs": 358979
 	},
 	{
 		"link": "8-r-code/1-use-r-code.md",
-		"char_ofs": 350757,
-		"byte_ofs": 359339
+		"char_ofs": 350788,
+		"byte_ofs": 359366
 	},
 	{
 		"link": "8-r-code/2-r0.md",
-		"char_ofs": 353094,
-		"byte_ofs": 361755
+		"char_ofs": 353125,
+		"byte_ofs": 361782
 	},
 	{
 		"link": "8-r-code/3-r115.md",
-		"char_ofs": 353696,
-		"byte_ofs": 362380
+		"char_ofs": 353727,
+		"byte_ofs": 362407
 	},
 	{
 		"link": "8-r-code/4-r117.md",
-		"char_ofs": 354760,
-		"byte_ofs": 363473
+		"char_ofs": 354791,
+		"byte_ofs": 363500
 	},
 	{
 		"link": "8-r-code/5-r210.md",
-		"char_ofs": 355655,
-		"byte_ofs": 364398
+		"char_ofs": 355686,
+		"byte_ofs": 364425
 	},
 	{
 		"link": "8-r-code/6-r211.md",
-		"char_ofs": 356983,
-		"byte_ofs": 365754
+		"char_ofs": 357014,
+		"byte_ofs": 365781
 	},
 	{
 		"link": "8-r-code/7-r212.md",
-		"char_ofs": 358087,
-		"byte_ofs": 366890
+		"char_ofs": 358118,
+		"byte_ofs": 366917
 	},
 	{
 		"link": "8-r-code/8-r213.md",
-		"char_ofs": 359223,
-		"byte_ofs": 368053
+		"char_ofs": 359254,
+		"byte_ofs": 368080
 	},
 	{
 		"link": "8-r-code/9-r214.md",
-		"char_ofs": 360358,
-		"byte_ofs": 369217
+		"char_ofs": 360389,
+		"byte_ofs": 369244
 	},
 	{
 		"link": "8-r-code/10-r215.md",
-		"char_ofs": 362222,
-		"byte_ofs": 371118
+		"char_ofs": 362253,
+		"byte_ofs": 371145
 	},
 	{
 		"link": "8-r-code/11-r220.md",
-		"char_ofs": 362994,
-		"byte_ofs": 371909
+		"char_ofs": 363025,
+		"byte_ofs": 371936
 	},
 	{
 		"link": "8-r-code/12-r314.md",
-		"char_ofs": 363962,
-		"byte_ofs": 372902
+		"char_ofs": 363993,
+		"byte_ofs": 372929
 	},
 	{
 		"link": "8-r-code/13-r358.md",
-		"char_ofs": 364934,
-		"byte_ofs": 373906
+		"char_ofs": 364965,
+		"byte_ofs": 373933
 	},
 	{
 		"link": "8-r-code/14-r359.md",
-		"char_ofs": 367139,
-		"byte_ofs": 376155
+		"char_ofs": 367170,
+		"byte_ofs": 376182
 	},
 	{
 		"link": "8-r-code/15-r360.md",
-		"char_ofs": 368581,
-		"byte_ofs": 377629
+		"char_ofs": 368612,
+		"byte_ofs": 377656
 	},
 	{
 		"link": "8-r-code/16-r361.md",
-		"char_ofs": 370974,
-		"byte_ofs": 380094
+		"char_ofs": 371005,
+		"byte_ofs": 380121
 	},
 	{
 		"link": "8-r-code/17-r321.md",
-		"char_ofs": 372044,
-		"byte_ofs": 381193
+		"char_ofs": 372075,
+		"byte_ofs": 381220
 	},
 	{
 		"link": "9-property/README.md",
-		"char_ofs": 372926,
-		"byte_ofs": 382096
+		"char_ofs": 372957,
+		"byte_ofs": 382123
 	},
 	{
 		"link": "9-property/1-use-property.md",
-		"char_ofs": 373274,
-		"byte_ofs": 382453
+		"char_ofs": 373305,
+		"byte_ofs": 382480
 	},
 	{
 		"link": "9-property/2-move-step-position/README.md",
-		"char_ofs": 378219,
-		"byte_ofs": 387521
+		"char_ofs": 378250,
+		"byte_ofs": 387548
 	},
 	{
 		"link": "9-property/2-move-step-position/1-hidden-pose-move.md",
-		"char_ofs": 378346,
-		"byte_ofs": 387655
+		"char_ofs": 378377,
+		"byte_ofs": 387682
 	},
 	{
 		"link": "9-property/2-move-step-position/2-pose-rec-move.md",
-		"char_ofs": 381383,
-		"byte_ofs": 390770
+		"char_ofs": 381414,
+		"byte_ofs": 390797
 	},
 	{
 		"link": "9-property/3-spot-welding-func.md",
-		"char_ofs": 384550,
-		"byte_ofs": 394022
+		"char_ofs": 384581,
+		"byte_ofs": 394049
 	},
 	{
 		"link": "10-robot-language.md",
-		"char_ofs": 385429,
-		"byte_ofs": 394920
+		"char_ofs": 385460,
+		"byte_ofs": 394947
 	},
 	{
 		"link": "appendices/README.md",
-		"char_ofs": 385630,
-		"byte_ofs": 395127
-	},
-	{
-		"link": "appendices/rules-occupational-safety.md",
-		"char_ofs": 385649,
+		"char_ofs": 385661,
 		"byte_ofs": 395154
 	},
 	{
+		"link": "appendices/rules-occupational-safety.md",
+		"char_ofs": 385680,
+		"byte_ofs": 395181
+	},
+	{
 		"link": "quality-assurance.md",
-		"char_ofs": 386109,
-		"byte_ofs": 395622
+		"char_ofs": 386140,
+		"byte_ofs": 395649
 	}
 ]
