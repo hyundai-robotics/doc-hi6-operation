@@ -6,7 +6,11 @@ It is the method to teach the robot the contents of the work and then make it pe
 
 2.	Set the operation mode to automatic mode by turning the mode switch of the teach pendant.
 
+    <div style="max-width: 35vw">  
+
      ![](../../_assets/tp630/TP-hw-switch-auto.png)
+     
+    </div>
 
 3.	On the status bar of the Hi6 teach pendant screen, check whether the operation mode is set to automatic mode.
 
