@@ -7339,16 +7339,18 @@ The axis origin and tool length X, Y, and Z values of the axes 2–5 \(H, V, R2,
 
 ❗❗ **Available from version V60.28-00.**
 </br>
-⛔ **Except in special cases, the use of addaxis autotuning in Supervisor mode is restricted.**
+**⛔ Do not use this function in supervisor mode except in special cases.**
 
-## 1️⃣ Overview
+### 1️⃣ Overview
+
 This function finds the optimal gain by moving the additional axis within the range set by the user. And it can be used when the additional axis does not have a proper gain set, resulting in noise or poor control performance.
+
 | ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
 |---|---|
 | Linear axis motion | Circular axis motion |
 <!-- ![additional_axis](../../_assets/_7.7.7_additional_axis.jpg) -->
 
-## 2️⃣ Tuning Description
+### 2️⃣ Tuning Description
 
 ![](../../_assets/_7.7.7_intro_en.png)
 
@@ -7382,9 +7384,9 @@ This function finds the optimal gain by moving the additional axis within the ra
 * During tuning, the additional axis may make brief loud noises (as it searches for the vibration gain value)
 * Once tuning is completed, the gain values of the tuning paramter Kv before and after tuning will be displayed. Pressing [OK] will prompt a window asking whether to apply the tuned gain. If press [enter], the tuned gain will be applied. If press [No], the original gain value will be retained.
 
-## 3️⃣ Supervisor Mode
+### 3️⃣ Supervisor Mode
 
-⛔ **Except in special cases, the use of addaxis autotuning in Supervisor mode is restricted**</br>
+**⛔ Do not use this function in supervisor mode except in special cases.**</br>
 _(For use only by developer or in speicial situations)_.
 
 ![](../../_assets/_7.7.7_supervisor_en.png)
@@ -7392,16 +7394,18 @@ _(For use only by developer or in speicial situations)_.
 * **Minimum gain(Kv)**: Allows modification of the starting tuned value for gain searching. This is necessary if the vibration gain value for a specific additional axis is too low. **Arbitrary changes are not permitted.**
 * **Mode**: A developer UI. It should be used with the default value (0)
 
-## ⚠️ Note
+### ⚠️ Note
 
 Since noise is difficult to analyze with data, tuning cannot be as precise as when a tuning specialist adjusts manually. If manual tuning is required, it can be done by adjusting the Kv gain.
 </br>
+
 * If the tuned gain results in noise, motion tracking performance may degrades, leading the large shake.
 * Conversely, if the Kv gain is too high, high-frequency noise may be generated from the motor.
 
 If the tuned gain results in noise, navigate to **System > 3:Robot parameter > 33:Servo parameter > 1:Servo loop gain** and gradually set lower the Kv value (when the Kv value changes, other gain values are automatically recalculated), until the high-frequency noise disappears.
 
-If the noise persists, please contact us for further assistance.# 8. R Codes
+If the noise persists, please contact us for further assistance.
+# 8. R Codes
 
 When it comes to the operating procedures for frequently used functions, such as modifying the contents of a program or changing the setting status of a controller, you can use them easily by designating specific service codes \(R codes\). 
 

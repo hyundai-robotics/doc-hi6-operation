@@ -4,7 +4,7 @@
 </br>
 **⛔ Do not use this function in supervisor mode except in special cases.**
 
-## 1️⃣ Overview
+### 1️⃣ Overview
 
 This function finds the optimal gain by moving the additional axis within the range set by the user. And it can be used when the additional axis does not have a proper gain set, resulting in noise or poor control performance.
 
@@ -13,7 +13,7 @@ This function finds the optimal gain by moving the additional axis within the ra
 | Linear axis motion | Circular axis motion |
 <!-- ![additional_axis](../../_assets/_7.7.7_additional_axis.jpg) -->
 
-## 2️⃣ Tuning Description
+### 2️⃣ Tuning Description
 
 ![](../../_assets/_7.7.7_intro_en.png)
 
@@ -47,7 +47,7 @@ This function finds the optimal gain by moving the additional axis within the ra
 * During tuning, the additional axis may make brief loud noises (as it searches for the vibration gain value)
 * Once tuning is completed, the gain values of the tuning paramter Kv before and after tuning will be displayed. Pressing [OK] will prompt a window asking whether to apply the tuned gain. If press [enter], the tuned gain will be applied. If press [No], the original gain value will be retained.
 
-## 3️⃣ Supervisor Mode
+### 3️⃣ Supervisor Mode
 
 **⛔ Do not use this function in supervisor mode except in special cases.**</br>
 _(For use only by developer or in speicial situations)_.
@@ -57,7 +57,7 @@ _(For use only by developer or in speicial situations)_.
 * **Minimum gain(Kv)**: Allows modification of the starting tuned value for gain searching. This is necessary if the vibration gain value for a specific additional axis is too low. **Arbitrary changes are not permitted.**
 * **Mode**: A developer UI. It should be used with the default value (0)
 
-## ⚠️ Note
+### ⚠️ Note
 
 Since noise is difficult to analyze with data, tuning cannot be as precise as when a tuning specialist adjusts manually. If manual tuning is required, it can be done by adjusting the Kv gain.
 </br>
