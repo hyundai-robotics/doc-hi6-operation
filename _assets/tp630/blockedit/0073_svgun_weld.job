@@ -1,0 +1,42 @@
+﻿Hyundai Robot Job File; { version: 1.6, mech_type: "388(HS220-02)", total_axis: 8, aux_axis: 2 }
+     var v0
+     #svgun weld
+     gather 1
+S1   move P,spd=100%,accu=1,tool=1  [0.000,90.000,0.000,0.000,-90.000,0.000,-130.000,-20.000]
+     toolchng fixed,tg=G2,is=di48
+     delay 1
+S2   move P,spd=60%,accu=0,tool=1  [0.000,90.000,-0.001,0.001,-90.000,0.001,-130.000,-20.000]
+S3   move P,spd=100%,accu=1,tool=2  [6.646,90.001,-0.002,0.000,-90.000,0.001,-130.000,0.000]
+     spot gun=2,cnd=1,seq=1
+S4   move P,spd=60%,accu=0,tool=1  [-0.896,90.241,-0.131,0.000,-90.107,-2.209,-130.000,-20.000]
+     var cnt,val
+     for cnt=1 to 4
+       shift crd="robot",x=0,y=cnt*50,z=0
+S5     move P,spd=100%,accu=0,tool=2  [-6.673,90.001,-0.002,0.000,-90.000,0.001,-130.000,0.000]
+       spot gun=2,cnd=1,seq=64
+     next
+     delay 1
+S6   move P,spd=60%,accu=0,tool=1  [-0.896,90.241,-0.131,0.000,-90.107,-2.209,-130.000,-20.000]
+     for cnt=1 to 4
+       shift crd="base",x=0,y=cnt*20,z=0
+S7     move P,spd=30%,accu=0,tool=2  [-6.673,90.001,-0.002,0.000,-90.000,0.001,-130.000,0.000]
+       spot gun=2,cnd=1,seq=1
+     next
+     shift crd="base",x=0,y=0,z=0
+     delay 1
+     toolchng fixed,tg=G2,is=di48
+     delay 1
+S8   move P,spd=30%,accu=0,tool=1  [-0.896,90.241,-0.131,0.000,-90.107,-2.209,-130.000,-20.000]
+     for cnt=1 to 4
+       shift crd="base",x=0,y=cnt*10,z=0
+S9     move P,spd=30%,accu=1,tool=2  [0.000,90.000,0.000,0.000,-90.000,0.000,-130.000,-1.000]
+       thickcheck thick=v0,ref=4.0,tol=4
+       spot gun=2,cnd=254,seq=64
+     next
+     delay 1
+     shift crd="base",x=0,y=0,z=0
+S10  move P,spd=60%,accu=0,tool=1  [-0.896,90.241,-0.131,0.000,-90.107,-2.209,-130.000,-20.000]
+     delay 1
+     gather 0
+     end
+S11  move P,spd=20%,accu=0,tool=2  [1551.399,-461.000,1717.978,0.000,89.999,-6.674,-130.000,0.000,"base","nf"]
