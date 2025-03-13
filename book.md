@@ -2467,39 +2467,102 @@ You can easily input variables, expressions, and strings using the soft keyboard
 
 # 3.2.4.5 Block Editing Mode
 
-You can copy, move, and delete a line or multiple lines of the program by designating it or them as a block.
+You can set a single line or multiple lines of a program as a block to perform copy, move, delete, and remark operations.
+<br>
 
-1.	While pressing the <**SHIFT**> key on the teach pendant, touch the \[blk.edit\] button on the function button bar of the JOB program window. Then, the block editing mode will be activated.
+#### 1. Entering Block Edit Mode
 
-2.	Place the cursor on the desired line using the &lt;↓/↑&gt; keys on the teach pendant and then press the <<b>ENTER</b>> key. Then, the line on which the cursor is placed will be selected as the start line of the block.
+In the job editing panel, move the cursor to the address area using the left arrow key.
+Click the `F2: Blk.edit` button to enter block edit mode, and the cursor will turn gray.
 
-    ![](../../../_assets/tp630/pane-prog-block-edit_eng.png)
+![](../../../_assets/tp630/blockedit/11_blockeditmode2.PNG)
+![](../../../_assets/tp630/blockedit/12_blockeditmode.PNG)
+<br><br>
+
+#### 2. Setting a Block
+
+Use the up/down arrow keys to move the cursor to the starting position of the block and press the `ENTER` key. Then, move the cursor to the end position of the block using the up/down arrow keys and press `ENTER` again. The selected block will be highlighted with a blue background.
+
+![](../../../_assets/tp630/blockedit/20_set_block.PNG)
+
+(If you perform an action like copying or deleting without moving the cursor away from the block, you do not need to press `ENTER` a second time.) 
+<br><br>
+
+#### 3. Copy
+
+While the block is selected, click `F2: copy` to copy the content to the clipboard.
+Alternatively, you can click `F2: copy` without selecting a block to copy just a single line.
+<br><br>
+
+#### 4. Paste
+
+Move the cursor to the line above where you want to paste using the up/down arrow keys, then click `F3: paste`.
+For example, if you want to paste the copied block below the `delay 1` statement in S1, place the cursor on `delay 1` and click `F3: paste`.
+
+![](../../../_assets/tp630/blockedit/30_paste.PNG)
+![](../../../_assets/tp630/blockedit/32_paste.PNG)
+<br><br>
+
+#### 5. Cut
+
+When a block is selected, clicking `F1: cut` will make the block appear in light gray, indicating that it has been cut.  
+Alternatively, you can click `F1: cut` without selecting a block to cut a single line.
+
+![](../../../_assets/tp630/blockedit/40_cut.PNG)
+
+Pasting a cut block follows the same method as described above.
+<br><br>
+
+#### 6. Delete
+When a block is selected, clicking `F4: delete` and then confirming the `Delete?` prompt will remove the block.  
+Alternatively, you can click `F4: delete` without selecting a block to delete a single line.
+
+ ![](../../../_assets/tp630/blockedit/50_delete.PNG)
+<br><br>
+
+#### 7. Remark, Unremark
+
+This feature is used to temporarily disable the execution of a specific section in a job program without deleting it.  
+When a block is selected and you click `F5: remark`, the statements within the block are commented out (remarked).
+When a block is selected and you click `F6: unremark`, the comments are removed (unremarked).  
+Additionally, you can comment or uncomment a single line without selecting a block.
+
+{% hint style="info" %}
+- Less than version V60.30-00 : Steps are not remarked.
+- Version V60.30-00 or later : Steps are also remarked.
+{% endhint %}
+
+ ![](../../../_assets/tp630/blockedit/60_remark.PNG)
+<br><br>
+
+#### 8. Closing Block Edit Mode
+
+Block edit mode can be closed by clicking `F7: close` or pressing the `ESC` key.
+<br><br>
 
 
+#### 9. Auto-adjusting Step #
 
-3.	Move the cursor by turning the jog dial on the teach pendant. Then, the section from the start line to the line to which the cursor is moved to will be selected as a block.
+For example, if steps S1–S2 are copied and pasted below, the `move` statement originally at S3 will be pushed down and renumbered as S5 due to the inserted 2 steps.
 
-    ![](../../../_assets/tp630/pane-prog-block-edit1_eng.png)
+In this case, all branch statement within the same job such as `goto`, `gosub`, `if` statements, and the timeout address of `wait` statements' target addresses will be automatically adjusted from S3 to S5.
 
-4.	You can edit the statement in the area that is selected as a block using buttons on the function button bar.
+For instance, in the example below, the conditional branch statement `if di45==0 then S3` will be updated to S5 to ensure it still branches to the same `move` statement as before.
 
-    ![](../../../_assets/tp630/pane-prog-block-edit2_eng.png)
+![](../../../_assets/tp630/blockedit/71_branch_adjust.PNG)
+![](../../../_assets/tp630/blockedit/72_branch_adjust.PNG)
 
-* \[cut\]: You can cut the area selected as a block and save it in the clipboard so that it can be pasted to another location.
-* \[copy\]: You can copy the area selected as a block and save it in the clipboard so that it can be pasted to another location.
-* \[paste\]: Paste the area saved in the clipboard to the desired location.
+This automatic step number adjustment is performed for operations that shift step numbers forward or backward, such as recording, deletion, and block editing.
 
-  To paste the statement saved in the clipboard, you should select the cursor position using the jog dial and then touch the \[paste\] button. Then, the statement will be inputted into the line right below the current cursor position.
+{% hint style="info" %}
+The following specifications apply from version V60.30-00 and later.
+{% endhint %}
 
-* 
-  \[delete\]: You can delete the selected area.
+If a target step is removed due to deletion or remarking, it will be adjusted as `deleted_step#` or `remarked_step#`, as shown below.  
+Please manually adjust these modified target addresses to the appropriate step number (or line number/label).
+(If left unchanged, a syntax error will occur when executing the statement.)
 
-5.	When you complete editing a block, press the <**ESC**> key on the teach pendant or touch the \[close\] button on the function button bar to exit the block editing mode.
-
-
-
-
-
+![](../../../_assets/tp630/blockedit/76_branch_adjust.PNG)
 # 4. Service
 
 You can use the program’s various service function menus such as variable and file management.
