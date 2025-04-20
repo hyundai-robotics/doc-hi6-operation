@@ -4563,9 +4563,11 @@ If the program being played back is modified externally \(PC\) and downloaded to
 
 
 
-* \[9: Teach pendent seperation\]: You can disconnect the teach pendant from the controller to operate the robot in auto mode.
+* \[9: Teach pendent disconnection\]: You can disconnect the teach pendant from the controller to operate the robot in auto mode.
 
-  * If set as <Disconnect>, there will be no “E0015 Teaching pendant operation abnormal” error, which would otherwise occur when the communication between the teach pendant and the controller is severed. 
+  * If set to <Disconnect>, no "E2800 Teaching Pendant Operation Abnormal" error occurs when communication between the teaching pendant and the main b/d is disconnected. (The robot operates even when communication is disconnected.)
+
+  * In the <Connect> state, you can set a timeout period to determine whether communication is lost.
 
   * When it is set as <Disconnect> and the teach pendant is disconnected from the controller, and power is supplied, the controller will recognize the current mode as remote mode, allowing the robot to be auto-operated through external Motor On and external start-up. 
 
