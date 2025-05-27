@@ -2901,18 +2901,15 @@ You can change the recording speed for a specific step of the program and apply 
 
 You can change and set the coordinate system of the step position recorded as a hidden pose in a specific step of the program and apply it to the existing program or create a new program.
 
-1.	Touch the \[6: Program Conversion &gt; 3: Record Pose conversion\] menu. Then the recording position conversion setting window will appear.
+1. Touch the \[6: Program Conversion &gt; 3: Record Pose conversion\] menu. Then the recording position conversion setting window will appear.
 
-2.	After setting the recording position option, touch the \[OK\] button.
+2. After setting the recording position option, touch the \[OK\] button.
 
-    ![](../../_assets/tp630/prg-position-modi_eng.png)
+  ![](../../_assets/tp630/prg-position-modi_eng.png)
 
 * \[source program\]/\[Target program\]: You can input the number of the original program \(Initial setting value: The currently selected program\) of which recording position you want to change and the number of the new program you want to save after the change of recording position. If you set the number of the target program to match the same number as that of the original program, the original program will be overwritten by and replaced with a new program.
-* \[Start Step\]/\[End Step\]: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of the recording position.
+* \[Step range\]: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of the recording position.
 * \[Coord. System Format\]: You can select the coordinate system to shift the position data recorded in the step. If you select base, robot, tool, or user, the position data will be converted to Cartesian coordinate values, and if you select joint, the position data will be converted to axis angles.
-
-
-
 # 4.3.4 Recording Coordinate System
 
 You can change the coordinate system of the step position recorded as a hidden pose. You can check the coordinate system you have changed to by pressing the quick open button at the concerned step. During the startup of the robot, the use of the \[4: Transformation of the reference coordinate system\] menu will be restricted.
@@ -4637,6 +4634,26 @@ Delays may occur in the process of activating/deactivating the power-saving func
 
 * \[Plc execution time rate\]: When using a embedded PLC, you can adjust the PLC execution time inside the controller. The controller internally executes the PLC ladder program every 5ms, so set how much PLC execution is allocated. The larger this ratio leads the shorter the scan time of the PLC program. But if it is too large, the CPU execution time may be insufficient and a task execution time exceeded error may occur.
 
+* \[Cycle Time Optimization Mode\]: This feature reduces the robot’s step movement time during automatic playback to improve productivity.
+
+  ✅ Feature Description
+ 
+  - **Enabled**
+    - Dynamically adjusts acceleration/deceleration curves and maximum speed for faster movement.
+    - *Dynamic motion adjustment applied*
+
+  - **Disabled**
+    - Uses predefined acceleration, deceleration, and maximum speed settings.
+    - *Operates in standard motion profile mode*
+
+  - **Dynamic Motion Ratio** (`0 ~ 100`)
+    - `0`: Disabled (static motion)
+    - `1 ~ 100`: Adjusts the intensity of dynamic motion
+    - Higher values apply more aggressive optimization for speed and acceleration
+
+  > 💡 **Tip:** For processes where cycle time is critical (e.g., repetitive pick-and-place), applying a high dynamic motion ratio can help improve throughput.. 
+  
+  > Be aware that higher values may lead to mechanical vibration or trigger over-torque faults, especially under high payload or rapid directional changes.
 # 7.3.2 Input/Output Signal Setting
 
 1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting\] menu. Then, the input/output signal setting menu will appear.
@@ -5655,15 +5672,13 @@ For details on how to automatically back up and recover the controller’s data,
 
 You can set the information required for Network Setting for LAN ports.
 
-1.	Touch the \[2: Control Parameter &gt; 9: Network &gt; 1: Environment setting \] menu.
+1.	Touch the \[ System &gt; 2: Control Parameter &gt; 9: Network &gt; 1: Environment setting \] menu.
 
 2.	Set the parameters for each LAN(Public) port. Class C type IP Addressing supported.
 
-3.	Public LAN ports can do portforwarding.
+3.	Setting parameters will be adjusted when you reboot the system.
 
-4.	Setting parameters will be adjusted when you reboot the system.
-
-![](../../_assets/image_551.png)
+<img src ="../../../_assets/image_551.png">
 
 <table>
   <thead>
@@ -5675,38 +5690,30 @@ You can set the information required for Network Setting for LAN ports.
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">LAN Port Selection Tab. You can modify Public LAN Port. LAN1(Ethercat), LAN2(T/P-Main) are forbidden to change.
+      <td style="text-align:left">In the LAN Port Selection tab, only the Public LAN Port can be modified. EtherCAT and T/P-Main ports are fixed and cannot be changed.
 	  </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
-          <br />Changing port setting. IP Address, Subnet Mask, Gateway can be modified.
+          Changing port setting. IP Address, Subnet Mask, Gateway can be modified.
           <li><b>IP Address : </b> You can set IP Address for the target port.</li>
           <li><b>Subnet Mask : </b> Subnet Mask setting for the target port. Usually subnet mask is 255.255.255.0</li>
           <li><b>Gateway : </b>You can set gateway address for the target port. 3rd  information and paste it to another port.
+          </li>
+          <li><b>MAC : </b>Displays the controller’s MAC address.
           </li>
         </ul>
       </td>
     </tr>
 	<tr>
       <td style="text-align:left">
-        <img src="../../_assets/c3.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li><b>PortForwarding selection : </b> You can turn on portforwarding mode. portforwarding mode check box is only in LAN3 tab section. LAN1 does not support portforwarding.</li>
-        </ul>
-      </td>
-    </tr>
-	<tr>
-      <td style="text-align:left">
-        <img src="../../_assets/c4.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
@@ -5716,20 +5723,6 @@ You can set the information required for Network Setting for LAN ports.
     </tr>
   </tbody>
 </table>
-
-{% hint style="info" %}
-
-Portforwarding means that redirect to other IP address of port through router. Hi6 controller has portforwarding function.
-
-Ex) Device1(192.168.1.10 | 255.255.255.0 | 192.168.1.1) can connected to T/P(192.168.2.X | 255.255.255.0 | 192.168.2.X)
-
-Refer to the following information when setting the usage of the Portforwarding.
-
-* Supported IP : Class C type(192.168.XX.XX) devices can use portforwarding.
-* Supported Subnet : Each port basically setted 3rd steps. For example LAN3(Public) can connected 192.168.1.X IP
-* Basic Gateway: 192.168.X.1 is initial condition gateway.
-
-{% endhint %}
 # 7.3.9.2 Service
 
 # 7.3.9.2.1 Modbus slave
