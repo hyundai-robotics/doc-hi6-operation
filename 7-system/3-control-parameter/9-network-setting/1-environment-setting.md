@@ -8,7 +8,7 @@ You can set the information required for Network Setting for LAN ports.
 
 3.	Setting parameters will be adjusted when you reboot the system.
 
-<img src="../../../_assets/image_551.png" width="70%">
+<img src ="../../../_assets/image_551.png">
 
 <table>
   <thead>
