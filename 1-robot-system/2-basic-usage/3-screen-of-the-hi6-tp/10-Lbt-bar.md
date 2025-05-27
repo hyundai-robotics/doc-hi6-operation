@@ -4,7 +4,7 @@
 
 <br>
 
-![](../../../_assets/tp630/TP-main-lbt.png)
+![](../../../_assets/tp630/TP-main-lbt_new.png)
 
 <table>
   <thead>
