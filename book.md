@@ -1309,7 +1309,11 @@ It is the method to teach the robot the contents of the work and then make it pe
 
 2.	Set the operation mode to automatic mode by turning the mode switch of the teach pendant.
 
+    <div style="max-width: 35vw">  
+
      ![](../../_assets/tp630/TP-hw-switch-auto.png)
+     
+    </div>
 
 3.	On the status bar of the Hi6 teach pendant screen, check whether the operation mode is set to automatic mode.
 
@@ -1774,19 +1778,28 @@ The following shows how to check and deal with various system troubles, such as 
 
 
 
-# 2.6 Log
+# 2.6 Event log
+
+A log of events such as errors, warnings, notifications, start/stop actions, operations, changes in I/O values, and robot language executions that have occurred from the past to the present point in time is stored. (The maximum number of records stored varies depending on the type.)<br>
+You can check the type, message, occurrence time, program/step/function number at the time of occurrence, and related auxiliary information for each log. This information can be used as a clue to analyze the cause of the issue and to respond it.
+
 
 Touch the \[Log\] button on the function button bar. Then, the log window will appear. 
 
-![](../_assets/tp630/fbt-log_eng.png)
+![](../_assets/tp630/log/11_fb_log.PNG)
 
-You can check the logs of errors, warnings, notification, operations by the user, I/O, and executions. Touch the up-pointing arrow icon on the right side.
+You can check the event logs. Touch the up-pointing arrow icon on the right side.
 
-![](../_assets/tp630/fbt-log1_eng.png)
+![](../_assets/tp630/log/21_log.PNG)
 
-Additional options regarding the log are displayed as below.
+Filter options and auxiliary information for the log are displayed as below;
 
-![](../_assets/tp630/fbt-log2_eng.png)
+![](../_assets/tp630/log/31_log.PNG)
+![](../_assets/tp630/log/44_di.PNG)
+
+{% hint style="info" %}
+The display of auxiliary information is supported from V60.30-01.
+{% endhint %}
 
 <table>
   <thead>
@@ -1798,49 +1811,65 @@ Additional options regarding the log are displayed as below.
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c1.png" alt/>
+        <img src="../_assets/c1.png"/>
       </td>
       <td style="text-align:left">
-        <p>You can set the type of log to be displayed in the list. If you touch the button of the desired type, only the logs that match the type will appear in the list.</p>
-        <ul>
-          <li>[All]: You can check all types of logs.</li>
-          <li>[+E]/[+W]: You can check the logs of errors or warnings.
-            <br />When a trouble occurs in the robot system, you can check and record the contents of the trouble, the time of trouble occurrence, as well as the program number, step number, axis data, and input/output status at the time of the trouble occurrence, and then manage the log of troubles. This makes it possible to analyze the cause of trouble or refer to the log of troubles that occurred prior to system recovery.</li>
-          <li>[+N]: You can check the log of notifications.</li>
-          <li>[+ST]: You can check the log of robot operations.
-            <br />When signals related to operation such as startup, stop, and mode change of the robot are inputted, the contents and time, as well as the program number, step number, axis data, and input/output status at the time of input, will be recorded. When the robot is repaired, you can refer to the log of the robot operation.</li>
-          <li>[+P]: You can check the log of the status that will be periodically recorded.</li>
-          <li>[+OP]: You can check the log of operation.</li>
-          <li>[+IO]: You can check the log of the variation of the input and output signals.</li>
-          <li>[+H]: You can check the log of the execution of the JOB program.</li>
+        Aux. info.: The system's status at the time an error or warning occurs is also recorded, and you can view this in the aux. info. window. By clicking the tabs at the top, you can select and check the desired aux. info. The active input/output signal values are displayed with a yellow background, and assigned user I/O is shown in bold.
+        <ul>  
+          <li>Pose : Robot, additive axis values. (unit: mm or deg.)</li>
+          <li>S/In : System input values. Only first 8bytes are recorded. (si0~63)</li>
+          <li>S/Out : System output values. Only first 8bytes are recorded. (so0~63)</li>
+          <li>D/In : User input values. Only fb0's first 32bytes are recorded. </li>(fb0.dib0~31)
+          <li>D/Out : User output values. Only fb0's first 32bytes are recorded. </li>(fb0.dob0~31)
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c2.png" alt/>
+        <img src="../_assets/c2.png"/>
+      </td>
+      <td style="text-align:left">
+        You can use the filter buttons to display only the log of the desired type. When the filter button is turned on, the corresponding type will be displayed, and when turned off, it will be hidden.
+        <ul>
+          <li>[All]: Turn all filter buttons on or off at once.</li>
+          <li>[+E]/[+W]: View error or warning log.</li>
+          <li>[+N]: View notification (Notice) log.</li>
+          <li>[+ST]: View robot start (START) and stop (STOP) log.</li>
+          <li>[+P]: View periodically recorded status log.</li>
+          <li>[+OP]: View user operation log.</li>
+          <li>[+IO]: View input/output signal change log.</li>
+          <li>[+H]: View job program execution log.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c3.png"/>
       </td>
       <td style="text-align:left">
         <ul>
           <li>[
-            <img src="../_assets/bt-menu.png" alt/>]: You can open the pop-up menu.</li>
+            <img src="../_assets/bt-menu.png"/>]: You can open the pop-up menu.
             <ul>
-              <li>Save as log file: You can save the latest logs of the memory buffer as a file.</li>
-          <li>Clear log file: You can clear the logs in memory buffer and delete all the log files. (Deleted files cannot be restored.)</li>
-        </ul>
+              <li>Save as log file: Events are first stored in the memory buffer, and when the buffer is full, they are automatically saved to a file. By selecting this menu, any log still in the buffer will be immediately saved to a file.</li>
+              <li>Clear log file: You can clear the logs in memory buffer and delete all the log files. (Deleted files cannot be restored.)</li>
+            </ul>
+          </li>
           <li>[
-            <img src="../_assets/bt-lock.png" alt/>]: You can turn off the notification for a new log. The log will not be updated, and the current status will be maintained until the lock icon
-            is turned off.</li>
+            <img src="../_assets/bt-lock.png"/>]: This function locks the display of new events on the screen. Even when locked, new events will continue to be recorded; only the screen refresh is blocked. This feature can be useful when the log screen keeps updating and obstructing your view. You can unlock it by pressing the lock button again or by closing and reopening the log window.
+          </li>
           <li>[
-            <img src="../_assets/bt-trash.png" alt/>]: You can delete the log displayed on the screen.</li>
+            <img src="../_assets/bt-trash.png"/>]: This clears the events displayed on the screen. It only clears the screen, and the internally recorded log is not deleted.</li>
+          <li>[
+            <img src="../_assets/bt-refresh.png"/>]: When the log screen is cleared, pressing this button will retrieve the log again and display it on the screen.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../_assets/c3.png" alt/>
+        <img src="../_assets/c4.png"/>
       </td>
-      <td style="text-align:left"> <ul>A list of the logs of selected message types. You can check the detailed information of the logs for individual types. </ul></td>
+      <td style="text-align:left">This is the log of the selected type. New events are highlighted at the top with a yellow background.</td>
     </tr>
   </tbody>
 </table>
@@ -2438,39 +2467,102 @@ You can easily input variables, expressions, and strings using the soft keyboard
 
 # 3.2.4.5 Block Editing Mode
 
-You can copy, move, and delete a line or multiple lines of the program by designating it or them as a block.
+You can set a single line or multiple lines of a program as a block to perform copy, move, delete, and remark operations.
+<br>
 
-1.	While pressing the <**SHIFT**> key on the teach pendant, touch the \[blk.edit\] button on the function button bar of the JOB program window. Then, the block editing mode will be activated.
+#### 1. Entering Block Edit Mode
 
-2.	Place the cursor on the desired line using the &lt;↓/↑&gt; keys on the teach pendant and then press the <<b>ENTER</b>> key. Then, the line on which the cursor is placed will be selected as the start line of the block.
+In the job editing panel, move the cursor to the address area using the left arrow key.
+Click the `F2: Blk.edit` button to enter block edit mode, and the cursor will turn gray.
 
-    ![](../../../_assets/tp630/pane-prog-block-edit_eng.png)
+![](../../../_assets/tp630/blockedit/11_blockeditmode2.PNG)
+![](../../../_assets/tp630/blockedit/12_blockeditmode.PNG)
+<br><br>
+
+#### 2. Setting a Block
+
+Use the up/down arrow keys to move the cursor to the starting position of the block and press the `ENTER` key. Then, move the cursor to the end position of the block using the up/down arrow keys and press `ENTER` again. The selected block will be highlighted with a blue background.
+
+![](../../../_assets/tp630/blockedit/20_set_block.PNG)
+
+(If you perform an action like copying or deleting without moving the cursor away from the block, you do not need to press `ENTER` a second time.) 
+<br><br>
+
+#### 3. Copy
+
+While the block is selected, click `F2: copy` to copy the content to the clipboard.
+Alternatively, you can click `F2: copy` without selecting a block to copy just a single line.
+<br><br>
+
+#### 4. Paste
+
+Move the cursor to the line above where you want to paste using the up/down arrow keys, then click `F3: paste`.
+For example, if you want to paste the copied block below the `delay 1` statement in S1, place the cursor on `delay 1` and click `F3: paste`.
+
+![](../../../_assets/tp630/blockedit/30_paste.PNG)
+![](../../../_assets/tp630/blockedit/32_paste.PNG)
+<br><br>
+
+#### 5. Cut
+
+When a block is selected, clicking `F1: cut` will make the block appear in light gray, indicating that it has been cut.  
+Alternatively, you can click `F1: cut` without selecting a block to cut a single line.
+
+![](../../../_assets/tp630/blockedit/40_cut.PNG)
+
+Pasting a cut block follows the same method as described above.
+<br><br>
+
+#### 6. Delete
+When a block is selected, clicking `F4: delete` and then confirming the `Delete?` prompt will remove the block.  
+Alternatively, you can click `F4: delete` without selecting a block to delete a single line.
+
+ ![](../../../_assets/tp630/blockedit/50_delete.PNG)
+<br><br>
+
+#### 7. Remark, Unremark
+
+This feature is used to temporarily disable the execution of a specific section in a job program without deleting it.  
+When a block is selected and you click `F5: remark`, the statements within the block are commented out (remarked).
+When a block is selected and you click `F6: unremark`, the comments are removed (unremarked).  
+Additionally, you can comment or uncomment a single line without selecting a block.
+
+{% hint style="info" %}
+- Less than version V60.30-00 : Steps are not remarked.
+- Version V60.30-00 or later : Steps are also remarked.
+{% endhint %}
+
+ ![](../../../_assets/tp630/blockedit/60_remark.PNG)
+<br><br>
+
+#### 8. Closing Block Edit Mode
+
+Block edit mode can be closed by clicking `F7: close` or pressing the `ESC` key.
+<br><br>
 
 
+#### 9. Auto-adjusting Step #
 
-3.	Move the cursor by turning the jog dial on the teach pendant. Then, the section from the start line to the line to which the cursor is moved to will be selected as a block.
+For example, if steps S1–S2 are copied and pasted below, the `move` statement originally at S3 will be pushed down and renumbered as S5 due to the inserted 2 steps.
 
-    ![](../../../_assets/tp630/pane-prog-block-edit1_eng.png)
+In this case, all branch statement within the same job such as `goto`, `gosub`, `if` statements, and the timeout address of `wait` statements' target addresses will be automatically adjusted from S3 to S5.
 
-4.	You can edit the statement in the area that is selected as a block using buttons on the function button bar.
+For instance, in the example below, the conditional branch statement `if di45==0 then S3` will be updated to S5 to ensure it still branches to the same `move` statement as before.
 
-    ![](../../../_assets/tp630/pane-prog-block-edit2_eng.png)
+![](../../../_assets/tp630/blockedit/71_branch_adjust.PNG)
+![](../../../_assets/tp630/blockedit/72_branch_adjust.PNG)
 
-* \[cut\]: You can cut the area selected as a block and save it in the clipboard so that it can be pasted to another location.
-* \[copy\]: You can copy the area selected as a block and save it in the clipboard so that it can be pasted to another location.
-* \[paste\]: Paste the area saved in the clipboard to the desired location.
+This automatic step number adjustment is performed for operations that shift step numbers forward or backward, such as recording, deletion, and block editing.
 
-  To paste the statement saved in the clipboard, you should select the cursor position using the jog dial and then touch the \[paste\] button. Then, the statement will be inputted into the line right below the current cursor position.
+{% hint style="info" %}
+The following specifications apply from version V60.30-00 and later.
+{% endhint %}
 
-* 
-  \[delete\]: You can delete the selected area.
+If a target step is removed due to deletion or remarking, it will be adjusted as `deleted_step#` or `remarked_step#`, as shown below.  
+Please manually adjust these modified target addresses to the appropriate step number (or line number/label).
+(If left unchanged, a syntax error will occur when executing the statement.)
 
-5.	When you complete editing a block, press the <**ESC**> key on the teach pendant or touch the \[close\] button on the function button bar to exit the block editing mode.
-
-
-
-
-
+![](../../../_assets/tp630/blockedit/76_branch_adjust.PNG)
 # 4. Service
 
 You can use the program’s various service function menus such as variable and file management.
@@ -4471,9 +4563,11 @@ If the program being played back is modified externally \(PC\) and downloaded to
 
 
 
-* \[9: Teach pendent seperation\]: You can disconnect the teach pendant from the controller to operate the robot in auto mode.
+* \[9: Teach pendent disconnection\]: You can disconnect the teach pendant from the controller to operate the robot in auto mode.
 
-  * If set as <Disconnect>, there will be no “E0015 Teaching pendant operation abnormal” error, which would otherwise occur when the communication between the teach pendant and the controller is severed. 
+  * If set to <Disconnect>, no "E2800 Teaching Pendant Operation Abnormal" error occurs when communication between the teaching pendant and the main b/d is disconnected. (The robot operates even when communication is disconnected.)
+
+  * In the <Connect> state, you can set a timeout period to determine whether communication is lost.
 
   * When it is set as <Disconnect> and the teach pendant is disconnected from the controller, and power is supplied, the controller will recognize the current mode as remote mode, allowing the robot to be auto-operated through external Motor On and external start-up. 
 
@@ -5385,9 +5479,9 @@ By registering the robot’s arbitrary posture as the home position, you can all
 
 # 7.3.6.1 User Coordinate System
 
-The user coordinate system is a coordinate system that is to be set at a position designated by the user. To use the user coordinate system, first, teach three reference steps that are needed to define the user coordinate system, and then register the user coordinate system by designating the taught program number and user coordinate system number.
+The user coordinate system is a coordinate system that is to be set at a position designated by the user. To use the user coordinate system, first, teach three reference steps that are needed to define the user coordinate system, and then register the user coordinate system by designating the taught program number and step order.
 
-Teach three reference steps by following the procedures below.
+Teach three reference steps by following the procedures below. The following procedure explains when the step order is specified as "OXY" (O: origin pose, X: axis pose, Y: plane pose).
 
 ![Figure 56 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
 
@@ -5400,7 +5494,7 @@ Teach three reference steps by following the procedures below.
 
 {% hint style="info" %}
 * When the teaching of the user coordinate system setting program is performed, the TCP should be set to the correct values. Check whether the tool data of the currently selected tool is inputted correctly. 
-* You can register up to 10 user coordinate systems.
+* You can register up to 20 user coordinate systems.
 
 
 {% endhint %}
@@ -5410,14 +5504,16 @@ The cautions in recording the reference points for defining the coordinate syste
 
 * The reference 3 points should not exist on the same linear line.
 * The distance between the reference 3 points should not be too close to each other.
-* Subsequent steps after the XY plane in the user coordinate system is once defined will not have any effect on the coordinate system registration.
+* Subsequent steps after S3 will not have any effect on the coordinate system registration.
 {% endhint %}
 
-The method to register the user coordinate system by designating the taught program number and user coordinate system number is as follows.
+The method to register the user coordinate system by designating the taught program number and step order is as follows.
 
-1.	Touch the \[2: Control Parameter &gt; 6: Coordinate System Registration &gt; 1: User Coordinate System\] menu.
+1. Touch the \[2: Control Parameter &gt; 6: Coordinate System Registration &gt; 1: User Coordinate System\] menu.
 
-2.	Set the user coordinate system name and program number, and the distance and angle from each axis origin.
+2. Go to the user coordinate system you want to register (you can create it with the "+" button).
+3. After specifying the program number and step order, press the [F1:JOB Calculation] button.
+4. The position of the calculated user coordinate system origin is displayed.
 
     ![](../../../_assets/tp630/ctrl-user-coord_eng.png)
 
@@ -5435,7 +5531,7 @@ The method to register the user coordinate system by designating the taught prog
       </td>
       <td style="text-align:left">Detailed information on the coordinate system selected from the user coordinate
         system list. You can set the coordinate system name and description, the
-        taught program number, and the distance and angle from each axis origin.</td>
+        taught program number, step order and the origin pose based on base axis origin.</td>
     </tr>
     <tr>
       <td style="text-align_assets
@@ -5455,9 +5551,9 @@ The method to register the user coordinate system by designating the taught prog
             name of the coordinate system to which the value is to be applied, and
             then touch the <b>[Paste Page]</b> button.</li>
           <li><b>[Calc.from job]</b>: You can calculate the user coordinate system based
-            on the taught program to define the user coordinate system.
+            on the taught program and step order to define the user coordinate system.
             <br />If you touch the <b>[Calc. from job]</b> button after inputting the taught
-            program number in the<b> [Job no.]</b> option, the origin and angle of the
+            program number in the<b> [Job no.]</b> option and step order, the origin of the
             user coordinate system will be calculated.</li>
         </ul>
       </td>
@@ -6564,6 +6660,8 @@ In the section where the corresponding input signal is ON, the corresponding axi
 
 When an input signal is set to a coordinate system, if the input signal turns on, the matching coordinate system is selected. <br>
 
+The input signal corresponding to the mechanism number can change the mechanism depending on the status. <br>
+
 ![](../../../_assets/tp630/jogging_in_signal.png)
 
 # 7.5.16.2 Jogging(open-api)
@@ -6592,6 +6690,8 @@ When the set input signal becomes ON, it changes to the corresponding speed leve
 
 This is a function that moves the axis of the robot specified by signal input to the specified position at the specified speed. <br>
 In the figure below, when the fb2.di34 signal is turned on, the robot moves at 10% speed so that the position of the robot's 6 axes is 30 degrees. <br>
+
+If you want to move two or more axes of the robot simultaneously, set the input signals to the same value. At this time, the movement speed is applied to the setting value recorded first among them. <br>
 
 ![](../../../_assets/tp630/robot_move.png)
 

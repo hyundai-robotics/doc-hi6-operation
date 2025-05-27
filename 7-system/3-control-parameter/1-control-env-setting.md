@@ -48,3 +48,23 @@ Delays may occur in the process of activating/deactivating the power-saving func
 
 * \[Plc execution time rate\]: When using a embedded PLC, you can adjust the PLC execution time inside the controller. The controller internally executes the PLC ladder program every 5ms, so set how much PLC execution is allocated. The larger this ratio leads the shorter the scan time of the PLC program. But if it is too large, the CPU execution time may be insufficient and a task execution time exceeded error may occur.
 
+* \[Cycle Time Optimization Mode\]: This feature reduces the robot’s step movement time during automatic playback to improve productivity.
+
+  ✅ Feature Description
+ 
+  - **Enabled**
+    - Dynamically adjusts acceleration/deceleration curves and maximum speed for faster movement.
+    - *Dynamic motion adjustment applied*
+
+  - **Disabled**
+    - Uses predefined acceleration, deceleration, and maximum speed settings.
+    - *Operates in standard motion profile mode*
+
+  - **Dynamic Motion Ratio** (`0 ~ 100`)
+    - `0`: Disabled (static motion)
+    - `1 ~ 100`: Adjusts the intensity of dynamic motion
+    - Higher values apply more aggressive optimization for speed and acceleration
+
+  > 💡 **Tip:** For processes where cycle time is critical (e.g., repetitive pick-and-place), applying a high dynamic motion ratio can help improve throughput.. 
+  
+  > Be aware that higher values may lead to mechanical vibration or trigger over-torque faults, especially under high payload or rapid directional changes.
