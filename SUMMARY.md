@@ -16,7 +16,7 @@
     * [1.2.3 Hi6 티치 펜던트 화면](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/README.md)
       * [1.2.3.1 제목 표시줄](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/1-title-area.md)
       * [1.2.3.2 상태 표시줄](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/2-status-bar.md)
-      * [1.2.3.3 R막대 버튼](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/3-Rbt-bar.md)
+      * [1.2.3.3 R버튼 막대](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/3-Rbt-bar.md)
       * [1.2.3.4 모니터링 창](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/4-mon-area.md)
       * [1.2.3.5 기능버튼 줄](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/5-function-buttons.md)
       * [1.2.3.6 입력 표시줄](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/6-input-area.md)
