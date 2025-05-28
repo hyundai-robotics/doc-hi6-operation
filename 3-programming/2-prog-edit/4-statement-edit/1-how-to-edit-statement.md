@@ -2,7 +2,7 @@
 
 The following shows how to edit a statement.
 
-1.	In the JOB program window, select the statement area by pressing the &lt;←/→&gt; key on the teach pendant. The statement area will be selected while in the statement cursor status.
+1.	In the JOB program window, select the statement area by pressing the &lt;↑/↓&gt; key on the teach pendant. The statement area will be selected while in the statement cursor status.
 
 2.	Press the <<b>ENTER</b>> key on the teach pendant while in the statement cursor status. Then, switching to the statement cursor status will occur and a parameter will be selected, and the selected parameter value will appear in the input area at the bottom.
 

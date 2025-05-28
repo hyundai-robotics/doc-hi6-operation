@@ -183,7 +183,7 @@
       * [7.3.10.4 What is a temporary-key?](7-system/3-control-parameter/10-license-key/4-temporary-key.md)
       * [7.3.10.5 Temporary-key registration](7-system/3-control-parameter/10-license-key/5-temporary-key-registration.md)
     * [7.3.11 Industrial Communication \(fieldbus\)](7-system/3-control-parameter/11-industrial-comm/README.md)
-      * [7.3.11.1 Firmware Setting](7-system/3-control-parameter/11-industrial-comm/1-firmware-set.md)
+      * [7.3.11.1 PCI Slot Settings](7-system/3-control-parameter/11-industrial-comm/1-pci-slot-set.md)
       * [7.3.11.2 Industrial Communication Setting](7-system/3-control-parameter/11-industrial-comm/2-industrial-comm-set.md)
       * [7.3.11.3 Monitoring](7-system/3-control-parameter/11-industrial-comm/3-monitoring.md)
   * [7.4 Robot Parameters](7-system/4-robot-parameter/README.md)
