@@ -2,7 +2,7 @@
 
 You can set the PCI slot to be used for the industrial communication.
 
-1.	Touch the \[2: Control Parameter &gt; 11: Industrial Communication &gt; 1: PCI slot Setting &gt; 1 Channel\] menu. Then, the PCI slot setting screen will appear.
+1.	Touch the \[2: Control Parameter &gt; 11: Industrial Communication &gt; 1: PCI Slot Settings &gt; 1 Channel\] menu. Then, the PCI slot setting screen will appear.
 
 2.	Select the desired tab and then set the communication method \(Master / Slave\) and protocol. After that, tap the \[OK\] button.
 
