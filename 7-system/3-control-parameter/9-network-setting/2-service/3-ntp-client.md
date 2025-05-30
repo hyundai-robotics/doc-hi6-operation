@@ -1,5 +1,6 @@
 # 7.3.9.2.3 NTP 클라이언트
 
 제어기의 시간을 자동으로 NTP 서버와 동기화 할 수 있습니다. <br>
-자세한 내용은 "Hi6 로봇제어기 기능설명서 - NTP 시간 동기화"를 참조하십시오.
+
+자세한 내용은 "[Hi6 로봇제어기 기능설명서 - NTP 시간 동기화](https://hrbook-hrc.web.app/#/view/doc-hi6-ntp-time-synchronization/korean/README)"를 참조하십시오.
 

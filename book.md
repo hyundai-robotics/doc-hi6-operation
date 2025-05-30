@@ -2437,6 +2437,10 @@ job 프로그램의 특정 영역을 삭제하지는 않으면서 임시로 실�
 * \[6: 프로그램 변환\]: 작성된 프로그램의 조건 및 위치 등을 일괄 또는 개별 변환합니다.
 * \[7: 시스템 진단\]: 로봇과 제어기의 상태를 확인하고 시스템의 버전을 업데이트합니다.
 * \[8: 날짜, 시간 설정\]: 제어기의 날짜와 시간을 설정합니다.
+* \[9: TP 응용프로그램 종료\]: TP(티치 펜던트) 응용프로그램을 종료합니다.
+* \[10: 앱(App)\]: 티치 펜던트에 설치되어 실행되는 소프트웨어를 관리합니다.
+* \[11: 티치펜던트 옵션\]: 티치 펜던트의 소리와 화면꺼짐 시간을 설정합니다.
+* \[19: 산업용 통신 모니터링\]: 펌웨어 정보 및 통신 상태를 모니터링합니다.
 
 
 
@@ -2988,7 +2992,46 @@ V60.26-00 부터 지원됩니다.
 
 
 
-# 5. 조건 설정
+# 4.6 앱(App)
+
+티치 펜던트에 설치되어 실행되는 소프트웨어를 관리합니다.
+
+자세한 내용은 "[Hi6 로봇제어기 기능설명서 - Teach Pendant 앱(App)](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/korean/README)"을 참조하십시오.
+
+# 4.7 티치펜던트 옵션
+
+티치펜던트의 소리와 화면꺼짐 시간을 설정합니다.
+
+![](../_assets/tp630/svc-option.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">티치 펜던트의 소리 발생 여부를 선택합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">티치펜던트의 화면이 꺼지는 시간을 선택합니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+# 4.8 산업용 통신 모니터링
+
+펌웨어 정보 및 통신 상태를 모니터링합니다.
+
+자세한 내용은 "[Hi6 로봇제어기 기능설명서 - 산업용 통신 > 1. CIFX PCI 통신 > 1.4 CIFX PCI 통신 모니터링](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/korean/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README)"을 참조하십시오.# 5. 조건 설정
 
 프로그램을 수정하지 않고 운전 조건만 간편히 변경합니다. 변경한 설정값은 제어기가 재시동되어도 동일하게 유지됩니다.
 
@@ -5581,7 +5624,8 @@ fn 입력, fn 출력 모니터링 창을 열어, 각 fn객체의 dio 혹은 xy �
 # 7.3.9.2.3 NTP 클라이언트
 
 제어기의 시간을 자동으로 NTP 서버와 동기화 할 수 있습니다. <br>
-자세한 내용은 "Hi6 로봇제어기 기능설명서 - NTP 시간 동기화"를 참조하십시오.
+
+자세한 내용은 "[Hi6 로봇제어기 기능설명서 - NTP 시간 동기화](https://hrbook-hrc.web.app/#/view/doc-hi6-ntp-time-synchronization/korean/README)"를 참조하십시오.
 
 # 7.3.9.2.4 이더넷 통신 설정
 
