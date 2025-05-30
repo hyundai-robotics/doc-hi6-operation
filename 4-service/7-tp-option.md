@@ -14,13 +14,13 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../_assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">티치 펜던트의 소리 발생 여부를 선택합니다.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../_assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">티치펜던트의 화면이 꺼지는 시간을 선택합니다.</td>
     </tr>
