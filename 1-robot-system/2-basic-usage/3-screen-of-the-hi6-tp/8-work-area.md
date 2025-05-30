@@ -42,6 +42,6 @@ JOB 프로그램을 편집하는 작업 영역입니다. 자세한 프로그램 
   </tbody>
 </table>
 
- 편집 시도 중 파일 속성에 따라 아래와 같은 에러가 발생할 수 있습니다. 파일 속성에 관한 내용은  "[4.2.4 파일 보호](../../../4-menu/2-file-manager/4-file-protect.md)" 절을 참고하십시오.
+ 편집 시도 중 파일 속성에 따라 아래와 같은 에러가 발생할 수 있습니다. 파일 속성에 관한 내용은  "[4.2.4 파일 보호](../../../4-service/2-file-manager/4-file-protect.md)" 절을 참고하십시오.
 
 ![](../../../_assets/tp630/pop-error-fileprotect.png)
