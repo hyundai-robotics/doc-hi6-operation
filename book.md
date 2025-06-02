@@ -2579,15 +2579,12 @@ You can use the program’s various service function menus such as variable and 
 
 * \[5: File Manager\]: You can manage files in the main board’s internal memory, teach pendant, or removable storage device.
 * \[6: Program Conversion\]: You can convert the data, such as the condition and location of the created program, by batch or individually.
-* 
-  \[7: System Diagnosis\]: You can check the status of the robot and controller and update the system version.
-
-* 
-  \[8: Date, time setting\]: You can set the date and time of the controller.
-
-
-
-
+* \[7: System Diagnosis\]: You can check the status of the robot and controller and update the system version.
+* \[8: Date, time setting\]: You can set the date and time of the controller.
+* \[9: Exit TP application\]: Exit the TP(Teach Pendant) application.
+* \[10: App\]: Manages the software installed and running on the teach pendant.
+* \[11: Teach pendant option\]: Set the sound and screen save time of the teach pendant.
+* \[19: Industrial Communication Monitoring\]: Monitor firmware information and communication status.
 
 # 4.2 File Management
 
@@ -3109,6 +3106,47 @@ You can set the date and time of the controller.
 
 
 
+
+# 4.6 App
+
+Manages the software installed and running on the teach pendant.
+
+For more information, refer to "[Hi6 Robot Controller Function Manual - Teach Pendant App](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/english/README)".
+
+# 4.7 Teach pendant option
+
+Set the sound and screen save time of the teach pendant.
+
+![](../_assets/tp630/svc-option_eng.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Number</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">Select whether the teach pendant will make a sound.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">Select the time when the teach pendant screen is turned off.</td>
+    </tr>
+  </tbody>
+</table>
+
+# 4.8 Industrial Communication Monitoring
+
+Monitor firmware information and communication status.
+
+For more information, refer to "[Hi6 Robot Controller Function Manual - Industrial Communication > 1. CIFX PCI Communication > 1.4 CIFX PCI - Monitoring Industrial Communication](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/english/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README)"
 
 # 5. Condition Setting
 
@@ -5733,7 +5771,8 @@ For more information, refer to “Hi6 Robot Controller Function Manual - Modbus�
 # 7.3.9.2.3 NTP client
 
 The controller's time can be automatically synchronized with the NTP server. <br>
-For more information, refer to “Hi6 Robot Controller Function Manual - NTP time synchronization”.
+
+For more information, refer to “[Hi6 Robot Controller Function Manual - NTP time synchronization](https://hrbook-hrc.web.app/#/view/doc-hi6-ntp-time-synchronization/english/README)”.
 
 # 7.3.10 Register license key of option function
 
