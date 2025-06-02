@@ -3129,13 +3129,13 @@ Set the sound and screen save time of the teach pendant.
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../../_assets/c1.png" alt/>
+        <img src="../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Select whether the teach pendant will make a sound.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../_assets/c2.png" alt/>
+        <img src="../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">Select the time when the teach pendant screen is turned off.</td>
     </tr>
