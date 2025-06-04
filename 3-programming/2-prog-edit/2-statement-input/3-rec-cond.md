@@ -6,7 +6,7 @@ When a statement is inputted using the \<**REC**\> key, the current posture of t
 
     ![](../../../_assets/tp630/lbt-record_eng.png)
 
-2.	After setting the interpolation, moving speed and unit, accuracy, and tool number, touch the \[OK\] button \(![](../../../_assets/icon-ok.png)\).
+2.	After setting the interpolation, moving speed and unit, accuracy, and tool number, touch the \[check\] button \(![](../../../_assets/icon-ok.png)\).
 
     ![](../../../_assets/tp630/lbt-record-edit_eng.png)
 
