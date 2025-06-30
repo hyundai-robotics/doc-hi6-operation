@@ -1,6 +1,6 @@
 ﻿# 7.3.5 Home Position Registration
 
-By registering the robot’s arbitrary posture as the home position, you can allow the home position signal to be outputted to the output signal field when the robot enters this position. The home position can be designated based on the posture of each axis, and up to eight postures can be registered and used, and the margin for each axis can be additionally set.
+By registering the robot’s arbitrary posture as the home position, you can allow the home position signal to be outputted to the output signal field when the robot enters this position. The home position can be designated based on the posture of each axis, and up to sixteen postures can be registered and used, and the margin for each axis can be additionally set.
 
 1.	Touch the \[2: Control Parameter &gt; 5: Registration of Home Position\] menu.
 
