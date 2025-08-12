@@ -2,7 +2,6 @@
 
 ❗❗ **Available from version V60.28-00.**
 </br>
-**⛔ Do not use this function in supervisor mode except in special cases.**
 
 ### 1️⃣ Overview
 
@@ -46,16 +45,6 @@ This function finds the optimal gain by moving the additional axis within the ra
 * The additional axis autotuning process begins.
 * During tuning, the additional axis may make brief loud noises (as it searches for the vibration gain value)
 * Once tuning is completed, the gain values of the tuning paramter Kv before and after tuning will be displayed. Pressing [OK] will prompt a window asking whether to apply the tuned gain. If press [enter], the tuned gain will be applied. If press [No], the original gain value will be retained.
-
-### 3️⃣ Supervisor Mode
-
-**⛔ Do not use this function in supervisor mode except in special cases.**</br>
-_(For use only by developer or in speicial situations)_.
-
-![](../../_assets/_7.7.7_supervisor_en.png)
-
-* **Minimum gain(Kv)**: Allows modification of the starting tuned value for gain searching. This is necessary if the vibration gain value for a specific additional axis is too low. **Arbitrary changes are not permitted.**
-* **Mode**: A developer UI. It should be used with the default value (0)
 
 ### ⚠️ Note
 
