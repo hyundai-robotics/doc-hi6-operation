@@ -2316,7 +2316,7 @@ When a statement is inputted using the \<**REC**\> key, the current posture of t
 
     ![](../../../_assets/tp630/lbt-record_eng.png)
 
-2.	After setting the interpolation, moving speed and unit, accuracy, and tool number, touch the \[OK\] button \(![](../../../_assets/icon-ok.png)\).
+2.	After setting the interpolation, moving speed and unit, accuracy, and tool number, touch the \[check\] button \(![](../../../_assets/icon-ok.png)\).
 
     ![](../../../_assets/tp630/lbt-record-edit_eng.png)
 
@@ -5467,7 +5467,7 @@ When the robot ready is completed, set the conditions for signal output in the \
 
 # 7.3.5 Home Position Registration
 
-By registering the robot’s arbitrary posture as the home position, you can allow the home position signal to be outputted to the output signal field when the robot enters this position. The home position can be designated based on the posture of each axis, and up to eight postures can be registered and used, and the margin for each axis can be additionally set.
+By registering the robot’s arbitrary posture as the home position, you can allow the home position signal to be outputted to the output signal field when the robot enters this position. The home position can be designated based on the posture of each axis, and up to sixteen postures can be registered and used, and the margin for each axis can be additionally set.
 
 1.	Touch the \[2: Control Parameter &gt; 5: Registration of Home Position\] menu.
 
@@ -6728,6 +6728,29 @@ If you want to move two or more axes of the robot simultaneously, set the input 
 ![](../../../_assets/tp630/robot_move.png)
 
 
+# 7.5.22 Reduced Speed Mode
+
+When the input signal (di) changes from OFF to ON, the robot speed is reduced according to the set reduction ratio. <br>
+In the move command, the robot speed is applied by combining the original speed value with the auto mode robot speed and the reduction ratio. <br>
+
+![](../../_assets/tp630/reduced_spd_mode.png)
+
+  * Input Signal: Sets the signal received by the controller.
+  * Active: 
+    * High : Reduction is applied when the signal is ON, and canceled when the signal is OFF.
+    * Low : Reduction is applied when the signal is OFF, and canceled when the signal is ON.
+  * Reduced Speed Rate:  
+    * Determines the ratio by which the speed will be reduced.
+    * When the reduced speed mode input signal is received, the robot speed is set to the auto mode robot speed multiplied by the reduced speed rate.
+
+{% hint style="info" %}
+* The reduction ratio is not applied in manual mode.
+{% endhint %}
+
+{% hint style="warning" %}
+* Select the correct active condition that matches the state of the input signal.
+* When an I/O signal is received during playback, the reduced speed mode will still be applied.
+{% endhint %}
 # 7.6 Initialization
 
 If the robot controller does not operate normally, initialize the system. The system initialization must be performed by an engineer who has experience in initial setting of the robots of Hyundai Robotics.
@@ -7471,7 +7494,6 @@ The axis origin and tool length X, Y, and Z values of the axes 2–5 \(H, V, R2,
 
 ❗❗ **Available from version V60.28-00.**
 </br>
-**⛔ Do not use this function in supervisor mode except in special cases.**
 
 ### 1️⃣ Overview
 
@@ -7515,16 +7537,6 @@ This function finds the optimal gain by moving the additional axis within the ra
 * The additional axis autotuning process begins.
 * During tuning, the additional axis may make brief loud noises (as it searches for the vibration gain value)
 * Once tuning is completed, the gain values of the tuning paramter Kv before and after tuning will be displayed. Pressing [OK] will prompt a window asking whether to apply the tuned gain. If press [enter], the tuned gain will be applied. If press [No], the original gain value will be retained.
-
-### 3️⃣ Supervisor Mode
-
-**⛔ Do not use this function in supervisor mode except in special cases.**</br>
-_(For use only by developer or in speicial situations)_.
-
-![](../../_assets/_7.7.7_supervisor_en.png)
-
-* **Minimum gain(Kv)**: Allows modification of the starting tuned value for gain searching. This is necessary if the vibration gain value for a specific additional axis is too low. **Arbitrary changes are not permitted.**
-* **Mode**: A developer UI. It should be used with the default value (0)
 
 ### ⚠️ Note
 

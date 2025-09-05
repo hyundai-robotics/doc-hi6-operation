@@ -220,6 +220,7 @@
       * [7.5.16.2 Jogging(open-api)](7-system/5-application-parameter/16-joystick-mode/2-jogging-open-api.md)
       * [7.5.16.3 Speed](7-system/5-application-parameter/16-joystick-mode/3-speed-level.md)
       * [7.5.16.4 Moving](7-system/5-application-parameter/16-joystick-mode/4-robot-move.md)
+    * [7.5.22 Reduced Speed Mode](7-system/5-application-parameter/22-reduced-speed-mode.md)
 
   * [7.6 Initialization](7-system/6-initialization/README.md)
     * [7.6.1 System Format](7-system/6-initialization/1-system-format.md)
