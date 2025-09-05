@@ -228,6 +228,7 @@
       * [7.5.16.2 조깅(open-api)](7-system/5-application-parameter/16-joystick-mode/2-jogging-open-api.md)
       * [7.5.16.3 속도](7-system/5-application-parameter/16-joystick-mode/3-speed-level.md)
       * [7.5.16.4 로봇이동](7-system/5-application-parameter/16-joystick-mode/4-robot-move.md)
+    * [7.5.22 저속 운전 모드](7-system/5-application-parameter/22-reduced-speed-mode.md)
 
   * [7.6 초기화](7-system/6-initialization/README.md)
     * [7.6.1 시스템 초기화](7-system/6-initialization/1-system-format.md)
