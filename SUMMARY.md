@@ -239,7 +239,7 @@
     * [7.6.4 시리얼 엔코더 리셋](7-system/6-initialization/4-serial-encoder-reset.md)
     * [7.6.5 부가축 파라미터 설정](7-system/6-initialization/5-add-axis-param.md)
     * [7.6.6 메커니즘 설정](7-system/6-initialization/6-mechannism-set.md)
-    * [7.6.7 축 동기 기능](7-system/6-initialization/7-axis-sync.md)
+    * [7.6.7 축 동기 설정](7-system/6-initialization/7-axis-sync.md)
     * [7.6.8 축 잠금](7-system/6-initialization/8-axis-lock/README.md)
       * [7.6.8.1 기능 설정 방법](7-system/6-initialization/8-axis-lock/1-setting.md)
       * [7.6.8.2 기능 적용여부 확인](7-system/6-initialization/8-axis-lock/2-function-check.md)
