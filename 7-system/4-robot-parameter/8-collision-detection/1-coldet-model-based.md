@@ -18,7 +18,7 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">모델 기반 충돌 검지 기능 사용 유무를 설정합니다.</td>
     </tr>
