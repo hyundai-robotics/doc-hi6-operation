@@ -18,6 +18,6 @@
 
 {% hint style="info" %}
 * 포지셔너 캘리브레이션 기능은 포지셔너 그룹이 설정된 상태에서 사용할 수 있습니다.
-* 자세한 내용은 “Hi6 제어기 포지셔너 동기 기능 설명서”를 참조하십시오.
+* 자세한 내용은 “[Hi6 제어기 포지셔너 동기 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/korean/README)”를 참조하십시오.
 {% endhint %}
 
