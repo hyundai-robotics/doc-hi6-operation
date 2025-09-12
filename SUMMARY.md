@@ -110,7 +110,7 @@
   * [4.8 산업용 통신 모니터링](4-service/8-industrial-communication-monitoring.md)
   * [4.9 시스템 프로그램](4-service/9-system-program.md)
   * [4.10 안전 시스템 진단](4-service/10-safety-system-diagnosis/README.md)
-    * [4.10.1 EtherCAT 네트워크 모니터링](4-service/10-safety-system-diagnosis/1-EtherCAT-Network-Monitoring.md)  
+    * [4.10.1 EtherCAT 네트워크 모니터링](4-service/10-safety-system-diagnosis/1-EtherCAT-network-monitoring.md)  
   * [4.11 협동로봇 시스템 진단](4-service/11-cobot-system-diagnosis.md)
     * [4.11.1 툴 IO 시스템 설정](4-service/11-cobot-system-diagnosis/1-Tool-IO-system-settings.md)  
     * [4.11.2 툴 IO 인터페이스 설정](4-service/11-cobot-system-diagnosis/2-Tool-IO-interface-setting.md)  
