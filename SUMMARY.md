@@ -109,7 +109,7 @@
   * [4.7 티치펜던트 옵션](4-service/7-tp-option.md)
   * [4.8 산업용 통신 모니터링](4-service/8-industrial-communication-monitoring.md)
   * [4.9 시스템 프로그램](4-service/9-system-program.md)
-  * [4.10 안전 시스템 진단](4-service/10-safety-system-diagnosis.md)
+  * [4.10 안전 시스템 진단](4-service/10-safety-system-diagnosis/README.md)
   * [4.11 협동로봇 시스템 진단](4-service/11-cobot-system-diagnosis.md)
   * [4.12 옵션 장치 진단](4-service/12-option-system-diagnosis.md)
 * [5. 조건 설정](5-conditional-setting/README.md)
