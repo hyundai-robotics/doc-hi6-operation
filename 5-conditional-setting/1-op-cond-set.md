@@ -4,9 +4,6 @@
 
     ![](../_assets/image_552_2.png)  
 
-    ![](../_assets/image_552_3.png)  
-
-
 2.	운전 조건 설정값을 변경한 후 \[**확인**\] 버튼을 터치하십시오. 세부 설정값들에 대한 설명은 다음장으로 이어집니다.
 
     ![](../_assets/tp630/sbar-condi-setting.png)
