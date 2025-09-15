@@ -76,7 +76,7 @@
         <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">신호출력</td>
-      <td style="text-align:left">로봇이 스텝에 도달 시 출력 할 신호</td>
+      <td style="text-align:left">move 시작 시 출력 할 신호</td>
     </tr>
         <tr>
       <td style="text-align:left">
