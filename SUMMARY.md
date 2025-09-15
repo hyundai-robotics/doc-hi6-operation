@@ -156,6 +156,8 @@
     * [6.5.11 서보툴 체인지](6-monitoring/5-appl/11-tool-change.md)
     * [6.5.20 아크 용접 데이터](6-monitoring/5-appl/20-arc.md)
     * [6.5.28 힘 제어 모니터링](6-monitoring/5-appl/28-forcecontrol-monitoring.md)
+  * [6.6 안전 기능](6-monitoring/6-safety-funtion.md)
+
 * [7. 시스템](7-system/README.md)
   * [7.1 시스템 메뉴 사용](7-system/1-setting-menu.md)
   * [7.2 사용자 환경](7-system/2-user-environment.md)
