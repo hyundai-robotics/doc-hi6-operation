@@ -1,7 +1,7 @@
 ﻿# 5.2    운전 조건 설정 정보
 
 
-    ![](../_assets/image_553_2.png)  
+ ![](../_assets/image_553_2.png)  
 
 
 
