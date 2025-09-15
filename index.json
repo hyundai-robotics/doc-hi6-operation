@@ -1136,267 +1136,267 @@
 	},
 	{
 		"link": "7-system/6-initialization/README.md",
-		"char_ofs": 195971,
-		"byte_ofs": 345228
+		"char_ofs": 195895,
+		"byte_ofs": 345063
 	},
 	{
 		"link": "7-system/6-initialization/1-system-format.md",
-		"char_ofs": 196663,
-		"byte_ofs": 346598
+		"char_ofs": 196587,
+		"byte_ofs": 346433
 	},
 	{
 		"link": "7-system/6-initialization/2-robot-type-sel.md",
-		"char_ofs": 197083,
-		"byte_ofs": 347379
+		"char_ofs": 197007,
+		"byte_ofs": 347214
 	},
 	{
 		"link": "7-system/6-initialization/3-usage-set/README.md",
-		"char_ofs": 199130,
-		"byte_ofs": 351523
+		"char_ofs": 199054,
+		"byte_ofs": 351358
 	},
 	{
 		"link": "7-system/6-initialization/3-usage-set/1-spot-welding.md",
-		"char_ofs": 199343,
-		"byte_ofs": 351993
+		"char_ofs": 199267,
+		"byte_ofs": 351828
 	},
 	{
 		"link": "7-system/6-initialization/3-usage-set/2-arc-welding.md",
-		"char_ofs": 199590,
-		"byte_ofs": 352499
+		"char_ofs": 199514,
+		"byte_ofs": 352334
 	},
 	{
 		"link": "7-system/6-initialization/4-serial-encoder-reset.md",
-		"char_ofs": 200035,
-		"byte_ofs": 353349
+		"char_ofs": 199959,
+		"byte_ofs": 353184
 	},
 	{
 		"link": "7-system/6-initialization/5-add-axis-param.md",
-		"char_ofs": 201772,
-		"byte_ofs": 356349
+		"char_ofs": 201696,
+		"byte_ofs": 356184
 	},
 	{
 		"link": "7-system/6-initialization/6-mechannism-set.md",
-		"char_ofs": 204882,
-		"byte_ofs": 361164
+		"char_ofs": 204703,
+		"byte_ofs": 360837
 	},
 	{
 		"link": "7-system/6-initialization/7-axis-sync.md",
-		"char_ofs": 206684,
-		"byte_ofs": 364841
+		"char_ofs": 206505,
+		"byte_ofs": 364514
 	},
 	{
 		"link": "7-system/6-initialization/8-axis-lock/README.md",
-		"char_ofs": 208126,
-		"byte_ofs": 367932
+		"char_ofs": 207947,
+		"byte_ofs": 367605
 	},
 	{
 		"link": "7-system/6-initialization/8-axis-lock/1-setting.md",
-		"char_ofs": 208871,
-		"byte_ofs": 369359
+		"char_ofs": 208692,
+		"byte_ofs": 369032
 	},
 	{
 		"link": "7-system/6-initialization/8-axis-lock/2-function-check.md",
-		"char_ofs": 209342,
-		"byte_ofs": 370270
+		"char_ofs": 209163,
+		"byte_ofs": 369943
 	},
 	{
 		"link": "7-system/7-auto-calibration/README.md",
-		"char_ofs": 210065,
-		"byte_ofs": 371708
+		"char_ofs": 209886,
+		"byte_ofs": 371381
 	},
 	{
 		"link": "7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md",
-		"char_ofs": 210371,
-		"byte_ofs": 372367
+		"char_ofs": 210192,
+		"byte_ofs": 372040
 	},
 	{
 		"link": "7-system/7-auto-calibration/2-positioner-calib.md",
-		"char_ofs": 213675,
-		"byte_ofs": 378153
+		"char_ofs": 213496,
+		"byte_ofs": 377826
 	},
 	{
 		"link": "7-system/7-auto-calibration/3-load-estimation.md",
-		"char_ofs": 214469,
-		"byte_ofs": 379869
+		"char_ofs": 214290,
+		"byte_ofs": 379542
 	},
 	{
 		"link": "7-system/7-auto-calibration/4-base-axis-calibration/README.md",
-		"char_ofs": 216360,
-		"byte_ofs": 383919
+		"char_ofs": 216181,
+		"byte_ofs": 383592
 	},
 	{
 		"link": "7-system/7-auto-calibration/4-base-axis-calibration/1-base-axis-initial-set.md",
-		"char_ofs": 216879,
-		"byte_ofs": 385120
+		"char_ofs": 216700,
+		"byte_ofs": 384793
 	},
 	{
 		"link": "7-system/7-auto-calibration/4-base-axis-calibration/2-base-axis-calib-prog-teach.md",
-		"char_ofs": 217495,
-		"byte_ofs": 386430
+		"char_ofs": 217316,
+		"byte_ofs": 386103
 	},
 	{
 		"link": "7-system/7-auto-calibration/4-base-axis-calibration/3-base-axis-calib-exec.md",
-		"char_ofs": 217924,
-		"byte_ofs": 387334
+		"char_ofs": 217745,
+		"byte_ofs": 387007
 	},
 	{
 		"link": "7-system/7-auto-calibration/4-base-axis-calibration/4-operation-after-base-calib.md",
-		"char_ofs": 218161,
-		"byte_ofs": 387788
+		"char_ofs": 217982,
+		"byte_ofs": 387461
 	},
 	{
 		"link": "7-system/7-auto-calibration/5-gravity-direction-auto-set.md",
-		"char_ofs": 218661,
-		"byte_ofs": 388883
+		"char_ofs": 218482,
+		"byte_ofs": 388556
 	},
 	{
 		"link": "7-system/7-auto-calibration/6-robot-tool-calibration.md",
-		"char_ofs": 219249,
-		"byte_ofs": 390104
+		"char_ofs": 219070,
+		"byte_ofs": 389777
 	},
 	{
 		"link": "7-system/7-auto-calibration/7-Addaxis-autotuning.md",
-		"char_ofs": 221315,
-		"byte_ofs": 394289
+		"char_ofs": 221136,
+		"byte_ofs": 393962
 	},
 	{
 		"link": "8-r-code/README.md",
-		"char_ofs": 223014,
-		"byte_ofs": 397760
+		"char_ofs": 222835,
+		"byte_ofs": 397433
 	},
 	{
 		"link": "8-r-code/1-use-r-code.md",
-		"char_ofs": 223185,
-		"byte_ofs": 398134
+		"char_ofs": 223006,
+		"byte_ofs": 397807
 	},
 	{
 		"link": "8-r-code/2-r0.md",
-		"char_ofs": 224833,
-		"byte_ofs": 400802
+		"char_ofs": 224654,
+		"byte_ofs": 400475
 	},
 	{
 		"link": "8-r-code/3-r115.md",
-		"char_ofs": 225165,
-		"byte_ofs": 401425
+		"char_ofs": 224986,
+		"byte_ofs": 401098
 	},
 	{
 		"link": "8-r-code/4-r117.md",
-		"char_ofs": 225699,
-		"byte_ofs": 402517
+		"char_ofs": 225520,
+		"byte_ofs": 402190
 	},
 	{
 		"link": "8-r-code/5-r210.md",
-		"char_ofs": 226209,
-		"byte_ofs": 403525
+		"char_ofs": 226030,
+		"byte_ofs": 403198
 	},
 	{
 		"link": "8-r-code/6-r211.md",
-		"char_ofs": 226985,
-		"byte_ofs": 405003
+		"char_ofs": 226806,
+		"byte_ofs": 404676
 	},
 	{
 		"link": "8-r-code/7-r212.md",
-		"char_ofs": 227598,
-		"byte_ofs": 406152
+		"char_ofs": 227419,
+		"byte_ofs": 405825
 	},
 	{
 		"link": "8-r-code/8-r213.md",
-		"char_ofs": 228241,
-		"byte_ofs": 407326
+		"char_ofs": 228062,
+		"byte_ofs": 406999
 	},
 	{
 		"link": "8-r-code/9-r214.md",
-		"char_ofs": 228895,
-		"byte_ofs": 408527
+		"char_ofs": 228716,
+		"byte_ofs": 408200
 	},
 	{
 		"link": "8-r-code/10-r215.md",
-		"char_ofs": 229824,
-		"byte_ofs": 410345
+		"char_ofs": 229645,
+		"byte_ofs": 410018
 	},
 	{
 		"link": "8-r-code/11-r220.md",
-		"char_ofs": 230276,
-		"byte_ofs": 411146
+		"char_ofs": 230097,
+		"byte_ofs": 410819
 	},
 	{
 		"link": "8-r-code/12-r314.md",
-		"char_ofs": 230786,
-		"byte_ofs": 412079
+		"char_ofs": 230607,
+		"byte_ofs": 411752
 	},
 	{
 		"link": "8-r-code/13-r358.md",
-		"char_ofs": 231321,
-		"byte_ofs": 413121
+		"char_ofs": 231142,
+		"byte_ofs": 412794
 	},
 	{
 		"link": "8-r-code/14-r359.md",
-		"char_ofs": 232494,
-		"byte_ofs": 415438
+		"char_ofs": 232315,
+		"byte_ofs": 415111
 	},
 	{
 		"link": "8-r-code/15-r360.md",
-		"char_ofs": 233357,
-		"byte_ofs": 417133
+		"char_ofs": 233178,
+		"byte_ofs": 416806
 	},
 	{
 		"link": "8-r-code/16-r361.md",
-		"char_ofs": 235051,
-		"byte_ofs": 419857
+		"char_ofs": 234872,
+		"byte_ofs": 419530
 	},
 	{
 		"link": "8-r-code/17-r321.md",
-		"char_ofs": 235810,
-		"byte_ofs": 421312
+		"char_ofs": 235631,
+		"byte_ofs": 420985
 	},
 	{
 		"link": "9-property/README.md",
-		"char_ofs": 236276,
-		"byte_ofs": 422275
+		"char_ofs": 236097,
+		"byte_ofs": 421948
 	},
 	{
 		"link": "9-property/1-use-property.md",
-		"char_ofs": 236425,
-		"byte_ofs": 422615
+		"char_ofs": 236246,
+		"byte_ofs": 422288
 	},
 	{
 		"link": "9-property/2-move-step-position/README.md",
-		"char_ofs": 239759,
-		"byte_ofs": 427689
+		"char_ofs": 239580,
+		"byte_ofs": 427362
 	},
 	{
 		"link": "9-property/2-move-step-position/1-hidden-pose-move.md",
-		"char_ofs": 239822,
-		"byte_ofs": 427833
+		"char_ofs": 239643,
+		"byte_ofs": 427506
 	},
 	{
 		"link": "9-property/2-move-step-position/2-pose-rec-move.md",
-		"char_ofs": 241912,
-		"byte_ofs": 431072
+		"char_ofs": 241733,
+		"byte_ofs": 430745
 	},
 	{
 		"link": "9-property/3-spot-welding-func.md",
-		"char_ofs": 244266,
-		"byte_ofs": 434629
+		"char_ofs": 244110,
+		"byte_ofs": 434357
 	},
 	{
 		"link": "10-robot-language.md",
-		"char_ofs": 244704,
-		"byte_ofs": 435439
+		"char_ofs": 244548,
+		"byte_ofs": 435167
 	},
 	{
 		"link": "appendices/README.md",
-		"char_ofs": 244826,
-		"byte_ofs": 435633
+		"char_ofs": 244670,
+		"byte_ofs": 435361
 	},
 	{
 		"link": "appendices/rules-occupational-safety.md",
-		"char_ofs": 244837,
-		"byte_ofs": 435656
+		"char_ofs": 244681,
+		"byte_ofs": 435384
 	},
 	{
 		"link": "quality-assurance.md",
-		"char_ofs": 245057,
-		"byte_ofs": 436054
+		"char_ofs": 244901,
+		"byte_ofs": 435782
 	}
 ]
