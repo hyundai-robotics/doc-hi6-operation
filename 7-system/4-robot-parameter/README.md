@@ -6,5 +6,5 @@
 
 2.	원하는 메뉴를 선택하여 로봇 본체의 각종 파라미터를 확인하고 설정하십시오.
 
-![](../../_assets/tp630/robot-menu.png)
+![](../../_assets/tp630/robot-menu2.png)
 

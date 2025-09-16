@@ -6,12 +6,12 @@
 
 2.	원하는 탭을 선택하고 통신 방식\(Master / Slave\)과 프로토콜을 설정한 후 \[**확인**\] 버튼을 터치하십시오. PCI 슬롯 설정이 완료됩니다.
 
-![](../../../_assets/tp630/ctrl-industrial-channel.png)
+![](../../../_assets/tp630/ctrl-industrial-channel2.png)
 
 
 
 {% hint style="warning" %}
-PCI 슬롯 설정 완료 시 슬롯 1 ~ 4에 설정된 CONGIF 파일이 모두 삭제됩니다. 사용 중 통신 PCI 슬롯을 변경하려면 기존의 CONFIG 설정을 별도로 백업해 두고 필요한 경우 복원하여 사용하십시오.
+PCI 슬롯 설정 완료 시 슬롯 1 ~ 3에 설정된 CONGIF 파일이 모두 삭제됩니다. 사용 중 통신 PCI 슬롯을 변경하려면 기존의 CONFIG 설정을 별도로 백업해 두고 필요한 경우 복원하여 사용하십시오.
 {% endhint %}
 
 3.	제어기의 전원을 끈 후 다시 켜십시오.
