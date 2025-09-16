@@ -6,7 +6,7 @@
 * 외란토크 변화율이 설정치를 초과하면 \[E0161 (O축)충격 검지\] 로 표시합니다. 
 
 
-![](../../../_assets/tp630/coldet/collision_detection_of_axis.png)
+![](../../../_assets/tp630/coldet/collision_detection_of_axis2.png)
 
 <table>
   <thead>

@@ -6,7 +6,7 @@
 1. \[3: 로봇 파라미터 &gt; 14: 충돌 검지 &gt; 1: 모델 기반 충돌 검지\] 메뉴를 터치하십시오.
 
 
-![](../../../_assets/tp630/coldet/model_based_coldet_tab_general.png)
+![](../../../_assets/tp630/coldet/model_based_coldet_tab_general2.png)
 
 <table>
   <thead>
