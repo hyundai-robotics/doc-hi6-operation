@@ -1,4 +1,12 @@
-﻿# 7. 시스템
+﻿# 7.9 협동로봇 시스템
 
-설정 항목에서는 사용자의 정보와 각종 파라미터 정보 등을 확인 및 설정할 수 있습니다.
 
+1.	\[협동로봇 시스템\] 메뉴를 터치하십시오. 협동로봇 시스템 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 충돌 검지, 직접 교시를 수행하십시오.
+
+![](../../_assets/tp630/system-cobot-menu.png)
+
+{% hint style="info" %}
+협동로봇 시스템에 대한 자세한 관한 내용은  "[협동로봇 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/korean/README)"을 참고하십시오.
+{% endhint %}
