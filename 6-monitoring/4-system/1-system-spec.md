@@ -9,7 +9,7 @@ You can check all the various data of the robot system or only the data of a spe
 | No. | Description |
 | :--- | :--- |
 | ![](../../_assets/c1.png) | Displays the data of the robot system. You can check the detailed data of a specific type by selecting individual types of information shown above. |
-| ![](../../_assets/c2.png) | \[clear\]: For the rest of the items except for the motion of each axis, you can initialize the maximum value of the system data by type. |
+| ![](../../_assets/c2.png) | \[clear\]: For the rest of the items except for the motion of each axis, you can initialize the maximum value of the system data to the current value by type. |
 
 {% hint style="info" %}
 System character monitoring function is only available in engineer mode.
@@ -29,7 +29,7 @@ You can initialize the maximum value of the data by selecting the type of inform
 1.	Touch the \[Clear\] button at the bottom of the system properties window.
 
 
-2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized.
+2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized to the current value.
 
     ![](../../_assets/tp630/pane-syscharacter-clear_eng.png)
 
