@@ -75,8 +75,10 @@
       <td style="text-align:left">
         <img src="../../../_assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">신호출력</td>
-      <td style="text-align:left">move 시작 시 출력 할 신호</td>
+      <td style="text-align:left">대입문</td>
+      <td style="text-align:left">move 출발 시, 수행 할 대입문
+      
+  왼쪽부터 순차적으로 각 대입문이 수행됩니다.</td>
     </tr>
         <tr>
       <td style="text-align:left">
