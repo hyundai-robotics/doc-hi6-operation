@@ -70,16 +70,16 @@ The step statement is configured as follows.
       <td style="text-align:left">
         <img src="../../../_assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">Stop condition</td>
-      <td style="text-align:left">A condition for the robot to stop moving to execute the next command (step
-        or function)</td>
+      <td style="text-align:left">Output Signal</td>
+      <td style="text-align:left">Start of move output signal</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c7.png" alt/>
       </td>
-      <td style="text-align:left">Output Signal</td>
-      <td style="text-align:left">Start of move output signal</td>
+      <td style="text-align:left">Stop condition</td>
+      <td style="text-align:left">A condition for the robot to stop moving to execute the next command (step
+        or function)</td>
     </tr>
     <tr>
       <td style="text-align:left">
