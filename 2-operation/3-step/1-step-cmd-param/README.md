@@ -66,7 +66,7 @@ The step statement is configured as follows.
       <td style="text-align:left">Tool number</td>
       <td style="text-align:left">Number of the tool in use (0&#x2013;31)</td>
     </tr>
-    <tr>
+        <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c6.png" alt/>
       </td>
@@ -77,6 +77,13 @@ The step statement is configured as follows.
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c7.png" alt/>
+      </td>
+      <td style="text-align:left">Output Signal</td>
+      <td style="text-align:left">Start of move output signal</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c8.png" alt/>
       </td>
       <td style="text-align:left">Comment</td>
       <td style="text-align:left">Description of the step</td>
