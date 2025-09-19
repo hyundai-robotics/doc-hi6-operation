@@ -70,8 +70,8 @@ The step statement is configured as follows.
       <td style="text-align:left">
         <img src="../../../_assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">Output Signal</td>
-      <td style="text-align:left">Start of move output signal</td>
+      <td style="text-align:left">Assignment statement</td>
+      <td style="text-align:left">At the start of the move, each assignment statement is executed sequentially from left to right</td>
     </tr>
     <tr>
       <td style="text-align:left">
