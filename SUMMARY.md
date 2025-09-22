@@ -109,12 +109,10 @@
   * [4.7 티치펜던트 옵션](4-service/7-tp-option.md)
   * [4.8 산업용 통신 모니터링](4-service/8-industrial-communication-monitoring.md)
   * [4.9 시스템 프로그램](4-service/9-system-program.md)
-  * [4.10 안전 시스템 진단](4-service/10-safety-system-diagnosis/README.md)
-    * [4.10.1 EtherCAT 네트워크 모니터링](4-service/10-safety-system-diagnosis/1-EtherCAT-network-monitoring.md)  
-  * [4.11 협동로봇 시스템 진단](4-service/11-cobot-system-diagnosis/README.md)
+  <!-- * [4.11 협동로봇 시스템 진단](4-service/11-cobot-system-diagnosis/README.md)
     * [4.11.1 툴 IO 시스템 설정](4-service/11-cobot-system-diagnosis/1-Tool-IO-system-settings.md)  
-    * [4.11.2 툴 IO 인터페이스 설정](4-service/11-cobot-system-diagnosis/2-Tool-IO-interface-setting.md)  
-  * [4.12 옵션 장치 진단](4-service/12-option-system-diagnosis/README.md)
+    * [4.11.2 툴 IO 인터페이스 설정](4-service/11-cobot-system-diagnosis/2-Tool-IO-interface-setting.md)   -->
+
 * [5. 조건 설정](5-conditional-setting/README.md)
   * [5.1 운전 조건 설정](5-conditional-setting/1-op-cond-set.md)
   * [5.2 운전 조건 설정 정보](5-conditional-setting/2-op-cond-set-info.md)
