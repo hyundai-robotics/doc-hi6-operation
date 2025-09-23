@@ -213,6 +213,8 @@
       * [7.4.9.1 조그인칭 기능의 주요 기능](7-system/4-robot-parameter/9-jog-inch-level/1-jog-inch-main-funcs.md)
       * [7.4.9.2 인칭 조그 조작](7-system/4-robot-parameter/9-jog-inch-level/2-inch-jog-operation.md)
     * [7.4.10 시스템 유지보수](7-system/4-robot-parameter/12-system-maintenance/README.md)
+    * [7.4.13 시스템 고장진단](7-system/4-robot-parameter/13-system-diagnosis/README.md)
+      * [7.4.13.1 가스스프링 압력센서](7-system/4-robot-parameter/13-system-diagnosis/1-gas-spring-pressure_sensor.md)
 
   * [7.5 응용 파라미터](7-system/5-application-parameter/README.md)
     * [7.5.10 명령문 독립 실행](7-system/5-application-parameter/10-cmd-idp-exe.md)
