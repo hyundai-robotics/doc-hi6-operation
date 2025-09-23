@@ -109,9 +109,9 @@
   * [4.7 티치펜던트 옵션](4-service/7-tp-option.md)
   * [4.8 산업용 통신 모니터링](4-service/8-industrial-communication-monitoring.md)
   * [4.9 시스템 프로그램](4-service/9-system-program.md)
-  <!-- * [4.11 협동로봇 시스템 진단](4-service/11-cobot-system-diagnosis/README.md)
-    * [4.11.1 툴 IO 시스템 설정](4-service/11-cobot-system-diagnosis/1-Tool-IO-system-settings.md)  
-    * [4.11.2 툴 IO 인터페이스 설정](4-service/11-cobot-system-diagnosis/2-Tool-IO-interface-setting.md)   -->
+  <!-- * [4.11 협동로봇 시스템 진단](4-service/11-cobot-system-diagnosis/README.md) -->
+    <!-- * [4.11.1 툴 IO 시스템 설정](4-service/11-cobot-system-diagnosis/1-Tool-IO-system-settings.md)   -->
+    <!-- * [4.11.2 툴 IO 인터페이스 설정](4-service/11-cobot-system-diagnosis/2-Tool-IO-interface-setting.md)   -->
 
 * [5. 조건 설정](5-conditional-setting/README.md)
   * [5.1 운전 조건 설정](5-conditional-setting/1-op-cond-set.md)
@@ -195,9 +195,9 @@
       * [7.3.10.4 임시-키란?](7-system/3-control-parameter/10-license-key/4-temporary-key.md)
       * [7.3.10.5 임시-키 발급](7-system/3-control-parameter/10-license-key/5-temporary-key-registration.md)
     * [7.3.11 산업용 통신 \(필드버스\)](7-system/3-control-parameter/11-industrial-comm/README.md)
-      * [7.3.11.1 PCI 슬롯 설정](7-system/3-control-parameter/11-industrial-comm/1-pci-slot-set.md)
-      * [7.3.11.2 산업용 통신 설정](7-system/3-control-parameter/11-industrial-comm/2-industrial-comm-set.md)
-      * [7.3.11.3 모니터링](7-system/3-control-parameter/11-industrial-comm/3-monitoring.md)
+      <!-- * [7.3.11.1 PCI 슬롯 설정](7-system/3-control-parameter/11-industrial-comm/1-pci-slot-set.md) -->
+      <!-- * [7.3.11.2 산업용 통신 설정](7-system/3-control-parameter/11-industrial-comm/2-industrial-comm-set.md) -->
+      <!-- * [7.3.11.3 모니터링](7-system/3-control-parameter/11-industrial-comm/3-monitoring.md) -->
   * [7.4 로봇 파라미터](7-system/4-robot-parameter/README.md)
     * [7.4.1 툴 데이터](7-system/4-robot-parameter/1-tool-data/README.md)
       * [7.4.1.1 툴 데이터 설정](7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)
