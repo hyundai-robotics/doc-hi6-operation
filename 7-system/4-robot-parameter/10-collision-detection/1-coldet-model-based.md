@@ -57,7 +57,7 @@
 </table>
 
 
-![](../../../_assets/tp630/coldet/model_based_coldet_tab_axis.png)
+![](../../../_assets/tp630/coldet/model_based_coldet_tab_axis2.png)
 
 {% hint style="info" %}
 축별 설정 탭은 엔지니어링 모드 이상에서만 활성화 됩니다. 
