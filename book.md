@@ -1431,9 +1431,16 @@ The step statement is configured as follows.
       <td style="text-align:left">Tool number</td>
       <td style="text-align:left">Number of the tool in use (0&#x2013;31)</td>
     </tr>
-    <tr>
+        <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">Assignment statement</td>
+      <td style="text-align:left">At the start of the move, each assignment statement is executed sequentially from left to right</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c7.png" alt/>
       </td>
       <td style="text-align:left">Stop condition</td>
       <td style="text-align:left">A condition for the robot to stop moving to execute the next command (step
@@ -1441,7 +1448,7 @@ The step statement is configured as follows.
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../_assets/c7.png" alt/>
+        <img src="../../../_assets/c8.png" alt/>
       </td>
       <td style="text-align:left">Comment</td>
       <td style="text-align:left">Description of the step</td>
@@ -4286,7 +4293,7 @@ You can check all the various data of the robot system or only the data of a spe
 | No. | Description |
 | :--- | :--- |
 | ![](../../_assets/c1.png) | Displays the data of the robot system. You can check the detailed data of a specific type by selecting individual types of information shown above. |
-| ![](../../_assets/c2.png) | \[clear\]: For the rest of the items except for the motion of each axis, you can initialize the maximum value of the system data by type. |
+| ![](../../_assets/c2.png) | \[clear\]: For the rest of the items except for the motion of each axis, you can initialize the maximum value of the system data to the current value by type. |
 
 {% hint style="info" %}
 System character monitoring function is only available in engineer mode.
@@ -4306,7 +4313,7 @@ You can initialize the maximum value of the data by selecting the type of inform
 1.	Touch the \[Clear\] button at the bottom of the system properties window.
 
 
-2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized.
+2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized to the current value.
 
     ![](../../_assets/tp630/pane-syscharacter-clear_eng.png)
 
@@ -6545,7 +6552,74 @@ Lifespan calculation cycle\[**min**\] : Renewal period of reducer lifespan. The 
 
 {% hint style="info" %}
 The reducer rated and expected life are predicted reference values based on reducer life prediction model. The actual life of the reducer may vary from the expected model depending on the driving conditions.
-{% endhint %}# 7.5 Application Parameters
+{% endhint %}# 7.4.13 System diagnosis
+
+It is used for various functions to diagnose failures in robot systems. 
+
+# 7.4.13.1 Gas spring pressure sensor
+
+The gas spring pressure sensor function is used to detect pressure abnormalities in the gas spring by constantly reading the value of the pressure sensor in a robot that uses a gas spring and has a pressure sensor (PU5400) specified by our company attached to it. <br> 
+
+![](../../../_assets/tp630/gasp_sensor.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Item</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        Communication signals
+      </td>
+      <td style="text-align:left">
+        Sets the digital signal into which the pressure sensor value is input.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        Current value
+      </td>
+      <td style="text-align:left">
+        The pressure value measured by the pressure sensor is displayed.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        Reference value
+      </td>
+      <td style="text-align:left">
+        Sets the reference pressure injected into the gas spring. 
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        Tolerance warning and output signal
+      </td>
+      <td style="text-align:left">
+        A warning (W21018 or W21019) is generated when the measured pressure deviates from the set tolerance from the reference pressure. <br>
+        If an output signal is set, the signal output is turned on. 
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        Tolerance error and output signal
+      </td>
+      <td style="text-align:left">
+        An error (E21018 or E21019) occurs when the measured pressure is outside the tolerance set from the reference pressure. <br>
+        If an output signal is set, the signal output is turned on.  
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+{% hint style="info" %}
+This feature is supported in versions V60.30.07 and later.   
+{% endhint %}
+# 7.5 Application Parameters
 
 1.	Touch the \[4: Application Parameter\] menu. Then, the application parameter menu will appear.
 

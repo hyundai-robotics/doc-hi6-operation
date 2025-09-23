@@ -207,6 +207,8 @@
       * [7.4.9.1 Main Functions of the Jog Inching Function](7-system/4-robot-parameter/9-jog-inch-level/1-jog-inch-main-funcs.md)
       * [7.4.9.2 Inching Jog Operation](7-system/4-robot-parameter/9-jog-inch-level/2-inch-jog-operation.md)
     * [7.4.10 Reducer Lifespan Setting](7-system/4-robot-parameter/12-system-maintenance/README.md)
+    * [7.4.13 System diagonisis](7-system/4-robot-parameter/13-system-diagnosis/README.md)
+      * [7.4.13.1 Gas spring pressure sensor](7-system/4-robot-parameter/13-system-diagnosis/1-gas-spring-pressure_sensor.md)
   * [7.5 Application Parameters](7-system/5-application-parameter/README.md)
     * [7.5.10 Command independent execution](7-system/5-application-parameter/10-cmd-idp-exe.md)
     * [7.5.13 User-Defined Error](7-system/5-application-parameter/13-user-def-error/README.md)
