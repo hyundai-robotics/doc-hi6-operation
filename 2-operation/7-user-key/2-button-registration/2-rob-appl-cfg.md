@@ -1,6 +1,6 @@
 ﻿# 2.7.2.2 로봇 응용 사용자키 설정
 
-원하는 영역이 나타날 때까지 Hi6 티치 펜던트 화면 우측의 `[사용자키]` 버튼을 터치하십시오. F 버튼 영역이 스폿용접 막대, 아크용접 막대 등 로봇응용 사용자키 영역으로 전환됩니다.
+원하는 영역이 나타날 때까지 Hi7 티치 펜던트 화면 우측의 `[사용자키]` 버튼을 터치하십시오. F 버튼 영역이 스폿용접 막대, 아크용접 막대 등 로봇응용 사용자키 영역으로 전환됩니다.
 
 ![그림 25 사용자키 영역 전환](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
 
@@ -14,6 +14,6 @@
 배치를 완료한 후 `[확인]` 버튼을 누르면, 사용자 버튼 배치가 저장됩니다.
 
 
-* 스폿 응용 기능에 대한 자세한 내용은 별도의 "[Hi6 로봇언어 기능 설명서 - 스폿 용접](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/README)"를 참조하십시오.
+* 스폿 응용 기능에 대한 자세한 내용은 별도의 "[Hi6/Hi7 로봇언어 기능 설명서 - 스폿 용접](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/README)"를 참조하십시오.
 
-* 아크 응용 기능에 대한 자세한 내용은 별도의 "[Hi6 로봇언어 기능 설명서 - 아크 용접](https://hrbook-hrc.web.app/#/view/doc-arc-weld/korean/README)"를 참조하십시오.
+* 아크 응용 기능에 대한 자세한 내용은 별도의 "[Hi6/Hi7 로봇언어 기능 설명서 - 아크 용접](https://hrbook-hrc.web.app/#/view/doc-arc-weld/korean/README)"를 참조하십시오.

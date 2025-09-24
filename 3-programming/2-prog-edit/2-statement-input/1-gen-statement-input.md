@@ -9,4 +9,4 @@
 ![](../../../_assets/tp630/sbt-cmd-list.png)
 
 * 한 그룹의 명령어가 많을 경우 [이전/다음] 버튼을 눌러서 추가 명령어를 확인하십시오.
-* 각 명령문에 대한 자세한 내용은 "[Hi6 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/README)"를 참조하십시오.
+* 각 명령문에 대한 자세한 내용은 "[Hi6/Hi7 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/README)"를 참조하십시오.
