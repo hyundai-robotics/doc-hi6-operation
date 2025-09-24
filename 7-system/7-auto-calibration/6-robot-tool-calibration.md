@@ -40,7 +40,16 @@ The robot and tool calibration function will be used in an environment where the
 The axis origin and tool length X, Y, and Z values of the axes 2–5 \(H, V, R2, and B axes\) of the calibration parameter are selected. To calibrate the tool only, perform execution after deselecting the value of each axis.
 {% endhint %}
 
+<br>
 
 
+## Restore calibration data
 
+When performing robot and tool calibration, the calibration data is stored separately as a calibration.json file in the path /ata0:2/lib/hi6/backup/. <br>
+If calibration data is lost due to operations such as system initialization, it can be restored using the stored file. (However, if the encoder data has been initialized by performing a serial encoder reset, it cannot be restored.)
+
+1. The "Restore" button will be activated if the calibration.json file exists in the path /ata0:2/lib/hi6/backup/.
+2. After performing a restore and powering on again, the previously performed robot and tool calibration data will be applied.
+
+![](../../_assets/tp630/robot_calib_recover.png)
 
