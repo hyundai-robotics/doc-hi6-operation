@@ -2,7 +2,7 @@
 
 설정된 입력 신호가 OFF에서 ON되었을 때 해당하는 명령문을 작업 프로그램과 별도로 수행하는 기능입니다. <br>
 사용하지 않는 서브태스크를 이용해서 해당 명령문을 실행하게 되는데 보통은 서브태스크 1이 사용됩니다. <br>
-멀티태스킹에 대한 자세한 내용은 "[Hi6 로봇제어기 기능 설명서 - 멀티태스킹](https://hrbook-hrc.web.app/#/view/doc-multi-task/korean/README)"를 참조하십시오.
+멀티태스킹에 대한 자세한 내용은 "[Hi6/Hi7 로봇제어기 기능 설명서 - 멀티태스킹](https://hrbook-hrc.web.app/#/view/doc-multi-task/korean/README)"를 참조하십시오.
 
 
 ![](../../_assets/tp630/cmd-idp-exe.png)
