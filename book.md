@@ -4122,7 +4122,7 @@ Select the `Value` column for the pose/shift variable or expression and press th
 To delete a row, select the row and press the `SHIFT+DEL` key.
 
 If you press the [F7: Save all] button on the F-button at the bottom, the list of variables and expressions entered is saved in the `cfg/watch.json` file. This file is automatically loaded on power reboot.
-You can also edit this file by receiving it to an external PC, via FTP. If you overwrite the edited file with the `cfg/` folder and click the [F1: Load All] button, it will be applied to the Watch panel.
+You can also edit the list by receiving it to an external PC, via FTP. If you overwrite the edited file with the `cfg/` folder and click the [F1: Load All] button, it will be applied to the Watch panel.
 
 ![](../../_assets/tp630/panel-watch/panel-watch-fbt.png)
 
@@ -7755,7 +7755,7 @@ You can copy the JOB program on the mainboard to another program on the mainboar
 
 
 {% hint style="info" %}
-Code R115 cannot be used in automatic mode. It must be used in manual mode.
+Code R115 cannot be used while the program is running; it must be used when the program is stopped.
 {% endhint %}
 
 
