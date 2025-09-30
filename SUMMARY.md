@@ -219,6 +219,8 @@
     * [7.4.10 충돌검지](7-system/4-robot-parameter/10-collision-detection/README.md)
       * [7.4.10.1 모델기반 충돌검지](7-system/4-robot-parameter/10-collision-detection/1-coldet-model-based.md)
       * [7.4.10.2 충돌검지 (축별) 설정](7-system/4-robot-parameter/10-collision-detection/2-coldet-axis.md)
+    * [7.4.13 시스템 고장진단](7-system/4-robot-parameter/13-system-diagnosis/README.md)
+      * [7.4.13.1 가스스프링 압력센서](7-system/4-robot-parameter/13-system-diagnosis/1-gas-spring-pressure_sensor.md)
 
   * [7.5 응용 파라미터](7-system/5-application-parameter/README.md)
     * [7.5.10 명령문 독립 실행](7-system/5-application-parameter/10-cmd-idp-exe.md)

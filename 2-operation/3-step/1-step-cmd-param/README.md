@@ -75,6 +75,15 @@
       <td style="text-align:left">
         <img src="../../../_assets/c6.png" alt/>
       </td>
+      <td style="text-align:left">대입문</td>
+      <td style="text-align:left">move 출발 시, 수행 할 대입문
+      
+  왼쪽부터 순차적으로 각 대입문이 수행됩니다.</td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c7.png" alt/>
+      </td>
       <td style="text-align:left">정지 조건</td>
       <td style="text-align:left">로봇이 다음 명령(스텝
         또는 펑션)을 수행하기
@@ -83,7 +92,7 @@
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../../_assets/c7.png" alt/>
+        <img src="../../../_assets/c8.png" alt/>
       </td>
       <td style="text-align:left">주석</td>
       <td style="text-align:left">스텝에 대한 설명</td>
