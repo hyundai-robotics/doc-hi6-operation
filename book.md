@@ -5658,8 +5658,8 @@ The method to set the stationary tool coordinate system is as follows.
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">You can set a total of four stationary tool coordinate systems (tool 0
-        - tool 3) by selecting a tab.</td>
+      <td style="text-align:left">You can set a total of twenty stationary tool coordinate systems (tool 0
+        - tool 19) by selecting a tab.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -5667,8 +5667,8 @@ The method to set the stationary tool coordinate system is as follows.
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Auto Setting]: You can set the current TCP position as the position of
+          <li>[<b>OK</b>]: You can save the changes.</li>
+          <li>[<b>Current robot pose</b>]: You can set the current TCP position as the position of
             the stationary tool coordinate system.</li>
         </ul>
       </td>
@@ -5680,7 +5680,7 @@ The method to set the stationary tool coordinate system is as follows.
 
 ### Setting the Current TCP Position as the Position of the Stationary Tool Coordinate System
 
-After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the \[Auto Setting\] button. Then, the current TCP position will be registered.
+After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the \[**Current robot pose**\] button. Then, the current TCP position will be registered.
 
 ![](../../../_assets/tp630/stationary_crd_autoset_eng.png)
 
