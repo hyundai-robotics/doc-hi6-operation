@@ -20,9 +20,8 @@ Touch the \[hot edit\] button at the panel, and Hot Edit window of the current p
 
 Although the operation is the same as that of manual mode, the following functions cannot be used.
 
-1) <**Axis operation**>** key use : Ignores the input of the relevant key.
-2) <**REC**> key (Record hidden pose MOVE) : Displays the “Operation not allowed while in Hot Edit” message.
-3) <**POS. MOD**> key : Displays the “Operation not allowed while in Hot Edit” message.
+1) <**REC**> key (Record hidden pose MOVE) : Displays the “Operation not allowed while in Hot Edit” message.
+2) <**POS. MOD**> key : Displays the “Operation not allowed while in Hot Edit” message.
 
 
     ![](../../_assets/tp630/pane-hot-edit-1_eng.png)
