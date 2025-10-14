@@ -2,11 +2,11 @@
 
 Mechanism will be used as a group during the jog operation which the jog keys are to be assigned to. In addition, mechanism is also a set of units, each of which is to be differentiated in the process of recording or editing the position of a step. When the mechanisms are set, mechanism numbers \(M\#\) will be assigned for individual groups of axes.
 
-The method to set the use of the endless function and set the position group is as follows.
+The method to set the use of the endless function is as follows.
 
 1.	Touch the \[5: Initialization &gt; 6: Mechanism Setting\] menu.
 
-2.	After setting the mechanism number, positioner group number, and the use of the endless function for each axis, touch the \[OK\] button.
+2.	After setting the mechanism number and configuring the use of the endless function for each axis, click the \[OK\] button.
 
     ![](../../_assets/tp630/robot-mechanism_eng.png)
 
@@ -36,17 +36,6 @@ A set mechanism unit is the minimum unit that can be assigned to each task and c
 
 #### 
 
-#### Position Group Designation Rules
-
-* Designate the group in order starting with the lower axis.
-* 
-  Designate the group not in sync as disable.
-
-* 
-  In the case of the positioner, only up to axis 2 will be supported for the same group. Do not designate axis 3 as the same group.
-
-* 
-  Redefining the group setting will disable the previously designated positioner calibration data, so you should execute the positioner calibration again.
 
 
 

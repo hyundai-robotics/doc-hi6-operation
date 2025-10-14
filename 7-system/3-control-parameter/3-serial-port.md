@@ -31,15 +31,18 @@ You can set the information required for serial port communication.
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]</b>: You can save the changes.</li>
-          <li><b>[+]/[-]</b>: You can add a new serial port or delete a serial port.</li>
-          <li>A list of serial ports. Selecting a port name allows you to check and
-            edit details.</li>
-          <li><b>[Copy page]</b>/<b>[Paste page]: </b>You can copy the serial port information
-            and paste it to another port.
-            <br />Select the name of the port information to be copied from the list, touch
-            the <b>[Copy page]</b> button, select the name of the port to which the value
-            is to be applied, and touch the <b>[Paste page] </b>button.</li>
+          <li><strong>Serial Port List</strong>: Select a port name to view and edit its detailed information.</li><li><strong>[OK]</strong>: Saves the changes.</li>
+          <li><strong>[+]/[-]</strong>: Adds a new serial port or deletes an existing one.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          Performs a loopback test. Connect the RX and TX pins of the serial port to check whether communication is functioning properly.
         </ul>
       </td>
     </tr>

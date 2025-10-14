@@ -16,11 +16,12 @@ When the axis origin and tool length optimization function is used, the encoder 
 * In using the axis origin and tool length optimization function, the accuracy of the teaching is proportional to the accuracy of the maximum step position error result. Therefore, you should prepare two pointed tips and perform the teaching for the tooltip to match the two tips as accurately as possible. Make sure that the accuracy of the matching between the tooltip and the fixed points in space is within 0.5 mm when visually checked.
 * Teach by setting a posture, with a difference of 30 deg or more, for each step so that the postures of the steps are not similar.
 * Operate the wrist axes \(R2, B, R1\) as large as possible in a step and perform teaching while keeping a sufficient \(as large as possible\) angle difference of the wrist axes for individual steps.
+* The teaching program must be composed of hidden pose step commands.
 {% endhint %}
 
 The method to use the axis origin and tool length optimization function is as follows.
 
-1.	Touch the \[6: Auto Calibration &gt; 1: Optimize Axis Origin and Tool Length\] menu.
+1.	Touch the **\[6: Auto Calibration &gt; 1: Optimize Axis Origin and Tool Length\]** menu.
 
 2.	Select an optimization target and set detailed options.
 
@@ -45,21 +46,21 @@ The method to use the axis origin and tool length optimization function is as fo
           check and set the name, specification, and configuration of the additional
           axis.</p>
         <ul>
-          <li>[Optimization Selection]: You can select an optimization target.
+          <li><b>[Optimization Selection]</b>: You can select an optimization target.
             <ul>
-              <li>[Tool Length]: You can calibrate the robot&#x2019;s tool length value.
+              <li><b>[Tool Length]</b>: You can calibrate the robot&#x2019;s tool length value.
                 If the robot origin is correctly set, you can calibrate only the tool length.</li>
-              <li>[Axis Origin &amp; Tool Length]: You can calibrate both the robot&#x2019;s
+              <li><b>[Axis Origin &amp; Tool Length]</b>: You can calibrate both the robot&#x2019;s
                 origin and tool length values.
                 <br />Normally, this function can be used when installing a robot and then initially
                 setting the correct origin.</li>
             </ul>
           </li>
-          <li>[Program Number]: You can set the number of the program in which the same
+          <li><b>[Program Number]</b>: You can set the number of the program in which the same
             point is recorded in multiple postures.</li>
-          <li>[Tool Number]: This is the number of the tool to be set automatically.
+          <li><b>[Tool Number]</b>: This is the number of the tool to be set automatically.
             This should match the tool number recorded in the setting program.</li>
-          <li>[Step location Error tolerance]: You can set the error range of the automatic
+          <li><b>[Step location Error tolerance]</b>: You can set the error range of the automatic
             calibration result (the initial setting value is 0.6 mm). If the expected
             error is within the error range, the integer data will be automatically
             updated, and if the error is out of the error range, whether to reflect
@@ -74,8 +75,8 @@ The method to use the axis origin and tool length optimization function is as fo
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Execute]: You can execute optimization based on the set information.
+          <li><b>[OK]</b>: You can save the changes.</li>
+          <li><b>[Execute]</b>: You can execute optimization based on the set information.
             The optimization result will appear in [Max Step Position Error].</li>
         </ul>
       </td>
@@ -89,8 +90,8 @@ It requires your attention that if you calibrate both the robot origin and tool 
 
 {% hint style="info" %}
 * You can also set the origin of each axis and tool length of the robot in the settings menu.
-  * Tool Length: \[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]
-  * Origin of each axis: \[system &gt; 3: Robot Parameter &gt; 2: Axis Origin\]
-* If you calibrate the tool angle using the angle calibration function \(\[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]\), you should execute the origin axis and tool length optimization function first, and then execute the angle calibration. In this way, the tool data can be set correctly.
+  * Tool Length: **\[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]**
+  * Origin of each axis: **\[system &gt; 3: Robot Parameter &gt; 2: Axis Origin\]**
+* If you calibrate the tool angle using the angle calibration function \(**\[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]**\), you should execute the origin axis and tool length optimization function first, and then execute the angle calibration. In this way, the tool data can be set correctly.
 {% endhint %}
 

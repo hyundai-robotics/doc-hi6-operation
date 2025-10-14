@@ -27,8 +27,8 @@ You can edit the pose variable value in the move statement, including the pose v
         <p>Current pose variable information. You can check and set the name, coordinate
           value, coordinate system format, etc.</p>
         <ul>
-          <li>[Name]: Name of the current pose variable</li>
-          <li>Coordinate value: The coordinate value of the current pose variable
+          <li><b>[Name]</b>: Name of the current pose variable</li>
+          <li><b>Coordinate value</b>: The coordinate value of the current pose variable
             <ul>
               <li>Select an item using the cursor key.</li>
               <li>After inputting a value in the desired item, press the <b><<b>ENTER</b>></b> key
@@ -37,9 +37,9 @@ You can edit the pose variable value in the move statement, including the pose v
                 will not be changed.</li>
             </ul>
           </li>
-          <li>[Coord. System]: The coordinate system format to express the position
+          <li><b>[Coord. System]</b>: The coordinate system format to express the position
             of the current pose variable</li>
-          <li>[Configuration]: When describing the position of the robot, there are
+          <li><b>[Configuration]</b>: When describing the position of the robot, there are
             multiple solutions because of the characteristics of the device, so the
             robot configuration is designated to uniquely describe the configuration.
             <ul>
@@ -57,14 +57,14 @@ You can edit the pose variable value in the move statement, including the pose v
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Previous]/[Next]: You can display the information of the previous or
+          <li><b>[OK]</b>: You can save the changes.</li>
+          <li><b>[Previous]/[Next]</b>: You can display the information of the previous or
             next step.</li>
-          <li>[Original Value]: You can display the original hidden pose value of the
+          <li><b>[Original Value]</b>: You can display the original hidden pose value of the
             current step.</li>
-          <li>[Current Robot Pose]: You can display the value of the pose the robot
+          <li><b>[Current Robot Pose]</b>: You can display the value of the pose the robot
             is currently taking.</li>
-          <li>[Moving]: Touching the <b>[Moving]</b> button will move the robot to the
+          <li><b>[Moving]</b>: Touching the button will move the robot to the
             recorded step position (Jog).</li>
         </ul>
       </td>
@@ -72,7 +72,7 @@ You can edit the pose variable value in the move statement, including the pose v
   </tbody>
 </table>
 
-3.	Touch the \[OK\] button. Then, the change will be saved in the job program, and the operation will end.
+3.	Touch the \[**OK**\] button. Then, the change will be saved in the job program, and the operation will end.
 
 * If you end the operation by pressing the <**ESC**> key, the change will not be saved. 
 

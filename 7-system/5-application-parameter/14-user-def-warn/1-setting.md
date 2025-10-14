@@ -1,4 +1,4 @@
-﻿# 7.5.14.1 User-Defined Error Settings
+﻿# 7.5.14.1 User-Defined Warning Settings
 
 1. Touch the \[System &gt; 4: Application Parameters &gt; 14: User-Defined Warning\] menu.<br><br>
 

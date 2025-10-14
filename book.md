@@ -3146,8 +3146,18 @@ Set the sound and screen save time of the teach pendant.
       </td>
       <td style="text-align:left">Select the time when the teach pendant screen is turned off.</td>
     </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">Select whether to use the jog keys <b>J7-/J7+</b> and <b>J8-/J8+</b> respectively. <br>Turn off this option if there is a risk of positioner collision or other issues due to incorrect jog key operation.
+    </tr>
   </tbody>
 </table>
+
+{% hint style="info" %}
+For more details on the use of jog keys, refer to the Mechanism Jog Rules in "[7.6.6 Mechanism Settings](../7-system/6-initialization/6-mechannism-set.md)"
+{% endhint %}
 
 # 4.8 Industrial Communication Monitoring
 
@@ -5139,7 +5149,7 @@ You can register the desired output signal with a button in the user key area of
 
 # 7.3.2.9 FB Block Allocation
 
-You can set the method of using the controller’s general input/output signals. This function can be used through connection to None, PLC, or Fieldbus item.
+You can set the method of using the controller’s general input/output signals.
 
 1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 6: FB Block Allocation\] menu.
 
@@ -5147,10 +5157,16 @@ You can set the method of using the controller’s general input/output signals.
 
     ![](../../../_assets/tp630/ctrl-dio-blockassign_eng.png)
 
-
-
-* \[Fieldbus\]: The DIO block of the selected FB address will be connected to the PCI communication board \(Fieldbus\) for the use. 
-
+{% hint style="info" %}
+The available connection options are as follows:
+* [PCI Slot 1]
+* [PCI Slot 2]
+* [PCI Slot 3]
+* [EtherNet/IP Adapter]
+* [EtherCAT I/O]
+* [EtherNet/IP Scanner]
+* [User DIO]
+{% endhint %}
 
 
 
@@ -5434,15 +5450,18 @@ You can set the information required for serial port communication.
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]</b>: You can save the changes.</li>
-          <li><b>[+]/[-]</b>: You can add a new serial port or delete a serial port.</li>
-          <li>A list of serial ports. Selecting a port name allows you to check and
-            edit details.</li>
-          <li><b>[Copy page]</b>/<b>[Paste page]: </b>You can copy the serial port information
-            and paste it to another port.
-            <br />Select the name of the port information to be copied from the list, touch
-            the <b>[Copy page]</b> button, select the name of the port to which the value
-            is to be applied, and touch the <b>[Paste page] </b>button.</li>
+          <li><strong>Serial Port List</strong>: Select a port name to view and edit its detailed information.</li><li><strong>[OK]</strong>: Saves the changes.</li>
+          <li><strong>[+]/[-]</strong>: Adds a new serial port or deletes an existing one.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          Performs a loopback test. Connect the RX and TX pins of the serial port to check whether communication is functioning properly.
         </ul>
       </td>
     </tr>
@@ -6707,7 +6726,7 @@ This function allows users to define warnings for specific conditions in the Hi6
 
 {% hint style="info" %}
 Supported from V60.30-00.
-{% endhint %}# 7.5.14.1 User-Defined Error Settings
+{% endhint %}# 7.5.14.1 User-Defined Warning Settings
 
 1. Touch the \[System &gt; 4: Application Parameters &gt; 14: User-Defined Warning\] menu.<br><br>
 
@@ -7043,7 +7062,7 @@ Additional axes that can be used in addition to the robot itself include the rob
 
 The method to set parameters such as the specification and configuration of the additional axes that are being used is as follows.
 
-1.	Touch the \[5: Initialize &gt; 5: Additional Axis Parameter Setting\] menu.
+1.	Touch the **\[5: Initialize &gt; 5: Additional Axis Parameter Setting\]** menu.
 
 2.	Set the parameters such as the specification and configuration of the additional axes.
 
@@ -7070,18 +7089,18 @@ The method to set parameters such as the specification and configuration of the 
           check and set the name, specification, and configuration, etc. of the additional
           axis.</p>
         <ul>
-          <li>[Name]: Name of the additional axis in use</li>
-          <li>[Axis Specification]: Specification of the additional axis. You can use
+          <li><b>[Name]</b>: Name of the additional axis in use</li>
+          <li><b>[Axis Specification]</b>: Specification of the additional axis. You can use
             individual functions separately developed for each usage of the additional
             axis according to the specifications.</li>
-          <li>[Axis structure]: Mechanism type of the additional axis. In the case of
+          <li><b>[Axis structure]</b>: Mechanism type of the additional axis. In the case of
             the specifications of some axes, you can designate the mechanism type that
             was registered in advance. As an exemplary case, you can select the standard
             positioner model in case of the position.</li>
-          <li>[Axis position]: This is the position where the axis is connected to the
+          <li><b>[Axis position]</b>: This is the position where the axis is connected to the
             DSP board. You can designate the BD number, DSP number, axis number, and
             brake number sequentially according to the wiring specifications.</li>
-          <li>[Reduction ratio]: Information of the deceleration ratio that involves
+          <li><b>[Reduction ratio]</b>: Information of the deceleration ratio that involves
             the motor and link of the additional axis
             <ul>
               <li>The deceleration ratio sign can be set according to the rotation direction
@@ -7098,12 +7117,12 @@ The method to set parameters such as the specification and configuration of the 
                 multiple.</li>
             </ul>
           </li>
-          <li>[Soft limit]: The minimum and maximum operating range of the additional
+          <li><b>[Soft limit]</b>: The minimum and maximum operating range of the additional
             axis</li>
-          <li>[AMP Specification]: The amplifier specification of the additional axis</li>
-          <li>[Motor Specification]: Model name of the motor connected to the additional
+          <li><b>[AMP Specification]</b>: The amplifier specification of the additional axis</li>
+          <li><b>[Motor Specification]</b>: Model name of the motor connected to the additional
             axis</li>
-          <li>[Accel/Decel Parameter]: The maximum speed and acceleration time of the
+          <li><b>[Accel/Decel Parameter]</b>: The maximum speed and acceleration time of the
             additional axis</li>
         </ul>
       </td>
@@ -7114,9 +7133,8 @@ The method to set parameters such as the specification and configuration of the 
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[Batch edit]: You can edit the BD and Axis numbers of multi addtional axes at one page.</li>
-          <li>[Rotation radius]: You can add a new additional axis or delete an additional axis.</li>
-          <li>[Reduction ratio calibration]: You can calibrate the difference between the real axis position and the displayed.</li>
+          <li><b>[Rotation radius]</b>: You can add a new additional axis or delete an additional axis.</li>
+          <li><b>[Reduction ratio calibration]</b>: You can calibrate the difference between the real axis position and the displayed.</li>
         </ul>
       </td>
     </tr>
@@ -7126,8 +7144,8 @@ The method to set parameters such as the specification and configuration of the 
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[+]/[-]: You can add a new additional axis or delete an additional axis.</li>
+          <li><b>[OK]</b>: You can save the changes.</li>
+          <li><b>[+]/[-]</b>: You can add a new additional axis or delete an additional axis.</li>
         </ul>
       </td>
     </tr>
@@ -7138,11 +7156,11 @@ The method to set parameters such as the specification and configuration of the 
 
 Mechanism will be used as a group during the jog operation which the jog keys are to be assigned to. In addition, mechanism is also a set of units, each of which is to be differentiated in the process of recording or editing the position of a step. When the mechanisms are set, mechanism numbers \(M\#\) will be assigned for individual groups of axes.
 
-The method to set the use of the endless function and set the position group is as follows.
+The method to set the use of the endless function is as follows.
 
 1.	Touch the \[5: Initialization &gt; 6: Mechanism Setting\] menu.
 
-2.	After setting the mechanism number, positioner group number, and the use of the endless function for each axis, touch the \[OK\] button.
+2.	After setting the mechanism number and configuring the use of the endless function for each axis, click the \[OK\] button.
 
     ![](../../_assets/tp630/robot-mechanism_eng.png)
 
@@ -7172,17 +7190,6 @@ A set mechanism unit is the minimum unit that can be assigned to each task and c
 
 #### 
 
-#### Position Group Designation Rules
-
-* Designate the group in order starting with the lower axis.
-* 
-  Designate the group not in sync as disable.
-
-* 
-  In the case of the positioner, only up to axis 2 will be supported for the same group. Do not designate axis 3 as the same group.
-
-* 
-  Redefining the group setting will disable the previously designated positioner calibration data, so you should execute the positioner calibration again.
 
 
 
@@ -7248,11 +7255,12 @@ When the axis origin and tool length optimization function is used, the encoder 
 * In using the axis origin and tool length optimization function, the accuracy of the teaching is proportional to the accuracy of the maximum step position error result. Therefore, you should prepare two pointed tips and perform the teaching for the tooltip to match the two tips as accurately as possible. Make sure that the accuracy of the matching between the tooltip and the fixed points in space is within 0.5 mm when visually checked.
 * Teach by setting a posture, with a difference of 30 deg or more, for each step so that the postures of the steps are not similar.
 * Operate the wrist axes \(R2, B, R1\) as large as possible in a step and perform teaching while keeping a sufficient \(as large as possible\) angle difference of the wrist axes for individual steps.
+* The teaching program must be composed of hidden pose step commands.
 {% endhint %}
 
 The method to use the axis origin and tool length optimization function is as follows.
 
-1.	Touch the \[6: Auto Calibration &gt; 1: Optimize Axis Origin and Tool Length\] menu.
+1.	Touch the **\[6: Auto Calibration &gt; 1: Optimize Axis Origin and Tool Length\]** menu.
 
 2.	Select an optimization target and set detailed options.
 
@@ -7277,21 +7285,21 @@ The method to use the axis origin and tool length optimization function is as fo
           check and set the name, specification, and configuration of the additional
           axis.</p>
         <ul>
-          <li>[Optimization Selection]: You can select an optimization target.
+          <li><b>[Optimization Selection]</b>: You can select an optimization target.
             <ul>
-              <li>[Tool Length]: You can calibrate the robot&#x2019;s tool length value.
+              <li><b>[Tool Length]</b>: You can calibrate the robot&#x2019;s tool length value.
                 If the robot origin is correctly set, you can calibrate only the tool length.</li>
-              <li>[Axis Origin &amp; Tool Length]: You can calibrate both the robot&#x2019;s
+              <li><b>[Axis Origin &amp; Tool Length]</b>: You can calibrate both the robot&#x2019;s
                 origin and tool length values.
                 <br />Normally, this function can be used when installing a robot and then initially
                 setting the correct origin.</li>
             </ul>
           </li>
-          <li>[Program Number]: You can set the number of the program in which the same
+          <li><b>[Program Number]</b>: You can set the number of the program in which the same
             point is recorded in multiple postures.</li>
-          <li>[Tool Number]: This is the number of the tool to be set automatically.
+          <li><b>[Tool Number]</b>: This is the number of the tool to be set automatically.
             This should match the tool number recorded in the setting program.</li>
-          <li>[Step location Error tolerance]: You can set the error range of the automatic
+          <li><b>[Step location Error tolerance]</b>: You can set the error range of the automatic
             calibration result (the initial setting value is 0.6 mm). If the expected
             error is within the error range, the integer data will be automatically
             updated, and if the error is out of the error range, whether to reflect
@@ -7306,8 +7314,8 @@ The method to use the axis origin and tool length optimization function is as fo
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Execute]: You can execute optimization based on the set information.
+          <li><b>[OK]</b>: You can save the changes.</li>
+          <li><b>[Execute]</b>: You can execute optimization based on the set information.
             The optimization result will appear in [Max Step Position Error].</li>
         </ul>
       </td>
@@ -7321,9 +7329,9 @@ It requires your attention that if you calibrate both the robot origin and tool 
 
 {% hint style="info" %}
 * You can also set the origin of each axis and tool length of the robot in the settings menu.
-  * Tool Length: \[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]
-  * Origin of each axis: \[system &gt; 3: Robot Parameter &gt; 2: Axis Origin\]
-* If you calibrate the tool angle using the angle calibration function \(\[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]\), you should execute the origin axis and tool length optimization function first, and then execute the angle calibration. In this way, the tool data can be set correctly.
+  * Tool Length: **\[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]**
+  * Origin of each axis: **\[system &gt; 3: Robot Parameter &gt; 2: Axis Origin\]**
+* If you calibrate the tool angle using the angle calibration function \(**\[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]**\), you should execute the origin axis and tool length optimization function first, and then execute the angle calibration. In this way, the tool data can be set correctly.
 {% endhint %}
 
 # 7.7.2 Positioner Calibration
@@ -7941,7 +7949,6 @@ The following functions can be set up in engineer mode.
 * Encoder offset (Robot Parameters) 
 * Servo parameters (Robot Parameters) 
 * Acceleration and deceleration parameters (robot parameters) 
-* Jog inching level settings (Robot Parameters)
 * Servo tool change (Application parameters) 
 * System Initialization (Initialization)
 * Robot Type Selection (Initialization)
@@ -8260,7 +8267,7 @@ You can check or modify the position of the step in the currently selected line 
 
 You can check or modify the position of the current step in the hidden pose move statement \(a step recorded by the \[REC\] key, that is, a move statement that does not include a pose variable\).
 
-1.	Touch the \[property\] button in the move command \(move statement\) recorded as a hidden pose. Then, the current step position will appear. 
+1.	Touch the \[**property**\] button in the move command \(move statement\) recorded as a hidden pose. Then, the current step position will appear. 
 
 2.	Check and modify the current step position.
 
@@ -8284,9 +8291,9 @@ You can check or modify the position of the current step in the hidden pose move
         <p>Position information of the current step. You can check and set the name,
           coordinate value and coordinate system format, etc.</p>
         <ul>
-          <li>[Name]: Number of the current step. After inputting the step number, press
+          <li><b>[Name]</b>: Number of the current step. After inputting the step number, press
             the <b><<b>ENTER</b>> </b>key to move to the concerned step.</li>
-          <li>Coordinate Value: Current coordinate value of the current step
+          <li><b>Coordinate Value</b>: Current coordinate value of the current step
             <ul>
               <li>Select an item using the cursor key.</li>
               <li>After inputting a value in the desired item, press the <<b>ENTER</b>> key
@@ -8295,7 +8302,7 @@ You can check or modify the position of the current step in the hidden pose move
                 will not be changed.</li>
             </ul>
           </li>
-          <li>[Coord. System]: The coordinate system format to express the position
+          <li><b>[Coord. System]</b>: The coordinate system format to express the position
             of the current step</li>
         </ul>
       </td>
@@ -8306,14 +8313,14 @@ You can check or modify the position of the current step in the hidden pose move
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Previous]/[Next]: You can display the information of the previous or
+          <li><b>[OK]</b>: You can save the changes.</li>
+          <li><b>[Previous]/[Next]</b>: You can display the information of the previous or
             next step.</li>
-          <li>[Original Value]: You can display the original hidden pose value of the
+          <li><b>[Original Value]</b>: You can display the original hidden pose value of the
             current step.</li>
-          <li>[Current Robot Pose]: You can display the value of the posture the robot
+          <li><b>[Current Robot Pose]</b>: You can display the value of the posture the robot
             is currently taking.</li>
-          <li>[Moving]: Touching the <b>[Moving]</b> button will move the robot to the
+          <li><b>[Moving]</b>: Touching the button will move the robot to the
             recorded step position (Jog).</li>
         </ul>
       </td>
@@ -8360,8 +8367,8 @@ You can edit the pose variable value in the move statement, including the pose v
         <p>Current pose variable information. You can check and set the name, coordinate
           value, coordinate system format, etc.</p>
         <ul>
-          <li>[Name]: Name of the current pose variable</li>
-          <li>Coordinate value: The coordinate value of the current pose variable
+          <li><b>[Name]</b>: Name of the current pose variable</li>
+          <li><b>Coordinate value</b>: The coordinate value of the current pose variable
             <ul>
               <li>Select an item using the cursor key.</li>
               <li>After inputting a value in the desired item, press the <b><<b>ENTER</b>></b> key
@@ -8370,9 +8377,9 @@ You can edit the pose variable value in the move statement, including the pose v
                 will not be changed.</li>
             </ul>
           </li>
-          <li>[Coord. System]: The coordinate system format to express the position
+          <li><b>[Coord. System]</b>: The coordinate system format to express the position
             of the current pose variable</li>
-          <li>[Configuration]: When describing the position of the robot, there are
+          <li><b>[Configuration]</b>: When describing the position of the robot, there are
             multiple solutions because of the characteristics of the device, so the
             robot configuration is designated to uniquely describe the configuration.
             <ul>
@@ -8390,14 +8397,14 @@ You can edit the pose variable value in the move statement, including the pose v
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Previous]/[Next]: You can display the information of the previous or
+          <li><b>[OK]</b>: You can save the changes.</li>
+          <li><b>[Previous]/[Next]</b>: You can display the information of the previous or
             next step.</li>
-          <li>[Original Value]: You can display the original hidden pose value of the
+          <li><b>[Original Value]</b>: You can display the original hidden pose value of the
             current step.</li>
-          <li>[Current Robot Pose]: You can display the value of the pose the robot
+          <li><b>[Current Robot Pose]</b>: You can display the value of the pose the robot
             is currently taking.</li>
-          <li>[Moving]: Touching the <b>[Moving]</b> button will move the robot to the
+          <li><b>[Moving]</b>: Touching the button will move the robot to the
             recorded step position (Jog).</li>
         </ul>
       </td>
@@ -8405,7 +8412,7 @@ You can edit the pose variable value in the move statement, including the pose v
   </tbody>
 </table>
 
-3.	Touch the \[OK\] button. Then, the change will be saved in the job program, and the operation will end.
+3.	Touch the \[**OK**\] button. Then, the change will be saved in the job program, and the operation will end.
 
 * If you end the operation by pressing the <**ESC**> key, the change will not be saved. 
 

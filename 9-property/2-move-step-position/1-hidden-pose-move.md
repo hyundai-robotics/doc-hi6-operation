@@ -2,7 +2,7 @@
 
 You can check or modify the position of the current step in the hidden pose move statement \(a step recorded by the \[REC\] key, that is, a move statement that does not include a pose variable\).
 
-1.	Touch the \[property\] button in the move command \(move statement\) recorded as a hidden pose. Then, the current step position will appear. 
+1.	Touch the \[**property**\] button in the move command \(move statement\) recorded as a hidden pose. Then, the current step position will appear. 
 
 2.	Check and modify the current step position.
 
@@ -26,9 +26,9 @@ You can check or modify the position of the current step in the hidden pose move
         <p>Position information of the current step. You can check and set the name,
           coordinate value and coordinate system format, etc.</p>
         <ul>
-          <li>[Name]: Number of the current step. After inputting the step number, press
+          <li><b>[Name]</b>: Number of the current step. After inputting the step number, press
             the <b><<b>ENTER</b>> </b>key to move to the concerned step.</li>
-          <li>Coordinate Value: Current coordinate value of the current step
+          <li><b>Coordinate Value</b>: Current coordinate value of the current step
             <ul>
               <li>Select an item using the cursor key.</li>
               <li>After inputting a value in the desired item, press the <<b>ENTER</b>> key
@@ -37,7 +37,7 @@ You can check or modify the position of the current step in the hidden pose move
                 will not be changed.</li>
             </ul>
           </li>
-          <li>[Coord. System]: The coordinate system format to express the position
+          <li><b>[Coord. System]</b>: The coordinate system format to express the position
             of the current step</li>
         </ul>
       </td>
@@ -48,14 +48,14 @@ You can check or modify the position of the current step in the hidden pose move
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Previous]/[Next]: You can display the information of the previous or
+          <li><b>[OK]</b>: You can save the changes.</li>
+          <li><b>[Previous]/[Next]</b>: You can display the information of the previous or
             next step.</li>
-          <li>[Original Value]: You can display the original hidden pose value of the
+          <li><b>[Original Value]</b>: You can display the original hidden pose value of the
             current step.</li>
-          <li>[Current Robot Pose]: You can display the value of the posture the robot
+          <li><b>[Current Robot Pose]</b>: You can display the value of the posture the robot
             is currently taking.</li>
-          <li>[Moving]: Touching the <b>[Moving]</b> button will move the robot to the
+          <li><b>[Moving]</b>: Touching the button will move the robot to the
             recorded step position (Jog).</li>
         </ul>
       </td>

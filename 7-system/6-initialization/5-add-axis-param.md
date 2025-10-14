@@ -4,7 +4,7 @@ Additional axes that can be used in addition to the robot itself include the rob
 
 The method to set parameters such as the specification and configuration of the additional axes that are being used is as follows.
 
-1.	Touch the \[5: Initialize &gt; 5: Additional Axis Parameter Setting\] menu.
+1.	Touch the **\[5: Initialize &gt; 5: Additional Axis Parameter Setting\]** menu.
 
 2.	Set the parameters such as the specification and configuration of the additional axes.
 
@@ -31,18 +31,18 @@ The method to set parameters such as the specification and configuration of the 
           check and set the name, specification, and configuration, etc. of the additional
           axis.</p>
         <ul>
-          <li>[Name]: Name of the additional axis in use</li>
-          <li>[Axis Specification]: Specification of the additional axis. You can use
+          <li><b>[Name]</b>: Name of the additional axis in use</li>
+          <li><b>[Axis Specification]</b>: Specification of the additional axis. You can use
             individual functions separately developed for each usage of the additional
             axis according to the specifications.</li>
-          <li>[Axis structure]: Mechanism type of the additional axis. In the case of
+          <li><b>[Axis structure]</b>: Mechanism type of the additional axis. In the case of
             the specifications of some axes, you can designate the mechanism type that
             was registered in advance. As an exemplary case, you can select the standard
             positioner model in case of the position.</li>
-          <li>[Axis position]: This is the position where the axis is connected to the
+          <li><b>[Axis position]</b>: This is the position where the axis is connected to the
             DSP board. You can designate the BD number, DSP number, axis number, and
             brake number sequentially according to the wiring specifications.</li>
-          <li>[Reduction ratio]: Information of the deceleration ratio that involves
+          <li><b>[Reduction ratio]</b>: Information of the deceleration ratio that involves
             the motor and link of the additional axis
             <ul>
               <li>The deceleration ratio sign can be set according to the rotation direction
@@ -59,12 +59,12 @@ The method to set parameters such as the specification and configuration of the 
                 multiple.</li>
             </ul>
           </li>
-          <li>[Soft limit]: The minimum and maximum operating range of the additional
+          <li><b>[Soft limit]</b>: The minimum and maximum operating range of the additional
             axis</li>
-          <li>[AMP Specification]: The amplifier specification of the additional axis</li>
-          <li>[Motor Specification]: Model name of the motor connected to the additional
+          <li><b>[AMP Specification]</b>: The amplifier specification of the additional axis</li>
+          <li><b>[Motor Specification]</b>: Model name of the motor connected to the additional
             axis</li>
-          <li>[Accel/Decel Parameter]: The maximum speed and acceleration time of the
+          <li><b>[Accel/Decel Parameter]</b>: The maximum speed and acceleration time of the
             additional axis</li>
         </ul>
       </td>
@@ -75,9 +75,8 @@ The method to set parameters such as the specification and configuration of the 
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[Batch edit]: You can edit the BD and Axis numbers of multi addtional axes at one page.</li>
-          <li>[Rotation radius]: You can add a new additional axis or delete an additional axis.</li>
-          <li>[Reduction ratio calibration]: You can calibrate the difference between the real axis position and the displayed.</li>
+          <li><b>[Rotation radius]</b>: You can add a new additional axis or delete an additional axis.</li>
+          <li><b>[Reduction ratio calibration]</b>: You can calibrate the difference between the real axis position and the displayed.</li>
         </ul>
       </td>
     </tr>
@@ -87,8 +86,8 @@ The method to set parameters such as the specification and configuration of the 
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[+]/[-]: You can add a new additional axis or delete an additional axis.</li>
+          <li><b>[OK]</b>: You can save the changes.</li>
+          <li><b>[+]/[-]</b>: You can add a new additional axis or delete an additional axis.</li>
         </ul>
       </td>
     </tr>
