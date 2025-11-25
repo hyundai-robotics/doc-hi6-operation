@@ -8435,6 +8435,308 @@ When writing the SPOT command while writing the program, if you place the cursor
 # 10. Robot Language
 
 For details on the robot language, refer to the "[Hi6 Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/README)"
+# 11. Etc.
+
+This chapter explains additional information that was not covered earlier.
+# 11.1 Major Folders and Files in the Robot Controller
+
+Various configuration, teaching, and log files are stored inside the robot controller.
+In this section, we describe the folder structure and the roles of the individual files.
+# 11.1.1 Cautions When Loading to the project/ Folder via FTP
+
+{% hint style="warning" %}
+\[Warning\] The TP file manager or FTP service allows you to modify folders and files.
+However, careless modification or deletion of files may cause serious issues such as boot failure, malfunction, or data loss.
+Do not modify these files unless you fully understand their mechanism or are working under the guidance of a qualified expert.
+{% endhint %}
+
+You can back up and restore configuration and teaching files in the project folder using HRWorkbench, file manager, or the backup features.
+
+However, in some cases, it may be more convenient to use familiar FTP software to back up files to a PC or restore them to the robot controller.
+This section describes important precautions to keep in mind when doing so.
+(Details of each file in the project folder will be explained in the next section.)
+
+
+## Applying Changes After Modifying .job Files in the project/jobs/ Folder
+
+When you add or overwrite .job files in the `project/jobs/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
+(When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
+
+There are two ways to apply the updated files to memory:
+
+- On the HOME screen, click the `...` button on the console bar and select `reload updated jobs`.
+
+  ![](../../_assets/tp630/etc/console_reload_job.png)
+
+- Reboot the robot controller.
+
+
+# Applying Changes After Modifying .json and .csv Files in the project/vars/ Folder
+
+When you add or overwrite global variable files in the `project/vars/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
+(When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
+
+To apply the updated files to memory, use the method below:
+
+- Open the Global Variables Monitoring window, then click the `Load All` (F-button) at the bottom.
+
+![](../../_assets/tp630/etc/gvar_load.png)
+
+{% hint style="warning" %}
+Do not reboot the robot controller to apply updated global variable files.
+When the controller is powered off, the current global variable values in memory are saved back to files, which will overwrite the files you just updated.
+{% endhint %}
+# 11.1.2 project/
+
+This is the most important folder where the robot's configuration, teaching data, and state are stored.
+When backing up or restoring the controller system, this folder is the core component.
+
+## project/
+
+This folder contains various configuration files as well as state-backup files that are saved immediately before the controller is powered off (shutdown).
+The state backup includes information stored at power-off for the following purposes:
+
+    - To resume the task that was running before power-off when the controller is powered on again
+      (Note: For complex operations such as robot applications or plugins, resuming may not be possible.)
+
+    - To preserve output signals from just before power-off and restore them after power-on
+
+
+* arc_weld.json
+  
+  Arc welding application configuration file
+
+* arc_weld_bkup.json
+  
+  Backup data of the arc welding application state saved just before power-off
+
+* calibration.json
+
+  Robot calibration configuration file
+
+* context.json
+
+  Execution context for all tasks' .job files, including instruction pointer positions, call history of .job files with arguments, local variable values, etc.
+
+* dout.json
+
+  Output states of general-purpose digital signals saved just before power-off
+
+* force_control.json
+
+  Force control configuration file
+
+* hi6_proj.json
+
+  Main project file. Most configuration of base features are stored here.
+
+* kw.json
+  
+  Built-in PLC `kw` relay values saved just before power-off
+
+* maintenance.json
+
+  Various maintenance and system information, robot model, number of axes, operating hours, software version, remaining memory and storage, system codes, and per-thread execution times
+
+* motion_bkup.bin
+  
+  Backup data related to robot motion saved just before power-off
+
+* mw.json
+  
+  Built-in PLC `mw` relay values saved just before power-off
+
+* playback_bkup.bin
+
+  Backup data related to .job execution saved just before power-off
+
+* sealing.json
+
+  Sealing application configuration file
+
+* sout.json
+
+  System signal output values saved just before power-off
+
+* spot_weld.json
+
+  Spot welding application configuration file
+
+* spot_weld_bkup.json
+
+  Backup data of the spot welding application state saved just before power-off
+
+* svtool_change.json
+
+  Additional axis configuration file for servo tool change operations
+
+* version.json
+
+  Information used to determine whether data updates are required on the first boot after a software version upgrade (current version number)
+  
+
+## project/jobs/
+  
+Folder storing teaching programs (.job files).
+
+
+## project/lads/
+  
+Folder storing built-in PLC ladder programs (.lad files).
+
+
+## project/safety/
+  
+(HI7 controller) Folder storing Functional Safety configuration files.
+
+* safety_parameter.json
+
+  Functional Safety configuration file
+
+* safety_parameter.json.cert
+
+  Certification file for the safety configuration.
+  A valid certificate is issued only when the configuration is saved with the correct password. If invalid, the controller will not operate.
+
+
+## project/vars/
+
+Folder storing variables and aliases.
+
+* aliases.json
+
+  Robot language alias file
+
+* *.csv
+
+  Top-level array files (comma-separated values format)
+
+* vars.json
+
+  Global variable file
+  # 11.1.3 log/
+
+
+This folder stores various log files. In the file names below, ? represents a number; when the maximum number is reached, the files are overwritten in a circular manner starting from 0, or it may represent a timestamp in the format YYYYMMDD_HHMMSS.
+
+Among these files:
+
+Event logs can be viewed in the Teach Pendant log window or via HRWorkbench.
+
+Scope logs can only be viewed using HRWorkbench.
+
+The remaining .txt files can be opened with any standard text editor.
+
+
+* bootlog_?.txt
+
+  Log file storing the controller's boot history.
+  Used for analyzing issues such as boot failures. A new file is created in a   circular manner each time the controller boots.
+
+* evlog_alarm_??.txt
+
+  Log file storing Error and Warning events.
+
+* evlog_hist_??.txt
+
+  Log file storing History events.
+  Mainly records execution history of .job files.
+
+* evlog_io_??.txt
+
+  Log file storing I/O conversion events.
+
+* evlog_noti_??.txt
+
+  Log file storing Notice events.
+
+* evlog_oper_00.txt
+
+  Log file storing user Operation events.
+
+* evlog_stst_00.txt
+
+  Log file storing Start and Stop events of the robot.
+
+* pow_stage.txt
+
+  File storing power-on, power-failure recovery, and power-failure backup states.
+
+* sclog_base_????????_??????.bin
+
+  Scope log file storing time-series data such as each axis’s position, speed, and acceleration.  
+  ????????_?????? represents the timestamp in YYYYMMDD_HHMMSS format.  
+  Generated when robot shock is detected or specific errors occur. Can be viewed using the Scope Log feature in HRWorkbench.
+
+* sclog_base_????????_??????.json
+
+  Schema file describing the type of data stored in the corresponding .bin file.
+  The .bin and .json files must exist as a pair to open the log.
+
+* shutdownlog_?.txt
+
+  Log file storing the controller’s power-off history.  
+  Used to analyze whether power-failure backup operations were performed correctly. A new file is created in a circular manner each time the controller powers off.
+
+* updatesvclog_?.txt
+
+  Log file storing the controller software version upgrade history.
+  Used to analyze whether the version upgrade was performed successfully.
+  # 11.1.4 backup/
+
+This folder stores MAIN-side backups of the controller.  
+Folder names are generated in the format `bYYYYMMDD_HHMM`, containing subfolders: project/, log/, cifX/, EC_LOG/, and EDR_LOG/.
+
+
+## backup/ev/
+
+Folder storing event backups.  
+Backups are automatically created when specific errors occur.
+
+
+## backup/ts/
+
+Folder storing scheduled backups.  
+Backups are automatically created at the scheduled times.
+# 11.1.5 Other Folders
+
+## apps/
+
+Folder where plug-in apps executed on the MAIN side are installed and stored.
+
+
+## fbrr/
+
+File-Based Robot Registry folder.  
+Stores information files (.fbr) for each robot mechanism model.
+When a new model information file is added, the robot system can be configured by selecting the model during system initialization.
+
+
+## gather/
+
+Folder storing result files (.GDT) from the time-series data gathering function.
+
+
+## help/
+
+Folder storing HTML help files for the robot language HRScript.
+
+
+## roblang/
+
+Folder storing syntax files for the robot language HRScript.
+
+* procs_?.json
+  
+  Procedure syntax files by category
+
+* funcs_?.json
+
+  Function syntax files by category
+
+* svars_?.json
+  
+  System variable syntax files by category
 # Appendices
 
   
