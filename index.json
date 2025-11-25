@@ -1395,18 +1395,53 @@
 		"byte_ofs": 437889
 	},
 	{
-		"link": "appendices/README.md",
+		"link": "11-etc/README.md",
 		"char_ofs": 246546,
 		"byte_ofs": 438083
 	},
 	{
+		"link": "11-etc/1-controller-files/README.md",
+		"char_ofs": 246591,
+		"byte_ofs": 438190
+	},
+	{
+		"link": "11-etc/1-controller-files/1-caution-ftp.md",
+		"char_ofs": 246696,
+		"byte_ofs": 438437
+	},
+	{
+		"link": "11-etc/1-controller-files/2-project.md",
+		"char_ofs": 247985,
+		"byte_ofs": 441056
+	},
+	{
+		"link": "11-etc/1-controller-files/3-log.md",
+		"char_ofs": 249759,
+		"byte_ofs": 444294
+	},
+	{
+		"link": "11-etc/1-controller-files/4-backup.md",
+		"char_ofs": 251067,
+		"byte_ofs": 446749
+	},
+	{
+		"link": "11-etc/1-controller-files/5-etc.md",
+		"char_ofs": 251319,
+		"byte_ofs": 447239
+	},
+	{
+		"link": "appendices/README.md",
+		"char_ofs": 251843,
+		"byte_ofs": 448208
+	},
+	{
 		"link": "appendices/rules-occupational-safety.md",
-		"char_ofs": 246557,
-		"byte_ofs": 438106
+		"char_ofs": 251854,
+		"byte_ofs": 448231
 	},
 	{
 		"link": "quality-assurance.md",
-		"char_ofs": 246777,
-		"byte_ofs": 438504
+		"char_ofs": 252074,
+		"byte_ofs": 448629
 	}
 ]
