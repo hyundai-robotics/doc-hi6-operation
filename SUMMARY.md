@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [Hi6 로봇제어기 조작설명서](README.md)
+* [${cont_model} 로봇제어기 조작설명서](README.md)
 * [이 설명서에 대하여](0-about-this-manual/README.md)
   * [저작권](0-about-this-manual/copyright.md)
   * [표기 규약](0-about-this-manual/notation.md)
@@ -13,7 +13,7 @@
     * [1.2.1 전원 켜기](1-robot-system/2-basic-usage/1-power-on/README.md)
       * [1.2.1.1 모터 전원 투입 및 조작 가능 상태](1-robot-system/2-basic-usage/1-power-on/1-input-of-the-power-to-the-mot.md)
     * [1.2.2 전원 끄기](1-robot-system/2-basic-usage/2-power-off.md)
-    * [1.2.3 Hi6 티치 펜던트 화면](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/README.md)
+    * [1.2.3 ${cont_model} 티치 펜던트 화면](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/README.md)
       * [1.2.3.1 제목 표시줄](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/1-title-area.md)
       * [1.2.3.2 상태 표시줄](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/2-status-bar.md)
       * [1.2.3.3 R버튼 막대](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/3-Rbt-bar.md)
