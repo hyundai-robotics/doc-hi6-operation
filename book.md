@@ -4326,14 +4326,79 @@ You can initialize the maximum value of the data by selecting the type of inform
 
     ![](../../_assets/tp630/pane-syscharacter-clear_eng.png)
 
-# 6.4.2 System Diagnosis
+# 6.4.2 System Diagnostics
 
-Touch \[system diagnosis\] in the panel selection window. Then, a window for brake diagnosis will appear.
+Touch **[System Diagnostics]** in the panel selection window.
+When executed for the first time, the Brake Diagnostics screen appears.
 
-![](../../_assets/tp630/pane-sys-diagnosis-brake_eng.png)
+![System diagnostics monitoring](../../../_assets/tp630/pane-sys-diagnosis_eng.png)
 
+<table> 
+  <thead> 
+    <tr> 
+      <th style="text-align:left">No.</th> 
+      <th style="text-align:left">Description</th> 
+    </tr> 
+  </thead> 
+  <tbody> 
+    <tr> 
+      <td style="text-align:left"> <img src="../../../_assets/c1.png" alt/> 
+      </td> 
+      <td style="text-align:left"> 
+        <p> While the <strong>[System Diagnostics]</strong> panel is selected, you can switch to other diagnostic items by tapping the buttons below. </p> 
+        <ul> 
+          <li><strong>[Brake Diagnostics]</strong>: Switches to the brake diagnostics screen.</li> 
+          <li><strong>[Gas Spring Diagnostics]</strong>: Switches to the gas spring diagnostics screen.</li> 
+        </ul> 
+      </td> 
+    </tr> 
+  </tbody> 
+</table># 6.4.2.1 Brake Diagnostics Monitoring
 
+Touch [Brake Diagnostics] in the button list below to display the brake diagnostics data screen.
 
+![Brake diagnostics monitoring](../../../_assets/tp630/pane-sys-diagnosis-brake_eng.png)
+
+<table> 
+  <thead> 
+    <tr> 
+      <th style="text-align:left">No.</th> 
+      <th style="text-align:left">Description</th> 
+    </tr> 
+  </thead> 
+<tbody> 
+  <tr> 
+    <td style="text-align:left"> 
+      <img src="../../../_assets/c1.png" alt/> 
+    </td> 
+    <td style="text-align:left"> 
+      <strong>[Angular displacement]</strong>
+      <p>Displays the current angular displacement, maximum angular displacement, and reference angular displacement when torque is applied in the Brake Hold/Release state.</p> 
+      <ul> 
+        <li>The current angular displacement is displayed only for the axis under inspection.</li> 
+        <li>When the reference value setting mode is active, the axis name is highlighted in yellow.</li> 
+      </ul> 
+    </td> 
+  </tr> 
+<tr> 
+  <td style="text-align:left"> <img src="../../../_assets/c2.png" alt/> </td> 
+  <td style="text-align:left"> 
+    <strong>[Torque rate]</strong>
+    <p>Displays the torque ratio applied during the brake diagnostics.</p> 
+  </td> 
+</tr> 
+</tbody> 
+</table>
+
+{% hint style="info" %}
+
+* For more details on the brake diagnostic function, refer to the **[Hi6 Robot Controller Function Manual – HRScript Robot Language]**, section for the [**10.1.16 brake_check**](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/10-etc/1-proc/16-brake_check) command.
+
+{% endhint %}# 6.4.2.2 Gas Spring Pressure Diagnostics Monitoring
+
+Touch [Gas Spring Diagnostics] in the button list below to display the gas spring pressure diagnostics data screen.
+
+![Gas spring pressure diagnostics](../../../_assets/tp630/pane-sys-diagnosis-gas-pressure_eng.png)
 
 <table>
   <thead>
@@ -4345,24 +4410,13 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>[system diagnosis] In case where the panel is touched, you can switch the panel into another diagnosis by pushing the below items.</p>
+        <p>Displays the results of the last five gas spring pressure diagnostics.</p>
         <ul>
-          <li>[Brake check] displays the brake diagnosis data.</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <img src="../../_assets/c2.png" alt/>
-      </td>
-      <td style="text-align:left">
-        <p>Under each condition of brake hold or release, current torque, maximum torque, reference torque, and torque-applied ratio are displayed.</p>
-        <ul>
-          <li>Current torque under diagnosis is displayed.</li>
-          <li>In case of the reference setting mode, the axis name is colored yellow.</li>
+          <li><strong>[Timestamp]</strong>: Displays the time when the gas spring diagnostic test was performed.</li>
+          <li><strong>[Pressure]</strong>: Displays the reference pressure, tolerance, and the estimated pressure.</li>
         </ul>
       </td>
     </tr>
@@ -4370,9 +4424,11 @@ Touch \[system diagnosis\] in the panel selection window. Then, a window for bra
 </table>
 
 {% hint style="info" %}
-* Refer to "Hi6 system diagnosis manual" for more details.
-{% endhint %}
 
+* This function is supported only on robots equipped with a gas spring.  
+* For more details on the gas spring diagnostic function, refer to the **[Hi6 Robot Controller Function Manual – HRScript Robot Language]**, section for the [**10.1.7 gasp_check**](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/10-etc/1-proc/7-gasp_check) command.  
+
+{% endhint %}
 # 6.4.3 Task monitor
 
 
