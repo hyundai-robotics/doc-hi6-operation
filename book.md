@@ -4288,9 +4288,9 @@ job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 
 
 # 6.4.2 시스템 진단
 
-패널 선택창에서 \[시스템 진단\]을 터치하십시오. 최초 실행 시 브레이크 검사 데이터 창이 나타납니다.
+패널 선택창에서 **[시스템 진단]** 을 터치하십시오. 최초 실행 시 브레이크 검사 데이터 창이 나타납니다.
 
-![그림 51 브레이크 검사 화면](../../_assets/tp630/pane-sys-diagnosis-brake.png)
+![시스템 진단 모니터링](../../../_assets/tp630/pane-sys-diagnosis.png)
 
 
 
@@ -4304,36 +4304,103 @@ job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>[시스템 진단] 패널을 클릭한 상태에서 아래 버튼을 클릭하여 다른 검사 항목으로 전환할 수 있습니다.</p>
+        <p><strong>[시스템 진단]</strong> 패널을 클릭한 상태에서 아래 버튼을 클릭하여 다른 검사 항목으로 전환할 수 있습니다.</p>
         <ul>
-          <li>[브레이크 검사]: 브레이크 검사 데이터 화면으로 전환합니다.</li>
+          <li><strong>[브레이크 검사]</strong>: 브레이크 검사 데이터 화면으로 전환합니다.</li>
+          <li><strong>[가스스프링 검사]</strong>: 가스스프링 검사 데이터 화면으로 전환합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+# 6.4.2.1 브레이크 검사 모니터링
+
+아래 버튼에서 **[브레이크 검사]** 를 터치하면 브레이크 검사 데이터 창이 나타납니다.
+
+![브레이크 검사 모니터링](../../../_assets/tp630/pane-sys-diagnosis-brake.png)
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <strong>[각도 변화량]</strong>
+        <p>브레이크 Hold/Release 상태에서 토크 적용 시 현재 각도 변화량, 최대 각도 변화량, 기준 각도 변화량을 표시합니다.</p>
+        <ul>
+          <li>현재 각도 변화량은 검사 중인 축에만 표시됩니다.</li>
+          <li>기준값 설정 모드인 경우 축 이름이 노란색으로 표시됩니다.</li>          
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">
-        <p>브레이크 Hold/Release 시 현재 토크, 최대 토크, 기준 토크와 토크 적용 비율을 표시합니다.</p>
-        <ul>
-          <li>검사 중 현재 토크값이 표시됩니다.</li>
-          <li>기준값 설정 모드인 경우 축 이름이 노란색으로 표시됩니다.</li>          
-        </ul>
+      <td style="text-align:left">        
+        <strong>[토크 비율]</strong>
+        <p>브레이크 검사 시 적용할 토크 비율을 표시합니다.</p>
       </td>
     </tr>
-    
+
+
   </tbody>
 </table>
 
 {% hint style="info" %}
-* 시스템 진단 기능에 대한 자세한 내용은 별도의 “Hi6 제어기 시스템 진단 기능 설명서”를 참조하십시오.
+* 브레이크 검사 기능에 대한 자세한 내용은 **[Hi6 로봇제어기 기능설명서 - 로봇언어 HRScript]** 의 [**10.1.16 brake_check문**](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/10-etc/1-proc/16-brake_check) 항목을 참조하십시오.  
 {% endhint %}
 
-# 6.4.3 태스크
+# 6.4.2.2 가스스프링 압력 검사 모니터링
+
+아래 버튼에서 **[가스스프링 검사]** 를 터치하면 가스스프링 압력 검사 데이터 창이 나타납니다.
+
+![가스스프링 압력 검사 모니터링](../../../_assets/tp630/pane-sys-diagnosis-gas-pressure.png)
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>최근 5개의 가스스프링 압력 검사 결과를 표시합니다.</p>
+        <ul>
+          <li><strong>[타임스탬프]</strong>: 가스스프링 검사를 수행한 시각을 표시합니다.</li>
+          <li><strong>[압력]</strong>: 기준압력과 허용치, 추정된 압력을 표시합니다. </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+* 가스스프링이 장착된 로봇에서만 지원되는 기능입니다.
+* 가스스프링 검사 기능에 대한 자세한 내용은 **[Hi6 로봇제어기 기능설명서 - 로봇언어 HRScript]** 의 [**10.1.7 gasp_check문**](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/10-etc/1-proc/7-gasp_check) 항목을 참조하십시오. 
+
+
+{% endhint %}# 6.4.3 태스크
 
 패널 선택창에서 \[태스크\]를 터치하십시오. 태스크창이 나타납니다.
 
