@@ -1,11 +1,11 @@
 {
     "langCode": "ko",
-    "series": "현대로봇 Hi6 제어기",
+    "series": "현대로봇 Hi7 제어기",
     "title": "조작설명서",
     "publisher": "HD현대로보틱스",
     "tocTitle": "목차",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
 	"variables": {
-		"cont_model": "Hi6"
+		"cont_model": "Hi7"
 	}
 }
