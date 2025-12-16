@@ -2167,7 +2167,7 @@ XYZ 위치는 고정한 상태로 설정한 좌표계의 축으로 TCP 좌표계
 ![](../../../_assets/tp630/sbt-cmd-list.png)
 
 * 한 그룹의 명령어가 많을 경우 [이전/다음] 버튼을 눌러서 추가 명령어를 확인하십시오.
-* 각 명령문에 대한 자세한 내용은 "[Hi6 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/README)"를 참조하십시오.
+* 각 명령문에 대한 자세한 내용은 "[Hi7 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-Hi7/README)"를 참조하십시오.
 # 3.2.2.2 숨은 포즈의 스텝 명령문 입력
 
 현재 로봇이 취한 자세를 이동 명령으로 입력하려면, 키패드의 <**기록**> 키를 누르십시오.
