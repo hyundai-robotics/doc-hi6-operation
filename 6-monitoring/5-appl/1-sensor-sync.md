@@ -49,6 +49,6 @@
 </table>
 
 {% hint style="info" %}
-센서 동기 기능에 대한 자세한 내용은 별도의 “Hi6 센서동기 기능 설명서”를 참조하십시오.
+센서 동기 기능에 대한 자세한 내용은 별도의 "[Hi6 센서동기 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-sensor-sync/korean/README)"를 참조하십시오.
 {% endhint %}
 

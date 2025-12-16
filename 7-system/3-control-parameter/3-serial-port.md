@@ -57,6 +57,6 @@
 
 * Sensor: 비전 센서와 접속하여 시프트 데이터 수신
 * LVS: 용접선 추종을 위한 레이저 비전 센서 연결
-* MODBUS: Hi6 제어기의 MODBUS 슬레이브 기능 사용
+* MODBUS: ${cont_model} 제어기의 MODBUS 슬레이브 기능 사용
 {% endhint %}
 

@@ -2,7 +2,7 @@
 
 산업용 통신\(필드버스; Fieldbus\)을 사용 설정합니다.
 
-1.	사용할 통신에 따라 “Hi6 제어기 보수 설명서”를 참조하여 PCI 카드 장착 및 슬롯 번호\(1 ~ 4\)를 설정하십시오.
+1.	사용할 통신에 따라 "[Hi6-N 제어기 보수 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-n-maintenance/korean/README)" 혹은 "[Hi6-T 제어기 보수 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-t-maintenance/korean/README)"를 참조하여 PCI 카드 장착 및 슬롯 번호\(1 ~ 4\)를 설정하십시오.
 
 2.	“7.3.11.1 펌웨어 설정”을 참조하여 산업용 통신 펌웨어를 설정하십시오.
 
