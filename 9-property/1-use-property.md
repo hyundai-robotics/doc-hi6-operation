@@ -1,6 +1,6 @@
 ﻿# 9.1 Use of the property Function
 
-If you use the \[property\] button the L button bar of the Hi6 teach pendant screen, you can quickly and easily set the conditions and check the position simply by a single button operation.
+If you use the \[property\] button the L button bar of the ${cont_model} teach pendant screen, you can quickly and easily set the conditions and check the position simply by a single button operation.
 
 ![Figure 75 Function for the \[Attributes\] Button](../_assets/tp630/lbt-property-arc_eng.png)
 

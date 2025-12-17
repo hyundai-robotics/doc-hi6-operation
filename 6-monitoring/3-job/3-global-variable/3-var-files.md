@@ -77,7 +77,7 @@ You can double-click the .csv file in File-manager to open it with Microsoft Exc
 
 ![](../../../_assets/tp630/panel-gvar/csv2.png)
 
-Saving in Excel results in unnecessary commas, as shown below, and the quotation marks in the coordinate-system disappear, resulting in a slight change in format. It can't be helped because Excel handles .csv like this. Anyway, the Hi6 controller also recognizes that kind of format, so it doesn't matter.
+Saving in Excel results in unnecessary commas, as shown below, and the quotation marks in the coordinate-system disappear, resulting in a slight change in format. It can't be helped because Excel handles .csv like this. Anyway, the ${cont_model} controller also recognizes that kind of format, so it doesn't matter.
 
 ```python
 , , array,10,,,,,,

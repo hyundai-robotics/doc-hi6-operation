@@ -10,4 +10,4 @@
 
 * If the command list has commands more than seven, you can see the additional command by touching [prev/next] button.
 
-* For details on each statement, refer to the “[Hi6 Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/README).”
+* For details on each statement, refer to the “[${cont_model} Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/README).”

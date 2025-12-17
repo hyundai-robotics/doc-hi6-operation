@@ -1,31 +1,31 @@
 ﻿# Hi6 Robot Controller Operation Manual
 
 {% hint style="warning" %}
-The information presented in this manual is the property of Hyundai Robotics.
+The information presented in this manual is the property of HD Hyundai Robotics.
 
-The manual may neither be copied, in part or in full, nor redistributed without prior written consent from Hyundai Robotics.
+The manual may neither be copied, in part or in full, nor redistributed without prior written consent from HD Hyundai Robotics.
 
 It may neither be provided to any third party nor used for any other purposes.
 
 
 
-Hyundai Robotics reserves the right to modify this document without prior notification.
+HD Hyundai Robotics reserves the right to modify this document without prior notification.
 
 
 
-**Copyright ⓒ 2020 by Hyundai Robotics**
+**Copyright ⓒ 2025 by HD Hyundai Robotics**
 {% endhint %}
 # About the Manual
 
-This manual describes the basics and structure of Hyundai Robotics’ Hi6 controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
+This manual describes the basics and structure of HD Hyundai Robotics' Hi6 controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
 
 This manual does not cover detailed application functions, such as direct teaching using a collaborative robot, methods of setting safety functions, spot welding, arc welding, positioner sync function, and sensor sync function. For details on relevant information, refer to the collaborative robot maintenance manual and individual application function manuals.
 
 You must fully understand the contents of the manual before using the product. Moreover, keep the manual nearby so that you can refer to it whenever you need it.
 
-This manual may be provided as reference material for customers who have purchased Hyundai Robotics products or may be used as internal training material.
+This manual may be provided as reference material for customers who have purchased HD Hyundai Robotics products or may be used as internal training material.
 
-This manual has been created based on standard specifications, so some contents may differ depending on the model of the product you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual. For detailed information on the revision of the manual, you need to visit our internet website \(www.hyundai-robotics.com\).
+This manual has been created based on standard specifications, so some contents may differ depending on the model of the product you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and HD Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual. For detailed information on the revision of the manual, you need to visit our internet website \(www.hyundai-robotics.com\).
 
 
 
@@ -33,11 +33,11 @@ This manual has been created based on standard specifications, so some contents 
 
 # Copyrights
 
-The product, as well as all programs, files, and contents covered in this manual, are protected by copyright laws and confidentiality agreements. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by Hyundai Robotics, are strictly prohibited.
+The product, as well as all programs, files, and contents covered in this manual, are protected by copyright laws and confidentiality agreements. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by HD Hyundai Robotics, are strictly prohibited.
 
 <Br>
 
-Copyright ⓒ 2022 HYUNDAI ROBOTICS. All rights reserved.
+Copyright ⓒ 2025 HD HYUNDAI ROBOTICS. All rights reserved.
 
 
 
@@ -2302,7 +2302,7 @@ When editing the command parameters, you can edit variables, expressions, and st
 
 * If the command list has commands more than seven, you can see the additional command by touching [prev/next] button.
 
-* For details on each statement, refer to the “[Hi6 Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/README).”
+* For details on each statement, refer to the “[Hi6 Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-Hi6/README).”
 # 3.2.2.2 Inputting of a Step Statement with a Hidden Pose
 
 To input the current posture of the robot as a move command, press the <<b>REC</b>> key on the keypad.
@@ -4392,7 +4392,7 @@ Touch [Brake Diagnostics] in the button list below to display the brake diagnost
 
 {% hint style="info" %}
 
-* For more details on the brake diagnostic function, refer to the **[Hi6 Robot Controller Function Manual – HRScript Robot Language]**, section for the [**10.1.16 brake_check**](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/10-etc/1-proc/16-brake_check) command.
+* For more details on the brake diagnostic function, refer to the "Hi6 Robot Controller Function Manual – HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-Hi6/10-etc/1-proc/16-brake_check)" command.
 
 {% endhint %}# 6.4.2.2 Gas Spring Pressure Diagnostics Monitoring
 
@@ -4426,7 +4426,7 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
 {% hint style="info" %}
 
 * This function is supported only on robots equipped with a gas spring.  
-* For more details on the gas spring diagnostic function, refer to the **[Hi6 Robot Controller Function Manual – HRScript Robot Language]**, section for the [**10.1.7 gasp_check**](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/10-etc/1-proc/7-gasp_check) command.  
+* For more details on the gas spring diagnostic function, refer to the "Hi6 Robot Controller Function Manual – HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-Hi6/10-etc/1-proc/7-gasp_check)" command.  
 
 {% endhint %}
 # 6.4.3 Task monitor
@@ -5956,7 +5956,7 @@ When the PCI slot setting is completed, the CONFIG files set in the slot \#1 - \
 \(The function to be provided later\) If you set the communication method to CC-Link slave, you can set the detailed information for each type of communication inside the controller.
 
 {% hint style="info" %}
-You can set the communication information by using the “Sycon.net” program on the Hyundai Robotics internet website \(www.hyundai-robotics.com\).
+You can set the communication information by using the “Sycon.net” program on the HD Hyundai Robotics internet website \(www.hyundai-robotics.com\).
 {% endhint %}
 
 # 7.3.11.3 Monitoring
@@ -6901,7 +6901,7 @@ In the move command, the robot speed is applied by combining the original speed 
 {% endhint %}
 # 7.6 Initialization
 
-If the robot controller does not operate normally, initialize the system. The system initialization must be performed by an engineer who has experience in initial setting of the robots of Hyundai Robotics.
+If the robot controller does not operate normally, initialize the system. The system initialization must be performed by an engineer who has experience in initial setting of the robots of HD Hyundai Robotics.
 
 
 
@@ -8490,7 +8490,7 @@ When writing the SPOT command while writing the program, if you place the cursor
 
 # 10. Robot Language
 
-For details on the robot language, refer to the "[Hi6 Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/README)"
+For details on the robot language, refer to the "[Hi6 Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-Hi6/README)"
 # 11. Etc.
 
 This chapter explains additional information that was not covered earlier.

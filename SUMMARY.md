@@ -1,6 +1,6 @@
 ﻿# Table of contents
 
-* [Hi6 Robot Controller Operation Manual](README.md)
+* [${cont_model} Robot Controller Operation Manual](README.md)
 * [About the Manual](0-about-this-manual/README.md)
   * [Copyrights](0-about-this-manual/copyright.md)
   * [Notation Convention](0-about-this-manual/notation.md)
@@ -14,7 +14,7 @@
       * [1.2.1.1 Input of the Power to the Motor and the Operable Status](1-robot-system/2-basic-usage/1-power-on/1-input-of-the-power-to-the-mot.md)
     * [1.2.2 Turning Off the Power](1-robot-system/2-basic-usage/2-power-off.md)
     * [1.2.3 Changing the language of the teach pendant screen](1-robot-system/2-basic-usage/3-change-language-of-tp.md)
-    * [1.2.4 Screen of the Hi6 Teach Pendant](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/README.md)
+    * [1.2.4 Screen of the ${cont_model} Teach Pendant](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/README.md)
        * [1.2.4.1 Tile display window](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/1-title-area.md)
       * [1.2.4.2 Status display window](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/2-status-bar.md)
       * [1.2.4.3 R button bar](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/3-Rbt-bar.md)

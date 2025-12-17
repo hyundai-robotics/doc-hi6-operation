@@ -1,6 +1,6 @@
 ﻿# 7.6 Initialization
 
-If the robot controller does not operate normally, initialize the system. The system initialization must be performed by an engineer who has experience in initial setting of the robots of Hyundai Robotics.
+If the robot controller does not operate normally, initialize the system. The system initialization must be performed by an engineer who has experience in initial setting of the robots of HD Hyundai Robotics.
 
 
 

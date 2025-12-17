@@ -2,7 +2,7 @@
 
 The step forward/backward is one of the methods of operating the robot in manual mode and refers to the act of playing back a recorded program. By manipulating the robot in the step forward/backward operation, you can check the recorded program path and mutual interlock relationship at a range of safe speed.
 
-The execution unit for the step forward/backward operation can be checked and set from the \[run to\] button on the left side of the Hi6 teach pendant screen.
+The execution unit for the step forward/backward operation can be checked and set from the \[run to\] button on the left side of the ${cont_model} teach pendant screen.
 
 ![](../../_assets/tp630/lbt-runto_eng.png)  
 
@@ -32,7 +32,7 @@ When the robot stops at cornering and then executes the forward operation, the r
 ![Figure 13 Example of the Robot Path Change During Step Forward/Backward Operation](../../_assets/path-step-bwd-then-fwd-en.png)
 
 
-You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the \[run to\] button on the left side of the Hi6 teach pendant screen, set the speed value and function execution option in the setting window.
+You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the \[run to\] button on the left side of the ${cont_model} teach pendant screen, set the speed value and function execution option in the setting window.
 
 
 

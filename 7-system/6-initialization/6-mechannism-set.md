@@ -41,7 +41,7 @@ A set mechanism unit is the minimum unit that can be assigned to each task and c
 
 #### Mechanism Jog Rules 
 
-* The Hi6 controller provides eight jog keys in total.
+* The ${cont_model} controller provides eight jog keys in total.
 * 
   Mechanisms will be utilized as one group during the jog operation.
 

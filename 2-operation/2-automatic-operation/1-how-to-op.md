@@ -12,7 +12,7 @@ It is the method to teach the robot the contents of the work and then make it pe
      
     </div>
 
-3.	On the status bar of the Hi6 teach pendant screen, check whether the operation mode is set to automatic mode.
+3.	On the status bar of the ${cont_model} teach pendant screen, check whether the operation mode is set to automatic mode.
 
     ![](../../_assets/tp630/sbar-mode-auto1_eng.png)
 

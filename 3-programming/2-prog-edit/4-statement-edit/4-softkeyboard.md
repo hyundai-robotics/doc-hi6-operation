@@ -1,8 +1,8 @@
 ﻿# 3.2.4.4 Soft Keyboard
 
-You can easily input variables, expressions, and strings using the soft keyboard on the Hi6 teach pendant screen.
+You can easily input variables, expressions, and strings using the soft keyboard on the ${cont_model} teach pendant screen.
 
-1.	Touch the \[![](../../../_assets/tp630/rbt-softkb_eng.png)\] button on the log bar of the Hi6 teach pendant screen. Then, a soft keyboard will appear at the bottom of the screen.
+1.	Touch the \[![](../../../_assets/tp630/rbt-softkb_eng.png)\] button on the log bar of the ${cont_model} teach pendant screen. Then, a soft keyboard will appear at the bottom of the screen.
 
 2.	You can input variables, expressions, and strings in the input area using the soft keyboard. The existing parameter values will be removed, and the inputted texts will be displayed.
 

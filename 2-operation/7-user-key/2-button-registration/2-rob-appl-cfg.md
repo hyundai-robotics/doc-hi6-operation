@@ -1,6 +1,6 @@
 ﻿# 2.7.2.2 Robot application user-key configuration
 
-Touch the `[user key]` button on the R button bar of the Hi6 teach pendant screen until the desired area appears. Then, the F button area will be switched to the robot application user-key area, such as spotweld-bar and arcweld-bar.
+Touch the `[user key]` button on the R button bar of the ${cont_model} teach pendant screen until the desired area appears. Then, the F button area will be switched to the robot application user-key area, such as spotweld-bar and arcweld-bar.
 
 
 

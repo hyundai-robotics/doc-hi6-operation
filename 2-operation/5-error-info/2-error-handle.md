@@ -14,7 +14,7 @@ The following shows how to check and deal with various system troubles, such as 
 
   ![](../../_assets/tp630/wg-alarm-log_eng.png)
 
-* Touch the \[Help\] button on the L-button bar of the Hi6 teach pendant screen. You can check the error code, the notification message, the cause of the trouble, and how to take action for it.
+* Touch the \[Help\] button on the L-button bar of the ${cont_model} teach pendant screen. You can check the error code, the notification message, the cause of the trouble, and how to take action for it.
 
   ![](../../_assets/tp630/lbt-help_eng.png)
 

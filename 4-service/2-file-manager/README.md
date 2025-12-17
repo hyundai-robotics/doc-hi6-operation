@@ -61,7 +61,7 @@ You can manage files in the main board’s internal memory, teach pendant, or re
 
 {% hint style="info" %}
 * It is the same function as “R17 File Management” of R codes.
-* When a removable storage device is connected to the teach pendant, the \[USB\] icon \(![](../../_assets/icon-usb2.png)\) will appear on the status bar of the Hi6 teach pendant screen.
+* When a removable storage device is connected to the teach pendant, the \[USB\] icon \(![](../../_assets/icon-usb2.png)\) will appear on the status bar of the ${cont_model} teach pendant screen.
 {% endhint %}
 
 {% hint style="warning" %}

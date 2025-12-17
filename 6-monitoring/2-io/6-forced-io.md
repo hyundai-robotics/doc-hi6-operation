@@ -61,6 +61,6 @@ After completing the test and problem analysis, be sure to press the [F2: Clear]
 
 {% hint style="warning" %}
 * If multiple entries force conflicting values for the same relay (or overlaid bits), they are forced to the value of the lower item of the table.
-* When the Hi6 controller is powered off, all contents registered as forced IO are cleared.
+* When the ${cont_model} controller is powered off, all contents registered as forced IO are cleared.
 
 {% endhint %}

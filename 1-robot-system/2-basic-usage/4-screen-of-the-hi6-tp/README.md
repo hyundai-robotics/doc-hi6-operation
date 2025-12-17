@@ -1,6 +1,6 @@
-﻿# 1.2.4 Screen of the Hi6 Teach Pendant
+﻿# 1.2.4 Screen of the ${cont_model} Teach Pendant
 
-Following figure represents the screen displayed on teach pendant. Teach pendant screen of Hi6 controller is composed of 10 screen windows of color touch screens.
+Following figure represents the screen displayed on teach pendant. Teach pendant screen of ${cont_model} controller is composed of 10 screen windows of color touch screens.
 <br>
 
 ![](../../../_assets/tp630/TP-main_eng.png)

@@ -1,6 +1,6 @@
 ﻿# 7.7.5 Gravity Direction Auto Setting
 
-The Hi6 controller is based on dynamics, so it is important to set the gravity direction.
+The ${cont_model} controller is based on dynamics, so it is important to set the gravity direction.
 
 In general, the robot installation direction is perpendicular to the gravity direction as follows. If the robot is installed obliquely to the ground, the gravity direction should be set in the robot controller. At this time, you can use the automatic gravity direction setting function.
 

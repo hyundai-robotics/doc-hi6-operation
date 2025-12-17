@@ -1,6 +1,6 @@
 ﻿# 7.6.1 System Format
 
-1.	On the status bar of the Hi6 teach pendant screen, check if the operation mode is set to manual mode.
+1.	On the status bar of the ${cont_model} teach pendant screen, check if the operation mode is set to manual mode.
 
     ![](../../_assets/tp630/sbar-mode-manual_eng.png)
 

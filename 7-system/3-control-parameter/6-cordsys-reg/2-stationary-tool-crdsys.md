@@ -64,7 +64,7 @@ After accurately finding the TCP based on the robot base coordinate system, you 
 
 ### Writing a Program Using the Stationary Tool Coordinate System
 
-To perform the recording for the stationary tool interpolation step, you should record the step as SL or SC. Using the \[Recording Condition\] button on the upper left of the Hi6 teach pendant screen, you can change the recording condition to SL \(stationary tool linear interpolation\) or SC \(stationary tool circular interpolation\).
+To perform the recording for the stationary tool interpolation step, you should record the step as SL or SC. Using the \[Recording Condition\] button on the upper left of the ${cont_model} teach pendant screen, you can change the recording condition to SL \(stationary tool linear interpolation\) or SC \(stationary tool circular interpolation\).
 
 For example, if you register and use the stationary tool coordinate system No. 1, you can create a program as follows.
 

@@ -8,7 +8,7 @@ The method of instructing the contents of the work to the robot using the jog ke
 
     ![](../../_assets/tp630/TP-hw-switch-manual.png)
 
-3.	In the status bar of the Hi6 teach pendant screen, check whether the operation mode is set to manual mode.
+3.	In the status bar of the ${cont_model} teach pendant screen, check whether the operation mode is set to manual mode.
 
     ![](../../_assets/tp630/sbar-mode_eng.png)
 

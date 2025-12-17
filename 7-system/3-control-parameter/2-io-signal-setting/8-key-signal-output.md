@@ -17,6 +17,6 @@ By assigning the output signal of the controller to the signal keys of the teach
 For example, input 2.9 and press the <<b>ENTER</b>> key. Then, it will be converted to and displayed as fb2.do9. If you input 9 without decimal point and press the <<b>ENTER</b>> key, it will be converted to do9.
 
 {% hint style="info" %}
-You can register the desired output signal with a button in the user key area of Hi6 teach pendant. For details, refer to "[2.7.2.1 Key Signal Output Function Area](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)".
+You can register the desired output signal with a button in the user key area of ${cont_model} teach pendant. For details, refer to "[2.7.2.1 Key Signal Output Function Area](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)".
 {% endhint %}
 

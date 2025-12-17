@@ -1,6 +1,6 @@
 ﻿# 7.6.2 Robot Type Selection
 
-1.	Touch the \[5: Initialize &gt; 2: Robot Type Selection\] menu. Or touch the \[Mechanism\] button at the top right of the Hi6 teach pendant screen.
+1.	Touch the \[5: Initialize &gt; 2: Robot Type Selection\] menu. Or touch the \[Mechanism\] button at the top right of the ${cont_model} teach pendant screen.
 
 2.	Select a robot in the robot model selection window, and then touch the \[OK\] button.
 
@@ -25,7 +25,7 @@
 
 {% endhint %}
 
-3.	After touching the \[Favorites\] button at the bottom right of the Hi6 teach pendant screen, input 314 in the input area of the favorites window, and then touch the \[OK\] button.
+3.	After touching the \[Favorites\] button at the bottom right of the ${cont_model} teach pendant screen, input 314 in the input area of the favorites window, and then touch the \[OK\] button.
 
     ![](../../_assets/tp630/pop-rcode-314_eng.png)
 

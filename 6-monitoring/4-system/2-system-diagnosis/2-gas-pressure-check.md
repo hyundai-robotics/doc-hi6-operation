@@ -30,6 +30,6 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
 {% hint style="info" %}
 
 * This function is supported only on robots equipped with a gas spring.  
-* For more details on the gas spring diagnostic function, refer to the **[Hi6 Robot Controller Function Manual – HRScript Robot Language]**, section for the [**10.1.7 gasp_check**](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/10-etc/1-proc/7-gasp_check) command.  
+* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual – HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/10-etc/1-proc/7-gasp_check)" command.  
 
 {% endhint %}

@@ -10,7 +10,7 @@ The robot and tool calibration function will be used in an environment where the
 
     ![](../../_assets/tp630/system-calib-robottool-msr.png)
 
-3.	After saving the position data file into a removable storage device, connect the removable storage device to the teach pendant. The \[USB\] icon \( \) will appear in the status bar of the Hi6 teach pendant screen.
+3.	After saving the position data file into a removable storage device, connect the removable storage device to the teach pendant. The \[USB\] icon \( \) will appear in the status bar of the ${cont_model} teach pendant screen.
 
 4.	Touch the \[6: Auto Calibration &gt; 9: Robot and Tool calibration condition\] menu.
 

@@ -54,7 +54,7 @@ Refer to the following information when setting the usage of the serial port.
 
 * Sensor: For receiving the shift data by accessing the vision sensor
 * LVS: For connecting with the laser vision sensor for the weld line follow-up
-* MODBUS: The MODBUS slave function of the Hi6 controller
+* MODBUS: The MODBUS slave function of the ${cont_model} controller
 {% endhint %}
 
 

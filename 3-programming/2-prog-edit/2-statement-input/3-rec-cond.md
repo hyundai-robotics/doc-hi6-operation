@@ -2,7 +2,7 @@
 
 When a statement is inputted using the \<**REC**\> key, the current posture of the robot will be recorded as the target pose, and the value set in advance using the \[rec.cond\] button will be applied to the move command \(move\) parameter. The following shows the method of setting the recording condition of a statement.
 
-1.	Touch the \[rec.cond.\] button on the left side of the Hi6 teach pendant screen. Then, the recording condition setting window will appear.
+1.	Touch the \[rec.cond.\] button on the left side of the ${cont_model} teach pendant screen. Then, the recording condition setting window will appear.
 
     ![](../../../_assets/tp630/lbt-record_eng.png)
 

@@ -1,7 +1,7 @@
 ﻿# 7.3.2.12 fn block allocation
 
 You can define fn objects by specifying specific areas of fb objects.
-If the Hi6 controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
+If the ${cont_model} controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
 
 The set fn objects can be used in the same way as the fb objects in the robot language and the embedded PLC.
 
