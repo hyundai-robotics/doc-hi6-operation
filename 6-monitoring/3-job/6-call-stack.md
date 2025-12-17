@@ -2,9 +2,9 @@
 
 패널 선택창에서 \[호출 스택\]을 터치하면 호출 스택창이 나타납니다. 이 절의 내용을 이해하려면 먼저 hrscript의 `call`~`return`문과 지역변수에 대한 이해가 선행되어야 합니다.
 
-[call문, jump문과 서브프로그램](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/3-flowcontrol-subprogram/7-call-jump/README)
+[call문, jump문과 서브프로그램](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-${cont_model}/3-flowcontrol-subprogram/7-call-jump/README)
 
-[지역변수](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/3-flowcontrol-subprogram/8-local-global-var/1-local-var)
+[지역변수](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-${cont_model}/3-flowcontrol-subprogram/8-local-global-var/1-local-var)
 
 
 ### 로봇언어의 호출과 리턴
