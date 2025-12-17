@@ -23,7 +23,7 @@
 
 
 
-Copyright ⓒ 2022 HYUNDAI ROBOTICS. All rights reserved.
+Copyright ⓒ 2022 HD HYUNDAI ROBOTICS. All rights reserved.
 
 # 표기 규약
 
@@ -1486,7 +1486,7 @@ until 다음의 조건식의 값은 result\(\) 함수의 리턴값을 통해 확
 ![그림 22 정지 조건의 예](../../../_assets/image_46_1.png)
 
 {% hint style="info" %}
-로봇 언어에 대한 자세한 내용은 "[Hi6 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/README)"를 참조하십시오.
+로봇 언어에 대한 자세한 내용은 "[Hi7 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-Hi7/README)"를 참조하십시오.
 {% endhint %}
 # 2.3.1.7 주석
 
@@ -4108,9 +4108,9 @@ Excel에서 저장하면 아래와 같이 불필요한 쉼표도 생기고, 좌�
 
 패널 선택창에서 \[호출 스택\]을 터치하면 호출 스택창이 나타납니다. 이 절의 내용을 이해하려면 먼저 hrscript의 `call`~`return`문과 지역변수에 대한 이해가 선행되어야 합니다.
 
-[call문, jump문과 서브프로그램](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/3-flowcontrol-subprogram/7-call-jump/README)
+[call문, jump문과 서브프로그램](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-Hi7/3-flowcontrol-subprogram/7-call-jump/README)
 
-[지역변수](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/3-flowcontrol-subprogram/8-local-global-var/1-local-var)
+[지역변수](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-Hi7/3-flowcontrol-subprogram/8-local-global-var/1-local-var)
 
 
 ### 로봇언어의 호출과 리턴
@@ -4361,7 +4361,7 @@ job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 
 </table>
 
 {% hint style="info" %}
-* 브레이크 검사 기능에 대한 자세한 내용은 "[Hi6 로봇제어기 기능설명서 - 로봇언어 HRScript]" 의 [**10.1.16 brake_check문**](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/10-etc/1-proc/16-brake_check) 항목을 참조하십시오.  
+* 브레이크 검사 기능에 대한 자세한 내용은 "[Hi7 로봇제어기 기능설명서 - 로봇언어 HRScript]" 의 [**10.1.16 brake_check문**](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-Hi7/10-etc/1-proc/16-brake_check) 항목을 참조하십시오.  
 {% endhint %}
 
 # 6.4.2.2 가스스프링 압력 검사 모니터링
@@ -4397,7 +4397,7 @@ job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 
 
 {% hint style="info" %}
 * 가스스프링이 장착된 로봇에서만 지원되는 기능입니다.
-* 가스스프링 검사 기능에 대한 자세한 내용은 "[Hi6 로봇제어기 기능설명서 - 로봇언어 HRScript]" 의 [**10.1.7 gasp_check문**](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/10-etc/1-proc/7-gasp_check) 항목을 참조하십시오. 
+* 가스스프링 검사 기능에 대한 자세한 내용은 "[Hi7 로봇제어기 기능설명서 - 로봇언어 HRScript]" 의 [**10.1.7 gasp_check문**](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-Hi7/10-etc/1-proc/7-gasp_check) 항목을 참조하십시오. 
 
 
 {% endhint %}# 6.4.3 태스크
@@ -8156,7 +8156,7 @@ R358 코드를 이용한 서보툴 체인지 설정 방법은 다음과 같습�
 
 # 8.15 R360 CONTPATH 수동 설정
 
-CONTPATH(연속패스) 모드를 수동으로 변경하는 기능입니다. 입력범위는 0, 1, 2 이고, 각 번호 별 설명은 다음과 같습니다. ([contpath](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/5-moving-robot/6-contpath) 명령문과 동일)
+CONTPATH(연속패스) 모드를 수동으로 변경하는 기능입니다. 입력범위는 0, 1, 2 이고, 각 번호 별 설명은 다음과 같습니다. ([contpath](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-Hi7/5-moving-robot/7-contpath) 명령문과 동일)
 
 
 <table>
@@ -8582,7 +8582,7 @@ Hi7 티치 펜던트 화면 우측의 \[속성\] 버튼을 이용하면 이러�
 
 # 10. 로봇 언어
 
-로봇 언어에 대한 자세한 내용은 "[Hi6 로봇언어 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/README)"를 참조하십시오.
+로봇 언어에 대한 자세한 내용은 "[Hi7 로봇언어 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-Hi7/README)"를 참조하십시오.
 # 11. 기타
 
 이 장에서 앞에서 설명하지 않은 부가적인 정보들을 설명합니다.

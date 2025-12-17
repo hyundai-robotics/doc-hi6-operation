@@ -7,5 +7,5 @@ until 다음의 조건식의 값은 result\(\) 함수의 리턴값을 통해 확
 ![그림 22 정지 조건의 예](../../../_assets/image_46_1.png)
 
 {% hint style="info" %}
-로봇 언어에 대한 자세한 내용은 "[Hi6 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean/README)"를 참조하십시오.
+로봇 언어에 대한 자세한 내용은 "[${cont_model} 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-${cont_model}/README)"를 참조하십시오.
 {% endhint %}
