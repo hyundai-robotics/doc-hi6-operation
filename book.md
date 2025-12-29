@@ -3721,8 +3721,32 @@ panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것�
 
 <br>
 
-반영이 일어나는 시점은 아래 표와 같습니다.
+반영되는 시점은 아래 표와 같습니다.
 
+<u>V60.32-03 및 이후 버전</u>
+<table>
+<thead>
+  <tr>
+    <th>상태</th>
+    <th>프로그램</th>
+    <th>적용 요청 후, 적용 시점</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">정지/재생<br>무관</td>
+    <td>재생 중이 아닌 프로그램<br>(호출스택에 포함되지 않은 job)</td>
+    <td>즉시 적용</td>
+  </tr>
+  <tr>
+    <td>재생 중인 프로그램<br>(호출스택에 포함된 job)</td>
+    <td>다음 cycle 시작<br>혹은 RESET 0</td>
+  </tr>
+</tbody>
+</table>
+<br>
+
+<u>V60.32-02 및 이전 버전</u>
 <table>
 <thead>
   <tr>
