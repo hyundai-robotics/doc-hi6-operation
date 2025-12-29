@@ -3747,6 +3747,32 @@ If you have finished the program edit, click the button ![](../../_assets/tp630/
 
 The actual timing of the reflection is displayed in the following table.
 
+<u>V60.32-03 or later versions:</u>
+<table>
+<thead>
+  <tr>
+    <th>Status</th>
+    <th>Program</th>
+    <th>After request, reflection timing</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">Regardless of <br>Not running<br>or  Running</td>
+    <td>Not running program<br>(Job not included in call stack)</td>
+    <td>immediately applied</td>
+  </tr>
+  <tr>
+    <td>Running program<br>(Job included in call stack)</td>
+    <td>at the end of the cycle<br>or RESET 0</td>
+  </tr>
+</tbody>
+</table>
+<br>
+
+<br>
+<u>V60.32-02 or prior versions:</u>
+
 <table>
 <thead>
   <tr>
@@ -3768,7 +3794,7 @@ The actual timing of the reflection is displayed in the following table.
   </tr>
   <tr>
     <td>Running program<br>(Job included in call stack)</td>
-    <td>at start of the next cycle</td>
+    <td>at the end of the cycle</td>
   </tr>
 </tbody>
 </table>
