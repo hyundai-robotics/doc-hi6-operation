@@ -1,22 +1,41 @@
 ﻿# 7.3.2.8 Key Signal Output
 
-By assigning the output signal of the controller to the signal keys of the teach pendant, you can perform setting in a way to turn on or output signal.
+`Key Signal Output` is a function that allows you to assign a desired variable to an F-key and set the value of that variable to 1 or 0 through button operation.
+It is mainly used to turn I/O output signals ON or OFF by operating an F-key to which an output variable has been assigned.
+(All types of variables can be specified, including general variables, aliases, and output variables.)
 
-1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 5: Key Signal Output\] menu. 
+You can open the `Key Signal Output` buttons by pressing `[R4: User Key]` on the right side of the HOME screen.
+If no settings have been made, all buttons will be empty.
 
-2.	Set a label, a signal, a function name , and options of the button, and then touch the \[OK\] button.
+You can configure the buttons as follows:
 
-    ![](../../../_assets/tp630/ctrl-key-outsignal_eng.png)
+1. Touch the `[F2: system] – 2: Control parameter – 2: Input/Output signal setting – 5: Key signal output` menu. 
 
+2. Set the function name to be displayed on the button and options, then touch the `[F7: OK]` button.
 
+![](../../../_assets/tp630/ctrl-key-outsignal_eng.png)
 
-* \[fb\]/\[do\]: You can easily input the signal output variable value by using numbers and decimal point only.
+* `title`: Name displayed on the button
+* `on-var`: When a variable name is specified, the value 1 is assigned to the variable at the moment the button is turned ON.
+* `off-var`: When a variable name is specified, the value 1 is assigned to the variable at the moment the button is turned OFF.
+* `toggle`:
+  + Checked: The button toggles between ON and OFF each time it is pressed.
+  + Unchecked: The button turns ON when pressed and turns OFF when released.
+* `Permit on auto mode`:
+  + Checked: This function operates even in Auto mode.
+  + Unchecked: This function does not operate in Auto mode.
+* `OFF on auto mode`: When switching to Auto mode, all variables set for this function are turned OFF.
 
+{% hint style="info" %}
+For `on-var` and `off-var`, for example, if you enter 3.5 and press `[ENTER]`, fb3.do5 is entered.
+If you enter 5 and press `[ENTER]`, do5 is entered.
+Alternatively, you can use the F-keys [fb], [do], and [so] at the bottom of the screen to enter values.
+{% endhint %}
 
+3. Open the `Key Signal Output` buttons and touch the registered F-key together with the `[SHIFT]` key to verify that the settings have been applied correctly.
 
-For example, input 2.9 and press the <<b>ENTER</b>> key. Then, it will be converted to and displayed as fb2.do9. If you input 9 without decimal point and press the <<b>ENTER</b>> key, it will be converted to do9.
+![](../../../_assets/tp630/rbt-userkey-keysig_eng.png)
 
 {% hint style="info" %}
 You can register the desired output signal with a button in the user key area of ${cont_model} teach pendant. For details, refer to "[2.7.2.1 Key Signal Output Function Area](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)".
 {% endhint %}
-
