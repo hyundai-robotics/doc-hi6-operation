@@ -6528,32 +6528,37 @@ The X, Y, and Z directions of each axis are set in the same direction as the rob
 
 ![Figure 62 Coordinate System Origin of Each Axis for Each Robot Configuration ](../../../_assets/image_476.png)
 
-# 7.4.8 Collision Detection \(Function to Be Available Later\)
+# 7.4.8 Impact Detection
 
-The ${cont_model} controller has the error detection function for overcurrent, overload, overspeed, position deviation, as well as the collision detection function, as safety functions in preparation for a case in which the robot operates under abnormal conditions or operates abnormally. These two functions will work with each other to enhance the safety of the robot.
-
-In the ${cont_model} controller, a model-based collision detection function is provided. The model-based collision detection function detects a collision by calculating the difference between the torque that should be normally applied during the robot’s operation and the measured torque based on the dynamics model of the robot. By setting the sensitivity, you can adjust the responsiveness to the collision and make it possible to detect any contact with the outside that occurs when the robot moves at low speed.
-
-However, the collision detection function detects the collision on the robot axis, so if the impact is not transmitted to the robot, the collision will not be detected. Moreover, the following are the points that require you to exercise precautions when using the collision detection function.
-
-* The collision detection function will work only when the motor is turned on.
-* You must execute load estimation before using the collision detection function.
-* If the tool weight and the additional weight of each axis are different from the actual data, false detection may occur.
-* When load estimation and sensor-based/sensorless force control functions are performed, the collision will not be detected.
-* Collisions on the positioners, stationary guns, and jigs that are not attached to the robot cannot be detected.
-* Special-order robots do not support the model-based collision detection function.
-
- 
-
-The following shows how to set the collision detection function.
-
-1.	Touch the \[3: Robot Parameter > 35: Advanced function >  14: Impact Detection\] menu.
-
-2.	Set whether to use the collision detection function, and set the sensitivity, etc.
-
-    ![](../../../_assets/tp630/robot-collision_eng.png)
+When a collision occurs during robot operation, impact detection(collision detection) is a function that compares the torque normally generated during robot motion with the currently generated torque, and treats it as an error when abnormal torque is detected, in order to minimize damage caused by the collision
 
 
+${cont_model} controller enhances robot safety by using the collision detection function in a complementary manner with existing safety functions—such as overcurrent, overload, overspeed, and position deviation error detection—when the robot operates under abnormal conditions or exhibits abnormal behavior.
+
+Touch \[3: Robot Parameter &gt; 14: Impact Detection\] to use this function.
+
+{% hint style="info" %}
+* The collision detection function operates only when the motor is ON.
+* Be sure to set the correct tool/additional weight or perform load estimation before using the collision detection function.
+* If the tool weight or additional weight for each axis differs from the actual values, false detections may occur.
+* Collisions are not detected while performing load estimation or sensor-based / sensorless force control functions.
+* Collisions with positioners, spot welders, jigs, or other equipment not mounted on the robot cannot be detected.
+* Model-based collision detection is not supported for custom-made robot models.
+
+{% endhint %}
+
+
+![](../../../_assets/tp630/coldet/robot_impact_detection.png)
+# 7.4.8.1 Model-Based Impact Detection
+
+The model-based impact detection function detects collisions by calculating the difference between the torque that should normally be generated during robot motion and the torque actually measured, based on the robot’s dynamic model.
+Sensitivity can be adjusted to control responsiveness to collisions, and contact with external objects occurring while the robot is moving at low speed can also be detected.
+
+
+1. Touch the menu \[3: Robot parameter &gt; 14: Impact Detection &gt; 1: Model-Based Collision Detection\].
+
+
+![](../../../_assets/tp630/coldet/model_based_coldet_tab_general.png)
 
 <table>
   <thead>
@@ -6567,99 +6572,159 @@ The following shows how to set the collision detection function.
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">
-        <p>This is information on the use options of the collision detection function.
-          You can set whether to use this function and set the sensitivity and whether
-          to use the low-speed collision detection function.</p>
-        <ul>
-          <li>[Function to be Used]: You can set whether to use the collision detection
-            function.</li>
-          <li>[Sensitivity]: You can set the collision detection sensitivity. The larger
-            the value, the more sensitive it is to impact (basic setting value: 100%).</li>
-          <li>[Low-Speed Impact Detection]: You can set whether to use the low-speed
-            collision detection function.</li>
-          <li>[Reference Time]: You can set the reference time for determining a collision.
-            If an impact force occurs during the reference time, it will be determined
-            as a collision.</li>
-          <li>[Link Speed]: You can set the reference speed for determining a low speed.
-            Slow-speed collision will be inspected only below the reference link speed.</li>
-        </ul>
-      </td>
+      <td style="text-align:left">Enables or disables the model-based collision detection function.</td>
     </tr>
     <tr>
-      <td style="text-align:left">
+      <td style="text-align:left"> 
         <img src="../../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">
-        <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Reset All]: You can initialize the setting values of all the use options.</li>
-        </ul>
+      <td style="text-align:left">Represents the default sensitivity for all axes. A higher value increases collision detection sensitivity.
+      (Default: 100, Maximum: 200)  </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c3.png" alt/>
       </td>
+      <td style="text-align:left">Enables or disables the low-speed collision detection function. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">The setting time for detecting low-speed collisions. If a collision force is applied for longer than this reference time, it is recognized as a collision. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">A collision is considered a low-speed collision only when the link speed is lower than the set value. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">Resets the settings to their default values.</td>
     </tr>
   </tbody>
 </table>
 
-# 7.4.8.1 Collision Detection Sensitivity Setting
 
-The collision detection sensitivity can be adjusted using the command in the JOB program.
+![](../../../_assets/tp630/coldet/model_based_coldet_tab_axis.png)
+
+{% hint style="info" %}
+The per-axis settings tab is enabled only in Engineering Mode or higher.
+{% endhint %}
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Item</th>
-      <th style="text-align:left">Contents</th>
+      <th style="text-align:left">No.</th>
+      <th style="text-align:left">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">Command</td>
-      <td style="text-align:left">ColDet Sensitivity</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Description</td>
-      <td style="text-align:left">Changing the collision detection sensitivity</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">How to input</td>
-      <td style="text-align:left">command &#x2192; MOTION &#x2192; colsense</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Syntax</td>
-      <td style="text-align:left">ColDet Sensitivity=100</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Parameter</td>
-      <td style="text-align:left">0&#x2013;200 (0: Function disabled. The larger the sensitivity value,
-        the more sensitive it is to impact.)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Example</td>
       <td style="text-align:left">
-        <p>[Impact Detection] When the sensitivity is set to 100% in the menu</p>
-        <p>S1 - S2: Detection based on the sensitivity of 100% S3&#x2013;S4: Detection
-          based on a sensitivity of 50%</p>
-        <p>
-          <img src="../../../_assets/coldet-sensitivity.png" alt/>
-        </p>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
+      <td style="text-align:left">Ratio (%) relative to the collision detection threshold for each axis. Lower values result in more sensitive responses.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">Cutoff frequency value, generally set according to the robot’s control environment. If any axis is set to 0, collision detection for that axis is disabled.(Maximum: 100) </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">Resets the settings to their default values.</td>
     </tr>
   </tbody>
 </table>
 
-{% hint style="warning" %}
-If the sensitivity is set too high, false detection may occur. Moreover, if the sensitivity is set too low, collisions detection may not be performed.
+{% hint style="info" %}
+The final sensitivity value for each axis is proportional to the per-axis sensitivity value and inversely proportional to the overall default sensitivity for all axes.
 {% endhint %}
+# 7.4.8.2 Set per-Axis Collision Detection
+
+The collision detection function monitors the disturbance torque and the rate of change of the disturbance torque occurring on each robot axis. If the measured values exceed the configured thresholds, they are treated as errors.
+
+* If the disturbance torque exceeds the set threshold, \[E0160 (Axis O) collision detected\] is displayed.
+* If the disturbance torque rate exceeds the set threshold, \[E0161 (Axis O) shock detected\] is displayed.
+
+
+![](../../../_assets/tp630/coldet/collision_detection_of_axis.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">No.</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">Enables or disables the per-axis collision detection function. Even when enabled, the function does not operate while the robot is stopped or while the spot gun is applying pressure.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">Sets whether to maintain sensitivity after a collision. When enabled, the current detection level is maintained even after a collision is detected.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left"> 
+        <p>[Measurement] Displays the maximum “disturbance torque” that occurred during the period when the collision detection command (coldet level.id) was active.</p>
+        <p>[Threshold] The user can refer to this value to configure the “disturbance torque” threshold for collision detection at each level. </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>[Measurement] Displays the maximum “rate of change of disturbance torque” that occurred during the period when the collision detection command (coldet level.id) was active.</p>
+        <p>[Threshold] The user can refer to this value to configure the “rate of change of disturbance torque” threshold for collision detection at each level.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">Re-measures the maximum measured values of disturbance torque and rate of change of disturbance torque for each axis. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">Used to reset all level values configured for each axis to their default values. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c7.png" alt/>
+      </td>
+      <td style="text-align:left">Used to add additional levels. The maximum number of configurable levels is 16.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c8.png" alt/>
+      </td>
+      <td style="text-align:left">Used to delete the highest level. Deletion is possible starting from Level 6 and above. </td>
+    </tr>
+  </tbody>
+</table>
 
 {% hint style="info" %}
-* If there is no command, collision will be detected based on the basic sensitivity set in the \[Impact Detection\] menu.
-* The sensitivity set by the command will be initialized to the basic sensitivity in the following cases.
-  * When encountering the END command of the main program
-  * When changing the step/function
-  * When resetting the step counter
-{% endhint %}
-
-# 7.4.9 Jog Inching Level Setting
+Collision detection measured values are displayed for up to a maximum of 2 minutes.
+{% endhint %}# 7.4.9 Jog Inching Level Setting
 
 You can limit the operation by designating the moving distance. This is useful when you want to move the robot as much as the desired distance with the jog key in manual mode.
 
