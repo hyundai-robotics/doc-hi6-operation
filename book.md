@@ -1,4 +1,4 @@
-﻿# Hi7 Robot Controller Operation Manual
+﻿# ${cont_model} Robot Controller Operation Manual
 
 {% hint style="warning" %}
 The information presented in this manual is the property of HD Hyundai Robotics.
@@ -17,7 +17,7 @@ HD Hyundai Robotics reserves the right to modify this document without prior not
 {% endhint %}
 # About the Manual
 
-This manual describes the basics and structure of HD Hyundai Robotics' Hi7 controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
+This manual describes the basics and structure of HD Hyundai Robotics' ${cont_model} controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
 
 This manual does not cover detailed application functions, such as direct teaching using a collaborative robot, methods of setting safety functions, spot welding, arc welding, positioner sync function, and sensor sync function. For details on relevant information, refer to the collaborative robot maintenance manual and individual application function manuals.
 
@@ -211,7 +211,7 @@ The following shows an example of the basic configuration of the robot system ac
 
 # 1.1.2 Teach Pendant 
 
-Both the models, TP600 and TP630, are supported. This operation manual describes how to use a teach pendant based on the TP600 model. TP600 is a model developed exclusively for the Hi7 controller and provides a large touch screen.
+Both the models, TP600 and TP630, are supported. This operation manual describes how to use a teach pendant based on the TP600 model. TP600 is a model developed exclusively for the ${cont_model} controller and provides a large touch screen.
 
 ![](../../_assets/tp630/TP-hw.png)
 
@@ -879,9 +879,9 @@ If you need to change the language of the teach pendant, you can change it with 
 
 
 
-# 1.2.4 Screen of the Hi7 Teach Pendant
+# 1.2.4 Screen of the ${cont_model} Teach Pendant
 
-Following figure represents the screen displayed on teach pendant. Teach pendant screen of Hi7 controller is composed of 10 screen windows of color touch screens.
+Following figure represents the screen displayed on teach pendant. Teach pendant screen of ${cont_model} controller is composed of 10 screen windows of color touch screens.
 <br>
 
 ![](../../../_assets/tp630/TP-main_eng.png)
@@ -1189,7 +1189,7 @@ The method of instructing the contents of the work to the robot using the jog ke
 
     ![](../../_assets/tp630/TP-hw-switch-manual.png)
 
-3.	In the status bar of the Hi7 teach pendant screen, check whether the operation mode is set to manual mode.
+3.	In the status bar of the ${cont_model} teach pendant screen, check whether the operation mode is set to manual mode.
 
     ![](../../_assets/tp630/sbar-mode_eng.png)
 
@@ -1251,7 +1251,7 @@ If the length and angle in the tool data are set differently from the actual val
 
 The step forward/backward is one of the methods of operating the robot in manual mode and refers to the act of playing back a recorded program. By manipulating the robot in the step forward/backward operation, you can check the recorded program path and mutual interlock relationship at a range of safe speed.
 
-The execution unit for the step forward/backward operation can be checked and set from the \[run to\] button on the left side of the Hi7 teach pendant screen.
+The execution unit for the step forward/backward operation can be checked and set from the \[run to\] button on the left side of the ${cont_model} teach pendant screen.
 
 ![](../../_assets/tp630/lbt-runto_eng.png)  
 
@@ -1281,7 +1281,7 @@ When the robot stops at cornering and then executes the forward operation, the r
 ![Figure 13 Example of the Robot Path Change During Step Forward/Backward Operation](../../_assets/path-step-bwd-then-fwd-en.png)
 
 
-You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the \[run to\] button on the left side of the Hi7 teach pendant screen, set the speed value and function execution option in the setting window.
+You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the \[run to\] button on the left side of the ${cont_model} teach pendant screen, set the speed value and function execution option in the setting window.
 
 
 
@@ -1315,7 +1315,7 @@ It is the method to teach the robot the contents of the work and then make it pe
      
     </div>
 
-3.	On the status bar of the Hi7 teach pendant screen, check whether the operation mode is set to automatic mode.
+3.	On the status bar of the ${cont_model} teach pendant screen, check whether the operation mode is set to automatic mode.
 
     ![](../../_assets/tp630/sbar-mode-auto1_eng.png)
 
@@ -1338,7 +1338,7 @@ It is the method to teach the robot the contents of the work and then make it pe
 6.	Press the &lt;start&gt; key on the teach pendant. The start lamp will be turned on, and the robot will perform the work according to the created program.
 # 2.2.2 Operation Speed Adjustment
 
-In automatic operation, the \[Speed Adjustment\] button on the left side of the Hi7 teach pendant screen will display the robot's operation speed \(%\) while the program is being played back. The displayed operation speed is the ratio of the robot’s moving speed to the speed recorded in the step.
+In automatic operation, the \[Speed Adjustment\] button on the left side of the ${cont_model} teach pendant screen will display the robot's operation speed \(%\) while the program is being played back. The displayed operation speed is the ratio of the robot’s moving speed to the speed recorded in the step.
 
 ![](../../_assets/tp630/sbar-spd-auto_eng.png)
 
@@ -1346,7 +1346,7 @@ In automatic operation, the \[Speed Adjustment\] button on the left side of the 
 In manual mode, the \[Speed Adjustment\] button will display the step speed limit, instead of the playback speed \(%\).
 {% endhint %}
 
-In automatic mode, you can adjust the operation speed of the robot, without modifying the program, by changing the value of the automatic operation speed ratio in the condition setting. After touching the \[Speed Adjustment\] button on the left side of the Hi7 teach pendant screen, set the option values of the \[2: Step FWD/BWD maximum speed\] and \[6: Playback speed rate\] in the setting window.
+In automatic mode, you can adjust the operation speed of the robot, without modifying the program, by changing the value of the automatic operation speed ratio in the condition setting. After touching the \[Speed Adjustment\] button on the left side of the ${cont_model} teach pendant screen, set the option values of the \[2: Step FWD/BWD maximum speed\] and \[6: Playback speed rate\] in the setting window.
 
 ![](../../_assets/tp630/cond-set-step-fwd-bwd-spd-auto-spd_eng.png)
 
@@ -1746,7 +1746,7 @@ After touching the <**R..[NO]**> key, input the code number and touch the \[OK\]
 
 # 2.5 Error Information
 
-When a problem occurs, a notification will appear on the taskbar at the bottom of the Hi7 teach pendant screen and will blink for about one minute. You can check the error code, notification message, and the time of error occurrence.
+When a problem occurs, a notification will appear on the taskbar at the bottom of the ${cont_model} teach pendant screen and will blink for about one minute. You can check the error code, notification message, and the time of error occurrence.
 
 ![](../../_assets/tp630/wg-alarm_eng.png)
 
@@ -1776,7 +1776,7 @@ The following shows how to check and deal with various system troubles, such as 
 
   ![](../../_assets/tp630/wg-alarm-log_eng.png)
 
-* Touch the \[Help\] button on the L-button bar of the Hi7 teach pendant screen. You can check the error code, the notification message, the cause of the trouble, and how to take action for it.
+* Touch the \[Help\] button on the L-button bar of the ${cont_model} teach pendant screen. You can check the error code, the notification message, the cause of the trouble, and how to take action for it.
 
   ![](../../_assets/tp630/lbt-help_eng.png)
 
@@ -1885,11 +1885,11 @@ The display of auxiliary information is supported from V60.30-01.
 
 # 2.7 User Key
 
-By assigning the desired functions to the buttons in the user button area on the R button bar of the Hi7 teach pendant screen, you can conveniently use them when teaching a robot.
+By assigning the desired functions to the buttons in the user button area on the R button bar of the ${cont_model} teach pendant screen, you can conveniently use them when teaching a robot.
 
 # 2.7.1 Switching of the User Key Area
 
-Touch the `[user key]` button on the R button bar of the Hi7 teach pendant screen until the desired area appears. Then, the menu button area will be switched to the user button area. In the user key area, the key signal output function and the spot application function are assigned and provided by default.
+Touch the `[user key]` button on the R button bar of the ${cont_model} teach pendant screen until the desired area appears. Then, the menu button area will be switched to the user button area. In the user key area, the key signal output function and the spot application function are assigned and provided by default.
 
 ![](../../_assets/tp630/user-bar/user-bar.png)
 
@@ -1953,7 +1953,7 @@ For more details, refer to "[7.3.2.8 Key Signal Output](../../../7-system/3-cont
 {% endhint %}
 # 2.7.2.2 Robot application user-key configuration
 
-Touch the `[user key]` button on the R button bar of the Hi7 teach pendant screen until the desired area appears. Then, the F button area will be switched to the robot application user-key area, such as spotweld-bar and arcweld-bar.
+Touch the `[user key]` button on the R button bar of the ${cont_model} teach pendant screen until the desired area appears. Then, the F button area will be switched to the robot application user-key area, such as spotweld-bar and arcweld-bar.
 
 
 
@@ -1976,7 +1976,7 @@ After completing the placement, press the `[F7:OK]` button to save the user butt
 * For details on the arc application function, refer to the "[Hi6 Controller Arc Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/README)".
 # 2.8 Coordinate System
 
-Coordinates in space are used to determine the direction of the robot’s movement. Hi7 controller has the joint coordinate system, robot coordinate system, user coordinate system, and tool coordinate system.
+Coordinates in space are used to determine the direction of the robot’s movement. ${cont_model} controller has the joint coordinate system, robot coordinate system, user coordinate system, and tool coordinate system.
 # 2.8.1 Jog Keys
 
 It can be used in manual mode. When you are holding the enabling switch, with the motor ON and pressing jog keys, you can move the robot at a low speed.
@@ -2024,7 +2024,7 @@ For example, whether to perform an assignment for the axes J7 and J8 according t
 
 1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
 
-2.	Select the joint coordinate system by repeatedly touching the \[Crd. Sys\] button on the status display window of the Hi7 teach pendant screen. Then, the jog bar will display the name of each joint.
+2.	Select the joint coordinate system by repeatedly touching the \[Crd. Sys\] button on the status display window of the ${cont_model} teach pendant screen. Then, the jog bar will display the name of each joint.
 
     ![](../../_assets/tp630/k-crdsys_eng.png)
 
@@ -2056,7 +2056,7 @@ For details on the robot’s progress direction in relation to the jog keys, ref
 
 1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
 
-2.	Select the robot coordinate system by repeatedly touching the \[Crd. Sys\] button on the status display window of the Hi7 teach pendant screen. 
+2.	Select the robot coordinate system by repeatedly touching the \[Crd. Sys\] button on the status display window of the ${cont_model} teach pendant screen. 
 
     ![](../../_assets/tp630/k-crdsys_eng.png)
 
@@ -2140,7 +2140,7 @@ For details on the robot’s progress direction in relation to the jog keys, ref
 
 1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
 
-2.	Select the tool coordinate system by repeatedly touching the \[Crd. Sys\] button on the status display window of the Hi7 teach pendant screen. 
+2.	Select the tool coordinate system by repeatedly touching the \[Crd. Sys\] button on the status display window of the ${cont_model} teach pendant screen. 
 
     ![](../../_assets/tp630/k-crdsys_eng.png)
 
@@ -2310,7 +2310,7 @@ When editing the command parameters, you can edit variables, expressions, and st
 
 * If the command list has commands more than seven, you can see the additional command by touching [prev/next] button.
 
-* For details on each statement, refer to the “[Hi7 Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-Hi7/README).”
+* For details on each statement, refer to the “[${cont_model} Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/README).”
 # 3.2.2.2 Inputting of a Step Statement with a Hidden Pose
 
 To input the current posture of the robot as a move command, press the <<b>REC</b>> key on the keypad.
@@ -2327,7 +2327,7 @@ When you input a command using the <<b>REC</b>> key, the pose variable will not 
 
 When a statement is inputted using the \<**REC**\> key, the current posture of the robot will be recorded as the target pose, and the value set in advance using the \[rec.cond\] button will be applied to the move command \(move\) parameter. The following shows the method of setting the recording condition of a statement.
 
-1.	Touch the \[rec.cond.\] button on the left side of the Hi7 teach pendant screen. Then, the recording condition setting window will appear.
+1.	Touch the \[rec.cond.\] button on the left side of the ${cont_model} teach pendant screen. Then, the recording condition setting window will appear.
 
     ![](../../../_assets/tp630/lbt-record_eng.png)
 
@@ -2457,9 +2457,9 @@ The line number can be set to any number between 1 and 9999.
 
 # 3.2.4.4 Soft Keyboard
 
-You can easily input variables, expressions, and strings using the soft keyboard on the Hi7 teach pendant screen.
+You can easily input variables, expressions, and strings using the soft keyboard on the ${cont_model} teach pendant screen.
 
-1.	Touch the \[![](../../../_assets/tp630/rbt-softkb_eng.png)\] button on the log bar of the Hi7 teach pendant screen. Then, a soft keyboard will appear at the bottom of the screen.
+1.	Touch the \[![](../../../_assets/tp630/rbt-softkb_eng.png)\] button on the log bar of the ${cont_model} teach pendant screen. Then, a soft keyboard will appear at the bottom of the screen.
 
 2.	You can input variables, expressions, and strings in the input area using the soft keyboard. The existing parameter values will be removed, and the inputted texts will be displayed.
 
@@ -2664,7 +2664,7 @@ You can manage files in the main board’s internal memory, teach pendant, or re
 
 {% hint style="info" %}
 * It is the same function as “R17 File Management” of R codes.
-* When a removable storage device is connected to the teach pendant, the \[USB\] icon \(![](../../_assets/icon-usb2.png)\) will appear on the status bar of the Hi7 teach pendant screen.
+* When a removable storage device is connected to the teach pendant, the \[USB\] icon \(![](../../_assets/icon-usb2.png)\) will appear on the status bar of the ${cont_model} teach pendant screen.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -3544,7 +3544,7 @@ You can select the desired signal and force it to be outputted.
 # 6.2.5 fn input, fn output
 
 You can define fn objects by specifying specific areas of fb objects.
-If the Hi7 controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
+If the ${cont_model} controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
 
 The set fn objects can be used in the same way as the fb objects in the robot language and the embedded PLC.
 
@@ -3629,7 +3629,7 @@ After completing the test and problem analysis, be sure to press the [F2: Clear]
 
 {% hint style="warning" %}
 * If multiple entries force conflicting values for the same relay (or overlaid bits), they are forced to the value of the lower item of the table.
-* When the Hi7 controller is powered off, all contents registered as forced IO are cleared.
+* When the ${cont_model} controller is powered off, all contents registered as forced IO are cleared.
 
 {% endhint %}
 # 6.2.7 Memory variables
@@ -3640,7 +3640,7 @@ Of internal PLC relays, the accessible variables from Robot Language are display
 
 ![](../../_assets/tp630/pane-memory-variables_eng.png) # 6.2.8 EtherCAT device
 
-In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with Hi7 controller internally and externally. In the EtherCAT network, the controller main board works as a master.
+In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with ${cont_model} controller internally and externally. In the EtherCAT network, the controller main board works as a master.
 
 ![](../../_assets/tp630/pane-EC-device_eng.png) 
 
@@ -4079,7 +4079,7 @@ You can double-click the .csv file in File-manager to open it with Microsoft Exc
 
 ![](../../../_assets/tp630/panel-gvar/csv2.png)
 
-Saving in Excel results in unnecessary commas, as shown below, and the quotation marks in the coordinate-system disappear, resulting in a slight change in format. It can't be helped because Excel handles .csv like this. Anyway, the Hi7 controller also recognizes that kind of format, so it doesn't matter.
+Saving in Excel results in unnecessary commas, as shown below, and the quotation marks in the coordinate-system disappear, resulting in a slight change in format. It can't be helped because Excel handles .csv like this. Anyway, the ${cont_model} controller also recognizes that kind of format, so it doesn't matter.
 
 ```python
 , , array,10,,,,,,
@@ -4426,7 +4426,7 @@ Touch [Brake Diagnostics] in the button list below to display the brake diagnost
 
 {% hint style="info" %}
 
-* For more details on the brake diagnostic function, refer to the "Hi7 Robot Controller Function Manual – HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-Hi7/10-etc/1-proc/16-brake_check)" command.
+* For more details on the brake diagnostic function, refer to the "${cont_model} Robot Controller Function Manual – HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/10-etc/1-proc/16-brake_check)" command.
 
 {% endhint %}# 6.4.2.2 Gas Spring Pressure Diagnostics Monitoring
 
@@ -4460,7 +4460,7 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
 {% hint style="info" %}
 
 * This function is supported only on robots equipped with a gas spring.  
-* For more details on the gas spring diagnostic function, refer to the "Hi7 Robot Controller Function Manual – HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-Hi7/10-etc/1-proc/7-gasp_check)" command.  
+* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual – HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/10-etc/1-proc/7-gasp_check)" command.  
 
 {% endhint %}
 # 6.4.3 Task monitor
@@ -5254,7 +5254,7 @@ Alternatively, you can use the F-keys [fb], [do], and [so] at the bottom of the 
 ![](../../../_assets/tp630/rbt-userkey-keysig_eng.png)
 
 {% hint style="info" %}
-You can register the desired output signal with a button in the user key area of Hi7 teach pendant. For details, refer to "[2.7.2.1 Key Signal Output Function Area](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)".
+You can register the desired output signal with a button in the user key area of ${cont_model} teach pendant. For details, refer to "[2.7.2.1 Key Signal Output Function Area](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)".
 {% endhint %}
 # 7.3.2.9 FB Block Allocation
 
@@ -5422,7 +5422,7 @@ After starting from S1 toward S2, the robot executes the wait statement. If the 
 # 7.3.2.12 fn block allocation
 
 You can define fn objects by specifying specific areas of fb objects.
-If the Hi7 controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
+If the ${cont_model} controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
 
 The set fn objects can be used in the same way as the fb objects in the robot language and the embedded PLC.
 
@@ -5582,7 +5582,7 @@ Refer to the following information when setting the usage of the serial port.
 
 * Sensor: For receiving the shift data by accessing the vision sensor
 * LVS: For connecting with the laser vision sensor for the weld line follow-up
-* MODBUS: The MODBUS slave function of the Hi7 controller
+* MODBUS: The MODBUS slave function of the ${cont_model} controller
 {% endhint %}
 
 
@@ -5816,7 +5816,7 @@ After accurately finding the TCP based on the robot base coordinate system, you 
 
 ### Writing a Program Using the Stationary Tool Coordinate System
 
-To perform the recording for the stationary tool interpolation step, you should record the step as SL or SC. Using the \[Recording Condition\] button on the upper left of the Hi7 teach pendant screen, you can change the recording condition to SL \(stationary tool linear interpolation\) or SC \(stationary tool circular interpolation\).
+To perform the recording for the stationary tool interpolation step, you should record the step as SL or SC. Using the \[Recording Condition\] button on the upper left of the ${cont_model} teach pendant screen, you can change the recording condition to SL \(stationary tool linear interpolation\) or SC \(stationary tool circular interpolation\).
 
 For example, if you register and use the stationary tool coordinate system No. 1, you can create a program as follows.
 
@@ -5912,7 +5912,7 @@ For more information, refer to “[Hi6 Robot Controller Function Manual - NTP ti
 
 # 7.3.10.1 What is a license key for optional functions?
 
-Among the functions of the Hi7 robot controller, certain optional functions are sold separately, and customers must purchase the optional functions to use them. The license key for the optional function is created by a separate license key generation program by combining the unique number assigned to the main board of the robot controller and the purchased option function, so the purchased function operates only on the purchased controller.
+Among the functions of the ${cont_model} robot controller, certain optional functions are sold separately, and customers must purchase the optional functions to use them. The license key for the optional function is created by a separate license key generation program by combining the unique number assigned to the main board of the robot controller and the purchased option function, so the purchased function operates only on the purchased controller.
 Therefore, the main board of a robot controller using optional functions cannot be replaced with another controller.
 If something happens to the motherboard, we will provide you with a temporary key that can be used for 30 days in case you need to replace it with a spare part.
 In this case, you must contact our A/S to obtain an official license key at least 30 days in advance.
@@ -6048,7 +6048,7 @@ In another way, the tool length can be set using the automatic calibration funct
 
 In the case of interpolation operation such as linear or circular interpolation, the trajectory will be created based on the TCP, so the length and angle of the tool should be accurately set before the teaching.
 
-The Hi7 controller performs control based on the dynamics of the robot. The robot can operate quickly and safely only when the weight, center, and inertia of the tool are correctly set. If the weight, center, and inertia values of the tool are incorrect or wrong, serious problems may occur in the performance and service life of the robot.
+The ${cont_model} controller performs control based on the dynamics of the robot. The robot can operate quickly and safely only when the weight, center, and inertia of the tool are correctly set. If the weight, center, and inertia values of the tool are incorrect or wrong, serious problems may occur in the performance and service life of the robot.
 
 In particular, in the case of using the tool change function, all tool information related to tool change, not only the information about each tool, but also separate numbers assigned to disconnected tools, should be inputted for the use. Moreover, even during the handling operation, the attachment/detachment status of the workpiece should be assigned to each tool number for the use.
 
@@ -6366,7 +6366,58 @@ If the encoder offset value is recorded as the axis position value \(mm or degre
 The basic setting value in the axis position input window is the reference position value. If you save without inputting the axis position value, the current encoder position will be set as the origin position \(0X400000\).
 {% endhint %}
 
-# 7.4.5 B-Axis Deadzone
+# 7.4.4.2 Axis Home Position Restoration
+
+When a component failure occurs in the robot mechanism (especially the motor or reducer) and the component is replaced, the encoder must be calibrated under the same conditions as the original home position in order to restart the existing teaching program.  
+However, when service personnel perform this procedure manually on site, the home position may be set through multiple trials and errors. This dedicated function is provided to simplify that process.
+
+※ What is home position restoration after mechanical repair?
+
+![](../../../_assets/tp630/axis-posi-restore1.png)
+
+In other words, home position restoration refers to:  
+Using an external reference point (dial gauge), after replacing a component, compensating the inaccurately calibrated home position Ωo′ by the value ⓒ − ⓐ to restore it to the accurate home position Ωo.  
+(This is required to reuse the teaching program.)
+
+{% hint style="warning" %}
+The position of the external reference point (ⓑ) must not change before and after component replacement. In other words, it must be exactly the same location both before and after replacement.
+{% endhint %}
+
+
+### Example
+
+The following example explains the function assuming that the S-axis motor is replaced.
+
+1. Assign a new program (101.job), and teach S1 [verification point – Approach] and S2 [home position verification point, only the S-axis rotates relative to S1] so that a fixed point on the firmly mounted tool approaches a jig or peripheral device.  
+
+   ![](../../../_assets/tp630/axis-posi-restore2.png)
+
+2. After replacing the S-axis motor, manually jog the S-axis to a position close to the encoder calibration position before replacement, then perform encoder calibration for the S-axis on the **System / Robot Parameter / Encoder Calibration** screen.
+
+3. Manually run the taught program (101.job) to move to S1, then move to S2. When the position becomes identical to that before the mechanical component replacement, teach S3 [home position verification point, only the S-axis rotates relative to S1].  
+
+   ![](../../../_assets/tp630/axis-posi-restore3.png)
+
+4. Automatically calculate the encoder calibration value for the S-axis.
+
+   1) Enter the **System / Robot Parameter / Encoder Calibration** screen.  
+   2) Move the cursor to the S-axis and press **[F3: Calculate Calibration Value]**.  
+
+      ![](../../../_assets/tp630/axis-posi-restore4.png)
+
+   3) Set the program number to 101 and the step number to 2 for “Before S-axis motor replacement,”  
+      and set the program number to 101 and the step number to 3 for “After S-axis motor replacement,”  
+      then press the **[Execute]** button.  
+
+      (※ If the program or step number for “After S-axis motor replacement” is set to 0, the encoder calibration value is calculated using the current S-axis position of the robot.)  
+
+      ![](../../../_assets/tp630/axis-posi-restore5.png)
+
+   4) The calculated encoder calibration value for the S-axis is displayed on the screen. Press **[F7: Confirm]** to apply the calibrated encoder value.  
+
+      ![](../../../_assets/tp630/axis-posi-restore6.png)
+
+5. Move to S2 of the taught program (101.job) and verify that the position is identical to that before the motor replacement.# 7.4.5 B-Axis Deadzone
 
 Around 0 degree of the B-axis, the rotational center of the R1 axis and the rotational center axis of the R2 axis will be almost in parallel. When the TCP of the robot performs interpolation such as linear interpolation or circular interpolation, the wrist axis will move rapidly even in small movements.
 
@@ -6479,9 +6530,9 @@ The X, Y, and Z directions of each axis are set in the same direction as the rob
 
 # 7.4.8 Collision Detection \(Function to Be Available Later\)
 
-The Hi7 controller has the error detection function for overcurrent, overload, overspeed, position deviation, as well as the collision detection function, as safety functions in preparation for a case in which the robot operates under abnormal conditions or operates abnormally. These two functions will work with each other to enhance the safety of the robot.
+The ${cont_model} controller has the error detection function for overcurrent, overload, overspeed, position deviation, as well as the collision detection function, as safety functions in preparation for a case in which the robot operates under abnormal conditions or operates abnormally. These two functions will work with each other to enhance the safety of the robot.
 
-In the Hi7 controller, a model-based collision detection function is provided. The model-based collision detection function detects a collision by calculating the difference between the torque that should be normally applied during the robot’s operation and the measured torque based on the dynamics model of the robot. By setting the sensitivity, you can adjust the responsiveness to the collision and make it possible to detect any contact with the outside that occurs when the robot moves at low speed.
+In the ${cont_model} controller, a model-based collision detection function is provided. The model-based collision detection function detects a collision by calculating the difference between the torque that should be normally applied during the robot’s operation and the measured torque based on the dynamics model of the robot. By setting the sensitivity, you can adjust the responsiveness to the collision and make it possible to detect any contact with the outside that occurs when the robot moves at low speed.
 
 However, the collision detection function detects the collision on the robot axis, so if the impact is not transmitted to the robot, the collision will not be detected. Moreover, the following are the points that require you to exercise precautions when using the collision detection function.
 
@@ -6788,7 +6839,7 @@ For more information about multitasking, please refer to "[Hi6 Robot Controller 
 {% endhint %}
 # 7.5.13 User-Defined Error
 
-This function allows users to define errors for specific conditions in the Hi7 robot controller. When the defined conditions are met, the user-defined error is triggered.
+This function allows users to define errors for specific conditions in the ${cont_model} robot controller. When the defined conditions are met, the user-defined error is triggered.
 
 {% hint style="info" %}
 Supported from V60.30-00.
@@ -6831,7 +6882,7 @@ A file named "help_user_err.json" will be created in the MAIN/project directory.
 3. Checking the error help will display the same content as written in the file.<br>
 ![](../../../_assets/tp630/user-def-code/image11.png)# 7.5.14 User-Defined Warning
 
-This function allows users to define warnings for specific conditions in the Hi7 robot controller. When the defined conditions are met, the user-defined warning is triggered.
+This function allows users to define warnings for specific conditions in the ${cont_model} robot controller. When the defined conditions are met, the user-defined warning is triggered.
 
 {% hint style="info" %}
 Supported from V60.30-00.
@@ -6982,7 +7033,7 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 
 # 7.6.1 System Format
 
-1.	On the status bar of the Hi7 teach pendant screen, check if the operation mode is set to manual mode.
+1.	On the status bar of the ${cont_model} teach pendant screen, check if the operation mode is set to manual mode.
 
     ![](../../_assets/tp630/sbar-mode-manual_eng.png)
 
@@ -6999,7 +7050,7 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 
 # 7.6.2 Robot Type Selection
 
-1.	Touch the \[5: Initialize &gt; 2: Robot Type Selection\] menu. Or touch the \[Mechanism\] button at the top right of the Hi7 teach pendant screen.
+1.	Touch the \[5: Initialize &gt; 2: Robot Type Selection\] menu. Or touch the \[Mechanism\] button at the top right of the ${cont_model} teach pendant screen.
 
 2.	Select a robot in the robot model selection window, and then touch the \[OK\] button.
 
@@ -7024,7 +7075,7 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 
 {% endhint %}
 
-3.	After touching the \[Favorites\] button at the bottom right of the Hi7 teach pendant screen, input 314 in the input area of the favorites window, and then touch the \[OK\] button.
+3.	After touching the \[Favorites\] button at the bottom right of the ${cont_model} teach pendant screen, input 314 in the input area of the favorites window, and then touch the \[OK\] button.
 
     ![](../../_assets/tp630/pop-rcode-314_eng.png)
 
@@ -7304,7 +7355,7 @@ A set mechanism unit is the minimum unit that can be assigned to each task and c
 
 #### Mechanism Jog Rules 
 
-* The Hi7 controller provides eight jog keys in total.
+* The ${cont_model} controller provides eight jog keys in total.
 * 
   Mechanisms will be utilized as one group during the jog operation.
 
@@ -7613,7 +7664,7 @@ Set the jog coordinate system as the tool coordinate system and jog the base axi
 
 # 7.7.5 Gravity Direction Auto Setting
 
-The Hi7 controller is based on dynamics, so it is important to set the gravity direction.
+The ${cont_model} controller is based on dynamics, so it is important to set the gravity direction.
 
 In general, the robot installation direction is perpendicular to the gravity direction as follows. If the robot is installed obliquely to the ground, the gravity direction should be set in the robot controller. At this time, you can use the automatic gravity direction setting function.
 
@@ -7646,7 +7697,7 @@ The robot and tool calibration function will be used in an environment where the
 
     ![](../../_assets/tp630/system-calib-robottool-msr.png)
 
-3.	After saving the position data file into a removable storage device, connect the removable storage device to the teach pendant. The \[USB\] icon \( \) will appear in the status bar of the Hi7 teach pendant screen.
+3.	After saving the position data file into a removable storage device, connect the removable storage device to the teach pendant. The \[USB\] icon \( \) will appear in the status bar of the ${cont_model} teach pendant screen.
 
 4.	Touch the \[6: Auto Calibration &gt; 9: Robot and Tool calibration condition\] menu.
 
@@ -7905,7 +7956,7 @@ You can select the spot guns to use when using multiple spot welding guns \(serv
 
     ![](../_assets/tp630/pop-rcode-210_eng.png)
 
-* The selected spot gun number will be displayed on the \[Gun\] button on the left side of the Hi7 teach pendant screen.
+* The selected spot gun number will be displayed on the \[Gun\] button on the left side of the ${cont_model} teach pendant screen.
 * If you change the spot gun number, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the \[system &gt; 4: Application Parameter &gt; 1: Spot Welding &gt; 1: Gun Number Corresponding Tool Number and Gun Type Setting\] menu.
 
 
@@ -7991,7 +8042,7 @@ You can select the numbers of spot welding guns \(servo guns or pneumatic guns\)
 
     ![](../_assets/tp630/pop-rcode-214_eng.png)
 
-* The selected spot gun number will be displayed on the \[Gun\] button on the left side of the Hi7 teach pendant screen.
+* The selected spot gun number will be displayed on the \[Gun\] button on the left side of the ${cont_model} teach pendant screen.
 * If you select spot welding guns that are different in type from each other, a notification message \(“The Gun Type of the Currently Selected Gun is Set Incorrectly.”\) will appear.
 
 <Br>
@@ -8090,7 +8141,7 @@ The method to change the servo tool using the R358 code is as follows.
     ![](../_assets/tp630/pop-rcode-358-1_eng.png)
 
 
-3.	After inputting the number of the welding gun to change, touch the \[OK\] button or press the <<b>ENTER</b>> key. The selected weld gun number will be displayed on the \[Gun\] button on the left side of the Hi7 teach pendant screen.
+3.	After inputting the number of the welding gun to change, touch the \[OK\] button or press the <<b>ENTER</b>> key. The selected weld gun number will be displayed on the \[Gun\] button on the left side of the ${cont_model} teach pendant screen.
 
 
     ![](../_assets/tp630/pop-rcode-358-2_eng.png)
@@ -8252,7 +8303,7 @@ When teaching a job program for a welding operation, you should set the arc weld
 
 # 9.1 Use of the property Function
 
-If you use the \[property\] button the L button bar of the Hi7 teach pendant screen, you can quickly and easily set the conditions and check the position simply by a single button operation.
+If you use the \[property\] button the L button bar of the ${cont_model} teach pendant screen, you can quickly and easily set the conditions and check the position simply by a single button operation.
 
 ![Figure 75 Function for the \[Attributes\] Button](../_assets/tp630/lbt-property-arc_eng.png)
 
@@ -8543,7 +8594,7 @@ When writing the SPOT command while writing the program, if you place the cursor
 
 # 10. Robot Language
 
-For details on the robot language, refer to the "[Hi7 Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-Hi7/README)"
+For details on the robot language, refer to the "[${cont_model} Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/README)"
 # 11. Etc.
 
 This chapter explains additional information that was not covered earlier.
