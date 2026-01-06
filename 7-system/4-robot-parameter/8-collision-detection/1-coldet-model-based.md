@@ -18,38 +18,38 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">모델 기반 충돌 검지 기능 사용 유무를 설정합니다.</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        <img src="../../_assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">축 전체 기본 민감도를 의미하며 값이 높을수록 민감하게 충돌음 감지하게 됩니다.
       (기본값:100, 최대값:200)  </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        <img src="../../_assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">저속 충돌검지 기능 사용 유무를 설정 합니다. </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        <img src="../../_assets/c4.png" alt/>
+        <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">저속 충돌을 검지하기 위한 설정 시간으로, 이 기준 시간 이상으로 충돌이 가해지면 충돌로 인식합니다. </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        <img src="../../_assets/c5.png" alt/>
+        <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">링크 속도가 설정값 보다 작을 때에만 저속 충돌로 판단합니다. </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        <img src="../../_assets/c6.png" alt/>
+        <img src="../../../_assets/c6.png" alt/>
       </td>
       <td style="text-align:left">기본 설정값으로 초기화 합니다.</td>
     </tr>
@@ -73,19 +73,19 @@
   <tbody>
     <tr>
       <td style="text-align:left">
-        <img src="../../_assets/c1.png" alt/>
+        <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">축별 검지 기준값 대비 비율(%)로서 값이 낮을 수록 민감하게 반응합니다. </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        <img src="../../_assets/c2.png" alt/>
+        <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">차단 주파수 값으로 일반적으로 로봇의 제어 환경값으로 설정됩니다. 임의의 축을 0으로 설정하면, 해당 축은 충돌 검지 기능이 비활성화 됩니다.(최대값:100) </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        <img src="../../_assets/c3.png" alt/>
+        <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">기본 설정값으로 초기화 합니다.</td>
     </tr>
