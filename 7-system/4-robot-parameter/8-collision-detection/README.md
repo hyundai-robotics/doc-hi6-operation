@@ -14,6 +14,7 @@ Touch \[3: Robot Parameter &gt; 14: Impact Detection\] to use this function.
 * Collisions are not detected while performing load estimation or sensor-based / sensorless force control functions.
 * Collisions with positioners, spot welders, jigs, or other equipment not mounted on the robot cannot be detected.
 * Model-based collision detection is not supported for custom-made robot models.
+* When collision detection error occurs after switching from autonomous driving mode to manual driving mode , this phenomenon is not an error (collision detection setting values need to be checked).
 
 {% endhint %}
 
