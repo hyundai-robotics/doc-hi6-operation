@@ -1,14 +1,14 @@
 ﻿{
     "langCode": "ko",
     "series": "${cont_model} 제어기",
-    "title": "조작설명서",
+    "title": "조작설명서 - TP630",
     "publisher": "HD현대로보틱스",
     "tocTitle": "목차",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
 	"variables": {
 		"cont_model": "Hi6"
     },
-    "docId": "${cont_model:upper}OPERATION_KO_001",
+    "docId": "${cont_model:upper}OPTP630_KO_001",
     "references": [
         { "rpath" : "doc-hrscript/ko-${cont_model}" }
     ]
