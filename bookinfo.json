@@ -1,14 +1,14 @@
 {
     "langCode": "en",
     "series": "${cont_model} Controller",
-    "title": "Operation Manual",
+    "title": "Operation Manual - TP630",
     "publisher": "HD Hyundai Robotics",
     "tocTitle": "Table of Contents",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
     "variables": {
         "cont_model": "Hi6"
     },
-    "docId": "${cont_model:upper}OPERATION_EN_001",
+    "docId": "${cont_model:upper}OPTP630_EN_001",
     "references": [
         { "rpath" : "doc-hrscript/en-${cont_model}" }
     ]

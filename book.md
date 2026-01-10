@@ -1,20 +1,4 @@
-﻿# Hi6 Robot Controller Operation Manual
-
-{% hint style="warning" %}
-The information presented in this manual is the property of HD Hyundai Robotics.
-
-The manual may neither be copied, in part or in full, nor redistributed without prior written consent from HD Hyundai Robotics.
-
-It may neither be provided to any third party nor used for any other purposes.
-
-
-
-HD Hyundai Robotics reserves the right to modify this document without prior notification.
-
-
-
-**Copyright ⓒ 2025 by HD Hyundai Robotics**
-{% endhint %}
+﻿# Hi6 Controller Operation Manual - TP630
 # About the Manual
 
 This manual describes the basics and structure of HD Hyundai Robotics' Hi6 controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
