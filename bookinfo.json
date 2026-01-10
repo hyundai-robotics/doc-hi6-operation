@@ -1,12 +1,15 @@
 ﻿{
     "langCode": "ko",
-    "series": "Hi6 제어기",
+    "series": "${cont_model} 제어기",
     "title": "조작설명서",
     "publisher": "HD현대로보틱스",
     "tocTitle": "목차",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
 	"variables": {
 		"cont_model": "Hi6"
-	},
-    "docId": "HI6TP630OP_KO_001"
+    },
+    "docId": "${cont_model:upper}OPERATION_KO_001",
+    "references": [
+        { "rpath" : "doc-hrscript/ko-${cont_model}" }
+    ]
 }
