@@ -1,11 +1,15 @@
 {
     "langCode": "en",
-    "series": "Hyundai Robot Hi6 Controller",
+    "series": "${cont_model} Controller",
     "title": "Operation Manual",
     "publisher": "HD Hyundai Robotics",
     "tocTitle": "Table of Contents",
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
     "variables": {
         "cont_model": "Hi6"
-    }
+    },
+    "docId": "${cont_model:upper}OPERATION_EN_001",
+    "references": [
+        { "rpath" : "doc-hrscript/en-${cont_model}" }
+    ]
 }
