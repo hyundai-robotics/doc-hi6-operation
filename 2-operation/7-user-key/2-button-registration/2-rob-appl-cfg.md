@@ -14,6 +14,6 @@
 배치를 완료한 후 `[확인]` 버튼을 누르면, 사용자 버튼 배치가 저장됩니다.
 
 
-* 스폿 응용 기능에 대한 자세한 내용은 별도의 "[Hi6 로봇언어 기능 설명서 - 스폿 용접](https://hrbook-hrc.web.app/#/view/doc-spot-weld/korean/README)"를 참조하십시오.
+* 스폿 응용 기능에 대한 자세한 내용은 별도의 "[${cont_model} 기능 설명서 - 스폿 용접](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
 
-* 아크 응용 기능에 대한 자세한 내용은 별도의 "[Hi6 로봇언어 기능 설명서 - 아크 용접](https://hrbook-hrc.web.app/#/view/doc-arc-weld/korean/README)"를 참조하십시오.
+* 아크 응용 기능에 대한 자세한 내용은 별도의 "[${cont_model} 기능 설명서 - 아크 용접](https://hrbook-hrc.web.app/#/view/doc-arc-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.

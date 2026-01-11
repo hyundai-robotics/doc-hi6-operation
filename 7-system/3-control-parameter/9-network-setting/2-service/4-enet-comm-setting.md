@@ -3,7 +3,7 @@
 이더넷 통신을 수행하기 이전에 먼저 이더넷 통신 객체를 생성하고 설정해야 합니다. <br>
 이더넷 객체는 최대 5개까지 생성하여 사용할 수 있으며 또한 현재 통신 상태에 대한 모니터링이 가능합니다. <br>
 
-현재는 HRScript에서 모드버스 마스터 동작을 수행하기 위해 사용됩니다. 모드버스 통신 기능에 대한 자세한 내용은 별도의 "[Hi6 로봇제어기 기능설명서 - 모드버스](https://hrbook-hrc.web.app/#/view/doc-modbus/korean/README)"를 참조하십시오.  
+현재는 HRScript에서 모드버스 마스터 동작을 수행하기 위해 사용됩니다. 모드버스 통신 기능에 대한 자세한 내용은 별도의 "[${cont_model} 제어기 기능설명서 - 모드버스](https://hrbook-hrc.web.app/#/view/doc-modbus/ko/README?cont_model=${cont_model})"를 참조하십시오.  
 
 
 ![](../../../../_assets/tp630/image32.png)

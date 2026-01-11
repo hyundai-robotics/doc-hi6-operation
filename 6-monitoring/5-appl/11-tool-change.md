@@ -8,6 +8,6 @@
 <br>
 
 {% hint style="info" %}
- 상세 내용은 "[서보툴 체인지 기능설명서](https://hrbook-hrc.web.app/#/view/doc-svtool-change/korean/README)"를 참조하여 주십시오.
+ 상세 내용은 "[서보툴 체인지 기능설명서](https://hrbook-hrc.web.app/#/view/doc-svtool-change/ko/README?cont_model=${cont_model})"를 참조하여 주십시오.
 {% endhint %}
 

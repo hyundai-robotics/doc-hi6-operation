@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @license Paged.js v0.1.43 | MIT | https://gitlab.pagedmedia.org/tools/pagedjs
  */
 

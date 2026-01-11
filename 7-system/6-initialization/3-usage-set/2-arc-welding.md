@@ -8,5 +8,5 @@
 
 2.	\[사용자키 초기화\] 드롭다운 메뉴와 \[입출력할당 초기화\] 드롭다운 메뉴를 클릭하여 아크로 설정하십시오.
 
-3. 자세한 설정은 아크용접 기능설명서의 [4.1 Arc 용접기 설정](https://hrbook-hrc.web.app/#/view/doc-arc-weld/korean/4_Setting/1_Arc_setting/README) 을 참고하시기 바랍니다.
+3. 자세한 설정은 아크용접 기능설명서의 [4.1 Arc 용접기 설정](https://hrbook-hrc.web.app/#/view/doc-arc-weld/ko/4_Setting/1_Arc_setting/README?cont_model=${cont_model}) 을 참고하시기 바랍니다.
 

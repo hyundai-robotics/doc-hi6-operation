@@ -1,4 +1,4 @@
-/// @brief: https://www.pagedjs.org/posts/2020-02-19-toc/
+﻿/// @brief: https://www.pagedjs.org/posts/2020-02-19-toc/
 
 
 function createToc(config){

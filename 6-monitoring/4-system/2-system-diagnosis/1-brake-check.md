@@ -42,6 +42,6 @@
 </table>
 
 {% hint style="info" %}
-* 브레이크 검사 기능에 대한 자세한 내용은 "[${cont_model} 로봇제어기 기능설명서 - 로봇언어 HRScript]" 의 [**10.1.16 brake_check문**](https://hrbook-hrc.web.app/#/view/doc-hrscript/korean-${cont_model}/10-etc/1-proc/16-brake_check) 항목을 참조하십시오.  
+* 브레이크 검사 기능에 대한 자세한 내용은 "${cont_model} 제어기 기능설명서 - 로봇언어 HRScript" 의 [10.1.16 brake_check문](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/10-etc/1-proc/16-brake_check?cont_model=${cont_model}) 항목을 참조하십시오.  
 {% endhint %}
 
