@@ -74,7 +74,7 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
         Tolerance warning and output signal
       </td>
       <td style="text-align:left">
-        A warning (W21018 or W21019) is generated when the measured pressure deviates from the set tolerance from the reference pressure. <br>
+        A warning W21018 occurs if the measured pressure is less then the reference pressure minus the warning tolerance set value. <br>
         If an output signal is set, the signal output is turned on. 
       </td>
     </tr>
@@ -83,7 +83,7 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
         Tolerance error and output signal
       </td>
       <td style="text-align:left">
-        An error (E21018 or E21019) occurs when the measured pressure is outside the tolerance set from the reference pressure. <br>
+        An error E21018 occurs if the measured pressure is less then the reference pressure minus the error tolerance set value. <br>
         If an output signal is set, the signal output is turned on.  
       </td>
     </tr>
