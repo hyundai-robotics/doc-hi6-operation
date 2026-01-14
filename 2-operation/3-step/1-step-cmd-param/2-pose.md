@@ -1,4 +1,4 @@
-# 2.3.1.2 Pose
+﻿# 2.3.1.2 Pose
 
 A pose is a parameter to record the position. If you input a move, the movement command, by using the \[Command\] button, you should designate the pose expression in the tg \(target\) parameter. When the move statement is inputted using the <<b>REC</b>> key, the tg parameter will not appear. At the moment of touching the <<b>REC</b>> key, the position and posture of the manipulator will be recorded, but they will not be displayed on the JOB editing screen, which is why they are called a hidden pose.
 

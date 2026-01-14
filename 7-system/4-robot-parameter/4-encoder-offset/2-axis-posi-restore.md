@@ -3,7 +3,7 @@
 When a component failure occurs in the robot mechanism (especially the motor or reducer) and the component is replaced, the encoder must be calibrated under the same conditions as the original home position in order to restart the existing teaching program.  
 However, when service personnel perform this procedure manually on site, the home position may be set through multiple trials and errors. This dedicated function is provided to simplify that process.
 
-※ What is home position restoration after mechanical repair?
+* What is home position restoration after mechanical repair?
 
 ![](../../../_assets/tp630/axis-posi-restore1.png)
 
@@ -20,7 +20,7 @@ The position of the external reference point (ⓑ) must not change before and af
 
 The following example explains the function assuming that the S-axis motor is replaced.
 
-1. Assign a new program (101.job), and teach S1 [verification point – Approach] and S2 [home position verification point, only the S-axis rotates relative to S1] so that a fixed point on the firmly mounted tool approaches a jig or peripheral device.  
+1. Assign a new program (101.job), and teach S1 [verification point - Approach] and S2 [home position verification point, only the S-axis rotates relative to S1] so that a fixed point on the firmly mounted tool approaches a jig or peripheral device.  
 
    ![](../../../_assets/tp630/axis-posi-restore2.png)
 
@@ -37,11 +37,11 @@ The following example explains the function assuming that the S-axis motor is re
 
       ![](../../../_assets/tp630/axis-posi-restore4.png)
 
-   3) Set the program number to 101 and the step number to 2 for “Before S-axis motor replacement,”  
-      and set the program number to 101 and the step number to 3 for “After S-axis motor replacement,”  
+   3) Set the program number to 101 and the step number to 2 for "Before S-axis motor replacement,"  
+      and set the program number to 101 and the step number to 3 for "After S-axis motor replacement,"  
       then press the **[Execute]** button.  
 
-      (※ If the program or step number for “After S-axis motor replacement” is set to 0, the encoder calibration value is calculated using the current S-axis position of the robot.)  
+      (* If the program or step number for "After S-axis motor replacement" is set to 0, the encoder calibration value is calculated using the current S-axis position of the robot.)  
 
       ![](../../../_assets/tp630/axis-posi-restore5.png)
 

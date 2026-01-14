@@ -3,10 +3,10 @@
 You can make it possible for the axis integer and tool length to be automatically set to improve the accuracy of the linear interpolation trajectory and coordinate shifting.
 
 * You can make it possible for the distance to the tooltip, which is difficult to measure in 3D, to be automatically set. The parameters to be calibrated are the axis origins of the H, V, R2, and B axes and the tool length in the X, Y, and Z directions.
-* You can perform “optimization of axis origin and tool length” and of “tool length.”
+* You can perform "optimization of axis origin and tool length" and of "tool length."
 
 {% hint style="warning" %}
-You should optimize the “axis origin and tool length” before teaching the robot program. If the “axis origin and tool length” is optimized while a robot program has been created already, the position in the existing program may change.
+You should optimize the "axis origin and tool length" before teaching the robot program. If the "axis origin and tool length" is optimized while a robot program has been created already, the position in the existing program may change.
 {% endhint %}
 
 The following shows how to set the optimization of the axis origin and tool length:
@@ -34,9 +34,9 @@ The following shows how to set the optimization of the axis origin and tool leng
     ![](../_assets/tp630/k-record_eng.png)
 
 
-7.	Change the robot’s posture and repeat the above steps 5–6 more than four times.
+7.	Change the robot's posture and repeat the above steps 5-6 more than four times.
 
-* Change the robot’s posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
+* Change the robot's posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
 
 8.	Touch the \[system\] button &gt; \[6: Auto Calibration &gt; 1: Optimize axis origin and tool length\] menu.
 
@@ -50,6 +50,6 @@ The following shows how to set the optimization of the axis origin and tool leng
 * When you use multiple tools, you should select Tool Length in the \[Optimization Selection\] option for the second tool. If you select Axis Origin and Tool Length, the previously set tool information will get incorrect.
 
 {% hint style="info" %}
-For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md).”
+For details on this function, refer to "[7.7.1 Optimization of Axis Origin and Tool Length](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)."
 {% endhint %}
 

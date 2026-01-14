@@ -9,9 +9,9 @@
 
 | Classification | Normal | High-load mode | Exception allowable mode | Playback impossible \(Large size\) |
 | :--- | :--- | :--- | :--- | :--- |
-| Weight ratio \(%\) | - 100 | 100–120 | 100–120 | 120 - |
-| Moment ratio \(%\) | - 100 | 100–110 | 100–115 \(150\) | 115 \(150\) - |
-| Inertia ratio \(%\) | - 100 | 100–130 | 100–150 \(600\) | 150 \(600\) - |
+| Weight ratio \(%\) | - 100 | 100-120 | 100-120 | 120 - |
+| Moment ratio \(%\) | - 100 | 100-110 | 100-115 \(150\) | 115 \(150\) - |
+| Inertia ratio \(%\) | - 100 | 100-130 | 100-150 \(600\) | 150 \(600\) - |
 
 {% hint style="info" %}
 The allowable ratio can be changed depending on the robot model and controller software version.

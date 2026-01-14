@@ -1,4 +1,4 @@
-# 4.6 App
+﻿# 4.6 App
 
 Manages the software installed and running on the teach pendant.
 

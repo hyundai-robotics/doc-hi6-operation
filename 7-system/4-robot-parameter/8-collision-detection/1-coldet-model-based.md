@@ -1,6 +1,6 @@
 ﻿# 7.4.8.1 Model-Based Impact Detection
 
-The model-based impact detection function detects collisions by calculating the difference between the torque that should normally be generated during robot motion and the torque actually measured, based on the robot’s dynamic model.
+The model-based impact detection function detects collisions by calculating the difference between the torque that should normally be generated during robot motion and the torque actually measured, based on the robot's dynamic model.
 Sensitivity can be adjusted to control responsiveness to collisions, and contact with external objects occurring while the robot is moving at low speed can also be detected.
 
 
@@ -82,7 +82,7 @@ The per-axis settings tab is enabled only in Engineering Mode or higher.
       <td style="text-align:left"> 
         <img src="../../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Cutoff frequency value, generally set according to the robot’s control environment. If any axis is set to 0, collision detection for that axis is disabled.(Maximum: 100) </td>
+      <td style="text-align:left">Cutoff frequency value, generally set according to the robot's control environment. If any axis is set to 0, collision detection for that axis is disabled.(Maximum: 100) </td>
     </tr>
     <tr>
       <td style="text-align:left"> 

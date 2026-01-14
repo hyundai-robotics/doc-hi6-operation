@@ -36,7 +36,7 @@ Delays may occur in the process of activating/deactivating the power-saving func
 * \[Interlock error time\]: This function sets the maximum waiting time for the input    signal. <br>
   If the input signal standby time exceeds the specified time during playback, an interlock error signal is output. This specified time is the interlock abnormality time.
 
-  The interlock error signal is a signal assigned to “Interlock abnormal warning” in the [System/Control Parameter/Input/Output signal setting/Output signal assign] menu.
+  The interlock error signal is a signal assigned to "Interlock abnormal warning" in the [System/Control Parameter/Input/Output signal setting/Output signal assign] menu.
 
 
 * \[First step safety move\]: When starting the robot, set whether to limit the first step to a safe speed and move at the currently set speed.
@@ -48,7 +48,7 @@ Delays may occur in the process of activating/deactivating the power-saving func
 
 * \[Plc execution time rate\]: When using a embedded PLC, you can adjust the PLC execution time inside the controller. The controller internally executes the PLC ladder program every 5ms, so set how much PLC execution is allocated. The larger this ratio leads the shorter the scan time of the PLC program. But if it is too large, the CPU execution time may be insufficient and a task execution time exceeded error may occur.
 
-* \[Cycle Time Optimization Mode\]: This feature reduces the robot’s step movement time during automatic playback to improve productivity.
+* \[Cycle Time Optimization Mode\]: This feature reduces the robot's step movement time during automatic playback to improve productivity.
   - Enabled
     - Dynamically adjusts acceleration/deceleration curves and maximum speed for faster movement.
     - Dynamic motion adjustment applied

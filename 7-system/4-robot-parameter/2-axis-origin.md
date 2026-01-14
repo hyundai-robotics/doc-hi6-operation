@@ -54,7 +54,7 @@ You can register the mechanical origin position of each axis.
 </table>
 
 {% hint style="warning" %}
-* The axis origin setting affects the accuracy of the robot’s cartesian operation. Change it to the exact value as much as possible.
+* The axis origin setting affects the accuracy of the robot's cartesian operation. Change it to the exact value as much as possible.
 * 
   If the axis origin setting is changed, the position of the previously created program will be changed. Therefore, the axis origin setting must be executed only at the initial installation stage.
 

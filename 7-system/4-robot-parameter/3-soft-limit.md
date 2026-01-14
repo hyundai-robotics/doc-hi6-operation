@@ -1,6 +1,6 @@
 ﻿# 7.4.3 Soft Limit
 
-You can adjust the operation range of each axis according to the robot’s use environment.
+You can adjust the operation range of each axis according to the robot's use environment.
 
 1.	Touch the \[3: Robot Parameter &gt; 3. Soft Limit\] menu.
 

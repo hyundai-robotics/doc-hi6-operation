@@ -1,4 +1,4 @@
-# 7.3.10.4 What is a temporary-key?
+﻿# 7.3.10.4 What is a temporary-key?
 
 * Temporary-key can only be used for 30 days and can only be issued once.
 

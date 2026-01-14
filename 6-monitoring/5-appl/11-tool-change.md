@@ -1,7 +1,7 @@
 ﻿# 6.5.11 Servo Tool Change
 
 
-In the panel selection window, touch \[servo tool change\]. This displays the state of the servo tool and the encoder power supply’s input/output state when the servo tool change function is used.
+In the panel selection window, touch \[servo tool change\]. This displays the state of the servo tool and the encoder power supply's input/output state when the servo tool change function is used.
 
 ![](../../_assets/tp630/pane-tool-change_eng.png) 
 

@@ -21,7 +21,7 @@ You can rename a file or folder. You can also rename multiple files or folders a
   Even if a file is renamed, the information such as size, modified date, and attributes will remain the same as before.
 
 * 
-  It is the same function as “R116 Program Number Change” of R codes.
+  It is the same function as "R116 Program Number Change" of R codes.
 
 
 {% endhint %}

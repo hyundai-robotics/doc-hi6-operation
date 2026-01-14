@@ -48,7 +48,7 @@ The remaining .txt files can be opened with any standard text editor.
 
 * sclog_base_????????_??????.bin
 
-  Scope log file storing time-series data such as each axis’s position, speed, and acceleration.  
+  Scope log file storing time-series data such as each axis's position, speed, and acceleration.  
   ????????_?????? represents the timestamp in YYYYMMDD_HHMMSS format.  
   Generated when robot shock is detected or specific errors occur. Can be viewed using the Scope Log feature in HRWorkbench.
 
@@ -59,7 +59,7 @@ The remaining .txt files can be opened with any standard text editor.
 
 * shutdownlog_?.txt
 
-  Log file storing the controller’s power-off history.  
+  Log file storing the controller's power-off history.  
   Used to analyze whether power-failure backup operations were performed correctly. A new file is created in a circular manner each time the controller powers off.
 
 * updatesvclog_?.txt

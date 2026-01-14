@@ -1,4 +1,4 @@
-# 2.3.1 Step Statement Parameters
+﻿# 2.3.1 Step Statement Parameters
 
 The step statement parameters are the movement conditions required for the step movement of the robot, such as the robot position, interpolation, speed, accuracy, and tool number of the robot, in addition to move, a movement command.
 

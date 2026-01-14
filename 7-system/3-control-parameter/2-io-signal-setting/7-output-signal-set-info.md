@@ -74,13 +74,13 @@ When the end cycle is performed in the job program, this function is used to out
 
 #### Overall error
 
-Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user’s mistakes in operation. When an error occurs because of a system error, this function is used to output this state to the outside. The errors caused by system errors range from 1 to 999 and 2000 to 7999.
+Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user's mistakes in operation. When an error occurs because of a system error, this function is used to output this state to the outside. The errors caused by system errors range from 1 to 999 and 2000 to 7999.
 
 
 
 #### Operation error
 
-Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user’s mistakes in operation. When an error occurs because of the user’s mistakes in operation, this function is used to output this state to the outside. For information, the errors caused by system errors range from 1 to 999 and 2000 to 7999.
+Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user's mistakes in operation. When an error occurs because of the user's mistakes in operation, this function is used to output this state to the outside. For information, the errors caused by system errors range from 1 to 999 and 2000 to 7999.
 
 
 

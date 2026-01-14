@@ -1,4 +1,4 @@
-# 7.3.10.5 Temporary-key registration
+﻿# 7.3.10.5 Temporary-key registration
 
 * A temporary key can be issued by pressing the [F] key.
 

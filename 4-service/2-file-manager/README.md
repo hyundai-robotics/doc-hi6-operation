@@ -1,7 +1,7 @@
 ﻿# 4.2 File Management
 
 
-You can manage files in the main board’s internal memory, teach pendant, or removable storage device.
+You can manage files in the main board's internal memory, teach pendant, or removable storage device.
 
 1.	Touch the \[5: File Manager\] menu. Then, a list of folders of each device and a list of files saved in the selected folder will appear.
 
@@ -60,7 +60,7 @@ You can manage files in the main board’s internal memory, teach pendant, or re
 </table>
 
 {% hint style="info" %}
-* It is the same function as “R17 File Management” of R codes.
+* It is the same function as "R17 File Management" of R codes.
 * When a removable storage device is connected to the teach pendant, the \[USB\] icon \(![](../../_assets/icon-usb2.png)\) will appear on the status bar of the ${cont_model} teach pendant screen.
 {% endhint %}
 

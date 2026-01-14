@@ -9,7 +9,7 @@ If no settings have been made, all buttons will be empty.
 
 You can configure the buttons as follows:
 
-1. Touch the `[F2: system] – 2: Control parameter – 2: Input/Output signal setting – 5: Key signal output` menu. 
+1. Touch the `[F2: system] - 2: Control parameter - 2: Input/Output signal setting - 5: Key signal output` menu. 
 
 2. Set the function name to be displayed on the button and options, then touch the `[F7: OK]` button.
 

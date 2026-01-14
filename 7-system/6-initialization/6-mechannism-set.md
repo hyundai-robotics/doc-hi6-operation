@@ -51,23 +51,23 @@ A set mechanism unit is the minimum unit that can be assigned to each task and c
 * 
   The following shows the example of the usage.
 
-  Example 1\) M0: Robot \(Axes 1–6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axis 8\)
+  Example 1\) M0: Robot \(Axes 1-6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axis 8\)
 
-  * Select \[M0\] ⇒ Jog key for axes 1–6: M0. Jog key for axis 7: M1. Jog key for axis 8: M2
-  * Select \[M1\] ⇒ Jog key for axis 1: M1
-  * Select \[M2\] ⇒ Jog key for axis 1: M2
+  * Select \[M0\] => Jog key for axes 1-6: M0. Jog key for axis 7: M1. Jog key for axis 8: M2
+  * Select \[M1\] => Jog key for axis 1: M1
+  * Select \[M2\] => Jog key for axis 1: M2
 
-  Example 2\) M0: Robot \(Axes 1–6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axes 8–9\)
+  Example 2\) M0: Robot \(Axes 1-6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axes 8-9\)
 
-  * Select \[M0\] ⇒ Jog key for axes 1–6: M0. Jog key for axis 7: M1
-  * Select \[M1\] ⇒ Jog key for axis 1: M1
-  * Select \[M2\] ⇒ Jog key for axes 1–2: M2
+  * Select \[M0\] => Jog key for axes 1-6: M0. Jog key for axis 7: M1
+  * Select \[M1\] => Jog key for axis 1: M1
+  * Select \[M2\] => Jog key for axes 1-2: M2
 
-  Example 3\) M0: Robot \(Axes 1–7\). M1: Travel axis \(Axis 8\). M2: Servo gun \(Axes 9–10\)
+  Example 3\) M0: Robot \(Axes 1-7\). M1: Travel axis \(Axis 8\). M2: Servo gun \(Axes 9-10\)
 
-  * Select \[M0\] ⇒ Jog key for axes 1–7: M0. Jog key for axis 8: M1
-  * Select \[M1\] ⇒ Jog key for axis 1: M1
-  * Select \[M2\] ⇒ Jog key for axis 1: M2
+  * Select \[M0\] => Jog key for axes 1-7: M0. Jog key for axis 8: M1
+  * Select \[M1\] => Jog key for axis 1: M1
+  * Select \[M2\] => Jog key for axis 1: M2
 
 
 

@@ -54,6 +54,6 @@ When programs are scheduled through external signals and executed in the schedul
 {% hint style="info" %}
 * The \[Program reserve\] item will be activated only when the sync status of the sensor sync function among the application functions is set as conveyor or press.
 * The \[Program reserve\] item will not be activated if the \[Applied Register Count\] option in the \[system &gt; 2: Control Parameter &gt; 8: Program reserve\] menu is set as disable.
-* For details on the scheduled program execution, refer to the “Hi6 Controller Scheduled Program Execution Function Manual.”
+* For details on the scheduled program execution, refer to the "Hi6 Controller Scheduled Program Execution Function Manual."
 {% endhint %}
 

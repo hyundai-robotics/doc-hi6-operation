@@ -23,7 +23,7 @@ Potential danger: Incompliance may cause injuries to the operator or damage to p
 
 
 * The safety equipment to be used after being connected to the controller must be connected to the safety contact terminal or to the configurable digital I/O set, which is to be set as the safety I/O, in double signals. When the equipment is connected to common contact terminals or in a single signal, the regulated safety level cannot be satisfied.
-* Do not put your fingers or other body parts behind the controller’s inner bracket. There is a risk of electric shock or injury.
+* Do not put your fingers or other body parts behind the controller's inner bracket. There is a risk of electric shock or injury.
 * 
   If you are a robot application system manufacturer or a robot user, you should fully understand the contents of the manual and complete the product operation training.
 

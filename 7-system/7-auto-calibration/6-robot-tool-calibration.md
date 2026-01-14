@@ -6,7 +6,7 @@ The robot and tool calibration function will be used in an environment where the
 
     ![](../../_assets/image_245.png)
 
-2.	Organize the measured robot’s position data \(measuring point data\) in X, Y, and Z formats, and then create a file \(Format: ASCII Extension: MSR\). 
+2.	Organize the measured robot's position data \(measuring point data\) in X, Y, and Z formats, and then create a file \(Format: ASCII Extension: MSR\). 
 
     ![](../../_assets/tp630/system-calib-robottool-msr.png)
 
@@ -37,7 +37,7 @@ The robot and tool calibration function will be used in an environment where the
 <Br>
 
 {% hint style="info" %}
-The axis origin and tool length X, Y, and Z values of the axes 2–5 \(H, V, R2, and B axes\) of the calibration parameter are selected. To calibrate the tool only, perform execution after deselecting the value of each axis.
+The axis origin and tool length X, Y, and Z values of the axes 2-5 \(H, V, R2, and B axes\) of the calibration parameter are selected. To calibrate the tool only, perform execution after deselecting the value of each axis.
 {% endhint %}
 
 <br>

@@ -1,7 +1,7 @@
 ﻿# 7.4.1.1 Tool Data Setting
 
 
-The manual method of setting the distance and angle of TCP based on the robot’s R1-axis flange and registering the tool’s weight, center of gravity, and inertia is as follows.
+The manual method of setting the distance and angle of TCP based on the robot's R1-axis flange and registering the tool's weight, center of gravity, and inertia is as follows.
 
 1.	Touch the \[3: Robot Parameter &gt; 1: Tool Data\] menu.
 

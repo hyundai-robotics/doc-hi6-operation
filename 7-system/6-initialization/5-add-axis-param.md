@@ -1,6 +1,6 @@
 ﻿# 7.6.5 Additional Axis Parameter Setting
 
-Additional axes that can be used in addition to the robot itself include the robot’s base axis \(travel axis\), servo gun axis, positioner axis, and jig axis. For details on the specification of each additional axis, refer to the “Additional Axis Function Manual.”
+Additional axes that can be used in addition to the robot itself include the robot's base axis \(travel axis\), servo gun axis, positioner axis, and jig axis. For details on the specification of each additional axis, refer to the "Additional Axis Function Manual."
 
 The method to set parameters such as the specification and configuration of the additional axes that are being used is as follows.
 

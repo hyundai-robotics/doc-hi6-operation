@@ -45,6 +45,6 @@ You can check the information related to the conveyor and press sync functions. 
 
 
 {% hint style="info" %}
-For details on the sensor sync function, refer to the “Hi6 Sensor Sync Function Manual.”
+For details on the sensor sync function, refer to the "Hi6 Sensor Sync Function Manual."
 {% endhint %}
 

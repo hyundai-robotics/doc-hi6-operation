@@ -49,7 +49,7 @@ If the \[Wrist Axis Operation Area\] button is not supported, skip this step, an
   The wrist axis operation area function will not be supported in some robots.
 
 * It requires your attention that the load estimation function may not be executed depending on the setting values of the wrist axis operation area function.
-* For details on the load estimation function, refer to the “Load Estimation Function Manual.”
+* For details on the load estimation function, refer to the "Load Estimation Function Manual."
 {% endhint %}
 
 

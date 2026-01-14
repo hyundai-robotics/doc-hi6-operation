@@ -76,7 +76,7 @@ Block edit mode can be closed by clicking `F7: close` or pressing the `ESC` key.
 
 #### 9. Auto-adjusting Step #
 
-For example, if steps S1–S2 are copied and pasted below, the `move` statement originally at S3 will be pushed down and renumbered as S5 due to the inserted 2 steps.
+For example, if steps S1-S2 are copied and pasted below, the `move` statement originally at S3 will be pushed down and renumbered as S5 due to the inserted 2 steps.
 
 In this case, all branch statement within the same job such as `goto`, `gosub`, `if` statements, and the timeout address of `wait` statements' target addresses will be automatically adjusted from S3 to S5.
 

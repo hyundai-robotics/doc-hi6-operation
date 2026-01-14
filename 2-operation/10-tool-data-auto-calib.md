@@ -15,6 +15,6 @@ After determining the axis origin and tool length through automatic calibration,
     ![](../_assets/tp630/tool-data-auto-calib2_eng.png)
 
 {% hint style="info" %}
-For details on this function, refer to “[7.4.1 Tool Data](../setting/robot-parameter/tool-data/).”
+For details on this function, refer to "[7.4.1 Tool Data](../setting/robot-parameter/tool-data/)."
 {% endhint %}
 

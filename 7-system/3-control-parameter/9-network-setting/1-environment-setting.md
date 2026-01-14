@@ -1,4 +1,4 @@
-# 7.3.9.1 Environment setting
+﻿# 7.3.9.1 Environment setting
 
 You can set the information required for Network Setting for LAN ports.
 
@@ -36,7 +36,7 @@ You can set the information required for Network Setting for LAN ports.
           <li><b>Subnet Mask : </b> Subnet Mask setting for the target port. Usually subnet mask is 255.255.255.0</li>
           <li><b>Gateway : </b>You can set gateway address for the target port. 3rd  information and paste it to another port.
           </li>
-          <li><b>MAC : </b>Displays the controller’s MAC address.
+          <li><b>MAC : </b>Displays the controller's MAC address.
           </li>
         </ul>
       </td>

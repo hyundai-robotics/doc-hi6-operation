@@ -8,7 +8,7 @@
 
 
 
-* \[5: File Manager\]: You can manage files in the main board’s internal memory, teach pendant, or removable storage device.
+* \[5: File Manager\]: You can manage files in the main board's internal memory, teach pendant, or removable storage device.
 * \[6: Program Conversion\]: You can convert the data, such as the condition and location of the created program, by batch or individually.
 * \[7: System Diagnosis\]: You can check the status of the robot and controller and update the system version.
 * \[8: Date, time setting\]: You can set the date and time of the controller.

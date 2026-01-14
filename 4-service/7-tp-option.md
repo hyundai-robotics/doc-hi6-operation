@@ -1,4 +1,4 @@
-# 4.7 Teach pendant option
+﻿# 4.7 Teach pendant option
 
 Set the sound and screen save time of the teach pendant.
 

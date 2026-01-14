@@ -4,7 +4,7 @@ This function is under development. As soon as completed, the content will be up
 
 ---
 
-In the panel selection window, touch \[Work Cell\]. Then, the robot’s current posture will appear on the 3D screen.
+In the panel selection window, touch \[Work Cell\]. Then, the robot's current posture will appear on the 3D screen.
 
 By setting the safety function of the collaborative robot, you can check the setting status of the operation area \(![](../_assets/c1.png)\), tool area \(![](../_assets/c2.png)\), tool direction restriction \(![](../_assets/c3.png)\), robot elbow area \(![](../_assets/c4.png)\), prohibited area \(![](../_assets/c5.png)\).
 

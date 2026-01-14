@@ -1,4 +1,4 @@
-# 7.3.10.2 License key registration procedure
+﻿# 7.3.10.2 License key registration procedure
 
 * Purchase a license key for optional functions that matches your system serial number. The system serial number is located on the license registration screen.
 

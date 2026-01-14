@@ -16,7 +16,7 @@ The following shows how to edit a statement.
 
 * To cancel the change, press the <**ESC**> key.
 
-5.	You can edit another parameter by repeating the above steps 2–3.
+5.	You can edit another parameter by repeating the above steps 2-3.
 
 6.	Press the <<b>ENTER</b>> key to complete the editing. The changes will be saved in the JOB program, and the cursor will return to the statement cursor status.
 

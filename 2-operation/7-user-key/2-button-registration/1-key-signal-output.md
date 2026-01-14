@@ -40,6 +40,6 @@ Alternatively, you can use the F-keys [fb], [do], and [so] at the bottom of the 
 
 {% hint style="info" %}
 You can also access the same setting screen from
-`[F2: system] – 2: Control parameter – 2: Input/Output signal setting – 5: Key signal output`.
+`[F2: system] - 2: Control parameter - 2: Input/Output signal setting - 5: Key signal output`.
 For more details, refer to "[7.3.2.8 Key Signal Output](../../../7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)"".
 {% endhint %}

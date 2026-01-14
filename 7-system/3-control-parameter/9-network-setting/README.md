@@ -1,4 +1,4 @@
-# 7.3.9 Network
+﻿# 7.3.9 Network
 
 1.  \[2: Control parameter &gt; 9: Network\] Touch the menu. The network settings menu will appear.
 

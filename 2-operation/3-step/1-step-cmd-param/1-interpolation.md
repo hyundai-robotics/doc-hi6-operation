@@ -1,4 +1,4 @@
-# 2.3.1.1 Interpolation
+﻿# 2.3.1.1 Interpolation
 
 Interpolation refers to the interpolated path between steps, and the interpolation method for the \[Step N\] determines the form of the path between \[Step N-1\] and \[Step N\].
 

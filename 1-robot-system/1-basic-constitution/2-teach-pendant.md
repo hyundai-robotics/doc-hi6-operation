@@ -19,7 +19,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Operation key</td>
-      <td style="text-align:left">Controls the robot’s operation, inputs commands, or selects a menu</td>
+      <td style="text-align:left">Controls the robot's operation, inputs commands, or selects a menu</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -255,7 +255,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>R-code
        key followed by &lt;<b>ENTER </b>&gt; without a code number is the same
-       as “R0 : Step counter reset”.</span></li>
+       as "R0 : Step counter reset".</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>In
        a yes-no question, pressing R-code means the negative answer.</span></li>
@@ -513,7 +513,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>With
-       &lt;<b>SHIFT</b>&gt; key, you can enter the ‘+’ and ‘-’ signs or delete
+       &lt;<b>SHIFT</b>&gt; key, you can enter the '+' and '-' signs or delete
        a command sentence or a parameter.</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>&lt;<b>BS</b>&gt;

@@ -1,4 +1,4 @@
-# 7.4.10 Reducer Lifespan Setting
+﻿# 7.4.10 Reducer Lifespan Setting
 
 If the reducer of the robot axis is replaced, the rated life of the reducer should be initialized.
 The rate at which the rated life of the reducer is exhausted depends on the operating load conditions and speed. The higher the speed and the higher the load, the faster the life span decreases.

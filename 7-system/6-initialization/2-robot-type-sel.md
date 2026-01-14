@@ -50,7 +50,7 @@
 
 6.	Turn off and on the power of the controller and then supply power to the motor.
 
-7.	In manual mode, move the robot safely to the reference position at low speed and then perform the encoder offset calibration again by referring to steps 7–8.
+7.	In manual mode, move the robot safely to the reference position at low speed and then perform the encoder offset calibration again by referring to steps 7-8.
 
 * In the encoder offset setting item, the current encoder position will be set to 0X400000 \(hexadecimal\).
 * When a motor is replaced because of failure, if the encoder offset setting is performed at the same location, the recorded program can be used identically.

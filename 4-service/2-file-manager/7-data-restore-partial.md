@@ -3,12 +3,12 @@
 When restoring only some folders or files of backup data, use the `Copy` and `Paste` feature.
 
 
-1. By using the teach pendant’s jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device\(USB\), and then click the `[copy]` button.
+1. By using the teach pendant's jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device\(USB\), and then click the `[copy]` button.
 
     ![](../../_assets/tp630/file-manager/fl-restore-copy_eng.png)
 
 
-2. By using the teach pendant’s jog dial, select the \[MAIN\] folder in the folder list, and then touch the `[Paste]` button.
+2. By using the teach pendant's jog dial, select the \[MAIN\] folder in the folder list, and then touch the `[Paste]` button.
 
     ![](../../_assets/tp630/file-manager/fl-restore-paste_eng.png)
 

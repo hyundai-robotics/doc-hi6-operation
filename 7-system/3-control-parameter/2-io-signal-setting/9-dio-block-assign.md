@@ -1,6 +1,6 @@
 ﻿# 7.3.2.9 FB Block Allocation
 
-You can set the method of using the controller’s general input/output signals.
+You can set the method of using the controller's general input/output signals.
 
 1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 6: FB Block Allocation\] menu.
 

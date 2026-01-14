@@ -33,8 +33,8 @@ The collision detection function monitors the disturbance torque and the rate of
         <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left"> 
-        <p>[Measurement] Displays the maximum “disturbance torque” that occurred during the period when the collision detection command (coldet level.id) was active.</p>
-        <p>[Threshold] The user can refer to this value to configure the “disturbance torque” threshold for collision detection at each level. </p>
+        <p>[Measurement] Displays the maximum "disturbance torque" that occurred during the period when the collision detection command (coldet level.id) was active.</p>
+        <p>[Threshold] The user can refer to this value to configure the "disturbance torque" threshold for collision detection at each level. </p>
       </td>
     </tr>
     <tr>
@@ -42,8 +42,8 @@ The collision detection function monitors the disturbance torque and the rate of
         <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>[Measurement] Displays the maximum “rate of change of disturbance torque” that occurred during the period when the collision detection command (coldet level.id) was active.</p>
-        <p>[Threshold] The user can refer to this value to configure the “rate of change of disturbance torque” threshold for collision detection at each level.</p>
+        <p>[Measurement] Displays the maximum "rate of change of disturbance torque" that occurred during the period when the collision detection command (coldet level.id) was active.</p>
+        <p>[Threshold] The user can refer to this value to configure the "rate of change of disturbance torque" threshold for collision detection at each level.</p>
       </td>
     </tr>
     <tr>

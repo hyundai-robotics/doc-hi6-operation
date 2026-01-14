@@ -1,4 +1,4 @@
-# 7.3.10.1 What is a license key for optional functions?
+﻿# 7.3.10.1 What is a license key for optional functions?
 
 Among the functions of the ${cont_model} robot controller, certain optional functions are sold separately, and customers must purchase the optional functions to use them. The license key for the optional function is created by a separate license key generation program by combining the unique number assigned to the main board of the robot controller and the purchased option function, so the purchased function operates only on the purchased controller.
 Therefore, the main board of a robot controller using optional functions cannot be replaced with another controller.

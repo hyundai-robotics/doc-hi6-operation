@@ -1,4 +1,4 @@
-# 6.4.2 System Diagnostics
+﻿# 6.4.2 System Diagnostics
 
 Touch **[System Diagnostics]** in the panel selection window.
 When executed for the first time, the Brake Diagnostics screen appears.

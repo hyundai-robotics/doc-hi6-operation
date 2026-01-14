@@ -30,9 +30,9 @@ The method of instructing the contents of the work to the robot using the jog ke
 
 8.	Operate the robot according to the speed level or movement conditions of the coordinate system using the jog key.
 
-    * To save the robot’s location, touch the <<b>REC</b>> key at the desired location. Then the step will be recorded.
+    * To save the robot's location, touch the <<b>REC</b>> key at the desired location. Then the step will be recorded.
     * To record the function required for the step, touch the \[cmd.input\] button.
-    * To check the robot’s location while manually moving it forward or backward, press the &lt; ↓ / ↑ &gt; key. While you are pressing the &lt; ↓ / ↑ &gt; key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
+    * To check the robot's location while manually moving it forward or backward, press the &lt; ↓ / ↑ &gt; key. While you are pressing the &lt; ↓ / ↑ &gt; key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
 
 
 

@@ -1,4 +1,8 @@
-﻿# ${cont_model} Controller Operation Manual - TP630
+﻿
+[__SOURCE](README.md)
+# ${cont_model} Controller Operation Manual - TP630
+
+[__SOURCE](0-about-this-manual/README.md)
 # About the Manual
 
 This manual describes the basics and structure of HD Hyundai Robotics' ${cont_model} controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
@@ -15,6 +19,8 @@ This manual has been created based on standard specifications, so some contents 
 
 
 
+
+[__SOURCE](0-about-this-manual/copyright.md)
 # Copyrights
 
 The product, as well as all programs, files, and contents covered in this manual, are protected by copyright laws and confidentiality agreements. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by HD Hyundai Robotics, are strictly prohibited.
@@ -25,6 +31,8 @@ Copyright ⓒ 2025 HD HYUNDAI ROBOTICS. All rights reserved.
 
 
 
+
+[__SOURCE](0-about-this-manual/notation.md)
 # Notation Convention
 
 In this manual, the following notation conventions and safety instructions are used to help you understand the contents.
@@ -65,6 +73,8 @@ In this section are some helpful tips or additional information that could be us
 {% hint style="info" %}
 When the ![](../_assets/eng-mode.png)icon blinks in the status bar, it means that you are in engineer mode.
 {% endhint %}
+
+[__SOURCE](0-about-this-manual/safety-notice.md)
 # Safety Cautions
 
 Before using the product, you must read the following safety cautions for proper use, user safety, and prevention of property damage.
@@ -90,7 +100,7 @@ Potential danger: Incompliance may cause injuries to the operator or damage to p
 
 
 * The safety equipment to be used after being connected to the controller must be connected to the safety contact terminal or to the configurable digital I/O set, which is to be set as the safety I/O, in double signals. When the equipment is connected to common contact terminals or in a single signal, the regulated safety level cannot be satisfied.
-* Do not put your fingers or other body parts behind the controller’s inner bracket. There is a risk of electric shock or injury.
+* Do not put your fingers or other body parts behind the controller's inner bracket. There is a risk of electric shock or injury.
 * 
   If you are a robot application system manufacturer or a robot user, you should fully understand the contents of the manual and complete the product operation training.
 
@@ -134,16 +144,20 @@ Low-level danger factor: Incompliance may result in minor injury to the operator
 
 
 
+
+[__SOURCE](1-robot-system/README.md)
 # 1. Robot System
 
+
+[__SOURCE](1-robot-system/1-basic-constitution/README.md)
 # 1.1 Basic Configuration
 
-Industrial robots are “machines that are equipped with manipulation and movement functions based on automatic control for them to perform various works by using programs at an industrial site.” The collaborative robot is a type of industrial robot.
+Industrial robots are "machines that are equipped with manipulation and movement functions based on automatic control for them to perform various works by using programs at an industrial site." The collaborative robot is a type of industrial robot.
 
 The robot system consists of a manipulator and a controller that controls the manipulator. A teach pendant that is to be used for setting and manually operating the robot system is attached to the controller.
 
 * Robot: Performs various works in industrial sites such as transporting objects, assembling parts, etc.
-* Controller: Adjusts the robot’s operation according to the program setting values set through the teach pendant. It can be interoperated with various external equipment or devices through the input/output port of the controller. 
+* Controller: Adjusts the robot's operation according to the program setting values set through the teach pendant. It can be interoperated with various external equipment or devices through the input/output port of the controller. 
 * Teach Pendant: A device that manages the entire robot system. It enables you to teach the robot a specific posture or setup and control the programs.
 
 The following shows an example of the basic configuration of the robot system according to the robot type.
@@ -156,6 +170,8 @@ The following shows an example of the basic configuration of the robot system ac
 
 ![Figure 3 Basic Configuration of the Collaborative Robot System ](../../_assets/image_292.png)
 
+
+[__SOURCE](1-robot-system/1-basic-constitution/1-controller.md)
 # 1.1.1 Controller
 
 #### Vertical Articulated Robot Controller 
@@ -193,6 +209,8 @@ The following shows an example of the basic configuration of the robot system ac
 
 
 
+[__SOURCE](1-robot-system/1-basic-constitution/2-teach-pendant.md)
+
 # 1.1.2 Teach Pendant 
 
 Both the models, TP600 and TP630, are supported. This operation manual describes how to use a teach pendant based on the TP600 model. TP600 is a model developed exclusively for the ${cont_model} controller and provides a large touch screen.
@@ -213,7 +231,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Operation key</td>
-      <td style="text-align:left">Controls the robot’s operation, inputs commands, or selects a menu</td>
+      <td style="text-align:left">Controls the robot's operation, inputs commands, or selects a menu</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -449,7 +467,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>R-code
        key followed by &lt;<b>ENTER </b>&gt; without a code number is the same
-       as “R0 : Step counter reset”.</span></li>
+       as "R0 : Step counter reset".</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>In
        a yes-no question, pressing R-code means the negative answer.</span></li>
@@ -707,7 +725,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>With
-       &lt;<b>SHIFT</b>&gt; key, you can enter the ‘+’ and ‘-’ signs or delete
+       &lt;<b>SHIFT</b>&gt; key, you can enter the '+' and '-' signs or delete
        a command sentence or a parameter.</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>&lt;<b>BS</b>&gt;
@@ -725,8 +743,12 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
 </body>
 
 </html>
+
+[__SOURCE](1-robot-system/2-basic-usage/README.md)
 # 1.2    Basic Use
 
+
+[__SOURCE](1-robot-system/2-basic-usage/1-power-on/README.md)
 # 1.2.1 Turning On the Power
 
 {% hint style="info" %}
@@ -745,7 +767,7 @@ Turn the power switch on the left side of the robot controller to the ON directi
 
 The power of the collaborative robot is supplied through the power connector of the controller.
 
-Push upward the switch on the power breaker. When power is connected, the robot system will boot, the display of the teach pendant will be turned on, and the collaborative robot’s LED lamp will be turned on in white.
+Push upward the switch on the power breaker. When power is connected, the robot system will boot, the display of the teach pendant will be turned on, and the collaborative robot's LED lamp will be turned on in white.
 
 
 
@@ -755,6 +777,8 @@ Push upward the switch on the power breaker. When power is connected, the robot 
 
 
 
+
+[__SOURCE](1-robot-system/2-basic-usage/1-power-on/1-input-of-the-power-to-the-mot.md)
 # 1.2.1.1 Input of the Power to the Motor and the Operable Status
 
 The status of the mode switch and safety plug of the teach pendant determines the input of power to the motor and the operable status.
@@ -800,6 +824,8 @@ The status of the mode switch and safety plug of the teach pendant determines th
 Safety plugs are used for general industrial robots, whereas a light curtain instead of a safety plug is used for LCD robots.
 {% endhint %}
 
+
+[__SOURCE](1-robot-system/2-basic-usage/2-power-off.md)
 # 1.2.2 Turning Off the Power
 
 It refers to all operations of stopping the robot and turning off the power button of the controller after performing all works.
@@ -838,6 +864,8 @@ It refers to all operations of stopping the robot and turning off the power butt
 
 ![](../../_assets/image_288.png)
 
+
+[__SOURCE](1-robot-system/2-basic-usage/3-change-language-of-tp.md)
 # 1.2.3 Changing the language of the teach pendant screen
 
 If you need to change the language of the teach pendant, you can change it with the following procedure. The following is an example of changing Korean to English mode.
@@ -863,6 +891,8 @@ If you need to change the language of the teach pendant, you can change it with 
 
 
 
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/README.md)
 # 1.2.4 Screen of the ${cont_model} Teach Pendant
 
 Following figure represents the screen displayed on teach pendant. Teach pendant screen of ${cont_model} controller is composed of 10 screen windows of color touch screens.
@@ -883,6 +913,8 @@ Following figure represents the screen displayed on teach pendant. Teach pendant
 | ![](../../../_assets/c9.png) | Record condition display window : the  conditions of recording steps  ([1.2.3.9 Record condition display window](9-record-cnd-area.md)) |
 | ![](../../../_assets/c10.png) | L button bar  : the menu group of the left side on the main screen  ([1.2.3.10 L button bar](10-Lbt-bar.md)) |
 
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/1-title-area.md)
 # 1.2.4.1	Title display window
 
 This window shows the status of the robot system at the top side of the main screen.
@@ -900,7 +932,9 @@ This window shows the status of the robot system at the top side of the main scr
 | ![](../../../_assets/c3.png) | a usb memory being inserted |
 | ![](../../../_assets/c4.png) | the continuous path mode of the robot motion (CONTPATH) <br> (CP# : CP(continuous Path) + mode #) <br> Refer to "R360" . |
 | ![](../../../_assets/c5.png) | a user grade (E : engineer mode) |
-| ![](../../../_assets/c6.png) | PLC running status |# 1.2.4.2 Status display window
+| ![](../../../_assets/c6.png) | PLC running status |
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/2-status-bar.md)
+# 1.2.4.2 Status display window
 
 
 This displays various statuses of robot operation. You can set the displayed information by touching each applicable section.
@@ -918,6 +952,8 @@ This displays various statuses of robot operation. You can set the displayed inf
 | ![](../../../_assets/c5.png) | Determine the speed to operate the robot in the manual mode. In the manual mode, there are 2 different types of operation. One is to run it manually and the other is the step forward/backward operation. There are 8 different steps (1~8) in the level of the speed of manual operation.  <li>Speed level increases by a step if pressing the speed HI key of teach pendant, and decreases by a step if pressing the speed LOW key. Speed level is set to 8 if pressing the [SHIFT (FAST)] + Speed  HI key, and is set to 1 if pressing the [SHIFT (FAST)] + Speed LOW key. </li> |
 | ![](../../../_assets/c6.png) | Date and time information are displayed. <br> You can change this in [service &gt; 8: Date, time setting] menu. ([4.5 Setting of Date and Time](../../../4-service/5-date-time-setting.md))|
 
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/3-Rbt-bar.md)
 # 1.2.4.3 R(Right) button bar
 
 5 buttons are displayed on the right side of the screen, and you can touch the buttons. Inactive buttons will be grayed out. Under the automatic mode, 'prev/next' is disabled, which makes it impossible to use those functions.
@@ -979,13 +1015,17 @@ This displays various statuses of robot operation. You can set the displayed inf
   </tbody>
 </table>
 
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/4-mon-area.md)
 # 1.2.4.4 Monitor window
 
-This is the window to display the location data, I/O data and status data of each application by each axis in real time. Divide the main screen and select a monitoring panel. You can have up to 3 monitoring panels. (Refer to “[6. Monitoring](../../../6-monitoring/README.md)”.)
+This is the window to display the location data, I/O data and status data of each application by each axis in real time. Divide the main screen and select a monitoring panel. You can have up to 3 monitoring panels. (Refer to "[6. Monitoring](../../../6-monitoring/README.md)".)
 
 <br>
 
 ![](../../../_assets/tp630/TP-main-mon_eng.png)
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/5-function-buttons.md)
 # 1.2.4.5 Function button bar
 
 
@@ -1004,7 +1044,9 @@ This is the window to display the location data, I/O data and status data of eac
 | ![](../../../_assets/c3.png) | rel.WAIT : release of signal waiting  such as input signal or welding completion signal by pressing with <**SHIFT**> key (precondition : [**system** > 1: User environment > 'Wait(di/wi) release' > Disable]) |
 | ![](../../../_assets/c4.png) | log : error or waring history including  an error code, a notification message, time of error occurrence, etc. ([2.5.2 Error Handling](../../../2-operation/5-error-info/2-error-handle.md))|
 | ![](../../../_assets/c5.png) | cmd.input : displayed in the initial page of the manual mode, and used for inputting a program command ([3.2.2.1 Statements](../../../3-programming/2-prog-edit/1-statement.md))|
-| ![](../../../_assets/c6.png) | cond.set : robot operating conditions such as robot speed for Step forward/backward and path recovery ([5.Condition Setting](../../../5-conditional-setting/README.md))|# 1.2.4.6 Input display window
+| ![](../../../_assets/c6.png) | cond.set : robot operating conditions such as robot speed for Step forward/backward and path recovery ([5.Condition Setting](../../../5-conditional-setting/README.md))|
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/6-input-area.md)
+# 1.2.4.6 Input display window
 
 
 This area displays input value of contents to edit such as command language, character or function. You can directly insert a command without selecting a command through the [cmd.input] button. In the case of inputting an undefined command or a grammatically incorrect one, the following error will occur.
@@ -1020,7 +1062,9 @@ The below table is the input for each parameter of 'move' command.
 
 |command parameters|inputs |
 |--|--|
-|![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-input.png)|# 1.2.4.7 Guide display window
+|![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-input.png)|
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/7-guide-area.md)
+# 1.2.4.7 Guide display window
 
 This displays the guide or direction message for the user to operate and is the area that displays the print message when the print direction is set to T/P in the 'print' command.
 
@@ -1032,7 +1076,9 @@ The below table is the guide message for each parameter of 'move' command.
 
 |command parameters|guide messages|
 |--|--|
-|![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-guide.png)|# 1.2.4.8 Task edit window
+|![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-guide.png)|
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area.md)
+# 1.2.4.8 Task edit window
 
 This is the window to edit the program. For program editing, refer to
 "[3. Program Writing](../../../3-programming/README.md)".
@@ -1080,6 +1126,8 @@ This is the window to edit the program. For program editing, refer to
  Whey you try editing the program, the following error could occur due to the property of the file. For the file property, refer to  "[4.2.4 File Protection](../../../4-service/2-file-manager/4-file-protect.md)".
 
 ![](../../../_assets/tp630/pop-error-fileprotect_eng.png)
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/9-record-cnd-area.md)
 # 1.2.4.9 Record condition display window
 
 
@@ -1089,6 +1137,8 @@ This is the window to edit the condition of the step to record (Speed, accuracy,
 
 ![](../../../_assets/tp630/TP-main-recordcnd.png)
 
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/10-Lbt-bar.md)
 # 1.2.4.10 L(Left) button bar
 
 5 buttons are displayed on the left side of the screen, and you can touch the buttons. Inactive buttons will be grayed out. Under the automatic mode, the record condition, jog inching are disabled, which makes it impossible to use those functions.
@@ -1155,14 +1205,20 @@ This is the window to edit the condition of the step to record (Speed, accuracy,
 
 
 
+
+[__SOURCE](2-operation/README.md)
 # 2. Operation
 
 Operation refers to the act of instructing the contents of the work to the robot and checking the contents. In general, when it comes to industrial robots, manual and automatic modes are used. Manual operation refers to the act of directly instructing the contents of the work to the robot, and the automatic operation refers to the act of making the robot repeatedly execute the contents of the instructed work.
 
+
+[__SOURCE](2-operation/1-manual-operation/README.md)
 # 2.1 Manual Operation
 
 Manual operation is an operation method of directly teaching and checking the robot at a safe speed.
 
+
+[__SOURCE](2-operation/1-manual-operation/1-how-to-op.md)
 # 2.1.1 Operation Method
 
 The method of instructing the contents of the work to the robot using the jog key and checking the contents of the instructed work are as follows.
@@ -1195,14 +1251,16 @@ The method of instructing the contents of the work to the robot using the jog ke
 
 8.	Operate the robot according to the speed level or movement conditions of the coordinate system using the jog key.
 
-    * To save the robot’s location, touch the <<b>REC</b>> key at the desired location. Then the step will be recorded.
+    * To save the robot's location, touch the <<b>REC</b>> key at the desired location. Then the step will be recorded.
     * To record the function required for the step, touch the \[cmd.input\] button.
-    * To check the robot’s location while manually moving it forward or backward, press the &lt; ↓ / ↑ &gt; key. While you are pressing the &lt; ↓ / ↑ &gt; key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
+    * To check the robot's location while manually moving it forward or backward, press the &lt; ↓ / ↑ &gt; key. While you are pressing the &lt; ↓ / ↑ &gt; key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
 
 
 
 
 
+
+[__SOURCE](2-operation/1-manual-operation/2-op-speed.md)
 # 2.1.2 Operation Speed Adjustment
 
 In manual mode, you can operate the robot using the step forward/backward operation and manual jog operation. The current speed setting is displayed at the speed window on the status display window.
@@ -1231,6 +1289,8 @@ If the length and angle in the tool data are set differently from the actual val
 
 
 
+
+[__SOURCE](2-operation/1-manual-operation/3-step-fwd-bwd.md)
 # 2.1.3 Step Forward/Backward
 
 The step forward/backward is one of the methods of operating the robot in manual mode and refers to the act of playing back a recorded program. By manipulating the robot in the step forward/backward operation, you can check the recorded program path and mutual interlock relationship at a range of safe speed.
@@ -1281,10 +1341,14 @@ You can set the maximum speed for the step forward/backward operation and set wh
 
 
 
+
+[__SOURCE](2-operation/2-automatic-operation/README.md)
 # 2.2 Automatic Operation
 
 Automatic operation is an operation method of teaching the robot the contents of the work that it should execute and then making the robot perform the work.
 
+
+[__SOURCE](2-operation/2-automatic-operation/1-how-to-op.md)
 # 2.2.1 Operation Method
 
 It is the method to teach the robot the contents of the work and then make it perform the work is as follows.
@@ -1320,9 +1384,11 @@ It is the method to teach the robot the contents of the work and then make it pe
   For example, if the operation speed is set to 100, the robot will move at the recorded speed of the step, and if it is set to 50, the robot will move at the ratio of 50% of the recorded speed.
 
 6.	Press the &lt;start&gt; key on the teach pendant. The start lamp will be turned on, and the robot will perform the work according to the created program.
+
+[__SOURCE](2-operation/2-automatic-operation/2-adjust-op-spd.md)
 # 2.2.2 Operation Speed Adjustment
 
-In automatic operation, the \[Speed Adjustment\] button on the left side of the ${cont_model} teach pendant screen will display the robot's operation speed \(%\) while the program is being played back. The displayed operation speed is the ratio of the robot’s moving speed to the speed recorded in the step.
+In automatic operation, the \[Speed Adjustment\] button on the left side of the ${cont_model} teach pendant screen will display the robot's operation speed \(%\) while the program is being played back. The displayed operation speed is the ratio of the robot's moving speed to the speed recorded in the step.
 
 ![](../../_assets/tp630/sbar-spd-auto_eng.png)
 
@@ -1334,6 +1400,8 @@ In automatic mode, you can adjust the operation speed of the robot, without modi
 
 ![](../../_assets/tp630/cond-set-step-fwd-bwd-spd-auto-spd_eng.png)
 
+
+[__SOURCE](2-operation/3-step/README.md)
 # 2.3 Step
 
 A step refers to a specific posture \(the position of each axis or the position of the tooltip\) that is to be recorded in the job program and taken by the robot. In other words, a step is one position that the robot will reach through a movement.
@@ -1347,6 +1415,8 @@ The robot performs various functions while moving from one step to another. For 
 
 
 
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/README.md)
 # 2.3.1 Step Statement Parameters
 
 The step statement parameters are the movement conditions required for the step movement of the robot, such as the robot position, interpolation, speed, accuracy, and tool number of the robot, in addition to move, a movement command.
@@ -1440,6 +1510,8 @@ The step statement is configured as follows.
   </tbody>
 </table>
 
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/1-interpolation.md)
 # 2.3.1.1 Interpolation
 
 Interpolation refers to the interpolated path between steps, and the interpolation method for the \[Step N\] determines the form of the path between \[Step N-1\] and \[Step N\].
@@ -1502,6 +1574,8 @@ In this way, by determining the interpolation method of the step in consideratio
 
 
 
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/2-pose.md)
 # 2.3.1.2 Pose
 
 A pose is a parameter to record the position. If you input a move, the movement command, by using the \[Command\] button, you should designate the pose expression in the tg \(target\) parameter. When the move statement is inputted using the <<b>REC</b>> key, the tg parameter will not appear. At the moment of touching the <<b>REC</b>> key, the position and posture of the manipulator will be recorded, but they will not be displayed on the JOB editing screen, which is why they are called a hidden pose.
@@ -1560,11 +1634,13 @@ The pose variable and shift variable will be saved in the following formats.
 
 
 
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/3-speed.md)
 # 2.3.1.3 Speed
 
 The operation speed of the robot can be displayed using the following four types of units. They can be used in all interpolation methods.
 
-* ㎜/sec, ㎝/min: Sets the maximum speed of the TCP \(Tool Center Point\) of the robot.   The maximum speed of the robot will be automatically calculated by the controller based on the position and acceleration/deceleration parameters. If the setting value is larger than the maximum speed limit of the performance of the robot, the robot will operate only at the maximum speed limit.
+* mm/sec, cm/min: Sets the maximum speed of the TCP \(Tool Center Point\) of the robot.   The maximum speed of the robot will be automatically calculated by the controller based on the position and acceleration/deceleration parameters. If the setting value is larger than the maximum speed limit of the performance of the robot, the robot will operate only at the maximum speed limit.
 
 
 
@@ -1578,6 +1654,8 @@ The operation speed of the robot can be displayed using the following four types
 
 
 
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/4-accuracy.md)
 # 2.3.1.4 Accuracy
 
 It will determine the accuracy \(the degree of approach to the recorded position\) at which the robot passes through the step when progressing the target step. When the robot moves to the target step, if the error between the current position and the recorded position that occurs when the robot moves to the target step is less than a certain value, the robot will move to the next step. The value of the allowable error at this time is called accuracy.
@@ -1588,7 +1666,7 @@ A path that is newly created within the accuracy range \(0~7\) according to the 
 
 ![Figure 18 Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
 
-Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression “Accuracy ≤ min\(P1-P2, P2-P3\) / 2" in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
+Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression "Accuracy ≤ min\(P1-P2, P2-P3\) / 2" in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
 
 In the case of a robot, the value of the applicable accuracy level will be defined based on the tooltip distance and posture angle of the robot. When it comes to additional axes, the value in the case of the linear axis will be defined based on the length, and the value in the case of the rotation axis will be defined based on the angle. You can directly change the values in the \[system&gt; 3: Robot Parameter&gt; 6: Accuracy\] menu. For details on the value of the accuracy level, refer to "[7.4.6 Accuracy](../../../7-system/4-robot-parameter/6-accuracy.md)".
 
@@ -1606,30 +1684,40 @@ The cornering path will not exceed the convex polygon area because of the convex
 
 ![Figure 20 All Points on the Cornering Path within the Convex Polygon Area](../../../_assets/image_87.png)
 
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/5-tool-no.md)
 # 2.3.1.5 Tool Number
 
-The robot position will be determined by the position and posture of the tooltip. You can designate the tool number \(0–31\) that will be used. Refer to "[7.4.1.1 Tool Data Setting](../../../7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)" for more details.
+The robot position will be determined by the position and posture of the tooltip. You can designate the tool number \(0-31\) that will be used. Refer to "[7.4.1.1 Tool Data Setting](../../../7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)" for more details.
 
 
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/6-until.md)
 # 2.3.1.6 Stop Condition
 
-When the conditional expression “after until” is satisfied, the robot stops moving and executes the next command \(step or function\).
+When the conditional expression "after until" is satisfied, the robot stops moving and executes the next command \(step or function\).
 
-The value of the conditional expression “after until” can be checked through the return value of the result \(\) function. You can check whether the move operation is terminated by a conditional expression.
+The value of the conditional expression "after until" can be checked through the return value of the result \(\) function. You can check whether the move operation is terminated by a conditional expression.
 
 ![Figure 21 Example of Stop Conditions](../../../_assets/image_46_1.png)
 
 {% hint style="info" %}
 For details on the robot language, refer to the "[Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/README)."
 {% endhint %}
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/7-comment.md)
 # 2.3.1.7 Comment
 
 You can input a comment for the description of a step. You can input the contents of comments conveniently by using the soft keyboard.
 Refer to "[3.2.4.4 Soft Keyboard](../../../3-programming/2-prog-edit/4-statement-edit/4-softkeyboard.md)" for more details about how to use the soft keyboard.
+
+[__SOURCE](2-operation/3-step/2-step-pose-modify/README.md)
 # 2.3.2 Recording and Changing a Step Position
 
 You can record or change the robot position and posture of the recorded step using the <<b>REC</b>> key.
 
+
+[__SOURCE](2-operation/3-step/2-step-pose-modify/1-joint-crd-sys.md)
 # 2.3.2.1 Axis Angle Recording Coordinate
 
 In manual mode, if the \[1: Pose Recording Form\] option in the \[system&gt; 1: User Environment\] menu is set to axis angle, touch the \[property\] button in the move statement. The following attributes window will appear. The position of the robot recorded by the encoder can only be checked, and the position data cannot be modified.
@@ -1643,6 +1731,8 @@ In manual mode, if the \[1: Pose Recording Form\] option in the \[system&gt; 1: 
 
 
 
+
+[__SOURCE](2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)
 # 2.3.2.2 Base and Robot Recording Coordinates
 
 The position and posture of the robot can be displayed differently depending on the coordinate system. If there is no travel axis, the base coordinate and the robot coordinate will generally be the same. If the travel axis is defined, the position and posture of the robot tool will be displayed differently depending on whether it is the base coordinate and the robot coordinate.
@@ -1658,7 +1748,7 @@ For one tooltip position and its orientation, there may be multiple postures bec
 Collaborative robots can be restricted by the soft limit because of their mechanical structures. When the robot is not in operation, you can release the soft limit or set it to a large value.
 
 * auto: Regarding the current posture of the robot, the items that come later will be automatically determined. If this mode is not set, a determination will be performed based on whether the items below are designated or not.
-* back: The tooltip of the robot is in the – direction on the X-axis of the robot coordinate system, meaning the rear. If this is not designated, the tooltip will be in the + direction, meaning the front. 
+* back: The tooltip of the robot is in the - direction on the X-axis of the robot coordinate system, meaning the rear. If this is not designated, the tooltip will be in the + direction, meaning the front. 
 * down: Relationship between the H-axis and V-axis. If this is designated, the result will be the bottom. If this is not designated, the result will be top.
 
 ![Figure 22 Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../_assets/image_58_1.png)
@@ -1716,9 +1806,11 @@ The coordinate system will be saved as \[Pose Variable\].crd \(Example: po32.crd
 
 
 
+
+[__SOURCE](2-operation/4-r-code.md)
 # 2.4 R Codes
 
-R codes are unique code numbers assigned to specific functions. Assigning unique code numbers to frequently used functions can help you use those functions quickly. For details on R codes, refer to “[8 R codes](../r-code/).”
+R codes are unique code numbers assigned to specific functions. Assigning unique code numbers to frequently used functions can help you use those functions quickly. For details on R codes, refer to "[8 R codes](../r-code/)."
 
 After touching the <**R..[NO]**> key, input the code number and touch the \[OK\] button. Then the predefined function will be executed.
 
@@ -1728,12 +1820,16 @@ After touching the <**R..[NO]**> key, input the code number and touch the \[OK\]
 
 
 
+
+[__SOURCE](2-operation/5-error-info/README.md)
 # 2.5 Error Information
 
 When a problem occurs, a notification will appear on the taskbar at the bottom of the ${cont_model} teach pendant screen and will blink for about one minute. You can check the error code, notification message, and the time of error occurrence.
 
 ![](../../_assets/tp630/wg-alarm_eng.png)
 
+
+[__SOURCE](2-operation/5-error-info/1-error-type.md)
 # 2.5.1 Error Type
 
 Troubles in the robot system are composed of errors and warnings.
@@ -1744,6 +1840,8 @@ Troubles in the robot system are composed of errors and warnings.
 
 
 * Warning: The robot will continue to operate, but a warning is a trouble that requires you to check whether or not a response action has been taken. The code number in the notification message starts with W.
+
+[__SOURCE](2-operation/5-error-info/2-error-handle.md)
 # 2.5.2 Error Handling
 
 The following shows how to check and deal with various system troubles, such as system failures or operational errors.
@@ -1769,6 +1867,8 @@ The following shows how to check and deal with various system troubles, such as 
 
 
 
+
+[__SOURCE](2-operation/6-log.md)
 # 2.6 Event log
 
 A log of events such as errors, warnings, notifications, start/stop actions, operations, changes in I/O values, and robot language executions that have occurred from the past to the present point in time is stored. (The maximum number of records stored varies depending on the type.)<br>
@@ -1867,10 +1967,14 @@ The display of auxiliary information is supported from V60.30-01.
 
 
 
+
+[__SOURCE](2-operation/7-user-key/README.md)
 # 2.7 User Key
 
 By assigning the desired functions to the buttons in the user button area on the R button bar of the ${cont_model} teach pendant screen, you can conveniently use them when teaching a robot.
 
+
+[__SOURCE](2-operation/7-user-key/1-user-key-region.md)
 # 2.7.1 Switching of the User Key Area
 
 Touch the `[user key]` button on the R button bar of the ${cont_model} teach pendant screen until the desired area appears. Then, the menu button area will be switched to the user button area. In the user key area, the key signal output function and the spot application function are assigned and provided by default.
@@ -1887,9 +1991,13 @@ Touch the `[user key]` button on the R button bar of the ${cont_model} teach pen
 
 
 
+
+[__SOURCE](2-operation/7-user-key/2-button-registration/README.md)
 # 2.7.2 Button Registration for Each Area
 
 You can register the desired function in the user key area with a button.
+
+[__SOURCE](2-operation/7-user-key/2-button-registration/1-key-signal-output.md)
 # 2.7.2.1 Key Signal Output Function Area
 
 
@@ -1932,9 +2040,11 @@ Alternatively, you can use the F-keys [fb], [do], and [so] at the bottom of the 
 
 {% hint style="info" %}
 You can also access the same setting screen from
-`[F2: system] – 2: Control parameter – 2: Input/Output signal setting – 5: Key signal output`.
+`[F2: system] - 2: Control parameter - 2: Input/Output signal setting - 5: Key signal output`.
 For more details, refer to "[7.3.2.8 Key Signal Output](../../../7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)"".
 {% endhint %}
+
+[__SOURCE](2-operation/7-user-key/2-button-registration/2-rob-appl-cfg.md)
 # 2.7.2.2 Robot application user-key configuration
 
 Touch the `[user key]` button on the R button bar of the ${cont_model} teach pendant screen until the desired area appears. Then, the F button area will be switched to the robot application user-key area, such as spotweld-bar and arcweld-bar.
@@ -1958,9 +2068,13 @@ After completing the placement, press the `[F7:OK]` button to save the user butt
 * For details on the spot application function, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
 
 * For details on the arc application function, refer to the "[Hi6 Controller Arc Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/README)".
+
+[__SOURCE](2-operation/8-coord-sys/README.md)
 # 2.8 Coordinate System
 
-Coordinates in space are used to determine the direction of the robot’s movement. ${cont_model} controller has the joint coordinate system, robot coordinate system, user coordinate system, and tool coordinate system.
+Coordinates in space are used to determine the direction of the robot's movement. ${cont_model} controller has the joint coordinate system, robot coordinate system, user coordinate system, and tool coordinate system.
+
+[__SOURCE](2-operation/8-coord-sys/1-jog-key.md)
 # 2.8.1 Jog Keys
 
 It can be used in manual mode. When you are holding the enabling switch, with the motor ON and pressing jog keys, you can move the robot at a low speed.
@@ -1991,6 +2105,8 @@ For example, whether to perform an assignment for the axes J7 and J8 according t
 
 
 
+
+[__SOURCE](2-operation/8-coord-sys/2-joint-crdsys.md)
 # 2.8.2 Joint Coordinate System
 
 <table>
@@ -2020,9 +2136,11 @@ For example, whether to perform an assignment for the axes J7 and J8 according t
     ![](../../_assets/image_85.png)
 
 {% hint style="info" %}
-For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](jog-key.md)”. 
+For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](jog-key.md)". 
 {% endhint %}
 
+
+[__SOURCE](2-operation/8-coord-sys/3-robot-crdsys.md)
 # 2.8.3 Robot Coordinate System
 
 <table>
@@ -2052,7 +2170,7 @@ For details on the robot’s progress direction in relation to the jog keys, ref
     ![](../../_assets/image_62.png)
 
 {% hint style="info" %}
-* For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](1-jog-key.md).” 
+* For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)." 
 * 
   If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
 
@@ -2066,6 +2184,8 @@ Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
 
 
 
+
+[__SOURCE](2-operation/8-coord-sys/4-user-crdsys.md)
 # 2.8.4 User Coordinate System
 
 <table>
@@ -2088,7 +2208,7 @@ Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
 1.	On the right side of the initial screen, touch the \[system\] button &gt; \[2: Control Parameter&gt; 7: Coordinate System Registration&gt; 1: User Coordinate System\] menu and then register the user coordinate system.
 
 {% hint style="info" %}
-For details on how to register the user coordinate system, refer to “[7.3.6.1 User Coordinate System](../../7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md).”
+For details on how to register the user coordinate system, refer to "[7.3.6.1 User Coordinate System](../../7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md)."
 {% endhint %}
 
 2.	Touch the \[Speed Adjustment\] button at the top left of the initial screen and then set the coordinate system in the \[9: Select user coordinate\] option. You can choose the user coordinate system instead of the Cartesian coordinate system.
@@ -2104,9 +2224,11 @@ For details on how to register the user coordinate system, refer to “[7.3.6.1 
 	![](../../_assets/tp630/sbar-user-crdsys_eng.png)
 
 {% hint style="info" %}
-For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](1-jog-key.md).” 
+For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)." 
 {% endhint %}
 
+
+[__SOURCE](2-operation/8-coord-sys/5-tool-crdsys.md)
 # 2.8.5 Tool Coordinate System
 
 <table>
@@ -2143,18 +2265,20 @@ For details on the robot’s progress direction in relation to the jog keys, ref
     ![](../../_assets/image_92.png)
 
 {% hint style="info" %}
-For details on the robot’s progress direction in relation to the jog keys, refer to “[2.7.1 Jog Keys](1-jog-key.md).”
+For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)."
 {% endhint %}
 
+
+[__SOURCE](2-operation/9-axis-origin.md)
 # 2.9 Optimization of the Axis Origin and Tool Length
 
 You can make it possible for the axis integer and tool length to be automatically set to improve the accuracy of the linear interpolation trajectory and coordinate shifting.
 
 * You can make it possible for the distance to the tooltip, which is difficult to measure in 3D, to be automatically set. The parameters to be calibrated are the axis origins of the H, V, R2, and B axes and the tool length in the X, Y, and Z directions.
-* You can perform “optimization of axis origin and tool length” and of “tool length.”
+* You can perform "optimization of axis origin and tool length" and of "tool length."
 
 {% hint style="warning" %}
-You should optimize the “axis origin and tool length” before teaching the robot program. If the “axis origin and tool length” is optimized while a robot program has been created already, the position in the existing program may change.
+You should optimize the "axis origin and tool length" before teaching the robot program. If the "axis origin and tool length" is optimized while a robot program has been created already, the position in the existing program may change.
 {% endhint %}
 
 The following shows how to set the optimization of the axis origin and tool length:
@@ -2182,9 +2306,9 @@ The following shows how to set the optimization of the axis origin and tool leng
     ![](../_assets/tp630/k-record_eng.png)
 
 
-7.	Change the robot’s posture and repeat the above steps 5–6 more than four times.
+7.	Change the robot's posture and repeat the above steps 5-6 more than four times.
 
-* Change the robot’s posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
+* Change the robot's posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
 
 8.	Touch the \[system\] button &gt; \[6: Auto Calibration &gt; 1: Optimize axis origin and tool length\] menu.
 
@@ -2198,9 +2322,11 @@ The following shows how to set the optimization of the axis origin and tool leng
 * When you use multiple tools, you should select Tool Length in the \[Optimization Selection\] option for the second tool. If you select Axis Origin and Tool Length, the previously set tool information will get incorrect.
 
 {% hint style="info" %}
-For details on this function, refer to “[7.7.1 Optimization of Axis Origin and Tool Length](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md).”
+For details on this function, refer to "[7.7.1 Optimization of Axis Origin and Tool Length](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)."
 {% endhint %}
 
+
+[__SOURCE](2-operation/10-tool-data-auto-calib.md)
 # 2.10 Tool Data Automatic Calibration
 
 After determining the axis origin and tool length through automatic calibration, etc., if the tool is deformed, you can simply determine new tool data. At this time, the axis origin should have been determined and maintained. In addition, a fixed reference point should be taught after the tool length is determined and the angle calibration is completed. If tool deformation occurs, place the tool in the same position at the reference point designated prior to the deformation, and then perform automatic tool data calibration.
@@ -2218,13 +2344,17 @@ After determining the axis origin and tool length through automatic calibration,
     ![](../_assets/tp630/tool-data-auto-calib2_eng.png)
 
 {% hint style="info" %}
-For details on this function, refer to “[7.4.1 Tool Data](../setting/robot-parameter/tool-data/).”
+For details on this function, refer to "[7.4.1 Tool Data](../setting/robot-parameter/tool-data/)."
 {% endhint %}
 
+
+[__SOURCE](3-programming/README.md)
 # 3. Program Writing
 
 You can write and manage programs so that the robot can perform works and achieve the desired results.
 
+
+[__SOURCE](3-programming/1-prog-manage.md)
 # 3.1 Program Management
 
 While the robot is stopped, you can create, modify, and delete programs.
@@ -2237,7 +2367,7 @@ While the robot is stopped, you can create, modify, and delete programs.
 
 2.	You can create, modify, and delete programs.
 
-* To add a new program, type the new program number and press <ENTER> key, referring to “[3.2 Program Writing](2-prog-edif/../2-prog-edit/README.md)”.
+* To add a new program, type the new program number and press <ENTER> key, referring to "[3.2 Program Writing](2-prog-edif/../2-prog-edit/README.md)".
 
     ![](../_assets/tp630/k-prg-select_eng.png)
 
@@ -2245,16 +2375,20 @@ While the robot is stopped, you can create, modify, and delete programs.
 
 * To delete a program, select the program from the list and press \<DEL> key. 
 
-* You can also delete a program from the file list \(\[service &gt; 5: File Management\]\). For details, refer to “[4.2.1 File Management](../4-service/2-file-manager/1-file-management.md)”.
+* You can also delete a program from the file list \(\[service &gt; 5: File Management\]\). For details, refer to "[4.2.1 File Management](../4-service/2-file-manager/1-file-management.md)".
   
-* You can quickly delete a program using the R code \(R117\). For details, refer to “[8.4 R117 for Deleting a Program](../8-r-code/4-r117.md)”.
+* You can quickly delete a program using the R code \(R117\). For details, refer to "[8.4 R117 for Deleting a Program](../8-r-code/4-r117.md)".
 
+
+[__SOURCE](3-programming/2-prog-edit/README.md)
 # 3.2 Program Writing
 
 In order to accomplish the purpose of your application, you can write and edit a program consisting of various statements that instruct the robot to operate. You can write programs in manual mode.
 
 
 
+
+[__SOURCE](3-programming/2-prog-edit/1-statement.md)
 # 3.2.1 Statements
 
 A general program consists of a step command that instructs the robot to move and a function command that instructs the robot to carry out work after the movement.
@@ -2271,7 +2405,7 @@ A statement is largely divided into a command and a parameter, which is an addit
 | ![](../../_assets/c2.png)  | Command | ![](../../_assets/c4.png)  | Comment |
 
 {% hint style="info" %}
-For details on parameters, refer to “[2.3.1 Step Statement Parameters](../../operation/step/step-cmd-param/).”
+For details on parameters, refer to "[2.3.1 Step Statement Parameters](../../operation/step/step-cmd-param/)."
 {% endhint %}
 
 When you input a statement, basic setting values will be automatically inputted into the default parameters and can be changed. Optional parameters are marked with a symbol \( \_ \), and you can input the parameter values by selecting the parameters. Moreover, parameters that can be inputted will be displayed as buttons on the function button bar.
@@ -2280,8 +2414,12 @@ When you input a statement, basic setting values will be automatically inputted 
 
 When editing the command parameters, you can edit variables, expressions, and strings by using the operation keys on the teach pendant and the menu buttons on the bottom of the screen, or by using the soft keyboard.
 
+
+[__SOURCE](3-programming/2-prog-edit/2-statement-input/README.md)
 # 3.2.2 Statement Inputting
 
+
+[__SOURCE](3-programming/2-prog-edit/2-statement-input/1-gen-statement-input.md)
 # 3.2.2.1 General Statement Inputting
 
 1.	In manual mode, touch the \[cmd.input\] button on right bottom of the initial screen. Then, the command input window will appear.
@@ -2294,7 +2432,9 @@ When editing the command parameters, you can edit variables, expressions, and st
 
 * If the command list has commands more than seven, you can see the additional command by touching [prev/next] button.
 
-* For details on each statement, refer to the “[${cont_model} Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/README).”
+* For details on each statement, refer to the "[${cont_model} Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/README)."
+
+[__SOURCE](3-programming/2-prog-edit/2-statement-input/2-step-input.md)
 # 3.2.2.2 Inputting of a Step Statement with a Hidden Pose
 
 To input the current posture of the robot as a move command, press the <<b>REC</b>> key on the keypad.
@@ -2307,6 +2447,8 @@ When you input a command using the <<b>REC</b>> key, the pose variable will not 
 
 
 
+
+[__SOURCE](3-programming/2-prog-edit/2-statement-input/3-rec-cond.md)
 # 3.2.2.3 Recording Condition
 
 When a statement is inputted using the \<**REC**\> key, the current posture of the robot will be recorded as the target pose, and the value set in advance using the \[rec.cond\] button will be applied to the move command \(move\) parameter. The following shows the method of setting the recording condition of a statement.
@@ -2331,6 +2473,8 @@ When a statement is inputted using the \<**REC**\> key, the current posture of t
 
 
 
+
+[__SOURCE](3-programming/2-prog-edit/3-statement-constitution.md)
 # 3.2.3 Statement Configuration
 
 A statement consists of an address area and a statement area. 
@@ -2348,6 +2492,8 @@ You can move the cursor position between the address area and the statement area
 
 
 
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/README.md)
 # 3.2.4 Statement Editing
 
 You can edit the statement in the JOB program window using the operation keys on the teach pendant and the menu buttons on the function button bar. Using the soft keyboard, you can edit variables, expressions, and strings.
@@ -2366,6 +2512,8 @@ In the statement area, you can check and edit statements by switching the status
 
 
 
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/1-how-to-edit-statement.md)
 # 3.2.4.1 Statement Editing Method
 
 The following shows how to edit a statement.
@@ -2384,7 +2532,7 @@ The following shows how to edit a statement.
 
 * To cancel the change, press the <**ESC**> key.
 
-5.	You can edit another parameter by repeating the above steps 2–3.
+5.	You can edit another parameter by repeating the above steps 2-3.
 
 6.	Press the <<b>ENTER</b>> key to complete the editing. The changes will be saved in the JOB program, and the cursor will return to the statement cursor status.
 
@@ -2392,6 +2540,8 @@ The following shows how to edit a statement.
 
 
 
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/2-statement-edit-example.md)
 # 3.2.4.2 Example of Statement Editing
 
 With an example of changing the interpolation parameter from P \(joint interpolation\) to L \(linear interpolation\), the following describes how to edit a statement.
@@ -2412,6 +2562,8 @@ With an example of changing the interpolation parameter from P \(joint interpola
 
 
 
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/3-how-to-edit-line-no.md)
 # 3.2.4.3 Line Number Editing Method
 
 The line number can be set to any number between 1 and 9999.
@@ -2439,6 +2591,8 @@ The line number can be set to any number between 1 and 9999.
 
 
 
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/4-softkeyboard.md)
 # 3.2.4.4 Soft Keyboard
 
 You can easily input variables, expressions, and strings using the soft keyboard on the ${cont_model} teach pendant screen.
@@ -2464,6 +2618,8 @@ You can easily input variables, expressions, and strings using the soft keyboard
 
 
 
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md)
 # 3.2.4.5 Block Editing Mode
 
 You can set a single line or multiple lines of a program as a block to perform copy, move, delete, and remark operations.
@@ -2542,7 +2698,7 @@ Block edit mode can be closed by clicking `F7: close` or pressing the `ESC` key.
 
 #### 9. Auto-adjusting Step #
 
-For example, if steps S1–S2 are copied and pasted below, the `move` statement originally at S3 will be pushed down and renumbered as S5 due to the inserted 2 steps.
+For example, if steps S1-S2 are copied and pasted below, the `move` statement originally at S3 will be pushed down and renumbered as S5 due to the inserted 2 steps.
 
 In this case, all branch statement within the same job such as `goto`, `gosub`, `if` statements, and the timeout address of `wait` statements' target addresses will be automatically adjusted from S3 to S5.
 
@@ -2562,10 +2718,14 @@ Please manually adjust these modified target addresses to the appropriate step n
 (If left unchanged, a syntax error will occur when executing the statement.)
 
 ![](../../../_assets/tp630/blockedit/76_branch_adjust.PNG)
+
+[__SOURCE](4-service/README.md)
 # 4. Service
 
-You can use the program’s various service function menus such as variable and file management.
+You can use the program's various service function menus such as variable and file management.
 
+
+[__SOURCE](4-service/1-service-usage.md)
 # 4.1 Use of service
 
 1.	In manual or automatic mode, touch the \[service\] button on the function button bar of the initial screen. Various service menus of the program will be displayed.
@@ -2576,7 +2736,7 @@ You can use the program’s various service function menus such as variable and 
 
 
 
-* \[5: File Manager\]: You can manage files in the main board’s internal memory, teach pendant, or removable storage device.
+* \[5: File Manager\]: You can manage files in the main board's internal memory, teach pendant, or removable storage device.
 * \[6: Program Conversion\]: You can convert the data, such as the condition and location of the created program, by batch or individually.
 * \[7: System Diagnosis\]: You can check the status of the robot and controller and update the system version.
 * \[8: Date, time setting\]: You can set the date and time of the controller.
@@ -2585,10 +2745,12 @@ You can use the program’s various service function menus such as variable and 
 * \[11: Teach pendant option\]: Set the sound and screen save time of the teach pendant.
 * \[19: Industrial Communication Monitoring\]: Monitor firmware information and communication status.
 
+
+[__SOURCE](4-service/2-file-manager/README.md)
 # 4.2 File Management
 
 
-You can manage files in the main board’s internal memory, teach pendant, or removable storage device.
+You can manage files in the main board's internal memory, teach pendant, or removable storage device.
 
 1.	Touch the \[5: File Manager\] menu. Then, a list of folders of each device and a list of files saved in the selected folder will appear.
 
@@ -2647,7 +2809,7 @@ You can manage files in the main board’s internal memory, teach pendant, or re
 </table>
 
 {% hint style="info" %}
-* It is the same function as “R17 File Management” of R codes.
+* It is the same function as "R17 File Management" of R codes.
 * When a removable storage device is connected to the teach pendant, the \[USB\] icon \(![](../../_assets/icon-usb2.png)\) will appear on the status bar of the ${cont_model} teach pendant screen.
 {% endhint %}
 
@@ -2655,6 +2817,8 @@ You can manage files in the main board’s internal memory, teach pendant, or re
 Never remove the removable storage device from the teach pendant while performing operations such as copying or deleting files. Data may be corrupted.
 {% endhint %}
 
+
+[__SOURCE](4-service/2-file-manager/1-file-management.md)
 # 4.2.1 File Management
 
 Select one or multiple files to copy, move, or delete.
@@ -2694,6 +2858,8 @@ Select one or multiple files to copy, move, or delete.
 
     ![](../../_assets/tp630/file-manager/fl-delete-pop_eng.png)
 
+
+[__SOURCE](4-service/2-file-manager/2-rename-file-folder.md)
 # 4.2.2 Renaming of a File and Folder
 
 You can rename a file or folder. You can also rename multiple files or folders at once.
@@ -2717,17 +2883,21 @@ You can rename a file or folder. You can also rename multiple files or folders a
   Even if a file is renamed, the information such as size, modified date, and attributes will remain the same as before.
 
 * 
-  It is the same function as “R116 Program Number Change” of R codes.
+  It is the same function as "R116 Program Number Change" of R codes.
 
 
 {% endhint %}
 
 
 
+
+[__SOURCE](4-service/2-file-manager/3-folder-management/README.md)
 # 4.2.3 Folder Management
 
 You can delete a folder or add a new one.
 
+
+[__SOURCE](4-service/2-file-manager/3-folder-management/1-folder-removal.md)
 # 4.2.3.1 Folder Deletion
 
 1.	Select a folder in the folder list using the jog dial on the teach pendant and then touch the ![](../../../_assets/tp630/k-delete_eng.png) key of the key pad.
@@ -2740,6 +2910,8 @@ You can delete a folder or add a new one.
 
 
 
+
+[__SOURCE](4-service/2-file-manager/3-folder-management/2-folder-generation.md)
 # 4.2.3.2 Folder Creation
 
 1.	Select a folder in the folder list using the jog dial of the teach pendant and then touch the \[New Folder\] button on the function button bar. Then, a new folder will be added under the selected folder.
@@ -2751,6 +2923,8 @@ You can delete a folder or add a new one.
     ![](../../../_assets/tp630/file-manager/fld-create-rename_eng.png)
 
 
+
+[__SOURCE](4-service/2-file-manager/4-file-protect.md)
 # 4.2.4 File Protection
 
 Protect your important files by performing a setting that can make it impossible to change or delete a program.
@@ -2765,6 +2939,8 @@ Protect your important files by performing a setting that can make it impossible
 
 
 
+
+[__SOURCE](4-service/2-file-manager/5-data-backup.md)
 # 4.2.5 Backup all
 
 You can backup the controller's files, such as the project, log.
@@ -2782,6 +2958,8 @@ You can backup the controller's files, such as the project, log.
 
     ![](../../_assets/tp630/file-manager/fl-backup-pop.png)
 
+
+[__SOURCE](4-service/2-file-manager/6-data-restore.md)
 # 4.2.6 Restore all
 
 You can restore files such as projects, logs which backed up with `backup all` features to the system.
@@ -2799,17 +2977,19 @@ You can restore files such as projects, logs which backed up with `backup all` f
     ![](../../_assets/tp630/file-manager/fl-restore-report.png)
 
 4. Turn off and on the power the controller.
+
+[__SOURCE](4-service/2-file-manager/7-data-restore-partial.md)
 # 4.2.6 Partial Restoration
 
 When restoring only some folders or files of backup data, use the `Copy` and `Paste` feature.
 
 
-1. By using the teach pendant’s jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device\(USB\), and then click the `[copy]` button.
+1. By using the teach pendant's jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device\(USB\), and then click the `[copy]` button.
 
     ![](../../_assets/tp630/file-manager/fl-restore-copy_eng.png)
 
 
-2. By using the teach pendant’s jog dial, select the \[MAIN\] folder in the folder list, and then touch the `[Paste]` button.
+2. By using the teach pendant's jog dial, select the \[MAIN\] folder in the folder list, and then touch the `[Paste]` button.
 
     ![](../../_assets/tp630/file-manager/fl-restore-paste_eng.png)
 
@@ -2820,6 +3000,8 @@ When restoring only some folders or files of backup data, use the `Copy` and `Pa
 
 4. Turn the power of the controller back on.
 
+
+[__SOURCE](4-service/2-file-manager/8-toggle-root.md)
 # 4.2.8 toggle root
 
 {% hint style="info" %}
@@ -2837,6 +3019,8 @@ Once in accessible mode, the following warning message is displayed, and the MAI
 ![](../../_assets/tp630/file-manager/fl-toggle-root1.png)
 
 Click the `[toggle root]` button once more to release the accessible mode.
+
+[__SOURCE](4-service/3-program-conversion/README.md)
 # 4.3 Program Conversion
 
 You can write a new program by modifying the conditions and location of the created program by batches or individually, or by shifting coordinates.
@@ -2855,6 +3039,8 @@ During the startup of the robot, the use of the menus \[4: The reference coordin
 
 
 
+
+[__SOURCE](4-service/3-program-conversion/1-rec-condition.md)
 # 4.3.1 Recording Condition
 
 You can change and set the recording condition for a specific step of the program and then apply it to the existing program, or write a new program.
@@ -2871,6 +3057,8 @@ You can change and set the recording condition for a specific step of the progra
 
 
 
+
+[__SOURCE](4-service/3-program-conversion/2-rec-speed.md)
 # 4.3.2 Recording Speed Conversion
 
 You can change the recording speed for a specific step of the program and apply it to the existing program, or create a new program.
@@ -2893,6 +3081,8 @@ You can change the recording speed for a specific step of the program and apply 
 
 
 
+
+[__SOURCE](4-service/3-program-conversion/3-rec-position.md)
 # 4.3.3 Recording Position
 
 You can change and set the coordinate system of the step position recorded as a hidden pose in a specific step of the program and apply it to the existing program or create a new program.
@@ -2906,6 +3096,8 @@ You can change and set the coordinate system of the step position recorded as a 
 * \[source program\]/\[Target program\]: You can input the number of the original program \(Initial setting value: The currently selected program\) of which recording position you want to change and the number of the new program you want to save after the change of recording position. If you set the number of the target program to match the same number as that of the original program, the original program will be overwritten by and replaced with a new program.
 * \[Step range\]: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of the recording position.
 * \[Coord. System Format\]: You can select the coordinate system to shift the position data recorded in the step. If you select base, robot, tool, or user, the position data will be converted to Cartesian coordinate values, and if you select joint, the position data will be converted to axis angles.
+
+[__SOURCE](4-service/3-program-conversion/4-rec-crdsys.md)
 # 4.3.4 Recording Coordinate System
 
 You can change the coordinate system of the step position recorded as a hidden pose. You can check the coordinate system you have changed to by pressing the quick open button at the concerned step. During the startup of the robot, the use of the \[4: Transformation of the reference coordinate system\] menu will be restricted.
@@ -2923,6 +3115,8 @@ You can change the coordinate system of the step position recorded as a hidden p
 
 
 
+
+[__SOURCE](4-service/3-program-conversion/5-rec-conversion.md)
 # 4.3.5 Coordinate Shifting
 
 The coordinate shifting function is a function that enables you to create a program without additional teaching even if a workpiece of the same shape, as shown in Image 2, is placed at a different location after a program taught on the workpiece \(Image 1\).
@@ -2961,6 +3155,8 @@ This function is not allowed during a robot operation. How to use the coordinate
 * [previous base program] : Number of a program with 3 standard points (Number of [Program A]) 
  
 * [post base program] : Program number in which the 3 points of reference for conversion are recorded ([Program B] number) 
+
+[__SOURCE](4-service/3-program-conversion/6-mirror-image.md)
 # 4.3.6 Mirror Image
 
 You can write a program in which the position of the S axis and the posture of the wrist axis are symmetrical based on the Y-Z plane at the 0° position of the S axis of the robot.
@@ -2985,6 +3181,8 @@ The use of the \[6: Mirror Image\] menu will be restricted during the startup of
 
 
 
+
+[__SOURCE](4-service/3-program-conversion/7-step-copy/README.md)
 # 4.3.7 Step Copy
 
 You can copy part of a program to another program or the same program. The functions recorded in the step will also be copied. During the startup of the robot, the use of the \[7: Step Copy\] menu will be restricted.
@@ -3009,20 +3207,26 @@ You can copy part of a program to another program or the same program. The funct
 
 
 
+
+[__SOURCE](4-service/3-program-conversion/7-step-copy/1-step-copy-example.md)
 # 4.3.7.1 Example of Step Copy
 
-You can copy the steps 2–5 of the program 1 to step 2 of the program 2 \(set as the input step\) in the right and reverse directions.
+You can copy the steps 2-5 of the program 1 to step 2 of the program 2 \(set as the input step\) in the right and reverse directions.
 
-The steps 2–5 of the original program \(program 1\) will be inserted right after the input step \(step 2\) of the target program \(program 2\) in the right direction \(same order as the original program\) or in the reverse direction \(reverse order of the original program\).
+The steps 2-5 of the original program \(program 1\) will be inserted right after the input step \(step 2\) of the target program \(program 2\) in the right direction \(same order as the original program\) or in the reverse direction \(reverse order of the original program\).
 
 ![](../../../_assets/image_321.png)
 
 
 
+
+[__SOURCE](4-service/4-system-diagnosis/README.md)
 # 4.4 System Diagnosis
 
 You can inspect and manage the state of the robot and controller. You can check and update the version of each module of the controller.
 
+
+[__SOURCE](4-service/4-system-diagnosis/1-system-version/README.md)
 # 4.4.1 System Version
 
 1.	Touch the \[7: System Diagnosis &gt; 1: System version\] menu. Then, the system environment setting window will appear.
@@ -3063,6 +3267,8 @@ You can inspect and manage the state of the robot and controller. You can check 
 
 
 
+
+[__SOURCE](4-service/4-system-diagnosis/1-system-version/1-controller-system-update.md)
 # 4.4.1.1 Controller System Updating
 
 You can update the version of each module of the controller using the integrated compressed file.
@@ -3085,6 +3291,8 @@ You can update the version of each module of the controller using the integrated
 
     ![](../../../_assets/image_367.png)
 
+
+[__SOURCE](4-service/5-date-time-setting.md)
 # 4.5 Setting of Date and Time
 
 You can set the date and time of the controller.
@@ -3106,12 +3314,16 @@ You can set the date and time of the controller.
 
 
 
+
+[__SOURCE](4-service/6-app.md)
 # 4.6 App
 
 Manages the software installed and running on the teach pendant.
 
 For more information, refer to "[Hi6 Robot Controller Function Manual - Teach Pendant App](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/english/README)".
 
+
+[__SOURCE](4-service/7-tp-option.md)
 # 4.7 Teach pendant option
 
 Set the sound and screen save time of the teach pendant.
@@ -3151,16 +3363,22 @@ Set the sound and screen save time of the teach pendant.
 For more details on the use of jog keys, refer to the Mechanism Jog Rules in "[7.6.6 Mechanism Settings](../7-system/6-initialization/6-mechannism-set.md)"
 {% endhint %}
 
+
+[__SOURCE](4-service/8-industrial-communication-monitoring.md)
 # 4.8 Industrial Communication Monitoring
 
 Monitor firmware information and communication status.
 
 For more information, refer to "[Hi6 Robot Controller Function Manual - Industrial Communication > 1. CIFX PCI Communication > 1.4 CIFX PCI - Monitoring Industrial Communication](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/english/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README)"
 
+
+[__SOURCE](5-conditional-setting/README.md)
 # 5. Condition Setting
 
 You can simply change the operation conditions without modifying the program. The changed setting values will remain the same even if the controller is restarted.
 
+
+[__SOURCE](5-conditional-setting/1-op-cond-set.md)
 # 5.1 Operation Condition Setting
 
 1. Touch the \[Speed Adjustment\] button on the upper left on the initial screen. Then, the operation conditions setting window will appear.
@@ -3181,6 +3399,8 @@ On the \[Speed Adjustment\] button, the speed limit \(mm/sec\) will be displayed
 
 
 
+
+[__SOURCE](5-conditional-setting/2-op-cond-set-info.md)
 # 5.2 Information of Operation Conditions Setting
 
 
@@ -3266,6 +3486,8 @@ You can register the user coordinate system number in the \[system &gt; 2: Contr
   * Run : The controller operates the PLC program downloaded to the controller. Only monitoring is possible in HRLadder on PC.
 
 
+
+[__SOURCE](6-monitoring/README.md)
 # 6. Monitoring
 
 You can check the status of the robot system and various data of the controller.
@@ -3286,17 +3508,23 @@ You can check the status of the robot system and various data of the controller.
 * 
   For details on how to use the panel stack and window of the work area, refer to "[1.2.3.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area.md)".
 {% endhint %}
+
+[__SOURCE](6-monitoring/1-basic/README.md)
 # 6.1 Basic
 
+
+[__SOURCE](6-monitoring/1-basic/1-pose.md)
 # 6.1.1 Pose
 
 Touch \[Pose\] in the panel selection window. Then, the robot pose information window will appear. You can check the current angle of each axis of the robot, the coordinate value of the tool center point \(TCP\), and the current value and command value of the encoder.
 
 ![](../../_assets/tp630/pane-pose_eng.png)
 
+
+[__SOURCE](6-monitoring/1-basic/2-op-info.md)
 # 6.3.2 Operation time
 
-In the panel selection window, touch \[Operation time\]. Then, the controller’s operation information window will appear.
+In the panel selection window, touch \[Operation time\]. Then, the controller's operation information window will appear.
 
 You can check the accumulated time and number of cycles for each operation of the controller created immediately after system initialization, power input, and the start of the recent cycle. You can initialize the operation information by touching the \[Clear\] button for each item at the bottom of the information.
 
@@ -3308,6 +3536,8 @@ The timing of reflection in accordance with the conditions of individual items i
 
 ![](../../_assets/image_449.png)
 
+
+[__SOURCE](6-monitoring/1-basic/3-history.md)
 # 6.1.3 History
 
 In the panel selection window, touch \[history\]. The history window will appear. 
@@ -3317,8 +3547,12 @@ You can check the history in which the execution log and time stamps of the job 
 
 
 ![](../../_assets/tp630/pane-history_eng.png)
+
+[__SOURCE](6-monitoring/2-io/README.md)
 # 6.2 IO, PLC, Communication
 
+
+[__SOURCE](6-monitoring/2-io/1-system-input.md)
 # 6.2.1 System Input
 
 In the panel selection window, touch \[System Input\]. Then, the input signal window will appear. 
@@ -3340,6 +3574,8 @@ You can check the status of signals related to the robot operation and the statu
 
 
 
+
+[__SOURCE](6-monitoring/2-io/2-system-output.md)
 # 6.2.2 System Output
 
 Touch \[System Output\] in the panel selection window. Then, the output signal window will appear.
@@ -3381,6 +3617,8 @@ You can select the desired signal and force it to be outputted.
 
     ![](../../_assets/tp630/pane-system-output2_eng.png)
 
+
+[__SOURCE](6-monitoring/2-io/3-user-input.md)
 # 6.2.3 Public Input
 
 Touch \[public Input\] in the panel selection window. Then, the public input signal window will appear. 
@@ -3440,6 +3678,8 @@ You can check the status of public input signals that are inputted through the C
 
 ![](../../_assets/user-input-flow_en.png)
 
+
+[__SOURCE](6-monitoring/2-io/4-user-output.md)
 # 6.2.4 Public Output
 
 Touch \[public Output\] in the panel selection window. Then, the public output signal window will appear. 
@@ -3525,6 +3765,8 @@ You can select the desired signal and force it to be outputted.
 
     ![](../../_assets/tp630/pane-univoutsig-onoff_eng.png)
 
+
+[__SOURCE](6-monitoring/2-io/5-fn-io.md)
 # 6.2.5 fn input, fn output
 
 You can define fn objects by specifying specific areas of fb objects.
@@ -3550,6 +3792,8 @@ The use of the remaining F buttons is the same as the [Public Input](6-user-inpu
 
 ![](../../_assets/io/io_fn_mon.png)
 
+
+[__SOURCE](6-monitoring/2-io/6-forced-io.md)
 # 6.2.6 Forced IO
 
 You can register IO relay variables in the Force IO panel to force some changed IO values.
@@ -3616,13 +3860,17 @@ After completing the test and problem analysis, be sure to press the [F2: Clear]
 * When the ${cont_model} controller is powered off, all contents registered as forced IO are cleared.
 
 {% endhint %}
+
+[__SOURCE](6-monitoring/2-io/7-memory-variables.md)
 # 6.2.7 Memory variables
 
 
 Touch \[memory variables\] in the panel selection window.
 Of internal PLC relays, the accessible variables from Robot Language are displayed.
 
-![](../../_assets/tp630/pane-memory-variables_eng.png) # 6.2.8 EtherCAT device
+![](../../_assets/tp630/pane-memory-variables_eng.png) 
+[__SOURCE](6-monitoring/2-io/8-EC-device-info.md)
+# 6.2.8 EtherCAT device
 
 In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with ${cont_model} controller internally and externally. In the EtherCAT network, the controller main board works as a master.
 
@@ -3642,8 +3890,12 @@ In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel sh
     -	pre-op: a status where a slave device can communicate only by using non-periodic mail-box
     -	safe-op: a status where a slave device can communicate only transmitting data(Tx PDO)
     -	operation: a status where a slave device can communicate both transmitting and receiving data(Tx/RxPDO)
+
+[__SOURCE](6-monitoring/3-job/README.md)
 # 6.3 Job Program, Robot Language
 
+
+[__SOURCE](6-monitoring/3-job/1-job.md)
 # 6.3.1 job
 
 Touch \[job\] in the panel selection window. For the total program list, <**SHIFT**>+<**PROG**> keys lead to the program selection window. Then, you can create, delete, and select a program.
@@ -3694,11 +3946,13 @@ You can modify the selected job program in the task edit window.
 </table>
 
 {% hint style="info" %}
-For details on how to manage and write programs, refer to “[3 Program Writing](../programming/).”
+For details on how to manage and write programs, refer to "[3 Program Writing](../programming/)."
 {% endhint %}
 
 
 
+
+[__SOURCE](6-monitoring/3-job/2-hot-edit.md)
 # 6.3.2 Hot Edit
 
 This is the function to edit the program without stopping it, while playback is still running. 
@@ -3721,8 +3975,8 @@ Touch the \[hot edit\] button at the panel, and Hot Edit window of the current p
 
 Although the operation is the same as that of manual mode, the following functions cannot be used.
 
-1) <**REC**> key (Record hidden pose MOVE) : Displays the “Operation not allowed while in Hot Edit” message.
-2) <**POS. MOD**> key : Displays the “Operation not allowed while in Hot Edit” message.
+1) <**REC**> key (Record hidden pose MOVE) : Displays the "Operation not allowed while in Hot Edit" message.
+2) <**POS. MOD**> key : Displays the "Operation not allowed while in Hot Edit" message.
 
 
     ![](../../_assets/tp630/pane-hot-edit-1_eng.png)
@@ -3815,6 +4069,8 @@ The actual timing of the reflection is displayed in the following table.
 ### Different program selection
 
 When you press the <**SHIFT**> + <**PROG**> key, you can select a different program. You can also create a new program.
+
+[__SOURCE](6-monitoring/3-job/3-global-variable/README.md)
 # 6.3.3 Global Variables
 
 Displays a list of all global variables. You can also create/delete variables and edit types and values.
@@ -3835,6 +4091,8 @@ Displays a list of all global variables. You can also create/delete variables an
 
 ![](../../../_assets/tp630/panel-gvar/panel-gvar0.png)
 
+
+[__SOURCE](6-monitoring/3-job/3-global-variable/1-basic-feature.md)
 # 6.3.3.1 Basic features
 
 
@@ -3907,6 +4165,8 @@ Press the DEL (CTRL+BACKSPACE) key to display the OK/Cancel dialog box. After co
 
 ![](../../../_assets/tp630/panel-gvar/gv-delete.png)
 
+
+[__SOURCE](6-monitoring/3-job/3-global-variable/2-array-object.md)
 # 6.3.3.2 Array and object
 
 ## Creating an array
@@ -3984,6 +4244,8 @@ weld_points[2][1].j2=90.5  # new value can be assigned to an property
 ```
 
 If [F4: toggle fixed] is performed again, fixed will be released and `F.array` will be restored to `array`.
+
+[__SOURCE](6-monitoring/3-job/3-global-variable/3-var-files.md)
 # 6.3.3.3 Variable files
 
 Variable values are also saved as files because they must be preserved even when powered off, and global variables are stored in two forms, depending on the type:
@@ -4086,6 +4348,8 @@ When you click the [F2: load all] button in the Global Variables window, all var
 (Please note that deleting the variable file and clicking [F2: load all] will also delete the corresponding variable in memory.)
 
 ![](../../../_assets/tp630/panel-gvar/fixed-var.png)
+
+[__SOURCE](6-monitoring/3-job/4-local-variable.md)
 # 6.3.4 Local Variables
 
 Displays a list of all local variables of the current call frame. You cannot create/delete variables or change the variable name or type, but you can edit values.
@@ -4109,6 +4373,8 @@ Displays a list of all local variables of the current call frame. You cannot cre
 
 
 
+
+[__SOURCE](6-monitoring/3-job/5-watch.md)
 # 6.3.5 Watch
 
 You can register variables or expressions to the watch panel to monitor or change values.
@@ -4164,6 +4430,8 @@ You can enter a value in the `Start Index` edit-box to display an array from a s
 {% {% hint style="warning" %}
 * To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
 {% {% endhint %}
+
+[__SOURCE](6-monitoring/3-job/6-call-stack.md)
 # 6.3.6 call stack
 
 Touch \[Call Stack] in the panel selection window to display the Call Stack window. In order to understand the contents of this section, an understanding of the `call`~`return` statement and local variables of the hrscript must be preceded.
@@ -4236,11 +4504,13 @@ You can easily understand the flow of the program that has been called so far by
 
 {% hint style="warning" %}
 \[caution\] When performing Step-FWD or playback, be sure to restore the > cursor to the top frame position when resuming operations. Otherwise, the position of the job cursor is considered to have changed and the call stack is initialized.
-{% endhint %}# 6.3.7 Multi-task
+{% endhint %}
+[__SOURCE](6-monitoring/3-job/7-multi-task.md)
+# 6.3.7 Multi-task
 
 
 Touch \[multitask\] in the panel selection window.
-This displays the information of the programs that are run automatically in the main task and the sub tasks 1 – 7, including the steps, functions, operating state, and work state.
+This displays the information of the programs that are run automatically in the main task and the sub tasks 1 - 7, including the steps, functions, operating state, and work state.
 
 ![](../../_assets/tp630/pane-multi-task_eng.png) 
 
@@ -4248,7 +4518,9 @@ This displays the information of the programs that are run automatically in the 
 
 {% hint style="info" %}
  Refer to 『Hi6 Controller Multitasking Function Manual』for details.
-{% endhint %}# 6.3.8 Program reservation execution
+{% endhint %}
+[__SOURCE](6-monitoring/3-job/8-program-reservation.md)
+# 6.3.8 Program reservation execution
 
 For this monitoring, pre-setting is required. You have to select the register number as 20EA or 1EA in the page of [system > 2:Control parameter > 7:Program reservation execution]'.
 
@@ -4304,11 +4576,15 @@ When programs are scheduled through external signals and executed in the schedul
 {% hint style="info" %}
 * The \[Program reserve\] item will be activated only when the sync status of the sensor sync function among the application functions is set as conveyor or press.
 * The \[Program reserve\] item will not be activated if the \[Applied Register Count\] option in the \[system &gt; 2: Control Parameter &gt; 8: Program reserve\] menu is set as disable.
-* For details on the scheduled program execution, refer to the “Hi6 Controller Scheduled Program Execution Function Manual.”
+* For details on the scheduled program execution, refer to the "Hi6 Controller Scheduled Program Execution Function Manual."
 {% endhint %}
 
+
+[__SOURCE](6-monitoring/4-system/README.md)
 # 6.4 System
 
+
+[__SOURCE](6-monitoring/4-system/1-system-spec.md)
 # 6.4.1 System Character
 
 In the panel selection window, touch \[System character\]. Then, the system character window will appear. 
@@ -4344,6 +4620,8 @@ You can initialize the maximum value of the data by selecting the type of inform
 
     ![](../../_assets/tp630/pane-syscharacter-clear_eng.png)
 
+
+[__SOURCE](6-monitoring/4-system/2-system-diagnosis/README.md)
 # 6.4.2 System Diagnostics
 
 Touch **[System Diagnostics]** in the panel selection window.
@@ -4371,7 +4649,9 @@ When executed for the first time, the Brake Diagnostics screen appears.
       </td> 
     </tr> 
   </tbody> 
-</table># 6.4.2.1 Brake Diagnostics Monitoring
+</table>
+[__SOURCE](6-monitoring/4-system/2-system-diagnosis/1-brake-check.md)
+# 6.4.2.1 Brake Diagnostics Monitoring
 
 Touch [Brake Diagnostics] in the button list below to display the brake diagnostics data screen.
 
@@ -4410,9 +4690,11 @@ Touch [Brake Diagnostics] in the button list below to display the brake diagnost
 
 {% hint style="info" %}
 
-* For more details on the brake diagnostic function, refer to the "${cont_model} Robot Controller Function Manual – HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/10-etc/1-proc/16-brake_check)" command.
+* For more details on the brake diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/10-etc/1-proc/16-brake_check)" command.
 
-{% endhint %}# 6.4.2.2 Gas Spring Pressure Diagnostics Monitoring
+{% endhint %}
+[__SOURCE](6-monitoring/4-system/2-system-diagnosis/2-gas-pressure-check.md)
+# 6.4.2.2 Gas Spring Pressure Diagnostics Monitoring
 
 Touch [Gas Spring Diagnostics] in the button list below to display the gas spring pressure diagnostics data screen.
 
@@ -4444,9 +4726,11 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
 {% hint style="info" %}
 
 * This function is supported only on robots equipped with a gas spring.  
-* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual – HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/10-etc/1-proc/7-gasp_check)" command.  
+* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/10-etc/1-proc/7-gasp_check)" command.  
 
 {% endhint %}
+
+[__SOURCE](6-monitoring/4-system/3-system-task.md)
 # 6.4.3 Task monitor
 
 
@@ -4492,6 +4776,8 @@ You can check the operation cycle and execution time information for each task.
 
 
 
+
+[__SOURCE](6-monitoring/4-system/4-hw-monitoring.md)
 # 6.4.4 Hardware
 
  In the panel selection window, touch \[hardware\]. You can monitor current voltage and temperature of the COM module. In the case that a status value is out of the tolerance, a warning message will be issued in the period of 24 hours.
@@ -4501,8 +4787,12 @@ You can check the operation cycle and execution time information for each task.
  
 - If you want to change the tolerance, select the corresponding cell and edit it. Then, press the [Save Min/Max] button.
 - If you want to initialize with default values, press the [Reset Min/Max] button.
+
+[__SOURCE](6-monitoring/5-appl/README.md)
 # 6.5 Advanced Features and Robot Application
 
+
+[__SOURCE](6-monitoring/5-appl/1-sensor-sync.md)
 # 6.5.1 Sensor Sync
 
 Touch \[Sensor Sync\] in the panel selection window. Then, the sensor sync window will appear.
@@ -4550,9 +4840,11 @@ You can check the information related to the conveyor and press sync functions. 
 
 
 {% hint style="info" %}
-For details on the sensor sync function, refer to the “Hi6 Sensor Sync Function Manual.”
+For details on the sensor sync function, refer to the "Hi6 Sensor Sync Function Manual."
 {% endhint %}
 
+
+[__SOURCE](6-monitoring/5-appl/2-coldet-monitoring.md)
 # 6.5.2 Coldet Monitoring
 
  ![](../../_assets/tp630/coldet_monitoring_pane.png)
@@ -4567,7 +4859,9 @@ For details on the sensor sync function, refer to the “Hi6 Sensor Sync Functio
  - [External Torque]-[Current] : Currently estimated external torque [Nm]
  - [External Torque]-[Maximum] : Maximum value of the current external torque[Nm]
  - [Reference] : Threshold torque value [Nm]
- - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. # 6.5.10 Spot Welding Data
+ - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. 
+[__SOURCE](6-monitoring/5-appl/10-spot.md)
+# 6.5.10 Spot Welding Data
 
 Touch \[spot\] in the panel selection window.
 This displays the spot gun axis data, the input/output signals and operating information of spot welding.
@@ -4577,12 +4871,14 @@ This displays the spot gun axis data, the input/output signals and operating inf
 <br>
 
 {% hint style="info" %}
- Refer to Spot Welding Manual's “[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/3-Related-functions/3-1-monitoring/README)” for more details.
+ Refer to Spot Welding Manual's "[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/3-Related-functions/3-1-monitoring/README)" for more details.
 {% endhint %}
+
+[__SOURCE](6-monitoring/5-appl/11-tool-change.md)
 # 6.5.11 Servo Tool Change
 
 
-In the panel selection window, touch \[servo tool change\]. This displays the state of the servo tool and the encoder power supply’s input/output state when the servo tool change function is used.
+In the panel selection window, touch \[servo tool change\]. This displays the state of the servo tool and the encoder power supply's input/output state when the servo tool change function is used.
 
 ![](../../_assets/tp630/pane-tool-change_eng.png) 
 
@@ -4590,9 +4886,13 @@ In the panel selection window, touch \[servo tool change\]. This displays the st
 
 {% hint style="info" %}
  Refer to "Hi6 Controller Servo Tool Change Function Manual" for more details.
-{% endhint %}# 6.5.20 Arc Welding Data
+{% endhint %}
+[__SOURCE](6-monitoring/5-appl/20-arc.md)
+# 6.5.20 Arc Welding Data
 
-Refer to Arc Welding Manual's “[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/7_Monitoring/README)”.
+Refer to Arc Welding Manual's "[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/7_Monitoring/README)".
+
+[__SOURCE](6-monitoring/5-appl/28-forcecontrol-monitoring.md)
 # 6.5.28 force control monitoring
  
 ![](../../_assets/tp630/force_monitoring.png)
@@ -4610,13 +4910,17 @@ Refer to Arc Welding Manual's “[7. Welding data monitoring](https://hrbook-hrc
     - in case of fctrl function : not shown
     - in case of softxyz function : not shown
     - in case of softjoint function : joint coordinate 
+
+[__SOURCE](7-system/README.md)
 # 7. System
 
 In the 'system', you can check and set the user information and various parameter information.
 
+
+[__SOURCE](7-system/1-setting-menu.md)
 # 7.1 Use of the Menus in 'system'
 
-1.	In manual or automatic mode, touch the \[system] button on the function button bar. Then, the program’s settings menus will be displayed.
+1.	In manual or automatic mode, touch the \[system] button on the function button bar. Then, the program's settings menus will be displayed.
 
     ![](../_assets/tp630/sbt-system_eng.png)
 
@@ -4631,17 +4935,19 @@ In the 'system', you can check and set the user information and various paramete
 * 
   \[3: Robot Parameter\]: You can set various data related to robot operation and information such as the origin of each axis and operation range.
 
-* \[4: Application Parameter\]: You can check and set various parameters for using the robot’s application functions.
+* \[4: Application Parameter\]: You can check and set various parameters for using the robot's application functions.
 * 
   \[5: Initialize\]: You can perform the initial setting of the robot system. You can also initialize the serial encoder.
 
 * 
-  \[6: Auto Calibration\]: You can calibrate the robot’s axis origin, tool length, load mass, and base axis direction, etc. using the programs taught to use the robot correctly and also by using the movement that will automatically operate.
+  \[6: Auto Calibration\]: You can calibrate the robot's axis origin, tool length, load mass, and base axis direction, etc. using the programs taught to use the robot correctly and also by using the movement that will automatically operate.
 
 
 
 
 
+
+[__SOURCE](7-system/2-user-environment.md)
 # 7.2 User Environment
 
 You can check and set various user conditions. 
@@ -4702,7 +5008,9 @@ If the program being played back is modified externally \(PC\) and downloaded to
 
 {% hint style="info" %}
   Editing the period of connection checking is avaiable in engineer mode.
-{% endhint %}# 7.3 Control Parameter
+{% endhint %}
+[__SOURCE](7-system/3-control-parameter/README.md)
+# 7.3 Control Parameter
 
 You can set various conditions of the controller and set the input/output signal, communication information, robot ready OK signal condition, home position signal, and the coordinate system.
 
@@ -4712,6 +5020,8 @@ You can set various conditions of the controller and set the input/output signal
 
     ![](../../_assets/tp630/ctrl-menu_eng.png)
 
+
+[__SOURCE](7-system/3-control-parameter/1-control-env-setting.md)
 # 7.3.1 Control Environment Setting
 
 You can set various conditions of the controller and perform necessary operations.
@@ -4750,7 +5060,7 @@ Delays may occur in the process of activating/deactivating the power-saving func
 * \[Interlock error time\]: This function sets the maximum waiting time for the input    signal. <br>
   If the input signal standby time exceeds the specified time during playback, an interlock error signal is output. This specified time is the interlock abnormality time.
 
-  The interlock error signal is a signal assigned to “Interlock abnormal warning” in the [System/Control Parameter/Input/Output signal setting/Output signal assign] menu.
+  The interlock error signal is a signal assigned to "Interlock abnormal warning" in the [System/Control Parameter/Input/Output signal setting/Output signal assign] menu.
 
 
 * \[First step safety move\]: When starting the robot, set whether to limit the first step to a safe speed and move at the currently set speed.
@@ -4762,7 +5072,7 @@ Delays may occur in the process of activating/deactivating the power-saving func
 
 * \[Plc execution time rate\]: When using a embedded PLC, you can adjust the PLC execution time inside the controller. The controller internally executes the PLC ladder program every 5ms, so set how much PLC execution is allocated. The larger this ratio leads the shorter the scan time of the PLC program. But if it is too large, the CPU execution time may be insufficient and a task execution time exceeded error may occur.
 
-* \[Cycle Time Optimization Mode\]: This feature reduces the robot’s step movement time during automatic playback to improve productivity.
+* \[Cycle Time Optimization Mode\]: This feature reduces the robot's step movement time during automatic playback to improve productivity.
   - Enabled
     - Dynamically adjusts acceleration/deceleration curves and maximum speed for faster movement.
     - Dynamic motion adjustment applied
@@ -4783,7 +5093,9 @@ For processes where cycle time is critical (e.g., repetitive pick-and-place), ap
 
 {% hint style="warning" %}
 Be aware that higher values may lead to mechanical vibration or trigger over-torque faults, especially under high payload or rapid directional changes.
-{% endhint %}# 7.3.2 Input/Output Signal Setting
+{% endhint %}
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/README.md)
+# 7.3.2 Input/Output Signal Setting
 
 1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting\] menu. Then, the input/output signal setting menu will appear.
 
@@ -4791,6 +5103,8 @@ Be aware that higher values may lead to mechanical vibration or trigger over-tor
 
     ![](../../../_assets/tp630/ctrl-inoutsing-menu_eng.png)
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/1-input-signal-prop.md)
 # 7.3.2.1 Input Signal Attribute
 
 You can set the logic and name for a general input signal.
@@ -4808,6 +5122,8 @@ You can set the logic and name for a general input signal.
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/2-output-signal-prop.md)
 # 7.3.2.2 Output Signal Attribute
 
 You can set the logic, pulse, and name for a general input signal.
@@ -4825,6 +5141,8 @@ You can set the logic, pulse, and name for a general input signal.
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/3-io-signal-set-info.md)
 # 7.3.2.3 Input/Output Signal Setting Information
 
 * \[Signal\]: The signal to apply the attribute to. The fb block signal can be designated by inputting the block number, decimal point, and signal number in sequence.
@@ -4857,9 +5175,11 @@ You can set the logic, pulse, and name for a general input signal.
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/4-input-signal-assign.md)
 # 7.3.2.4 Input Signal Assignment
 
-You can remotely control the controller’s state or operation using the controller input signal. The method of assigning the input signal number in the remote-control item is as follows.
+You can remotely control the controller's state or operation using the controller input signal. The method of assigning the input signal number in the remote-control item is as follows.
 
 1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 3: Input Signal Assign\] menu. 
 
@@ -4875,12 +5195,14 @@ You can remotely control the controller’s state or operation using the control
   \[Reset Channel\]: You can initialize the input channel for the set input signal. The channel consists of fb0 to fb9, and fb0 will be omitted in the display in the case of fb0.
 
 * 
-  \[S\]: You can designate the system signal when using the remote control as a system input signal. The system signal consists of “s+number,” which combines the letter s with the signal number. For example, you can set the system signal 49 as s49.
+  \[S\]: You can designate the system signal when using the remote control as a system input signal. The system signal consists of "s+number," which combines the letter s with the signal number. For example, you can set the system signal 49 as s49.
 
 
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/5-input-signal-set-info.md)
 # 7.3.2.5 Input Signal Setting Information
 
 #### Remote mode
@@ -4991,6 +5313,8 @@ This function is used to turn on the motor from an external operation panel.
 
 This function is used to turn off the motor from an external operation panel.
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/6-output-signal-assign.md)
 # 7.3.2.6 Output Signal Assignment
 
 Event information or status information that occurred in the controller can be transmitted to the outside through the controller output signal. The method of assigning output signals to the information to be transmitted to the outside is as follows.
@@ -5006,18 +5330,20 @@ Event information or status information that occurred in the controller can be t
 * \[Reset All\]: You can reset the numbers of the output signals assigned to all information items.
 *  \[Reset One\]: You can reset the number of the output signal assigned to the selected information item. 
 * 
-  \[Reset Channel\]: You can reset the input channel of the output signal assigned to the information item \(0–16: digital signal\)
+  \[Reset Channel\]: You can reset the input channel of the output signal assigned to the information item \(0-16: digital signal\)
 
 * 
   \[Previous Task\]/\[Next Task\]: You can move to the previous or next task screen.
 
 * 
-  \[S\]: You can designate a system signal when using the remote control through a system input signal. The system signal is in the form of “s+number,” which combines the letter s with the signal number. For example, you can set the system signal 49 as s49.
+  \[S\]: You can designate a system signal when using the remote control through a system input signal. The system signal is in the form of "s+number," which combines the letter s with the signal number. For example, you can set the system signal 49 as s49.
 
 
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/7-output-signal-set-info.md)
 # 7.3.2.7 Output Signal Setting Information
 
 #### Remote mode
@@ -5094,13 +5420,13 @@ When the end cycle is performed in the job program, this function is used to out
 
 #### Overall error
 
-Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user’s mistakes in operation. When an error occurs because of a system error, this function is used to output this state to the outside. The errors caused by system errors range from 1 to 999 and 2000 to 7999.
+Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user's mistakes in operation. When an error occurs because of a system error, this function is used to output this state to the outside. The errors caused by system errors range from 1 to 999 and 2000 to 7999.
 
 
 
 #### Operation error
 
-Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user’s mistakes in operation. When an error occurs because of the user’s mistakes in operation, this function is used to output this state to the outside. For information, the errors caused by system errors range from 1 to 999 and 2000 to 7999.
+Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user's mistakes in operation. When an error occurs because of the user's mistakes in operation, this function is used to output this state to the outside. For information, the errors caused by system errors range from 1 to 999 and 2000 to 7999.
 
 
 
@@ -5200,6 +5526,8 @@ This function is used to output to the outside the status regarding whether the 
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)
 # 7.3.2.8 Key Signal Output
 
 `Key Signal Output` is a function that allows you to assign a desired variable to an F-key and set the value of that variable to 1 or 0 through button operation.
@@ -5211,7 +5539,7 @@ If no settings have been made, all buttons will be empty.
 
 You can configure the buttons as follows:
 
-1. Touch the `[F2: system] – 2: Control parameter – 2: Input/Output signal setting – 5: Key signal output` menu. 
+1. Touch the `[F2: system] - 2: Control parameter - 2: Input/Output signal setting - 5: Key signal output` menu. 
 
 2. Set the function name to be displayed on the button and options, then touch the `[F7: OK]` button.
 
@@ -5241,9 +5569,11 @@ Alternatively, you can use the F-keys [fb], [do], and [so] at the bottom of the 
 {% hint style="info" %}
 You can register the desired output signal with a button in the user key area of ${cont_model} teach pendant. For details, refer to "[2.7.2.1 Key Signal Output Function Area](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)".
 {% endhint %}
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/9-dio-block-assign.md)
 # 7.3.2.9 FB Block Allocation
 
-You can set the method of using the controller’s general input/output signals.
+You can set the method of using the controller's general input/output signals.
 
 1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 6: FB Block Allocation\] menu.
 
@@ -5266,6 +5596,8 @@ The available connection options are as follows:
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/10-multi-signal-output.md)
 # 7.3.2.10 Multiple Signal Output
 
 Output signals \(up to 16 signals\) can be created as a group, and data can be outputted through individual signals.
@@ -5335,6 +5667,8 @@ For example, when a job program configured as the setting in the screen above is
 
 When the robot starts from S1 toward S2 and the accuracy of S2 is OK, the strobe signal will be outputted together with the signal of the designated group. The strobe signal will be turned off after 200 ms. \(The strobe signal is a pulse signal of 200 ms.\)
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/11-multi-signal-input.md)
 # 7.3.2.11 Multiple Signals Input
 
 Input signals \(up to 16 signals\) can be created as a group, and data can be acquired through individual signals.
@@ -5404,6 +5738,8 @@ For example, when a job program configured as the setting in the screen above is
 
 After starting from S1 toward S2, the robot executes the wait statement. If the wait condition is satisfied before the accuracy of S2 is ok, the robot will move to the path in red. If this is not the case, the robot will wait until the wait condition is satisfied.
 
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/12-fn-block.md)
 # 7.3.2.12 fn block allocation
 
 You can define fn objects by specifying specific areas of fb objects.
@@ -5511,6 +5847,8 @@ It is mapped as shown in the table below.
 You can open the fn input / output monitoring panel to view or manually output the current value of the dio or xy relay for each fn object. See the link below for more information.
 
 [6.8 fn input, fn output](../../../6-monitoring/2-io/5-fn-io.md)
+
+[__SOURCE](7-system/3-control-parameter/3-serial-port.md)
 # 7.3.3 Serial Port
 
 You can set the information required for serial port communication.
@@ -5572,6 +5910,8 @@ Refer to the following information when setting the usage of the serial port.
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/4-robot-ready-cond.md)
 # 7.3.4 Robot Ready Condition
 
 When the robot ready is completed, set the conditions for signal output in the \[Robot Ready OK\] item of the \[system; 2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 4: Output Signal Assign\] menu.
@@ -5584,9 +5924,11 @@ When the robot ready is completed, set the conditions for signal output in the \
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/5-home-position.md)
 # 7.3.5 Home Position Registration
 
-By registering the robot’s arbitrary posture as the home position, you can allow the home position signal to be outputted to the output signal field when the robot enters this position. The home position can be designated based on the posture of each axis, and up to sixteen postures can be registered and used, and the margin for each axis can be additionally set.
+By registering the robot's arbitrary posture as the home position, you can allow the home position signal to be outputted to the output signal field when the robot enters this position. The home position can be designated based on the posture of each axis, and up to sixteen postures can be registered and used, and the margin for each axis can be additionally set.
 
 1.	Touch the \[2: Control Parameter &gt; 5: Registration of Home Position\] menu.
 
@@ -5641,6 +5983,8 @@ By registering the robot’s arbitrary posture as the home position, you can all
   </tbody>
 </table>
 
+
+[__SOURCE](7-system/3-control-parameter/6-cordsys-reg/README.md)
 # 7.3.6 Coordinate System Registration
 
 1.	Touch the \[2: Control Parameter &gt; 6: Coordinate Registration\] menu. Then, the coordinate system registration menu will appear. 
@@ -5651,6 +5995,8 @@ By registering the robot’s arbitrary posture as the home position, you can all
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md)
 # 7.3.6.1 User Coordinate System
 
 The user coordinate system is a coordinate system that is to be set at a position designated by the user. To use the user coordinate system, first, teach three reference steps that are needed to define the user coordinate system, and then register the user coordinate system by designating the taught program number and step order.
@@ -5735,6 +6081,8 @@ The method to register the user coordinate system by designating the taught prog
   </tbody>
 </table>
 
+
+[__SOURCE](7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)
 # 7.3.6.2 Stationary Tool Coordinate System
 
 A robot tool is a tool attached to the front end of the robot. In general, robots perform operations using tools attached to the robot. A typical example is arc welding. The arc welding tool is usually attached to the front end of the robot and is used to perform welding on the externally fixed workpiece.
@@ -5793,7 +6141,7 @@ The method to set the stationary tool coordinate system is as follows.
 
 ### Setting the Current TCP Position as the Position of the Stationary Tool Coordinate System
 
-After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the \[**Current robot pose**\] button. Then, the current TCP position will be registered.
+After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the \`Current robot pose**\] button. Then, the current TCP position will be registered.
 
 ![](../../../_assets/tp630/stationary_crd_autoset_eng.png)
 
@@ -5811,20 +6159,28 @@ For example, if you register and use the stationary tool coordinate system No. 1
 In the case of using the stationary servo gun, the stationary tool interpolation function is not required. This is because, in the servo gun welding, the moving path of the workpiece for the stationary servo gun does not need to be formed in a linear line or arc while only the welding point is important.
 {% endhint %}
 
+
+[__SOURCE](7-system/3-control-parameter/7-prog-reservation.md)
 # 7.3.7 Scheduled Program Execution
 
-For details on how to execute scheduled programs, refer to the “Hi6 Controller Scheduled Program Execution Function Manual.”
+For details on how to execute scheduled programs, refer to the "Hi6 Controller Scheduled Program Execution Function Manual."
 
+
+[__SOURCE](7-system/3-control-parameter/8-auto-backup-restore.md)
 # 7.3.8 Automatic Backup and Recovery
 
-For details on how to automatically back up and recover the controller’s data, refer to the “Hi6 Controller Automatic Backup Function Manual.”
+For details on how to automatically back up and recover the controller's data, refer to the "Hi6 Controller Automatic Backup Function Manual."
 
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/README.md)
 # 7.3.9 Network
 
 1.  \[2: Control parameter &gt; 9: Network\] Touch the menu. The network settings menu will appear.
 
 2.  Select the desired menu to set up Environment setting, Service, etc.
 
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/1-environment-setting.md)
 # 7.3.9.1 Environment setting
 
 You can set the information required for Network Setting for LAN ports.
@@ -5863,7 +6219,7 @@ You can set the information required for Network Setting for LAN ports.
           <li><b>Subnet Mask : </b> Subnet Mask setting for the target port. Usually subnet mask is 255.255.255.0</li>
           <li><b>Gateway : </b>You can set gateway address for the target port. 3rd  information and paste it to another port.
           </li>
-          <li><b>MAC : </b>Displays the controller’s MAC address.
+          <li><b>MAC : </b>Displays the controller's MAC address.
           </li>
         </ul>
       </td>
@@ -5880,21 +6236,31 @@ You can set the information required for Network Setting for LAN ports.
     </tr>
   </tbody>
 </table>
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/README.md)
 # 7.3.9.2 Service
 
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/1-modbus-slave.md)
 # 7.3.9.2.1 Modbus slave
 
 This section covers settings and monitoring when using the controller's Modbus TCP slave communication. <br>
-For more information, refer to “Hi6 Robot Controller Function Manual - Modbus”.
+For more information, refer to "Hi6 Robot Controller Function Manual - Modbus".
 
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/3-ntp-client.md)
 # 7.3.9.2.3 NTP client
 
 The controller's time can be automatically synchronized with the NTP server. <br>
 
-For more information, refer to “[Hi6 Robot Controller Function Manual - NTP time synchronization](https://hrbook-hrc.web.app/#/view/doc-hi6-ntp-time-synchronization/english/README)”.
+For more information, refer to "[Hi6 Robot Controller Function Manual - NTP time synchronization](https://hrbook-hrc.web.app/#/view/doc-hi6-ntp-time-synchronization/english/README)".
 
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/README.md)
 # 7.3.10 Register license key of option function
 
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/1-summary.md)
 # 7.3.10.1 What is a license key for optional functions?
 
 Among the functions of the ${cont_model} robot controller, certain optional functions are sold separately, and customers must purchase the optional functions to use them. The license key for the optional function is created by a separate license key generation program by combining the unique number assigned to the main board of the robot controller and the purchased option function, so the purchased function operates only on the purchased controller.
@@ -5906,6 +6272,8 @@ In this case, you must contact our A/S to obtain an official license key at leas
   Setting whether to purchase optional features <br>
   License key settings
 
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/2-registration-process.md)
 # 7.3.10.2 License key registration procedure
 
 * Purchase a license key for optional functions that matches your system serial number. The system serial number is located on the license registration screen.
@@ -5916,6 +6284,8 @@ In this case, you must contact our A/S to obtain an official license key at leas
 * First select whether to purchase the optional feature, then enter the license key.
 If the purchase selection and the license key do not match, an error will occur when executing the function.
 
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/3-registration.md)
 # 7.3.10.3 Register license key
 
 * Registration screen
@@ -5923,10 +6293,12 @@ If the purchase selection and the license key do not match, an error will occur 
   ![](../../../_assets/tp630/license-key2.png)
 
 
-* If the license key has been entered correctly, “==> OK” will be displayed to the right of the license key input.
+* If the license key has been entered correctly, "==> OK" will be displayed to the right of the license key input.
 
-* If “==> NG” is displayed, the license key is incorrect or the purchase option has been selected incorrectly.
+* If "==> NG" is displayed, the license key is incorrect or the purchase option has been selected incorrectly.
 
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/4-temporary-key.md)
 # 7.3.10.4 What is a temporary-key?
 
 * Temporary-key can only be used for 30 days and can only be issued once.
@@ -5935,6 +6307,8 @@ If the purchase selection and the license key do not match, an error will occur 
   "W0025 Only (0) days left for the optional function temporary license key free trial period."
 
 * The purpose of the temporary key is to use it until the license key is reissued by our A/S when a problem occurs in the main board of the controller using the optional function and it is replaced with a spare part.
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/5-temporary-key-registration.md)
 # 7.3.10.5 Temporary-key registration
 
 * A temporary key can be issued by pressing the [F] key.
@@ -5949,22 +6323,26 @@ If the purchase selection and the license key do not match, an error will occur 
 
 * Caution) If the remaining days are 0, the optional function can no longer be used, and after that, a temporary key is issued for 1 day use. Because the production line may be stopped due to optional functions, please be sure to contact us before the remaining days reach 0 to receive an official license key. 
 
+
+[__SOURCE](7-system/3-control-parameter/11-industrial-comm/README.md)
 # 7.3.11 Industrial Communication \(fieldbus\)
 
 You can perform the setting of the industrial communication \(fieldbus\) to use it.
 
-1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the “Hi6 Controller Maintenance Manual”.
+1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the "Hi6 Controller Maintenance Manual".
 
-2.	Set the industrial communication firmware by referring to “[7.3.11.1 Firmware Setting](1-firmware-set.md)”.
+2.	Set the industrial communication firmware by referring to "[7.3.11.1 Firmware Setting](1-firmware-set.md)".
 
 3.	Turn off the power of the controller, and then turn it back on.
 
-4.	If necessary, carry out additional setting by referring to “[7.3.11.2 Industrial Communication Setting](2-industrial-comm-set.md)”.
+4.	If necessary, carry out additional setting by referring to "[7.3.11.2 Industrial Communication Setting](2-industrial-comm-set.md)".
 
 
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/11-industrial-comm/1-pci-slot-set.md)
 # 7.3.11.1 PCI Slot Settings
 
 You can set the PCI slot to be used for the industrial communication.
@@ -5989,14 +6367,18 @@ When the PCI slot setting is completed, the CONFIG files set in the slot \#1 - \
 
 
 
+
+[__SOURCE](7-system/3-control-parameter/11-industrial-comm/2-industrial-comm-set.md)
 # 7.3.11.2 Industrial Communication Setting
 
 \(The function to be provided later\) If you set the communication method to CC-Link slave, you can set the detailed information for each type of communication inside the controller.
 
 {% hint style="info" %}
-You can set the communication information by using the “Sycon.net” program on the HD Hyundai Robotics internet website \(www.hyundai-robotics.com\).
+You can set the communication information by using the "Sycon.net" program on the HD Hyundai Robotics internet website \(www.hyundai-robotics.com\).
 {% endhint %}
 
+
+[__SOURCE](7-system/3-control-parameter/11-industrial-comm/3-monitoring.md)
 # 7.3.11.3 Monitoring
 
 You can monitor the setting information and operation status of the firmware and communication the use of which you have set in the industrial communication menu.
@@ -6013,6 +6395,8 @@ You can monitor the setting information and operation status of the firmware and
 You can restart the industrial communication of the PCI communication card by using the \[Restart\] button.
 {% endhint %}
 
+
+[__SOURCE](7-system/4-robot-parameter/README.md)
 # 7.4 Robot Parameters
 
 You can set various data related to robot operation as well as information such as the origin and operation range of each axis.
@@ -6025,11 +6409,13 @@ You can set various data related to robot operation as well as information such 
 
 
 
+
+[__SOURCE](7-system/4-robot-parameter/1-tool-data/README.md)
 # 7.4.1    Tool Data
 
-You can set the distance and angle of the TCP based on the robot’s R1-axis flange and register the tool’s weight, center of gravity, and inertia. You can perform registration manually using the \[1: Tool data\] menu.
+You can set the distance and angle of the TCP based on the robot's R1-axis flange and register the tool's weight, center of gravity, and inertia. You can perform registration manually using the \[1: Tool data\] menu.
 
-In another way, the tool length can be set using the automatic calibration function, and the tool’s weight, center of gravity, and inertia can be registered using the load estimation function.
+In another way, the tool length can be set using the automatic calibration function, and the tool's weight, center of gravity, and inertia can be registered using the load estimation function.
 
 In the case of interpolation operation such as linear or circular interpolation, the trajectory will be created based on the TCP, so the length and angle of the tool should be accurately set before the teaching.
 
@@ -6062,10 +6448,12 @@ Rxyz = Rot\(z, Rz\)Rot\(y, Ry\)Rot\(x, Rx\)
 
 
 
+
+[__SOURCE](7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)
 # 7.4.1.1 Tool Data Setting
 
 
-The manual method of setting the distance and angle of TCP based on the robot’s R1-axis flange and registering the tool’s weight, center of gravity, and inertia is as follows.
+The manual method of setting the distance and angle of TCP based on the robot's R1-axis flange and registering the tool's weight, center of gravity, and inertia is as follows.
 
 1.	Touch the \[3: Robot Parameter &gt; 1: Tool Data\] menu.
 
@@ -6147,6 +6535,8 @@ The manual method of setting the distance and angle of TCP based on the robot’
   When tool data is copied, the load estimation data will also be copied. The tool data copying and pasting functions can only be executed on the tab of the tool number for which load estimation has been performed.
 {% endhint %}
 
+
+[__SOURCE](7-system/4-robot-parameter/1-tool-data/2-tool-data-set-info.md)
 # 7.4.1.2 Tool Data Setting Information
 
 * \[Weight\]: Weight of the tool \(kg\)
@@ -6158,9 +6548,9 @@ The manual method of setting the distance and angle of TCP based on the robot’
 
 | Classification | Normal | High-load mode | Exception allowable mode | Playback impossible \(Large size\) |
 | :--- | :--- | :--- | :--- | :--- |
-| Weight ratio \(%\) | - 100 | 100–120 | 100–120 | 120 - |
-| Moment ratio \(%\) | - 100 | 100–110 | 100–115 \(150\) | 115 \(150\) - |
-| Inertia ratio \(%\) | - 100 | 100–130 | 100–150 \(600\) | 150 \(600\) - |
+| Weight ratio \(%\) | - 100 | 100-120 | 100-120 | 120 - |
+| Moment ratio \(%\) | - 100 | 100-110 | 100-115 \(150\) | 115 \(150\) - |
+| Inertia ratio \(%\) | - 100 | 100-130 | 100-150 \(600\) | 150 \(600\) - |
 
 {% hint style="info" %}
 The allowable ratio can be changed depending on the robot model and controller software version.
@@ -6168,6 +6558,8 @@ The allowable ratio can be changed depending on the robot model and controller s
 
 
 
+
+[__SOURCE](7-system/4-robot-parameter/2-axis-origin.md)
 # 7.4.2 Axis Origin
 
 You can register the mechanical origin position of each axis.
@@ -6224,7 +6616,7 @@ You can register the mechanical origin position of each axis.
 </table>
 
 {% hint style="warning" %}
-* The axis origin setting affects the accuracy of the robot’s cartesian operation. Change it to the exact value as much as possible.
+* The axis origin setting affects the accuracy of the robot's cartesian operation. Change it to the exact value as much as possible.
 * 
   If the axis origin setting is changed, the position of the previously created program will be changed. Therefore, the axis origin setting must be executed only at the initial installation stage.
 
@@ -6236,9 +6628,11 @@ You can register the mechanical origin position of each axis.
 At the time of the shipping from the factory, the mechanical origin position of each axis is set at the standard value \(0X400000\).
 {% endhint %}
 
+
+[__SOURCE](7-system/4-robot-parameter/3-soft-limit.md)
 # 7.4.3 Soft Limit
 
-You can adjust the operation range of each axis according to the robot’s use environment.
+You can adjust the operation range of each axis according to the robot's use environment.
 
 1.	Touch the \[3: Robot Parameter &gt; 3. Soft Limit\] menu.
 
@@ -6284,6 +6678,8 @@ You can adjust the operation range of each axis according to the robot’s use e
 At the time of the shipping from the factory, the operation range of each axis of the robot is set to a maximum. 
 {% endhint %}
 
+
+[__SOURCE](7-system/4-robot-parameter/4-encoder-offset/README.md)
 # 7.4.4 Encoder Offset
 
 The current encoder position can be set as the encoder origin position \(position 0X400000\). You can determine the encoder origin at the reference position of each axis of the robot \(the position where the scale of each axis is attached\).
@@ -6335,6 +6731,8 @@ The current encoder position can be set as the encoder origin position \(positio
 The encoder offset value is set at the time of the shipping from the factory. Resetting the encoder offset value should be performed only when necessary, such as replacing the motor or encoder.
 {% endhint %}
 
+
+[__SOURCE](7-system/4-robot-parameter/4-encoder-offset/1-encoder-offset-utilization.md)
 # 7.4.4.1 Encoder Offset Value Utilization
 
 To continue using the existing program even after the current job program is backed up and the system is initialized \(\[system > 5: Initialize > 1: System Initialization\]\), the robot should maintain the reference position information that existed before initialization. If you record the encoder offset value, the previous position information of the robot can be retrieved.
@@ -6351,12 +6749,14 @@ If the encoder offset value is recorded as the axis position value \(mm or degre
 The basic setting value in the axis position input window is the reference position value. If you save without inputting the axis position value, the current encoder position will be set as the origin position \(0X400000\).
 {% endhint %}
 
+
+[__SOURCE](7-system/4-robot-parameter/4-encoder-offset/2-axis-posi-restore.md)
 # 7.4.4.2 Axis Home Position Restoration
 
 When a component failure occurs in the robot mechanism (especially the motor or reducer) and the component is replaced, the encoder must be calibrated under the same conditions as the original home position in order to restart the existing teaching program.  
 However, when service personnel perform this procedure manually on site, the home position may be set through multiple trials and errors. This dedicated function is provided to simplify that process.
 
-※ What is home position restoration after mechanical repair?
+* What is home position restoration after mechanical repair?
 
 ![](../../../_assets/tp630/axis-posi-restore1.png)
 
@@ -6373,7 +6773,7 @@ The position of the external reference point (ⓑ) must not change before and af
 
 The following example explains the function assuming that the S-axis motor is replaced.
 
-1. Assign a new program (101.job), and teach S1 [verification point – Approach] and S2 [home position verification point, only the S-axis rotates relative to S1] so that a fixed point on the firmly mounted tool approaches a jig or peripheral device.  
+1. Assign a new program (101.job), and teach S1 [verification point - Approach] and S2 [home position verification point, only the S-axis rotates relative to S1] so that a fixed point on the firmly mounted tool approaches a jig or peripheral device.  
 
    ![](../../../_assets/tp630/axis-posi-restore2.png)
 
@@ -6390,11 +6790,11 @@ The following example explains the function assuming that the S-axis motor is re
 
       ![](../../../_assets/tp630/axis-posi-restore4.png)
 
-   3) Set the program number to 101 and the step number to 2 for “Before S-axis motor replacement,”  
-      and set the program number to 101 and the step number to 3 for “After S-axis motor replacement,”  
+   3) Set the program number to 101 and the step number to 2 for "Before S-axis motor replacement,"  
+      and set the program number to 101 and the step number to 3 for "After S-axis motor replacement,"  
       then press the **[Execute]** button.  
 
-      (※ If the program or step number for “After S-axis motor replacement” is set to 0, the encoder calibration value is calculated using the current S-axis position of the robot.)  
+      (* If the program or step number for "After S-axis motor replacement" is set to 0, the encoder calibration value is calculated using the current S-axis position of the robot.)  
 
       ![](../../../_assets/tp630/axis-posi-restore5.png)
 
@@ -6402,7 +6802,9 @@ The following example explains the function assuming that the S-axis motor is re
 
       ![](../../../_assets/tp630/axis-posi-restore6.png)
 
-5. Move to S2 of the taught program (101.job) and verify that the position is identical to that before the motor replacement.# 7.4.5 B-Axis Deadzone
+5. Move to S2 of the taught program (101.job) and verify that the position is identical to that before the motor replacement.
+[__SOURCE](7-system/4-robot-parameter/5-b-axis-deadzone.md)
+# 7.4.5 B-Axis Deadzone
 
 Around 0 degree of the B-axis, the rotational center of the R1 axis and the rotational center axis of the R2 axis will be almost in parallel. When the TCP of the robot performs interpolation such as linear interpolation or circular interpolation, the wrist axis will move rapidly even in small movements.
 
@@ -6424,6 +6826,8 @@ Set the B-axis no-use area.
 
 
 
+
+[__SOURCE](7-system/4-robot-parameter/6-accuracy.md)
 # 7.4.6 Accuracy
 
 You can set the detailed conditions of the accuracy level, which refers to the accuracy of passing through the step when the robot progresses the target step.
@@ -6483,7 +6887,7 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 </table>
 
 {% hint style="info" %}
-* If you approach the accuracy level based on your understanding of the contents of “[2.3 Step](../../2-operation/3-step/README.md),” you can use it more easily.
+* If you approach the accuracy level based on your understanding of the contents of "[2.3 Step](../../2-operation/3-step/README.md)," you can use it more easily.
 * In the welding step that uses a servo gun or an equalizerless gun, the controller will automatically perform restriction regardless of the set accuracy level. 
 
 
@@ -6491,6 +6895,8 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 
 
 
+
+[__SOURCE](7-system/4-robot-parameter/7-axis-add-weight/README.md)
 # 7.4.7 Additional Weight of Each Axis
 
 You can register information on a transformer or wiring support mounted on the basic axis of the robot.
@@ -6507,12 +6913,16 @@ You can register information on a transformer or wiring support mounted on the b
 If the robot has an additional weight because a transformer or wiring support is mounted onto it, you must register the information on the additional weight of each axis. If the additional weight is not correctly registered, the error may get large when the tool load estimation is performed.
 {% endhint %}
 
+
+[__SOURCE](7-system/4-robot-parameter/7-axis-add-weight/1-crdsys-origin-of-each-axis.md)
 # 7.4.7.1 Coordinate System Origin of Each Axis
 
 The X, Y, and Z directions of each axis are set in the same direction as the robot coordinate system. Refer to the following about the coordinate system origin of each axis.
 
 ![Figure 62 Coordinate System Origin of Each Axis for Each Robot Configuration ](../../../_assets/image_476.png)
 
+
+[__SOURCE](7-system/4-robot-parameter/8-collision-detection/README.md)
 # 7.4.8 Impact Detection
 
 When a collision occurs during robot operation, impact detection(collision detection) is a function that compares the torque normally generated during robot motion with the currently generated torque, and treats it as an error when abnormal torque is detected, in order to minimize damage caused by the collision
@@ -6535,9 +6945,11 @@ Touch \[3: Robot Parameter &gt; 14: Impact Detection\] to use this function.
 
 
 ![](../../../_assets/tp630/coldet/robot_impact_detection.png)
+
+[__SOURCE](7-system/4-robot-parameter/8-collision-detection/1-coldet-model-based.md)
 # 7.4.8.1 Model-Based Impact Detection
 
-The model-based impact detection function detects collisions by calculating the difference between the torque that should normally be generated during robot motion and the torque actually measured, based on the robot’s dynamic model.
+The model-based impact detection function detects collisions by calculating the difference between the torque that should normally be generated during robot motion and the torque actually measured, based on the robot's dynamic model.
 Sensitivity can be adjusted to control responsiveness to collisions, and contact with external objects occurring while the robot is moving at low speed can also be detected.
 
 
@@ -6619,7 +7031,7 @@ The per-axis settings tab is enabled only in Engineering Mode or higher.
       <td style="text-align:left"> 
         <img src="../../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Cutoff frequency value, generally set according to the robot’s control environment. If any axis is set to 0, collision detection for that axis is disabled.(Maximum: 100) </td>
+      <td style="text-align:left">Cutoff frequency value, generally set according to the robot's control environment. If any axis is set to 0, collision detection for that axis is disabled.(Maximum: 100) </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
@@ -6633,6 +7045,8 @@ The per-axis settings tab is enabled only in Engineering Mode or higher.
 {% hint style="info" %}
 The final sensitivity value for each axis is proportional to the per-axis sensitivity value and inversely proportional to the overall default sensitivity for all axes.
 {% endhint %}
+
+[__SOURCE](7-system/4-robot-parameter/8-collision-detection/2-coldet-axis.md)
 # 7.4.8.2 Set per-Axis Collision Detection
 
 The collision detection function monitors the disturbance torque and the rate of change of the disturbance torque occurring on each robot axis. If the measured values exceed the configured thresholds, they are treated as errors.
@@ -6668,8 +7082,8 @@ The collision detection function monitors the disturbance torque and the rate of
         <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left"> 
-        <p>[Measurement] Displays the maximum “disturbance torque” that occurred during the period when the collision detection command (coldet level.id) was active.</p>
-        <p>[Threshold] The user can refer to this value to configure the “disturbance torque” threshold for collision detection at each level. </p>
+        <p>[Measurement] Displays the maximum "disturbance torque" that occurred during the period when the collision detection command (coldet level.id) was active.</p>
+        <p>[Threshold] The user can refer to this value to configure the "disturbance torque" threshold for collision detection at each level. </p>
       </td>
     </tr>
     <tr>
@@ -6677,8 +7091,8 @@ The collision detection function monitors the disturbance torque and the rate of
         <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>[Measurement] Displays the maximum “rate of change of disturbance torque” that occurred during the period when the collision detection command (coldet level.id) was active.</p>
-        <p>[Threshold] The user can refer to this value to configure the “rate of change of disturbance torque” threshold for collision detection at each level.</p>
+        <p>[Measurement] Displays the maximum "rate of change of disturbance torque" that occurred during the period when the collision detection command (coldet level.id) was active.</p>
+        <p>[Threshold] The user can refer to this value to configure the "rate of change of disturbance torque" threshold for collision detection at each level.</p>
       </td>
     </tr>
     <tr>
@@ -6710,7 +7124,9 @@ The collision detection function monitors the disturbance torque and the rate of
 
 {% hint style="info" %}
 Collision detection measured values are displayed for up to a maximum of 2 minutes.
-{% endhint %}# 7.4.9 Jog Inching Level Setting
+{% endhint %}
+[__SOURCE](7-system/4-robot-parameter/9-jog-inch-level/README.md)
+# 7.4.9 Jog Inching Level Setting
 
 You can limit the operation by designating the moving distance. This is useful when you want to move the robot as much as the desired distance with the jog key in manual mode.
 
@@ -6722,6 +7138,8 @@ You can limit the operation by designating the moving distance. This is useful w
 
 
 
+
+[__SOURCE](7-system/4-robot-parameter/9-jog-inch-level/1-jog-inch-main-funcs.md)
 # 7.4.9.1 Main Functions of the Jog Inching Function
 
 * Inching applicable coordinate systems
@@ -6739,6 +7157,8 @@ You can limit the operation by designating the moving distance. This is useful w
 
 
 
+
+[__SOURCE](7-system/4-robot-parameter/9-jog-inch-level/2-inch-jog-operation.md)
 # 7.4.9.2 Inching Jog Operation
 
 The inching function is a function that does not allow the movement to take place beyond the maximum moving distance per one push of the jog key. 
@@ -6757,6 +7177,8 @@ If you release the jog key before reaching the inching distance, the robot will 
 In the joint coordinate system, the speed level 1 is fixed to a mode that the robot will move by 1 bit of the encoder.
 {% endhint %}
 
+
+[__SOURCE](7-system/4-robot-parameter/12-system-maintenance/README.md)
 # 7.4.10 Reducer Lifespan Setting
 
 If the reducer of the robot axis is replaced, the rated life of the reducer should be initialized.
@@ -6781,10 +7203,14 @@ Lifespan calculation cycle\[**min**\] : Renewal period of reducer lifespan. The 
 
 {% hint style="info" %}
 The reducer rated and expected life are predicted reference values based on reducer life prediction model. The actual life of the reducer may vary from the expected model depending on the driving conditions.
-{% endhint %}# 7.4.13 System diagnosis
+{% endhint %}
+[__SOURCE](7-system/4-robot-parameter/13-system-diagnosis/README.md)
+# 7.4.13 System diagnosis
 
 It is used for various functions to diagnose failures in robot systems. 
 
+
+[__SOURCE](7-system/4-robot-parameter/13-system-diagnosis/1-gas-spring-pressure_sensor.md)
 # 7.4.13.1 Gas spring pressure sensor
 
 The gas spring pressure sensor function is used to detect abnormal pressure in the gas spring by constantly reading the value of the pressure sensor through analog input or to generate a warning or error through digital input in a robot that uses a gas spring and has a pressure sensor (PN2570) specified by our company attached to it. <br> 
@@ -6882,6 +7308,8 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
 {% hint style="info" %}
 * This feature is supported in versions V60.30.07 and later.   
 {% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/README.md)
 # 7.5 Application Parameters
 
 1.	Touch the \[4: Application Parameter\] menu. Then, the application parameter menu will appear.
@@ -6894,9 +7322,11 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
 <br>
 
 {% hint style="info" %}
-For items not covered in this manual, please refer to the “Function Manual” for each separate application function.
+For items not covered in this manual, please refer to the "Function Manual" for each separate application function.
 {% endhint %}
 
+
+[__SOURCE](7-system/5-application-parameter/10-cmd-idp-exe.md)
 # 7.5.10 Command independent execution
 
 This is a function that executes the corresponding statement separately from the work program when the set input signal turns from OFF to ON. <br>
@@ -6922,13 +7352,17 @@ For more information about multitasking, please refer to "[Hi6 Robot Controller 
 * Execution is possible only with the motor ON in auto mode.
 * When executing a move statement, the axis must be separated by a mechanism so that it is not used in the main task, or the axis control status must be disabled with axisctrl off.
 {% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/13-user-def-error/README.md)
 # 7.5.13 User-Defined Error
 
 This function allows users to define errors for specific conditions in the ${cont_model} robot controller. When the defined conditions are met, the user-defined error is triggered.
 
 {% hint style="info" %}
 Supported from V60.30-00.
-{% endhint %}# 7.5.13.1 User-Defined Error Settings
+{% endhint %}
+[__SOURCE](7-system/5-application-parameter/13-user-def-error/1-setting.md)
+# 7.5.13.1 User-Defined Error Settings
 
 1. Touch the \[System &gt; 4: Application Parameters &gt; 13: User-Defined Error\] menu.<br><br>
 
@@ -6956,6 +7390,8 @@ A file named "help_user_err.json" will be created in the MAIN/project directory.
 
 6. Copy the edited file back to the teaching pendant.
 
+
+[__SOURCE](7-system/5-application-parameter/13-user-def-error/2-example.md)
 # 7.5.13.2 User-Defined Error Example
 
 1. Modify the 'help_user_err.json' file as shown below.<br>
@@ -6965,13 +7401,17 @@ A file named "help_user_err.json" will be created in the MAIN/project directory.
 ![](../../../_assets/tp630/user-def-code/image10.png)
 
 3. Checking the error help will display the same content as written in the file.<br>
-![](../../../_assets/tp630/user-def-code/image11.png)# 7.5.14 User-Defined Warning
+![](../../../_assets/tp630/user-def-code/image11.png)
+[__SOURCE](7-system/5-application-parameter/14-user-def-warn/README.md)
+# 7.5.14 User-Defined Warning
 
 This function allows users to define warnings for specific conditions in the ${cont_model} robot controller. When the defined conditions are met, the user-defined warning is triggered.
 
 {% hint style="info" %}
 Supported from V60.30-00.
-{% endhint %}# 7.5.14.1 User-Defined Warning Settings
+{% endhint %}
+[__SOURCE](7-system/5-application-parameter/14-user-def-warn/1-setting.md)
+# 7.5.14.1 User-Defined Warning Settings
 
 1. Touch the \[System &gt; 4: Application Parameters &gt; 14: User-Defined Warning\] menu.<br><br>
 
@@ -6995,7 +7435,9 @@ Supported from V60.30-00.
     - remedy: Corrective action displayed in the warning help<br>
 ![](../../../_assets/tp630/user-def-code/image8.png)
 
-6. Copy the edited file back to the teaching pendant.# 7.5.14.2 User-Defined Warning Example
+6. Copy the edited file back to the teaching pendant.
+[__SOURCE](7-system/5-application-parameter/14-user-def-warn/2-example.md)
+# 7.5.14.2 User-Defined Warning Example
 
 1. Modify the 'help_user_warn.json' file as shown below.<br>
 ![](../../../_assets/tp630/user-def-code/image12.png)
@@ -7005,6 +7447,8 @@ Supported from V60.30-00.
 
 3. Checking the warning help will display the same content as written in the file.<br>
 ![](../../../_assets/tp630/user-def-code/image14.png)
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/README.md)
 # 7.5.16 Joystick mode
 
 This function is used to operate the robot with an external device such as a joystick. 
@@ -7022,6 +7466,8 @@ This function is used to operate the robot with an external device such as a joy
 {% hint style="info" %}
 * It operates only when the motor is on in auto mode.
 {% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/1-jogging-in-signal.md)
 # 7.5.16.1 Jogging(input signal)
 
 To jog the robot by signal input, set the input signal corresponding to each direction key. <br>
@@ -7033,6 +7479,8 @@ The input signal corresponding to the mechanism number can change the mechanism 
 
 ![](../../../_assets/tp630/jogging_in_signal.png)
 
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/2-jogging-open-api.md)
 # 7.5.16.2 Jogging(open-api)
 
 Please refer to the separate manual for open-api communication. <br>
@@ -7046,6 +7494,8 @@ Information about the url address and body used for robot jogging is as follows.
 {% hint style="info" %}
 If no data is received for 300ms, the jogging motion will stop.  
 {% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/3-speed-level.md)
 # 7.5.16.3 Speed
 
 This function changes the speed level of robot jogging by signal input. <br>
@@ -7055,6 +7505,8 @@ When the set input signal becomes ON, it changes to the corresponding speed leve
 
 
 
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/4-robot-move.md)
 # 7.5.16.4 Moving
 
 This is a function that moves the axis of the robot specified by signal input to the specified position at the specified speed. <br>
@@ -7065,6 +7517,8 @@ If you want to move two or more axes of the robot simultaneously, set the input 
 ![](../../../_assets/tp630/robot_move.png)
 
 
+
+[__SOURCE](7-system/5-application-parameter/22-reduced-speed-mode.md)
 # 7.5.22 Reduced Speed Mode
 
 When the input signal (di) changes from OFF to ON, the robot speed is reduced according to the set reduction ratio. <br>
@@ -7088,6 +7542,8 @@ In the move command, the robot speed is applied by combining the original speed 
 * Select the correct active condition that matches the state of the input signal.
 * When an I/O signal is received during playback, the reduced speed mode will still be applied.
 {% endhint %}
+
+[__SOURCE](7-system/6-initialization/README.md)
 # 7.6 Initialization
 
 If the robot controller does not operate normally, initialize the system. The system initialization must be performed by an engineer who has experience in initial setting of the robots of HD Hyundai Robotics.
@@ -7116,6 +7572,8 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 
 
 
+
+[__SOURCE](7-system/6-initialization/1-system-format.md)
 # 7.6.1 System Format
 
 1.	On the status bar of the ${cont_model} teach pendant screen, check if the operation mode is set to manual mode.
@@ -7133,6 +7591,8 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 
     ![](../../_assets/tp630/pop-system-init_eng.png)
 
+
+[__SOURCE](7-system/6-initialization/2-robot-type-sel.md)
 # 7.6.2 Robot Type Selection
 
 1.	Touch the \[5: Initialize &gt; 2: Robot Type Selection\] menu. Or touch the \[Mechanism\] button at the top right of the ${cont_model} teach pendant screen.
@@ -7185,7 +7645,7 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 
 6.	Turn off and on the power of the controller and then supply power to the motor.
 
-7.	In manual mode, move the robot safely to the reference position at low speed and then perform the encoder offset calibration again by referring to steps 7–8.
+7.	In manual mode, move the robot safely to the reference position at low speed and then perform the encoder offset calibration again by referring to steps 7-8.
 
 * In the encoder offset setting item, the current encoder position will be set to 0X400000 \(hexadecimal\).
 * When a motor is replaced because of failure, if the encoder offset setting is performed at the same location, the recorded program can be used identically.
@@ -7203,6 +7663,8 @@ Some items in the \[Initialize\] menu will be supported only when a specific typ
 
 
 
+
+[__SOURCE](7-system/6-initialization/3-usage-set/README.md)
 # 7.6.3 Usage Setting
 
 You can select the operation usage and initialize the user key and input/output assignment signals according to the operation usage.
@@ -7215,6 +7677,8 @@ You can select the operation usage and initialize the user key and input/output 
 
 
 
+
+[__SOURCE](7-system/6-initialization/3-usage-set/1-spot-welding.md)
 # 7.6.3.1 Spot Welding
 
 If you select the operation usage as spot welding, you can use the commands related to spot welding and access the menu related to spot welding.
@@ -7229,6 +7693,8 @@ If you select the operation usage as spot welding, you can use the commands rela
 
 
 
+
+[__SOURCE](7-system/6-initialization/3-usage-set/2-arc-welding.md)
 # 7.6.3.2 Arc Welding
 
 If you select the operation usage as Arc welding, you can use commands related to arc welding and access the menus related to arc welding.
@@ -7245,6 +7711,8 @@ If you select the operation usage as Arc welding, you can use commands related t
 
 
 
+
+[__SOURCE](7-system/6-initialization/4-serial-encoder-reset.md)
 # 7.6.4 Serial Encoder Reset
 
 The serial encoder stores the encoder rotation speed information in the internal memory. The encoder rotation speed can be cleared to zero by resolving the motor error state or by resetting the zero point of the encoder.
@@ -7301,9 +7769,11 @@ The serial encoder stores the encoder rotation speed information in the internal
 
 
 
+
+[__SOURCE](7-system/6-initialization/5-add-axis-param.md)
 # 7.6.5 Additional Axis Parameter Setting
 
-Additional axes that can be used in addition to the robot itself include the robot’s base axis \(travel axis\), servo gun axis, positioner axis, and jig axis. For details on the specification of each additional axis, refer to the “Additional Axis Function Manual.”
+Additional axes that can be used in addition to the robot itself include the robot's base axis \(travel axis\), servo gun axis, positioner axis, and jig axis. For details on the specification of each additional axis, refer to the "Additional Axis Function Manual."
 
 The method to set parameters such as the specification and configuration of the additional axes that are being used is as follows.
 
@@ -7397,6 +7867,8 @@ The method to set parameters such as the specification and configuration of the 
   </tbody>
 </table>
 
+
+[__SOURCE](7-system/6-initialization/6-mechannism-set.md)
 # 7.6.6 Mechanism Setting
 
 Mechanism will be used as a group during the jog operation which the jog keys are to be assigned to. In addition, mechanism is also a set of units, each of which is to be differentiated in the process of recording or editing the position of a step. When the mechanisms are set, mechanism numbers \(M\#\) will be assigned for individual groups of axes.
@@ -7450,38 +7922,42 @@ A set mechanism unit is the minimum unit that can be assigned to each task and c
 * 
   The following shows the example of the usage.
 
-  Example 1\) M0: Robot \(Axes 1–6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axis 8\)
+  Example 1\) M0: Robot \(Axes 1-6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axis 8\)
 
-  * Select \[M0\] ⇒ Jog key for axes 1–6: M0. Jog key for axis 7: M1. Jog key for axis 8: M2
-  * Select \[M1\] ⇒ Jog key for axis 1: M1
-  * Select \[M2\] ⇒ Jog key for axis 1: M2
+  * Select \[M0\] => Jog key for axes 1-6: M0. Jog key for axis 7: M1. Jog key for axis 8: M2
+  * Select \[M1\] => Jog key for axis 1: M1
+  * Select \[M2\] => Jog key for axis 1: M2
 
-  Example 2\) M0: Robot \(Axes 1–6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axes 8–9\)
+  Example 2\) M0: Robot \(Axes 1-6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axes 8-9\)
 
-  * Select \[M0\] ⇒ Jog key for axes 1–6: M0. Jog key for axis 7: M1
-  * Select \[M1\] ⇒ Jog key for axis 1: M1
-  * Select \[M2\] ⇒ Jog key for axes 1–2: M2
+  * Select \[M0\] => Jog key for axes 1-6: M0. Jog key for axis 7: M1
+  * Select \[M1\] => Jog key for axis 1: M1
+  * Select \[M2\] => Jog key for axes 1-2: M2
 
-  Example 3\) M0: Robot \(Axes 1–7\). M1: Travel axis \(Axis 8\). M2: Servo gun \(Axes 9–10\)
+  Example 3\) M0: Robot \(Axes 1-7\). M1: Travel axis \(Axis 8\). M2: Servo gun \(Axes 9-10\)
 
-  * Select \[M0\] ⇒ Jog key for axes 1–7: M0. Jog key for axis 8: M1
-  * Select \[M1\] ⇒ Jog key for axis 1: M1
-  * Select \[M2\] ⇒ Jog key for axis 1: M2
-
-
+  * Select \[M0\] => Jog key for axes 1-7: M0. Jog key for axis 8: M1
+  * Select \[M1\] => Jog key for axis 1: M1
+  * Select \[M2\] => Jog key for axis 1: M2
 
 
 
+
+
+
+[__SOURCE](7-system/7-auto-calibration/README.md)
 # 7.7 Auto Calibration
 
-To use the robot correctly, the robot’s axis origin, tool length, load mass, and base axis direction can be found using the taught programs and using the movements that will be executed automatically. Those calibrated values will be automatically reflected in the robot.
+To use the robot correctly, the robot's axis origin, tool length, load mass, and base axis direction can be found using the taught programs and using the movements that will be executed automatically. Those calibrated values will be automatically reflected in the robot.
 
 1.	Touch the \[6: Auto Calibration\] menu. Then, the automatic calibration menu will appear.
 
-2.	Calibrate the robot’s axis origin, tool length, load mass, base axis direction, etc. by selecting the desired menu,
+2.	Calibrate the robot's axis origin, tool length, load mass, base axis direction, etc. by selecting the desired menu,
 
     ![](../../_assets/tp630/system-calib-menu_eng.png)
 
+
+[__SOURCE](7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)
 # 7.7.1 Optimize Axis Origin and Tool Length
 
 The optimization of axis origin and tool length is a function to calibrate the origin and tool length of each axis of the robot without using an external measuring sensor.
@@ -7579,13 +8055,15 @@ It requires your attention that if you calibrate both the robot origin and tool 
 * If you calibrate the tool angle using the angle calibration function \(**\[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]**\), you should execute the origin axis and tool length optimization function first, and then execute the angle calibration. In this way, the tool data can be set correctly.
 {% endhint %}
 
+
+[__SOURCE](7-system/7-auto-calibration/2-positioner-calib.md)
 # 7.7.2 Positioner Calibration
 
 Positioner calibration is a function that enables the robot to perform a synchronized follow-up with the operation of a jig device installed outside the robot or to perform a linear or circular operation relative to the jig device. The external jig device in which the positioner calibration function will be applied to is called a positioner or station.
 
 Using the positioner calibration function makes it possible to compensate for the operational difficulties because of the limitation of the robot operation area. In other words, even if the positioner moves while the workpiece is fixed onto it, the robot can still perform a linear or circular operation on the workpiece by following up with the movement of the positioner.
 
-You can simply set the positioner’s coordinate system by performing the positioner calibration by teaching three points for a 1-axis positioner and five points for a 2-axis positioning.
+You can simply set the positioner's coordinate system by performing the positioner calibration by teaching three points for a 1-axis positioner and five points for a 2-axis positioning.
 
 ![Figure 68 1-Axis Positioner \(Left\) / 2-Axis Positioner \(Right\)](../../_assets/image_244.png)
 
@@ -7593,15 +8071,17 @@ The information on the main functions of the positioner calibration is as follow
 
 | Main Functions | Description |
 | :--- | :--- |
-| Positioner group | 1–4 groups are supported |
+| Positioner group | 1-4 groups are supported |
 | Positioner axis count | 1-axis positioner and 2-axis positioner are supported \(rotation axis\) |
 | Interpolation mode | Linear interpolation and circular interpolation are supported |
 
 {% hint style="info" %}
 * The positioner calibration function can be used while the positioner group is set.
-* For more details, refer to the “Hi6 Controller Positioner Sync Function Manual.”
+* For more details, refer to the "Hi6 Controller Positioner Sync Function Manual."
 {% endhint %}
 
+
+[__SOURCE](7-system/7-auto-calibration/3-load-estimation.md)
 # 7.7.3 Load Estimation Function
 
 Load estimation is a function that automatically calculates the physical properties \(mass, center position, inertia\) of the tool attached to the front end of the robot through a certain operation.
@@ -7653,11 +8133,13 @@ If the \[Wrist Axis Operation Area\] button is not supported, skip this step, an
   The wrist axis operation area function will not be supported in some robots.
 
 * It requires your attention that the load estimation function may not be executed depending on the setting values of the wrist axis operation area function.
-* For details on the load estimation function, refer to the “Load Estimation Function Manual.”
+* For details on the load estimation function, refer to the "Load Estimation Function Manual."
 {% endhint %}
 
 
 
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/README.md)
 # 7.7.4 Base Axis Calibration
 
 Base axis calibration is a function to calibrate the installation direction of the axis.
@@ -7678,6 +8160,8 @@ In general, the base axis is used to move the robot to the operation position. I
 
 
 
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/1-base-axis-initial-set.md)
 # 7.7.4.1 Base Axis Initial Setting
 
 1.	In manual mode, touch the \[system > 5: Initialize&gt; 5: Additional Axis Parameter Setting\].
@@ -7700,6 +8184,8 @@ In general, the base axis is used to move the robot to the operation position. I
 You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. Do not set the axis configuration as any for the other base axes except for the first base axis.
 {% endhint %}
 
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/2-base-axis-calib-prog-teach.md)
 # 7.7.4.2 Base Axis Calibration Program Teaching
 
 1.	Make a reference point in space, and then record the first reference point.
@@ -7721,6 +8207,8 @@ You can use the calibration function only for the first base axis, and you can s
   Record the position by setting the moving distance of the base axis between recording steps as far as possible.
 {% endhint %}
 
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/3-base-axis-calib-exec.md)
 # 7.7.4.3 Base Axis Calibration Execution
 
 1.	Touch the \[6: Auto Calibration &gt; 6: Base Axis Calibration\] menu.
@@ -7731,6 +8219,8 @@ You can use the calibration function only for the first base axis, and you can s
 
 3.	After checking the installation direction vector value of the base axis, touch the \[OK\] button.
 
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/4-operation-after-base-calib.md)
 # 7.7.4.4 Operation After Base Axis Calibration
 
 If you jog the base axis after performing base axis calibration, the distance traveled in the created direction vector of the base axis will be converted into the current coordinate value.
@@ -7747,6 +8237,8 @@ If you jog the base axis after performing base axis calibration, the distance tr
 Set the jog coordinate system as the tool coordinate system and jog the base axis to check whether the base axis is properly calibrated. If the tooltip fixing operation is executed, it means that the base axis has been properly calibrated.
 {% endhint %}
 
+
+[__SOURCE](7-system/7-auto-calibration/5-gravity-direction-auto-set.md)
 # 7.7.5 Gravity Direction Auto Setting
 
 The ${cont_model} controller is based on dynamics, so it is important to set the gravity direction.
@@ -7770,6 +8262,8 @@ How to set the gravity direction is as follows.
 
 4.	After checking the direction vector value, touch the \[OK\] button. Then, the direction will be set as the gravity direction.
 
+
+[__SOURCE](7-system/7-auto-calibration/6-robot-tool-calibration.md)
 # 7.7.6 Calibration of the Robot and Tool
 
 The robot and tool calibration function will be used in an environment where the position of the robot can be measured with a 3D measuring device.
@@ -7778,7 +8272,7 @@ The robot and tool calibration function will be used in an environment where the
 
     ![](../../_assets/image_245.png)
 
-2.	Organize the measured robot’s position data \(measuring point data\) in X, Y, and Z formats, and then create a file \(Format: ASCII Extension: MSR\). 
+2.	Organize the measured robot's position data \(measuring point data\) in X, Y, and Z formats, and then create a file \(Format: ASCII Extension: MSR\). 
 
     ![](../../_assets/tp630/system-calib-robottool-msr.png)
 
@@ -7809,7 +8303,7 @@ The robot and tool calibration function will be used in an environment where the
 <Br>
 
 {% hint style="info" %}
-The axis origin and tool length X, Y, and Z values of the axes 2–5 \(H, V, R2, and B axes\) of the calibration parameter are selected. To calibrate the tool only, perform execution after deselecting the value of each axis.
+The axis origin and tool length X, Y, and Z values of the axes 2-5 \(H, V, R2, and B axes\) of the calibration parameter are selected. To calibrate the tool only, perform execution after deselecting the value of each axis.
 {% endhint %}
 
 <br>
@@ -7825,6 +8319,8 @@ If calibration data is lost due to operations such as system initialization, it 
 
 ![](../../_assets/tp630/robot_calib_recover.png)
 
+
+[__SOURCE](7-system/7-auto-calibration/7-addaxis-autotuning.md)
 # 7.7.7 Additional Axis Autotuning
 
 ❗❗ **Available from version V60.28-00.**
@@ -7884,16 +8380,20 @@ Since noise is difficult to analyze with data, tuning cannot be as precise as wh
 If the tuned gain results in noise, navigate to **System > 3:Robot parameter > 33:Servo parameter > 1:Servo loop gain** and gradually set lower the Kv value (when the Kv value changes, other gain values are automatically recalculated), until the high-frequency noise disappears.
 
 If the noise persists, please contact us for further assistance.
+
+[__SOURCE](8-r-code/README.md)
 # 8. R Codes
 
 When it comes to the operating procedures for frequently used functions, such as modifying the contents of a program or changing the setting status of a controller, you can use them easily by designating specific service codes \(R codes\). 
 
-R codes are configured in the “R+No.” format, which combines R, representing Reset and Rapid, with a number.
+R codes are configured in the "R+No." format, which combines R, representing Reset and Rapid, with a number.
 
 
 
 
 
+
+[__SOURCE](8-r-code/1-use-r-code.md)
 # 8.1 Use of R Codes
 
 The method to execute a specified function using an R code is as follows.
@@ -7970,6 +8470,8 @@ The method to execute a specified function using an R code is as follows.
 </table>
 
 
+
+[__SOURCE](8-r-code/2-r0.md)
 # 8.2 R0 for Resetting the Step Counter
 
 After inputting 0 in the favorites window, touch the \[OK\] button or press the <<b>ENTER</b>> key.
@@ -7990,6 +8492,8 @@ You can initialize the step counter to move to STEP0. You can also perform the f
 R0 code cannot be used during the startup of the robot.
 {% endhint %}
 
+
+[__SOURCE](8-r-code/3-r115.md)
 # 8.3 R115 for Copying a Program
 
 You can copy the JOB program on the mainboard to another program on the mainboard. After inputting the number of the program that you want to copy, input the program number to which you want to copy the copied program.
@@ -8002,7 +8506,7 @@ You can copy the JOB program on the mainboard to another program on the mainboar
 
 * If a program with the same number as the program to which you want to copy the copied program exists already, you should select whether to overwrite the file.
 * 
-  If there is no original file to copy, a notification message \(“No Original File Exists.”\) will appear.
+  If there is no original file to copy, a notification message \("No Original File Exists."\) will appear.
 
 
 
@@ -8012,6 +8516,8 @@ Code R115 cannot be used while the program is running; it must be used when the 
 
 
 
+
+[__SOURCE](8-r-code/4-r117.md)
 # 8.4 R117 for Deleting a Program
 
 You can individually delete the programs in the internal memory.
@@ -8022,8 +8528,8 @@ You can individually delete the programs in the internal memory.
 
     ![](../_assets/tp630/pop-rcode-117_eng.png)
 
-* If there is no file to delete, a notification message \(“No File Exists.”\) will appear. 
-* If you want to delete a protected program, a notification message \(“A Protected File.”\) will appear.
+* If there is no file to delete, a notification message \("No File Exists."\) will appear. 
+* If you want to delete a protected program, a notification message \("A Protected File."\) will appear.
 
 3.	In the deletion confirmation window, touch the \[OK\] button or press the <<b>ENTER</b>> key. Then, the selected program will be deleted.
 
@@ -8031,6 +8537,8 @@ You can individually delete the programs in the internal memory.
 The R117 code cannot be used in automatic mode. It must be used in manual mode.
 {% endhint %}
 
+
+[__SOURCE](8-r-code/5-r210.md)
 # 8.5 R210 for Selecting a Spot Gun Number
 
 You can select the spot guns to use when using multiple spot welding guns \(servo guns or pneumatic guns\).
@@ -8049,9 +8557,11 @@ You can select the spot guns to use when using multiple spot welding guns \(serv
 {% hint style="info" %}
 * R210 code cannot be used during the startup of the robot.
 * The spot gun number can be set only in the spot welding environment \(\[Spot Welding\] item in the \[system &gt; 5: Initialize&gt; 3: Usage Setting\] menu is set as enable\).
-* You can manually open, close, and squeeze the selected spot welding gun. For details on the spot welding function, refer to the “Hi6 Controller Spot Welding Function Manual.”
+* You can manually open, close, and squeeze the selected spot welding gun. For details on the spot welding function, refer to the "Hi6 Controller Spot Welding Function Manual."
 {% endhint %}
 
+
+[__SOURCE](8-r-code/6-r211.md)
 # 8.6 R211 for Setting the Servo Gun Squeeze Force
 
 You can manually set the squeeze force when executing the servo gun squeeze. 
@@ -8074,9 +8584,11 @@ You can manually set the squeeze force when executing the servo gun squeeze.
 * 
   The spot gun number can be set only in the spot welding environment \(\[Spot Welding\] item in the \[system &gt; 5: Initialize&gt; 3: Usage Setting\] menu is set as enable\). 
 
-* For details on the manual setting of the servo gun squeeze force, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
+* For details on the manual setting of the servo gun squeeze force, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
 {% endhint %}
 
+
+[__SOURCE](8-r-code/7-r212.md)
 # 8.7 R212 for Presetting the Servo Gun Moving Electrode Wear Volume
 
 You can manually set the servo gun moving electrode wear volume.
@@ -8094,9 +8606,11 @@ It requires your attention that if the setting value is set larger or smaller th
 {% hint style="info" %}
 * R212 code cannot be used during the startup of the robot.
 * The spot gun number can be set only in the spot welding environment \(\[Spot Welding\] item in the \[system &gt; 5: Initialize&gt; 3: Usage Setting\] menu is set as enable\).
-* For details on the manual setting of the servo gun moving electrode wear volume, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
+* For details on the manual setting of the servo gun moving electrode wear volume, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
 {% endhint %}
 
+
+[__SOURCE](8-r-code/8-r213.md)
 # 8.8 R213 for Presetting the Servo Gun Fixed Electrode Wear Volume
 
 You can manually set the servo gun fixed electrode wear volume. 
@@ -8114,9 +8628,11 @@ It requires your attention that if the setting value is set larger or smaller th
 {% hint style="info" %}
 * R213 code cannot be used during the startup of the robot. 
 * The spot gun number can only be set in the spot welding environment \(\[Spot Welding\] item in the \[system &gt; 5: Initialize&gt; 3: Usage Setting\] menu is set as enable\).
-* For details on the manual setting of the servo gun fixed electrode wear volume, refer to the ““[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
+* For details on the manual setting of the servo gun fixed electrode wear volume, refer to the ""[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
 {% endhint %}
 
+
+[__SOURCE](8-r-code/9-r214.md)
 # 8.9 R214 for Selecting Welding Guns Simultaneously
 
 You can select the numbers of spot welding guns \(servo guns or pneumatic guns\) that are to be used in a welding operation in which multiple spot welding guns will be used at the same time.
@@ -8128,7 +8644,7 @@ You can select the numbers of spot welding guns \(servo guns or pneumatic guns\)
     ![](../_assets/tp630/pop-rcode-214_eng.png)
 
 * The selected spot gun number will be displayed on the \[Gun\] button on the left side of the ${cont_model} teach pendant screen.
-* If you select spot welding guns that are different in type from each other, a notification message \(“The Gun Type of the Currently Selected Gun is Set Incorrectly.”\) will appear.
+* If you select spot welding guns that are different in type from each other, a notification message \("The Gun Type of the Currently Selected Gun is Set Incorrectly."\) will appear.
 
 <Br>
 
@@ -8138,11 +8654,13 @@ You can select the numbers of spot welding guns \(servo guns or pneumatic guns\)
 * You can check the setting status of the spot welding gun in the \[system &gt; 4: Application Parameter &gt; 1: Spot Welding &gt; 1: Gun Number Corresponding Tool Number and Gun Type Setting\] menu.
   * When a gun is selected as a multisync gun, the manual squeeze/open/close operations of the selected gun will be simultaneously in sync with the previously selected guns.
   * When a gun is selected as a multisync gun, if the gun LED is in the ON status, the SPOT command will be recorded in the sync spot format.
-* The selected spot welding gun can be operated manually. For details on the spot welding function, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
+* The selected spot welding gun can be operated manually. For details on the spot welding function, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
 {% endhint %}
 
 
 
+
+[__SOURCE](8-r-code/10-r215.md)
 # 8.10 R215 for Setting the Squeeze Force in the Spot Welding Condition
 
 You can set the squeeze force required for servo gun welding in the welding condition table. You can also set the squeeze force in the \[system &gt; 4: Application Parameter &gt; 1: Spot Welding &gt; 4: Welding Data \(Condition, Sequence\) &gt; 2: Welding Condition\] menu.
@@ -8159,6 +8677,8 @@ You can set the squeeze force required for servo gun welding in the welding cond
 
     ![](../_assets/tp630/pop-rcode-215-2_eng.png)
 
+
+[__SOURCE](8-r-code/11-r220.md)
 # 8.11 R220 for Setting the Panel Thickness \(Sv\)
 
 You can manually set the panel thickness to record the servo gun spot welding step.
@@ -8174,9 +8694,11 @@ If you execute the one-touch recording in which the MOVE and SPOT statements are
 
 
 {% hint style="info" %}
-For details on the manual setting of the panel thickness, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
+For details on the manual setting of the panel thickness, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
 {% endhint %}
 
+
+[__SOURCE](8-r-code/12-r314.md)
 # 8.12 R314 Engineer Mode
 
 In the R Code window, type 314 and then touch the `[OK]` button or press the `[ENTER]` key.
@@ -8205,6 +8727,8 @@ The following functions can be set up in engineer mode.
 
 * Be aware that incorrect settings in engineer mode can cause serious problems with the robot system. {% endhint %}
 
+
+[__SOURCE](8-r-code/13-r358.md)
 # 8.13 R358 for Changing the Servo Tool
 
 You can manually connect and disconnect the servo tool in the servo tool change system. 
@@ -8239,9 +8763,11 @@ The method to change the servo tool using the R358 code is as follows.
 * 
   The servo tool change setting can be performed only when the motor is turned on.
 
-* For details on the servo tool change, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
+* For details on the servo tool change, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
 {% endhint %}
 
+
+[__SOURCE](8-r-code/14-r359.md)
 # 8.14 R359 for Servo Tool Encoder Power On Relay
 
 If the servo gun is applied in the servo tool change system, you need to execute this function to reset the encoder of the servo tool axis when installing the servo tool for the first time.
@@ -8260,13 +8786,15 @@ If the servo gun is applied in the servo tool change system, you need to execute
   To disable the forced power supply to the servo gun encoder, you should turn off the power of the controller and then turn it back on. Therefore, when the encoder reset is completed, turn off the power of the controller and turn it back on, and then progress the manual connection.
 
 * The servo tool encoder power setting function is a function for engineers, so it is not supported for general users. Please contact our engineer for more information on this feature.
-* For details on the servo tool encoder power setting, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
+* For details on the servo tool encoder power setting, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
 {% endhint %}
 
 {% hint style="warning" %}
 Never mechanically connect or disconnect the servo gun while the encoder power is forcibly supplied.
 {% endhint %}
 
+
+[__SOURCE](8-r-code/15-r360.md)
 # 8.15 R360 Set CONTPATH manually
 
 It manually changes the CONTPATH (continuous path) mode. The input ranges are 0, 1, and 2, and the description for each number is as follows. (Same as [contpath](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/5-moving-robot/6-contpath) statement.)
@@ -8336,6 +8864,8 @@ Here's how to operate it:
 3. The changed mode can be checked by the `CP0`, `CP1`, or `CP2` flag in the title-bar.
 
 ![](../_assets/tp630/flag-cp.png)
+
+[__SOURCE](8-r-code/16-r361.md)
 # 8.16 R361 for Setting the Jog Inching Level
 
 R361 jog inching level setting information is as follows.
@@ -8362,6 +8892,8 @@ The method to change the inching distance of the currently set level is as follo
 * Jog inching is possible only when the jog inching key is activated \(LED On\).
 {% endhint %}
 
+
+[__SOURCE](8-r-code/17-r321.md)
 # 8.17 R321 Axis sync. jog setting
 
 This is a function to group arbitrary axes into one synchronous group and jog them with a single jog key. 
@@ -8380,12 +8912,16 @@ How to use the axis synchronous jog function is as follows.
 * The Pose value in the Cartesian coordinate system of the synchronous jog pair does not match the Pose situation of the actual robot (simple jog function).
 {% endhint %}
 
+
+[__SOURCE](9-property/README.md)
 # 9. Property
 
 When teaching a job program for a welding operation, you should set the arc welding-specific details, such as weaving, retry/restart, and characteristics of the welder, in addition to welding conditions such as voltage and current. Moreover, there are cases in which you should check the position of a step or an auxiliary point.
 
 
 
+
+[__SOURCE](9-property/1-use-property.md)
 # 9.1 Use of the property Function
 
 If you use the \[property\] button the L button bar of the ${cont_model} teach pendant screen, you can quickly and easily set the conditions and check the position simply by a single button operation.
@@ -8504,10 +9040,14 @@ The following shows the method to check and change the condition file and detail
 
 
 
+
+[__SOURCE](9-property/2-move-step-position/README.md)
 # 9.2 Move-Step Position
 
 You can check or modify the position of the step in the currently selected line in the JOB program.
 
+
+[__SOURCE](9-property/2-move-step-position/1-hidden-pose-move.md)
 # 9.2.1 Hidden Pose Move Statement
 
 You can check or modify the position of the current step in the hidden pose move statement \(a step recorded by the \[REC\] key, that is, a move statement that does not include a pose variable\).
@@ -8583,6 +9123,8 @@ You can check or modify the position of the current step in the hidden pose move
   For the designation according to the robot configuration, refer to "[2.3.2.2 Base and Robot Recording Coordinates](../../2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)".
 {% endhint %}
 
+
+[__SOURCE](9-property/2-move-step-position/2-pose-rec-move.md)
 # 9.2.2 Pose Recording Move Statement and Pose Assign Statement
 
 You can edit the pose variable value in the move statement, including the pose variable or the pose variable assign statement.
@@ -8665,6 +9207,8 @@ You can edit the pose variable value in the move statement, including the pose v
 
 
 
+
+[__SOURCE](9-property/3-spot-welding-func.md)
 # 9.3 Spot Welding Function
 
 When writing the SPOT command while writing the program, if you place the cursor on the spot welding function position in manual mode and touch the \[property\] button, then the \[1: Spot Welding\] menu will be highlighted in the application parameter setting menu screen. Using the spot welding function, you can quickly modify the contents of the welding conditions and also of the welding sequence when performing spot welding.
@@ -8674,19 +9218,27 @@ When writing the SPOT command while writing the program, if you place the cursor
 {% hint style="info" %}
 * You can use the spot welding function by touching the \[system\] button &gt; \[4: Application Parameter &gt; 1: Spot Welding\].
 * 
-  For details on the spot welding function, refer to the “[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)”.
+  For details on the spot welding function, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
 {% endhint %}
 
+
+[__SOURCE](10-robot-language.md)
 # 10. Robot Language
 
 For details on the robot language, refer to the "[${cont_model} Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/README)"
+
+[__SOURCE](11-etc/README.md)
 # 11. Etc.
 
 This chapter explains additional information that was not covered earlier.
+
+[__SOURCE](11-etc/1-controller-files/README.md)
 # 11.1 Major Folders and Files in the Robot Controller
 
 Various configuration, teaching, and log files are stored inside the robot controller.
 In this section, we describe the folder structure and the roles of the individual files.
+
+[__SOURCE](11-etc/1-controller-files/1-caution-ftp.md)
 # 11.1.1 Cautions When Loading to the project/ Folder via FTP
 
 {% hint style="warning" %}
@@ -8731,6 +9283,8 @@ To apply the updated files to memory, use the method below:
 Do not reboot the robot controller to apply updated global variable files.
 When the controller is powered off, the current global variable values in memory are saved back to files, which will overwrite the files you just updated.
 {% endhint %}
+
+[__SOURCE](11-etc/1-controller-files/2-project.md)
 # 11.1.2 project/
 
 This is the most important folder where the robot's configuration, teaching data, and state are stored.
@@ -8859,7 +9413,9 @@ Folder storing variables and aliases.
 * vars.json
 
   Global variable file
-  # 11.1.3 log/
+  
+[__SOURCE](11-etc/1-controller-files/3-log.md)
+# 11.1.3 log/
 
 
 This folder stores various log files. In the file names below, ? represents a number; when the maximum number is reached, the files are overwritten in a circular manner starting from 0, or it may represent a timestamp in the format YYYYMMDD_HHMMSS.
@@ -8909,7 +9465,7 @@ The remaining .txt files can be opened with any standard text editor.
 
 * sclog_base_????????_??????.bin
 
-  Scope log file storing time-series data such as each axis’s position, speed, and acceleration.  
+  Scope log file storing time-series data such as each axis's position, speed, and acceleration.  
   ????????_?????? represents the timestamp in YYYYMMDD_HHMMSS format.  
   Generated when robot shock is detected or specific errors occur. Can be viewed using the Scope Log feature in HRWorkbench.
 
@@ -8920,14 +9476,16 @@ The remaining .txt files can be opened with any standard text editor.
 
 * shutdownlog_?.txt
 
-  Log file storing the controller’s power-off history.  
+  Log file storing the controller's power-off history.  
   Used to analyze whether power-failure backup operations were performed correctly. A new file is created in a circular manner each time the controller powers off.
 
 * updatesvclog_?.txt
 
   Log file storing the controller software version upgrade history.
   Used to analyze whether the version upgrade was performed successfully.
-  # 11.1.4 backup/
+  
+[__SOURCE](11-etc/1-controller-files/4-backup.md)
+# 11.1.4 backup/
 
 This folder stores MAIN-side backups of the controller.  
 Folder names are generated in the format `bYYYYMMDD_HHMM`, containing subfolders: project/, log/, cifX/, EC_LOG/, and EDR_LOG/.
@@ -8943,6 +9501,8 @@ Backups are automatically created when specific errors occur.
 
 Folder storing scheduled backups.  
 Backups are automatically created at the scheduled times.
+
+[__SOURCE](11-etc/1-controller-files/5-etc.md)
 # 11.1.5 Other Folders
 
 ## apps/
@@ -8982,16 +9542,22 @@ Folder storing syntax files for the robot language HRScript.
 * svars_?.json
   
   System variable syntax files by category
+
+[__SOURCE](appendices/README.md)
 # Appendices
 
   
 
 
+
+[__SOURCE](appendices/rules-occupational-safety.md)
 # Rules on Occupational Safety and Health Standards, and Notice for Safety Inspection
 
 The industrial robot should be installed in consideration of the inspection standards both of the Rules on Occupational Safety and Health Standards and of the Notice for Safety Inspection \(if subject to inspection\).
 
 "[Rules on Occupational Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/english/README)"
+
+[__SOURCE](quality-assurance.md)
 # Quality Assurance
 
 "[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/english/README)"

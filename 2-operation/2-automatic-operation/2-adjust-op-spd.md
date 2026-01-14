@@ -1,6 +1,6 @@
 ﻿# 2.2.2 Operation Speed Adjustment
 
-In automatic operation, the \[Speed Adjustment\] button on the left side of the ${cont_model} teach pendant screen will display the robot's operation speed \(%\) while the program is being played back. The displayed operation speed is the ratio of the robot’s moving speed to the speed recorded in the step.
+In automatic operation, the \[Speed Adjustment\] button on the left side of the ${cont_model} teach pendant screen will display the robot's operation speed \(%\) while the program is being played back. The displayed operation speed is the ratio of the robot's moving speed to the speed recorded in the step.
 
 ![](../../_assets/tp630/sbar-spd-auto_eng.png)
 
