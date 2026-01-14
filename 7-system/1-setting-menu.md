@@ -1,6 +1,6 @@
 ﻿# 7.1 Use of the Menus in 'system'
 
-1.	In manual or automatic mode, touch the \[system] button on the function button bar. Then, the program's settings menus will be displayed.
+1.	In manual or automatic mode, touch the `[system]` button on the function button bar. Then, the program's settings menus will be displayed.
 
     ![](../_assets/tp630/sbt-system_eng.png)
 
@@ -8,19 +8,19 @@
 
     ![](../_assets/tp630/sbt-system-menu_eng.png)
 
-* \[1: User Environment\]: You can check and set various user conditions.
+* `[1: User Environment]`: You can check and set various user conditions.
 * 
-  \[2: Control Parameter\]: You can set various conditions of the controller and the input/output signals, communication information, robot ready OK signal condition, home position signal, and coordinate system.
+  `[2: Control Parameter]`: You can set various conditions of the controller and the input/output signals, communication information, robot ready OK signal condition, home position signal, and coordinate system.
 
 * 
-  \[3: Robot Parameter\]: You can set various data related to robot operation and information such as the origin of each axis and operation range.
+  `[3: Robot Parameter]`: You can set various data related to robot operation and information such as the origin of each axis and operation range.
 
-* \[4: Application Parameter\]: You can check and set various parameters for using the robot's application functions.
+* `[4: Application Parameter]`: You can check and set various parameters for using the robot's application functions.
 * 
-  \[5: Initialize\]: You can perform the initial setting of the robot system. You can also initialize the serial encoder.
+  `[5: Initialize]`: You can perform the initial setting of the robot system. You can also initialize the serial encoder.
 
 * 
-  \[6: Auto Calibration\]: You can calibrate the robot's axis origin, tool length, load mass, and base axis direction, etc. using the programs taught to use the robot correctly and also by using the movement that will automatically operate.
+  `[6: Auto Calibration]`: You can calibrate the robot's axis origin, tool length, load mass, and base axis direction, etc. using the programs taught to use the robot correctly and also by using the movement that will automatically operate.
 
 
 

@@ -2,7 +2,7 @@
 
 You can set the detailed conditions of the accuracy level, which refers to the accuracy of passing through the step when the robot progresses the target step.
 
-1.	Touch the \[3: Robot Parameter &gt; 6: Accuracy\] menu.
+1.	Touch the `[3: Robot Parameter  - 6: Accuracy]` menu.
 
 2.	Set the tooltip position \(TCP\) and posture for each accuracy level.
 

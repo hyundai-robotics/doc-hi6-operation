@@ -1,6 +1,6 @@
 ﻿# 7.4.1    Tool Data
 
-You can set the distance and angle of the TCP based on the robot's R1-axis flange and register the tool's weight, center of gravity, and inertia. You can perform registration manually using the \[1: Tool data\] menu.
+You can set the distance and angle of the TCP based on the robot's R1-axis flange and register the tool's weight, center of gravity, and inertia. You can perform registration manually using the `[1: Tool data]` menu.
 
 In another way, the tool length can be set using the automatic calibration function, and the tool's weight, center of gravity, and inertia can be registered using the load estimation function.
 

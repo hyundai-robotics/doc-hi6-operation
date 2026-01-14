@@ -10,7 +10,7 @@ It refers to all operations of stopping the robot and turning off the power butt
 
 #### Vertical Articulated Robot Controller
 
-1.	Press the &lt;Stop&gt; key on the teach pendant. Then, the robot in operation will stop, and the stop lamp will be turned on.
+1.	Press the `[Stop]` key on the teach pendant. Then, the robot in operation will stop, and the stop lamp will be turned on.
 
 2.	Press the emergency stop switch on the teach pendant. Then, the servo power to the robot motor will be cut off, and then the motor will be turned off.
 
@@ -24,7 +24,7 @@ It refers to all operations of stopping the robot and turning off the power butt
 
 #### Collaborative Robot Controller
 
-1.	Press the &lt;Stop&gt; key on the teach pendant. The robot in operation will stop, and the stop lamp will be turned on.
+1.	Press the `[Stop]` key on the teach pendant. The robot in operation will stop, and the stop lamp will be turned on.
 
 2.	Press the emergency stop switch on the controller. The servo power to the robot motor will be cut off, and then the motor will be turned off.
 

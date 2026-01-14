@@ -17,7 +17,7 @@ Select `Pose` in the Type list. If you enter 5,200 for the number of elements an
 ![](../../../_assets/tp630/panel-gvar/gv-new-arr3.png)
 
 {% hint style="warning" %}
-\[Warning\] Be aware that defining an array that is too large may take longer to save or load and may fail to save automatically in the event of a power failure.
+`[Warning]` Be aware that defining an array that is too large may take longer to save or load and may fail to save automatically in the event of a power failure.
 {% endhint %}
 
 

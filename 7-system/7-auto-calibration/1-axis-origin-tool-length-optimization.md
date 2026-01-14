@@ -21,7 +21,7 @@ When the axis origin and tool length optimization function is used, the encoder 
 
 The method to use the axis origin and tool length optimization function is as follows.
 
-1.	Touch the **\[6: Auto Calibration &gt; 1: Optimize Axis Origin and Tool Length\]** menu.
+1.	Touch the `6: Auto Calibration - 1: Optimize Axis Origin and Tool Length` menu.
 
 2.	Select an optimization target and set detailed options.
 
@@ -75,8 +75,8 @@ The method to use the axis origin and tool length optimization function is as fo
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]</b>: You can save the changes.</li>
-          <li><b>[Execute]</b>: You can execute optimization based on the set information.
+          <li>`[OK]`: You can save the changes.</li>
+          <li>`[Execute]`: You can execute optimization based on the set information.
             The optimization result will appear in [Max Step Position Error].</li>
         </ul>
       </td>
@@ -90,8 +90,8 @@ It requires your attention that if you calibrate both the robot origin and tool 
 
 {% hint style="info" %}
 * You can also set the origin of each axis and tool length of the robot in the settings menu.
-  * Tool Length: **\[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]**
-  * Origin of each axis: **\[system &gt; 3: Robot Parameter &gt; 2: Axis Origin\]**
-* If you calibrate the tool angle using the angle calibration function \(**\[system &gt; 3: Robot Parameter &gt; 1: Tool Data\]**\), you should execute the origin axis and tool length optimization function first, and then execute the angle calibration. In this way, the tool data can be set correctly.
+  * Tool Length: `[system] - 3: Robot Parameter - 1: Tool Data`.
+  * Origin of each axis: `[system] - 3: Robot Parameter - 2: Axis Origin`
+* If you calibrate the tool angle using the angle calibration function \(`[system] - 3: Robot Parameter - 1: Tool Data`\), you should execute the origin axis and tool length optimization function first, and then execute the angle calibration. In this way, the tool data can be set correctly.
 {% endhint %}
 

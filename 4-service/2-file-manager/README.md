@@ -3,7 +3,7 @@
 
 You can manage files in the main board's internal memory, teach pendant, or removable storage device.
 
-1.	Touch the \[5: File Manager\] menu. Then, a list of folders of each device and a list of files saved in the selected folder will appear.
+1.	Touch the `[5: File Manager]` menu. Then, a list of folders of each device and a list of files saved in the selected folder will appear.
 
 2.	Check and manage the folder structure and saved files by device.
 
@@ -35,7 +35,7 @@ You can manage files in the main board's internal memory, teach pendant, or remo
           <li>You can move the cursor in the folder list by turning the jog dial on
             the teach pendant.</li>
           <li>If you select <img src="../../_assets/icon-gt.png" alt/>] or [
-            <img src="../../_assets/icon-wedge.png" alt/>] in the folder list and press the <b><<b>ENTER</b>></b> key, you can show
+            <img src="../../_assets/icon-wedge.png" alt/>] in the folder list and press the <b>`[ENTER]`</b> key, you can show
             or hide subfolders.</li>
           <li>When you select a folder, you can check the list of files saved in the
             folder.</li>
@@ -61,7 +61,7 @@ You can manage files in the main board's internal memory, teach pendant, or remo
 
 {% hint style="info" %}
 * It is the same function as "R17 File Management" of R codes.
-* When a removable storage device is connected to the teach pendant, the \[USB\] icon \(![](../../_assets/icon-usb2.png)\) will appear on the status bar of the ${cont_model} teach pendant screen.
+* When a removable storage device is connected to the teach pendant, the `[USB]` icon \(![](../../_assets/icon-usb2.png)\) will appear on the status bar of the ${cont_model} teach pendant screen.
 {% endhint %}
 
 {% hint style="warning" %}

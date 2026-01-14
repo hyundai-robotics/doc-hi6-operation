@@ -1,6 +1,6 @@
 ﻿# 4.4.1 System Version
 
-1.	Touch the \[7: System Diagnosis &gt; 1: System version\] menu. Then, the system environment setting window will appear.
+1.	Touch the `[7: System Diagnosis  - 1: System version]` menu. Then, the system environment setting window will appear.
 
 2.	Check and manage the system environment \(software version\) information of the robot and controller.
 

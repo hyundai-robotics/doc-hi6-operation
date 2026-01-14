@@ -2,7 +2,7 @@
 
 You can register the mechanical origin position of each axis.
 
-1.	Touch the \[3: Robot Parameter &gt; 2: Axis Origin\] menu.
+1.	Touch the `[3: Robot Parameter  - 2: Axis Origin]` menu.
 
 2.	Register the mechanical origin position of each axis.
 

@@ -23,8 +23,8 @@ You can shift the existing program \(Program 1\) to a new program \(Program 2\) 
 
 This function is not allowed during a robot operation. How to use the coordinate shifting is as follows.
 
-1.	Select [6: Program conversion > 5: Coordinate transformation] menu. A setting window for the coordinate shifting will appear.
-2.	After setting up, press [**OK**] button.
+1.	Select [6: Program conversion - 5: Coordinate transformation] menu. A setting window for the coordinate shifting will appear.
+2.	After setting up, press `[OK]` button.
  
     ![](../../_assets/tp630/prg-coordinate-modi_eng.png)
 

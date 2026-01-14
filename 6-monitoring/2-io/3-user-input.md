@@ -1,6 +1,6 @@
 ﻿# 6.2.3 Public Input
 
-Touch \[public Input\] in the panel selection window. Then, the public input signal window will appear. 
+Touch `[public Input]` in the panel selection window. Then, the public input signal window will appear. 
 
 You can check the status of public input signals that are inputted through the CNIN connector of the I/O board in the controller.
 

@@ -1,7 +1,7 @@
 ﻿# 11.1.1 Cautions When Loading to the project/ Folder via FTP
 
 {% hint style="warning" %}
-\[Warning\] The TP file manager or FTP service allows you to modify folders and files.
+`[Warning]` The TP file manager or FTP service allows you to modify folders and files.
 However, careless modification or deletion of files may cause serious issues such as boot failure, malfunction, or data loss.
 Do not modify these files unless you fully understand their mechanism or are working under the guidance of a qualified expert.
 {% endhint %}

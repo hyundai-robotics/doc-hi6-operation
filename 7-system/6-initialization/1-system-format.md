@@ -8,10 +8,10 @@
 
     ![](../../_assets/tp630/TP-hw-switch-manual.png)
 
-2.	Touch the \[system\] button &gt; \[5: Initialize &gt; 1: System format\] menu.
+2.	Touch the `[system]` button  - `[5: Initialize  - 1: System format]` menu.
 
 
-3.	After checking the saved data, touch the \[Initialize\] button. All data and programs including control parameter files and machine parameter files will be deleted, and the initial setting values will be restored.
+3.	After checking the saved data, touch the `[Initialize]` button. All data and programs including control parameter files and machine parameter files will be deleted, and the initial setting values will be restored.
 
     ![](../../_assets/tp630/pop-system-init_eng.png)
 

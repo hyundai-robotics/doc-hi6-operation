@@ -10,11 +10,11 @@ To create the required trajectory, the robot performs linear \(L\) and circular 
 
 When the stationary tool interpolation function is used, even if the posture of the workpiece held by the robot is changed, the moving path of the stationary tool on the workpiece can maintain the linear lines and arcs. As such, the stationary tool interpolation function must always be used for an operation for which the moving path of the external tool is important.
 
-To use the stationary tool interpolation function, you must set the stationary tool coordinate system. 
+To use the stationary tool interpolation function, you must set the stationary tool coordinate system.
 
 The method to set the stationary tool coordinate system is as follows.
 
-1.	Touch the \[2: Control Parameter &gt; 6: Coordinate Registration 2: Stationary Tool Coordinate System\] menu.
+1.	Touch the `[2: Control Parameter  - 6: Coordinate Registration 2: Stationary Tool Coordinate System]` menu.
 
 2.	Select the desired tab and register the position of the stationary tool coordinate system. 
 
@@ -56,7 +56,7 @@ The method to set the stationary tool coordinate system is as follows.
 
 ### Setting the Current TCP Position as the Position of the Stationary Tool Coordinate System
 
-After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the \`Current robot pose**\] button. Then, the current TCP position will be registered.
+After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the `[Current robot pose]` button. Then, the current TCP position will be registered.
 
 ![](../../../_assets/tp630/stationary_crd_autoset_eng.png)
 
@@ -64,7 +64,7 @@ After accurately finding the TCP based on the robot base coordinate system, you 
 
 ### Writing a Program Using the Stationary Tool Coordinate System
 
-To perform the recording for the stationary tool interpolation step, you should record the step as SL or SC. Using the \[Recording Condition\] button on the upper left of the ${cont_model} teach pendant screen, you can change the recording condition to SL \(stationary tool linear interpolation\) or SC \(stationary tool circular interpolation\).
+To perform the recording for the stationary tool interpolation step, you should record the step as SL or SC. Using the `[Recording Condition]` button on the upper left of the ${cont_model} teach pendant screen, you can change the recording condition to SL \(stationary tool linear interpolation\) or SC \(stationary tool circular interpolation\).
 
 For example, if you register and use the stationary tool coordinate system No. 1, you can create a program as follows.
 

@@ -1,8 +1,8 @@
 ﻿# 7.6.2 Robot Type Selection
 
-1.	Touch the \[5: Initialize &gt; 2: Robot Type Selection\] menu. Or touch the \[Mechanism\] button at the top right of the ${cont_model} teach pendant screen.
+1.	Touch the `[5: Initialize  - 2: Robot Type Selection]` menu. Or touch the `[Mechanism]` button at the top right of the ${cont_model} teach pendant screen.
 
-2.	Select a robot in the robot model selection window, and then touch the \[OK\] button.
+2.	Select a robot in the robot model selection window, and then touch the `[OK]` button.
 
     ![](../../_assets/tp630/init-robot-select_eng.png)
 
@@ -25,7 +25,7 @@
 
 {% endhint %}
 
-3.	After touching the \[Favorites\] button at the bottom right of the ${cont_model} teach pendant screen, input 314 in the input area of the favorites window, and then touch the \[OK\] button.
+3.	After touching the `[Favorites]` button at the bottom right of the ${cont_model} teach pendant screen, input 314 in the input area of the favorites window, and then touch the `[OK]` button.
 
     ![](../../_assets/tp630/pop-rcode-314_eng.png)
 
@@ -34,7 +34,7 @@
 * Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
 {% endhint %}
 
-4.	Touch the \[system\] button &gt; \[3: Robot Parameter &gt; 4: Encoder Offset\] menu.
+4.	Touch the `[system]` button  - `[3: Robot Parameter  - 4: Encoder Offset]` menu.
 
 
 5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.
@@ -55,7 +55,7 @@
 * In the encoder offset setting item, the current encoder position will be set to 0X400000 \(hexadecimal\).
 * When a motor is replaced because of failure, if the encoder offset setting is performed at the same location, the recorded program can be used identically.
 
-8.	Press the &lt;Program&gt; key on the teach pendant, and select the program 9999 and then record one step. You can move the robot to the reference position easily. 
+8.	Press the `[Program]` key on the teach pendant, and select the program 9999 and then record one step. You can move the robot to the reference position easily. 
 
 {% hint style="warning" %}
 * To initialize the system, contact the customer support team and ask an expert.

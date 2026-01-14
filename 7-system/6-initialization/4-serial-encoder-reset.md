@@ -2,7 +2,7 @@
 
 The serial encoder stores the encoder rotation speed information in the internal memory. The encoder rotation speed can be cleared to zero by resolving the motor error state or by resetting the zero point of the encoder.
 
-1.	Touch the \[5: Initialize &gt; 4: Serial Encoder Reset\] menu.
+1.	Touch the `[5: Initialize  - 4: Serial Encoder Reset]` menu.
 
 2.	Set the encoder resetting mode for each axis and check the status, and then execute the resetting.
 

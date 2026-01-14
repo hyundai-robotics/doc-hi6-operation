@@ -2,13 +2,13 @@
 
 The line number can be set to any number between 1 and 9999.
 
-1.	In the JOB program window, select the address area by pressing the &lt;←/→&gt; key on the teach pendant. Then, the address area will be selected.
+1.	In the JOB program window, select the address area by pressing the `[←/→]` key on the teach pendant. Then, the address area will be selected.
 
-* If the cursor is in the statement cursor status while in the statement area, press the &lt;←&gt; key to move the cursor to the address area.
+* If the cursor is in the statement cursor status while in the statement area, press the `[←]` key to move the cursor to the address area.
 
     ![](../../../_assets/tp630/pane-prog-linenum.png)
 
-2.	In the address area, select a line by pressing the &lt;↓/↑&gt; key and then edit the line number.
+2.	In the address area, select a line by pressing the `[↓/↑]` key and then edit the line number.
 
 * To input a line number, input the line number in the input area using the number keys.
 
@@ -16,10 +16,10 @@ The line number can be set to any number between 1 and 9999.
 
     ![](../../../_assets/tp630/pane-prog-linenum1.png)
 
-* To delete a line number, press the &lt;BS&gt; key. Then, the address value of the line number will be removed from the input area.
+* To delete a line number, press the `[BS]` key. Then, the address value of the line number will be removed from the input area.
 
 
-3.	Press the <<b>ENTER</b>> key to complete the editing. The contents of the change will be saved in the JOB program.
+3.	Press the `[ENTER]` key to complete the editing. The contents of the change will be saved in the JOB program.
 
     ![](../../../_assets/tp630/pane-prog-linenum2.png)
 

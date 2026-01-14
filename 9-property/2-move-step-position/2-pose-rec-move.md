@@ -2,7 +2,7 @@
 
 You can edit the pose variable value in the move statement, including the pose variable or the pose variable assign statement.
 
-1.	Touch the \[property\] button in the move command \(move statement\) recorded as a pose variable. Then, the pose variable setting screen will appear.
+1.	Touch the `[property]` button in the move command \(move statement\) recorded as a pose variable. Then, the pose variable setting screen will appear.
 
 2.	Check and modify the current pose variable.
 
@@ -31,7 +31,7 @@ You can edit the pose variable value in the move statement, including the pose v
           <li><b>Coordinate value</b>: The coordinate value of the current pose variable
             <ul>
               <li>Select an item using the cursor key.</li>
-              <li>After inputting a value in the desired item, press the <b><<b>ENTER</b>></b> key
+              <li>After inputting a value in the desired item, press the <b>`[ENTER]`</b> key
                 to reflect the change.</li>
               <li>If the coordinate system format is set as an encoder, the coordinate value
                 will not be changed.</li>
@@ -57,7 +57,7 @@ You can edit the pose variable value in the move statement, including the pose v
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]</b>: You can save the changes.</li>
+          <li>`[OK]`: You can save the changes.</li>
           <li><b>[Previous]/[Next]</b>: You can display the information of the previous or
             next step.</li>
           <li><b>[Original Value]</b>: You can display the original hidden pose value of the
@@ -72,11 +72,6 @@ You can edit the pose variable value in the move statement, including the pose v
   </tbody>
 </table>
 
-3.	Touch the \[**OK**\] button. Then, the change will be saved in the job program, and the operation will end.
+3.	Touch the `[OK]` button. Then, the change will be saved in the job program, and the operation will end.
 
-* If you end the operation by pressing the <**ESC**> key, the change will not be saved. 
-
-
-
-
-
+* If you end the operation by pressing the `[ESC]` key, the change will not be saved. 

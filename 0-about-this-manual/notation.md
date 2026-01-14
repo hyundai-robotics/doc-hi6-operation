@@ -10,24 +10,24 @@ Figures are used to help you understand how to operate the product and illustrat
 
 ## GUI \(Graphical User Interface\)
 
-On the GUI, menu names and button names are enclosed in square brackets \(\[ \]\) and displayed in bold. When you need to select multiple menus in order, mark them with the &gt; symbol between the names.
+In the GUI, menu names and button names are enclosed in square brackets and displayed with a light background color.
+When multiple menus must be selected in sequence, their names are separated by a hyphen (-).
 
-* Menu with a name: Touch the \[service\] button on the initial screen in manual or automatic mode.
-* Multiple menus: Touch the \[system &gt; 5: Initialize &gt; 7: Unit Setting\] menu on the initial screen in manual mode.
-
+* Single menu: On the initial screen in Manual or Automatic mode, touch the `[F1: Service]`W button.
+* Multiple menus: On the initial screen in Manual mode, touch `[F2: System] - 5: Initialization - 7: Unit Settings`W.
 
 
 ## Notation Method for Operation Keys
 
-Keys that are to be pressed on the operation part of the teach pendant to operate functions will be enclosed in single arrow brackets \(&lt; &gt;\) and displayed in bold.
+Keys that are to be pressed on the operation part of the teach pendant to operate functions will be enclosed in square brackets and displayed with a light background color.
 
-* If you press the &lt;Start&gt; key, the automatic operation of the program created in the robot will start.
+* If you press the `[Start]` key, the automatic operation of the program created in the robot will start.
 
 
 
 ## Cross Reference 
 
-It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks (" ") in bold as follows.
+It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks (" ") as follows.
 
 * For details on how to change the date and time information, refer to "[4.5 Setting of Date and Time.](../4-service/5-date-time-setting.md)".
 

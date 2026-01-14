@@ -2,7 +2,7 @@
 
 The position and posture of the robot can be displayed differently depending on the coordinate system. If there is no travel axis, the base coordinate and the robot coordinate will generally be the same. If the travel axis is defined, the position and posture of the robot tool will be displayed differently depending on whether it is the base coordinate and the robot coordinate.
 
-In manual mode, if the \[1: Pose Recording Form\] option in the \[system&gt; 1: User Environment\] menu is set to base or robot, touch the \[property\] button in the move statement. You can check the position and posture of the robot tool in the attributes window.
+In manual mode, if the `[1: Pose Recording Form]` option in the `[system - 1: User Environment]` menu is set to base or robot, touch the `[property]` button in the move statement. You can check the position and posture of the robot tool in the attributes window.
 
 {% hint style="info" %}
 If you would like to change the pose recording form, please contact our customer support team to ask an expert or an engineer.
@@ -24,18 +24,16 @@ Collaborative robots can be restricted by the soft limit because of their mechan
 
 ![Figure 23 Flip \(Left\) / Non-flip \(Right\) Posture](../../../_assets/image_75.png)
 
-* S \(\|S\|&gt;=180\): The absolute value of the S-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
-* 
-  B \(\|B\|&gt;=180\): The absolute value of the B-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
+* `S (|S|>=180)`: The absolute value of the S-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
+* `B (|B|>=180)`: The absolute value of the B-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
 
-* 
-  R2 \(\|R2\|&gt;=180\): The absolute value of the R2-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
+* `R2 (|R2|>=180)`: The absolute value of the R2-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
 
-* R1 \(\|R1\|&gt;=180\): The absolute value of the R1-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
+* `R1 (|R1|>=180)`: The absolute value of the R1-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
 
 
 
-The coordinate system will be saved as \[Pose Variable\].crd \(Example: po32.crd\), and one of the following strings will be designated. If it is an empty string, the basic value will be recognized as joint.
+The coordinate system will be saved as `[Pose Variable]`.crd \(Example: po32.crd\), and one of the following strings will be designated. If it is an empty string, the basic value will be recognized as joint.
 
 <table>
   <thead>

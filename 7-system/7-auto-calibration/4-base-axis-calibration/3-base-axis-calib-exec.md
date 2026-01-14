@@ -1,10 +1,10 @@
 ﻿# 7.7.4.3 Base Axis Calibration Execution
 
-1.	Touch the \[6: Auto Calibration &gt; 6: Base Axis Calibration\] menu.
+1.	Touch the `[6: Auto Calibration  - 6: Base Axis Calibration]` menu.
 
-2.	After inputting the program number for the base axis calibration, touch the \[Auto Setting\] button.
+2.	After inputting the program number for the base axis calibration, touch the `[Auto Setting]` button.
 
     ![](../../../_assets/tp630/system-calib-base_eng.png)
 
-3.	After checking the installation direction vector value of the base axis, touch the \[OK\] button.
+3.	After checking the installation direction vector value of the base axis, touch the `[OK]` button.
 

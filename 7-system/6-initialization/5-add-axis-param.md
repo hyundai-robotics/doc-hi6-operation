@@ -4,7 +4,7 @@ Additional axes that can be used in addition to the robot itself include the rob
 
 The method to set parameters such as the specification and configuration of the additional axes that are being used is as follows.
 
-1.	Touch the **\[5: Initialize &gt; 5: Additional Axis Parameter Setting\]** menu.
+1.	Touch the `5: Initialize - 5: Additional Axis Parameter Setting` menu.
 
 2.	Set the parameters such as the specification and configuration of the additional axes.
 
@@ -86,7 +86,7 @@ The method to set parameters such as the specification and configuration of the 
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]</b>: You can save the changes.</li>
+          <li>`[OK]`: You can save the changes.</li>
           <li><b>[+]/[-]</b>: You can add a new additional axis or delete an additional axis.</li>
         </ul>
       </td>

@@ -4,7 +4,7 @@ A log of events such as errors, warnings, notifications, start/stop actions, ope
 You can check the type, message, occurrence time, program/step/function number at the time of occurrence, and related auxiliary information for each log. This information can be used as a clue to analyze the cause of the issue and to respond it.
 
 
-Touch the \[Log\] button on the function button bar. Then, the log window will appear. 
+Touch the `[Log]` button on the function button bar. Then, the log window will appear. 
 
 ![](../_assets/tp630/log/11_fb_log.PNG)
 

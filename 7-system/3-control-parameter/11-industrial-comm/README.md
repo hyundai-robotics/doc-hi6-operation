@@ -2,7 +2,7 @@
 
 You can perform the setting of the industrial communication \(fieldbus\) to use it.
 
-1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the "Hi6 Controller Maintenance Manual".
+1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the "${cont_model} Controller Maintenance Manual".
 
 2.	Set the industrial communication firmware by referring to "[7.3.11.1 Firmware Setting](1-firmware-set.md)".
 

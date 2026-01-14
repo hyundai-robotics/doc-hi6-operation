@@ -1,6 +1,6 @@
 ﻿# 3.2.2.1 General Statement Inputting
 
-1.	In manual mode, touch the \[cmd.input\] button on right bottom of the initial screen. Then, the command input window will appear.
+1.	In manual mode, touch the `[cmd.input]` button on right bottom of the initial screen. Then, the command input window will appear.
 
     ![](../../../_assets/tp630/sbt-cmd_eng.png)
 
@@ -10,4 +10,4 @@
 
 * If the command list has commands more than seven, you can see the additional command by touching [prev/next] button.
 
-* For details on each statement, refer to the "[${cont_model} Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english-${cont_model}/README)."
+* For details on each statement, refer to the "[${cont_model} Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/en-${cont_model}/README)."

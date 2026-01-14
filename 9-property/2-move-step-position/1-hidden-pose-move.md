@@ -1,8 +1,8 @@
 ﻿# 9.2.1 Hidden Pose Move Statement
 
-You can check or modify the position of the current step in the hidden pose move statement \(a step recorded by the \[REC\] key, that is, a move statement that does not include a pose variable\).
+You can check or modify the position of the current step in the hidden pose move statement \(a step recorded by the `[REC]` key, that is, a move statement that does not include a pose variable\).
 
-1.	Touch the \[**property**\] button in the move command \(move statement\) recorded as a hidden pose. Then, the current step position will appear. 
+1.	Touch the `[property]` button in the move command \(move statement\) recorded as a hidden pose. Then, the current step position will appear. 
 
 2.	Check and modify the current step position.
 
@@ -27,11 +27,11 @@ You can check or modify the position of the current step in the hidden pose move
           coordinate value and coordinate system format, etc.</p>
         <ul>
           <li><b>[Name]</b>: Number of the current step. After inputting the step number, press
-            the <b><<b>ENTER</b>> </b>key to move to the concerned step.</li>
+            the <b>`[ENTER]` </b>key to move to the concerned step.</li>
           <li><b>Coordinate Value</b>: Current coordinate value of the current step
             <ul>
               <li>Select an item using the cursor key.</li>
-              <li>After inputting a value in the desired item, press the <<b>ENTER</b>> key
+              <li>After inputting a value in the desired item, press the `[ENTER]` key
                 to reflect the change.</li>
               <li>If the coordinate system format is set as an encoder, the coordinate value
                 will not be changed.</li>
@@ -48,7 +48,7 @@ You can check or modify the position of the current step in the hidden pose move
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]</b>: You can save the changes.</li>
+          <li>`[OK]`: You can save the changes.</li>
           <li><b>[Previous]/[Next]</b>: You can display the information of the previous or
             next step.</li>
           <li><b>[Original Value]</b>: You can display the original hidden pose value of the
@@ -63,12 +63,12 @@ You can check or modify the position of the current step in the hidden pose move
   </tbody>
 </table>
 
-3.	Touch the \[OK\] button. Then, the change will be saved in the job program, and the operation will end. 
+3.	Touch the `[OK]` button. Then, the change will be saved in the job program, and the operation will end. 
 
-* If you end the operation by pressing the <**ESC**> key, the change will not be saved. 
+* If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
 
 {% hint style="info" %}
-* If \[Robot Configuration\] is set as undesignated, the robot will designate a configuration the very closest to the current position of the robot.
+* If `[Robot Configuration]` is set as undesignated, the robot will designate a configuration the very closest to the current position of the robot.
 * 
   For the designation according to the robot configuration, refer to "[2.3.2.2 Base and Robot Recording Coordinates](../../2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)".
 {% endhint %}

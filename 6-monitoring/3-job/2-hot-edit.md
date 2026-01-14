@@ -9,7 +9,7 @@ This is the function to edit the program without stopping it, while playback is 
 
 ### Entry 
 
-Touch the \[hot edit\] button at the panel, and Hot Edit window of the current program will be open.
+Touch the `[hot edit]` button at the panel, and Hot Edit window of the current program will be open.
 
 ![](../../_assets/tp630/pane-hot-edit-0_eng.png)
 
@@ -20,8 +20,8 @@ Touch the \[hot edit\] button at the panel, and Hot Edit window of the current p
 
 Although the operation is the same as that of manual mode, the following functions cannot be used.
 
-1) <**REC**> key (Record hidden pose MOVE) : Displays the "Operation not allowed while in Hot Edit" message.
-2) <**POS. MOD**> key : Displays the "Operation not allowed while in Hot Edit" message.
+1) `[REC]` key (Record hidden pose MOVE) : Displays the "Operation not allowed while in Hot Edit" message.
+2) `[POS. MOD]` key : Displays the "Operation not allowed while in Hot Edit" message.
 
 
     ![](../../_assets/tp630/pane-hot-edit-1_eng.png)
@@ -113,4 +113,4 @@ The actual timing of the reflection is displayed in the following table.
 
 ### Different program selection
 
-When you press the <**SHIFT**> + <**PROG**> key, you can select a different program. You can also create a new program.
+When you press the `[SHIFT]` + `[PROG]` key, you can select a different program. You can also create a new program.

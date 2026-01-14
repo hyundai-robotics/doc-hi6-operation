@@ -4,7 +4,7 @@ If the robot controller does not operate normally, initialize the system. The sy
 
 
 
-1.	Touch the \[5: Initialize\] menu. Then, the menu for initialization will appear.
+1.	Touch the `[5: Initialize]` menu. Then, the menu for initialization will appear.
 
 2.	Select the desired menu, and then perform the initial setting of the robot system, and then initialize the serial encoder.
 
@@ -13,7 +13,7 @@ If the robot controller does not operate normally, initialize the system. The sy
 
 
 {% hint style="info" %}
-Some items in the \[Initialize\] menu will be supported only when a specific type of an additional axis is selected.
+Some items in the `[Initialize]` menu will be supported only when a specific type of an additional axis is selected.
 {% endhint %}
 
 {% hint style="info" %}

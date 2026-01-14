@@ -1,6 +1,6 @@
 ﻿# 2.3.1.1 Interpolation
 
-Interpolation refers to the interpolated path between steps, and the interpolation method for the \[Step N\] determines the form of the path between \[Step N-1\] and \[Step N\].
+Interpolation refers to the interpolated path between steps, and the interpolation method for the `[Step N]` determines the form of the path between `[Step N-1]` and `[Step N]`.
 
 * P-PTP \(Point-to-Point\) It is the fastest of the general interpolation modes as it interpolates the path between two steps based on individual axes, not the tooltip. Considering the characteristics of industrial robots that consist of rotation joints, the path of the tooltip is usually shaped in a C form.
 
@@ -34,11 +34,11 @@ Singular postures in which the posture interpolation cannot be performed are as 
 
 
 
-  * At the time of moving from \[Step n\] to \[Step n+1\], if the interpolation method of \[Step n+1\] is C-circular interpolation, it is required to refer to the next step \[Step n+2\].
+  * At the time of moving from `[Step n]` to `[Step n+1]`, if the interpolation method of `[Step n+1]` is C-circular interpolation, it is required to refer to the next step `[Step n+2]`.
 
-  * If the interpolation method of \[Step n+2\] is C-circular interpolation, it is required to determine the circle based on \[Step n\], \[Step n+1\], and \[Step n+2\], and among them, movement should take place along the arc of the section of \[Step n\] - \[Step n+1\].
+  * If the interpolation method of `[Step n+2]` is C-circular interpolation, it is required to determine the circle based on `[Step n]`, `[Step n+1]`, and `[Step n+2]`, and among them, movement should take place along the arc of the section of `[Step n]` - `[Step n+1]`.
 
-  * If the interpolation method of \[Step n+2\] is not a circular interpolation, it is required to refer to the previous step \[Step n-1\] and determine the circle based on \[Step n-1\], \[Step n\], and \[Step n+1\], and among them, movement should take place along the arc of the section of \[Step n\] - \[Step n+1\].
+  * If the interpolation method of `[Step n+2]` is not a circular interpolation, it is required to refer to the previous step `[Step n-1]` and determine the circle based on `[Step n-1]`, `[Step n]`, and `[Step n+1]`, and among them, movement should take place along the arc of the section of `[Step n]` - `[Step n+1]`.
 
 
 

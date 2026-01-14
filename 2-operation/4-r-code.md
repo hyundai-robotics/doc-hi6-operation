@@ -2,7 +2,7 @@
 
 R codes are unique code numbers assigned to specific functions. Assigning unique code numbers to frequently used functions can help you use those functions quickly. For details on R codes, refer to "[8 R codes](../r-code/)."
 
-After touching the <**R..[NO]**> key, input the code number and touch the \[OK\] button. Then the predefined function will be executed.
+After touching the `[R..[NO]]` key, input the code number and touch the `[OK]` button. Then the predefined function will be executed.
 
 ![](../_assets/tp630/k-r.png)
 

@@ -4,7 +4,7 @@ If you jog the base axis after performing base axis calibration, the distance tr
 
 ![Figure 73 Operation After Calibration of the Base Axis](../../../_assets/image_528.png)
 
-1.	Touch the \[+\] button at the top right of the panel stack in the work area, and then touch \[Pose\] in the panel selection window.
+1.	Touch the `[+]` button at the top right of the panel stack in the work area, and then touch `[Pose]` in the panel selection window.
 
 2.	Jog the base axis. The distance traveled in the direction of the base axis will be converted into X, Y, and Z values and displayed in the pose information window.
 

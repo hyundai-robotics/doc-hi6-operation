@@ -2,7 +2,7 @@
 
 You can set the information required for serial port communication.
 
-1.	Touch the \[2: Control Parameter &gt; 3: Serial port\] menu.
+1.	Touch the `[2: Control Parameter  - 3: Serial port]` menu.
 
 2.	Set the parameters for each serial port.
 

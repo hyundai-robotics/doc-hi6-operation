@@ -52,7 +52,7 @@
       </td>
       <td style="text-align:left">
         <p>This is used to move to the next page of the function button bar.</p>
-        <p>When there are more than 7 buttons in the current screen,   button will be activated, and every time this button is pressed, it will switch to the next button set. When you press <<b>SHIFT</b>> +   button, it will switch back in the reverse direction.
+        <p>When there are more than 7 buttons in the current screen,   button will be activated, and every time this button is pressed, it will switch to the next button set. When you press `[SHIFT]` +   button, it will switch back in the reverse direction.
       </td>
     </tr>
     </tr>

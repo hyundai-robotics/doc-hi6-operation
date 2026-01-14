@@ -2,8 +2,8 @@
 
 The collision detection function monitors the disturbance torque and the rate of change of the disturbance torque occurring on each robot axis. If the measured values exceed the configured thresholds, they are treated as errors.
 
-* If the disturbance torque exceeds the set threshold, \[E0160 (Axis O) collision detected\] is displayed.
-* If the disturbance torque rate exceeds the set threshold, \[E0161 (Axis O) shock detected\] is displayed.
+* If the disturbance torque exceeds the set threshold, `[E0160 (Axis O) collision detected]` is displayed.
+* If the disturbance torque rate exceeds the set threshold, `[E0161 (Axis O) shock detected]` is displayed.
 
 
 ![](../../../_assets/tp630/coldet/collision_detection_of_axis.png)

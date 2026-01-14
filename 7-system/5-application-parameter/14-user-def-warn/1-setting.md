@@ -1,6 +1,6 @@
 ﻿# 7.5.14.1 User-Defined Warning Settings
 
-1. Touch the \[System &gt; 4: Application Parameters &gt; 14: User-Defined Warning\] menu.<br><br>
+1. Touch the `[System  - 4: Application Parameters  - 14: User-Defined Warning]` menu.<br><br>
 
 2. Click the 'Create Sample File' button.<br>
 * A file named 'help_user_warn.json' will be created in the MAIN/project directory.<br>

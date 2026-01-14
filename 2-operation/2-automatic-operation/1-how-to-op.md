@@ -18,7 +18,7 @@ It is the method to teach the robot the contents of the work and then make it pe
 
 * If it is set to manual mode, turn the mode switch of the teach pendant to set the operation mode to automatic mode.
 
-4.	Touch the \[Recording Condition\] button on the left side of the initial screen. Then, the condition setting window will appear.
+4.	Touch the `[Recording Condition]` button on the left side of the initial screen. Then, the condition setting window will appear.
 
     ![](../../_assets/tp630/fbt-condset_eng.png)
 
@@ -28,8 +28,8 @@ It is the method to teach the robot the contents of the work and then make it pe
 
     ![](../../_assets/tp630/cond-set-cycle-auto-spd_eng.png)
 
-* **\[1: Operation Cycle type\]:** You can set whether to repeat the program that will be executed during automatic operation.
-* **\[6: Playback speed rate\]:** You can set the operation speed \(%\) of the robot when a program is played back in automatic mode.  
+* `1: Operation Cycle type`: You can set whether to repeat the program that will be executed during automatic operation.
+* `6: Playback speed rate`: You can set the operation speed \(%\) of the robot when a program is played back in automatic mode.  
   For example, if the operation speed is set to 100, the robot will move at the recorded speed of the step, and if it is set to 50, the robot will move at the ratio of 50% of the recorded speed.
 
-6.	Press the &lt;start&gt; key on the teach pendant. The start lamp will be turned on, and the robot will perform the work according to the created program.
+6.	Press the `[start]` key on the teach pendant. The start lamp will be turned on, and the robot will perform the work according to the created program.

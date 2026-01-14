@@ -18,6 +18,6 @@ If you press the `[DEL]` key or the `[F2:Delete]` button, the button in the sele
 After completing the placement, press the `[F7:OK]` button to save the user button layout.
 
 
-* For details on the spot application function, refer to the "[Hi6 Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/english/README)".
+* For details on the spot application function, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
 
-* For details on the arc application function, refer to the "[Hi6 Controller Arc Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-arc-weld/english/README)".
+* For details on the arc application function, refer to the "[${cont_model} Controller Arc Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-arc-weld/en/README)".

@@ -16,7 +16,7 @@ To set the step speed limit, refer to "[5.1 Operation Condition Setting](../../5
 To set the jog speed level \(1: Low to 8: High\), press repeatedly <SPEED: HI, LOW> keys  until the desired speed level appears. Even in this case, the maximum speed of the robot tool and link will be limited below the speed limit.
 
 {% hint style="info" %}
-In automatic mode, the \[Speed Adjustment\] button will display the playback speed \(%\) instead of the step speed limit \(mm/sec\).
+In automatic mode, the `[Speed Adjustment]` button will display the playback speed \(%\) instead of the step speed limit \(mm/sec\).
 {% endhint %}
 
 

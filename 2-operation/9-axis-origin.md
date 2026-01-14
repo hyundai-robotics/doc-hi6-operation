@@ -13,7 +13,7 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 1.	Set the operation mode to manual mode using the mode switch on the teach pendant.
 
-2.	After touching the <<b>PROG</b>> key with <<b>SHIFT</b>> in the JOB program window, input the program number, and then touch the \[OK\] button.
+2.	After touching the `[PROG]` key with `[SHIFT]` in the JOB program window, input the program number, and then touch the `[OK]` button.
 
 
     ![](../_assets/tp630/k-prog-step_eng.png)
@@ -21,7 +21,7 @@ The following shows how to set the optimization of the axis origin and tool leng
     ![](../_assets/tp630/dlg-prog-sel_eng.png)
 
 
-3.	Press the &lt;motor&gt; key on the teach pendant, and then the motor lamp will blink.
+3.	Press the `[motor]` key on the teach pendant, and then the motor lamp will blink.
 
 * If the motor is not turned on, check the error message on the log bar and resolve the trouble.
 
@@ -29,7 +29,7 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 5.	Place a pointed needle at an arbitrary location within the operation range of the robot, and then match the tooltip of the robot to it. The distance from the front end of the robot to the matched tooltip will be optimized.
 
-6.	Record the step by touching the <**REC**> key of the keypad.
+6.	Record the step by touching the `[REC]` key of the keypad.
 
     ![](../_assets/tp630/k-record_eng.png)
 
@@ -38,16 +38,16 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 * Change the robot's posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
 
-8.	Touch the \[system\] button &gt; \[6: Auto Calibration &gt; 1: Optimize axis origin and tool length\] menu.
+8.	Touch the `[system]` button  - `[6: Auto Calibration  - 1: Optimize axis origin and tool length]` menu.
 
     ![](../_assets/tp630/menu-axis-origin-tool-opt_eng.png)
 
 
-9.	Set the program number, tool number, and step position error allowable range created for the automatic calibration, and then touch the \[Execute\] button. Then the selected axis origin and tool length will be set.
+9.	Set the program number, tool number, and step position error allowable range created for the automatic calibration, and then touch the `[Execute]` button. Then the selected axis origin and tool length will be set.
 
     ![](../_assets/tp630/axis-origin-tool-opt_eng.png)
 
-* When you use multiple tools, you should select Tool Length in the \[Optimization Selection\] option for the second tool. If you select Axis Origin and Tool Length, the previously set tool information will get incorrect.
+* When you use multiple tools, you should select Tool Length in the `[Optimization Selection]` option for the second tool. If you select Axis Origin and Tool Length, the previously set tool information will get incorrect.
 
 {% hint style="info" %}
 For details on this function, refer to "[7.7.1 Optimization of Axis Origin and Tool Length](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)."

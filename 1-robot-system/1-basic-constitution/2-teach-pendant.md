@@ -132,11 +132,11 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>When
        editing a string from the input display window, you can move the cursor
-       by pressing the button with the &lt;←/→&gt; key. </span></li>
+       by pressing the button with the `[←/→]` key. </span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>From
        the task edit window, you can move the cursor by each screen by pressing
-       the button with the &lt;↑/↓&gt; key. </span></li>
+       the button with the `[↑/↓]` key. </span></li>
   </ul>
   </td>
  </tr>
@@ -150,7 +150,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
   <p class=MsoNormal><span lang=EN-US>Specific functions can be executed only
-  with &lt;<b>CTRL</b>&gt; key.</span></p>
+  with `[CTRL]` key.</span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:3'>
@@ -168,10 +168,10 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l5 level1 lfo3;tab-stops:list 36.0pt'><span lang=EN-US>See
-       the [cond.set &gt; Step fwd/bwd max. speed] for the detailed description.</span></li>
+       the `[cond.set] - Step fwd/bwd max. speed` for the detailed description.</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l5 level1 lfo3;tab-stops:list 36.0pt'><span lang=EN-US>When
-       this key is pressed together with &lt;<b>SHIFT</b>&gt;, fast step
+       this key is pressed together with `[SHIFT]`, fast step
        forward/ backward functions can be activated.</span></li>
   </ul>
   </td>
@@ -229,10 +229,10 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
   <p><span lang=EN-US>Used for moving the cursor on the TP panel. </span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><span lang=EN-US>&lt;↑/↓&gt;
+       auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><span lang=EN-US>`[↑/↓]`
        keys move steps and functions.</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><span lang=EN-US>&lt;←/→&gt;
+       auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><span lang=EN-US>`[←/→]`
        keys move parameters of recorded steps or functions.</span></li>
   </ul>
   </td>
@@ -254,7 +254,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
        more information, refer to &quot;8. R Codes&quot;.</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>R-code
-       key followed by &lt;<b>ENTER </b>&gt; without a code number is the same
+       key followed by `[ENTER]` without a code number is the same
        as "R0 : Step counter reset".</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>In
@@ -395,7 +395,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
        outputted manually.</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l13 level1 lfo13;tab-stops:list 36.0pt'><span lang=EN-US>In
-       the case of a spot welding, when you press with the &lt;<b>REC</b>&gt;
+       the case of a spot welding, when you press with the `[REC]`
        key, SPOT command follows MOVE automatically.</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l13 level1 lfo13;tab-stops:list 36.0pt'><span lang=EN-US>When
@@ -423,7 +423,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
        when pressing the axis operation key. </span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l16 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>When
-       you press with the &lt;<b>SHIFT</b>&gt; key, the message box to select
+       you press with the `[SHIFT]` key, the message box to select
        the tool number will open.</span></li>
   </ul>
   </td>
@@ -449,7 +449,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
        can insert the next step when the cursor is placed at a step</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l9 level1 lfo15;tab-stops:list 36.0pt'><span lang=EN-US>It
-       is possible to modify a selected step position by pressing with the &lt;<b>SHIFT</b>&gt;
+       is possible to modify a selected step position by pressing with the `[SHIFT]`
        key. </span></li>
   </ul>
   </td>
@@ -468,7 +468,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l8 level1 lfo16;tab-stops:list 36.0pt'><span lang=EN-US>With
-       &lt;<b>SHIFT</b>&gt; key, this key makes a job program window pop up. </span></li>
+       `[SHIFT]` key, this key makes a job program window pop up. </span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l8 level1 lfo16;tab-stops:list 36.0pt'><span lang=EN-US>When
        you press the [PROG] key twice, the program list is displayed.</span></li>
@@ -513,10 +513,10 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>With
-       &lt;<b>SHIFT</b>&gt; key, you can enter the '+' and '-' signs or delete
+       `[SHIFT]` key, you can enter the '+' and '-' signs or delete
        a command sentence or a parameter.</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>&lt;<b>BS</b>&gt;
+       auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>`[BS]`
        key deletes character by character backward. (Backspace). Also, when
        editing command sentence, all parameter values are deleted. </span></li>
   </ul>

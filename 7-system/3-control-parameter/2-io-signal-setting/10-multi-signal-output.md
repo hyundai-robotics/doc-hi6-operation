@@ -4,7 +4,7 @@ Output signals \(up to 16 signals\) can be created as a group, and data can be o
 
 The data is in binary format and determines whether the output will be on or off. For example, the data to print do41 and do43 on the screen shown below is 0101 in binary \(5 in decimal\).
 
-1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting &gt;7: Multiple Signal Output\] menu
+1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  -7: Multiple Signal Output` menu
 
 2.	Set the name, signals, and strobe of the output signal group. 
 

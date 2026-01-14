@@ -1,6 +1,6 @@
 ﻿# 6.2.4 Public Output
 
-Touch \[public Output\] in the panel selection window. Then, the public output signal window will appear. 
+Touch `[public Output]` in the panel selection window. Then, the public output signal window will appear. 
 
 You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
 
@@ -64,14 +64,14 @@ You can check the status of public output signals that are outputted through the
 
 You can select the desired signal and force it to be outputted.
 
-1.	You can set the display mode to the ON/OFF status by touching the \[ON/OFF\] radio button on the right side of the general output signal window. 
+1.	You can set the display mode to the ON/OFF status by touching the `[ON/OFF]` radio button on the right side of the general output signal window. 
 
-2.	Touch a signal to select it in the signal window, and then touch the \[Manual Output\] button.
+2.	Touch a signal to select it in the signal window, and then touch the `[Manual Output]` button.
 
     ![](../../_assets/tp630/pane-univoutsig_eng.png)
 
 
-3.	After checking the output conditions in the manual output confirmation window, touch the <**ENTER**> button.
+3.	After checking the output conditions in the manual output confirmation window, touch the `[ENTER]` button.
 
     ![](../../_assets/tp630/pane-univoutsig-manual_eng.png)
 

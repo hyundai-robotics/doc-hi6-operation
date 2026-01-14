@@ -4,7 +4,7 @@ Input signals \(up to 16 signals\) can be created as a group, and data can be ac
 
 The data is in binary format and will be determined by the input on or off. For example, if di41 and di43 are on and all other signals are off, the data will be 0101 \(5 in decimal\).
 
-1.	Touch the \[2: Control Parameter &gt; 2: Input/Output Signal Setting &gt; 8: Multiple Signal Input\] menu.
+1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 8: Multiple Signal Input` menu.
 
 2.	Set the name, signals, and strobe of the input signal group.
 

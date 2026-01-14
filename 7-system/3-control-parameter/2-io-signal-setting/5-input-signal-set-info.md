@@ -42,9 +42,9 @@ When the robot is externally started up, the timing of reading the program selec
 
 ![](../../../_assets/image_465.png)
 
-#### 
 
-#### Program selection bit and binary/discrete \(off ?�� binary\)
+
+#### Program selection bit and binary/discrete \(off -> binary\)
 
 The program selection bit is a combination of signals to select a program to execute when an external start signal is inputted. It is applied only when a step is pointed in Header or in the End currently in the TP. When a program is being executed, the program will be executed to the end.
 
@@ -54,7 +54,7 @@ For example, if the program selection bit is set as follows, an example of JOB t
 
 ![](../../../_assets/image_436.png)
 
-#### 
+
 
 #### External reset
 
@@ -70,7 +70,7 @@ This function is used to limit the robot moving speed to within the safe speed \
 
 #### Collision sensor
 
-This function is used to detect the collision of the robot and stop the robot. In conjunction with the settings in the \[System&gt; 1: User Environment&gt; 6: Collision Sensor\] menu, conditions and signal logic for stopping the robot will be determined.
+This function is used to detect the collision of the robot and stop the robot. In conjunction with the settings in the `[System - 1: User Environment - 6: Collision Sensor]` menu, conditions and signal logic for stopping the robot will be determined.
 
 
 
@@ -94,7 +94,7 @@ This function is used to stop the robot in movement when the door of the safety 
 
 #### Screen saver deactivation
 
-If the teach pendant is not operated, the teach pendant will switch to the screen saver state when the screen off time set in the \[service &gt; 11: Teach Pendant Option\] menu has elapsed. This function is used to turn on the screen of the teach pendant by an external signal.
+If the teach pendant is not operated, the teach pendant will switch to the screen saver state when the screen off time set in the `[service  - 11: Teach Pendant Option]` menu has elapsed. This function is used to turn on the screen of the teach pendant by an external signal.
 
 
 

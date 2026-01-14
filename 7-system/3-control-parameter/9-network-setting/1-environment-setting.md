@@ -2,7 +2,7 @@
 
 You can set the information required for Network Setting for LAN ports.
 
-1.	Touch the \[ System &gt; 2: Control Parameter &gt; 9: Network &gt; 1: Environment setting \] menu.
+1.	Touch the `[ System  - 2: Control Parameter  - 9: Network  - 1: Environment setting ]` menu.
 
 2.	Set the parameters for each LAN(Public) port. Class C type IP Addressing supported.
 
@@ -47,7 +47,7 @@ You can set the information required for Network Setting for LAN ports.
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]</b>: You can save the changes. After reboot the system all changes are adjusted.</li>
+          <li>`[OK]`: You can save the changes. After reboot the system all changes are adjusted.</li>
         </ul>
       </td>
     </tr>

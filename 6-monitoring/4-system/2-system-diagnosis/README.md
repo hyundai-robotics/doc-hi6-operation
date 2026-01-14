@@ -1,6 +1,6 @@
 ﻿# 6.4.2 System Diagnostics
 
-Touch **[System Diagnostics]** in the panel selection window.
+Touch `System Diagnostics` in the panel selection window.
 When executed for the first time, the Brake Diagnostics screen appears.
 
 ![System diagnostics monitoring](../../../_assets/tp630/pane-sys-diagnosis_eng.png)

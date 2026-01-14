@@ -1,6 +1,6 @@
 ﻿# 6.2.8 EtherCAT device
 
-In the panel selection window, touch \[EtherCAT dev.\]. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with ${cont_model} controller internally and externally. In the EtherCAT network, the controller main board works as a master.
+In the panel selection window, touch `[EtherCAT dev.]`. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with ${cont_model} controller internally and externally. In the EtherCAT network, the controller main board works as a master.
 
 ![](../../_assets/tp630/pane-EC-device_eng.png) 
 

@@ -14,25 +14,25 @@ The method of instructing the contents of the work to the robot using the jog ke
 
     * If it is set to automatic mode, set the operation mode to manual mode by turning the mode switch of the teach pendant.
 
-4.	Touch the <<b>PROG</b>> key with \<**SHIFT**\>. Then, the program selection window will appear.
+4.	Touch the `[PROG]` key with `[SHIFT]`. Then, the program selection window will appear.
 
     ![](../../_assets/tp630/k-prog-step_eng.png)
 
 
 
-5.	Select a program from the list in the program selection window or input a program number and then press <**ENTER**> key.
+5.	Select a program from the list in the program selection window or input a program number and then press `[ENTER]` key.
 
     ![](../../_assets/tp630/k-prg-select_eng.png)
 
-6.	Press the &lt;motor&gt; key on the teach pendant. Then, the motor lamp will blink, and the servo power will be ready to be supplied to the motor of each axis of the robot.
+6.	Press the `[motor]` key on the teach pendant. Then, the motor lamp will blink, and the servo power will be ready to be supplied to the motor of each axis of the robot.
 
 7.	Press the enabling switch on the back of the teach pendant. Then, the motor lamp will be turned on, and the motor brake will be released, allowing the servo power to be supplied. The robot will be ready to move.
 
 8.	Operate the robot according to the speed level or movement conditions of the coordinate system using the jog key.
 
-    * To save the robot's location, touch the <<b>REC</b>> key at the desired location. Then the step will be recorded.
-    * To record the function required for the step, touch the \[cmd.input\] button.
-    * To check the robot's location while manually moving it forward or backward, press the &lt; ↓ / ↑ &gt; key. While you are pressing the &lt; ↓ / ↑ &gt; key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
+    * To save the robot's location, touch the `[REC]` key at the desired location. Then the step will be recorded.
+    * To record the function required for the step, touch the `[cmd.input]` button.
+    * To check the robot's location while manually moving it forward or backward, press the `[STEP.FWD/STEP.BWD]` key. While you are pressing the `[STEP.FWD/STEP.BWD]` key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
 
 
 

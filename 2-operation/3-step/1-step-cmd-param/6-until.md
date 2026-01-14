@@ -7,5 +7,5 @@ The value of the conditional expression "after until" can be checked through the
 ![Figure 21 Example of Stop Conditions](../../../_assets/image_46_1.png)
 
 {% hint style="info" %}
-For details on the robot language, refer to the "[Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/english/README)."
+For details on the robot language, refer to the "[Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README)."
 {% endhint %}

@@ -4,7 +4,7 @@
 
     ![](../../../_assets/tp630/file-manager/fld-delete.png)
 
-2.	In the confirmation window, touch the \[ENTER\] button. The selected folder and all files saved in it will be deleted.
+2.	In the confirmation window, touch the `[ENTER]` button. The selected folder and all files saved in it will be deleted.
 
     ![](../../../_assets/tp630/file-manager/fld-delete-pop_eng.png)
 

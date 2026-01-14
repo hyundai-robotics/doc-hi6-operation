@@ -26,7 +26,7 @@ When power is supplied to each motor by the input of the motor on signal and the
 
 #### Robot ready OK
 
-When the current controller status satisfies all conditions set in the \[system &gt; 2: Control Parameter&gt; 4: Robot Ready Condition\] menu, this function is used to output the state to the outside. 
+When the current controller status satisfies all conditions set in the `[system  - 2: Control Parameter - 4: Robot Ready Condition]` menu, this function is used to output the state to the outside. 
 
 
 
@@ -104,7 +104,7 @@ In automatic mode, it can be dangerous if the currently selected position of the
 
 #### Interlock abnormal warning
 
-When the waiting time in the wait statement of the job program exceeds the time set in the \[Interlock Abnormal Time\] option in the \[System&gt; 2: Control Parameter&gt; 1: Control Environment Setting\] menu, this function is used to output this state to the outside.
+When the waiting time in the wait statement of the job program exceeds the time set in the `[Interlock Abnormal Time]` option in the `[System - 2: Control Parameter - 1: Control Environment Setting]` menu, this function is used to output this state to the outside.
 
 Error/Warning output bit, Error/Warning output selection and Error/Warning output strobe
 
@@ -144,7 +144,7 @@ When welding deposition occurs during arc welding, this function is used to outp
 
 #### Robot lock state \(Valid=ON\)
 
-This function is used to output to the outside the robot lock setting status in \[Condition Setting\].
+This function is used to output to the outside the robot lock setting status in `[Condition Setting]`.
 
 
 

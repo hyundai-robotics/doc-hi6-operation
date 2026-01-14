@@ -1,6 +1,6 @@
 ﻿# 6.3.1 job
 
-Touch \[job\] in the panel selection window. For the total program list, <**SHIFT**>+<**PROG**> keys lead to the program selection window. Then, you can create, delete, and select a program.
+Touch `[job]` in the panel selection window. For the total program list, `[SHIFT]`+`[PROG]` keys lead to the program selection window. Then, you can create, delete, and select a program.
 
 ![](../../_assets/tp630/k-prg-select_eng.png)
 
@@ -20,7 +20,7 @@ You can modify the selected job program in the task edit window.
       <td style="text-align:left">
         <img src="../../_assets/tp630/k-prog-step_eng.png" alt/>
       </td>
-      <td style="text-align:left"> <ul>  <<b>SHIFT</b>>+<<b>PROG</b>> : In the program selection window, you can create, delete, or select a program. </ul> </td>
+      <td style="text-align:left"> <ul>  `[SHIFT]`+`[PROG]` : In the program selection window, you can create, delete, or select a program. </ul> </td>
     </tr>
     <tr>
       <td style="text-align:left">

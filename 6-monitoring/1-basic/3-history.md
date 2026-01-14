@@ -1,6 +1,6 @@
 ﻿# 6.1.3 History
 
-In the panel selection window, touch \[history\]. The history window will appear. 
+In the panel selection window, touch `[history]`. The history window will appear. 
 
 You can check the history in which the execution log and time stamps of the job program are outputted.
 

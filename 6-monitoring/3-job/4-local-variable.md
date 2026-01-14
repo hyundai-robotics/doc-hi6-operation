@@ -10,7 +10,7 @@ Displays a list of all local variables of the current call frame. You cannot cre
 ![](../../_assets/tp630/panel-sel.png)
 
 
-2. In the panel selection window, touch \[local variable\]. The `local variables` panel opens.
+2. In the panel selection window, touch `[local variable]`. The `local variables` panel opens.
 
 ![](../../_assets/tp630/pane-lvar.png)
 

@@ -1,11 +1,11 @@
 ﻿# 7.7.4.1 Base Axis Initial Setting
 
-1.	In manual mode, touch the \[system > 5: Initialize&gt; 5: Additional Axis Parameter Setting\].
+1.	In manual mode, touch the `system - 5: Initialize - 5: Additional Axis Parameter Setting`.
 
-2.	After setting the parameters such as the specifications and configuration of the additional axis, touch the \[OK\] button.
+2.	After setting the parameters such as the specifications and configuration of the additional axis, touch the `[OK]` button.
 
-* \[Axis Specification\]: You can select the specification of the additional axis as base.
-* \[Axis Configuration\]: You can select the mechanism of the additional axis as any.
+* `[Axis Specification]`: You can select the specification of the additional axis as base.
+* `[Axis Configuration]`: You can select the mechanism of the additional axis as any.
 * Other parameters: You can set other parameters according to the instrumental design value and controller configuration specifications.
 
 

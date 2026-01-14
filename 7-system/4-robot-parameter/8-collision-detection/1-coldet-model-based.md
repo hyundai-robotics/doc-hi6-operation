@@ -4,7 +4,7 @@ The model-based impact detection function detects collisions by calculating the 
 Sensitivity can be adjusted to control responsiveness to collisions, and contact with external objects occurring while the robot is moving at low speed can also be detected.
 
 
-1. Touch the menu \[3: Robot parameter &gt; 14: Impact Detection &gt; 1: Model-Based Collision Detection\].
+1. Touch the menu `[3: Robot parameter  - 14: Impact Detection  - 1: Model-Based Collision Detection]`.
 
 
 ![](../../../_assets/tp630/coldet/model_based_coldet_tab_general.png)

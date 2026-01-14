@@ -2,7 +2,7 @@
 
 You can rename a file or folder. You can also rename multiple files or folders at once.
 
-1.	Touch the desired file \(or folder\) in the file \(or folder\) list to select it, and then touch the \[rename\] button on the function button bar of the screen.
+1.	Touch the desired file \(or folder\) in the file \(or folder\) list to select it, and then touch the `[rename]` button on the function button bar of the screen.
 
     ![](../../_assets/tp630/file-manager/fld-rename-select_eng.png)
 
@@ -10,10 +10,10 @@ You can rename a file or folder. You can also rename multiple files or folders a
 
     ![](../../_assets/tp630/file-manager/fld-rename_eng.png)
 
-* You can input the number simply by using the operation keys on the teach pendant. \(&lt;←/→&gt; keys: For moving the cursor. Number keys: For inputting a number\)
-* To input a text including numbers, touch the \[ ![](../../_assets/tp630/rbt-softkb_eng.png) \] button on the log bar to use the soft keyboard.
+* You can input the number simply by using the operation keys on the teach pendant. (`[←/→]` keys: For moving the cursor. Number keys: For inputting a number)
+* To input a text including numbers, touch the ![](../../_assets/tp630/rbt-softkb_eng.png) button on the log bar to use the soft keyboard.
 
-3.	Press the <<b>ENTER</b>> key. Then, the new name you inputted in the list will appear.
+3.	Press the `[ENTER]` key. Then, the new name you inputted in the list will appear.
 
 {% hint style="info" %}
 * You can also rename a protected file.

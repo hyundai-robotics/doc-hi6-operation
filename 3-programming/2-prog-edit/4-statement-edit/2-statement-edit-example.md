@@ -2,19 +2,19 @@
 
 With an example of changing the interpolation parameter from P \(joint interpolation\) to L \(linear interpolation\), the following describes how to edit a statement.
 
-1.	Press the <<b>ENTER</b>> key on the teach pendant while in the statement cursor status. Then, the statement cursor will change to the word cursor status, allowing the P \(joint interpolation\), which is the interpolation parameter of the move statement, to be selected. In the input area, P, which is the current setting value of interpolation, will be displayed and the interpolation parameter that can be inputted will be displayed as buttons on the function button bar of the screen.
+1.	Press the `[ENTER]` key on the teach pendant while in the statement cursor status. Then, the statement cursor will change to the word cursor status, allowing the P \(joint interpolation\), which is the interpolation parameter of the move statement, to be selected. In the input area, P, which is the current setting value of interpolation, will be displayed and the interpolation parameter that can be inputted will be displayed as buttons on the function button bar of the screen.
 
     ![](../../../_assets/tp630/pane-prog-move-P.png)
 
-2.	Touch the \[L\] button among the buttons on the function button bar. Then, L \(linear interpolation\) will be displayed in the input area.
+2.	Touch the `[L]` button among the buttons on the function button bar. Then, L \(linear interpolation\) will be displayed in the input area.
 
     ![](../../../_assets/tp630/pane-prog-move-L.png)
 
-3.	Press the <<b>ENTER</b>> key. The interpolation parameter of the statement will change to L, and then the cursor will move to the next parameter, allowing the moving speed to be selected.
+3.	Press the `[ENTER]` key. The interpolation parameter of the statement will change to L, and then the cursor will move to the next parameter, allowing the moving speed to be selected.
 
     ![](../../../_assets/tp630/pane-prog-move-spd.png)
 
-4.	Press the <<b>ENTER</b>> key to complete editing. The contents of the change will be saved in the JOB program, and then the cursor will return to the statement cursor status.
+4.	Press the `[ENTER]` key to complete editing. The contents of the change will be saved in the JOB program, and then the cursor will return to the statement cursor status.
 
 
 

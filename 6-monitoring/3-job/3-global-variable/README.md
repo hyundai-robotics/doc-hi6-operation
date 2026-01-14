@@ -11,7 +11,7 @@ Displays a list of all global variables. You can also create/delete variables an
 &nbsp;
 ![](../../../_assets/tp630/panel-sel.png)
 
-2. In the panel selection window, touch \[global variable\]. The `global variables` panel opens.
+2. In the panel selection window, touch `[global variable]`. The `global variables` panel opens.
 
 ![](../../../_assets/tp630/pane-gvar.png)
 

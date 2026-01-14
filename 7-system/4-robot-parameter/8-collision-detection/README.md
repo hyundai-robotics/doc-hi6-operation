@@ -3,9 +3,9 @@
 When a collision occurs during robot operation, impact detection(collision detection) is a function that compares the torque normally generated during robot motion with the currently generated torque, and treats it as an error when abnormal torque is detected, in order to minimize damage caused by the collision
 
 
-${cont_model} controller enhances robot safety by using the collision detection function in a complementary manner with existing safety functions—such as overcurrent, overload, overspeed, and position deviation error detection—when the robot operates under abnormal conditions or exhibits abnormal behavior.
+${cont_model} controller enhances robot safety by using the collision detection function in a complementary manner with existing safety functions - such as overcurrent, overload, overspeed, and position deviation error detection - when the robot operates under abnormal conditions or exhibits abnormal behavior.
 
-Touch \[3: Robot Parameter &gt; 14: Impact Detection\] to use this function.
+Touch `[3: Robot Parameter  - 14: Impact Detection]` to use this function.
 
 {% hint style="info" %}
 * The collision detection function operates only when the motor is ON.

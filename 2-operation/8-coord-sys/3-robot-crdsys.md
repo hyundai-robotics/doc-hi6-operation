@@ -15,7 +15,7 @@
 
 1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
 
-2.	Select the robot coordinate system by repeatedly touching the \[Crd. Sys\] button on the status display window of the ${cont_model} teach pendant screen. 
+2.	Select the robot coordinate system by repeatedly touching the `[Crd. Sys]` button on the status display window of the ${cont_model} teach pendant screen. 
 
     ![](../../_assets/tp630/k-crdsys_eng.png)
 

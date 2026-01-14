@@ -1,6 +1,6 @@
 ﻿# 7.5.13.1 User-Defined Error Settings
 
-1. Touch the \[System &gt; 4: Application Parameters &gt; 13: User-Defined Error\] menu.<br><br>
+1. Touch the `[System  - 4: Application Parameters  - 13: User-Defined Error]` menu.<br><br>
 
 2. Click the "Create Sample File" button.<br>
 A file named "help_user_err.json" will be created in the MAIN/project directory.<br>

@@ -1,7 +1,7 @@
 ﻿# 6.4.3 Task monitor
 
 
-In the panel selection window, touch \[Task monitor\]. Then, the task window will appear.
+In the panel selection window, touch `[Task monitor]`. Then, the task window will appear.
 
 You can check the operation cycle and execution time information for each task.
 

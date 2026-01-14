@@ -30,7 +30,7 @@ The cautions in recording the reference points for defining the coordinate syste
 
 The method to register the user coordinate system by designating the taught program number and step order is as follows.
 
-1. Touch the \[2: Control Parameter &gt; 6: Coordinate System Registration &gt; 1: User Coordinate System\] menu.
+1. Touch the `[2: Control Parameter  - 6: Coordinate System Registration  - 1: User Coordinate System]` menu.
 
 2. Go to the user coordinate system you want to register (you can create it with the "+" button).
 3. After specifying the program number and step order, press the [F1:JOB Calculation] button.
@@ -60,7 +60,7 @@ The method to register the user coordinate system by designating the taught prog
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]</b>: You can save the changes.</li>
+          <li>`[OK]`: You can save the changes.</li>
           <li><b>[+]/[-]</b>: You can add a new user coordinate system or delete a user
             coordinate system.</li>
           <li>A list of user coordinate systems. Selecting the coordinate system name

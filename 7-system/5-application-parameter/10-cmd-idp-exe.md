@@ -2,7 +2,7 @@
 
 This is a function that executes the corresponding statement separately from the work program when the set input signal turns from OFF to ON. <br>
 The statement is executed using an unused subtask, and usually subtask 1 is used. <br>
-For more information about multitasking, please refer to "[Hi6 Robot Controller Function Manual - Multitasking](https://hrbook-hrc.web.app/#/view/doc-multi-task/english/README)".
+For more information about multitasking, please refer to "[${cont_model} Controller Function Manual - Multitasking](https://hrbook-hrc.web.app/#/view/doc-multi-task/en/README)".
 
 
 ![](../../_assets/tp630/cmd-idp-exe.png)

@@ -10,13 +10,13 @@ This function is useful when instructing two robots on the left and right to per
 The mirror image function is not supported for collaborative robots.
 {% endhint %}
 
-The use of the \[6: Mirror Image\] menu will be restricted during the startup of the robot. The method to use the mirror image function is as follows.
+The use of the `[6: Mirror Image]` menu will be restricted during the startup of the robot. The method to use the mirror image function is as follows.
 
-1.	Touch the \[6: Program Conversion &gt; 6: Mirror Image\] menu. Then, the mirror image setting window will appear.
+1.	Touch the `[6: Program Conversion  - 6: Mirror Image]` menu. Then, the mirror image setting window will appear.
 
-2.	After setting the mirror image conversion option, touch the \[OK\] button.
+2.	After setting the mirror image conversion option, touch the `[OK]` button.
 
-* \[Source program\]/\[Target program\]: You can set the number of the existing program and the number of the new program that is to be created through conversion using a mirror image.
+* `[Source program]`/`[Target program]`: You can set the number of the existing program and the number of the new program that is to be created through conversion using a mirror image.
 
     ![](../../_assets/tp630/prg-mirror-img_eng.png)
 

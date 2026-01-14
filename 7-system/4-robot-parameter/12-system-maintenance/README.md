@@ -10,15 +10,15 @@ Expected life: Estimated remaining life based on recent actual driving condition
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Life expectancy may increase or decrease depending on the robot's recent motion patterns. 
 
 Initialization of the reducer lifespan
-1.    Touch the \[3: Robot parameter &gt; 12: System maintenance &gt; 2:Reducer Lifespan setting\] menu.
+1.    Touch the `[3: Robot parameter  - 12: System maintenance  - 2:Reducer Lifespan setting]` menu.
 
-2.    Move the cursor to the position corresponding to the replaced reducer and touch the \[**Reset one**\] button.
-If all reducers are replaced or the body is replaced with a new robot, touch the \[**Reset all**\] button. In the case of a reducer whose rated life is initialized, the date of initialization is recorded in the chaned date column.
+2.    Move the cursor to the position corresponding to the replaced reducer and touch the `[Reset one]` button.
+If all reducers are replaced or the body is replaced with a new robot, touch the `[Reset all]` button. In the case of a reducer whose rated life is initialized, the date of initialization is recorded in the chaned date column.
 
 ![](../../../_assets/tp630/reducer_lifetime_setting.png)
 
 
-Lifespan calculation cycle\[**min**\] : Renewal period of reducer lifespan. The minimum period is 10 minutes.
+Lifespan calculation cycle`[min]` : Renewal period of reducer lifespan. The minimum period is 10 minutes.
 
 {% hint style="info" %}
 The reducer rated and expected life are predicted reference values based on reducer life prediction model. The actual life of the reducer may vary from the expected model depending on the driving conditions.

@@ -2,7 +2,7 @@
 
 You can check the status of the robot system and various data of the controller.
 
-1.	In order, touch the \[pane layout\] button at the top right of the panel,[split] at the bottom, and [select] at the left bottom. The panel selection window will appear.
+1.	In order, touch the `[pane layout]` button at the top right of the panel,[split] at the bottom, and [select] at the left bottom. The panel selection window will appear.
 
     ![](../_assets/tp630/rbt-window-divide_eng.png)
 

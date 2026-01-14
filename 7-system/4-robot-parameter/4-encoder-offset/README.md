@@ -2,7 +2,7 @@
 
 The current encoder position can be set as the encoder origin position \(position 0X400000\). You can determine the encoder origin at the reference position of each axis of the robot \(the position where the scale of each axis is attached\).
 
-1.	Touch the \[3: Robot Parameter &gt; 4: Encoder Offset\] menu.
+1.	Touch the `[3: Robot Parameter  - 4: Encoder Offset]` menu.
 
 2.	Set the encoder offset value by adjusting the position of each axis. The encoder offset value will be recorded as a hex value \(a hexadecimal number\).
 

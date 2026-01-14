@@ -1,6 +1,6 @@
 ﻿# 7.5 Application Parameters
 
-1.	Touch the \[4: Application Parameter\] menu. Then, the application parameter menu will appear.
+1.	Touch the `[4: Application Parameter]` menu. Then, the application parameter menu will appear.
 
 2.	Select the desired menu, and then check and set various parameters for the use of the application functions of the robot.
 
