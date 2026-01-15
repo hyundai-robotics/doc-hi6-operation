@@ -7,6 +7,6 @@
     "tocTitleElements": "[ \"h1\", \"h2\" ]",
     "docId": "${cont_model:upper}OPTP630_KO_001",
     "references": [
-        { "rpath" : "doc-hrscript/ko-${cont_model}" }
+        { "rpath" : "doc-hrscript/ko" }
     ]
 }
