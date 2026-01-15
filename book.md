@@ -13,21 +13,9 @@ You must fully understand the contents of the manual before using the product. M
 
 This manual may be provided as reference material for customers who have purchased HD Hyundai Robotics products or may be used as internal training material.
 
-This manual has been created based on standard specifications, so some contents may differ depending on the model of the product you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and HD Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual. For detailed information on the revision of the manual, you need to visit our internet website \(www.hyundai-robotics.com\).
+This manual has been created based on standard specifications, so some contents may differ depending on the model of the product you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and HD Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual. For detailed information on the revision of the manual, you need to visit our internet website [https://www.hd-hyundairobotics.com/en/main](https://www.hd-hyundairobotics.com/en/main).
 
 
-
-
-
-
-[__SOURCE](0-about-this-manual/copyright.md)
-# Copyrights
-
-The product, as well as all programs, files, and contents covered in this manual, are protected by copyright laws and confidentiality agreements. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by HD Hyundai Robotics, are strictly prohibited.
-
-<Br>
-
-Copyright ⓒ 2025 HD HYUNDAI ROBOTICS. All rights reserved.
 
 
 

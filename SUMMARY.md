@@ -2,7 +2,6 @@
 
 * [${cont_model} Robot Controller Operation Manual](README.md)
 * [About the Manual](0-about-this-manual/README.md)
-  * [Copyrights](0-about-this-manual/copyright.md)
   * [Notation Convention](0-about-this-manual/notation.md)
   * [Safety Cautions](0-about-this-manual/safety-notice.md)
 * [1. Robot System](1-robot-system/README.md)
