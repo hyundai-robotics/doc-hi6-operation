@@ -915,12 +915,19 @@ This window shows the status of the robot system at the top side of the main scr
 
 | No. | Description | 
 | :--- | :--- | 
-| ![](../../../_assets/c1.png) | networking status(![](../../../_assets/flag-comm-ok.png) : OK, ![](../../../_assets/flag-comm-ng.png) : Not OK)|
-| ![](../../../_assets/c2.png) | multi-robot number (R# : R+robot#) |
-| ![](../../../_assets/c3.png) | a usb memory being inserted |
-| ![](../../../_assets/c4.png) | the continuous path mode of the robot motion (CONTPATH) <br> (CP# : CP(continuous Path) + mode #) <br> Refer to "R360" . |
-| ![](../../../_assets/c5.png) | a user grade (E : engineer mode) |
-| ![](../../../_assets/c6.png) | PLC running status |
+| ![](../../../_assets/c1.png) | Displays network status. (![](../../../_assets/flag-comm-ok.png) : Connected, ![](../../../_assets/flag-comm-ng.png) : Not Connected)|
+| ![](../../../_assets/c2.png) | Displays an icon when a USB memory device is inserted. |
+| ![](../../../_assets/c3.png) | Displays Continuous Path (CONTPATH) mode. (CP# : CP(Continuous Path)+Mode Number) <br> (Reference: [R360](../../../8-r-code/15-r360.md?cont_model=${cont_model})) |
+| ![](../../../_assets/c4.png) | Displays the current status for each application function. (SW : Welding Record Status, PBk : Painting Section) |
+| ![](../../../_assets/c5.png) | Displays positioner synchronization status. (M:S{Station Number}) |
+| ![](../../../_assets/c6.png) | Displays cooperative control status. (I:Independent, M:Master Designated, S:Slave Designated) |
+| ![](../../../_assets/c7.png) | Displays axis control status. (Shows j_{axis number} if off) |
+| ![](../../../_assets/c8.png) | Displays axis lock status. |
+| ![](../../../_assets/c9.png) | Displays encoder battery error status. (Blinks when error occurs) |
+| ![](../../../_assets/c10.png) | Displays reducer lifespan error status. (Shows and blinks axis number when error occurs) |
+| ![](../../../_assets/c11.png) | Displays user level. (E : Engineer Mode) <br> (Reference: [R314](../../../8-r-code/12-r314.md?cont_model=${cont_model})) |
+| ![](../../../_assets/c12.png) | Displays PLC operation status. |
+
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/2-status-bar.md)
 # 1.2.4.2 Status display window
 
