@@ -31,7 +31,7 @@ Variable values are also saved as files because they must be preserved even when
 <br>
 
 
-## vars/.csv file
+##### vars/.csv file
 
 When you open the folder `MAIN/project/vars/` in File-manager, a file named `weld_points.csv` is created. The variables specified as the predefined create a .csv file that is the same as the variable name, and when released from predefined, the file is automatically deleted.
 
@@ -92,7 +92,7 @@ Saving in Excel results in unnecessary commas, as shown below, and the quotation
 
 <br>
 
-## Loading .csv
+##### Loading .csv
 
 You can overwrite the edited file into `MAIN/project/vars/` again, but it is not automatically reflected in memory.
 

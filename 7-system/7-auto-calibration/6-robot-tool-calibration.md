@@ -43,7 +43,7 @@ The axis origin and tool length X, Y, and Z values of the axes 2-5 \(H, V, R2, a
 <br>
 
 
-## Restore calibration data
+#### Restore calibration data
 
 When performing robot and tool calibration, the calibration data is stored separately as a calibration.json file in the path /ata0:2/lib/hi6/backup/. <br>
 If calibration data is lost due to operations such as system initialization, it can be restored using the stored file. (However, if the encoder data has been initialized by performing a serial encoder reset, it cannot be restored.)

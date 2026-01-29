@@ -3,7 +3,7 @@
 You can register variables or expressions to the watch panel to monitor or change values.
 
 
-## Open watch panel
+#### Open watch panel
 
 1. Split the screen and press the [Select] button at the bottom left.
 
@@ -18,7 +18,7 @@ You can register variables or expressions to the watch panel to monitor or chang
 ![](../../_assets/tp630/panel-watch/panel-watch-mon.png)
 
 
-## How to use
+#### How to use
 
 Enter the desired variable or expression in the top input box and click the '+' button to enter the new item in the table.
 

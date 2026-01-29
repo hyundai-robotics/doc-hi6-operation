@@ -1,28 +1,28 @@
 ﻿# 11.1.5 Other Folders
 
-## apps/
+#### apps/
 
 Folder where plug-in apps executed on the MAIN side are installed and stored.
 
 
-## fbrr/
+#### fbrr/
 
 File-Based Robot Registry folder.  
 Stores information files (.fbr) for each robot mechanism model.
 When a new model information file is added, the robot system can be configured by selecting the model during system initialization.
 
 
-## gather/
+#### gather/
 
 Folder storing result files (.GDT) from the time-series data gathering function.
 
 
-## help/
+#### help/
 
 Folder storing HTML help files for the robot language HRScript.
 
 
-## roblang/
+#### roblang/
 
 Folder storing syntax files for the robot language HRScript.
 

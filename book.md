@@ -295,7 +295,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
 
 <br>
 
-## Operation Keys </span></p>
+#### Operation Keys </span></p>
 
 <table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
  mso-yfti-tbllook:1184'>
@@ -3797,7 +3797,7 @@ You can register IO relay variables in the Force IO panel to force some changed 
 
 {% endhint %}
 
-## Opening forced IO panel
+#### Opening forced IO panel
 
 1. Split the screen and press the [Select] button on the bottom left.
 
@@ -3812,7 +3812,7 @@ You can register IO relay variables in the Force IO panel to force some changed 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
 
 
-## How to use
+#### How to use
 
 Select the `Name` column, type the desired IO Relay variable name, and press the `ENTER` key to register the variable in the table.  
 (You can modify the variable name you entered by clicking the Name column once more.)
@@ -4068,7 +4068,7 @@ When you press the `[SHIFT]` + `[PROG]` key, you can select a different program.
 Displays a list of all global variables. You can also create/delete variables and edit types and values.
 
 
-## Open global variable panel
+#### Open global variable panel
 
 1. Split the screen and press the [Select] button at the bottom left.
 
@@ -4088,21 +4088,21 @@ Displays a list of all global variables. You can also create/delete variables an
 # 6.3.3.1 Basic features
 
 
-## Finding a variable
+##### Finding a variable
 
 If it is difficult to find the desired variable due to a large number of variables, type only a few of the variable's name in the filter at the top. Only variables that start with the filter string you enter appear on the screen, making it easy to find them.
 
 ![](../../../_assets/tp630/panel-gvar/gv-find.png)
 
 
-## Changing the value of a variable (for bool, int, double, string type)
+##### Changing the value of a variable (for bool, int, double, string type)
 
 Select the `value` column for the desired variable and type the new value.
 Press the ENTER key to apply the entered value to the variable.
 
 ![](../../../_assets/tp630/panel-gvar/gv-edit-value.png)
 
-## Changing the value of a variable (for pose, shift type)
+##### Changing the value of a variable (for pose, shift type)
 
 Select the `value` column for the desired pose or shift variable.
 
@@ -4114,7 +4114,7 @@ After edit it, click the [F7: OK] button.
 ![](../../../_assets/tp630/panel-gvar/gv-edit-pose2.png)
 
 
-## Changing a variable type
+##### Changing a variable type
 
 Select the `type` column for the desired variable and press ENTER. The Create Variable dialog box appears as shown below.
 
@@ -4130,7 +4130,7 @@ You can also select a type for multiple variables and press ENTER to change them
 ![](../../../_assets/tp630/panel-gvar/gv-sel-multi-type.png)
 
 
-## Renaming a variable
+##### Renaming a variable
 
 Select the `name` column for the variable you want, then open the soft keyboard to type the new name.
 Press the ENTER key to change it to the name you entered.
@@ -4138,7 +4138,7 @@ Press the ENTER key to change it to the name you entered.
 ![](../../../_assets/tp630/panel-gvar/gv-edit-name.png)
 
 
-## Creating a variable
+##### Creating a variable
 
 In the filter at the top, enter the name of the variable you want to create.
 
@@ -4150,7 +4150,7 @@ Verify that there are no variables with duplicate names, then click the + button
 ![](../../../_assets/tp630/panel-gvar/gv-new2.png)
 
 
-## Deleting a variable
+##### Deleting a variable
 
 Select the variable you want to delete.
 Press the DEL (CTRL+BACKSPACE) key to display the OK/Cancel dialog box. After confirming the variable name, press the OK button.
@@ -4161,7 +4161,7 @@ Press the DEL (CTRL+BACKSPACE) key to display the OK/Cancel dialog box. After co
 [__SOURCE](6-monitoring/3-job/3-global-variable/2-array-object.md)
 # 6.3.3.2 Array and object
 
-## Creating an array
+##### Creating an array
 
 We will now use an example of generating a 5x200 two-dimensional pose array variable named `pos`.
 Create a variable named `pos` using the method described above.
@@ -4182,7 +4182,7 @@ Select `Pose` in the Type list. If you enter 5,200 for the number of elements an
 {% endhint %}
 
 
-## Viewing and changing the array element value
+##### Viewing and changing the array element value
 
 The value of the array variable is displayed only as [], and the values of the elements are not displayed.
 Select the `value` column and press the ENTER key or click the [F5: sub.level] button to expand the array to a lower level and view the element values.
@@ -4199,7 +4199,7 @@ Click the [F4: up.level] button or press the ESC key to go back up to the higher
 
 Because the array displays only 100 elements at the same time, by default you can only see the range of [0] to [99] indexes. If you change the value of the Start Index editbox in the upper left corner, you can see other ranges of elements. For example, if you enter 190 in the Start Index at `/pos[4]`, you can see the elements of [190]~[199].
 
-## Viewing and changing object property values
+##### Viewing and changing object property values
 
 Select the `value` column of the object variable and press the ENTER key or click the [F5: sub.level] button to expand the object to a lower level and view the property values. The operation method is similar to the array variable. However, the Startup Index editbox is not used.
 
@@ -4210,7 +4210,7 @@ Select the `value` column of the object variable and press the ENTER key or clic
 
 <br>
 
-## Fixed-variable
+##### Fixed-variable
 
 For example, you have created a large number of poses named `weld_points` in the Global Variables window, and by executing below assignment statement all data can be deleted.
 
@@ -4271,7 +4271,7 @@ Variable values are also saved as files because they must be preserved even when
 <br>
 
 
-## vars/.csv file
+##### vars/.csv file
 
 When you open the folder `MAIN/project/vars/` in File-manager, a file named `weld_points.csv` is created. The variables specified as the predefined create a .csv file that is the same as the variable name, and when released from predefined, the file is automatically deleted.
 
@@ -4332,7 +4332,7 @@ Saving in Excel results in unnecessary commas, as shown below, and the quotation
 
 <br>
 
-## Loading .csv
+##### Loading .csv
 
 You can overwrite the edited file into `MAIN/project/vars/` again, but it is not automatically reflected in memory.
 
@@ -4372,7 +4372,7 @@ Displays a list of all local variables of the current call frame. You cannot cre
 You can register variables or expressions to the watch panel to monitor or change values.
 
 
-## Open watch panel
+#### Open watch panel
 
 1. Split the screen and press the [Select] button at the bottom left.
 
@@ -4387,7 +4387,7 @@ You can register variables or expressions to the watch panel to monitor or chang
 ![](../../_assets/tp630/panel-watch/panel-watch-mon.png)
 
 
-## How to use
+#### How to use
 
 Enter the desired variable or expression in the top input box and click the '+' button to enter the new item in the table.
 
@@ -4845,10 +4845,10 @@ For details on the sensor sync function, refer to the "${cont_model} Sensor Sync
  ![](../../_assets/tp630/coldet_monitoring_pane.png)
  ![](../../_assets/tp630/coldet_monitoring.png)
  
-## Description 
+#### Description 
 * ColDet monitoring 
 
-## Parameters 
+#### Parameters 
  - [Sensitivity] : The higher the ratio value, the more sensitive the collision is detected. (0: Disabled) [0~200]
    - It can be set in the General tap [System- 3:Robot parameter>14:Impact Detection]  
  - [External Torque]-[Current] : Currently estimated external torque [Nm]
@@ -4892,10 +4892,10 @@ Refer to Arc Welding Manual's "[7. Welding data monitoring](https://hrbook-hrc.w
  
 ![](../../_assets/tp630/force_monitoring.png)
 
-## Description 
+#### Description 
 * In case of force control, this monitoring data show estimated [external force] 
  
-## Parameters 
+#### Parameters 
 
  - [cartesian] : external force or torque in cartesian space
     - in case of fctrl function : robot coordinate
@@ -8304,7 +8304,7 @@ The axis origin and tool length X, Y, and Z values of the axes 2-5 \(H, V, R2, a
 <br>
 
 
-## Restore calibration data
+#### Restore calibration data
 
 When performing robot and tool calibration, the calibration data is stored separately as a calibration.json file in the path /ata0:2/lib/hi6/backup/. <br>
 If calibration data is lost due to operations such as system initialization, it can be restored using the stored file. (However, if the encoder data has been initialized by performing a serial encoder reset, it cannot be restored.)
@@ -9244,7 +9244,7 @@ This section describes important precautions to keep in mind when doing so.
 (Details of each file in the project folder will be explained in the next section.)
 
 
-## Applying Changes After Modifying .job Files in the project/jobs/ Folder
+#### Applying Changes After Modifying .job Files in the project/jobs/ Folder
 
 When you add or overwrite .job files in the `project/jobs/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
 (When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
@@ -9258,7 +9258,7 @@ There are two ways to apply the updated files to memory:
 - Reboot the robot controller.
 
 
-# Applying Changes After Modifying .json and .csv Files in the project/vars/ Folder
+#### Applying Changes After Modifying .json and .csv Files in the project/vars/ Folder
 
 When you add or overwrite global variable files in the `project/vars/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
 (When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
@@ -9280,7 +9280,7 @@ When the controller is powered off, the current global variable values in memory
 This is the most important folder where the robot's configuration, teaching data, and state are stored.
 When backing up or restoring the controller system, this folder is the core component.
 
-## project/
+#### project/
 
 This folder contains various configuration files as well as state-backup files that are saved immediately before the controller is powered off (shutdown).
 The state backup includes information stored at power-off for the following purposes:
@@ -9364,17 +9364,17 @@ The state backup includes information stored at power-off for the following purp
   Information used to determine whether data updates are required on the first boot after a software version upgrade (current version number)
   
 
-## project/jobs/
+#### project/jobs/
   
 Folder storing teaching programs (.job files).
 
 
-## project/lads/
+#### project/lads/
   
 Folder storing built-in PLC ladder programs (.lad files).
 
 
-## project/safety/
+#### project/safety/
   
 (HI7 controller) Folder storing Functional Safety configuration files.
 
@@ -9388,7 +9388,7 @@ Folder storing built-in PLC ladder programs (.lad files).
   A valid certificate is issued only when the configuration is saved with the correct password. If invalid, the controller will not operate.
 
 
-## project/vars/
+#### project/vars/
 
 Folder storing variables and aliases.
 
@@ -9481,13 +9481,13 @@ This folder stores MAIN-side backups of the controller.
 Folder names are generated in the format `bYYYYMMDD_HHMM`, containing subfolders: project/, log/, cifX/, EC_LOG/, and EDR_LOG/.
 
 
-## backup/ev/
+#### backup/ev/
 
 Folder storing event backups.  
 Backups are automatically created when specific errors occur.
 
 
-## backup/ts/
+#### backup/ts/
 
 Folder storing scheduled backups.  
 Backups are automatically created at the scheduled times.
@@ -9495,29 +9495,29 @@ Backups are automatically created at the scheduled times.
 [__SOURCE](11-etc/1-controller-files/5-etc.md)
 # 11.1.5 Other Folders
 
-## apps/
+#### apps/
 
 Folder where plug-in apps executed on the MAIN side are installed and stored.
 
 
-## fbrr/
+#### fbrr/
 
 File-Based Robot Registry folder.  
 Stores information files (.fbr) for each robot mechanism model.
 When a new model information file is added, the robot system can be configured by selecting the model during system initialization.
 
 
-## gather/
+#### gather/
 
 Folder storing result files (.GDT) from the time-series data gathering function.
 
 
-## help/
+#### help/
 
 Folder storing HTML help files for the robot language HRScript.
 
 
-## roblang/
+#### roblang/
 
 Folder storing syntax files for the robot language HRScript.
 

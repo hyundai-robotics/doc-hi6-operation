@@ -95,7 +95,7 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
 
 <br>
 
-## Operation Keys </span></p>
+#### Operation Keys </span></p>
 
 <table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
  mso-yfti-tbllook:1184'>

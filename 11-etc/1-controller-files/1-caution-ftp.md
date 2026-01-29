@@ -13,7 +13,7 @@ This section describes important precautions to keep in mind when doing so.
 (Details of each file in the project folder will be explained in the next section.)
 
 
-## Applying Changes After Modifying .job Files in the project/jobs/ Folder
+#### Applying Changes After Modifying .job Files in the project/jobs/ Folder
 
 When you add or overwrite .job files in the `project/jobs/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
 (When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
@@ -27,7 +27,7 @@ There are two ways to apply the updated files to memory:
 - Reboot the robot controller.
 
 
-# Applying Changes After Modifying .json and .csv Files in the project/vars/ Folder
+#### Applying Changes After Modifying .json and .csv Files in the project/vars/ Folder
 
 When you add or overwrite global variable files in the `project/vars/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
 (When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)

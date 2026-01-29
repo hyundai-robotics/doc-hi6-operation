@@ -3,7 +3,7 @@
 This is the most important folder where the robot's configuration, teaching data, and state are stored.
 When backing up or restoring the controller system, this folder is the core component.
 
-## project/
+#### project/
 
 This folder contains various configuration files as well as state-backup files that are saved immediately before the controller is powered off (shutdown).
 The state backup includes information stored at power-off for the following purposes:
@@ -87,17 +87,17 @@ The state backup includes information stored at power-off for the following purp
   Information used to determine whether data updates are required on the first boot after a software version upgrade (current version number)
   
 
-## project/jobs/
+#### project/jobs/
   
 Folder storing teaching programs (.job files).
 
 
-## project/lads/
+#### project/lads/
   
 Folder storing built-in PLC ladder programs (.lad files).
 
 
-## project/safety/
+#### project/safety/
   
 (HI7 controller) Folder storing Functional Safety configuration files.
 
@@ -111,7 +111,7 @@ Folder storing built-in PLC ladder programs (.lad files).
   A valid certificate is issued only when the configuration is saved with the correct password. If invalid, the controller will not operate.
 
 
-## project/vars/
+#### project/vars/
 
 Folder storing variables and aliases.
 

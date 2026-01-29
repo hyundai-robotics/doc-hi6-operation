@@ -9,7 +9,7 @@ You can register IO relay variables in the Force IO panel to force some changed 
 
 {% endhint %}
 
-## Opening forced IO panel
+#### Opening forced IO panel
 
 1. Split the screen and press the [Select] button on the bottom left.
 
@@ -24,7 +24,7 @@ You can register IO relay variables in the Force IO panel to force some changed 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
 
 
-## How to use
+#### How to use
 
 Select the `Name` column, type the desired IO Relay variable name, and press the `ENTER` key to register the variable in the table.  
 (You can modify the variable name you entered by clicking the Name column once more.)
