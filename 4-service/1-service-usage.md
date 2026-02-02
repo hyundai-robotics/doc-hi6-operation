@@ -13,7 +13,7 @@
 * `7: System Diagnosis`: You can check the status of the robot and controller and update the system version.
 * `8: Date, time setting`: You can set the date and time of the controller.
 * `9: Exit TP application`: Exit the TP(Teach Pendant) application.
-* `10: App]`: Manages the software installed and running on the teach pendant.
+* `10: App`: Manages the software installed and running on the teach pendant.
 * `11: Teach pendant option`: Set the sound and screen save time of the teach pendant.
 * `12: Teach pendant sharing`: Connect the teach pendant to multiple controllers or to the virtual controllers in HRSpace4.
 * `19: Industrial Communication Monitoring`: Monitor firmware information and communication status.
