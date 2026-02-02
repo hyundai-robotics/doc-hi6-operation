@@ -34,7 +34,7 @@
 GUI는 메뉴 이름 및 버튼 이름을 대괄호 안에 넣고 옅은 배경색으로 표시합니다. 여러 메뉴를 순서대로 선택해야 할 때에는 이름 사이에 - 기호를 넣어 표시합니다.
 
 * 이름이 있는 메뉴: 수동 또는 자동 모드의 초기 화면에서 `[F1: 서비스]` 버튼을 터치하십시오.
-* 여러 메뉴: 수동 모드의 초기 화면에서 `[F2: 시스템] - 5: 초기화 - 7: 유닛 설정` 메뉴를 터치하십시오.
+* 여러 메뉴: 수동 모드의 초기 화면에서 `[F2: 시스템] - 5: 초기화 - 6: 메커니즘 설정` 메뉴를 터치하십시오.
 
 
 
@@ -1957,7 +1957,7 @@ J7, J8의 키는 로봇의 종류와 부가축 설정상태에 따라 다르게 
 ![](../../_assets/image_85.png)
 
 {% hint style="info" %}
-조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 "[2.7.1 조그키](1-jog-key.md)"를 참조하십시오.
+조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 "[2.8.1 조그키](1-jog-key.md)"를 참조하십시오.
 {% endhint %}
 
 
@@ -2041,7 +2041,7 @@ J7, J8의 키는 로봇의 종류와 부가축 설정상태에 따라 다르게 
 ![](../../_assets/image_103.png)
 
 {% hint style="info" %}
-조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 "[2.7.1 조그키](1-jog-key.md)"를 참조하십시오.
+조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 "[2.8.1 조그키](1-jog-key.md)"를 참조하십시오.
 {% endhint %}
 
 
@@ -2589,23 +2589,22 @@ job 프로그램의 특정 영역을 삭제하지는 않으면서 임시로 실�
 
 1.	수동 또는 자동 모드에서 초기 화면 하단의 `[F1: 서비스]` 버튼을 터치하십시오. 프로그램의 각종 서비스 메뉴가 표시됩니다.
 
-2.	원하는 메뉴를 선택하여 파일 및 프로그램, 티치 펜던트를 관리하거나 로봇 시스템의 상태를 확인하십시오. 
+2.	원하는 메뉴를 선택하여 파일 및 프로그램, 티치펜던트를 관리하거나 로봇 시스템의 상태를 확인하십시오. 
 
 ![](../_assets/tp630/svc-list.png)
 
 ---
 
-* `5: 파일관리`: 메인 보드의 내부 메모리와 티치 펜던트 및 이동식 저장 장치의 파일을 관리합니다.
+* `5: 파일관리`: 메인 보드의 내부 메모리와 티치펜던트 및 이동식 저장 장치의 파일을 관리합니다.
 * `6: 프로그램 변환`: 작성된 프로그램의 조건 및 위치 등을 일괄 또는 개별 변환합니다.
 * `7: 시스템 진단`: 로봇과 제어기의 상태를 확인하고 시스템의 버전을 업데이트합니다.
 * `8: 날짜, 시간 설정`: 제어기의 날짜와 시간을 설정합니다.
-* `9: TP 응용프로그램 종료`: TP(티치 펜던트) 응용프로그램을 종료합니다.
-* `10: 앱(App)`: 티치 펜던트에 설치되어 실행되는 소프트웨어를 관리합니다.
-* `11: 티치펜던트 옵션`: 티치 펜던트의 소리와 화면꺼짐 시간을 설정합니다.
+* `9: TP 응용프로그램 종료`: TP(티치펜던트) 응용프로그램을 종료합니다.
+* `10: 앱(App)`: 티치펜던트에 설치되어 실행되는 소프트웨어를 관리합니다.
+* `11: 티치펜던트 옵션`: 티치펜던트의 소리와 화면꺼짐 시간을 설정합니다.
+* `12: 티치펜던트 공유`: 티치펜던트를 여러 대의 제어기 혹은 HRSpace4의 가상제어기에 연결하는데 사용합니다.
+* `14: 시스템 프로그램` : 제어기에 설치된 시스템 프로그램(e.g. OPC-UA server) 목록을 확인하고 제거 할 수 있습니다.
 * `19: 산업용 통신 모니터링`: 펌웨어 정보 및 통신 상태를 모니터링합니다.
-
-
-
 
 [__SOURCE](4-service/2-file-manager/README.md)
 # 4.2    파일 관리
@@ -3255,16 +3254,31 @@ V60.26-00 부터 지원됩니다.
 
 
 
-[__SOURCE](4-service/8-industrial-communication-monitoring.md)
-# 4.8 산업용 통신 모니터링
+[__SOURCE](4-service/8-tp-share.md)
+# 4.8 티치펜던트 공유
+
+![](../_assets/tp630/tp-sharing.png)
+
+화면 상단의 라디오 버튼으로 모드를 선택합니다.
+
+* OFF : 공유 기능을 사용하지 않습니다. 평상시엔 OFF로 되어 있어야 티치펜던트가 정상적으로 제어기에 연결됩니다.
+
+* VRC (PC) : 실제 티치펜던트를 데스크탑 PC에 실행한 HRSpace4의 여러 가상제어기(VRC)에 연결하여, 전환해가면서 사용합니다. 연결 방법은 HRSpace4 도움말의 아래 설명을 참조하십시오.
+  + HRSpace4 설명서 - 8.4. 실제 티치펜던트 (RTP; Real Teach Pendant)
+
+* RRC (Real Robot Controller) : 티치펜던트 1대를 여러 대의 제어기에 연결하여, 전환해가면서 사용합니다.
+  + 별도의 옵션 하드웨어가 필요합니다. 현재 이 기능은 지원되지 않습니다.
+
+[__SOURCE](4-service/9-industrial-communication-monitoring.md)
+# 4.9 산업용 통신 모니터링
 
 펌웨어 정보 및 통신 상태를 모니터링합니다.
 
 자세한 내용은 "[${cont_model} 제어기 기능설명서 - 산업용 통신 > 1. CIFX PCI 통신 > 1.4 CIFX PCI 통신 모니터링](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/ko/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README?cont_model=${cont_model})"을 참조하십시오.
-[__SOURCE](4-service/9-system-program.md)
-# 4.9 시스템 프로그램
+[__SOURCE](4-service/10-system-program.md)
+# 4.10 시스템 프로그램
 
-시스템에 설치된 프로그램 목록을 확인하고 제거 할 수 있습니다.
+제어기에 설치된 시스템 프로그램(e.g. OPC-UA server) 목록을 확인하고 제거 할 수 있습니다.
 
 <br>
 
@@ -4892,6 +4906,24 @@ job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 
     - softxyz 기능 사용시 : 표시하지 않음
     - softjoint 기능 사용시 : 토크값 표시  
 
+[__SOURCE](6-monitoring/6-safety-funtion.md)
+# 6.6 안전 기능
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+패널 선택창에서 [안전 기능]을 터치하십시오. 안전 기능의 상태창이 나타납니다. 
+안전 기능, 수동 속도, 정지 시간, 정지 거리, MCU-A, MCU-B 상태값을 확인할 수 있습니다.
+
+![](../_assets/image_552.png)
+
+{% hint style="info" %}
+* 안전 기능에 대한 자세한 내용은 "[SafeSpace2.0 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)"를 참조하십시오.
+{% endhint %}
+
+
+
 [__SOURCE](7-system/README.md)
 # 7. 시스템
 
@@ -5722,7 +5754,7 @@ ${cont_model} 제어기가 필드버스 master이고, 여러 개의 필드버스
 
 fn 입력, fn 출력 모니터링 창을 열어, 각 fn객체의 dio 혹은 xy 릴레이 현재값을 확인하거나 수동출력할 수 있습니다. 자세한 내용은 아래 링크를 참고하십시오.
 
-[6.8 fn 입력, fn 출력](../../../6-monitoring/2-io/5-fn-io.md)
+[6.2.5 fn 입력, fn 출력](../../../6-monitoring/2-io/5-fn-io.md)
 
 [__SOURCE](7-system/3-control-parameter/3-serial-port.md)
 # 7.3.3 시리얼 포트
@@ -8406,6 +8438,55 @@ C. 실행
 
 {% endhint %}
 
+[__SOURCE](7-system/8-safety-system.md)
+# 7.8 안전 시스템
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+1.	\[8: 안전 시스템\] 메뉴를 터치하십시오. 안전 시스템 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 기본 설정, 파라미터 설정, 모니터링, 인증서, 안전 레이더를 수행하십시오.
+
+![](../_assets/tp630/system-safety-menu.png)
+
+{% hint style="info" %}
+안전 시스템의 1:기본 설정, 2: 파라미터 설정, 3: 모니터링, 4: 인증서에 대한 자세한 관한 내용은  "[SafeSpace2.0 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)"을 참고하십시오.
+{% endhint %}
+
+{% hint style="info" %}
+안전 레이더에 대한 자세한 관한 내용은  "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)"을 참고하십시오.
+{% endhint %}
+[__SOURCE](7-system/10-option-system/README.md)
+# 7.10 옵션 장치
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+1.	\[옵션 장치\] 메뉴를 터치하십시오. 옵션 장치 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 수행하십시오.
+
+![](../../_assets/tp630/system-option-menu.png)
+
+[__SOURCE](7-system/10-option-system/1-userdio-board-setting.md)
+# 7.10.1 사용자DIO 보드 설정
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+
+Hi7 제어기에서 '사용자 DIO 보드(BD681)'와 '확장 DIO 보드(BD682)'를 활용하여 디지털 입출력 신호와 컨베이어 인터페이스를 진행할 수 있습니다.
+
+
+![](../../_assets/tp630/system-option-dio.png)
+
+{% hint style="info" %}
+사용자DIO 보드 설정에 대한 자세한 관한 내용은  "[Hi7 제어기 기능설명서 - 사용자DIO, 확장DIO](https://hrbook-hrc.web.app/#/view/doc-userDIO-ExtensionDIO/korean/README)"을 참고하십시오.
+{% endhint %}
 [__SOURCE](8-r-code/README.md)
 # 8. R코드
 

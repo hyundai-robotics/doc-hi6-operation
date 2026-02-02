@@ -10,7 +10,7 @@
 ![](../_assets/image_552.png)
 
 {% hint style="info" %}
-* 안전 기능에 대한 자세한 내용은 “[SafeSpace2.0 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)”를 참조하십시오.
+* 안전 기능에 대한 자세한 내용은 "[SafeSpace2.0 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)"를 참조하십시오.
 {% endhint %}
 
 
