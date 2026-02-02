@@ -37,7 +37,7 @@ In the GUI, menu names and button names are enclosed in square brackets and disp
 When multiple menus must be selected in sequence, their names are separated by a hyphen (-).
 
 * Single menu: On the initial screen in Manual or Automatic mode, touch the `[F1: Service]`W button.
-* Multiple menus: On the initial screen in Manual mode, touch `[F2: System] - 5: Initialization - 7: Unit Settings`W.
+* Multiple menus: On the initial screen in Manual mode, touch `[F2: System] - 5: Initialization - 6: Mechanism setting`.
 
 
 ## Notation Method for Operation Keys
@@ -2724,19 +2724,19 @@ You can use the program's various service function menus such as variable and fi
 
 2.	Selecting the desired menu will enable you to manage files, programs, teach pendants, or to check the status of the robot system.
 
-    ![](../_assets/tp630/svc-list_eng.png)
+    ![](../_assets/tp630/svc-list.png)
 
 
 
-* `[5: File Manager]`: You can manage files in the main board's internal memory, teach pendant, or removable storage device.
-* `[6: Program Conversion]`: You can convert the data, such as the condition and location of the created program, by batch or individually.
-* `[7: System Diagnosis]`: You can check the status of the robot and controller and update the system version.
+* `5: File Manager`: You can manage files in the main board's internal memory, teach pendant, or removable storage device.
+* `6: Program Conversion`: You can convert the data, such as the condition and location of the created program, by batch or individually.
+* `7: System Diagnosis`: You can check the status of the robot and controller and update the system version.
 * `8: Date, time setting`: You can set the date and time of the controller.
-* `[9: Exit TP application]`: Exit the TP(Teach Pendant) application.
-* `[10: App]`: Manages the software installed and running on the teach pendant.
-* `[11: Teach pendant option]`: Set the sound and screen save time of the teach pendant.
-* `[19: Industrial Communication Monitoring]`: Monitor firmware information and communication status.
-
+* `9: Exit TP application`: Exit the TP(Teach Pendant) application.
+* `10: App]`: Manages the software installed and running on the teach pendant.
+* `11: Teach pendant option`: Set the sound and screen save time of the teach pendant.
+* `12: Teach pendant sharing`: Connect the teach pendant to multiple controllers or to the virtual controllers in HRSpace4.
+* `19: Industrial Communication Monitoring`: Monitor firmware information and communication status.
 
 [__SOURCE](4-service/2-file-manager/README.md)
 # 4.2 File Management
@@ -3356,8 +3356,24 @@ For more details on the use of jog keys, refer to the Mechanism Jog Rules in "[7
 {% endhint %}
 
 
-[__SOURCE](4-service/8-industrial-communication-monitoring.md)
-# 4.8 Industrial Communication Monitoring
+[__SOURCE](4-service/8-tp-share.md)
+# 4.8 Teach pendant sharing
+
+![](../_assets/tp630/tp-sharing.png)
+
+Select the mode using the radio buttons at the top of the screen.
+
+* OFF : The sharing function is disabled. Under normal conditions, this should be set to OFF so that the teach pendant can connect to a controller properly.
+
+* VRC (PC) : A physical teach pendant is connected to multiple virtual controllers (VRCs) running in HRSpace4 on a desktop PC, and can be used by switching between them.
+Refer to the following section in the HRSpace4 Help for connection instructions.
+  + HRSpace4 Manual – 8.4 Real Teach Pendant (RTP)
+
+* RRC (Real Robot Controller) : One teach pendant is connected to multiple controllers and used by switching between them.
+  + Additional optional hardware is required. This feature is currently not supported.
+
+[__SOURCE](4-service/9-industrial-communication-monitoring.md)
+# 4.9 Industrial Communication Monitoring
 
 Monitor firmware information and communication status.
 

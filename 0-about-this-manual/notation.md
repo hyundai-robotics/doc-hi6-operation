@@ -14,7 +14,7 @@ In the GUI, menu names and button names are enclosed in square brackets and disp
 When multiple menus must be selected in sequence, their names are separated by a hyphen (-).
 
 * Single menu: On the initial screen in Manual or Automatic mode, touch the `[F1: Service]`W button.
-* Multiple menus: On the initial screen in Manual mode, touch `[F2: System] - 5: Initialization - 7: Unit Settings`W.
+* Multiple menus: On the initial screen in Manual mode, touch `[F2: System] - 5: Initialization - 6: Mechanism setting`.
 
 
 ## Notation Method for Operation Keys

@@ -1,4 +1,4 @@
-﻿# 4.8 Industrial Communication Monitoring
+﻿# 4.9 Industrial Communication Monitoring
 
 Monitor firmware information and communication status.
 
