@@ -16,4 +16,5 @@
 * `10: App`: Manages the software installed and running on the teach pendant.
 * `11: Teach pendant option`: Set the sound and screen save time of the teach pendant.
 * `12: Teach pendant sharing`: Connect the teach pendant to multiple controllers or to the virtual controllers in HRSpace4.
+* `14: System program`: You can view and remove the system programs (e.g. OPC-UA server) installed on the controller.
 * `19: Industrial Communication Monitoring`: Monitor firmware information and communication status.
