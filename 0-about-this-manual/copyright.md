@@ -1,6 +1,6 @@
 ﻿# Copyrights
 
-${copyright}
+{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=quality-assurance/en/README.md" %}
 
 --
 <div style="display: none;">
