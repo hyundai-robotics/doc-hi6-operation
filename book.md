@@ -20,6 +20,23 @@ This manual has been created based on standard specifications, so some contents 
 
 
 
+[__SOURCE](0-about-this-manual/copyright.md)
+# Copyrights
+
+${copyright}
+
+--
+<div style="display: none;">
+The product, as well as all programs, files, and contents covered in this manual, are protected by copyright laws and confidentiality agreements. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by HD Hyundai Robotics, are strictly prohibited.
+
+<Br>
+
+Copyright ⓒ 2025 HD HYUNDAI ROBOTICS. All rights reserved.
+
+</div>
+
+
+
 [__SOURCE](0-about-this-manual/notation.md)
 # Notation Convention
 
@@ -2733,9 +2750,10 @@ You can use the program's various service function menus such as variable and fi
 * `7: System Diagnosis`: You can check the status of the robot and controller and update the system version.
 * `8: Date, time setting`: You can set the date and time of the controller.
 * `9: Exit TP application`: Exit the TP(Teach Pendant) application.
-* `10: App]`: Manages the software installed and running on the teach pendant.
+* `10: App`: Manages the software installed and running on the teach pendant.
 * `11: Teach pendant option`: Set the sound and screen save time of the teach pendant.
 * `12: Teach pendant sharing`: Connect the teach pendant to multiple controllers or to the virtual controllers in HRSpace4.
+* `14: System program`: You can view and remove the system programs (e.g. OPC-UA server) installed on the controller.
 * `19: Industrial Communication Monitoring`: Monitor firmware information and communication status.
 
 [__SOURCE](4-service/2-file-manager/README.md)
@@ -3367,7 +3385,7 @@ Select the mode using the radio buttons at the top of the screen.
 
 * VRC (PC) : A physical teach pendant is connected to multiple virtual controllers (VRCs) running in HRSpace4 on a desktop PC, and can be used by switching between them.
 Refer to the following section in the HRSpace4 Help for connection instructions.
-  + HRSpace4 Manual – 8.4 Real Teach Pendant (RTP)
+  + HRSpace4 Manual - 8.4 Real Teach Pendant (RTP)
 
 * RRC (Real Robot Controller) : One teach pendant is connected to multiple controllers and used by switching between them.
   + Additional optional hardware is required. This feature is currently not supported.
@@ -3379,6 +3397,30 @@ Monitor firmware information and communication status.
 
 For more information, refer to "[${cont_model} Controller Function Manual - Industrial Communication > 1. CIFX PCI Communication > 1.4 CIFX PCI - Monitoring Industrial Communication](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/en/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README)"
 
+
+[__SOURCE](4-service/10-system-program.md)
+# 4.10 System program
+
+You can view and remove the system programs (e.g. OPC-UA server) installed on the controller.
+
+<br>
+
+1. Installing a System Program
+
+   * Connect a USB drive containing the ${cont_model} system program installation file (hps) to the teach pendant (TP).
+   * Run the `5: File Manager` menu. From the [USB] file list, select the file and press Enter.
+   * When the program installation dialog appears, press the `Run` button to start the installation.
+   * After the installation is complete, press the `Exit` button.
+   * To start the program, restart the system.
+
+<br>
+
+2. Removing a System Program
+
+   * Run the `14: System Program` menu to view the list of installed programs.
+   * Select a program and press the `Remove` button at the bottom of the screen.
+   * When the program removal dialog appears, press the Run button to start the removal process.
+   * After the removal is complete, press the `Exit` button.
 
 [__SOURCE](5-conditional-setting/README.md)
 # 5. Condition Setting
@@ -6385,7 +6427,7 @@ When the PCI slot setting is completed, the CONFIG files set in the slot \#1 - \
 \(The function to be provided later\) If you set the communication method to CC-Link slave, you can set the detailed information for each type of communication inside the controller.
 
 {% hint style="info" %}
-You can set the communication information by using the "Sycon.net" program on the HD Hyundai Robotics internet website \(www.hyundai-robotics.com\).
+You can set the communication information by using the "Sycon.net" program on the HD Hyundai Robotics internet website (https://www.hd-hyundairobotics.com/en/main).
 {% endhint %}
 
 
@@ -6772,7 +6814,7 @@ However, when service personnel perform this procedure manually on site, the hom
 ![](../../../_assets/tp630/axis-posi-restore1.png)
 
 In other words, home position restoration refers to:  
-Using an external reference point (dial gauge), after replacing a component, compensating the inaccurately calibrated home position Ωo' by the value ⓒ − ⓐ to restore it to the accurate home position Ωo.  
+Using an external reference point (dial gauge), after replacing a component, compensating the inaccurately calibrated home position Ωo' by the value `ⓒ` - `ⓐ` to restore it to the accurate home position Ωo.  
 (This is required to reuse the teaching program.)
 
 {% hint style="warning" %}
@@ -9392,7 +9434,7 @@ Folder storing built-in PLC ladder programs (.lad files).
 
 #### project/safety/
   
-(HI7 controller) Folder storing Functional Safety configuration files.
+(``HI7`` controller) Folder storing Functional Safety configuration files.
 
 * safety_parameter.json
 
