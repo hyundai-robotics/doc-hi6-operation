@@ -20,22 +20,10 @@ This manual has been created based on standard specifications, so some contents 
 
 
 
-[__SOURCE](0-about-this-manual/copyright.md)
-# Copyrights
+[__SOURCE](0-about-this-manual/precautions.md)
+# Precautions
 
-${copyright}
-
---
-<div style="display: none;">
-The product, as well as all programs, files, and contents covered in this manual, are protected by copyright laws and confidentiality agreements. Any activities, such as use, copying, disclosure, or distribution to third parties that are not expressly permitted by HD Hyundai Robotics, are strictly prohibited.
-
-<Br>
-
-Copyright ⓒ 2025 HD HYUNDAI ROBOTICS. All rights reserved.
-
-</div>
-
-
+{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/en/precautions.md" %}
 
 [__SOURCE](0-about-this-manual/notation.md)
 # Notation Convention
