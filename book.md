@@ -3379,7 +3379,7 @@ Set the preference options of the teach pendant.
         Language
       </td>
       <td style="text-align:left">Changes the display language of the Teach Pendant. Changes take effect after returning to the main screen.<br>
-      (Supported from version V60.34-00 and later.<sup>2)</sup>)</td>
+      (Supported from version V70.00-00 and later.<sup>2)</sup>)</td>
     </tr>
   </tbody>
 </table>
