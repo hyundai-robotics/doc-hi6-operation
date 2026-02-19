@@ -3352,7 +3352,7 @@ Set the preference options of the teach pendant.
       <td style="text-align:left">
         Screen save brightness
       </td>
-      <td style="text-align:left">Sets the brightness of the screensaver from level 0 (Off) to 6 (Dim).<br>
+      <td style="text-align:left">Sets the brightness of the screensaver from level 0 (Off) to 6 (Slightly dim).<br>
       (Supported from version V60.32-06 and later.)</td>
     </tr>
     <tr>
