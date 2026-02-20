@@ -253,7 +253,7 @@
     * [7.7.6 Calibration of the Robot and Tool](7-system/7-auto-calibration/6-robot-tool-calibration.md)
     * [7.7.7 Additional Axis Autotuning](7-system/7-auto-calibration/7-addaxis-autotuning.md)
   * [7.8 Safety System](7-system/8-safety-system.md)
-  * [7.9 Cobot System](7-system/9-cobot-system/README.md)
+  * [7.9 Cobot System](7-system/9-cobot-system.md)
   * [7.10 Option System](7-system/10-option-system/README.md)
     * [7.10.1 Userdio Board Setting](7-system/10-option-system/1-userdio-board-setting.md)
 * [8. R Codes](8-r-code/README.md)
