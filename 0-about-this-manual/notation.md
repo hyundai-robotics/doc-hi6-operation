@@ -2,13 +2,13 @@
 
 In this manual, the following notation conventions and safety instructions are used to help you understand the contents.
 
-## Description of Figures
+### Description of Figures
 
 Figures are used to help you understand how to operate the product and illustrate what you can see on the screen. For the description of figures, numbers will be marked for the relevant parts, and the corresponding contents will be described as follows.
 
 ![](../_assets/tp630/pane-prog-cmd-param.png)
 
-## GUI \(Graphical User Interface\)
+### GUI \(Graphical User Interface\)
 
 In the GUI, menu names and button names are enclosed in square brackets and displayed with a light background color.
 When multiple menus must be selected in sequence, their names are separated by a hyphen (-).
@@ -17,7 +17,7 @@ When multiple menus must be selected in sequence, their names are separated by a
 * Multiple menus: On the initial screen in Manual mode, touch `[F2: System] - 5: Initialization - 6: Mechanism setting`.
 
 
-## Notation Method for Operation Keys
+### Notation Method for Operation Keys
 
 Keys that are to be pressed on the operation part of the teach pendant to operate functions will be enclosed in square brackets and displayed with a light background color.
 
@@ -25,13 +25,13 @@ Keys that are to be pressed on the operation part of the teach pendant to operat
 
 
 
-## Cross Reference 
+### Cross Reference 
 
 It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks (" ") as follows.
 
 * For details on how to change the date and time information, refer to "[4.5 Setting of Date and Time.](../4-service/5-date-time-setting.md)".
 
-## Note
+### Note
 
 In this section are some helpful tips or additional information that could be useful when you use the product as follows.
 
