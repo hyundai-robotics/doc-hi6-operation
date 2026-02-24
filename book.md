@@ -4982,6 +4982,23 @@ Refer to Arc Welding Manual's "[7. Welding data monitoring](https://hrbook-hrc.w
     - in case of softxyz function : not shown
     - in case of softjoint function : joint coordinate 
 
+[__SOURCE](6-monitoring/6-safety-funtion.md)
+# 6.6 Safety Funtion
+
+{% hint style="info" %}
+This function is supported from the Hi7 controller.
+{% endhint %}
+
+In the panel selection window, touch `[Safety Function]`. Then, the Safety Function status window will appear. 
+You can check the status of the Safety Function, Manual Speed, Stop Time, Stop Distance, MCU-A, and MCU-B.
+
+![](../_assets/image_552.png)
+
+{% hint style="info" %}
+* For details on the Safety Function, refer to the "[SafeSpace2.0 Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README)".
+{% endhint %}
+
+
 [__SOURCE](7-system/README.md)
 # 7. System
 
@@ -8452,6 +8469,72 @@ If the tuned gain results in noise, navigate to `[System] - 3:Robot parameter - 
 
 If the noise persists, please contact us for further assistance.
 
+[__SOURCE](7-system/8-safety-system.md)
+# 7.8 Safety System 
+
+{% hint style="info" %}
+This function is supported from the Hi7 controller.
+{% endhint %}
+
+1.	Touch the `[8: Safety System]` menu. Then, the menu of safety system will appear.
+
+2.	Select the desired menu to perform Basic Settings, Parameter Settings, Monitoring, Certificate, or Safety Radar.
+
+![](../_assets/tp630/system-safety-menu.png)
+
+{% hint style="info" %}
+For detailed information on 1: Basic Settings, 2: Parameter Settings, 3: Monitoring, and 4: Certificate of the Safety System, refer to the "[SafeSpace2.0 Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README)".
+{% endhint %}
+
+{% hint style="info" %}
+For detailed information on the Safety Radar, refer to the "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)".
+{% endhint %}
+[__SOURCE](7-system/9-cobot-system.md)
+# 7.9 Cobot System
+
+{% hint style="info" %}
+This function is supported from the Hi7 controller.
+{% endhint %}
+
+
+1.	Touch `[Cobot System]`. The Collaborative Robot System menu appears.
+
+2.	 Select the desired menu to perform Collision Detection or Direct Teaching.
+
+![](../../_assets/tp630/system-cobot-menu.png)
+
+{% hint style="info" %}
+For detailed information on the Collaborative Robot System, refer to the  "[Cobot Safety Function Manual](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/korean/README)".
+{% endhint %}
+[__SOURCE](7-system/10-option-system/README.md)
+# 7.10 Option System
+
+{% hint style="info" %}
+This function is supported from the Hi7 controller.
+{% endhint %}
+
+1.	Touch `[Option System]`. The Option System menu appears.
+
+2.	Select the desired menu to perform the corresponding function.
+
+![](../../_assets/tp630/system-option-menu.png)
+
+[__SOURCE](7-system/10-option-system/1-userdio-board-setting.md)
+# 7.10.1 UserDIO Board Setting
+
+{% hint style="info" %}
+This function is supported from the Hi7 controller.
+{% endhint %}
+
+
+In the Hi7 controller, the User DIO Board (BD681) and Extension DIO Board (BD682) can be used to process digital input/output signals and the conveyor interface.
+
+
+![](../../_assets/tp630/system-option-dio.png)
+
+{% hint style="info" %}
+For detailed information on the User DIO Board settings, refer to the  "[Hi7 Robot Controller Function Manual - User DIO, Extension DIO](https://hrbook-hrc.web.app/#/view/doc-userDIO-ExtensionDIO/en/README)".
+{% endhint %}
 [__SOURCE](8-r-code/README.md)
 # 8. R Codes
 

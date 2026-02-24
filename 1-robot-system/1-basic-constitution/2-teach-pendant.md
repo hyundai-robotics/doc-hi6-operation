@@ -524,10 +524,3 @@ Both the models, TP600 and TP630, are supported. This operation manual describes
  </tr>
 </table>
 
-<p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
-
-</div>
-
-</body>
-
-</html>
