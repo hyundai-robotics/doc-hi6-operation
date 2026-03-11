@@ -14,5 +14,26 @@ The operation speed of the robot can be displayed using the following four types
 
 
 
+### Mechanism-Specified Speed Planning
+* {mech:Mechanism number, spd:Speed}(Speed unit) : Plans the speed trajectory of the corresponding step based on the selected mechanism number.
+* Code example
+```python
+S2 move P,spd={mech:1,spd:100}mm/sec,accu=0,tool=0
+```
+| Mechanism-Specified Speed Planning (Mechanism 100mm/s)| Robot Speed Planning (Robot 100mm/s)| 
+|---|---| 
+| ![alt text](../../../_assets/tp630/Vel_Profile_2Mec_Addaxis.gif) | ![alt text](../../../_assets/tp630/Vel_Profile_1Mec_Rob.gif) |
 
+* The yellow circle above indicates the additional axis set as Mechanism 1.
+  * Mechanism-specified speed: The additional axis (Mechanism 1) generates a trajectory that matches the speed of 100 mm/s.
+  * Default setting: The robot generates a trajectory that matches the speed of 100 mm/s.
+
+<br>
+
+{% hint style="info" %}
+The mechanism-specified speed planning feature is available from version V60.32-00.
+
+* The specification applies only when the unit is mm/sec or cm/min.
+* If the selected mechanism is in a stopped state, movement is performed based on the robot speed.
+{% endhint %}
 
