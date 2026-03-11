@@ -17,5 +17,5 @@ S-curve (적색 점선): 가속 및 감속 시작 구간을 곡선으로 처리�
 
 {% hint style="info" %}
 * 이 기능은 V70.00-00 및 이후 버전부터 지원됩니다.
-* 명령어 문법은 ${cont_model} 제어기 기능설명서 "[5.22 scurve문](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/5-moving-robot/21-shift_lim?cont_model=${cont_model})"를 참조하십시오.
+* 명령어 문법은 ${cont_model} 제어기 기능설명서 "[5.22 scurve문](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/5-moving-robot/22-s-curve?cont_model=${cont_model})"를 참조하십시오.
 {% endhint %}
