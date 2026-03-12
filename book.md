@@ -23,7 +23,7 @@ This manual has been created based on standard specifications, so some contents 
 [__SOURCE](0-about-this-manual/precautions.md)
 # Precautions
 
-{% include url="https://hrcontentsrelay-bmgae5hdbzapc4bc.koreacentral-01.azurewebsites.net/api/proxy?path=doc-common-pages/en/precautions.md" %}
+{% include file="en/precautions.md" %}
 
 [__SOURCE](0-about-this-manual/notation.md)
 # Notation Convention
