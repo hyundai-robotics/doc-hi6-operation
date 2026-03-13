@@ -6272,7 +6272,7 @@ For details on how to execute scheduled programs, refer to the "[${cont_model} C
 [__SOURCE](7-system/3-control-parameter/8-auto-backup-restore.md)
 # 7.3.8 Automatic Backup and Recovery
 
-For details on how to automatically back up and recover the controller's data, refer to the "${cont_model} Controller Automatic Backup Function Manual."
+For details on how to automatically back up and recover the controller's data, refer to the "[${cont_model} Controller Automatic Backup Function Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-auto-backup/en/README)".
 
 
 [__SOURCE](7-system/3-control-parameter/9-network-setting/README.md)
