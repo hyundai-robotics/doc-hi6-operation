@@ -5100,19 +5100,18 @@ If the program being played back is modified externally \(PC\) and downloaded to
 
 * `[9: Teach pendent disconnection]`: You can disconnect the teach pendant from the controller to operate the robot in auto mode.
 
-  * If set to <Disconnect>, no "E2800 Teaching Pendant Operation Abnormal" error occurs when communication between the teaching pendant and the main b/d is disconnected. (The robot operates even when communication is disconnected.)
+  * If set to `Disconnect`, no "E2800 Teaching Pendant Operation Abnormal" error occurs when communication between the teaching pendant and the main b/d is disconnected. (The robot operates even when communication is disconnected.)
 
-  * In the <Connect> state, you can set a timeout period to determine whether communication is lost.
+  * In the `Connect` state, you can set a timeout period to determine whether communication is lost.
 
-  * When it is set as <Disconnect> and the teach pendant is disconnected from the controller, and power is supplied, the controller will recognize the current mode as remote mode, allowing the robot to be auto-operated through external Motor On and external start-up. 
+  * When it is set as `Disconnect` and the teach pendant is disconnected from the controller, and power is supplied, the controller will recognize the current mode as remote mode, allowing the robot to be auto-operated through external Motor On and external start-up. 
+
+  * If you set this to `Connect`, a communication failure between the teach pendant and the mainboard will trigger the "E2800 Teaching pendant communication error," causing the motor to turn OFF. (When the Engineer Code (R314) is entered, you can configure the communication timeout duration.)
 
   * Because the emergency switch and mode conversion switch are separately connected through a signal wire to the teach pendant, you must appropriately wire this signal wire. 
 
   * Connect CNRTP connector pin #9 (Auto) to #2 (M1) and pin #5 (Emergency stop 1) to #2 (M1), and use the exclusive CNRTP connector with pin #6 (Emergency stop 2) connected to #1 (P1) instead of the teach pendant.
 
-{% hint style="info" %}
-  Editing the period of connection checking is avaiable in engineer mode.
-{% endhint %}
 [__SOURCE](7-system/3-control-parameter/README.md)
 # 7.3 Control Parameter
 
