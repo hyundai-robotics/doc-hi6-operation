@@ -74,7 +74,7 @@ You can register the user coordinate system number in the `[system  - 2: Control
 {% endhint %}
 
 
-* `[10:Plc run mode]`: When the robot controller controls input/output signals using the embedded PLC, set the mode to control the embedded PLC. There are a total of 4 embedded PLC modes. For further details, please refer to the "[{cont_model} Controller Function Manual - Embedded PLC](https://hrbook-hrc.web.app/#/view/doc-hi6-embedded-plc/en/README?cont_model={cont_model})".
+* `[10:Plc run mode]`: When the robot controller controls input/output signals using the embedded PLC, set the mode to control the embedded PLC. There are a total of 4 embedded PLC modes. For further details, please refer to the "[${cont_model} Controller Function Manual - Embedded PLC](https://hrbook-hrc.web.app/#/view/doc-hi6-embedded-plc/en/README?cont_model=${cont_model})".
 
   * Off : Disables the function.
   * Stop : Stops embedded PLC operation.
