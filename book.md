@@ -6266,7 +6266,7 @@ In the case of using the stationary servo gun, the stationary tool interpolation
 [__SOURCE](7-system/3-control-parameter/7-prog-reservation.md)
 # 7.3.7 Scheduled Program Execution
 
-For details on how to execute scheduled programs, refer to the "${cont_model} Controller Scheduled Program Execution Function Manual."
+For details on how to execute scheduled programs, refer to the "[${cont_model} Controller Scheduled Program Execution Function Manual](https://hrbook-hrc.web.app/#/view/doc-reserved-program-execution/en/README)".
 
 
 [__SOURCE](7-system/3-control-parameter/8-auto-backup-restore.md)
@@ -8832,7 +8832,7 @@ You can select the numbers of spot welding guns \(servo guns or pneumatic guns\)
 [__SOURCE](8-r-code/10-r215.md)
 # 8.10 R215 for Setting the Squeeze Force in the Spot Welding Condition
 
-You can set the squeeze force required for servo gun welding in the welding condition table. You can also set the squeeze force in the `system  - 4: Application Parameter  - 1: Spot Welding  - 4: Welding Data \(Condition, Sequence\)  - 2: Welding Condition` menu.
+You can set the squeeze force required for servo gun welding in the welding condition table. You can also set the squeeze force in the `system  - 4: Application Parameter  - 1: Spot Welding  - 4: Welding Data (Condition, Sequence)  - 2: Welding Condition` menu.
 
 1.	After inputting 215 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key. 
 
