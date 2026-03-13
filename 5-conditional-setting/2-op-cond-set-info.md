@@ -3,24 +3,17 @@
 
 
 * `[1: Operation cycle type]`: You can set whether to repeat the program that will be executed during automatic operation. It can also be set while the robot is starting up, and the setting value will not be applied during manual operation.
-  * 
-    1 Cycle: The job program will operate once and then stop. When the program END is reached, the robot will stop.
-
+  * 1 Cycle: The job program will operate once and then stop. When the program END is reached, the robot will stop.
   * Continuous: The job program will operate continuously and repeatedly. If there is an external stop operation, the robot will stop.
-* 
-  `2: Step FWD/BWD maximum speed`: You can set the speed limit for a step forward/backward. For details on this option, refer to "[2.1 Manual Operation](../operation/manual-operation/)".
+</br>
 
-* 
-  `[3: Function execution during Step FWD]`: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
+* `[2: Step FWD/BWD maximum speed]`: You can set the speed limit for a step forward/backward. For details on this option, refer to "[2.1 Manual Operation](../2-operation/1-manual-operation/README.md)".
+</br>
 
-  * 
-    Off: Only END recorded in the job program will be executed. All other functions except for END will not be executed.
-
-  * 
-    On: All functions recorded in the job program will be executed.
-
-  * 
-    1 On: Only the input signal wait function and program END function will be executed.
+* `[3: Function execution during Step FWD]`: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
+  * Off: Only END recorded in the job program will be executed. All other functions except for END will not be executed.
+  * On: All functions recorded in the job program will be executed.
+  * 1 On: Only the input signal wait function and program END function will be executed.
 
 
 
@@ -29,14 +22,14 @@ While in the step backward operation, only the input wait signal function will b
 {% endhint %}
 
 * `[4: Re-execution of the function after step backward and forward]`: You can perform setting in a way that the previously executed functions among the functions recorded in the job program can be executed again when in the step forward operation again after the step backward operation.
-* 
-  `5: Path recovery during step FWD/BWD`: You can set the mode of executing path recovery when in the step forward/backward operation.
+</br>
 
+* `[5: Path recovery during step FWD/BWD]`: You can set the mode of executing path recovery when in the step forward/backward operation.
   * Disable: Will not execute path recovery
   * Enable: Will execute path recovery without confirming with the user whether to execute path recovery
+</br>
 
-* 
-  `[6: Playback speed rate]`: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot moving speed against the speed recorded in the step in batch.
+* `[6: Playback speed rate]`: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot moving speed against the speed recorded in the step in batch.
 
 
 
@@ -46,10 +39,11 @@ If a low-speed command is inputted through an external input during automatic op
 {% endhint %}
 
 * `[7: Robot Lock]`: You can set the job program in a way that automatic operation is possible, without moving the robot. You can check the status of I/O with the peripheral devices, the soft limit, the cycle time, etc.
+</br>
+
 * `[8: Interpolation base]`: You can set a tool that will be the reference during the manual jogging of the robot. In general, a robot tool is used as an interpolation reference.
   * Robot Tool: Interpolation operation will be executed based on the tool attached to the front end of the robot.
-  * 
-    Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../_assets/tp630/sbt-crd-st0-small_eng.png)\).
+  * Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../_assets/tp630/sbt-crd-st0-small_eng.png)\).
 
 
 
@@ -70,7 +64,7 @@ If you select the stationary tool as the interpolation reference, you must set t
 
 
 {% hint style="info" %}
-You can register the user coordinate system number in the `[system  - 2: Control Parameter  - 7: Coordinate System Registration  -1: User Coordinate System]`.
+You can register the user coordinate system number in the `[system  - 2: Control Parameter  - 6: Coordinate System Registration  -1: User Coordinate System]`.
 {% endhint %}
 
 
