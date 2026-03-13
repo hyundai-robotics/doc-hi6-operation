@@ -6348,7 +6348,7 @@ You can set the information required for Network Setting for LAN ports.
 # 7.3.9.2.1 Modbus slave
 
 This section covers settings and monitoring when using the controller's Modbus TCP slave communication. <br>
-For more information, refer to "${cont_model} Robot Controller Function Manual - Modbus".
+For more information, refer to "[${cont_model} Robot Controller Function Manual - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/en/README)".
 
 
 [__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/3-ntp-client.md)
