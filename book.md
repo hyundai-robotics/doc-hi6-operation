@@ -8607,6 +8607,23 @@ C. 실행
 {% hint style="info" %}
 안전 레이더에 대한 자세한 관한 내용은  "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)"을 참고하십시오.
 {% endhint %}
+[__SOURCE](7-system/9-cobot-system.md)
+# 7.9 협동로봇 시스템
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+
+1.	\[협동로봇 시스템\] 메뉴를 터치하십시오. 협동로봇 시스템 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 충돌 검지, 직접 교시를 수행하십시오.
+
+![](../../_assets/tp630/system-cobot-menu.png)
+
+{% hint style="info" %}
+협동로봇 시스템에 대한 자세한 관한 내용은  "[협동로봇 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/korean/README)"을 참고하십시오.
+{% endhint %}
 [__SOURCE](7-system/10-option-system/README.md)
 # 7.10 옵션 장치
 
@@ -8901,7 +8918,7 @@ R 코드 창에서 0을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENT
 [__SOURCE](8-r-code/10-r215.md)
 # 8.10 R215 스폿용접조건 가압력 설정
 
-서보건 용접 시 필요한 가압력을 용접 조건 테이블에 설정합니다. `시스템 - 4: 응용파라미터 - 1: 스폿용접 - 4: 용접데이터 \(조건, 시퀀스\) - 2: 용접조건` 메뉴에서도 가압력을 설정할 수 있습니다.
+서보건 용접 시 필요한 가압력을 용접 조건 테이블에 설정합니다. `시스템 - 4: 응용파라미터 - 1: 스폿용접 - 4: 용접데이터 (조건, 시퀀스) - 2: 용접조건` 메뉴에서도 가압력을 설정할 수 있습니다.
 
 1.	즐겨찾기 창에서 215를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
 

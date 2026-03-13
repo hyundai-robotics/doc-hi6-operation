@@ -265,7 +265,7 @@
     * [7.7.6 로봇과 툴 캘리브레이션](7-system/7-auto-calibration/6-robot-tool-calibration.md)
     * [7.7.7 부가축 자동튜닝](7-system/7-auto-calibration/7-Addaxis-autotuning.md)
   * [7.8 안전 시스템](7-system/8-safety-system.md)
-  * [7.9 협동로봇 시스템](7-system/9-cobot-system/README.md)
+  * [7.9 협동로봇 시스템](7-system/9-cobot-system.md)
   * [7.10 옵션 장치](7-system/10-option-system/README.md)
     * [7.10.1 사용자DIO 보드 설정](7-system/10-option-system/1-userdio-board-setting.md)
 * [8. R코드](8-r-code/README.md)
