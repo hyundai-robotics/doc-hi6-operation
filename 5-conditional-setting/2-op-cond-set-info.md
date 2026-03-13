@@ -6,6 +6,7 @@
   * 1 Cycle: The job program will operate once and then stop. When the program END is reached, the robot will stop.
   * Continuous: The job program will operate continuously and repeatedly. If there is an external stop operation, the robot will stop.
 </br>
+</br>
 
 * `[2: Step FWD/BWD maximum speed]`: You can set the speed limit for a step forward/backward. For details on this option, refer to "[2.1 Manual Operation](../2-operation/1-manual-operation/README.md)".
 </br>
@@ -27,6 +28,7 @@ While in the step backward operation, only the input wait signal function will b
 * `[5: Path recovery during step FWD/BWD]`: You can set the mode of executing path recovery when in the step forward/backward operation.
   * Disable: Will not execute path recovery
   * Enable: Will execute path recovery without confirming with the user whether to execute path recovery
+</br>
 </br>
 
 * `[6: Playback speed rate]`: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot moving speed against the speed recorded in the step in batch.
