@@ -3999,7 +3999,7 @@ panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것�
 </table>
 
 {% hint style="info" %}
-프로그램의 관리 및 작성 방법에 대한 자세한 내용은 "[3 프로그램 작성](../3-programming/README?cont_model=${cont_model})"을 참조하십시오.
+프로그램의 관리 및 작성 방법에 대한 자세한 내용은 "[3 프로그램 작성](../../3-programming/README?cont_model=${cont_model})"을 참조하십시오.
 {% endhint %}
 
 
