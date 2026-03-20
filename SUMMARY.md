@@ -24,6 +24,7 @@
       * [1.2.3.8 작업 편집창](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/8-work-area.md)
       * [1.2.3.9 기록조건 표시줄](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/9-record-cnd-area.md)
       * [1.2.3.10 L버튼 막대](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/10-Lbt-bar.md)
+    * [1.2.4 티치펜던트 화면의 언어 변경하기](1-robot-system/2-basic-usage/4-change-language-of-tp.md)
 * [2. 운전](2-operation/README.md)
   * [2.1 수동 운전](2-operation/1-manual-operation/README.md)
     * [2.1.1 운전 방법](2-operation/1-manual-operation/1-how-to-op.md)
