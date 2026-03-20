@@ -7610,6 +7610,91 @@ In the move command, the robot speed is applied by combining the original speed 
 * When an I/O signal is received during playback, the reduced speed mode will still be applied.
 {% endhint %}
 
+[__SOURCE](7-system/5-application-parameter/23-scurve-condition/README.md)
+# 7.5.23 S-curve Condition
+
+The S‑curve refers to motion‑trajectory planning that adjusts path accuracy and residual vibration according to the task, enabling the design of an optimal process
+
+![](../../../_assets/tp630/s-curve_velocity_comparison.png)
+
+The image compares the default velocity‑profiling method with the S‑curve velocity‑profiling method.
+
+Default (blue solid line): Acceleration starts and ends with abrupt changes in acceleration, which can cause vibration.
+S‑curve (red dashed line): The speed change during acceleration and deceleration is performed more smoothly. This minimizes robot vibration and reduces path error even when the motion speed changes.
+
+{% hint style="warning" %}
+* If continuous motion generation fails, the motion will run as a discontinuous (broken) motion. In that region, adjust the parameters or switch back to the default motion (Default) for reliable operation.
+* History logs can be used to view records of continuous‑motion failures.
+{% endhint %}
+
+{% hint style="info" %}
+* This feature is supported from version V70.00‑00 onward.
+* Refer to the command syntax in the ${cont_model} controller manual "[5.22 scurve](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/22-s-curve?cont_model=${cont_model})"
+{% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/23-scurve-condition/1-scurve-condition.md)
+# 7.5.23.1 S-curve condition
+
+S‑curve condition settings allow you to define the characteristics of the acceleration and deceleration phases that occur when the robot is operating in detail. Configure the items below to match each process’s required characteristics (such as path accuracy or vibration reduction).
+
+![](../../../_assets/tp630/s-curve_condition.png)
+
+  * Condition Name: Enter the name of the condition.
+  * Path Accuracy <br>
+    Determines how faithfully the robot follows the specified trajectory. A higher value is recommended for processes such as machining or precision assembly where trajectory deviation must be minimized.
+    A larger value increases path accuracy, but it may also cause relatively higher vibration.
+  * Smooth Motion <br>
+    Determines how gently the acceleration and deceleration change. Use a higher value when you need to protect fragile workpieces (e.g., glass), when the process is sensitive to vibration, or when you want to reduce mechanical shock to the robot hardware. A larger value yields smoother motion, but it also increases cycle time. Setting the value too high may prevent the robot from performing continuous motions, causing it to move in a discontinuous manner.
+
+## Example Settings
+
+* Precision machining and dispensing (path accuracy priority)
+  * The robot must follow a predetermined trajectory accurately.
+
+  * Recommended settings:
+    * Path accuracy: High (e.g., 80 ~ 100)
+    * Smooth motion: Low‑to‑medium (e.g., 20 ~ 40)
+
+  * Use case: Applying sealant along complex curves of automotive parts, or performing laser cutting. To minimize trajectory error, set accuracy high; maintaining the path is more important than slight vibration.
+
+  * Caution: Adjust parameters according to the actual robot’s vibration behavior and the specific process specifications.
+
+* Sensitive cargo transport (vibration‑reduction, smooth motion priority)
+  * A process where vibration can damage the product or cause mis‑placement.
+
+  * Recommended settings:
+    * Path accuracy: Medium (e.g., 50)
+    * Smooth motion: High (e.g., 80 ~ 100)
+
+  * Use case: Transporting semiconductor wafers, large glass panels (LCD/OLED), or containers with easily spilling liquid. Minimize shock during acceleration/deceleration to prevent slip or shaking.
+
+  * Caution: As motion becomes smoother, overall cycle time (operation time) may increase, or discontinuous motions may need to be performed.
+[__SOURCE](7-system/5-application-parameter/23-scurve-condition/2-acceldecel-parameter.md)
+# 7.5.23.2 Acceleration/Deceleration Parameters
+
+S‑curve conditions and **maximum jerk** complement each other. When optimizing a process with only the S‑curve setting proves difficult, or when you need to adjust the maximum jerk limit for each joint, you adjust the parameters.
+
+![](../../../_assets/tp630/s-curve_acceldecel_parameter.png)
+
+Relationship Between Jerk and Motion
+Jerk is the rate of change of acceleration, and modifying this value produces the following characteristic changes.
+
+- **Decrease maximum jerk (↓):** Acceleration changes more gradually, making motion smoother and reducing vibration. However, it takes longer to reach the target speed, which can increase cycle time.
+
+- **Increase maximum jerk (↑):** Provides a more responsive motion, but if the value is too high the “smooth motion” effect of the S‑curve condition is diminished, leading to greater mechanical impact.
+
+Automatic Update of Maximum Jerk
+The system automatically recalculates the maximum jerk value whenever key parameters change to maintain equipment stability.
+
+{% hint style="warning" %}
+**Caution:** When you manually set a value, modifying the top speed or acceleration time will overwrite the manually entered maximum jerk with the system‑calculated value. If you have optimized the jerk value for a specific process, be sure to back up the existing value before making changes.
+{% endhint %}
+
+
+{% hint style="info" %}
+Because acceleration/deceleration parameters have a large impact on robot motion characteristics, they are only enabled in Engineering mode or higher.
+{% endhint %}
+
 [__SOURCE](7-system/6-initialization/README.md)
 # 7.6 Initialization
 
