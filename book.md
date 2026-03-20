@@ -658,8 +658,57 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
 ![](../../_assets/image_29.png)
 
 
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/README.md)
-# 1.2.3 ${cont_model} 티치 펜던트 화면
+[__SOURCE](1-robot-system/2-basic-usage/3-change-language-of-tp.md)
+# 1.2.3 티치펜던트 화면의 언어 변경하기
+
+티치펜던트의 언어가 맞지 않을 경우, 다음의 절차로 변경할 수 있습니다. 다음 예는 한국어 모드를 영어 모드로 변경하는 예입니다.
+
+### A. 티치펜던트 옵션에서 변경 (V70.00-00 이상에서만 지원)
+
+1. `[F1: 서비스]` 버튼을 클릭하십시오.
+
+    ![](../../_assets/tp630/service/fb-service.png)
+
+2. `11: 티치펜던트 옵션` 으로 진입하십시오.
+
+    ![](../../_assets/tp630/service/menu-tp-option.png)
+
+3. 언어에서 `English`를 선택하십시오.
+
+    ![](../../_assets/tp630/service/tp-option-lang.png)
+
+4. `[ESC]`키로 최상위 HOME 화면으로 빠져나온 후 잠시 기다리십시오.
+
+<br>
+
+### B. 티치펜던트 소프트웨어를 종료한 후 변경
+
+1. `[F1: 서비스]` 버튼을 클릭하십시오.
+
+    ![](../../_assets/tp630/service/fb-service.png)
+
+2. `9: TP 응용프로그램 종료`를 선택하십시오.
+
+    ![](../../_assets/tp630/service/exit-application.png)
+
+3. 좌 하단의 언어 콤보박스를 클릭하십시오.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang.png)
+
+    {% hint style="info" %}
+
+    V60.32-00 미만 버전은 우 상단의 지구본 아이콘을 클릭하십시오.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang-old.png)
+
+    {% endhint %}
+
+4.	팝업 메뉴에서 `English`를 선택하십시오.
+
+5.	우하단의 `[run TP]` 버튼을 클릭하고, 15초 정도 기다리십시오.
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/README.md)
+# 1.2.4 ${cont_model} 티치 펜던트 화면
 
 로봇의 동작을 제어하거나 로봇과 연동된 장치를 관리할 수 있습니다. ${cont_model} TP630 티치 펜던트 화면은 다음과 같이 10개의 화면 창으로 구성됩니다.
 <br>
@@ -678,8 +727,8 @@ TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합
 | ![](../../../_assets/c8.png) | 작업 편집창 : JOB 프로그램을 편집하는 영역입니다.  ([1.2.3.8 작업 편집창](8-work-area.md)) |
 | ![](../../../_assets/c9.png) | 기록조건 표시줄 : 기록할 스텝의 조건을 표시합니다.  ([1.2.3.9 기록조건 표시줄](9-record-cnd-area.md)) |
 | ![](../../../_assets/c10.png) | L버튼 막대  : 화면 좌측 메뉴 그룹입니다.  ([1.2.3.10 L버튼 막대](10-Lbt-bar.md)) |
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/1-title-area.md)
-# 1.2.3.1 제목 표시줄
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/1-title-area.md)
+# 1.2.4.1 제목 표시줄
 
 TP 화면의 최상단에 로봇 시스템의 상태를 표시합니다.
 
@@ -702,8 +751,8 @@ TP 화면의 최상단에 로봇 시스템의 상태를 표시합니다.
 | ![](../../../_assets/c10.png) | 감속기 수명 이상 상태를 표시합니다.(이상 상태인 경우 축 번호 표시 및 점멸)|
 | ![](../../../_assets/c11.png) | 사용자 레벨을 표시합니다. (E : 엔지니어모드) <br> (참고: [R314](../../../8-r-code/12-r314.md?cont_model=${cont_model}))|
 | ![](../../../_assets/c12.png) | PLC 동작 상태를 표시합니다. |
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/2-status-bar.md)
-# 1.2.3.2 상태 표시줄
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/2-status-bar.md)
+# 1.2.4.2 상태 표시줄
 
 로봇 운전을 위한 각종 상태 값을 표시합니다. 6개 칸에 표시되는 정보 중 툴(2), 메카니즘(3), 좌표계(4)는 해당 칸을 터치함으로써 설정 할 수 있습니다.
 
@@ -721,8 +770,8 @@ TP 화면의 최상단에 로봇 시스템의 상태를 표시합니다.
 | ![](../../../_assets/c6.png) | 날짜와 시간 정보가 표시됩니다. <br> `[F1: 서비스] - 8: 날짜, 시간설정` 메뉴를 터치하면 날짜와 시간 정보를 변경할 수 있습니다. ([4.5 날짜 및 시간 설정](../../../4-service/5-date-time-setting.md))|
 
 
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/3-Rbt-bar.md)
-# 1.2.3.3 R(Right)버튼 막대
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/3-Rbt-bar.md)
+# 1.2.4.3 R(Right)버튼 막대
 
 화면 우측 5개의 버튼을 표시하며 화면을 터치할 수 있습니다. 비활성 상태의 버튼은 회색으로 표시됩니다. 자동모드에서는 [전/후] 버튼이 비활성화됩니다.
 
@@ -787,8 +836,8 @@ TP 화면의 최상단에 로봇 시스템의 상태를 표시합니다.
 
 
 
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/4-mon-area.md)
-# 1.2.3.4 모니터링 창
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/4-mon-area.md)
+# 1.2.4.4 모니터링 창
 
 각 축별 위치데이터, I/O 데이터, 각 응용 별 상태 데이터를 실시간으로 표시하는 창입니다.  
 창 선택과 창 조정(분할, 닫기)은 [창조정] 버튼으로 실행하며 총 3개의 모니터 창을 표시할 수 있습니다. ([6. 모니터링](../../../6-monitoring/README.md))
@@ -797,8 +846,8 @@ TP 화면의 최상단에 로봇 시스템의 상태를 표시합니다.
 
 ![](../../../_assets/tp630/TP-main-mon.png)
 
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/5-function-buttons.md)
-# 1.2.3.5 기능버튼 줄
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/5-function-buttons.md)
+# 1.2.4.5 기능버튼 줄
 
 화면 하단 7개의 버튼으로 구성된 기능버튼들 입니다.현재의 조작화면에 따라 구성이 달라집니다. 작업 프로그램 편집 중에는 명령어 목록이나 명령어 파라미터 설정 값 등의 버튼이 표시됩니다. 아래 표는 최상위 화면에서 표시되는 버튼에 대한 설명입니다.
 
@@ -815,8 +864,8 @@ TP 화면의 최상단에 로봇 시스템의 상태를 표시합니다.
 | ![](../../../_assets/c4.png) | 에러나 경고 이력을 표시합니다. 내용과 발생시각, 발생 프로그램 번호, 스텝번호, 축데이터, 입출력 상태 등을 확인합니다. ([2.5.2 에러 처리](../../../2-operation/5-error-info/2-error-handle.md))|
 | ![](../../../_assets/c5.png) | 수동모드의 초기화면에 [명령입력] 버튼이 표시됩니다. 작업 편집창에 명령문을 입력하는 용도로 사용됩니다. ([3.2.2.1 일반 명령문 입력](../../../3-programming/2-prog-edit/1-statement.md))|
 | ![](../../../_assets/c6.png) | 스텝 전/후진이동 시 최고속도, 경로 복구 여부 등 로봇의 운전 조건을 설정합니다. ([5.조건 설정](../../../5-conditional-setting/README.md))|
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/6-input-area.md)
-# 1.2.3.6 입력 표시줄
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/6-input-area.md)
+# 1.2.4.6 입력 표시줄
 
 명령어, 문자 또는 함수 등 편집할 내용의 입력값이 표시되는 영역입니다.  
 기능버튼 줄의 `명령어 입력`을 사용하지 않고 입력 표시창에 명령어를 바로 기록할 수 있습니다. 정의되지 않은 명령어나 문법 오류시 아래와 같은 에러가 발생합니다.
@@ -832,8 +881,8 @@ TP 화면의 최상단에 로봇 시스템의 상태를 표시합니다.
 |명령어 인자|관련 입력 내용|
 |--|--|
 |![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-input.png)|
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/7-guide-area.md)
-# 1.2.3.7 안내 표시줄
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/7-guide-area.md)
+# 1.2.4.7 안내 표시줄
 
 사용자의 조작을 안내 또는 지시하는 메시지를 표시하며 출력(print) 명령문에서 출력방향을 티치펜던트로 선택했을 때 출력 메시지가 표시되는 영역입니다.
 
@@ -846,8 +895,8 @@ TP 화면의 최상단에 로봇 시스템의 상태를 표시합니다.
 |명령어 인자|관련 안내문구|
 |--|--|
 |![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-guide.png)|
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/8-work-area.md)
-# 1.2.3.8 작업 편집창
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area.md)
+# 1.2.4.8 작업 편집창
 
 JOB 프로그램을 편집하는 작업 영역입니다. 자세한 프로그램 작성법은 "[3. 프로그램 작성](../../../3-programming/README.md)"을 참고하시기 바랍니다.
 
@@ -895,8 +944,8 @@ JOB 프로그램을 편집하는 작업 영역입니다. 자세한 프로그램 
 
 ![](../../../_assets/tp630/pop-error-fileprotect.png)
 
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/9-record-cnd-area.md)
-# 1.2.3.9 기록조건 표시줄
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/9-record-cnd-area.md)
+# 1.2.4.9 기록조건 표시줄
 
 기록할 스텝의 조건(속도, accuracy, tool #, option 등)을 표시합니다. L버튼 막대 중 `기록조건` <img src="../../../_assets/tp630/lbt-record.png" width="35mm"></img>
 을 눌러서 변경 가능하며 자세한 내용은 "[3.2.2.3 기록 조건](../../../3-programming/2-prog-edit/2-statement-input/3-rec-cond.md)"을 참고하십시오.</td>
@@ -906,8 +955,8 @@ JOB 프로그램을 편집하는 작업 영역입니다. 자세한 프로그램 
 ![](../../../_assets/tp630/TP-main-recordcnd.png)
 
 
-[__SOURCE](1-robot-system/2-basic-usage/3-screen-of-the-hi6-tp/10-Lbt-bar.md)
-# 1.2.3.10 L(Left)버튼 막대
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/10-Lbt-bar.md)
+# 1.2.4.10 L(Left)버튼 막대
 
 화면 좌측 5개의 버튼을 표시하며 화면을 터치할 수 있습니다. 비활성 상태의 버튼은 회색으로 표시됩니다. 자동모드에서는 `기록조건`과 `조그인칭` 버튼이 비활성화됩니다.
 
@@ -982,55 +1031,6 @@ JOB 프로그램을 편집하는 작업 영역입니다. 자세한 프로그램 
 * 스폿용접을 사용할 때, 스텝 기록 시 GUN 가압 동작의 기록 여부를 결정합니다. `[SHIFT]` 키와 함께 누르면 GUN 신호가 수동 출력됩니다.
 * 아크용접을 사용할 때, 자동 운전 시에 램프가 켜져 있으면 실제로 아크 용접을 진행하고, 램프가 꺼져 있으면 아크용접을 진행하지 않고 티칭된 궤적만을 확인합니다.
 {% endhint %}
-
-[__SOURCE](1-robot-system/2-basic-usage/4-change-language-of-tp.md)
-# 1.2.4 티치펜던트 화면의 언어 변경하기
-
-티치펜던트의 언어가 맞지 않을 경우, 다음의 절차로 변경할 수 있습니다. 다음 예는 한국어 모드를 영어 모드로 변경하는 예입니다.
-
-### A. 티치펜던트 옵션에서 변경 (V70.00-00 이상에서만 지원)
-
-1. 우버튼 막대의 `[F1: 서비스]` 버튼을 클릭하십시오.
-
-    ![](../../_assets/tp630/service/fb-service.png)
-
-2. `11: 티치펜던트 옵션` 으로 진입하십시오.
-
-    ![](../../_assets/tp630/service/menu-tp-option.png)
-
-3. 언어에서 `English`를 선택하십시오.
-
-    ![](../../_assets/tp630/service/tp-option-lang.png)
-
-4. `[ESC]`키로 최상위 HOME 화면으로 빠져나온 후 잠시 기다리십시오.
-
-<br>
-
-### B. 티치펜던트 소프트웨어를 종료한 후 변경
-
-1. 우버튼 막대의 `[F1: 서비스]` 버튼을 클릭하십시오.
-
-    ![](../../_assets/tp630/service/fb-service.png)
-
-2. `9: TP 응용프로그램 종료`를 선택하십시오.
-
-    ![](../../_assets/tp630/service/exit-application.png)
-
-3. 좌 하단의 언어 콤보박스를 클릭하여 `English`를 선택하십시오.
-
-    ![](../../_assets/tp630/service/autorun-sub-lang.png)
-
-    {% hint style="info" %}
-
-    V60.32-00 미만 버전은 우 상단의 지구본 아이콘을 클릭하십시오.
-
-    ![](../../_assets/tp630/service/autorun-sub-lang-old.png)
-
-    {% endhint %}
-
-4.	팝업 메뉴에서 `English`를 선택하십시오.
-
-5.	우하단의 `[run TP]` 버튼을 클릭하고, 15초 정도 기다리십시오.
 
 [__SOURCE](2-operation/README.md)
 # 2. 운전
