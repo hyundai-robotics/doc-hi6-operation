@@ -3554,7 +3554,7 @@ You can check the status of the robot system and various data of the controller.
   The items that can be monitored will be displayed differently depending on the setting of the controller. 
 
 * 
-  For details on how to use the panel stack and window of the work area, refer to "[1.2.3.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area.md)".
+  For details on how to use the panel stack and window of the work area, refer to "[1.2.3.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area?cont_model=${cont_model})".
 {% endhint %}
 
 [__SOURCE](6-monitoring/1-basic/README.md)
@@ -3830,12 +3830,12 @@ Select `[fn input]` or `[fn output]` in the panel selection window. The fn input
 
 Please refer to the link below for how to set up fn object.
 
-[7.3.2.12 fn block allocation](../../7-system/3-control-parameter/2-io-signal-setting/12-fn-block)
+[7.3.2.12 fn block allocation](../../7-system/3-control-parameter/2-io-signal-setting/12-fn-block?cont_model=${cont_model})
 
 
 Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to be displayed.
 
-The use of the remaining F buttons is the same as the [Public Input](6-user-input) and [Public Output](7-user-output) monitoring windows.
+The use of the remaining F buttons is the same as the [Public Input](6-user-input?cont_model=${cont_model}) and [Public Output](7-user-output?cont_model=${cont_model}) monitoring windows.
 
 
 ![](../../_assets/io/io_fn_mon.png)
@@ -3994,7 +3994,7 @@ You can modify the selected job program in the task edit window.
 </table>
 
 {% hint style="info" %}
-For details on how to manage and write programs, refer to "[3 Program Writing](../programming/)."
+For details on how to manage and write programs, refer to "[3 Program Writing](../../3-programming?cont_model=${cont_model})."
 {% endhint %}
 
 
@@ -4473,20 +4473,20 @@ There are a total of 10 pages in various data windows, so you can group and mana
 
 The elements of array or object can be viewed with the [F6: sub.level] button or the `ENTER` key, and can go up to the upper level with the [F5: up.level] button or the `ESC` key.
 
-You can enter a value in the `Start Index` edit-box to display an array from a specific index. ([Global Variable](8-global-variable/README.md) window has the same method of operation.)
+You can enter a value in the `Start Index` edit-box to display an array from a specific index. ([Global Variable](3-global-variable/README?cont_model=${cont_model}) window has the same method of operation.)
 
-{% {% hint style="warning" %}
+{% hint style="warning" %}
 * To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
-{% {% endhint %}
+{% endhint %}
 
 [__SOURCE](6-monitoring/3-job/6-call-stack.md)
 # 6.3.6 call stack
 
 Touch `[Call Stack]` in the panel selection window to display the Call Stack window. In order to understand the contents of this section, an understanding of the `call`~`return` statement and local variables of the hrscript must be preceded.
 
-[Call, Jump Statement and Subprograms](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/7-call-jump/README)
+[Call, Jump Statement and Subprograms](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/7-call-jump/README?cont_model=${cont_model})
 
-[Local Variables](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/8-local-global-var/1-local-variables)
+[Local Variables](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/8-local-global-var/1-local-variables?cont_model=${cont_model})
 
 
 ### Call and Return of Robot Language
@@ -4560,12 +4560,12 @@ You can easily understand the flow of the program that has been called so far by
 Touch `[multitask]` in the panel selection window.
 This displays the information of the programs that are run automatically in the main task and the sub tasks 1 - 7, including the steps, functions, operating state, and work state.
 
-![](../../_assets/tp630/pane-multi-task_eng.png) 
+![](../../_assets/tp630/pane-multi-task_eng.png)
 
 <br>
 
 {% hint style="info" %}
- Refer to "${cont_model} Controller Multitasking Function Manual" for details.
+ Refer to ["${cont_model} Controller Multitasking Function Manual"](https://hrbook-hrc.web.app/#/view/doc-multi-task/en/README?cont_model=${cont_model}) for details.
 {% endhint %}
 [__SOURCE](6-monitoring/3-job/8-program-reservation.md)
 # 6.3.8 Program reservation execution
@@ -4738,7 +4738,7 @@ Touch [Brake Diagnostics] in the button list below to display the brake diagnost
 
 {% hint style="info" %}
 
-* For more details on the brake diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/16-brake_check)" command.
+* For more details on the brake diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/16-brake_check?cont_model=${cont_model})" command.
 
 {% endhint %}
 [__SOURCE](6-monitoring/4-system/2-system-diagnosis/2-gas-pressure-check.md)
@@ -4777,7 +4777,7 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
 * The estimated gas spring pressure may vary depending on the initial posture at the start of measurement.
 During the robot's initial setup, please manage the pressure values based on the measurements taken at each reference posture, and regularly measure the pressure in the same posture to compare it with the initial values.
 If a significant difference is observed in the measured values, please inspect the condition of the equipment.
-* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/7-gasp_check)" command.  
+* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/7-gasp_check?cont_model=${cont_model})" command.  
 
 {% endhint %}
 
@@ -4891,7 +4891,7 @@ You can check the information related to the conveyor and press sync functions. 
 
 
 {% hint style="info" %}
-For details on the sensor sync function, refer to the "${cont_model} Sensor Sync Function Manual."
+For details on the sensor sync function, refer to the ["${cont_model} Sensor Sync Function Manual."](https://hrbook-hrc.web.app/#/view/doc-sensor-sync/en/README?cont_model=${cont_model})
 {% endhint %}
 
 
@@ -4922,7 +4922,7 @@ This displays the spot gun axis data, the input/output signals and operating inf
 <br>
 
 {% hint style="info" %}
- Refer to Spot Welding Manual's "[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/3-Related-functions/3-1-monitoring/README)" for more details.
+ Refer to Spot Welding Manual's "[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/3-Related-functions/3-1-monitoring/README?cont_model=${cont_model})" for more details.
 {% endhint %}
 
 [__SOURCE](6-monitoring/5-appl/11-tool-change.md)
@@ -4936,12 +4936,12 @@ In the panel selection window, touch `[servo tool change]`. This displays the st
 <br>
 
 {% hint style="info" %}
- Refer to "${cont_model} Controller Servo Tool Change Function Manual" for more details.
+ Refer to ["${cont_model} Controller Servo Tool Change Function Manual"](https://hrbook-hrc.web.app/#/view/doc-svtool-change/en/README?cont_model=${cont_model}) for more details.
 {% endhint %}
 [__SOURCE](6-monitoring/5-appl/20-arc.md)
 # 6.5.20 Arc Welding Data
 
-Refer to Arc Welding Manual's "[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/en/7_Monitoring/README)".
+Refer to Arc Welding Manual's "[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/en/7_Monitoring/README?cont_model=${cont_model})".
 
 [__SOURCE](6-monitoring/5-appl/28-forcecontrol-monitoring.md)
 # 6.5.28 force control monitoring
@@ -9353,7 +9353,7 @@ When writing the SPOT command while writing the program, if you place the cursor
 [__SOURCE](10-robot-language.md)
 # 10. Robot Language
 
-For details on the robot language, refer to the "[${cont_model} Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README)"
+For details on the robot language, refer to the "[${cont_model} Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README?cont_model=${cont_model})"
 
 [__SOURCE](11-etc/README.md)
 # 11. Etc.

@@ -8,5 +8,5 @@ In the panel selection window, touch `[servo tool change]`. This displays the st
 <br>
 
 {% hint style="info" %}
- Refer to "${cont_model} Controller Servo Tool Change Function Manual" for more details.
+ Refer to ["${cont_model} Controller Servo Tool Change Function Manual"](https://hrbook-hrc.web.app/#/view/doc-svtool-change/en/README?cont_model=${cont_model}) for more details.
 {% endhint %}

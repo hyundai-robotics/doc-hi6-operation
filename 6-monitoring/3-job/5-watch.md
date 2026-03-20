@@ -48,8 +48,8 @@ There are a total of 10 pages in various data windows, so you can group and mana
 
 The elements of array or object can be viewed with the [F6: sub.level] button or the `ENTER` key, and can go up to the upper level with the [F5: up.level] button or the `ESC` key.
 
-You can enter a value in the `Start Index` edit-box to display an array from a specific index. ([Global Variable](8-global-variable/README.md) window has the same method of operation.)
+You can enter a value in the `Start Index` edit-box to display an array from a specific index. ([Global Variable](3-global-variable/README?cont_model=${cont_model}) window has the same method of operation.)
 
-{% {% hint style="warning" %}
+{% hint style="warning" %}
 * To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
-{% {% endhint %}
+{% endhint %}

@@ -33,6 +33,6 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
 * The estimated gas spring pressure may vary depending on the initial posture at the start of measurement.
 During the robot's initial setup, please manage the pressure values based on the measurements taken at each reference posture, and regularly measure the pressure in the same posture to compare it with the initial values.
 If a significant difference is observed in the measured values, please inspect the condition of the equipment.
-* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/7-gasp_check)" command.  
+* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/7-gasp_check?cont_model=${cont_model})" command.  
 
 {% endhint %}

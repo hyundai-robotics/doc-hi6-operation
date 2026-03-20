@@ -45,6 +45,6 @@ You can check the information related to the conveyor and press sync functions. 
 
 
 {% hint style="info" %}
-For details on the sensor sync function, refer to the "${cont_model} Sensor Sync Function Manual."
+For details on the sensor sync function, refer to the ["${cont_model} Sensor Sync Function Manual."](https://hrbook-hrc.web.app/#/view/doc-sensor-sync/en/README?cont_model=${cont_model})
 {% endhint %}
 
