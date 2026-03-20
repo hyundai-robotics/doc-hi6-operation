@@ -3994,7 +3994,7 @@ You can modify the selected job program in the task edit window.
 </table>
 
 {% hint style="info" %}
-For details on how to manage and write programs, refer to "[3 Program Writing](../../3-programming?cont_model=${cont_model})."
+For details on how to manage and write programs, refer to "[3 Program Writing](../../3-programming/README.md?cont_model=${cont_model})."
 {% endhint %}
 
 
