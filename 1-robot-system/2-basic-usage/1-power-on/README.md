@@ -12,17 +12,3 @@ Turn the power switch on the left side of the robot controller to the ON directi
 
 ![](../../../_assets/image_12.png)
 
-#### Collaborative Robot Controller
-
-The power of the collaborative robot is supplied through the power connector of the controller.
-
-Push upward the switch on the power breaker. When power is connected, the robot system will boot, the display of the teach pendant will be turned on, and the collaborative robot's LED lamp will be turned on in white.
-
-
-
-![](../../../_assets/image_23.png)
-
-### 
-
-
-

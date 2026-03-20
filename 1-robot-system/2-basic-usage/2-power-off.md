@@ -21,18 +21,3 @@ It refers to all operations of stopping the robot and turning off the power butt
 3.	Turn the power switch on the left side of the robot controller to the OFF direction. Then, the robot system will be powered off.
 
 ![](../../_assets/image_29.png)
-
-#### Collaborative Robot Controller
-
-1.	Press the `[Stop]` key on the teach pendant. The robot in operation will stop, and the stop lamp will be turned on.
-
-2.	Press the emergency stop switch on the controller. The servo power to the robot motor will be cut off, and then the motor will be turned off.
-
-![](../../_assets/image_11.png)
-
-
-
-3.	Push downward the switch on the power circuit breaker. When the power is cut off, the robot system will be turned off, and the display of the teach pendant and the LED lamp of the collaborative robot will be turned off.
-
-![](../../_assets/image_288.png)
-

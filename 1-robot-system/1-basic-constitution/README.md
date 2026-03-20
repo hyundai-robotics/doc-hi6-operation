@@ -15,6 +15,3 @@ The following shows an example of the basic configuration of the robot system ac
 
 
 ![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../_assets/image_285.png)
-
-![Figure 3 Basic Configuration of the Collaborative Robot System ](../../_assets/image_292.png)
-

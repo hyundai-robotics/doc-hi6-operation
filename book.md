@@ -161,9 +161,6 @@ The following shows an example of the basic configuration of the robot system ac
 
 ![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../_assets/image_285.png)
 
-![Figure 3 Basic Configuration of the Collaborative Robot System ](../../_assets/image_292.png)
-
-
 [__SOURCE](1-robot-system/1-basic-constitution/1-controller.md)
 # 1.1.1 Controller
 
@@ -179,34 +176,12 @@ The following shows an example of the basic configuration of the robot system ac
 | ![](../../_assets/c4.png)  | Emergency stop switch | Causes the robot to stop operating when pressed in case of an emergency |
 | ![](../../_assets/c5.png)  | Cooling fan | A device that forcibly discharges the heated air inside the controller |
 
-#### Collaborative Robot Controller
-
-![Figure 5 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_15.png)
-
-
-
-| No. | Name | Description |
-| :--- | :--- | :--- |
-| ![](../../_assets/c1.png) | Robot cable connector | A connector that has built-in communication and power lines, making it possible to connect the controller to the equipment. |
-| ![](../../_assets/c2.png) | Power connector | A connector that supplies power to the controller. |
-| ![](../../_assets/c3.png) | Power circuit breaker | The main power of the controller can be turned on or off with the power switch. |
-| ![](../../_assets/c4.png) | Vent | An air inflow passage for cooling the controller. |
-| ![](../../_assets/c5.png) | Handle | It is mounted on the front and rear of the controller and used for transportation. |
-| ![](../../_assets/c6.png) | Emergency stop switch | When an emergency situation occurs, the operation of the robot can be stopped by pressing the emergency stop switch. |
-| ![](../../_assets/c7.png) | Application device connection hole | A passage to be used when an application device needs to be connected using a cable, with an internal module. |
-| ![](../../_assets/c8.png) | Teach pendant connection hole | A passage for the connection of a teach pendant of direct-connection type. |
-| ![](../../_assets/c9.png) | I/O connection block | This connects peripheral devices to the controller. |
-| ![](../../_assets/c10.png) | Door | You can open the side of the controller by opening the door. |
-| ![](../../_assets/c11.png) | Cooling fan | It is a device that forcibly discharges the heated air from inside the controller. |
-
-
-
 
 [__SOURCE](1-robot-system/1-basic-constitution/2-teach-pendant.md)
 
 # 1.1.2 Teach Pendant 
 
-Both the models, TP600 and TP630, are supported. This operation manual describes how to use a teach pendant based on the TP600 model. TP600 is a model developed exclusively for the ${cont_model} controller and provides a large touch screen.
+This operation manual describes how to use a teach pendant based on the TP630 model. TP630 is a model developed exclusively for the ${cont_model} controller and provides a large touch screen.
 
 ![](../../_assets/tp630/TP-hw.png)
 
@@ -749,20 +724,6 @@ Turn the power switch on the left side of the robot controller to the ON directi
 
 ![](../../../_assets/image_12.png)
 
-#### Collaborative Robot Controller
-
-The power of the collaborative robot is supplied through the power connector of the controller.
-
-Push upward the switch on the power breaker. When power is connected, the robot system will boot, the display of the teach pendant will be turned on, and the collaborative robot's LED lamp will be turned on in white.
-
-
-
-![](../../../_assets/image_23.png)
-
-### 
-
-
-
 
 [__SOURCE](1-robot-system/2-basic-usage/1-power-on/1-input-of-the-power-to-the-mot.md)
 # 1.2.1.1 Input of the Power to the Motor and the Operable Status
@@ -836,47 +797,54 @@ It refers to all operations of stopping the robot and turning off the power butt
 
 ![](../../_assets/image_29.png)
 
-#### Collaborative Robot Controller
-
-1.	Press the `[Stop]` key on the teach pendant. The robot in operation will stop, and the stop lamp will be turned on.
-
-2.	Press the emergency stop switch on the controller. The servo power to the robot motor will be cut off, and then the motor will be turned off.
-
-![](../../_assets/image_11.png)
-
-
-
-3.	Push downward the switch on the power circuit breaker. When the power is cut off, the robot system will be turned off, and the display of the teach pendant and the LED lamp of the collaborative robot will be turned off.
-
-![](../../_assets/image_288.png)
-
-
 [__SOURCE](1-robot-system/2-basic-usage/3-change-language-of-tp.md)
 # 1.2.3 Changing the language of the teach pendant screen
 
-If you need to change the language of the teach pendant, you can change it with the following procedure. The following is an example of changing Korean to English mode.
+If you need to change the language of the teach pendant, you can change it with the following procedure. The following is an example of changing English to Korean mode.
 
-1.	Click `[service]` button on the function button bar.
+### A. Change via Teach Pendant Options (Supported in V70.00-00 and above only)
 
-    ![](../../_assets/tp630/fbt-service_eng.png)
+1.	Click `[F1: service]` button.
 
-2.	Select `[9: Exit TP application]`.
+    ![](../../_assets/tp630/service/fb-service.png)
 
-    ![](../../_assets/tp630/svc-exit-TP_eng.png)
+2.	Enter `11: Teach Pendant Options`.
 
-3.	Click the globe icon on the top-right corner.
+    ![](../../_assets/tp630/service/menu-tp-option.png)
 
-    ![](../../_assets/tp630/TP-lang1_eng.png)
+3. Select `Korean` from the Language settings.
 
+    ![](../../_assets/tp630/service/tp-option-lang.png)
 
-4.	Select `[English]` on pop-up menu.
+4. Press the `[ESC]` key to return to the top-level HOME screen, then wait a moment.
 
-5.	Click `[run TP]` button on the bottom-right corner and wait for about 8 seconds.
+<br>
 
-    ![](../../_assets/tp630/TP-lang2_eng.png)
+### B. Change After Closing the Teach Pendant Software
 
+1. Click the `[F1: service]` button.
 
+   ![](../../_assets/tp630/service/fb-service.png)
 
+2. Select 9: Exit TP Application.
+
+    ![](../../_assets/tp630/service/exit-application.png)
+
+3. Click the language combo box at the bottom left.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang.png)
+
+    {% hint style="info" %}
+
+    For versions below V60.32-00, click the globe icon at the top right.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang-old.png)
+
+    {% endhint %}
+
+4.	Select `English` from the pop-up menu.
+
+5.	Click the `[run TP]` button at the bottom right and wait for about 15 seconds.
 
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/README.md)
 # 1.2.4 Screen of the ${cont_model} Teach Pendant
@@ -3271,7 +3239,7 @@ You can inspect and manage the state of the robot and controller. You can check 
       <td style="text-align:left">
         <p>Edit and manage the system environment using the function buttons.</p>
         <ul>
-          <li>[OK]: You can save the contents of the change.</li>
+          <li>[OK]: The menu will be closed.</li>
           <li>[Ver. up]: You can update the version of each module of the controller.</li>
         </ul>
       </td>
@@ -3301,7 +3269,7 @@ You can update the version of each module of the controller using the integrated
 
     ![](../../../_assets/image_255.png)
 
-5.	When the update is completed, touch the `[OK]` button. Then, the version upgrade program execution window will be closed, and the controller will automatically restart.
+5.	When the update is completed, restart the controller.
 
     ![](../../../_assets/image_367.png)
 
@@ -3490,24 +3458,18 @@ On the `[Speed Adjustment]` button, the speed limit \(mm/sec\) will be displayed
 
 
 * `[1: Operation cycle type]`: You can set whether to repeat the program that will be executed during automatic operation. It can also be set while the robot is starting up, and the setting value will not be applied during manual operation.
-  * 
-    1 Cycle: The job program will operate once and then stop. When the program END is reached, the robot will stop.
-
+  * 1 Cycle: The job program will operate once and then stop. When the program END is reached, the robot will stop.
   * Continuous: The job program will operate continuously and repeatedly. If there is an external stop operation, the robot will stop.
-* 
-  `2: Step FWD/BWD maximum speed`: You can set the speed limit for a step forward/backward. For details on this option, refer to "[2.1 Manual Operation](../operation/manual-operation/)".
+</br>
+</br>
 
-* 
-  `[3: Function execution during Step FWD]`: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
+* `[2: Step FWD/BWD maximum speed]`: You can set the speed limit for a step forward/backward. For details on this option, refer to "[2.1 Manual Operation](../2-operation/1-manual-operation/README.md)".
+</br>
 
-  * 
-    Off: Only END recorded in the job program will be executed. All other functions except for END will not be executed.
-
-  * 
-    On: All functions recorded in the job program will be executed.
-
-  * 
-    1 On: Only the input signal wait function and program END function will be executed.
+* `[3: Function execution during Step FWD]`: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
+  * Off: Only END recorded in the job program will be executed. All other functions except for END will not be executed.
+  * On: All functions recorded in the job program will be executed.
+  * 1 On: Only the input signal wait function and program END function will be executed.
 
 
 
@@ -3516,14 +3478,15 @@ While in the step backward operation, only the input wait signal function will b
 {% endhint %}
 
 * `[4: Re-execution of the function after step backward and forward]`: You can perform setting in a way that the previously executed functions among the functions recorded in the job program can be executed again when in the step forward operation again after the step backward operation.
-* 
-  `5: Path recovery during step FWD/BWD`: You can set the mode of executing path recovery when in the step forward/backward operation.
+</br>
 
+* `[5: Path recovery during step FWD/BWD]`: You can set the mode of executing path recovery when in the step forward/backward operation.
   * Disable: Will not execute path recovery
   * Enable: Will execute path recovery without confirming with the user whether to execute path recovery
+</br>
+</br>
 
-* 
-  `[6: Playback speed rate]`: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot moving speed against the speed recorded in the step in batch.
+* `[6: Playback speed rate]`: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot moving speed against the speed recorded in the step in batch.
 
 
 
@@ -3533,10 +3496,11 @@ If a low-speed command is inputted through an external input during automatic op
 {% endhint %}
 
 * `[7: Robot Lock]`: You can set the job program in a way that automatic operation is possible, without moving the robot. You can check the status of I/O with the peripheral devices, the soft limit, the cycle time, etc.
+</br>
+
 * `[8: Interpolation base]`: You can set a tool that will be the reference during the manual jogging of the robot. In general, a robot tool is used as an interpolation reference.
   * Robot Tool: Interpolation operation will be executed based on the tool attached to the front end of the robot.
-  * 
-    Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../_assets/tp630/sbt-crd-st0-small_eng.png)\).
+  * Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../_assets/tp630/sbt-crd-st0-small_eng.png)\).
 
 
 
@@ -3557,15 +3521,15 @@ If you select the stationary tool as the interpolation reference, you must set t
 
 
 {% hint style="info" %}
-You can register the user coordinate system number in the `[system  - 2: Control Parameter  - 7: Coordinate System Registration  -1: User Coordinate System]`.
+You can register the user coordinate system number in the `[system  - 2: Control Parameter  - 6: Coordinate System Registration  -1: User Coordinate System]`.
 {% endhint %}
 
 
-* `[10:Plc run mode]`: When the robot controller controls input/output signals using the embedded PLC, set the mode to control the embedded PLC. There are a total of 4 embedded PLC modes. For further details, please refer to the "${cont_model} Controller Embedded PLC Function Manual".
+* `[10:Plc run mode]`: When the robot controller controls input/output signals using the embedded PLC, set the mode to control the embedded PLC. There are a total of 4 embedded PLC modes. For further details, please refer to the "[${cont_model} Controller Function Manual - Embedded PLC](https://hrbook-hrc.web.app/#/view/doc-hi6-embedded-plc/en/README?cont_model=${cont_model})".
 
   * Off : Disables the function.
   * Stop : Stops embedded PLC operation.
-  * R - Stop(Remote Stop) : This is remote mode and stops the embedded PLC operation in HRLadder of the PC connected to the controller. 
+  * R - Stop(Remote Stop) : This is remote mode and stops the embedded PLC operation in HRLadder of the PC connected to the controller.
   * R - Run(Remote Run) : This is remote mode and the embedded PLC operation is executed from HRLadder on the PC connected to the controller.
   * Run : The controller operates the PLC program downloaded to the controller. Only monitoring is possible in HRLadder on PC.
 
@@ -8718,8 +8682,8 @@ You can select the spot guns to use when using multiple spot welding guns \(serv
 
     ![](../_assets/tp630/pop-rcode-210_eng.png)
 
-* The selected spot gun number will be displayed on the `[Gun]` button on the left side of the ${cont_model} teach pendant screen.
-* If you change the spot gun number, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 1: Gun Number Corresponding Tool Number and Gun Type Setting]` menu.
+* The selected spot gun number will be displayed in the bottom right corner of the ${cont_model} teach pendant screen.
+* If you change the spot gun number, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter]` menu.
 
 
 
@@ -8812,7 +8776,7 @@ You can select the numbers of spot welding guns \(servo guns or pneumatic guns\)
 
     ![](../_assets/tp630/pop-rcode-214_eng.png)
 
-* The selected spot gun number will be displayed on the `[Gun]` button on the left side of the ${cont_model} teach pendant screen.
+* The selected spot gun number will be displayed in the bottom right corner of the ${cont_model} teach pendant screen.
 * If you select spot welding guns that are different in type from each other, a notification message \("The Gun Type of the Currently Selected Gun is Set Incorrectly."\) will appear.
 
 <Br>
@@ -8820,7 +8784,7 @@ You can select the numbers of spot welding guns \(servo guns or pneumatic guns\)
 {% hint style="info" %}
 * R214 code cannot be used during the startup of the robot.
 * The spot gun number can only be set in the spot welding environment \(`[Spot Welding]` item in the `[system  - 5: Initialize  - 3: Usage Setting]` menu is set as enable.
-* You can check the setting status of the spot welding gun in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 1: Gun Number Corresponding Tool Number and Gun Type Setting]` menu.
+* You can check the setting status of the spot welding gun in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter]` menu.
   * When a gun is selected as a multisync gun, the manual squeeze/open/close operations of the selected gun will be simultaneously in sync with the previously selected guns.
   * When a gun is selected as a multisync gun, if the gun LED is in the ON status, the SPOT command will be recorded in the sync spot format.
 * The selected spot welding gun can be operated manually. For details on the spot welding function, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
@@ -8919,7 +8883,7 @@ The method to change the servo tool using the R358 code is as follows.
     ![](../_assets/tp630/pop-rcode-358-1_eng.png)
 
 
-3.	After inputting the number of the welding gun to change, touch the `[OK]` button or press the `[ENTER]` key. The selected weld gun number will be displayed on the `[Gun]` button on the left side of the ${cont_model} teach pendant screen.
+3.	After inputting the number of the welding gun to change, touch the `[OK]` button or press the `[ENTER]` key. The selected weld gun number will be displayed in the bottom right corner of the ${cont_model} teach pendant screen.
 
 
     ![](../_assets/tp630/pop-rcode-358-2_eng.png)
@@ -8927,7 +8891,7 @@ The method to change the servo tool using the R358 code is as follows.
 {% hint style="info" %}
 * R358 code cannot be used in automatic mode. It must be used in manual mode.
 * 
-  When the spot gun number is changed, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 1: Gun Number Corresponding Tool Number and Gun Type Setting]` menu.
+  When the spot gun number is changed, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter]` menu.
 
 * 
   The servo tool change setting can be performed only when the motor is turned on.

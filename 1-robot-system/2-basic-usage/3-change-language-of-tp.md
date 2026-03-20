@@ -1,25 +1,47 @@
 ﻿# 1.2.3 Changing the language of the teach pendant screen
 
-If you need to change the language of the teach pendant, you can change it with the following procedure. The following is an example of changing Korean to English mode.
+If you need to change the language of the teach pendant, you can change it with the following procedure. The following is an example of changing English to Korean mode.
 
-1.	Click `[service]` button on the function button bar.
+### A. Change via Teach Pendant Options (Supported in V70.00-00 and above only)
 
-    ![](../../_assets/tp630/fbt-service_eng.png)
+1.	Click `[F1: service]` button.
 
-2.	Select `[9: Exit TP application]`.
+    ![](../../_assets/tp630/service/fb-service.png)
 
-    ![](../../_assets/tp630/svc-exit-TP_eng.png)
+2.	Enter `11: Teach Pendant Options`.
 
-3.	Click the globe icon on the top-right corner.
+    ![](../../_assets/tp630/service/menu-tp-option.png)
 
-    ![](../../_assets/tp630/TP-lang1_eng.png)
+3. Select `Korean` from the Language settings.
 
+    ![](../../_assets/tp630/service/tp-option-lang.png)
 
-4.	Select `[English]` on pop-up menu.
+4. Press the `[ESC]` key to return to the top-level HOME screen, then wait a moment.
 
-5.	Click `[run TP]` button on the bottom-right corner and wait for about 8 seconds.
+<br>
 
-    ![](../../_assets/tp630/TP-lang2_eng.png)
+### B. Change After Closing the Teach Pendant Software
 
+1. Click the `[F1: service]` button.
 
+   ![](../../_assets/tp630/service/fb-service.png)
 
+2. Select 9: Exit TP Application.
+
+    ![](../../_assets/tp630/service/exit-application.png)
+
+3. Click the language combo box at the bottom left.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang.png)
+
+    {% hint style="info" %}
+
+    For versions below V60.32-00, click the globe icon at the top right.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang-old.png)
+
+    {% endhint %}
+
+4.	Select `English` from the pop-up menu.
+
+5.	Click the `[run TP]` button at the bottom right and wait for about 15 seconds.

@@ -1,7 +1,7 @@
 ﻿
 # 1.1.2 Teach Pendant 
 
-Both the models, TP600 and TP630, are supported. This operation manual describes how to use a teach pendant based on the TP600 model. TP600 is a model developed exclusively for the ${cont_model} controller and provides a large touch screen.
+This operation manual describes how to use a teach pendant based on the TP630 model. TP630 is a model developed exclusively for the ${cont_model} controller and provides a large touch screen.
 
 ![](../../_assets/tp630/TP-hw.png)
 
