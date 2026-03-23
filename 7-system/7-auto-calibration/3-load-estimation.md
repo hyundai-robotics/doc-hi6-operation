@@ -1,56 +1,49 @@
-﻿# 7.7.3 Load Estimation Function
+# 7.7.3 负载估算功能
 
-Load estimation is a function that automatically calculates the physical properties \(mass, center position, inertia\) of the tool attached to the front end of the robot through a certain operation.
+负载估算是一个通过特定操作自动计算工具的物理属性（质量、中心位置、惯性）的功能，这些工具连接在机器人的前端。
 
-The manipulator information \(mass, center of mass, inertia of each link\) is registered in the controller. However, as a tool will be used after being attached to the front end of the robot when necessary, the tool information should be inputted. The information on the tool physical properties includes tool mass \(kg\), center position, and inertia that are necessary to safely use the robot.
+操纵器信息（质量、质心、每个连杆的惯性）登记在控制器中。然而，由于工具在必要时会附加在机器人的前端使用，因此需要输入工具信息。工具物理属性的信息包括工具质量（kg）、中心位置、以及安全使用机器人所必需的惯性。
 
-If the CAD data contains the physical properties information of the tool, you can directly input the tool mass, center position, and inertia by touching the `[system]` button  - `[3: Robot Parameter  - 1: Tool Data]` menu of the job program.
+如果CAD数据包含工具的物理属性信息，则可以通过触摸`[system]`按钮 - `[3: Robot Parameter - 1: Tool Data] ([3: Robot Parameter  - 1: Tool Data])`作业程序菜单直接输入工具的质量、中心位置和惯性。
 
 ![](../../_assets/tp630/robot-tool_1_eng.png)
 
-
-
-The tool data setting information is as follows.
+工具数据设置的信息如下。
 
 ![Figure 70 Tool Data](../../_assets/image_505.png)
 
-* `[Weight]`: The total weight \(kg\) of the tool installed at the front end of the robot
-* `[Center]`: The distance \(mm\) in the x, y, z directions from the center of the robot flange face to the position of the center of gravity of the tool
-* `[Inertia]`: The moment of inertia of the tool with respect to the tool coordinate \(kg/m2\). The moment of inertia will be determined by the mass distribution around the x, y, and z axes based on the center of gravity, and will increase as the load mass is distributed farther from the rotation axis.
-* Tool data coordinate system: Inertia and center will be expressed as values with respect to the x-, y-, and z-axis directions.
+* `[Weight]`: 安装在机器人前端的工具的总重量（kg）
+* `[Center]`: 从机器人法兰面中心到工具重心位置的x、y、z方向的距离（mm）
+* `[Inertia]`: 相对于工具坐标系的工具的转动惯量（kg/m²）。转动惯量将根据重心周围的x、y、z轴质量分布决定，并且当负载质量远离旋转轴分布时，将增加。
+* 工具数据坐标系：惯性和中心将以相对于x、y、z轴方向的值表示。
 
-
-
-However, in many cases, it is difficult to determine the physical properties of the tool such as mass, inertia, and center of gravity of the tool from CAD data. At this time, you can check the physical properties of the tool using the load estimation function in the robot controller.
+然而，在许多情况下，难以从CAD数据中确定工具的物理属性，如质量、惯性和工具的重心。此时，可以使用机器人控制器中的负载估算功能检查工具的物理属性。
 
 ![Figure 71 Load Estimation Function](../../_assets/tp630/system-calib-load_eng.png)
 
-1.	Touch the `[6: Auto Calibration  - 4: Load Estimation Function]` menu.
+1. 触摸`[6: Auto Calibration - 4: Load Estimation Function] ([6: Auto Calibration  - 4: Load Estimation Function])`菜单。
 
-2.	After touching the `[Add. Weight on Each Axis]` button, input the information of the additional weight of each axis.
+2. 在触摸`[Add. Weight on Each Axis]`按钮后，输入每个轴的附加重量信息。
 
-If the load estimation function is performed while there is additional weight, it will be determined that all the weight objects mounted onto the robot are at the front end. For accurate load estimation, the information on the additional weight of each axis should be inputted.
+如果在存在附加重量的情况下执行负载估算功能，将判断所有装在机器人的重量物体位于前端。为了准确进行负载估算，应输入每个轴的附加重量信息。
 
-3.	After moving the robot to a safe area by moving the main axis of the robot, touch the `[Set pose]` button.
+3. 通过移动机器人的主轴将机器人移动到安全区域后，触摸`[Set pose]`按钮。
 
-4.	After touching the `[Wrist Axis Operation Area]` button, designate the operation area of the wrist axis to be used in the load estimation operation. Load estimation can be performed in an operation area that there is no interference not only with nearby facilities but also with the manipulator.
+4. 在触摸`[Wrist Axis Operation Area]`按钮后，指定在负载估算操作中使用的腕轴操作区域。负载估算可以在与附近设施以及操纵器没有干扰的操作区域内进行。
 
-If the `[Wrist Axis Operation Area]` button is not supported, skip this step, and perform the next step.
+如果不支持`[Wrist Axis Operation Area]`按钮，请跳过此步骤，执行下一步。
 
-5.	Touch the `[Play check]` button. Then, while the robot is operating at a low speed, you can check for any interference with nearby facilities or the manipulator.
+5. 触摸`[Play check]`按钮。然后，在机器人以低速运行时，可以检查与附近设施或操纵器的任何干扰。
 
-6.	After inputting the number of the tool mounted onto the robot, touch the `[Play Normal]` button. Then, load estimation will be performed, allowing the physical properties of the tool to be calculated.
+6. 输入安装在机器人的工具编号后，触摸`[Play Normal]`按钮。然后，将执行负载估算，从而计算出工具的物理属性。
 
-7.	After checking the load estimation result, touch the `[End]` button. Then, the calculated physical properties of the tool will be registered in the tool number.
+7. 在检查负载估算结果后，触摸`[End]`按钮。然后，计算出的工具物理属性将注册在工具编号中。
 
 {% hint style="info" %}
-* Additional weight is the overall weight of all devices that the user attaches to the robot, such as a welding dressing device and welding signal line relay box, except for the tool mounted at the front end of the robot.
-* 
-  The wrist axis operation area function will not be supported in some robots.
+* 附加重量是用户附加到机器人上的所有设备的总体重量，如焊接装置和焊接信号线继电器箱，但不包括安装在机器人前端的工具。
 
-* It requires your attention that the load estimation function may not be executed depending on the setting values of the wrist axis operation area function.
-* For details on the load estimation function, refer to the "Load Estimation Function Manual."
+* 一些机器人可能不支持腕轴操作区域功能。
+
+* 负载估算功能的执行可能会依赖于腕轴操作区域功能的设定值，请注意。
+* 有关负载估算功能的详细信息，请参阅“负载估算功能手册”。
 {% endhint %}
-
-
-

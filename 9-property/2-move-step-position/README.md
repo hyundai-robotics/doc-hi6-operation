@@ -1,4 +1,3 @@
-﻿# 9.2 Move-Step Position
+﻿# 9.2 移动步骤位置
 
-You can check or modify the position of the step in the currently selected line in the JOB program.
-
+您可以检查或修改当前选定行中 JOB 程序的步骤位置。

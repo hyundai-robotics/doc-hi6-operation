@@ -1,27 +1,20 @@
-﻿# 7.3.2.6 Output Signal Assignment
+﻿# 7.3.2.6 输出信号分配
 
-Event information or status information that occurred in the controller can be transmitted to the outside through the controller output signal. The method of assigning output signals to the information to be transmitted to the outside is as follows.
+在控制器中发生的事件信息或状态信息可以通过控制器输出信号传送到外部。将输出信号分配给要传送到外部的信息的方法如下。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 4: Output Signal Assign-Main task` menu. 
+1.	触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 4: 输出信号分配-主任务 (2: 控制参数  - 2: 输入/输出信号设置  - 4: 输出信号分配-主任务)` 菜单。
 
-2.	After inputting the output signal number in the information item, touch the `[OK]` button.
+2.	在信息项中输入输出信号号码后，触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-outsignal-assign_eng.png)
 
-
-
-* `[Reset All]`: You can reset the numbers of the output signals assigned to all information items.
-*  `[Reset One]`: You can reset the number of the output signal assigned to the selected information item. 
+* `[Reset All]`: 您可以重置分配给所有信息项的输出信号的号码。
+*  `[Reset One]`: 您可以重置分配给选定信息项的输出信号的号码。 
 * 
-  `[Reset Channel]`: You can reset the input channel of the output signal assigned to the information item \(0-16: digital signal\)
+  `[Reset Channel]`: 您可以重置分配给信息项的输出信号的输入通道 \(0-16: 数字信号\)
 
 * 
-  `[Previous Task]`/`[Next Task]`: You can move to the previous or next task screen.
+  `[Previous Task]`/`[Next Task]`: 您可以移动到上一个或下一个任务屏幕。
 
 * 
-  `[S]`: You can designate a system signal when using the remote control through a system input signal. The system signal is in the form of "s+number," which combines the letter s with the signal number. For example, you can set the system signal 49 as s49.
-
-
-
-
-
+  `[S]`: 您可以在通过系统输入信号使用遥控器时指定系统信号。系统信号形式为 "s+数字"，将字母 s 与信号号码组合。例如，您可以将系统信号 49 设置为 s49。

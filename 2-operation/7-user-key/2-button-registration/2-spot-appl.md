@@ -1,4 +1,3 @@
 ﻿# 2.7.2.2 Spot Application Function Area
 
-For details on the spot application function, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
-
+有关点焊应用功能的详细信息，请参阅 "[${cont_model} 控制器点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。

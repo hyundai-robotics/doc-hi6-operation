@@ -1,7 +1,7 @@
-﻿# 6.2.7 Memory variables
+﻿# 6.2.7 内存变量
 
 
-Touch `[memory variables]` in the panel selection window.
-Of internal PLC relays, the accessible variables from Robot Language are displayed.
+在面板选择窗口中触摸 `[memory variables]`。
+来自Robot Language的可访问内存PLC继电器变量被显示。
 
-![](../../_assets/tp630/pane-memory-variables_eng.png) 
+![](../../_assets/tp630/pane-memory-variables_eng.png)

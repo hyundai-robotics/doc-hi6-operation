@@ -1,32 +1,32 @@
-﻿# 7.4.13.1 Gas spring pressure sensor
+# 7.4.13.1 气弹簧压力传感器
 
-The gas spring pressure sensor function is used to detect abnormal pressure in the gas spring by constantly reading the value of the pressure sensor through analog input or to generate a warning or error through digital input in a robot that uses a gas spring and has a pressure sensor (PN2570) specified by our company attached to it. <br> 
+气弹簧压力传感器功能用于通过模拟输入不断读取压力传感器的值来检测气弹簧中的异常压力，或在使用气弹簧并附带我公司指定的压力传感器（PN2570）的机器人中通过数字输入生成警告或错误。 <br> 
 
-[Digital input]
+[数字输入]
 ![](../../../_assets/tp630/gasp_sensor.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Item</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">项目</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"> 
-        Warning input
+        警告输入
       </td>
       <td style="text-align:left">
-        Sets the signal number to receive a warning. Pressure sensors can output a warning when the measured pressure exceeds a set tolerance. The controller generates W21020 when the set signal turns on. 
+        设置接收警告的信号编号。当测量的压力超过设定的容差时，压力传感器可以输出警告。当设定信号开启时，控制器生成 W21020。 
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Error input
+        错误输入
       </td>
       <td style="text-align:left">
-        Sets the signal number to receive a warning. Pressure sensors can output a warning when the measured pressure exceeds a set tolerance. The controller generates E21020 when the set signal turns on. 
+        设置接收警告的信号编号。当测量的压力超过设定的容差时，压力传感器可以输出警告。当设定信号开启时，控制器生成 E21020。 
       </td>
     </tr>
   </tbody>
@@ -34,57 +34,57 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
 
 <br>
 
-[Analog input]
+[模拟输入]
 ![](../../../_assets/tp630/gasp_sensor2.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Item</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">项目</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">
-        Communication signals
+        通信信号
       </td>
       <td style="text-align:left">
-        Sets the digital signal into which the pressure sensor value is input.
+        设置输入压力传感器值的数字信号。
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Current value
+        当前值
       </td>
       <td style="text-align:left">
-        The pressure value measured by the pressure sensor is displayed.
+        由压力传感器测量的压力值被显示。
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Reference value
+        参考值
       </td>
       <td style="text-align:left">
-        Sets the reference pressure injected into the gas spring. 
+        设置注入气弹簧的参考压力。 
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Tolerance warning and output signal
+        容差警告和输出信号
       </td>
       <td style="text-align:left">
-        A warning W21018 occurs if the measured pressure is less then the reference pressure minus the warning tolerance set value. <br>
-        If an output signal is set, the signal output is turned on. 
+        如果测量的压力小于参考压力减去设定的警告容差值，则会发生警告 W21018。 <br>
+        如果设置了输出信号，则信号输出会开启。 
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Tolerance error and output signal
+        容差错误和输出信号
       </td>
       <td style="text-align:left">
-        An error E21018 occurs if the measured pressure is less then the reference pressure minus the error tolerance set value. <br>
-        If an output signal is set, the signal output is turned on.  
+        如果测量的压力小于参考压力减去设定的错误容差值，则会发生错误 E21018。 <br>
+        如果设置了输出信号，则信号输出会开启。  
       </td>
     </tr>
   </tbody>
@@ -93,5 +93,5 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
 <br>
 
 {% hint style="info" %}
-* This feature is supported in versions V60.30.07 and later.   
+* 此功能在版本 V60.30.07 及更高版本中受支持。   
 {% endhint %}

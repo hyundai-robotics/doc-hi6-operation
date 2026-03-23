@@ -1,47 +1,47 @@
-﻿# 1.2.3 Changing the language of the teach pendant screen
+﻿# 1.2.3 更改教导挂件屏幕的语言
 
-If you need to change the language of the teach pendant, you can change it with the following procedure. The following is an example of changing English to Korean mode.
+如果您需要更改教导挂件的语言，可以使用以下步骤进行更改。以下是将英语更改为韩语模式的示例。
 
-### A. Change via Teach Pendant Options (Supported in V70.00-00 and above only)
+### A. 通过教导挂件选项更改（仅在 V70.00-00 及以上版本中支持）
 
-1.	Click `[F1: service]` button.
+1. 单击 `[F1: 服务] ([F1: service])` 按钮。
 
     ![](../../_assets/tp630/service/fb-service.png)
 
-2.	Enter `11: Teach Pendant Options`.
+2. 输入 `11: 教导挂件选项`。
 
     ![](../../_assets/tp630/service/menu-tp-option.png)
 
-3. Select `Korean` from the Language settings.
+3. 从语言设置中选择 `韩语`。
 
     ![](../../_assets/tp630/service/tp-option-lang.png)
 
-4. Press the `[ESC]` key to return to the top-level HOME screen, then wait a moment.
+4. 按 `[ESC]` 键返回到顶层 HOME 屏幕，然后稍等片刻。
 
 <br>
 
-### B. Change After Closing the Teach Pendant Software
+### B. 在关闭教导挂件软件后更改
 
-1. Click the `[F1: service]` button.
+1. 单击 `[F1: 服务] ([F1: service])` 按钮。
 
    ![](../../_assets/tp630/service/fb-service.png)
 
-2. Select 9: Exit TP Application.
+2. 选择 9: 退出 TP 应用程序。
 
     ![](../../_assets/tp630/service/exit-application.png)
 
-3. Click the language combo box at the bottom left.
+3. 单击左下角的语言组合框。
 
     ![](../../_assets/tp630/service/autorun-sub-lang.png)
 
     {% hint style="info" %}
 
-    For versions below V60.32-00, click the globe icon at the top right.
+    对于 V60.32-00 以下版本，请单击右上角的地球图标。
 
     ![](../../_assets/tp630/service/autorun-sub-lang-old.png)
 
     {% endhint %}
 
-4.	Select `English` from the pop-up menu.
+4. 从弹出菜单中选择 `英语`。
 
-5.	Click the `[run TP]` button at the bottom right and wait for about 15 seconds.
+5. 单击右下角的 `[run TP]` 按钮，等待大约 15 秒。

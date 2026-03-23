@@ -1,38 +1,38 @@
-﻿# 1.2.1.1 Input of the Power to the Motor and the Operable Status
+﻿# 1.2.1.1 输入电源到电机和可操作状态
 
-The status of the mode switch and safety plug of the teach pendant determines the input of power to the motor and the operable status.
+教导 pendant 的模式开关和安全插头的状态决定电源输入到电机和可操作状态。
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Safety Plug</th>
-      <th style="text-align:left">Mode Switch: Manual</th>
-      <th style="text-align:left">Mode Switch: Automatic</th>
+      <th style="text-align:left">安全插头</th>
+      <th style="text-align:left">模式开关：手动</th>
+      <th style="text-align:left">模式开关：自动</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">Released</td>
+      <td style="text-align:left">释放</td>
       <td style="text-align:left">
         <ul>
-          <li>Motor ON enabled</li>
-          <li>Step Forward/Backward enabled</li>
+          <li>电机开启启用</li>
+          <li>向前/向后步进启用</li>
         </ul>
       </td>
-      <td style="text-align:left">Emergency (Motor Off)</td>
+      <td style="text-align:left">紧急（电机关闭）</td>
     </tr>
     <tr>
-      <td style="text-align:left">Inputted</td>
+      <td style="text-align:left">接入</td>
       <td style="text-align:left">
         <ul>
-          <li>Motor ON enabled</li>
-          <li>Step Forward/Backward enabled</li>
+          <li>电机开启启用</li>
+          <li>向前/向后步进启用</li>
         </ul>
       </td>
       <td style="text-align:left">
         <ul>
-          <li>Motor ON enabled</li>
-          <li>Operation at normal speed</li>
+          <li>电机开启启用</li>
+          <li>正常速度操作</li>
         </ul>
       </td>
     </tr>
@@ -40,6 +40,5 @@ The status of the mode switch and safety plug of the teach pendant determines th
 </table>
 
 {% hint style="info" %}
-Safety plugs are used for general industrial robots, whereas a light curtain instead of a safety plug is used for LCD robots.
+安全插头用于一般工业机器人，而LCD机器人则使用光幕代替安全插头。
 {% endhint %}
-

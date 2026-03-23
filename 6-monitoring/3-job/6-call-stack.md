@@ -1,26 +1,26 @@
-﻿# 6.3.6 call stack
+# 6.3.6 调用堆栈
 
-Touch `[Call Stack]` in the panel selection window to display the Call Stack window. In order to understand the contents of this section, an understanding of the `call`~`return` statement and local variables of the hrscript must be preceded.
+在面板选择窗口中点击 `[Call Stack]` 以显示调用堆栈窗口。要理解本节内容，必须先了解 `call`~`return` 语句和 hrscript 的局部变量。
 
-[Call, Jump Statement and Subprograms](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/7-call-jump/README?cont_model=${cont_model})
+[调用、跳转语句和子程序](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/3-flowcontrol-subprogram/7-call-jump/README?cont_model=${cont_model})
 
-[Local Variables](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/8-local-global-var/1-local-variables?cont_model=${cont_model})
-
-
-### Call and Return of Robot Language
-
-In robot language, you can call a sub job program with a `call` statement. When executing `end` or `return` statement, the subprogram returns to the next statement position of the `call` statement that called it. For example, in the figure below, you can see that job 5 calls job 8, run into a `return` statement, and then continues with the next statement of job 5's `call` statement.
-
-![call and return of sub jobs](../../_assets/call-return.png)
-
-The container shape drawn next to the program is a storage space called a call stack. The call stack builds up the call frames of the currently running program. The call frame contains a set of actual parameters and local variables and the return address for the job program.  
-Because a new call frame is pushed at the top when a subprogram is called, the local variables of the program that called it are kept and a new local variable space is prepared.  
-When the subprogram returns, the top call frame is discarded (pop), and the call frame below it becomes top again. Because the call frame retains the actual parameters and region variables just before the call, and also has position information to return, the called program can continue the task that it was doing just before the call.
+[局部变量](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/3-flowcontrol-subprogram/8-local-global-var/1-local-variables?cont_model=${cont_model})
 
 
-### call stack panel
+### 机器人语言的调用和返回
 
-You can view the contents of the current call stack in the Call Stack panel.
+在机器人语言中，可以使用 `call` 语句调用一个子作业程序。当执行 `end` 或 `return` 语句时，子程序返回到调用它的 `call` 语句的下一语句位置。例如，在下图中，您可以看到作业 5 调用作业 8，运行到 `return` 语句，然后继续执行作业 5 的 `call` 语句的下一语句。
+
+![子作业的调用和返回](../../_assets/call-return.png)
+
+绘制在程序旁边的容器形状是一个称为调用堆栈的存储空间。调用堆栈构建当前运行程序的调用帧。调用帧包含一组实际参数和局部变量以及作业程序的返回地址。  
+因为在调用子程序时，新调用帧被推到顶部，所以调用它的程序的局部变量被保留，并准备了一个新的局部变量空间。  
+当子程序返回时，顶部的调用帧被丢弃（弹出），下面的调用帧再次变为顶部。因为调用帧保留了调用前的实际参数和区域变量，并且还具有返回的位置信息，所以被调用的程序可以继续执行在调用之前正在进行的任务。
+
+
+### 调用堆栈面板
+
+您可以在调用堆栈面板中查看当前调用堆栈的内容。
 <br><br>
 
 0001_main.job
@@ -44,7 +44,7 @@ end
 0008_go_home.job
 ```python
 var pos1, pos2
-# do something
+# 做某事
 end
 ```
 
@@ -52,22 +52,22 @@ end
 ```python
 param id
 var sensor_value
-# do something  --------- (B)
+# 做某事 --------- (B)
 end
 ```
 
-With the job-edit window, the call stack panel, and the local variable panel are open, if the current program is in the state where the `call` statement inside the `for`~`next` loop of job 5 is performed for the 3rd time and executed to the (B) position, the Teach Pendant screen will be in the state shown below.
+在作业编辑窗口、调用堆栈面板和局部变量面板打开的情况下，如果当前程序处于作业 5 的 `for`~`next` 循环中第三次执行的 `call` 语句并执行到 (B) 位置，教学挂件屏幕将显示如下状态。
 
-![job-edit, call stack, local variable](../../_assets/call-stack.png)
+![作业编辑、调用堆栈、局部变量](../../_assets/call-stack.png)
 
 
-The bottom frame of the call stack is job 1, the middle frame is job 5, and the top frame is job 9. The > shaped cursor points to job 9, and the values of the parameter `id` and the local variable `sensor_value` are displayed in the local variable panel. Therefore, you can check the information that job 9 was called by job 5, and job 5 was called by job 1.  
-If you want to see where job 5 called, select the frame of job 5 and press the `ENTER` key. The cursor in the job edit panel immediately moves to the (A) position to show where it was called. The local variable panel shows the frame contents of job 5, i.e., the parameter `mode` and the local variable `sensor_id`, as 12 and 3 values, respectively.
+调用堆栈的底部帧是作业 1，中间帧是作业 5，顶部帧是作业 9。> 形状的光标指向作业 9，并且局部变量面板显示参数 ` (id)` 和局部变量 `sensor_value` 的值。因此，您可以检查作业 9 是被作业 5 调用的，而作业 5 是被作业 1 调用的。  
+如果您想查看作业 5 调用的位置，请选择作业 5 的帧并按 `确认 (ENTER)` 键。作业编辑面板中的光标将立即移动到 (A) 位置，以显示调用的位置。局部变量面板显示作业 5 的帧内容，即参数 `模式 (mode)` 和局部变量 `sensor_id`，分别为 12 和 3 的值。
 
-![job-edit, call stack, local variable- 2](../../_assets/call-stack2.png)
+![作业编辑、调用堆栈、局部变量- 2](../../_assets/call-stack2.png)
 
-You can easily understand the flow of the program that has been called so far by selecting the frame of the called job.
+通过选择被调用作业的帧，您可以轻松理解到目前为止的程序流。
 
 {% hint style="warning" %}
-`[caution]` When performing Step-FWD or playback, be sure to restore the > cursor to the top frame position when resuming operations. Otherwise, the position of the job cursor is considered to have changed and the call stack is initialized.
+`[caution]` 在进行步进向前 (Step-FWD) 或播放操作时，确保在恢复操作时将 > 光标恢复到顶部帧位置。否则，将认为作业光标的位置发生了变化，并将初始化调用堆栈。
 {% endhint %}

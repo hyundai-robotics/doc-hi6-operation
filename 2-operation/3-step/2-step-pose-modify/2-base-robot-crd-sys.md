@@ -1,39 +1,35 @@
-﻿# 2.3.2.2 Base and Robot Recording Coordinates
+﻿# 2.3.2.2 基座和机器人记录坐标
 
-The position and posture of the robot can be displayed differently depending on the coordinate system. If there is no travel axis, the base coordinate and the robot coordinate will generally be the same. If the travel axis is defined, the position and posture of the robot tool will be displayed differently depending on whether it is the base coordinate and the robot coordinate.
+机器人的位置和姿态可以根据坐标系统的不同而有所不同。如果没有移动轴，基座坐标和机器人坐标通常是相同的。如果定义了移动轴，则机器人工具的位置和姿态将根据基座坐标和机器人坐标的不同而有所不同。
 
-In manual mode, if the `[1: Pose Recording Form]` option in the `[system - 1: User Environment]` menu is set to base or robot, touch the `[property]` button in the move statement. You can check the position and posture of the robot tool in the attributes window.
+在手动模式下，如果在 `[system - 1: User Environment]` 菜单中的 `[1: Pose Recording Form]` 选项设置为基座或机器人，请触摸移动语句中的 `[property]` 按钮。您可以在属性窗口中检查机器人工具的位置和姿态。
 
 {% hint style="info" %}
-If you would like to change the pose recording form, please contact our customer support team to ask an expert or an engineer.
+如果您想更改姿态记录形式，请联系客户支持团队以咨询专家或工程师。
 {% endhint %}
 
-For one tooltip position and its orientation, there may be multiple postures because of the characteristics of the instrument, so to define one posture, the robot form \(config.\) should be designated.
+对于一个工具提示位置及其方向，由于仪器的特性，可能会有多种姿态，因此为了定义一个姿态， 应该指定机器人形式 \(config.\)。
 
-Collaborative robots can be restricted by the soft limit because of their mechanical structures. When the robot is not in operation, you can release the soft limit or set it to a large value.
+协作机器人由于其机械结构可以受到软限制的限制。当机器人不在操作时，您可以释放软限制或将其设置为较大值。
 
-* auto: Regarding the current posture of the robot, the items that come later will be automatically determined. If this mode is not set, a determination will be performed based on whether the items below are designated or not.
-* back: The tooltip of the robot is in the - direction on the X-axis of the robot coordinate system, meaning the rear. If this is not designated, the tooltip will be in the + direction, meaning the front. 
-* down: Relationship between the H-axis and V-axis. If this is designated, the result will be the bottom. If this is not designated, the result will be top.
+* auto: 关于机器人当前的姿态，后续的项目将会自动确定。如果未设置此模式，则将根据下面项目的指定与否进行判断。
+* back: 机器人的工具提示位于机器人坐标系统的 X 轴的 - 方向，意味着后方。如果未指定，则工具提示位于 + 方向，意味着前方。
+* down: H 轴和 V 轴之间的关系。如果指定此项，结果将是底部。如果未指定，则结果将是顶部。
 
-![Figure 22 Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../_assets/image_58_1.png)
+![图 22 H 轴和 V 轴的姿态: 上 \(左\), 下 \(右\)](../../../_assets/image_58_1.png)
 
+* flip: 使用 B 轴坐标为 + 值进行翻转。如果未指定，结果将是非翻转，与 - 值相对应。图中的红色箭头显示了腕轴顶部的方向。
 
+![图 23 翻转 \(左\) / 非翻转 \(右\) 姿态](../../../_assets/image_75.png)
 
-* flip: Flip with the B-axis coordinate being a + value. If this is not designated, the result will be non-flip with a - value. The red arrow in the figure shows the direction of the top of the wrist axis.
+* `S (|S|>=180)`: S 轴角度的绝对值超过 180 度。如果未指定，将小于 180 度。
+* `B (|B|>=180)`: B 轴角度的绝对值超过 180 度。如果未指定，将小于 180 度。
 
-![Figure 23 Flip \(Left\) / Non-flip \(Right\) Posture](../../../_assets/image_75.png)
+* `R2 (|R2|>=180)`: R2 轴角度的绝对值超过 180 度。如果未指定，将小于 180 度。
 
-* `S (|S|>=180)`: The absolute value of the S-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
-* `B (|B|>=180)`: The absolute value of the B-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
+* `R1 (|R1|>=180)`: R1 轴角度的绝对值超过 180 度。如果未指定，将小于 180 度。
 
-* `R2 (|R2|>=180)`: The absolute value of the R2-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
-
-* `R1 (|R1|>=180)`: The absolute value of the R1-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
-
-
-
-The coordinate system will be saved as `[Pose Variable]`.crd \(Example: po32.crd\), and one of the following strings will be designated. If it is an empty string, the basic value will be recognized as joint.
+坐标系统将被保存为 `[Pose Variable]`.crd \(示例: po32.crd\)，并将指定以下字符串之一。如果是空字符串，则基本值将被识别为关节。
 
 <table>
   <thead>
@@ -44,19 +40,19 @@ The coordinate system will be saved as `[Pose Variable]`.crd \(Example: po32.crd
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p>Base coordinate system = &quot;base&quot;
+        <p>基座坐标系统 = &quot;base&quot;
           <br />
         </p>
-        <p>Robot coordinate system = &quot;robot&quot;
+        <p>机器人坐标系统 = &quot;robot&quot;
           <br />
         </p>
-        <p>Joint coordinate system = &quot;joint&quot;
+        <p>关节坐标系统 = &quot;joint&quot;
           <br />
         </p>
-        <p>Encoder = &quot;encoder&quot;
+        <p>编码器 = &quot;encoder&quot;
           <br />
         </p>
-        <p>User coordinate system = &quot;u1&quot; &#x2013; &quot;u10&quot;
+        <p>用户坐标系统 = &quot;u1&quot; &#x2013; &quot;u10&quot;
           <br />
         </p>
         <p>
@@ -66,6 +62,3 @@ The coordinate system will be saved as `[Pose Variable]`.crd \(Example: po32.crd
     </tr>
   </tbody>
 </table>
-
-
-

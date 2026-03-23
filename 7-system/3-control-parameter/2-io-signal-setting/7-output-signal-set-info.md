@@ -1,182 +1,123 @@
-﻿# 7.3.2.7 Output Signal Setting Information
+# 7.3.2.7 输出信号设置信息
 
-#### Remote mode
+#### 远程模式
 
-With the mode switch of the teach pendant selected to remote \(![](../../../_assets/sb-remote.png)\), the signal set in the input signal assign section should be inputted in the state of on in order to activate the remote state. This function is used to output the state to the outside. 
+当教学挂件的模式开关选择为远程 \(![](../../../_assets/sb-remote.png)\) 时，应在信号输入分配部分设置输入信号为“打开”状态，以激活远程状态。此功能用于将状态输出到外部。
 
+#### 手动 \(教学\) 模式
 
+此功能用于将控制器的操作模式为手动的状态输出到外部。
 
-#### Manual \(Teach\) mode
+#### 自动 \(回放\) 模式
 
-This function is used to output the state to the outside that the operation mode of the controller is manual.
+此功能用于将控制器的操作模式为自动的状态输出到外部。
 
+#### 电机开启
 
+当通过输入电机开启信号为每个电机供电并准备好驱动时，此功能用于将状态输出到外部。
 
-#### Auto \(Playback\) mode
+#### 机器人就绪 OK
 
-This function is used to output the state to the outside that the operation mode of the controller is automatic.
+当当前控制器状态满足在 `[system - 2: Control Parameter - 4: Robot Ready Condition] ([system  - 2: Control Parameter - 4: Robot Ready Condition])` 菜单中设定的所有条件时，此功能用于将状态输出到外部。
 
+#### 机器人启动
 
+当机器人通过手动模式的前进/后退操作启动或通过自动模式的启动信号输入启动时，此功能用于将此状态输出到外部。
 
-#### Motor on 
+#### 机器人移动
 
-When power is supplied to each motor by the input of the motor on signal and the driving is ready, this function is used to output the state to the outside.
+当机器人正在移动时，此功能用于将此状态输出到外部。
 
+#### 机器人停止 \(保持\)
 
+当机器人停止时，与启动信号的输出相反，此功能用于将此状态输出到外部。
 
-#### Robot ready OK
+#### 紧急停止
 
-When the current controller status satisfies all conditions set in the `[system  - 2: Control Parameter - 4: Robot Ready Condition]` menu, this function is used to output the state to the outside. 
+当来自教学挂件前面或控制器的紧急停止按钮的输入信号被输入时，此功能用于将状态输出到外部。
 
+#### 紧急停止 \(外部\)
 
+此功能用于将来自连接到系统板的外部紧急停止设备的信号输出到外部。
 
-#### Robot starting
+#### 低速模式
 
-When the robot is started by the step forward/backward operation in manual mode or by the input of the start signal in automatic mode, this function is used to output this state to the outside.
+当在信号输入分配部分为低速命令设置的信号打开时，或当机器人在手动模式下以安全速度运行时，此功能用于将此状态输出到外部。
 
+#### 程序结束
 
+当在作业程序中执行结束循环时，此功能用于将此状态输出到外部。
 
-#### Robot moving
+#### 整体错误
 
-When the robot is moving, this function is used to output this state to the outside.
+控制器中发生的错误分为由系统错误引起的错误和由用户操作失误引起的错误。当因为系统错误而发生错误时，此功能用于将此状态输出到外部。由系统错误引起的错误范围为 1 到 999 和 2000 到 7999。
 
+#### 操作错误
 
+控制器中发生的错误分为由系统错误引起的错误和由用户操作失误引起的错误。当因为用户操作失误而发生错误时，此功能用于将此状态输出到外部。供参考，由系统错误引起的错误范围为 1 到 999 和 2000 到 7999。
 
-#### Robot stop \(Hold\)
+#### 警告
 
-When the robot is stopped, contrary to the output of the start signal, this function is used to output this state to the outside.
+当控制器中发生警告时，此功能用于将此状态输出到外部。
 
+#### 碰撞传感器
 
+当在信号输入分配部分设定的碰撞传感器信号输入打开，并确认机器人发生碰撞时，此功能用于将此状态输出到外部。
 
-#### Emergency stop
+#### 步骤设定警告
 
-When there is an input signal from the emergency stop button mounted on the front of the teach pendant or of the controller is inputted, this function is used to output the state to the outside.
+在自动模式下，如果当前选择的光标位置与之前执行的位置不同，可能会有危险。此功能用于将此状态输出到外部。
 
+#### 联锁异常警告
 
+当作业程序的 wait 语句中的等待时间超过在 `[System - 2: Control Parameter - 1: Control Environment Setting]` 菜单中的 `[Interlock Abnormal Time]` 选项设定的时间时，此功能用于将此状态输出到外部。
 
-#### Emergency stop \(External\)
+错误/警告输出位，错误/警告输出选择和错误/警告输出闪烁
 
-This function is used to output to the outside the signal from an external emergency stop device connected to the system board. 
-
-
-
-#### Low speed mode 
-
-When the signal set for the low speed command in the input signal assign section is turned on or when the robot operates at a safe speed in manual mode, this function is used to output this state to the outside.
-
-
-
-#### Program end 
-
-When the end cycle is performed in the job program, this function is used to output this state to the outside.
-
-
-
-#### Overall error
-
-Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user's mistakes in operation. When an error occurs because of a system error, this function is used to output this state to the outside. The errors caused by system errors range from 1 to 999 and 2000 to 7999.
-
-
-
-#### Operation error
-
-Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user's mistakes in operation. When an error occurs because of the user's mistakes in operation, this function is used to output this state to the outside. For information, the errors caused by system errors range from 1 to 999 and 2000 to 7999.
-
-
-
-#### Warning
-
-When a warning occurs in the controller, this function is used to output this state to the outside.
-
-
-
-#### Collision sensor 
-
-When the input of the collision sensor signal set in the input signal assign section is turned on and it is confirmed that a collision has occurred in the robot, this function is used to output this state to the outside.
-
-
-
-#### Step set warning 
-
-In automatic mode, it can be dangerous if the currently selected position of the cursor is different from the position in which the execution was performed previously. This function is used to output this state to the outside.
-
-
-
-#### Interlock abnormal warning
-
-When the waiting time in the wait statement of the job program exceeds the time set in the `[Interlock Abnormal Time]` option in the `[System - 2: Control Parameter - 1: Control Environment Setting]` menu, this function is used to output this state to the outside.
-
-Error/Warning output bit, Error/Warning output selection and Error/Warning output strobe
-
-For the error/warning output bit, error/warning output strobe, overall abnormality, operation error, and warning occurrence signals, refer to the following sequence.
+对于错误/警告输出位、错误/警告输出闪烁、整体异常、操作错误和警告发生信号，请参考以下顺序。
 
 ![Figure 53 16Bit Output](../../../_assets/image_456.png)
 
-#### External reset ack
+#### 外部复位确认
 
-When the external reset signal set in the input signal assign section is turned on, this function is used to output this state to the outside. This signal will be turned on for 200 ms and then turned off automatically.
+当在信号输入分配部分设定的外部复位信号打开时，此功能用于将此状态输出到外部。该信号将持续 200 毫秒，然后自动关闭。
 
+#### 程序回显位
 
+当通过在信号输入分配部分设定的程序选择位选择程序时，此功能用于将所选程序编号输出到外部。
 
-#### Program echo bit 
+#### 程序确认
 
-When a program is selected by the program selection bit set in the input signal assign section, this function is used to output the selected program number to the outside. 
+当机器人通过在远程模式下输入外部启动信号启动时，此功能用于将状态输出到外部。该信号将持续 200 毫秒，然后自动关闭。
 
+#### 弧焊异常
 
+当发生与弧焊相关的错误时，此功能用于将此状态输出到外部。
 
-#### Program ack 
+#### 弧沉积警告
 
-When the robot is started by an input of the external startup signal in remote mode, this function is used to output the state to the outside. The signal will be turned on for 200 ms and then turned off automatically.
+当在弧焊期间发生焊接沉积时，此功能用于将此状态输出到外部。该信号将持续 200 毫秒，然后自动关闭。
 
+#### 机器人锁定状态 \(有效=开\)
 
+此功能用于将 `[Condition Setting]` 中的机器人锁定设置状态输出到外部。
 
-#### Arc welding abnormal
+#### 现场总线异常，和现场总线空闲
 
-When an error related to arc welding occurs, this function is used to output this status to the outside.
+当使用 CC-LINK 和 DeviceNet 等现场总线通信板时，此功能用于将通信状态输出到外部。
 
+#### 电池 \(备份，编码器\) 电压下降
 
+当备份电池的电压下降以维持安装在主板上的 SRAM 状态或编码器电池的电压下降以维持安装在每个电机上的编码器值时，此功能用于将此状态输出到外部。
 
-#### Arc deposition warning
+#### 扭矩监测
 
-When welding deposition occurs during arc welding, this function is used to output this state to the outside. This signal will be turned on for 200ms and then turned off automatically.
+此功能用于将施加在机器人六个轴上的扭矩值输出到外部。将输出到外部的扭矩值是1/2倍率的%值。
 
+#### 润滑剂注入警报
 
+此功能用于将需要注入润滑剂的状态输出到外部。
 
-#### Robot lock state \(Valid=ON\)
+#### 平均负载因子异常警报
 
-This function is used to output to the outside the robot lock setting status in `[Condition Setting]`.
-
-
-
-#### Field bus abnormal, and field bus idle
-
-When a fieldbus communication board such as CC-LINK and DeviceNet is used, this function is used to output the communication state to the outside.
-
-
-
-#### Battery \(backup, encoder\) voltage drop
-
-When there is a voltage drop in the backup battery to maintain the state of the SRAM installed on the main board or a voltage drop in the encoder battery to maintain the value of the encoder installed on each motor, this function is used to output to the outside.
-
-
-
-#### Torque monitoring
-
-This function is used to output to the outside the torque value that is applied to the six axes of the robot. The torque value that will be outputted to the outside is a % value in the multiplier of 1/2.
-
-
-
-#### Grease injection alarm
-
-This function is used to output to the outside the condition that requires grease injection.
-
-
-
-#### Average load factor abnormality alarm 
-
-This function is used to output to the outside the status regarding whether the robot has exceeded the average load factor during operation.
-
-
-
-
-
+此功能用于将机器人在操作过程中是否超过平均负载因子的状态输出到外部。

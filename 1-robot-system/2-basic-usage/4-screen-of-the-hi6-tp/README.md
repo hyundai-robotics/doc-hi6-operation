@@ -1,20 +1,19 @@
-﻿# 1.2.4 Screen of the ${cont_model} Teach Pendant
+﻿# 1.2.4 ${cont_model} 教学挂件的屏幕
 
-Following figure represents the screen displayed on teach pendant. Teach pendant screen of ${cont_model} controller is composed of 10 screen windows of color touch screens.
+下图表示教学挂件上显示的屏幕。${cont_model} 控制器的教学挂件屏幕由 10 个彩色触摸屏窗口组成。
 <br>
 
 ![](../../../_assets/tp630/TP-main_eng.png)
 
 | No. | Description | 
 | :--- | :--- | 
-| ![](../../../_assets/c1.png) | Title display window : various status icons of TP communication, robot system, mechanism, etc. ([1.2.3.1 Title display window](1-title-area.md)) |
-| ![](../../../_assets/c2.png) | Status display window: a operating mode and settings ([1.2.3.2 Status display window](2-status-bar.md)) |
-| ![](../../../_assets/c3.png) | R button bar : the menu group of the right side on the main screen  ([1.2.3.3 R button bar](3-Rbt-bar.md)) |
-| ![](../../../_assets/c4.png) | Monitor window : running data during operations  ([1.2.3.4 Monitor window](4-mon-area.md)) |
-| ![](../../../_assets/c5.png) | Function button bar : the menu group of the bottom side on the main screen, which supports main settings and monitoring  ([1.2.3.5 Function button bar](5-function-buttons.md)) |
-| ![](../../../_assets/c6.png) | Input display window : direct typing area for the task edit window ([1.2.3.6 Input display window](6-input-area.md)) |
-| ![](../../../_assets/c7.png) | Guide display window : guide messages during operations  ([1.2.3.7 Guide display window](7-guide-area.md)) |
-| ![](../../../_assets/c8.png) | Task edit window : the area for editing JOB programs  ([1.2.3.8 Task edit window](8-work-area.md)) |
-| ![](../../../_assets/c9.png) | Record condition display window : the  conditions of recording steps  ([1.2.3.9 Record condition display window](9-record-cnd-area.md)) |
-| ![](../../../_assets/c10.png) | L button bar  : the menu group of the left side on the main screen  ([1.2.3.10 L button bar](10-Lbt-bar.md)) |
-
+| ![](../../../_assets/c1.png) | 标题显示窗口：TP 通信、机器人系统、机械等的各种状态图标。 ([1.2.3.1 标题显示窗口](1-title-area.md)) |
+| ![](../../../_assets/c2.png) | 状态显示窗口：操作模式和设置 ([1.2.3.2 状态显示窗口](2-status-bar.md)) |
+| ![](../../../_assets/c3.png) | R 按钮栏：主屏幕右侧的菜单组 ([1.2.3.3 R 按钮栏](3-Rbt-bar.md)) |
+| ![](../../../_assets/c4.png) | 监视窗口：操作期间的运行数据 ([1.2.3.4 监视窗口](4-mon-area.md)) |
+| ![](../../../_assets/c5.png) | 功能按钮栏：主屏幕底部的菜单组，支持主要设置和监控 ([1.2.3.5 功能按钮栏](5-function-buttons.md)) |
+| ![](../../../_assets/c6.png) | 输入显示窗口：任务编辑窗口的直接输入区域 ([1.2.3.6 输入显示窗口](6-input-area.md)) |
+| ![](../../../_assets/c7.png) | 引导显示窗口：操作期间的引导信息 ([1.2.3.7 引导显示窗口](7-guide-area.md)) |
+| ![](../../../_assets/c8.png) | 任务编辑窗口：编辑 JOB 程序的区域 ([1.2.3.8 任务编辑窗口](8-work-area.md)) |
+| ![](../../../_assets/c9.png) | 记录条件显示窗口：记录步骤的条件 ([1.2.3.9 记录条件显示窗口](9-record-cnd-area.md)) |
+| ![](../../../_assets/c10.png) | L 按钮栏：主屏幕左侧的菜单组 ([1.2.3.10 L 按钮栏](10-Lbt-bar.md)) |

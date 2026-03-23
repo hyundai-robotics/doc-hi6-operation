@@ -1,129 +1,128 @@
 ﻿# 11.1.2 project/
 
-This is the most important folder where the robot's configuration, teaching data, and state are stored.
-When backing up or restoring the controller system, this folder is the core component.
+这是存储机器人配置、教学数据和状态的最重要文件夹。
+在备份或恢复控制器系统时，此文件夹是核心组件。
 
 #### project/
 
-This folder contains various configuration files as well as state-backup files that are saved immediately before the controller is powered off (shutdown).
-The state backup includes information stored at power-off for the following purposes:
+此文件夹包含各种配置文件以及在控制器关闭前立即保存的状态备份文件。
+状态备份包括在关机时为以下目的存储的信息：
 
-    - To resume the task that was running before power-off when the controller is powered on again
-      (Note: For complex operations such as robot applications or plugins, resuming may not be possible.)
+    - 在控制器再次启动时恢复关机前正在运行的任务
+      （注意：对于复杂操作，例如机器人应用程序或插件，可能无法恢复。）
 
-    - To preserve output signals from just before power-off and restore them after power-on
+    - 保留关机前的输出信号并在开机后恢复
 
 
 * arc_weld.json
   
-  Arc welding application configuration file
+  弧焊应用配置文件
 
 * arc_weld_bkup.json
   
-  Backup data of the arc welding application state saved just before power-off
+  在关机前保存的弧焊应用状态的备份数据
 
 * calibration.json
 
-  Robot calibration configuration file
+  机器人校准配置文件
 
 * context.json
 
-  Execution context for all tasks' .job files, including instruction pointer positions, call history of .job files with arguments, local variable values, etc.
+  所有任务的 .job 文件的执行上下文，包括指令指针位置、带参数的 .job 文件调用历史、局部变量值等。
 
 * dout.json
 
-  Output states of general-purpose digital signals saved just before power-off
+  在关机前保存的一般数字信号的输出状态
 
 * force_control.json
 
-  Force control configuration file
+  力控制配置文件
 
 * hi6_proj.json
 
-  Main project file. Most configuration of base features are stored here.
+  主项目文件。大部分基础特性的配置存储在这里。
 
 * kw.json
   
-  Built-in PLC `kw` relay values saved just before power-off
+  在关机前保存的内置 PLC `kw` 继电器值
 
 * maintenance.json
 
-  Various maintenance and system information, robot model, number of axes, operating hours, software version, remaining memory and storage, system codes, and per-thread execution times
+  各种维护和系统信息，包括机器人型号、轴数、运行时间、软件版本、剩余内存和存储、系统代码以及每线程执行时间
 
 * motion_bkup.bin
   
-  Backup data related to robot motion saved just before power-off
+  与机器人运动相关的在关机前保存的备份数据
 
 * mw.json
   
-  Built-in PLC `mw` relay values saved just before power-off
+  在关机前保存的内置 PLC `mw` 继电器值
 
 * playback_bkup.bin
 
-  Backup data related to .job execution saved just before power-off
+  在关机前保存的与 .job 执行相关的备份数据
 
 * sealing.json
 
-  Sealing application configuration file
+  密封应用配置文件
 
 * sout.json
 
-  System signal output values saved just before power-off
+  在关机前保存的系统信号输出值
 
 * spot_weld.json
 
-  Spot welding application configuration file
+  点焊应用配置文件
 
 * spot_weld_bkup.json
 
-  Backup data of the spot welding application state saved just before power-off
+  在关机前保存的点焊应用状态的备份数据
 
 * svtool_change.json
 
-  Additional axis configuration file for servo tool change operations
+  额外轴配置文件，用于伺服工具更换操作
 
 * version.json
 
-  Information used to determine whether data updates are required on the first boot after a software version upgrade (current version number)
+  用于确定软件版本升级后第一次启动时是否需要数据更新的信息（当前版本号）
   
 
 #### project/jobs/
   
-Folder storing teaching programs (.job files).
+存储教学程序 (.job 文件) 的文件夹。
 
 
 #### project/lads/
   
-Folder storing built-in PLC ladder programs (.lad files).
+存储内置 PLC 梯形图程序 (.lad 文件) 的文件夹。
 
 
 #### project/safety/
   
-(HI7 controller) Folder storing Functional Safety configuration files.
+（HI7 控制器）存储功能安全配置文件的文件夹。
 
 * safety_parameter.json
 
-  Functional Safety configuration file
+  功能安全配置文件
 
 * safety_parameter.json.cert
 
-  Certification file for the safety configuration.
-  A valid certificate is issued only when the configuration is saved with the correct password. If invalid, the controller will not operate.
+  功能安全配置的认证文件。
+  只有在以正确的密码保存配置时才会发放有效证书。如果无效，控制器将无法操作。
 
 
 #### project/vars/
 
-Folder storing variables and aliases.
+存储变量和别名的文件夹。
 
 * aliases.json
 
-  Robot language alias file
+  机器人语言别名文件
 
 * *.csv
 
-  Top-level array files (comma-separated values format)
+  顶层数组文件（逗号分隔值格式）
 
 * vars.json
 
-  Global variable file
-  
+  全局变量文件

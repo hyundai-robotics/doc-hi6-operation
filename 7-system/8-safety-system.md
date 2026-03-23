@@ -1,19 +1,19 @@
-﻿# 7.8 Safety System 
+﻿# 7.8 安全系统 
 
 {% hint style="info" %}
-This function is supported from the Hi7 controller.
+此功能由 Hi7 控制器支持。
 {% endhint %}
 
-1.	Touch the `[8: Safety System]` menu. Then, the menu of safety system will appear.
+1. 触摸 `[8: 安全系统]` 菜单。然后，安全系统的菜单将出现。
 
-2.	Select the desired menu to perform Basic Settings, Parameter Settings, Monitoring, Certificate, or Safety Radar.
+2. 选择所需菜单以执行基本设置、参数设置、监控、证书或安全雷达。
 
 ![](../_assets/tp630/system-safety-menu.png)
 
 {% hint style="info" %}
-For detailed information on 1: Basic Settings, 2: Parameter Settings, 3: Monitoring, and 4: Certificate of the Safety System, refer to the "[SafeSpace2.0 Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README)".
+有关安全系统的 1: 基本设置、2: 参数设置、3: 监控和 4: 证书的详细信息，请参阅 "[SafeSpace2.0 手册](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/zh/README)"。
 {% endhint %}
 
 {% hint style="info" %}
-For detailed information on the Safety Radar, refer to the "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)".
+有关安全雷达的详细信息，请参阅 "[目标检测系统](https://github.com/hyundai-robotics/doc-Object-Detection-System)"。
 {% endhint %}

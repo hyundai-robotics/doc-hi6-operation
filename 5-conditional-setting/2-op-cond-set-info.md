@@ -1,81 +1,78 @@
-﻿# 5.2 Information of Operation Conditions Setting
+﻿# 5.2 操作条件设置的信息
 
 
 
-* `[1: Operation cycle type]`: You can set whether to repeat the program that will be executed during automatic operation. It can also be set while the robot is starting up, and the setting value will not be applied during manual operation.
-  * 1 Cycle: The job program will operate once and then stop. When the program END is reached, the robot will stop.
-  * Continuous: The job program will operate continuously and repeatedly. If there is an external stop operation, the robot will stop.
+* `[1: 操作周期类型]`: 您可以设置在自动操作期间是否重复将要执行的程序。它也可以在机器人启动时进行设置，并且设置值不会在手动操作期间应用。
+  * 1 次周期: 工作程序将运行一次，然后停止。当程序达到 END 时，机器人将停止。
+  * 连续: 工作程序将连续并重复运行。如果有外部停止操作，机器人将停止。
 </br>
 </br>
 
-* `[2: Step FWD/BWD maximum speed]`: You can set the speed limit for a step forward/backward. For details on this option, refer to "[2.1 Manual Operation](../2-operation/1-manual-operation/README.md)".
+* `[2: 步骤 FWD/BWD 最大速度]`: 您可以设置向前/向后步骤的速度限制。有关此选项的详细信息，请参阅 "[2.1 手动操作](../2-operation/1-manual-operation/README.md)"。
 </br>
 
-* `[3: Function execution during Step FWD]`: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
-  * Off: Only END recorded in the job program will be executed. All other functions except for END will not be executed.
-  * On: All functions recorded in the job program will be executed.
-  * 1 On: Only the input signal wait function and program END function will be executed.
+* `[3: 步骤 FWD期间的功能执行]`: 您可以设置在步骤向前操作期间在工作程序中记录的功能的执行选项（模式）。
+  * 关闭: 只有在工作程序中记录的 END 将被执行。除了 END 之外的所有其他功能都不会被执行。
+  * 开启: 所有在工作程序中记录的功能将被执行。
+  * 1 开: 仅输入信号等待功能和程序 END 功能将被执行。
 
 
 
 {% hint style="warning" %}
-While in the step backward operation, only the input wait signal function will be executed, and all other functions will not be executed.
+在步骤向后操作期间，仅输入等待信号功能将被执行，所有其他功能将不会被执行。
 {% endhint %}
 
-* `[4: Re-execution of the function after step backward and forward]`: You can perform setting in a way that the previously executed functions among the functions recorded in the job program can be executed again when in the step forward operation again after the step backward operation.
+* `[4: 在步骤向后和向前后的功能重执行]`: 您可以以一种方式进行设置，即在步骤向后操作后再次在步骤向前操作时，可以重新执行工作程序中记录的先前执行的功能。
 </br>
 
-* `[5: Path recovery during step FWD/BWD]`: You can set the mode of executing path recovery when in the step forward/backward operation.
-  * Disable: Will not execute path recovery
-  * Enable: Will execute path recovery without confirming with the user whether to execute path recovery
+* `[5: 步骤 FWD/BWD期间的路径恢复]`: 您可以设置在步骤向前/向后操作期间执行路径恢复的模式。
+  * 禁用: 不会执行路径恢复
+  * 启用: 将执行路径恢复而不与用户确认是否执行路径恢复
 </br>
 </br>
 
-* `[6: Playback speed rate]`: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot moving speed against the speed recorded in the step in batch.
+* `[6: 播放速度比率]`: 您可以设置机器人在自动模式下播放程序的操作速度（%）。这并不涉及更改工作程序步骤中记录的速度，而是指更改机器人移动速度与步骤中记录的速度之间的比率，范围从 1% 到 100%。
 
 
 
 
 {% hint style="info" %}
-If a low-speed command is inputted through an external input during automatic operation, the automatic operation speed ratio will not be applied, but the manual maximum speed \(250 mm/s\) will be applied.
+如果在自动操作期间通过外部输入输入了低速命令，将不适用自动操作速度比率，而将适用手动最大速度 \(250 mm/s\)。
 {% endhint %}
 
-* `[7: Robot Lock]`: You can set the job program in a way that automatic operation is possible, without moving the robot. You can check the status of I/O with the peripheral devices, the soft limit, the cycle time, etc.
+* `[7: 机器人锁定]`: 您可以以一种方式设置工作程序，使自动操作在不移动机器人的情况下进行。您可以检查 I/O 与外围设备的状态、软限制、周期时间等。
 </br>
 
-* `[8: Interpolation base]`: You can set a tool that will be the reference during the manual jogging of the robot. In general, a robot tool is used as an interpolation reference.
-  * Robot Tool: Interpolation operation will be executed based on the tool attached to the front end of the robot.
-  * Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../_assets/tp630/sbt-crd-st0-small_eng.png)\).
-
+* `[8: 插值基准]`: 您可以设置作为机器人的手动移动参考的工具。一般而言，机器人工具被用作插值参考。
+  * 机器人工具: 插值操作将基于附加在机器人前端的工具执行。
+  * 固定工具: 插值将基于固定在地面上的工具的前端执行。如果选择固定工具作为插值参考，初始屏幕左侧的工具编号将标记为 ST0 \(![](../_assets/tp630/sbt-crd-st0-small_eng.png)\)。
 
 
 
 {% hint style="info" %}
-If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to "[7.3.6.2 Stationary Tool Coordinate System](../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)".
+如果选择固定工具作为插值参考，则必须设置固定工具坐标系。有关详细信息，请参阅 "[7.3.6.2 固定工具坐标系](../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)"。
 {% endhint %}
 
-* `[9: Select user Coordinate System Designation]`: You can set the user coordinate system number \(0~10\) for Cartesian operation during manual jog operation. Then, the robot will operate based on the Cartesian coordinate system in the directions of X, Y, and Z axes of the designated user coordinate system, and the coordinate values of the user coordinate system selected during the monitoring of the pose will be displayed as X, Y, and Z coordinate values of the front end of the tool.
+* `[9: 选择用户坐标系指定]`: 您可以在手动操作期间为笛卡尔操作设置用户坐标系编号 \(0~10\)。然后，机器人将在指定的用户坐标系的 X、Y 和 Z 轴方向上进行操作，所选用户坐标系的坐标值将在监视姿态时显示为工具前端的 X、Y 和 Z 坐标值。
 
 
 
-  * If 0 is set, the robot coordinate system icon \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) will be displayed on the `[Coordinate System]` button on the status display window. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed. <br>
+  * 如果设置为 0，机器人坐标系图标 \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) 将显示在状态显示窗口的 `[坐标系统]` 按钮上。基于用户坐标系的操作将被停用，基于笛卡尔坐标的操作和监视将被执行。 <br>
   ![](../_assets/tp630/pane-pose-robotcoord_eng.png)
 
-  * If a number between 1 and 10 is set, the user coordinate system icon \(![](../_assets/tp630/sbt-crd-user-small_eng.png)\) will be displayed on the `[Coordinate System]` button. The coordinate values that are changed by using the `[Axis Operation]` key will be based on the user coordinate system. <br>
+  * 如果设置为 1 到 10 之间的数字，用户坐标系图标 \(![](../_assets/tp630/sbt-crd-user-small_eng.png)\) 将显示在 `[坐标系统]` 按钮上。通过使用 `[轴操作]` 键更改的坐标值将基于用户坐标系。 <br>
   ![](../_assets/tp630/pane-pose-usrcoord_eng.png)
 
 
 {% hint style="info" %}
-You can register the user coordinate system number in the `[system  - 2: Control Parameter  - 6: Coordinate System Registration  -1: User Coordinate System]`.
+您可以在 `[system - 2: 控制参数 - 6: 坐标系统注册  -1: 用户坐标系统] ([system  - 2: 控制参数  - 6: 坐标系统注册  -1: 用户坐标系统])` 中注册用户坐标系编号。
 {% endhint %}
 
 
-* `[10:Plc run mode]`: When the robot controller controls input/output signals using the embedded PLC, set the mode to control the embedded PLC. There are a total of 4 embedded PLC modes. For further details, please refer to the "[${cont_model} Controller Function Manual - Embedded PLC](https://hrbook-hrc.web.app/#/view/doc-hi6-embedded-plc/en/README?cont_model=${cont_model})".
+* `[10: Plc 运行模式]`: 当机器人控制器使用嵌入式 PLC 控制输入/输出信号时，设置控制嵌入式 PLC 的模式。共有 4 种嵌入式 PLC 模式。有关详细信息，请参阅 "[${cont_model} 控制器功能手册 - 嵌入式 PLC](https://hrbook-hrc.web.app/#/view/doc-hi6-embedded-plc/zh/README?cont_model=${cont_model})"。
 
-  * Off : Disables the function.
-  * Stop : Stops embedded PLC operation.
-  * R - Stop(Remote Stop) : This is remote mode and stops the embedded PLC operation in HRLadder of the PC connected to the controller.
-  * R - Run(Remote Run) : This is remote mode and the embedded PLC operation is executed from HRLadder on the PC connected to the controller.
-  * Run : The controller operates the PLC program downloaded to the controller. Only monitoring is possible in HRLadder on PC.
-
-
+  * 关闭: 禁用该功能。
+  * 停止: 停止嵌入式 PLC 操作。
+  * R - 停止（远程停止）: 这是远程模式，并停止与控制器连接的 PC 中 HRLadder 的嵌入式 PLC 操作。
+  * R - 运行（远程运行）: 这是远程模式，从与控制器连接的 PC 中的 HRLadder 执行嵌入式 PLC 操作。
+  * 运行: 控制器操作下载到控制器的 PLC 程序。在 PC 的 HRLadder 中仅能进行监控。

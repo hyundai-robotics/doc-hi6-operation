@@ -1,13 +1,13 @@
 ﻿# 7.5.16.2 Jogging(open-api)
 
-Please refer to the separate manual for open-api communication. <br>
-Information about the url address and body used for robot jogging is as follows.
+请参阅关于open-api通信的单独手册。 <br>
+有关机器人操纵的url地址和请求体的信息如下。
 
 * url : POST /project/robot/joystick/joy
 * body <br>
-    axis : Composed of double type array. axis[0] corresponds to J1. A value of -1 means movement to the left, and a value of +1 means movement to the right. <br>
+    axis : 由双精度类型数组组成。 axis[0] 对应于 J1。 值为 -1 表示向左移动，值为 +1 表示向右移动。 <br>
 
 
 {% hint style="info" %}
-If no data is received for 300ms, the jogging motion will stop.  
+如果在300ms内未收到数据，操纵运动将停止。  
 {% endhint %}

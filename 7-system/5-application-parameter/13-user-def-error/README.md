@@ -1,7 +1,7 @@
-﻿# 7.5.13 User-Defined Error
+﻿# 7.5.13 用户定义错误
 
-This function allows users to define errors for specific conditions in the ${cont_model} robot controller. When the defined conditions are met, the user-defined error is triggered.
+此功能允许用户为 ${cont_model} 机器人控制器中的特定条件定义错误。当满足定义的条件时，将触发用户定义的错误。
 
 {% hint style="info" %}
-Supported from V60.30-00.
+支持从 V60.30-00 开始。
 {% endhint %}

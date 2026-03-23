@@ -1,4 +1,3 @@
-﻿# 2.1 Manual Operation
+# 2.1 手动操作
 
-Manual operation is an operation method of directly teaching and checking the robot at a safe speed.
-
+手动操作是一种以安全速度直接教导和检查机器人的操作方法。

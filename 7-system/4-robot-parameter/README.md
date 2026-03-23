@@ -1,12 +1,9 @@
-﻿# 7.4 Robot Parameters
+﻿# 7.4 机器人参数
 
-You can set various data related to robot operation as well as information such as the origin and operation range of each axis.
+您可以设置与机器人操作相关的各种数据，以及每个轴的原点和操作范围等信息。
 
-1.	Touch the `[3: Robot Parameter]` menu. Then, the robot parameter menu will appear. 
+1. 触摸 `[3: Robot Parameter]` 菜单。然后，机器人参数菜单将出现。
 
-2.	You can check and set various parameters of the manipulator by selecting the desired menu.
+2. 您可以通过选择所需菜单来检查和设置操作器的各种参数。
 
     ![](../../_assets/tp630/robot-menu_eng.png)
-
-
-

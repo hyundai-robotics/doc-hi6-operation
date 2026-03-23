@@ -1,6 +1,3 @@
-﻿# 3.2 Program Writing
+﻿# 3.2 程序编写
 
-In order to accomplish the purpose of your application, you can write and edit a program consisting of various statements that instruct the robot to operate. You can write programs in manual mode.
-
-
-
+为了实现您应用程序的目的，您可以编写和编辑一个程序，该程序由各种语句组成，以指示机器人操作。您可以在手动模式下编写程序。

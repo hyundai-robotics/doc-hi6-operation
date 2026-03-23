@@ -1,4 +1,3 @@
-﻿# 7. System
+﻿# 7. 系统
 
-In the 'system', you can check and set the user information and various parameter information.
-
+在“系统”中，您可以检查和设置用户信息以及各种参数信息。

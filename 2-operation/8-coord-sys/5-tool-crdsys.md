@@ -1,10 +1,10 @@
-﻿# 2.8.5 Tool Coordinate System
+﻿# 2.8.5 工具坐标系统
 
 <table>
-	<th>Joint Coordinate System</th>
-	<th >Robot Coordinate System</th>
-	<th>User Coordinate System</th>
-	<th style="background:lightgreen">Tool Coordinate System</th>
+	<th>关节坐标系统</th>
+	<th >机器人坐标系统</th>
+	<th>用户坐标系统</th>
+	<th style="background:lightgreen">工具坐标系统</th>
 <tr>
 	<td><img src="../../_assets/tp630/sbt-crd-axis_eng.png"/></td>
 	<td><img src="../../_assets/tp630/sbt-crd-robot_eng.png"/></td>
@@ -13,27 +13,26 @@
 </tr>
 </table>
 
-1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
+1.	以手动模式开启电机，同时按住教导控制器背面的启用开关。
 
-2.	Select the tool coordinate system by repeatedly touching the `[Crd. Sys]` button on the status display window of the ${cont_model} teach pendant screen. 
+2.	通过反复触碰 ${cont_model} 教导控制器屏幕状态显示窗口上的`[Crd. Sys]`按钮选择工具坐标系统。
 
     ![](../../_assets/tp630/k-crdsys_eng.png)
 
     ![](../../_assets/tp630/sbar-tool-crdsys_eng.png)
 
-3.	Operate the robot with the jog keys. The robot will move as follows.
+3.	使用手动键操作机器人。机器人将如以下所示移动。
 
-* If a torch is attached to the robot
+* 如果机器人上附加了焊接枪
 
     ![](../../_assets/image_68.png)
 
 
 
-* If no torch is attached to the robot
+* 如果机器人上没有附加焊接枪
 
     ![](../../_assets/image_92.png)
 
 {% hint style="info" %}
-For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)."
+有关机器人在与手动键相关的移动方向的详细信息，请参阅"[2.7.1 Jog Keys](1-jog-key.md)."
 {% endhint %}
-

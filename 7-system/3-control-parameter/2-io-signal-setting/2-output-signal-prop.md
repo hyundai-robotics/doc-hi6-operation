@@ -1,17 +1,12 @@
-﻿# 7.3.2.2 Output Signal Attribute
+﻿# 7.3.2.2 输出信号属性
 
-You can set the logic, pulse, and name for a general input signal.
+您可以为常规输入信号设置逻辑、脉冲和名称。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 1: Output Signal Attribute` menu. 
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 1: 输出信号属性 (2: 控制参数 - 2: 输入/输出信号设置 - 1: 输出信号属性)` 菜单。
 
-2.	Check and set the general input signal list, and then touch the `[OK]` button.
+2. 检查并设置常规输入信号列表，然后触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-outsignal-attri_eng.png)
 
-* `[Append]`: You can add a new general output signal to the list.
-* `[Delete]`: You can delete the general output signal from the list.
-
-
-
-
-
+* `[Append]`: 您可以将一个新的常规输出信号添加到列表中。
+* `[Delete]`: 您可以从列表中删除常规输出信号。

@@ -1,16 +1,16 @@
-﻿# 6.2.4 Public Output
+﻿# 6.2.4 公共输出
 
-Touch `[public Output]` in the panel selection window. Then, the public output signal window will appear. 
+在面板选择窗口中触摸 `[public Output]`。然后，公共输出信号窗口将出现。
 
-You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
+您可以检查控制器中I/O板的CNOUT连接器输出的公共输出信号的状态。
 
-![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
+![Figure 40 公共输出信号 - 开/关状态 \(左\)/值状态 \(右\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -19,11 +19,10 @@ You can check the status of public output signals that are outputted through the
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Displays the status of general output signals</p>
+        <p>显示一般输出信号的状态</p>
         <ul>
-          <li>General output signals designated as the system&#x2019;s basic specifications
-            or assigned by the user will be displayed <b>in bold</b>.</li>
-          <li>The signals currently being outputted will be displayed in yellow.</li>
+          <li>指定为系统的基本规格或用户分配的一般输出信号将以 <b>粗体</b> 显示。</li>
+          <li>当前正在输出的信号将以黄色显示。</li>
         </ul>
       </td>
     </tr>
@@ -33,17 +32,10 @@ You can check the status of public output signals that are outputted through the
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[FB0]: You can select the FB block to monitor by touching the drop-down
-            menu (FB0 - FB15). You can configure up to 16 I/O blocks, and 960 points
-            of signals can be monitored using one block.</li>
-          <li>[Manual Output]: You can force the selected signal to be outputted.</li>
-          <li><b>[ATTR.-APPLIED]</b>: You can check the checkbox to perform the setting
-            in a way that the physical input values are to be displayed before passing
-            through the positive/negative logic attributes. The basic setting (unchecked)
-            is that the input logic value after passing through the positive/negative
-            logic attributes will be displayed.</li>
-          <li>[ON/OFF]/[Value]: You can change the signal display mode by touching the
-            radio button.</li>
+          <li>[FB0]: 您可以通过触摸下拉菜单选择要监控的FB块 (FB0 - FB15)。您最多可以配置16个I/O块，并且使用一个块可以监控960个信号点。</li>
+          <li>[手动输出]: 您可以强制输出所选信号。</li>
+          <li><b>[ATTR.-APPLIED]</b>: 您可以勾选复选框，以便在通过正/负逻辑属性之前显示物理输入值。基本设置（未勾选）是显示通过正/负逻辑属性后的输入逻辑值。</li>
+          <li>[开/关]/[值]: 您可以通过触摸单选按钮更改信号显示模式。</li>
         </ul>
       </td>
     </tr>
@@ -51,35 +43,33 @@ You can check the status of public output signals that are outputted through the
 </table>
 
 {% hint style="info" %}
-* In the case of using signals, such as fieldbus signals, by mapping them using an embedded PLC, the On/Off status of the output signals may appear differently. 
+* 在通过嵌入式PLC映射场总线信号等信号的情况下，输出信号的开/关状态可能会有所不同。
 * 
-  The flow of the output signals is as follows.
+  输出信号的流动如下。
 {% endhint %}
 
 ![](../../_assets/user-input-flow_en.png)
 
 #### 
 
-#### Manual Output
+#### 手动输出
 
-You can select the desired signal and force it to be outputted.
+您可以选择所需的信号并强制输出。
 
-1.	You can set the display mode to the ON/OFF status by touching the `[ON/OFF]` radio button on the right side of the general output signal window. 
+1.	您可以通过触摸一般输出信号窗口右侧的 `[ON/OFF]` 单选按钮将显示模式设置为开/关状态。
 
-2.	Touch a signal to select it in the signal window, and then touch the `[Manual Output]` button.
+2.	触摸信号以在信号窗口中选择它，然后触摸 `[手动输出]` 按钮。
 
     ![](../../_assets/tp630/pane-univoutsig_eng.png)
 
-
-3.	After checking the output conditions in the manual output confirmation window, touch the `[ENTER]` button.
+3.	在手动输出确认窗口中检查输出条件后，触摸 `[ENTER]` 按钮。
 
     ![](../../_assets/tp630/pane-univoutsig-manual_eng.png)
 
 | FbN | doN | =1/0 |
 | :---: | :---: | :---: |
-| N: Number of the FB block to monitor | N: Number of the signal to output | Output status \(1: Output, 0: No output\) |
+| N: 要监控的FB块编号 | N: 要输出的信号编号 | 输出状态 \(1: 输出, 0: 不输出\) |
 
-4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
+4.	检查所选信号的输出状态。所选信号将切换到输出状态并在信号窗口中以黄色显示。
 
     ![](../../_assets/tp630/pane-univoutsig-onoff_eng.png)
-

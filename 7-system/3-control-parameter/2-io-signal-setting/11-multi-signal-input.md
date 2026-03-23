@@ -1,24 +1,20 @@
-﻿# 7.3.2.11 Multiple Signals Input
+﻿# 7.3.2.11 多信号输入
 
-Input signals \(up to 16 signals\) can be created as a group, and data can be acquired through individual signals.
+输入信号（最多16个信号）可以作为一个组创建，可以通过单个信号获取数据。
 
-The data is in binary format and will be determined by the input on or off. For example, if di41 and di43 are on and all other signals are off, the data will be 0101 \(5 in decimal\).
+数据采用二进制格式，通过输入的开或关来确定。例如，如果di41和di43为开，所有其他信号为关，则数据将为0101（十进制中的5）。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 8: Multiple Signal Input` menu.
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 8: 多信号输入 (2: 控制参数 - 2: 输入/输出信号设置 - 8: 多信号输入)` 菜单。
 
-2.	Set the name, signals, and strobe of the input signal group.
+2. 设置输入信号组的名称、信号和波特率。
 
     ![](../../../_assets/tp630/ctrl-multi-insignal_eng.png)
-
-
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -27,15 +23,11 @@ The data is in binary format and will be determined by the input on or off. For 
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information on the group selected from the input signal group
-          list. You can set the name, description and signal of the group.</p>
+        <p>有关从输入信号组列表中选择的组的详细信息。您可以设置组的名称、描述和信号。</p>
         <ul>
-          <li><b>[Reset All]</b>/<b>[Reset One]</b>: You can reset the set value of
-            all signals or of a selected signal to -1.</li>
-          <li><b>[Reset Channel]</b>: You can reset the input channel of the set signal
-            (0&#x2013;9: digital signals)</li>
-          <li><b>[Set Range]</b>: You can quickly set the signal by designating the
-            start and end signals.</li>
+          <li><b>[重置所有]</b>/<b>[重置一个]</b>: 您可以将所有信号或选定信号的设置值重置为-1。</li>
+          <li><b>[重置通道]</b>: 您可以重置设置信号的输入通道（0–9：数字信号）</li>
+          <li><b>[设置范围]</b>: 您可以通过指定开始和结束信号快速设置信号。</li>
         </ul>
       </td>
     </tr>
@@ -45,25 +37,19 @@ The data is in binary format and will be determined by the input on or off. For 
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the edited content.</li>
-          <li>[+]/[-]:You can add a new input signal group or delete an input signal
-            group.</li>
-          <li>This shows a list of input signal groups. Selecting a group name allows
-            you to check and edit details.</li>
-          <li><b>[Copy Page]</b>/<b>[Paste Page]: </b>You can copy the input signal
-            group information and paste it to another group.
-            <br />Select the name of the group to be copied from the list, touch the <b>[Copy Page]</b> button,
-            select the name of the group to which the value is to be applied, and touch
-            the <b>[Paste Page] </b>button.</li>
+          <li>[确定]: 您可以保存编辑的内容。</li>
+          <li>[+]/[-]:您可以添加一个新的输入信号组或删除一个输入信号组。</li>
+          <li>这显示输入信号组的列表。选择一个组名称可以检查和编辑详细信息。</li>
+          <li><b>[复制页面]</b>/<b>[粘贴页面]: </b>您可以复制输入信号组信息并将其粘贴到另一个组中。
+            <br />从列表中选择要复制的组名称，触摸<b>[复制页面]</b>按钮，选择要应用值的组名称，然后触摸<b>[粘贴页面]</b>按钮。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
+例如，当按照上面屏幕中的设置配置的作业程序执行时，操作将如下所示。
 
-![Figure 55 Example of Job Program Execution](../../../_assets/image_407.png)
+![图55 作业程序执行示例](../../../_assets/image_407.png)
 
-After starting from S1 toward S2, the robot executes the wait statement. If the wait condition is satisfied before the accuracy of S2 is ok, the robot will move to the path in red. If this is not the case, the robot will wait until the wait condition is satisfied.
-
+从S1开始到S2，机器人执行等待语句。如果在S2的准确性尚可之前满足等待条件，机器人将移动到红色路径。如果不是这样，机器人将等待直到满足等待条件。

@@ -1,29 +1,29 @@
-﻿# 6.3.3.3 Variable files
+﻿# 6.3.3.3 变量文件
 
-Variable values are also saved as files because they must be preserved even when powered off, and global variables are stored in two forms, depending on the type:
+变量值也会以文件形式保存，因为即使在关机时也必须保留它们，而全局变量根据类型以两种形式存储：
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Pathname</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">类型</th>
+      <th style="text-align:left">路径</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">
-        Global root array variables
+        全局根数组变量
       </td>
       <td style="text-align:left">MAIN/project/vars/*.csv</td>
-      <td style="text-align:left">One file is created for each variable, and the file title is the same as the variable name.</td>
+      <td style="text-align:left">为每个变量创建一个文件，文件标题与变量名称相同。</td>
     </tr>
 	 <tr>
       <td style="text-align:left">
-        Other variables
+        其他变量
       </td>
       <td style="text-align:left">MAIN/project/vars/vars.json</td>
-      <td style="text-align:left">All other global variables are saved as a single file.</td>
+      <td style="text-align:left">所有其他全局变量作为一个文件保存。</td>
     </tr>
 	</tbody>
 </table>
@@ -31,31 +31,31 @@ Variable values are also saved as files because they must be preserved even when
 <br>
 
 
-##### vars/.csv file
+##### vars/.csv 文件
 
-When you open the folder `MAIN/project/vars/` in File-manager, a file named `weld_points.csv` is created. The variables specified as the predefined create a .csv file that is the same as the variable name, and when released from predefined, the file is automatically deleted.
+当您在文件管理器中打开文件夹 `MAIN/project/vars/` 时，将创建一个名为 `weld_points.csv` 的文件。指定为预定义的变量创建一个与变量名称相同的 .csv 文件，当从预定义中释放时，该文件会被自动删除。
 
 ![](../../../_assets/tp630/panel-gvar/csv0.png)
 
-Copy this file via USB memory or FTP and open it on your PC. The .csv file is a very simple text format standard that expresses comma-separated values.
+通过 USB 存储器或 FTP 复制此文件，并在您的 PC 上打开它。 .csv 文件是一种非常简单的文本格式标准，表示以逗号分隔的值。
 
-Refer to: [Wikipedia: Comma-separated values](https://en.wikipedia.org/wiki/Comma-separated_values)
+参考： [维基百科：逗号分隔值](https://en.wikipedia.org/wiki/Comma-separated_values)
 
-The .csv file represents a single two-dimensional table. The columns are separated by commas and rows are spearated by line-feed.
+该 .csv 文件表示一个单一的二维表。列通过逗号分隔，行通过换行符分隔。
 
 ![](../../../_assets/tp630/panel-gvar/csv1.png)
 
-The csv file containing the procedure building up the `weld_points` two-dimensional array, in order.
+csv 文件按顺序包含构建 `weld_points` 二维数组的过程。
 
-For each row, the 1st column is the index, the 2nd column is the type, and the 3rd ~ last columns are the values. The 1st row describes this as the header of the table.
+对于每一行，第一列是索引，第二列是类型，第三至最后一列是值。第一行将其描述为表的标题。
 
-The 2nd row is the row that creates the top level, that is, `weld_points` itself. Therefore, the index column is empty, type is array, and number is 10. In other words, weld_points[10] is created, and 10 elements are filled with the default value of zeroes.
+第二行是创建顶层的行，即 `weld_points` 本身。因此，索引列为空，类型为数组，数字为 10。换句话说，创建了 weld_points[10]，并用零填充了 10 个元素。
 
 ```python
 , , array, 10
 ```
 
-The following rows generate and assign pose type values to the elements of `weld_points[0]`.
+以下行生成并分配姿态类型值给 `weld_points[0]` 的元素。
 
 ```python
 [0][0][0], Pose, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, "base"
@@ -63,7 +63,7 @@ The following rows generate and assign pose type values to the elements of `weld
 ...
 ```
 
-If 100 rows are performed for `weld_points[0]`, the following rows are followed by the action for `weld_points[1]` as shown below:
+如果对 `weld_points[0]` 执行 100 行，以下行将跟随 `weld_points[1]` 的操作，如下所示：
 
 ```python
 [1][1], array; 100
@@ -73,11 +73,11 @@ If 100 rows are performed for `weld_points[0]`, the following rows are followed 
 ...
 ```
 
-You can double-click the .csv file in File-manager to open it with Microsoft Excel and edit it. Save as `Ctrl+S` or `Save` button when editing is done.
+您可以在文件管理器中双击 .csv 文件以使用 Microsoft Excel 打开并进行编辑。编辑完成时按 `Ctrl+S` 或 `保存 (Save)` 按钮保存。
 
 ![](../../../_assets/tp630/panel-gvar/csv2.png)
 
-Saving in Excel results in unnecessary commas, as shown below, and the quotation marks in the coordinate-system disappear, resulting in a slight change in format. It can't be helped because Excel handles .csv like this. Anyway, the ${cont_model} controller also recognizes that kind of format, so it doesn't matter.
+在 Excel 中保存会导致不必要的逗号，如下所示，坐标系中的引号消失，导致格式略有变化。这是因为 Excel 以这样的方式处理 .csv。无论如何，${cont_model} 控制器也能够识别这种格式，因此没关系。
 
 ```python
 , , array,10,,,,,,
@@ -92,11 +92,11 @@ Saving in Excel results in unnecessary commas, as shown below, and the quotation
 
 <br>
 
-##### Loading .csv
+##### 加载 .csv
 
-You can overwrite the edited file into `MAIN/project/vars/` again, but it is not automatically reflected in memory.
+您可以将编辑后的文件覆盖到 `MAIN/project/vars/` 中，但它不会自动反映到内存中。
 
-When you click the [F2: load all] button in the Global Variables window, all variable files in the `vars/` folder are reloaded to memory.
-(Please note that deleting the variable file and clicking [F2: load all] will also delete the corresponding variable in memory.)
+当您在全局变量窗口中单击 [F2: load all] 按钮时，`vars/` 文件夹中的所有变量文件将重新加载到内存中。
+(请注意，删除变量文件并单击 [F2: load all] 也会删除内存中对应的变量。)
 
 ![](../../../_assets/tp630/panel-gvar/fixed-var.png)

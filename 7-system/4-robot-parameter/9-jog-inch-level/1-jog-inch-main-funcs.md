@@ -1,17 +1,12 @@
-﻿# 7.4.9.1 Main Functions of the Jog Inching Function
+# 7.4.9.1 主动瞬态功能的主要功能
 
-* Inching applicable coordinate systems
+* 适用的瞬态坐标系统
   * 
-    Inching in the joint coordinate system: Movement will take place as much as the distance \(mm\) and angle \(deg\) designated for each joint.
+    在关节坐标系统中的瞬态：运动将按照为每个关节指定的距离 \(mm\) 和角度 \(deg\) 进行。
 
-  * Inching in the Cartesian coordinate system
-  * Inching in the tool coordinate system 
-  * Inching in the user coordinate system: Movement will take place as much as the amount designated for the X, Y, and Z positions \(mm\) and Rx, Ry, and Rz postures\(deg\).
-* Inching level 
+  * 在笛卡尔坐标系统中的瞬态
+  * 在工具坐标系统中的瞬态 
+  * 在用户坐标系统中的瞬态：运动将按为 X、Y 和 Z 位置 \(mm\) 以及 Rx、Ry 和 Rz 姿态 \(deg\) 指定的量进行。
+* 瞬态级别 
 
-  You can set the inching distance at the same level as the existing jog speed, so you can select eight levels of speed, and you can set the inching distance for each level.
-
-
-
-
-
+  您可以将瞬态距离设置为与现有 jog 速度相同的级别，因此您可以选择八个速度级别，并可以为每个级别设置瞬态距离。

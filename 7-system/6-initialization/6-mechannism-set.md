@@ -1,37 +1,35 @@
-﻿# 7.6.6 Mechanism Setting
+# 7.6.6 机制设置
 
-Mechanism will be used as a group during the jog operation which the jog keys are to be assigned to. In addition, mechanism is also a set of units, each of which is to be differentiated in the process of recording or editing the position of a step. When the mechanisms are set, mechanism numbers \(M\#\) will be assigned for individual groups of axes.
+机制将在 jog 操作期间作为一组使用，jog 键将分配给它。此外，机制也是一组单元，每个单元在记录或编辑步骤位置的过程中要被区分。当机制被设置之后，将为每个轴的单独组分配机制编号 \(M\#\)。
 
-The method to set the use of the endless function is as follows.
+设置无尽功能的方法如下。
 
-1.	Touch the `[5: Initialization  - 6: Mechanism Setting]` menu.
+1. 触摸 `[5: Initialization - 6: Mechanism Setting] ([5: Initialization  - 6: Mechanism Setting])` 菜单。
 
-2.	After setting the mechanism number and configuring the use of the endless function for each axis, click the `[OK]` button.
+2. 在设置机制编号并为每个轴配置无尽功能之后，点击 `[OK]` 按钮。
 
     ![](../../_assets/tp630/robot-mechanism_eng.png)
 
-
-
-* `[Mech]`: By touching the drop-down menu, you can set the mechanism number of the axis.
-  * If the axis specification is a robot, the mechanism number will be fixed as M0.
+* `[Mech]`: 通过触摸下拉菜单，您可以设置轴的机制编号。
+  * 如果轴的规格是机器人，机制编号将固定为 M0。
   * 
-    Starting with the additional axis, you can designate the mechanism number to a value ranging between M1 and M7.
+    从附加轴开始，您可以将机制编号指定为介于 M1 和 M7 之间的值。
 
   * 
-    The axes set with the same mechanism number will be managed as the same group.
+    设置相同机制编号的轴将作为同一组进行管理。
 
   * 
-    To jog the additional axis, you can switch between mechanisms using the `[Mech]` button. At this time, if you press the jog key, jogging will take place in the order of the axes of the relevant mechanism.
+    要 jog 附加轴，您可以使用 `[Mech]` 按钮在机制之间切换。在此时，如果您按下 jog 键，将在相关机制的轴的顺序中进行 jog 操作。
 * 
-  `[Positioner Group]`: You can set the positioner group number. The position group number can be set only for the axes whose specification is set as positioner.
+  `[Positioner Group]`: 您可以设置定位器组编号。只有在规格设置为定位器的轴上才能设置定位组编号。
 
 * 
-  `[Endless]`: You can set whether to use the endless function on the axis.
+  `[Endless]`: 您可以设置是否在轴上使用无尽功能。
 
 
 
 {% hint style="info" %}
-A set mechanism unit is the minimum unit that can be assigned to each task and can be driven. To each task, a complex combination of mechanisms can be assigned to individual tasks.
+集成的机制单元是可以分配给每个任务的最小单元，并且可以驱动。可以将复杂的机制组合分配给各个任务。
 {% endhint %}
 
 #### 
@@ -39,37 +37,32 @@ A set mechanism unit is the minimum unit that can be assigned to each task and c
 
 
 
-#### Mechanism Jog Rules 
+#### 机制 Jog 规则 
 
-* The ${cont_model} controller provides eight jog keys in total.
+* ${cont_model} 控制器提供总共八个 jog 键。
 * 
-  Mechanisms will be utilized as one group during the jog operation.
-
-* 
-  If you select the mechanism number as `[M0]`, the jog keys for the axes 7 and 8 will be operating as an exceptional case, and it is possible to operate M1 and M2 within a range in which the total number of axes including the next mechanism is eight or less. Even in this case, if you set the mechanism number as `[M1]`, you can perform the jog operation for the configuration elements of M1. 
+  机制将在 jog 操作期间作为一个组使用。
 
 * 
-  The following shows the example of the usage.
+  如果将机制编号选择为 `[M0]`，则轴 7 和 8 的 jog 键将作为特例操作，并且可以在包括下一个机制的轴总数为八个或更少的范围内操作 M1 和 M2。即使在这种情况下，如果您将机制编号设置为 `[M1]`，您也可以对 M1 的配置元素执行 jog 操作。
 
-  Example 1\) M0: Robot \(Axes 1-6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axis 8\)
+* 
+  以下显示了用法示例。
 
-  * Select `[M0]` => Jog key for axes 1-6: M0. Jog key for axis 7: M1. Jog key for axis 8: M2
-  * Select `[M1]` => Jog key for axis 1: M1
-  * Select `[M2]` => Jog key for axis 1: M2
+  示例 1\) M0: 机器人 \(轴 1-6\)。 M1: 移动轴 \(轴 7\)。 M2: 伺服枪 \(轴 8\)
 
-  Example 2\) M0: Robot \(Axes 1-6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axes 8-9\)
+  * 选择 `[M0]` => 轴 1-6 的 jog 键: M0。 轴 7 的 jog 键: M1。 轴 8 的 jog 键: M2
+  * 选择 `[M1]` => 轴 1 的 jog 键: M1
+  * 选择 `[M2]` => 轴 1 的 jog 键: M2
 
-  * Select `[M0]` => Jog key for axes 1-6: M0. Jog key for axis 7: M1
-  * Select `[M1]` => Jog key for axis 1: M1
-  * Select `[M2]` => Jog key for axes 1-2: M2
+  示例 2\) M0: 机器人 \(轴 1-6\)。 M1: 移动轴 \(轴 7\)。 M2: 伺服枪 \(轴 8-9\)
 
-  Example 3\) M0: Robot \(Axes 1-7\). M1: Travel axis \(Axis 8\). M2: Servo gun \(Axes 9-10\)
+  * 选择 `[M0]` => 轴 1-6 的 jog 键: M0。 轴 7 的 jog 键: M1
+  * 选择 `[M1]` => 轴 1 的 jog 键: M1
+  * 选择 `[M2]` => 轴 1-2 的 jog 键: M2
 
-  * Select `[M0]` => Jog key for axes 1-7: M0. Jog key for axis 8: M1
-  * Select `[M1]` => Jog key for axis 1: M1
-  * Select `[M2]` => Jog key for axis 1: M2
+  示例 3\) M0: 机器人 \(轴 1-7\)。 M1: 移动轴 \(轴 8\)。 M2: 伺服枪 \(轴 9-10\)
 
-
-
-
-
+  * 选择 `[M0]` => 轴 1-7 的 jog 键: M0。 轴 8 的 jog 键: M1
+  * 选择 `[M1]` => 轴 1 的 jog 键: M1
+  * 选择 `[M2]` => 轴 1 的 jog 键: M2

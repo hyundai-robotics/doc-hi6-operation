@@ -1,2 +1,1 @@
-﻿# 7.3.10 Register license key of option function
-
+# 7.3.10 注册选项功能的许可证密钥

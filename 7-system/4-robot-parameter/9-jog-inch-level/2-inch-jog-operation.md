@@ -1,18 +1,15 @@
-﻿# 7.4.9.2 Inching Jog Operation
+﻿# 7.4.9.2 微调操作
 
-The inching function is a function that does not allow the movement to take place beyond the maximum moving distance per one push of the jog key. 
+微调功能是一种功能，它不允许运动超过每次按下微调键的最大移动距离。
 
-Even after reaching the inching distance, if you keep pressing the jog key and then release your hand, the robot will decelerate to the inching distance, and then stop.
+即使达到微调距离，如果您继续按住微调键然后松手，机器人将减速至微调距离，然后停止。
 
 ![Figure 63 When Releasing the Key After Reaching the Inching Distance](../../../_assets/image_488.png)
 
-
-
-If you release the jog key before reaching the inching distance, the robot will decelerate, starting from the time you release the jog key, and then stop. At this time, the mode will be the same as the general jog mode.
+如果您在达到微调距离之前释放微调键，机器人将从您释放微调键的时刻开始减速，然后停止。此时，模式将与普通微调模式相同。
 
 ![Figure 64 When Releasing the Hand Before Reaching the Inching Distance](../../../_assets/image_473.png)
 
 {% hint style="info" %}
-In the joint coordinate system, the speed level 1 is fixed to a mode that the robot will move by 1 bit of the encoder.
+在关节坐标系中，速度等级1固定为机器人将按编码器的1位移动的模式。
 {% endhint %}
-

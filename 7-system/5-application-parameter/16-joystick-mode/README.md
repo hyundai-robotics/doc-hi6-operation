@@ -1,17 +1,17 @@
-﻿# 7.5.16 Joystick mode
+# 7.5.16 操纵杆模式
 
-This function is used to operate the robot with an external device such as a joystick. 
+此功能用于通过外部设备，例如操纵杆，操作机器人。
 
 ![](../../../_assets/tp630/joystick_mode_menu.png)
 
-* Joystic jog enable <br>
-   In order to perform functions corresponding to joystick mode, the input signal must be set and must be turned ON. 
+* 操纵杆慢速行驶启用 <br>
+   为了执行与操纵杆模式对应的功能，输入信号必须设置并开启。
 
-* Execution type <br>
-   Select whether to perform the jogging motion with the input state of the set signal or the input state of Open-api. <br>
-   The jogging operation is exactly the same as the jogging key operation in the T/P's manual mode.
+* 执行类型 <br>
+   选择是否根据设置信号的输入状态或Open-api的输入状态执行慢速运动。 <br>
+   慢速操作与T/P手动模式中的慢速键操作完全相同。
 
 
 {% hint style="info" %}
-* It operates only when the motor is on in auto mode.
+* 仅在自动模式下电机打开时才会操作。
 {% endhint %}

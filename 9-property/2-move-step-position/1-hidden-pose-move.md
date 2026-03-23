@@ -1,10 +1,10 @@
-﻿# 9.2.1 Hidden Pose Move Statement
+﻿# 9.2.1 隐藏位姿移动语句
 
-You can check or modify the position of the current step in the hidden pose move statement \(a step recorded by the `[REC]` key, that is, a move statement that does not include a pose variable\).
+您可以检查或修改当前步骤在隐藏位姿移动语句中的位置 \(由 `[REC]` 键记录的步骤，即不包括位姿变量的移动语句\)。
 
-1.	Touch the `[property]` button in the move command \(move statement\) recorded as a hidden pose. Then, the current step position will appear. 
+1.	触摸作为隐藏位姿记录的移动命令 \(移动语句\) 中的 `[property]` 按钮。然后，当前步骤位置将显示。
 
-2.	Check and modify the current step position.
+2.	检查并修改当前步骤位置。
 
     ![](../../_assets/tp630/step-info_eng.png)
 
@@ -13,8 +13,8 @@ You can check or modify the position of the current step in the hidden pose move
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -23,22 +23,17 @@ You can check or modify the position of the current step in the hidden pose move
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Position information of the current step. You can check and set the name,
-          coordinate value and coordinate system format, etc.</p>
+        <p>当前步骤的位置信息。您可以检查并设置名称、坐标值和坐标系统格式等。</p>
         <ul>
-          <li><b>[Name]</b>: Number of the current step. After inputting the step number, press
-            the <b>`[ENTER]` </b>key to move to the concerned step.</li>
-          <li><b>Coordinate Value</b>: Current coordinate value of the current step
+          <li><b>[名称]</b>: 当前步骤的编号。输入步骤编号后，按 <b>`[ENTER]` </b>键移动到相关步骤。</li>
+          <li><b>坐标值</b>: 当前步骤的当前坐标值
             <ul>
-              <li>Select an item using the cursor key.</li>
-              <li>After inputting a value in the desired item, press the `[ENTER]` key
-                to reflect the change.</li>
-              <li>If the coordinate system format is set as an encoder, the coordinate value
-                will not be changed.</li>
+              <li>使用光标键选择项目。</li>
+              <li>在所需项目中输入值后，按 `[ENTER]` 键以反映该更改。</li>
+              <li>如果坐标系统格式设置为编码器，则坐标值将不会更改。</li>
             </ul>
           </li>
-          <li><b>[Coord. System]</b>: The coordinate system format to express the position
-            of the current step</li>
+          <li><b>[坐标系]</b>: 表达当前步骤位置的坐标系统格式</li>
         </ul>
       </td>
     </tr>
@@ -48,28 +43,23 @@ You can check or modify the position of the current step in the hidden pose move
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li><b>[Previous]/[Next]</b>: You can display the information of the previous or
-            next step.</li>
-          <li><b>[Original Value]</b>: You can display the original hidden pose value of the
-            current step.</li>
-          <li><b>[Current Robot Pose]</b>: You can display the value of the posture the robot
-            is currently taking.</li>
-          <li><b>[Moving]</b>: Touching the button will move the robot to the
-            recorded step position (Jog).</li>
+          <li>`[OK]`: 您可以保存更改。</li>
+          <li><b>[上一页]/[下一页]</b>: 您可以显示上一个或下一个步骤的信息。</li>
+          <li><b>[原始值]</b>: 您可以显示当前步骤的原始隐藏位姿值。</li>
+          <li><b>[当前机器人位姿]</b>: 您可以显示机器人当前采取的姿态值。</li>
+          <li><b>[移动]</b>: 触摸该按钮将使机器人移动到记录的步骤位置 (Jog)。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-3.	Touch the `[OK]` button. Then, the change will be saved in the job program, and the operation will end. 
+3.	触摸 `[OK]` 按钮。然后，更改将保存在作业程序中，操作将结束。 
 
-* If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
+* 如果您通过按 `[ESC]` 键结束操作，更改将不会被保存。 
 
 {% hint style="info" %}
-* If `[Robot Configuration]` is set as undesignated, the robot will designate a configuration the very closest to the current position of the robot.
+* 如果 `[Robot Configuration]` 设置为未指定，机器人将指定最接近当前机器人位置的配置。
 * 
-  For the designation according to the robot configuration, refer to "[2.3.2.2 Base and Robot Recording Coordinates](../../2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)".
+  关于机器人配置的指定，请参考 "[2.3.2.2 基座和机器人记录坐标](../../2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)"。
 {% endhint %}
-

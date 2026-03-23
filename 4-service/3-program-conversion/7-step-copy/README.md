@@ -1,24 +1,21 @@
-﻿# 4.3.7 Step Copy
+﻿# 4.3.7 步骤复制
 
-You can copy part of a program to another program or the same program. The functions recorded in the step will also be copied. During the startup of the robot, the use of the `[7: Step Copy]` menu will be restricted.
+您可以将程序的部分复制到另一个程序或同一程序中。在步骤中记录的功能也会被复制。在机器人启动期间，将限制使用 `[7: 步骤复制]` 菜单。
 
-1.	Touch the `[6: Program Conversion  - 7: Step Copy]` menu. The step copying setting window will appear.
+1. 触摸 `[6: 程序转换 - 7: 步骤复制] ([6: 程序转换 - 7: 步骤复制])` 菜单。步骤复制设置窗口将出现。
 
-2.	After setting the step copying option, touch the `[OK]` button.
+2. 在设置步骤复制选项后，触摸 `[确定]` 按钮。
 
     ![](../../../_assets/tp630/prg-step-copy_eng.png)
 
-* `[Source program]`/`[Target program]`: You can set the number of the original program of which you want to copy the step and the number of the new program that you want to create by pasting the copied step. If you set the target program number as the same number as the original program number, the original program will be overwritten by and replaced with the new program.
-* `[Start Step]`/`[End Step]`: You can set the range of steps that you want to copy \(Initial setting value: 1/last step\).
-* `[Insert Step]`: You can set the reference step to which you want to paste the copied step. The copied step will be pasted right after the reference step.
-* `[Copy Method]`: You can select the progress direction of the copied step.
-  * `[Forward/Inverse]`: You can paste the copied steps in the same order as the original program or the reverse order of the original program.
+* `[源程序]`/`[目标程序]`: 您可以设置要复制步骤的原始程序的编号和通过粘贴复制步骤来创建的新程序的编号。如果您将目标程序编号设置为与原始程序编号相同，则原始程序将被新程序覆盖和替换。
+* `[起始步骤]`/`[结束步骤]`: 您可以设置要复制的步骤范围（初始设定值：1/最后一步）。
+* `[插入步骤]`: 您可以设置要粘贴复制步骤的参考步骤。复制的步骤将紧接在参考步骤之后粘贴。
+* `[复制方式]`: 您可以选择复制步骤的进展方向。
+  * `[前进/逆向]`: 您可以以与原始程序相同的顺序或原始程序的逆序粘贴复制的步骤。
 
 {% hint style="info" %}
-* You cannot copy a protected program.
-* If the END function is recorded in the copied step, the function will be copied together. Delete the function when necessary.
-* If a function that makes it possible to jump \(GOTO, GOSUB\) to a step outside the copied range is recorded in the copied step, the function will be copied, but the number will not be changed automatically. Please change the number after copying.
+* 您无法复制受保护的程序。
+* 如果在复制的步骤中记录了 END 功能，功能将被一同复制。必要时请删除该功能。
+* 如果复制的步骤中记录了可以跳转（GOTO, GOSUB）到复制范围外步骤的功能，该功能将被复制，但编号不会自动更改。请在复制后更改编号。
 {% endhint %}
-
-
-

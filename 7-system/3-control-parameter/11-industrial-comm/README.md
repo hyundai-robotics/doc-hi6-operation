@@ -1,16 +1,11 @@
-﻿# 7.3.11 Industrial Communication \(fieldbus\)
+﻿# 7.3.11 工业通信 \(fieldbus\)
 
-You can perform the setting of the industrial communication \(fieldbus\) to use it.
+您可以设置工业通信 \(fieldbus\) 以使用它。
 
-1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the "${cont_model} Controller Maintenance Manual".
+1. 根据要使用的通信类型，您需要安装 PCI 卡，然后参照 "${cont_model} 控制器维护手册" 设置插槽编号 \(1 到 4\)。
 
-2.	Set the industrial communication firmware by referring to "[7.3.11.1 Firmware Setting](1-firmware-set.md)".
+2. 参考 "[7.3.11.1 固件设置](1-firmware-set.md)" 设置工业通信固件。
 
-3.	Turn off the power of the controller, and then turn it back on.
+3. 关闭控制器的电源，然后重新打开。
 
-4.	If necessary, carry out additional setting by referring to "[7.3.11.2 Industrial Communication Setting](2-industrial-comm-set.md)".
-
-
-
-
-
+4. 如有必要，请参考 "[7.3.11.2 工业通信设置](2-industrial-comm-set.md)" 进行其他设置。

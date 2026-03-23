@@ -1,17 +1,15 @@
-﻿# 1.1 Basic Configuration
+﻿# 1.1 基础配置
 
-Industrial robots are "machines that are equipped with manipulation and movement functions based on automatic control for them to perform various works by using programs at an industrial site." The collaborative robot is a type of industrial robot.
+工业机器人是“配备了基于自动控制的操作和移动功能的机器，以便它们能在工业现场通过使用程序执行各种工作”。协作机器人是一种工业机器人。
 
-The robot system consists of a manipulator and a controller that controls the manipulator. A teach pendant that is to be used for setting and manually operating the robot system is attached to the controller.
+机器人系统由一个执行器和一个控制器组成，控制器控制执行器。用于设置和手动操作机器人系统的示教器附加在控制器上。
 
-* Robot: Performs various works in industrial sites such as transporting objects, assembling parts, etc.
-* Controller: Adjusts the robot's operation according to the program setting values set through the teach pendant. It can be interoperated with various external equipment or devices through the input/output port of the controller. 
-* Teach Pendant: A device that manages the entire robot system. It enables you to teach the robot a specific posture or setup and control the programs.
+* 机器人：在工业现场执行各种工作，如运输物体、组装零件等。
+* 控制器：根据通过示教器设置的程序设定值调整机器人的操作。它可以通过控制器的输入/输出端口与各种外部设备或装置进行互操作。
+* 示教器：管理整个机器人系统的设备。它使您能够教导机器人特定的姿势或设置并控制程序。
 
-The following shows an example of the basic configuration of the robot system according to the robot type.
+以下展示了根据机器人类型的机器人系统的基本配置示例。
 
-![Figure 1 Basic Configuration of the LCD Robot System](../../_assets/image_286.png)
+![Figure 1 基础配置的LCD机器人系统](../../_assets/image_286.png)
 
-
-
-![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../_assets/image_285.png)
+![Figure 2 基础配置的垂直关节机器人系统](../../_assets/image_285.png)

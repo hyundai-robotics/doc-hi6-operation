@@ -1,12 +1,9 @@
-﻿# 4.2.3.1 Folder Deletion
+﻿# 4.2.3.1 文件删除
 
-1.	Select a folder in the folder list using the jog dial on the teach pendant and then touch the ![](../../../_assets/tp630/k-delete_eng.png) key of the key pad.
+1. 使用教导 pendant 上的 jog dial 选择文件夹列表中的一个文件夹，然后按下 ![](../../../_assets/tp630/k-delete_eng.png) 键盘上的键。
 
     ![](../../../_assets/tp630/file-manager/fld-delete.png)
 
-2.	In the confirmation window, touch the `[ENTER]` button. The selected folder and all files saved in it will be deleted.
+2. 在确认窗口中，按下 `[ENTER]` 按钮。所选文件夹及其中保存的所有文件将被删除。
 
     ![](../../../_assets/tp630/file-manager/fld-delete-pop_eng.png)
-
-
-

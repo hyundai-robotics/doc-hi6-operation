@@ -1,12 +1,9 @@
-﻿# 3.2.2.2 Inputting of a Step Statement with a Hidden Pose
+# 3.2.2.2 输入带有隐藏姿态的步骤语句
 
-To input the current posture of the robot as a move command, press the `[REC]` key on the keypad.
+要将机器人的当前姿态输入为移动命令，请按下键盘上的 `[REC]` 键。
 
 
 
 ![](../../../_assets/tp630/k-record_eng.png)
 
-When you input a command using the `[REC]` key, the pose variable will not appear in the step, unlike the general command inputting mode, so it is called a hidden pose.
-
-
-
+当您使用 `[REC]` 键输入命令时，姿态变量不会出现在步骤中，与一般的命令输入模式不同，因此称为隐藏姿态。

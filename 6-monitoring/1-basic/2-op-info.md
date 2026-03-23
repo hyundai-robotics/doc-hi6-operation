@@ -1,14 +1,11 @@
-﻿# 6.3.2 Operation time
+﻿# 6.3.2 操作时间
 
-In the panel selection window, touch `[Operation time]`. Then, the controller's operation information window will appear.
+在面板选择窗口中，触摸 `[Operation time]`。然后，控制器的操作信息窗口将出现。
 
-You can check the accumulated time and number of cycles for each operation of the controller created immediately after system initialization, power input, and the start of the recent cycle. You can initialize the operation information by touching the `[Clear]` button for each item at the bottom of the information.
+您可以检查在系统初始化、电源输入以及最近循环开始后立即创建的控制器每个操作的累积时间和周期数。您可以通过触摸信息底部每个项目的 `[Clear]` 按钮来初始化操作信息。
 
-![Figure 41 Operation information](../../_assets/tp630/pane-operating_eng.png)
+![Figure 41 操作信息](../../_assets/tp630/pane-operating_eng.png)
 
-
-
-The timing of reflection in accordance with the conditions of individual items is as follows.
+根据各个项目的条件，反射的时机如下。
 
 ![](../../_assets/image_449.png)
-

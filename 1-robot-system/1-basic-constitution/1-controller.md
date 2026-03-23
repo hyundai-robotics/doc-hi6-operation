@@ -1,14 +1,13 @@
-﻿# 1.1.1 Controller
+﻿# 1.1.1 控制器
 
-#### Vertical Articulated Robot Controller 
+#### 垂直关节机器人控制器 
 
-![Figure 4 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_33.png)
+![图4 控制器的前面（左）/ 背面（右）](../../_assets/image_33.png)
 
-| No. | Name | Description |
+| No. | 名称 | 描述 |
 | :--- | :--- | :--- |
-| ![](../../_assets/c1.png)  | Connection part | A passage for connecting instruments and the teach pendant to the controller or for connecting application devices to internal modules |
-| ![](../../_assets/c2.png)  | Power switch | Turns on or off the power of the controller |
-| ![](../../_assets/c3.png)  | Hook for storing the TP | Used for hanging the teach pendant or storing it |
-| ![](../../_assets/c4.png)  | Emergency stop switch | Causes the robot to stop operating when pressed in case of an emergency |
-| ![](../../_assets/c5.png)  | Cooling fan | A device that forcibly discharges the heated air inside the controller |
-
+| ![](../../_assets/c1.png)  | 连接部分 | 用于将仪器和教学挂件连接到控制器或将应用设备连接到内部模块的通道 |
+| ![](../../_assets/c2.png)  | 电源开关 | 打开或关闭控制器的电源 |
+| ![](../../_assets/c3.png)  | 存放TP的挂钩 | 用于悬挂教学挂件或存放它 |
+| ![](../../_assets/c4.png)  | 紧急停止开关 | 在紧急情况下按下时导致机器人停止操作 |
+| ![](../../_assets/c5.png)  | 冷却风扇 | 强制排出控制器内部加热空气的设备 |

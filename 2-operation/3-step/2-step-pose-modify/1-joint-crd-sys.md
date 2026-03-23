@@ -1,13 +1,7 @@
-﻿# 2.3.2.1 Axis Angle Recording Coordinate
+﻿# 2.3.2.1 轴角录制坐标
 
-In manual mode, if the `[1: Pose Recording Form]` option in the `[system - 1: User Environment]` menu is set to axis angle, touch the `[property]` button in the move statement. The following attributes window will appear. The position of the robot recorded by the encoder can only be checked, and the position data cannot be modified.
+在手动模式下，如果在 `[system - 1: User Environment]` 菜单中的 `[1: Pose Recording Form]` 选项设置为轴角，触摸移动语句中的 `[property]` 按钮。将出现以下属性窗口。由编码器记录的机器人位置只能查看，位置数据无法修改。
 
 ![](../../../_assets/tp630/lbt-property_eng.png)
 
 ![](../../../_assets/tp630/dlg-property-axis_eng.png)
-
-
-
-
-
-

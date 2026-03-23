@@ -1,6 +1,5 @@
-﻿# 7.4.7.1 Coordinate System Origin of Each Axis
+﻿# 7.4.7.1 每个轴的坐标系原点
 
-The X, Y, and Z directions of each axis are set in the same direction as the robot coordinate system. Refer to the following about the coordinate system origin of each axis.
+每个轴的X、Y和Z方向与机器人坐标系统的方向相同。有关每个轴的坐标系原点，请参阅以下内容。
 
-![Figure 62 Coordinate System Origin of Each Axis for Each Robot Configuration ](../../../_assets/image_476.png)
-
+![图62 每个机器人配置的每个轴的坐标系原点](../../../_assets/image_476.png)

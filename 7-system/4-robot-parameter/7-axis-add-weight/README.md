@@ -1,16 +1,15 @@
-﻿# 7.4.7 Additional Weight of Each Axis
+# 7.4.7 每个轴的额外重量
 
-You can register information on a transformer or wiring support mounted on the basic axis of the robot.
+您可以注册安装在机器人基本轴上的变压器或接线支架的信息。
 
-1.	Touch the `[3: Robot Parameter  - 7: Additional Weight on Each Axis]` menu.
+1. 触摸 `[3: Robot Parameter - 7: Additional Weight on Each Axis] ([3: Robot Parameter  - 7: Additional Weight on Each Axis])` 菜单。
 
-2.	Select the basic axis tab, set the information of the mounted additional weight, and then touch the `[OK]` button. 
+2. 选择基本轴选项卡，设置安装的额外重量信息，然后触摸 `[OK]` 按钮。 
 
     ![](../../../_assets/tp630/robot-addweight_eng.png)
 
 
 
 {% hint style="warning" %}
-If the robot has an additional weight because a transformer or wiring support is mounted onto it, you must register the information on the additional weight of each axis. If the additional weight is not correctly registered, the error may get large when the tool load estimation is performed.
+如果机器人由于安装了变压器或接线支架而有额外重量，您必须注册每个轴的额外重量信息。如果没能正确注册额外重量，在执行工具负载估算时可能会出现较大错误。
 {% endhint %}
-

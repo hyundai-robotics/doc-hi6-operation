@@ -1,12 +1,7 @@
-﻿# 7.6.3 Usage Setting
+# 7.6.3 使用设置
 
-You can select the operation usage and initialize the user key and input/output assignment signals according to the operation usage.
+您可以根据操作使用情况选择操作使用并初始化用户密钥和输入/输出分配信号。
 
-1.	Touch the `[5: Initialize  - 3: Usage Setting]` menu.
+1. 触摸 `[5: Initialize - 3: Usage Setting] ([5: Initialize  - 3: Usage Setting])` 菜单。
 
-2.	After selecting the operation usage and setting the environment conditions according to the usage, touch the `[OK]` button. Then, you can use commands related to the selected operation usage and access the relevant menus.
-
-
-
-
-
+2. 选择操作使用情况并根据使用情况设置环境条件后，触摸 `[OK]` 按钮。然后，您可以使用与所选操作使用相关的命令并访问相关菜单。

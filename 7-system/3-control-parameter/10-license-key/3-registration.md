@@ -1,11 +1,10 @@
-﻿# 7.3.10.3 Register license key
+# 7.3.10.3 注册许可证密钥
 
-* Registration screen
+* 注册屏幕
 
   ![](../../../_assets/tp630/license-key2.png)
 
 
-* If the license key has been entered correctly, "==> OK" will be displayed to the right of the license key input.
+* 如果许可证密钥输入正确，"==> OK" 将显示在许可证密钥输入框的右侧。
 
-* If "==> NG" is displayed, the license key is incorrect or the purchase option has been selected incorrectly.
-
+* 如果显示 "==> NG"，则许可证密钥不正确或购买选项选择错误。

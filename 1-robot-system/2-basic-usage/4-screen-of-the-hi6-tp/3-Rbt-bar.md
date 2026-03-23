@@ -1,14 +1,14 @@
-﻿# 1.2.4.3 R(Right) button bar
+﻿# 1.2.4.3 R(Right) 按钮条
 
-5 buttons are displayed on the right side of the screen, and you can touch the buttons. Inactive buttons will be grayed out. Under the automatic mode, 'prev/next' is disabled, which makes it impossible to use those functions.
+5 个按钮显示在屏幕右侧，您可以触摸这些按钮。未激活的按钮将变为灰色。在自动模式下，“prev/next”被禁用，这使得无法使用这些功能。
 
 ![](../../../_assets/tp630/TP-main-rbt_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -17,7 +17,7 @@
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This manually outputs common output, field bus output etc. or manually sets the value to the parameter.</p>
+        <p>此按钮用于手动输出通用输出、现场总线输出等或手动设置参数值。</p>
       </td>
     </tr>
     <tr>
@@ -25,7 +25,7 @@
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This will split the monitoring window, or combine the split windows.</p>
+        <p>此按钮将拆分监控窗口或合并拆分窗口。</p>
       </td>
     </tr>
     <tr>
@@ -33,7 +33,7 @@
         <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is used to edit a command sentence or a note. As a touch screen, it can be used just like a keyboard.</p>
+        <p>此按钮用于编辑命令句或注释。作为触摸屏，使用方式与键盘相同。</p>
         <p>
       </td>
     </tr>
@@ -42,8 +42,8 @@
         <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is used to define and use a user key in the F button bar. </p>
-        <p>The pre-designated functions are displayed for spot or arc welding. For more information, refer to the application manual.</p>
+        <p>此按钮用于在 F 按钮条中定义和使用用户键。</p>
+        <p>预设功能用于点焊或弧焊。如需更多信息，请参阅应用手册。</p>
       </td>
     </tr>
     <tr>
@@ -51,11 +51,10 @@
         <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is used to move to the next page of the function button bar.</p>
-        <p>When there are more than 7 buttons in the current screen,   button will be activated, and every time this button is pressed, it will switch to the next button set. When you press `[SHIFT]` +   button, it will switch back in the reverse direction.
+        <p>此按钮用于移动到功能按钮条的下一页。</p>
+        <p>当当前屏幕中有超过 7 个按钮时，该按钮将被激活，每次按下此按钮时，它将切换到下一个按钮组。当您按下`[SHIFT]` + 该按钮时，它将向后切换。
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
-

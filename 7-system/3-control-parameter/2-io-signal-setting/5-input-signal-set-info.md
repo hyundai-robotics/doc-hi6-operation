@@ -1,110 +1,83 @@
-﻿# 7.3.2.5 Input Signal Setting Information
+﻿# 7.3.2.5 输入信号设置信息
 
-#### Remote mode
+#### 远程模式
 
-When the mode switch of the teach pendant is selected to remote \(![](../../../_assets/sb-remote.png)\), the corresponding signal should be turned on for the remote mode to be selected. If the corresponding signal is turned off, the internal mode will be selected. In general, if the mode switch of the teach pendant is selected to be remote \(![](../../../_assets/sb-remote.png)\), the user wants to select the remote mode, which is why the basic value is set to 254, and the corresponding signal will be designated as negative logic in the input signal attribute.
+当教学挂钩的模式开关选择为远程 \(![](../../../_assets/sb-remote.png)\) 时，相应的信号应被开启，以便选择远程模式。如果相应的信号被关闭，将选择内部模式。一般来说，如果教学挂钩的模式开关选择为远程 \(![](../../../_assets/sb-remote.png)\)，用户希望选择远程模式，这就是基本值设定为 254 的原因，相应的信号将在输入信号属性中指定为负逻辑。
 
+#### 手动（教学）模式
 
+在选择远程模式时，如果相应的信号被开启，您将处于可以手动操作机器人在远程模式下的状态。然而，通常情况下，在这种状态下操作机器人是没有的，并且此模式很少使用。
 
-#### Manual \(Teach\) mode
+#### 自动（回放）模式
 
-While the remote mode is selected, if the corresponding signal is turned on, you will be in a state in which the robot will be operated manually in remote mode. However, in general, there is no case of operating the robot in this state, and this mode is rarely used. 
+在选择远程模式时，如果相应的信号被开启，您将处于可以自动操作机器人在远程模式下的状态。然而，通常情况下，如果教学挂钩的模式开关选择为远程 \(![](../../../_assets/sb-remote.png)\)，用户希望在远程模式下自动操作机器人，这就是基本值设定为 255 的原因，相应的信号将在信号属性中指定为负逻辑。
 
+#### 外部启动
 
+此功能用于在远程自动模式下启动机器人。
 
-#### Auto \(Playback\) mode 
+#### 外部停止
 
-While the remote mode is selected, if the corresponding signal is turned on, you will be in a state in which the robot will be operated automatically in remote mode. However, in general, if the mode switch of the teach pendant is selected to remote \(![](../../../_assets/sb-remote.png)\), the user wants to operate the robot automatically in remote mode, which is why the basic value is set to 255, and the corresponding signal will be designated as negative logic in the signal attribute.
+此功能用于在远程自动模式下停止机器人。
 
+#### 外部程序选择
 
+当机器人被外部启动时，读取程序选择位并确定为外部程序的时机取决于是否使用闪烁信号。
 
-#### External start
+* 当程序闪烁信号使用设置为启用：如果在有外部启动输入的情况下程序闪烁信号处于开启状态，则将读取程序选择位，并且读取的值将被确定为程序编号。
 
-This is used to start the robot in remote auto mode.
+![图51 当程序闪烁信号设置为 &amp;lt;启用&amp;gt; 的外部程序选择示意图](../../../_assets/image_438.png)
 
-
-
-#### External stop 
-
-This is used to stop the robot in remote auto mode.
-
-
-
-#### Selection of an external program 
-
-When the robot is externally started up, the timing of reading the program selection bit and determining it as an external program depends on whether to use the strobe signal.
-
-* When the program strobe signal use is set as enable: If the program strobe signal is on while there is an external startup input, the program selection bit will be read, and the read value will be determined as the program number.
-
-![Figure 51 Diagram of the Selection of an External Program When the Program Strobe Signal is Set as &amp;lt;Enable&amp;gt;](../../../_assets/image_438.png)
-
-* When the program strobe signal use is set as disable: After there is an external startup input, the program selection bit will be read, and if this value does not change for 90 ms, it will be determined as the program number.
+* 当程序闪烁信号使用设置为禁用：在有外部启动输入后，将读取程序选择位，如果此值在 90 ms 内未发生变化，将确定为程序编号。
 
 ![](../../../_assets/image_465.png)
 
+#### 程序选择位和二进制/离散（关 -> 二进制）
 
+程序选择位是输入外部启动信号时选择要执行的程序的信号组合。仅在当前在 TP 的头部或结束指向步骤时应用。当程序正在执行时，将执行程序至结束。
 
-#### Program selection bit and binary/discrete \(off -> binary\)
+二进制/离散信号是一个选项，用于确定程序选择位的解释，如果为 0，将被识别为二进制，如果为 1，将被识别为离散。
 
-The program selection bit is a combination of signals to select a program to execute when an external start signal is inputted. It is applied only when a step is pointed in Header or in the End currently in the TP. When a program is being executed, the program will be executed to the end.
-
-Binary/Discrete signal is an option that determines the interpretation of the program selection bit, and if it is 0, it will be recognized as binary, and if it is 1, it will be recognized as discrete.
-
-For example, if the program selection bit is set as follows, an example of JOB to execute according to the input is as follows.
+例如，如果程序选择位设置如下，则根据输入要执行的 JOB 示例如下。
 
 ![](../../../_assets/image_436.png)
 
+#### 外部重置
 
-
-#### External reset
-
-This function is used to perform the same operation as executing the R0 step counter reset function from the teach pendant by an external signal. When the robot is starting up, this function will not operate. If this function operates normally, the execution position will move to the beginning of the program, and the occurrence status of various errors or warnings will be cleared. Refer to "[8.2 R0 for Resetting the Step Counter](../../../8-r-code/2-r0.md)" for information on this function.
+此功能用于通过外部信号执行与从教学挂钩执行 R0 步骤计数器重置功能相同的操作。当机器人启动时，此功能将不会操作。如果此功能正常操作，执行位置将移动到程序的开头，并且各种错误或警告的发生状态将被清除。有关此功能的信息，请参考 "[8.2 R0 重置步骤计数器](../../../8-r-code/2-r0.md)"。
 
 #### 
 
-#### Low speed command
+#### 限速指令
 
-This function is used to limit the robot moving speed to within the safe speed \(250 mm/s\) by an external signal.
+此功能用于通过外部信号将机器人移动速度限制在安全速度 \(250 mm/s\) 以内。
 
+#### 碰撞传感器
 
+此功能用于检测机器人的碰撞并停止机器人。结合在 `[System - 1: User Environment - 6: Collision Sensor]` 菜单中的设置，将确定停止机器人的条件和信号逻辑。
 
-#### Collision sensor
+#### 错误/警告信号清除
 
-This function is used to detect the collision of the robot and stop the robot. In conjunction with the settings in the `[System - 1: User Environment - 6: Collision Sensor]` menu, conditions and signal logic for stopping the robot will be determined.
-
-
-
-#### Error/Warning signal clearing
-
-This function is used to clear the occurrence status of various errors and warnings by an external signal. 
+此功能用于通过外部信号清除各种错误和警告的发生状态。
 
 #### 
 
-#### Joystick mode
+#### 操纵杆模式
 
-This function is used to manually jog the robot. It is generally used in LCD macro inspection equipment. Refer to a separate function manual for using the function.
+此功能用于手动操控机器人。一般在 LCD 宏检验设备中使用。有关使用该功能的详细手册，请参阅单独的功能手册。
 
+#### 门开关
 
+此功能用于在安全围栏的门打开时停止机器人移动。
 
-#### Door switch
+#### 屏幕保护程序禁用
 
-This function is used to stop the robot in movement when the door of the safety fence is opened.
+如果教学挂钩没有操作，当在 `[service - 11: Teach Pendant Option] ([service  - 11: Teach Pendant Option])` 菜单中设置的屏幕关闭时间到期时，教学挂钩将切换到屏幕保护状态。此功能用于通过外部信号打开教学挂钩的屏幕。
 
+#### 外部电机开启
 
+此功能用于从外部操作面板开启电机。
 
-#### Screen saver deactivation
+#### 外部电机关闭
 
-If the teach pendant is not operated, the teach pendant will switch to the screen saver state when the screen off time set in the `[service  - 11: Teach Pendant Option]` menu has elapsed. This function is used to turn on the screen of the teach pendant by an external signal.
-
-
-
-#### External motor on
-
-This function is used to turn on the motor from an external operation panel.
-
-
-
-#### External motor off
-
-This function is used to turn off the motor from an external operation panel.
-
+此功能用于从外部操作面板关闭电机。

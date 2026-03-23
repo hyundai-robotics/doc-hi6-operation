@@ -1,24 +1,24 @@
-﻿# 7.5.23.2 Acceleration/Deceleration Parameters
+﻿# 7.5.23.2 加速/减速参数
 
-S‑curve conditions and **maximum jerk** complement each other. When optimizing a process with only the S‑curve setting proves difficult, or when you need to adjust the maximum jerk limit for each joint, you adjust the parameters.
+S曲线条件和**最大加加速度**相辅相成。当仅用S曲线设置优化某个过程困难时，或者当需要为每个关节调整最大加加速度限制时，您可以调整参数。
 
 ![](../../../_assets/tp630/s-curve_acceldecel_parameter.png)
 
-Relationship Between Jerk and Motion
-Jerk is the rate of change of acceleration, and modifying this value produces the following characteristic changes.
+加加速度与运动之间的关系
+加加速度是加速度变化的速率，修改此值会产生以下特征变化。
 
-- **Decrease maximum jerk (↓):** Acceleration changes more gradually, making motion smoother and reducing vibration. However, it takes longer to reach the target speed, which can increase cycle time.
+- **减少最大加加速度 (↓)：** 加速度变化更为渐进，使运动更平滑，并减少振动。然而，达到目标速度所需的时间更长，这可能会增加循环时间。
 
-- **Increase maximum jerk (↑):** Provides a more responsive motion, but if the value is too high the “smooth motion” effect of the S‑curve condition is diminished, leading to greater mechanical impact.
+- **增加最大加加速度 (↑)：** 提供更灵敏的运动，但如果值过高，则S曲线条件的“平滑运动”效果会减弱，从而导致更大的机械冲击。
 
-Automatic Update of Maximum Jerk
-The system automatically recalculates the maximum jerk value whenever key parameters change to maintain equipment stability.
+最大加加速度的自动更新
+每当关键参数更改时，系统会自动重新计算最大加加速度值，以保持设备的稳定性。
 
 {% hint style="warning" %}
-**Caution:** When you manually set a value, modifying the top speed or acceleration time will overwrite the manually entered maximum jerk with the system‑calculated value. If you have optimized the jerk value for a specific process, be sure to back up the existing value before making changes.
+**警告：** 当您手动设置一个值时，修改最高速度或加速时间将会用系统计算的值覆盖手动输入的最大加加速度。如果您已针对特定过程优化了加加速度值，请确保在进行更改之前备份现有值。
 {% endhint %}
 
 
 {% hint style="info" %}
-Because acceleration/deceleration parameters have a large impact on robot motion characteristics, they are only enabled in Engineering mode or higher.
+由于加速/减速参数对机器人运动特性有很大影响，因此仅在工程模式或更高模式下启用。
 {% endhint %}

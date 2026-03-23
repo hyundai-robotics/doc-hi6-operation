@@ -1,4 +1,4 @@
-﻿# 11.1 Major Folders and Files in the Robot Controller
+﻿# 11.1 机器人控制器中的主要文件夹和文件
 
-Various configuration, teaching, and log files are stored inside the robot controller.
-In this section, we describe the folder structure and the roles of the individual files.
+各种配置、教学和日志文件存储在机器人控制器内部。
+在本节中，我们将描述文件夹结构和各个文件的角色。

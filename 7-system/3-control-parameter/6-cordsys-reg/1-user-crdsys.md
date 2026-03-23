@@ -1,84 +1,69 @@
-﻿# 7.3.6.1 User Coordinate System
+# 7.3.6.1 用户坐标系统
 
-The user coordinate system is a coordinate system that is to be set at a position designated by the user. To use the user coordinate system, first, teach three reference steps that are needed to define the user coordinate system, and then register the user coordinate system by designating the taught program number and step order.
+用户坐标系统是一个坐标系统，可在用户指定的位置进行设置。要使用用户坐标系统，首先需要教导定义用户坐标系统所需的三个参考步骤，然后通过指定教导的程序编号和步骤顺序来注册用户坐标系统。
 
-Teach three reference steps by following the procedures below. The following procedure explains when the step order is specified as "OXY" (O: origin pose, X: axis pose, Y: plane pose).
+按照以下步骤教导三个参考步骤。以下程序解释了步骤顺序指定为“OXY”时的情况（O：原点姿态，X：轴姿态，Y：平面姿态）。
 
-![Figure 56 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
+![图56 定义用户坐标系统的三个参考步骤教学方法](../../../_assets/image_427.png)
 
+1. 定义用户坐标系统的原点：教导一个任意点。
 
-1.	Define the origin of the user coordinate system: Teach an arbitrary point.
+2. 定义用户坐标系统中的 X 轴：教导 X 轴线上的一个任意点，使得此点尽可能远离原点 200 mm。
 
-2.	Define the X axis in the user coordinate system: Teach an arbitrary point on the X-axis line in a way that the arbitrary point can be 200 mm as distant as possible from the origin.
-
-3.	Define the XY plane in the user coordinate system \(determine the Y-axis and Z-axis directions\): Teach an arbitrary point on the plane consisting of the X axis and Y axis at the point where the distance from the origin is 200 mm or more as possible.
+3. 定义用户坐标系统中的 XY 平面 \(确定 Y 轴和 Z 轴方向\)：教导在 X 轴和 Y 轴组成的平面上一个任意点，此点离原点的距离尽可能 200 mm 或以上。
 
 {% hint style="info" %}
-* When the teaching of the user coordinate system setting program is performed, the TCP should be set to the correct values. Check whether the tool data of the currently selected tool is inputted correctly. 
-* You can register up to 20 user coordinate systems.
-
-
+* 在进行用户坐标系统设置程序的教学时，TCP 应设置为正确值。检查当前选择工具的工具数据是否正确输入。
+* 您可以注册最多 20 个用户坐标系统。
 {% endhint %}
 
 {% hint style="warning" %}
-The cautions in recording the reference points for defining the coordinate system are as follows.
+记录用于定义坐标系统的参考点时的注意事项如下。
 
-* The reference 3 points should not exist on the same linear line.
-* The distance between the reference 3 points should not be too close to each other.
-* Subsequent steps after S3 will not have any effect on the coordinate system registration.
+* 参考 3 点不应位于同一条直线上。
+* 参考 3 点之间的距离不应太近。
+* S3 之后的后续步骤将不会对坐标系统注册产生影响。
 {% endhint %}
 
-The method to register the user coordinate system by designating the taught program number and step order is as follows.
+通过指定教导的程序编号和步骤顺序注册用户坐标系统的方法如下。
 
-1. Touch the `[2: Control Parameter  - 6: Coordinate System Registration  - 1: User Coordinate System]` menu.
+1. 点击 `[2: 控制参数 - 6: 坐标系统注册 - 1: 用户坐标系统] ([2: 控制参数 - 6: 坐标系统注册 - 1: 用户坐标系统])` 菜单。
 
-2. Go to the user coordinate system you want to register (you can create it with the "+" button).
-3. After specifying the program number and step order, press the [F1:JOB Calculation] button.
-4. The position of the calculated user coordinate system origin is displayed.
+2. 转到您想注册的用户坐标系统（可以使用“+”按钮创建）。
+3. 在指定程序编号和步骤顺序后，按下 [F1: JOB 计算] 按钮。
+4. 计算得到的用户坐标系统原点的位置将会显示。
 
     ![](../../../_assets/tp630/ctrl-user-coord_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align_assets
+      <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Detailed information on the coordinate system selected from the user coordinate
-        system list. You can set the coordinate system name and description, the
-        taught program number, step order and the origin pose based on base axis origin.</td>
+      <td style="text-align:left">从用户坐标系统列表中选择的坐标系统的详细信息。您可以设置坐标系统名称和描述、教导的程序编号、步骤顺序和基于基轴原点的原点姿态。</td>
     </tr>
     <tr>
-      <td style="text-align_assets
+      <td style="text-align:left">
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li><b>[+]/[-]</b>: You can add a new user coordinate system or delete a user
-            coordinate system.</li>
-          <li>A list of user coordinate systems. Selecting the coordinate system name
-            allows you to check and edit details.</li>
-          <li><b>[Copy Page]/[Paste Page]</b>: You can copy the user coordinate system
-            information and paste it into another coordinate system.
-            <br />After selecting the name of the coordinate system information to be copied
-            from the list, and then touching the <b>[Copy Page] </b>button, select the
-            name of the coordinate system to which the value is to be applied, and
-            then touch the <b>[Paste Page]</b> button.</li>
-          <li><b>[Calc.from job]</b>: You can calculate the user coordinate system based
-            on the taught program and step order to define the user coordinate system.
-            <br />If you touch the <b>[Calc. from job]</b> button after inputting the taught
-            program number in the<b> [Job no.]</b> option and step order, the origin of the
-            user coordinate system will be calculated.</li>
+          <li>`[OK]`：您可以保存更改。</li>
+          <li><b>[+]/[-]</b>：您可以添加新的用户坐标系统或删除用户坐标系统。</li>
+          <li>用户坐标系统列表。选择坐标系统名称可以查看和编辑详细信息。</li>
+          <li><b>[复制页面]/[粘贴页面]</b>：您可以复制用户坐标系统信息并粘贴到另一个坐标系统中。
+            <br />从列表中选择要复制的坐标系统信息名称，然后点击<b>[复制页面]</b>按钮，选择要将值应用到的坐标系统名称，再点击<b>[粘贴页面]</b>按钮。</li>
+          <li><b>[从作业计算]</b>：您可以基于教导的程序和步骤顺序计算用户坐标系统以定义用户坐标系统。
+            <br />如果在<b>[作业编号]</b>选项和步骤顺序中输入教导的程序编号后点击<b>[从作业计算]</b>按钮，将计算出用户坐标系统的原点。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-

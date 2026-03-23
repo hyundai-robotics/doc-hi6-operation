@@ -1,6 +1,3 @@
-﻿# 9. Property
+﻿# 9. 属性
 
-When teaching a job program for a welding operation, you should set the arc welding-specific details, such as weaving, retry/restart, and characteristics of the welder, in addition to welding conditions such as voltage and current. Moreover, there are cases in which you should check the position of a step or an auxiliary point.
-
-
-
+当为焊接操作教学作业程序时，除了电压和电流等焊接条件外，还应设置弧焊特定细节，例如摆动、重试/重新启动和焊工的特性。此外，有时还应检查步进或辅助点的位置。

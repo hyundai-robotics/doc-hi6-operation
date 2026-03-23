@@ -1,23 +1,17 @@
-﻿# 6.3.4 Local Variables
+﻿# 6.3.4 本地变量
 
-Displays a list of all local variables of the current call frame. You cannot create/delete variables or change the variable name or type, but you can edit values.
+显示当前调用框架的所有本地变量的列表。您不能创建/删除变量或更改变量名称或类型，但可以编辑值。
 
-
-1. Split the screen and press the [Select] button at the bottom left.
+1. 分割屏幕并按左下角的 [Select] 按钮。
 
 ![](../../_assets/tp630/panel-split.png)
 &nbsp;
 ![](../../_assets/tp630/panel-sel.png)
 
-
-2. In the panel selection window, touch `[local variable]`. The `local variables` panel opens.
+2. 在面板选择窗口中，触摸 `[local variable]`。`局部变量 (local variables)` 面板打开。
 
 ![](../../_assets/tp630/pane-lvar.png)
 
-
-3. Check the variable name, type, and value. The way to change the value of a variable is the same as the global variable described in the previous section.
+3. 检查变量名称、类型和值。更改变量值的方法与上一节中描述的全局变量相同。
 
 ![](../../_assets/tp630/pane-lvar-mon.png)
-
-
-

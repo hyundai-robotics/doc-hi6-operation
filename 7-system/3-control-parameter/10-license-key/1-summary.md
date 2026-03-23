@@ -1,11 +1,10 @@
-﻿# 7.3.10.1 What is a license key for optional functions?
+﻿# 7.3.10.1 可选功能的许可证密钥是什么？
 
-Among the functions of the ${cont_model} robot controller, certain optional functions are sold separately, and customers must purchase the optional functions to use them. The license key for the optional function is created by a separate license key generation program by combining the unique number assigned to the main board of the robot controller and the purchased option function, so the purchased function operates only on the purchased controller.
-Therefore, the main board of a robot controller using optional functions cannot be replaced with another controller.
-If something happens to the motherboard, we will provide you with a temporary key that can be used for 30 days in case you need to replace it with a spare part.
-In this case, you must contact our A/S to obtain an official license key at least 30 days in advance.
+在 ${cont_model} 机器人控制器的功能中，某些可选功能是单独出售的，客户必须购买可选功能才能使用它们。可选功能的许可证密钥是通过将分配给机器人控制器主板的唯一编号与购买的可选功能结合而通过单独的许可证密钥生成程序生成的，因此所购买的功能仅在购买的控制器上运行。
+因此，使用可选功能的机器人控制器的主板不能更换为其他控制器。
+如果主板发生故障，我们将提供一个临时密钥，可在需要用备件更换时使用30天。
+在这种情况下，您必须至少提前30天联系我们的 A/S 以获得官方许可证密钥。
  
-* Feature configuration <br>
-  Setting whether to purchase optional features <br>
-  License key settings
-
+* 功能配置 <br>
+  设置是否购买可选功能 <br>
+  许可证密钥设置

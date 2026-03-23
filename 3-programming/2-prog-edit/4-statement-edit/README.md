@@ -1,18 +1,13 @@
-﻿# 3.2.4 Statement Editing
+﻿# 3.2.4 语句编辑
 
-You can edit the statement in the JOB program window using the operation keys on the teach pendant and the menu buttons on the function button bar. Using the soft keyboard, you can edit variables, expressions, and strings.
+您可以使用教学挂件上的操作键和功能按钮栏上的菜单按钮编辑JOB程序窗口中的语句。使用软键盘，您可以编辑变量、表达式和字符串。
 
-In the statement area, you can check and edit statements by switching the status of the cursor according to the selected object.
+在语句区域中，您可以通过根据所选对象切换光标状态来检查和编辑语句。
 
-* Statement cursor Status: You can check a statement while the entire line of the statement is selected.
+* 语句光标状态：您可以在整个语句行被选中时检查语句。
 
     ![](../../../_assets/tp630/pane-prog-cmd-edit.png)
 
-* Word cursor Status: You can check and edit a statement while the individual parameters of the statement are selected.
+* 单词光标状态：您可以在语句的各个参数被选中时检查和编辑语句。
 
     ![](../../../_assets/tp630/pane-prog-cmd-edit1.png)
-
-
-
-
-

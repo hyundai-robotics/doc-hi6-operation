@@ -1,4 +1,3 @@
-﻿# 4.2.3 Folder Management
+# 4.2.3 文件管理
 
-You can delete a folder or add a new one.
-
+您可以删除一个文件夹或添加一个新文件夹。

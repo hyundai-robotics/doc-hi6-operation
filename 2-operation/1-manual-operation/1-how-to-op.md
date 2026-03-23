@@ -1,40 +1,33 @@
-﻿# 2.1.1 Operation Method
+# 2.1.1 操作方法
 
-The method of instructing the contents of the work to the robot using the jog key and checking the contents of the instructed work are as follows.
+使用 jog 键指示工作的内容并检查所指示工作的内容的方法如下。
 
-1.	Check whether there are people or obstacles within the safety fence and the operation range of the robot.
+1.	检查安全围栏和机器人的操作范围内是否有人或障碍物。
 
-2.	Set the operation mode to manual mode by turning the mode switch of the teach pendant.
+2.	通过切换教导盒的模式开关将操作模式设置为手动模式。
 
     ![](../../_assets/tp630/TP-hw-switch-manual.png)
 
-3.	In the status bar of the ${cont_model} teach pendant screen, check whether the operation mode is set to manual mode.
+3.	在 ${cont_model} 教导盒屏幕的状态栏中，检查操作模式是否设置为手动模式。
 
     ![](../../_assets/tp630/sbar-mode_eng.png)
 
-    * If it is set to automatic mode, set the operation mode to manual mode by turning the mode switch of the teach pendant.
+    * 如果设置为自动模式，则通过切换教导盒的模式开关将操作模式设置为手动模式。
 
-4.	Touch the `[PROG]` key with `[SHIFT]`. Then, the program selection window will appear.
+4.	同时按下 `[PROG]` 键和 `[SHIFT]`。然后，程序选择窗口将会出现。
 
     ![](../../_assets/tp630/k-prog-step_eng.png)
 
-
-
-5.	Select a program from the list in the program selection window or input a program number and then press `[ENTER]` key.
+5.	从程序选择窗口中的列表中选择一个程序或输入程序编号，然后按 `[ENTER]` 键。
 
     ![](../../_assets/tp630/k-prg-select_eng.png)
 
-6.	Press the `[motor]` key on the teach pendant. Then, the motor lamp will blink, and the servo power will be ready to be supplied to the motor of each axis of the robot.
+6.	按下教导盒上的 `[motor]` 键。然后，马达指示灯将闪烁，伺服电源将准备供电给机器人每个轴的马达。
 
-7.	Press the enabling switch on the back of the teach pendant. Then, the motor lamp will be turned on, and the motor brake will be released, allowing the servo power to be supplied. The robot will be ready to move.
+7.	按下教导盒背面的启用开关。然后，马达指示灯将点亮，马达刹车将释放，允许伺服电源供电。机器人将准备移动。
 
-8.	Operate the robot according to the speed level or movement conditions of the coordinate system using the jog key.
+8.	根据坐标系统的速度等级或运动条件使用 jog 键操作机器人。
 
-    * To save the robot's location, touch the `[REC]` key at the desired location. Then the step will be recorded.
-    * To record the function required for the step, touch the `[cmd.input]` button.
-    * To check the robot's location while manually moving it forward or backward, press the `[STEP.FWD/STEP.BWD]` key. While you are pressing the `[STEP.FWD/STEP.BWD]` key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
-
-
-
-
-
+    * 要保存机器人的位置，请在所需位置触碰 `[REC]` 键。然后，该步骤将被记录。
+    * 要记录该步骤所需的功能，请触碰 `[cmd.input]` 按钮。
+    * 要在手动向前或向后移动时检查机器人的位置，请按 `[STEP.FWD/STEP.BWD]` 键。在按下 `[STEP.FWD/STEP.BWD]` 键时，机器人将按步移动。当机器人到达目标步时，执行完成标记 \( . \) 将出现在命令前面，然后机器人将停止。

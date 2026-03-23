@@ -1,24 +1,19 @@
-﻿# 3.2.2.3 Recording Condition
+﻿# 3.2.2.3 记录条件
 
-When a statement is inputted using the `[REC]` key, the current posture of the robot will be recorded as the target pose, and the value set in advance using the `[rec.cond]` button will be applied to the move command \(move\) parameter. The following shows the method of setting the recording condition of a statement.
+当使用 `[REC]` 键输入语句时，机器人的当前姿态将被记录为目标姿态，并且将应用事先通过 `[rec.cond]` 按钮设置的值到移动命令 \(move\) 参数。以下显示了设置语句记录条件的方法。
 
-1.	Touch the `[rec.cond.]` button on the left side of the ${cont_model} teach pendant screen. Then, the recording condition setting window will appear.
+1. 触摸 ${cont_model} 教导吊坠屏幕左侧的 `[rec.cond.]` 按钮。然后，记录条件设置窗口将出现。
 
     ![](../../../_assets/tp630/lbt-record_eng.png)
 
-2.	After setting the interpolation, moving speed and unit, accuracy, and tool number, touch the `[check]` button \(![](../../../_assets/icon-ok.png)\).
+2. 设置插值、移动速度和单位、精度和工具编号后，触摸 `[check]` 按钮 \(![](../../../_assets/icon-ok.png)\)。
 
     ![](../../../_assets/tp630/lbt-record-edit_eng.png)
 
-* When position recording is performed, the move statement will be recorded based on the condition set in the recording condition.
-* In the mechanism set, you can designate the configuration of the mechanism to be stored when position recording is performed.
+* 当执行位置记录时，移动语句将基于记录条件中设置的条件进行记录。
+* 在机制设置中，您可以指定在执行位置记录时要存储的机制配置。
 
-    * If you briefly touch the `[mechsets]` button, the predefined mechanism set numbers will appear in sequence.
-    * If you touch and hold the `[mechsets]` button, you can modify the existing set configuration in the Mechanism Set setting window, or add or delete a mechanism set by using the `[+]` or `[-]` button.
+    * 如果轻触 `[mechsets]` 按钮，预定义的机制设置编号将依次出现。
+    * 如果按住 `[mechsets]` 按钮，您可以在机制设置窗口中修改现有设置配置，或使用 `[+]` 或 `[-]` 按钮添加或删除机制设置。
 
         ![](../../../_assets/tp630/pop-mechanism_eng.png)
-
-
-
-
-

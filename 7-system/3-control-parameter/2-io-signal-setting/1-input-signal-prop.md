@@ -1,17 +1,12 @@
-﻿# 7.3.2.1 Input Signal Attribute
+﻿# 7.3.2.1 输入信号属性
 
-You can set the logic and name for a general input signal.
+您可以设置一般输入信号的逻辑和名称。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 1: Input Signal Attribute` menu. 
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 1: 输入信号属性 (2: 控制参数 - 2: 输入/输出信号设置 - 1: 输入信号属性)` 菜单。
 
-2.	Check and set the general input signal list, and then touch the `[OK]` button.
+2. 检查并设置一般输入信号列表，然后触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-insignal-attri_eng.png)
 
-* `[Append]`: You can add a new general input signal to the list. 
-* `[Delete]`: You can delete the general input signal from the list.
-
-
-
-
-
+* `[Append]`: 您可以将新的一般输入信号添加到列表中。
+* `[Delete]`: 您可以从列表中删除一般输入信号。

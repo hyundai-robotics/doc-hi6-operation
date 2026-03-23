@@ -1,3 +1,3 @@
-﻿# 2.7.2 Button Registration for Each Area
+﻿# 2.7.2 按钮注册区域
 
-You can register the desired function in the user key area with a button.
+您可以在用户键区域通过按钮注册所需的功能。

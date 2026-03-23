@@ -1,3 +1,3 @@
-﻿# Quality Assurance
+# 质量保证
 
-"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/en/README)"
+"[质量保证](https://hrbook-hrc.web.app/#/view/quality-assurance/zh/README)"

@@ -1,30 +1,27 @@
-﻿# 4.2.2 Renaming of a File and Folder
+﻿# 4.2.2 文件和文件夹重命名
 
-You can rename a file or folder. You can also rename multiple files or folders at once.
+您可以重命名文件或文件夹。您还可以一次性重命名多个文件或文件夹。
 
-1.	Touch the desired file \(or folder\) in the file \(or folder\) list to select it, and then touch the `[rename]` button on the function button bar of the screen.
+1.	在文件（或文件夹）列表中触摸所需的文件（或文件夹）以选择它，然后触摸屏幕功能按钮条上的 `[rename]` 按钮。
 
     ![](../../_assets/tp630/file-manager/fld-rename-select_eng.png)
 
-2.	Input the file \(or folder\) name in the input area.
+2.	在输入区域输入文件（或文件夹）名称。
 
     ![](../../_assets/tp630/file-manager/fld-rename_eng.png)
 
-* You can input the number simply by using the operation keys on the teach pendant. (`[←/→]` keys: For moving the cursor. Number keys: For inputting a number)
-* To input a text including numbers, touch the ![](../../_assets/tp630/rbt-softkb_eng.png) button on the log bar to use the soft keyboard.
+* 您可以简单地使用教学挂件上的操作键输入数字。（`[←/→]` 键：用于移动光标。数字键：用于输入数字）
+* 若要输入包含数字的文本，请触摸日志条上的 ![](../../_assets/tp630/rbt-softkb_eng.png) 按钮以使用软键盘。
 
-3.	Press the `[ENTER]` key. Then, the new name you inputted in the list will appear.
+3.	按下 `[ENTER]` 键。然后，您输入的新名称将在列表中出现。
 
 {% hint style="info" %}
-* You can also rename a protected file.
+* 您也可以重命名受保护的文件。
 * 
-  Even if a file is renamed, the information such as size, modified date, and attributes will remain the same as before.
+  即使文件被重命名，大小、修改日期和属性等信息也将保持不变。
 
 * 
-  It is the same function as "R116 Program Number Change" of R codes.
+  这是与 R 代码的 "R116 程序编号更改" 相同的功能。
 
 
 {% endhint %}
-
-
-

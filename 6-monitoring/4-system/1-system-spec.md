@@ -1,35 +1,33 @@
-﻿# 6.4.1 System Character
+# 6.4.1 系统字符
 
-In the panel selection window, touch `[System character]`. Then, the system character window will appear. 
+在面板选择窗口中，触摸 `[System character]`。然后，系统字符窗口将出现。
 
-You can check all the various data of the robot system or only the data of a specific type of information.
+您可以检查机器人系统的所有各种数据或仅检查特定类型的信息数据。
 
 ![](../../_assets/tp630/pane-syscharacter_eng.png)
 
-| No. | Description |
+| No. | 描述 |
 | :--- | :--- |
-| ![](../../_assets/c1.png) | Displays the data of the robot system. You can check the detailed data of a specific type by selecting individual types of information shown above. |
-| ![](../../_assets/c2.png) | `[clear]`: For the rest of the items except for the motion of each axis, you can initialize the maximum value of the system data to the current value by type. |
+| ![](../../_assets/c1.png) | 显示机器人系统的数据。您可以通过选择上面显示的特定信息类型来检查特定类型的详细数据。 |
+| ![](../../_assets/c2.png) | `[clear]`：除了每个轴的运动之外，您可以按类型将系统数据的最大值初始化为当前值。 |
 
 {% hint style="info" %}
-System character monitoring function is only available in engineer mode.
+系统字符监控功能仅在工程师模式下可用。
 {% endhint %}
 
 {% hint style="warning" %}
-* In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
-* Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
+* 在工程师模式下，工程师模式图标 \(![](../../_assets/eng-mode.png)\) 将在状态栏上闪烁。
+* 请谨慎操作，因为如果设置不正确，机器人系统可能会出现严重问题。
 {% endhint %}
 
 <Br> 
 
-### Initialization
+### 初始化
 
-You can initialize the maximum value of the data by selecting the type of information you want.
+您可以通过选择要初始化的信息类型来初始化数据的最大值。
 
-1.	Touch the `[Clear]` button at the bottom of the system properties window.
+1. 触摸系统属性窗口底部的 `[Clear]` 按钮。
 
+2. 触摸您想要初始化的信息类型。然后，所选项的最大值将被初始化为当前值。
 
-2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized to the current value.
-
-    ![](../../_assets/tp630/pane-syscharacter-clear_eng.png)
-
+![](../../_assets/tp630/pane-syscharacter-clear_eng.png)

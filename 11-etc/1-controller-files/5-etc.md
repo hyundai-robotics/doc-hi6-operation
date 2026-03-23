@@ -1,39 +1,39 @@
-﻿# 11.1.5 Other Folders
+﻿# 11.1.5 其他文件夹
 
 #### apps/
 
-Folder where plug-in apps executed on the MAIN side are installed and stored.
+安装和存储在 MAIN 端执行的插件应用的文件夹。
 
 
 #### fbrr/
 
-File-Based Robot Registry folder.  
-Stores information files (.fbr) for each robot mechanism model.
-When a new model information file is added, the robot system can be configured by selecting the model during system initialization.
+基于文件的机器人注册表文件夹。  
+存储每个机器人机制模型的信息文件 (.fbr)。  
+当添加一个新的模型信息文件时，可以在系统初始化期间通过选择模型来配置机器人系统。
 
 
 #### gather/
 
-Folder storing result files (.GDT) from the time-series data gathering function.
+存储时间序列数据收集功能结果文件 (.GDT) 的文件夹。
 
 
 #### help/
 
-Folder storing HTML help files for the robot language HRScript.
+存储机器人语言 HRScript 的 HTML 帮助文件的文件夹。
 
 
 #### roblang/
 
-Folder storing syntax files for the robot language HRScript.
+存储机器人语言 HRScript 语法文件的文件夹。
 
 * procs_?.json
   
-  Procedure syntax files by category
+  按类别划分的过程语法文件
 
 * funcs_?.json
 
-  Function syntax files by category
+  按类别划分的函数语法文件
 
 * svars_?.json
   
-  System variable syntax files by category
+  按类别划分的系统变量语法文件

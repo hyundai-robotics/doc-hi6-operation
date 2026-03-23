@@ -1,16 +1,15 @@
-﻿# 7.7.4.4 Operation After Base Axis Calibration
+# 7.7.4.4 基座轴校准后的操作
 
-If you jog the base axis after performing base axis calibration, the distance traveled in the created direction vector of the base axis will be converted into the current coordinate value.
+如果在执行基座轴校准后移动基座轴，基座轴创建的方向向量中的行程将转换为当前坐标值。
 
-![Figure 73 Operation After Calibration of the Base Axis](../../../_assets/image_528.png)
+![图73 基座轴校准后的操作](../../../_assets/image_528.png)
 
-1.	Touch the `[+]` button at the top right of the panel stack in the work area, and then touch `[Pose]` in the panel selection window.
+1. 触摸工作区面板堆栈右上角的`[+]`按钮，然后在面板选择窗口中触摸`[Pose]`。
 
-2.	Jog the base axis. The distance traveled in the direction of the base axis will be converted into X, Y, and Z values and displayed in the pose information window.
+2. 移动基座轴。沿基座轴移动的距离将转换为X、Y和Z值，并在位置信息窗口中显示。
 
-3.	Record and play back the steps in the usual way.
+3. 按照 usual way 记录和回放步骤。
 
 {% hint style="warning" %}
-Set the jog coordinate system as the tool coordinate system and jog the base axis to check whether the base axis is properly calibrated. If the tooltip fixing operation is executed, it means that the base axis has been properly calibrated.
+将 jog 坐标系统设置为工具坐标系统，并移动基座轴以检查基座轴是否正确校准。如果执行了工具提示固定操作，则表示基座轴已正确校准。
 {% endhint %}
-

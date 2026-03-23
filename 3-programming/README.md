@@ -1,4 +1,3 @@
-﻿# 3. Program Writing
+# 3. 编程
 
-You can write and manage programs so that the robot can perform works and achieve the desired results.
-
+您可以编写和管理程序，使机器人能够执行工作并达到预期的结果。

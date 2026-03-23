@@ -1,3 +1,3 @@
-﻿# 11. Etc.
+﻿# 11. 其他
 
-This chapter explains additional information that was not covered earlier.
+本章解释了之前未涵盖的其他信息。

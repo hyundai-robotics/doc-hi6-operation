@@ -1,3 +1,3 @@
-﻿# 10. Robot Language
+﻿# 10. 机器人语言
 
-For details on the robot language, refer to the "[${cont_model} Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README?cont_model=${cont_model})"
+有关机器人语言的详细信息，请参阅 "[${cont_model} 机器人控制器功能手册. - 机器人语言 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/README?cont_model=${cont_model})"

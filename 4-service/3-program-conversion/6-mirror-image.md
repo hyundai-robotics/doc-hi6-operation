@@ -1,24 +1,21 @@
-﻿# 4.3.6 Mirror Image
+﻿# 4.3.6 镜像
 
-You can write a program in which the position of the S axis and the posture of the wrist axis are symmetrical based on the Y-Z plane at the 0° position of the S axis of the robot.
+您可以编写一个程序，使得 S 轴的位置和腕轴的姿态基于机器人 S 轴 0° 位置的 Y-Z 平面对称。
 
-This function is useful when instructing two robots on the left and right to perform the same operation, such as welding the body of a vehicle. First, teach an operation to one robot and then open the program of the taught operation and convert it into a mirror image. Then, a program symmetrical to the S axis will be written.
+当指导左右两个机器人执行相同的操作（例如焊接车辆车身）时，此功能非常有用。首先，将一个操作教授给一个机器人，然后打开已教授操作的程序并将其转换为镜像。然后，将编写一个与 S 轴对称的程序。
 
-![Figure 32 Original Program \(Left\) / Program Converted Through Mirror Image \(Right\)](../../_assets/image_379.png)
+![图 32 原始程序 \(左\) / 通过镜像转换的程序 \(右\)](../../_assets/image_379.png)
 
 {% hint style="info" %}
-The mirror image function is not supported for collaborative robots.
+镜像功能不支持协作机器人。
 {% endhint %}
 
-The use of the `[6: Mirror Image]` menu will be restricted during the startup of the robot. The method to use the mirror image function is as follows.
+在机器人启动期间，将限制使用 `[6: 镜像]` 菜单。使用镜像功能的方法如下。
 
-1.	Touch the `[6: Program Conversion  - 6: Mirror Image]` menu. Then, the mirror image setting window will appear.
+1.	触摸 `[6: 程序转换 - 6: 镜像] ([6: 程序转换  - 6: 镜像])` 菜单。然后，镜像设置窗口将出现。
 
-2.	After setting the mirror image conversion option, touch the `[OK]` button.
+2.	设置镜像转换选项后，触摸 `[OK]` 按钮。
 
-* `[Source program]`/`[Target program]`: You can set the number of the existing program and the number of the new program that is to be created through conversion using a mirror image.
+* `[源程序]`/`[目标程序]`: 您可以设置现有程序的编号和通过镜像转换要创建的新程序的编号。
 
     ![](../../_assets/tp630/prg-mirror-img_eng.png)
-
-
-

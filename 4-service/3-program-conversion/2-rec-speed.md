@@ -1,22 +1,19 @@
-﻿# 4.3.2 Recording Speed Conversion
+﻿# 4.3.2 记录速度转换
 
-You can change the recording speed for a specific step of the program and apply it to the existing program, or create a new program.
+您可以为程序的特定步骤更改记录速度，并将其应用于现有程序，或创建新程序。
 
-1.	Touch the `[6: Program Conversion  - 2: Record speed conversion]` menu. Then, the recording speed conversion setting window will appear.
+1. 触摸`[6: 程序转换 - 2: 记录速度转换] ([6: 程序转换 - 2: 记录速度转换])`菜单。然后，记录速度转换设置窗口将出现。
 
-2.	After setting the recording speed option, touch the `[OK]` button.
+2. 设置完记录速度选项后，触摸`[确定]`按钮。
 
     ![](../../_assets/tp630/prg-speed-modi_eng.png)
 
-* `[Source program]`/`[Target program]`: You can input the number of the original program \(Initial setting value: The currently selected program\) whose recording speed you want to change and the number of the new program you want to save after the change of recording speed. If you set the number of the target program to match the same number as that of the original program, the original program will be overwritten by and replaced with a new program.
-* `[Start Step]`/`[End Step]`: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of the recording speed.
-* `[Method]`: You can set the method of designating the speed.
-  * `[specify Speed]`: You can convert the recorded speeds by batch.
-  * `[specify ratio]`: If the unit of the recorded speed and the unit of speed selected in the `[Unit]` option match with each other, the speed can be converted to a ratio against the recorded speed.
-  * `[change unit]`: You can convert the unit of the recorded speed.
-* `[Range]`: You can set the application section within the range of the steps of which recording speed you want to change.
-* `[Unit]`: You can set the unit of speed. When the speed designation method is selected as `[specify ratio]`, only those that match the unit of the speed recorded in the step will be converted to the percentage of the ratio.
-* `[Speed]`: This will mean the ratio value if you select the `[specify ratio]` as the speed designation method.
-
-
-
+* `[源程序]`/`[目标程序]`：您可以输入要更改记录速度的原始程序的编号 \(初始设置值：当前选择的程序\)以及在更改记录速度后要保存的新程序的编号。如果您将目标程序的编号设置为与原始程序相同，则原始程序将被新程序覆盖并替换。
+* `[起始步骤]`/`[结束步骤]`：您可以设置将应用记录速度更改的步骤范围 \(初始设置值：1/最后一步\)。
+* `[方法]`：您可以设置指定速度的方法。
+  * `[指定速度]`：您可以批量转换记录的速度。
+  * `[指定比率]`：如果记录速度的单位与`[单位]`选项中选择的速度单位匹配，则速度可以转换为相对于记录速度的比率。
+  * `[更改单位]`：您可以转换记录速度的单位。
+* `[范围]`：您可以设置要更改记录速度的步骤范围内的应用部分。
+* `[单位]`：您可以设置速度单位。当速度指定方法选择为`[指定比率]`时，只有那些与步骤中记录的速度单位匹配的才会转换为比率的百分比。
+* `[速度]`：如果您选择`[指定比率]`作为速度指定方法，这将表示比率值。

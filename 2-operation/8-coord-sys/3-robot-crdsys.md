@@ -1,10 +1,10 @@
-﻿# 2.8.3 Robot Coordinate System
+# 2.8.3 机器人坐标系统
 
 <table>
-	<th>Joint Coordinate System</th>
-	<th style="background:lightgreen">Robot Coordinate System</th>
-	<th>User Coordinate System</th>
-	<th>Tool Coordinate System</th>
+	<th>关节坐标系统</th>
+	<th style="background:lightgreen">机器人坐标系统</th>
+	<th>用户坐标系统</th>
+	<th>工具坐标系统</th>
 <tr>
 	<td><img src="../../_assets/tp630/sbt-crd-axis_eng.png"/></td>
 	<td><img src="../../_assets/tp630/sbt-crd-robot_eng.png"/></td>
@@ -13,31 +13,28 @@
 </tr>
 </table>
 
-1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
+1. 在手动模式下打开电动机，并按住教学挂件背面的启用开关。
 
-2.	Select the robot coordinate system by repeatedly touching the `[Crd. Sys]` button on the status display window of the ${cont_model} teach pendant screen. 
+2. 通过不断触摸 ${cont_model} 教学挂件屏幕状态显示窗口中的 `[Crd. Sys]` 按钮来选择机器人坐标系统。
 
     ![](../../_assets/tp630/k-crdsys_eng.png)
 
     ![](../../_assets/tp630/sbar-robot-crdsys_eng.png)
 
 
-3.	Operate the robot with the jog keys. The robot will move as follows.
+3. 使用走动键操作机器人。机器人将如以下所示移动。
 
     ![](../../_assets/image_62.png)
 
 {% hint style="info" %}
-* For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)." 
+* 有关机器人进度方向与走动键之间的关系，请参阅 "[2.7.1 走动键](1-jog-key.md)。" 
 * 
-  If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
+  如果您使用右手，您可以更容易理解机器人坐标系统中的机器人操作。
 
   ![](../../_assets/crd-direction.png) 
 
-Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
+图26 坐标系统方向（左）/ 旋转方向（右）
 
-* If you put the progress direction of the right index finger in the X direction of the robot coordinate system, while you stand on the back of the robot, the progress direction of the thumb becomes the Z direction, and the progress direction of the middle finger becomes the Y direction.
-* If you put the thumb of the right hand in the direction of the central axis of rotation, the direction of the other folded fingers becomes the + direction of the rotation direction.
+* 如果您将右食指的进度方向放在机器人坐标系统的 X 方向上，当您站在机器人的背面时，拇指的进度方向便成为 Z 方向，中指的进度方向便成为 Y 方向。
+* 如果您将右手的拇指放在旋转中心轴的方向上，其他折叠手指的方向便成为旋转方向的 + 方向。
 {% endhint %}
-
-
-

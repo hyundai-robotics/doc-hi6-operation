@@ -1,4 +1,3 @@
-﻿# 2.2 Automatic Operation
+﻿# 2.2 自动操作
 
-Automatic operation is an operation method of teaching the robot the contents of the work that it should execute and then making the robot perform the work.
-
+自动操作是教机器人执行它应该执行的工作内容的操作方法，然后使机器人执行该工作。

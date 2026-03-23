@@ -1,22 +1,20 @@
-﻿# 7.4.8 Impact Detection
+﻿# 7.4.8 影响检测
 
-When a collision occurs during robot operation, impact detection(collision detection) is a function that compares the torque normally generated during robot motion with the currently generated torque, and treats it as an error when abnormal torque is detected, in order to minimize damage caused by the collision
+当机器人操作过程中发生碰撞时，影响检测（碰撞检测）是一种功能，它将机器人运动过程中正常生成的扭矩与当前生成的扭矩进行比较，并在检测到异常扭矩时将其视为错误，以尽量减少碰撞造成的损害。
 
+${cont_model} 控制器通过在机器人在异常条件下操作或表现出异常行为时，以互补的方式使用碰撞检测功能，与现有的安全功能（例如过流、过载、过速和位置偏差错误检测）增强机器人的安全性。
 
-${cont_model} controller enhances robot safety by using the collision detection function in a complementary manner with existing safety functions - such as overcurrent, overload, overspeed, and position deviation error detection - when the robot operates under abnormal conditions or exhibits abnormal behavior.
-
-Touch `[3: Robot Parameter  - 14: Impact Detection]` to use this function.
+触摸 `[3: Robot Parameter - 14: Impact Detection] ([3: Robot Parameter  - 14: Impact Detection])` 来使用此功能。
 
 {% hint style="info" %}
-* The collision detection function operates only when the motor is ON.
-* Be sure to set the correct tool/additional weight or perform load estimation before using the collision detection function.
-* If the tool weight or additional weight for each axis differs from the actual values, false detections may occur.
-* Collisions are not detected while performing load estimation or sensor-based / sensorless force control functions.
-* Collisions with positioners, spot welders, jigs, or other equipment not mounted on the robot cannot be detected.
-* Model-based collision detection is not supported for custom-made robot models.
-* When collision detection error occurs after switching from autonomous driving mode to manual driving mode , this phenomenon is not an error (collision detection setting values need to be checked).
+* 碰撞检测功能仅在电机开启时操作。
+* 在使用碰撞检测功能之前，请务必设置正确的工具/附加重量或执行负载估计。
+* 如果每个轴的工具重量或附加重量与实际值不同，可能会发生误检测。
+* 在进行负载估计或传感器基础 / 无传感器的力控制功能时，无法检测到碰撞。
+* 与未安装在机器人的定位器、点焊机、夹具或其他设备的碰撞无法被检测到。
+* 不支持针对定制机器人模型的基于模型的碰撞检测。
+* 当在从自主驾驶模式切换到手动驾驶模式后发生碰撞检测错误时，此现象不是错误（需要检查碰撞检测设置值）。
 
 {% endhint %}
-
 
 ![](../../../_assets/tp630/coldet/robot_impact_detection.png)

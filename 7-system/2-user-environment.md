@@ -1,59 +1,55 @@
-﻿# 7.2 User Environment
+# 7.2 用户环境
 
-You can check and set various user conditions. 
+您可以检查和设置各种用户条件。
 
-1.	Touch the `[1: User environment]` menu. Then, the user environment setting window will appear.
+1. 触摸 `[1: 用户环境]` 菜单。然后，用户环境设置窗口将出现。
 
-2.	After setting the user environment, touch the `[OK]` button.
+2. 设置用户环境后，触摸 `[OK]` 按钮。
 
     ![](../_assets/tp630/system-user-environ_eng.png)
 
-* `1: Pose record type`: You can set the type of the position recording of the step to be recorded as a hidden pose. ("[2.3.1.2 Pose](../2-operation/3-step/1-step-cmd-param/2-pose.md)")
-  * `[Base]`/`[Robot]`/`[Axis Angle]`: You can record the position of the step based on the base coordinate, robot, and axis angle values.
+* `1: 姿势记录类型 (1: Pose record type)`：您可以设置要记录为隐藏姿势的步骤的位置记录类型。 ("[2.3.1.2 Pose](../2-operation/3-step/1-step-cmd-param/2-pose.md)")
+  * `[Base]`/`[Robot]`/`[Axis Angle]`：您可以根据基本坐标、机器人和轴角值记录步骤的位置。
 
-  * `[U]`: You can record the position in the user coordinate system.
-* `2: Confirmation in deleting commands` You can set whether to expose the deletion confirmation window when deleting a statement in manual mode.
+  * `[U]`：您可以在用户坐标系统中记录位置。
+* `2: 删除命令时的确认 (2: Confirmation in deleting commands)` 您可以设置在手动模式下删除语句时是否显示删除确认窗口。
 
-* `3: Wait\(di/wi\) release`: While in the input signal wait or welding complete signal wait status, you can set whether to force the signal wait status to be deactivated by pressing `[SHIFT]` + [rel.WAIT].
-* `4: Program strobe signal use`: When selecting an external program by receiving an external digital signal, you can set the time when the external program is to be selected.
+* `3: Wait\(di/wi\) release`：在输入信号等待或焊接完成信号待机状态下，您可以设置是否通过按 `[SHIFT]` + [rel.WAIT] 强制解除信号等待状态。
+* `4: 程序触发信号使用 (4: Program strobe signal use)`：选择外部程序时，通过接收外部数字信号，您可以设置选择外部程序的时间。
 
-  * `[Disable]`: Makes it possible to select an external program by reading only the external program selection signal
+  * `[Disable]`：仅通过读取外部程序选择信号来选择外部程序。
 
-  * `[Enable]`: Makes it possible to select an external program by reading the external program selection signal at the time when the program strobe sognal is inputted
+  * `[Enable]`：在输入程序触发信号时，通过读取外部程序选择信号来选择外部程序。
 
-* `5: Ext. update of playback prog.`: You can set whether to allow the process of externally \(PC\) modifying the program that is being played back, and then to allow the process of downloading it to the controller \(With regard to the number of the program being played back, the downloaded program will be applied from the next cycle\).
-
+* `5: 播放程序的外部更新 (5: Ext. update of playback prog.)`：您可以设置是否允许外部 \(PC\) 修改正在回放的程序，然后允许将其下载到控制器中 \(关于正在回放的程序编号，下载的程序将从下一个周期开始应用\)。
 
 {% hint style="warning" %}
-If the program being played back is modified externally \(PC\) and downloaded to the controller, it could cause a failure of or abnormality with the product. Contact our customer support team to ask an expert or an engineer.
+如果正在回放的程序被外部 \(PC\) 修改并下载到控制器，可能会导致产品故障或异常。请联系客户支持团队以咨询专家或工程师。
 {% endhint %}
 
 
-* `[6: Collision sensor process]`: You can set a method of stopping the robot when the collision sensor is operating.
-  * `[(1) Em.stop]`: The robot will stop into the emergency stop mode, where the robot falls down motor-off status.
+* `[6: 碰撞传感器处理]`：您可以设置在碰撞传感器操作时停止机器人的方法。
+  * `[(1) Em.stop]`：机器人将进入紧急停止模式，机器人处于掉落电机关闭状态。
 
-  * `[(2) Stop]`: The robot will stop into the normal stop mode, where the robot remains in motor-on status.
+  * `[(2) Stop]`：机器人将进入正常停止模式，机器人保持在电机开启状态。
 
-
-* `[7: Signal display in byte]`: You can display signal addresses in byte unit by selecting `[Enable]`.
-  * 'Input signal assign' page changes as below accorinding to your selection.
+* `[7: 以字节显示信号]`：您可以通过选择 `[Enable]` 以字节单位显示信号地址。
+  * '输入信号分配' 页面根据您的选择如下更改。
   
     ![](../_assets/tp630/system-user-environ-byte-index_eng.png)
 
-* `8:Manual oper. for stop signal in`: You can set whether to enable jog operation when an external stop signal is inputted.
+* `8: 手动操作停止信号时`：您可以设置在输入外部停止信号时是否启用走动操作。
 
+* `[9: 教学挂钩断开]`：您可以将教学挂钩从控制器断开，以在自动模式下操作机器人。
 
+  * 如果设置为 `断开 (Disconnect)`，在教学挂钩与主板之间的通信断开时不会出现 "E2800 教学挂钩操作异常" 错误。 （即使在通信断开时，机器人仍然可以操作。）
 
-* `[9: Teach pendent disconnection]`: You can disconnect the teach pendant from the controller to operate the robot in auto mode.
+  * 在 `连接 (Connect)` 状态下，您可以设置超时期限来确定通信是否丢失。
 
-  * If set to `Disconnect`, no "E2800 Teaching Pendant Operation Abnormal" error occurs when communication between the teaching pendant and the main b/d is disconnected. (The robot operates even when communication is disconnected.)
+  * 当设置为 `断开 (Disconnect)` 并且教学挂钩从控制器断开且供电时，控制器将识别当前模式为远程模式，允许通过外部电机开启和外部启动进行自动操作。
 
-  * In the `Connect` state, you can set a timeout period to determine whether communication is lost.
+  * 如果将其设置为 `连接 (Connect)`，教学挂钩与主板之间的通信故障将触发 "E2800 教学挂钩通信错误"，导致电机关闭。 （输入工程师代码 (R314) 后，您可以配置通信超时持续时间。）
 
-  * When it is set as `Disconnect` and the teach pendant is disconnected from the controller, and power is supplied, the controller will recognize the current mode as remote mode, allowing the robot to be auto-operated through external Motor On and external start-up. 
+  * 因为紧急开关和模式转换开关通过信号线单独连接到教学挂钩，所以必须适当布线该信号线。
 
-  * If you set this to `Connect`, a communication failure between the teach pendant and the mainboard will trigger the "E2800 Teaching pendant communication error," causing the motor to turn OFF. (When the Engineer Code (R314) is entered, you can configure the communication timeout duration.)
-
-  * Because the emergency switch and mode conversion switch are separately connected through a signal wire to the teach pendant, you must appropriately wire this signal wire. 
-
-  * Connect CNRTP connector pin #9 (Auto) to #2 (M1) and pin #5 (Emergency stop 1) to #2 (M1), and use the exclusive CNRTP connector with pin #6 (Emergency stop 2) connected to #1 (P1) instead of the teach pendant.
+  * 将 CNRTP 连接器针脚 #9 (Auto) 连接到 #2 (M1)，并将针脚 #5 (Emergency stop 1) 连接到 #2 (M1)，使用专用 CNRTP 连接器，将针脚 #6 (Emergency stop 2) 连接到 #1 (P1) 代替教学挂钩。

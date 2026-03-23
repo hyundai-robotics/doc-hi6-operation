@@ -1,28 +1,27 @@
-﻿# 2.3.1.4 Accuracy
+﻿# 2.3.1.4 精度
 
-It will determine the accuracy \(the degree of approach to the recorded position\) at which the robot passes through the step when progressing the target step. When the robot moves to the target step, if the error between the current position and the recorded position that occurs when the robot moves to the target step is less than a certain value, the robot will move to the next step. The value of the allowable error at this time is called accuracy.
+它将确定机器人在推进目标步骤时经过该步骤的精度 \(接近记录位置的程度\)。当机器人移动到目标步骤时，如果当前位置信息与机器人移动到目标步骤时发生的记录位置之间的误差小于某个值，则机器人将移动到下一步。此时所允许的误差值称为精度。
 
-A path that is newly created within the accuracy range \(0~7\) according to the accuracy is called a cornering path. In general, the higher the accuracy, the faster the cornering speed, which is advantageous in terms of moving time.
-
-
-
-![Figure 18 Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
-
-Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression "Accuracy ≤ min\(P1-P2, P2-P3\) / 2" in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
-
-In the case of a robot, the value of the applicable accuracy level will be defined based on the tooltip distance and posture angle of the robot. When it comes to additional axes, the value in the case of the linear axis will be defined based on the length, and the value in the case of the rotation axis will be defined based on the angle. You can directly change the values in the `[system - 3: Robot Parameter - 6: Accuracy]` menu. For details on the value of the accuracy level, refer to "[7.4.6 Accuracy](../../../7-system/4-robot-parameter/6-accuracy.md)".
+在精度范围内 \(0~7\) 新创建的路径称为转角路径。一般而言，精度越高，转角速度越快，这在移动时间上是有利的。
 
 
 
-The figure below shows how the cornering path is created according to the value of the accuracy level. If there is a general 6-axis articulated robot and an additional axis, the value of accuracy level can be set individually for TCP \(tooltip distance\), ORN \(position angle\), and AUX \(additional axis distance\). Because all the values of relevant accuracy levels should be satisfied, the cornering path will be created based on the smallest value among TCP, ORN, and AUX. The cornering path will be created in a constant curve, regardless of the speed variation, while satisfying the convex hull property. However, errors of several millimeters \(mm\) may occur at low speed and high speed because of servo delay.
+![图18 由于精度而改变的路径 P2](../../../_assets/image_53.png)
 
-![Figure 19 Creation of the Cornering Path According to the Value of Accuracy Level](../../../_assets/image_79.png)
+精度0具有最高的精度，而精度7具有最大的误差。精度将在不能大于目标步骤两个轨迹中较短轨迹长度的1/2的方式下进行应用。换句话说，可以在上述示例中应用表达式 "Accuracy ≤ min\(P1-P2, P2-P3\) / 2"。在这个表达式中，使用了TCP距离进行说明，但相同的概念可以应用于角度。
+
+在机器人的情况下，适用的精度级别的值将根据机器人的工具距离和姿态角度来定义。当涉及附加轴时，线性轴的值将基于长度来定义，而旋转轴的值将基于角度来定义。您可以直接在 `[system - 3: Robot Parameter - 6: Accuracy]` 菜单中更改值。有关精度级别值的详细信息，请参阅 "[7.4.6 精度](../../../7-system/4-robot-parameter/6-accuracy.md)"。
+
+
+
+下图显示了根据精度级别的值如何创建转角路径。如果有一个一般的6轴关节机器人及附加轴，则可以为TCP \(工具距离\)、ORN \(位置角度\) 和AUX \(附加轴距离\) 单独设置精度级别的值。由于相关精度级别的所有值都应得到满足，因此转角路径将基于TCP、ORN和AUX之间的最小值创建。转角路径将在满足凸包性质的情况下，以恒定的曲线形式创建，无论速度变化如何。然而，由于伺服延迟，在低速和高速下可能会发生几毫米 \(mm\) 的误差。
+
+![图19 根据精度级别的值创建转角路径](../../../_assets/image_79.png)
 
 {% hint style="info" %}
-The mode of creating the cornering path according to the value of accuracy level will be applied to all types of interpolation in the same manner. In the case of P interpolation, the TCP distance accuracy will be applied, but errors may occur.
+根据精度级别的值创建转角路径的模式将以相同的方式应用于所有类型的插值。在P插值的情况下，将应用TCP距离精度，但可能会出现误差。
 {% endhint %}
 
-The cornering path will not exceed the convex polygon area because of the convex hull property, as shown below.
+由于凸包性质，转角路径不会超过凸多边形区域，如下所示。
 
-![Figure 20 All Points on the Cornering Path within the Convex Polygon Area](../../../_assets/image_87.png)
-
+![图20 转角路径上所有点在凸多边形区域内](../../../_assets/image_87.png)

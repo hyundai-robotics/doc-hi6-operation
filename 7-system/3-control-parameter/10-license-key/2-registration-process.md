@@ -1,10 +1,8 @@
-﻿# 7.3.10.2 License key registration procedure
+﻿# 7.3.10.2 许可证密钥注册程序
 
-* Purchase a license key for optional functions that matches your system serial number. The system serial number is located on the license registration screen.
+* 购买与您的系统序列号匹配的可选功能许可证密钥。系统序列号位于许可证注册屏幕上。
 
   ![](../../../_assets/tp630/license-key1.png)
 
 
-* First select whether to purchase the optional feature, then enter the license key.
-If the purchase selection and the license key do not match, an error will occur when executing the function.
-
+* 首先选择是否购买可选功能，然后输入许可证密钥。如果购买选择和许可证密钥不匹配，则在执行该功能时会发生错误。

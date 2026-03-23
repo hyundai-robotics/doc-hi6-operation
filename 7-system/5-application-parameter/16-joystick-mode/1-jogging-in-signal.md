@@ -1,11 +1,10 @@
-﻿# 7.5.16.1 Jogging(input signal)
+﻿# 7.5.16.1 手动操作（输入信号）
 
-To jog the robot by signal input, set the input signal corresponding to each direction key. <br>
-In the section where the corresponding input signal is ON, the corresponding axis moves in the specified direction. <br>
+通过信号输入手动操作机器人，请设置与每个方向键对应的输入信号。 <br>
+在相应输入信号为 ON 的部分，相应轴将在指定方向上移动。 <br>
 
-When an input signal is set to a coordinate system, if the input signal turns on, the matching coordinate system is selected. <br>
+当输入信号设置为坐标系统时，如果输入信号开启，则选择匹配的坐标系统。 <br>
 
-The input signal corresponding to the mechanism number can change the mechanism depending on the status. <br>
+与机制编号对应的输入信号可以根据状态更改机制。 <br>
 
 ![](../../../_assets/tp630/jogging_in_signal.png)
-

@@ -1,6 +1,5 @@
-﻿# 2.5 Error Information
+﻿# 2.5 错误信息
 
-When a problem occurs, a notification will appear on the taskbar at the bottom of the ${cont_model} teach pendant screen and will blink for about one minute. You can check the error code, notification message, and the time of error occurrence.
+当问题发生时，通知将出现在${cont_model}教学挂件屏幕底部的任务栏上，并闪烁约一分钟。您可以检查错误代码、通知消息以及错误发生的时间。
 
 ![](../../_assets/tp630/wg-alarm_eng.png)
-

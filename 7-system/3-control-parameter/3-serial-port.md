@@ -1,20 +1,18 @@
-﻿# 7.3.3 Serial Port
+﻿# 7.3.3 串口
 
-You can set the information required for serial port communication.
+您可以设置串口通信所需的信息。
 
-1.	Touch the `[2: Control Parameter  - 3: Serial port]` menu.
+1. 触摸`[2: 控制参数 - 3: 串口] ([2: 控制参数  - 3: 串口])`菜单。
 
-2.	Set the parameters for each serial port.
+2. 设置每个串口的参数。
 
     ![](../../_assets/tp630/ctrl-serial.png)
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -22,8 +20,7 @@ You can set the information required for serial port communication.
       <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Detailed information on the port selected from the serial port list. You
-        can set the port name and parameter values.</td>
+      <td style="text-align:left">从串口列表中选择的端口的详细信息。您可以设置端口名称和参数值。</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -31,18 +28,18 @@ You can set the information required for serial port communication.
       </td>
       <td style="text-align:left">
         <ul>
-          <li><strong>Serial Port List</strong>: Select a port name to view and edit its detailed information.</li><li><strong>[OK]</strong>: Saves the changes.</li>
-          <li><strong>[+]/[-]</strong>: Adds a new serial port or deletes an existing one.</li>
+          <li><strong>串口列表</strong>：选择一个端口名称以查看和编辑其详细信息。</li><li><strong>[确定]</strong>：保存更改。</li>
+          <li><strong>[+]/[-]</strong>：添加新的串口或删除现有的串口。</li>
         </ul>
       </td>
     </tr>
-        <tr>
+    <tr>
       <td style="text-align:left">
         <img src="../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
-          Performs a loopback test. Connect the RX and TX pins of the serial port to check whether communication is functioning properly.
+          执行环回测试。将串口的RX和TX引脚连接以检查通信是否正常。
         </ul>
       </td>
     </tr>
@@ -50,12 +47,9 @@ You can set the information required for serial port communication.
 </table>
 
 {% hint style="info" %}
-Refer to the following information when setting the usage of the serial port.
+设置串口使用时请参考以下信息。
 
-* Sensor: For receiving the shift data by accessing the vision sensor
-* LVS: For connecting with the laser vision sensor for the weld line follow-up
-* MODBUS: The MODBUS slave function of the ${cont_model} controller
+* 传感器：通过访问视觉传感器接收位移数据
+* LVS：用于连接激光视觉传感器以跟踪焊接线
+* MODBUS：${cont_model}控制器的MODBUS从属功能
 {% endhint %}
-
-
-

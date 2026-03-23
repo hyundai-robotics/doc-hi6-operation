@@ -1,28 +1,27 @@
-﻿# 7.5.13.1 User-Defined Error Settings
+﻿# 7.5.13.1 用户定义错误设置
 
-1. Touch the `[System  - 4: Application Parameters  - 13: User-Defined Error]` menu.<br><br>
+1. 触摸 `[System - 4: Application Parameters - 13: User-Defined Error] ([System  - 4: Application Parameters  - 13: User-Defined Error])` 菜单。<br><br>
 
-2. Click the "Create Sample File" button.<br>
-A file named "help_user_err.json" will be created in the MAIN/project directory.<br>
+2. 点击 "创建示例文件" 按钮。<br>
+将会在 MAIN/project 目录中创建一个名为 "help_user_err.json" 的文件。<br>
 ![](../../../_assets/tp630/user-def-code/image1.png)
 
-3. When re-entering the settings screen, the user-defined errors written in the sample file will be displayed.<br>
-- Error Code: Specifies the error code to be triggered.
-- Condition Expression: Defines the condition for triggering the error. Any condition expression that can be used in an - if statement is allowed.
-- Message: Specifies the message displayed when the error occurs.
-- Motor Off: Determines whether the motor should turn off when a user-defined error occurs.<br>
+3. 重新进入设置屏幕时，将显示示例文件中写入的用户定义错误。<br>
+- 错误代码：指定要触发的错误代码。
+- 条件表达式：定义触发错误的条件。可以使用任何可以在 if 语句中使用的条件表达式。
+- 消息：指定错误发生时显示的消息。
+- 电机关闭：确定当发生用户定义错误时电机是否应关闭。<br>
 ![](../../../_assets/tp630/user-def-code/image2.png)
 
-4. Insert a USB drive into the teaching pendant, access the File Manager menu, and copy the 'help_user_err.json' file to the USB storage path.<br><br>
+4. 将 USB 驱动器插入教学柜，访问文件管理器菜单，并将 'help_user_err.json' 文件复制到 USB 存储路径。<br><br>
 ![](../../../_assets/tp630/user-def-code/image3.png)
 
-5. Open the file on a PC and edit the errors according to the sample file format (editing with Notepad is possible).<br><br>
-- E65###: Error Code (Range: E65001 ~ E65500)
-    - cnd: Condition expression
-    - msg: Cause message displayed in the error help
-    - remedy: Corrective action displayed in the error help
-    - mot_off: Motor off<br>
+5. 在 PC 上打开文件，并根据示例文件格式编辑错误（可以使用记事本进行编辑）。<br><br>
+- E65###：错误代码（范围：E65001 ~ E65500）
+    - cnd：条件表达式
+    - msg：显示在错误帮助中的原因消息
+    - remedy：显示在错误帮助中的纠正措施
+    - mot_off：电机关闭<br>
 ![](../../../_assets/tp630/user-def-code/image4.png)
 
-6. Copy the edited file back to the teaching pendant.
-
+6. 将编辑后的文件复制回教学柜。

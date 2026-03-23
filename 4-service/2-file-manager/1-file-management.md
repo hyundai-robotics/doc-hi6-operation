@@ -1,39 +1,36 @@
-﻿# 4.2.1 File Management
+﻿# 4.2.1 文件管理
 
-Select one or multiple files to copy, move, or delete.
+选择一个或多个文件进行复制、移动或删除。
 
-1.	Select a folder in the folder list using the jog dial on the teach pendant. A list of files saved in the selected folder will appear.
+1. 使用教学手柄上的 jog dial 在文件夹列表中选择一个文件夹。所选文件夹中保存的文件列表将出现。
 
     ![](../../_assets/tp630/file-manager/fl-folder-select_eng.png)
 
-2.	Select the desired file in the file list by touching it.
+2. 通过触摸文件列表中的所需文件进行选择。
 
     ![](../../_assets/tp630/file-manager/fl-file-select_eng.png)
 
-* You can select multiple files one by one by touching each file while pressing the `[CTRL]` key.
-* If you touch two files while pressing the `[SHIFT]` key, you can select all files between the two files at once.
-* If you touch the `[Select All]` button on the function button bar of the screen, you can select all files at once.
+* 您可以通过按住 `[CTRL]` 键逐个触摸每个文件以选择多个文件。
+* 如果在按住 `[SHIFT]` 键的同时触摸两个文件，您可以一次选择这两个文件之间的所有文件。
+* 如果您在屏幕的功能按钮栏上触摸 `[全选]` 按钮，您可以一次选择所有文件。
 
-  Press the `[ESC]` key to cancel the file selection.
+  按 `[ESC]` 键取消文件选择。
 
-3.	You can copy, move, or delete the selected file using the function buttons on the function button bar of the screen.
+3. 您可以使用屏幕的功能按钮栏上的功能按钮复制、移动或删除所选文件。
 
-* `[Copy]`: Copy the selected file and save it in a temporary folder so that it can be pasted into another folder.
-* `[Paste]`: You can paste the file saved in the clipboard to the desired folder. 
-* `[Cut]`: You can cut the selected file and save it in a temporary folder so that it can be pasted into another folder. 
-* `[Delete]`: You can delete the selected file. A protected file \(with the protection mark \(W\_\) in the attributes\) cannot be deleted.
+* `[复制]`：复制所选文件并将其保存到临时文件夹，以便可以粘贴到另一个文件夹中。
+* `[粘贴]`：您可以将保存在剪贴板中的文件粘贴到所需文件夹中。
+* `[剪切]`：您可以剪切所选文件并将其保存到临时文件夹，以便可以粘贴到另一个文件夹中。
+* `[删除]`：您可以删除所选文件。带有保护标记 \(W\_\) 的受保护文件无法删除。
 
-4.	To paste a file into a folder, select the folder using the jog dial and then touch the `[Paste]` button. Then, the file will be pasted to the selected folder.
+4. 要将文件粘贴到文件夹中，请使用 jog dial 选择该文件夹，然后触摸 `[粘贴]` 按钮。然后，文件将粘贴到所选文件夹中。
 
     ![](../../_assets/tp630/file-manager/fl-copy_eng.png)
 
-
-* If the selected folder has a file with a duplicate name, a duplication notification window will appear. Handle it by setting whether to overwrite it.
+* 如果所选文件夹中已有相同名称的文件，将出现重复通知窗口。通过设置是否覆盖来处理它。
 
     ![](../../_assets/tp630/file-manager/fl-copy-pop_eng.png)
 
-
-* To delete a file, touch the `[Delete]` button, and then touch the `[ENTER]` button in the confirmation window.
+* 要删除文件，请触摸 `[删除]` 按钮，然后在确认窗口中触摸 `[ENTER]` 按钮。
 
     ![](../../_assets/tp630/file-manager/fl-delete-pop_eng.png)
-

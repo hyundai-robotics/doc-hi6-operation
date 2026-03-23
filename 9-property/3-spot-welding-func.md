@@ -1,12 +1,11 @@
-﻿# 9.3 Spot Welding Function
+﻿# 9.3 点焊功能
 
-When writing the SPOT command while writing the program, if you place the cursor on the spot welding function position in manual mode and touch the `[property]` button, then the `[1: Spot Welding]` menu will be highlighted in the application parameter setting menu screen. Using the spot welding function, you can quickly modify the contents of the welding conditions and also of the welding sequence when performing spot welding.
+在编写程序时，如果在手动模式下将光标放置在点焊功能位置并触摸 `[property]` 按钮，则在应用参数设置菜单屏幕中，`[1: 点焊]` 菜单将被高亮显示。使用点焊功能，您可以快速修改焊接条件的内容以及进行点焊时的焊接顺序。
 
 ![Figure 76 Spot Welding Function](../_assets/tp630/app-spot-menu_eng.png)
 
 {% hint style="info" %}
-* You can use the spot welding function by touching the `[system]` button  - `[4: Application Parameter  - 1: Spot Welding]`.
+* 您可以通过触摸 `[system]` 按钮 - `[4: 应用参数 - 1: 点焊] ([4: Application Parameter  - 1: Spot Welding])` 来使用点焊功能。
 * 
-  For details on the spot welding function, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+  有关点焊功能的详细信息，请参阅 "[${cont_model} 控制器点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 {% endhint %}
-

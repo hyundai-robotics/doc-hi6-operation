@@ -1,20 +1,19 @@
-﻿# 2.10 Tool Data Automatic Calibration
+# 2.10 工具数据自动校准
 
-After determining the axis origin and tool length through automatic calibration, etc., if the tool is deformed, you can simply determine new tool data. At this time, the axis origin should have been determined and maintained. In addition, a fixed reference point should be taught after the tool length is determined and the angle calibration is completed. If tool deformation occurs, place the tool in the same position at the reference point designated prior to the deformation, and then perform automatic tool data calibration.
+在通过自动校准等确定轴原点和工具长度后，如果工具变形，可以简单地确定新的工具数据。此时，轴原点应已被确定并保持。此外，在确定工具长度和完成角度校准后，应教导一个固定参考点。如果发生工具变形，请将工具放置在变形之前指定的参考点的相同位置，然后执行自动工具数据校准。
 
-1.	Touch the `[system]` button  - `[3: Robot Parameter - 1: Tool Data]` menu.
+1. 触摸`[system]`按钮 - `[3: Robot Parameter - 1: Tool Data]`菜单。
 
     ![](../_assets/tp630/menu-tool-data_eng.png)
 
-2.	After touching the `[Auto Calibration]` button, move the tooltip to the original position using the jog key.
+2. 触摸`[Auto Calibration]`按钮后，使用手动键将工具提示移动到原始位置。
 
     ![](../_assets/tp630/tool-data-auto-calib_eng.png)
 
-3.	 After checking the program number of the predetermined reference point, the step number, and the tool number, touch the `[Execute]` button.
+3. 在检查预定参考点的程序编号、步骤编号和工具编号后，触摸`[Execute]`按钮。
 
     ![](../_assets/tp630/tool-data-auto-calib2_eng.png)
 
 {% hint style="info" %}
-For details on this function, refer to "[7.4.1 Tool Data](../setting/robot-parameter/tool-data/)."
+有关此功能的详细信息，请参阅"[7.4.1 Tool Data](../setting/robot-parameter/tool-data/)."
 {% endhint %}
-

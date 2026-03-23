@@ -1,22 +1,22 @@
-﻿# 4.10 System program
+﻿# 4.10 系统程序
 
-You can view and remove the system programs (e.g. OPC-UA server) installed on the controller.
-
-<br>
-
-1. Installing a System Program
-
-   * Connect a USB drive containing the ${cont_model} system program installation file (hps) to the teach pendant (TP).
-   * Run the `5: File Manager` menu. From the [USB] file list, select the file and press Enter.
-   * When the program installation dialog appears, press the `Run` button to start the installation.
-   * After the installation is complete, press the `Exit` button.
-   * To start the program, restart the system.
+您可以查看和移除安装在控制器上的系统程序（例如 OPC-UA 服务器）。
 
 <br>
 
-2. Removing a System Program
+1. 安装系统程序
 
-   * Run the `14: System Program` menu to view the list of installed programs.
-   * Select a program and press the `Remove` button at the bottom of the screen.
-   * When the program removal dialog appears, press the Run button to start the removal process.
-   * After the removal is complete, press the `Exit` button.
+   * 将包含 ${cont_model} 系统程序安装文件 (hps) 的 USB 驱动器连接到教导操作器 (TP)。
+   * 运行 `5: 文件管理器 (5: File Manager)` 菜单。从 [USB] 文件列表中选择文件并按 Enter 键。
+   * 当程序安装对话框出现时，按 `运行 (Run)` 按钮开始安装。
+   * 安装完成后，按 `退出 (Exit)` 按钮。
+   * 要启动程序，请重新启动系统。
+
+<br>
+
+2. 移除系统程序
+
+   * 运行 `14: System Program` 菜单以查看已安装程序的列表。
+   * 选择一个程序并按屏幕底部的 `Remove` 按钮。
+   * 当程序移除对话框出现时，按运行按钮开始移除过程。
+   * 移除完成后，按 `退出 (Exit)` 按钮。

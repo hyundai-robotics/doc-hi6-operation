@@ -1,24 +1,21 @@
-﻿# 3.1 Program Management
+# 3.1 程序管理
 
-While the robot is stopped, you can create, modify, and delete programs.
+在机器人停止时，您可以创建、修改和删除程序。
 
-1.	In the JOB program window, touch the `[PROG]` key with <SHIFT>. Then, the program selection window will appear.
+1. 在JOB程序窗口中，按下带有<SHIFT>的`[PROG]`键。然后，程序选择窗口将出现。
 
     ![](../_assets/tp630/k-prog-step_eng.png)
 
+2. 您可以创建、修改和删除程序。
 
-
-2.	You can create, modify, and delete programs.
-
-* To add a new program, type the new program number and press <ENTER> key, referring to "[3.2 Program Writing](2-prog-edif/../2-prog-edit/README.md)".
+* 要添加新程序，请输入新的程序编号并按<ENTER>键，参考“[3.2 程序编写](2-prog-edif/../2-prog-edit/README.md)”。
 
     ![](../_assets/tp630/k-prg-select_eng.png)
 
-* To open a program to check and modify its contents, input the program number, or select a program from the list and then touch the `[OK]` button. Then, the selected program will be opened in the JOB program window.
+* 要打开程序以检查和修改其内容，输入程序编号，或从列表中选择一个程序，然后按下`[OK]`按钮。然后，所选程序将在JOB程序窗口中打开。
 
-* To delete a program, select the program from the list and press \<DEL> key. 
+* 要删除程序，从列表中选择程序并按\<DEL>键。
 
-* You can also delete a program from the file list \(`service  - 5: File Management`\). For details, refer to "[4.2.1 File Management](../4-service/2-file-manager/1-file-management.md)".
+* 您还可以从文件列表中删除程序 \(`服务 - 5: File Management (service - 5: File Management)`\)。有关详细信息，请参考“[4.2.1 文件管理](../4-service/2-file-manager/1-file-management.md)”。
   
-* You can quickly delete a program using the R code \(R117\). For details, refer to "[8.4 R117 for Deleting a Program](../8-r-code/4-r117.md)".
-
+* 您可以使用R代码\(R117\)快速删除程序。有关详细信息，请参考“[8.4 R117用于删除程序](../8-r-code/4-r117.md)”。

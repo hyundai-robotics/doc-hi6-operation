@@ -1,6 +1,5 @@
-﻿# 4.9 Industrial Communication Monitoring
+﻿# 4.9 工业通信监控
 
-Monitor firmware information and communication status.
+监控固件信息和通信状态。
 
-For more information, refer to "[${cont_model} Controller Function Manual - Industrial Communication > 1. CIFX PCI Communication > 1.4 CIFX PCI - Monitoring Industrial Communication](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/en/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README)"
-
+有关更多信息，请参阅 "[${cont_model} 控制器功能手册 - 工业通信 > 1. CIFX PCI 通信 > 1.4 CIFX PCI - 监控工业通信](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/zh/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README)"

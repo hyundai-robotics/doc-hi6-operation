@@ -1,8 +1,8 @@
-﻿# 7.5 Application Parameters
+﻿# 7.5 应用参数
 
-1.	Touch the `[4: Application Parameter]` menu. Then, the application parameter menu will appear.
+1. 触摸`[4: Application Parameter]`菜单。然后，应用参数菜单将显示。
 
-2.	Select the desired menu, and then check and set various parameters for the use of the application functions of the robot.
+2. 选择所需的菜单，然后检查和设置机器人应用功能的各种参数。
 
     ![](../_assets/tp630/app-menu_eng.png)
 
@@ -10,6 +10,5 @@
 <br>
 
 {% hint style="info" %}
-For items not covered in this manual, please refer to the "Function Manual" for each separate application function.
+有关本手册未涵盖的项目，请参阅每个单独应用功能的“功能手册”。
 {% endhint %}
-

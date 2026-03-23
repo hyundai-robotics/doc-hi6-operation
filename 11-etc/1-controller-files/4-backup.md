@@ -1,16 +1,16 @@
 ﻿# 11.1.4 backup/
 
-This folder stores MAIN-side backups of the controller.  
-Folder names are generated in the format `bYYYYMMDD_HHMM`, containing subfolders: project/, log/, cifX/, EC_LOG/, and EDR_LOG/.
+此文件夹存储控制器的MAIN侧备份。  
+文件夹名称按格式 `bYYYYMMDD_HHMM` 生成，包含子文件夹：project/，log/，cifX/，EC_LOG/ 和 EDR_LOG/。
 
 
 #### backup/ev/
 
-Folder storing event backups.  
-Backups are automatically created when specific errors occur.
+存储事件备份的文件夹。  
+当发生特定错误时，备份会自动创建。
 
 
 #### backup/ts/
 
-Folder storing scheduled backups.  
-Backups are automatically created at the scheduled times.
+存储定期备份的文件夹。  
+备份会在预定时间自动创建。

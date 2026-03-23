@@ -1,14 +1,14 @@
-﻿# 6.4.2.2 Gas Spring Pressure Diagnostics Monitoring
+﻿# 6.4.2.2 气弹簧压力诊断监测
 
-Touch [Gas Spring Diagnostics] in the button list below to display the gas spring pressure diagnostics data screen.
+在下面的按钮列表中触摸 [气弹簧诊断] 以显示气弹簧压力诊断数据屏幕。
 
-![Gas spring pressure diagnostics](../../../_assets/tp630/pane-sys-diagnosis-gas-pressure_eng.png)
+![气弹簧压力诊断](../../../_assets/tp630/pane-sys-diagnosis-gas-pressure_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -17,10 +17,10 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Displays the results of the last five gas spring pressure diagnostics.</p>
+        <p>显示最近五次气弹簧压力诊断的结果。</p>
         <ul>
-          <li><strong>[Timestamp]</strong>: Displays the time when the gas spring diagnostic test was performed.</li>
-          <li><strong>[Pressure]</strong>: Displays the reference pressure, tolerance, and the estimated pressure.</li>
+          <li><strong>[时间戳]</strong>: 显示执行气弹簧诊断测试的时间。</li>
+          <li><strong>[压力]</strong>: 显示参考压力、容差和估计压力。</li>
         </ul>
       </td>
     </tr>
@@ -29,10 +29,10 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
 
 {% hint style="info" %}
 
-* This function is supported only on robots equipped with a gas spring.  
-* The estimated gas spring pressure may vary depending on the initial posture at the start of measurement.
-During the robot's initial setup, please manage the pressure values based on the measurements taken at each reference posture, and regularly measure the pressure in the same posture to compare it with the initial values.
-If a significant difference is observed in the measured values, please inspect the condition of the equipment.
-* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/7-gasp_check?cont_model=${cont_model})" command.  
+* 此功能仅在配备气弹簧的机器人上支持。  
+* 估计的气弹簧压力可能会根据测量开始时的初始姿态而有所不同。
+在机器人初始设置时，请根据每个参考姿态的测量值管理压力值，并定期在相同姿态下测量压力以与初始值进行比较。
+如果在测量值中观察到显著差异，请检查设备的状态。
+* 有关气弹簧诊断功能的更多详细信息，请参考 "${cont_model} 机器人控制器功能手册 - HRScript 机器人语言"，部分 "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/10-etc/1-proc/7-gasp_check?cont_model=${cont_model})" 命令。  
 
 {% endhint %}

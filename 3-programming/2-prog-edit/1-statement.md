@@ -1,25 +1,22 @@
-﻿# 3.2.1 Statements
+﻿# 3.2.1 声明
 
-A general program consists of a step command that instructs the robot to move and a function command that instructs the robot to carry out work after the movement.
+一个一般程序由一个步骤命令组成，该命令指示机器人移动，以及一个功能命令，该命令指示机器人在移动后执行工作。
 
-A statement is largely divided into a command and a parameter, which is an additional item. The parameters are divided into default parameters essential for a statement and optional parameters that can be omitted.
+声明主要分为命令和参数，参数是附加项。参数分为声明所必需的默认参数和可以省略的可选参数。
 
 ![](../../_assets/image_82.png)
 
-
-
-| No. | Description | No. | Description |
+| No. | 描述 | No. | 描述 |
 | :--- | :--- | :--- | :--- |
-| ![](../../_assets/c1.png)  | Step number | ![](../../_assets/c3.png)  | Parameter |
-| ![](../../_assets/c2.png)  | Command | ![](../../_assets/c4.png)  | Comment |
+| ![](../../_assets/c1.png)  | 步骤编号 | ![](../../_assets/c3.png)  | 参数 |
+| ![](../../_assets/c2.png)  | 命令 | ![](../../_assets/c4.png)  | 注释 |
 
 {% hint style="info" %}
-For details on parameters, refer to "[2.3.1 Step Statement Parameters](../../operation/step/step-cmd-param/)."
+有关参数的详细信息，请参阅 "[2.3.1 步骤语句参数](../../operation/step/step-cmd-param/)."
 {% endhint %}
 
-When you input a statement, basic setting values will be automatically inputted into the default parameters and can be changed. Optional parameters are marked with a symbol \( \_ \), and you can input the parameter values by selecting the parameters. Moreover, parameters that can be inputted will be displayed as buttons on the function button bar.
+当您输入声明时，基本设置值将自动输入到默认参数中，并可以更改。可选参数用符号 \( \_ \) 标记，您可以通过选择参数输入参数值。此外，可以输入的参数将在功能按钮栏上显示为按钮。
 
-![Figure 27 Editing a Command &#x2013; Inputting Parameter Values](../../_assets/tp630/pane-prog-move-option.png)
+![图27 编辑命令 &#x2013; 输入参数值](../../_assets/tp630/pane-prog-move-option.png)
 
-When editing the command parameters, you can edit variables, expressions, and strings by using the operation keys on the teach pendant and the menu buttons on the bottom of the screen, or by using the soft keyboard.
-
+在编辑命令参数时，您可以使用教学手柄上的操作键和屏幕底部的菜单按钮，或使用软键盘编辑变量、表达式和字符串。

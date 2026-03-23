@@ -1,28 +1,25 @@
-﻿# 2.1.2 Operation Speed Adjustment
+﻿# 2.1.2 操作速度调整
 
-In manual mode, you can operate the robot using the step forward/backward operation and manual jog operation. The current speed setting is displayed at the speed window on the status display window.
+在手动模式下，您可以使用向前/向后操作和手动滑动操作来操作机器人。当前速度设置在状态显示窗口的速度窗口中显示。
 
 ![](../../_assets/tp630/sbar-spd-manual_eng.png)
 
-'Man. spd' is only for the manual mode, and is replaced by 'Play spd' in the auto mode. The number '1' at the lower line of the speed window represents a jog speed level, and '200mm/s' represents a forward/backward speed limit.
+'Man. spd'仅用于手动模式，在自动模式中被'Play spd'替代。速度窗口底部的数字'1'表示滑动速度级别，'200mm/s'表示向前/向后的速度限制。
 
-For example, if the speed limit in manual mode is set to 250 mm/s and the recorded step speed is 1,000 mm/s, the moving speed of the step will be limited to 250 mm/s during the step forward/backward operation. When the recorded speed is 100 mm/s, the robot will move at 100 mm/s because the recorded speed does not exceed the speed limit.
+例如，如果手动模式下的速度限制设置为250 mm/s，且记录的步速为1,000 mm/s，则在向前/向后操作时，步速将限制为250 mm/s。当记录速度为100 mm/s时，机器人将以100 mm/s的速度移动，因为记录的速度未超过速度限制。
 
 
 {% hint style="info" %}
-To set the step speed limit, refer to "[5.1 Operation Condition Setting](../../5-conditional-setting/1-op-cond-set.md)".
+要设置步速限制，请参考"[5.1 操作条件设置](../../5-conditional-setting/1-op-cond-set.md)"。
 {% endhint %}
 
-To set the jog speed level \(1: Low to 8: High\), press repeatedly <SPEED: HI, LOW> keys  until the desired speed level appears. Even in this case, the maximum speed of the robot tool and link will be limited below the speed limit.
+要设置滑动速度级别 \(1: 低到 8: 高\)，请重复按下<SPEED: HI, LOW>键，直到所需速度级别出现。即使在这种情况下，机器人工具和链接的最大速度也将限制在速度限制以下。
 
 {% hint style="info" %}
-In automatic mode, the `[Speed Adjustment]` button will display the playback speed \(%\) instead of the step speed limit \(mm/sec\).
+在自动模式下，`[Speed Adjustment]`按钮将显示播放速度 \(%\)，而不是步速限制 \(mm/sec\)。
 {% endhint %}
 
 
 {% hint style="warning" %}
-If the length and angle in the tool data are set differently from the actual values, the tool may operate too fast in manual mode. Before operating the robot, you must make sure that the tool data is set correctly.
+如果工具数据中的长度和角度与实际值设置不同，工具可能在手动模式下操作过快。在操作机器人之前，您必须确保工具数据设置正确。
 {% endhint %}
-
-
-

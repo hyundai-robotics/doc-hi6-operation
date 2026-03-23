@@ -1,25 +1,20 @@
-﻿# 3.2.4.4 Soft Keyboard
+﻿# 3.2.4.4 软件键盘
 
-You can easily input variables, expressions, and strings using the soft keyboard on the ${cont_model} teach pendant screen.
+您可以在 ${cont_model} 教学挂件屏幕上使用软件键盘轻松输入变量、表达式和字符串。
 
-1.	Touch the `[![](../../../_assets/tp630/rbt-softkb_eng.png)]` button on the log bar of the ${cont_model} teach pendant screen. Then, a soft keyboard will appear at the bottom of the screen.
+1.	触摸 ${cont_model} 教学挂件屏幕的日志栏上的 `[![](../../../_assets/tp630/rbt-softkb_eng.png)]` 按钮。然后，软件键盘将出现在屏幕底部。
 
-2.	You can input variables, expressions, and strings in the input area using the soft keyboard. The existing parameter values will be removed, and the inputted texts will be displayed.
+2.	您可以在输入区域使用软件键盘输入变量、表达式和字符串。现有的参数值将被移除，输入的文本将被显示。
 
     ![](../../../_assets/tp630/rbt-softkb-prog_eng.png)
 
 
-* If you touch the `[![](../../../_assets/bt-cursor-left.png)/![](../../../_assets/bt-cursor-right.png)]` button on the left side of the input area, you can move the cursor position, allowing you to insert the text at the desired position.
+* 如果您触摸输入区域左侧的 `[![](../../../_assets/bt-cursor-left.png)/![](../../../_assets/bt-cursor-right.png)]` 按钮，您可以移动光标位置，使您能够在所需位置插入文本。
 
-* You can change the input language by touching the `[![](../../../_assets/bt-lang.png)]` button.
+* 您可以通过触摸 `[![](../../../_assets/bt-lang.png)]` 按钮来更改输入语言。
 
-* You can input a capital letter or a symbol by touching the key while pressing the `[SHIFT]` key on the teach pendant.
+* 您可以通过按下 `[SHIFT]` 键时触摸键盘上的键来输入大写字母或符号。
 
-* You can move the keyboard to the top of the screen by touching the `[![](../../../_assets/tp630/bt-dock-softkb_eng.png)]` button.
+* 您可以通过触摸 `[![](../../../_assets/tp630/bt-dock-softkb_eng.png)]` 按钮将键盘移到屏幕顶部。
 
-3.	When you have finished editing the text, you can hide the soft keyboard by pressing the `[ENTER]` key.
-
-
-
-
-
+3.	编辑文本完成后，您可以通过按 `[ENTER]` 键来隐藏软件键盘。

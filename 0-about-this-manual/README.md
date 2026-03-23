@@ -1,16 +1,11 @@
-﻿# About the Manual
+﻿# 关于手册
 
-This manual describes the basics and structure of HD Hyundai Robotics' ${cont_model} controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
+本手册描述了HD Hyundai Robotics的 ${cont_model} 控制器的基础知识和结构，以及工业机器人的常见操作。每一章不仅描述了基本操作方法，还描述了使用各种应用功能的方法。
 
-This manual does not cover detailed application functions, such as direct teaching using a collaborative robot, methods of setting safety functions, spot welding, arc welding, positioner sync function, and sensor sync function. For details on relevant information, refer to the collaborative robot maintenance manual and individual application function manuals.
+本手册不涵盖详细的应用功能，例如使用协作机器人进行直接教学、安全功能设置方法、点焊、弧焊、定位器同步功能和传感器同步功能。有关相关信息的详细信息，请参阅协作机器人维护手册和各个应用功能手册。
 
-You must fully understand the contents of the manual before using the product. Moreover, keep the manual nearby so that you can refer to it whenever you need it.
+在使用产品之前，您必须充分理解手册的内容。此外，请将手册放在身边，以便随时参考。
 
-This manual may be provided as reference material for customers who have purchased HD Hyundai Robotics products or may be used as internal training material.
+本手册可作为已购买HD Hyundai Robotics产品客户的参考材料，或可用作内部培训材料。
 
-This manual has been created based on standard specifications, so some contents may differ depending on the model of the product you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and HD Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual. For detailed information on the revision of the manual, you need to visit our internet website [https://www.hd-hyundairobotics.com/en/main](https://www.hd-hyundairobotics.com/en/main).
-
-
-
-
-
+本手册是基于标准规格编写的，因此某些内容可能因您购买的产品型号而有所不同。此外，为了改善产品性能，本手册的内容和规格可能会随时更改，HD Hyundai Robotics对因手册中的不准确或错字而可能导致的情况不承担责任。有关手册修订的详细信息，您需要访问我们的互联网网站 [https://www.hd-hyundairobotics.com/en/main](https://www.hd-hyundairobotics.com/zh/main)。

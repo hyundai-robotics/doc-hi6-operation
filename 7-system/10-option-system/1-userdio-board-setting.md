@@ -1,15 +1,13 @@
-﻿# 7.10.1 UserDIO Board Setting
+# 7.10.1 用户DIO板设置
 
 {% hint style="info" %}
-This function is supported from the Hi7 controller.
+此功能支持 Hi7 控制器。
 {% endhint %}
 
-
-In the Hi7 controller, the User DIO Board (BD681) and Extension DIO Board (BD682) can be used to process digital input/output signals and the conveyor interface.
-
+在 Hi7 控制器中，用户 DIO 板 (BD681) 和扩展 DIO 板 (BD682) 可用于处理数字输入/输出信号和输送机接口。
 
 ![](../../_assets/tp630/system-option-dio.png)
 
 {% hint style="info" %}
-For detailed information on the User DIO Board settings, refer to the  "[Hi7 Robot Controller Function Manual - User DIO, Extension DIO](https://hrbook-hrc.web.app/#/view/doc-userDIO-ExtensionDIO/en/README)".
+有关用户 DIO 板设置的详细信息，请参阅 "[Hi7 机器人控制器功能手册 - 用户 DIO, 扩展 DIO](https://hrbook-hrc.web.app/#/view/doc-userDIO-ExtensionDIO/zh/README)"。
 {% endhint %}

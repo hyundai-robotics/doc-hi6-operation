@@ -1,3 +1,3 @@
-﻿# 2.8 Coordinate System
+﻿# 2.8 坐标系统
 
-Coordinates in space are used to determine the direction of the robot's movement. ${cont_model} controller has the joint coordinate system, robot coordinate system, user coordinate system, and tool coordinate system.
+空间中的坐标用于确定机器人运动的方向。 ${cont_model} 控制器具有关节坐标系统、机器人坐标系统、用户坐标系统和工具坐标系统。

@@ -1,20 +1,17 @@
-﻿# 5.1 Operation Condition Setting
+﻿# 5.1 操作条件设定
 
-1. Touch the `[Speed Adjustment]` button on the upper left on the initial screen. Then, the operation conditions setting window will appear.
+1. 在初始屏幕的左上角点击 `[Speed Adjustment]` 按钮。然后，操作条件设定窗口将出现。
 
     ![](../_assets/tp630/sbar-spd-auto_eng.png)  ![](../_assets/tp630/sbar-spd-manual_eng.png)
 
 {% hint style="info" %}
-On the `[Speed Adjustment]` button, the speed limit \(mm/sec\) will be displayed while in manual mode, and the playback speed \(%\) will be displayed in automatic mode.
+在 `[Speed Adjustment]` 按钮上，手动模式下将显示速度限制 \(mm/sec\)，而自动模式下将显示播放速度 \(%\)。
 {% endhint %}
 
 
 
-2.	Change the operation condition setting values, and then touch the `[OK]` button.
+2. 更改操作条件设定值，然后点击 `[OK]` 按钮。
 
     ![](../_assets/tp630/sbar-condi-setting_eng.png)
 
     
-
-
-

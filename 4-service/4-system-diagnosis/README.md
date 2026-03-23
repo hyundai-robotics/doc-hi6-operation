@@ -1,4 +1,3 @@
-﻿# 4.4 System Diagnosis
+# 4.4 系统诊断
 
-You can inspect and manage the state of the robot and controller. You can check and update the version of each module of the controller.
-
+您可以检查和管理机器人的状态和控制器。您可以检查和更新控制器每个模块的版本。

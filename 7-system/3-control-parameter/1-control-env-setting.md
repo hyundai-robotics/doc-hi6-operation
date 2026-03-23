@@ -1,72 +1,66 @@
-﻿# 7.3.1 Control Environment Setting
+# 7.3.1 控制环境设置
 
-You can set various conditions of the controller and perform necessary operations.
+您可以设置控制器的各种条件并执行必要的操作。
 
-1.	Touch the `[2: Control Parameter  - 1: Control Environment Setting]` menu.
+1. 触摸 `[2: Control Parameter - 1: Control Environment Setting] ([2: Control Parameter  - 1: Control Environment Setting])` 菜单。
 
-2.	After setting each control environment condition, touch the `[OK]` button.
+2. 设置每个控制环境条件后，触摸 `[OK]` 按钮。
 
     ![](../../_assets/tp630/ctrl-environment-setting_eng.png)   
 
-* `[Power saving function]`: You can set whether to use the power saving function and set the wait time.
+* `[节能功能]`：您可以设置是否使用节能功能并设置等待时间。
 
-  While the power saving function is used, if the robot is in operation stop status while in the auto mode for a long period, such as waiting for startup or waiting for an input signal, the power supply to the motor will be cut off when the wait time has expired, helping save power consumption. When an operation command is inputted in the robot, the power saving function will be automatically deactivated, allowing the power to be supplied to the motor and the robot to operate.
+  当使用节能功能时，如果机器人在自动模式中长时间处于操作停止状态，等待启动或等待输入信号，等候时间到时会切断电机的电源，从而帮助节省能耗。当在机器人中输入操作命令时，节能功能将自动停用，电源将供应给电机，机器人将开始操作。
 
 {% hint style="info" %}
-Delays may occur in the process of activating/deactivating the power-saving function. When operating while expecting the speed of the robot, you should set the power saving function as disable.
+在启用/禁用节能功能的过程中可能会发生延迟。当期望机器人的速度进行操作时，应将节能功能设置为禁用。
 {% endhint %}
 
+* `[自动模式下的路径恢复]`：您可以设置自动模式下的路径恢复允许距离和允许角度。
 
-* `[Path recovery on auto Mode]`: You can set the allowable distance and allowable angle for path recovery in automatic mode.
+  在路径恢复过程中，如果距离和角度超过设定的允许范围，将检测到错误。如果允许距离设置为1，则不会进行路径恢复。
 
-  During path recovery, an error will be detected if the distance and angle exceed the set allowable range. If the allowable distance is set to 1, no path recovery will take place.
+* `[冷却风扇关闭时间]`：当机器人在运行时，由于再生电阻，控制器内部的温度会升高，必须开启冷却风扇以防止温度上升。
 
+  当机器人不运行时，控制器内部的温度不再上升，因此此时没有必要让冷却风扇运转。相反，当冷却风扇运转时，只会出现风扇寿命缩短、噪音产生和能耗增加等不利影响。
 
-* `[Cooling fan turn off time ]`: When the robot is in operation, the temperature inside the controller rises due to regenerative resistance, and the cooling fan must be operated to prevent this temperature rise.
+  当机器人处于操作状态（电机开启）时，冷却风扇必须立即运行。当机器人处于不可操作状态（电机关闭，节能运行）时，冷却风扇在经过一定时间后将不再运转。如果冷却风扇没有立即运转，由于再生电阻的潜热，控制器内部的温度会上升。
 
-  When the robot is not in operation, the temperature inside the controller no longer rises, so there is no reason for the cooling fan to operate at this time. Rather, when the cooling fan operates, there are only adverse effects such as shortened fan life, noise generation, and increased power consumption.
+  控制冷却风扇开/关操作的信号输出在 `[System/Control parameter/Input/Output signal setting/Output signal assign]` 菜单中的 "冷却风扇控制" 项目中设置，控制冷却风扇电源的电路也通过此输出信号创建。必须进行配置。
 
-  When the robot is in an operating state (motor on), the cooling fan must operate immediately. When the robot is in an inoperable state (motor ff, power saving operation), the cooling fan does not operate after a certain period of time has elapsed. If the cooling fan does not operate immediately, the temperature inside the controller rises due to the latent heat of the regenerative resistance.
+  如果 "冷却风扇关闭操作时间" 设置为0或 "冷却风扇控制" 输出信号设置为-1，则冷却风扇会始终运转。
 
-  The signal output for controlling the cooling fan on/off operation is set in the "Cooling fan control" item in the [System/Control parameter/Input/Output signal setting/Output signal assign] menu, and the circuit for controlling the cooling fan power is created with this output signal. It must be configured.
+* `[互锁错误时间]`：此功能设置输入信号的最大等待时间。 <br>
+  如果输入信号待机时间在播放期间超过指定时间，将输出互锁错误信号。此指定时间为互锁异常时间。
 
-  If "Cooling fan off operation time" is set to 0 or the "Cooling fan control" output signal is set to -1, the cooling fan always operates.
+  互锁错误信号是分配给 `[System/Control Parameter/Input/Output signal setting/Output signal assign]` 菜单中的 "互锁异常警告" 的信号。
 
+* `[第一次安全移动]`：启动机器人时，设置是否将第一次步骤限制为安全速度，并以当前设定速度移动。
+  * 启用：移动到安全限制速度。
+  * 禁用：以当前设定速度移动。
 
-* `[Interlock error time]`: This function sets the maximum waiting time for the input    signal. <br>
-  If the input signal standby time exceeds the specified time during playback, an interlock error signal is output. This specified time is the interlock abnormality time.
+  出于安全原因，机器人在启动第一次步骤时以安全速度移动是基本的。特殊工作如密封或喷涂可能会导致质量问题，因此仅在这些情况下使用。
 
-  The interlock error signal is a signal assigned to "Interlock abnormal warning" in the [System/Control Parameter/Input/Output signal setting/Output signal assign] menu.
+* `[PLC执行时间比率]`：使用嵌入式PLC时，您可以调整控制器内部的PLC执行时间。控制器每5ms内部执行一次PLC梯形图程序，因此设置分配多少PLC执行。这个比例越大，PLC程序的扫描时间越短。但如果过大，CPU执行时间可能不足，可能会发生任务执行时间超出错误。
 
+* `[周期时间优化模式]`：此功能在自动播放期间减少机器人的步进移动时间，以提高生产力。
+  - 启用
+    - 动态调整加速/减速曲线和最大速度，以便更快移动。
+    - 应用动态运动调整
 
-* `[First step safety move]`: When starting the robot, set whether to limit the first step to a safe speed and move at the currently set speed.
-  * Enable : Move to the safe limit speed.
-  * Disable : Move to the currently set speed.
+  - 禁用
+    - 使用预定义的加速、减速和最大速度设置。
+    - 在标准运动特征模式下运行
 
-  For safety reasons, it is basic for robots to move at a safe speed when starting the first step. Special work such as sealing or painting may cause quality problems, so use it only in these cases.
-
-
-* `[Plc execution time rate]`: When using a embedded PLC, you can adjust the PLC execution time inside the controller. The controller internally executes the PLC ladder program every 5ms, so set how much PLC execution is allocated. The larger this ratio leads the shorter the scan time of the PLC program. But if it is too large, the CPU execution time may be insufficient and a task execution time exceeded error may occur.
-
-* `[Cycle Time Optimization Mode]`: This feature reduces the robot's step movement time during automatic playback to improve productivity.
-  - Enabled
-    - Dynamically adjusts acceleration/deceleration curves and maximum speed for faster movement.
-    - Dynamic motion adjustment applied
-
-  - Disabled
-    - Uses predefined acceleration, deceleration, and maximum speed settings.
-    - Operates in standard motion profile mode
-
-  - Dynamic Motion Ratio (`0 ~ 100`)
-    - `0`: Disabled (static motion)
-    - `1 ~ 100`: Adjusts the intensity of dynamic motion
-    - Higher values apply more aggressive optimization for speed and acceleration
-
+  - 动态运动比率 (`0 ~ 100`)
+    - `0`：禁用（静态运动）
+    - `1 ~ 100`：调整动态运动的强度
+    - 较高的值适用更激进的速度和加速度优化
 
 {% hint style="info" %}
-For processes where cycle time is critical (e.g., repetitive pick-and-place), applying a high dynamic motion ratio can help improve throughput.
+对于周期时间关键的过程（例如，重复的取放），应用高动态运动比率可以帮助提高通量。
 {% endhint %}
 
 {% hint style="warning" %}
-Be aware that higher values may lead to mechanical vibration or trigger over-torque faults, especially under high payload or rapid directional changes.
+请注意，较高的值可能会导致机械振动或触发过载故障，尤其是在高负载或快速方向变化时。
 {% endhint %}

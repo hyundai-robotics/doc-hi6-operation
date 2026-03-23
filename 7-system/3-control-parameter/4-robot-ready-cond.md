@@ -1,12 +1,9 @@
-﻿# 7.3.4 Robot Ready Condition
+﻿# 7.3.4 机器人准备条件
 
-When the robot ready is completed, set the conditions for signal output in the `[Robot Ready OK]` item of the `system - 2: Control Parameter  - 2: Input/Output Signal Setting - 4: Output Signal Assign` menu.
+当机器人准备完成时，在 `[Robot Ready OK]` 项中设置信号输出的条件，位于 `系统 - 2: 控制参数 - 2: 输入/输出信号设置 - 4: 输出信号分配 (系统 - 2: 控制参数 - 2: 输入/输出信号设置 - 4: 输出信号分配)` 菜单中。
 
-1.	Touch the `[2: Control Parameter  - 4: Robot Ready Condition]` menu. 
+1. 点击 `[2: 控制参数 - 4: 机器人准备条件] ([2: 控制参数 - 4: 机器人准备条件])` 菜单。
 
-2.	After setting the robot ready condition, touch the `[OK]` button.
+2. 设置完机器人准备条件后，点击 `[OK]` 按钮。
 
     ![](../../_assets/tp630/ctrl-robot-readycond_eng.png)
-
-
-

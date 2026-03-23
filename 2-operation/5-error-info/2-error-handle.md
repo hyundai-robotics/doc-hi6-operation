@@ -1,25 +1,21 @@
-﻿# 2.5.2 Error Handling
+﻿# 2.5.2 错误处理
 
-The following shows how to check and deal with various system troubles, such as system failures or operational errors.
+以下展示了如何检查和处理各种系统故障，比如系统故障或操作错误。
 
-* At the moment when a warning or error occurs, a notification with a code number and a title will appear on the guide display window.
+* 当警告或错误发生时，带有代码号码和标题的通知将出现在指导显示窗口。
 
   ![](../../_assets/tp630/wg-alarm_eng.png)
 
-* Touch [log] button on the guide display window. Then, the error and warning history will appear in a new window.
+* 在指导显示窗口上点击 [log] 按钮。然后，错误和警告历史将会在一个新窗口中出现。
 
-  * The error and warning history will be displayed in chronological order, and the most recent trouble will be highlighted with yellow.
+  * 错误和警告历史将按时间顺序显示，最新的故障将以黄色突出显示。
   
   ![](../../_assets/tp630/fbt-log_eng.png)
 
   ![](../../_assets/tp630/wg-alarm-log_eng.png)
 
-* Touch the `[Help]` button on the L-button bar of the ${cont_model} teach pendant screen. You can check the error code, the notification message, the cause of the trouble, and how to take action for it.
+* 在 ${cont_model} 教学挂件屏幕的 L 按钮栏上点击 `[Help]` 按钮。您可以查看错误代码、通知消息、故障原因以及如何采取措施。
 
   ![](../../_assets/tp630/lbt-help_eng.png)
 
   ![](../../_assets/tp630/help-alarm_eng.png)
-
-
-
-

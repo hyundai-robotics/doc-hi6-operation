@@ -1,14 +1,13 @@
-﻿# 1.2.1 Turning On the Power
+﻿# 1.2.1 开启电源
 
 {% hint style="info" %}
-The method of turning on and off the power may differ depending on the type of controller.
+开启和关闭电源的方法可能会根据控制器的类型而有所不同。
 {% endhint %}
 
-#### Vertical Articulated Robot Controller
+#### 直立关节机器人控制器
 
-To start up the robot, power should be supplied to the robot controller. 
+要启动机器人，必须为机器人控制器供电。
 
-Turn the power switch on the left side of the robot controller to the ON direction to connect the main power of the controller. When the power is connected, the robot system will boot, and the display of the teach pendant will be turned on together with all the devices.
+将机器人控制器左侧的电源开关转向ON方向，以连接控制器的主电源。 当电源连接后，机器人系统将启动，教学挂件的显示屏将与所有设备一起开启。
 
 ![](../../../_assets/image_12.png)
-

@@ -1,17 +1,17 @@
-﻿# 4.2.8 toggle root
+﻿# 4.2.8 切换根目录
 
 {% hint style="info" %}
-Supported from V60.26-00.
+支持从 V60.26-00 开始。
 {% endhint %}
 
-In the tree window on the left side of the file-manager, the MAIN and TP nodes show only the home folder that the user is allowed access to. The areas outside the home folder are system folders and should not be accessed by the user.
+在文件管理器左侧的树形窗口中，MAIN 和 TP 节点只显示用户允许访问的主文件夹。主文件夹外的区域是系统文件夹，用户不应访问。
 
-If it is essential during maintenance, you can click the `[toggle root]` button at the bottom of the screen to enter the system folder accessible mode.
+如果在维护过程中必要，可以点击屏幕底部的 `[toggle root]` 按钮进入系统文件夹可访问模式。
 
-Once in accessible mode, the following warning message is displayed, and the MAIN and TP nodes display up to the system's root folder.
+一旦进入可访问模式，将显示以下警告信息，MAIN 和 TP 节点显示系统的根文件夹。
 
 ![](../../_assets/tp630/file-manager/fl-toggle-root0.png)
 
 ![](../../_assets/tp630/file-manager/fl-toggle-root1.png)
 
-Click the `[toggle root]` button once more to release the accessible mode.
+再次点击 `[toggle root]` 按钮以释放可访问模式。

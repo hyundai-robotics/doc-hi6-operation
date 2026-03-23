@@ -1,18 +1,14 @@
-﻿# 1.2.4.2 Status display window
+﻿# 1.2.4.2 状态显示窗口
 
-
-This displays various statuses of robot operation. You can set the displayed information by touching each applicable section.
+此部分显示机器人的各种操作状态。您可以通过触摸每个适用的部分来设置显示的信息。
 
 ![](../../../_assets/tp630/TP-main-status_eng.png)
 
-
-
 | No. | Description | 
 | :--- | :--- |
-| ![](../../../_assets/c1.png) | The operation mode of the robot is displayed. <li>manual: a mode for jogging operations and editing JOB programs</li> <li>auto:  a mode for running JOB programs automatically</li> <li>remote manual: a mode for remotely setting the manual or auto mode through I/O signal (current status: manual mode)</li> <li>remote auto: a mode for remotely setting the manual or auto mode through I/O signal (current status: auto mode)</li> |
-| ![](../../../_assets/c2.png) | You can check the current tool information and change it in the pop-up message box.|
-| ![](../../../_assets/c3.png) | Mechanism displays the robot type or the number of the selected additional axis. The robot is 0, and for the user refer to `System - 5: Initialize - 6: Mechanism setting`.  |
-| ![](../../../_assets/c4.png) | This displays the status of the reference coordinate system selected for the manual operation. A status display of 'joint', 'user', 'robot', or 'tool' changes in order, each time you push the status window. With `[Axis Operation]` keys, you can move the robot according to the reference coordinate system.<li> Joint coordinate system: Each axis of the robot will move independently in accordance with the lower part name of `[Axis Operation]` keys.</li> <li> Robot coordinate system:  The robot TCP is translated and rotated on the basis of the robot coordinate system  by `[Axis Operation]` keys.</li> <li> User coordinate system:  The robot TCP is translated and rotated on the basis of the user coordinate system  by `[Axis Operation]` keys..</li> <li> <img src="../../../_assets/bt-crd-tool (1) (1) (2).png" alt/> Tool coordinate system : The robot TCP is translated and rotated on the basis of the tool coordinate system by `[Axis Operation]` keys.</li>|
-| ![](../../../_assets/c5.png) | Determine the speed to operate the robot in the manual mode. In the manual mode, there are 2 different types of operation. One is to run it manually and the other is the step forward/backward operation. There are 8 different steps (1~8) in the level of the speed of manual operation.  <li>Speed level increases by a step if pressing the speed HI key of teach pendant, and decreases by a step if pressing the speed LOW key. Speed level is set to 8 if pressing the [SHIFT (FAST)] + Speed  HI key, and is set to 1 if pressing the [SHIFT (FAST)] + Speed LOW key. </li> |
-| ![](../../../_assets/c6.png) | Date and time information are displayed. <br> You can change this in [service  - 8: Date, time setting] menu. ([4.5 Setting of Date and Time](../../../4-service/5-date-time-setting.md))|
-
+| ![](../../../_assets/c1.png) | 机器人的操作模式显示。<li>手动：用于手动操作和编辑JOB程序的模式</li> <li>自动：用于自动运行JOB程序的模式</li> <li>远程手动：通过I/O信号远程设置手动或自动模式的模式（当前状态：手动模式）</li> <li>远程自动：通过I/O信号远程设置手动或自动模式的模式（当前状态：自动模式）</li> |
+| ![](../../../_assets/c2.png) | 您可以检查当前工具信息并在弹出消息框中更改它。|
+| ![](../../../_assets/c3.png) | 机制显示所选附加轴的机器人类型或编号。机器人为0，用户请参考 `系统 - 5: 初始化 - 6: 机构设置 (System - 5: Initialize - 6: Mechanism setting)`。 |
+| ![](../../../_assets/c4.png) | 这显示为手动操作选择的参考坐标系统的状态。状态显示为“关节”、“用户”、“机器人”或“工具”，每次按下状态窗口时依次变化。使用`[轴操作]`键，您可以根据参考坐标系统移动机器人。 <li>关节坐标系统：机器人的每个轴将根据`[轴操作]`键的下部名称独立移动。</li> <li>机器人坐标系统：机器人TCP基于机器人坐标系统通过`[轴操作]`键进行平移和旋转。</li> <li>用户坐标系统：机器人TCP基于用户坐标系统通过`[轴操作]`键进行平移和旋转。</li> <li><img src="../../../_assets/bt-crd-tool (1) (1) (2).png" alt/>工具坐标系统：机器人TCP基于工具坐标系统通过`[轴操作]`键进行平移和旋转。</li> |
+| ![](../../../_assets/c5.png) | 确定在手动模式下操作机器人的速度。在手动模式中，有两种不同类型的操作。一种是手动运行，另一种是向前/向后逐步操作。在手动操作的速度等级中有8个不同的步骤（1~8）。<li>按下教学挂架的速度HI键时，速度等级增加一步；按下速度LOW键时，速度等级降低一步。如果同时按下[SHIFT (FAST)] + 速度HI键，速度等级设置为8；如果同时按下[SHIFT (FAST)] + 速度LOW键，速度等级设置为1。</li> |
+| ![](../../../_assets/c6.png) | 显示日期和时间信息。<br>您可以在[服务 - 8：日期、时间设置]菜单中更改此设置。 ([4.5 日期和时间设置](../../../4-service/5-date-time-setting.md))|

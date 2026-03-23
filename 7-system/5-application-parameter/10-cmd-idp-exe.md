@@ -1,25 +1,24 @@
-﻿# 7.5.10 Command independent execution
+# 7.5.10 命令独立执行
 
-This is a function that executes the corresponding statement separately from the work program when the set input signal turns from OFF to ON. <br>
-The statement is executed using an unused subtask, and usually subtask 1 is used. <br>
-For more information about multitasking, please refer to "[${cont_model} Controller Function Manual - Multitasking](https://hrbook-hrc.web.app/#/view/doc-multi-task/en/README)".
-
+这是一个功能，当设置的输入信号从 OFF 变为 ON 时，单独执行相应的语句。<br>
+该语句使用未使用的子任务执行，通常使用子任务 1。<br>
+有关多任务的更多信息，请参阅 "[${cont_model} 控制器功能手册 - 多任务](https://hrbook-hrc.web.app/#/view/doc-multi-task/zh/README)"。
 
 ![](../../_assets/tp630/cmd-idp-exe.png)
 
-  * Input signal: Set the signal input to the controller.
-  * Command: 
-    * Records statements to be executed when the input signal changes from OFF to ON. 
-    * Generally, task start is used for gun search and tip dressing work of the stationary servo gun, and move is used for independent operation of the positioner. 
-    * When using task start, subtask 1 is used to execute this command, so specify sub as 2 or more or set it to 0. (0=Auto assign)
-  * Output signal under execution: 
-    * It turns ON when execution of the statement begins and turns OFF when execution is complete. 
-    * If the statement is not a move, it is meaningless because the execution time is very short.
-  * Output signal after execution completed: 
-    * It becomes OFF when execution of the corresponding statement begins and ON when execution is complete. 
-    * If the statement is not a move, it is meaningless because the execution time is very short.
+  * 输入信号：设置信号输入到控制器。
+  * 命令：
+    * 记录输入信号从 OFF 变为 ON 时要执行的语句。
+    * 通常，任务启动用于静态伺服枪的枪搜索和尖端装饰工作，而移动用于定位器的独立操作。
+    * 使用任务启动时，使用子任务 1 执行此命令，因此请指定子任务为 2 或更多，或将其设置为 0。（0=自动分配）
+  * 正在执行的输出信号：
+    * 当语句执行开始时，变为 ON，当执行完成时，变为 OFF。
+    * 如果语句不是移动，则由于执行时间非常短是没有意义的。
+  * 执行完成后的输出信号：
+    * 当相应语句的执行开始时，变为 OFF，当执行完成时，变为 ON。
+    * 如果语句不是移动，则由于执行时间非常短是没有意义的。
 
 {% hint style="info" %}
-* Execution is possible only with the motor ON in auto mode.
-* When executing a move statement, the axis must be separated by a mechanism so that it is not used in the main task, or the axis control status must be disabled with axisctrl off.
+* 仅在电机处于自动模式且开启的情况下可以执行。
+* 执行移动语句时，轴必须通过机制与主任务分离，或者必须通过 axisctrl off 禁用轴控制状态。
 {% endhint %}

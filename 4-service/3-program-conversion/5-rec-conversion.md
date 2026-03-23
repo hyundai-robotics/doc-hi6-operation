@@ -1,19 +1,19 @@
-﻿# 4.3.5 Coordinate Shifting
+﻿# 4.3.5 坐标移动
 
-The coordinate shifting function is a function that enables you to create a program without additional teaching even if a workpiece of the same shape, as shown in Image 2, is placed at a different location after a program taught on the workpiece \(Image 1\).
+坐标移动功能是一个使您能够在没有额外教学的情况下创建程序的功能，即使在工作件的位置不同的情况下，仍然可以将相同形状的工作件放置在不同的位置，如图2所示，在工作件上进行了教学的程序（图1）。
 
-![Left: Figure 1, Right: Fugure 2](../../_assets/image_369.png)
+![左：图1，右：图2](../../_assets/image_369.png)
 
-It is required to have three reference points to use the coordinate shifting function. You can create Program A by marking three reference points on the workpiece at the initial position. After moving the position of the workpiece, write Program B using the previously marked three reference points.
+使用坐标移动功能需要有三个参考点。您可以通过在工作件的初始位置标记三个参考点来创建程序A。在移动工作件位置后，使用之前标记的三个参考点编写程序B。
 
-![Left: Program A, Right: Program B](../../_assets/image_368.png)
+![左：程序A，右：程序B](../../_assets/image_368.png)
 
 {% hint style="info" %}
-* The accuracy of the coordinate shifting program will be affected by the accuracy of teaching the three reference points in coordinate shifting. Perform teaching as accurately as possible for the three reference points.
-* Set the distance between the three reference points as far as possible in coordinate shifting.
+* 坐标移动程序的准确性将受到教学三个参考点准确性的影响。尽可能准确地对三个参考点进行教学。
+* 在坐标移动中，将三个参考点之间的距离设置得尽可能远。
 {% endhint %}
 
-You can shift the existing program \(Program 1\) to a new program \(Program 2\) by calculating the coordinate shifting amount in three steps that are the basis of Program A and Program B.
+您可以通过计算坐标移动量，将现有程序（程序1）移至新程序（程序2），其基础是程序A和程序B的三个步骤。
 
 ![](../../_assets/image_315.png)
 
@@ -21,18 +21,18 @@ You can shift the existing program \(Program 1\) to a new program \(Program 2\) 
 
 ---
 
-This function is not allowed during a robot operation. How to use the coordinate shifting is as follows.
+在机器人操作期间不允许使用该功能。使用坐标移动的方法如下。
 
-1.	Select [6: Program conversion - 5: Coordinate transformation] menu. A setting window for the coordinate shifting will appear.
-2.	After setting up, press `[OK]` button.
- 
+1. 选择[6: 程序转换 - 5: 坐标变换]菜单。坐标移动的设置窗口将出现。
+2. 设置完成后，按`[确定]`按钮。
+
     ![](../../_assets/tp630/prg-coordinate-modi_eng.png)
 
 
-* [Source program] : Existing teaching program number (Program number of [Figure. 1]) 
+* [源程序]：现有教学程序编号（[图1]的程序编号）
 
-* [Target program] : Program number to newly create by executing coordinate conversion (Program number of [Figure. 2])
+* [目标程序]：通过执行坐标转换新创建的程序编号（[图2]的程序编号）
 
-* [previous base program] : Number of a program with 3 standard points (Number of [Program A]) 
- 
-* [post base program] : Program number in which the 3 points of reference for conversion are recorded ([Program B] number) 
+* [先前基准程序]：具有3个标准点的程序编号（[程序A]的编号）
+
+* [后基准程序]：记录转换参考的3个点的程序编号（[程序B]的编号）

@@ -1,9 +1,9 @@
-﻿# 6.4.4 Hardware
+﻿# 6.4.4 硬件
 
- In the panel selection window, touch `[hardware]`. You can monitor current voltage and temperature of the COM module. In the case that a status value is out of the tolerance, a warning message will be issued in the period of 24 hours.
+ 在面板选择窗口中，触摸 `[hardware]`。您可以监控 COM 模块的当前电压和温度。如果状态值超出公差范围，将会在 24 小时内发出警告信息。
 
  ![](../../_assets/tp630/pane-hw-monitoring_eng.png)
  
  
-- If you want to change the tolerance, select the corresponding cell and edit it. Then, press the [Save Min/Max] button.
-- If you want to initialize with default values, press the [Reset Min/Max] button.
+- 如果您想更改公差，请选择相应的单元格并进行编辑。然后，按 [Save Min/Max] 按钮。
+- 如果您想用默认值初始化，请按 [Reset Min/Max] 按钮。

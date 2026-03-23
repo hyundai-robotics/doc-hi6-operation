@@ -1,196 +1,162 @@
 ﻿
 [__SOURCE](README.md)
-# ${cont_model} Controller Operation Manual - TP630
-
+# ${cont_model} 控制器操作手册 - TP630
 [__SOURCE](0-about-this-manual/README.md)
-# About the Manual
+# 关于手册
 
-This manual describes the basics and structure of HD Hyundai Robotics' ${cont_model} controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
+本手册描述了HD Hyundai Robotics的 ${cont_model} 控制器的基础知识和结构，以及工业机器人的常见操作。每一章不仅描述了基本操作方法，还描述了使用各种应用功能的方法。
 
-This manual does not cover detailed application functions, such as direct teaching using a collaborative robot, methods of setting safety functions, spot welding, arc welding, positioner sync function, and sensor sync function. For details on relevant information, refer to the collaborative robot maintenance manual and individual application function manuals.
+本手册不涵盖详细的应用功能，例如使用协作机器人进行直接教学、安全功能设置方法、点焊、弧焊、定位器同步功能和传感器同步功能。有关相关信息的详细信息，请参阅协作机器人维护手册和各个应用功能手册。
 
-You must fully understand the contents of the manual before using the product. Moreover, keep the manual nearby so that you can refer to it whenever you need it.
+在使用产品之前，您必须充分理解手册的内容。此外，请将手册放在身边，以便随时参考。
 
-This manual may be provided as reference material for customers who have purchased HD Hyundai Robotics products or may be used as internal training material.
+本手册可作为已购买HD Hyundai Robotics产品客户的参考材料，或可用作内部培训材料。
 
-This manual has been created based on standard specifications, so some contents may differ depending on the model of the product you have purchased. In addition, the contents and specifications of this manual are subject to change without prior notice to improve the performance of the product, and HD Hyundai Robotics is not responsible for situations that could be caused by inaccuracies or typos in the manual. For detailed information on the revision of the manual, you need to visit our internet website [https://www.hd-hyundairobotics.com/en/main](https://www.hd-hyundairobotics.com/en/main).
-
-
-
-
-
-
+本手册是基于标准规格编写的，因此某些内容可能因您购买的产品型号而有所不同。此外，为了改善产品性能，本手册的内容和规格可能会随时更改，HD Hyundai Robotics对因手册中的不准确或错字而可能导致的情况不承担责任。有关手册修订的详细信息，您需要访问我们的互联网网站 [https://www.hd-hyundairobotics.com/en/main](https://www.hd-hyundairobotics.com/zh/main)。
 [__SOURCE](0-about-this-manual/precautions.md)
-# Precautions
+# 注意事项
 
-{% include file="en/precautions.md" %}
-
+{% include file="zh/precautions.md" %}
 [__SOURCE](0-about-this-manual/notation.md)
-# Notation Convention
+# 符号约定
 
-In this manual, the following notation conventions and safety instructions are used to help you understand the contents.
+在本手册中，使用以下符号约定和安全说明来帮助您理解内容。
 
-### Description of Figures
+### 图形描述
 
-Figures are used to help you understand how to operate the product and illustrate what you can see on the screen. For the description of figures, numbers will be marked for the relevant parts, and the corresponding contents will be described as follows.
+图形用于帮助您理解如何操作产品，并说明您在屏幕上可以看到的内容。图形描述中，相关部分将用数字标记，对应内容将如下描述。
 
 ![](../_assets/tp630/pane-prog-cmd-param.png)
 
-### GUI \(Graphical User Interface\)
+### GUI \(图形用户界面\)
 
-In the GUI, menu names and button names are enclosed in square brackets and displayed with a light background color.
-When multiple menus must be selected in sequence, their names are separated by a hyphen (-).
+在GUI中，菜单名称和按钮名称用方括号括起，并以浅色背景显示。
+当多个菜单必须依次选择时，它们的名称用连字符 (-) 分隔。
 
-* Single menu: On the initial screen in Manual or Automatic mode, touch the `[F1: Service]`W button.
-* Multiple menus: On the initial screen in Manual mode, touch `[F2: System] - 5: Initialization - 6: Mechanism setting`.
+* 单个菜单：在手动或自动模式的初始屏幕上，触摸`[F1: 服务] ([F1: Service])`W按钮。
+* 多个菜单：在手动模式的初始屏幕上，触摸`[F2: 系统] - 5: 初始化 - 6: 机构设置 ([F2: System] - 5: Initialization - 6: Mechanism setting)`。
 
+### 操作键的符号方法
 
-### Notation Method for Operation Keys
+在教师挂件的操作部分按下的键将用方括号括起，并以浅色背景显示。
 
-Keys that are to be pressed on the operation part of the teach pendant to operate functions will be enclosed in square brackets and displayed with a light background color.
+* 如果您按下`[Start]`键，机器人中创建的程序的自动操作将开始。
 
-* If you press the `[Start]` key, the automatic operation of the program created in the robot will start.
+### 交叉引用
 
+它提供了手册内相关信息的快捷方式。交叉引用将以双引号（" "）显示，如下所示。
 
+* 有关如何更改日期和时间信息的详细信息，请参阅"[4.5 设置日期和时间.](../4-service/5-date-time-setting.md)"。
 
-### Cross Reference 
+### 注意
 
-It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks (" ") as follows.
-
-* For details on how to change the date and time information, refer to "[4.5 Setting of Date and Time.](../4-service/5-date-time-setting.md)".
-
-### Note
-
-In this section are some helpful tips or additional information that could be useful when you use the product as follows.
+本节包含一些在使用产品时可能有用的提示或附加信息，如下所示。
 
 {% hint style="info" %}
-When the ![](../_assets/eng-mode.png)icon blinks in the status bar, it means that you are in engineer mode.
+当 ![](../_assets/eng-mode.png) 图标在状态栏中闪烁时，这意味着您处于工程师模式。
 {% endhint %}
-
 [__SOURCE](0-about-this-manual/safety-notice.md)
-# Safety Cautions
+# 安全注意事项
 
-Before using the product, you must read the following safety cautions for proper use, user safety, and prevention of property damage.
+在使用产品之前，您必须阅读以下安全注意事项，以确保正确使用、用户安全以及防止财产损失。
 
-### Danger
+### 危险
 
 {% hint style="danger" %}
-Imminent danger: Incompliance may cause the death of or serious injuries to the operator.
+紧急危险：不遵守可能导致操作员死亡或严重受伤。
 {% endhint %}
 
-* Read the contents of the product installation in the manual and follow the instructions when installing the robot product and other devices.
-* If a fatal error occurs in the software, stop using it immediately, and contact our customer support team.
-* If there is a problem with the product, such as failure or damage, stop using it immediately and contact the customer support team for inquiry.
+* 阅读手册中的产品安装内容，并遵照说明安装机器人产品和其他设备。
+* 如果软件出现致命错误，请立即停止使用并联系客户支持团队。
+* 如果产品出现故障或损坏，请立即停止使用，并联系客户支持团队进行咨询。
 
-
-
-### Warning
+### 警告
 
 {% hint style="warning" %}
-Potential danger: Incompliance may cause injuries to the operator or damage to property, such as significant damage to the product.
+潜在危险：不遵守可能导致操作员受伤或财产损失，例如对产品造成重大损害。
 {% endhint %}
 
-
-
-* The safety equipment to be used after being connected to the controller must be connected to the safety contact terminal or to the configurable digital I/O set, which is to be set as the safety I/O, in double signals. When the equipment is connected to common contact terminals or in a single signal, the regulated safety level cannot be satisfied.
-* Do not put your fingers or other body parts behind the controller's inner bracket. There is a risk of electric shock or injury.
+* 连接到控制器后的安全设备必须连接到安全接触端子或可配置数字I/O设置，并设置为安全I/O，采用双信号。当设备连接到普通接触端子或单信号时，无法满足规定的安全等级。
+* 不要将手指或其他身体部位放在控制器内支架后面。存在触电或受伤的风险。
 * 
-  If you are a robot application system manufacturer or a robot user, you should fully understand the contents of the manual and complete the product operation training.
+  如果您是机器人应用系统制造商或机器人用户，您应该充分理解手册内容并完成产品操作培训。
 
-* For the safety of workers and users, you must prepare appropriate safety facilities, such as safety fences, before installing the product.
-* Check the specification information and perform fastening by using appropriate fixing screws. Loosened screws may lead to separation of the robot, causing it to fall or suffer damage.
-* Be careful not to let conductive foreign substances, such as liquid, dust, or metal powder, enter the connection sections \(power and cables\). Moreover, do not poke the connection parts with a pointed object or apply excessive force to them when connecting them. Corrosion or temporary short-circuiting of the connection terminals may cause the product to explode or suffer a fire.
-* Check the wiring information and connect the devices using the appropriate terminals corresponding to the type of individual devices. In particular, if a safety device is connected to a general terminal, the safety function cannot be guaranteed, so you must connect it to the terminal designed for safety devices.
-* Never use a damaged cable and do not disconnect the power while the product is in use. It may cause electric shock, fire, failure, or injury.
+* 为了工人和用户的安全，您必须在安装产品之前准备适当的安全设施，例如安全围栏。
+* 检查规格信息并使用适当的固定螺钉进行紧固。松动的螺钉可能导致机器人分离，造成坠落或损坏。
+* 注意避免导电异物（如液体、灰尘或金属粉末）进入连接部位（电源和电缆）。此外，在连接时，不要用尖锐物体刺入连接部件，也不要对它们施加过大力量。连接端子的腐蚀或临时短路可能导致产品爆炸或起火。
+* 检查接线信息，并根据各个设备的类型使用适当的端子连接设备。特别是，如果安全设备连接到普通端子，则无法保证安全功能，因此必须连接到专为安全设备设计的端子。
+* 切勿使用损坏的电缆，也不要在产品使用时断开电源。可能导致触电、火灾、故障或受伤。
 * 
-  If the product is used for a long time, it may generate heat and cause injury, such as burns. If you need to touch the product, turn off the power and leave it for at least one hour to let it cool sufficiently before carrying out works.
+  如果长时间使用该产品，它可能会产生热量并造成诸如烧伤等伤害。如果您需要触摸产品，请关闭电源并放置至少一小时，以确保其充分冷却后再进行操作。
 
 * 
-  Use the teach pendant while paying attention to the movement of the robot.
+  使用教导手柄时，请注意机器人的运动。
 
-* If the teach pendant warns of a fatal error, stop the robot with the emergency stop switch immediately, identify the cause, and resolve the error. If the error cannot be resolved, please contact our customer support team for an inquiry.
-* Never install, modify, disassemble, or repair the product without our permission. It may cause a failure or an accident. In addition, we are not responsible for any damage to or breaking of the product if you do not follow the instructions.
+* 如果教导手柄警告出现致命错误，请立即用紧急停止开关停止机器人，找出原因并解决错误。如果无法解决错误，请联系客户支持团队进行咨询。
+* 未经我们许可，切勿安装、修改、拆解或修理产品。这可能导致故障或事故。此外，如果您不遵循说明，我们不对产品的任何损坏或破坏负责。
 
-
-
-### Caution
+### 注意
 
 {% hint style="warning" %}
-Low-level danger factor: Incompliance may result in minor injury to the operator or damage to property, such as damage to the product.
+低级危险因素：不遵守可能导致操作员轻微受伤或财产损失，例如产品损坏。
 {% endhint %}
 
-
-
-* Do not install, modify, disassemble, or repair the product arbitrarily as it is prohibited for anyone other than our experts to arbitrarily modify the product or attach parts. If the product fails because of such acts, our free service and warranty service will be forfeited.
-* A qualified installer should install the product in compliance with the related regulations and laws of the concerned country and region. When you want to install and repair the product, contact our customer support team, and ask an expert.
-* Do not install and use the product in a dusty or dirty place. Dust or foreign substances may cause failure or abnormal performance of the product.
-* Do not install and use the product in a place where magnetism exists or its influence reaches the product or there is electromagnetic interference. Magnetism may damage the product or cause abnormal performance.
-* When operating the product, do not wear loose clothing or jewelry, and if the hair is long, take precautions to tie it back so that the hair does not get caught in the joints of the robot.
-* Do not enter the operation range or touch the robot while the robot is in operation. Otherwise, there is a risk of injury.
-* Prevent the product from being damaged by transporting it in a packaged state and by storing it in a dry place with low humidity. Otherwise, the moisture inside the packaging material may cause the product to get damaged or to fail.
-* When it comes to storing the product, avoid places where temperature and humidity may change easily. Store the product in a clean, cool, and dry place.
-* When transporting the product, maintain proper posture, and two or more people should work together. Otherwise, you may suffer injury to parts of your body, including waist, arms, and legs.
-* If you use lifting equipment to transport the product, follow the safety regulations and equipment usage guidelines in the concerned country and region.
-* When transporting the product, fully understand the transportation-related contents of the manual and comply with the instructions. We are not responsible for any damage to or breaking of the product because of transportation by the customer.
-
-
-
-
-
-
+* 请勿自行安装、修改、拆解或修理产品，除非我们的专家。任何未经允许的修改或部件附加都被禁止。如果因为此类行为导致产品故障，我们的免费服务和保修服务将被取消。
+* 合格的安装人员应按照相关国家和地区的法规和法律安装产品。当您需要安装和修理产品时，请联系客户支持团队并请求专家协助。
+* 请勿在多尘或肮脏的地方安装和使用产品。灰尘或异物可能导致产品故障或异常性能。
+* 请勿在有磁性或其影响触及产品或存在电磁干扰的地方安装和使用产品。磁性可能损坏产品或造成异常性能。
+* 操作产品时，请勿穿宽松的衣物或珠宝，如果头发很长，请采取措施将其束起来，以免头发被机器人的关节卡住。
+* 在机器人操作时，请勿进入操作范围或触摸机器人。否则，可能会造成伤害。
+* 通过在包装状态下运输产品并将其存放在低湿度的干燥地方，防止产品受损。否则，包装材料内的湿气可能导致产品损坏或故障。
+* 存放产品时，避免温度和湿度易变化的地方。将产品存放在干净、凉爽和干燥的地方。
+* 在运输产品时，保持正确的姿势，并应由两人或多人共同操作。否则，您可能会造成身体部位（如腰部、手臂和腿部）的伤害。
+* 如果使用升降设备运输产品，请遵循相关国家和地区的安全规定和设备使用指南。
+* 运输产品时，全面了解手册中的运输相关内容并遵守指示。因为客户运输导致的产品损坏或破坏，我方不承担任何责任。
 [__SOURCE](1-robot-system/README.md)
-# 1. Robot System
-
-
+# 1. 机器人系统
 [__SOURCE](1-robot-system/1-basic-constitution/README.md)
-# 1.1 Basic Configuration
+# 1.1 基础配置
 
-Industrial robots are "machines that are equipped with manipulation and movement functions based on automatic control for them to perform various works by using programs at an industrial site." The collaborative robot is a type of industrial robot.
+工业机器人是“配备了基于自动控制的操作和移动功能的机器，以便它们能在工业现场通过使用程序执行各种工作”。协作机器人是一种工业机器人。
 
-The robot system consists of a manipulator and a controller that controls the manipulator. A teach pendant that is to be used for setting and manually operating the robot system is attached to the controller.
+机器人系统由一个执行器和一个控制器组成，控制器控制执行器。用于设置和手动操作机器人系统的示教器附加在控制器上。
 
-* Robot: Performs various works in industrial sites such as transporting objects, assembling parts, etc.
-* Controller: Adjusts the robot's operation according to the program setting values set through the teach pendant. It can be interoperated with various external equipment or devices through the input/output port of the controller. 
-* Teach Pendant: A device that manages the entire robot system. It enables you to teach the robot a specific posture or setup and control the programs.
+* 机器人：在工业现场执行各种工作，如运输物体、组装零件等。
+* 控制器：根据通过示教器设置的程序设定值调整机器人的操作。它可以通过控制器的输入/输出端口与各种外部设备或装置进行互操作。
+* 示教器：管理整个机器人系统的设备。它使您能够教导机器人特定的姿势或设置并控制程序。
 
-The following shows an example of the basic configuration of the robot system according to the robot type.
+以下展示了根据机器人类型的机器人系统的基本配置示例。
 
-![Figure 1 Basic Configuration of the LCD Robot System](../../_assets/image_286.png)
+![Figure 1 基础配置的LCD机器人系统](../../_assets/image_286.png)
 
-
-
-![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../_assets/image_285.png)
-
+![Figure 2 基础配置的垂直关节机器人系统](../../_assets/image_285.png)
 [__SOURCE](1-robot-system/1-basic-constitution/1-controller.md)
-# 1.1.1 Controller
+# 1.1.1 控制器
 
-#### Vertical Articulated Robot Controller 
+#### 垂直关节机器人控制器 
 
-![Figure 4 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_33.png)
+![图4 控制器的前面（左）/ 背面（右）](../../_assets/image_33.png)
 
-| No. | Name | Description |
+| No. | 名称 | 描述 |
 | :--- | :--- | :--- |
-| ![](../../_assets/c1.png)  | Connection part | A passage for connecting instruments and the teach pendant to the controller or for connecting application devices to internal modules |
-| ![](../../_assets/c2.png)  | Power switch | Turns on or off the power of the controller |
-| ![](../../_assets/c3.png)  | Hook for storing the TP | Used for hanging the teach pendant or storing it |
-| ![](../../_assets/c4.png)  | Emergency stop switch | Causes the robot to stop operating when pressed in case of an emergency |
-| ![](../../_assets/c5.png)  | Cooling fan | A device that forcibly discharges the heated air inside the controller |
-
-
+| ![](../../_assets/c1.png)  | 连接部分 | 用于将仪器和教学挂件连接到控制器或将应用设备连接到内部模块的通道 |
+| ![](../../_assets/c2.png)  | 电源开关 | 打开或关闭控制器的电源 |
+| ![](../../_assets/c3.png)  | 存放TP的挂钩 | 用于悬挂教学挂件或存放它 |
+| ![](../../_assets/c4.png)  | 紧急停止开关 | 在紧急情况下按下时导致机器人停止操作 |
+| ![](../../_assets/c5.png)  | 冷却风扇 | 强制排出控制器内部加热空气的设备 |
 [__SOURCE](1-robot-system/1-basic-constitution/2-teach-pendant.md)
+# 1.1.2 教学挂件
 
-# 1.1.2 Teach Pendant 
-
-This operation manual describes how to use a teach pendant based on the TP630 model. TP630 is a model developed exclusively for the ${cont_model} controller and provides a large touch screen.
+本操作手册描述了如何使用基于TP630型号的教学挂件。TP630是专为${cont_model}控制器开发的型号，提供了一个大触摸屏。
 
 ![](../../_assets/tp630/TP-hw.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">名称</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -198,67 +164,65 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
       <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Operation key</td>
-      <td style="text-align:left">Controls the robot's operation, inputs commands, or selects a menu</td>
+      <td style="text-align:left">操作键</td>
+      <td style="text-align:left">控制机器人的操作、输入命令或选择菜单</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Mode switch</td>
-      <td style="text-align:left">You can turn the mode switch to select
-  the operation mode (
-        <img src="../../_assets/sb-manual.png" alt/>manual/
-        <img src="../../_assets/sb-auto.png" alt/>automatic/
-        <img src="../../_assets/sb-remote.png" alt/>remote). If you remove the mode
-  switch from the teach pendant, the selected operation mode will be locked.</td>
+      <td style="text-align:left">模式切换开关</td>
+      <td style="text-align:left">你可以旋转模式切换开关选择
+  操作模式 (
+        <img src="../../_assets/sb-manual.png" alt/>手动/
+        <img src="../../_assets/sb-auto.png" alt/>自动/
+        <img src="../../_assets/sb-remote.png" alt/>遥控)。如果你将模式
+  切换开关从教学挂件上移除，所选的操作模式将被锁定。</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c3.png" alt/>
       </td>
-      <td style="text-align:left">Display</td>
-      <td style="text-align:left">The touch screen enables you to check and
-  change the operation status and set the information of the robot.</td>
+      <td style="text-align:left">显示屏</td>
+      <td style="text-align:left">触摸屏可让你检查和
+  更改操作状态以及设置机器人的信息。</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c4.png" alt/>
       </td>
-      <td style="text-align:left">Emergency stop switch</td>
-      <td style="text-align:left">Causes the robot to stop operating when
-  pressed in case of an emergency</td>
+      <td style="text-align:left">紧急停止开关</td>
+      <td style="text-align:left">在紧急情况下按下时会导致机器人停止操作</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c5.png" alt/>
       </td>
-      <td style="text-align:left">USB connection port</td>
-      <td style="text-align:left">Can be used to connect a device that can be accessed by USB communication such as a transportable storage device<br>
-      Please use the FAT32 format. Note that exFAT, NTFS formats are not supported.
+      <td style="text-align:left">USB连接端口</td>
+      <td style="text-align:left">可以用于连接可以通过USB通信访问的设备，例如可移动存储设备<br>
+      请使用FAT32格式。请注意不支持exFAT、NTFS格式。
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">Mounting bracket</td>
-      <td style="text-align:left">Holds or hangs the teach pendant to store it</td>
+      <td style="text-align:left">安装支架</td>
+      <td style="text-align:left">用来固定或悬挂教学挂件以便存放</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c7.png" alt/>
       </td>
-      <td style="text-align:left">Enabling switch</td>
+      <td style="text-align:left">启用开关</td>
       <td
       style="text-align:left">
-        <p>A switch that is to be used as a safety switch when
-  operating the robot with the teach pendant in manual mode</p>
+        <p>用于在手动模式下使用教学挂件操作机器人时作为安全开关的开关</p>
         <ul>
-          <li>Stage
-       1, Stage 3: The robot operation will stop. In the case of Stage 3, the
-       switch will recover to Stage 1 without going through Stage 2.</li>
-          <li>Stage 2: You can operate the robot.</li>
+          <li>阶段
+       1，阶段 3：机器人操作将停止。在第3阶段的情况下，开关将
+       直接恢复到第1阶段，而不经过第2阶段。</li>
+          <li>阶段 2：你可以操作机器人。</li>
         </ul>
         </td>
     </tr>
@@ -266,29 +230,29 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
       <td style="text-align:left">
         <img src="../../_assets/c8.png" alt/>
       </td>
-      <td style="text-align:left">Cable connection connector</td>
+      <td style="text-align:left">电缆连接连接器</td>
       <td
-      style="text-align:left">A connector for connecting the cable to the controller</td>
+      style="text-align:left">用于将电缆连接到控制器的连接器</td>
     </tr>
   </tbody>
 </table>
 
 <br>
 
-#### Operation Keys </span></p>
+#### 操作键 </span></p>
 
 <table class=MsoNormalTable border=0 cellpadding=0 style='mso-cellspacing:1.5pt;
  mso-yfti-tbllook:1184'>
  <thead>
   <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
    <td style='padding:.75pt .75pt .75pt .75pt'>
-   <p class=MsoNormal><b><span lang=EN-US>Operation Key<o:p></o:p></span></b></p>
+   <p class=MsoNormal><b><span lang=EN-US>操作键<o:p></o:p></span></b></p>
    </td>
    <td style='padding:.75pt .75pt .75pt .75pt'>
-   <p class=MsoNormal><b><span lang=EN-US>Name<o:p></o:p></span></b></p>
+   <p class=MsoNormal><b><span lang=EN-US>名称<o:p></o:p></span></b></p>
    </td>
    <td style='padding:.75pt .75pt .75pt .75pt'>
-   <p class=MsoNormal><b><span lang=EN-US>Description<o:p></o:p></span></b></p>
+   <p class=MsoNormal><b><span lang=EN-US>描述<o:p></o:p></span></b></p>
    </td>
   </tr>
  </thead>
@@ -301,22 +265,15 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   <p class=MsoNormal><span lang=EN-US>SHIFT</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>You must use this button when you want to execute the
-  function displayed on the top part of the key (blue-green). </span></p>
+  <p><span lang=EN-US>当你想执行显示在按键顶部的功能（蓝绿色）时，必须使用此按钮。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>When
-       this key is pressed together while operating the [Fast step forward/
-       backward] functions, the step forward/ backward can be activated in high
-       speeds</span></li>
+       auto;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>当按下此键与[快速向前/
+       向后]功能一起操作时，可以以高速激活向前/ 向后步骤</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>When
-       editing a string from the input display window, you can move the cursor
-       by pressing the button with the `[←/→]` key. </span></li>
+       auto;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>在 输入显示窗口编辑字符串时，你可以通过按带有`[←/→]`键的按钮移动光标。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>From
-       the task edit window, you can move the cursor by each screen by pressing
-       the button with the `[↑/↓]` key. </span></li>
+       auto;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt'><span lang=EN-US>在任务编辑窗口中，你可以通过按带有`[↑/↓]`键的按钮按每个屏幕移动光标。</span></li>
   </ul>
   </td>
  </tr>
@@ -329,8 +286,7 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   <p class=MsoNormal><span lang=EN-US>CTRL</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>Specific functions can be executed only
-  with `[CTRL]` key.</span></p>
+  <p class=MsoNormal><span lang=EN-US>特定功能只能通过`[CTRL]`键执行。</span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:3'>
@@ -340,19 +296,16 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   src="../../_assets/tp630/k-bwd-fwd_eng.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>STEP FWD/BWD</span></p>
+  <p class=MsoNormal><span lang=EN-US>步进前/后</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used when going forward or backward step by step from
-  Manual mode. </span></p>
+  <p><span lang=EN-US>在手动模式下逐步向前或向后使用。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l5 level1 lfo3;tab-stops:list 36.0pt'><span lang=EN-US>See
-       the `[cond.set] - Step fwd/bwd max. speed` for the detailed description.</span></li>
+       auto;mso-list:l5 level1 lfo3;tab-stops:list 36.0pt'><span lang=EN-US>查看`[cond.set] - 步进前/后最大速度`以获取详细描述。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l5 level1 lfo3;tab-stops:list 36.0pt'><span lang=EN-US>When
-       this key is pressed together with `[SHIFT]`, fast step
-       forward/ backward functions can be activated.</span></li>
+       auto;mso-list:l5 level1 lfo3;tab-stops:list 36.0pt'><span lang=EN-US>当按下此键与`[SHIFT]`时，可以激活快速步进
+       向前/ 向后功能。</span></li>
   </ul>
   </td>
  </tr>
@@ -365,12 +318,10 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   <p class=MsoNormal><span lang=EN-US>ESC</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used to cancel key inputs or various functions in
-  process. </span></p>
+  <p><span lang=EN-US>用于取消按键输入或各种正在进行的功能。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l11 level1 lfo4;tab-stops:list 36.0pt'><span lang=EN-US>This
-       key has also function to return to the upper level without saving.</span></li>
+       auto;mso-list:l11 level1 lfo4;tab-stops:list 36.0pt'><span lang=EN-US>此键还具有返回上一级而不保存的功能。</span></li>
   </ul>
   </td>
  </tr>
@@ -381,18 +332,16 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   src="../../_assets/tp630/k-axes_eng.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>Axis Operation</span></p>
+  <p class=MsoNormal><span lang=EN-US>轴操作</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for robot operations according to a coordinate
-  system. </span></p>
+  <p><span lang=EN-US>根据坐标系统用于机器人操作。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l12 level1 lfo5;tab-stops:list 36.0pt'><span lang=EN-US>Each
-       axis moves in the joint coordinate system.</span></li>
+       auto;mso-list:l12 level1 lfo5;tab-stops:list 36.0pt'><span lang=EN-US>每个
+       轴在关节坐标系统中移动。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l12 level1 lfo5;tab-stops:list 36.0pt'><span lang=EN-US>A
-       robot moves in rectangular directions in the robot coordinate system.</span></li>
+       auto;mso-list:l12 level1 lfo5;tab-stops:list 36.0pt'><span lang=EN-US>机器人在机器人坐标系统中以矩形方向移动。</span></li>
   </ul>
   </td>
  </tr>
@@ -403,17 +352,17 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   src="../../_assets/tp630/k-direction_eng.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>Direction</span></p>
+  <p class=MsoNormal><span lang=EN-US>方向</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for moving the cursor on the TP panel. </span></p>
+  <p><span lang=EN-US>用于在TP面板上移动光标。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><span lang=EN-US>`[↑/↓]`
-       keys move steps and functions.</span></li>
+       键移动步骤和功能。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l1 level1 lfo6;tab-stops:list 36.0pt'><span lang=EN-US>`[←/→]`
-       keys move parameters of recorded steps or functions.</span></li>
+       键移动录制步骤或功能的参数。</span></li>
   </ul>
   </td>
  </tr>
@@ -423,22 +372,18 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   width=53 height=56 id="_x0000_i1036" src="../../_assets/tp630/k-r.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>R-code</span></p>
+  <p class=MsoNormal><span lang=EN-US>R-代码</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for a quick execution of a registered function. </span></p>
+  <p><span lang=EN-US>用于快速执行已注册的功能。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>Pressing
-       R-code key leads to a pop-up window for inputting a code number. For
-       more information, refer to &quot;8. R Codes&quot;.</span></li>
+       auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>按下
+       R-代码键会弹出一个输入代码编号的窗口。更多信息，请参阅“8. R代码”。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>R-code
-       key followed by `[ENTER]` without a code number is the same
-       as "R0 : Step counter reset".</span></li>
+       auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>没有代码编号的R-代码键后跟`[ENTER]`与“R0 : 步数计数器重置”相同。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>In
-       a yes-no question, pressing R-code means the negative answer.</span></li>
+       auto;mso-list:l14 level1 lfo7;tab-stops:list 36.0pt'><span lang=EN-US>在是非问题中，按下R-代码表示否定答案。</span></li>
   </ul>
   </td>
  </tr>
@@ -448,23 +393,17 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   width=51 height=51 id="_x0000_i1035" src="../../_assets/tp630/k-enter.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>Enter</span></p>
+  <p class=MsoNormal><span lang=EN-US>输入</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for the reflection of input data. </span></p>
+  <p><span lang=EN-US>用于反映输入数据。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l6 level1 lfo8;tab-stops:list 36.0pt'><span lang=EN-US>Contents
-       of Input frame is reflected on Edit frame if using this key for
-       completing number input. </span></li>
+       auto;mso-list:l6 level1 lfo8;tab-stops:list 36.0pt'><span lang=EN-US>如果使用此键完成数字输入，则输入框的内容会反映在编辑框上。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l6 level1 lfo8;tab-stops:list 36.0pt'><span lang=EN-US>This
-       key can be also used when selecting permit (Yes) for response of
-       Permit/Refuse (Yes/No).</span></li>
+       auto;mso-list:l6 level1 lfo8;tab-stops:list 36.0pt'><span lang=EN-US>当选择许可（是）作为许可/拒绝（是/否）的响应时，此键也可以使用。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l6 level1 lfo8;tab-stops:list 36.0pt'><span lang=EN-US>When
-       you press this key from the sentence cursor, it will switch to the word
-       cursor, with which the parameter can be edited. </span></li>
+       auto;mso-list:l6 level1 lfo8;tab-stops:list 36.0pt'><span lang=EN-US>当你按下此键时，句子光标会切换到单词光标，可以编辑参数。</span></li>
   </ul>
   </td>
  </tr>
@@ -474,18 +413,15 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   width=101 height=48 id="_x0000_i1034" src="../../_assets/tp630/k-motor-on.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>Motor ON</span></p>
+  <p class=MsoNormal><span lang=EN-US>电机开启</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used to supply Servo power to the motor in each axis of
-  Robot.</span></p>
+  <p><span lang=EN-US>用于为每个轴的电机提供伺服电源。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l4 level1 lfo9;tab-stops:list 36.0pt'><span lang=EN-US>The
-       [MOTOR ON] lamp flickers in Manual mode.</span></li>
+       auto;mso-list:l4 level1 lfo9;tab-stops:list 36.0pt'><span lang=EN-US>[MOTOR ON]灯在手动模式下闪烁。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l4 level1 lfo9;tab-stops:list 36.0pt'><span lang=EN-US>The
-       [MOTOR ON] lamp turns on in AUTO mode.</span></li>
+       auto;mso-list:l4 level1 lfo9;tab-stops:list 36.0pt'><span lang=EN-US>[MOTOR ON]灯在自动模式下点亮。</span></li>
   </ul>
   </td>
  </tr>
@@ -495,19 +431,15 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   width=102 height=48 id="_x0000_i1033" src="../../_assets/tp630/k-start.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>START</span></p>
+  <p class=MsoNormal><span lang=EN-US>开始</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used to automatically play a job program.</span></p>
+  <p><span lang=EN-US>用于自动播放作业程序。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l15 level1 lfo10;tab-stops:list 36.0pt'><span lang=EN-US>Under
-       the condition that the mode switch lies in AUTO, and the motor is ON, <START>key
-       plays the job program automatically.</span></li>
+       auto;mso-list:l15 level1 lfo10;tab-stops:list 36.0pt'><span lang=EN-US>在模式切换在AUTO条件下，且电机打开的情况下，<START>键将自动播放作业程序。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l15 level1 lfo10;tab-stops:list 36.0pt'><span lang=EN-US>If
-       AUTO operation of Robot is started, the [START] lamp turns on and the
-       [STOP] lamp turns off.</span></li>
+       auto;mso-list:l15 level1 lfo10;tab-stops:list 36.0pt'><span lang=EN-US>如果机器人的自动操作启动，[START]灯亮起，[STOP]灯熄灭。</span></li>
   </ul>
   </td>
  </tr>
@@ -517,19 +449,15 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   width=103 height=46 id="_x0000_i1032" src="../../_assets/tp630/k-stop.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>STOP</span></p>
+  <p class=MsoNormal><span lang=EN-US>停止</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used to temporarily stop the robot during AUTO operation.
-  </span></p>
+  <p><span lang=EN-US>用于在自动操作期间暂时停止机器人。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l2 level1 lfo11;tab-stops:list 36.0pt'><span lang=EN-US>If
-       Robot stop, the [STOP] lamp turns on and the [START] lamp turns off. </span></li>
+       auto;mso-list:l2 level1 lfo11;tab-stops:list 36.0pt'><span lang=EN-US>如果机器人停止，[STOP]灯亮起，[START]灯熄灭。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l2 level1 lfo11;tab-stops:list 36.0pt'><span lang=EN-US>When
-       the robot stops, there is no risk of colliding with other devices
-       because it stops on the originally planned path.</span></li>
+       auto;mso-list:l2 level1 lfo11;tab-stops:list 36.0pt'><span lang=EN-US>当机器人停止时，不会有与其他设备碰撞的风险，因为它停留在原定路径上。</span></li>
   </ul>
   </td>
  </tr>
@@ -540,20 +468,15 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   src="../../_assets/tp630/k-previous_eng.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>History</span></p>
+  <p class=MsoNormal><span lang=EN-US>历史</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for checking previous working history.</span></p>
+  <p><span lang=EN-US>用于查看之前的工作历史。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l17 level1 lfo12;tab-stops:list 36.0pt'><span lang=EN-US>This
-       displays the History message box that records the execution history,
-       error history, message history etc. of task command</span></li>
+       auto;mso-list:l17 level1 lfo12;tab-stops:list 36.0pt'><span lang=EN-US>这会显示记录执行历史、错误历史、信息历史等任务命令的历史消息框。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l17 level1 lfo12;tab-stops:list 36.0pt'><span lang=EN-US>When
-       you press this once, it shows the output history of the main board and
-       when you press it again, it shows the output history of the teach
-       pendant.</span></li>
+       auto;mso-list:l17 level1 lfo12;tab-stops:list 36.0pt'><span lang=EN-US>当你按一次时，它显示主板的输出历史，再按一次时，显示教学挂件的输出历史。</span></li>
   </ul>
   </td>
  </tr>
@@ -563,25 +486,17 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   width=53 height=52 id="_x0000_i1030" src="../../_assets/tp630/k-gun.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>GUN</span></p>
+  <p class=MsoNormal><span lang=EN-US>枪</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for Spot and Arc welding applications, and the LED
-  shows on-off status.</span></p>
+  <p><span lang=EN-US>用于点焊和弧焊应用，LED显示开关状态。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l13 level1 lfo13;tab-stops:list 36.0pt'><span lang=EN-US>When
-       you press this button with the [SHIFT (FAST)] key, GUN1 signal will be
-       outputted manually.</span></li>
+       auto;mso-list:l13 level1 lfo13;tab-stops:list 36.0pt'><span lang=EN-US>当你按下这个按钮与[SHIFT (FAST)]键时，GUN1信号将手动输出。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l13 level1 lfo13;tab-stops:list 36.0pt'><span lang=EN-US>In
-       the case of a spot welding, when you press with the `[REC]`
-       key, SPOT command follows MOVE automatically.</span></li>
+       auto;mso-list:l13 level1 lfo13;tab-stops:list 36.0pt'><span lang=EN-US>在点焊的情况下，当你按下`[REC]`键时，SPOT命令会自动跟随MOVE。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l13 level1 lfo13;tab-stops:list 36.0pt'><span lang=EN-US>When
-       this LED is turned on during automatic operation using the arc welding,
-       the robot will actually execute the arc welding. When this LED is turned
-       off, it will not execute arc welding and just check the taught trace.</span></li>
+       auto;mso-list:l13 level1 lfo13;tab-stops:list 36.0pt'><span lang=EN-US>当这个LED在使用弧焊的自动操作中点亮时，机器人将实际执行弧焊。当这个LED熄灭时，不会执行弧焊，只会检查教导的轨迹。</span></li>
   </ul>
   </td>
  </tr>
@@ -592,19 +507,15 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   src="../../_assets/tp630/k-crdsys_eng.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>TOOL / COORD</span></p>
+  <p class=MsoNormal><span lang=EN-US>工具 / 坐标</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for selecting a reference coordinate system.</span></p>
+  <p><span lang=EN-US>用于选择参考坐标系。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l16 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>You
-       can select a coordinate system (axis, Cartesian, tool) to move the robot
-       when pressing the axis operation key. </span></li>
+       auto;mso-list:l16 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>按下轴操作键时，可以选择坐标系（轴、笛卡尔、工具）以移动机器人。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l16 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>When
-       you press with the `[SHIFT]` key, the message box to select
-       the tool number will open.</span></li>
+       auto;mso-list:l16 level1 lfo14;tab-stops:list 36.0pt'><span lang=EN-US>当按下`[SHIFT]`键时，将打开选择工具编号的消息框。</span></li>
   </ul>
   </td>
  </tr>
@@ -615,22 +526,17 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   src="../../_assets/tp630/k-record_eng.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>POS.MOD / REC</span></p>
+  <p class=MsoNormal><span lang=EN-US>位置模式 / 记录</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used when recording steps in program, namely when adding
-  MOVE command.</span></p>
+  <p><span lang=EN-US>用于在程序中记录步骤，即添加MOVE命令时。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l9 level1 lfo15;tab-stops:list 36.0pt'><span lang=EN-US>MOVE
-       command inserted by this key is consisted of a hidden pose.</span></li>
+       auto;mso-list:l9 level1 lfo15;tab-stops:list 36.0pt'><span lang=EN-US>通过此键插入的MOVE命令包含隐藏姿态。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l9 level1 lfo15;tab-stops:list 36.0pt'><span lang=EN-US>You
-       can insert the next step when the cursor is placed at a step</span></li>
+       auto;mso-list:l9 level1 lfo15;tab-stops:list 36.0pt'><span lang=EN-US>当光标在某个步骤上时，可以插入下一步。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l9 level1 lfo15;tab-stops:list 36.0pt'><span lang=EN-US>It
-       is possible to modify a selected step position by pressing with the `[SHIFT]`
-       key. </span></li>
+       auto;mso-list:l9 level1 lfo15;tab-stops:list 36.0pt'><span lang=EN-US>可以通过按`[SHIFT]`键修改所选步骤位置。</span></li>
   </ul>
   </td>
  </tr>
@@ -641,17 +547,15 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   src="../../_assets/tp630/k-prog-step_eng.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>PROG / STEP</span></p>
+  <p class=MsoNormal><span lang=EN-US>程序 / 步骤</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for selecting steps.</span></p>
+  <p><span lang=EN-US>用于选择步骤。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l8 level1 lfo16;tab-stops:list 36.0pt'><span lang=EN-US>With
-       `[SHIFT]` key, this key makes a job program window pop up. </span></li>
+       auto;mso-list:l8 level1 lfo16;tab-stops:list 36.0pt'><span lang=EN-US>使用`[SHIFT]`键时，此键会弹出作业程序窗口。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l8 level1 lfo16;tab-stops:list 36.0pt'><span lang=EN-US>When
-       you press the [PROG] key twice, the program list is displayed.</span></li>
+       auto;mso-list:l8 level1 lfo16;tab-stops:list 36.0pt'><span lang=EN-US>当你按两次[PROG]键时，程序列表将显示。</span></li>
   </ul>
   </td>
  </tr>
@@ -662,20 +566,15 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   src="../../_assets/tp630/k-unit-mech_eng.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span lang=EN-US>MECH</span></p>
+  <p class=MsoNormal><span lang=EN-US>机制</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for selecting the mechanism and unit.</span></p>
+  <p><span lang=EN-US>用于选择机制和单元。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l7 level1 lfo17;tab-stops:list 36.0pt'><span lang=EN-US>For
-       the mechanism, the robot is 0 and for additional axis, it follows the
-       setting set by the user in the initial setting menu. </span></li>
+       auto;mso-list:l7 level1 lfo17;tab-stops:list 36.0pt'><span lang=EN-US>对于机制，机器人是0，对于附加轴，它遵循用户在初始设置菜单中设置的设置。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l7 level1 lfo17;tab-stops:list 36.0pt'><span lang=EN-US>When
-       you press this button with the SHIFT key, you can use this button for
-       the unit. Unit is used when the user wants to configure the program in
-       specific combination of units.</span></li>
+       auto;mso-list:l7 level1 lfo17;tab-stops:list 36.0pt'><span lang=EN-US>当按下此按钮与SHIFT键时，你可以将此按钮用于单元。在用户想要配置程序时，单元用于特定单位的组合。</span></li>
   </ul>
   </td>
  </tr>
@@ -686,81 +585,74 @@ This operation manual describes how to use a teach pendant based on the TP630 mo
   src="../../_assets/tp630/k-number_eng.png"></span></span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Number key</span></p>
+  <p><span lang=EN-US>数字键</span></p>
   </td>
   <td style='padding:.75pt .75pt .75pt .75pt'>
-  <p><span lang=EN-US>Used for inputting numbers or deleting.</span></p>
+  <p><span lang=EN-US>用于输入数字或删除。</span></p>
   <ul type=disc>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-       auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>With
-       `[SHIFT]` key, you can enter the '+' and '-' signs or delete
-       a command sentence or a parameter.</span></li>
+       auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>使用`[SHIFT]`键，你可以输入'+'和'-'符号或删除
+       一条命令句子或参数。</span></li>
    <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
        auto;mso-list:l0 level1 lfo18;tab-stops:list 36.0pt'><span lang=EN-US>`[BS]`
-       key deletes character by character backward. (Backspace). Also, when
-       editing command sentence, all parameter values are deleted. </span></li>
+       键逐个字符向后删除。（退格键）。此外，当编辑命令句子时，所有参数值都被删除。</span></li>
   </ul>
   </td>
  </tr>
 </table>
 
-
 [__SOURCE](1-robot-system/2-basic-usage/README.md)
-# 1.2    Basic Use
-
-
+# 1.2    基本使用
 [__SOURCE](1-robot-system/2-basic-usage/1-power-on/README.md)
-# 1.2.1 Turning On the Power
+# 1.2.1 开启电源
 
 {% hint style="info" %}
-The method of turning on and off the power may differ depending on the type of controller.
+开启和关闭电源的方法可能会根据控制器的类型而有所不同。
 {% endhint %}
 
-#### Vertical Articulated Robot Controller
+#### 直立关节机器人控制器
 
-To start up the robot, power should be supplied to the robot controller. 
+要启动机器人，必须为机器人控制器供电。
 
-Turn the power switch on the left side of the robot controller to the ON direction to connect the main power of the controller. When the power is connected, the robot system will boot, and the display of the teach pendant will be turned on together with all the devices.
+将机器人控制器左侧的电源开关转向ON方向，以连接控制器的主电源。 当电源连接后，机器人系统将启动，教学挂件的显示屏将与所有设备一起开启。
 
 ![](../../../_assets/image_12.png)
-
-
 [__SOURCE](1-robot-system/2-basic-usage/1-power-on/1-input-of-the-power-to-the-mot.md)
-# 1.2.1.1 Input of the Power to the Motor and the Operable Status
+# 1.2.1.1 输入电源到电机和可操作状态
 
-The status of the mode switch and safety plug of the teach pendant determines the input of power to the motor and the operable status.
+教导 pendant 的模式开关和安全插头的状态决定电源输入到电机和可操作状态。
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Safety Plug</th>
-      <th style="text-align:left">Mode Switch: Manual</th>
-      <th style="text-align:left">Mode Switch: Automatic</th>
+      <th style="text-align:left">安全插头</th>
+      <th style="text-align:left">模式开关：手动</th>
+      <th style="text-align:left">模式开关：自动</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">Released</td>
+      <td style="text-align:left">释放</td>
       <td style="text-align:left">
         <ul>
-          <li>Motor ON enabled</li>
-          <li>Step Forward/Backward enabled</li>
+          <li>电机开启启用</li>
+          <li>向前/向后步进启用</li>
         </ul>
       </td>
-      <td style="text-align:left">Emergency (Motor Off)</td>
+      <td style="text-align:left">紧急（电机关闭）</td>
     </tr>
     <tr>
-      <td style="text-align:left">Inputted</td>
+      <td style="text-align:left">接入</td>
       <td style="text-align:left">
         <ul>
-          <li>Motor ON enabled</li>
-          <li>Step Forward/Backward enabled</li>
+          <li>电机开启启用</li>
+          <li>向前/向后步进启用</li>
         </ul>
       </td>
       <td style="text-align:left">
         <ul>
-          <li>Motor ON enabled</li>
-          <li>Operation at normal speed</li>
+          <li>电机开启启用</li>
+          <li>正常速度操作</li>
         </ul>
       </td>
     </tr>
@@ -768,110 +660,102 @@ The status of the mode switch and safety plug of the teach pendant determines th
 </table>
 
 {% hint style="info" %}
-Safety plugs are used for general industrial robots, whereas a light curtain instead of a safety plug is used for LCD robots.
+安全插头用于一般工业机器人，而LCD机器人则使用光幕代替安全插头。
 {% endhint %}
-
-
 [__SOURCE](1-robot-system/2-basic-usage/2-power-off.md)
-# 1.2.2 Turning Off the Power
+# 1.2.2 关闭电源
 
-It refers to all operations of stopping the robot and turning off the power button of the controller after performing all works.
+它指的是在完成所有工作后停止机器人并关闭控制器的电源按钮的所有操作。
 
 {% hint style="warning" %}
-* If the robot will not be in use for a long time, the encoder battery may be discharged, so move the robot to the reference position and then turn off the power.
+* 如果机器人长时间不使用，编码器电池可能会放电，因此请将机器人移动到参考位置，然后关闭电源。
 
-* Be careful as the encoder data may be destroyed if the power is turned off while the encoder battery has a voltage drop alarm. 
+* 请小心，如果在编码器电池有电压下降警报时关闭电源，编码器数据可能会被破坏。 
 {% endhint %}
 
-#### Vertical Articulated Robot Controller
+#### 垂直关节机器人控制器
 
-1.	Press the `[Stop]` key on the teach pendant. Then, the robot in operation will stop, and the stop lamp will be turned on.
+1.	按下教学挂件上的 `[Stop]` 键。然后，正在操作的机器人将停止，停止灯将亮起。
 
-2.	Press the emergency stop switch on the teach pendant. Then, the servo power to the robot motor will be cut off, and then the motor will be turned off.
+2.	按下教学挂件上的紧急停止开关。然后，机器人电机的伺服电源将被切断，然后电机将关闭。
 
 ![](../../_assets/image_36.png)
 
-
-
-3.	Turn the power switch on the left side of the robot controller to the OFF direction. Then, the robot system will be powered off.
+3.	将机器人控制器左侧的电源开关拨向 OFF 方向。然后，机器人系统将断电。
 
 ![](../../_assets/image_29.png)
-
 [__SOURCE](1-robot-system/2-basic-usage/3-change-language-of-tp.md)
-# 1.2.3 Changing the language of the teach pendant screen
+# 1.2.3 更改教导挂件屏幕的语言
 
-If you need to change the language of the teach pendant, you can change it with the following procedure. The following is an example of changing English to Korean mode.
+如果您需要更改教导挂件的语言，可以使用以下步骤进行更改。以下是将英语更改为韩语模式的示例。
 
-### A. Change via Teach Pendant Options (Supported in V70.00-00 and above only)
+### A. 通过教导挂件选项更改（仅在 V70.00-00 及以上版本中支持）
 
-1.	Click `[F1: service]` button.
+1. 单击 `[F1: 服务] ([F1: service])` 按钮。
 
     ![](../../_assets/tp630/service/fb-service.png)
 
-2.	Enter `11: Teach Pendant Options`.
+2. 输入 `11: 教导挂件选项`。
 
     ![](../../_assets/tp630/service/menu-tp-option.png)
 
-3. Select `Korean` from the Language settings.
+3. 从语言设置中选择 `韩语`。
 
     ![](../../_assets/tp630/service/tp-option-lang.png)
 
-4. Press the `[ESC]` key to return to the top-level HOME screen, then wait a moment.
+4. 按 `[ESC]` 键返回到顶层 HOME 屏幕，然后稍等片刻。
 
 <br>
 
-### B. Change After Closing the Teach Pendant Software
+### B. 在关闭教导挂件软件后更改
 
-1. Click the `[F1: service]` button.
+1. 单击 `[F1: 服务] ([F1: service])` 按钮。
 
    ![](../../_assets/tp630/service/fb-service.png)
 
-2. Select 9: Exit TP Application.
+2. 选择 9: 退出 TP 应用程序。
 
     ![](../../_assets/tp630/service/exit-application.png)
 
-3. Click the language combo box at the bottom left.
+3. 单击左下角的语言组合框。
 
     ![](../../_assets/tp630/service/autorun-sub-lang.png)
 
     {% hint style="info" %}
 
-    For versions below V60.32-00, click the globe icon at the top right.
+    对于 V60.32-00 以下版本，请单击右上角的地球图标。
 
     ![](../../_assets/tp630/service/autorun-sub-lang-old.png)
 
     {% endhint %}
 
-4.	Select `English` from the pop-up menu.
+4. 从弹出菜单中选择 `英语`。
 
-5.	Click the `[run TP]` button at the bottom right and wait for about 15 seconds.
-
+5. 单击右下角的 `[run TP]` 按钮，等待大约 15 秒。
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/README.md)
-# 1.2.4 Screen of the ${cont_model} Teach Pendant
+# 1.2.4 ${cont_model} 教学挂件的屏幕
 
-Following figure represents the screen displayed on teach pendant. Teach pendant screen of ${cont_model} controller is composed of 10 screen windows of color touch screens.
+下图表示教学挂件上显示的屏幕。${cont_model} 控制器的教学挂件屏幕由 10 个彩色触摸屏窗口组成。
 <br>
 
 ![](../../../_assets/tp630/TP-main_eng.png)
 
 | No. | Description | 
 | :--- | :--- | 
-| ![](../../../_assets/c1.png) | Title display window : various status icons of TP communication, robot system, mechanism, etc. ([1.2.3.1 Title display window](1-title-area.md)) |
-| ![](../../../_assets/c2.png) | Status display window: a operating mode and settings ([1.2.3.2 Status display window](2-status-bar.md)) |
-| ![](../../../_assets/c3.png) | R button bar : the menu group of the right side on the main screen  ([1.2.3.3 R button bar](3-Rbt-bar.md)) |
-| ![](../../../_assets/c4.png) | Monitor window : running data during operations  ([1.2.3.4 Monitor window](4-mon-area.md)) |
-| ![](../../../_assets/c5.png) | Function button bar : the menu group of the bottom side on the main screen, which supports main settings and monitoring  ([1.2.3.5 Function button bar](5-function-buttons.md)) |
-| ![](../../../_assets/c6.png) | Input display window : direct typing area for the task edit window ([1.2.3.6 Input display window](6-input-area.md)) |
-| ![](../../../_assets/c7.png) | Guide display window : guide messages during operations  ([1.2.3.7 Guide display window](7-guide-area.md)) |
-| ![](../../../_assets/c8.png) | Task edit window : the area for editing JOB programs  ([1.2.3.8 Task edit window](8-work-area.md)) |
-| ![](../../../_assets/c9.png) | Record condition display window : the  conditions of recording steps  ([1.2.3.9 Record condition display window](9-record-cnd-area.md)) |
-| ![](../../../_assets/c10.png) | L button bar  : the menu group of the left side on the main screen  ([1.2.3.10 L button bar](10-Lbt-bar.md)) |
-
-
+| ![](../../../_assets/c1.png) | 标题显示窗口：TP 通信、机器人系统、机械等的各种状态图标。 ([1.2.3.1 标题显示窗口](1-title-area.md)) |
+| ![](../../../_assets/c2.png) | 状态显示窗口：操作模式和设置 ([1.2.3.2 状态显示窗口](2-status-bar.md)) |
+| ![](../../../_assets/c3.png) | R 按钮栏：主屏幕右侧的菜单组 ([1.2.3.3 R 按钮栏](3-Rbt-bar.md)) |
+| ![](../../../_assets/c4.png) | 监视窗口：操作期间的运行数据 ([1.2.3.4 监视窗口](4-mon-area.md)) |
+| ![](../../../_assets/c5.png) | 功能按钮栏：主屏幕底部的菜单组，支持主要设置和监控 ([1.2.3.5 功能按钮栏](5-function-buttons.md)) |
+| ![](../../../_assets/c6.png) | 输入显示窗口：任务编辑窗口的直接输入区域 ([1.2.3.6 输入显示窗口](6-input-area.md)) |
+| ![](../../../_assets/c7.png) | 引导显示窗口：操作期间的引导信息 ([1.2.3.7 引导显示窗口](7-guide-area.md)) |
+| ![](../../../_assets/c8.png) | 任务编辑窗口：编辑 JOB 程序的区域 ([1.2.3.8 任务编辑窗口](8-work-area.md)) |
+| ![](../../../_assets/c9.png) | 记录条件显示窗口：记录步骤的条件 ([1.2.3.9 记录条件显示窗口](9-record-cnd-area.md)) |
+| ![](../../../_assets/c10.png) | L 按钮栏：主屏幕左侧的菜单组 ([1.2.3.10 L 按钮栏](10-Lbt-bar.md)) |
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/1-title-area.md)
-# 1.2.4.1	Title display window
+# 1.2.4.1	标题显示窗口
 
-This window shows the status of the robot system at the top side of the main screen.
+此窗口在主屏幕的顶部显示机器人系统的状态。
 
 <br>
 
@@ -879,53 +763,47 @@ This window shows the status of the robot system at the top side of the main scr
 ![](../../../_assets/tp630/TP-main-title.png)
 
 
-| No. | Description | 
+| No. | 描述 | 
 | :--- | :--- | 
-| ![](../../../_assets/c1.png) | Displays network status. (![](../../../_assets/flag-comm-ok.png) : Connected, ![](../../../_assets/flag-comm-ng.png) : Not Connected)|
-| ![](../../../_assets/c2.png) | Displays an icon when a USB memory device is inserted. |
-| ![](../../../_assets/c3.png) | Displays Continuous Path (CONTPATH) mode. (CP# : CP(Continuous Path)+Mode Number) <br> (Reference: [R360](../../../8-r-code/15-r360.md?cont_model=${cont_model})) |
-| ![](../../../_assets/c4.png) | Displays the current status for each application function. (SW : Welding Record Status, PBk : Painting Section) |
-| ![](../../../_assets/c5.png) | Displays positioner synchronization status. (M:S{Station Number}) |
-| ![](../../../_assets/c6.png) | Displays cooperative control status. (I:Independent, M:Master Designated, S:Slave Designated) |
-| ![](../../../_assets/c7.png) | Displays axis control status. (Shows j_{axis number} if off) |
-| ![](../../../_assets/c8.png) | Displays axis lock status. |
-| ![](../../../_assets/c9.png) | Displays encoder battery error status. (Blinks when error occurs) |
-| ![](../../../_assets/c10.png) | Displays reducer lifespan error status. (Shows and blinks axis number when error occurs) |
-| ![](../../../_assets/c11.png) | Displays user level. (E : Engineer Mode) <br> (Reference: [R314](../../../8-r-code/12-r314.md?cont_model=${cont_model})) |
-| ![](../../../_assets/c12.png) | Displays PLC operation status. |
-
+| ![](../../../_assets/c1.png) | 显示网络状态。 (![](../../../_assets/flag-comm-ok.png) : 已连接, ![](../../../_assets/flag-comm-ng.png) : 未连接)|
+| ![](../../../_assets/c2.png) | 在插入USB存储设备时显示图标。 |
+| ![](../../../_assets/c3.png) | 显示连续路径（CONTPATH）模式。 (CP# : CP(连续路径)+模式编号) <br> (参考: [R360](../../../8-r-code/15-r360.md?cont_model=${cont_model})) |
+| ![](../../../_assets/c4.png) | 显示每个应用功能的当前状态。 (SW : 焊接记录状态, PBk : 喷涂部分) |
+| ![](../../../_assets/c5.png) | 显示定位器同步状态。 (M:S{站点编号}) |
+| ![](../../../_assets/c6.png) | 显示协作控制状态。 (I:独立, M:主控, S:从控) |
+| ![](../../../_assets/c7.png) | 显示轴控制状态。 (如果关闭则显示 j_{轴编号}) |
+| ![](../../../_assets/c8.png) | 显示轴锁定状态。 |
+| ![](../../../_assets/c9.png) | 显示编码器电池错误状态。 (出现错误时闪烁) |
+| ![](../../../_assets/c10.png) | 显示减速器寿命错误状态。 (出现错误时显示并闪烁轴编号) |
+| ![](../../../_assets/c11.png) | 显示用户级别。 (E : 工程师模式) <br> (参考: [R314](../../../8-r-code/12-r314.md?cont_model=${cont_model})) |
+| ![](../../../_assets/c12.png) | 显示PLC操作状态。 |
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/2-status-bar.md)
-# 1.2.4.2 Status display window
+# 1.2.4.2 状态显示窗口
 
-
-This displays various statuses of robot operation. You can set the displayed information by touching each applicable section.
+此部分显示机器人的各种操作状态。您可以通过触摸每个适用的部分来设置显示的信息。
 
 ![](../../../_assets/tp630/TP-main-status_eng.png)
 
-
-
 | No. | Description | 
 | :--- | :--- |
-| ![](../../../_assets/c1.png) | The operation mode of the robot is displayed. <li>manual: a mode for jogging operations and editing JOB programs</li> <li>auto:  a mode for running JOB programs automatically</li> <li>remote manual: a mode for remotely setting the manual or auto mode through I/O signal (current status: manual mode)</li> <li>remote auto: a mode for remotely setting the manual or auto mode through I/O signal (current status: auto mode)</li> |
-| ![](../../../_assets/c2.png) | You can check the current tool information and change it in the pop-up message box.|
-| ![](../../../_assets/c3.png) | Mechanism displays the robot type or the number of the selected additional axis. The robot is 0, and for the user refer to `System - 5: Initialize - 6: Mechanism setting`.  |
-| ![](../../../_assets/c4.png) | This displays the status of the reference coordinate system selected for the manual operation. A status display of 'joint', 'user', 'robot', or 'tool' changes in order, each time you push the status window. With `[Axis Operation]` keys, you can move the robot according to the reference coordinate system.<li> Joint coordinate system: Each axis of the robot will move independently in accordance with the lower part name of `[Axis Operation]` keys.</li> <li> Robot coordinate system:  The robot TCP is translated and rotated on the basis of the robot coordinate system  by `[Axis Operation]` keys.</li> <li> User coordinate system:  The robot TCP is translated and rotated on the basis of the user coordinate system  by `[Axis Operation]` keys..</li> <li> <img src="../../../_assets/bt-crd-tool (1) (1) (2).png" alt/> Tool coordinate system : The robot TCP is translated and rotated on the basis of the tool coordinate system by `[Axis Operation]` keys.</li>|
-| ![](../../../_assets/c5.png) | Determine the speed to operate the robot in the manual mode. In the manual mode, there are 2 different types of operation. One is to run it manually and the other is the step forward/backward operation. There are 8 different steps (1~8) in the level of the speed of manual operation.  <li>Speed level increases by a step if pressing the speed HI key of teach pendant, and decreases by a step if pressing the speed LOW key. Speed level is set to 8 if pressing the [SHIFT (FAST)] + Speed  HI key, and is set to 1 if pressing the [SHIFT (FAST)] + Speed LOW key. </li> |
-| ![](../../../_assets/c6.png) | Date and time information are displayed. <br> You can change this in [service  - 8: Date, time setting] menu. ([4.5 Setting of Date and Time](../../../4-service/5-date-time-setting.md))|
-
-
+| ![](../../../_assets/c1.png) | 机器人的操作模式显示。<li>手动：用于手动操作和编辑JOB程序的模式</li> <li>自动：用于自动运行JOB程序的模式</li> <li>远程手动：通过I/O信号远程设置手动或自动模式的模式（当前状态：手动模式）</li> <li>远程自动：通过I/O信号远程设置手动或自动模式的模式（当前状态：自动模式）</li> |
+| ![](../../../_assets/c2.png) | 您可以检查当前工具信息并在弹出消息框中更改它。|
+| ![](../../../_assets/c3.png) | 机制显示所选附加轴的机器人类型或编号。机器人为0，用户请参考 `系统 - 5: 初始化 - 6: 机构设置 (System - 5: Initialize - 6: Mechanism setting)`。 |
+| ![](../../../_assets/c4.png) | 这显示为手动操作选择的参考坐标系统的状态。状态显示为“关节”、“用户”、“机器人”或“工具”，每次按下状态窗口时依次变化。使用`[轴操作]`键，您可以根据参考坐标系统移动机器人。 <li>关节坐标系统：机器人的每个轴将根据`[轴操作]`键的下部名称独立移动。</li> <li>机器人坐标系统：机器人TCP基于机器人坐标系统通过`[轴操作]`键进行平移和旋转。</li> <li>用户坐标系统：机器人TCP基于用户坐标系统通过`[轴操作]`键进行平移和旋转。</li> <li><img src="../../../_assets/bt-crd-tool (1) (1) (2).png" alt/>工具坐标系统：机器人TCP基于工具坐标系统通过`[轴操作]`键进行平移和旋转。</li> |
+| ![](../../../_assets/c5.png) | 确定在手动模式下操作机器人的速度。在手动模式中，有两种不同类型的操作。一种是手动运行，另一种是向前/向后逐步操作。在手动操作的速度等级中有8个不同的步骤（1~8）。<li>按下教学挂架的速度HI键时，速度等级增加一步；按下速度LOW键时，速度等级降低一步。如果同时按下[SHIFT (FAST)] + 速度HI键，速度等级设置为8；如果同时按下[SHIFT (FAST)] + 速度LOW键，速度等级设置为1。</li> |
+| ![](../../../_assets/c6.png) | 显示日期和时间信息。<br>您可以在[服务 - 8：日期、时间设置]菜单中更改此设置。 ([4.5 日期和时间设置](../../../4-service/5-date-time-setting.md))|
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/3-Rbt-bar.md)
-# 1.2.4.3 R(Right) button bar
+# 1.2.4.3 R(Right) 按钮条
 
-5 buttons are displayed on the right side of the screen, and you can touch the buttons. Inactive buttons will be grayed out. Under the automatic mode, 'prev/next' is disabled, which makes it impossible to use those functions.
+5 个按钮显示在屏幕右侧，您可以触摸这些按钮。未激活的按钮将变为灰色。在自动模式下，“prev/next”被禁用，这使得无法使用这些功能。
 
 ![](../../../_assets/tp630/TP-main-rbt_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -934,7 +812,7 @@ This displays various statuses of robot operation. You can set the displayed inf
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This manually outputs common output, field bus output etc. or manually sets the value to the parameter.</p>
+        <p>此按钮用于手动输出通用输出、现场总线输出等或手动设置参数值。</p>
       </td>
     </tr>
     <tr>
@@ -942,7 +820,7 @@ This displays various statuses of robot operation. You can set the displayed inf
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This will split the monitoring window, or combine the split windows.</p>
+        <p>此按钮将拆分监控窗口或合并拆分窗口。</p>
       </td>
     </tr>
     <tr>
@@ -950,7 +828,7 @@ This displays various statuses of robot operation. You can set the displayed inf
         <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is used to edit a command sentence or a note. As a touch screen, it can be used just like a keyboard.</p>
+        <p>此按钮用于编辑命令句或注释。作为触摸屏，使用方式与键盘相同。</p>
         <p>
       </td>
     </tr>
@@ -959,8 +837,8 @@ This displays various statuses of robot operation. You can set the displayed inf
         <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is used to define and use a user key in the F button bar. </p>
-        <p>The pre-designated functions are displayed for spot or arc welding. For more information, refer to the application manual.</p>
+        <p>此按钮用于在 F 按钮条中定义和使用用户键。</p>
+        <p>预设功能用于点焊或弧焊。如需更多信息，请参阅应用手册。</p>
       </td>
     </tr>
     <tr>
@@ -968,70 +846,59 @@ This displays various statuses of robot operation. You can set the displayed inf
         <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is used to move to the next page of the function button bar.</p>
-        <p>When there are more than 7 buttons in the current screen,   button will be activated, and every time this button is pressed, it will switch to the next button set. When you press `[SHIFT]` +   button, it will switch back in the reverse direction.
+        <p>此按钮用于移动到功能按钮条的下一页。</p>
+        <p>当当前屏幕中有超过 7 个按钮时，该按钮将被激活，每次按下此按钮时，它将切换到下一个按钮组。当您按下`[SHIFT]` + 该按钮时，它将向后切换。
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
-
-
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/4-mon-area.md)
-# 1.2.4.4 Monitor window
+# 1.2.4.4 监视窗口
 
-This is the window to display the location data, I/O data and status data of each application by each axis in real time. Divide the main screen and select a monitoring panel. You can have up to 3 monitoring panels. (Refer to "[6. Monitoring](../../../6-monitoring/README.md)".)
+这是一个用于实时显示每个应用程序每个轴的位置数据、I/O 数据和状态数据的窗口。将主屏幕分割并选择一个监视面板。您可以最多拥有 3 个监视面板。 (请参阅 "[6. Monitoring](../../../6-monitoring/README.md)"。)
 
 <br>
 
 ![](../../../_assets/tp630/TP-main-mon_eng.png)
-
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/5-function-buttons.md)
-# 1.2.4.5 Function button bar
+# 1.2.4.5 功能按钮栏
 
-
-7 function buttons are displayed on the bottom of the main window. Function buttons change according to the current operating screen. For an example in the highest level screen, the buttons to go into Service menu and System menu are displayed. Also while editing a task program, the buttons for command lists or command parameter settings are displayed.
-
+7 个功能按钮显示在主窗口的底部。功能按钮根据当前操作屏幕而变化。例如，在最高级别的屏幕中，显示进入服务菜单和系统菜单的按钮。此外，在编辑任务程序时，显示命令列表或命令参数设置的按钮。
 
 ![](../../../_assets/tp630/TP-main-functions_eng.png)
 
-
-
-
-| No. | Description | 
+| No. | 描述 | 
 | :--- | :--- | 
-| ![](../../../_assets/c1.png) | service : various convenience items, such as monitoring, variables, and the file manager ([4.Service](../../../4-service/README.md)) |
-| ![](../../../_assets/c2.png) | system : detail settings for robot operations and applications ([7.System](../../../7-system/README.md)) |
-| ![](../../../_assets/c3.png) | rel.WAIT : release of signal waiting  such as input signal or welding completion signal by pressing with `[SHIFT]` key (precondition : `[F2: system] - 1: User environment - 'Wait(di/wi) release' - Disable`) |
-| ![](../../../_assets/c4.png) | log : error or waring history including  an error code, a notification message, time of error occurrence, etc. ([2.5.2 Error Handling](../../../2-operation/5-error-info/2-error-handle.md))|
-| ![](../../../_assets/c5.png) | cmd.input : displayed in the initial page of the manual mode, and used for inputting a program command ([3.2.2.1 Statements](../../../3-programming/2-prog-edit/1-statement.md))|
-| ![](../../../_assets/c6.png) | cond.set : robot operating conditions such as robot speed for Step forward/backward and path recovery ([5.Condition Setting](../../../5-conditional-setting/README.md))|
+| ![](../../../_assets/c1.png) | service : 各种便利项目，例如监视、变量和文件管理器 ([4.Service](../../../4-service/README.md)) |
+| ![](../../../_assets/c2.png) | system : 机器人操作和应用的详细设置 ([7.System](../../../7-system/README.md)) |
+| ![](../../../_assets/c3.png) | rel.WAIT : 通过按 `[SHIFT]` 键释放信号等待，例如输入信号或焊接完成信号 (前提条件 : `[F2: 系统] - 1: 用户环境 - 'Wait(di/wi) release' - 禁用 ([F2: system] - 1: User environment - 'Wait(di/wi) release' - Disable)`) |
+| ![](../../../_assets/c4.png) | log : 错误或警告历史，包括错误代码、通知消息、错误发生时间等 ([2.5.2 Error Handling](../../../2-operation/5-error-info/2-error-handle.md)) |
+| ![](../../../_assets/c5.png) | cmd.input : 显示在手动模式的初始页面，用于输入程序命令 ([3.2.2.1 Statements](../../../3-programming/2-prog-edit/1-statement.md)) |
+| ![](../../../_assets/c6.png) | cond.set : 机器人操作条件，例如前进/后退的机器人速度和路径恢复 ([5.Condition Setting](../../../5-conditional-setting/README.md)) |
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/6-input-area.md)
-# 1.2.4.6 Input display window
+# 1.2.4.6 输入显示窗口
 
-
-This area displays input value of contents to edit such as command language, character or function. You can directly insert a command without selecting a command through the [cmd.input] button. In the case of inputting an undefined command or a grammatically incorrect one, the following error will occur.
-
-
+此区域显示要编辑的内容的输入值，如命令语言、字符或功能。您可以通过 [cmd.input] 按钮直接插入命令，而无需选择命令。如果输入未定义的命令或语法不正确，将会发生以下错误。
 
 ![](../../../_assets/tp630/pop-error-nocmd_eng.png)
 
 <br>
 
-The below table is the input for each parameter of 'move' command.
+下面的表格是 'move' 命令的每个参数的输入。
 <br>
 
 |command parameters|inputs |
 |--|--|
 |![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-input.png)|
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/7-guide-area.md)
-# 1.2.4.7 Guide display window
+# 1.2.4.7 指南显示窗口
 
-This displays the guide or direction message for the user to operate and is the area that displays the print message when the print direction is set to T/P in the 'print' command.
+此窗口显示用户操作的指南或方向消息，并且是当在“打印”命令中设置打印方向为 T/P 时显示打印消息的区域。
 
 <br>
 
-The below table is the guide message for each parameter of 'move' command.
+下表为“移动”命令每个参数的指南消息。
 
 <br>
 
@@ -1039,10 +906,10 @@ The below table is the guide message for each parameter of 'move' command.
 |--|--|
 |![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-guide.png)|
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area.md)
-# 1.2.4.8 Task edit window
+# 1.2.4.8 任务编辑窗口
 
-This is the window to edit the program. For program editing, refer to
-"[3. Program Writing](../../../3-programming/README.md)".
+这是编辑程序的窗口。有关程序编辑，请参阅
+"[3. 程序编写](../../../3-programming/README.md)"。
 
 <br>
 
@@ -1053,8 +920,8 @@ This is the window to edit the program. For program editing, refer to
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -1063,7 +930,7 @@ This is the window to edit the program. For program editing, refer to
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        the name of the selected JOB program
+        选定的 JOB 程序的名称
       </td>
     </tr>
     <tr>
@@ -1071,11 +938,11 @@ This is the window to edit the program. For program editing, refer to
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
-        <p> the step and function number of the JOB program</p>
+        <p> JOB 程序的步骤和功能编号</p>
         <ul>
-          <li>P101 : the number of the current JOB program</li>
-          <li>S3 : the step number of the current selected row</li>
-          <li>F1 : the function number of the current selected row</li>
+          <li>P101 : 当前 JOB 程序的编号</li>
+          <li>S3 : 当前选定行的步骤编号</li>
+          <li>F1 : 当前选定行的功能编号</li>
         </ul>
       </td>
     </tr>
@@ -1084,25 +951,21 @@ This is the window to edit the program. For program editing, refer to
   </tbody>
 </table>
 
- Whey you try editing the program, the following error could occur due to the property of the file. For the file property, refer to  "[4.2.4 File Protection](../../../4-service/2-file-manager/4-file-protect.md)".
+当您尝试编辑程序时，由于文件的属性可能会发生以下错误。有关文件属性，请参阅 "[4.2.4 文件保护](../../../4-service/2-file-manager/4-file-protect.md)"。
 
 ![](../../../_assets/tp630/pop-error-fileprotect_eng.png)
-
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/9-record-cnd-area.md)
-# 1.2.4.9 Record condition display window
+# 1.2.4.9 记录条件显示窗口
 
-
-This is the window to edit the condition of the step to record (Speed, accuracy, tool option, etc.). Press the [rec.cond] <img src="../../../_assets/tp630/lbt-record_eng.png" width="35mm"></img> on the L button bar in order to edit. For more detail, refer to "[3.2.2.3 Recording Condition](../../../3-programming/2-prog-edit/2-statement-input/3-rec-cond.md)".
+这是编辑记录步骤条件的窗口（速度、准确性、工具选项等）。请按下 [rec.cond] <img src="../../../_assets/tp630/lbt-record_eng.png" width="35mm"></img> 在 L 按钮栏中进行编辑。有关更多详细信息，请参阅 "[3.2.2.3 记录条件](../../../3-programming/2-prog-edit/2-statement-input/3-rec-cond.md)"。
 
 <br>
 
 ![](../../../_assets/tp630/TP-main-recordcnd.png)
-
-
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/10-Lbt-bar.md)
 # 1.2.4.10 L(Left) button bar
 
-5 buttons are displayed on the left side of the screen, and you can touch the buttons. Inactive buttons will be grayed out. Under the automatic mode, the record condition, jog inching are disabled, which makes it impossible to use those functions.
+5 个按钮显示在屏幕的左侧，您可以触摸这些按钮。非活动按钮将显示为灰色。在自动模式下，记录条件、慢速移动功能被禁用，因此无法使用这些功能。
 
 <br>
 
@@ -1112,7 +975,7 @@ This is the window to edit the condition of the step to record (Speed, accuracy,
   <thead>
     <tr>
       <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -1121,7 +984,7 @@ This is the window to edit the condition of the step to record (Speed, accuracy,
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is the key used to edit conditions including speed, accuracy, tool number, step option etc. of the recording step. Editing is done in the record condition window.</p>
+        <p>这是用于编辑记录步骤的条件，包括速度、精度、工具编号、步骤选项等的键。编辑在记录条件窗口中进行。</p>
       </td>
     </tr>
     <tr>
@@ -1129,7 +992,7 @@ This is the window to edit the condition of the step to record (Speed, accuracy,
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This selects whether to execute in steps or in functions when moving the steps forward/backward or whether to continuously execute up to the end of the task program. Currently selected condition is displayed on the button as an icon.</p>
+        <p>选择在向前/向后移动步骤时是否逐步执行或以功能执行，或者是否连续执行直到任务程序结束。目前选定的条件在按钮上以图标显示。</p>
       </td>
     </tr>
     <tr>
@@ -1137,7 +1000,7 @@ This is the window to edit the condition of the step to record (Speed, accuracy,
         <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is the key to use when you want to manually move the robot by the designated amount at inching levels. A green light will be on when the jog inching function is activated.</p>
+        <p>这是您希望以指定量手动移动机器人时在微调级别使用的键。当 jog inching 功能被激活时，绿色指示灯会亮起。</p>
         <p>
       </td>
     </tr>
@@ -1146,7 +1009,7 @@ This is the window to edit the condition of the step to record (Speed, accuracy,
         <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>If this key is pressed while the cursor is placed at a certain command sentence, the Quick Open function related to the command sentence will be executed. See the Quick Open for detailed description. </p>
+        <p>如果在光标放置于某个命令句时按下此键，将执行与该命令句相关的快速打开功能。详细描述请参见快速打开。</p>
       </td>
     </tr>
     <tr>
@@ -1154,168 +1017,134 @@ This is the window to edit the condition of the step to record (Speed, accuracy,
         <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">
-        <p> Displays relevant Help depending on each status. Grammar form for command sentence is shown if pressing this key when the cursor exists in command sentence. You can view contents, measures or diagnosis methods for error pressing this key in occurrence of error.
-</p>
+        <p>根据每个状态显示相关的帮助。如果在光标存在于命令句时按下此键，将显示命令句的语法形式。在发生错误时，您可以通过按下此键查看内容、措施或诊断方法。</p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
-
-
-
-
-
-
 [__SOURCE](2-operation/README.md)
-# 2. Operation
+# 2. 操作
 
-Operation refers to the act of instructing the contents of the work to the robot and checking the contents. In general, when it comes to industrial robots, manual and automatic modes are used. Manual operation refers to the act of directly instructing the contents of the work to the robot, and the automatic operation refers to the act of making the robot repeatedly execute the contents of the instructed work.
-
-
+操作是指将工作的内容指示给机器人并检查其内容的行为。一般而言，在工业机器人中，使用手动和自动模式。手动操作是指直接将工作的内容指示给机器人的行为，而自动操作是指让机器人重复执行所指示工作的内容。
 [__SOURCE](2-operation/1-manual-operation/README.md)
-# 2.1 Manual Operation
+# 2.1 手动操作
 
-Manual operation is an operation method of directly teaching and checking the robot at a safe speed.
-
-
+手动操作是一种以安全速度直接教导和检查机器人的操作方法。
 [__SOURCE](2-operation/1-manual-operation/1-how-to-op.md)
-# 2.1.1 Operation Method
+# 2.1.1 操作方法
 
-The method of instructing the contents of the work to the robot using the jog key and checking the contents of the instructed work are as follows.
+使用 jog 键指示工作的内容并检查所指示工作的内容的方法如下。
 
-1.	Check whether there are people or obstacles within the safety fence and the operation range of the robot.
+1.	检查安全围栏和机器人的操作范围内是否有人或障碍物。
 
-2.	Set the operation mode to manual mode by turning the mode switch of the teach pendant.
+2.	通过切换教导盒的模式开关将操作模式设置为手动模式。
 
     ![](../../_assets/tp630/TP-hw-switch-manual.png)
 
-3.	In the status bar of the ${cont_model} teach pendant screen, check whether the operation mode is set to manual mode.
+3.	在 ${cont_model} 教导盒屏幕的状态栏中，检查操作模式是否设置为手动模式。
 
     ![](../../_assets/tp630/sbar-mode_eng.png)
 
-    * If it is set to automatic mode, set the operation mode to manual mode by turning the mode switch of the teach pendant.
+    * 如果设置为自动模式，则通过切换教导盒的模式开关将操作模式设置为手动模式。
 
-4.	Touch the `[PROG]` key with `[SHIFT]`. Then, the program selection window will appear.
+4.	同时按下 `[PROG]` 键和 `[SHIFT]`。然后，程序选择窗口将会出现。
 
     ![](../../_assets/tp630/k-prog-step_eng.png)
 
-
-
-5.	Select a program from the list in the program selection window or input a program number and then press `[ENTER]` key.
+5.	从程序选择窗口中的列表中选择一个程序或输入程序编号，然后按 `[ENTER]` 键。
 
     ![](../../_assets/tp630/k-prg-select_eng.png)
 
-6.	Press the `[motor]` key on the teach pendant. Then, the motor lamp will blink, and the servo power will be ready to be supplied to the motor of each axis of the robot.
+6.	按下教导盒上的 `[motor]` 键。然后，马达指示灯将闪烁，伺服电源将准备供电给机器人每个轴的马达。
 
-7.	Press the enabling switch on the back of the teach pendant. Then, the motor lamp will be turned on, and the motor brake will be released, allowing the servo power to be supplied. The robot will be ready to move.
+7.	按下教导盒背面的启用开关。然后，马达指示灯将点亮，马达刹车将释放，允许伺服电源供电。机器人将准备移动。
 
-8.	Operate the robot according to the speed level or movement conditions of the coordinate system using the jog key.
+8.	根据坐标系统的速度等级或运动条件使用 jog 键操作机器人。
 
-    * To save the robot's location, touch the `[REC]` key at the desired location. Then the step will be recorded.
-    * To record the function required for the step, touch the `[cmd.input]` button.
-    * To check the robot's location while manually moving it forward or backward, press the `[STEP.FWD/STEP.BWD]` key. While you are pressing the `[STEP.FWD/STEP.BWD]` key, the robot will move in the unit of step. When the robot reaches the target step, the execution completion mark \( . \) will appear in front of the command, and then the robot will stop.
-
-
-
-
-
-
+    * 要保存机器人的位置，请在所需位置触碰 `[REC]` 键。然后，该步骤将被记录。
+    * 要记录该步骤所需的功能，请触碰 `[cmd.input]` 按钮。
+    * 要在手动向前或向后移动时检查机器人的位置，请按 `[STEP.FWD/STEP.BWD]` 键。在按下 `[STEP.FWD/STEP.BWD]` 键时，机器人将按步移动。当机器人到达目标步时，执行完成标记 \( . \) 将出现在命令前面，然后机器人将停止。
 [__SOURCE](2-operation/1-manual-operation/2-op-speed.md)
-# 2.1.2 Operation Speed Adjustment
+# 2.1.2 操作速度调整
 
-In manual mode, you can operate the robot using the step forward/backward operation and manual jog operation. The current speed setting is displayed at the speed window on the status display window.
+在手动模式下，您可以使用向前/向后操作和手动滑动操作来操作机器人。当前速度设置在状态显示窗口的速度窗口中显示。
 
 ![](../../_assets/tp630/sbar-spd-manual_eng.png)
 
-'Man. spd' is only for the manual mode, and is replaced by 'Play spd' in the auto mode. The number '1' at the lower line of the speed window represents a jog speed level, and '200mm/s' represents a forward/backward speed limit.
+'Man. spd'仅用于手动模式，在自动模式中被'Play spd'替代。速度窗口底部的数字'1'表示滑动速度级别，'200mm/s'表示向前/向后的速度限制。
 
-For example, if the speed limit in manual mode is set to 250 mm/s and the recorded step speed is 1,000 mm/s, the moving speed of the step will be limited to 250 mm/s during the step forward/backward operation. When the recorded speed is 100 mm/s, the robot will move at 100 mm/s because the recorded speed does not exceed the speed limit.
+例如，如果手动模式下的速度限制设置为250 mm/s，且记录的步速为1,000 mm/s，则在向前/向后操作时，步速将限制为250 mm/s。当记录速度为100 mm/s时，机器人将以100 mm/s的速度移动，因为记录的速度未超过速度限制。
 
 
 {% hint style="info" %}
-To set the step speed limit, refer to "[5.1 Operation Condition Setting](../../5-conditional-setting/1-op-cond-set.md)".
+要设置步速限制，请参考"[5.1 操作条件设置](../../5-conditional-setting/1-op-cond-set.md)"。
 {% endhint %}
 
-To set the jog speed level \(1: Low to 8: High\), press repeatedly <SPEED: HI, LOW> keys  until the desired speed level appears. Even in this case, the maximum speed of the robot tool and link will be limited below the speed limit.
+要设置滑动速度级别 \(1: 低到 8: 高\)，请重复按下<SPEED: HI, LOW>键，直到所需速度级别出现。即使在这种情况下，机器人工具和链接的最大速度也将限制在速度限制以下。
 
 {% hint style="info" %}
-In automatic mode, the `[Speed Adjustment]` button will display the playback speed \(%\) instead of the step speed limit \(mm/sec\).
+在自动模式下，`[Speed Adjustment]`按钮将显示播放速度 \(%\)，而不是步速限制 \(mm/sec\)。
 {% endhint %}
 
 
 {% hint style="warning" %}
-If the length and angle in the tool data are set differently from the actual values, the tool may operate too fast in manual mode. Before operating the robot, you must make sure that the tool data is set correctly.
+如果工具数据中的长度和角度与实际值设置不同，工具可能在手动模式下操作过快。在操作机器人之前，您必须确保工具数据设置正确。
 {% endhint %}
-
-
-
-
 [__SOURCE](2-operation/1-manual-operation/3-step-fwd-bwd.md)
-# 2.1.3 Step Forward/Backward
+# 2.1.3 步进前/后
 
-The step forward/backward is one of the methods of operating the robot in manual mode and refers to the act of playing back a recorded program. By manipulating the robot in the step forward/backward operation, you can check the recorded program path and mutual interlock relationship at a range of safe speed.
+步进前/后是手动模式下操作机器人的一种方法，指的是回放记录的程序。通过操控机器人进行步进前/后操作，您可以在安全速度范围内检查记录的程序路径及相互联锁关系。
 
-The execution unit for the step forward/backward operation can be checked and set from the `[run to]` button on the left side of the ${cont_model} teach pendant screen.
+步进前/后操作的执行单元可以从 ${cont_model} 教学挂件屏幕左侧的 `[run to]` 按钮进行检查和设置。
 
 ![](../../_assets/tp630/lbt-runto_eng.png)  
 
-To set the execution unit for the step forward/backward operation, touch the `[run to]` button repeatedly until the desired option appears.
+要设置步进前/后操作的执行单元，请反复触摸 `[run to]` 按钮，直到出现所需选项。
 
 ![](../../_assets/tp630/lbt-runto-sw_eng.png)
 
-* `[cmd]`: Will execute the command line by line
-* `[Step]`: Will execute step by step
-* `[End]`: Will execute up to the end statement
+* `[cmd]`: 将逐行执行命令
+* `[Step]`: 将逐步执行
+* `[End]`: 将执行到结束语句
 
 <Br>
 
-When the execution unit is set as 'Cmd' or 'Step', the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing b/n automatic mode.
+当执行单元设置为 'Cmd' 或 'Step' 时，机器人将忽略设定的精度区域并到达记录的步骤。如果设置为 end，机器人将沿着与自动模式播放相同的路径操作。
 
-When you set the execution unit as 'Cmd' or 'Step' and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to "[2.3.1.4 Accuracy](../3-step/1-step-cmd-param/4-accuracy.md)".
+当您将执行单元设置为 'Cmd' 或 'Step' 并执行步进前/后操作时，机器人将在没有转角的路径上操作。有关转角的详细信息，请参阅 "[2.3.1.4 精度](../3-step/1-step-cmd-param/4-accuracy.md)"。
 
-![Figure 11 Playback Forward/Backward Path When cmd/step Setting is Performed](../../_assets/path-cmd-step-pback-fwd-bwd-en.png)
+![图11 当执行 cmd/step 设置时的前/后路径回放](../../_assets/path-cmd-step-pback-fwd-bwd-en.png)
 
-If you set the execution unit as end and then perform the step forward/backward operation, the path of the robot will change according to the stop position. In other words, if the robot stops at a place other than at cornering and then executes the forward operation, the robot will recover the original cornering path, but if the robot executes the backward operation, the robot will move to the recorded step, and at this time, the robot will stop at the recorded step and then move immediately to the previous step. When the robot stops at cornering, the robot will maintain its previous cornering path both when moving forward and when moving backward.
+如果您将执行单元设置为 end 然后执行步进前/后操作，机器人的路径将根据停止位置而变化。换句话说，如果机器人在非转角处停止后执行前进操作，机器人将恢复原来的转角路径，但如果机器人执行后退操作，机器人将移动到记录的步骤，此时，机器人将在记录的步骤处停止，然后立即移动到上一个步骤。当机器人在转角处停止时，无论是向前移动还是向后移动，机器人都将保持其先前的转角路径。
 
-![Figure 12 Playback Forward/Backward Path When End Setting is Performed](../../_assets/path-end-pback-fwd-bwd-en.png)
+![图12 当执行 end 设置时的前/后路径回放](../../_assets/path-end-pback-fwd-bwd-en.png)
 
-When the robot stops at cornering and then executes the forward operation, the robot will operate on the original cornering path. Here, if the robot executes the backward operation and then, without reaching the previous step completely, executes the forward operation again, the robot may not be able to create the original cornering path in some cases. In other words, if the distance of the step becomes shorter than the original distance, making it impossible to meet the existing accuracy condition, a smaller cornering path than the original one will be created.
+当机器人在转角处停止并执行前进操作时，机器人将沿着原来的转角路径操作。在这里，如果机器人执行后退操作，然后在未完全达到上一个步骤的情况下再次执行前进操作，机器人在某些情况下可能无法创建原始的转角路径。换句话说，如果步骤的距离缩短到小于原始距离，从而无法满足现有的准确性条件，则将创建一个小于原始的转角路径。
 
-![Figure 13 Example of the Robot Path Change During Step Forward/Backward Operation](../../_assets/path-step-bwd-then-fwd-en.png)
+![图13 步进前/后操作期间机器人路径变化示例](../../_assets/path-step-bwd-then-fwd-en.png)
 
-
-You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the `[run to]` button on the left side of the ${cont_model} teach pendant screen, set the speed value and function execution option in the setting window.
-
-
+您可以设置步进前/后操作的最大速度，并设置是否执行功能。在 ${cont_model} 教学挂件屏幕左侧轻触 `[run to]` 按钮后，在设置窗口中设置速度值和功能执行选项。
 
 ![](../../_assets/tp630/cond-set-step-fwd-bwd-spd_eng.png)
 
-* `2: Step FWD/BWD maximum speed`: Same as the value set for the speed in manual operation
-* `[3: Function execution during step FWD]`: You can select the function execution option.
-  * Off: The function will not be executed for the step forward/backward operation. Regardless of the conditions of the external I/O, you can check only the robot path. Be careful as the interlock with the external system will not work.
-  * On: You can execute all functions. Should be used after the external interlock is completed.
-  * I On: You can execute only the input wait function. It should be used when it is necessary to check the safety through the external interlock.
-
-
-
-
-
-
+* `2: 步进前/后最大速度 (2: Step FWD/BWD maximum speed)`: 与手动操作中设定的速度值相同
+* `[3: 步进前执行功能]`: 您可以选择功能执行选项。
+  * Off: 功能将不执行步进前/后操作。无论外部 I/O 条件如何，您只能检查机器人路径。请注意，与外部系统的联锁将无效。
+  * On: 您可以执行所有功能。应在外部联锁完成后使用。
+  * I On: 您只能执行输入等待功能。当需要通过外部联锁检查安全性时应使用。
 [__SOURCE](2-operation/2-automatic-operation/README.md)
-# 2.2 Automatic Operation
+# 2.2 自动操作
 
-Automatic operation is an operation method of teaching the robot the contents of the work that it should execute and then making the robot perform the work.
-
-
+自动操作是教机器人执行它应该执行的工作内容的操作方法，然后使机器人执行该工作。
 [__SOURCE](2-operation/2-automatic-operation/1-how-to-op.md)
-# 2.2.1 Operation Method
+# 2.2.1 操作方法
 
-It is the method to teach the robot the contents of the work and then make it perform the work is as follows.
+教机器人工作内容并使其执行工作的方式如下。
 
-1.	Check whether there are people or obstacles within the safety fence and the operation range of the robot.
+1.	检查安全围栏内和机器人操作范围内是否有人员或障碍物。
 
-2.	Set the operation mode to automatic mode by turning the mode switch of the teach pendant.
+2.	通过旋转教学挂件的模式开关将操作模式设置为自动模式。
 
     <div style="max-width: 35vw">  
 
@@ -1323,78 +1152,65 @@ It is the method to teach the robot the contents of the work and then make it pe
      
     </div>
 
-3.	On the status bar of the ${cont_model} teach pendant screen, check whether the operation mode is set to automatic mode.
+3.	在 ${cont_model} 教学挂件屏幕的状态栏上，检查操作模式是否设置为自动模式。
 
     ![](../../_assets/tp630/sbar-mode-auto1_eng.png)
 
-* If it is set to manual mode, turn the mode switch of the teach pendant to set the operation mode to automatic mode.
+* 如果设置为手动模式，请将教学挂件的模式开关转动以将操作模式设置为自动模式。
 
-4.	Touch the `[Recording Condition]` button on the left side of the initial screen. Then, the condition setting window will appear.
+4.	触摸初始屏幕左侧的 `[Recording Condition]` 按钮。然后，将出现条件设置窗口。
 
     ![](../../_assets/tp630/fbt-condset_eng.png)
 
-
-
-5.	Set the program repetition option and robot operation speed.
+5.	设置程序重复选项和机器人操作速度。
 
     ![](../../_assets/tp630/cond-set-cycle-auto-spd_eng.png)
 
-* `1: Operation Cycle type`: You can set whether to repeat the program that will be executed during automatic operation.
-* `6: Playback speed rate`: You can set the operation speed \(%\) of the robot when a program is played back in automatic mode.  
-  For example, if the operation speed is set to 100, the robot will move at the recorded speed of the step, and if it is set to 50, the robot will move at the ratio of 50% of the recorded speed.
+* `1: 操作循环类型 (Operation Cycle type)`：您可以设置是否重复在自动操作期间将执行的程序。
+* `6: 自动驾驶速度比率 (6: Playback speed rate)`：您可以设置机器人在自动模式下回放程序时的操作速度（%）。  
+  例如，如果操作速度设置为 100，则机器人将以步骤记录的速度移动，如果设置为 50，则机器人将以记录速度的 50% 的比例移动。
 
-6.	Press the `[start]` key on the teach pendant. The start lamp will be turned on, and the robot will perform the work according to the created program.
-
+6.	按下教学挂件上的 `[start]` 键。启动灯将亮起，机器人将根据创建的程序执行工作。
 [__SOURCE](2-operation/2-automatic-operation/2-adjust-op-spd.md)
-# 2.2.2 Operation Speed Adjustment
+# 2.2.2 操作速度调整
 
-In automatic operation, the `[Speed Adjustment]` button on the left side of the ${cont_model} teach pendant screen will display the robot's operation speed \(%\) while the program is being played back. The displayed operation speed is the ratio of the robot's moving speed to the speed recorded in the step.
+在自动操作中，${cont_model} 教学挂件屏幕左侧的 `[Speed Adjustment]` 按钮将在程序回放时显示机器人的操作速度 \(%\)。显示的操作速度是机器人的移动速度与步骤中记录的速度之比。
 
 ![](../../_assets/tp630/sbar-spd-auto_eng.png)
 
 {% hint style="info" %}
-In manual mode, the `[Speed Adjustment]` button will display the step speed limit, instead of the playback speed \(%\).
+在手动模式下，`[Speed Adjustment]` 按钮将显示步骤速度限制，而不是回放速度 \(%\)。
 {% endhint %}
 
-In automatic mode, you can adjust the operation speed of the robot, without modifying the program, by changing the value of the automatic operation speed ratio in the condition setting. After touching the `[Speed Adjustment]` button on the left side of the ${cont_model} teach pendant screen, set the option values of the `2: Step FWD/BWD maximum speed` and `[6: Playback speed rate]` in the setting window.
+在自动模式下，您可以通过更改条件设置中的自动操作速度比值来调整机器人的操作速度，而无须修改程序。在触摸 ${cont_model} 教学挂件屏幕左侧的 `[Speed Adjustment]` 按钮后，在设置窗口中设置 `2: 步进前/后最大速度 (2: Step FWD/BWD maximum speed)` 和 `[6: Playback speed rate]` 的选项值。
 
 ![](../../_assets/tp630/cond-set-step-fwd-bwd-spd-auto-spd_eng.png)
-
-
 [__SOURCE](2-operation/3-step/README.md)
-# 2.3 Step
+# 2.3 步骤
 
-A step refers to a specific posture \(the position of each axis or the position of the tooltip\) that is to be recorded in the job program and taken by the robot. In other words, a step is one position that the robot will reach through a movement.
+步骤指的是要在工作程序中记录的特定姿势（每个轴的位置或工具提示的位置），机器人将采取该姿势。换句话说，步骤是机器人通过移动达到的一个位置。
 
-The robot performs various functions while moving from one step to another. For movement from one step to another, a movement condition such as a move, which is a movement command, is required.
+机器人在从一个步骤移动到另一个步骤时执行各种功能。要从一个步骤移动到另一个步骤，需要一个移动条件，比如移动，这是一种移动命令。
 
-* It is the basic unit of robot programming. This is a command for the manipulator to move. It consists of minimum information that is necessary for the operation of the robot. 
-* Movement conditions: These are the step statement parameters such as robot position, interpolation, speed, accuracy, and tool number.
-
-
-
-
-
-
+* 这是机器人编程的基本单位。它是操纵器移动的命令。它包含了机器人操作所需的最少信息。
+* 移动条件：这些是步骤陈述参数，如机器人位置、插值、速度、精度和工具编号。
 [__SOURCE](2-operation/3-step/1-step-cmd-param/README.md)
-# 2.3.1 Step Statement Parameters
+# 2.3.1 步骤语句参数
 
-The step statement parameters are the movement conditions required for the step movement of the robot, such as the robot position, interpolation, speed, accuracy, and tool number of the robot, in addition to move, a movement command.
+步骤语句参数是机器人步骤运动所需的运动条件，如机器人位置、插补、速度、精度以及工具编号，除了移动，一个运动命令。
 
-Parameters of the step statement are divided into default parameters and optional parameters. The default parameters are the essential ones for a step, and the optional parameters are the ones that can be added when necessary. 
+步骤语句的参数分为默认参数和可选参数。默认参数是步骤所必需的基本参数，而可选参数是在必要时可以添加的参数。
 
-The step statement is configured as follows.
-
-
+步骤语句的配置如下。
 
 ![](../../../_assets/image_77.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">参数</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -1402,356 +1218,309 @@ The step statement is configured as follows.
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Interpolation</td>
+      <td style="text-align:left">插补</td>
       <td style="text-align:left">
-        <p>Interpolated path between steps</p>
-        <p>P (Joint interpolation), L (Linear interpolation), C (Circular interpolation),
-          SP (Stationary tool interpolation off), SL (Stationary tool linear interpolation),
-          SC (Stationary tool circular interpolation)</p>
+        <p>步骤之间的插值路径</p>
+        <p>P (关节插补), L (线性插补), C (圆形插补),
+          SP (静态工具插补关闭), SL (静态工具线性插补),
+          SC (静态工具圆形插补)</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Pose</td>
+      <td style="text-align:left">姿态</td>
       <td style="text-align:left">
-        <p>A parameter to record a position. This parameter may be omitted, and a
-          pose may be designated after the statement (hidden pose).</p>
-        <p>Target pose (X, Y, Z, Rx, Ry, Rz, Cfg) {Coordinate system} + Shift (X,
-          Y, Z, Rx, Ry, Rz) {Coordinate system}</p>
+        <p>记录位置的参数。此参数可以省略，并且姿态可以在语句后指定（隐式姿态）。</p>
+        <p>目标姿态 (X, Y, Z, Rx, Ry, Rz, Cfg) {坐标系} + 偏移 (X,
+          Y, Z, Rx, Ry, Rz) {坐标系}</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c3.png" alt/>
       </td>
-      <td style="text-align:left">Speed</td>
-      <td style="text-align:left">Operation speed of the robot (Unit: mm/sec, cm/min, %, sec)</td>
+      <td style="text-align:left">速度</td>
+      <td style="text-align:left">机器人的操作速度 (单位: mm/秒, cm/分钟, %, 秒)</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c4.png" alt/>
       </td>
-      <td style="text-align:left">Accuracy</td>
-      <td style="text-align:left">A value of the allowable error (0&#x2013;7) between the current position
-        and the recorded position that occurs when the robot moves to the target
-        step</td>
+      <td style="text-align:left">精度</td>
+      <td style="text-align:left">在机器人移动到目标步骤时当前位
+        置与记录位置之间允许误差的值 (0&#x2013;7)</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c5.png" alt/>
       </td>
-      <td style="text-align:left">Tool number</td>
-      <td style="text-align:left">Number of the tool in use (0&#x2013;31)</td>
+      <td style="text-align:left">工具编号</td>
+      <td style="text-align:left">使用的工具编号 (0&#x2013;31)</td>
     </tr>
         <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">Assignment statement</td>
-      <td style="text-align:left">At the start of the move, each assignment statement is executed sequentially from left to right</td>
+      <td style="text-align:left">赋值语句</td>
+      <td style="text-align:left">移动开始时，赋值语句按从左到右的顺序逐个执行</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c7.png" alt/>
       </td>
-      <td style="text-align:left">Stop condition</td>
-      <td style="text-align:left">A condition for the robot to stop moving to execute the next command (step
-        or function)</td>
+      <td style="text-align:left">停止条件</td>
+      <td style="text-align:left">机器人停止移动以执行下一个命令（步骤或功能）的条件</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c8.png" alt/>
       </td>
-      <td style="text-align:left">Comment</td>
-      <td style="text-align:left">Description of the step</td>
+      <td style="text-align:left">注释</td>
+      <td style="text-align:left">步骤的描述</td>
     </tr>
   </tbody>
 </table>
-
-
 [__SOURCE](2-operation/3-step/1-step-cmd-param/1-interpolation.md)
-# 2.3.1.1 Interpolation
+# 2.3.1.1 插值
 
-Interpolation refers to the interpolated path between steps, and the interpolation method for the `[Step N]` determines the form of the path between `[Step N-1]` and `[Step N]`.
+插值是指步骤之间的插值路径，而 `[Step N]` 的插值方法决定了 `[Step N-1]` 和 `[Step N]` 之间的路径形式。
 
-* P-PTP \(Point-to-Point\) It is the fastest of the general interpolation modes as it interpolates the path between two steps based on individual axes, not the tooltip. Considering the characteristics of industrial robots that consist of rotation joints, the path of the tooltip is usually shaped in a C form.
+* P-PTP \(点对点\) 它是一般插值模式中最快的，因为它基于单独的轴，而不是工具末端插值两个步骤之间的路径。考虑到由旋转关节组成的工业机器人特性，工具末端的路径通常呈 C 形。
 
+![图 14 P-PTP 插值中工具路径的示例](../../../_assets/image_73.png)
 
+* L-线性插值 它在笛卡尔空间中的两个步骤之间沿直线移动。它用于需要线性路径的情况，例如弧焊部分。运动会在手腕姿态自动变化的情况下进行，如下所示。
 
+![图 15 L-线性插值示例](../../../_assets/image_48.png)
 
-
-![Figure 14 Example of the Tooltip Path in P-PTP Interpolation](../../../_assets/image_73.png)
-
-* L-Linear interpolation It moves in a linear line between two steps in Cartesian space. It is used for a case in which a linear path is needed, such as an arc welding section. The movement will take place while the wrist posture changes automatically as follows.
-
-![Figure 15 Example of L-Linear Interpolation](../../../_assets/image_48.png)
-
-During the linear interpolation, under certain conditions, the robot cannot automatically change the wrist posture, and such a condition is called the singular posture.
-
-
+在线性插值期间，在某些条件下，机器人无法自动改变手腕姿态，这种情况称为奇异姿态。
 
 {% hint style="info" %}
-Singular postures in which the posture interpolation cannot be performed are as follows.
+无法执行姿态插值的奇异姿态如下。
 
-* If the B-axis is near the dead zone: For details on the dead zone setting, refer to "[7.4.5 B-axis Deadzone](../../../7-system/4-robot-parameter/5-b-axis-deadzone.md)".
-* When the sign of the B-axis changes: When the sign of the B-axis angle switches \( - → + \) or \( + → - \)
-* When the angle variation of the R2 and R1 axes exceeds 180 degrees
-* When the center of the B-axis \(axis 5\) or the tooltip passes the center of rotation of the S-axis \(axis 1\): There may be an error in the trajectory as well as in the posture.
-* When the angle variation of the S-axis exceeds 180 degrees
+* 如果 B 轴接近死区：有关死区设置的详细信息，请参考 "[7.4.5 B 轴死区](../../../7-system/4-robot-parameter/5-b-axis-deadzone.md)"。
+* 当 B 轴的符号改变时：当 B 轴角度的符号切换 \( - → + \) 或 \( + → - \)
+* 当 R2 和 R1 轴的角度变化超过 180 度
+* 当 B 轴 \(轴 5\) 或工具末端通过 S 轴 \(轴 1\) 的旋转中心时：在姿态和轨迹中可能会出现错误。
+* 当 S 轴的角度变化超过 180 度
 {% endhint %}
 
-* C-Circular interpolation
+* C-圆形插值
 
-  It moves in a circular path created between two steps. There should be three points to determine the circle, and the references for selecting them are as follows.
+  它在两个步骤之间创建的圆形路径中移动。确定圆形需要三个点，选择这些点的参考如下。
 
+  * 在从 `[Step n]` 移动到 `[Step n+1]` 时，如果 `[Step n+1]` 的插值方法是 C-圆形插值，则需要参考下一个步骤 `[Step n+2]`。
 
+  * 如果 `[Step n+2]` 的插值方法是 C-圆形插值，则需要基于 `[Step n]`、`[Step n+1]` 和 `[Step n+2]` 确定圆形，并在其中沿 `[Step n]` - `[Step n+1]` 的段的弧线移动。
 
-  * At the time of moving from `[Step n]` to `[Step n+1]`, if the interpolation method of `[Step n+1]` is C-circular interpolation, it is required to refer to the next step `[Step n+2]`.
+  * 如果 `[Step n+2]` 的插值方法不是圆形插值，则需要参考前一步骤 `[Step n-1]` 并基于 `[Step n-1]`、`[Step n]` 和 `[Step n+1]` 确定圆形，并在其中沿 `[Step n]` - `[Step n+1]` 的段的弧线移动。
 
-  * If the interpolation method of `[Step n+2]` is C-circular interpolation, it is required to determine the circle based on `[Step n]`, `[Step n+1]`, and `[Step n+2]`, and among them, movement should take place along the arc of the section of `[Step n]` - `[Step n+1]`.
+![图 16 C-圆形插值示例 1](../../../_assets/image_338.png)
 
-  * If the interpolation method of `[Step n+2]` is not a circular interpolation, it is required to refer to the previous step `[Step n-1]` and determine the circle based on `[Step n-1]`, `[Step n]`, and `[Step n+1]`, and among them, movement should take place along the arc of the section of `[Step n]` - `[Step n+1]`.
+如果使用选择确定圆形所需的三个点的标准，您可以通过对相同点进行双重注册来创建程序，即使在连续弧的情况下也是如此。
 
+通过确定步骤的插值方法以考虑沿移动路径，并使用相同点的双重注册功能，您可以按需创建程序。
 
+![图 17 C-圆形插值示例 2](../../../_assets/image_302.png)
 
-![Figure 16 Example 1 of C-Circular Interpolation](../../../_assets/image_338.png)
+* 固定工具插值
 
-If you use the criteria of selecting three points required for determining the circle, you can create a program through the double registration of the same point, even in the case of a continuous arc.
+  当机器人拥有工件并使用外部固定工具进行工作时，将使用此方法。在这种情况下，插值将在机器人拥有的工件基础上进行。
 
-In this way, by determining the interpolation method of the step in consideration of the path to move along and using the same point dual registration function, you can create a program as desired.
-
-![Figure 17 Example 2 of C-Circular Interpolation](../../../_assets/image_302.png)
-
-* Stationary tool interpolation
-
-  This method will be used when the robot owns the workpiece and perform the work using an externally fixed tool. In this case, the interpolation will be performed based on the workpiece owned by the robot.
-
-  For details on the types of interpolation for stationary tools, refer to "[7.3.6.2 Stationary Tool Coordinate System](../../../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)".
-
-
-
-
-
-
+  有关固定工具的插值类型的详细信息，请参考 "[7.3.6.2 固定工具坐标系统](../../../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)"。
 [__SOURCE](2-operation/3-step/1-step-cmd-param/2-pose.md)
-# 2.3.1.2 Pose
+# 2.3.1.2 位姿
 
-A pose is a parameter to record the position. If you input a move, the movement command, by using the `[Command]` button, you should designate the pose expression in the tg \(target\) parameter. When the move statement is inputted using the `[REC]` key, the tg parameter will not appear. At the moment of touching the `[REC]` key, the position and posture of the manipulator will be recorded, but they will not be displayed on the JOB editing screen, which is why they are called a hidden pose.
+位姿是记录位置的参数。如果您通过使用 `[Command]` 按钮输入移动，该运动命令，您应该在 tg \(target\) 参数中指定位姿表达。当使用 `[REC]` 键输入移动语句时，tg 参数不会出现。在触碰 `[REC]` 按钮的瞬间，机械手的位置信息和姿态将被记录，但它们不会在 JOB 编辑屏幕上显示，这就是它们被称为隐藏位姿的原因。
 
-The method to input a pose is as follows.
+输入位姿的方法如下。
 
-1. Declare a pose variable, po1.
-   select [cmd.input > var_io > global or var] menu, and then input 'po1'.
-2. Initialize the pose variable as a pose type, using `[cur.pose]` button.
-3. Execute the declare and initialization commands so that periods are marked at the front of each command.
-4. After touching the `[cmd.input]` button, select `[motion]` and then input the statement.
+1. 声明一个位姿变量，po1。
+   选择 [cmd.input > var_io > global or var] 菜单，然后输入 'po1'。
+2. 使用 `[cur.pose]` 按钮将位姿变量初始化为位姿类型。
+3. 执行声明和初始化命令，以便在每个命令前标记句点。
+4. 在触碰 `[cmd.input]` 按钮后，选择 `[motion]` 然后输入语句。
 
     ![](../../../_assets/tp630/fbt-cmd-input-motion_eng.png)
 
-5. After touching the `[property]` button, set the attributes of the current robot pose and then touch the `[Apply]` button.
+5. 在触碰 `[property]` 按钮后，设置当前机器人位姿的属性，然后触碰 `[Apply]` 按钮。
 
     ![](../../../_assets/tp630/prg-step-pose_eng.png)
 
 <br>
 
-The pose variable and shift variable will be saved in the following formats.
+位姿变量和位移变量将以以下格式保存。
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:center">Pose Variable</th>
-      <th style="text-align:center">Shift Variable</th>
+      <th style="text-align:center">位姿变量</th>
+      <th style="text-align:center">位移变量</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center">(X, Y, Z, Rx, Ry, Rz, {Coordinate system}, {config.})</td>
-      <td style="text-align:center">(X, Y, Z, Rx, Ry, Rz, {Coordinate system})</td>
+      <td style="text-align:center">(X, Y, Z, Rx, Ry, Rz, {坐标系}, {config.})</td>
+      <td style="text-align:center">(X, Y, Z, Rx, Ry, Rz, {坐标系})</td>
     </tr>
     <tr>
       <td style="text-align:center">
-        <p>{Coordinate system}:</p>
-        <p>&quot;base&quot; = Base coordinate system
-          <br />&quot;robot&quot; = Robot coordinate system
-          <br />&quot;user{n}&quot; = User coordinate system (n refers to a number)
+        <p>{坐标系}:</p>
+        <p>&quot;base&quot; = 基坐标系
+          <br />&quot;robot&quot; = 机器人坐标系
+          <br />&quot;user{n}&quot; = 用户坐标系 (n 指的是数字)
           <br
-          />&quot;joint&quot; = Joint coordinate system
-          <br />&quot;encoder&quot;= Encoder</p>
+          />&quot;joint&quot; = 关节坐标系
+          <br />&quot;encoder&quot;= 编码器</p>
       </td>
       <td style="text-align:center">
-        <p>{Coordinate system}:</p>
-        <p>&quot;base&quot; = Base coordinate system
-          <br />&quot;robot&quot; = Robot coordinate system
-          <br />&quot;user{n}&quot; = User coordinate system (n refers to a number)
+        <p>{坐标系}:</p>
+        <p>&quot;base&quot; = 基坐标系
+          <br />&quot;robot&quot; = 机器人坐标系
+          <br />&quot;user{n}&quot; = 用户坐标系 (n 指的是数字)
           <br
-          />&quot;joint&quot; = Joint coordinate system</p>
+          />&quot;joint&quot; = 关节坐标系</p>
       </td>
     </tr>
   </tbody>
 </table>
-
-
-
-
 [__SOURCE](2-operation/3-step/1-step-cmd-param/3-speed.md)
-# 2.3.1.3 Speed
+# 2.3.1.3 速度
 
-The operation speed of the robot can be displayed using the following four types of units. They can be used in all interpolation methods.
+机器人操作速度可以使用以下四种单位进行显示。它们可以在所有插补方法中使用。
 
-* mm/sec, cm/min: Sets the maximum speed of the TCP \(Tool Center Point\) of the robot.   The maximum speed of the robot will be automatically calculated by the controller based on the position and acceleration/deceleration parameters. If the setting value is larger than the maximum speed limit of the performance of the robot, the robot will operate only at the maximum speed limit.
-
-
-
-* sec: Sets the robot moving time.  The shortest robot moving time will be automatically calculated by the controller based on the position and acceleration/deceleration parameters. If the setting value is shorter than the shortest time limit of the performance of the robot, the robot will operate only at the shortest time limit.
+* mm/sec, cm/min: 设置机器人工具中心点 \(Tool Center Point\) 的最大速度。 机器人最大速度将由控制器根据位置和加速度/减速度参数自动计算。如果设置值超过机器人的性能最大速度限制，机器人将仅以最大速度限制运行。
 
 
 
-* %: Sets the ratio of the robot moving speed to the maximum speed at which the robot can operate.  When this is set to 100%, the robot will operate at the maximum speed within the allowable range.
+* sec: 设置机器人移动时间。 机器人最短移动时间将由控制器根据位置和加速度/减速度参数自动计算。如果设置值短于机器人的性能最短时间限制，机器人将仅以最短时间限制运行。
 
 
 
-### Mechanism-Specified Speed Planning
-* {mech:Mechanism number, spd:Speed}(Speed unit) : Plans the speed trajectory of the corresponding step based on the selected mechanism number.
-* Code example
+* %: 设置机器人移动速度与机器人可以操作的最大速度的比例。当该值设置为 100% 时，机器人将在允许范围内以最大速度运行。
+
+
+
+### 机械特定速度规划
+* {mech:Mechanism number, spd:Speed}(速度单位) : 根据所选机械编号规划相应步骤的速度轨迹。
+* 代码示例
 ```python
 S2 move P,spd={mech:1,spd:100}mm/sec,accu=0,tool=0
 ```
-| Mechanism-Specified Speed Planning (Mechanism 100mm/sec)| Robot Speed Planning (Robot 100mm/sec)| 
+| 机械特定速度规划 (机械 100mm/sec)| 机器人速度规划 (机器人 100mm/sec)| 
 |---|---| 
 | ![alt text](../../../_assets/tp630/Vel_Profile_2Mec_Addaxis.gif) | ![alt text](../../../_assets/tp630/Vel_Profile_1Mec_Rob.gif) |
 
-* The yellow circle above indicates the additional axis set as Mechanism 1.
-  * Mechanism-specified speed: The additional axis (Mechanism 1) generates a trajectory that matches the speed of 100 mm/sec.
-  * Default setting: The robot generates a trajectory that matches the speed of 100 mm/sec.
+* 上面的黄色圆圈表示设置为机械 1 的附加轴。
+  * 机械特定速度: 附加轴 (机械 1) 生成与 100 mm/sec 速度匹配的轨迹。
+  * 默认设置: 机器人生成与 100 mm/sec 速度匹配的轨迹。
 
 <br>
 
 {% hint style="info" %}
-The mechanism-specified speed planning feature is available from version V60.32-00.
+机械特定速度规划功能在版本 V60.32-00 中可用。
 
-* The specification applies only when the unit is mm/sec or cm/min.
-* If the selected mechanism is in a stopped state, movement is performed based on the robot speed.
-* If the additional axis is a rotational type, speed is planned in mm/sec or cm/min based on the rotation radius configured in the details of `[System → 5: Initialization → 5: Additional Axis Parameter Settings]`.
-* When using the rotational positioner stationary weaving function, speed is planned based on the rotation radius of the workpiece on the positioner. (The positioner calibration must be completed.)
+* 当单位为 mm/sec 或 cm/min 时，规格适用。
+* 如果所选机械处于停止状态，则根据机器人的速度进行移动。
+* 如果附加轴为旋转类型，则根据 `[System → 5: Initialization → 5: Additional Axis Parameter Settings]` 中配置的旋转半径，以 mm/sec 或 cm/min 规划速度。
+* 使用旋转定位器静止编织功能时，速度根据定位器上工件的旋转半径进行规划。（定位器校准必须完成。）
 {% endhint %}
-
-
 [__SOURCE](2-operation/3-step/1-step-cmd-param/4-accuracy.md)
-# 2.3.1.4 Accuracy
+# 2.3.1.4 精度
 
-It will determine the accuracy \(the degree of approach to the recorded position\) at which the robot passes through the step when progressing the target step. When the robot moves to the target step, if the error between the current position and the recorded position that occurs when the robot moves to the target step is less than a certain value, the robot will move to the next step. The value of the allowable error at this time is called accuracy.
+它将确定机器人在推进目标步骤时经过该步骤的精度 \(接近记录位置的程度\)。当机器人移动到目标步骤时，如果当前位置信息与机器人移动到目标步骤时发生的记录位置之间的误差小于某个值，则机器人将移动到下一步。此时所允许的误差值称为精度。
 
-A path that is newly created within the accuracy range \(0~7\) according to the accuracy is called a cornering path. In general, the higher the accuracy, the faster the cornering speed, which is advantageous in terms of moving time.
-
-
-
-![Figure 18 Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
-
-Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression "Accuracy ≤ min\(P1-P2, P2-P3\) / 2" in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
-
-In the case of a robot, the value of the applicable accuracy level will be defined based on the tooltip distance and posture angle of the robot. When it comes to additional axes, the value in the case of the linear axis will be defined based on the length, and the value in the case of the rotation axis will be defined based on the angle. You can directly change the values in the `[system - 3: Robot Parameter - 6: Accuracy]` menu. For details on the value of the accuracy level, refer to "[7.4.6 Accuracy](../../../7-system/4-robot-parameter/6-accuracy.md)".
+在精度范围内 \(0~7\) 新创建的路径称为转角路径。一般而言，精度越高，转角速度越快，这在移动时间上是有利的。
 
 
 
-The figure below shows how the cornering path is created according to the value of the accuracy level. If there is a general 6-axis articulated robot and an additional axis, the value of accuracy level can be set individually for TCP \(tooltip distance\), ORN \(position angle\), and AUX \(additional axis distance\). Because all the values of relevant accuracy levels should be satisfied, the cornering path will be created based on the smallest value among TCP, ORN, and AUX. The cornering path will be created in a constant curve, regardless of the speed variation, while satisfying the convex hull property. However, errors of several millimeters \(mm\) may occur at low speed and high speed because of servo delay.
+![图18 由于精度而改变的路径 P2](../../../_assets/image_53.png)
 
-![Figure 19 Creation of the Cornering Path According to the Value of Accuracy Level](../../../_assets/image_79.png)
+精度0具有最高的精度，而精度7具有最大的误差。精度将在不能大于目标步骤两个轨迹中较短轨迹长度的1/2的方式下进行应用。换句话说，可以在上述示例中应用表达式 "Accuracy ≤ min\(P1-P2, P2-P3\) / 2"。在这个表达式中，使用了TCP距离进行说明，但相同的概念可以应用于角度。
+
+在机器人的情况下，适用的精度级别的值将根据机器人的工具距离和姿态角度来定义。当涉及附加轴时，线性轴的值将基于长度来定义，而旋转轴的值将基于角度来定义。您可以直接在 `[system - 3: Robot Parameter - 6: Accuracy]` 菜单中更改值。有关精度级别值的详细信息，请参阅 "[7.4.6 精度](../../../7-system/4-robot-parameter/6-accuracy.md)"。
+
+
+
+下图显示了根据精度级别的值如何创建转角路径。如果有一个一般的6轴关节机器人及附加轴，则可以为TCP \(工具距离\)、ORN \(位置角度\) 和AUX \(附加轴距离\) 单独设置精度级别的值。由于相关精度级别的所有值都应得到满足，因此转角路径将基于TCP、ORN和AUX之间的最小值创建。转角路径将在满足凸包性质的情况下，以恒定的曲线形式创建，无论速度变化如何。然而，由于伺服延迟，在低速和高速下可能会发生几毫米 \(mm\) 的误差。
+
+![图19 根据精度级别的值创建转角路径](../../../_assets/image_79.png)
 
 {% hint style="info" %}
-The mode of creating the cornering path according to the value of accuracy level will be applied to all types of interpolation in the same manner. In the case of P interpolation, the TCP distance accuracy will be applied, but errors may occur.
+根据精度级别的值创建转角路径的模式将以相同的方式应用于所有类型的插值。在P插值的情况下，将应用TCP距离精度，但可能会出现误差。
 {% endhint %}
 
-The cornering path will not exceed the convex polygon area because of the convex hull property, as shown below.
+由于凸包性质，转角路径不会超过凸多边形区域，如下所示。
 
-![Figure 20 All Points on the Cornering Path within the Convex Polygon Area](../../../_assets/image_87.png)
-
-
+![图20 转角路径上所有点在凸多边形区域内](../../../_assets/image_87.png)
 [__SOURCE](2-operation/3-step/1-step-cmd-param/5-tool-no.md)
-# 2.3.1.5 Tool Number
+# 2.3.1.5 工具编号
 
-The robot position will be determined by the position and posture of the tooltip. You can designate the tool number \(0-31\) that will be used. Refer to "[7.4.1.1 Tool Data Setting](../../../7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)" for more details.
-
-
-
+机器人位置将由工具头的位置和姿态决定。您可以指定将使用的工具编号 \(0-31\)。有关更多详细信息，请参阅 "[7.4.1.1 工具数据设置](../../../7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)"。
 [__SOURCE](2-operation/3-step/1-step-cmd-param/6-until.md)
-# 2.3.1.6 Stop Condition
+# 2.3.1.6 停止条件
 
-When the conditional expression "after until" is satisfied, the robot stops moving and executes the next command \(step or function\).
+当条件表达式“在...之后”满足时，机器人停止移动并执行下一条命令（步骤或功能）。
 
-The value of the conditional expression "after until" can be checked through the return value of the result \(\) function. You can check whether the move operation is terminated by a conditional expression.
+条件表达式“在...之后”的值可以通过结果 \(\) 函数的返回值进行检查。您可以检查移动操作是否通过条件表达式终止。
 
 ![Figure 21 Example of Stop Conditions](../../../_assets/image_46_1.png)
 
 {% hint style="info" %}
-For details on the robot language, refer to the "[Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README)."
+有关机器人语言的详细信息，请参考 "[Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/README)。"
 {% endhint %}
-
 [__SOURCE](2-operation/3-step/1-step-cmd-param/7-comment.md)
-# 2.3.1.7 Comment
+# 2.3.1.7 注释
 
-You can input a comment for the description of a step. You can input the contents of comments conveniently by using the soft keyboard.
-Refer to "[3.2.4.4 Soft Keyboard](../../../3-programming/2-prog-edit/4-statement-edit/4-softkeyboard.md)" for more details about how to use the soft keyboard.
-
+您可以为步骤的描述输入注释。您可以使用软键盘方便地输入注释内容。
+有关如何使用软键盘的更多详细信息，请参考 "[3.2.4.4 软键盘](../../../3-programming/2-prog-edit/4-statement-edit/4-softkeyboard.md)"。
 [__SOURCE](2-operation/3-step/2-step-pose-modify/README.md)
-# 2.3.2 Recording and Changing a Step Position
+# 2.3.2 记录和更改步骤位置
 
-You can record or change the robot position and posture of the recorded step using the `[REC]` key.
-
-
+您可以使用 `[REC]` 键记录或更改记录步骤的机器人位置和姿态。
 [__SOURCE](2-operation/3-step/2-step-pose-modify/1-joint-crd-sys.md)
-# 2.3.2.1 Axis Angle Recording Coordinate
+# 2.3.2.1 轴角录制坐标
 
-In manual mode, if the `[1: Pose Recording Form]` option in the `[system - 1: User Environment]` menu is set to axis angle, touch the `[property]` button in the move statement. The following attributes window will appear. The position of the robot recorded by the encoder can only be checked, and the position data cannot be modified.
+在手动模式下，如果在 `[system - 1: User Environment]` 菜单中的 `[1: Pose Recording Form]` 选项设置为轴角，触摸移动语句中的 `[property]` 按钮。将出现以下属性窗口。由编码器记录的机器人位置只能查看，位置数据无法修改。
 
 ![](../../../_assets/tp630/lbt-property_eng.png)
 
 ![](../../../_assets/tp630/dlg-property-axis_eng.png)
-
-
-
-
-
-
-
 [__SOURCE](2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)
-# 2.3.2.2 Base and Robot Recording Coordinates
+# 2.3.2.2 基座和机器人记录坐标
 
-The position and posture of the robot can be displayed differently depending on the coordinate system. If there is no travel axis, the base coordinate and the robot coordinate will generally be the same. If the travel axis is defined, the position and posture of the robot tool will be displayed differently depending on whether it is the base coordinate and the robot coordinate.
+机器人的位置和姿态可以根据坐标系统的不同而有所不同。如果没有移动轴，基座坐标和机器人坐标通常是相同的。如果定义了移动轴，则机器人工具的位置和姿态将根据基座坐标和机器人坐标的不同而有所不同。
 
-In manual mode, if the `[1: Pose Recording Form]` option in the `[system - 1: User Environment]` menu is set to base or robot, touch the `[property]` button in the move statement. You can check the position and posture of the robot tool in the attributes window.
+在手动模式下，如果在 `[system - 1: User Environment]` 菜单中的 `[1: Pose Recording Form]` 选项设置为基座或机器人，请触摸移动语句中的 `[property]` 按钮。您可以在属性窗口中检查机器人工具的位置和姿态。
 
 {% hint style="info" %}
-If you would like to change the pose recording form, please contact our customer support team to ask an expert or an engineer.
+如果您想更改姿态记录形式，请联系客户支持团队以咨询专家或工程师。
 {% endhint %}
 
-For one tooltip position and its orientation, there may be multiple postures because of the characteristics of the instrument, so to define one posture, the robot form \(config.\) should be designated.
+对于一个工具提示位置及其方向，由于仪器的特性，可能会有多种姿态，因此为了定义一个姿态， 应该指定机器人形式 \(config.\)。
 
-Collaborative robots can be restricted by the soft limit because of their mechanical structures. When the robot is not in operation, you can release the soft limit or set it to a large value.
+协作机器人由于其机械结构可以受到软限制的限制。当机器人不在操作时，您可以释放软限制或将其设置为较大值。
 
-* auto: Regarding the current posture of the robot, the items that come later will be automatically determined. If this mode is not set, a determination will be performed based on whether the items below are designated or not.
-* back: The tooltip of the robot is in the - direction on the X-axis of the robot coordinate system, meaning the rear. If this is not designated, the tooltip will be in the + direction, meaning the front. 
-* down: Relationship between the H-axis and V-axis. If this is designated, the result will be the bottom. If this is not designated, the result will be top.
+* auto: 关于机器人当前的姿态，后续的项目将会自动确定。如果未设置此模式，则将根据下面项目的指定与否进行判断。
+* back: 机器人的工具提示位于机器人坐标系统的 X 轴的 - 方向，意味着后方。如果未指定，则工具提示位于 + 方向，意味着前方。
+* down: H 轴和 V 轴之间的关系。如果指定此项，结果将是底部。如果未指定，则结果将是顶部。
 
-![Figure 22 Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../_assets/image_58_1.png)
+![图 22 H 轴和 V 轴的姿态: 上 \(左\), 下 \(右\)](../../../_assets/image_58_1.png)
 
+* flip: 使用 B 轴坐标为 + 值进行翻转。如果未指定，结果将是非翻转，与 - 值相对应。图中的红色箭头显示了腕轴顶部的方向。
 
+![图 23 翻转 \(左\) / 非翻转 \(右\) 姿态](../../../_assets/image_75.png)
 
-* flip: Flip with the B-axis coordinate being a + value. If this is not designated, the result will be non-flip with a - value. The red arrow in the figure shows the direction of the top of the wrist axis.
+* `S (|S|>=180)`: S 轴角度的绝对值超过 180 度。如果未指定，将小于 180 度。
+* `B (|B|>=180)`: B 轴角度的绝对值超过 180 度。如果未指定，将小于 180 度。
 
-![Figure 23 Flip \(Left\) / Non-flip \(Right\) Posture](../../../_assets/image_75.png)
+* `R2 (|R2|>=180)`: R2 轴角度的绝对值超过 180 度。如果未指定，将小于 180 度。
 
-* `S (|S|>=180)`: The absolute value of the S-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
-* `B (|B|>=180)`: The absolute value of the B-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
+* `R1 (|R1|>=180)`: R1 轴角度的绝对值超过 180 度。如果未指定，将小于 180 度。
 
-* `R2 (|R2|>=180)`: The absolute value of the R2-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
-
-* `R1 (|R1|>=180)`: The absolute value of the R1-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
-
-
-
-The coordinate system will be saved as `[Pose Variable]`.crd \(Example: po32.crd\), and one of the following strings will be designated. If it is an empty string, the basic value will be recognized as joint.
+坐标系统将被保存为 `[Pose Variable]`.crd \(示例: po32.crd\)，并将指定以下字符串之一。如果是空字符串，则基本值将被识别为关节。
 
 <table>
   <thead>
@@ -1762,19 +1531,19 @@ The coordinate system will be saved as `[Pose Variable]`.crd \(Example: po32.crd
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p>Base coordinate system = &quot;base&quot;
+        <p>基座坐标系统 = &quot;base&quot;
           <br />
         </p>
-        <p>Robot coordinate system = &quot;robot&quot;
+        <p>机器人坐标系统 = &quot;robot&quot;
           <br />
         </p>
-        <p>Joint coordinate system = &quot;joint&quot;
+        <p>关节坐标系统 = &quot;joint&quot;
           <br />
         </p>
-        <p>Encoder = &quot;encoder&quot;
+        <p>编码器 = &quot;encoder&quot;
           <br />
         </p>
-        <p>User coordinate system = &quot;u1&quot; &#x2013; &quot;u10&quot;
+        <p>用户坐标系统 = &quot;u1&quot; &#x2013; &quot;u10&quot;
           <br />
         </p>
         <p>
@@ -1784,100 +1553,80 @@ The coordinate system will be saved as `[Pose Variable]`.crd \(Example: po32.crd
     </tr>
   </tbody>
 </table>
-
-
-
-
 [__SOURCE](2-operation/4-r-code.md)
-# 2.4 R Codes
+# 2.4 R 代码
 
-R codes are unique code numbers assigned to specific functions. Assigning unique code numbers to frequently used functions can help you use those functions quickly. For details on R codes, refer to "[8 R codes](../r-code/)."
+R 代码是分配给特定功能的唯一代码编号。为常用功能分配唯一代码编号可以帮助您快速使用这些功能。有关 R 代码的详细信息，请参阅 "[8 R 代码](../r-code/)."
 
-After touching the `[R..[NO]]` key, input the code number and touch the `[OK]` button. Then the predefined function will be executed.
+触摸 `[R..[NO]]` 键后，输入代码编号并触摸 `[OK]` 按钮。然后将执行预定义的功能。
 
 ![](../_assets/tp630/k-r.png)
-
-
-
-
-
-
 [__SOURCE](2-operation/5-error-info/README.md)
-# 2.5 Error Information
+# 2.5 错误信息
 
-When a problem occurs, a notification will appear on the taskbar at the bottom of the ${cont_model} teach pendant screen and will blink for about one minute. You can check the error code, notification message, and the time of error occurrence.
+当问题发生时，通知将出现在${cont_model}教学挂件屏幕底部的任务栏上，并闪烁约一分钟。您可以检查错误代码、通知消息以及错误发生的时间。
 
 ![](../../_assets/tp630/wg-alarm_eng.png)
-
-
 [__SOURCE](2-operation/5-error-info/1-error-type.md)
-# 2.5.1 Error Type
+# 2.5.1 错误类型
 
-Troubles in the robot system are composed of errors and warnings.
+机器人系统中的故障由错误和警告组成。
 
 ![](../../_assets/tp630/wg-err-wrn_eng.png)
 
-* Error: It is a trouble serious enough to stop the robot operation, and the code number in the notification message starts with E.
+* 错误：这是一个足够严重的故障，足以停止机器人的操作，通知消息中的代码编号以 E 开头。
 
-
-* Warning: The robot will continue to operate, but a warning is a trouble that requires you to check whether or not a response action has been taken. The code number in the notification message starts with W.
-
+* 警告：机器人将继续运行，但警告是一个需要您检查是否采取了响应措施的问题。通知消息中的代码编号以 W 开头。
 [__SOURCE](2-operation/5-error-info/2-error-handle.md)
-# 2.5.2 Error Handling
+# 2.5.2 错误处理
 
-The following shows how to check and deal with various system troubles, such as system failures or operational errors.
+以下展示了如何检查和处理各种系统故障，比如系统故障或操作错误。
 
-* At the moment when a warning or error occurs, a notification with a code number and a title will appear on the guide display window.
+* 当警告或错误发生时，带有代码号码和标题的通知将出现在指导显示窗口。
 
   ![](../../_assets/tp630/wg-alarm_eng.png)
 
-* Touch [log] button on the guide display window. Then, the error and warning history will appear in a new window.
+* 在指导显示窗口上点击 [log] 按钮。然后，错误和警告历史将会在一个新窗口中出现。
 
-  * The error and warning history will be displayed in chronological order, and the most recent trouble will be highlighted with yellow.
+  * 错误和警告历史将按时间顺序显示，最新的故障将以黄色突出显示。
   
   ![](../../_assets/tp630/fbt-log_eng.png)
 
   ![](../../_assets/tp630/wg-alarm-log_eng.png)
 
-* Touch the `[Help]` button on the L-button bar of the ${cont_model} teach pendant screen. You can check the error code, the notification message, the cause of the trouble, and how to take action for it.
+* 在 ${cont_model} 教学挂件屏幕的 L 按钮栏上点击 `[Help]` 按钮。您可以查看错误代码、通知消息、故障原因以及如何采取措施。
 
   ![](../../_assets/tp630/lbt-help_eng.png)
 
   ![](../../_assets/tp630/help-alarm_eng.png)
-
-
-
-
-
 [__SOURCE](2-operation/6-log.md)
-# 2.6 Event log
+# 2.6 事件日志
 
-A log of events such as errors, warnings, notifications, start/stop actions, operations, changes in I/O values, and robot language executions that have occurred from the past to the present point in time is stored. (The maximum number of records stored varies depending on the type.)<br>
-You can check the type, message, occurrence time, program/step/function number at the time of occurrence, and related auxiliary information for each log. This information can be used as a clue to analyze the cause of the issue and to respond it.
+存储从过去到现在发生的事件日志，例如错误、警告、通知、开始/停止操作、操作、I/O 值变化和机器人语言执行。(存储的记录最大数量根据类型而异。)<br>
+您可以查看每个日志的类型、消息、发生时间、发生时的程序/步骤/功能编号以及相关的辅助信息。此信息可作为分析问题原因和应对问题的线索。
 
-
-Touch the `[Log]` button on the function button bar. Then, the log window will appear. 
+请触摸功能按钮栏上的`[Log]`按钮。然后，日志窗口将出现。
 
 ![](../_assets/tp630/log/11_fb_log.PNG)
 
-You can check the event logs. Touch the up-pointing arrow icon on the right side.
+您可以查看事件日志。请触摸右侧的上箭头图标。
 
 ![](../_assets/tp630/log/21_log.PNG)
 
-Filter options and auxiliary information for the log are displayed as below;
+日志的过滤选项和辅助信息如下所示。
 
 ![](../_assets/tp630/log/31_log.PNG)
 ![](../_assets/tp630/log/44_di.PNG)
 
 {% hint style="info" %}
-The display of auxiliary information is supported from V60.30-01.
+辅助信息的显示从 V60.30-01 开始支持。
 {% endhint %}
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -1886,13 +1635,13 @@ The display of auxiliary information is supported from V60.30-01.
         <img src="../_assets/c1.png"/>
       </td>
       <td style="text-align:left">
-        Aux. info.: The system's status at the time an error or warning occurs is also recorded, and you can view this in the aux. info. window. By clicking the tabs at the top, you can select and check the desired aux. info. The active input/output signal values are displayed with a yellow background, and assigned user I/O is shown in bold.
+        辅助信息：发生错误或警告时系统的状态也会被记录，您可以在辅助信息窗口中查看。在顶部点击标签可以选择并查看所需的辅助信息。活动输入/输出信号值以黄色背景显示，分配的用户 I/O 以加粗显示。
         <ul>  
-          <li>Pose : Robot, additive axis values. (unit: mm or deg.)</li>
-          <li>S/In : System input values. Only first 8bytes are recorded. (si0~63)</li>
-          <li>S/Out : System output values. Only first 8bytes are recorded. (so0~63)</li>
-          <li>D/In : User input values. Only fb0's first 32bytes are recorded. </li>(fb0.dib0~31)
-          <li>D/Out : User output values. Only fb0's first 32bytes are recorded. </li>(fb0.dob0~31)
+          <li>姿态：机器人、附加轴值。(单位：mm 或 deg.)</li>
+          <li>S/In：系统输入值。仅记录前 8 字节。(si0~63)</li>
+          <li>S/Out：系统输出值。仅记录前 8 字节。(so0~63)</li>
+          <li>D/In：用户输入值。仅记录 fb0 的前 32 字节。</li>(fb0.dib0~31)
+          <li>D/Out：用户输出值。仅记录 fb0 的前 32 字节。</li>(fb0.dob0~31)
         </ul>
       </td>
     </tr>
@@ -1901,16 +1650,16 @@ The display of auxiliary information is supported from V60.30-01.
         <img src="../_assets/c2.png"/>
       </td>
       <td style="text-align:left">
-        You can use the filter buttons to display only the log of the desired type. When the filter button is turned on, the corresponding type will be displayed, and when turned off, it will be hidden.
+        您可以使用过滤按钮仅显示所需类型的日志。当过滤按钮打开时，相应的类型将被显示，关闭时将被隐藏。
         <ul>
-          <li>[All]: Turn all filter buttons on or off at once.</li>
-          <li>[+E]/[+W]: View error or warning log.</li>
-          <li>[+N]: View notification (Notice) log.</li>
-          <li>[+ST]: View robot start (START) and stop (STOP) log.</li>
-          <li>[+P]: View periodically recorded status log.</li>
-          <li>[+OP]: View user operation log.</li>
-          <li>[+IO]: View input/output signal change log.</li>
-          <li>[+H]: View job program execution log.</li>
+          <li>[全部]：一次打开或关闭所有过滤按钮。</li>
+          <li>[+E]/[+W]：查看错误或警告日志。</li>
+          <li>[+N]：查看通知（Notice）日志。</li>
+          <li>[+ST]：查看机器人启动（START）和停止（STOP）日志。</li>
+          <li>[+P]：查看定期记录的状态日志。</li>
+          <li>[+OP]：查看用户操作日志。</li>
+          <li>[+IO]：查看输入/输出信号变化日志。</li>
+          <li>[+H]：查看作业程序执行日志。</li>
         </ul>
       </td>
     </tr>
@@ -1921,19 +1670,19 @@ The display of auxiliary information is supported from V60.30-01.
       <td style="text-align:left">
         <ul>
           <li>[
-            <img src="../_assets/bt-menu.png"/>]: You can open the pop-up menu.
+            <img src="../_assets/bt-menu.png"/>]: 您可以打开弹出菜单。
             <ul>
-              <li>Save as log file: Events are first stored in the memory buffer, and when the buffer is full, they are automatically saved to a file. By selecting this menu, any log still in the buffer will be immediately saved to a file.</li>
-              <li>Clear log file: You can clear the logs in memory buffer and delete all the log files. (Deleted files cannot be restored.)</li>
+              <li>另存为日志文件：事件首先存储在内存缓冲区中，当缓冲区满时，它们会自动保存到文件中。通过选择此菜单，仍在缓冲区中的任何日志将立即保存到文件。</li>
+              <li>清除日志文件：您可以清除内存缓冲区中的日志并删除所有日志文件。（已删除的文件无法恢复。）</li>
             </ul>
           </li>
           <li>[
-            <img src="../_assets/bt-lock.png"/>]: This function locks the display of new events on the screen. Even when locked, new events will continue to be recorded; only the screen refresh is blocked. This feature can be useful when the log screen keeps updating and obstructing your view. You can unlock it by pressing the lock button again or by closing and reopening the log window.
+            <img src="../_assets/bt-lock.png"/>]: 此功能锁定屏幕上新事件的显示。即使被锁定，新事件仍将继续记录；仅屏幕刷新被阻止。当日志屏幕不停更新并阻挡视线时，此功能可能很有用。您可以通过再次按锁定按钮或关闭并重新打开日志窗口来解锁。
           </li>
           <li>[
-            <img src="../_assets/bt-trash.png"/>]: This clears the events displayed on the screen. It only clears the screen, and the internally recorded log is not deleted.</li>
+            <img src="../_assets/bt-trash.png"/>]: 此操作清除屏幕上显示的事件。它仅清除屏幕，内部记录的日志不会被删除。</li>
           <li>[
-            <img src="../_assets/bt-refresh.png"/>]: When the log screen is cleared, pressing this button will retrieve the log again and display it on the screen.</li>
+            <img src="../_assets/bt-refresh.png"/>]: 当日志屏幕被清除时，按此按钮将重新获取日志并在屏幕上显示。</li>
         </ul>
       </td>
     </tr>
@@ -1941,160 +1690,124 @@ The display of auxiliary information is supported from V60.30-01.
       <td style="text-align:left">
         <img src="../_assets/c4.png"/>
       </td>
-      <td style="text-align:left">This is the log of the selected type. New events are highlighted at the top with a yellow background.</td>
+      <td style="text-align:left">这是选定类型的日志。新事件在上方以黄色背景突出显示。</td>
     </tr>
   </tbody>
 </table>
-
-
-
-
 [__SOURCE](2-operation/7-user-key/README.md)
-# 2.7 User Key
+# 2.7 用户键
 
-By assigning the desired functions to the buttons in the user button area on the R button bar of the ${cont_model} teach pendant screen, you can conveniently use them when teaching a robot.
-
-
+通过将所需的功能分配给 ${cont_model} 教学挂件屏幕 R 按钮栏上的用户按钮区域，您可以在教导机器人时方便地使用它们。
 [__SOURCE](2-operation/7-user-key/1-user-key-region.md)
-# 2.7.1 Switching of the User Key Area
+# 2.7.1 用户键区域的切换
 
-Touch the `[user key]` button on the R button bar of the ${cont_model} teach pendant screen until the desired area appears. Then, the menu button area will be switched to the user button area. In the user key area, the key signal output function and the spot application function are assigned and provided by default.
+在 ${cont_model} 教学挂件屏幕的 R 按钮栏上触摸 `[user key]` 按钮，直到所需区域出现。然后，菜单按钮区域将切换到用户按钮区域。在用户键区域中，键信号输出功能和点应用功能默认分配和提供。
 
 ![](../../_assets/tp630/user-bar/user-bar.png)
 
-* If you press the `[user key]` button while pressing the `shift` key, you can switch the area in the opposite direction.
+* 如果您在按下 `shift` 键的同时按下 `[user key]` 按钮，可以反向切换区域。
   
-* The key signal output function area will stay empty as the initial state in which no button is registered.
-
-  
-
-
-
-
-
-
+* 键信号输出功能区域将在没有注册按钮的初始状态下保持为空。
 [__SOURCE](2-operation/7-user-key/2-button-registration/README.md)
-# 2.7.2 Button Registration for Each Area
+# 2.7.2 按钮注册区域
 
-You can register the desired function in the user key area with a button.
-
+您可以在用户键区域通过按钮注册所需的功能。
 [__SOURCE](2-operation/7-user-key/2-button-registration/1-key-signal-output.md)
-# 2.7.2.1 Key Signal Output Function Area
+# 2.7.2.1 关键信号输出功能区域
 
+`键信号输出 (Key Signal Output)` 是一个允许您将所需变量分配给 F键并通过按钮操作将该变量的值设置为 1 或 0 的功能。 主要用于通过操作分配了输出变量的 F键打开或关闭 I/O 输出信号。 （所有类型的变量都可以被指定，包括一般变量、别名和输出变量。）
 
-`Key Signal Output` is a function that allows you to assign a desired variable to an F-key and set the value of that variable to 1 or 0 through button operation.
-It is mainly used to turn I/O output signals ON or OFF by operating an F-key to which an output variable has been assigned.
-(All types of variables can be specified, including general variables, aliases, and output variables.)
+您可以通过按 HOME 屏幕右侧的 `[R4: User Key]` 打开 `键信号输出 (Key Signal Output)` 按钮。 如果没有进行任何设置，所有按钮将为空。
 
-You can open the `Key Signal Output` buttons by pressing `[R4: User Key]` on the right side of the HOME screen.
-If no settings have been made, all buttons will be empty.
+您可以按如下方式配置按钮：
 
-You can configure the buttons as follows:
+1. 在 `键信号输出 (Key Signal Output)` 按钮开启的情况下，触摸 `[CTRL] + [User Key]`。 `键信号输出设置` 窗口出现。
 
-1. With the `Key Signal Output` buttons open, touch `[CTRL] + [User Key]`.
-The `Key Signal Output Setting` window appears.
-
-2. Set the function name and options to be displayed on the button, then touch `[F7: OK]`.
+2. 设置要显示在按钮上的功能名称和选项，然后触摸 `[F7: 确认] ([F7: OK])`。
 
 ![](../../../_assets/tp630/ctrl-key-outsignal_eng.png)
 
-* `title`: Name displayed on the button
-* `on-var`: When a variable name is specified, the value 1 is assigned to the variable at the moment the button is turned ON.
-* `off-var`: When a variable name is specified, the value 1 is assigned to the variable at the moment the button is turned OFF.
-* `toggle`:
-  + Checked: The button toggles between ON and OFF each time it is pressed.
-  + Unchecked: The button turns ON when pressed and turns OFF when released.
-* `Permit on auto mode`:
-  + Checked: This function operates even in Auto mode.
-  + Unchecked: This function does not operate in Auto mode.
-* `OFF on auto mode`: When switching to Auto mode, all variables set for this function are turned OFF.
+* `标题 (title)`：显示在按钮上的名称
+* `on-var`：当指定变量名时，按钮打开时会将值 1 分配给该变量。
+* `off-var`：当指定变量名时，按钮关闭时会将值 1 分配给该变量。
+* `切换 (toggle)`：
+  + Checked: 按钮每次按下时在开启和关闭之间切换。
+  + Unchecked: 按钮被按下时开启，释放时关闭。
+* `允许 在 自动 模式 (Permit on auto mode)`：
+  + Checked: 此功能在自动模式下也可操作。
+  + Unchecked: 此功能在自动模式下不操作。
+* `关闭 开启 自动 模式 (OFF on auto mode)`：切换到自动模式时，此功能设置的所有变量将被关闭。
 
 {% hint style="info" %}
-For `on-var` and `off-var`, for example, if you enter 3.5 and press `[ENTER]`, fb3.do5 is entered.
-If you enter 5 and press `[ENTER]`, do5 is entered.
-Alternatively, you can use the F-keys [fb], [do], and [so] at the bottom of the screen to enter values.
+对于 `on-var` 和 `off-var`，例如，如果您输入 3.5 并按下 `[ENTER]`，则 fb3.do5 被输入。 如果您输入 5 并按下 `[ENTER]`，则 do5 被输入。 或者，您可以使用屏幕底部的 F 键 [fb]、[do] 和 [so] 输入值。
 {% endhint %}
 
-3. Open the `Key Signal Output` buttons and touch the registered F-key together with the `[SHIFT]` key to verify that the settings have been applied correctly.
+3. 打开 `键信号输出 (Key Signal Output)` 按钮，并触摸注册的 F 键和 `[SHIFT]` 键以验证设置是否正确应用。
 
 ![](../../../_assets/tp630/rbt-userkey-keysig_eng.png)
 
 {% hint style="info" %}
-You can also access the same setting screen from
-`[F2: system] - 2: Control parameter - 2: Input/Output signal setting - 5: Key signal output`.
-For more details, refer to "[7.3.2.8 Key Signal Output](../../../7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)"".
+您还可以通过 `[F2: 系统] - 2: 控制参数 - 2: 输入/输出信号设置 - 5: 关键信号输出 ([F2: system] - 2: Control parameter - 2: Input/Output signal setting - 5: Key signal output)` 访问相同的设置界面。 有关更多详细信息，请参阅 "[7.3.2.8 Key Signal Output](../../../7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)"。
 {% endhint %}
-
 [__SOURCE](2-operation/7-user-key/2-button-registration/2-rob-appl-cfg.md)
-# 2.7.2.2 Robot application user-key configuration
+# 2.7.2.2 机器人应用用户键配置
 
-Touch the `[user key]` button on the R button bar of the ${cont_model} teach pendant screen until the desired area appears. Then, the F button area will be switched to the robot application user-key area, such as spotweld-bar and arcweld-bar.
+长按 ${cont_model} 教导终端屏幕上的 `[user key]` 按钮，直到所需区域出现。然后，F 按钮区域将切换到机器人应用用户键区域，例如 spotweld-bar 和 arcweld-bar。
 
 
 
 ![](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
 
-Press the `ctrl` key and press the `user-key` button to open a configuraiton screen where you can adjust the layout of the user buttons.
+按 `控制 (ctrl)` 键并按 `user-key` 按钮以打开配置屏幕，在此屏幕中您可以调整用户按钮的布局。
 
-The list at the bottom of the screen is a list of selectable F buttons, and you can move the cursor with `[Arrow Up]`/`[Arrow Down]`.
+屏幕底部的列表是可选择的 F 按钮列表，您可以使用 `[Arrow Up]`/`[Arrow Down]` 移动光标。
 
-The top of the screen is the layout of the user buttons, and you can move the cursor with `[Arrow Left]`/`[Arrow Right]`.
+屏幕顶部是用户按钮的布局，您可以使用 `[Arrow Left]`/`[Arrow Right]` 移动光标。
 
-Press the `[ENTER]` key or the `[F1:Select]` button to place the selected F button in the selected position.
-If you press the `[DEL]` key or the `[F2:Delete]` button, the button in the selected position will be deleted and empty.
+按 `[ENTER]` 键或 `[F1:选择] ([F1:Select])` 按钮将所选 F 按钮放置到所选位置。
+如果您按 `[DEL]` 键或 `[F2:删除] ([F2:Delete])` 按钮，则所选位置的按钮将被删除并变为空。
 
-After completing the placement, press the `[F7:OK]` button to save the user button layout.
+完成放置后，按 `[F7:确认] ([F7:OK])` 按钮以保存用户按钮布局。
 
 
-* For details on the spot application function, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+* 有关点应用功能的详细信息，请参阅 "[${cont_model} 控制器点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 
-* For details on the arc application function, refer to the "[${cont_model} Controller Arc Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-arc-weld/en/README)".
-
+* 有关弧应用功能的详细信息，请参阅 "[${cont_model} 控制器弧焊功能手册](https://hrbook-hrc.web.app/#/view/doc-arc-weld/zh/README)"。
 [__SOURCE](2-operation/8-coord-sys/README.md)
-# 2.8 Coordinate System
+# 2.8 坐标系统
 
-Coordinates in space are used to determine the direction of the robot's movement. ${cont_model} controller has the joint coordinate system, robot coordinate system, user coordinate system, and tool coordinate system.
-
+空间中的坐标用于确定机器人运动的方向。 ${cont_model} 控制器具有关节坐标系统、机器人坐标系统、用户坐标系统和工具坐标系统。
 [__SOURCE](2-operation/8-coord-sys/1-jog-key.md)
 # 2.8.1 Jog Keys
 
-It can be used in manual mode. When you are holding the enabling switch, with the motor ON and pressing jog keys, you can move the robot at a low speed.
+它可以在手动模式下使用。当您按住使能开关，电机开启并按下 jog 按键时，您可以以低速移动机器人。
 
-The direction of the robot motion depends on the reference coordinate system. The joints moves individually in the axis corrdinate system, while they move simultaneously in other corrdinate systems so that the TCP can move in the direction of the selected rectangular coordinate system.
+机器人的运动方向取决于参考坐标系。关节在轴坐标系中单独移动，而在其他坐标系统中同时移动，以便 TCP 可以朝选定的矩形坐标系方向移动。
 
 ![](../../_assets/tp630/sbar-joint-crdsys_eng.png)
 
-
 ![](../../_assets/tp630/keypad-jog_eng.png)
 
-The motions of J7 and J8 keys are determined by how you set the robot model and additional axes. J7 in a 7-axes robot can be operated by the jog key assigned at R3 axis, the third axis. For other type robots,  you can operate the additional axes with jog keys, according to the mechanism setting.
+J7 和 J8 按键的运动由您设置的机器人模型和附加轴决定。7 轴机器人的 J7 可以通过分配给 R3 轴（第三轴）的 jog 按键进行操作。对于其他类型的机器人，您可以根据机制设置通过 jog 按键操作附加轴。
 
-Only in the case in which the selected mechanism is mechanism `[0]` robot selected during jogging, if the total number of axes of the next mechanism `[1]` is less than two, they will be assigned according to the order of the registered additional axes. At this time, if unassigned keys remain in the mechanism `[1]` and the next mechanism has room, in terms of the number of axes to which the remaining axes can be assigned, they will be sequentially assigned.
+仅在所选机制为在 jog 时选择的机制 `[0]` 的情况下，如果下一个机制 `[1]` 的总轴数少于两个，将根据注册的附加轴的顺序进行分配。此时，如果机制 `[1]` 中还有未分配的按键，并且下一个机制在可以分配剩余轴的轴数方面有空间，它们将按顺序分配。
 
-For example, whether to perform an assignment for the axes J7 and J8 according to the number of axes of the mechanisms for the additional axes will be as follows.
+例如，是否根据附加轴的机制轴数对 J7 和 J8 轴进行分配将如下所示。
 
-| Mechanism `[0]` | Mechanism `[1]` | Mechanism `[2]` | Whether to assign for J7 axis / J8 axis |
+| Mechanism `[0]` | Mechanism `[1]` | Mechanism `[2]` | 是否为 J7 轴 / J8 轴分配 |
 | :--- | :--- | :--- | :--- |
-| 6-axis robot | Travel axis, Axis 1 | Positioner, Axis 1 | J7: Travel axis / J8: Positioner |
-| 6-axis robot | Travel axis, Axis 1 | Positioner, Axis 2 | J7: Travel axis / J8: Not assigned |
-| 6-axis robot | Travel axis, Axis 2 | Positioner, Axis 2 | J7: Travel axis 1 / J8: Travel axis 2 |
-| 6-axis robot | Travel axis, Axis 3 | Positioner, Axis 1 | J7: Not assigned / J8: Not assigned |
-
-
-
-
-
-
-
-
+| 6 轴机器人 | 运动轴，轴 1 | 定位器，轴 1 | J7: 运动轴 / J8: 定位器 |
+| 6 轴机器人 | 运动轴，轴 1 | 定位器，轴 2 | J7: 运动轴 / J8: 未分配 |
+| 6 轴机器人 | 运动轴，轴 2 | 定位器，轴 2 | J7: 运动轴 1 / J8: 运动轴 2 |
+| 6 轴机器人 | 运动轴，轴 3 | 定位器，轴 1 | J7: 未分配 / J8: 未分配 |
 [__SOURCE](2-operation/8-coord-sys/2-joint-crdsys.md)
-# 2.8.2 Joint Coordinate System
+# 2.8.2 关节坐标系统
 
 <table>
-	<th style="background:lightgreen">Joint Coordinate System</th>
-	<th>Robot Coordinate System </th>
-	<th>User Coordinate System</th>
-	<th>Tool Coordinate System</th>
+	<th style="background:lightgreen">关节坐标系统</th>
+	<th>机器人坐标系统</th>
+	<th>用户坐标系统</th>
+	<th>工具坐标系统</th>
 <tr>
 	<td><img src="../../_assets/tp630/sbt-crd-axis_eng.png"/></td>
 	<td><img src="../../_assets/tp630/sbt-crd-robot_eng.png"/></td>
@@ -2103,32 +1816,30 @@ For example, whether to perform an assignment for the axes J7 and J8 according t
 </tr>
 </table>
 
-1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
+1.	在手动模式下打开电机，并按住教导盒背面的启用开关。
 
-2.	Select the joint coordinate system by repeatedly touching the `[Crd. Sys]` button on the status display window of the ${cont_model} teach pendant screen. Then, the jog bar will display the name of each joint.
+2.	通过重复按触 ${cont_model} 教导盒屏幕状态显示窗口上的 `[Crd. Sys]` 按钮来选择关节坐标系统。然后，操作杆将显示每个关节的名称。
 
     ![](../../_assets/tp630/k-crdsys_eng.png)
 
     ![](../../_assets/tp630/sbar-joint-crdsys_eng.png)
 
 
-3.	Operate the robot with the jog keys. Each joint of the robot moves independently.
+3.	使用操控键操作机器人。机器人的每个关节独立移动。
 
     ![](../../_assets/image_85.png)
 
 {% hint style="info" %}
-For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](jog-key.md)". 
+有关机器人在与操控键相关的进展方向的详细信息，请参阅 "[2.7.1 Jog Keys](jog-key.md)"。 
 {% endhint %}
-
-
 [__SOURCE](2-operation/8-coord-sys/3-robot-crdsys.md)
-# 2.8.3 Robot Coordinate System
+# 2.8.3 机器人坐标系统
 
 <table>
-	<th>Joint Coordinate System</th>
-	<th style="background:lightgreen">Robot Coordinate System</th>
-	<th>User Coordinate System</th>
-	<th>Tool Coordinate System</th>
+	<th>关节坐标系统</th>
+	<th style="background:lightgreen">机器人坐标系统</th>
+	<th>用户坐标系统</th>
+	<th>工具坐标系统</th>
 <tr>
 	<td><img src="../../_assets/tp630/sbt-crd-axis_eng.png"/></td>
 	<td><img src="../../_assets/tp630/sbt-crd-robot_eng.png"/></td>
@@ -2137,43 +1848,39 @@ For details on the robot's progress direction in relation to the jog keys, refer
 </tr>
 </table>
 
-1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
+1. 在手动模式下打开电动机，并按住教学挂件背面的启用开关。
 
-2.	Select the robot coordinate system by repeatedly touching the `[Crd. Sys]` button on the status display window of the ${cont_model} teach pendant screen. 
+2. 通过不断触摸 ${cont_model} 教学挂件屏幕状态显示窗口中的 `[Crd. Sys]` 按钮来选择机器人坐标系统。
 
     ![](../../_assets/tp630/k-crdsys_eng.png)
 
     ![](../../_assets/tp630/sbar-robot-crdsys_eng.png)
 
 
-3.	Operate the robot with the jog keys. The robot will move as follows.
+3. 使用走动键操作机器人。机器人将如以下所示移动。
 
     ![](../../_assets/image_62.png)
 
 {% hint style="info" %}
-* For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)." 
+* 有关机器人进度方向与走动键之间的关系，请参阅 "[2.7.1 走动键](1-jog-key.md)。" 
 * 
-  If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
+  如果您使用右手，您可以更容易理解机器人坐标系统中的机器人操作。
 
   ![](../../_assets/crd-direction.png) 
 
-Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
+图26 坐标系统方向（左）/ 旋转方向（右）
 
-* If you put the progress direction of the right index finger in the X direction of the robot coordinate system, while you stand on the back of the robot, the progress direction of the thumb becomes the Z direction, and the progress direction of the middle finger becomes the Y direction.
-* If you put the thumb of the right hand in the direction of the central axis of rotation, the direction of the other folded fingers becomes the + direction of the rotation direction.
+* 如果您将右食指的进度方向放在机器人坐标系统的 X 方向上，当您站在机器人的背面时，拇指的进度方向便成为 Z 方向，中指的进度方向便成为 Y 方向。
+* 如果您将右手的拇指放在旋转中心轴的方向上，其他折叠手指的方向便成为旋转方向的 + 方向。
 {% endhint %}
-
-
-
-
 [__SOURCE](2-operation/8-coord-sys/4-user-crdsys.md)
-# 2.8.4 User Coordinate System
+# 2.8.4 用户坐标系统
 
 <table>
-	<th>Joint Coordinate System</th>
-	<th>Robot Coordinate System</th>
-	<th style="background:lightgreen">User Coordinate System</th>
-	<th>Tool Coordinate System</th>
+	<th>关节坐标系统</th>
+	<th>机器人坐标系统</th>
+	<th style="background:lightgreen">用户坐标系统</th>
+	<th>工具坐标系统</th>
 <tr>
 	<td><img src="../../_assets/tp630/sbt-crd-axis_eng.png"/></td>
 	<td><img src="../../_assets/tp630/sbt-crd-robot_eng.png"/></td>
@@ -2182,41 +1889,35 @@ Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
 </tr>
 </table>
 
-
-
-
-
-1.	On the right side of the initial screen, touch the `[system]` button  - `[2: Control Parameter - 7: Coordinate System Registration - 1: User Coordinate System]` menu and then register the user coordinate system.
+1.	在初始屏幕的右侧，触摸 `[system]` 按钮 - `[2: 控制参数 - 7: 坐标系统注册 - 1: 用户坐标系统]` 菜单，然后注册用户坐标系统。
 
 {% hint style="info" %}
-For details on how to register the user coordinate system, refer to "[7.3.6.1 User Coordinate System](../../7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md)."
+有关如何注册用户坐标系统的详细信息，请参阅 "[7.3.6.1 用户坐标系统](../../7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md)。"
 {% endhint %}
 
-2.	Touch the `[Speed Adjustment]` button at the top left of the initial screen and then set the coordinate system in the `[9: Select user coordinate]` option. You can choose the user coordinate system instead of the Cartesian coordinate system.
+2.	触摸初始屏幕左上角的 `[Speed Adjustment]` 按钮，然后在 `[9: 选择用户坐标]` 选项中设置坐标系统。您可以选择用户坐标系统，而不是笛卡尔坐标系统。
 
 	![](../../_assets/tp630/fbt-condset_eng.png)
 
 	![](../../_assets/tp630/cond-set-usercrd_eng.png)
 
-3.	Operate the robot with the jog keys. The robot will move as follows.
+3.	使用手动键操作机器人。机器人将按如下方式移动。
 
 	![](../../_assets/tp630/k-crdsys_eng.png)
 
 	![](../../_assets/tp630/sbar-user-crdsys_eng.png)
 
 {% hint style="info" %}
-For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)." 
+有关机器人在手动键操作下的进展方向的详细信息，请参阅 "[2.7.1 手动键](1-jog-key.md)。" 
 {% endhint %}
-
-
 [__SOURCE](2-operation/8-coord-sys/5-tool-crdsys.md)
-# 2.8.5 Tool Coordinate System
+# 2.8.5 工具坐标系统
 
 <table>
-	<th>Joint Coordinate System</th>
-	<th >Robot Coordinate System</th>
-	<th>User Coordinate System</th>
-	<th style="background:lightgreen">Tool Coordinate System</th>
+	<th>关节坐标系统</th>
+	<th >机器人坐标系统</th>
+	<th>用户坐标系统</th>
+	<th style="background:lightgreen">工具坐标系统</th>
 <tr>
 	<td><img src="../../_assets/tp630/sbt-crd-axis_eng.png"/></td>
 	<td><img src="../../_assets/tp630/sbt-crd-robot_eng.png"/></td>
@@ -2225,528 +1926,450 @@ For details on the robot's progress direction in relation to the jog keys, refer
 </tr>
 </table>
 
-1.	Turn on the motor in manual mode and hold the enabling switch on the back of the teach pendant.
+1.	以手动模式开启电机，同时按住教导控制器背面的启用开关。
 
-2.	Select the tool coordinate system by repeatedly touching the `[Crd. Sys]` button on the status display window of the ${cont_model} teach pendant screen. 
+2.	通过反复触碰 ${cont_model} 教导控制器屏幕状态显示窗口上的`[Crd. Sys]`按钮选择工具坐标系统。
 
     ![](../../_assets/tp630/k-crdsys_eng.png)
 
     ![](../../_assets/tp630/sbar-tool-crdsys_eng.png)
 
-3.	Operate the robot with the jog keys. The robot will move as follows.
+3.	使用手动键操作机器人。机器人将如以下所示移动。
 
-* If a torch is attached to the robot
+* 如果机器人上附加了焊接枪
 
     ![](../../_assets/image_68.png)
 
 
 
-* If no torch is attached to the robot
+* 如果机器人上没有附加焊接枪
 
     ![](../../_assets/image_92.png)
 
 {% hint style="info" %}
-For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)."
+有关机器人在与手动键相关的移动方向的详细信息，请参阅"[2.7.1 Jog Keys](1-jog-key.md)."
 {% endhint %}
-
-
 [__SOURCE](2-operation/9-axis-origin.md)
-# 2.9 Optimization of the Axis Origin and Tool Length
+# 2.9 轴原点和工具长度的优化
 
-You can make it possible for the axis integer and tool length to be automatically set to improve the accuracy of the linear interpolation trajectory and coordinate shifting.
+您可以使轴整数和工具长度自动设置，以提高线性插值轨迹和坐标偏移的准确性。
 
-* You can make it possible for the distance to the tooltip, which is difficult to measure in 3D, to be automatically set. The parameters to be calibrated are the axis origins of the H, V, R2, and B axes and the tool length in the X, Y, and Z directions.
-* You can perform "optimization of axis origin and tool length" and of "tool length."
+* 您可以使工具提示的距离（在3D中难以测量）自动设置。要校准的参数是H、V、R2和B轴的轴原点以及X、Y和Z方向的工具长度。
+* 您可以执行“轴原点和工具长度的优化”和“工具长度的优化”。
 
 {% hint style="warning" %}
-You should optimize the "axis origin and tool length" before teaching the robot program. If the "axis origin and tool length" is optimized while a robot program has been created already, the position in the existing program may change.
+您应该在教学机器人程序之前优化“轴原点和工具长度”。如果在已经创建机器人的程序时优化了“轴原点和工具长度”，现有程序中的位置可能会发生变化。
 {% endhint %}
 
-The following shows how to set the optimization of the axis origin and tool length:
+以下显示了如何设置轴原点和工具长度的优化：
 
-1.	Set the operation mode to manual mode using the mode switch on the teach pendant.
+1. 使用教学 pendant 上的模式开关将操作模式设置为手动模式。
 
-2.	After touching the `[PROG]` key with `[SHIFT]` in the JOB program window, input the program number, and then touch the `[OK]` button.
-
+2. 在JOB程序窗口中，按住 `[SHIFT]` 并触摸 `[PROG]` 键，输入程序编号，然后触摸 `[OK]` 按钮。
 
     ![](../_assets/tp630/k-prog-step_eng.png)
 
     ![](../_assets/tp630/dlg-prog-sel_eng.png)
 
+3. 按下教学 pendant 上的 `[motor]` 键，然后电机指示灯会闪烁。
 
-3.	Press the `[motor]` key on the teach pendant, and then the motor lamp will blink.
+* 如果电机未开启，请查看日志条上的错误信息并解决问题。
 
-* If the motor is not turned on, check the error message on the log bar and resolve the trouble.
+4. 在按住教学 pendant 背面的启用开关时，使用 jog 键操作机器人。
 
-4.	Operate the robot using the jog key while holding the enabling switch on the back of the teach pendant.
+5. 在机器人操作范围内的任意位置放置一个尖针，然后将机器人的工具提示对准它。机器人前端到匹配工具提示的距离将被优化。
 
-5.	Place a pointed needle at an arbitrary location within the operation range of the robot, and then match the tooltip of the robot to it. The distance from the front end of the robot to the matched tooltip will be optimized.
-
-6.	Record the step by touching the `[REC]` key of the keypad.
+6. 通过触摸键盘上的 `[REC]` 键记录步骤。
 
     ![](../_assets/tp630/k-record_eng.png)
 
+7. 改变机器人的姿势，并重复以上步骤 5-6 四次以上。
 
-7.	Change the robot's posture and repeat the above steps 5-6 more than four times.
+* 尽可能使用所有六个轴来改变机器人的姿势。此外，将轴角度至少改变 30 度。
 
-* Change the robot's posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
-
-8.	Touch the `[system]` button  - `[6: Auto Calibration  - 1: Optimize axis origin and tool length]` menu.
+8. 触摸 `[system]` 按钮 - `[6: Auto Calibration - 1: Optimize axis origin and tool length] ([6: Auto Calibration  - 1: Optimize axis origin and tool length])` 菜单。
 
     ![](../_assets/tp630/menu-axis-origin-tool-opt_eng.png)
 
-
-9.	Set the program number, tool number, and step position error allowable range created for the automatic calibration, and then touch the `[Execute]` button. Then the selected axis origin and tool length will be set.
+9. 设置为自动校准创建的程序编号、工具编号和步骤位置误差允许范围，然后触摸 `[Execute]` 按钮。然后所选的轴原点和工具长度将被设置。
 
     ![](../_assets/tp630/axis-origin-tool-opt_eng.png)
 
-* When you use multiple tools, you should select Tool Length in the `[Optimization Selection]` option for the second tool. If you select Axis Origin and Tool Length, the previously set tool information will get incorrect.
+* 当您使用多个工具时，应在第二个工具的 `[Optimization Selection]` 选项中选择工具长度。如果您选择了轴原点和工具长度，则之前设置的工具信息将会不正确。
 
 {% hint style="info" %}
-For details on this function, refer to "[7.7.1 Optimization of Axis Origin and Tool Length](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)."
+有关此功能的详细信息，请参阅 "[7.7.1 轴原点和工具长度的优化](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)。"
 {% endhint %}
-
-
 [__SOURCE](2-operation/10-tool-data-auto-calib.md)
-# 2.10 Tool Data Automatic Calibration
+# 2.10 工具数据自动校准
 
-After determining the axis origin and tool length through automatic calibration, etc., if the tool is deformed, you can simply determine new tool data. At this time, the axis origin should have been determined and maintained. In addition, a fixed reference point should be taught after the tool length is determined and the angle calibration is completed. If tool deformation occurs, place the tool in the same position at the reference point designated prior to the deformation, and then perform automatic tool data calibration.
+在通过自动校准等确定轴原点和工具长度后，如果工具变形，可以简单地确定新的工具数据。此时，轴原点应已被确定并保持。此外，在确定工具长度和完成角度校准后，应教导一个固定参考点。如果发生工具变形，请将工具放置在变形之前指定的参考点的相同位置，然后执行自动工具数据校准。
 
-1.	Touch the `[system]` button  - `[3: Robot Parameter - 1: Tool Data]` menu.
+1. 触摸`[system]`按钮 - `[3: Robot Parameter - 1: Tool Data]`菜单。
 
     ![](../_assets/tp630/menu-tool-data_eng.png)
 
-2.	After touching the `[Auto Calibration]` button, move the tooltip to the original position using the jog key.
+2. 触摸`[Auto Calibration]`按钮后，使用手动键将工具提示移动到原始位置。
 
     ![](../_assets/tp630/tool-data-auto-calib_eng.png)
 
-3.	 After checking the program number of the predetermined reference point, the step number, and the tool number, touch the `[Execute]` button.
+3. 在检查预定参考点的程序编号、步骤编号和工具编号后，触摸`[Execute]`按钮。
 
     ![](../_assets/tp630/tool-data-auto-calib2_eng.png)
 
 {% hint style="info" %}
-For details on this function, refer to "[7.4.1 Tool Data](../setting/robot-parameter/tool-data/)."
+有关此功能的详细信息，请参阅"[7.4.1 Tool Data](../setting/robot-parameter/tool-data/)."
 {% endhint %}
-
-
 [__SOURCE](3-programming/README.md)
-# 3. Program Writing
+# 3. 编程
 
-You can write and manage programs so that the robot can perform works and achieve the desired results.
-
-
+您可以编写和管理程序，使机器人能够执行工作并达到预期的结果。
 [__SOURCE](3-programming/1-prog-manage.md)
-# 3.1 Program Management
+# 3.1 程序管理
 
-While the robot is stopped, you can create, modify, and delete programs.
+在机器人停止时，您可以创建、修改和删除程序。
 
-1.	In the JOB program window, touch the `[PROG]` key with <SHIFT>. Then, the program selection window will appear.
+1. 在JOB程序窗口中，按下带有<SHIFT>的`[PROG]`键。然后，程序选择窗口将出现。
 
     ![](../_assets/tp630/k-prog-step_eng.png)
 
+2. 您可以创建、修改和删除程序。
 
-
-2.	You can create, modify, and delete programs.
-
-* To add a new program, type the new program number and press <ENTER> key, referring to "[3.2 Program Writing](2-prog-edif/../2-prog-edit/README.md)".
+* 要添加新程序，请输入新的程序编号并按<ENTER>键，参考“[3.2 程序编写](2-prog-edif/../2-prog-edit/README.md)”。
 
     ![](../_assets/tp630/k-prg-select_eng.png)
 
-* To open a program to check and modify its contents, input the program number, or select a program from the list and then touch the `[OK]` button. Then, the selected program will be opened in the JOB program window.
+* 要打开程序以检查和修改其内容，输入程序编号，或从列表中选择一个程序，然后按下`[OK]`按钮。然后，所选程序将在JOB程序窗口中打开。
 
-* To delete a program, select the program from the list and press \<DEL> key. 
+* 要删除程序，从列表中选择程序并按\<DEL>键。
 
-* You can also delete a program from the file list \(`service  - 5: File Management`\). For details, refer to "[4.2.1 File Management](../4-service/2-file-manager/1-file-management.md)".
+* 您还可以从文件列表中删除程序 \(`服务 - 5: File Management (service - 5: File Management)`\)。有关详细信息，请参考“[4.2.1 文件管理](../4-service/2-file-manager/1-file-management.md)”。
   
-* You can quickly delete a program using the R code \(R117\). For details, refer to "[8.4 R117 for Deleting a Program](../8-r-code/4-r117.md)".
-
-
+* 您可以使用R代码\(R117\)快速删除程序。有关详细信息，请参考“[8.4 R117用于删除程序](../8-r-code/4-r117.md)”。
 [__SOURCE](3-programming/2-prog-edit/README.md)
-# 3.2 Program Writing
+# 3.2 程序编写
 
-In order to accomplish the purpose of your application, you can write and edit a program consisting of various statements that instruct the robot to operate. You can write programs in manual mode.
-
-
-
-
+为了实现您应用程序的目的，您可以编写和编辑一个程序，该程序由各种语句组成，以指示机器人操作。您可以在手动模式下编写程序。
 [__SOURCE](3-programming/2-prog-edit/1-statement.md)
-# 3.2.1 Statements
+# 3.2.1 声明
 
-A general program consists of a step command that instructs the robot to move and a function command that instructs the robot to carry out work after the movement.
+一个一般程序由一个步骤命令组成，该命令指示机器人移动，以及一个功能命令，该命令指示机器人在移动后执行工作。
 
-A statement is largely divided into a command and a parameter, which is an additional item. The parameters are divided into default parameters essential for a statement and optional parameters that can be omitted.
+声明主要分为命令和参数，参数是附加项。参数分为声明所必需的默认参数和可以省略的可选参数。
 
 ![](../../_assets/image_82.png)
 
-
-
-| No. | Description | No. | Description |
+| No. | 描述 | No. | 描述 |
 | :--- | :--- | :--- | :--- |
-| ![](../../_assets/c1.png)  | Step number | ![](../../_assets/c3.png)  | Parameter |
-| ![](../../_assets/c2.png)  | Command | ![](../../_assets/c4.png)  | Comment |
+| ![](../../_assets/c1.png)  | 步骤编号 | ![](../../_assets/c3.png)  | 参数 |
+| ![](../../_assets/c2.png)  | 命令 | ![](../../_assets/c4.png)  | 注释 |
 
 {% hint style="info" %}
-For details on parameters, refer to "[2.3.1 Step Statement Parameters](../../operation/step/step-cmd-param/)."
+有关参数的详细信息，请参阅 "[2.3.1 步骤语句参数](../../operation/step/step-cmd-param/)."
 {% endhint %}
 
-When you input a statement, basic setting values will be automatically inputted into the default parameters and can be changed. Optional parameters are marked with a symbol \( \_ \), and you can input the parameter values by selecting the parameters. Moreover, parameters that can be inputted will be displayed as buttons on the function button bar.
+当您输入声明时，基本设置值将自动输入到默认参数中，并可以更改。可选参数用符号 \( \_ \) 标记，您可以通过选择参数输入参数值。此外，可以输入的参数将在功能按钮栏上显示为按钮。
 
-![Figure 27 Editing a Command &#x2013; Inputting Parameter Values](../../_assets/tp630/pane-prog-move-option.png)
+![图27 编辑命令 &#x2013; 输入参数值](../../_assets/tp630/pane-prog-move-option.png)
 
-When editing the command parameters, you can edit variables, expressions, and strings by using the operation keys on the teach pendant and the menu buttons on the bottom of the screen, or by using the soft keyboard.
-
-
+在编辑命令参数时，您可以使用教学手柄上的操作键和屏幕底部的菜单按钮，或使用软键盘编辑变量、表达式和字符串。
 [__SOURCE](3-programming/2-prog-edit/2-statement-input/README.md)
-# 3.2.2 Statement Inputting
-
-
+# 3.2.2 声明输入
 [__SOURCE](3-programming/2-prog-edit/2-statement-input/1-gen-statement-input.md)
-# 3.2.2.1 General Statement Inputting
+# 3.2.2.1 一般语句输入
 
-1.	In manual mode, touch the `[cmd.input]` button on right bottom of the initial screen. Then, the command input window will appear.
+1. 在手动模式下，触摸初始屏幕右下角的 `[cmd.input]` 按钮。然后，命令输入窗口将出现。
 
     ![](../../../_assets/tp630/sbt-cmd_eng.png)
 
-2.	Touch a statement group and then select the command from the list. The statement will be inserted immediately below the current cursor position.
+2. 触摸语句组，然后从列表中选择命令。语句将立即插入到当前光标位置下方。
 
     ![](../../../_assets/tp630/sbt-cmd-list_eng.png)
 
-* If the command list has commands more than seven, you can see the additional command by touching [prev/next] button.
+* 如果命令列表中的命令超过七个，您可以通过触摸 [prev/next] 按钮查看更多命令。
 
-* For details on each statement, refer to the "[${cont_model} Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README)."
-
+* 有关每个语句的详细信息，请参阅 "[${cont_model} Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/README)。"
 [__SOURCE](3-programming/2-prog-edit/2-statement-input/2-step-input.md)
-# 3.2.2.2 Inputting of a Step Statement with a Hidden Pose
+# 3.2.2.2 输入带有隐藏姿态的步骤语句
 
-To input the current posture of the robot as a move command, press the `[REC]` key on the keypad.
+要将机器人的当前姿态输入为移动命令，请按下键盘上的 `[REC]` 键。
 
 
 
 ![](../../../_assets/tp630/k-record_eng.png)
 
-When you input a command using the `[REC]` key, the pose variable will not appear in the step, unlike the general command inputting mode, so it is called a hidden pose.
-
-
-
-
+当您使用 `[REC]` 键输入命令时，姿态变量不会出现在步骤中，与一般的命令输入模式不同，因此称为隐藏姿态。
 [__SOURCE](3-programming/2-prog-edit/2-statement-input/3-rec-cond.md)
-# 3.2.2.3 Recording Condition
+# 3.2.2.3 记录条件
 
-When a statement is inputted using the `[REC]` key, the current posture of the robot will be recorded as the target pose, and the value set in advance using the `[rec.cond]` button will be applied to the move command \(move\) parameter. The following shows the method of setting the recording condition of a statement.
+当使用 `[REC]` 键输入语句时，机器人的当前姿态将被记录为目标姿态，并且将应用事先通过 `[rec.cond]` 按钮设置的值到移动命令 \(move\) 参数。以下显示了设置语句记录条件的方法。
 
-1.	Touch the `[rec.cond.]` button on the left side of the ${cont_model} teach pendant screen. Then, the recording condition setting window will appear.
+1. 触摸 ${cont_model} 教导吊坠屏幕左侧的 `[rec.cond.]` 按钮。然后，记录条件设置窗口将出现。
 
     ![](../../../_assets/tp630/lbt-record_eng.png)
 
-2.	After setting the interpolation, moving speed and unit, accuracy, and tool number, touch the `[check]` button \(![](../../../_assets/icon-ok.png)\).
+2. 设置插值、移动速度和单位、精度和工具编号后，触摸 `[check]` 按钮 \(![](../../../_assets/icon-ok.png)\)。
 
     ![](../../../_assets/tp630/lbt-record-edit_eng.png)
 
-* When position recording is performed, the move statement will be recorded based on the condition set in the recording condition.
-* In the mechanism set, you can designate the configuration of the mechanism to be stored when position recording is performed.
+* 当执行位置记录时，移动语句将基于记录条件中设置的条件进行记录。
+* 在机制设置中，您可以指定在执行位置记录时要存储的机制配置。
 
-    * If you briefly touch the `[mechsets]` button, the predefined mechanism set numbers will appear in sequence.
-    * If you touch and hold the `[mechsets]` button, you can modify the existing set configuration in the Mechanism Set setting window, or add or delete a mechanism set by using the `[+]` or `[-]` button.
+    * 如果轻触 `[mechsets]` 按钮，预定义的机制设置编号将依次出现。
+    * 如果按住 `[mechsets]` 按钮，您可以在机制设置窗口中修改现有设置配置，或使用 `[+]` 或 `[-]` 按钮添加或删除机制设置。
 
         ![](../../../_assets/tp630/pop-mechanism_eng.png)
-
-
-
-
-
-
 [__SOURCE](3-programming/2-prog-edit/3-statement-constitution.md)
-# 3.2.3 Statement Configuration
+# 3.2.3 声明配置
 
-A statement consists of an address area and a statement area. 
+声明由地址区域和声明区域组成。 
 
-![Figure 28 Areas Comprising a Statement](../../_assets/tp630/pane-prog-section.png)
+![图 28 组成声明的区域](../../_assets/tp630/pane-prog-section.png)
 
-| No. | Area | Description |
+| No. | 区域 | 描述 |
 | :--- | :--- | :--- |
-| ![](../../_assets/c1.png) | Address area | Displays the line number \(1 to 9999\) and step number \(S1 to S999\) |
-| ![](../../_assets/c2.png) | Statement area | Displays a statement |
+| ![](../../_assets/c1.png) | 地址区域 | 显示行号 \(1 到 9999\) 和步骤号 \(S1 到 S999\) |
+| ![](../../_assets/c2.png) | 声明区域 | 显示一条声明 |
 
-You can move the cursor position between the address area and the statement area by pressing the `[←/→]` key on the teach pendant. Pressing the `[↓/↑]` key will allow you to move the cursor up and down between the lines within the selected area.
+您可以通过按 `[←/→]` 键在地址区域和声明区域之间移动光标位置。按 `[↓/↑]` 键可以在选定区域内的行之间上下移动光标。
 
-![Figure 29 Moving the Cursor Between Areas \(Left: Address Area. Right: Statement Area\)](../../_assets/tp630/pane-prog-sectionchng.png)
-
-
-
-
+![图 29 在区域之间移动光标 \(左：地址区域。右：声明区域\)](../../_assets/tp630/pane-prog-sectionchng.png)
 [__SOURCE](3-programming/2-prog-edit/4-statement-edit/README.md)
-# 3.2.4 Statement Editing
+# 3.2.4 语句编辑
 
-You can edit the statement in the JOB program window using the operation keys on the teach pendant and the menu buttons on the function button bar. Using the soft keyboard, you can edit variables, expressions, and strings.
+您可以使用教学挂件上的操作键和功能按钮栏上的菜单按钮编辑JOB程序窗口中的语句。使用软键盘，您可以编辑变量、表达式和字符串。
 
-In the statement area, you can check and edit statements by switching the status of the cursor according to the selected object.
+在语句区域中，您可以通过根据所选对象切换光标状态来检查和编辑语句。
 
-* Statement cursor Status: You can check a statement while the entire line of the statement is selected.
+* 语句光标状态：您可以在整个语句行被选中时检查语句。
 
     ![](../../../_assets/tp630/pane-prog-cmd-edit.png)
 
-* Word cursor Status: You can check and edit a statement while the individual parameters of the statement are selected.
+* 单词光标状态：您可以在语句的各个参数被选中时检查和编辑语句。
 
     ![](../../../_assets/tp630/pane-prog-cmd-edit1.png)
-
-
-
-
-
-
 [__SOURCE](3-programming/2-prog-edit/4-statement-edit/1-how-to-edit-statement.md)
-# 3.2.4.1 Statement Editing Method
+# 3.2.4.1 语句编辑方法
 
-The following shows how to edit a statement.
+以下显示如何编辑语句。
 
-1.	In the JOB program window, select the statement area by pressing the `[↑/↓]` key on the teach pendant. The statement area will be selected while in the statement cursor status.
+1. 在JOB程序窗口中，通过按下`[↑/↓]`键选择语句区域。语句区域将在语句光标状态下被选中。
 
-2.	Press the `[ENTER]` key on the teach pendant while in the statement cursor status. Then, switching to the statement cursor status will occur and a parameter will be selected, and the selected parameter value will appear in the input area at the bottom.
+2. 在语句光标状态下，按下`[ENTER]`键。然后，将切换到语句光标状态，并选择一个参数，所选参数的值将出现在底部的输入区域。
 
-3.	Edit the parameter value using the operation keys on the teach pendant and the menu buttons  of the screen.
+3. 使用教学挂件上的操作键和屏幕的菜单按钮编辑参数值。
 
-* Pressing the `[←/→]` key will allow you to move the cursor in the left or right direction between parameters
-* Parameters that can be inputted will be displayed as buttons on the function button bar. You can easily input parameters by selecting the desired buttons.
-* You can edit variables, expressions, and strings using the soft keyboard. 
+* 按下`[←/→]`键可以在参数之间向左或向右移动光标
+* 可输入的参数将在功能按钮栏上显示为按钮。您可以通过选择所需按钮轻松输入参数。
+* 您可以使用软键盘编辑变量、表达式和字符串。
 
-4.	Press the `[ENTER]` key. Then, the contents of the change will be applied, allowing the parameter value of the statement to be changed and the cursor to move to the next parameter.
+4. 按下`[ENTER]`键。然后，所做更改的内容将被应用，使语句的参数值发生变化，并将光标移动到下一个参数。
 
-* To cancel the change, press the `[ESC]` key.
+* 若要取消更改，请按下`[ESC]`键。
 
-5.	You can edit another parameter by repeating the above steps 2-3.
+5. 可以通过重复上述步骤2-3编辑另一个参数。
 
-6.	Press the `[ENTER]` key to complete the editing. The changes will be saved in the JOB program, and the cursor will return to the statement cursor status.
-
-
-
-
-
-
+6. 按下`[ENTER]`键完成编辑。更改将在JOB程序中保存，光标将返回到语句光标状态。
 [__SOURCE](3-programming/2-prog-edit/4-statement-edit/2-statement-edit-example.md)
-# 3.2.4.2 Example of Statement Editing
+# 3.2.4.2 编辑语句示例
 
-With an example of changing the interpolation parameter from P \(joint interpolation\) to L \(linear interpolation\), the following describes how to edit a statement.
+通过将插值参数从 P \(关节插值\) 更改为 L \(线性插值\) 的示例，以下描述了如何编辑语句。
 
-1.	Press the `[ENTER]` key on the teach pendant while in the statement cursor status. Then, the statement cursor will change to the word cursor status, allowing the P \(joint interpolation\), which is the interpolation parameter of the move statement, to be selected. In the input area, P, which is the current setting value of interpolation, will be displayed and the interpolation parameter that can be inputted will be displayed as buttons on the function button bar of the screen.
+1. 在语句光标状态下，按下 `[ENTER]` 键。然后，语句光标将更改为单词光标状态，使得可以选择移动语句的插值参数 P \(关节插值\)。在输入区域，将显示当前插值设置值 P，能够输入的插值参数将作为按钮显示在屏幕的功能按钮栏上。
 
     ![](../../../_assets/tp630/pane-prog-move-P.png)
 
-2.	Touch the `[L]` button among the buttons on the function button bar. Then, L \(linear interpolation\) will be displayed in the input area.
+2. 在功能按钮栏上的按钮中触摸 `[L]` 按钮。然后，输入区域将显示 L \(线性插值\)。
 
     ![](../../../_assets/tp630/pane-prog-move-L.png)
 
-3.	Press the `[ENTER]` key. The interpolation parameter of the statement will change to L, and then the cursor will move to the next parameter, allowing the moving speed to be selected.
+3. 按下 `[ENTER]` 键。语句的插值参数将更改为 L，然后光标将移动到下一个参数，允许选定移动速度。
 
     ![](../../../_assets/tp630/pane-prog-move-spd.png)
 
-4.	Press the `[ENTER]` key to complete editing. The contents of the change will be saved in the JOB program, and then the cursor will return to the statement cursor status.
-
-
-
-
+4. 按下 `[ENTER]` 键以完成编辑。这次更改的内容将保存在 JOB 程序中，然后光标将返回到语句光标状态。
 [__SOURCE](3-programming/2-prog-edit/4-statement-edit/3-how-to-edit-line-no.md)
-# 3.2.4.3 Line Number Editing Method
+# 3.2.4.3 行号编辑方法
 
-The line number can be set to any number between 1 and 9999.
+行号可以设置为1到9999之间的任何数字。
 
-1.	In the JOB program window, select the address area by pressing the `[←/→]` key on the teach pendant. Then, the address area will be selected.
+1. 在JOB程序窗口中，通过按下`[←/→]`键选择地址区域。然后，地址区域将被选中。
 
-* If the cursor is in the statement cursor status while in the statement area, press the `[←]` key to move the cursor to the address area.
+* 如果光标在语句区域处于语句光标状态，按下`[←]`键将光标移动到地址区域。
 
     ![](../../../_assets/tp630/pane-prog-linenum.png)
 
-2.	In the address area, select a line by pressing the `[↓/↑]` key and then edit the line number.
+2. 在地址区域，通过按下`[↓/↑]`键选择一行，然后编辑行号。
 
-* To input a line number, input the line number in the input area using the number keys.
-
-
+* 输入行号时，请使用数字键在输入区域输入行号。
 
     ![](../../../_assets/tp630/pane-prog-linenum1.png)
 
-* To delete a line number, press the `[BS]` key. Then, the address value of the line number will be removed from the input area.
+* 要删除行号，请按`[BS]`键。然后，行号的地址值将从输入区域中删除。
 
-
-3.	Press the `[ENTER]` key to complete the editing. The contents of the change will be saved in the JOB program.
+3. 按下`[ENTER]`键以完成编辑。更改的内容将保存在JOB程序中。
 
     ![](../../../_assets/tp630/pane-prog-linenum2.png)
-
-
-
-
 [__SOURCE](3-programming/2-prog-edit/4-statement-edit/4-softkeyboard.md)
-# 3.2.4.4 Soft Keyboard
+# 3.2.4.4 软件键盘
 
-You can easily input variables, expressions, and strings using the soft keyboard on the ${cont_model} teach pendant screen.
+您可以在 ${cont_model} 教学挂件屏幕上使用软件键盘轻松输入变量、表达式和字符串。
 
-1.	Touch the `[![](../../../_assets/tp630/rbt-softkb_eng.png)]` button on the log bar of the ${cont_model} teach pendant screen. Then, a soft keyboard will appear at the bottom of the screen.
+1.	触摸 ${cont_model} 教学挂件屏幕的日志栏上的 `[![](../../../_assets/tp630/rbt-softkb_eng.png)]` 按钮。然后，软件键盘将出现在屏幕底部。
 
-2.	You can input variables, expressions, and strings in the input area using the soft keyboard. The existing parameter values will be removed, and the inputted texts will be displayed.
+2.	您可以在输入区域使用软件键盘输入变量、表达式和字符串。现有的参数值将被移除，输入的文本将被显示。
 
     ![](../../../_assets/tp630/rbt-softkb-prog_eng.png)
 
 
-* If you touch the `[![](../../../_assets/bt-cursor-left.png)/![](../../../_assets/bt-cursor-right.png)]` button on the left side of the input area, you can move the cursor position, allowing you to insert the text at the desired position.
+* 如果您触摸输入区域左侧的 `[![](../../../_assets/bt-cursor-left.png)/![](../../../_assets/bt-cursor-right.png)]` 按钮，您可以移动光标位置，使您能够在所需位置插入文本。
 
-* You can change the input language by touching the `[![](../../../_assets/bt-lang.png)]` button.
+* 您可以通过触摸 `[![](../../../_assets/bt-lang.png)]` 按钮来更改输入语言。
 
-* You can input a capital letter or a symbol by touching the key while pressing the `[SHIFT]` key on the teach pendant.
+* 您可以通过按下 `[SHIFT]` 键时触摸键盘上的键来输入大写字母或符号。
 
-* You can move the keyboard to the top of the screen by touching the `[![](../../../_assets/tp630/bt-dock-softkb_eng.png)]` button.
+* 您可以通过触摸 `[![](../../../_assets/tp630/bt-dock-softkb_eng.png)]` 按钮将键盘移到屏幕顶部。
 
-3.	When you have finished editing the text, you can hide the soft keyboard by pressing the `[ENTER]` key.
-
-
-
-
-
-
+3.	编辑文本完成后，您可以通过按 `[ENTER]` 键来隐藏软件键盘。
 [__SOURCE](3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md)
-# 3.2.4.5 Block Editing Mode
+# 3.2.4.5 块编辑模式
 
-You can set a single line or multiple lines of a program as a block to perform copy, move, delete, and remark operations.
+您可以将程序的一行或多行设置为块，以执行复制、移动、删除和备注操作。
 <br>
 
-#### 1. Entering Block Edit Mode
+#### 1. 进入块编辑模式
 
-In the job editing panel, move the cursor to the address area using the left arrow key.
-Click the `F2: Blk.edit` button to enter block edit mode, and the cursor will turn gray.
+在作业编辑面板中，使用左箭头键将光标移动到地址区域。
+单击 `F2: Blk.edit` 按钮以进入块编辑模式，此时光标会变成灰色。
 
 ![](../../../_assets/tp630/blockedit/11_blockeditmode2.PNG)
 ![](../../../_assets/tp630/blockedit/12_blockeditmode.PNG)
 <br><br>
 
-#### 2. Setting a Block
+#### 2. 设置块
 
-Use the up/down arrow keys to move the cursor to the starting position of the block and press the `ENTER` key. Then, move the cursor to the end position of the block using the up/down arrow keys and press `ENTER` again. The selected block will be highlighted with a blue background.
+使用上下箭头键将光标移动到块的起始位置，然后按 `确认 (ENTER)` 键。接着，使用上下箭头键将光标移动到块的结束位置，再次按 `确认 (ENTER)` 键。所选块将以蓝色背景高亮显示。
 
 ![](../../../_assets/tp630/blockedit/20_set_block.PNG)
 
-(If you perform an action like copying or deleting without moving the cursor away from the block, you do not need to press `ENTER` a second time.) 
+（如果您在不移动光标的情况下执行复制或删除等操作，则无需第二次按 `确认 (ENTER)`。） 
 <br><br>
 
-#### 3. Copy
+#### 3. 复制
 
-While the block is selected, click `F2: copy` to copy the content to the clipboard.
-Alternatively, you can click `F2: copy` without selecting a block to copy just a single line.
+在块被选中时，单击 `F2: copy` 将内容复制到剪贴板。
+或者，您可以在未选择块的情况下单击 `F2: copy` 以仅复制一行。
 <br><br>
 
-#### 4. Paste
+#### 4. 粘贴
 
-Move the cursor to the line above where you want to paste using the up/down arrow keys, then click `F3: paste`.
-For example, if you want to paste the copied block below the `delay 1` statement in S1, place the cursor on `delay 1` and click `F3: paste`.
+使用上下箭头键将光标移动到要粘贴的行上方，然后单击 `F3: paste`。
+例如，如果您想将复制的块粘贴到 S1 中 `delay 1` 语句的下方，请将光标放在 `delay 1` 上并单击 `F3: paste`。
 
 ![](../../../_assets/tp630/blockedit/30_paste.PNG)
 ![](../../../_assets/tp630/blockedit/32_paste.PNG)
 <br><br>
 
-#### 5. Cut
+#### 5. 剪切
 
-When a block is selected, clicking `F1: cut` will make the block appear in light gray, indicating that it has been cut.  
-Alternatively, you can click `F1: cut` without selecting a block to cut a single line.
+当选中一个块时，单击 `F1: cut` 会使该块显示为浅灰色，表示它已被剪切。  
+或者，您可以在未选择块的情况下单击 `F1: cut` 来剪切一行。
 
 ![](../../../_assets/tp630/blockedit/40_cut.PNG)
 
-Pasting a cut block follows the same method as described above.
+粘贴一个剪切的块遵循上述所述的方法。
 <br><br>
 
-#### 6. Delete
-When a block is selected, clicking `F4: delete` and then confirming the `Delete?` prompt will remove the block.  
-Alternatively, you can click `F4: delete` without selecting a block to delete a single line.
+#### 6. 删除
+当选中一个块时，单击 `F4: delete` 然后确认 `删除吗？ (Delete?)` 提示将删除该块。  
+或者，您可以在未选择块的情况下单击 `F4: delete` 来删除一行。
 
  ![](../../../_assets/tp630/blockedit/50_delete.PNG)
 <br><br>
 
-#### 7. Remark, Unremark
+#### 7. 备注, 取消备注
 
-This feature is used to temporarily disable the execution of a specific section in a job program without deleting it.  
-When a block is selected and you click `F5: remark`, the statements within the block are commented out (remarked).
-When a block is selected and you click `F6: unremark`, the comments are removed (unremarked).  
-Additionally, you can comment or uncomment a single line without selecting a block.
+此功能用于在不删除特定部分的情况下暂时禁用作业程序的执行。  
+当选中一个块并单击 `F5: remark` 时，块内的语句将被注释掉（备注）。
+当选中一个块并单击 `F6: unremark` 时，注释将被移除（取消备注）。  
+此外，您可以在未选择块的情况下注释或取消注释单行。
 
 {% hint style="info" %}
-- Less than version V60.30-00 : Steps are not remarked.
-- Version V60.30-00 or later : Steps are also remarked.
+- 小于版本 V60.30-00：步骤不被备注。
+- 版本 V60.30-00 或更高：步骤也会被备注。
 {% endhint %}
 
  ![](../../../_assets/tp630/blockedit/60_remark.PNG)
 <br><br>
 
-#### 8. Closing Block Edit Mode
+#### 8. 关闭块编辑模式
 
-Block edit mode can be closed by clicking `F7: close` or pressing the `ESC` key.
+可以通过单击 `F7: close` 或按 `ESC` 键关闭块编辑模式。
 <br><br>
 
+#### 9. 自动调整步骤 #
 
-#### 9. Auto-adjusting Step #
+例如，如果将步骤 S1-S2 复制并粘贴到下方，原本在 S3 的 `move` 语句将由于插入的 2 个步骤向下推移并重新编号为 S5。
 
-For example, if steps S1-S2 are copied and pasted below, the `move` statement originally at S3 will be pushed down and renumbered as S5 due to the inserted 2 steps.
+在这种情况下，作业中的所有分支语句，如 `goto`、`gosub`、`if` 语句，以及 `wait` 语句目标地址的超时地址将自动从 S3 调整到 S5。
 
-In this case, all branch statement within the same job such as `goto`, `gosub`, `if` statements, and the timeout address of `wait` statements' target addresses will be automatically adjusted from S3 to S5.
-
-For instance, in the example below, the conditional branch statement `if di45==0 then S3` will be updated to S5 to ensure it still branches to the same `move` statement as before.
+例如，在下面的示例中，条件分支语句 `if di45==0 then S3` 将更新为 S5，以确保它仍然分支到之前的 `move` 语句。
 
 ![](../../../_assets/tp630/blockedit/71_branch_adjust.PNG)
 ![](../../../_assets/tp630/blockedit/72_branch_adjust.PNG)
 
-This automatic step number adjustment is performed for operations that shift step numbers forward or backward, such as recording, deletion, and block editing.
+此自动步骤编号调整适用于会前移或后移步骤编号的操作，如记录、删除和块编辑。
 
 {% hint style="info" %}
-The following specifications apply from version V60.30-00 and later.
+以下规格适用于版本 V60.30-00 及更高版本。
 {% endhint %}
 
-If a target step is removed due to deletion or remarking, it will be adjusted as `deleted_step#` or `remarked_step#`, as shown below.  
-Please manually adjust these modified target addresses to the appropriate step number (or line number/label).
-(If left unchanged, a syntax error will occur when executing the statement.)
+如果由于删除或备注而删除了目标步骤，则将调整为 `deleted_step#` 或 `remarked_step#`，如下所示。  
+请手动将这些修改后的目标地址调整为适当的步骤编号（或行编号/标签）。
+（如果未更改，则在执行语句时将发生语法错误。）
 
 ![](../../../_assets/tp630/blockedit/76_branch_adjust.PNG)
-
 [__SOURCE](4-service/README.md)
-# 4. Service
+# 4. 服务
 
-You can use the program's various service function menus such as variable and file management.
-
-
+您可以使用程序的各种服务功能菜单，例如变量和文件管理。
 [__SOURCE](4-service/1-service-usage.md)
-# 4.1 Use of service
+# 4.1 服务的使用
 
-1.	In manual or automatic mode, touch the `[service]` button on the function button bar of the initial screen. Various service menus of the program will be displayed.
+1.	在手动或自动模式下，触摸初始屏幕功能按钮栏上的 `[service]` 按钮。程序的各种服务菜单将显示。
 
-2.	Selecting the desired menu will enable you to manage files, programs, teach pendants, or to check the status of the robot system.
+2.	选择所需菜单将使您能够管理文件、程序、教学挂件，或检查机器人系统的状态。
 
     ![](../_assets/tp630/svc-list.png)
 
 
 
-* `5: File Manager`: You can manage files in the main board's internal memory, teach pendant, or removable storage device.
-* `6: Program Conversion`: You can convert the data, such as the condition and location of the created program, by batch or individually.
-* `7: System Diagnosis`: You can check the status of the robot and controller and update the system version.
-* `8: Date, time setting`: You can set the date and time of the controller.
-* `9: Exit TP application`: Exit the TP(Teach Pendant) application.
-* `10: App`: Manages the software installed and running on the teach pendant.
-* `11: Teach pendant option`: Set the sound and screen save time of the teach pendant.
-* `12: Teach pendant sharing`: Connect the teach pendant to multiple controllers or to the virtual controllers in HRSpace4.
-* `14: System program`: You can view and remove the system programs (e.g. OPC-UA server) installed on the controller.
-* `19: Industrial Communication Monitoring`: Monitor firmware information and communication status.
-
+* `5: 文件管理器 (5: 文件管理器)`: 您可以管理主板内部存储器、教学挂件或可移动存储设备中的文件。
+* `6: 程序转换`: 您可以批量或单独转换数据，例如创建程序的条件和位置。
+* `7: 系统诊断`: 您可以检查机器人和控制器的状态并更新系统版本。
+* `8: 日期时间设置 (8: 日期时间设置)`: 您可以设置控制器的日期和时间。
+* `9: 退出TP应用程序 (9: 退出TP应用程序)`: 退出TP（教学挂件）应用程序。
+* `10: 应用程序(App) (10: 应用程序)`: 管理已安装并在教学挂件上运行的软件。
+* `11: 教学挂件选项 (11: 教学挂件选项)`: 设置教学挂件的声音和屏幕保护时间。
+* `12: 教学挂件共享 (12: 教学挂件共享)`: 连接教学挂件到多个控制器或HRSpace4中的虚拟控制器。
+* `14: 系统程序 (14: 系统程序)`: 您可以查看和移除安装在控制器上的系统程序（例如OPC-UA服务器）。
+* `19: 工业通信监控 (19: 工业通信监控)`: 监控固件信息和通信状态。
 [__SOURCE](4-service/2-file-manager/README.md)
-# 4.2 File Management
+# 4.2 文件管理
 
+您可以管理主板的内部存储器、教学挂件或可移动存储设备中的文件。
 
-You can manage files in the main board's internal memory, teach pendant, or removable storage device.
+1.	触摸 `[5: 文件管理器]` 菜单。然后，将显示每个设备的文件夹列表和所选文件夹中保存的文件列表。
 
-1.	Touch the `[5: File Manager]` menu. Then, a list of folders of each device and a list of files saved in the selected folder will appear.
-
-2.	Check and manage the folder structure and saved files by device.
+2.	按设备检查和管理文件夹结构和保存的文件。
 
     ![](../../_assets/tp630/file-manager/fl-manage_eng.png)
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -2755,21 +2378,13 @@ You can manage files in the main board's internal memory, teach pendant, or remo
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is a list of folders in the main board&#x2019;s internal memory,
-          teach pendant, and removable storage devices. You can check the folder
-          structure.</p>
+        <p>这是主板内部存储器、教学挂件和可移动存储设备中的文件夹列表。您可以检查文件夹结构。</p>
         <ul>
-          <li>[<img src="../../_assets/icon-mb.png" alt/>MAIN]: The files saved in the mainboard (M/B) will be used for the actual robot operation.</li>
-          <li>[<img src="../../_assets/icon-tp.png" alt/>TP] / [<img src="../../_assets/icon-usb.png" alt/>USB]: The teach pendant (T/P) and a removable storage device (USB) will be used for data backup.[</b> <img src="../../_assets/icon-usb.png"
-            alt/><b>USB]</b> folder will appear only when a removable storage device is
-            connected to the teach pendant.</li>
-          <li>You can move the cursor in the folder list by turning the jog dial on
-            the teach pendant.</li>
-          <li>If you select <img src="../../_assets/icon-gt.png" alt/>] or [
-            <img src="../../_assets/icon-wedge.png" alt/>] in the folder list and press the <b>`[ENTER]`</b> key, you can show
-            or hide subfolders.</li>
-          <li>When you select a folder, you can check the list of files saved in the
-            folder.</li>
+          <li>[<img src="../../_assets/icon-mb.png" alt/>MAIN]: 保存于主板 (M/B) 的文件将用于实际的机器人操作。</li>
+          <li>[<img src="../../_assets/icon-tp.png" alt/>TP] / [<img src="../../_assets/icon-usb.png" alt/>USB]: 教学挂件 (T/P) 和可移动存储设备 (USB) 将用于数据备份。<b>[<img src="../../_assets/icon-usb.png" alt/><b>USB]</b> 文件夹仅在可移动存储设备连接到教学挂件时出现。</li>
+          <li>您可以通过旋转教学挂件上的 jog 旋转盘在文件夹列表中移动光标。</li>
+          <li>如果您在文件夹列表中选择 <img src="../../_assets/icon-gt.png" alt/>] 或 [<img src="../../_assets/icon-wedge.png" alt/>] 并按下 <b>`[ENTER]`</b> 键，您可以显示或隐藏子文件夹。</li>
+          <li>当您选择一个文件夹时，可以检查该文件夹中保存的文件列表。</li>
         </ul>
       </td>
     </tr>
@@ -2777,344 +2392,292 @@ You can manage files in the main board's internal memory, teach pendant, or remo
       <td style="text-align:left">
         <img src="../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Shows the list of the files saved in the selected folder. You can check
-        the name, size, last modified date, protected status, and additional information
-        of each file.</td>
+      <td style="text-align:left">显示所选文件夹中保存的文件列表。您可以检查每个文件的名称、大小、最后修改日期、保护状态和其他信息。</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c3.png" alt/>
       </td>
-      <td style="text-align:left">You can manage files and folders using the function buttons.</td>
+      <td style="text-align:left">您可以使用功能按钮管理文件和文件夹。</td>
     </tr>
   </tbody>
 </table>
 
 {% hint style="info" %}
-* It is the same function as "R17 File Management" of R codes.
-* When a removable storage device is connected to the teach pendant, the `[USB]` icon \(![](../../_assets/icon-usb2.png)\) will appear on the status bar of the ${cont_model} teach pendant screen.
+* 它与 R 代码的 "R17 文件管理" 功能相同。
+* 当可移动存储设备连接到教学挂件时，状态栏上将显示 `[USB]` 图标 \(![](../../_assets/icon-usb2.png)\) 在 ${cont_model} 教学挂件屏幕上。
 {% endhint %}
 
 {% hint style="warning" %}
-Never remove the removable storage device from the teach pendant while performing operations such as copying or deleting files. Data may be corrupted.
+在执行复制或删除文件等操作时，切勿从教学挂件中移除可移动存储设备。数据可能会损坏。
 {% endhint %}
-
-
 [__SOURCE](4-service/2-file-manager/1-file-management.md)
-# 4.2.1 File Management
+# 4.2.1 文件管理
 
-Select one or multiple files to copy, move, or delete.
+选择一个或多个文件进行复制、移动或删除。
 
-1.	Select a folder in the folder list using the jog dial on the teach pendant. A list of files saved in the selected folder will appear.
+1. 使用教学手柄上的 jog dial 在文件夹列表中选择一个文件夹。所选文件夹中保存的文件列表将出现。
 
     ![](../../_assets/tp630/file-manager/fl-folder-select_eng.png)
 
-2.	Select the desired file in the file list by touching it.
+2. 通过触摸文件列表中的所需文件进行选择。
 
     ![](../../_assets/tp630/file-manager/fl-file-select_eng.png)
 
-* You can select multiple files one by one by touching each file while pressing the `[CTRL]` key.
-* If you touch two files while pressing the `[SHIFT]` key, you can select all files between the two files at once.
-* If you touch the `[Select All]` button on the function button bar of the screen, you can select all files at once.
+* 您可以通过按住 `[CTRL]` 键逐个触摸每个文件以选择多个文件。
+* 如果在按住 `[SHIFT]` 键的同时触摸两个文件，您可以一次选择这两个文件之间的所有文件。
+* 如果您在屏幕的功能按钮栏上触摸 `[全选]` 按钮，您可以一次选择所有文件。
 
-  Press the `[ESC]` key to cancel the file selection.
+  按 `[ESC]` 键取消文件选择。
 
-3.	You can copy, move, or delete the selected file using the function buttons on the function button bar of the screen.
+3. 您可以使用屏幕的功能按钮栏上的功能按钮复制、移动或删除所选文件。
 
-* `[Copy]`: Copy the selected file and save it in a temporary folder so that it can be pasted into another folder.
-* `[Paste]`: You can paste the file saved in the clipboard to the desired folder. 
-* `[Cut]`: You can cut the selected file and save it in a temporary folder so that it can be pasted into another folder. 
-* `[Delete]`: You can delete the selected file. A protected file \(with the protection mark \(W\_\) in the attributes\) cannot be deleted.
+* `[复制]`：复制所选文件并将其保存到临时文件夹，以便可以粘贴到另一个文件夹中。
+* `[粘贴]`：您可以将保存在剪贴板中的文件粘贴到所需文件夹中。
+* `[剪切]`：您可以剪切所选文件并将其保存到临时文件夹，以便可以粘贴到另一个文件夹中。
+* `[删除]`：您可以删除所选文件。带有保护标记 \(W\_\) 的受保护文件无法删除。
 
-4.	To paste a file into a folder, select the folder using the jog dial and then touch the `[Paste]` button. Then, the file will be pasted to the selected folder.
+4. 要将文件粘贴到文件夹中，请使用 jog dial 选择该文件夹，然后触摸 `[粘贴]` 按钮。然后，文件将粘贴到所选文件夹中。
 
     ![](../../_assets/tp630/file-manager/fl-copy_eng.png)
 
-
-* If the selected folder has a file with a duplicate name, a duplication notification window will appear. Handle it by setting whether to overwrite it.
+* 如果所选文件夹中已有相同名称的文件，将出现重复通知窗口。通过设置是否覆盖来处理它。
 
     ![](../../_assets/tp630/file-manager/fl-copy-pop_eng.png)
 
-
-* To delete a file, touch the `[Delete]` button, and then touch the `[ENTER]` button in the confirmation window.
+* 要删除文件，请触摸 `[删除]` 按钮，然后在确认窗口中触摸 `[ENTER]` 按钮。
 
     ![](../../_assets/tp630/file-manager/fl-delete-pop_eng.png)
-
-
 [__SOURCE](4-service/2-file-manager/2-rename-file-folder.md)
-# 4.2.2 Renaming of a File and Folder
+# 4.2.2 文件和文件夹重命名
 
-You can rename a file or folder. You can also rename multiple files or folders at once.
+您可以重命名文件或文件夹。您还可以一次性重命名多个文件或文件夹。
 
-1.	Touch the desired file \(or folder\) in the file \(or folder\) list to select it, and then touch the `[rename]` button on the function button bar of the screen.
+1.	在文件（或文件夹）列表中触摸所需的文件（或文件夹）以选择它，然后触摸屏幕功能按钮条上的 `[rename]` 按钮。
 
     ![](../../_assets/tp630/file-manager/fld-rename-select_eng.png)
 
-2.	Input the file \(or folder\) name in the input area.
+2.	在输入区域输入文件（或文件夹）名称。
 
     ![](../../_assets/tp630/file-manager/fld-rename_eng.png)
 
-* You can input the number simply by using the operation keys on the teach pendant. (`[←/→]` keys: For moving the cursor. Number keys: For inputting a number)
-* To input a text including numbers, touch the ![](../../_assets/tp630/rbt-softkb_eng.png) button on the log bar to use the soft keyboard.
+* 您可以简单地使用教学挂件上的操作键输入数字。（`[←/→]` 键：用于移动光标。数字键：用于输入数字）
+* 若要输入包含数字的文本，请触摸日志条上的 ![](../../_assets/tp630/rbt-softkb_eng.png) 按钮以使用软键盘。
 
-3.	Press the `[ENTER]` key. Then, the new name you inputted in the list will appear.
+3.	按下 `[ENTER]` 键。然后，您输入的新名称将在列表中出现。
 
 {% hint style="info" %}
-* You can also rename a protected file.
+* 您也可以重命名受保护的文件。
 * 
-  Even if a file is renamed, the information such as size, modified date, and attributes will remain the same as before.
+  即使文件被重命名，大小、修改日期和属性等信息也将保持不变。
 
 * 
-  It is the same function as "R116 Program Number Change" of R codes.
+  这是与 R 代码的 "R116 程序编号更改" 相同的功能。
 
 
 {% endhint %}
-
-
-
-
 [__SOURCE](4-service/2-file-manager/3-folder-management/README.md)
-# 4.2.3 Folder Management
+# 4.2.3 文件管理
 
-You can delete a folder or add a new one.
-
-
+您可以删除一个文件夹或添加一个新文件夹。
 [__SOURCE](4-service/2-file-manager/3-folder-management/1-folder-removal.md)
-# 4.2.3.1 Folder Deletion
+# 4.2.3.1 文件删除
 
-1.	Select a folder in the folder list using the jog dial on the teach pendant and then touch the ![](../../../_assets/tp630/k-delete_eng.png) key of the key pad.
+1. 使用教导 pendant 上的 jog dial 选择文件夹列表中的一个文件夹，然后按下 ![](../../../_assets/tp630/k-delete_eng.png) 键盘上的键。
 
     ![](../../../_assets/tp630/file-manager/fld-delete.png)
 
-2.	In the confirmation window, touch the `[ENTER]` button. The selected folder and all files saved in it will be deleted.
+2. 在确认窗口中，按下 `[ENTER]` 按钮。所选文件夹及其中保存的所有文件将被删除。
 
     ![](../../../_assets/tp630/file-manager/fld-delete-pop_eng.png)
-
-
-
-
 [__SOURCE](4-service/2-file-manager/3-folder-management/2-folder-generation.md)
-# 4.2.3.2 Folder Creation
+# 4.2.3.2 文件创建
 
-1.	Select a folder in the folder list using the jog dial of the teach pendant and then touch the `[New Folder]` button on the function button bar. Then, a new folder will be added under the selected folder.
+1. 使用教学挂件的 jog dial 在文件夹列表中选择一个文件夹，然后触摸功能按钮栏上的 `[New Folder]` 按钮。然后，将在所选文件夹下添加一个新文件夹。
 
     ![](../../../_assets/tp630/file-manager/fld-create_eng.png)
 
-2.	Input the name of the new folder and then press the `[ENTER]` key.
+2. 输入新文件夹的名称，然后按 `[ENTER]` 键。
 
     ![](../../../_assets/tp630/file-manager/fld-create-rename_eng.png)
-
-
-
 [__SOURCE](4-service/2-file-manager/4-file-protect.md)
-# 4.2.4 File Protection
+# 4.2.4 文件保护
 
-Protect your important files by performing a setting that can make it impossible to change or delete a program.
+通过执行可以使更改或删除程序不可能的设置来保护您的重要文件。
 
-1.	Select the file and touch the `[property]` button. Then, the attribute setting window will appear.
+1. 选择文件并触摸 `[property]` 按钮。然后，属性设置窗口将出现。
 
     ![](../../_assets/tp630/file-manager/fl-attribute_eng.png)
 
-2.	Check the file name and touch the `[Read Only]` checkbox to select it and then touch the `[OK]` button. A protection mark \(W\_\) will appear in the attributes of the file list.
+2. 检查文件名并触摸 `[Read Only]` 复选框以选择它，然后触摸 `[OK]` 按钮。保护标记 \(W\_\) 将出现在文件列表的属性中。
 
     ![](../../_assets/tp630/file-manager/fl-attribute-pop_eng.png)
-
-
-
-
 [__SOURCE](4-service/2-file-manager/5-data-backup.md)
-# 4.2.5 Backup all
+# 4.2.5 备份所有
 
-You can backup the controller's files, such as the project, log.
+您可以备份控制器的文件，例如项目、日志。
 
-1. In the Teach Pendant\(T/P\) or USB Storage Device in the folder tree, use the direction keys on the Teach Pendant to select the target folder where you want to save the backup.
+1. 在教学挂件\(T/P\)或USB存储设备的文件夹树中，使用教学挂件上的方向键选择您希望保存备份的目标文件夹。
 
     ![](../../_assets/tp630/file-manager/fl-backup-select.png)
 
-2. Press the `SHIFT` key and click the `[backup all]` button on the bottom of the screen.
-
+2. 按下`SHIFT`键并点击屏幕底部的`[backup all]`按钮。
 
     ![](../../_assets/tp630/file-manager/fl-backup-button.png)
 
-3. Click the 'Start' button to `start` the backup. Once Backup\(approximately 1 minute\) is complete, check the results of the backup in the results window.
+3. 点击“开始”按钮以` (start)`开始备份。一旦备份（大约1分钟）完成，请在结果窗口中检查备份结果。
 
     ![](../../_assets/tp630/file-manager/fl-backup-pop.png)
-
-
 [__SOURCE](4-service/2-file-manager/6-data-restore.md)
-# 4.2.6 Restore all
+# 4.2.6 恢复所有
 
-You can restore files such as projects, logs which backed up with `backup all` features to the system.
+您可以将使用 `全部备份 (backup all)` 功能备份的文件，例如项目、日志，恢复到系统中。
 
-1. In the Teach Pendant\(T/P\) or removable storage\(USB\) in the folder list, select the folder that you backed up all using the direction keys on the Teach Pendant.
+1. 在教导终端\(T/P\)或可移动存储\(USB\)的文件夹列表中，使用教导终端上的方向键选择您备份的文件夹。
 
     ![](../../_assets/tp630/file-manager/fl-backup-select.png)
 
-2. Press the `SHIFT` key and click the `restore all` button on the bottom of the screen.
+2. 按下 `SHIFT` 键，并点击屏幕底部的 `全部恢复 (restore all)` 按钮。
 
     ![](../../_assets/tp630/file-manager/fl-restore-button.png)
 
-3. Click the `Start` button to start the restoration. Once the restoration (It takes about 1 minute.) is complete, check the results of the restoration in the results window.
+3. 点击 `启动 (Start)` 按钮以开始恢复。一旦恢复完成（大约需要 1 分钟），请在结果窗口中检查恢复结果。
 
     ![](../../_assets/tp630/file-manager/fl-restore-report.png)
 
-4. Turn off and on the power the controller.
-
+4. 关闭并打开控制器的电源。
 [__SOURCE](4-service/2-file-manager/7-data-restore-partial.md)
-# 4.2.6 Partial Restoration
+# 4.2.6 部分恢复
 
-When restoring only some folders or files of backup data, use the `Copy` and `Paste` feature.
+在仅恢复备份数据的某些文件夹或文件时，请使用 `复制 (Copy)` 和 `粘贴 (Paste)` 功能。
 
-
-1. By using the teach pendant's jog dial, select the project \(project/\) folder backed up in the teach pendant \(T/P\) or removable storage device\(USB\), and then click the `[copy]` button.
+1. 使用教导台的 jog dial，选择备份在教导台 \(T/P\) 或可移动存储设备 \(USB\) 中的项目 \(project/\) 文件夹，然后点击 `[copy]` 按钮。
 
     ![](../../_assets/tp630/file-manager/fl-restore-copy_eng.png)
 
-
-2. By using the teach pendant's jog dial, select the `[MAIN]` folder in the folder list, and then touch the `[Paste]` button.
+2. 使用教导台的 jog dial，选择文件夹列表中的 `[MAIN]` 文件夹，然后触摸 `[Paste]` 按钮。
 
     ![](../../_assets/tp630/file-manager/fl-restore-paste_eng.png)
 
-
-3. In the duplicate notification window, touch the checkbox for `[All]` to select it, and then touch the `[OK]` button. The backup data will be restored on the main board.
+3. 在重复通知窗口中，触摸 `[All]` 的复选框以选择它，然后触摸 `[OK]` 按钮。备份数据将被恢复到主板上。
 
     ![](../../_assets/tp630/file-manager/fl-restore-pop_eng.png)
 
-4. Turn the power of the controller back on.
-
-
+4. 重新打开控制器的电源。
 [__SOURCE](4-service/2-file-manager/8-toggle-root.md)
-# 4.2.8 toggle root
+# 4.2.8 切换根目录
 
 {% hint style="info" %}
-Supported from V60.26-00.
+支持从 V60.26-00 开始。
 {% endhint %}
 
-In the tree window on the left side of the file-manager, the MAIN and TP nodes show only the home folder that the user is allowed access to. The areas outside the home folder are system folders and should not be accessed by the user.
+在文件管理器左侧的树形窗口中，MAIN 和 TP 节点只显示用户允许访问的主文件夹。主文件夹外的区域是系统文件夹，用户不应访问。
 
-If it is essential during maintenance, you can click the `[toggle root]` button at the bottom of the screen to enter the system folder accessible mode.
+如果在维护过程中必要，可以点击屏幕底部的 `[toggle root]` 按钮进入系统文件夹可访问模式。
 
-Once in accessible mode, the following warning message is displayed, and the MAIN and TP nodes display up to the system's root folder.
+一旦进入可访问模式，将显示以下警告信息，MAIN 和 TP 节点显示系统的根文件夹。
 
 ![](../../_assets/tp630/file-manager/fl-toggle-root0.png)
 
 ![](../../_assets/tp630/file-manager/fl-toggle-root1.png)
 
-Click the `[toggle root]` button once more to release the accessible mode.
-
+再次点击 `[toggle root]` 按钮以释放可访问模式。
 [__SOURCE](4-service/3-program-conversion/README.md)
-# 4.3 Program Conversion
+# 4.3 程序转换
 
-You can write a new program by modifying the conditions and location of the created program by batches or individually, or by shifting coordinates.
+您可以通过批量或单独修改创建程序的条件和位置，或通过移动坐标来编写新程序。
 
-1.	Touch the `[6: Program Conversion]` menu. Then, the program conversion menu will appear. 
+1.	触摸 `[6: Program Conversion]` 菜单。然后，程序转换菜单将出现。
 
-2.	Select the desired menu and then modify the program conditions and location, or write a new program.
+2.	选择所需的菜单，然后修改程序条件和位置，或编写新程序。
 
     ![](../../_assets/tp630/prg-modi-menu_eng.png)
 
 <br>
 
 {% hint style="info" %}
-During the startup of the robot, the use of the menus `[4: The reference coordinate system]`, `[5: Coordinate transformation]`, `[6: Mirror Image]`, and `[7: Step Copy]` will be restricted.
+在机器人启动期间，将限制使用菜单 `[4: The reference coordinate system]`、`[5: Coordinate transformation]`、`[6: Mirror Image]` 和 `[7: Step Copy]`。
 {% endhint %}
-
-
-
-
 [__SOURCE](4-service/3-program-conversion/1-rec-condition.md)
-# 4.3.1 Recording Condition
+# 4.3.1 录制条件
 
-You can change and set the recording condition for a specific step of the program and then apply it to the existing program, or write a new program.
+您可以更改并设置程序特定步骤的录制条件，然后将其应用于现有程序，或编写新程序。
 
-1.	Touch the `[6: Program Conversion  - 1: Record condition conversion]` menu. Then, the recording condition conversion setting window will appear.
+1. 触摸`[6: 程序转换 - 1: 录制条件转换] ([6: 程序转换 - 1: 录制条件转换])`菜单。然后，录制条件转换设置窗口将出现。
 
-2.	After setting the recording condition option, touch the `[OK]` button.
+2. 设置录制条件选项后，触摸`[OK]`按钮。
 
     ![](../../_assets/tp630/prg-cond-modi_eng.png)
 
-* `[Source program]`/`[Target program]`: You can input the number of the original program \(Initial setting value: The currently selected program\) whose recording conditions you want to change and the number of the new program you want to save after the change of recording conditions. If you set the number of the target program to match the same number as that of the original program, the original program will be overwritten by and replaced with a new program.
-* `[Start Step]`/`[End Step]`: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of recording conditions.
-* `[Accuracy]`, `[Tool]`: You can change the recording conditions.
-
-
-
-
+* `[源程序]`/`[目标程序]`：您可以输入要更改其录制条件的原始程序的编号 \(初始设置值：当前选择的程序\) 和在更改录制条件后要保存的新程序的编号。如果您将目标程序的编号设置为与原始程序相同的编号，则原始程序将被新程序覆盖和替换。
+* `[开始步骤]`/`[结束步骤]`：您可以设置将应用录制条件更改的步骤范围 \(初始设置值：1/最后一步\)。
+* `[精度]`，`[工具]`：您可以更改录制条件。
 [__SOURCE](4-service/3-program-conversion/2-rec-speed.md)
-# 4.3.2 Recording Speed Conversion
+# 4.3.2 记录速度转换
 
-You can change the recording speed for a specific step of the program and apply it to the existing program, or create a new program.
+您可以为程序的特定步骤更改记录速度，并将其应用于现有程序，或创建新程序。
 
-1.	Touch the `[6: Program Conversion  - 2: Record speed conversion]` menu. Then, the recording speed conversion setting window will appear.
+1. 触摸`[6: 程序转换 - 2: 记录速度转换] ([6: 程序转换 - 2: 记录速度转换])`菜单。然后，记录速度转换设置窗口将出现。
 
-2.	After setting the recording speed option, touch the `[OK]` button.
+2. 设置完记录速度选项后，触摸`[确定]`按钮。
 
     ![](../../_assets/tp630/prg-speed-modi_eng.png)
 
-* `[Source program]`/`[Target program]`: You can input the number of the original program \(Initial setting value: The currently selected program\) whose recording speed you want to change and the number of the new program you want to save after the change of recording speed. If you set the number of the target program to match the same number as that of the original program, the original program will be overwritten by and replaced with a new program.
-* `[Start Step]`/`[End Step]`: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of the recording speed.
-* `[Method]`: You can set the method of designating the speed.
-  * `[specify Speed]`: You can convert the recorded speeds by batch.
-  * `[specify ratio]`: If the unit of the recorded speed and the unit of speed selected in the `[Unit]` option match with each other, the speed can be converted to a ratio against the recorded speed.
-  * `[change unit]`: You can convert the unit of the recorded speed.
-* `[Range]`: You can set the application section within the range of the steps of which recording speed you want to change.
-* `[Unit]`: You can set the unit of speed. When the speed designation method is selected as `[specify ratio]`, only those that match the unit of the speed recorded in the step will be converted to the percentage of the ratio.
-* `[Speed]`: This will mean the ratio value if you select the `[specify ratio]` as the speed designation method.
-
-
-
-
+* `[源程序]`/`[目标程序]`：您可以输入要更改记录速度的原始程序的编号 \(初始设置值：当前选择的程序\)以及在更改记录速度后要保存的新程序的编号。如果您将目标程序的编号设置为与原始程序相同，则原始程序将被新程序覆盖并替换。
+* `[起始步骤]`/`[结束步骤]`：您可以设置将应用记录速度更改的步骤范围 \(初始设置值：1/最后一步\)。
+* `[方法]`：您可以设置指定速度的方法。
+  * `[指定速度]`：您可以批量转换记录的速度。
+  * `[指定比率]`：如果记录速度的单位与`[单位]`选项中选择的速度单位匹配，则速度可以转换为相对于记录速度的比率。
+  * `[更改单位]`：您可以转换记录速度的单位。
+* `[范围]`：您可以设置要更改记录速度的步骤范围内的应用部分。
+* `[单位]`：您可以设置速度单位。当速度指定方法选择为`[指定比率]`时，只有那些与步骤中记录的速度单位匹配的才会转换为比率的百分比。
+* `[速度]`：如果您选择`[指定比率]`作为速度指定方法，这将表示比率值。
 [__SOURCE](4-service/3-program-conversion/3-rec-position.md)
-# 4.3.3 Recording Position
+# 4.3.3 记录位置
 
-You can change and set the coordinate system of the step position recorded as a hidden pose in a specific step of the program and apply it to the existing program or create a new program.
+您可以更改并设置在程序特定步骤中作为隐藏姿态记录的步骤位置的坐标系统，并将其应用于现有程序或创建新程序。
 
-1. Touch the `[6: Program Conversion  - 3: Record Pose conversion]` menu. Then the recording position conversion setting window will appear.
+1. 触摸 `[6: 程序转换 - 3: 记录姿态转换] ([6: 程序转换 - 3: 记录姿态转换])` 菜单。然后记录位置转换设置窗口将出现。
 
-2. After setting the recording position option, touch the `[OK]` button.
+2. 设置记录位置选项后，触摸 `[确定]` 按钮。
 
   ![](../../_assets/tp630/prg-position-modi_eng.png)
 
-* `[source program]`/`[Target program]`: You can input the number of the original program \(Initial setting value: The currently selected program\) of which recording position you want to change and the number of the new program you want to save after the change of recording position. If you set the number of the target program to match the same number as that of the original program, the original program will be overwritten by and replaced with a new program.
-* `[Step range]`: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of the recording position.
-* `[Coord. System Format]`: You can select the coordinate system to shift the position data recorded in the step. If you select base, robot, tool, or user, the position data will be converted to Cartesian coordinate values, and if you select joint, the position data will be converted to axis angles.
-
+* `[源程序]`/`[目标程序]`: 您可以输入要更改记录位置的原始程序的编号 \(初始设置值: 当前选定的程序\) 和在更改记录位置后要保存的新程序的编号。如果您将目标程序的编号设置为与原始程序相同，原始程序将被新程序覆盖并替换。
+* `[步骤范围]`: 您可以设置将应用记录位置更改的步骤范围 \(初始设置值: 1/最后一步\)。
+* `[坐标系统格式]`: 您可以选择坐标系统来转换记录在步骤中的位置数据。如果您选择基准、机器人、工具或用户，位置数据将转换为笛卡尔坐标值；如果您选择关节，位置数据将转换为轴角。
 [__SOURCE](4-service/3-program-conversion/4-rec-crdsys.md)
-# 4.3.4 Recording Coordinate System
+# 4.3.4 记录坐标系统
 
-You can change the coordinate system of the step position recorded as a hidden pose. You can check the coordinate system you have changed to by pressing the quick open button at the concerned step. During the startup of the robot, the use of the `[4: Transformation of the reference coordinate system]` menu will be restricted.
+您可以更改作为隐藏姿态记录的步位置的坐标系统。您可以通过按下相关步骤的快速打开按钮检查您所更改的坐标系统。在机器人启动期间，使用 `[4: 参考坐标系统的变换]` 菜单将受到限制。
 
-1.	Touch the `[6: Program Conversion  - 4: Transformation of the reference coordinate system]` menu. Then, the recording coordinate system shifting setting window will appear.
+1. 触摸 `[6: 程序转换 - 4: 参考坐标系统的变换] ([6: 程序转换 - 4: 参考坐标系统的变换])` 菜单。然后，记录坐标系统偏移设置窗口将出现。
 
-2.	After setting the recording coordinate system option, touch the `[OK]` button.
+2. 设置记录坐标系统选项后，触摸 `[OK]` 按钮。
 
     ![](../../_assets/tp630/prg-coordisys-modi_eng.png)
 
 
-* `[Source program]`/`[Target program]`: You can input the number of the original program \(Initial setting value: The currently selected program\) of which recording coordinate system you want to change and the number of the new program you want to save after the change of recording coordinate system. If you set the number of the target program to match the same number as that of the original program, the original program will be overwritten by and replaced with a new program.
-* `[Start Step]`/`[End Step]`: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of the recording coordinate system.
-* `[Coordinate System Format]`: You can select a coordinate system that you want to designate newly.
-
-
-
-
+* `[源程序]`/`[目标程序]`：您可以输入要更改的原始程序的记录坐标系统的编号（初始设置值：当前选择的程序）和更改记录坐标系统后要保存的新程序的编号。如果您将目标程序的编号设置为与原始程序的编号相同，则原始程序将被新程序覆盖。
+* `[开始步骤]`/`[结束步骤]`：您可以设置将应用记录坐标系统更改的步骤范围（初始设置值：1/最后一步）。
+* `[坐标系统格式]`：您可以选择要新指定的坐标系统。
 [__SOURCE](4-service/3-program-conversion/5-rec-conversion.md)
-# 4.3.5 Coordinate Shifting
+# 4.3.5 坐标移动
 
-The coordinate shifting function is a function that enables you to create a program without additional teaching even if a workpiece of the same shape, as shown in Image 2, is placed at a different location after a program taught on the workpiece \(Image 1\).
+坐标移动功能是一个使您能够在没有额外教学的情况下创建程序的功能，即使在工作件的位置不同的情况下，仍然可以将相同形状的工作件放置在不同的位置，如图2所示，在工作件上进行了教学的程序（图1）。
 
-![Left: Figure 1, Right: Fugure 2](../../_assets/image_369.png)
+![左：图1，右：图2](../../_assets/image_369.png)
 
-It is required to have three reference points to use the coordinate shifting function. You can create Program A by marking three reference points on the workpiece at the initial position. After moving the position of the workpiece, write Program B using the previously marked three reference points.
+使用坐标移动功能需要有三个参考点。您可以通过在工作件的初始位置标记三个参考点来创建程序A。在移动工作件位置后，使用之前标记的三个参考点编写程序B。
 
-![Left: Program A, Right: Program B](../../_assets/image_368.png)
+![左：程序A，右：程序B](../../_assets/image_368.png)
 
 {% hint style="info" %}
-* The accuracy of the coordinate shifting program will be affected by the accuracy of teaching the three reference points in coordinate shifting. Perform teaching as accurately as possible for the three reference points.
-* Set the distance between the three reference points as far as possible in coordinate shifting.
+* 坐标移动程序的准确性将受到教学三个参考点准确性的影响。尽可能准确地对三个参考点进行教学。
+* 在坐标移动中，将三个参考点之间的距离设置得尽可能远。
 {% endhint %}
 
-You can shift the existing program \(Program 1\) to a new program \(Program 2\) by calculating the coordinate shifting amount in three steps that are the basis of Program A and Program B.
+您可以通过计算坐标移动量，将现有程序（程序1）移至新程序（程序2），其基础是程序A和程序B的三个步骤。
 
 ![](../../_assets/image_315.png)
 
@@ -3122,98 +2685,83 @@ You can shift the existing program \(Program 1\) to a new program \(Program 2\) 
 
 ---
 
-This function is not allowed during a robot operation. How to use the coordinate shifting is as follows.
+在机器人操作期间不允许使用该功能。使用坐标移动的方法如下。
 
-1.	Select [6: Program conversion - 5: Coordinate transformation] menu. A setting window for the coordinate shifting will appear.
-2.	After setting up, press `[OK]` button.
- 
+1. 选择[6: 程序转换 - 5: 坐标变换]菜单。坐标移动的设置窗口将出现。
+2. 设置完成后，按`[确定]`按钮。
+
     ![](../../_assets/tp630/prg-coordinate-modi_eng.png)
 
 
-* [Source program] : Existing teaching program number (Program number of [Figure. 1]) 
+* [源程序]：现有教学程序编号（[图1]的程序编号）
 
-* [Target program] : Program number to newly create by executing coordinate conversion (Program number of [Figure. 2])
+* [目标程序]：通过执行坐标转换新创建的程序编号（[图2]的程序编号）
 
-* [previous base program] : Number of a program with 3 standard points (Number of [Program A]) 
- 
-* [post base program] : Program number in which the 3 points of reference for conversion are recorded ([Program B] number) 
+* [先前基准程序]：具有3个标准点的程序编号（[程序A]的编号）
 
+* [后基准程序]：记录转换参考的3个点的程序编号（[程序B]的编号）
 [__SOURCE](4-service/3-program-conversion/6-mirror-image.md)
-# 4.3.6 Mirror Image
+# 4.3.6 镜像
 
-You can write a program in which the position of the S axis and the posture of the wrist axis are symmetrical based on the Y-Z plane at the 0° position of the S axis of the robot.
+您可以编写一个程序，使得 S 轴的位置和腕轴的姿态基于机器人 S 轴 0° 位置的 Y-Z 平面对称。
 
-This function is useful when instructing two robots on the left and right to perform the same operation, such as welding the body of a vehicle. First, teach an operation to one robot and then open the program of the taught operation and convert it into a mirror image. Then, a program symmetrical to the S axis will be written.
+当指导左右两个机器人执行相同的操作（例如焊接车辆车身）时，此功能非常有用。首先，将一个操作教授给一个机器人，然后打开已教授操作的程序并将其转换为镜像。然后，将编写一个与 S 轴对称的程序。
 
-![Figure 32 Original Program \(Left\) / Program Converted Through Mirror Image \(Right\)](../../_assets/image_379.png)
+![图 32 原始程序 \(左\) / 通过镜像转换的程序 \(右\)](../../_assets/image_379.png)
 
 {% hint style="info" %}
-The mirror image function is not supported for collaborative robots.
+镜像功能不支持协作机器人。
 {% endhint %}
 
-The use of the `[6: Mirror Image]` menu will be restricted during the startup of the robot. The method to use the mirror image function is as follows.
+在机器人启动期间，将限制使用 `[6: 镜像]` 菜单。使用镜像功能的方法如下。
 
-1.	Touch the `[6: Program Conversion  - 6: Mirror Image]` menu. Then, the mirror image setting window will appear.
+1.	触摸 `[6: 程序转换 - 6: 镜像] ([6: 程序转换  - 6: 镜像])` 菜单。然后，镜像设置窗口将出现。
 
-2.	After setting the mirror image conversion option, touch the `[OK]` button.
+2.	设置镜像转换选项后，触摸 `[OK]` 按钮。
 
-* `[Source program]`/`[Target program]`: You can set the number of the existing program and the number of the new program that is to be created through conversion using a mirror image.
+* `[源程序]`/`[目标程序]`: 您可以设置现有程序的编号和通过镜像转换要创建的新程序的编号。
 
     ![](../../_assets/tp630/prg-mirror-img_eng.png)
-
-
-
-
 [__SOURCE](4-service/3-program-conversion/7-step-copy/README.md)
-# 4.3.7 Step Copy
+# 4.3.7 步骤复制
 
-You can copy part of a program to another program or the same program. The functions recorded in the step will also be copied. During the startup of the robot, the use of the `[7: Step Copy]` menu will be restricted.
+您可以将程序的部分复制到另一个程序或同一程序中。在步骤中记录的功能也会被复制。在机器人启动期间，将限制使用 `[7: 步骤复制]` 菜单。
 
-1.	Touch the `[6: Program Conversion  - 7: Step Copy]` menu. The step copying setting window will appear.
+1. 触摸 `[6: 程序转换 - 7: 步骤复制] ([6: 程序转换 - 7: 步骤复制])` 菜单。步骤复制设置窗口将出现。
 
-2.	After setting the step copying option, touch the `[OK]` button.
+2. 在设置步骤复制选项后，触摸 `[确定]` 按钮。
 
     ![](../../../_assets/tp630/prg-step-copy_eng.png)
 
-* `[Source program]`/`[Target program]`: You can set the number of the original program of which you want to copy the step and the number of the new program that you want to create by pasting the copied step. If you set the target program number as the same number as the original program number, the original program will be overwritten by and replaced with the new program.
-* `[Start Step]`/`[End Step]`: You can set the range of steps that you want to copy \(Initial setting value: 1/last step\).
-* `[Insert Step]`: You can set the reference step to which you want to paste the copied step. The copied step will be pasted right after the reference step.
-* `[Copy Method]`: You can select the progress direction of the copied step.
-  * `[Forward/Inverse]`: You can paste the copied steps in the same order as the original program or the reverse order of the original program.
+* `[源程序]`/`[目标程序]`: 您可以设置要复制步骤的原始程序的编号和通过粘贴复制步骤来创建的新程序的编号。如果您将目标程序编号设置为与原始程序编号相同，则原始程序将被新程序覆盖和替换。
+* `[起始步骤]`/`[结束步骤]`: 您可以设置要复制的步骤范围（初始设定值：1/最后一步）。
+* `[插入步骤]`: 您可以设置要粘贴复制步骤的参考步骤。复制的步骤将紧接在参考步骤之后粘贴。
+* `[复制方式]`: 您可以选择复制步骤的进展方向。
+  * `[前进/逆向]`: 您可以以与原始程序相同的顺序或原始程序的逆序粘贴复制的步骤。
 
 {% hint style="info" %}
-* You cannot copy a protected program.
-* If the END function is recorded in the copied step, the function will be copied together. Delete the function when necessary.
-* If a function that makes it possible to jump \(GOTO, GOSUB\) to a step outside the copied range is recorded in the copied step, the function will be copied, but the number will not be changed automatically. Please change the number after copying.
+* 您无法复制受保护的程序。
+* 如果在复制的步骤中记录了 END 功能，功能将被一同复制。必要时请删除该功能。
+* 如果复制的步骤中记录了可以跳转（GOTO, GOSUB）到复制范围外步骤的功能，该功能将被复制，但编号不会自动更改。请在复制后更改编号。
 {% endhint %}
-
-
-
-
 [__SOURCE](4-service/3-program-conversion/7-step-copy/1-step-copy-example.md)
-# 4.3.7.1 Example of Step Copy
+# 4.3.7.1 步骤复制示例
 
-You can copy the steps 2-5 of the program 1 to step 2 of the program 2 \(set as the input step\) in the right and reverse directions.
+您可以将程序1的步骤2-5复制到程序2的步骤2（设为输入步骤）中，方向可以是向右或反向。
 
-The steps 2-5 of the original program \(program 1\) will be inserted right after the input step \(step 2\) of the target program \(program 2\) in the right direction \(same order as the original program\) or in the reverse direction \(reverse order of the original program\).
+原程序（程序1）的步骤2-5将紧接在目标程序（程序2）的输入步骤（步骤2）之后插入，方向可以是向右（与原程序相同的顺序）或反向（原程序的反向顺序）。
 
 ![](../../../_assets/image_321.png)
-
-
-
-
 [__SOURCE](4-service/4-system-diagnosis/README.md)
-# 4.4 System Diagnosis
+# 4.4 系统诊断
 
-You can inspect and manage the state of the robot and controller. You can check and update the version of each module of the controller.
-
-
+您可以检查和管理机器人的状态和控制器。您可以检查和更新控制器每个模块的版本。
 [__SOURCE](4-service/4-system-diagnosis/1-system-version/README.md)
-# 4.4.1 System Version
+# 4.4.1 系统版本
 
-1.	Touch the `[7: System Diagnosis  - 1: System version]` menu. Then, the system environment setting window will appear.
+1. 触摸`[7: System Diagnosis - 1: System version] ([7: System Diagnosis  - 1: System version])`菜单。然后，系统环境设置窗口将出现。
 
-2.	Check and manage the system environment \(software version\) information of the robot and controller.
+2. 检查和管理机器人和控制器的系统环境（软件版本）信息。
 
 ![](../../../_assets/tp630/svc-system-version_eng.png)
 
@@ -3221,8 +2769,8 @@ You can inspect and manage the state of the robot and controller. You can check 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -3230,456 +2778,403 @@ You can inspect and manage the state of the robot and controller. You can check 
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">System environment (software version) information of the robot and controller</td>
+      <td style="text-align:left">机器人和控制器的系统环境（软件版本）信息</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Edit and manage the system environment using the function buttons.</p>
+        <p>使用功能按钮编辑和管理系统环境。</p>
         <ul>
-          <li>[OK]: The menu will be closed.</li>
-          <li>[Ver. up]: You can update the version of each module of the controller.</li>
+          <li>[OK]: 菜单将被关闭。</li>
+          <li>[Ver. up]: 您可以更新控制器各模块的版本。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
-
-
-
 [__SOURCE](4-service/4-system-diagnosis/1-system-version/1-controller-system-update.md)
-# 4.4.1.1 Controller System Updating
+# 4.4.1.1 控制器系统更新
 
-You can update the version of each module of the controller using the integrated compressed file.
+您可以使用集成的压缩文件更新控制器各模块的版本。
 
-1.	Connect the removable storage device containing the integrated compressed file to the USB slot of the teach pendant. When the removable storage device is connected to the teach pendant, the `[USB]` icon \(![](../../../_assets/icon-usb2.png)\) will appear in the status bar.
+1.	将包含集成压缩文件的可移动存储设备连接到教导终端的USB插槽。当可移动存储设备连接到教导终端时，状态栏中将出现`[USB]`图标 \(![](../../../_assets/icon-usb2.png)\)。
 
-2.	Touch the `[Ver. Up]` button on the function button bar. Then, the version upgrade program execution window will appear.
+2.	触摸功能按钮栏上的`[Ver. Up]`按钮。然后，版本升级程序执行窗口将出现。
 
-3.	Select the `[Version Up]` mode by touching the drop-down menu, select the integrated compressed file using the `[Open]` button, and then touch the `[OK]` button.
+3.	通过触摸下拉菜单选择`[Version Up]`模式，使用`[Open]`按钮选择集成压缩文件，然后触摸`[OK]`按钮。
 
     ![](../../../_assets/image_311.png)
 
-
-
-4.	After selecting the module that you want to update, touch the `[OK]` button. Then, the update will start.
+4.	选择您想要更新的模块后，触摸`[OK]`按钮。然后，更新将开始。
 
     ![](../../../_assets/image_255.png)
 
-5.	When the update is completed, restart the controller.
+5.	更新完成后，重新启动控制器。
 
     ![](../../../_assets/image_367.png)
-
-
 [__SOURCE](4-service/5-date-time-setting.md)
-# 4.5 Setting of Date and Time
+# 4.5 设置日期和时间
 
-You can set the date and time of the controller.
+您可以设置控制器的日期和时间。
 
-1.	Touch the `8: Date, time setting` menu. The date and time setting window will appear.
+1. 触摸 `8: 日期时间设置 (8: Date, time setting)` 菜单。日期和时间设置窗口将出现。
 
-2.	After setting the date and time information, touch the `[OK]` button.
+2. 设置日期和时间信息后，触摸 `[OK]` 按钮。
 
     ![](../_assets/tp630/svc-date_eng.png)
 
 
-* You can perform setting by inputting the date and time by using the operation keys on the teach pendant.
-* If you press the arrow keys, the cursor will move between the date and time items \(year/month/day/hour/minute/second/a.m./p.m.\).
+* 您可以通过使用教导 pendant 的操作键输入日期和时间来进行设置。
+* 如果您按箭头键，光标将在日期和时间项目间移动 \(年/月/日/小时/分钟/秒/上午/下午\)。
 
-* You can input a number by pressing the number keys. You can also adjust the value using the `[SHIFT]`+`[↓]` keys.
-* Set the date on the calendar. Touch the `[◁/▷]` button to select the year and month and then touch the date.
-
-
-
-
-
-
+* 您可以通过按数字键输入数字。您也可以使用 `[SHIFT]`+`[↓]` 键调整数值。
+* 在日历上设置日期。触摸 `[◁/▷]` 按钮以选择年和月，然后触摸日期。
 [__SOURCE](4-service/6-app.md)
-# 4.6 App
+# 4.6 应用程序
 
-Manages the software installed and running on the teach pendant.
+管理安装并运行在教学吊 pendant 上的软件。
 
-For more information, refer to "[${cont_model} Controller Function Manual - Teach Pendant App](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/README)".
-
-
+有关更多信息，请参阅 "[${cont_model} 控制器功能手册 - 教学吊 pendant 应用程序](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/zh/README)"。
 [__SOURCE](4-service/7-tp-option.md)
-# 4.7 Teach pendant option
+# 4.7 教学挂件选项
 
-Set the preference options of the teach pendant.
+设置教学挂件的偏好选项。
 
 ![](../_assets/tp630/svc-option.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Item</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">项目</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">
-        Sound
+        声音
       </td>
-      <td style="text-align:left">Turns the Teach Pendant's beep sound ON or OFF.</td>
+      <td style="text-align:left">打开或关闭教学挂件的蜂鸣声。</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        Screen save time
+        屏幕保护时间
       </td>
-      <td style="text-align:left">Activates the screen-save after the setting period since the last operation.</td>
+      <td style="text-align:left">在上次操作后，激活屏幕保护程序的设置时间。</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        Screen save brightness
+        屏幕保护亮度
       </td>
-      <td style="text-align:left">Sets the brightness of the screensaver from level 0 (Off) to 6 (Slightly dim).<br>
-      (Supported from version V60.32-06 and later.)</td>
+      <td style="text-align:left">将屏幕保护程序的亮度设置为0（关闭）到6（稍微暗淡）。<br>
+      （支持从版本 V60.32-06 及更高版本。）</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        Comm. period during screen save
+        屏幕保护期间通信周期
       </td>
-      <td style="text-align:left">Sets the communication delay for receiving information from the controller while the screen-save is active. If set to 0, communication proceeds without delay.<br>
-      (Supported from version V60.30-08 and later.)</td>
+      <td style="text-align:left">在屏幕保护程序活动期间，设置从控制器接收信息的通信延迟。如果设置为0，通信将不延迟进行。<br>
+      （支持从版本 V60.30-08 及更高版本。）</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        Touch screen On
+        触摸屏开启
       </td>
-      <td style="text-align:left">Turns the touch screen ON or OFF.<br> Disable this option if there is a risk of unintended Teach Pendant operation due to accidental screen contact.</td>
+      <td style="text-align:left">打开或关闭触摸屏。<br>如果由于意外屏幕接触存在意外教学挂件操作的风险，请禁用此选项。</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        Whether to use the job key
+        是否使用作业键
       </td>
-      <td style="text-align:left">Select whether to use the jog keys `J7-`/`J7+` and `J8-`/`J8+` respectively. <br>Turn off this option if there is a risk of positioner collision or other issues due to incorrect jog key operation.<sup>1)</sup></td>
+      <td style="text-align:left">选择是否分别使用 jog 键 `J7-`/`J7+` 和 `J8-`/`J8+`。<br>如果由于不正确的 jog 键操作存在位置器碰撞或其他问题的风险，请关闭此选项。<sup>1)</sup></td>
     </tr>
     <tr>
       <td style="text-align:left">
-        Language
+        语言
       </td>
-      <td style="text-align:left">Changes the display language of the Teach Pendant. Changes take effect after returning to the main screen.<br>
-      (Supported from version V70.00-00 and later.<sup>2)</sup>)</td>
+      <td style="text-align:left">更改教学挂件的显示语言。更改在返回主屏幕后生效。<br>
+      （支持从版本 V70.00-00 及更高版本。<sup>2)</sup>）</td>
     </tr>
   </tbody>
 </table>
 
 {% hint style="info" %}
-1\) For more details on the use of jog keys, refer to the Mechanism Jog Rules in "[7.6.6 Mechanism Settings](../7-system/6-initialization/6-mechannism-set.md)"
+1\) 有关 jog 键使用的更多细节，请参阅“[7.6.6 机械设置](../7-system/6-initialization/6-mechannism-set.md)”中的机制 jog 规则。
 
-2\) For versions prior to the one mentioned above, the display language can only be switched after executing `[F1: Service] - 9: Exit TP application`.
+2\) 对于上述提到的版本之前的版本，仅在执行 `[F1: 服务] - 9: 退出TP应用程序 ([F1: Service] - 9: Exit TP application)` 后才能切换显示语言。
 
 {% endhint %}
-
-
 [__SOURCE](4-service/8-tp-share.md)
-# 4.8 Teach pendant sharing
+# 4.8 教学挂件共享
 
 ![](../_assets/tp630/tp-sharing.png)
 
-Select the mode using the radio buttons at the top of the screen.
+使用屏幕顶部的单选按钮选择模式。
 
-* OFF : The sharing function is disabled. Under normal conditions, this should be set to OFF so that the teach pendant can connect to a controller properly.
+* OFF : 共享功能已禁用。在正常情况下，应设置为 OFF，以便教学挂件可以正确连接到控制器。
 
-* VRC (PC) : A physical teach pendant is connected to multiple virtual controllers (VRCs) running in HRSpace4 on a desktop PC, and can be used by switching between them.
-Refer to the following section in the HRSpace4 Help for connection instructions.
-  + HRSpace4 Manual - 8.4 Real Teach Pendant (RTP)
+* VRC (PC) : 物理教学挂件连接到运行在桌面 PC 上的多个虚拟控制器 (VRC)，并可以通过在它们之间切换来使用。有关连接说明，请参考 HRSpace4 帮助中的以下部分。  
+  + HRSpace4 手册 - 8.4 实际教学挂件 (RTP)
 
-* RRC (Real Robot Controller) : One teach pendant is connected to multiple controllers and used by switching between them.
-  + Additional optional hardware is required. This feature is currently not supported.
-
+* RRC (真实机器人控制器) : 一个教学挂件连接到多个控制器并通过在它们之间切换来使用。  
+  + 需要额外的可选硬件。目前不支持此功能。
 [__SOURCE](4-service/9-industrial-communication-monitoring.md)
-# 4.9 Industrial Communication Monitoring
+# 4.9 工业通信监控
 
-Monitor firmware information and communication status.
+监控固件信息和通信状态。
 
-For more information, refer to "[${cont_model} Controller Function Manual - Industrial Communication > 1. CIFX PCI Communication > 1.4 CIFX PCI - Monitoring Industrial Communication](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/en/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README)"
-
-
+有关更多信息，请参阅 "[${cont_model} 控制器功能手册 - 工业通信 > 1. CIFX PCI 通信 > 1.4 CIFX PCI - 监控工业通信](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/zh/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README)"
 [__SOURCE](4-service/10-system-program.md)
-# 4.10 System program
+# 4.10 系统程序
 
-You can view and remove the system programs (e.g. OPC-UA server) installed on the controller.
-
-<br>
-
-1. Installing a System Program
-
-   * Connect a USB drive containing the ${cont_model} system program installation file (hps) to the teach pendant (TP).
-   * Run the `5: File Manager` menu. From the [USB] file list, select the file and press Enter.
-   * When the program installation dialog appears, press the `Run` button to start the installation.
-   * After the installation is complete, press the `Exit` button.
-   * To start the program, restart the system.
+您可以查看和移除安装在控制器上的系统程序（例如 OPC-UA 服务器）。
 
 <br>
 
-2. Removing a System Program
+1. 安装系统程序
 
-   * Run the `14: System Program` menu to view the list of installed programs.
-   * Select a program and press the `Remove` button at the bottom of the screen.
-   * When the program removal dialog appears, press the Run button to start the removal process.
-   * After the removal is complete, press the `Exit` button.
+   * 将包含 ${cont_model} 系统程序安装文件 (hps) 的 USB 驱动器连接到教导操作器 (TP)。
+   * 运行 `5: 文件管理器 (5: File Manager)` 菜单。从 [USB] 文件列表中选择文件并按 Enter 键。
+   * 当程序安装对话框出现时，按 `运行 (Run)` 按钮开始安装。
+   * 安装完成后，按 `退出 (Exit)` 按钮。
+   * 要启动程序，请重新启动系统。
 
+<br>
+
+2. 移除系统程序
+
+   * 运行 `14: System Program` 菜单以查看已安装程序的列表。
+   * 选择一个程序并按屏幕底部的 `Remove` 按钮。
+   * 当程序移除对话框出现时，按运行按钮开始移除过程。
+   * 移除完成后，按 `退出 (Exit)` 按钮。
 [__SOURCE](5-conditional-setting/README.md)
-# 5. Condition Setting
+# 5. 条件设置
 
-You can simply change the operation conditions without modifying the program. The changed setting values will remain the same even if the controller is restarted.
-
-
+您可以简单地更改操作条件，而无需修改程序。即使控制器重新启动，修改的设置值仍将保持不变。
 [__SOURCE](5-conditional-setting/1-op-cond-set.md)
-# 5.1 Operation Condition Setting
+# 5.1 操作条件设定
 
-1. Touch the `[Speed Adjustment]` button on the upper left on the initial screen. Then, the operation conditions setting window will appear.
+1. 在初始屏幕的左上角点击 `[Speed Adjustment]` 按钮。然后，操作条件设定窗口将出现。
 
     ![](../_assets/tp630/sbar-spd-auto_eng.png)  ![](../_assets/tp630/sbar-spd-manual_eng.png)
 
 {% hint style="info" %}
-On the `[Speed Adjustment]` button, the speed limit \(mm/sec\) will be displayed while in manual mode, and the playback speed \(%\) will be displayed in automatic mode.
+在 `[Speed Adjustment]` 按钮上，手动模式下将显示速度限制 \(mm/sec\)，而自动模式下将显示播放速度 \(%\)。
 {% endhint %}
 
 
 
-2.	Change the operation condition setting values, and then touch the `[OK]` button.
+2. 更改操作条件设定值，然后点击 `[OK]` 按钮。
 
     ![](../_assets/tp630/sbar-condi-setting_eng.png)
 
     
-
-
-
-
 [__SOURCE](5-conditional-setting/2-op-cond-set-info.md)
-# 5.2 Information of Operation Conditions Setting
+# 5.2 操作条件设置的信息
 
 
 
-* `[1: Operation cycle type]`: You can set whether to repeat the program that will be executed during automatic operation. It can also be set while the robot is starting up, and the setting value will not be applied during manual operation.
-  * 1 Cycle: The job program will operate once and then stop. When the program END is reached, the robot will stop.
-  * Continuous: The job program will operate continuously and repeatedly. If there is an external stop operation, the robot will stop.
+* `[1: 操作周期类型]`: 您可以设置在自动操作期间是否重复将要执行的程序。它也可以在机器人启动时进行设置，并且设置值不会在手动操作期间应用。
+  * 1 次周期: 工作程序将运行一次，然后停止。当程序达到 END 时，机器人将停止。
+  * 连续: 工作程序将连续并重复运行。如果有外部停止操作，机器人将停止。
 </br>
 </br>
 
-* `[2: Step FWD/BWD maximum speed]`: You can set the speed limit for a step forward/backward. For details on this option, refer to "[2.1 Manual Operation](../2-operation/1-manual-operation/README.md)".
+* `[2: 步骤 FWD/BWD 最大速度]`: 您可以设置向前/向后步骤的速度限制。有关此选项的详细信息，请参阅 "[2.1 手动操作](../2-operation/1-manual-operation/README.md)"。
 </br>
 
-* `[3: Function execution during Step FWD]`: You can set the execution option \(mode\) of the function recorded in the job program while in the step forward operation.
-  * Off: Only END recorded in the job program will be executed. All other functions except for END will not be executed.
-  * On: All functions recorded in the job program will be executed.
-  * 1 On: Only the input signal wait function and program END function will be executed.
+* `[3: 步骤 FWD期间的功能执行]`: 您可以设置在步骤向前操作期间在工作程序中记录的功能的执行选项（模式）。
+  * 关闭: 只有在工作程序中记录的 END 将被执行。除了 END 之外的所有其他功能都不会被执行。
+  * 开启: 所有在工作程序中记录的功能将被执行。
+  * 1 开: 仅输入信号等待功能和程序 END 功能将被执行。
 
 
 
 {% hint style="warning" %}
-While in the step backward operation, only the input wait signal function will be executed, and all other functions will not be executed.
+在步骤向后操作期间，仅输入等待信号功能将被执行，所有其他功能将不会被执行。
 {% endhint %}
 
-* `[4: Re-execution of the function after step backward and forward]`: You can perform setting in a way that the previously executed functions among the functions recorded in the job program can be executed again when in the step forward operation again after the step backward operation.
+* `[4: 在步骤向后和向前后的功能重执行]`: 您可以以一种方式进行设置，即在步骤向后操作后再次在步骤向前操作时，可以重新执行工作程序中记录的先前执行的功能。
 </br>
 
-* `[5: Path recovery during step FWD/BWD]`: You can set the mode of executing path recovery when in the step forward/backward operation.
-  * Disable: Will not execute path recovery
-  * Enable: Will execute path recovery without confirming with the user whether to execute path recovery
+* `[5: 步骤 FWD/BWD期间的路径恢复]`: 您可以设置在步骤向前/向后操作期间执行路径恢复的模式。
+  * 禁用: 不会执行路径恢复
+  * 启用: 将执行路径恢复而不与用户确认是否执行路径恢复
 </br>
 </br>
 
-* `[6: Playback speed rate]`: You can set the operation speed \(%\) of the robot for playback of a program in automatic mode. It does not refer to changing the speed recorded in the step of the job program, but it refers to changing the ratio, ranging from 1% to 100% of the robot moving speed against the speed recorded in the step in batch.
+* `[6: 播放速度比率]`: 您可以设置机器人在自动模式下播放程序的操作速度（%）。这并不涉及更改工作程序步骤中记录的速度，而是指更改机器人移动速度与步骤中记录的速度之间的比率，范围从 1% 到 100%。
 
 
 
 
 {% hint style="info" %}
-If a low-speed command is inputted through an external input during automatic operation, the automatic operation speed ratio will not be applied, but the manual maximum speed \(250 mm/s\) will be applied.
+如果在自动操作期间通过外部输入输入了低速命令，将不适用自动操作速度比率，而将适用手动最大速度 \(250 mm/s\)。
 {% endhint %}
 
-* `[7: Robot Lock]`: You can set the job program in a way that automatic operation is possible, without moving the robot. You can check the status of I/O with the peripheral devices, the soft limit, the cycle time, etc.
+* `[7: 机器人锁定]`: 您可以以一种方式设置工作程序，使自动操作在不移动机器人的情况下进行。您可以检查 I/O 与外围设备的状态、软限制、周期时间等。
 </br>
 
-* `[8: Interpolation base]`: You can set a tool that will be the reference during the manual jogging of the robot. In general, a robot tool is used as an interpolation reference.
-  * Robot Tool: Interpolation operation will be executed based on the tool attached to the front end of the robot.
-  * Stationary Tool: Interpolation will be executed based on the front end of the tool fixed to, for example, to the floor. If a stationary tool is selected as the interpolation reference, the tool number on the left side of the initial screen will be marked with ST0 \(![](../_assets/tp630/sbt-crd-st0-small_eng.png)\).
-
+* `[8: 插值基准]`: 您可以设置作为机器人的手动移动参考的工具。一般而言，机器人工具被用作插值参考。
+  * 机器人工具: 插值操作将基于附加在机器人前端的工具执行。
+  * 固定工具: 插值将基于固定在地面上的工具的前端执行。如果选择固定工具作为插值参考，初始屏幕左侧的工具编号将标记为 ST0 \(![](../_assets/tp630/sbt-crd-st0-small_eng.png)\)。
 
 
 
 {% hint style="info" %}
-If you select the stationary tool as the interpolation reference, you must set the stationary tool coordinate system. For details, refer to "[7.3.6.2 Stationary Tool Coordinate System](../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)".
+如果选择固定工具作为插值参考，则必须设置固定工具坐标系。有关详细信息，请参阅 "[7.3.6.2 固定工具坐标系](../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)"。
 {% endhint %}
 
-* `[9: Select user Coordinate System Designation]`: You can set the user coordinate system number \(0~10\) for Cartesian operation during manual jog operation. Then, the robot will operate based on the Cartesian coordinate system in the directions of X, Y, and Z axes of the designated user coordinate system, and the coordinate values of the user coordinate system selected during the monitoring of the pose will be displayed as X, Y, and Z coordinate values of the front end of the tool.
+* `[9: 选择用户坐标系指定]`: 您可以在手动操作期间为笛卡尔操作设置用户坐标系编号 \(0~10\)。然后，机器人将在指定的用户坐标系的 X、Y 和 Z 轴方向上进行操作，所选用户坐标系的坐标值将在监视姿态时显示为工具前端的 X、Y 和 Z 坐标值。
 
 
 
-  * If 0 is set, the robot coordinate system icon \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) will be displayed on the `[Coordinate System]` button on the status display window. The operation based on the user coordinate system will be deactivated, and the operation and monitoring based on the Cartesian coordinates will be performed. <br>
+  * 如果设置为 0，机器人坐标系图标 \(![](../_assets/tp630/sbt-crd-robot-small_eng.png)\) 将显示在状态显示窗口的 `[坐标系统]` 按钮上。基于用户坐标系的操作将被停用，基于笛卡尔坐标的操作和监视将被执行。 <br>
   ![](../_assets/tp630/pane-pose-robotcoord_eng.png)
 
-  * If a number between 1 and 10 is set, the user coordinate system icon \(![](../_assets/tp630/sbt-crd-user-small_eng.png)\) will be displayed on the `[Coordinate System]` button. The coordinate values that are changed by using the `[Axis Operation]` key will be based on the user coordinate system. <br>
+  * 如果设置为 1 到 10 之间的数字，用户坐标系图标 \(![](../_assets/tp630/sbt-crd-user-small_eng.png)\) 将显示在 `[坐标系统]` 按钮上。通过使用 `[轴操作]` 键更改的坐标值将基于用户坐标系。 <br>
   ![](../_assets/tp630/pane-pose-usrcoord_eng.png)
 
 
 {% hint style="info" %}
-You can register the user coordinate system number in the `[system  - 2: Control Parameter  - 6: Coordinate System Registration  -1: User Coordinate System]`.
+您可以在 `[system - 2: 控制参数 - 6: 坐标系统注册  -1: 用户坐标系统] ([system  - 2: 控制参数  - 6: 坐标系统注册  -1: 用户坐标系统])` 中注册用户坐标系编号。
 {% endhint %}
 
 
-* `[10:Plc run mode]`: When the robot controller controls input/output signals using the embedded PLC, set the mode to control the embedded PLC. There are a total of 4 embedded PLC modes. For further details, please refer to the "[${cont_model} Controller Function Manual - Embedded PLC](https://hrbook-hrc.web.app/#/view/doc-hi6-embedded-plc/en/README?cont_model=${cont_model})".
+* `[10: Plc 运行模式]`: 当机器人控制器使用嵌入式 PLC 控制输入/输出信号时，设置控制嵌入式 PLC 的模式。共有 4 种嵌入式 PLC 模式。有关详细信息，请参阅 "[${cont_model} 控制器功能手册 - 嵌入式 PLC](https://hrbook-hrc.web.app/#/view/doc-hi6-embedded-plc/zh/README?cont_model=${cont_model})"。
 
-  * Off : Disables the function.
-  * Stop : Stops embedded PLC operation.
-  * R - Stop(Remote Stop) : This is remote mode and stops the embedded PLC operation in HRLadder of the PC connected to the controller.
-  * R - Run(Remote Run) : This is remote mode and the embedded PLC operation is executed from HRLadder on the PC connected to the controller.
-  * Run : The controller operates the PLC program downloaded to the controller. Only monitoring is possible in HRLadder on PC.
-
-
-
+  * 关闭: 禁用该功能。
+  * 停止: 停止嵌入式 PLC 操作。
+  * R - 停止（远程停止）: 这是远程模式，并停止与控制器连接的 PC 中 HRLadder 的嵌入式 PLC 操作。
+  * R - 运行（远程运行）: 这是远程模式，从与控制器连接的 PC 中的 HRLadder 执行嵌入式 PLC 操作。
+  * 运行: 控制器操作下载到控制器的 PLC 程序。在 PC 的 HRLadder 中仅能进行监控。
 [__SOURCE](6-monitoring/README.md)
-# 6. Monitoring
+# 6. 监控
 
-You can check the status of the robot system and various data of the controller.
+您可以检查机器人系统的状态以及控制器的各种数据。
 
-1.	In order, touch the `[pane layout]` button at the top right of the panel,[split] at the bottom, and [select] at the left bottom. The panel selection window will appear.
+1. 按顺序触摸面板右上角的`[pane layout]`按钮，底部的[split]，以及左下角的[select]。面板选择窗口将出现。
 
     ![](../_assets/tp630/rbt-window-divide_eng.png)
 
-2.	Touch the monitoring item that you want and check the displayed data.
+2. 触摸您想要监控的项目并检查显示的数据。
 
     ![](../_assets/tp630/pane-list_eng.png)
 
 {% hint style="info" %}
-* All items that can be monitored will be displayed on the panel selection window.
+* 所有可以监控的项目将在面板选择窗口中显示。
 * 
-  The items that can be monitored will be displayed differently depending on the setting of the controller. 
+  可监控的项目将根据控制器的设置以不同方式显示。 
 
 * 
-  For details on how to use the panel stack and window of the work area, refer to "[1.2.3.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area?cont_model=${cont_model})".
+  有关如何使用面板堆栈和工作区窗口的详细信息，请参阅 "[1.2.3.8 任务编辑窗口](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area?cont_model=${cont_model})"。
 {% endhint %}
-
 [__SOURCE](6-monitoring/1-basic/README.md)
-# 6.1 Basic
-
-
+# 6.1 基础
 [__SOURCE](6-monitoring/1-basic/1-pose.md)
-# 6.1.1 Pose
+# 6.1.1 位姿
 
-Touch `[Pose]` in the panel selection window. Then, the robot pose information window will appear. You can check the current angle of each axis of the robot, the coordinate value of the tool center point \(TCP\), and the current value and command value of the encoder.
+在面板选择窗口中触摸 `[Pose]`。然后，机器人位姿信息窗口将出现。您可以检查机器人的每个轴的当前角度、工具中心点 \(TCP\) 的坐标值，以及编码器的当前值和命令值。
 
 ![](../../_assets/tp630/pane-pose_eng.png)
-
-
 [__SOURCE](6-monitoring/1-basic/2-op-info.md)
-# 6.3.2 Operation time
+# 6.3.2 操作时间
 
-In the panel selection window, touch `[Operation time]`. Then, the controller's operation information window will appear.
+在面板选择窗口中，触摸 `[Operation time]`。然后，控制器的操作信息窗口将出现。
 
-You can check the accumulated time and number of cycles for each operation of the controller created immediately after system initialization, power input, and the start of the recent cycle. You can initialize the operation information by touching the `[Clear]` button for each item at the bottom of the information.
+您可以检查在系统初始化、电源输入以及最近循环开始后立即创建的控制器每个操作的累积时间和周期数。您可以通过触摸信息底部每个项目的 `[Clear]` 按钮来初始化操作信息。
 
-![Figure 41 Operation information](../../_assets/tp630/pane-operating_eng.png)
+![Figure 41 操作信息](../../_assets/tp630/pane-operating_eng.png)
 
-
-
-The timing of reflection in accordance with the conditions of individual items is as follows.
+根据各个项目的条件，反射的时机如下。
 
 ![](../../_assets/image_449.png)
-
-
 [__SOURCE](6-monitoring/1-basic/3-history.md)
-# 6.1.3 History
+# 6.1.3 历史
 
-In the panel selection window, touch `[history]`. The history window will appear. 
+在面板选择窗口中，触摸 `[history]`。历史窗口将出现。
 
-You can check the history in which the execution log and time stamps of the job program are outputted.
+您可以查看输出作业程序的执行日志和时间戳的历史。
 
 
 
 ![](../../_assets/tp630/pane-history_eng.png)
-
 [__SOURCE](6-monitoring/2-io/README.md)
-# 6.2 IO, PLC, Communication
-
-
+# 6.2 IO, PLC, 通信
 [__SOURCE](6-monitoring/2-io/1-system-input.md)
-# 6.2.1 System Input
+# 6.2.1 系统输入
 
-In the panel selection window, touch `[System Input]`. Then, the input signal window will appear. 
+在面板选择窗口中，触摸 `[System Input]`。然后，输入信号窗口将出现。
 
-You can check the status of signals related to the robot operation and the status of the input signals preassigned to detect any abnormality that occurs to the robot and the controller.
+您可以检查与机器人操作相关的信号状态以及预先分配的输入信号的状态，以检测机器人和控制器发生的任何异常。
 
 ![](../../_assets/tp630/pane-system-input_eng.png)
 
 
 
-* In the ON/OFF status and sequence status, the signals currently being inputted will be displayed in yellow.
+* 在 ON/OFF 状态和序列状态中，当前输入的信号将以黄色显示。
 * 
-  In the sequence status, only the status of the controller sequence signals will be displayed.
+  在序列状态中，仅显示控制器序列信号的状态。
 
 * 
-  `[ON/OFF]`/`[Value]`/`[Sequence]`: You can change the display mode of the input signal window by touching the radio button.
-
-
-
-
-
-
+  `[ON/OFF]`/`[Value]`/`[Sequence]`：您可以通过触摸单选按钮更改输入信号窗口的显示模式。
 [__SOURCE](6-monitoring/2-io/2-system-output.md)
-# 6.2.2 System Output
+# 6.2.2 系统输出
 
-Touch `[System Output]` in the panel selection window. Then, the output signal window will appear.
+在面板选择窗口中触摸 `[System Output]`。然后，输出信号窗口将会出现。
 
-You can check the signals related to the robot operation and check the status of brake control.
+您可以检查与机器人操作相关的信号并检查制动控制的状态。
 
 
 
 ![](../../_assets/tp630/pane-system-output_eng.png)
 
-* In the ON/OFF status and sequence status, the signals currently being outputted will be displayed in yellow.
-* In the sequence status, only the status of the controller sequence signals will be displayed.
-* `[ON/OFF]`/`[Value]`/`[Sequence]`: You can change the display mode of the output signal window by touching the radio button.
-* `[Manual output]`: You can force the output of the selected signals while in the ON/OFF and sequence status.
+* 在 ON/OFF 状态和序列状态中，当前输出的信号将以黄色显示。
+* 在序列状态中，仅显示控制器序列信号的状态。
+* `[ON/OFF]`/`[Value]`/`[Sequence]`：您可以通过触摸单选按钮来更改输出信号窗口的显示模式。
+* `[Manual output]`：您可以在 ON/OFF 和序列状态下强制输出所选信号。
 
 
 
-### Manual Output
+### 手动输出
 
-You can select the desired signal and force it to be outputted.
+您可以选择所需信号并强制输出。
 
-1.	You can set the display mode to the ON/OFF status or sequence status by touching the `[ON/OFF]` or `[Sequence]` radio button on the right side of the system output signal window. 
+1. 您可以通过触摸系统输出信号窗口右侧的 `[ON/OFF]` 或 `[Sequence]` 单选按钮来设置显示模式为 ON/OFF 状态或序列状态。
 
-2.	Touch a signal to select it in the signal window, and then touch the `[Manual Output]` button.
+2. 在信号窗口中触摸一个信号以选择它，然后触摸 `[Manual Output]` 按钮。
 
     ![](../../_assets/tp630/pane-system-output1_eng.png)
 
-3.	After checking the output conditions in the manual output confirmation window, touch the `[ENTER]` button.
+3. 在手动输出确认窗口中检查输出条件后，触摸 `[ENTER]` 按钮。
 
     ![](../../_assets/tp630/pane-system-output-manual-pop_eng.png)
 
 
     | soN | =1/0 |
     | :---: | :---: |
-    | N: Number of the signal to be outputted | Output status \(1: Output, 0: No output\) |
+    | N: 要输出的信号的编号 | 输出状态 \(1: 输出, 0: 不输出\) |
 
 
-4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
+4. 检查所选信号的输出状态。所选信号将切换为输出状态并在信号窗口中以黄色显示。
 
     ![](../../_assets/tp630/pane-system-output2_eng.png)
-
-
 [__SOURCE](6-monitoring/2-io/3-user-input.md)
-# 6.2.3 Public Input
+# 6.2.3 公共输入
 
-Touch `[public Input]` in the panel selection window. Then, the public input signal window will appear. 
+在面板选择窗口中触摸 `[public Input]`。然后，公共输入信号窗口将出现。
 
-You can check the status of public input signals that are inputted through the CNIN connector of the I/O board in the controller.
+您可以检查通过控制器的 I/O 板的 CNIN 连接器输入的公共输入信号的状态。
 
 ![](../../_assets/tp630/pane-public-input_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -3688,11 +3183,10 @@ You can check the status of public input signals that are inputted through the C
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Displays the status of general input signals</p>
+        <p>显示一般输入信号的状态</p>
         <ul>
-          <li>General input signals designated as the system&#x2019;s basic specifications
-            or assigned by the user will be displayed <b>in bold</b>.</li>
-          <li>The signals currently being inputted will be displayed in yellow.</li>
+          <li>被指定为系统的基本规格或用户分配的一般输入信号将<b>以粗体</b>显示。</li>
+          <li>当前输入的信号将以黄色显示。</li>
         </ul>
       </td>
     </tr>
@@ -3702,16 +3196,9 @@ You can check the status of public input signals that are inputted through the C
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[FB0]: You can select the FB block to monitor by touching the drop-down
-            menu (FB0 - FB15). You can configure up to 16 I/O blocks, and 960 points
-            of signals can be monitored in</li>
-          <li><b>[ATTR.-APPLIED]</b>: You can check the checkbox to perform the setting
-            in a way that the physical input values are to be displayed before passing
-            through the positive/negative logic attributes. The basic setting (unchecked)
-            is that the input logic value after passing through the positive/negative
-            logic attributes will be displayed.</li>
-          <li>[ON/OFF]/[Value]: You can change the signal display mode by touching the
-            radio button.</li>
+          <li>[FB0]：您可以通过触摸下拉菜单（FB0 - FB15）选择要监视的 FB 块。最多可以配置 16 个 I/O 块，并且可以监视 960 点信号。</li>
+          <li><b>[ATTR.-APPLIED]</b>：您可以选中复选框以执行设置，以便在通过正/负逻辑属性之前显示物理输入值。基本设置（未选中）是显示经过正/负逻辑属性后的输入逻辑值。</li>
+          <li>[开/关]/[值]：您可以通过触摸单选按钮更改信号显示模式。</li>
         </ul>
       </td>
     </tr>
@@ -3719,28 +3206,26 @@ You can check the status of public input signals that are inputted through the C
 </table>
 
 {% hint style="info" %}
-* In the case of using signals, such as fieldbus signals, by mapping them using an embedded PLC, the On/Off status of the input signals may appear differently. 
+* 在使用信号时，例如通过嵌入式 PLC 映射的现场总线信号，输入信号的开/关状态可能会有所不同。
 * 
-  The flow of the input signals is as follows.
+  输入信号的流向如下所示。
 {% endhint %}
 
 ![](../../_assets/user-input-flow_en.png)
-
-
 [__SOURCE](6-monitoring/2-io/4-user-output.md)
-# 6.2.4 Public Output
+# 6.2.4 公共输出
 
-Touch `[public Output]` in the panel selection window. Then, the public output signal window will appear. 
+在面板选择窗口中触摸 `[public Output]`。然后，公共输出信号窗口将出现。
 
-You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
+您可以检查控制器中I/O板的CNOUT连接器输出的公共输出信号的状态。
 
-![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
+![Figure 40 公共输出信号 - 开/关状态 \(左\)/值状态 \(右\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -3749,11 +3234,10 @@ You can check the status of public output signals that are outputted through the
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Displays the status of general output signals</p>
+        <p>显示一般输出信号的状态</p>
         <ul>
-          <li>General output signals designated as the system&#x2019;s basic specifications
-            or assigned by the user will be displayed <b>in bold</b>.</li>
-          <li>The signals currently being outputted will be displayed in yellow.</li>
+          <li>指定为系统的基本规格或用户分配的一般输出信号将以 <b>粗体</b> 显示。</li>
+          <li>当前正在输出的信号将以黄色显示。</li>
         </ul>
       </td>
     </tr>
@@ -3763,17 +3247,10 @@ You can check the status of public output signals that are outputted through the
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[FB0]: You can select the FB block to monitor by touching the drop-down
-            menu (FB0 - FB15). You can configure up to 16 I/O blocks, and 960 points
-            of signals can be monitored using one block.</li>
-          <li>[Manual Output]: You can force the selected signal to be outputted.</li>
-          <li><b>[ATTR.-APPLIED]</b>: You can check the checkbox to perform the setting
-            in a way that the physical input values are to be displayed before passing
-            through the positive/negative logic attributes. The basic setting (unchecked)
-            is that the input logic value after passing through the positive/negative
-            logic attributes will be displayed.</li>
-          <li>[ON/OFF]/[Value]: You can change the signal display mode by touching the
-            radio button.</li>
+          <li>[FB0]: 您可以通过触摸下拉菜单选择要监控的FB块 (FB0 - FB15)。您最多可以配置16个I/O块，并且使用一个块可以监控960个信号点。</li>
+          <li>[手动输出]: 您可以强制输出所选信号。</li>
+          <li><b>[ATTR.-APPLIED]</b>: 您可以勾选复选框，以便在通过正/负逻辑属性之前显示物理输入值。基本设置（未勾选）是显示通过正/负逻辑属性后的输入逻辑值。</li>
+          <li>[开/关]/[值]: 您可以通过触摸单选按钮更改信号显示模式。</li>
         </ul>
       </td>
     </tr>
@@ -3781,184 +3258,174 @@ You can check the status of public output signals that are outputted through the
 </table>
 
 {% hint style="info" %}
-* In the case of using signals, such as fieldbus signals, by mapping them using an embedded PLC, the On/Off status of the output signals may appear differently. 
+* 在通过嵌入式PLC映射场总线信号等信号的情况下，输出信号的开/关状态可能会有所不同。
 * 
-  The flow of the output signals is as follows.
+  输出信号的流动如下。
 {% endhint %}
 
 ![](../../_assets/user-input-flow_en.png)
 
 #### 
 
-#### Manual Output
+#### 手动输出
 
-You can select the desired signal and force it to be outputted.
+您可以选择所需的信号并强制输出。
 
-1.	You can set the display mode to the ON/OFF status by touching the `[ON/OFF]` radio button on the right side of the general output signal window. 
+1.	您可以通过触摸一般输出信号窗口右侧的 `[ON/OFF]` 单选按钮将显示模式设置为开/关状态。
 
-2.	Touch a signal to select it in the signal window, and then touch the `[Manual Output]` button.
+2.	触摸信号以在信号窗口中选择它，然后触摸 `[手动输出]` 按钮。
 
     ![](../../_assets/tp630/pane-univoutsig_eng.png)
 
-
-3.	After checking the output conditions in the manual output confirmation window, touch the `[ENTER]` button.
+3.	在手动输出确认窗口中检查输出条件后，触摸 `[ENTER]` 按钮。
 
     ![](../../_assets/tp630/pane-univoutsig-manual_eng.png)
 
 | FbN | doN | =1/0 |
 | :---: | :---: | :---: |
-| N: Number of the FB block to monitor | N: Number of the signal to output | Output status \(1: Output, 0: No output\) |
+| N: 要监控的FB块编号 | N: 要输出的信号编号 | 输出状态 \(1: 输出, 0: 不输出\) |
 
-4.	Check the output status of the selected signal. The selected signal will be switched to the output status and displayed in yellow in the signal window.
+4.	检查所选信号的输出状态。所选信号将切换到输出状态并在信号窗口中以黄色显示。
 
     ![](../../_assets/tp630/pane-univoutsig-onoff_eng.png)
-
-
 [__SOURCE](6-monitoring/2-io/5-fn-io.md)
-# 6.2.5 fn input, fn output
+# 6.2.5 fn 输入, fn 输出
 
-You can define fn objects by specifying specific areas of fb objects.
-If the ${cont_model} controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
+您可以通过指定 fb 对象的特定区域来定义 fn 对象。
+如果 ${cont_model} 控制器是总线主设备，并且有多个总线从设备，您可以将每个从设备的区域设置为每个 fn 对象，以直观地处理这些从设备。
 
-The set fn objects can be used in the same way as the fb objects in the robot language and the embedded PLC.
+设置的 fn 对象可以像机器人语言和嵌入式 PLC 中的 fb 对象一样使用。
 
 
 ![](../../_assets/io/io_fn.png)
 
 
-Select `[fn input]` or `[fn output]` in the panel selection window. The fn input or output panel appears and you can check the values of the input and output signals of each fn object.
+在面板选择窗口中选择 `[fn 输入]` 或 `[fn 输出]`。fn 输入或输出面板将出现，您可以检查每个 fn 对象的输入和输出信号的值。
 
-Please refer to the link below for how to set up fn object.
+有关如何设置 fn 对象，请参阅下面的链接。
 
-[7.3.2.12 fn block allocation](../../7-system/3-control-parameter/2-io-signal-setting/12-fn-block?cont_model=${cont_model})
+[7.3.2.12 fn 块分配](../../7-system/3-control-parameter/2-io-signal-setting/12-fn-block?cont_model=${cont_model})
 
 
-Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to be displayed.
+单击 '[F6:prev]' / '[F7:next]' 按钮以更改要显示的 fn 对象的数量。
 
-The use of the remaining F buttons is the same as the [Public Input](6-user-input?cont_model=${cont_model}) and [Public Output](7-user-output?cont_model=${cont_model}) monitoring windows.
+其余 F 按钮的使用与 [公共输入](6-user-input?cont_model=${cont_model}) 和 [公共输出](7-user-output?cont_model=${cont_model}) 监控窗口相同。
 
 
 ![](../../_assets/io/io_fn_mon.png)
-
-
 [__SOURCE](6-monitoring/2-io/6-forced-io.md)
-# 6.2.6 Forced IO
+# 6.2.6 强制 IO
 
-You can register IO relay variables in the Force IO panel to force some changed IO values.
+您可以在强制 IO 面板中注册 IO 继电器变量，以强制某些更改的 IO 值。
 
 {% hint style="warning" %}
-* This function is only for testing or problem analysis.
-* Misoperation of forced IO function can cause serious accidents such as collisions, drops, and casualties. Use with caution only if you fully understand the system's IO connections and clearly predict the consequences of the forced value change.
-* After testing and problem analysis, be sure to clear the forced IO completely and restore it to a normal IO state.
+* 此功能仅用于测试或问题分析。
+* 强制 IO 功能的误操作可能会导致严重事故，例如碰撞、掉落和人员伤亡。仅在您充分了解系统的 IO 连接并清楚预测强制值更改的后果时谨慎使用。
+* 在测试和问题分析后，请务必完全清除强制 IO 并将其恢复到正常 IO 状态。
 
 {% endhint %}
 
-#### Opening forced IO panel
+#### 打开强制 IO 面板
 
-1. Split the screen and press the [Select] button on the bottom left.
+1. 分割屏幕并按左下角的 [选择] 按钮。
 
 ![](../../_assets/tp630/panel-split.png)
 &nbsp;
 ![](../../_assets/tp630/panel-sel.png)
 
-2. Double-click `forced io` in the panel selection window. Forced I/O panel opens.
+2. 在面板选择窗口中双击 `强制 io (forced io)`。强制 I/O 面板打开。
 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io.png)
 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
 
 
-#### How to use
+#### 如何使用
 
-Select the `Name` column, type the desired IO Relay variable name, and press the `ENTER` key to register the variable in the table.  
-(You can modify the variable name you entered by clicking the Name column once more.)
+选择 `名称 (Name)` 列，输入所需的 IO 继电器变量名称，然后按 `确认 (ENTER)` 键将变量注册到表中。  
+(您可以通过再次单击名称列来修改您输入的变量名称。)
 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-name.png)
 
-Select the `Value` column, type the new IO value you want to apply, and press the `ENTER` key.
+选择 `力控制变量 (Value)` 列，输入您想要应用的新 IO 值，然后按 `确认 (ENTER)` 键。
 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-val.png)
 
-If you have more forced IO entries to apply, enter them in the same way. You can enter up to 100 entries.
+如果您有更多要应用的强制 IO 条目，请以同样的方式输入。您最多可以输入 100 个条目。
 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-multi.png)
 
-The * mark on the panel title bar means that the table has been modified and this modification has not yet been applied.
-Press the [F7: Apply] button to apply the forced IO.
-The moment you press the `OK` button in the warning message box, all forced I/O entries are applied.
+面板标题栏上的 * 标记表示表格已被修改，并且此修改尚未应用。  
+按 [F7: 应用] 按钮以应用强制 IO。  
+当您在警告消息框中按 `确认 (OK)` 按钮时，所有强制 I/O 条目将被应用。
 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-apply.png)
 
-The * mark on the panel title bar disappears, and you can see that the forced IO value is applied.
-A red F mark flashes on the title bar. It is a warning that forced IO is being applied.
+面板标题栏上的 * 标记消失，您可以看到强制 IO 值已被应用。  
+标题栏上的红色 F 标记闪烁。这是强制 IO 正在应用的警告。
 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
 
 
-* Press `SHIFT+DEL` to delete an item during editing.
-* You can change the order of the items by pressing the [F5: Swap Up], [F6: Swap Down] buttons.
-* If you click [F3: Cancel edit] while editing a table, it will reload the last applied state.
+* 在编辑过程中按 `SHIFT+DEL` 删除项目。
+* 您可以通过按 [F5: 上移]、[F6: 下移] 按钮来改变项目的顺序。
+* 如果在编辑表时单击 [F3: 取消编辑]，它将重新加载最后应用的状态。
 
-After completing the test and problem analysis, be sure to press the [F2: Clear] button to fully clear the forced IO.
+在完成测试和问题分析后，请务必按 [F2: 清除] 按钮以完全清除强制 IO。
 
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-clear.png)
 
 {% hint style="warning" %}
-* If multiple entries force conflicting values for the same relay (or overlaid bits), they are forced to the value of the lower item of the table.
-* When the ${cont_model} controller is powered off, all contents registered as forced IO are cleared.
+* 如果多个条目强制相同继电器（或重叠位）冲突的值，则强制为表格中下方项目的值。
+* 当 ${cont_model} 控制器断电时，所有注册为强制 IO 的内容将被清除。
 
 {% endhint %}
-
 [__SOURCE](6-monitoring/2-io/7-memory-variables.md)
-# 6.2.7 Memory variables
+# 6.2.7 内存变量
 
 
-Touch `[memory variables]` in the panel selection window.
-Of internal PLC relays, the accessible variables from Robot Language are displayed.
+在面板选择窗口中触摸 `[memory variables]`。
+来自Robot Language的可访问内存PLC继电器变量被显示。
 
-![](../../_assets/tp630/pane-memory-variables_eng.png) 
+![](../../_assets/tp630/pane-memory-variables_eng.png)
 [__SOURCE](6-monitoring/2-io/8-EC-device-info.md)
-# 6.2.8 EtherCAT device
+# 6.2.8 EtherCAT 设备
 
-In the panel selection window, touch `[EtherCAT dev.]`. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with ${cont_model} controller internally and externally. In the EtherCAT network, the controller main board works as a master.
+在面板选择窗口中，触摸 `[EtherCAT dev.]`。此监控面板显示从属设备列表及其网络状态，这些设备与 ${cont_model} 控制器内部和外部组成 EtherCAT 网络。在 EtherCAT 网络中，控制器主板作为主设备工作。
 
 ![](../../_assets/tp630/pane-EC-device_eng.png) 
 
-
--	ENI-Configured Slave Number: the number of slave devices composing the EtherCAT network 
--	Connected Slave Number: the number of current connected slave devices, which is supposed to be the same as 'ENI-Configured Slave Number' 
--	Device: the device name of the EtherCAT slave connected with the main board
--	Address: a unique address on the EtherCAT network
--	Connection
-    -	NG: network failure
-    -	OK: network success
--	Mode
-    -	Unknown: a status where it impossible to check the current status due to network failure
-    -	Init: a status where the network channel has been initialized
-    -	pre-op: a status where a slave device can communicate only by using non-periodic mail-box
-    -	safe-op: a status where a slave device can communicate only transmitting data(Tx PDO)
-    -	operation: a status where a slave device can communicate both transmitting and receiving data(Tx/RxPDO)
-
+-	ENI-配置的从属设备数量：构成 EtherCAT 网络的从属设备数量
+-	连接的从属设备数量：当前连接的从属设备数量，应与 'ENI-配置的从属设备数量' 相同
+-	设备：与主板连接的 EtherCAT 从属设备名称
+-	地址：EtherCAT 网络上的唯一地址
+-	连接
+    -	NG：网络故障
+    -	OK：网络成功
+-	模式
+    -	未知：由于网络故障而无法检查当前状态
+    -	初始化：网络通道已初始化的状态
+    -	预操作：从属设备只能通过非周期邮箱进行通信的状态
+    -	安全操作：从属设备仅能通过传输数据（Tx PDO）进行通信的状态
+    -	操作：从属设备可以同时传输和接收数据（Tx/RxPDO）的状态
 [__SOURCE](6-monitoring/3-job/README.md)
-# 6.3 Job Program, Robot Language
-
-
+# 6.3 工作程序，机器人语言
 [__SOURCE](6-monitoring/3-job/1-job.md)
-# 6.3.1 job
+# 6.3.1 作业
 
-Touch `[job]` in the panel selection window. For the total program list, `[SHIFT]`+`[PROG]` keys lead to the program selection window. Then, you can create, delete, and select a program.
+在面板选择窗口中触摸 `[job]`。要获取总程序列表，请按 `[SHIFT]`+`[PROG]` 键，进入程序选择窗口。然后，您可以创建、删除和选择程序。
 
 ![](../../_assets/tp630/k-prg-select_eng.png)
 
-You can modify the selected job program in the task edit window.
+您可以在任务编辑窗口中修改所选的作业程序。
 
 ![](../../_assets/tp630/pane-job_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -3966,14 +3433,14 @@ You can modify the selected job program in the task edit window.
       <td style="text-align:left">
         <img src="../../_assets/tp630/k-prog-step_eng.png" alt/>
       </td>
-      <td style="text-align:left"> <ul>  `[SHIFT]`+`[PROG]` : In the program selection window, you can create, delete, or select a program. </ul> </td>
+      <td style="text-align:left"> <ul>  `[SHIFT]`+`[PROG]` : 在程序选择窗口中，您可以创建、删除或选择程序。 </ul> </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <ul> Basic information and commands are displayed. You can check and modify details of each command.
+        <ul> 显示基本信息和命令。您可以检查和修改每个命令的详细信息。
         </ul>
       </td>
     </tr>
@@ -3983,10 +3450,10 @@ You can modify the selected job program in the task edit window.
       </td>
       <td style="text-align:left">
         <ul>
-          <li> <b>[&#x2026;]</b>: If the automatic indentation is applied incorrectly,
-            the automatic indentation in the JOB program can be performed again.</li>
-          <li>When a program is written, the parameter value of the selected statement
-            will be displayed in the input area.</li>
+          <li> <b>[&#x2026;]</b>: 如果自动缩进应用不正确，
+            可以再次执行作业程序中的自动缩进。</li>
+          <li>当程序被写入时，所选语句的参数值
+            将显示在输入区域。</li>
         </ul>
       </td>
     </tr>
@@ -3994,270 +3461,259 @@ You can modify the selected job program in the task edit window.
 </table>
 
 {% hint style="info" %}
-For details on how to manage and write programs, refer to "[3 Program Writing](../../3-programming/README.md?cont_model=${cont_model})."
+有关如何管理和编写程序的详细信息，请参阅 "[3 Program Writing](../../3-programming/README.md?cont_model=${cont_model})."
 {% endhint %}
-
-
-
-
 [__SOURCE](6-monitoring/3-job/2-hot-edit.md)
-# 6.3.2 Hot Edit
+# 6.3.2 热编辑
 
-This is the function to edit the program without stopping it, while playback is still running. 
+这是在播放仍在运行时编辑程序的功能。
 
 {% hint style="warning" %}
-* When you edit and apply the program that is currently in auto operation or program that will be called, it will be applied from the next cycle (After the program end is executed) and play back the robot with the edited program. Please take maximum precaution since the wrongly implemented editing can cause major accident such as collision between robot and jig.
+* 当你编辑并应用当前处于自动操作中的程序或即将被调用的程序时，它将在下一个循环中应用（在程序结束执行后）并使用编辑过的程序回放机器人。请务必小心，因为错误的编辑可能导致重大事故，例如机器人与夹具之间的碰撞。
 {% endhint %}
 <br><br>
 
-### Entry 
+### 入口
 
-Touch the `[hot edit]` button at the panel, and Hot Edit window of the current program will be open.
+触摸面板上的 `[hot edit]` 按钮，当前程序的热编辑窗口将被打开。
 
 ![](../../_assets/tp630/pane-hot-edit-0_eng.png)
 
 <br>
 
+### 可编辑的类型
 
-### Types of possible edit
+虽然操作与手动模式相同，但以下功能不可使用。
 
-Although the operation is the same as that of manual mode, the following functions cannot be used.
-
-1) `[REC]` key (Record hidden pose MOVE) : Displays the "Operation not allowed while in Hot Edit" message.
-2) `[POS. MOD]` key : Displays the "Operation not allowed while in Hot Edit" message.
+1) `[REC]` 键（记录隐藏姿态移动）：显示“在热编辑状态下不允许操作”消息。
+2) `[POS. MOD]` 键：显示“在热编辑状态下不允许操作”消息。
 
 
     ![](../../_assets/tp630/pane-hot-edit-1_eng.png)
 
 <br>
 
-### Reflection 
+### 反映
 
-If you have finished the program edit, click the button ![](../../_assets/tp630/bt-menu.png) on the left side of the guide display bar to open the pop-up menu, and select [hotedit: request to apply].
+如果你完成了程序编辑，点击指南显示栏左侧的按钮 ![](../../_assets/tp630/bt-menu.png) 打开弹出菜单，并选择 [hotedit: request to apply]。
 
 ![](../../_assets/tp630/pane-hot-edit-apply2_eng.png)
 
 <br>
 
-The actual timing of the reflection is displayed in the following table.
+实际反映的时间在以下表中显示。
 
-<u>V60.32-03 or later versions:</u>
+<u>V60.32-03 或更高版本：</u>
 <table>
 <thead>
   <tr>
-    <th>Status</th>
-    <th>Program</th>
-    <th>After request, reflection timing</th>
+    <th>状态</th>
+    <th>程序</th>
+    <th>请求后，反映时间</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="2">Regardless of <br>Not running<br>or  Running</td>
-    <td>Not running program<br>(Job not included in call stack)</td>
-    <td>immediately applied</td>
+    <td rowspan="2">无论 <br>是否运行<br>或 运行中</td>
+    <td>未运行程序<br>(不在调用栈中的作业)</td>
+    <td>立即应用</td>
   </tr>
   <tr>
-    <td>Running program<br>(Job included in call stack)</td>
-    <td>at the end of the cycle<br>or RESET 0</td>
+    <td>正在运行程序<br>(在调用栈中的作业)</td>
+    <td>在循环结束时<br>或 RESET 0</td>
   </tr>
 </tbody>
 </table>
 <br>
 
 <br>
-<u>V60.32-02 or prior versions:</u>
+<u>V60.32-02 或更早版本：</u>
 
 <table>
 <thead>
   <tr>
-    <th>Status</th>
-    <th>Program</th>
-    <th>After request, reflection timing</th>
+    <th>状态</th>
+    <th>程序</th>
+    <th>请求后，反映时间</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Not running</td>
+    <td>未运行</td>
     <td>-</td>
-    <td>immediately applied</td>
+    <td>立即应用</td>
   </tr>
   <tr>
-    <td rowspan="2">Running</td>
-    <td>Not running program<br>(Job not included in call stack)</td>
-    <td>immediately applied</td>
+    <td rowspan="2">运行中</td>
+    <td>未运行程序<br>(不在调用栈中的作业)</td>
+    <td>立即应用</td>
   </tr>
   <tr>
-    <td>Running program<br>(Job included in call stack)</td>
-    <td>at the end of the cycle</td>
+    <td>正在运行程序<br>(在调用栈中的作业)</td>
+    <td>在循环结束时</td>
   </tr>
 </tbody>
 </table>
 
 <br>
 
-### Title bar display
+### 标题栏显示
 
-  A current status symbol is displayed on the right side of the title bar in the Hot Edit window.
+当前状态符号显示在热编辑窗口标题栏的右侧。
 
-  \'*' symbol means that the teaching program has been modified and is different from the current running program.  
-  
-  ![](../../_assets/tp630/pane-hot-edit-apply3.png)
+'*' 符号表示教学程序已经被修改，并且与当前运行的程序不同。
 
-  \'>' symbol means that Hot Edit has been requested, while the program is running. 
+![](../../_assets/tp630/pane-hot-edit-apply3.png)
 
-  ![](../../_assets/tp630/pane-hot-edit-apply4.png)
+'>' 符号表示在程序运行时已经请求热编辑。
 
-  ' '(blank) symbol means that the request has not been reflected yet, or has already been reflected and so the program is the same as the running one.  
-  
-  ![](../../_assets/tp630/pane-hot-edit-apply5.png)
+![](../../_assets/tp630/pane-hot-edit-apply4.png)
+
+' '（空白）符号意味着请求尚未反映，或已经反映，因此程序与运行的程序相同。
+
+![](../../_assets/tp630/pane-hot-edit-apply5.png)
 
 
 <Br>
 
-### Different program selection
+### 不同程序选择
 
-When you press the `[SHIFT]` + `[PROG]` key, you can select a different program. You can also create a new program.
-
+当你按下 `[SHIFT]` + `[PROG]` 键时，可以选择不同的程序。你也可以创建一个新程序。
 [__SOURCE](6-monitoring/3-job/3-global-variable/README.md)
-# 6.3.3 Global Variables
+# 6.3.3 全局变量
 
-Displays a list of all global variables. You can also create/delete variables and edit types and values.
+显示所有全局变量的列表。您还可以创建/删除变量并编辑类型和值。
 
 
-#### Open global variable panel
+#### 打开全局变量面板
 
-1. Split the screen and press the [Select] button at the bottom left.
+1. 拆分屏幕并按左下角的 [Select] 按钮。
 
 ![](../../../_assets/tp630/panel-split.png)
 &nbsp;
 ![](../../../_assets/tp630/panel-sel.png)
 
-2. In the panel selection window, touch `[global variable]`. The `global variables` panel opens.
+2. 在面板选择窗口中，触摸 `[global variable]`。`全局变量 (global variables)` 面板打开。
 
 ![](../../../_assets/tp630/pane-gvar.png)
 
 
 ![](../../../_assets/tp630/panel-gvar/panel-gvar0.png)
-
-
 [__SOURCE](6-monitoring/3-job/3-global-variable/1-basic-feature.md)
-# 6.3.3.1 Basic features
+# 6.3.3.1 基本特征
 
 
-##### Finding a variable
+##### 寻找变量
 
-If it is difficult to find the desired variable due to a large number of variables, type only a few of the variable's name in the filter at the top. Only variables that start with the filter string you enter appear on the screen, making it easy to find them.
+如果由于变量数量众多而难以找到所需的变量，请在顶部的过滤器中只输入变量名称的一部分。仅显示以您输入的过滤字符串开头的变量，便于查找。
 
 ![](../../../_assets/tp630/panel-gvar/gv-find.png)
 
 
-##### Changing the value of a variable (for bool, int, double, string type)
+##### 更改变量的值（对于 bool、int、double、string 类型）
 
-Select the `value` column for the desired variable and type the new value.
-Press the ENTER key to apply the entered value to the variable.
+选择所需变量的 `值 (value)` 列并输入新值。
+按 ENTER 键以将输入的值应用于该变量。
 
 ![](../../../_assets/tp630/panel-gvar/gv-edit-value.png)
 
-##### Changing the value of a variable (for pose, shift type)
+##### 更改变量的值（对于 pose、shift 类型）
 
-Select the `value` column for the desired pose or shift variable.
+选择所需姿态或位移变量的 `值 (value)` 列。
 
 ![](../../../_assets/tp630/panel-gvar/gv-edit-pose1.png)
 
-Press the ENTER key to open the Pose or Shift Property window.
-After edit it, click the [F7: OK] button.
+按 ENTER 键打开姿态或位移属性窗口。
+编辑后，单击 [F7: OK] 按钮。
 
 ![](../../../_assets/tp630/panel-gvar/gv-edit-pose2.png)
 
 
-##### Changing a variable type
+##### 更改变量类型
 
-Select the `type` column for the desired variable and press ENTER. The Create Variable dialog box appears as shown below.
+选择所需变量的 `类型 (type)` 列并按 ENTER。将出现如下所示的创建变量对话框。
 
 ![](../../../_assets/tp630/panel-gvar/gv-edit-type.png)
 
 ![](../../../_assets/tp630/panel-gvar/gv-create-var.png)
 
-Select the desired type from the Type list and click the OK button to change the type of the variable. Note that the value will be initialized if the type changes.
+从类型列表中选择所需类型，然后单击 OK 按钮以更改变量的类型。请注意，如果类型更改，值将被初始化。
 
-You can also select a type for multiple variables and press ENTER to change them all at once.
-(You can select multiple consecutive cells by pressing the SHIFT+Up/Down arrow keys. Alternatively, you can select by touching multiple cells while holding down the CTRL key.)
+您还可以选择多个变量的类型，并按 ENTER 一次性更改它们。
+（您可以通过按SHIFT+向上/向下箭头键选择多个连续单元格。或者，您可以在按住 CTRL 键的同时触摸多个单元格进行选择。）
 
 ![](../../../_assets/tp630/panel-gvar/gv-sel-multi-type.png)
 
 
-##### Renaming a variable
+##### 重命名变量
 
-Select the `name` column for the variable you want, then open the soft keyboard to type the new name.
-Press the ENTER key to change it to the name you entered.
+选择您想要的变量的 `名称 (name)` 列，然后打开软键盘输入新名称。
+按 ENTER 键将其更改为您输入的名称。
 
 ![](../../../_assets/tp630/panel-gvar/gv-edit-name.png)
 
 
-##### Creating a variable
+##### 创建变量
 
-In the filter at the top, enter the name of the variable you want to create.
+在顶部的过滤器中输入您要创建的变量名称。
 
 ![](../../../_assets/tp630/panel-gvar/gv-new.png)
 
-Verify that there are no variables with duplicate names, then click the + button next to the filter. The variable is created with the default type `int` (integer). Change the type of variables created using the method explained above.
+确认没有重复名称的变量，然后单击过滤器旁边的 + 按钮。变量将以默认类型 `int`（整数）创建。使用上述方法更改创建的变量的类型。
 
 
 ![](../../../_assets/tp630/panel-gvar/gv-new2.png)
 
 
-##### Deleting a variable
+##### 删除变量
 
-Select the variable you want to delete.
-Press the DEL (CTRL+BACKSPACE) key to display the OK/Cancel dialog box. After confirming the variable name, press the OK button.
+选择您要删除的变量。
+按 DEL (CTRL+BACKSPACE) 键以显示确认/取消对话框。确认变量名称后，按 OK 按钮。
 
 ![](../../../_assets/tp630/panel-gvar/gv-delete.png)
-
-
 [__SOURCE](6-monitoring/3-job/3-global-variable/2-array-object.md)
-# 6.3.3.2 Array and object
+# 6.3.3.2 数组和对象
 
-##### Creating an array
+##### 创建数组
 
-We will now use an example of generating a 5x200 two-dimensional pose array variable named `pos`.
-Create a variable named `pos` using the method described above.
+我们现在将使用一个生成 5x200 的二维姿态数组变量 `pos` 的示例。
+使用上述描述的方法创建一个名为 `pos` 的变量。
 
 ![](../../../_assets/tp630/panel-gvar/gv-new-arr1.png)
 
-
-Select the `type` column and press the ENTER key. The Create Variable dialog box appears as shown below.
+选择 `类型 (type)` 列并按下 ENTER 键。创建变量对话框如下所示。
 
 ![](../../../_assets/tp630/panel-gvar/gv-new-arr2.png)
 
-Select `Pose` in the Type list. If you enter 5,200 for the number of elements and press the OK button, the type of pos changes to the array of Pose[5][200].
+在类型列表中选择 `姿势 (Pose)`。如果输入 5,200 作为元素的数量并按下 OK 按钮，pos 的类型将变为 Pose[5][200] 的数组。
 
 ![](../../../_assets/tp630/panel-gvar/gv-new-arr3.png)
 
 {% hint style="warning" %}
-`[Warning]` Be aware that defining an array that is too large may take longer to save or load and may fail to save automatically in the event of a power failure.
+`[Warning]` 请注意，定义一个过大的数组可能会导致保存或加载的时间更长，并可能在断电的情况下无法自动保存。
 {% endhint %}
 
 
-##### Viewing and changing the array element value
+##### 查看和更改数组元素值
 
-The value of the array variable is displayed only as [], and the values of the elements are not displayed.
-Select the `value` column and press the ENTER key or click the [F5: sub.level] button to expand the array to a lower level and view the element values.
+数组变量的值仅显示为 []，元素的值不显示。
+选择 `值 (value)` 列并按下 ENTER 键或点击 [F5: sub.level] 按钮以展开数组到下一级并查看元素值。
 
 ![](../../../_assets/tp630/panel-gvar/gv-arr-level1.png)
 
-You can also change the value or type for array elements in the way described above.  
+您还可以通过上述描述的方法更改数组元素的值或类型。
 
-In a 2-dimensional array `pos`, `pos[0]` ~ `pos[4]` are also arrays. Press ENTER or [F5] to continue down to the lower level. The level and index of the array currently displayed can be found in the global variables panel's title bar.
+在二维数组 `pos` 中，`pos[0]` ~ `pos[4]` 也是数组。按 ENTER 或 [F5] 继续进入下一级。当前显示的数组的级别和索引可以在全局变量面板的标题栏中找到。
 
-Click the [F4: up.level] button or press the ESC key to go back up to the higher level.
+点击 [F4: up.level] 按钮或按 ESC 键返回到上一级。
 
 ![](../../../_assets/tp630/panel-gvar/gv-arr-level2.png)
 
-Because the array displays only 100 elements at the same time, by default you can only see the range of [0] to [99] indexes. If you change the value of the Start Index editbox in the upper left corner, you can see other ranges of elements. For example, if you enter 190 in the Start Index at `/pos[4]`, you can see the elements of [190]~[199].
+因为数组一次只显示 100 个元素，默认情况下您只能看到 [0] 到 [99] 的索引范围。如果更改左上角的起始索引编辑框中的值，您可以查看其他元素范围。例如，如果在 `/pos[4]` 的起始索引中输入 190，则可以看到 [190]~[199] 的元素。
 
-##### Viewing and changing object property values
+##### 查看和更改对象属性值
 
-Select the `value` column of the object variable and press the ENTER key or click the [F5: sub.level] button to expand the object to a lower level and view the property values. The operation method is similar to the array variable. However, the Startup Index editbox is not used.
+选择对象变量的 `值 (value)` 列并按下 ENTER 键或点击 [F5: sub.level] 按钮以展开对象到下一级并查看属性值。操作方法与数组变量类似。然而，启动索引编辑框不使用。
 
 ![](../../../_assets/tp630/panel-gvar/gv-obj2.png)
 
@@ -4266,21 +3722,20 @@ Select the `value` column of the object variable and press the ENTER key or clic
 
 <br>
 
-##### Fixed-variable
+##### 固定变量
 
-For example, you have created a large number of poses named `weld_points` in the Global Variables window, and by executing below assignment statement all data can be deleted.
+例如，您已经在全局变量窗口中创建了大量名为 `weld_points` 的姿态，通过执行以下赋值语句可以删除所有数据。
 
 ```python
 weld_points=0
 ```
 
-By specifying the variable as fixed, you can prevents this mistake.
+通过将变量指定为固定，您可以防止此错误。
 
 ![](../../../_assets/tp630/panel-gvar/fixed-var.png)
 
-If you select an array variable at the top level of the Global Variables window and press [F4: toggle fixed], the type changes from 'array' to 'F.array' (fixed-array).  
-If specified as a fixed variable, no other value can be assigned. When `weld_points` is a fixed 2-dimensional array, the result of each assignment statement below is the same as the comment.
-
+如果在全局变量窗口的顶层选择数组变量并按下 [F4: toggle fixed]，类型将从 'array' 更改为 'F.array'（固定数组）。
+如果指定为固定变量，则无法分配其他值。当 `weld_points` 是一个固定的二维数组时，以下每个赋值语句的结果与注释相同。
 
 ```python
 global weld_points  # ignored.
@@ -4291,35 +3746,34 @@ weld_points[2][1]="light"  # new value can be assigned to an element
 weld_points[2][1].j2=90.5  # new value can be assigned to an property
 ```
 
-If [F4: toggle fixed] is performed again, fixed will be released and `F.array` will be restored to `array`.
-
+如果再次执行 [F4: toggle fixed]，固定将被释放，`F.array` 将恢复为 `array`。
 [__SOURCE](6-monitoring/3-job/3-global-variable/3-var-files.md)
-# 6.3.3.3 Variable files
+# 6.3.3.3 变量文件
 
-Variable values are also saved as files because they must be preserved even when powered off, and global variables are stored in two forms, depending on the type:
+变量值也会以文件形式保存，因为即使在关机时也必须保留它们，而全局变量根据类型以两种形式存储：
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Pathname</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">类型</th>
+      <th style="text-align:left">路径</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">
-        Global root array variables
+        全局根数组变量
       </td>
       <td style="text-align:left">MAIN/project/vars/*.csv</td>
-      <td style="text-align:left">One file is created for each variable, and the file title is the same as the variable name.</td>
+      <td style="text-align:left">为每个变量创建一个文件，文件标题与变量名称相同。</td>
     </tr>
 	 <tr>
       <td style="text-align:left">
-        Other variables
+        其他变量
       </td>
       <td style="text-align:left">MAIN/project/vars/vars.json</td>
-      <td style="text-align:left">All other global variables are saved as a single file.</td>
+      <td style="text-align:left">所有其他全局变量作为一个文件保存。</td>
     </tr>
 	</tbody>
 </table>
@@ -4327,31 +3781,31 @@ Variable values are also saved as files because they must be preserved even when
 <br>
 
 
-##### vars/.csv file
+##### vars/.csv 文件
 
-When you open the folder `MAIN/project/vars/` in File-manager, a file named `weld_points.csv` is created. The variables specified as the predefined create a .csv file that is the same as the variable name, and when released from predefined, the file is automatically deleted.
+当您在文件管理器中打开文件夹 `MAIN/project/vars/` 时，将创建一个名为 `weld_points.csv` 的文件。指定为预定义的变量创建一个与变量名称相同的 .csv 文件，当从预定义中释放时，该文件会被自动删除。
 
 ![](../../../_assets/tp630/panel-gvar/csv0.png)
 
-Copy this file via USB memory or FTP and open it on your PC. The .csv file is a very simple text format standard that expresses comma-separated values.
+通过 USB 存储器或 FTP 复制此文件，并在您的 PC 上打开它。 .csv 文件是一种非常简单的文本格式标准，表示以逗号分隔的值。
 
-Refer to: [Wikipedia: Comma-separated values](https://en.wikipedia.org/wiki/Comma-separated_values)
+参考： [维基百科：逗号分隔值](https://en.wikipedia.org/wiki/Comma-separated_values)
 
-The .csv file represents a single two-dimensional table. The columns are separated by commas and rows are spearated by line-feed.
+该 .csv 文件表示一个单一的二维表。列通过逗号分隔，行通过换行符分隔。
 
 ![](../../../_assets/tp630/panel-gvar/csv1.png)
 
-The csv file containing the procedure building up the `weld_points` two-dimensional array, in order.
+csv 文件按顺序包含构建 `weld_points` 二维数组的过程。
 
-For each row, the 1st column is the index, the 2nd column is the type, and the 3rd ~ last columns are the values. The 1st row describes this as the header of the table.
+对于每一行，第一列是索引，第二列是类型，第三至最后一列是值。第一行将其描述为表的标题。
 
-The 2nd row is the row that creates the top level, that is, `weld_points` itself. Therefore, the index column is empty, type is array, and number is 10. In other words, weld_points[10] is created, and 10 elements are filled with the default value of zeroes.
+第二行是创建顶层的行，即 `weld_points` 本身。因此，索引列为空，类型为数组，数字为 10。换句话说，创建了 weld_points[10]，并用零填充了 10 个元素。
 
 ```python
 , , array, 10
 ```
 
-The following rows generate and assign pose type values to the elements of `weld_points[0]`.
+以下行生成并分配姿态类型值给 `weld_points[0]` 的元素。
 
 ```python
 [0][0][0], Pose, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, "base"
@@ -4359,7 +3813,7 @@ The following rows generate and assign pose type values to the elements of `weld
 ...
 ```
 
-If 100 rows are performed for `weld_points[0]`, the following rows are followed by the action for `weld_points[1]` as shown below:
+如果对 `weld_points[0]` 执行 100 行，以下行将跟随 `weld_points[1]` 的操作，如下所示：
 
 ```python
 [1][1], array; 100
@@ -4369,11 +3823,11 @@ If 100 rows are performed for `weld_points[0]`, the following rows are followed 
 ...
 ```
 
-You can double-click the .csv file in File-manager to open it with Microsoft Excel and edit it. Save as `Ctrl+S` or `Save` button when editing is done.
+您可以在文件管理器中双击 .csv 文件以使用 Microsoft Excel 打开并进行编辑。编辑完成时按 `Ctrl+S` 或 `保存 (Save)` 按钮保存。
 
 ![](../../../_assets/tp630/panel-gvar/csv2.png)
 
-Saving in Excel results in unnecessary commas, as shown below, and the quotation marks in the coordinate-system disappear, resulting in a slight change in format. It can't be helped because Excel handles .csv like this. Anyway, the ${cont_model} controller also recognizes that kind of format, so it doesn't matter.
+在 Excel 中保存会导致不必要的逗号，如下所示，坐标系中的引号消失，导致格式略有变化。这是因为 Excel 以这样的方式处理 .csv。无论如何，${cont_model} 控制器也能够识别这种格式，因此没关系。
 
 ```python
 , , array,10,,,,,,
@@ -4388,121 +3842,112 @@ Saving in Excel results in unnecessary commas, as shown below, and the quotation
 
 <br>
 
-##### Loading .csv
+##### 加载 .csv
 
-You can overwrite the edited file into `MAIN/project/vars/` again, but it is not automatically reflected in memory.
+您可以将编辑后的文件覆盖到 `MAIN/project/vars/` 中，但它不会自动反映到内存中。
 
-When you click the [F2: load all] button in the Global Variables window, all variable files in the `vars/` folder are reloaded to memory.
-(Please note that deleting the variable file and clicking [F2: load all] will also delete the corresponding variable in memory.)
+当您在全局变量窗口中单击 [F2: load all] 按钮时，`vars/` 文件夹中的所有变量文件将重新加载到内存中。
+(请注意，删除变量文件并单击 [F2: load all] 也会删除内存中对应的变量。)
 
 ![](../../../_assets/tp630/panel-gvar/fixed-var.png)
-
 [__SOURCE](6-monitoring/3-job/4-local-variable.md)
-# 6.3.4 Local Variables
+# 6.3.4 本地变量
 
-Displays a list of all local variables of the current call frame. You cannot create/delete variables or change the variable name or type, but you can edit values.
+显示当前调用框架的所有本地变量的列表。您不能创建/删除变量或更改变量名称或类型，但可以编辑值。
 
-
-1. Split the screen and press the [Select] button at the bottom left.
+1. 分割屏幕并按左下角的 [Select] 按钮。
 
 ![](../../_assets/tp630/panel-split.png)
 &nbsp;
 ![](../../_assets/tp630/panel-sel.png)
 
-
-2. In the panel selection window, touch `[local variable]`. The `local variables` panel opens.
+2. 在面板选择窗口中，触摸 `[local variable]`。`局部变量 (local variables)` 面板打开。
 
 ![](../../_assets/tp630/pane-lvar.png)
 
-
-3. Check the variable name, type, and value. The way to change the value of a variable is the same as the global variable described in the previous section.
+3. 检查变量名称、类型和值。更改变量值的方法与上一节中描述的全局变量相同。
 
 ![](../../_assets/tp630/pane-lvar-mon.png)
-
-
-
-
 [__SOURCE](6-monitoring/3-job/5-watch.md)
-# 6.3.5 Watch
+# 6.3.5 观察
 
-You can register variables or expressions to the watch panel to monitor or change values.
+您可以将变量或表达式注册到观察面板以监控或更改值。
 
 
-#### Open watch panel
+#### 打开观察面板
 
-1. Split the screen and press the [Select] button at the bottom left.
+1. 分割屏幕并按左下角的 [选择] 按钮。
 
 ![](../../_assets/tp630/panel-split.png)
 &nbsp;
 ![](../../_assets/tp630/panel-sel.png)
 
-2. Touch `Watch` in the panel selection window. Various data windows open.
+2. 在面板选择窗口中触摸 `Watch`。各种数据窗口打开。
 
 ![](../../_assets/tp630/panel-watch/panel-watch.png)
 
 ![](../../_assets/tp630/panel-watch/panel-watch-mon.png)
 
 
-#### How to use
+#### 如何使用
 
-Enter the desired variable or expression in the top input box and click the '+' button to enter the new item in the table.
+在顶部输入框中输入所需的变量或表达式，然后单击 '+' 按钮将新项目输入到表中。
 
 ![](../../_assets/tp630/panel-watch/panel-watch2.png)
 
 
-You can modify the variable name or expression that you entered by clicking the `Name` column one more time.
+您可以通过再次单击 `名称 (Name)` 列来修改您输入的变量名称或表达式。
 
 ![](../../_assets/tp630/panel-watch/panel-watch-rename.png)
 
-If you click in the `Value` column to enter a new value, you will change the value of that variable. Changing the value of an expression is ignored.
+如果您在 `力控制变量 (Value)` 列中单击以输入新值，您将更改该变量的值。更改表达式的值将被忽略。
 
-Select the `Value` column for the pose/shift variable or expression and press the `ENTER` key to open the Pose/Shift Properties window to view and modify the values.
+选择姿态/偏移变量或表达式的 `力控制变量 (Value)` 列，然后按 `确认 (ENTER)` 键打开姿态/偏移属性窗口以查看和修改值。
 
 ![](../../_assets/tp630/panel-gvar/gv-edit-pose2.png)
 
-To delete a row, select the row and press the `SHIFT+DEL` key.
+要删除一行，选择该行并按 `SHIFT+DEL` 键。
 
-If you press the [F7: Save all] button on the F-button at the bottom, the list of variables and expressions entered is saved in the `cfg/watch.json` file. This file is automatically loaded on power reboot.
-You can also edit the list by receiving it to an external PC, via FTP. If you overwrite the edited file with the `cfg/` folder and click the [F1: Load All] button, it will be applied to the Watch panel.
+如果您按下底部 F 按钮上的 [F7: 保存所有] 按钮，输入的变量和表达式列表将保存在 `cfg/watch.json` 文件中。此文件将在电源重启时自动加载。
+您还可以通过 FTP 接收并编辑列表。如果您用编辑过的文件覆盖 `cfg/` 文件夹并单击 [F1: 加载所有] 按钮，它将应用于观察面板。
 
 ![](../../_assets/tp630/panel-watch/panel-watch-fbt.png)
 
-Click the [F2: swap up] and [F3: swap down] buttons to move the position of the currently selected row while exchanging it with the top and bottom rows.  
+单击 [F2: 向上交换] 和 [F3: 向下交换] 按钮以在与顶部和底部行交换的同时移动当前选定行的位置。  
 
-There are a total of 10 pages in various data windows, so you can group and manage the variables or expressions you want to display. Click the [F4: Page] button to show the next page, and click the `SHIFT`+[F4: Page] button to show the previous page.
+在各种数据窗口中共有 10 页，因此您可以分组和管理您想要显示的变量或表达式。单击 [F4: 页面] 按钮以显示下一页，单击 `SHIFT`+[F4: 页面] 按钮以显示上一页。
 
-The elements of array or object can be viewed with the [F6: sub.level] button or the `ENTER` key, and can go up to the upper level with the [F5: up.level] button or the `ESC` key.
+可以使用 [F6: 子级] 按钮或 `确认 (ENTER)` 键查看数组或对象的元素，并可以使用 [F5: 上级] 按钮或 `ESC` 键上移到上一级。
 
-You can enter a value in the `Start Index` edit-box to display an array from a specific index. ([Global Variable](3-global-variable/README?cont_model=${cont_model}) window has the same method of operation.)
+您可以在 `起始索引` 编辑框中输入一个值，以从特定索引显示数组。([全局变量](3-global-variable/README?cont_model=${cont_model}) 窗口也有相同的操作方法。)
 
 {% hint style="warning" %}
-* To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
+* 要更新结果值的显示，表达式会在快速的周期内反复计算。请注意不要在表达式中包含会导致系统特定创建或更改的函数，例如 mkucs()。
 {% endhint %}
-
 [__SOURCE](6-monitoring/3-job/6-call-stack.md)
-# 6.3.6 call stack
+# 6.3.6 调用堆栈
 
-Touch `[Call Stack]` in the panel selection window to display the Call Stack window. In order to understand the contents of this section, an understanding of the `call`~`return` statement and local variables of the hrscript must be preceded.
+在面板选择窗口中点击 `[Call Stack]` 以显示调用堆栈窗口。要理解本节内容，必须先了解 `call`~`return` 语句和 hrscript 的局部变量。
 
-[Call, Jump Statement and Subprograms](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/7-call-jump/README?cont_model=${cont_model})
+[调用、跳转语句和子程序](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/3-flowcontrol-subprogram/7-call-jump/README?cont_model=${cont_model})
 
-[Local Variables](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/8-local-global-var/1-local-variables?cont_model=${cont_model})
-
-
-### Call and Return of Robot Language
-
-In robot language, you can call a sub job program with a `call` statement. When executing `end` or `return` statement, the subprogram returns to the next statement position of the `call` statement that called it. For example, in the figure below, you can see that job 5 calls job 8, run into a `return` statement, and then continues with the next statement of job 5's `call` statement.
-
-![call and return of sub jobs](../../_assets/call-return.png)
-
-The container shape drawn next to the program is a storage space called a call stack. The call stack builds up the call frames of the currently running program. The call frame contains a set of actual parameters and local variables and the return address for the job program.  
-Because a new call frame is pushed at the top when a subprogram is called, the local variables of the program that called it are kept and a new local variable space is prepared.  
-When the subprogram returns, the top call frame is discarded (pop), and the call frame below it becomes top again. Because the call frame retains the actual parameters and region variables just before the call, and also has position information to return, the called program can continue the task that it was doing just before the call.
+[局部变量](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/3-flowcontrol-subprogram/8-local-global-var/1-local-variables?cont_model=${cont_model})
 
 
-### call stack panel
+### 机器人语言的调用和返回
 
-You can view the contents of the current call stack in the Call Stack panel.
+在机器人语言中，可以使用 `call` 语句调用一个子作业程序。当执行 `end` 或 `return` 语句时，子程序返回到调用它的 `call` 语句的下一语句位置。例如，在下图中，您可以看到作业 5 调用作业 8，运行到 `return` 语句，然后继续执行作业 5 的 `call` 语句的下一语句。
+
+![子作业的调用和返回](../../_assets/call-return.png)
+
+绘制在程序旁边的容器形状是一个称为调用堆栈的存储空间。调用堆栈构建当前运行程序的调用帧。调用帧包含一组实际参数和局部变量以及作业程序的返回地址。  
+因为在调用子程序时，新调用帧被推到顶部，所以调用它的程序的局部变量被保留，并准备了一个新的局部变量空间。  
+当子程序返回时，顶部的调用帧被丢弃（弹出），下面的调用帧再次变为顶部。因为调用帧保留了调用前的实际参数和区域变量，并且还具有返回的位置信息，所以被调用的程序可以继续执行在调用之前正在进行的任务。
+
+
+### 调用堆栈面板
+
+您可以在调用堆栈面板中查看当前调用堆栈的内容。
 <br><br>
 
 0001_main.job
@@ -4526,7 +3971,7 @@ end
 0008_go_home.job
 ```python
 var pos1, pos2
-# do something
+# 做某事
 end
 ```
 
@@ -4534,57 +3979,56 @@ end
 ```python
 param id
 var sensor_value
-# do something  --------- (B)
+# 做某事 --------- (B)
 end
 ```
 
-With the job-edit window, the call stack panel, and the local variable panel are open, if the current program is in the state where the `call` statement inside the `for`~`next` loop of job 5 is performed for the 3rd time and executed to the (B) position, the Teach Pendant screen will be in the state shown below.
+在作业编辑窗口、调用堆栈面板和局部变量面板打开的情况下，如果当前程序处于作业 5 的 `for`~`next` 循环中第三次执行的 `call` 语句并执行到 (B) 位置，教学挂件屏幕将显示如下状态。
 
-![job-edit, call stack, local variable](../../_assets/call-stack.png)
+![作业编辑、调用堆栈、局部变量](../../_assets/call-stack.png)
 
 
-The bottom frame of the call stack is job 1, the middle frame is job 5, and the top frame is job 9. The > shaped cursor points to job 9, and the values of the parameter `id` and the local variable `sensor_value` are displayed in the local variable panel. Therefore, you can check the information that job 9 was called by job 5, and job 5 was called by job 1.  
-If you want to see where job 5 called, select the frame of job 5 and press the `ENTER` key. The cursor in the job edit panel immediately moves to the (A) position to show where it was called. The local variable panel shows the frame contents of job 5, i.e., the parameter `mode` and the local variable `sensor_id`, as 12 and 3 values, respectively.
+调用堆栈的底部帧是作业 1，中间帧是作业 5，顶部帧是作业 9。> 形状的光标指向作业 9，并且局部变量面板显示参数 ` (id)` 和局部变量 `sensor_value` 的值。因此，您可以检查作业 9 是被作业 5 调用的，而作业 5 是被作业 1 调用的。  
+如果您想查看作业 5 调用的位置，请选择作业 5 的帧并按 `确认 (ENTER)` 键。作业编辑面板中的光标将立即移动到 (A) 位置，以显示调用的位置。局部变量面板显示作业 5 的帧内容，即参数 `模式 (mode)` 和局部变量 `sensor_id`，分别为 12 和 3 的值。
 
-![job-edit, call stack, local variable- 2](../../_assets/call-stack2.png)
+![作业编辑、调用堆栈、局部变量- 2](../../_assets/call-stack2.png)
 
-You can easily understand the flow of the program that has been called so far by selecting the frame of the called job.
+通过选择被调用作业的帧，您可以轻松理解到目前为止的程序流。
 
 {% hint style="warning" %}
-`[caution]` When performing Step-FWD or playback, be sure to restore the > cursor to the top frame position when resuming operations. Otherwise, the position of the job cursor is considered to have changed and the call stack is initialized.
+`[caution]` 在进行步进向前 (Step-FWD) 或播放操作时，确保在恢复操作时将 > 光标恢复到顶部帧位置。否则，将认为作业光标的位置发生了变化，并将初始化调用堆栈。
 {% endhint %}
 [__SOURCE](6-monitoring/3-job/7-multi-task.md)
-# 6.3.7 Multi-task
+# 6.3.7 多任务
 
-
-Touch `[multitask]` in the panel selection window.
-This displays the information of the programs that are run automatically in the main task and the sub tasks 1 - 7, including the steps, functions, operating state, and work state.
+在面板选择窗口中触摸 `[multitask]`。
+这将显示在主任务和子任务 1 - 7 中自动运行的程序的信息，包括步骤、功能、操作状态和工作状态。
 
 ![](../../_assets/tp630/pane-multi-task_eng.png)
 
 <br>
 
 {% hint style="info" %}
- Refer to ["${cont_model} Controller Multitasking Function Manual"](https://hrbook-hrc.web.app/#/view/doc-multi-task/en/README?cont_model=${cont_model}) for details.
+有关详细信息，请参阅 ["${cont_model} 控制器多任务功能手册"](https://hrbook-hrc.web.app/#/view/doc-multi-task/zh/README?cont_model=${cont_model})。
 {% endhint %}
 [__SOURCE](6-monitoring/3-job/8-program-reservation.md)
-# 6.3.8 Program reservation execution
+# 6.3.8 程序预留执行
 
-For this monitoring, pre-setting is required. You have to select the register number as 20EA or 1EA in the page of `system - 2:Control parameter - 7:Program reservation execution`.
+为了进行监视，需进行预设。您必须在`系统 - 2:控制参数 - 7:程序预留执行 (system - 2:Control parameter - 7:Program reservation execution)`页面上选择注册号为20EA或1EA。
 
 ![](../../_assets/tp630/ctrl-prog-reserve_eng.png)
 
-In the panel selection window, touch `[program reserve]`. Then, the scheduled program execution window will appear. 
+在面板选择窗口中，触摸`[program reserve]`。然后，计划的程序执行窗口将出现。
 
-When programs are scheduled through external signals and executed in the scheduled order, you can check and change the status in the list of scheduled programs.
+当通过外部信号安排程序并按计划顺序执行时，您可以在计划程序列表中检查和更改状态。
 
 ![Figure 50 Program reserve](../../_assets/tp630/pane-prog-reserv_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -4593,12 +4037,10 @@ When programs are scheduled through external signals and executed in the schedul
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>A list of scheduled programs. You can schedule 1&#x2013;20 programs.</p>
+        <p>计划程序的列表。您可以安排1–20个程序。</p>
         <ul>
-          <li>When a program being executed in remote mode is terminated, programs will
-            be automatically executed according to the scheduled order.</li>
-          <li>When the execution of scheduled programs is completed, those programs
-            will be deleted from the list.</li>
+          <li>当在远程模式下执行的程序终止时，程序将根据计划顺序自动执行。</li>
+          <li>当计划程序执行完成后，这些程序将从列表中删除。</li>
         </ul>
       </td>
     </tr>
@@ -4608,11 +4050,9 @@ When programs are scheduled through external signals and executed in the schedul
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[Edit]</b>: You can edit the list of scheduled programs.</li>
-          <li><b>[Insert]</b>: You can add a program that will be executed on a schedule
-            to the list of scheduled programs.</li>
-          <li><b>[Delete]</b>: You can delete a scheduled program from the list of scheduled
-            programs.</li>
+          <li><b>[编辑]</b>: 您可以编辑计划程序的列表。</li>
+          <li><b>[插入]</b>: 您可以将一个将在计划中执行的程序添加到计划程序列表中。</li>
+          <li><b>[删除]</b>: 您可以从计划程序列表中删除一个已安排的程序。</li>
         </ul>
       </td>
     </tr>
@@ -4622,66 +4062,59 @@ When programs are scheduled through external signals and executed in the schedul
 
 
 {% hint style="info" %}
-* The `[Program reserve]` item will be activated only when the sync status of the sensor sync function among the application functions is set as conveyor or press.
-* The `[Program reserve]` item will not be activated if the `[Applied Register Count]` option in the `[system  - 2: Control Parameter  - 8: Program reserve]` menu is set as disable.
-* For details on the scheduled program execution, refer to the "${cont_model} Controller Scheduled Program Execution Function Manual."
+* 仅当应用功能中的传感器同步功能的同步状态设为输送机或压力时，`[Program reserve]`项目才会被激活。
+* 如果`[system - 2: Control Parameter - 8: Program reserve] ([system  - 2: Control Parameter  - 8: Program reserve])`菜单中的`[Applied Register Count]`选项被设为禁用，则`[Program reserve]`项目将不会被激活。
+* 有关计划程序执行的详细信息，请参阅"${cont_model}控制器计划程序执行功能手册"。
 {% endhint %}
-
-
 [__SOURCE](6-monitoring/4-system/README.md)
-# 6.4 System
-
-
+# 6.4 系统
 [__SOURCE](6-monitoring/4-system/1-system-spec.md)
-# 6.4.1 System Character
+# 6.4.1 系统字符
 
-In the panel selection window, touch `[System character]`. Then, the system character window will appear. 
+在面板选择窗口中，触摸 `[System character]`。然后，系统字符窗口将出现。
 
-You can check all the various data of the robot system or only the data of a specific type of information.
+您可以检查机器人系统的所有各种数据或仅检查特定类型的信息数据。
 
 ![](../../_assets/tp630/pane-syscharacter_eng.png)
 
-| No. | Description |
+| No. | 描述 |
 | :--- | :--- |
-| ![](../../_assets/c1.png) | Displays the data of the robot system. You can check the detailed data of a specific type by selecting individual types of information shown above. |
-| ![](../../_assets/c2.png) | `[clear]`: For the rest of the items except for the motion of each axis, you can initialize the maximum value of the system data to the current value by type. |
+| ![](../../_assets/c1.png) | 显示机器人系统的数据。您可以通过选择上面显示的特定信息类型来检查特定类型的详细数据。 |
+| ![](../../_assets/c2.png) | `[clear]`：除了每个轴的运动之外，您可以按类型将系统数据的最大值初始化为当前值。 |
 
 {% hint style="info" %}
-System character monitoring function is only available in engineer mode.
+系统字符监控功能仅在工程师模式下可用。
 {% endhint %}
 
 {% hint style="warning" %}
-* In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
-* Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
+* 在工程师模式下，工程师模式图标 \(![](../../_assets/eng-mode.png)\) 将在状态栏上闪烁。
+* 请谨慎操作，因为如果设置不正确，机器人系统可能会出现严重问题。
 {% endhint %}
 
 <Br> 
 
-### Initialization
+### 初始化
 
-You can initialize the maximum value of the data by selecting the type of information you want.
+您可以通过选择要初始化的信息类型来初始化数据的最大值。
 
-1.	Touch the `[Clear]` button at the bottom of the system properties window.
+1. 触摸系统属性窗口底部的 `[Clear]` 按钮。
 
+2. 触摸您想要初始化的信息类型。然后，所选项的最大值将被初始化为当前值。
 
-2.	Touch the type of information you want to initialize. Then, the maximum value of the selected item will be initialized to the current value.
-
-    ![](../../_assets/tp630/pane-syscharacter-clear_eng.png)
-
-
+![](../../_assets/tp630/pane-syscharacter-clear_eng.png)
 [__SOURCE](6-monitoring/4-system/2-system-diagnosis/README.md)
-# 6.4.2 System Diagnostics
+# 6.4.2 系统诊断
 
-Touch `System Diagnostics` in the panel selection window.
-When executed for the first time, the Brake Diagnostics screen appears.
+在面板选择窗口中触摸`System Diagnostics`。
+首次执行时，出现刹车诊断屏幕。
 
 ![System diagnostics monitoring](../../../_assets/tp630/pane-sys-diagnosis_eng.png)
 
 <table> 
   <thead> 
     <tr> 
-      <th style="text-align:left">No.</th> 
-      <th style="text-align:left">Description</th> 
+      <th style="text-align:left">编号</th> 
+      <th style="text-align:left">描述</th> 
     </tr> 
   </thead> 
   <tbody> 
@@ -4689,27 +4122,27 @@ When executed for the first time, the Brake Diagnostics screen appears.
       <td style="text-align:left"> <img src="../../../_assets/c1.png" alt/> 
       </td> 
       <td style="text-align:left"> 
-        <p> While the <strong>[System Diagnostics]</strong> panel is selected, you can switch to other diagnostic items by tapping the buttons below. </p> 
+        <p> 当<strong>[System Diagnostics]</strong>面板被选中时，可以通过点击下面的按钮切换到其他诊断项目。 </p> 
         <ul> 
-          <li><strong>[Brake Diagnostics]</strong>: Switches to the brake diagnostics screen.</li> 
-          <li><strong>[Gas Spring Diagnostics]</strong>: Switches to the gas spring diagnostics screen.</li> 
+          <li><strong>[Brake Diagnostics]</strong>: 切换到刹车诊断屏幕。</li> 
+          <li><strong>[Gas Spring Diagnostics]</strong>: 切换到气弹簧诊断屏幕。</li> 
         </ul> 
       </td> 
     </tr> 
   </tbody> 
 </table>
 [__SOURCE](6-monitoring/4-system/2-system-diagnosis/1-brake-check.md)
-# 6.4.2.1 Brake Diagnostics Monitoring
+# 6.4.2.1 刹车诊断监测
 
-Touch [Brake Diagnostics] in the button list below to display the brake diagnostics data screen.
+点击下面按钮列表中的 [Brake Diagnostics] 以显示刹车诊断数据屏幕。
 
 ![Brake diagnostics monitoring](../../../_assets/tp630/pane-sys-diagnosis-brake_eng.png)
 
 <table> 
   <thead> 
     <tr> 
-      <th style="text-align:left">No.</th> 
-      <th style="text-align:left">Description</th> 
+      <th style="text-align:left">编号</th> 
+      <th style="text-align:left">描述</th> 
     </tr> 
   </thead> 
 <tbody> 
@@ -4718,19 +4151,19 @@ Touch [Brake Diagnostics] in the button list below to display the brake diagnost
       <img src="../../../_assets/c1.png" alt/> 
     </td> 
     <td style="text-align:left"> 
-      <strong>[Angular displacement]</strong>
-      <p>Displays the current angular displacement, maximum angular displacement, and reference angular displacement when torque is applied in the Brake Hold/Release state.</p> 
+      <strong>[角位移]</strong>
+      <p>在刹车保持/释放状态下，当施加扭矩时，显示当前角位移、最大角位移和参考角位移。</p> 
       <ul> 
-        <li>The current angular displacement is displayed only for the axis under inspection.</li> 
-        <li>When the reference value setting mode is active, the axis name is highlighted in yellow.</li> 
+        <li>仅在检查的轴上显示当前角位移。</li> 
+        <li>当参考值设置模式处于激活状态时，轴名称会以黄色高亮显示。</li> 
       </ul> 
     </td> 
   </tr> 
 <tr> 
   <td style="text-align:left"> <img src="../../../_assets/c2.png" alt/> </td> 
   <td style="text-align:left"> 
-    <strong>[Torque rate]</strong>
-    <p>Displays the torque ratio applied during the brake diagnostics.</p> 
+    <strong>[扭矩比]</strong>
+    <p>显示在刹车诊断过程中施加的扭矩比。</p> 
   </td> 
 </tr> 
 </tbody> 
@@ -4738,21 +4171,21 @@ Touch [Brake Diagnostics] in the button list below to display the brake diagnost
 
 {% hint style="info" %}
 
-* For more details on the brake diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/16-brake_check?cont_model=${cont_model})" command.
+* 有关刹车诊断功能的更多详细信息，请参阅 "${cont_model} Robot Controller Function Manual - HRScript Robot Language" 中 "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/10-etc/1-proc/16-brake_check?cont_model=${cont_model})" 命令的章节。
 
 {% endhint %}
 [__SOURCE](6-monitoring/4-system/2-system-diagnosis/2-gas-pressure-check.md)
-# 6.4.2.2 Gas Spring Pressure Diagnostics Monitoring
+# 6.4.2.2 气弹簧压力诊断监测
 
-Touch [Gas Spring Diagnostics] in the button list below to display the gas spring pressure diagnostics data screen.
+在下面的按钮列表中触摸 [气弹簧诊断] 以显示气弹簧压力诊断数据屏幕。
 
-![Gas spring pressure diagnostics](../../../_assets/tp630/pane-sys-diagnosis-gas-pressure_eng.png)
+![气弹簧压力诊断](../../../_assets/tp630/pane-sys-diagnosis-gas-pressure_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -4761,10 +4194,10 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Displays the results of the last five gas spring pressure diagnostics.</p>
+        <p>显示最近五次气弹簧压力诊断的结果。</p>
         <ul>
-          <li><strong>[Timestamp]</strong>: Displays the time when the gas spring diagnostic test was performed.</li>
-          <li><strong>[Pressure]</strong>: Displays the reference pressure, tolerance, and the estimated pressure.</li>
+          <li><strong>[时间戳]</strong>: 显示执行气弹簧诊断测试的时间。</li>
+          <li><strong>[压力]</strong>: 显示参考压力、容差和估计压力。</li>
         </ul>
       </td>
     </tr>
@@ -4773,29 +4206,28 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
 
 {% hint style="info" %}
 
-* This function is supported only on robots equipped with a gas spring.  
-* The estimated gas spring pressure may vary depending on the initial posture at the start of measurement.
-During the robot's initial setup, please manage the pressure values based on the measurements taken at each reference posture, and regularly measure the pressure in the same posture to compare it with the initial values.
-If a significant difference is observed in the measured values, please inspect the condition of the equipment.
-* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/7-gasp_check?cont_model=${cont_model})" command.  
+* 此功能仅在配备气弹簧的机器人上支持。  
+* 估计的气弹簧压力可能会根据测量开始时的初始姿态而有所不同。
+在机器人初始设置时，请根据每个参考姿态的测量值管理压力值，并定期在相同姿态下测量压力以与初始值进行比较。
+如果在测量值中观察到显著差异，请检查设备的状态。
+* 有关气弹簧诊断功能的更多详细信息，请参考 "${cont_model} 机器人控制器功能手册 - HRScript 机器人语言"，部分 "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/10-etc/1-proc/7-gasp_check?cont_model=${cont_model})" 命令。  
 
 {% endhint %}
-
 [__SOURCE](6-monitoring/4-system/3-system-task.md)
-# 6.4.3 Task monitor
+# 6.4.3 任务监视器
 
 
-In the panel selection window, touch `[Task monitor]`. Then, the task window will appear.
+在面板选择窗口中，触摸 `[任务监视器]`。然后，任务窗口将出现。
 
-You can check the operation cycle and execution time information for each task.
+您可以检查每个任务的操作周期和执行时间信息。
 
-![Figure 45 Task monitor](../../_assets/tp630/pane-task_eng.png)
+![图 45 任务监视器](../../_assets/tp630/pane-task_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -4804,7 +4236,7 @@ You can check the operation cycle and execution time information for each task.
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-          <ul>Displays the operation cycle and execution time information for each task </ul>
+          <ul>显示每个任务的操作周期和执行时间信息</ul>
       </td>
     </tr>
     <tr>
@@ -4813,50 +4245,40 @@ You can check the operation cycle and execution time information for each task.
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[cycle time]/[execution time]</b>: You can change the information type
-            for each task.</li>
-          <li><b>[initialization]</b>: You can initialize the displayed information.</li>
-          <li><b>[counter]</b>: You can regard the task as normal by checking the increasing counter.</li>
+          <li><b>[周期时间]/[执行时间]</b>: 您可以更改每个任务的信息类型。</li>
+          <li><b>[初始化]</b>: 您可以初始化显示的信息。</li>
+          <li><b>[计数器]</b>: 通过检查增加的计数器，您可以将任务视为正常。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
-
-
-
-
-
 [__SOURCE](6-monitoring/4-system/4-hw-monitoring.md)
-# 6.4.4 Hardware
+# 6.4.4 硬件
 
- In the panel selection window, touch `[hardware]`. You can monitor current voltage and temperature of the COM module. In the case that a status value is out of the tolerance, a warning message will be issued in the period of 24 hours.
+ 在面板选择窗口中，触摸 `[hardware]`。您可以监控 COM 模块的当前电压和温度。如果状态值超出公差范围，将会在 24 小时内发出警告信息。
 
  ![](../../_assets/tp630/pane-hw-monitoring_eng.png)
  
  
-- If you want to change the tolerance, select the corresponding cell and edit it. Then, press the [Save Min/Max] button.
-- If you want to initialize with default values, press the [Reset Min/Max] button.
-
+- 如果您想更改公差，请选择相应的单元格并进行编辑。然后，按 [Save Min/Max] 按钮。
+- 如果您想用默认值初始化，请按 [Reset Min/Max] 按钮。
 [__SOURCE](6-monitoring/5-appl/README.md)
-# 6.5 Advanced Features and Robot Application
-
-
+# 6.5 高级功能和机器人应用
 [__SOURCE](6-monitoring/5-appl/1-sensor-sync.md)
-# 6.5.1 Sensor Sync
+# 6.5.1 传感器同步
 
-Touch `[Sensor Sync]` in the panel selection window. Then, the sensor sync window will appear.
+在面板选择窗口中触碰 `[Sensor Sync]`。然后，传感器同步窗口将出现。
 
-You can check the information related to the conveyor and press sync functions. The sensor sync function can be activated by setting the sync status as conveyor or press in the `[system  - 4: Application Parameter  - 4: Sensor Sync]` menu.
+您可以查看与传送带相关的信息并按下同步功能。传感器同步功能可以通过在 `[system - 4: Application Parameter - 4: Sensor Sync] ([system  - 4: Application Parameter  - 4: Sensor Sync])` 菜单中设置同步状态为传送带或按压来激活。
 
 ![Figure 49 Sensor Sync Monitoring](../../_assets/tp630/pane-sensorsynch_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -4864,8 +4286,7 @@ You can check the information related to the conveyor and press sync functions. 
       <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left"> <ul>Displays the information related to the conveyor and press sync functions
-        of the selected sensor</ul></td>
+      <td style="text-align:left"> <ul>显示与所选传感器的传送带和压力同步功能相关的信息</ul></td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -4873,15 +4294,10 @@ You can check the information related to the conveyor and press sync functions. 
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[Sensor #1]</b>: You can select a sensor to monitor by touching the
-            drop-down menu.</li>
-          <li><b>[Manual reset]</b>: You can manually delete various sensor-related
-            data (encoder pulse, sensor position, sensor speed, workpiece entry count,
-            sync playback status, etc.).</li>
-          <li><b>[Limit Switch Operate]</b>: You can use this function when you input
-            the l</li>
-          <li><b>[Work Position Input]</b>: You can manually input the sensor position
-            value (Linear: mm. Circular: deg).</li>
+          <li><b>[Sensor #1]</b>: 您可以通过触碰下拉菜单选择一个传感器进行监控。</li>
+          <li><b>[Manual reset]</b>: 您可以手动删除各种传感器相关的数据（编码脉冲、传感器位置、传感器速度、工件进入计数、同步播放状态等）。</li>
+          <li><b>[Limit Switch Operate]</b>: 输入时可以使用此功能。</li>
+          <li><b>[Work Position Input]</b>: 您可以手动输入传感器位置值（线性：毫米。圆形：度）。</li>
         </ul>
       </td>
     </tr>
@@ -4891,765 +4307,615 @@ You can check the information related to the conveyor and press sync functions. 
 
 
 {% hint style="info" %}
-For details on the sensor sync function, refer to the ["${cont_model} Sensor Sync Function Manual."](https://hrbook-hrc.web.app/#/view/doc-sensor-sync/en/README?cont_model=${cont_model})
+有关传感器同步功能的详细信息，请参阅 ["${cont_model} Sensor Sync Function Manual."](https://hrbook-hrc.web.app/#/view/doc-sensor-sync/zh/README?cont_model=${cont_model})
 {% endhint %}
-
-
 [__SOURCE](6-monitoring/5-appl/2-coldet-monitoring.md)
-# 6.5.2 Coldet Monitoring
+# 6.5.2 ColDet 监控
 
  ![](../../_assets/tp630/coldet_monitoring_pane.png)
  ![](../../_assets/tp630/coldet_monitoring.png)
  
-#### Description 
-* ColDet monitoring 
+#### 描述 
+* ColDet 监控 
 
-#### Parameters 
- - [Sensitivity] : The higher the ratio value, the more sensitive the collision is detected. (0: Disabled) [0~200]
-   - It can be set in the General tap [System- 3:Robot parameter>14:Impact Detection]  
- - [External Torque]-[Current] : Currently estimated external torque [Nm]
- - [External Torque]-[Maximum] : Maximum value of the current external torque[Nm]
- - [Reference] : Threshold torque value [Nm]
- - [Max/Ref] : The ratio [Maximum] to [Reference], if the value is over the one, axis impact would be occurred. 
+#### 参数 
+ - [灵敏度] : 比例值越高，检测到的碰撞越敏感。 (0: 禁用) [0~200]
+   - 可在常规标签中设置 [系统- 3:机器人参数>14:冲击检测]  
+ - [外部扭矩]-[当前] : 当前估计的外部扭矩 [Nm]
+ - [外部扭矩]-[最大] : 当前外部扭矩的最大值 [Nm]
+ - [参考] : 阈值扭矩 [Nm]
+ - [最大/参考] : 比例 [最大] 与 [参考]，如果该值超过一，轴向冲击将发生。
 [__SOURCE](6-monitoring/5-appl/10-spot.md)
-# 6.5.10 Spot Welding Data
+# 6.5.10 点焊数据
 
-Touch `[spot]` in the panel selection window.
-This displays the spot gun axis data, the input/output signals and operating information of spot welding.
+在面板选择窗口中触摸 `[spot]`。
+这将显示点焊枪的轴数据、输入/输出信号和点焊的操作信息。
 
 ![](../../_assets/tp630/pane-spot_eng.png) 
 
 <br>
 
 {% hint style="info" %}
- Refer to Spot Welding Manual's "[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/3-Related-functions/3-1-monitoring/README?cont_model=${cont_model})" for more details.
+ 更多详细信息请参阅点焊手册的 "[3.1 监控](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/3-Related-functions/3-1-monitoring/README?cont_model=${cont_model})"。
 {% endhint %}
-
 [__SOURCE](6-monitoring/5-appl/11-tool-change.md)
-# 6.5.11 Servo Tool Change
+# 6.5.11 伺服工具更换
 
-
-In the panel selection window, touch `[servo tool change]`. This displays the state of the servo tool and the encoder power supply's input/output state when the servo tool change function is used.
+在面板选择窗口中，触摸 `[servo tool change]`。这会显示伺服工具和编码器电源供应的输入/输出状态，当伺服工具更换功能被使用时。
 
 ![](../../_assets/tp630/pane-tool-change_eng.png) 
 
 <br>
 
 {% hint style="info" %}
- Refer to ["${cont_model} Controller Servo Tool Change Function Manual"](https://hrbook-hrc.web.app/#/view/doc-svtool-change/en/README?cont_model=${cont_model}) for more details.
+ 详细信息请参见 ["${cont_model} 控制器伺服工具更换功能手册"](https://hrbook-hrc.web.app/#/view/doc-svtool-change/zh/README?cont_model=${cont_model})。
 {% endhint %}
 [__SOURCE](6-monitoring/5-appl/20-arc.md)
-# 6.5.20 Arc Welding Data
+# 6.5.20 弧焊数据
 
-Refer to Arc Welding Manual's "[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/en/7_Monitoring/README?cont_model=${cont_model})".
-
+Refer to Arc Welding Manual's "[7. 焊接数据监控](https://hrbook-hrc.web.app/#/view/doc-arc-weld/zh/7_Monitoring/README?cont_model=${cont_model})".
 [__SOURCE](6-monitoring/5-appl/28-forcecontrol-monitoring.md)
-# 6.5.28 force control monitoring
+# 6.5.28 力控制监测
  
 ![](../../_assets/tp630/force_monitoring.png)
 
-#### Description 
-* In case of force control, this monitoring data show estimated [external force] 
+#### 描述 
+* 在力控制的情况下，该监测数据会显示估计的 [外部力] 
  
-#### Parameters 
+#### 参数 
 
- - [cartesian] : external force or torque in cartesian space
-    - in case of fctrl function : robot coordinate
-    - in case of softxyz function : robot coordinate
-    - in case of softjoint function : not shown 
- - [joint] : external torque in joint space    
-    - in case of fctrl function : not shown
-    - in case of softxyz function : not shown
-    - in case of softjoint function : joint coordinate 
-
+ - [cartesian] : 符号空间中的外部力或扭矩
+    - 在 fctrl 函数的情况下 : 机器人坐标
+    - 在 softxyz 函数的情况下 : 机器人坐标
+    - 在 softjoint 函数的情况下 : 不显示 
+ - [joint] : 关节空间中的外部扭矩    
+    - 在 fctrl 函数的情况下 : 不显示
+    - 在 softxyz 函数的情况下 : 不显示
+    - 在 softjoint 函数的情况下 : 关节坐标 
 [__SOURCE](6-monitoring/6-safety-funtion.md)
-# 6.6 Safety Funtion
+# 6.6 安全功能
 
 {% hint style="info" %}
-This function is supported from the Hi7 controller.
+此功能在 Hi7 控制器中支持。
 {% endhint %}
 
-In the panel selection window, touch `[Safety Function]`. Then, the Safety Function status window will appear. 
-You can check the status of the Safety Function, Manual Speed, Stop Time, Stop Distance, MCU-A, and MCU-B.
+在面板选择窗口中，触摸 `[Safety Function]`。然后，安全功能状态窗口将出现。
+您可以检查安全功能、手动速度、停止时间、停止距离、MCU-A 和 MCU-B 的状态。
 
 ![](../_assets/image_552.png)
 
 {% hint style="info" %}
-* For details on the Safety Function, refer to the "[SafeSpace2.0 Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README)".
+* 有关安全功能的详细信息，请参考 "[SafeSpace2.0 手册](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/zh/README)"。
 {% endhint %}
-
-
 [__SOURCE](7-system/README.md)
-# 7. System
+# 7. 系统
 
-In the 'system', you can check and set the user information and various parameter information.
-
-
+在“系统”中，您可以检查和设置用户信息以及各种参数信息。
 [__SOURCE](7-system/1-setting-menu.md)
-# 7.1 Use of the Menus in 'system'
+# 7.1 在 'system' 中使用菜单
 
-1.	In manual or automatic mode, touch the `[system]` button on the function button bar. Then, the program's settings menus will be displayed.
+1. 在手动或自动模式下，触摸功能按钮栏上的 `[system]` 按钮。然后，程序的设置菜单将被显示。
 
     ![](../_assets/tp630/sbt-system_eng.png)
 
-2.	You can check and set the user information and various parameter information by selecting the desired menus.
+2. 你可以通过选择所需的菜单来检查和设置用户信息和各种参数信息。
 
     ![](../_assets/tp630/sbt-system-menu_eng.png)
 
-* `[1: User Environment]`: You can check and set various user conditions.
+* `[1: User Environment]`：你可以检查和设置各种用户条件。
 * 
-  `[2: Control Parameter]`: You can set various conditions of the controller and the input/output signals, communication information, robot ready OK signal condition, home position signal, and coordinate system.
-
-* 
-  `[3: Robot Parameter]`: You can set various data related to robot operation and information such as the origin of each axis and operation range.
-
-* `[4: Application Parameter]`: You can check and set various parameters for using the robot's application functions.
-* 
-  `[5: Initialize]`: You can perform the initial setting of the robot system. You can also initialize the serial encoder.
+  `[2: Control Parameter]`：你可以设置控制器和输入/输出信号的各种条件，通信信息，机器人准备信号条件，归位信号和坐标系统。
 
 * 
-  `[6: Auto Calibration]`: You can calibrate the robot's axis origin, tool length, load mass, and base axis direction, etc. using the programs taught to use the robot correctly and also by using the movement that will automatically operate.
+  `[3: Robot Parameter]`：你可以设置与机器人操作和信息相关的各种数据，例如每个轴的原点和操作范围。
 
+* `[4: Application Parameter]`：你可以检查和设置使用机器人应用功能的各种参数。
+* 
+  `[5: Initialize]`：你可以执行机器系统的初始设置。你还可以初始化串行编码器。
 
-
-
-
-
+* 
+  `[6: Auto Calibration]`：你可以使用教导程序来校准机器人轴原点、工具长度、负载质量和基轴方向等，也可以通过使用将自动操作的运动来进行校准。
 [__SOURCE](7-system/2-user-environment.md)
-# 7.2 User Environment
+# 7.2 用户环境
 
-You can check and set various user conditions. 
+您可以检查和设置各种用户条件。
 
-1.	Touch the `[1: User environment]` menu. Then, the user environment setting window will appear.
+1. 触摸 `[1: 用户环境]` 菜单。然后，用户环境设置窗口将出现。
 
-2.	After setting the user environment, touch the `[OK]` button.
+2. 设置用户环境后，触摸 `[OK]` 按钮。
 
     ![](../_assets/tp630/system-user-environ_eng.png)
 
-* `1: Pose record type`: You can set the type of the position recording of the step to be recorded as a hidden pose. ("[2.3.1.2 Pose](../2-operation/3-step/1-step-cmd-param/2-pose.md)")
-  * `[Base]`/`[Robot]`/`[Axis Angle]`: You can record the position of the step based on the base coordinate, robot, and axis angle values.
+* `1: 姿势记录类型 (1: Pose record type)`：您可以设置要记录为隐藏姿势的步骤的位置记录类型。 ("[2.3.1.2 Pose](../2-operation/3-step/1-step-cmd-param/2-pose.md)")
+  * `[Base]`/`[Robot]`/`[Axis Angle]`：您可以根据基本坐标、机器人和轴角值记录步骤的位置。
 
-  * `[U]`: You can record the position in the user coordinate system.
-* `2: Confirmation in deleting commands` You can set whether to expose the deletion confirmation window when deleting a statement in manual mode.
+  * `[U]`：您可以在用户坐标系统中记录位置。
+* `2: 删除命令时的确认 (2: Confirmation in deleting commands)` 您可以设置在手动模式下删除语句时是否显示删除确认窗口。
 
-* `3: Wait\(di/wi\) release`: While in the input signal wait or welding complete signal wait status, you can set whether to force the signal wait status to be deactivated by pressing `[SHIFT]` + [rel.WAIT].
-* `4: Program strobe signal use`: When selecting an external program by receiving an external digital signal, you can set the time when the external program is to be selected.
+* `3: Wait\(di/wi\) release`：在输入信号等待或焊接完成信号待机状态下，您可以设置是否通过按 `[SHIFT]` + [rel.WAIT] 强制解除信号等待状态。
+* `4: 程序触发信号使用 (4: Program strobe signal use)`：选择外部程序时，通过接收外部数字信号，您可以设置选择外部程序的时间。
 
-  * `[Disable]`: Makes it possible to select an external program by reading only the external program selection signal
+  * `[Disable]`：仅通过读取外部程序选择信号来选择外部程序。
 
-  * `[Enable]`: Makes it possible to select an external program by reading the external program selection signal at the time when the program strobe sognal is inputted
+  * `[Enable]`：在输入程序触发信号时，通过读取外部程序选择信号来选择外部程序。
 
-* `5: Ext. update of playback prog.`: You can set whether to allow the process of externally \(PC\) modifying the program that is being played back, and then to allow the process of downloading it to the controller \(With regard to the number of the program being played back, the downloaded program will be applied from the next cycle\).
-
+* `5: 播放程序的外部更新 (5: Ext. update of playback prog.)`：您可以设置是否允许外部 \(PC\) 修改正在回放的程序，然后允许将其下载到控制器中 \(关于正在回放的程序编号，下载的程序将从下一个周期开始应用\)。
 
 {% hint style="warning" %}
-If the program being played back is modified externally \(PC\) and downloaded to the controller, it could cause a failure of or abnormality with the product. Contact our customer support team to ask an expert or an engineer.
+如果正在回放的程序被外部 \(PC\) 修改并下载到控制器，可能会导致产品故障或异常。请联系客户支持团队以咨询专家或工程师。
 {% endhint %}
 
 
-* `[6: Collision sensor process]`: You can set a method of stopping the robot when the collision sensor is operating.
-  * `[(1) Em.stop]`: The robot will stop into the emergency stop mode, where the robot falls down motor-off status.
+* `[6: 碰撞传感器处理]`：您可以设置在碰撞传感器操作时停止机器人的方法。
+  * `[(1) Em.stop]`：机器人将进入紧急停止模式，机器人处于掉落电机关闭状态。
 
-  * `[(2) Stop]`: The robot will stop into the normal stop mode, where the robot remains in motor-on status.
+  * `[(2) Stop]`：机器人将进入正常停止模式，机器人保持在电机开启状态。
 
-
-* `[7: Signal display in byte]`: You can display signal addresses in byte unit by selecting `[Enable]`.
-  * 'Input signal assign' page changes as below accorinding to your selection.
+* `[7: 以字节显示信号]`：您可以通过选择 `[Enable]` 以字节单位显示信号地址。
+  * '输入信号分配' 页面根据您的选择如下更改。
   
     ![](../_assets/tp630/system-user-environ-byte-index_eng.png)
 
-* `8:Manual oper. for stop signal in`: You can set whether to enable jog operation when an external stop signal is inputted.
+* `8: 手动操作停止信号时`：您可以设置在输入外部停止信号时是否启用走动操作。
 
+* `[9: 教学挂钩断开]`：您可以将教学挂钩从控制器断开，以在自动模式下操作机器人。
 
+  * 如果设置为 `断开 (Disconnect)`，在教学挂钩与主板之间的通信断开时不会出现 "E2800 教学挂钩操作异常" 错误。 （即使在通信断开时，机器人仍然可以操作。）
 
-* `[9: Teach pendent disconnection]`: You can disconnect the teach pendant from the controller to operate the robot in auto mode.
+  * 在 `连接 (Connect)` 状态下，您可以设置超时期限来确定通信是否丢失。
 
-  * If set to `Disconnect`, no "E2800 Teaching Pendant Operation Abnormal" error occurs when communication between the teaching pendant and the main b/d is disconnected. (The robot operates even when communication is disconnected.)
+  * 当设置为 `断开 (Disconnect)` 并且教学挂钩从控制器断开且供电时，控制器将识别当前模式为远程模式，允许通过外部电机开启和外部启动进行自动操作。
 
-  * In the `Connect` state, you can set a timeout period to determine whether communication is lost.
+  * 如果将其设置为 `连接 (Connect)`，教学挂钩与主板之间的通信故障将触发 "E2800 教学挂钩通信错误"，导致电机关闭。 （输入工程师代码 (R314) 后，您可以配置通信超时持续时间。）
 
-  * When it is set as `Disconnect` and the teach pendant is disconnected from the controller, and power is supplied, the controller will recognize the current mode as remote mode, allowing the robot to be auto-operated through external Motor On and external start-up. 
+  * 因为紧急开关和模式转换开关通过信号线单独连接到教学挂钩，所以必须适当布线该信号线。
 
-  * If you set this to `Connect`, a communication failure between the teach pendant and the mainboard will trigger the "E2800 Teaching pendant communication error," causing the motor to turn OFF. (When the Engineer Code (R314) is entered, you can configure the communication timeout duration.)
-
-  * Because the emergency switch and mode conversion switch are separately connected through a signal wire to the teach pendant, you must appropriately wire this signal wire. 
-
-  * Connect CNRTP connector pin #9 (Auto) to #2 (M1) and pin #5 (Emergency stop 1) to #2 (M1), and use the exclusive CNRTP connector with pin #6 (Emergency stop 2) connected to #1 (P1) instead of the teach pendant.
-
+  * 将 CNRTP 连接器针脚 #9 (Auto) 连接到 #2 (M1)，并将针脚 #5 (Emergency stop 1) 连接到 #2 (M1)，使用专用 CNRTP 连接器，将针脚 #6 (Emergency stop 2) 连接到 #1 (P1) 代替教学挂钩。
 [__SOURCE](7-system/3-control-parameter/README.md)
-# 7.3 Control Parameter
+# 7.3 控制参数
 
-You can set various conditions of the controller and set the input/output signal, communication information, robot ready OK signal condition, home position signal, and the coordinate system.
+您可以设置控制器的各种条件，并设置输入/输出信号、通信信息、机器人准备就绪信号条件、原点信号和坐标系。
 
-1.	Touch the `[2: Control parameter]` menu. Then, the control parameter menu will appear. 
+1.	触摸`[2: Control parameter]`菜单。然后，控制参数菜单将出现。
 
-2.	Select the desired menu and check and set various conditions of the controller.
+2.	选择所需的菜单，检查并设置控制器的各种条件。
 
     ![](../../_assets/tp630/ctrl-menu_eng.png)
-
-
 [__SOURCE](7-system/3-control-parameter/1-control-env-setting.md)
-# 7.3.1 Control Environment Setting
+# 7.3.1 控制环境设置
 
-You can set various conditions of the controller and perform necessary operations.
+您可以设置控制器的各种条件并执行必要的操作。
 
-1.	Touch the `[2: Control Parameter  - 1: Control Environment Setting]` menu.
+1. 触摸 `[2: Control Parameter - 1: Control Environment Setting] ([2: Control Parameter  - 1: Control Environment Setting])` 菜单。
 
-2.	After setting each control environment condition, touch the `[OK]` button.
+2. 设置每个控制环境条件后，触摸 `[OK]` 按钮。
 
     ![](../../_assets/tp630/ctrl-environment-setting_eng.png)   
 
-* `[Power saving function]`: You can set whether to use the power saving function and set the wait time.
+* `[节能功能]`：您可以设置是否使用节能功能并设置等待时间。
 
-  While the power saving function is used, if the robot is in operation stop status while in the auto mode for a long period, such as waiting for startup or waiting for an input signal, the power supply to the motor will be cut off when the wait time has expired, helping save power consumption. When an operation command is inputted in the robot, the power saving function will be automatically deactivated, allowing the power to be supplied to the motor and the robot to operate.
+  当使用节能功能时，如果机器人在自动模式中长时间处于操作停止状态，等待启动或等待输入信号，等候时间到时会切断电机的电源，从而帮助节省能耗。当在机器人中输入操作命令时，节能功能将自动停用，电源将供应给电机，机器人将开始操作。
 
 {% hint style="info" %}
-Delays may occur in the process of activating/deactivating the power-saving function. When operating while expecting the speed of the robot, you should set the power saving function as disable.
+在启用/禁用节能功能的过程中可能会发生延迟。当期望机器人的速度进行操作时，应将节能功能设置为禁用。
 {% endhint %}
 
+* `[自动模式下的路径恢复]`：您可以设置自动模式下的路径恢复允许距离和允许角度。
 
-* `[Path recovery on auto Mode]`: You can set the allowable distance and allowable angle for path recovery in automatic mode.
+  在路径恢复过程中，如果距离和角度超过设定的允许范围，将检测到错误。如果允许距离设置为1，则不会进行路径恢复。
 
-  During path recovery, an error will be detected if the distance and angle exceed the set allowable range. If the allowable distance is set to 1, no path recovery will take place.
+* `[冷却风扇关闭时间]`：当机器人在运行时，由于再生电阻，控制器内部的温度会升高，必须开启冷却风扇以防止温度上升。
 
+  当机器人不运行时，控制器内部的温度不再上升，因此此时没有必要让冷却风扇运转。相反，当冷却风扇运转时，只会出现风扇寿命缩短、噪音产生和能耗增加等不利影响。
 
-* `[Cooling fan turn off time ]`: When the robot is in operation, the temperature inside the controller rises due to regenerative resistance, and the cooling fan must be operated to prevent this temperature rise.
+  当机器人处于操作状态（电机开启）时，冷却风扇必须立即运行。当机器人处于不可操作状态（电机关闭，节能运行）时，冷却风扇在经过一定时间后将不再运转。如果冷却风扇没有立即运转，由于再生电阻的潜热，控制器内部的温度会上升。
 
-  When the robot is not in operation, the temperature inside the controller no longer rises, so there is no reason for the cooling fan to operate at this time. Rather, when the cooling fan operates, there are only adverse effects such as shortened fan life, noise generation, and increased power consumption.
+  控制冷却风扇开/关操作的信号输出在 `[System/Control parameter/Input/Output signal setting/Output signal assign]` 菜单中的 "冷却风扇控制" 项目中设置，控制冷却风扇电源的电路也通过此输出信号创建。必须进行配置。
 
-  When the robot is in an operating state (motor on), the cooling fan must operate immediately. When the robot is in an inoperable state (motor ff, power saving operation), the cooling fan does not operate after a certain period of time has elapsed. If the cooling fan does not operate immediately, the temperature inside the controller rises due to the latent heat of the regenerative resistance.
+  如果 "冷却风扇关闭操作时间" 设置为0或 "冷却风扇控制" 输出信号设置为-1，则冷却风扇会始终运转。
 
-  The signal output for controlling the cooling fan on/off operation is set in the "Cooling fan control" item in the [System/Control parameter/Input/Output signal setting/Output signal assign] menu, and the circuit for controlling the cooling fan power is created with this output signal. It must be configured.
+* `[互锁错误时间]`：此功能设置输入信号的最大等待时间。 <br>
+  如果输入信号待机时间在播放期间超过指定时间，将输出互锁错误信号。此指定时间为互锁异常时间。
 
-  If "Cooling fan off operation time" is set to 0 or the "Cooling fan control" output signal is set to -1, the cooling fan always operates.
+  互锁错误信号是分配给 `[System/Control Parameter/Input/Output signal setting/Output signal assign]` 菜单中的 "互锁异常警告" 的信号。
 
+* `[第一次安全移动]`：启动机器人时，设置是否将第一次步骤限制为安全速度，并以当前设定速度移动。
+  * 启用：移动到安全限制速度。
+  * 禁用：以当前设定速度移动。
 
-* `[Interlock error time]`: This function sets the maximum waiting time for the input    signal. <br>
-  If the input signal standby time exceeds the specified time during playback, an interlock error signal is output. This specified time is the interlock abnormality time.
+  出于安全原因，机器人在启动第一次步骤时以安全速度移动是基本的。特殊工作如密封或喷涂可能会导致质量问题，因此仅在这些情况下使用。
 
-  The interlock error signal is a signal assigned to "Interlock abnormal warning" in the [System/Control Parameter/Input/Output signal setting/Output signal assign] menu.
+* `[PLC执行时间比率]`：使用嵌入式PLC时，您可以调整控制器内部的PLC执行时间。控制器每5ms内部执行一次PLC梯形图程序，因此设置分配多少PLC执行。这个比例越大，PLC程序的扫描时间越短。但如果过大，CPU执行时间可能不足，可能会发生任务执行时间超出错误。
 
+* `[周期时间优化模式]`：此功能在自动播放期间减少机器人的步进移动时间，以提高生产力。
+  - 启用
+    - 动态调整加速/减速曲线和最大速度，以便更快移动。
+    - 应用动态运动调整
 
-* `[First step safety move]`: When starting the robot, set whether to limit the first step to a safe speed and move at the currently set speed.
-  * Enable : Move to the safe limit speed.
-  * Disable : Move to the currently set speed.
+  - 禁用
+    - 使用预定义的加速、减速和最大速度设置。
+    - 在标准运动特征模式下运行
 
-  For safety reasons, it is basic for robots to move at a safe speed when starting the first step. Special work such as sealing or painting may cause quality problems, so use it only in these cases.
-
-
-* `[Plc execution time rate]`: When using a embedded PLC, you can adjust the PLC execution time inside the controller. The controller internally executes the PLC ladder program every 5ms, so set how much PLC execution is allocated. The larger this ratio leads the shorter the scan time of the PLC program. But if it is too large, the CPU execution time may be insufficient and a task execution time exceeded error may occur.
-
-* `[Cycle Time Optimization Mode]`: This feature reduces the robot's step movement time during automatic playback to improve productivity.
-  - Enabled
-    - Dynamically adjusts acceleration/deceleration curves and maximum speed for faster movement.
-    - Dynamic motion adjustment applied
-
-  - Disabled
-    - Uses predefined acceleration, deceleration, and maximum speed settings.
-    - Operates in standard motion profile mode
-
-  - Dynamic Motion Ratio (`0 ~ 100`)
-    - `0`: Disabled (static motion)
-    - `1 ~ 100`: Adjusts the intensity of dynamic motion
-    - Higher values apply more aggressive optimization for speed and acceleration
-
+  - 动态运动比率 (`0 ~ 100`)
+    - `0`：禁用（静态运动）
+    - `1 ~ 100`：调整动态运动的强度
+    - 较高的值适用更激进的速度和加速度优化
 
 {% hint style="info" %}
-For processes where cycle time is critical (e.g., repetitive pick-and-place), applying a high dynamic motion ratio can help improve throughput.
+对于周期时间关键的过程（例如，重复的取放），应用高动态运动比率可以帮助提高通量。
 {% endhint %}
 
 {% hint style="warning" %}
-Be aware that higher values may lead to mechanical vibration or trigger over-torque faults, especially under high payload or rapid directional changes.
+请注意，较高的值可能会导致机械振动或触发过载故障，尤其是在高负载或快速方向变化时。
 {% endhint %}
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/README.md)
-# 7.3.2 Input/Output Signal Setting
+# 7.3.2 输入/输出信号设置
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting` menu. Then, the input/output signal setting menu will appear.
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 (2: 控制参数 - 2: 输入/输出信号设置)` 菜单。然后，输入/输出信号设置菜单将出现。
 
-2.	Select the desired menu and set the input/output signal attributes and signal assignment, etc.
+2. 选择所需的菜单并设置输入/输出信号属性和信号分配等。
 
     ![](../../../_assets/tp630/ctrl-inoutsing-menu_eng.png)
-
-
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/1-input-signal-prop.md)
-# 7.3.2.1 Input Signal Attribute
+# 7.3.2.1 输入信号属性
 
-You can set the logic and name for a general input signal.
+您可以设置一般输入信号的逻辑和名称。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 1: Input Signal Attribute` menu. 
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 1: 输入信号属性 (2: 控制参数 - 2: 输入/输出信号设置 - 1: 输入信号属性)` 菜单。
 
-2.	Check and set the general input signal list, and then touch the `[OK]` button.
+2. 检查并设置一般输入信号列表，然后触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-insignal-attri_eng.png)
 
-* `[Append]`: You can add a new general input signal to the list. 
-* `[Delete]`: You can delete the general input signal from the list.
-
-
-
-
-
-
+* `[Append]`: 您可以将新的一般输入信号添加到列表中。
+* `[Delete]`: 您可以从列表中删除一般输入信号。
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/2-output-signal-prop.md)
-# 7.3.2.2 Output Signal Attribute
+# 7.3.2.2 输出信号属性
 
-You can set the logic, pulse, and name for a general input signal.
+您可以为常规输入信号设置逻辑、脉冲和名称。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 1: Output Signal Attribute` menu. 
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 1: 输出信号属性 (2: 控制参数 - 2: 输入/输出信号设置 - 1: 输出信号属性)` 菜单。
 
-2.	Check and set the general input signal list, and then touch the `[OK]` button.
+2. 检查并设置常规输入信号列表，然后触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-outsignal-attri_eng.png)
 
-* `[Append]`: You can add a new general output signal to the list.
-* `[Delete]`: You can delete the general output signal from the list.
-
-
-
-
-
-
+* `[Append]`: 您可以将一个新的常规输出信号添加到列表中。
+* `[Delete]`: 您可以从列表中删除常规输出信号。
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/3-io-signal-set-info.md)
-# 7.3.2.3 Input/Output Signal Setting Information
+# 7.3.2.3 输入/输出信号设置信息
 
-* `[Signal]`: The signal to apply the attribute to. The fb block signal can be designated by inputting the block number, decimal point, and signal number in sequence.
+* `[Signal]`: 要应用属性的信号。fb块信号可以通过输入块编号、小数点和信号编号的顺序来指定。
 
-  For example, if you want to designate the signal 35 of the block fb1, you can set it by inputting 1.35.
+  例如，如果您想指定块fb1的信号35，可以通过输入1.35来设置。
 
 * 
-  `[Negative Logic]`: The positive logic and negative logic of the general input/output signal are as follows.
+  `[Negative Logic]`: 一般输入/输出信号的正逻辑和负逻辑如下所示。
 
 ![](../../../_assets/image_457.png)
 
-* `[Pulse Count]`: Pulse count. This is the count of pulses. If it is set to a value between 1 and 100, pulse output will occur, and if set to 0, a delayed output will occur.
+* `[Pulse Count]`: 脉冲计数。这是脉冲的计数。如果设置为1到100之间的值，则会发生脉冲输出，如果设置为0，则会发生延迟输出。
 * 
-  `[Pulse On]`/`[Pulse Off]`: This is the On status time and Off status time of the output signal when pulse output or delayed output occurs.
+  `[Pulse On]`/`[Pulse Off]`: 这是脉冲输出或延迟输出发生时输出信号的开状态时间和关状态时间。
 
-  The example of the pulse output according to the pulse attribute value is as follows.
+  根据脉冲属性值的脉冲输出示例如下。
 
 * 
-  Pulse output: Count: 3. On status time: 1 second. Off status time: 0.2 seconds
+  脉冲输出：计数：3。开状态时间：1秒。关状态时间：0.2秒
 
 ![](../../../_assets/image_468.png)
 
 
 
-* Delayed output: Count: 0. On status time: 1 second. Off status time: 0.5 seconds
+* 延迟输出：计数：0。开状态时间：1秒。关状态时间：0.5秒
 
 ![](../../../_assets/image_464.png)
 
-* `[Name]`: Name of the general input/output signal
-
-
-
-
+* `[Name]`: 一般输入/输出信号的名称
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/4-input-signal-assign.md)
-# 7.3.2.4 Input Signal Assignment
+# 7.3.2.4 输入信号分配
 
-You can remotely control the controller's state or operation using the controller input signal. The method of assigning the input signal number in the remote-control item is as follows.
+您可以使用控制器输入信号远程控制控制器的状态或操作。远程控制项中分配输入信号编号的方法如下。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 3: Input Signal Assign` menu. 
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 3: 输入信号分配 (2: 控制参数 - 2: 输入/输出信号设置 - 3: 输入信号分配)` 菜单。
 
-2.	After inputting the input signal number in the remote control item, touch the `[OK]` button.
+2. 在远程控制项中输入输入信号编号后，触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-insignal-assign_eng.png)
 
-* `[Reset All]`: You can reset the numbers of the input signals assigned to all remote control items. 
+* `[Reset All]`: 您可以重置分配给所有远程控制项的输入信号编号。
 * 
-  `[Reset One]`: You can reset the number of the input signal assigned to the selected remote control item. 
-
-* 
-  `[Reset Channel]`: You can initialize the input channel for the set input signal. The channel consists of fb0 to fb9, and fb0 will be omitted in the display in the case of fb0.
+  `[Reset One]`: 您可以重置分配给所选远程控制项的输入信号编号。
 
 * 
-  `[S]`: You can designate the system signal when using the remote control as a system input signal. The system signal consists of "s+number," which combines the letter s with the signal number. For example, you can set the system signal 49 as s49.
+  `[Reset Channel]`: 您可以初始化设置的输入信号的输入通道。通道由 fb0 到 fb9 组成，显示中将省略 fb0 的情况。
 
-
-
-
-
-
+* 
+  `[S]`: 当使用远程控制作为系统输入信号时，您可以指定系统信号。系统信号由 "s+编号" 组成，将字母 s 与信号编号结合。例如，您可以将系统信号 49 设置为 s49。
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/5-input-signal-set-info.md)
-# 7.3.2.5 Input Signal Setting Information
+# 7.3.2.5 输入信号设置信息
 
-#### Remote mode
+#### 远程模式
 
-When the mode switch of the teach pendant is selected to remote \(![](../../../_assets/sb-remote.png)\), the corresponding signal should be turned on for the remote mode to be selected. If the corresponding signal is turned off, the internal mode will be selected. In general, if the mode switch of the teach pendant is selected to be remote \(![](../../../_assets/sb-remote.png)\), the user wants to select the remote mode, which is why the basic value is set to 254, and the corresponding signal will be designated as negative logic in the input signal attribute.
+当教学挂钩的模式开关选择为远程 \(![](../../../_assets/sb-remote.png)\) 时，相应的信号应被开启，以便选择远程模式。如果相应的信号被关闭，将选择内部模式。一般来说，如果教学挂钩的模式开关选择为远程 \(![](../../../_assets/sb-remote.png)\)，用户希望选择远程模式，这就是基本值设定为 254 的原因，相应的信号将在输入信号属性中指定为负逻辑。
 
+#### 手动（教学）模式
 
+在选择远程模式时，如果相应的信号被开启，您将处于可以手动操作机器人在远程模式下的状态。然而，通常情况下，在这种状态下操作机器人是没有的，并且此模式很少使用。
 
-#### Manual \(Teach\) mode
+#### 自动（回放）模式
 
-While the remote mode is selected, if the corresponding signal is turned on, you will be in a state in which the robot will be operated manually in remote mode. However, in general, there is no case of operating the robot in this state, and this mode is rarely used. 
+在选择远程模式时，如果相应的信号被开启，您将处于可以自动操作机器人在远程模式下的状态。然而，通常情况下，如果教学挂钩的模式开关选择为远程 \(![](../../../_assets/sb-remote.png)\)，用户希望在远程模式下自动操作机器人，这就是基本值设定为 255 的原因，相应的信号将在信号属性中指定为负逻辑。
 
+#### 外部启动
 
+此功能用于在远程自动模式下启动机器人。
 
-#### Auto \(Playback\) mode 
+#### 外部停止
 
-While the remote mode is selected, if the corresponding signal is turned on, you will be in a state in which the robot will be operated automatically in remote mode. However, in general, if the mode switch of the teach pendant is selected to remote \(![](../../../_assets/sb-remote.png)\), the user wants to operate the robot automatically in remote mode, which is why the basic value is set to 255, and the corresponding signal will be designated as negative logic in the signal attribute.
+此功能用于在远程自动模式下停止机器人。
 
+#### 外部程序选择
 
+当机器人被外部启动时，读取程序选择位并确定为外部程序的时机取决于是否使用闪烁信号。
 
-#### External start
+* 当程序闪烁信号使用设置为启用：如果在有外部启动输入的情况下程序闪烁信号处于开启状态，则将读取程序选择位，并且读取的值将被确定为程序编号。
 
-This is used to start the robot in remote auto mode.
+![图51 当程序闪烁信号设置为 &amp;lt;启用&amp;gt; 的外部程序选择示意图](../../../_assets/image_438.png)
 
-
-
-#### External stop 
-
-This is used to stop the robot in remote auto mode.
-
-
-
-#### Selection of an external program 
-
-When the robot is externally started up, the timing of reading the program selection bit and determining it as an external program depends on whether to use the strobe signal.
-
-* When the program strobe signal use is set as enable: If the program strobe signal is on while there is an external startup input, the program selection bit will be read, and the read value will be determined as the program number.
-
-![Figure 51 Diagram of the Selection of an External Program When the Program Strobe Signal is Set as &amp;lt;Enable&amp;gt;](../../../_assets/image_438.png)
-
-* When the program strobe signal use is set as disable: After there is an external startup input, the program selection bit will be read, and if this value does not change for 90 ms, it will be determined as the program number.
+* 当程序闪烁信号使用设置为禁用：在有外部启动输入后，将读取程序选择位，如果此值在 90 ms 内未发生变化，将确定为程序编号。
 
 ![](../../../_assets/image_465.png)
 
+#### 程序选择位和二进制/离散（关 -> 二进制）
 
+程序选择位是输入外部启动信号时选择要执行的程序的信号组合。仅在当前在 TP 的头部或结束指向步骤时应用。当程序正在执行时，将执行程序至结束。
 
-#### Program selection bit and binary/discrete \(off -> binary\)
+二进制/离散信号是一个选项，用于确定程序选择位的解释，如果为 0，将被识别为二进制，如果为 1，将被识别为离散。
 
-The program selection bit is a combination of signals to select a program to execute when an external start signal is inputted. It is applied only when a step is pointed in Header or in the End currently in the TP. When a program is being executed, the program will be executed to the end.
-
-Binary/Discrete signal is an option that determines the interpretation of the program selection bit, and if it is 0, it will be recognized as binary, and if it is 1, it will be recognized as discrete.
-
-For example, if the program selection bit is set as follows, an example of JOB to execute according to the input is as follows.
+例如，如果程序选择位设置如下，则根据输入要执行的 JOB 示例如下。
 
 ![](../../../_assets/image_436.png)
 
+#### 外部重置
 
-
-#### External reset
-
-This function is used to perform the same operation as executing the R0 step counter reset function from the teach pendant by an external signal. When the robot is starting up, this function will not operate. If this function operates normally, the execution position will move to the beginning of the program, and the occurrence status of various errors or warnings will be cleared. Refer to "[8.2 R0 for Resetting the Step Counter](../../../8-r-code/2-r0.md)" for information on this function.
+此功能用于通过外部信号执行与从教学挂钩执行 R0 步骤计数器重置功能相同的操作。当机器人启动时，此功能将不会操作。如果此功能正常操作，执行位置将移动到程序的开头，并且各种错误或警告的发生状态将被清除。有关此功能的信息，请参考 "[8.2 R0 重置步骤计数器](../../../8-r-code/2-r0.md)"。
 
 #### 
 
-#### Low speed command
+#### 限速指令
 
-This function is used to limit the robot moving speed to within the safe speed \(250 mm/s\) by an external signal.
+此功能用于通过外部信号将机器人移动速度限制在安全速度 \(250 mm/s\) 以内。
 
+#### 碰撞传感器
 
+此功能用于检测机器人的碰撞并停止机器人。结合在 `[System - 1: User Environment - 6: Collision Sensor]` 菜单中的设置，将确定停止机器人的条件和信号逻辑。
 
-#### Collision sensor
+#### 错误/警告信号清除
 
-This function is used to detect the collision of the robot and stop the robot. In conjunction with the settings in the `[System - 1: User Environment - 6: Collision Sensor]` menu, conditions and signal logic for stopping the robot will be determined.
-
-
-
-#### Error/Warning signal clearing
-
-This function is used to clear the occurrence status of various errors and warnings by an external signal. 
+此功能用于通过外部信号清除各种错误和警告的发生状态。
 
 #### 
 
-#### Joystick mode
+#### 操纵杆模式
 
-This function is used to manually jog the robot. It is generally used in LCD macro inspection equipment. Refer to a separate function manual for using the function.
+此功能用于手动操控机器人。一般在 LCD 宏检验设备中使用。有关使用该功能的详细手册，请参阅单独的功能手册。
 
+#### 门开关
 
+此功能用于在安全围栏的门打开时停止机器人移动。
 
-#### Door switch
+#### 屏幕保护程序禁用
 
-This function is used to stop the robot in movement when the door of the safety fence is opened.
+如果教学挂钩没有操作，当在 `[service - 11: Teach Pendant Option] ([service  - 11: Teach Pendant Option])` 菜单中设置的屏幕关闭时间到期时，教学挂钩将切换到屏幕保护状态。此功能用于通过外部信号打开教学挂钩的屏幕。
 
+#### 外部电机开启
 
+此功能用于从外部操作面板开启电机。
 
-#### Screen saver deactivation
+#### 外部电机关闭
 
-If the teach pendant is not operated, the teach pendant will switch to the screen saver state when the screen off time set in the `[service  - 11: Teach Pendant Option]` menu has elapsed. This function is used to turn on the screen of the teach pendant by an external signal.
-
-
-
-#### External motor on
-
-This function is used to turn on the motor from an external operation panel.
-
-
-
-#### External motor off
-
-This function is used to turn off the motor from an external operation panel.
-
-
+此功能用于从外部操作面板关闭电机。
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/6-output-signal-assign.md)
-# 7.3.2.6 Output Signal Assignment
+# 7.3.2.6 输出信号分配
 
-Event information or status information that occurred in the controller can be transmitted to the outside through the controller output signal. The method of assigning output signals to the information to be transmitted to the outside is as follows.
+在控制器中发生的事件信息或状态信息可以通过控制器输出信号传送到外部。将输出信号分配给要传送到外部的信息的方法如下。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 4: Output Signal Assign-Main task` menu. 
+1.	触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 4: 输出信号分配-主任务 (2: 控制参数  - 2: 输入/输出信号设置  - 4: 输出信号分配-主任务)` 菜单。
 
-2.	After inputting the output signal number in the information item, touch the `[OK]` button.
+2.	在信息项中输入输出信号号码后，触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-outsignal-assign_eng.png)
 
-
-
-* `[Reset All]`: You can reset the numbers of the output signals assigned to all information items.
-*  `[Reset One]`: You can reset the number of the output signal assigned to the selected information item. 
+* `[Reset All]`: 您可以重置分配给所有信息项的输出信号的号码。
+*  `[Reset One]`: 您可以重置分配给选定信息项的输出信号的号码。 
 * 
-  `[Reset Channel]`: You can reset the input channel of the output signal assigned to the information item \(0-16: digital signal\)
+  `[Reset Channel]`: 您可以重置分配给信息项的输出信号的输入通道 \(0-16: 数字信号\)
 
 * 
-  `[Previous Task]`/`[Next Task]`: You can move to the previous or next task screen.
+  `[Previous Task]`/`[Next Task]`: 您可以移动到上一个或下一个任务屏幕。
 
 * 
-  `[S]`: You can designate a system signal when using the remote control through a system input signal. The system signal is in the form of "s+number," which combines the letter s with the signal number. For example, you can set the system signal 49 as s49.
-
-
-
-
-
-
+  `[S]`: 您可以在通过系统输入信号使用遥控器时指定系统信号。系统信号形式为 "s+数字"，将字母 s 与信号号码组合。例如，您可以将系统信号 49 设置为 s49。
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/7-output-signal-set-info.md)
-# 7.3.2.7 Output Signal Setting Information
+# 7.3.2.7 输出信号设置信息
 
-#### Remote mode
+#### 远程模式
 
-With the mode switch of the teach pendant selected to remote \(![](../../../_assets/sb-remote.png)\), the signal set in the input signal assign section should be inputted in the state of on in order to activate the remote state. This function is used to output the state to the outside. 
+当教学挂件的模式开关选择为远程 \(![](../../../_assets/sb-remote.png)\) 时，应在信号输入分配部分设置输入信号为“打开”状态，以激活远程状态。此功能用于将状态输出到外部。
 
+#### 手动 \(教学\) 模式
 
+此功能用于将控制器的操作模式为手动的状态输出到外部。
 
-#### Manual \(Teach\) mode
+#### 自动 \(回放\) 模式
 
-This function is used to output the state to the outside that the operation mode of the controller is manual.
+此功能用于将控制器的操作模式为自动的状态输出到外部。
 
+#### 电机开启
 
+当通过输入电机开启信号为每个电机供电并准备好驱动时，此功能用于将状态输出到外部。
 
-#### Auto \(Playback\) mode
+#### 机器人就绪 OK
 
-This function is used to output the state to the outside that the operation mode of the controller is automatic.
+当当前控制器状态满足在 `[system - 2: Control Parameter - 4: Robot Ready Condition] ([system  - 2: Control Parameter - 4: Robot Ready Condition])` 菜单中设定的所有条件时，此功能用于将状态输出到外部。
 
+#### 机器人启动
 
+当机器人通过手动模式的前进/后退操作启动或通过自动模式的启动信号输入启动时，此功能用于将此状态输出到外部。
 
-#### Motor on 
+#### 机器人移动
 
-When power is supplied to each motor by the input of the motor on signal and the driving is ready, this function is used to output the state to the outside.
+当机器人正在移动时，此功能用于将此状态输出到外部。
 
+#### 机器人停止 \(保持\)
 
+当机器人停止时，与启动信号的输出相反，此功能用于将此状态输出到外部。
 
-#### Robot ready OK
+#### 紧急停止
 
-When the current controller status satisfies all conditions set in the `[system  - 2: Control Parameter - 4: Robot Ready Condition]` menu, this function is used to output the state to the outside. 
+当来自教学挂件前面或控制器的紧急停止按钮的输入信号被输入时，此功能用于将状态输出到外部。
 
+#### 紧急停止 \(外部\)
 
+此功能用于将来自连接到系统板的外部紧急停止设备的信号输出到外部。
 
-#### Robot starting
+#### 低速模式
 
-When the robot is started by the step forward/backward operation in manual mode or by the input of the start signal in automatic mode, this function is used to output this state to the outside.
+当在信号输入分配部分为低速命令设置的信号打开时，或当机器人在手动模式下以安全速度运行时，此功能用于将此状态输出到外部。
 
+#### 程序结束
 
+当在作业程序中执行结束循环时，此功能用于将此状态输出到外部。
 
-#### Robot moving
+#### 整体错误
 
-When the robot is moving, this function is used to output this state to the outside.
+控制器中发生的错误分为由系统错误引起的错误和由用户操作失误引起的错误。当因为系统错误而发生错误时，此功能用于将此状态输出到外部。由系统错误引起的错误范围为 1 到 999 和 2000 到 7999。
 
+#### 操作错误
 
+控制器中发生的错误分为由系统错误引起的错误和由用户操作失误引起的错误。当因为用户操作失误而发生错误时，此功能用于将此状态输出到外部。供参考，由系统错误引起的错误范围为 1 到 999 和 2000 到 7999。
 
-#### Robot stop \(Hold\)
+#### 警告
 
-When the robot is stopped, contrary to the output of the start signal, this function is used to output this state to the outside.
+当控制器中发生警告时，此功能用于将此状态输出到外部。
 
+#### 碰撞传感器
 
+当在信号输入分配部分设定的碰撞传感器信号输入打开，并确认机器人发生碰撞时，此功能用于将此状态输出到外部。
 
-#### Emergency stop
+#### 步骤设定警告
 
-When there is an input signal from the emergency stop button mounted on the front of the teach pendant or of the controller is inputted, this function is used to output the state to the outside.
+在自动模式下，如果当前选择的光标位置与之前执行的位置不同，可能会有危险。此功能用于将此状态输出到外部。
 
+#### 联锁异常警告
 
+当作业程序的 wait 语句中的等待时间超过在 `[System - 2: Control Parameter - 1: Control Environment Setting]` 菜单中的 `[Interlock Abnormal Time]` 选项设定的时间时，此功能用于将此状态输出到外部。
 
-#### Emergency stop \(External\)
+错误/警告输出位，错误/警告输出选择和错误/警告输出闪烁
 
-This function is used to output to the outside the signal from an external emergency stop device connected to the system board. 
-
-
-
-#### Low speed mode 
-
-When the signal set for the low speed command in the input signal assign section is turned on or when the robot operates at a safe speed in manual mode, this function is used to output this state to the outside.
-
-
-
-#### Program end 
-
-When the end cycle is performed in the job program, this function is used to output this state to the outside.
-
-
-
-#### Overall error
-
-Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user's mistakes in operation. When an error occurs because of a system error, this function is used to output this state to the outside. The errors caused by system errors range from 1 to 999 and 2000 to 7999.
-
-
-
-#### Operation error
-
-Errors occurring in the controller are divided into the errors caused by system errors and the errors caused by the user's mistakes in operation. When an error occurs because of the user's mistakes in operation, this function is used to output this state to the outside. For information, the errors caused by system errors range from 1 to 999 and 2000 to 7999.
-
-
-
-#### Warning
-
-When a warning occurs in the controller, this function is used to output this state to the outside.
-
-
-
-#### Collision sensor 
-
-When the input of the collision sensor signal set in the input signal assign section is turned on and it is confirmed that a collision has occurred in the robot, this function is used to output this state to the outside.
-
-
-
-#### Step set warning 
-
-In automatic mode, it can be dangerous if the currently selected position of the cursor is different from the position in which the execution was performed previously. This function is used to output this state to the outside.
-
-
-
-#### Interlock abnormal warning
-
-When the waiting time in the wait statement of the job program exceeds the time set in the `[Interlock Abnormal Time]` option in the `[System - 2: Control Parameter - 1: Control Environment Setting]` menu, this function is used to output this state to the outside.
-
-Error/Warning output bit, Error/Warning output selection and Error/Warning output strobe
-
-For the error/warning output bit, error/warning output strobe, overall abnormality, operation error, and warning occurrence signals, refer to the following sequence.
+对于错误/警告输出位、错误/警告输出闪烁、整体异常、操作错误和警告发生信号，请参考以下顺序。
 
 ![Figure 53 16Bit Output](../../../_assets/image_456.png)
 
-#### External reset ack
+#### 外部复位确认
 
-When the external reset signal set in the input signal assign section is turned on, this function is used to output this state to the outside. This signal will be turned on for 200 ms and then turned off automatically.
+当在信号输入分配部分设定的外部复位信号打开时，此功能用于将此状态输出到外部。该信号将持续 200 毫秒，然后自动关闭。
 
+#### 程序回显位
 
+当通过在信号输入分配部分设定的程序选择位选择程序时，此功能用于将所选程序编号输出到外部。
 
-#### Program echo bit 
+#### 程序确认
 
-When a program is selected by the program selection bit set in the input signal assign section, this function is used to output the selected program number to the outside. 
+当机器人通过在远程模式下输入外部启动信号启动时，此功能用于将状态输出到外部。该信号将持续 200 毫秒，然后自动关闭。
 
+#### 弧焊异常
 
+当发生与弧焊相关的错误时，此功能用于将此状态输出到外部。
 
-#### Program ack 
+#### 弧沉积警告
 
-When the robot is started by an input of the external startup signal in remote mode, this function is used to output the state to the outside. The signal will be turned on for 200 ms and then turned off automatically.
+当在弧焊期间发生焊接沉积时，此功能用于将此状态输出到外部。该信号将持续 200 毫秒，然后自动关闭。
 
+#### 机器人锁定状态 \(有效=开\)
 
+此功能用于将 `[Condition Setting]` 中的机器人锁定设置状态输出到外部。
 
-#### Arc welding abnormal
+#### 现场总线异常，和现场总线空闲
 
-When an error related to arc welding occurs, this function is used to output this status to the outside.
+当使用 CC-LINK 和 DeviceNet 等现场总线通信板时，此功能用于将通信状态输出到外部。
 
+#### 电池 \(备份，编码器\) 电压下降
 
+当备份电池的电压下降以维持安装在主板上的 SRAM 状态或编码器电池的电压下降以维持安装在每个电机上的编码器值时，此功能用于将此状态输出到外部。
 
-#### Arc deposition warning
+#### 扭矩监测
 
-When welding deposition occurs during arc welding, this function is used to output this state to the outside. This signal will be turned on for 200ms and then turned off automatically.
+此功能用于将施加在机器人六个轴上的扭矩值输出到外部。将输出到外部的扭矩值是1/2倍率的%值。
 
+#### 润滑剂注入警报
 
+此功能用于将需要注入润滑剂的状态输出到外部。
 
-#### Robot lock state \(Valid=ON\)
+#### 平均负载因子异常警报
 
-This function is used to output to the outside the robot lock setting status in `[Condition Setting]`.
-
-
-
-#### Field bus abnormal, and field bus idle
-
-When a fieldbus communication board such as CC-LINK and DeviceNet is used, this function is used to output the communication state to the outside.
-
-
-
-#### Battery \(backup, encoder\) voltage drop
-
-When there is a voltage drop in the backup battery to maintain the state of the SRAM installed on the main board or a voltage drop in the encoder battery to maintain the value of the encoder installed on each motor, this function is used to output to the outside.
-
-
-
-#### Torque monitoring
-
-This function is used to output to the outside the torque value that is applied to the six axes of the robot. The torque value that will be outputted to the outside is a % value in the multiplier of 1/2.
-
-
-
-#### Grease injection alarm
-
-This function is used to output to the outside the condition that requires grease injection.
-
-
-
-#### Average load factor abnormality alarm 
-
-This function is used to output to the outside the status regarding whether the robot has exceeded the average load factor during operation.
-
-
-
-
-
-
+此功能用于将机器人在操作过程中是否超过平均负载因子的状态输出到外部。
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)
-# 7.3.2.8 Key Signal Output
+# 7.3.2.8 键信号输出
 
-`Key Signal Output` is a function that allows you to assign a desired variable to an F-key and set the value of that variable to 1 or 0 through button operation.
-It is mainly used to turn I/O output signals ON or OFF by operating an F-key to which an output variable has been assigned.
-(All types of variables can be specified, including general variables, aliases, and output variables.)
+`键信号输出 (Key Signal Output)` 是一个功能，允许您将所需变量分配给 F-key，并通过按键操作将该变量的值设置为 1 或 0。
+它主要用于通过操作已分配输出变量的 F-key 来开启或关闭 I/O 输出信号。
+（可以指定所有类型的变量，包括一般变量、别名和输出变量。）
 
-You can open the `Key Signal Output` buttons by pressing `[R4: User Key]` on the right side of the HOME screen.
-If no settings have been made, all buttons will be empty.
+您可以通过在 HOME 屏幕右侧按下 `[R4: User Key]` 打开 `键信号输出 (Key Signal Output)` 按钮。
+如果未进行任何设置，所有按钮将为空。
 
-You can configure the buttons as follows:
+您可以按如下方式配置按钮：
 
-1. Touch the `[F2: system] - 2: Control parameter - 2: Input/Output signal setting - 5: Key signal output` menu. 
+1. 触摸菜单 `[F2: 系统] - 2: 控制参数 - 2: 输入/输出信号设置 - 5: 关键信号输出 ([F2: system] - 2: Control parameter - 2: Input/Output signal setting - 5: Key signal output)`。
 
-2. Set the function name to be displayed on the button and options, then touch the `[F7: OK]` button.
+2. 设置要在按钮上显示的功能名称和选项，然后触摸 `[F7: 确认] ([F7: OK])` 按钮。
 
 ![](../../../_assets/tp630/ctrl-key-outsignal_eng.png)
 
-* `title`: Name displayed on the button
-* `on-var`: When a variable name is specified, the value 1 is assigned to the variable at the moment the button is turned ON.
-* `off-var`: When a variable name is specified, the value 1 is assigned to the variable at the moment the button is turned OFF.
-* `toggle`:
-  + Checked: The button toggles between ON and OFF each time it is pressed.
-  + Unchecked: The button turns ON when pressed and turns OFF when released.
-* `Permit on auto mode`:
-  + Checked: This function operates even in Auto mode.
-  + Unchecked: This function does not operate in Auto mode.
-* `OFF on auto mode`: When switching to Auto mode, all variables set for this function are turned OFF.
+* `标题 (title)`：显示在按钮上的名称
+* `on-var`：当指定变量名称时，按钮打开时该变量的值被分配为 1。
+* `off-var`：当指定变量名称时，按钮关闭时该变量的值被分配为 1。
+* `切换 (toggle)`：
+  + 已选中：每次按下按钮时，它在开启和关闭之间切换。
+  + 未选中：按钮按下时开启，释放时关闭。
+* `允许 在 自动 模式 (Permit on auto mode)`：
+  + 已选中：此功能即使在自动模式下也会操作。
+  + 未选中：此功能在自动模式下不操作。
+* `关闭 开启 自动 模式 (OFF on auto mode)`：切换到自动模式时，为此功能设置的所有变量将被关闭。
 
 {% hint style="info" %}
-For `on-var` and `off-var`, for example, if you enter 3.5 and press `[ENTER]`, fb3.do5 is entered.
-If you enter 5 and press `[ENTER]`, do5 is entered.
-Alternatively, you can use the F-keys [fb], [do], and [so] at the bottom of the screen to enter values.
+对于 `on-var` 和 `off-var`，例如，如果您输入 3.5 并按下 `[ENTER]`，则 fb3.do5 被输入。
+如果您输入 5 并按下 `[ENTER]`，则 do5 被输入。
+另外，您可以使用屏幕底部的 F-keys [fb]、[do] 和 [so] 来输入值。
 {% endhint %}
 
-3. Open the `Key Signal Output` buttons and touch the registered F-key together with the `[SHIFT]` key to verify that the settings have been applied correctly.
+3. 打开 `键信号输出 (Key Signal Output)` 按钮，并按住 `[SHIFT]` 键触摸注册的 F-key，以验证设置是否已正确应用。
 
 ![](../../../_assets/tp630/rbt-userkey-keysig_eng.png)
 
 {% hint style="info" %}
-You can register the desired output signal with a button in the user key area of ${cont_model} teach pendant. For details, refer to "[2.7.2.1 Key Signal Output Function Area](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)".
+您可以在 ${cont_model} 教导挂件的用户键区域用按钮注册所需的输出信号。有关注，请参考 " [2.7.2.1 键信号输出功能区域](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)"。
 {% endhint %}
-
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/9-dio-block-assign.md)
-# 7.3.2.9 FB Block Allocation
+# 7.3.2.9 FB 块分配
 
-You can set the method of using the controller's general input/output signals.
+您可以设置控制器的一般输入/输出信号的使用方法。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 6: FB Block Allocation` menu.
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 6: FB 块分配 (2: 控制参数 - 2: 输入/输出信号设置 - 6: FB 块分配)` 菜单。
 
-2.	Set the connection with the DIO block of the selected FB address, and then touch the `[OK]` button.
+2. 设置与所选 FB 地址的 DIO 块的连接，然后触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-dio-blockassign_eng.png)
 
 {% hint style="info" %}
-The available connection options are as follows:
+可用的连接选项如下：
 * [PCI Slot 1]
 * [PCI Slot 2]
 * [PCI Slot 3]
@@ -5658,22 +4924,16 @@ The available connection options are as follows:
 * [EtherNet/IP Scanner]
 * [User DIO]
 {% endhint %}
-
-
-
-
-
-
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/10-multi-signal-output.md)
-# 7.3.2.10 Multiple Signal Output
+# 7.3.2.10 多信号输出
 
-Output signals \(up to 16 signals\) can be created as a group, and data can be outputted through individual signals.
+输出信号（最多 16 个信号）可以作为一个组创建，数据可以通过各个信号输出。
 
-The data is in binary format and determines whether the output will be on or off. For example, the data to print do41 and do43 on the screen shown below is 0101 in binary \(5 in decimal\).
+数据以二进制格式表示，决定输出是打开还是关闭。例如，以下屏幕上显示 do41 和 do43 的数据是二进制的 0101（十进制的 5）。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  -7: Multiple Signal Output` menu
+1.	触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 7: 多信号输出 (2: 控制参数 - 2: 输入/输出信号设置 - 7: 多信号输出)` 菜单
 
-2.	Set the name, signals, and strobe of the output signal group. 
+2.	设置输出信号组的名称、信号和脉冲。
 
     ![](../../../_assets/tp630/ctrl-multi-outsignal_eng.png)
 
@@ -5684,8 +4944,8 @@ The data is in binary format and determines whether the output will be on or off
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -5694,15 +4954,11 @@ The data is in binary format and determines whether the output will be on or off
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information on the group selected from the output signal group
-          list. You can set the name, description, signal and strobe of the group.</p>
+        <p>所选输出信号组列表的详细信息。您可以设置该组的名称、描述、信号和脉冲。</p>
         <ul>
-          <li><b>[Reset All]/[Reset One]:</b> You can reset the set value of all signals
-            or of a selected signal to -1.</li>
-          <li><b>[Reset Channel]:</b> You can reset the output channel of the set signal
-            (0&#x2013;9: digital signals)</li>
-          <li><b>[Set Range]</b>: You can quickly set the signal by designating the
-            start and end signals.</li>
+          <li><b>[全部重置]/[单个重置]:</b> 您可以将所有信号的设置值或选定信号的设置值重置为 -1。</li>
+          <li><b>[重置通道]:</b> 您可以重置设置信号的输出通道（0&#x2013;9: 数字信号）</li>
+          <li><b>[设置范围]</b>: 您可以通过指定起始和结束信号快速设置信号。</li>
         </ul>
       </td>
     </tr>
@@ -5712,51 +4968,40 @@ The data is in binary format and determines whether the output will be on or off
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]:</b> You can save the edited content.</li>
-          <li><b>[+]/[-]:</b> You can add a new output signal group or delete an output
-            signal group.</li>
-          <li>This shows a list of output signal groups. Selecting a group name allows
-            you to view and edit details.</li>
-          <li><b>[Copy Page/Paste Page]:</b> You can copy the output signal group information
-            and paste it to another group.</li>
-          <li>Select the name of the group to be copied from the list, touch the <b>[Copy Page]</b> button,
-            select the name of the group to which the value is to be applied, and touch
-            the <b>[Paste Page]</b> button.</li>
+          <li><b>[确定]:</b> 您可以保存编辑的内容。</li>
+          <li><b>[+]/[-]:</b> 您可以添加新的输出信号组或删除输出信号组。</li>
+          <li>此处显示输出信号组的列表。选择组名称可查看和编辑详细信息。</li>
+          <li><b>[复制页面/粘贴页面]:</b> 您可以复制输出信号组信息并粘贴到另一个组。</li>
+          <li>从列表中选择要复制的组名称，触摸 <b>[复制页面]</b> 按钮，选择要应用值的组名称，然后触摸 <b>[粘贴页面]</b> 按钮。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
+例如，当按照上面屏幕中的设置执行作业程序时，操作将如下。
 
-![Figure 54 Example of Job Program Execution](../../../_assets/image_429.png)
+![图51 作业程序执行示例](../../../_assets/image_429.png)
 
-When the robot starts from S1 toward S2 and the accuracy of S2 is OK, the strobe signal will be outputted together with the signal of the designated group. The strobe signal will be turned off after 200 ms. \(The strobe signal is a pulse signal of 200 ms.\)
-
-
+当机器人从 S1 向 S2 移动，且 S2 的准确性为 OK 时，脉冲信号将与指定组的信号一起输出。脉冲信号将在 200 ms 后关闭。（脉冲信号为 200 ms 的脉冲信号。）
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/11-multi-signal-input.md)
-# 7.3.2.11 Multiple Signals Input
+# 7.3.2.11 多信号输入
 
-Input signals \(up to 16 signals\) can be created as a group, and data can be acquired through individual signals.
+输入信号（最多16个信号）可以作为一个组创建，可以通过单个信号获取数据。
 
-The data is in binary format and will be determined by the input on or off. For example, if di41 and di43 are on and all other signals are off, the data will be 0101 \(5 in decimal\).
+数据采用二进制格式，通过输入的开或关来确定。例如，如果di41和di43为开，所有其他信号为关，则数据将为0101（十进制中的5）。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 8: Multiple Signal Input` menu.
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 8: 多信号输入 (2: 控制参数 - 2: 输入/输出信号设置 - 8: 多信号输入)` 菜单。
 
-2.	Set the name, signals, and strobe of the input signal group.
+2. 设置输入信号组的名称、信号和波特率。
 
     ![](../../../_assets/tp630/ctrl-multi-insignal_eng.png)
-
-
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -5765,15 +5010,11 @@ The data is in binary format and will be determined by the input on or off. For 
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information on the group selected from the input signal group
-          list. You can set the name, description and signal of the group.</p>
+        <p>有关从输入信号组列表中选择的组的详细信息。您可以设置组的名称、描述和信号。</p>
         <ul>
-          <li><b>[Reset All]</b>/<b>[Reset One]</b>: You can reset the set value of
-            all signals or of a selected signal to -1.</li>
-          <li><b>[Reset Channel]</b>: You can reset the input channel of the set signal
-            (0&#x2013;9: digital signals)</li>
-          <li><b>[Set Range]</b>: You can quickly set the signal by designating the
-            start and end signals.</li>
+          <li><b>[重置所有]</b>/<b>[重置一个]</b>: 您可以将所有信号或选定信号的设置值重置为-1。</li>
+          <li><b>[重置通道]</b>: 您可以重置设置信号的输入通道（0–9：数字信号）</li>
+          <li><b>[设置范围]</b>: 您可以通过指定开始和结束信号快速设置信号。</li>
         </ul>
       </td>
     </tr>
@@ -5783,59 +5024,52 @@ The data is in binary format and will be determined by the input on or off. For 
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the edited content.</li>
-          <li>[+]/[-]:You can add a new input signal group or delete an input signal
-            group.</li>
-          <li>This shows a list of input signal groups. Selecting a group name allows
-            you to check and edit details.</li>
-          <li><b>[Copy Page]</b>/<b>[Paste Page]: </b>You can copy the input signal
-            group information and paste it to another group.
-            <br />Select the name of the group to be copied from the list, touch the <b>[Copy Page]</b> button,
-            select the name of the group to which the value is to be applied, and touch
-            the <b>[Paste Page] </b>button.</li>
+          <li>[确定]: 您可以保存编辑的内容。</li>
+          <li>[+]/[-]:您可以添加一个新的输入信号组或删除一个输入信号组。</li>
+          <li>这显示输入信号组的列表。选择一个组名称可以检查和编辑详细信息。</li>
+          <li><b>[复制页面]</b>/<b>[粘贴页面]: </b>您可以复制输入信号组信息并将其粘贴到另一个组中。
+            <br />从列表中选择要复制的组名称，触摸<b>[复制页面]</b>按钮，选择要应用值的组名称，然后触摸<b>[粘贴页面]</b>按钮。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
+例如，当按照上面屏幕中的设置配置的作业程序执行时，操作将如下所示。
 
-![Figure 55 Example of Job Program Execution](../../../_assets/image_407.png)
+![图55 作业程序执行示例](../../../_assets/image_407.png)
 
-After starting from S1 toward S2, the robot executes the wait statement. If the wait condition is satisfied before the accuracy of S2 is ok, the robot will move to the path in red. If this is not the case, the robot will wait until the wait condition is satisfied.
-
-
+从S1开始到S2，机器人执行等待语句。如果在S2的准确性尚可之前满足等待条件，机器人将移动到红色路径。如果不是这样，机器人将等待直到满足等待条件。
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/12-fn-block.md)
-# 7.3.2.12 fn block allocation
+# 7.3.2.12 fn 块分配
 
-You can define fn objects by specifying specific areas of fb objects.
-If the ${cont_model} controller is a fieldbus master, and there are multiple fieldbus slave devices, you can set the areas of each slave device to each fn object to handle these slaves intuitively.
+您可以通过指定 fb 对象的特定区域定义 fn 对象。
+如果 ${cont_model} 控制器是现场总线主设备，并且有多个现场总线从设备，您可以将每个从设备的区域设置为每个 fn 对象，以直观地处理这些从设备。
 
-The set fn objects can be used in the same way as the fb objects in the robot language and the embedded PLC.
+设置的 fn 对象可以在机器人语言和嵌入式 PLC 中像 fb 对象一样使用。
 
 ![](../../../_assets/io/io_fn.png)
 
 
-1. Select the menu `[2: Control Parameter - 2: Input/Output signal settings - 9: Fn block allocation]`.
+1. 选择菜单 `[2: 控制参数 - 2: 输入/输出信号设置 - 9: Fn 块分配]`。
 
-2. If it's still before the fn setup, the screen is empty. Click the + button on the right to add a new fn object. The fn index number automatically increases from 0 to 63.
+2. 如果还没有进行 fn 设置，屏幕是空的。单击右侧的 + 按钮以添加新的 fn 对象。fn 索引编号会从 0 自动增加到 63。
 
-3. To change the fn index number, type the new name and click the `[F7: OK]` or `SHIFT+[F7:Apply]` button.
+3. 要更改 fn 索引编号，输入新名称并单击 `[F7: 确认] ([F7: OK])` 或 `SHIFT+[F7:应用]` 按钮。
   ![](../../../_assets/io/io_fn_rename.png)
 
-4. For each fn object, set the area of the input signal and the output signal separately.
+4. 对于每个 fn 对象，单独设置输入信号和输出信号的区域。
 
-5. In the `fb#` column, set the index number (0-9) of fb object on which place the fn area.
+5. 在 ` (fb#)` 列中，设置放置 fn 区域的 fb 对象的索引编号 (0-9)。
 
-6. In the `byte base` column, specify the byte index to start the fn region within the fb object.
+6. 在 `字节基 (byte base)` 列中，指定在 fb 对象内启动 fn 区域的字节索引。
 
-7. In the `N.bytes` column, specify the size of the fn region in bytes.
+7. 在 `字节数 (N.bytes)` 列中，指定 fn 区域的大小（以字节为单位）。
 
 
 &nbsp;  
 
-For example, if set as shown in the figure below;
+例如，如果设置如下图所示；
 
 ![](../../../_assets/io/io_fn_fn0.png)
 
@@ -5843,7 +5077,7 @@ For example, if set as shown in the figure below;
 
 &nbsp;  
 
-It is mapped as shown in the table below.
+则映射如表格所示。
 
 <table>
   <thead>
@@ -5855,7 +5089,7 @@ It is mapped as shown in the table below.
   </thead>
   <tbody>
     <tr>
-      <td>Input</td>
+      <td>输入</td>
       <td>
         fn0.dib[0~2]<br>
         fn0.xb[0~2]
@@ -5866,7 +5100,7 @@ It is mapped as shown in the table below.
       </td>
     </tr>
     <tr>
-      <td>Output</td>
+      <td>输出</td>
       <td>
         fn0.dob[0~3]<br>
         fn0.yb[0~3]
@@ -5889,7 +5123,7 @@ It is mapped as shown in the table below.
   </thead>
   <tbody>
     <tr>
-      <td>Input</td>
+      <td>输入</td>
       <td>
         -
       </td>
@@ -5898,7 +5132,7 @@ It is mapped as shown in the table below.
       </td>
     </tr>
     <tr>
-      <td>Output</td>
+      <td>输出</td>
       <td>
         fn3.dob[0~4]<br>
         fn3.yb[0~4]
@@ -5911,28 +5145,25 @@ It is mapped as shown in the table below.
   </tbody>
 </table>
 
-You can open the fn input / output monitoring panel to view or manually output the current value of the dio or xy relay for each fn object. See the link below for more information.
+您可以打开 fn 输入/输出监控面板，以查看或手动输出每个 fn 对象的 dio 或 xy 中继的当前值。有关更多信息，请参见以下链接。
 
-[6.8 fn input, fn output](../../../6-monitoring/2-io/5-fn-io.md)
-
+[6.8 fn 输入，fn 输出](../../../6-monitoring/2-io/5-fn-io.md)
 [__SOURCE](7-system/3-control-parameter/3-serial-port.md)
-# 7.3.3 Serial Port
+# 7.3.3 串口
 
-You can set the information required for serial port communication.
+您可以设置串口通信所需的信息。
 
-1.	Touch the `[2: Control Parameter  - 3: Serial port]` menu.
+1. 触摸`[2: 控制参数 - 3: 串口] ([2: 控制参数  - 3: 串口])`菜单。
 
-2.	Set the parameters for each serial port.
+2. 设置每个串口的参数。
 
     ![](../../_assets/tp630/ctrl-serial.png)
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -5940,8 +5171,7 @@ You can set the information required for serial port communication.
       <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Detailed information on the port selected from the serial port list. You
-        can set the port name and parameter values.</td>
+      <td style="text-align:left">从串口列表中选择的端口的详细信息。您可以设置端口名称和参数值。</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -5949,18 +5179,18 @@ You can set the information required for serial port communication.
       </td>
       <td style="text-align:left">
         <ul>
-          <li><strong>Serial Port List</strong>: Select a port name to view and edit its detailed information.</li><li><strong>[OK]</strong>: Saves the changes.</li>
-          <li><strong>[+]/[-]</strong>: Adds a new serial port or deletes an existing one.</li>
+          <li><strong>串口列表</strong>：选择一个端口名称以查看和编辑其详细信息。</li><li><strong>[确定]</strong>：保存更改。</li>
+          <li><strong>[+]/[-]</strong>：添加新的串口或删除现有的串口。</li>
         </ul>
       </td>
     </tr>
-        <tr>
+    <tr>
       <td style="text-align:left">
         <img src="../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
-          Performs a loopback test. Connect the RX and TX pins of the serial port to check whether communication is functioning properly.
+          执行环回测试。将串口的RX和TX引脚连接以检查通信是否正常。
         </ul>
       </td>
     </tr>
@@ -5968,38 +5198,30 @@ You can set the information required for serial port communication.
 </table>
 
 {% hint style="info" %}
-Refer to the following information when setting the usage of the serial port.
+设置串口使用时请参考以下信息。
 
-* Sensor: For receiving the shift data by accessing the vision sensor
-* LVS: For connecting with the laser vision sensor for the weld line follow-up
-* MODBUS: The MODBUS slave function of the ${cont_model} controller
+* 传感器：通过访问视觉传感器接收位移数据
+* LVS：用于连接激光视觉传感器以跟踪焊接线
+* MODBUS：${cont_model}控制器的MODBUS从属功能
 {% endhint %}
-
-
-
-
 [__SOURCE](7-system/3-control-parameter/4-robot-ready-cond.md)
-# 7.3.4 Robot Ready Condition
+# 7.3.4 机器人准备条件
 
-When the robot ready is completed, set the conditions for signal output in the `[Robot Ready OK]` item of the `system - 2: Control Parameter  - 2: Input/Output Signal Setting - 4: Output Signal Assign` menu.
+当机器人准备完成时，在 `[Robot Ready OK]` 项中设置信号输出的条件，位于 `系统 - 2: 控制参数 - 2: 输入/输出信号设置 - 4: 输出信号分配 (系统 - 2: 控制参数 - 2: 输入/输出信号设置 - 4: 输出信号分配)` 菜单中。
 
-1.	Touch the `[2: Control Parameter  - 4: Robot Ready Condition]` menu. 
+1. 点击 `[2: 控制参数 - 4: 机器人准备条件] ([2: 控制参数 - 4: 机器人准备条件])` 菜单。
 
-2.	After setting the robot ready condition, touch the `[OK]` button.
+2. 设置完机器人准备条件后，点击 `[OK]` 按钮。
 
     ![](../../_assets/tp630/ctrl-robot-readycond_eng.png)
-
-
-
-
 [__SOURCE](7-system/3-control-parameter/5-home-position.md)
-# 7.3.5 Home Position Registration
+# 7.3.5 家庭位置注册
 
-By registering the robot's arbitrary posture as the home position, you can allow the home position signal to be outputted to the output signal field when the robot enters this position. The home position can be designated based on the posture of each axis, and up to sixteen postures can be registered and used, and the margin for each axis can be additionally set.
+通过将机器人的任意姿态注册为家位置，您可以在机器人进入此位置时将家位置信号输出到输出信号域。家位置可以根据每个轴的姿态指定，最多可以注册和使用十六个姿态，并且每个轴的余量可以另外设置。
 
-1.	Touch the `[2: Control Parameter  - 5: Registration of Home Position]` menu.
+1.	触摸 `[2: 控制参数 - 5: 家庭位置注册] ([2: 控制参数 - 5: 家庭位置注册])` 菜单。
 
-2.	Select the home position tab, and then set the use, output signal, axis angle, and range.
+2.	选择家位置标签，然后设置使用、输出信号、轴角和范围。
 
     ![](../../_assets/tp630/ctrl-home-position_eng.png)
 
@@ -6008,8 +5230,8 @@ By registering the robot's arbitrary posture as the home position, you can allow
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -6018,18 +5240,13 @@ By registering the robot's arbitrary posture as the home position, you can allow
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information on the home position selected in the tab. You can
-          set the use, output signal, axis angle and range, and description.</p>
+        <p>在选项卡中选择的家位置的详细信息。您可以设置使用、输出信号、轴角和范围及描述。</p>
         <ul>
-          <li>[Use]: You can set whether to use.</li>
-          <li>[Output Signal]: You can input the output signal number.</li>
-          <li>[Axis Angle]/[Range]: You can input the axis angle and range of the robot
-            at the home position.</li>
-          <li>If the range is set to 0, home position inspection will not be performed
-            for the axis.</li>
-          <li>The range refers to a range that covers the + direction and - direction
-            of the home point. For example, if the range is set to 0.5, the output
-            range of the home position signal will be 1.</li>
+          <li>[使用]: 您可以设置是否使用。</li>
+          <li>[输出信号]: 您可以输入输出信号编号。</li>
+          <li>[轴角]/[范围]: 您可以输入机器人的轴角和家位置的范围。</li>
+          <li>如果范围设置为0，则不会对该轴进行家位置检查。</li>
+          <li>范围指的是覆盖家点的 + 方向和 - 方向的范围。例如，如果范围设置为0.5，则家位置信号的输出范围将为1。</li>
         </ul>
       </td>
     </tr>
@@ -6039,136 +5256,112 @@ By registering the robot's arbitrary posture as the home position, you can allow
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li><b>[Current Robot Pose]</b>: The axis angle and range of the current robot
-            posture will be automatically inputted.</li>
-          <li><b>[Program/Step]</b>: If you input the program and step number, the axis
-            angle and range of the relevant step will be automatically inputted.</li>
+          <li>`[确定]`: 您可以保存更改。</li>
+          <li><b>[当前机器人姿态]</b>: 当前机器人姿态的轴角和范围将被自动输入。</li>
+          <li><b>[程序/步骤]</b>: 如果您输入程序和步骤编号，则相关步骤的轴角和范围将被自动输入。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
-
 [__SOURCE](7-system/3-control-parameter/6-cordsys-reg/README.md)
-# 7.3.6 Coordinate System Registration
+# 7.3.6 坐标系统注册
 
-1.	Touch the `[2: Control Parameter  - 6: Coordinate Registration]` menu. Then, the coordinate system registration menu will appear. 
+1. 触摸 `[2: Control Parameter - 6: Coordinate Registration] ([2: Control Parameter  - 6: Coordinate Registration])` 菜单。然后，坐标系统注册菜单将出现。
 
-2.	By selecting the desired menu, you can set the coordinate system with respect to the user coordinate system or the stationary tool coordinate system.
+2. 通过选择所需的菜单，可以相对于用户坐标系统或静止工具坐标系统设置坐标系统。
 
     ![](../../../_assets/tp630/ctrl-coord-menu_eng.png)
-
-
-
-
 [__SOURCE](7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md)
-# 7.3.6.1 User Coordinate System
+# 7.3.6.1 用户坐标系统
 
-The user coordinate system is a coordinate system that is to be set at a position designated by the user. To use the user coordinate system, first, teach three reference steps that are needed to define the user coordinate system, and then register the user coordinate system by designating the taught program number and step order.
+用户坐标系统是一个坐标系统，可在用户指定的位置进行设置。要使用用户坐标系统，首先需要教导定义用户坐标系统所需的三个参考步骤，然后通过指定教导的程序编号和步骤顺序来注册用户坐标系统。
 
-Teach three reference steps by following the procedures below. The following procedure explains when the step order is specified as "OXY" (O: origin pose, X: axis pose, Y: plane pose).
+按照以下步骤教导三个参考步骤。以下程序解释了步骤顺序指定为“OXY”时的情况（O：原点姿态，X：轴姿态，Y：平面姿态）。
 
-![Figure 56 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
+![图56 定义用户坐标系统的三个参考步骤教学方法](../../../_assets/image_427.png)
 
+1. 定义用户坐标系统的原点：教导一个任意点。
 
-1.	Define the origin of the user coordinate system: Teach an arbitrary point.
+2. 定义用户坐标系统中的 X 轴：教导 X 轴线上的一个任意点，使得此点尽可能远离原点 200 mm。
 
-2.	Define the X axis in the user coordinate system: Teach an arbitrary point on the X-axis line in a way that the arbitrary point can be 200 mm as distant as possible from the origin.
-
-3.	Define the XY plane in the user coordinate system \(determine the Y-axis and Z-axis directions\): Teach an arbitrary point on the plane consisting of the X axis and Y axis at the point where the distance from the origin is 200 mm or more as possible.
+3. 定义用户坐标系统中的 XY 平面 \(确定 Y 轴和 Z 轴方向\)：教导在 X 轴和 Y 轴组成的平面上一个任意点，此点离原点的距离尽可能 200 mm 或以上。
 
 {% hint style="info" %}
-* When the teaching of the user coordinate system setting program is performed, the TCP should be set to the correct values. Check whether the tool data of the currently selected tool is inputted correctly. 
-* You can register up to 20 user coordinate systems.
-
-
+* 在进行用户坐标系统设置程序的教学时，TCP 应设置为正确值。检查当前选择工具的工具数据是否正确输入。
+* 您可以注册最多 20 个用户坐标系统。
 {% endhint %}
 
 {% hint style="warning" %}
-The cautions in recording the reference points for defining the coordinate system are as follows.
+记录用于定义坐标系统的参考点时的注意事项如下。
 
-* The reference 3 points should not exist on the same linear line.
-* The distance between the reference 3 points should not be too close to each other.
-* Subsequent steps after S3 will not have any effect on the coordinate system registration.
+* 参考 3 点不应位于同一条直线上。
+* 参考 3 点之间的距离不应太近。
+* S3 之后的后续步骤将不会对坐标系统注册产生影响。
 {% endhint %}
 
-The method to register the user coordinate system by designating the taught program number and step order is as follows.
+通过指定教导的程序编号和步骤顺序注册用户坐标系统的方法如下。
 
-1. Touch the `[2: Control Parameter  - 6: Coordinate System Registration  - 1: User Coordinate System]` menu.
+1. 点击 `[2: 控制参数 - 6: 坐标系统注册 - 1: 用户坐标系统] ([2: 控制参数 - 6: 坐标系统注册 - 1: 用户坐标系统])` 菜单。
 
-2. Go to the user coordinate system you want to register (you can create it with the "+" button).
-3. After specifying the program number and step order, press the [F1:JOB Calculation] button.
-4. The position of the calculated user coordinate system origin is displayed.
+2. 转到您想注册的用户坐标系统（可以使用“+”按钮创建）。
+3. 在指定程序编号和步骤顺序后，按下 [F1: JOB 计算] 按钮。
+4. 计算得到的用户坐标系统原点的位置将会显示。
 
     ![](../../../_assets/tp630/ctrl-user-coord_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align_assets
+      <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Detailed information on the coordinate system selected from the user coordinate
-        system list. You can set the coordinate system name and description, the
-        taught program number, step order and the origin pose based on base axis origin.</td>
+      <td style="text-align:left">从用户坐标系统列表中选择的坐标系统的详细信息。您可以设置坐标系统名称和描述、教导的程序编号、步骤顺序和基于基轴原点的原点姿态。</td>
     </tr>
     <tr>
-      <td style="text-align_assets
+      <td style="text-align:left">
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li><b>[+]/[-]</b>: You can add a new user coordinate system or delete a user
-            coordinate system.</li>
-          <li>A list of user coordinate systems. Selecting the coordinate system name
-            allows you to check and edit details.</li>
-          <li><b>[Copy Page]/[Paste Page]</b>: You can copy the user coordinate system
-            information and paste it into another coordinate system.
-            <br />After selecting the name of the coordinate system information to be copied
-            from the list, and then touching the <b>[Copy Page] </b>button, select the
-            name of the coordinate system to which the value is to be applied, and
-            then touch the <b>[Paste Page]</b> button.</li>
-          <li><b>[Calc.from job]</b>: You can calculate the user coordinate system based
-            on the taught program and step order to define the user coordinate system.
-            <br />If you touch the <b>[Calc. from job]</b> button after inputting the taught
-            program number in the<b> [Job no.]</b> option and step order, the origin of the
-            user coordinate system will be calculated.</li>
+          <li>`[OK]`：您可以保存更改。</li>
+          <li><b>[+]/[-]</b>：您可以添加新的用户坐标系统或删除用户坐标系统。</li>
+          <li>用户坐标系统列表。选择坐标系统名称可以查看和编辑详细信息。</li>
+          <li><b>[复制页面]/[粘贴页面]</b>：您可以复制用户坐标系统信息并粘贴到另一个坐标系统中。
+            <br />从列表中选择要复制的坐标系统信息名称，然后点击<b>[复制页面]</b>按钮，选择要将值应用到的坐标系统名称，再点击<b>[粘贴页面]</b>按钮。</li>
+          <li><b>[从作业计算]</b>：您可以基于教导的程序和步骤顺序计算用户坐标系统以定义用户坐标系统。
+            <br />如果在<b>[作业编号]</b>选项和步骤顺序中输入教导的程序编号后点击<b>[从作业计算]</b>按钮，将计算出用户坐标系统的原点。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
-
 [__SOURCE](7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)
-# 7.3.6.2 Stationary Tool Coordinate System
+# 7.3.6.2 静态工具坐标系统
 
-A robot tool is a tool attached to the front end of the robot. In general, robots perform operations using tools attached to the robot. A typical example is arc welding. The arc welding tool is usually attached to the front end of the robot and is used to perform welding on the externally fixed workpiece.
+机器人工具是附加在机器人前端的工具。一般来说，机器人使用附加在机器人的工具进行操作。一个典型的例子是弧焊。弧焊工具通常附加在机器人的前端，并用于对外部固定的工件进行焊接。
 
-On the other hand, in the case of a stationary tool, the tool is attached to the outside, not the robot. In this case, the robot handles the workpiece and places it on an externally fixed tool to operate. A typical operation using a stationary tool is the sealing operation. Normally, in the sealing operation, when the external tool discharges a certain amount of solvent required for sealing, the robot holds the workpiece and creates the required trajectory to operate.
+另一方面，在静态工具的情况下，工具是附加在外部，而不是机器人。在这种情况下，机器人处理工件并将其放置在外部固定的工具上进行操作。使用静态工具的典型操作是密封操作。通常，在密封操作中，当外部工具排放出一定量用于密封的溶剂时，机器人持有工件并创建所需的轨迹进行操作。
 
-![Figure 57 Example of a Sealing Operation](../../../_assets/tp630/stationary_crd_sealing_eng.png)
+![图57 密封操作示例](../../../_assets/tp630/stationary_crd_sealing_eng.png)
 
-To create the required trajectory, the robot performs linear \(L\) and circular \(C\) interpolations based on the externally attached tool, not based on the tool attached to itself. At this time, the stationary tool interpolation function will be used.
+为了创建所需的轨迹，机器人基于外部附加工具而不是基于自身附加的工具执行线性 \(L\) 和圆形 \(C\) 插值。这时，将使用静态工具插值功能。
 
-When the stationary tool interpolation function is used, even if the posture of the workpiece held by the robot is changed, the moving path of the stationary tool on the workpiece can maintain the linear lines and arcs. As such, the stationary tool interpolation function must always be used for an operation for which the moving path of the external tool is important.
+当使用静态工具插值功能时，即使机器人持有的工件的姿态发生变化，静态工具在工件上的移动路径仍然可以保持线性和弧形。因此，对于外部工具移动路径重要的操作，必须始终使用静态工具插值功能。
 
-To use the stationary tool interpolation function, you must set the stationary tool coordinate system.
+要使用静态工具插值功能，必须设置静态工具坐标系统。
 
-The method to set the stationary tool coordinate system is as follows.
+设置静态工具坐标系统的方法如下。
 
-1.	Touch the `[2: Control Parameter  - 6: Coordinate Registration 2: Stationary Tool Coordinate System]` menu.
+1.	触摸 `[2: 控制参数 - 6: 坐标注册 2: 静态工具坐标系统] ([2: 控制参数  - 6: 坐标注册 2: 静态工具坐标系统])` 菜单。
 
-2.	Select the desired tab and register the position of the stationary tool coordinate system. 
+2.	选择所需的选项卡并注册静态工具坐标系统的位置。 
 
     ![](../../../_assets/tp630/ctrl-stationary-coord_eng.png)
 
@@ -6177,8 +5370,8 @@ The method to set the stationary tool coordinate system is as follows.
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -6186,8 +5379,8 @@ The method to set the stationary tool coordinate system is as follows.
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">You can set a total of twenty stationary tool coordinate systems (tool 0
-        - tool 19) by selecting a tab.</td>
+      <td style="text-align:left">您可以通过选择选项卡设置最多二十个静态工具坐标系统（工具 0
+        - 工具 19）。</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -6195,9 +5388,8 @@ The method to set the stationary tool coordinate system is as follows.
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[<b>OK</b>]: You can save the changes.</li>
-          <li>[<b>Current robot pose</b>]: You can set the current TCP position as the position of
-            the stationary tool coordinate system.</li>
+          <li>[<b>确定</b>]: 您可以保存更改。</li>
+          <li>[<b>当前机器人姿态</b>]: 您可以将当前 TCP 位置设为静态工具坐标系统的位置。</li>
         </ul>
       </td>
     </tr>
@@ -6206,65 +5398,57 @@ The method to set the stationary tool coordinate system is as follows.
 
 
 
-### Setting the Current TCP Position as the Position of the Stationary Tool Coordinate System
+### 将当前 TCP 位置设为静态工具坐标系统的位置
 
-After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the `[Current robot pose]` button. Then, the current TCP position will be registered.
+在根据机器人基座坐标系统准确找到 TCP 后，您应该将静态工具和机器人工具匹配，如下图所示，然后使用 `[当前机器人姿态]` 按钮执行自动设置功能。然后，当前 TCP 位置将被注册。
 
 ![](../../../_assets/tp630/stationary_crd_autoset_eng.png)
 
 
 
-### Writing a Program Using the Stationary Tool Coordinate System
+### 使用静态工具坐标系统编写程序
 
-To perform the recording for the stationary tool interpolation step, you should record the step as SL or SC. Using the `[Recording Condition]` button on the upper left of the ${cont_model} teach pendant screen, you can change the recording condition to SL \(stationary tool linear interpolation\) or SC \(stationary tool circular interpolation\).
+要执行静态工具插值步骤的记录，您应该将步骤记录为 SL 或 SC。使用 ${cont_model} 教学挂件屏幕左上角的 `[记录条件]` 按钮，您可以将记录条件更改为 SL \(静态工具线性插值\) 或 SC \(静态工具圆形插值\)。
 
-For example, if you register and use the stationary tool coordinate system No. 1, you can create a program as follows.
+例如，如果您注册并使用静态工具坐标系统编号 1，您可以创建如下程序。
 
 ![](../../../_assets/tp630/pane-prog-cmd-SL_eng.png)
 
 {% hint style="info" %}
-In the case of using the stationary servo gun, the stationary tool interpolation function is not required. This is because, in the servo gun welding, the moving path of the workpiece for the stationary servo gun does not need to be formed in a linear line or arc while only the welding point is important.
+在使用静态伺服枪的情况下，不需要静态工具插值功能。这是因为在伺服枪焊接中，静态伺服枪的工件移动路径不需要形成直线或弧形，而仅焊接点是重要的。
 {% endhint %}
-
-
 [__SOURCE](7-system/3-control-parameter/7-prog-reservation.md)
-# 7.3.7 Scheduled Program Execution
+# 7.3.7 定时程序执行
 
-For details on how to execute scheduled programs, refer to the "[${cont_model} Controller Scheduled Program Execution Function Manual](https://hrbook-hrc.web.app/#/view/doc-reserved-program-execution/en/README)".
-
-
+有关如何执行定时程序的详细信息，请参阅 "[${cont_model} 控制器定时程序执行功能手册](https://hrbook-hrc.web.app/#/view/doc-reserved-program-execution/zh/README)"。
 [__SOURCE](7-system/3-control-parameter/8-auto-backup-restore.md)
-# 7.3.8 Automatic Backup and Recovery
+# 7.3.8 自动备份和恢复
 
-For details on how to automatically back up and recover the controller's data, refer to the "[${cont_model} Controller Automatic Backup Function Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-auto-backup/en/README)".
-
-
+有关如何自动备份和恢复控制器数据的详细信息，请参考 "[${cont_model} 控制器自动备份功能手册](https://hrbook-hrc.web.app/#/view/doc-hi6-auto-backup/zh/README)"。
 [__SOURCE](7-system/3-control-parameter/9-network-setting/README.md)
-# 7.3.9 Network
+# 7.3.9 网络
 
-1.  `[2: Control parameter  - 9: Network]` Touch the menu. The network settings menu will appear.
+1.  `[2: Control parameter - 9: Network] ([2: Control parameter  - 9: Network])` 点击菜单。网络设置菜单将会出现。
 
-2.  Select the desired menu to set up Environment setting, Service, etc.
-
-
+2.  选择所需的菜单以设置环境设置、服务等。
 [__SOURCE](7-system/3-control-parameter/9-network-setting/1-environment-setting.md)
-# 7.3.9.1 Environment setting
+# 7.3.9.1 环境设置
 
-You can set the information required for Network Setting for LAN ports.
+您可以设置 LAN 端口所需的网络设置信息。
 
-1.	Touch the `[ System  - 2: Control Parameter  - 9: Network  - 1: Environment setting ]` menu.
+1.	触摸`[ System - 2: Control Parameter - 9: 网络 - 1: Environment setting ] ([ System  - 2: Control Parameter  - 9: Network  - 1: Environment setting ])`菜单。
 
-2.	Set the parameters for each LAN(Public) port. Class C type IP Addressing supported.
+2.	设置每个 LAN（公共）端口的参数。支持 Class C 类型 IP 地址。
 
-3.	Setting parameters will be adjusted when you reboot the system.
+3.	设置的参数将在您重启系统时调整。
 
 <img src ="../../../_assets/image_551.png">
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -6272,7 +5456,7 @@ You can set the information required for Network Setting for LAN ports.
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">In the LAN Port Selection tab, only the Public LAN Port can be modified. EtherCAT and T/P-Main ports are fixed and cannot be changed.
+      <td style="text-align:left">在 LAN 端口选择选项卡中，仅可修改公共 LAN 端口。EtherCAT 和 T/P-Main 端口是固定的，无法更改。
 	  </td>
     </tr>
     <tr>
@@ -6281,12 +5465,12 @@ You can set the information required for Network Setting for LAN ports.
       </td>
       <td style="text-align:left">
         <ul>
-          Changing port setting. IP Address, Subnet Mask, Gateway can be modified.
-          <li><b>IP Address : </b> You can set IP Address for the target port.</li>
-          <li><b>Subnet Mask : </b> Subnet Mask setting for the target port. Usually subnet mask is 255.255.255.0</li>
-          <li><b>Gateway : </b>You can set gateway address for the target port. 3rd  information and paste it to another port.
+          更改端口设置。可以修改 IP 地址、子网掩码和网关。
+          <li><b>IP 地址 : </b> 您可以为目标端口设置 IP 地址。</li>
+          <li><b>子网掩码 : </b> 目标端口的子网掩码设置。通常子网掩码为 255.255.255.0</li>
+          <li><b>网关 : </b>您可以为目标端口设置网关地址。第 3 条信息并将其粘贴到另一个端口。
           </li>
-          <li><b>MAC : </b>Displays the controller's MAC address.
+          <li><b>MAC : </b>显示控制器的 MAC 地址。
           </li>
         </ul>
       </td>
@@ -6297,243 +5481,194 @@ You can set the information required for Network Setting for LAN ports.
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes. After reboot the system all changes are adjusted.</li>
+          <li>`[OK]`: 您可以保存更改。重启系统后，所有更改将被调整。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
 [__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/README.md)
-# 7.3.9.2 Service
-
-
+# 7.3.9.2 服务
 [__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/1-modbus-slave.md)
-# 7.3.9.2.1 Modbus slave
+# 7.3.9.2.1 Modbus 从站
 
-This section covers settings and monitoring when using the controller's Modbus TCP slave communication. <br>
-For more information, refer to "[${cont_model} Robot Controller Function Manual - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/en/README)".
-
-
+本节涵盖使用控制器的 Modbus TCP 从站通信时的设置和监控。 <br>
+有关更多信息，请参考 "[${cont_model} 机器人控制器功能手册 - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/zh/README)"。
 [__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/3-ntp-client.md)
-# 7.3.9.2.3 NTP client
+# 7.3.9.2.3 NTP 客户端
 
-The controller's time can be automatically synchronized with the NTP server. <br>
+控制器的时间可以与 NTP 服务器自动同步。 <br>
 
-For more information, refer to "[${cont_model} Controller Function Manual - NTP time synchronization](https://hrbook-hrc.web.app/#/view/doc-hi6-ntp-time-synchronization/en/README)".
-
-
+有关更多信息，请参阅 "[${cont_model} 控制器功能手册 - NTP 时间同步](https://hrbook-hrc.web.app/#/view/doc-hi6-ntp-time-synchronization/zh/README)"。
 [__SOURCE](7-system/3-control-parameter/10-license-key/README.md)
-# 7.3.10 Register license key of option function
-
-
+# 7.3.10 注册选项功能的许可证密钥
 [__SOURCE](7-system/3-control-parameter/10-license-key/1-summary.md)
-# 7.3.10.1 What is a license key for optional functions?
+# 7.3.10.1 可选功能的许可证密钥是什么？
 
-Among the functions of the ${cont_model} robot controller, certain optional functions are sold separately, and customers must purchase the optional functions to use them. The license key for the optional function is created by a separate license key generation program by combining the unique number assigned to the main board of the robot controller and the purchased option function, so the purchased function operates only on the purchased controller.
-Therefore, the main board of a robot controller using optional functions cannot be replaced with another controller.
-If something happens to the motherboard, we will provide you with a temporary key that can be used for 30 days in case you need to replace it with a spare part.
-In this case, you must contact our A/S to obtain an official license key at least 30 days in advance.
+在 ${cont_model} 机器人控制器的功能中，某些可选功能是单独出售的，客户必须购买可选功能才能使用它们。可选功能的许可证密钥是通过将分配给机器人控制器主板的唯一编号与购买的可选功能结合而通过单独的许可证密钥生成程序生成的，因此所购买的功能仅在购买的控制器上运行。
+因此，使用可选功能的机器人控制器的主板不能更换为其他控制器。
+如果主板发生故障，我们将提供一个临时密钥，可在需要用备件更换时使用30天。
+在这种情况下，您必须至少提前30天联系我们的 A/S 以获得官方许可证密钥。
  
-* Feature configuration <br>
-  Setting whether to purchase optional features <br>
-  License key settings
-
-
+* 功能配置 <br>
+  设置是否购买可选功能 <br>
+  许可证密钥设置
 [__SOURCE](7-system/3-control-parameter/10-license-key/2-registration-process.md)
-# 7.3.10.2 License key registration procedure
+# 7.3.10.2 许可证密钥注册程序
 
-* Purchase a license key for optional functions that matches your system serial number. The system serial number is located on the license registration screen.
+* 购买与您的系统序列号匹配的可选功能许可证密钥。系统序列号位于许可证注册屏幕上。
 
   ![](../../../_assets/tp630/license-key1.png)
 
 
-* First select whether to purchase the optional feature, then enter the license key.
-If the purchase selection and the license key do not match, an error will occur when executing the function.
-
-
+* 首先选择是否购买可选功能，然后输入许可证密钥。如果购买选择和许可证密钥不匹配，则在执行该功能时会发生错误。
 [__SOURCE](7-system/3-control-parameter/10-license-key/3-registration.md)
-# 7.3.10.3 Register license key
+# 7.3.10.3 注册许可证密钥
 
-* Registration screen
+* 注册屏幕
 
   ![](../../../_assets/tp630/license-key2.png)
 
 
-* If the license key has been entered correctly, "==> OK" will be displayed to the right of the license key input.
+* 如果许可证密钥输入正确，"==> OK" 将显示在许可证密钥输入框的右侧。
 
-* If "==> NG" is displayed, the license key is incorrect or the purchase option has been selected incorrectly.
-
-
+* 如果显示 "==> NG"，则许可证密钥不正确或购买选项选择错误。
 [__SOURCE](7-system/3-control-parameter/10-license-key/4-temporary-key.md)
-# 7.3.10.4 What is a temporary-key?
+# 7.3.10.4 什么是临时密钥？
 
-* Temporary-key can only be used for 30 days and can only be issued once.
+* 临时密钥只能使用30天，并且只能签发一次。
 
-* If the remaining date of the temporary key is less than 10 days, the following warning occurs every time the controller boots. <br>
-  "W0025 Only (0) days left for the optional function temporary license key free trial period."
+* 如果临时密钥的剩余日期少于10天，每次控制器启动时会出现以下警告。 <br>
+  "W0025 可选功能临时许可证密钥的免费试用期仅剩（0）天。"
 
-* The purpose of the temporary key is to use it until the license key is reissued by our A/S when a problem occurs in the main board of the controller using the optional function and it is replaced with a spare part.
-
+* 临时密钥的目的，是在控制器的主板出现问题并更换备用件时，直到我们的A/S重新签发许可证密钥为止。
 [__SOURCE](7-system/3-control-parameter/10-license-key/5-temporary-key-registration.md)
-# 7.3.10.5 Temporary-key registration
+# 7.3.10.5 临时密钥注册
 
-* A temporary key can be issued by pressing the [F] key.
+* 可以通过按[F]键发放临时密钥。
 
   ![](../../../_assets/tp630/license-key3.png)
 
 
-* If issued successfully, the remaining days for use are displayed as shown in the following screen.
+* 如果成功发放，剩余的使用天数将在以下屏幕中显示。
 
   ![](../../../_assets/tp630/license-key4.png)
 
 
-* Caution) If the remaining days are 0, the optional function can no longer be used, and after that, a temporary key is issued for 1 day use. Because the production line may be stopped due to optional functions, please be sure to contact us before the remaining days reach 0 to receive an official license key. 
-
-
+* 注意）如果剩余天数为0，则不再可以使用可选功能，此后将发放1天使用的临时密钥。由于可选功能可能导致生产线停滞，请在剩余天数达到0之前务必与我们联系以获取正式许可证密钥。
 [__SOURCE](7-system/3-control-parameter/11-industrial-comm/README.md)
-# 7.3.11 Industrial Communication \(fieldbus\)
+# 7.3.11 工业通信 \(fieldbus\)
 
-You can perform the setting of the industrial communication \(fieldbus\) to use it.
+您可以设置工业通信 \(fieldbus\) 以使用它。
 
-1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the "${cont_model} Controller Maintenance Manual".
+1. 根据要使用的通信类型，您需要安装 PCI 卡，然后参照 "${cont_model} 控制器维护手册" 设置插槽编号 \(1 到 4\)。
 
-2.	Set the industrial communication firmware by referring to "[7.3.11.1 Firmware Setting](1-firmware-set.md)".
+2. 参考 "[7.3.11.1 固件设置](1-firmware-set.md)" 设置工业通信固件。
 
-3.	Turn off the power of the controller, and then turn it back on.
+3. 关闭控制器的电源，然后重新打开。
 
-4.	If necessary, carry out additional setting by referring to "[7.3.11.2 Industrial Communication Setting](2-industrial-comm-set.md)".
-
-
-
-
-
-
+4. 如有必要，请参考 "[7.3.11.2 工业通信设置](2-industrial-comm-set.md)" 进行其他设置。
 [__SOURCE](7-system/3-control-parameter/11-industrial-comm/1-pci-slot-set.md)
-# 7.3.11.1 PCI Slot Settings
+# 7.3.11.1 PCI插槽设置
 
-You can set the PCI slot to be used for the industrial communication.
+您可以设置用于工业通信的PCI插槽。
 
-1.	Touch the `[2: Control Parameter  - 11: Industrial Communication  - 1: PCI Slot Settings  - 1 Channel]` menu. Then, the PCI slot setting screen will appear.
+1.	触摸`[2: Control Parameter - 11: 工业通信 - 1: 1：PCI插槽设置 - 1 Channel] ([2: Control Parameter  - 11: Industrial Communication  - 1: PCI Slot Settings  - 1 Channel])`菜单。然后，PCI插槽设置屏幕将出现。
 
-2.	Select the desired tab and then set the communication method \(Master / Slave\) and protocol. After that, tap the `[OK]` button.
+2.	选择所需的选项卡，然后设置通信方式\(主/从\)和协议。之后，点击`[OK]`按钮。
 
     ![](../../../_assets/tp630/ctrl-industrial-channel_eng.png)
 
-
-
 {% hint style="warning" %}
-When the PCI slot setting is completed, the CONFIG files set in the slot \#1 - \#4 will be all deleted. When you want to change the communication PCI slot in the middle of using it, you should back up the existing CONFIG setting separately and use it after restoring it. 
+当PCI插槽设置完成后，插槽#1 - #4中设置的CONFIG文件将全部删除。当您在使用中想更改通信PCI插槽时，应单独备份现有的CONFIG设置，并在恢复后使用。 
 {% endhint %}
 
-3.	Turn off the power of the controller, and then turn it back on.
+3.	关闭控制器的电源，然后再重新打开。
 
 {% hint style="warning" %}
-* When you perform the setting of the PCI slot to use it, the setting value will be applied to the system only after you turn off the power of the controller and then turn it back on.
+* 当您执行PCI插槽的设置以使用它时，设置值将在您关闭控制器的电源并重新打开后才会应用于系统。
 {% endhint %}
-
-
-
-
 [__SOURCE](7-system/3-control-parameter/11-industrial-comm/2-industrial-comm-set.md)
-# 7.3.11.2 Industrial Communication Setting
+# 7.3.11.2 工业通信设置
 
-\(The function to be provided later\) If you set the communication method to CC-Link slave, you can set the detailed information for each type of communication inside the controller.
+\(该功能将稍后提供\) 如果将通信方式设置为 CC-Link 从站，您可以在控制器内部设置每种通信的详细信息。
 
 {% hint style="info" %}
-You can set the communication information by using the "Sycon.net" program on the HD Hyundai Robotics internet website (https://www.hd-hyundairobotics.com/en/main).
+您可以通过 HD Hyundai Robotics 网站上的 "Sycon.net" 程序设置通信信息 (https://www.hd-hyundairobotics.com/zh/main)。
 {% endhint %}
-
-
 [__SOURCE](7-system/3-control-parameter/11-industrial-comm/3-monitoring.md)
-# 7.3.11.3 Monitoring
+# 7.3.11.3 监控
 
-You can monitor the setting information and operation status of the firmware and communication the use of which you have set in the industrial communication menu.
+您可以监控您在工业通信菜单中设置的固件和通信的设置信息和操作状态。
 
-1.	Touch `service - 19: Industrial Communication Monitoring` menu. Then the screen for monitoring the industrial communication of each board will appear.
+1. 触摸 `服务 - 19: 工业通信监控 (service - 19: Industrial Communication Monitoring)` 菜单。然后将出现每个板的工业通信监控屏幕。
 
-2.	By selecting the desired tab, you can check the detailed information of the firmware, communication devices and communication configuration. 
+2. 通过选择所需的选项卡，您可以检查固件、通信设备和通信配置的详细信息。
 
     ![](../../../_assets/tp630/svc-industrial-mon_eng.png)
 
 <Br>
 
 {% hint style="info" %}
-You can restart the industrial communication of the PCI communication card by using the `[Restart]` button.
+您可以使用 `[Restart]` 按钮重新启动 PCI 通信卡的工业通信。
 {% endhint %}
-
-
 [__SOURCE](7-system/4-robot-parameter/README.md)
-# 7.4 Robot Parameters
+# 7.4 机器人参数
 
-You can set various data related to robot operation as well as information such as the origin and operation range of each axis.
+您可以设置与机器人操作相关的各种数据，以及每个轴的原点和操作范围等信息。
 
-1.	Touch the `[3: Robot Parameter]` menu. Then, the robot parameter menu will appear. 
+1. 触摸 `[3: Robot Parameter]` 菜单。然后，机器人参数菜单将出现。
 
-2.	You can check and set various parameters of the manipulator by selecting the desired menu.
+2. 您可以通过选择所需菜单来检查和设置操作器的各种参数。
 
     ![](../../_assets/tp630/robot-menu_eng.png)
-
-
-
-
 [__SOURCE](7-system/4-robot-parameter/1-tool-data/README.md)
-# 7.4.1    Tool Data
+# 7.4.1    工具数据
 
-You can set the distance and angle of the TCP based on the robot's R1-axis flange and register the tool's weight, center of gravity, and inertia. You can perform registration manually using the `[1: Tool data]` menu.
+您可以根据机器人的 R1 轴法兰设置 TCP 的距离和角度，并注册工具的重量、重心和惯性。您可以使用 `[1: Tool data]` 菜单手动进行注册。
 
-In another way, the tool length can be set using the automatic calibration function, and the tool's weight, center of gravity, and inertia can be registered using the load estimation function.
+另一种方式是使用自动校准功能设置工具长度，并使用负载估计功能注册工具的重量、重心和惯性。
 
-In the case of interpolation operation such as linear or circular interpolation, the trajectory will be created based on the TCP, so the length and angle of the tool should be accurately set before the teaching.
+在进行线性或圆形插值等插值操作时，轨迹将基于 TCP 创建，因此在教学之前应准确设置工具的长度和角度。
 
-The ${cont_model} controller performs control based on the dynamics of the robot. The robot can operate quickly and safely only when the weight, center, and inertia of the tool are correctly set. If the weight, center, and inertia values of the tool are incorrect or wrong, serious problems may occur in the performance and service life of the robot.
+${cont_model} 控制器根据机器人的动力学进行控制。只有当工具的重量、中心和惯性正确设置时，机器人才能快速安全地运行。如果工具的重量、中心和惯性值不正确或错误，可能会在机器人性能和服务寿命中出现严重问题。
 
-In particular, in the case of using the tool change function, all tool information related to tool change, not only the information about each tool, but also separate numbers assigned to disconnected tools, should be inputted for the use. Moreover, even during the handling operation, the attachment/detachment status of the workpiece should be assigned to each tool number for the use.
+特别是，在使用工具更换功能的情况下，所有与工具更换相关的工具信息，不仅仅是每种工具的信息，还应输入分配给断开工具的单独编号。此外，即使在处理操作期间，工件的附加/拆卸状态也应分配给每个工具编号以供使用。
 
-The length of the tool is the length in each direction in the flange coordinate system. \(Length in X-axis direction: Xt / Length in Y-axis direction: Yt / Length in Z-axis direction: Zt\)
+工具的长度是法兰坐标系中每个方向的长度。 \(X 轴方向的长度: Xt / Y 轴方向的长度: Yt / Z 轴方向的长度: Zt\)
 
+![图 60 各类机器人法兰坐标系](../../../_assets/image_213.png)
 
+工具的角度是法兰坐标系中每个方向的姿态转换量。 \(X 轴方向的角度: Rx / Y 轴方向的角度: Ry / Z 轴方向的角度: Rz\)
 
-![Figure 60 Flange Coordinate System for Each Robot Type](../../../_assets/image_213.png)
+![图 61 工具角度: 旋转 Rx \(左\) / 旋转 Ry \(中\) / 旋转 Rz \(右\)](../../../_assets/image_211.png)
 
-The angle of the tool is the posture conversion amount in each direction in the flange coordinate system. \(Angle in X-axis direction: Rx / Angle in Y-axis direction: Ry / Angle in Z-axis direction: Rz\)
+工具的长度和角度将根据法兰坐标系设置。工具长度可以设置为法兰坐标系中心到 TCP 的距离。
 
-![Figure 61 Tool Angle: Rotating Rx \(Left\) / Rotating Ry \(Middle\) / Rotating Rz \(Right\)](../../../_assets/image_211.png)
-
-The length and angle of the tool will be set based on the flange coordinate system. The tool length can be set as the distance from the center of the flange coordinate system to the TCP.
-
-The tool posture is a value acquired by performing rotation sequentially in the X, Y, and Z directions based on the tool flange coordinate system according to the tool angle set as above.
+工具姿态是根据上述设置的工具角度在法兰坐标系中按顺序在 X、Y 和 Z 方向进行旋转获得的值。
 
 Rxyz = Rot\(z, Rz\)Rot\(y, Ry\)Rot\(x, Rx\)
 
-* Rxyz: Tool posture rotation matrix based on the tool flange
-* Rot\(z, Rz\): Rotation matrix that rotation occurs as much as Rz in the Z-axis direction of the flange coordinate system 
-* Rot\(y, Ry\): Rotation matrix that rotation occurs as much as Ry in the Y-axis direction of the flange coordinate system
-* Rot\(x, Rx\): Rotation matrix that rotation occurs as much as Rx in the X-axis direction of the flange coordinate system
-
-
-
-
-
-
+* Rxyz: 基于工具法兰的工具姿态旋转矩阵
+* Rot\(z, Rz\): 在法兰坐标系的 Z 轴方向上旋转 Rz 的旋转矩阵
+* Rot\(y, Ry\): 在法兰坐标系的 Y 轴方向上旋转 Ry 的旋转矩阵
+* Rot\(x, Rx\): 在法兰坐标系的 X 轴方向上旋转 Rx 的旋转矩阵
 [__SOURCE](7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)
-# 7.4.1.1 Tool Data Setting
+# 7.4.1.1 工具数据设置
 
+根据机器人 R1 轴法兰手动设置 TCP 的距离和角度，并注册工具的重量、重心和惯性的方法如下。
 
-The manual method of setting the distance and angle of TCP based on the robot's R1-axis flange and registering the tool's weight, center of gravity, and inertia is as follows.
+1. 触摸 `[3: Robot Parameter - 1: Tool Data] ([3: Robot Parameter  - 1: Tool Data])` 菜单。
 
-1.	Touch the `[3: Robot Parameter  - 1: Tool Data]` menu.
-
-2.	Set the tool data name, weight, detailed conditions of each axis, and allowable ratio.
+2. 设置工具数据名称、重量、每个轴的详细条件和允许比率。
 
     ![](../../../_assets/tp630/robot-tool_eng.png)
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -6541,9 +5676,8 @@ The manual method of setting the distance and angle of TCP based on the robot's 
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left"><ul>Detailed information on the tool data selected from the tool data list.
-        You can set the tool data name and description, weight, detailed conditions
-        of each axis, and allowable ratio.</ul></td>
+      <td style="text-align:left"><ul>从工具数据列表中选择的工具数据的详细信息。
+        您可以设置工具数据名称和描述、重量、每个轴的详细条件和允许比率。</ul></td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -6551,24 +5685,23 @@ The manual method of setting the distance and angle of TCP based on the robot's 
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[Auto Calibration]</b>: You can create new tool data or can create
-            tool data simply by using an existing program. If you want to perform setting newly at the previously taught step position, you should first place the tool, and then execute the automatic calibration function to create tool length and angle newly.
+          <li><b>[自动校准]</b>: 您可以创建新的工具数据，也可以通过使用现有程序简单地创建工具数据。如果您想在之前教授的步骤位置重新进行设置，您应首先放置工具，然后执行自动校准功能以重新创建工具长度和角度。
             <br />
             <img src="../../../_assets/tp630/robot-tool-autocal_eng.png" alt/>
             <br />
           </li>
           <ul>
-            <li>[Previous Program Number]: You can input the program number taught before tool deformation occurs.</li>
-            <li>[Previous Step Number]: You can input the step number for which automatic tool data calibration will be performed.</li>
-            <li>[Tool Number to Set]: You can input the tool number to be newly set.</li>
+            <li>[前一程序编号]: 您可以输入在工具变形发生之前教授的程序编号。</li>
+            <li>[前一步编号]: 您可以输入将要执行自动工具数据校准的步骤编号。</li>
+            <li>[要设置的工具编号]: 您可以输入要新设置的工具编号。</li>
           </ul>
           <li>
-            <p>[Angle Calibration]: You can calibrate the angle of the tool.</p>
+            <p>[角度校准]: 您可以校准工具的角度。</p>
             <p>
               <img src="../../../_assets/tp630/robot-tool-anglecal_eng.png" alt/>
             </p>
           </li>
-          <li>[Apply CAD data]: If you have the CAD data of the tool and edit the tool data with that, then it is regarded as the completion of load estimation.
+          <li>[应用 CAD 数据]: 如果您有工具的 CAD 数据并用它编辑工具数据，则这被视为负载估算的完成。
             <br />
           </li>
         </ul>
@@ -6580,15 +5713,11 @@ The manual method of setting the distance and angle of TCP based on the robot's 
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[+]/[-]: You can add new tool data or delete tool data.</li>
-          <li>Tool data list. Selecting a tool data name will allow you to check and
-            edit detailed information.</li>
-          <li>[Copy page]/[Paste page]: You can copy the tool data information and then
-            paste it to another tool data.
-            <br />After selecting the name of the tool data information to be copied from
-            the list and touching the<b> [Copy page] </b>button, select the name of
-            the tool data to which the value is to be applied, and then touch the <b>[Paste page]</b> button.</li>
+          <li>[确定]: 您可以保存更改。</li>
+          <li>[+]/[-]: 您可以添加新的工具数据或删除工具数据。</li>
+          <li>工具数据列表。选择工具数据名称将允许您检查和编辑详细信息。</li>
+          <li>[复制页面]/[粘贴页面]: 您可以复制工具数据信息，然后粘贴到另一个工具数据。
+            <br />在从列表中选择要复制的工具数据信息的名称并触摸<b>[复制页面]</b>按钮后，选择要应用数值的工具数据名称，然后触摸<b>[粘贴页面]</b>按钮。</li>
         </ul>
       </td>
     </tr>
@@ -6596,56 +5725,46 @@ The manual method of setting the distance and angle of TCP based on the robot's 
 </table>
 
 {% hint style="info" %}
-* In the tool data list, tool data for which load estimation is not performed will be marked with \(X\) to the right side of the name.
-* You must perform load estimation first before using the tool. The use of tools for which load estimation is not performed could cause trouble with the speed and durability of the robot.
+* 在工具数据列表中，未执行负载估算的工具数据将在名称的右侧标记为 \(X\)。
+* 您必须在使用工具之前先执行负载估算。使用未执行负载估算的工具可能会导致机器人速度和耐用性的问题。
 * 
-  When tool data is copied, the load estimation data will also be copied. The tool data copying and pasting functions can only be executed on the tab of the tool number for which load estimation has been performed.
+  当工具数据被复制时，负载估算数据也将被复制。工具数据的复制和粘贴功能仅在已执行负载估算的工具编号的选项卡上执行。
 {% endhint %}
-
-
 [__SOURCE](7-system/4-robot-parameter/1-tool-data/2-tool-data-set-info.md)
-# 7.4.1.2 Tool Data Setting Information
+# 7.4.1.2 工具数据设置信息
 
-* `[Weight]`: Weight of the tool \(kg\)
-* `[Length]`: Length of the tool \(mm\). You can set it using the automatic calibration function or the auto calibration.
-* `[Angle]`: Angle of the tool \(deg\). You can set it using the automatic calibration function or the angle calibration function.
-* `[Center]`: Position of the center of gravity of the tool based on the center of the flange \(mm\). You can set it using the load estimation function.
-* `[Inertia]`: The moment of inertia \(kg/m2\) of the tool with respect to the tool coordinate. You can set it using the load estimation function.
-* Allowable Ratio: \(Only for the robot models to which high-load mode is applied\) This is the ratio of the current setting against the allowable reference value. The robot operation, according to the allowable ratio, is as follows.
+* `[Weight]`: 工具的重量 \(kg\)
+* `[Length]`: 工具的长度 \(mm\)。您可以使用自动校准功能或自动校准进行设置。
+* `[Angle]`: 工具的角度 \(deg\)。您可以使用自动校准功能或角度校准功能进行设置。
+* `[Center]`: 工具重心相对于法兰中心的位置 \(mm\)。您可以使用负载估算功能进行设置。
+* `[Inertia]`: 工具相对于工具坐标的转动惯量 \(kg/m2\)。您可以使用负载估算功能进行设置。
+* 允许比率: \(仅适用于启动高负载模式的机器人型号\) 这是当前设置与允许参考值的比率。根据允许比率，机器人操作如下。
 
 | Classification | Normal | High-load mode | Exception allowable mode | Playback impossible \(Large size\) |
 | :--- | :--- | :--- | :--- | :--- |
-| Weight ratio \(%\) | - 100 | 100-120 | 100-120 | 120 - |
-| Moment ratio \(%\) | - 100 | 100-110 | 100-115 \(150\) | 115 \(150\) - |
-| Inertia ratio \(%\) | - 100 | 100-130 | 100-150 \(600\) | 150 \(600\) - |
+| 重量比 \(%\) | - 100 | 100-120 | 100-120 | 120 - |
+| 转矩比 \(%\) | - 100 | 100-110 | 100-115 \(150\) | 115 \(150\) - |
+| 转动惯量比 \(%\) | - 100 | 100-130 | 100-150 \(600\) | 150 \(600\) - |
 
 {% hint style="info" %}
-The allowable ratio can be changed depending on the robot model and controller software version.
+允许比率可以根据机器人型号和控制器软件版本进行更改。
 {% endhint %}
-
-
-
-
 [__SOURCE](7-system/4-robot-parameter/2-axis-origin.md)
-# 7.4.2 Axis Origin
+# 7.4.2 轴原点
 
-You can register the mechanical origin position of each axis.
+您可以注册每个轴的机械原点位置。
 
-1.	Touch the `[3: Robot Parameter  - 2: Axis Origin]` menu.
+1. 触摸 `[3: Robot Parameter - 2: Axis Origin] ([3: Robot Parameter  - 2: Axis Origin])` 菜单。
 
-2.	Register the mechanical origin position of each axis.
+2. 注册每个轴的机械原点位置。
 
     ![](../../_assets/tp630/robot-origin_eng.png)
-
-
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -6654,15 +5773,11 @@ You can register the mechanical origin position of each axis.
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information on the mechanical origin position of each axis. You
-          can set the encoder and position of the axis.</p>
+        <p>每个轴的机械原点位置的详细信息。您可以设置轴的编码器和位置。</p>
         <ul>
-          <li>S-axis: You can change the S-axis origin depending on the installation
-            situation of the robot and surrounding jig.</li>
-          <li>R1-axis: You can change the origin of the R1- axis origin according to
-            the tool attachment direction.</li>
-          <li>H, V, R2, and B axes: Can be set automatically through the automatic calibration
-            function</li>
+          <li>S轴：您可以根据机器人和周围夹具的安装情况更改S轴原点。</li>
+          <li>R1轴：您可以根据工具附件方向更改R1轴的原点。</li>
+          <li>H、V、R2和B轴：可以通过自动校准功能自动设置。</li>
         </ul>
       </td>
     </tr>
@@ -6672,10 +5787,9 @@ You can register the mechanical origin position of each axis.
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Apply One]: You can apply the selected origin position to the selected
-            axis information.</li>
-          <li>[Apply All]: You can apply the selected origin position to all axis information.</li>
+          <li>[确认]：您可以保存更改。</li>
+          <li>[应用一个]：您可以将选定的原点位置应用于选定的轴信息。</li>
+          <li>[应用全部]：您可以将选定的原点位置应用于所有轴信息。</li>
         </ul>
       </td>
     </tr>
@@ -6683,27 +5797,25 @@ You can register the mechanical origin position of each axis.
 </table>
 
 {% hint style="warning" %}
-* The axis origin setting affects the accuracy of the robot's cartesian operation. Change it to the exact value as much as possible.
+* 轴原点设置会影响机器人的笛卡尔操作精度。尽可能将其更改为准确的值。
 * 
-  If the axis origin setting is changed, the position of the previously created program will be changed. Therefore, the axis origin setting must be executed only at the initial installation stage.
+  如果更改轴原点设置，则之前创建的程序位置将会改变。因此，轴原点设置必须仅在初始安装阶段执行。
 
 * 
-  If the encoder offset setting is changed, the axis origin should be newly set. Therefore, the encoder offset setting must be completed before the setting of the axis origin.
+  如果更改编码器偏移设置，则应重新设置轴原点。因此，编码器偏移设置必须在轴原点设置之前完成。
 {% endhint %}
 
 {% hint style="info" %}
-At the time of the shipping from the factory, the mechanical origin position of each axis is set at the standard value \(0X400000\).
+发货时，每个轴的机械原点位置设置为标准值 \(0X400000\)。
 {% endhint %}
-
-
 [__SOURCE](7-system/4-robot-parameter/3-soft-limit.md)
-# 7.4.3 Soft Limit
+# 7.4.3 软件限制
 
-You can adjust the operation range of each axis according to the robot's use environment.
+您可以根据机器人的使用环境调整每个轴的操作范围。
 
-1.	Touch the `3: Robot Parameter  - 3. Soft Limit` menu.
+1. 触摸 `3: Robot Parameter - 3. Soft Limit (3: Robot Parameter  - 3. Soft Limit)` 菜单。
 
-2.	Set the operation range of each axis.
+2. 设置每个轴的操作范围。
 
     ![](../../_assets/tp630/robot-softlimit_eng.png)
 
@@ -6712,8 +5824,8 @@ You can adjust the operation range of each axis according to the robot's use env
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -6721,9 +5833,7 @@ You can adjust the operation range of each axis according to the robot's use env
       <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Detailed information on the operation range of each axis. You can set
-        the minimum and maximum operation ranges of an axis and the current axis
-        position.</td>
+      <td style="text-align:left">每个轴的操作范围的详细信息。您可以设置一个轴的最小和最大操作范围以及当前轴的位置。</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -6731,10 +5841,9 @@ You can adjust the operation range of each axis according to the robot's use env
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Cur. Value]: You can set the operation range of each axis based on the
-            current robot position.</li>
-          <li>[Reset All]: You can initialize the operation range of all axes.</li>
+          <li>[确认]: 您可以保存更改。</li>
+          <li>[当前值]: 您可以基于当前机器人位置设置每个轴的操作范围。</li>
+          <li>[重置全部]: 您可以初始化所有轴的操作范围。</li>
         </ul>
       </td>
     </tr>
@@ -6742,18 +5851,16 @@ You can adjust the operation range of each axis according to the robot's use env
 </table>
 
 {% hint style="info" %}
-At the time of the shipping from the factory, the operation range of each axis of the robot is set to a maximum. 
+在出厂时，机器人每个轴的操作范围设置为最大值。 
 {% endhint %}
-
-
 [__SOURCE](7-system/4-robot-parameter/4-encoder-offset/README.md)
-# 7.4.4 Encoder Offset
+# 7.4.4 编码器偏移
 
-The current encoder position can be set as the encoder origin position \(position 0X400000\). You can determine the encoder origin at the reference position of each axis of the robot \(the position where the scale of each axis is attached\).
+当前编码器位置可以设置为编码器原点位置 \(position 0X400000\)。您可以在机器人的每个轴的参考位置处确定编码器原点 \(每个轴附着刻度的位置\)。
 
-1.	Touch the `[3: Robot Parameter  - 4: Encoder Offset]` menu.
+1. 触摸 `[3: Robot Parameter - 4: Encoder Offset] ([3: Robot Parameter  - 4: Encoder Offset])` 菜单。
 
-2.	Set the encoder offset value by adjusting the position of each axis. The encoder offset value will be recorded as a hex value \(a hexadecimal number\).
+2. 通过调整每个轴的位置设置编码器偏移值。编码器偏移值将以十六进制数 \(a hexadecimal number\) 形式记录。
 
     ![](../../../_assets/tp630/robot-encoder-offset_eng.png)
 
@@ -6762,8 +5869,8 @@ The current encoder position can be set as the encoder origin position \(positio
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -6771,9 +5878,7 @@ The current encoder position can be set as the encoder origin position \(positio
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Detailed information on the encoder offset value of each axis. You can
-        set the calibrated encoder value, current encoder value, and current position
-        of an axis.</td>
+      <td style="text-align:left">每个轴的编码器偏移值的详细信息。您可以设置已校准的编码器值、当前编码器值和轴的当前位置。</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -6781,13 +5886,10 @@ The current encoder position can be set as the encoder origin position \(positio
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Reset One]/[Reset All]: You can initialize the encoder offset value of
-            the selected or every axis.</li>
-          <li>[Calculate Correction Value]: You can calibrate the encoder offset value
-            of the selected axis.</li>
-          <li>[Previous Correction Value]: You can retrieve the encoder offset value
-            that existed prior to the calibration of the selected axis.</li>
+          <li>[OK]: 您可以保存更改。</li>
+          <li>[Reset One]/[Reset All]: 您可以初始化所选或所有轴的编码器偏移值。</li>
+          <li>[Calculate Correction Value]: 您可以校准所选轴的编码器偏移值。</li>
+          <li>[Previous Correction Value]: 您可以检索在选定轴的校准之前存在的编码器偏移值。</li>
         </ul>
       </td>
     </tr>
@@ -6795,113 +5897,103 @@ The current encoder position can be set as the encoder origin position \(positio
 </table>
 
 {% hint style="info" %}
-The encoder offset value is set at the time of the shipping from the factory. Resetting the encoder offset value should be performed only when necessary, such as replacing the motor or encoder.
+编码器偏移值在出厂时设置。只有在必要时，例如更换马达或编码器时，才应重置编码器偏移值。
 {% endhint %}
-
-
 [__SOURCE](7-system/4-robot-parameter/4-encoder-offset/1-encoder-offset-utilization.md)
-# 7.4.4.1 Encoder Offset Value Utilization
+# 7.4.4.1 编码器偏移值的使用
 
-To continue using the existing program even after the current job program is backed up and the system is initialized `system - 5: Initialize - 1: System Initialization`, the robot should maintain the reference position information that existed before initialization. If you record the encoder offset value, the previous position information of the robot can be retrieved.
+要继续使用现有程序，即使当前工作程序已备份并且系统已初始化 `系统 - 5: 初始化 - 1: 系统初始化 (system - 5: Initialize - 1: System Initialization)`，机器人应该保持初始化之前存在的参考位置信息。如果记录编码器偏移值，机器人之前的位置信息可以被检索。
 
-After system initialization, directly input the encoder offset value as a hex value. It will be easy to input the value if you use the soft keyboard.
+在系统初始化后，直接将编码器偏移值作为十六进制值输入。如果使用软键盘，将更容易输入该值。
 
-If the encoder offset value is recorded as the axis position value \(mm or degree\), you need to input the axis position value into the input window that will appear when you touch the `[Reset One]` button while pressing the `[SHIFT]` key.
+如果编码器偏移值记录为轴位置值 \(mm 或度\)，你需要在按住 `[SHIFT]` 键的同时触摸 `[Reset One]` 按钮时，输入弹出窗口中出现的轴位置值。
 
 ![](../../../_assets/tp630/robot-encoder-backup_eng.png)
 
 
 
 {% hint style="info" %}
-The basic setting value in the axis position input window is the reference position value. If you save without inputting the axis position value, the current encoder position will be set as the origin position \(0X400000\).
+轴位置输入窗口中的基本设置值是参考位置值。如果不输入轴位置值直接保存，当前编码器位置将设置为原点位置 \(0X400000\)。
 {% endhint %}
-
-
 [__SOURCE](7-system/4-robot-parameter/4-encoder-offset/2-axis-posi-restore.md)
-# 7.4.4.2 Axis Home Position Restoration
+# 7.4.4.2 轴原点位置恢复
 
-When a component failure occurs in the robot mechanism (especially the motor or reducer) and the component is replaced, the encoder must be calibrated under the same conditions as the original home position in order to restart the existing teaching program.  
-However, when service personnel perform this procedure manually on site, the home position may be set through multiple trials and errors. This dedicated function is provided to simplify that process.
+当机器人机构（特别是电机或减速器）发生组件故障并进行替换时，必须在与原始原点位置相同的条件下对编码器进行校准，以便重新启动现有的教学程序。  
+然而，当服务人员在现场手动执行此程序时，原点位置可能会经过多次试验和错误进行设置。提供此专用功能以简化该过程。
 
-* What is home position restoration after mechanical repair?
+* 机械维修后的原点位置恢复是什么？
 
 ![](../../../_assets/tp630/axis-posi-restore1.png)
 
-In other words, home position restoration refers to:  
-Using an external reference point (dial gauge), after replacing a component, compensating the inaccurately calibrated home position Ωo' by the value ⓒ − ⓐ to restore it to the accurate home position Ωo.  
-(This is required to reuse the teaching program.)
+换句话说，原点位置恢复是指：  
+在替换组件后，使用外部参考点（量具），通过补偿不准确校准的原点位置 Ωo' 的值 ⓒ − ⓐ，将其恢复到准确的原点位置 Ωo。  
+（这在重新使用教学程序时是必需的。）
 
 {% hint style="warning" %}
-The position of the external reference point (ⓑ) must not change before and after component replacement. In other words, it must be exactly the same location both before and after replacement.
+外部参考点的位置 (ⓑ) 在组件更换前后必须保持不变。换句话说，它在更换前后必须完全处于相同的位置。
 {% endhint %}
 
 
-### Example
+### 示例
 
-The following example explains the function assuming that the S-axis motor is replaced.
+以下示例解释了假设更换 S 轴电机的功能。
 
-1. Assign a new program (101.job), and teach S1 [verification point - Approach] and S2 [home position verification point, only the S-axis rotates relative to S1] so that a fixed point on the firmly mounted tool approaches a jig or peripheral device.  
+1. 指定一个新程序 (101.job)，并教 S1 [验证点 - 接近] 和 S2 [原点位置验证点，仅 S 轴相对于 S1 旋转]，使得固定在牢固安装工具上的点接近夹具或外围设备。  
 
    ![](../../../_assets/tp630/axis-posi-restore2.png)
 
-2. After replacing the S-axis motor, manually jog the S-axis to a position close to the encoder calibration position before replacement, then perform encoder calibration for the S-axis on the `System - Robot Parameter - Encoder Calibration` screen.
+2. 更换 S 轴电机后，手动移动 S 轴至接近更换前的编码器校准位置，然后在 `系统 - Robot Parameter - Encoder Calibration (System - Robot Parameter - Encoder Calibration)` 屏幕上进行 S 轴的编码器校准。
 
-3. Manually run the taught program (101.job) to move to S1, then move to S2. When the position becomes identical to that before the mechanical component replacement, teach S3 [home position verification point, only the S-axis rotates relative to S1].  
+3. 手动运行教学程序 (101.job) 移动到 S1，然后移动到 S2。当位置变得与机械组件更换前相同后，教 S3 [原点位置验证点，仅 S 轴相对于 S1 旋转]。  
 
    ![](../../../_assets/tp630/axis-posi-restore3.png)
 
-4. Automatically calculate the encoder calibration value for the S-axis.
+4. 自动计算 S 轴的编码器校准值。
 
-   1) Enter the `System - Robot Parameter - Encoder Calibration` screen.  
-   2) Move the cursor to the S-axis and press `[F3: Calculate Calibration Value]`. 
+   1) 进入 `系统 - Robot Parameter - Encoder Calibration (System - Robot Parameter - Encoder Calibration)` 屏幕。  
+   2) 将光标移动到 S 轴并按下 `[F3: 计算校准值]`。 
 
       ![](../../../_assets/tp630/axis-posi-restore4.png)
 
-   3) Set the program number to 101 and the step number to 2 for "Before S-axis motor replacement,"  
-      and set the program number to 101 and the step number to 3 for "After S-axis motor replacement,"  
-      then press the `[Execute]` button.  
+   3) 将程序号设置为 101，步骤号设置为 2，以表示“更换 S 轴电机之前”，  
+      将程序号设置为 101，步骤号设置为 3，以表示“更换 S 轴电机之后”，  
+      然后按下 `[执行]` 按钮。  
 
-      (* If the program or step number for "After S-axis motor replacement" is set to 0, the encoder calibration value is calculated using the current S-axis position of the robot.)  
+      (* 如果“更换 S 轴电机之后”的程序或步骤号设置为 0，则编码器校准值将使用机器人当前的 S 轴位置进行计算。)  
 
       ![](../../../_assets/tp630/axis-posi-restore5.png)
 
-   4) The calculated encoder calibration value for the S-axis is displayed on the screen. Press `[F7: Confirm]` to apply the calibrated encoder value.  
+   4) S 轴的计算编码器校准值将在屏幕上显示。按下 `[F7: 确认]` 以应用校准的编码器值。  
 
       ![](../../../_assets/tp630/axis-posi-restore6.png)
 
-5. Move to S2 of the taught program (101.job) and verify that the position is identical to that before the motor replacement.
+5. 移动到教学程序 (101.job) 的 S2，并验证位置与电机更换前相同。
 [__SOURCE](7-system/4-robot-parameter/5-b-axis-deadzone.md)
-# 7.4.5 B-Axis Deadzone
+# 7.4.5 B轴死区
 
-Around 0 degree of the B-axis, the rotational center of the R1 axis and the rotational center axis of the R2 axis will be almost in parallel. When the TCP of the robot performs interpolation such as linear interpolation or circular interpolation, the wrist axis will move rapidly even in small movements.
+在B轴的0度附近，R1轴的旋转中心和R2轴的旋转中心轴几乎是平行的。当机器人执行线性插补或圆形插补等插补时，手腕轴即使在小范围运动中也会快速移动。
 
-Set the B-axis no-use area.
+设置B轴不使用区域。
 
-1.	Touch the `[3: Robot Parameter  - 5: B-axis Deadzone]` menu.
+1.	触摸`[3: Robot Parameter - 5: B-axis Deadzone] ([3: Robot Parameter  - 5: B-axis Deadzone])`菜单。
 
-2.	After setting the angle for determining the no-use area and setting the interpolation handling mode, touch the `[OK]` button.
+2.	在设置确定不使用区域的角度和插补处理模式后，触摸`[OK]`按钮。
 
     ![](../../_assets/tp630/robot-baxis-deadz_eng.png)
 
 
 
-* `[Setting Value]`: You can input the angle for determining the B-axis no-use area.
+* `[Setting Value]`: 您可以输入确定B轴不使用区域的角度。
 * 
-  `[Dead zone interpolation]`: When the trajectory of the robot has to pass through the B-axis no-use area in interpolation operation, you can perform the setting regarding the handling of errors and stopping of the robot. 
-
-
-
-
-
-
+  `[Dead zone interpolation]`: 当机器人轨迹在插补操作中必须经过B轴不使用区域时，您可以进行有关错误处理和机器人停止的设置。
 [__SOURCE](7-system/4-robot-parameter/6-accuracy.md)
-# 7.4.6 Accuracy
+# 7.4.6 精度
 
-You can set the detailed conditions of the accuracy level, which refers to the accuracy of passing through the step when the robot progresses the target step.
+您可以设置精度级别的详细条件，指的是机器人在执行目标步骤时通过该步骤的精度。
 
-1.	Touch the `[3: Robot Parameter  - 6: Accuracy]` menu.
+1. 触摸 `[3: Robot Parameter - 6: Accuracy] ([3: Robot Parameter  - 6: Accuracy])` 菜单。
 
-2.	Set the tooltip position \(TCP\) and posture for each accuracy level.
+2. 为每个精度级别设置工具提示位置 \(TCP\) 和姿态。
 
     ![](../../_assets/tp630/robot-accuracy_eng.png)
 
@@ -6910,8 +6002,8 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -6920,21 +6012,11 @@ You can set the detailed conditions of the accuracy level, which refers to the a
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information for each level. You can set the tooltip position
-          (TCP) and posture for each accuracy level.</p>
+        <p>每个级别的详细信息。您可以为每个精度级别设置工具提示位置 (TCP) 和姿态。</p>
         <ul>
-          <li>The accuracy level can be set to a value from 0 to 7, and the accuracy
-            level will be recorded as one of the step statement parameters.</li>
-          <li>Accuracy level 0&#x2013;6: Input the TCP distance and posture, as well
-            as the distance and angle of the additional axis, for each level.
-            <br />For the robots that do not support linear or circular interpolation, such
-            as LCD robots, the same method as for additional axes will be applied.</li>
-          <li>Accuracy level 7: The value will be automatically calculated and displayed
-            in the controller, so you do not need to input the value directly.
-            <br />When the accuracy level 7 is applied, the maximum cornering path that
-            satisfies the condition of 1/2 of the step distance will be created. Accuracy
-            level 7 is useful when it is required to make the robot move as smoothly
-            and quickly as possible, such as the act of LDC hand entering and exiting.</li>
+          <li>精度级别可以设置为从 0 到 7 的值，精度级别将被记录为步骤语句参数之一。</li>
+          <li>精度级别 0&#x2013;6: 输入每个级别的 TCP 距离和姿态，以及附加轴的距离和角度。<br />对于不支持线性或圆形插补的机器人，例如 LCD 机器人，将应用与附加轴相同的方法。</li>
+          <li>精度级别 7: 值将自动计算并显示在控制器中，因此您不需要直接输入该值。<br />当应用精度级别 7 时，将创建满足步骤距离 1/2 的条件的最大转弯路径。精度级别 7 在需要使机器人尽可能平滑和快速移动的情况下非常有用，例如 LDC 手进出操作。</li>
         </ul>
       </td>
     </tr>
@@ -6944,9 +6026,8 @@ You can set the detailed conditions of the accuracy level, which refers to the a
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Reset All]: You can initialize the TCP distance and posture for all accuracy
-            levels.</li>
+          <li>[确定]: 您可以保存更改。</li>
+          <li>[重置所有]: 您可以初始化所有精度级别的 TCP 距离和姿态。</li>
         </ul>
       </td>
     </tr>
@@ -6954,82 +6035,68 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 </table>
 
 {% hint style="info" %}
-* If you approach the accuracy level based on your understanding of the contents of "[2.3 Step](../../2-operation/3-step/README.md)," you can use it more easily.
-* In the welding step that uses a servo gun or an equalizerless gun, the controller will automatically perform restriction regardless of the set accuracy level. 
+* 如果您根据对 "[2.3 步骤](../../2-operation/3-step/README.md)" 内容的理解来接近精度级别，您可以更轻松地使用它。
+* 在使用伺服枪或无均衡器枪的焊接步骤中，控制器将自动根据设置的精度级别执行限制。 
 
 
 {% endhint %}
-
-
-
-
 [__SOURCE](7-system/4-robot-parameter/7-axis-add-weight/README.md)
-# 7.4.7 Additional Weight of Each Axis
+# 7.4.7 每个轴的额外重量
 
-You can register information on a transformer or wiring support mounted on the basic axis of the robot.
+您可以注册安装在机器人基本轴上的变压器或接线支架的信息。
 
-1.	Touch the `[3: Robot Parameter  - 7: Additional Weight on Each Axis]` menu.
+1. 触摸 `[3: Robot Parameter - 7: Additional Weight on Each Axis] ([3: Robot Parameter  - 7: Additional Weight on Each Axis])` 菜单。
 
-2.	Select the basic axis tab, set the information of the mounted additional weight, and then touch the `[OK]` button. 
+2. 选择基本轴选项卡，设置安装的额外重量信息，然后触摸 `[OK]` 按钮。 
 
     ![](../../../_assets/tp630/robot-addweight_eng.png)
 
 
 
 {% hint style="warning" %}
-If the robot has an additional weight because a transformer or wiring support is mounted onto it, you must register the information on the additional weight of each axis. If the additional weight is not correctly registered, the error may get large when the tool load estimation is performed.
+如果机器人由于安装了变压器或接线支架而有额外重量，您必须注册每个轴的额外重量信息。如果没能正确注册额外重量，在执行工具负载估算时可能会出现较大错误。
 {% endhint %}
-
-
 [__SOURCE](7-system/4-robot-parameter/7-axis-add-weight/1-crdsys-origin-of-each-axis.md)
-# 7.4.7.1 Coordinate System Origin of Each Axis
+# 7.4.7.1 每个轴的坐标系原点
 
-The X, Y, and Z directions of each axis are set in the same direction as the robot coordinate system. Refer to the following about the coordinate system origin of each axis.
+每个轴的X、Y和Z方向与机器人坐标系统的方向相同。有关每个轴的坐标系原点，请参阅以下内容。
 
-![Figure 62 Coordinate System Origin of Each Axis for Each Robot Configuration ](../../../_assets/image_476.png)
-
-
+![图62 每个机器人配置的每个轴的坐标系原点](../../../_assets/image_476.png)
 [__SOURCE](7-system/4-robot-parameter/8-collision-detection/README.md)
-# 7.4.8 Impact Detection
+# 7.4.8 影响检测
 
-When a collision occurs during robot operation, impact detection(collision detection) is a function that compares the torque normally generated during robot motion with the currently generated torque, and treats it as an error when abnormal torque is detected, in order to minimize damage caused by the collision
+当机器人操作过程中发生碰撞时，影响检测（碰撞检测）是一种功能，它将机器人运动过程中正常生成的扭矩与当前生成的扭矩进行比较，并在检测到异常扭矩时将其视为错误，以尽量减少碰撞造成的损害。
 
+${cont_model} 控制器通过在机器人在异常条件下操作或表现出异常行为时，以互补的方式使用碰撞检测功能，与现有的安全功能（例如过流、过载、过速和位置偏差错误检测）增强机器人的安全性。
 
-${cont_model} controller enhances robot safety by using the collision detection function in a complementary manner with existing safety functions - such as overcurrent, overload, overspeed, and position deviation error detection - when the robot operates under abnormal conditions or exhibits abnormal behavior.
-
-Touch `[3: Robot Parameter  - 14: Impact Detection]` to use this function.
+触摸 `[3: Robot Parameter - 14: Impact Detection] ([3: Robot Parameter  - 14: Impact Detection])` 来使用此功能。
 
 {% hint style="info" %}
-* The collision detection function operates only when the motor is ON.
-* Be sure to set the correct tool/additional weight or perform load estimation before using the collision detection function.
-* If the tool weight or additional weight for each axis differs from the actual values, false detections may occur.
-* Collisions are not detected while performing load estimation or sensor-based / sensorless force control functions.
-* Collisions with positioners, spot welders, jigs, or other equipment not mounted on the robot cannot be detected.
-* Model-based collision detection is not supported for custom-made robot models.
-* When collision detection error occurs after switching from autonomous driving mode to manual driving mode , this phenomenon is not an error (collision detection setting values need to be checked).
+* 碰撞检测功能仅在电机开启时操作。
+* 在使用碰撞检测功能之前，请务必设置正确的工具/附加重量或执行负载估计。
+* 如果每个轴的工具重量或附加重量与实际值不同，可能会发生误检测。
+* 在进行负载估计或传感器基础 / 无传感器的力控制功能时，无法检测到碰撞。
+* 与未安装在机器人的定位器、点焊机、夹具或其他设备的碰撞无法被检测到。
+* 不支持针对定制机器人模型的基于模型的碰撞检测。
+* 当在从自主驾驶模式切换到手动驾驶模式后发生碰撞检测错误时，此现象不是错误（需要检查碰撞检测设置值）。
 
 {% endhint %}
 
-
 ![](../../../_assets/tp630/coldet/robot_impact_detection.png)
-
 [__SOURCE](7-system/4-robot-parameter/8-collision-detection/1-coldet-model-based.md)
-# 7.4.8.1 Model-Based Impact Detection
+# 7.4.8.1 基于模型的碰撞检测
 
-The model-based impact detection function detects collisions by calculating the difference between the torque that should normally be generated during robot motion and the torque actually measured, based on the robot's dynamic model.
-Sensitivity can be adjusted to control responsiveness to collisions, and contact with external objects occurring while the robot is moving at low speed can also be detected.
+基于模型的碰撞检测功能通过计算在机器人运动过程中应正常产生的扭矩与实际测量的扭矩之间的差异来检测碰撞。可以调整灵敏度以控制对碰撞的响应，并且在机器人以低速移动时与外部物体的接触也可以被检测到。
 
-
-1. Touch the menu `[3: Robot parameter  - 14: Impact Detection  - 1: Model-Based Collision Detection]`.
-
+1. 触摸菜单 `[3: Robot parameter - 14: Impact Detection - 1: Model-Based Collision Detection] ([3: Robot parameter  - 14: Impact Detection  - 1: Model-Based Collision Detection])`。
 
 ![](../../../_assets/tp630/coldet/model_based_coldet_tab_general.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -7037,54 +6104,52 @@ Sensitivity can be adjusted to control responsiveness to collisions, and contact
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Enables or disables the model-based collision detection function.</td>
+      <td style="text-align:left">启用或禁用基于模型的碰撞检测功能。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Represents the default sensitivity for all axes. A higher value increases collision detection sensitivity.
-      (Default: 100, Maximum: 200)  </td>
+      <td style="text-align:left">表示所有轴的默认灵敏度。较高的值会增加碰撞检测灵敏度。 (默认: 100, 最大: 200)  </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c3.png" alt/>
       </td>
-      <td style="text-align:left">Enables or disables the low-speed collision detection function. </td>
+      <td style="text-align:left">启用或禁用低速碰撞检测功能。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c4.png" alt/>
       </td>
-      <td style="text-align:left">The setting time for detecting low-speed collisions. If a collision force is applied for longer than this reference time, it is recognized as a collision. </td>
+      <td style="text-align:left">检测低速碰撞的设置时间。如果碰撞力施加超过这个参考时间，则被识别为碰撞。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c5.png" alt/>
       </td>
-      <td style="text-align:left">A collision is considered a low-speed collision only when the link speed is lower than the set value. </td>
+      <td style="text-align:left">只有当链节速度低于设置值时，碰撞才被视为低速碰撞。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">Resets the settings to their default values.</td>
+      <td style="text-align:left">将设置重置为默认值。</td>
     </tr>
   </tbody>
 </table>
 
-
 ![](../../../_assets/tp630/coldet/model_based_coldet_tab_axis.png)
 
 {% hint style="info" %}
-The per-axis settings tab is enabled only in Engineering Mode or higher.
+每轴设置标签仅在工程模式或更高模式中启用。
 {% endhint %}
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -7092,34 +6157,33 @@ The per-axis settings tab is enabled only in Engineering Mode or higher.
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Ratio (%) relative to the collision detection threshold for each axis. Lower values result in more sensitive responses.</td>
+      <td style="text-align:left">相对于每个轴的碰撞检测阈值的比例（%）。较低的值会导致更灵敏的响应。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Cutoff frequency value, generally set according to the robot's control environment. If any axis is set to 0, collision detection for that axis is disabled.(Maximum: 100) </td>
+      <td style="text-align:left">截止频率值，通常根据机器人的控制环境设置。如果任何轴设置为0，则禁用该轴的碰撞检测。（最大值：100） </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c3.png" alt/>
       </td>
-      <td style="text-align:left">Resets the settings to their default values.</td>
+      <td style="text-align:left">将设置重置为默认值。</td>
     </tr>
   </tbody>
 </table>
 
 {% hint style="info" %}
-The final sensitivity value for each axis is proportional to the per-axis sensitivity value and inversely proportional to the overall default sensitivity for all axes.
+每个轴的最终灵敏度值与每轴灵敏度值成正比，与所有轴的整体默认灵敏度成反比。
 {% endhint %}
-
 [__SOURCE](7-system/4-robot-parameter/8-collision-detection/2-coldet-axis.md)
-# 7.4.8.2 Set per-Axis Collision Detection
+# 7.4.8.2 设置每个轴的碰撞检测
 
-The collision detection function monitors the disturbance torque and the rate of change of the disturbance torque occurring on each robot axis. If the measured values exceed the configured thresholds, they are treated as errors.
+碰撞检测功能监控每个机器人轴上发生的干扰扭矩和干扰扭矩变化率。如果测量值超过配置的阈值，则视为错误。
 
-* If the disturbance torque exceeds the set threshold, `[E0160 (Axis O) collision detected]` is displayed.
-* If the disturbance torque rate exceeds the set threshold, `[E0161 (Axis O) shock detected]` is displayed.
+* 如果干扰扭矩超过设定阈值，则显示`[E0160 (Axis O) 碰撞检测]`。
+* 如果干扰扭矩变化率超过设定阈值，则显示`[E0161 (Axis O) 冲击检测]`。
 
 
 ![](../../../_assets/tp630/coldet/collision_detection_of_axis.png)
@@ -7127,8 +6191,8 @@ The collision detection function monitors the disturbance torque and the rate of
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -7136,21 +6200,21 @@ The collision detection function monitors the disturbance torque and the rate of
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Enables or disables the per-axis collision detection function. Even when enabled, the function does not operate while the robot is stopped or while the spot gun is applying pressure.</td>
+      <td style="text-align:left">启用或禁用每个轴的碰撞检测功能。即使在启用状态下，当机器人停止或点焊枪施加压力时，该功能也不会工作。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Sets whether to maintain sensitivity after a collision. When enabled, the current detection level is maintained even after a collision is detected.</td>
+      <td style="text-align:left">设置在碰撞后是否保持灵敏度。启用时，即使检测到碰撞，当前检测级别也会保持不变。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left"> 
-        <p>[Measurement] Displays the maximum "disturbance torque" that occurred during the period when the collision detection command (coldet level.id) was active.</p>
-        <p>[Threshold] The user can refer to this value to configure the "disturbance torque" threshold for collision detection at each level. </p>
+        <p>[测量] 显示在碰撞检测命令（coldet level.id）活动期间发生的最大“干扰扭矩”。</p>
+        <p>[阈值] 用户可以参考此值为每个级别配置“干扰扭矩”的阈值。</p>
       </td>
     </tr>
     <tr>
@@ -7158,155 +6222,138 @@ The collision detection function monitors the disturbance torque and the rate of
         <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>[Measurement] Displays the maximum "rate of change of disturbance torque" that occurred during the period when the collision detection command (coldet level.id) was active.</p>
-        <p>[Threshold] The user can refer to this value to configure the "rate of change of disturbance torque" threshold for collision detection at each level.</p>
+        <p>[测量] 显示在碰撞检测命令（coldet level.id）活动期间发生的最大“干扰扭矩变化率”。</p>
+        <p>[阈值] 用户可以参考此值为每个级别配置“干扰扭矩变化率”的阈值。</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c5.png" alt/>
       </td>
-      <td style="text-align:left">Re-measures the maximum measured values of disturbance torque and rate of change of disturbance torque for each axis. </td>
+      <td style="text-align:left">重新测量每个轴的干扰扭矩和干扰扭矩变化率的最大测量值。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">Used to reset all level values configured for each axis to their default values. </td>
+      <td style="text-align:left">用于将每个轴配置的所有级别值重置为其默认值。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c7.png" alt/>
       </td>
-      <td style="text-align:left">Used to add additional levels. The maximum number of configurable levels is 16.</td>
+      <td style="text-align:left">用于添加额外的级别。可配置的最大级别数为16。</td>
     </tr>
     <tr>
       <td style="text-align:left"> 
         <img src="../../../_assets/c8.png" alt/>
       </td>
-      <td style="text-align:left">Used to delete the highest level. Deletion is possible starting from Level 6 and above. </td>
+      <td style="text-align:left">用于删除最高级别。删除可以从级别6及以上开始。</td>
     </tr>
   </tbody>
 </table>
 
 {% hint style="info" %}
-Collision detection measured values are displayed for up to a maximum of 2 minutes.
+碰撞检测测量值最多显示2分钟。
 {% endhint %}
 [__SOURCE](7-system/4-robot-parameter/9-jog-inch-level/README.md)
 # 7.4.9 Jog Inching Level Setting
 
-You can limit the operation by designating the moving distance. This is useful when you want to move the robot as much as the desired distance with the jog key in manual mode.
+您可以通过指定移动距离来限制操作。这在您希望使用手动模式中的 jog 键将机器人移动到所需距离时非常有用。
 
-1.	Touch the `[3: Robot Parameter  - 11: Set the Jog Inching Level]` menu.
+1. 触摸 `[3: Robot Parameter - 11: Set the Jog Inching Level] ([3: Robot Parameter  - 11: Set the Jog Inching Level])` 菜单。
 
-2.	After setting the distance and angle for each jog inching level, touch the `[OK]` button.
+2. 在为每个 jog inching level 设置距离和角度后，触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/robot-jog-inching_eng.png)
-
-
-
-
 [__SOURCE](7-system/4-robot-parameter/9-jog-inch-level/1-jog-inch-main-funcs.md)
-# 7.4.9.1 Main Functions of the Jog Inching Function
+# 7.4.9.1 主动瞬态功能的主要功能
 
-* Inching applicable coordinate systems
+* 适用的瞬态坐标系统
   * 
-    Inching in the joint coordinate system: Movement will take place as much as the distance \(mm\) and angle \(deg\) designated for each joint.
+    在关节坐标系统中的瞬态：运动将按照为每个关节指定的距离 \(mm\) 和角度 \(deg\) 进行。
 
-  * Inching in the Cartesian coordinate system
-  * Inching in the tool coordinate system 
-  * Inching in the user coordinate system: Movement will take place as much as the amount designated for the X, Y, and Z positions \(mm\) and Rx, Ry, and Rz postures\(deg\).
-* Inching level 
+  * 在笛卡尔坐标系统中的瞬态
+  * 在工具坐标系统中的瞬态 
+  * 在用户坐标系统中的瞬态：运动将按为 X、Y 和 Z 位置 \(mm\) 以及 Rx、Ry 和 Rz 姿态 \(deg\) 指定的量进行。
+* 瞬态级别 
 
-  You can set the inching distance at the same level as the existing jog speed, so you can select eight levels of speed, and you can set the inching distance for each level.
-
-
-
-
-
-
+  您可以将瞬态距离设置为与现有 jog 速度相同的级别，因此您可以选择八个速度级别，并可以为每个级别设置瞬态距离。
 [__SOURCE](7-system/4-robot-parameter/9-jog-inch-level/2-inch-jog-operation.md)
-# 7.4.9.2 Inching Jog Operation
+# 7.4.9.2 微调操作
 
-The inching function is a function that does not allow the movement to take place beyond the maximum moving distance per one push of the jog key. 
+微调功能是一种功能，它不允许运动超过每次按下微调键的最大移动距离。
 
-Even after reaching the inching distance, if you keep pressing the jog key and then release your hand, the robot will decelerate to the inching distance, and then stop.
+即使达到微调距离，如果您继续按住微调键然后松手，机器人将减速至微调距离，然后停止。
 
 ![Figure 63 When Releasing the Key After Reaching the Inching Distance](../../../_assets/image_488.png)
 
-
-
-If you release the jog key before reaching the inching distance, the robot will decelerate, starting from the time you release the jog key, and then stop. At this time, the mode will be the same as the general jog mode.
+如果您在达到微调距离之前释放微调键，机器人将从您释放微调键的时刻开始减速，然后停止。此时，模式将与普通微调模式相同。
 
 ![Figure 64 When Releasing the Hand Before Reaching the Inching Distance](../../../_assets/image_473.png)
 
 {% hint style="info" %}
-In the joint coordinate system, the speed level 1 is fixed to a mode that the robot will move by 1 bit of the encoder.
+在关节坐标系中，速度等级1固定为机器人将按编码器的1位移动的模式。
 {% endhint %}
-
-
 [__SOURCE](7-system/4-robot-parameter/12-system-maintenance/README.md)
-# 7.4.10 Reducer Lifespan Setting
+# 7.4.10 减速器寿命设置
 
-If the reducer of the robot axis is replaced, the rated life of the reducer should be initialized.
-The rate at which the rated life of the reducer is exhausted depends on the operating load conditions and speed. The higher the speed and the higher the load, the faster the life span decreases.
-The reducer life data can be found in the system characteristics data. 
-The monitoring menu displays the remaining rated life of the reducer and the expected life based on the latest robot operation pattern.
+如果机器人轴的减速器被更换，则应初始化减速器的额定寿命。  
+减速器额定寿命的消耗速度取决于工作负载条件和速度。速度越高，负载越大，寿命减少的速度也越快。  
+减速器寿命数据可以在系统特性数据中找到。  
+监控菜单显示减速器的剩余额定寿命和基于最新机器人操作模式的预期寿命。  
 
-Rated life : Remaining life when continuously driven under rated load and rated speed conditions<br>
-Expected life: Estimated remaining life based on recent actual driving conditions.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Life expectancy may increase or decrease depending on the robot's recent motion patterns. 
+额定寿命 : 在额定负载和额定速度条件下持续驱动时的剩余寿命<br>  
+预期寿命: 基于最近实际驱动条件的估计剩余寿命。<br>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 寿命预期可能会根据机器人的最近运动模式而增加或减少。  
 
-Initialization of the reducer lifespan
-1.    Touch the `[3: Robot parameter  - 12: System maintenance  - 2:Reducer Lifespan setting]` menu.
+减速器寿命初始化  
+1.    触摸`[3: Robot parameter - 12: 系统维护 - 2:Reducer Lifespan setting] ([3: Robot parameter  - 12: System maintenance  - 2:Reducer Lifespan setting])`菜单。  
 
-2.    Move the cursor to the position corresponding to the replaced reducer and touch the `[Reset one]` button.
-If all reducers are replaced or the body is replaced with a new robot, touch the `[Reset all]` button. In the case of a reducer whose rated life is initialized, the date of initialization is recorded in the chaned date column.
+2.    将光标移动到对应于更换的减速器的位置并触摸`[Reset one]`按钮。  
+如果所有减速器都被更换，或机身被替换为新的机器人，则触摸`[Reset all]`按钮。在减速器的额定寿命被初始化的情况下，初始化日期会记录在更改日期列中。  
 
-![](../../../_assets/tp630/reducer_lifetime_setting.png)
+![](../../../_assets/tp630/reducer_lifetime_setting.png)  
 
-
-Lifespan calculation cycle`[min]` : Renewal period of reducer lifespan. The minimum period is 10 minutes.
+寿命计算周期`[min]` : 减速器寿命的更新周期。最小周期为10分钟。  
 
 {% hint style="info" %}
-The reducer rated and expected life are predicted reference values based on reducer life prediction model. The actual life of the reducer may vary from the expected model depending on the driving conditions.
+减速器额定寿命和预期寿命是基于减速器寿命预测模型的预测参考值。减速器的实际寿命可能会根据驱动条件与预期模型有所不同。
 {% endhint %}
 [__SOURCE](7-system/4-robot-parameter/13-system-diagnosis/README.md)
-# 7.4.13 System diagnosis
+# 7.4.13 系统诊断
 
-It is used for various functions to diagnose failures in robot systems. 
-
-
+它用于多种功能以诊断机器人系统中的故障。
 [__SOURCE](7-system/4-robot-parameter/13-system-diagnosis/1-gas-spring-pressure_sensor.md)
-# 7.4.13.1 Gas spring pressure sensor
+# 7.4.13.1 气弹簧压力传感器
 
-The gas spring pressure sensor function is used to detect abnormal pressure in the gas spring by constantly reading the value of the pressure sensor through analog input or to generate a warning or error through digital input in a robot that uses a gas spring and has a pressure sensor (PN2570) specified by our company attached to it. <br> 
+气弹簧压力传感器功能用于通过模拟输入不断读取压力传感器的值来检测气弹簧中的异常压力，或在使用气弹簧并附带我公司指定的压力传感器（PN2570）的机器人中通过数字输入生成警告或错误。 <br> 
 
-[Digital input]
+[数字输入]
 ![](../../../_assets/tp630/gasp_sensor.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Item</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">项目</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left"> 
-        Warning input
+        警告输入
       </td>
       <td style="text-align:left">
-        Sets the signal number to receive a warning. Pressure sensors can output a warning when the measured pressure exceeds a set tolerance. The controller generates W21020 when the set signal turns on. 
+        设置接收警告的信号编号。当测量的压力超过设定的容差时，压力传感器可以输出警告。当设定信号开启时，控制器生成 W21020。 
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Error input
+        错误输入
       </td>
       <td style="text-align:left">
-        Sets the signal number to receive a warning. Pressure sensors can output a warning when the measured pressure exceeds a set tolerance. The controller generates E21020 when the set signal turns on. 
+        设置接收警告的信号编号。当测量的压力超过设定的容差时，压力传感器可以输出警告。当设定信号开启时，控制器生成 E21020。 
       </td>
     </tr>
   </tbody>
@@ -7314,57 +6361,57 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
 
 <br>
 
-[Analog input]
+[模拟输入]
 ![](../../../_assets/tp630/gasp_sensor2.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Item</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">项目</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align:left">
-        Communication signals
+        通信信号
       </td>
       <td style="text-align:left">
-        Sets the digital signal into which the pressure sensor value is input.
+        设置输入压力传感器值的数字信号。
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Current value
+        当前值
       </td>
       <td style="text-align:left">
-        The pressure value measured by the pressure sensor is displayed.
+        由压力传感器测量的压力值被显示。
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Reference value
+        参考值
       </td>
       <td style="text-align:left">
-        Sets the reference pressure injected into the gas spring. 
+        设置注入气弹簧的参考压力。 
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Tolerance warning and output signal
+        容差警告和输出信号
       </td>
       <td style="text-align:left">
-        A warning W21018 occurs if the measured pressure is less then the reference pressure minus the warning tolerance set value. <br>
-        If an output signal is set, the signal output is turned on. 
+        如果测量的压力小于参考压力减去设定的警告容差值，则会发生警告 W21018。 <br>
+        如果设置了输出信号，则信号输出会开启。 
       </td>
     </tr>
     <tr>
       <td style="text-align:left"> 
-        Tolerance error and output signal
+        容差错误和输出信号
       </td>
       <td style="text-align:left">
-        An error E21018 occurs if the measured pressure is less then the reference pressure minus the error tolerance set value. <br>
-        If an output signal is set, the signal output is turned on.  
+        如果测量的压力小于参考压力减去设定的错误容差值，则会发生错误 E21018。 <br>
+        如果设置了输出信号，则信号输出会开启。  
       </td>
     </tr>
   </tbody>
@@ -7373,15 +6420,14 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
 <br>
 
 {% hint style="info" %}
-* This feature is supported in versions V60.30.07 and later.   
+* 此功能在版本 V60.30.07 及更高版本中受支持。   
 {% endhint %}
-
 [__SOURCE](7-system/5-application-parameter/README.md)
-# 7.5 Application Parameters
+# 7.5 应用参数
 
-1.	Touch the `[4: Application Parameter]` menu. Then, the application parameter menu will appear.
+1. 触摸`[4: Application Parameter]`菜单。然后，应用参数菜单将显示。
 
-2.	Select the desired menu, and then check and set various parameters for the use of the application functions of the robot.
+2. 选择所需的菜单，然后检查和设置机器人应用功能的各种参数。
 
     ![](../_assets/tp630/app-menu_eng.png)
 
@@ -7389,497 +6435,438 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
 <br>
 
 {% hint style="info" %}
-For items not covered in this manual, please refer to the "Function Manual" for each separate application function.
+有关本手册未涵盖的项目，请参阅每个单独应用功能的“功能手册”。
 {% endhint %}
-
-
 [__SOURCE](7-system/5-application-parameter/10-cmd-idp-exe.md)
-# 7.5.10 Command independent execution
+# 7.5.10 命令独立执行
 
-This is a function that executes the corresponding statement separately from the work program when the set input signal turns from OFF to ON. <br>
-The statement is executed using an unused subtask, and usually subtask 1 is used. <br>
-For more information about multitasking, please refer to "[${cont_model} Controller Function Manual - Multitasking](https://hrbook-hrc.web.app/#/view/doc-multi-task/en/README)".
-
+这是一个功能，当设置的输入信号从 OFF 变为 ON 时，单独执行相应的语句。<br>
+该语句使用未使用的子任务执行，通常使用子任务 1。<br>
+有关多任务的更多信息，请参阅 "[${cont_model} 控制器功能手册 - 多任务](https://hrbook-hrc.web.app/#/view/doc-multi-task/zh/README)"。
 
 ![](../../_assets/tp630/cmd-idp-exe.png)
 
-  * Input signal: Set the signal input to the controller.
-  * Command: 
-    * Records statements to be executed when the input signal changes from OFF to ON. 
-    * Generally, task start is used for gun search and tip dressing work of the stationary servo gun, and move is used for independent operation of the positioner. 
-    * When using task start, subtask 1 is used to execute this command, so specify sub as 2 or more or set it to 0. (0=Auto assign)
-  * Output signal under execution: 
-    * It turns ON when execution of the statement begins and turns OFF when execution is complete. 
-    * If the statement is not a move, it is meaningless because the execution time is very short.
-  * Output signal after execution completed: 
-    * It becomes OFF when execution of the corresponding statement begins and ON when execution is complete. 
-    * If the statement is not a move, it is meaningless because the execution time is very short.
+  * 输入信号：设置信号输入到控制器。
+  * 命令：
+    * 记录输入信号从 OFF 变为 ON 时要执行的语句。
+    * 通常，任务启动用于静态伺服枪的枪搜索和尖端装饰工作，而移动用于定位器的独立操作。
+    * 使用任务启动时，使用子任务 1 执行此命令，因此请指定子任务为 2 或更多，或将其设置为 0。（0=自动分配）
+  * 正在执行的输出信号：
+    * 当语句执行开始时，变为 ON，当执行完成时，变为 OFF。
+    * 如果语句不是移动，则由于执行时间非常短是没有意义的。
+  * 执行完成后的输出信号：
+    * 当相应语句的执行开始时，变为 OFF，当执行完成时，变为 ON。
+    * 如果语句不是移动，则由于执行时间非常短是没有意义的。
 
 {% hint style="info" %}
-* Execution is possible only with the motor ON in auto mode.
-* When executing a move statement, the axis must be separated by a mechanism so that it is not used in the main task, or the axis control status must be disabled with axisctrl off.
+* 仅在电机处于自动模式且开启的情况下可以执行。
+* 执行移动语句时，轴必须通过机制与主任务分离，或者必须通过 axisctrl off 禁用轴控制状态。
 {% endhint %}
-
 [__SOURCE](7-system/5-application-parameter/13-user-def-error/README.md)
-# 7.5.13 User-Defined Error
+# 7.5.13 用户定义错误
 
-This function allows users to define errors for specific conditions in the ${cont_model} robot controller. When the defined conditions are met, the user-defined error is triggered.
+此功能允许用户为 ${cont_model} 机器人控制器中的特定条件定义错误。当满足定义的条件时，将触发用户定义的错误。
 
 {% hint style="info" %}
-Supported from V60.30-00.
+支持从 V60.30-00 开始。
 {% endhint %}
 [__SOURCE](7-system/5-application-parameter/13-user-def-error/1-setting.md)
-# 7.5.13.1 User-Defined Error Settings
+# 7.5.13.1 用户定义错误设置
 
-1. Touch the `[System  - 4: Application Parameters  - 13: User-Defined Error]` menu.<br><br>
+1. 触摸 `[System - 4: Application Parameters - 13: User-Defined Error] ([System  - 4: Application Parameters  - 13: User-Defined Error])` 菜单。<br><br>
 
-2. Click the "Create Sample File" button.<br>
-A file named "help_user_err.json" will be created in the MAIN/project directory.<br>
+2. 点击 "创建示例文件" 按钮。<br>
+将会在 MAIN/project 目录中创建一个名为 "help_user_err.json" 的文件。<br>
 ![](../../../_assets/tp630/user-def-code/image1.png)
 
-3. When re-entering the settings screen, the user-defined errors written in the sample file will be displayed.<br>
-- Error Code: Specifies the error code to be triggered.
-- Condition Expression: Defines the condition for triggering the error. Any condition expression that can be used in an - if statement is allowed.
-- Message: Specifies the message displayed when the error occurs.
-- Motor Off: Determines whether the motor should turn off when a user-defined error occurs.<br>
+3. 重新进入设置屏幕时，将显示示例文件中写入的用户定义错误。<br>
+- 错误代码：指定要触发的错误代码。
+- 条件表达式：定义触发错误的条件。可以使用任何可以在 if 语句中使用的条件表达式。
+- 消息：指定错误发生时显示的消息。
+- 电机关闭：确定当发生用户定义错误时电机是否应关闭。<br>
 ![](../../../_assets/tp630/user-def-code/image2.png)
 
-4. Insert a USB drive into the teaching pendant, access the File Manager menu, and copy the 'help_user_err.json' file to the USB storage path.<br><br>
+4. 将 USB 驱动器插入教学柜，访问文件管理器菜单，并将 'help_user_err.json' 文件复制到 USB 存储路径。<br><br>
 ![](../../../_assets/tp630/user-def-code/image3.png)
 
-5. Open the file on a PC and edit the errors according to the sample file format (editing with Notepad is possible).<br><br>
-- E65###: Error Code (Range: E65001 ~ E65500)
-    - cnd: Condition expression
-    - msg: Cause message displayed in the error help
-    - remedy: Corrective action displayed in the error help
-    - mot_off: Motor off<br>
+5. 在 PC 上打开文件，并根据示例文件格式编辑错误（可以使用记事本进行编辑）。<br><br>
+- E65###：错误代码（范围：E65001 ~ E65500）
+    - cnd：条件表达式
+    - msg：显示在错误帮助中的原因消息
+    - remedy：显示在错误帮助中的纠正措施
+    - mot_off：电机关闭<br>
 ![](../../../_assets/tp630/user-def-code/image4.png)
 
-6. Copy the edited file back to the teaching pendant.
-
-
+6. 将编辑后的文件复制回教学柜。
 [__SOURCE](7-system/5-application-parameter/13-user-def-error/2-example.md)
-# 7.5.13.2 User-Defined Error Example
+# 7.5.13.2 用户定义错误示例
 
-1. Modify the 'help_user_err.json' file as shown below.<br>
+1. 修改 'help_user_err.json' 文件如下所示。<br>
 ![](../../../_assets/tp630/user-def-code/image9.png)
 
-2. When the di5 signal is turned on to satisfy the condition expression, E65001 will be triggered.<br>
+2. 当 di5 信号被打开以满足条件表达式时，E65001 将被触发。<br>
 ![](../../../_assets/tp630/user-def-code/image10.png)
 
-3. Checking the error help will display the same content as written in the file.<br>
+3. 检查错误帮助将显示与文件中写入的相同内容。<br>
 ![](../../../_assets/tp630/user-def-code/image11.png)
 [__SOURCE](7-system/5-application-parameter/14-user-def-warn/README.md)
-# 7.5.14 User-Defined Warning
+# 7.5.14 用户定义警告
 
-This function allows users to define warnings for specific conditions in the ${cont_model} robot controller. When the defined conditions are met, the user-defined warning is triggered.
+此功能允许用户为 ${cont_model} 机器人控制器中的特定条件定义警告。当满足定义的条件时，将触发用户定义的警告。
 
 {% hint style="info" %}
-Supported from V60.30-00.
+支持从 V60.30-00 开始。
 {% endhint %}
 [__SOURCE](7-system/5-application-parameter/14-user-def-warn/1-setting.md)
-# 7.5.14.1 User-Defined Warning Settings
+# 7.5.14.1 用户定义警告设置
 
-1. Touch the `[System  - 4: Application Parameters  - 14: User-Defined Warning]` menu.<br><br>
+1. 触摸`[System - 4: Application Parameters - 14: User-Defined Warning] ([System  - 4: Application Parameters  - 14: User-Defined Warning])`菜单。<br><br>
 
-2. Click the 'Create Sample File' button.<br>
-* A file named 'help_user_warn.json' will be created in the MAIN/project directory.<br>
+2. 点击“创建示例文件”按钮。<br>
+* 将在MAIN/project目录中创建一个名为'help_user_warn.json'的文件。<br>
 ![](../../../_assets/tp630/user-def-code/image5.png)
 
-3. When re-entering the settings screen, the user-defined warnings written in the sample file will be displayed.
-- Warning Code: Specifies the warning code to be triggered.
-- Condition Expression: Defines the condition for triggering the warning. Any condition expression that can be used in an if statement is allowed.
-- Message: Specifies the message displayed when the warning occurs.<br>
+3. 重新进入设置屏幕时，将显示在示例文件中写入的用户定义警告。
+- 警告代码：指定要触发的警告代码。
+- 条件表达式：定义触发警告的条件。可以使用if语句中的任何条件表达式。
+- 消息：指定在发生警告时显示的消息。<br>
 ![](../../../_assets/tp630/user-def-code/image6.png)
 
-4. Insert a USB drive into the teaching pendant, access the File Manager menu, and copy the 'help_user_warn.json' file to the USB storage path.<br><br>
+4. 将USB驱动器插入教学挂件，访问文件管理器菜单，并将'help_user_warn.json'文件复制到USB存储路径。<br><br>
 ![](../../../_assets/tp630/user-def-code/image7.png)
 
-5. Open the file on a PC and edit the warnings according to the sample file format (editing with Notepad is possible).<br><br>
-- W65###: Warning Code (Range: W65001 ~ W65100)
-    - cnd: Condition expression
-    - msg: Cause message displayed in the warning help
-    - remedy: Corrective action displayed in the warning help<br>
+5. 在PC上打开文件并根据示例文件格式编辑警告（可以使用记事本进行编辑）。<br><br>
+- W65###: 警告代码（范围：W65001 ~ W65100）
+    - cnd: 条件表达式
+    - msg: 在警告帮助中显示的原因消息
+    - remedy: 在警告帮助中显示的纠正措施<br>
 ![](../../../_assets/tp630/user-def-code/image8.png)
 
-6. Copy the edited file back to the teaching pendant.
+6. 将编辑后的文件复制回教学挂件。
 [__SOURCE](7-system/5-application-parameter/14-user-def-warn/2-example.md)
-# 7.5.14.2 User-Defined Warning Example
+# 7.5.14.2 用户定义警告示例
 
-1. Modify the 'help_user_warn.json' file as shown below.<br>
+1. 修改 'help_user_warn.json' 文件，如下所示。<br>
 ![](../../../_assets/tp630/user-def-code/image12.png)
 
-2. When the di6 signal is turned on to satisfy the condition expression, W65001 will be triggered<br>
+2. 当 di6 信号被打开以满足条件表达式时，将触发 W65001<br>
 ![](../../../_assets/tp630/user-def-code/image13.png)
 
-3. Checking the warning help will display the same content as written in the file.<br>
+3. 检查警告帮助将显示文件中写的相同内容。<br>
 ![](../../../_assets/tp630/user-def-code/image14.png)
-
 [__SOURCE](7-system/5-application-parameter/16-joystick-mode/README.md)
-# 7.5.16 Joystick mode
+# 7.5.16 操纵杆模式
 
-This function is used to operate the robot with an external device such as a joystick. 
+此功能用于通过外部设备，例如操纵杆，操作机器人。
 
 ![](../../../_assets/tp630/joystick_mode_menu.png)
 
-* Joystic jog enable <br>
-   In order to perform functions corresponding to joystick mode, the input signal must be set and must be turned ON. 
+* 操纵杆慢速行驶启用 <br>
+   为了执行与操纵杆模式对应的功能，输入信号必须设置并开启。
 
-* Execution type <br>
-   Select whether to perform the jogging motion with the input state of the set signal or the input state of Open-api. <br>
-   The jogging operation is exactly the same as the jogging key operation in the T/P's manual mode.
+* 执行类型 <br>
+   选择是否根据设置信号的输入状态或Open-api的输入状态执行慢速运动。 <br>
+   慢速操作与T/P手动模式中的慢速键操作完全相同。
 
 
 {% hint style="info" %}
-* It operates only when the motor is on in auto mode.
+* 仅在自动模式下电机打开时才会操作。
 {% endhint %}
-
 [__SOURCE](7-system/5-application-parameter/16-joystick-mode/1-jogging-in-signal.md)
-# 7.5.16.1 Jogging(input signal)
+# 7.5.16.1 手动操作（输入信号）
 
-To jog the robot by signal input, set the input signal corresponding to each direction key. <br>
-In the section where the corresponding input signal is ON, the corresponding axis moves in the specified direction. <br>
+通过信号输入手动操作机器人，请设置与每个方向键对应的输入信号。 <br>
+在相应输入信号为 ON 的部分，相应轴将在指定方向上移动。 <br>
 
-When an input signal is set to a coordinate system, if the input signal turns on, the matching coordinate system is selected. <br>
+当输入信号设置为坐标系统时，如果输入信号开启，则选择匹配的坐标系统。 <br>
 
-The input signal corresponding to the mechanism number can change the mechanism depending on the status. <br>
+与机制编号对应的输入信号可以根据状态更改机制。 <br>
 
 ![](../../../_assets/tp630/jogging_in_signal.png)
-
-
 [__SOURCE](7-system/5-application-parameter/16-joystick-mode/2-jogging-open-api.md)
 # 7.5.16.2 Jogging(open-api)
 
-Please refer to the separate manual for open-api communication. <br>
-Information about the url address and body used for robot jogging is as follows.
+请参阅关于open-api通信的单独手册。 <br>
+有关机器人操纵的url地址和请求体的信息如下。
 
 * url : POST /project/robot/joystick/joy
 * body <br>
-    axis : Composed of double type array. axis[0] corresponds to J1. A value of -1 means movement to the left, and a value of +1 means movement to the right. <br>
+    axis : 由双精度类型数组组成。 axis[0] 对应于 J1。 值为 -1 表示向左移动，值为 +1 表示向右移动。 <br>
 
 
 {% hint style="info" %}
-If no data is received for 300ms, the jogging motion will stop.  
+如果在300ms内未收到数据，操纵运动将停止。  
 {% endhint %}
-
 [__SOURCE](7-system/5-application-parameter/16-joystick-mode/3-speed-level.md)
-# 7.5.16.3 Speed
+# 7.5.16.3 速度
 
-This function changes the speed level of robot jogging by signal input. <br>
-When the set input signal becomes ON, it changes to the corresponding speed level and also outputs the corresponding output signal as ON. <br>
+此功能通过信号输入改变机器人慢跑的速度等级。 <br>
+当设定的输入信号变为 ON 时，它会变更为相应的速度等级，并将相应的输出信号也设置为 ON。 <br>
 
 ![](../../../_assets/tp630/speed_level.png)
-
-
-
-
 [__SOURCE](7-system/5-application-parameter/16-joystick-mode/4-robot-move.md)
-# 7.5.16.4 Moving
+# 7.5.16.4 移动
 
-This is a function that moves the axis of the robot specified by signal input to the specified position at the specified speed. <br>
-In the figure below, when the fb2.di34 signal is turned on, the robot moves at 10% speed so that the position of the robot's 6 axes is 30 degrees. <br>
+这是一个将机器人指定的轴通过信号输入移动到指定位置的功能，移动速度为指定速度。 <br>
+在下图中，当 fb2.di34 信号开启时，机器人以 10% 的速度移动，使机器人的 6 个轴的位置达到 30 度。 <br>
 
-If you want to move two or more axes of the robot simultaneously, set the input signals to the same value. At this time, the movement speed is applied to the setting value recorded first among them. <br>
+如果您想同时移动两个或多个轴，请将输入信号设置为相同的值。此时，运动速度应用于其中第一个记录的设置值。 <br>
 
 ![](../../../_assets/tp630/robot_move.png)
-
-
-
 [__SOURCE](7-system/5-application-parameter/22-reduced-speed-mode.md)
-# 7.5.22 Reduced Speed Mode
+# 7.5.22 降速模式
 
-When the input signal (di) changes from OFF to ON, the robot speed is reduced according to the set reduction ratio. <br>
-In the move command, the robot speed is applied by combining the original speed value with the auto mode robot speed and the reduction ratio. <br>
+当输入信号（di）从关闭变为开启时，机器人速度将根据设定的降低比率降低。 <br>
+在移动命令中，机器人速度通过将原始速度值与自动模式下的机器人速度和降低比率结合应用。 <br>
 
 ![](../../_assets/tp630/reduced_spd_mode.png)
 
-  * Input Signal: Sets the signal received by the controller.
-  * Active: 
-    * High : Reduction is applied when the signal is ON, and canceled when the signal is OFF.
-    * Low : Reduction is applied when the signal is OFF, and canceled when the signal is ON.
-  * Reduced Speed Rate:  
-    * Determines the ratio by which the speed will be reduced.
-    * When the reduced speed mode input signal is received, the robot speed is set to the auto mode robot speed multiplied by the reduced speed rate.
+  * 输入信号：设定控制器接收的信号。
+  * 活动：
+    * 高：信号为开启时应用降低，信号为关闭时取消。
+    * 低：信号为关闭时应用降低，信号为开启时取消。
+  * 降低速度比率：  
+    * 决定速度降低的比率。
+    * 当接收到降速模式输入信号时，机器人速度设定为自动模式的机器人速度乘以降低速度比率。
 
 {% hint style="info" %}
-* The reduction ratio is not applied in manual mode.
+* 在手动模式下不应用降低比率。
 {% endhint %}
 
 {% hint style="warning" %}
-* Select the correct active condition that matches the state of the input signal.
-* When an I/O signal is received during playback, the reduced speed mode will still be applied.
+* 选择与输入信号状态匹配的正确激活条件。
+* 在播放期间接收到I/O信号时，仍会应用降速模式。
 {% endhint %}
-
 [__SOURCE](7-system/5-application-parameter/23-scurve-condition/README.md)
 # 7.5.23 S-curve Condition
 
-The S‑curve refers to motion‑trajectory planning that adjusts path accuracy and residual vibration according to the task, enabling the design of an optimal process
+S-curve指的是根据任务调整路径准确性和 residual vibration 的运动轨迹规划，使最佳过程的设计成为可能。
 
 ![](../../../_assets/tp630/s-curve_velocity_comparison.png)
 
-The image compares the default velocity‑profiling method with the S‑curve velocity‑profiling method.
+该图比较了默认的速度轮廓法与 S-curve 速度轮廓法。
 
-Default (blue solid line): Acceleration starts and ends with abrupt changes in acceleration, which can cause vibration.
-S‑curve (red dashed line): The speed change during acceleration and deceleration is performed more smoothly. This minimizes robot vibration and reduces path error even when the motion speed changes.
+默认（蓝色实线）：加速的开始和结束都伴随突变的加速，这可能会导致振动。  
+S-curve（红色虚线）：加速和减速期间的速度变化更为平滑。这最小化了机器人振动并减少了路径误差，即使在运动速度改变时也是如此。
 
 {% hint style="warning" %}
-* If continuous motion generation fails, the motion will run as a discontinuous (broken) motion. In that region, adjust the parameters or switch back to the default motion (Default) for reliable operation.
-* History logs can be used to view records of continuous‑motion failures.
+* 如果连续运动生成失败，运动将作为不连续（中断）运动执行。在该区域，调整参数或切换回默认运动（Default）以确保可靠操作。  
+* 历史日志可用于查看连续运动失败的记录。  
 {% endhint %}
 
 {% hint style="info" %}
-* This feature is supported from version V70.00‑00 onward.
-* Refer to the command syntax in the ${cont_model} controller manual "[5.22 scurve](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/22-s-curve?cont_model=${cont_model})"
+* 此功能支持从版本 V70.00‑00 开始。  
+* 请参考 ${cont_model} 控制器手册中的命令语法 "[5.22 scurve](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/5-moving-robot/22-s-curve?cont_model=${cont_model})"  
 {% endhint %}
-
 [__SOURCE](7-system/5-application-parameter/23-scurve-condition/1-scurve-condition.md)
 # 7.5.23.1 S-curve condition
 
-S‑curve condition settings allow you to define the characteristics of the acceleration and deceleration phases that occur when the robot is operating in detail. Configure the items below to match each process’s required characteristics (such as path accuracy or vibration reduction).
+S‑curve 条件设置允许您详细定义机器人操作时发生的加速和减速阶段的特性。配置以下项目以匹配每个过程所需的特性（例如路径精度或振动减少）。
 
 ![](../../../_assets/tp630/s-curve_condition.png)
 
-  * Condition Name: Enter the name of the condition.
-  * Path Accuracy <br>
-    Determines how faithfully the robot follows the specified trajectory. A higher value is recommended for processes such as machining or precision assembly where trajectory deviation must be minimized.
-    A larger value increases path accuracy, but it may also cause relatively higher vibration.
-  * Smooth Motion <br>
-    Determines how gently the acceleration and deceleration change. Use a higher value when you need to protect fragile workpieces (e.g., glass), when the process is sensitive to vibration, or when you want to reduce mechanical shock to the robot hardware. A larger value yields smoother motion, but it also increases cycle time. Setting the value too high may prevent the robot from performing continuous motions, causing it to move in a discontinuous manner.
+  * 状态名称：输入条件的名称。
+  * 路径精度 <br>
+    决定机器人遵循指定轨迹的忠实度。对于如加工或精密组装等过程，建议使用更高的值，以最小化轨迹偏差。
+    较大的值提高路径精度，但也可能导致相对较高的振动。
+  * 平稳运动 <br>
+    决定加速和减速变化的温和程度。当您需要保护易碎工件（例如玻璃）、过程对振动敏感或希望减少对机器人硬件的机械冲击时，使用更高的值。较大的值产生更平滑的运动，但也会增加周期时间。如果设置的值过高，可能会导致机器人无法执行连续运动，导致其以不连续的方式移动。
 
-## Example Settings
+## 示例设置
 
-* Precision machining and dispensing (path accuracy priority)
-  * The robot must follow a predetermined trajectory accurately.
+* 精密加工和点胶（路径精度优先）
+  * 机器人必须准确地遵循预定轨迹。
 
-  * Recommended settings:
-    * Path accuracy: High (e.g., 80 ~ 100)
-    * Smooth motion: Low‑to‑medium (e.g., 20 ~ 40)
+  * 推荐设置：
+    * 路径精度：高（例如，80 ~ 100）
+    * 平稳运动：低到中等（例如，20 ~ 40）
 
-  * Use case: Applying sealant along complex curves of automotive parts, or performing laser cutting. To minimize trajectory error, set accuracy high; maintaining the path is more important than slight vibration.
+  * 用例：沿汽车零件的复杂曲线涂抹密封剂或进行激光切割。为了最小化轨迹误差，设置高精度；保持路径比轻微振动更重要。
 
-  * Caution: Adjust parameters according to the actual robot’s vibration behavior and the specific process specifications.
+  * 注意：根据实际机器人的振动行为和特定过程规格调整参数。
 
-* Sensitive cargo transport (vibration‑reduction, smooth motion priority)
-  * A process where vibration can damage the product or cause mis‑placement.
+* 敏感货物运输（振动减少，平稳运动优先）
+  * 一个过程，其中振动可能损坏产品或导致错位。
 
-  * Recommended settings:
-    * Path accuracy: Medium (e.g., 50)
-    * Smooth motion: High (e.g., 80 ~ 100)
+  * 推荐设置：
+    * 路径精度：中等（例如，50）
+    * 平稳运动：高（例如，80 ~ 100）
 
-  * Use case: Transporting semiconductor wafers, large glass panels (LCD/OLED), or containers with easily spilling liquid. Minimize shock during acceleration/deceleration to prevent slip or shaking.
+  * 用例：运输半导体晶圆、大型玻璃面板（LCD/OLED）或含有易溢液体的容器。在加速/减速期间最小化冲击，以防止滑动或晃动。
 
-  * Caution: As motion becomes smoother, overall cycle time (operation time) may increase, or discontinuous motions may need to be performed.
+  * 注意：由于运动变得更加平滑，整体周期时间（操作时间）可能会增加，或者可能需要执行不连续的运动。
 [__SOURCE](7-system/5-application-parameter/23-scurve-condition/2-acceldecel-parameter.md)
-# 7.5.23.2 Acceleration/Deceleration Parameters
+# 7.5.23.2 加速/减速参数
 
-S‑curve conditions and **maximum jerk** complement each other. When optimizing a process with only the S‑curve setting proves difficult, or when you need to adjust the maximum jerk limit for each joint, you adjust the parameters.
+S曲线条件和**最大加加速度**相辅相成。当仅用S曲线设置优化某个过程困难时，或者当需要为每个关节调整最大加加速度限制时，您可以调整参数。
 
 ![](../../../_assets/tp630/s-curve_acceldecel_parameter.png)
 
-Relationship Between Jerk and Motion
-Jerk is the rate of change of acceleration, and modifying this value produces the following characteristic changes.
+加加速度与运动之间的关系
+加加速度是加速度变化的速率，修改此值会产生以下特征变化。
 
-- **Decrease maximum jerk (↓):** Acceleration changes more gradually, making motion smoother and reducing vibration. However, it takes longer to reach the target speed, which can increase cycle time.
+- **减少最大加加速度 (↓)：** 加速度变化更为渐进，使运动更平滑，并减少振动。然而，达到目标速度所需的时间更长，这可能会增加循环时间。
 
-- **Increase maximum jerk (↑):** Provides a more responsive motion, but if the value is too high the “smooth motion” effect of the S‑curve condition is diminished, leading to greater mechanical impact.
+- **增加最大加加速度 (↑)：** 提供更灵敏的运动，但如果值过高，则S曲线条件的“平滑运动”效果会减弱，从而导致更大的机械冲击。
 
-Automatic Update of Maximum Jerk
-The system automatically recalculates the maximum jerk value whenever key parameters change to maintain equipment stability.
+最大加加速度的自动更新
+每当关键参数更改时，系统会自动重新计算最大加加速度值，以保持设备的稳定性。
 
 {% hint style="warning" %}
-**Caution:** When you manually set a value, modifying the top speed or acceleration time will overwrite the manually entered maximum jerk with the system‑calculated value. If you have optimized the jerk value for a specific process, be sure to back up the existing value before making changes.
+**警告：** 当您手动设置一个值时，修改最高速度或加速时间将会用系统计算的值覆盖手动输入的最大加加速度。如果您已针对特定过程优化了加加速度值，请确保在进行更改之前备份现有值。
 {% endhint %}
 
 
 {% hint style="info" %}
-Because acceleration/deceleration parameters have a large impact on robot motion characteristics, they are only enabled in Engineering mode or higher.
+由于加速/减速参数对机器人运动特性有很大影响，因此仅在工程模式或更高模式下启用。
 {% endhint %}
-
 [__SOURCE](7-system/6-initialization/README.md)
-# 7.6 Initialization
+# 7.6 初始化
 
-If the robot controller does not operate normally, initialize the system. The system initialization must be performed by an engineer who has experience in initial setting of the robots of HD Hyundai Robotics.
+如果机器人控制器无法正常运行，请初始化系统。系统初始化必须由具有 HD Hyundai Robotics 机器人初始设置经验的工程师执行。
 
+1. 触摸 `[5: 初始化]` 菜单。然后，初始化菜单将出现。
 
-
-1.	Touch the `[5: Initialize]` menu. Then, the menu for initialization will appear.
-
-2.	Select the desired menu, and then perform the initial setting of the robot system, and then initialize the serial encoder.
+2. 选择所需的菜单，然后执行机器人系统的初始设置，然后初始化串行编码器。
 
     ![](../../_assets/tp630/init-menu_eng.png)
 
-
-
 {% hint style="info" %}
-Some items in the `[Initialize]` menu will be supported only when a specific type of an additional axis is selected.
+在 `[初始化]` 菜单中的某些项目仅在选择特定类型的附加轴时支持。
 {% endhint %}
 
 {% hint style="info" %}
-* To initialize the system, you should contact the customer support team and ask for an expert or a qualified engineer to prevent false operation.
+* 要初始化系统，您应联系客户支持团队并请求专家或合格的工程师以防止错误操作。
 * 
-  When the system is initialized, all data and programs saved in the controller will be deleted. Before initializing the system, you should back up your data and programs and restore them if necessary.
+  当系统初始化时，控制器中保存的所有数据和程序将被删除。在初始化系统之前，您应备份您的数据和程序，并在必要时恢复它们。
 
-  For details on Data Backup and Restoration, refer to "[4.2.5 Data Backup](../../4-service/2-file-manager/5-data-backup.md)" and "[4.2.6 Data Restoration](../../4-service/2-file-manager/6-data-restore.md)".
+  有关数据备份和恢复的详细信息，请参阅 "[4.2.5 数据备份](../../4-service/2-file-manager/5-data-backup.md)" 和 "[4.2.6 数据恢复](../../4-service/2-file-manager/6-data-restore.md)"。
 {% endhint %}
-
-
-
-
 [__SOURCE](7-system/6-initialization/1-system-format.md)
-# 7.6.1 System Format
+# 7.6.1 系统格式
 
-1.	On the status bar of the ${cont_model} teach pendant screen, check if the operation mode is set to manual mode.
+1. 在${cont_model}示教器屏幕的状态栏上，检查操作模式是否设置为手动模式。
 
     ![](../../_assets/tp630/sbar-mode-manual_eng.png)
 
-    If it is set to automatic mode, turn the mode switch of the teach pendant to set it to manual mode.
+    如果设置为自动模式，请将示教器的模式开关切换到手动模式。
 
     ![](../../_assets/tp630/TP-hw-switch-manual.png)
 
-2.	Touch the `[system]` button  - `[5: Initialize  - 1: System format]` menu.
+2. 点击`[system]`按钮 - `[5: 初始化 - 1: 系统格式] ([5: 初始化 - 1: 系统格式])`菜单。
 
-
-3.	After checking the saved data, touch the `[Initialize]` button. All data and programs including control parameter files and machine parameter files will be deleted, and the initial setting values will be restored.
+3. 在检查已保存的数据后，点击`[Initialize]`按钮。所有数据和程序，包括控制参数文件和机器参数文件，将被删除，初始设置值将被恢复。
 
     ![](../../_assets/tp630/pop-system-init_eng.png)
-
-
 [__SOURCE](7-system/6-initialization/2-robot-type-sel.md)
-# 7.6.2 Robot Type Selection
+# 7.6.2 机器人类型选择
 
-1.	Touch the `[5: Initialize  - 2: Robot Type Selection]` menu. Or touch the `[Mechanism]` button at the top right of the ${cont_model} teach pendant screen.
+1. 触摸 `[5: Initialize - 2: Robot Type Selection] ([5: Initialize - 2: Robot Type Selection])` 菜单。或者触摸 ${cont_model} 教学挂件屏幕右上角的 `[Mechanism]` 按钮。
 
-2.	Select a robot in the robot model selection window, and then touch the `[OK]` button.
+2. 在机器人型号选择窗口中选择一个机器人，然后触摸 `[OK]` 按钮。
 
     ![](../../_assets/tp630/init-robot-select_eng.png)
 
-
-
-* You can scroll through the robot model list to check the model name, or you can input the model name to search.
-* If you touch the robot usage button, only the robots belonging to the usage can be checked on the list.
+* 您可以滚动浏览机器人型号列表以检查型号名称，或者可以输入型号名称进行搜索。
+* 如果您触摸机器人使用按钮，则仅可在列表中查看属于该用途的机器人。
 * 
-  If you select a new robot model, the machine parameter file \(hi6\_porj.json\) will be restored to the initial setting values, and various history files will also be initialized.
+  如果您选择了一个新机器人型号，机器参数文件 \(hi6\_porj.json\) 将恢复为初始设置值，各种历史文件也将被初始化。
 
 * 
-  If you select a system that includes additional axes such as a travel axis or a servo gun, you should set the number of additional axes. If a system consists of only robot axes without additional axes, input 0. 
+  如果您选择一个包含额外轴（如旅行轴或伺服枪）的系统，则应设定额外轴的数量。如果系统仅由机器人轴组成而没有额外轴，请输入 0。
 
   ![](../../_assets/tp630/init-addaxis-pop_eng.png)
 
 {% hint style="warning" %}
-* The manipulator and controller are shipped as one system. For this reason, the robot controller is equipped with a drive suitable for the drive capacity of the robot that is part of the system.
-* When resetting the system by initializing it, you must check the model of the robot that was set to the initial setting values when shipped from the factory, and then set the correct model.
-
+* 操作臂和控制器作为一个系统发货。因此，机器人控制器配备了适合作为系统部分的机器人的驱动能力的驱动器。
+* 当通过初始化重置系统时，必须检查出厂时设置为初始设置值的机器人的型号，然后设置正确的型号。
 
 {% endhint %}
 
-3.	After touching the `[Favorites]` button at the bottom right of the ${cont_model} teach pendant screen, input 314 in the input area of the favorites window, and then touch the `[OK]` button.
+3. 在 ${cont_model} 教学挂件屏幕右下角触摸 `[Favorites]` 按钮，在收藏窗口的输入区域输入 314，然后触摸 `[OK]` 按钮。
 
     ![](../../_assets/tp630/pop-rcode-314_eng.png)
 
 {% hint style="warning" %}
-* In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
-* Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
+* 在工程师模式下，工程师模式图标\(![](../../_assets/eng-mode.png)\)将在状态栏上闪烁。
+* 请注意，如果设置不正确，机器人系统可能会发生严重问题。
 {% endhint %}
 
-4.	Touch the `[system]` button  - `[3: Robot Parameter  - 4: Encoder Offset]` menu.
+4. 触摸 `[system]` 按钮 - `[3: Robot Parameter - 4: Encoder Offset] ([3: Robot Parameter - 4: Encoder Offset])` 菜单。
 
-
-5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.
+5. 执行编码器偏移校准。即使机器人位置不是参考位置，也应临时设置编码器偏移以启动车载电机。
 
     ![](../../_assets/tp630/robot-encoder-offset__eng.png)
 
 {% hint style="info" %}
-* You should perform an encoder offset setting normally after moving the robot to the reference position.
-* For the initial setting, you should perform the encoder offset setting even if the robot position is not the reference position. Otherwise, the motor will not be turned on, making it impossible to drive the robot.
-
+* 您应在机器人移动到参考位置后正常执行编码器偏移设置。
+* 对于初始设置，即使机器人位置不是参考位置，您也应执行编码器偏移设置。否则，电机将无法启动车辆，导致无法驱动机器人。
 
 {% endhint %}
 
-6.	Turn off and on the power of the controller and then supply power to the motor.
+6. 关闭控制器电源，然后重新开启电源，接着给电机供电。
 
-7.	In manual mode, move the robot safely to the reference position at low speed and then perform the encoder offset calibration again by referring to steps 7-8.
+7. 在手动模式下，以低速安全移动机器人到参考位置，然后根据步骤 7-8 再次执行编码器偏移校准。
 
-* In the encoder offset setting item, the current encoder position will be set to 0X400000 \(hexadecimal\).
-* When a motor is replaced because of failure, if the encoder offset setting is performed at the same location, the recorded program can be used identically.
+* 在编码器偏移设置项中，当前编码器位置将设置为 0X400000 \(十六进制\)。
+* 更换电机因为故障时，如果在同一位置执行编码器偏移设置，记录的程序可以完全相同地使用。
 
-8.	Press the `[Program]` key on the teach pendant, and select the program 9999 and then record one step. You can move the robot to the reference position easily. 
+8. 按下教学挂件上的 `[Program]` 键，选择程序 9999，然后记录一个步骤。您可以轻松将机器人移动到参考位置。
 
 {% hint style="warning" %}
-* To initialize the system, contact the customer support team and ask an expert.
+* 要初始化系统，请联系客户支持团队并寻求专家的帮助。
 * 
-  For initialization of a collaborative root, refer to the collaborative robot safety functions manual.
+  有关协作机器人的初始化，请参阅协作机器人安全功能手册。
 
 * 
-  When the system is initialized, all data and programs, including control parameter files and machine parameter files, will be deleted. If you back up your data before initializing the system, it can be restored and used when necessary.
+  当系统初始化时，包括控制参数文件和机器参数文件在内的所有数据和程序将被删除。如果在初始化系统之前备份您的数据，则可以在必要时恢复并使用。
 {% endhint %}
-
-
-
-
 [__SOURCE](7-system/6-initialization/3-usage-set/README.md)
-# 7.6.3 Usage Setting
+# 7.6.3 使用设置
 
-You can select the operation usage and initialize the user key and input/output assignment signals according to the operation usage.
+您可以根据操作使用情况选择操作使用并初始化用户密钥和输入/输出分配信号。
 
-1.	Touch the `[5: Initialize  - 3: Usage Setting]` menu.
+1. 触摸 `[5: Initialize - 3: Usage Setting] ([5: Initialize  - 3: Usage Setting])` 菜单。
 
-2.	After selecting the operation usage and setting the environment conditions according to the usage, touch the `[OK]` button. Then, you can use commands related to the selected operation usage and access the relevant menus.
-
-
-
-
-
-
+2. 选择操作使用情况并根据使用情况设置环境条件后，触摸 `[OK]` 按钮。然后，您可以使用与所选操作使用相关的命令并访问相关菜单。
 [__SOURCE](7-system/6-initialization/3-usage-set/1-spot-welding.md)
-# 7.6.3.1 Spot Welding
+# 7.6.3.1 点焊
 
-If you select the operation usage as spot welding, you can use the commands related to spot welding and access the menu related to spot welding.
+如果您选择操作使用为点焊，则可以使用与点焊相关的命令并访问与点焊相关的菜单。
 
 ![](../../../_assets/tp630/init-usage-spot_eng.png)
 
-1.	Set `[Spot Welding]` as enable. Then, other usages will be handled as disable.
+1. 将 `[Spot Welding]` 设置为启用。然后，其他用途将被处理为禁用。
 
-2.	Click the `[User Key Initialization]` drop-down menu and the `[Input/Output Assign Initialization]` drop-down menu, respectively, and select spot.
-
-
-
-
-
-
+2. 分别单击 `[User Key Initialization]` 下拉菜单和 `[Input/Output Assign Initialization]` 下拉菜单，然后选择点焊。
 [__SOURCE](7-system/6-initialization/3-usage-set/2-arc-welding.md)
-# 7.6.3.2 Arc Welding
+# 7.6.3.2 弧焊
 
-If you select the operation usage as Arc welding, you can use commands related to arc welding and access the menus related to arc welding.
+如果您选择操作用法为弧焊，您可以使用与弧焊相关的命令并访问与弧焊相关的菜单。
 
 ![](../../../_assets/tp630/init-usage-arc_eng.png)
 
-1.	Set the welding machine type \(analog or digital\) in `[Arc Welding]`. Other usages will be handled as disable, and a list of welders supported by the system will appear at the bottom of the screen.
+1. 在 `[Arc Welding]` 中设置焊机类型 \(模拟或数字\)。其他用法将被处理为禁用，并且系统支持的焊机列表将出现在屏幕的底部。
 
-2.	After checking the welder list, set the welder number.
+2. 检查焊机列表后，设置焊机编号。
 
-3.	Click the `[User Key Initialization]` drop-down menu and the `[Input/Output Assign Initialization]` drop-down menu, respectively, and select arc.
-
-
-
-
-
-
+3. 点击 `[User Key Initialization]` 下拉菜单和 `[Input/Output Assign Initialization]` 下拉菜单，并分别选择弧焊。
 [__SOURCE](7-system/6-initialization/4-serial-encoder-reset.md)
-# 7.6.4 Serial Encoder Reset
+# 7.6.4 串行编码器重置
 
-The serial encoder stores the encoder rotation speed information in the internal memory. The encoder rotation speed can be cleared to zero by resolving the motor error state or by resetting the zero point of the encoder.
+串行编码器将编码器旋转速度信息存储在内部内存中。通过解决电机错误状态或重置编码器的零点，可以将编码器旋转速度清零。
 
-1.	Touch the `[5: Initialize  - 4: Serial Encoder Reset]` menu.
+1.	触摸`[5: Initialize - 4: Serial Encoder Reset] ([5: Initialize - 4: Serial Encoder Reset])`菜单。
 
-2.	Set the encoder resetting mode for each axis and check the status, and then execute the resetting.
+2.	为每个轴设置编码器重置模式并检查状态，然后执行重置。
 
     ![](../../_assets/tp630/init-serialenco-reset_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -7888,14 +6875,11 @@ The serial encoder stores the encoder rotation speed information in the internal
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>You can set whether to use the encoder reset function for each axis and
-          set a mode for each axis.</p>
+        <p>您可以为每个轴设置是否使用编码器重置功能，并为每个轴设置模式。</p>
         <ul>
-          <li>[Disable]: Serial encoder resetting will not be executed.</li>
-          <li>[Error release]: You can clear only the errors related to the motor encoder
-            without clearing the encoder rotation speed.</li>
-          <li>[Reset]: You can clear the rotation speed by resolving the errors related
-            to the motor encoder and then by resetting the zero point of the encoder.</li>
+          <li>[禁用]: 不执行串行编码器重置。</li>
+          <li>[错误释放]: 您可以清除与电机编码器相关的错误，而不清除编码器旋转速度。</li>
+          <li>[重置]: 通过解决与电机编码器相关的错误，然后重置编码器的零点，可以清除旋转速度。</li>
         </ul>
       </td>
     </tr>
@@ -7905,9 +6889,9 @@ The serial encoder stores the encoder rotation speed information in the internal
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[Execute]: You can execute the serial encoder resetting.</li>
-          <li>[All select]: You can select all axes at once.</li>
-          <li>[All cancel]: You can deselect all axes at once</li>
+          <li>[执行]: 您可以执行串行编码器重置。</li>
+          <li>[全选]: 您可以一次选择所有轴。</li>
+          <li>[全取消]: 您可以一次取消所有轴的选择。</li>
         </ul>
       </td>
     </tr>
@@ -7915,35 +6899,27 @@ The serial encoder stores the encoder rotation speed information in the internal
 </table>
 
 {% hint style="warning" %}
-* You can perform the encoder resetting when performing the initial setting of the robot system, but never perform the encoder resetting while the robot is operating normally. However, if an encoder-related error such as a communication error occurs or the encoder battery is lost, you can perform the encoder resetting. In this case, check the actual position in the robot program so that it does not differ from the existing robot origin position.
-* If the power is not supplied to the controller and encoder, the position information of the encoder may be lost, possibly causing trouble in using the job program of the robot. To solve this problem, a dedicated battery is attached to the serial encoder, making it possible to record the position information regardless of the power status of the controller. If a voltage error occurs in the encoder battery, the battery must be replaced while the controller is still powered on to prevent loss of the position information.
+* 在执行机器人系统的初始设置时，您可以执行编码器重置，但绝不要在机器人正常操作时执行编码器重置。然而，如果发生通信错误等与编码器相关的错误或编码器电池丢失，您可以执行编码器重置。在这种情况下，请在机器人程序中检查实际位置，以便与现有机器人原点位置不发生差异。
+* 如果控制器和编码器未供电，编码器的位置信息可能会丢失，可能会导致使用机器人作业程序时出现问题。为解决此问题，专用电池连接到串行编码器，使其能够在控制器的电源状态下记录位置信息。如果在编码器电池中发生电压错误，必须在控制器仍然通电的情况下更换电池，以防止丢失位置信息。
 {% endhint %}
-
-
-
-
 [__SOURCE](7-system/6-initialization/5-add-axis-param.md)
-# 7.6.5 Additional Axis Parameter Setting
+# 7.6.5 额外轴参数设置
 
-Additional axes that can be used in addition to the robot itself include the robot's base axis \(travel axis\), servo gun axis, positioner axis, and jig axis. For details on the specification of each additional axis, refer to the "Additional Axis Function Manual."
+除了机器人本身，可以使用的附加轴包括机器人的基轴（移动轴）、伺服枪轴、定位器轴和夹具轴。有关每个附加轴规格的详细信息，请参阅《附加轴功能手册》。
 
-The method to set parameters such as the specification and configuration of the additional axes that are being used is as follows.
+设置正在使用的附加轴的规格和配置等参数的方法如下。
 
-1.	Touch the `5: Initialize - 5: Additional Axis Parameter Setting` menu.
+1. 触摸 `5: 初始化 - 5: 附加轴参数设置 (5: Initialize - 5: Additional Axis Parameter Setting)` 菜单。
 
-2.	Set the parameters such as the specification and configuration of the additional axes.
+2. 设置附加轴的规格和配置等参数。
 
     ![](../../_assets/tp630/init-addaxis_eng.png)
-
-
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -7952,45 +6928,22 @@ The method to set parameters such as the specification and configuration of the 
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed parameter setting information of the additional axis. You can
-          check and set the name, specification, and configuration, etc. of the additional
-          axis.</p>
+        <p>附加轴的详细参数设置信息。您可以查看和设置附加轴的名称、规格和配置等。</p>
         <ul>
-          <li><b>[Name]</b>: Name of the additional axis in use</li>
-          <li><b>[Axis Specification]</b>: Specification of the additional axis. You can use
-            individual functions separately developed for each usage of the additional
-            axis according to the specifications.</li>
-          <li><b>[Axis structure]</b>: Mechanism type of the additional axis. In the case of
-            the specifications of some axes, you can designate the mechanism type that
-            was registered in advance. As an exemplary case, you can select the standard
-            positioner model in case of the position.</li>
-          <li><b>[Axis position]</b>: This is the position where the axis is connected to the
-            DSP board. You can designate the BD number, DSP number, axis number, and
-            brake number sequentially according to the wiring specifications.</li>
-          <li><b>[Reduction ratio]</b>: Information of the deceleration ratio that involves
-            the motor and link of the additional axis
+          <li><b>[名称]</b>: 正在使用的附加轴的名称</li>
+          <li><b>[轴规格]</b>: 附加轴的规格。您可以根据规格使用为每种附加轴的用途单独开发的功能。</li>
+          <li><b>[轴结构]</b>: 附加轴的机制类型。在某些轴的规格中，您可以指定提前注册的机制类型。作为示例，您可以在定位器的情况下选择标准定位器型号。</li>
+          <li><b>[轴位置]</b>: 这是轴连接到DSP板的位置。您可以根据接线规格依次指定BD号、DSP号、轴号和刹车号。</li>
+          <li><b>[减速比]</b>: 附加轴的电机和连杆的减速比信息
             <ul>
-              <li>The deceleration ratio sign can be set according to the rotation direction
-                of the motor shaft when the additional axis link moves in the (+) direction.
-                When viewed from the front, if the shaft is rotating counterclockwise,
-                the sign will be (+), and if it is rotating clockwise, the sign will be
-                (-).</li>
-              <li>The parameter of the numerator of the deceleration ratio is the moving
-                distance (mm or deg) of the link, and the parameter corresponding to the
-                denominator is the motor rotation speed corresponding to the moving distance
-                of the link. The parameters of the setting items will be defined in integer
-                form. For parameters that will be displayed with decimals, set the deceleration
-                ratio as an integer by multiplying the numerator and denominator by a certain
-                multiple.</li>
+              <li>当附加轴连杆朝（+）方向移动时，减速比符号可以根据电机轴的旋转方向进行设置。从正面来看，如果轴逆时针旋转，则符号为（+），如果顺时针旋转，则符号为（-）。</li>
+              <li>减速比的分子参数是连杆的移动距离（mm或度），而分母对应的参数是与连杆的移动距离相对应的电机转速。设置项的参数将以整数形式定义。对于需要显示小数的参数，通过将分子和分母乘以某个倍数，将减速比设置为整数。</li>
             </ul>
           </li>
-          <li><b>[Soft limit]</b>: The minimum and maximum operating range of the additional
-            axis</li>
-          <li><b>[AMP Specification]</b>: The amplifier specification of the additional axis</li>
-          <li><b>[Motor Specification]</b>: Model name of the motor connected to the additional
-            axis</li>
-          <li><b>[Accel/Decel Parameter]</b>: The maximum speed and acceleration time of the
-            additional axis</li>
+          <li><b>[软限制]</b>: 附加轴的最小和最大操作范围</li>
+          <li><b>[AMP规格]</b>: 附加轴的放大器规格</li>
+          <li><b>[电机规格]</b>: 连接到附加轴的电机型号名称</li>
+          <li><b>[加速/减速参数]</b>: 附加轴的最大速度和加速时间</li>
         </ul>
       </td>
     </tr>
@@ -8000,8 +6953,8 @@ The method to set parameters such as the specification and configuration of the 
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[Rotation radius]</b>: You can add a new additional axis or delete an additional axis.</li>
-          <li><b>[Reduction ratio calibration]</b>: You can calibrate the difference between the real axis position and the displayed.</li>
+          <li><b>[旋转半径]</b>: 您可以添加一个新的附加轴或删除一个附加轴。</li>
+          <li><b>[减速比校准]</b>: 您可以校准真实轴位置与显示位置之间的差异。</li>
         </ul>
       </td>
     </tr>
@@ -8011,50 +6964,46 @@ The method to set parameters such as the specification and configuration of the 
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li><b>[+]/[-]</b>: You can add a new additional axis or delete an additional axis.</li>
+          <li>`[确定]`: 您可以保存更改。</li>
+          <li><b>[+]/[-]</b>: 您可以添加一个新的附加轴或删除一个附加轴。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
-
 [__SOURCE](7-system/6-initialization/6-mechannism-set.md)
-# 7.6.6 Mechanism Setting
+# 7.6.6 机制设置
 
-Mechanism will be used as a group during the jog operation which the jog keys are to be assigned to. In addition, mechanism is also a set of units, each of which is to be differentiated in the process of recording or editing the position of a step. When the mechanisms are set, mechanism numbers \(M\#\) will be assigned for individual groups of axes.
+机制将在 jog 操作期间作为一组使用，jog 键将分配给它。此外，机制也是一组单元，每个单元在记录或编辑步骤位置的过程中要被区分。当机制被设置之后，将为每个轴的单独组分配机制编号 \(M\#\)。
 
-The method to set the use of the endless function is as follows.
+设置无尽功能的方法如下。
 
-1.	Touch the `[5: Initialization  - 6: Mechanism Setting]` menu.
+1. 触摸 `[5: Initialization - 6: Mechanism Setting] ([5: Initialization  - 6: Mechanism Setting])` 菜单。
 
-2.	After setting the mechanism number and configuring the use of the endless function for each axis, click the `[OK]` button.
+2. 在设置机制编号并为每个轴配置无尽功能之后，点击 `[OK]` 按钮。
 
     ![](../../_assets/tp630/robot-mechanism_eng.png)
 
-
-
-* `[Mech]`: By touching the drop-down menu, you can set the mechanism number of the axis.
-  * If the axis specification is a robot, the mechanism number will be fixed as M0.
+* `[Mech]`: 通过触摸下拉菜单，您可以设置轴的机制编号。
+  * 如果轴的规格是机器人，机制编号将固定为 M0。
   * 
-    Starting with the additional axis, you can designate the mechanism number to a value ranging between M1 and M7.
+    从附加轴开始，您可以将机制编号指定为介于 M1 和 M7 之间的值。
 
   * 
-    The axes set with the same mechanism number will be managed as the same group.
+    设置相同机制编号的轴将作为同一组进行管理。
 
   * 
-    To jog the additional axis, you can switch between mechanisms using the `[Mech]` button. At this time, if you press the jog key, jogging will take place in the order of the axes of the relevant mechanism.
+    要 jog 附加轴，您可以使用 `[Mech]` 按钮在机制之间切换。在此时，如果您按下 jog 键，将在相关机制的轴的顺序中进行 jog 操作。
 * 
-  `[Positioner Group]`: You can set the positioner group number. The position group number can be set only for the axes whose specification is set as positioner.
+  `[Positioner Group]`: 您可以设置定位器组编号。只有在规格设置为定位器的轴上才能设置定位组编号。
 
 * 
-  `[Endless]`: You can set whether to use the endless function on the axis.
+  `[Endless]`: 您可以设置是否在轴上使用无尽功能。
 
 
 
 {% hint style="info" %}
-A set mechanism unit is the minimum unit that can be assigned to each task and can be driven. To each task, a complex combination of mechanisms can be assigned to individual tasks.
+集成的机制单元是可以分配给每个任务的最小单元，并且可以驱动。可以将复杂的机制组合分配给各个任务。
 {% endhint %}
 
 #### 
@@ -8062,90 +7011,80 @@ A set mechanism unit is the minimum unit that can be assigned to each task and c
 
 
 
-#### Mechanism Jog Rules 
+#### 机制 Jog 规则 
 
-* The ${cont_model} controller provides eight jog keys in total.
+* ${cont_model} 控制器提供总共八个 jog 键。
 * 
-  Mechanisms will be utilized as one group during the jog operation.
-
-* 
-  If you select the mechanism number as `[M0]`, the jog keys for the axes 7 and 8 will be operating as an exceptional case, and it is possible to operate M1 and M2 within a range in which the total number of axes including the next mechanism is eight or less. Even in this case, if you set the mechanism number as `[M1]`, you can perform the jog operation for the configuration elements of M1. 
+  机制将在 jog 操作期间作为一个组使用。
 
 * 
-  The following shows the example of the usage.
+  如果将机制编号选择为 `[M0]`，则轴 7 和 8 的 jog 键将作为特例操作，并且可以在包括下一个机制的轴总数为八个或更少的范围内操作 M1 和 M2。即使在这种情况下，如果您将机制编号设置为 `[M1]`，您也可以对 M1 的配置元素执行 jog 操作。
 
-  Example 1\) M0: Robot \(Axes 1-6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axis 8\)
+* 
+  以下显示了用法示例。
 
-  * Select `[M0]` => Jog key for axes 1-6: M0. Jog key for axis 7: M1. Jog key for axis 8: M2
-  * Select `[M1]` => Jog key for axis 1: M1
-  * Select `[M2]` => Jog key for axis 1: M2
+  示例 1\) M0: 机器人 \(轴 1-6\)。 M1: 移动轴 \(轴 7\)。 M2: 伺服枪 \(轴 8\)
 
-  Example 2\) M0: Robot \(Axes 1-6\). M1: Travel axis \(Axis 7\). M2: Servo gun \(Axes 8-9\)
+  * 选择 `[M0]` => 轴 1-6 的 jog 键: M0。 轴 7 的 jog 键: M1。 轴 8 的 jog 键: M2
+  * 选择 `[M1]` => 轴 1 的 jog 键: M1
+  * 选择 `[M2]` => 轴 1 的 jog 键: M2
 
-  * Select `[M0]` => Jog key for axes 1-6: M0. Jog key for axis 7: M1
-  * Select `[M1]` => Jog key for axis 1: M1
-  * Select `[M2]` => Jog key for axes 1-2: M2
+  示例 2\) M0: 机器人 \(轴 1-6\)。 M1: 移动轴 \(轴 7\)。 M2: 伺服枪 \(轴 8-9\)
 
-  Example 3\) M0: Robot \(Axes 1-7\). M1: Travel axis \(Axis 8\). M2: Servo gun \(Axes 9-10\)
+  * 选择 `[M0]` => 轴 1-6 的 jog 键: M0。 轴 7 的 jog 键: M1
+  * 选择 `[M1]` => 轴 1 的 jog 键: M1
+  * 选择 `[M2]` => 轴 1-2 的 jog 键: M2
 
-  * Select `[M0]` => Jog key for axes 1-7: M0. Jog key for axis 8: M1
-  * Select `[M1]` => Jog key for axis 1: M1
-  * Select `[M2]` => Jog key for axis 1: M2
+  示例 3\) M0: 机器人 \(轴 1-7\)。 M1: 移动轴 \(轴 8\)。 M2: 伺服枪 \(轴 9-10\)
 
-
-
-
-
-
+  * 选择 `[M0]` => 轴 1-7 的 jog 键: M0。 轴 8 的 jog 键: M1
+  * 选择 `[M1]` => 轴 1 的 jog 键: M1
+  * 选择 `[M2]` => 轴 1 的 jog 键: M2
 [__SOURCE](7-system/7-auto-calibration/README.md)
-# 7.7 Auto Calibration
+# 7.7 自动校准
 
-To use the robot correctly, the robot's axis origin, tool length, load mass, and base axis direction can be found using the taught programs and using the movements that will be executed automatically. Those calibrated values will be automatically reflected in the robot.
+要正确使用机器人，可以使用教导程序和将自动执行的移动找到机器人的轴原点、工具长度、负载质量和基轴方向。这些校准值将自动反映在机器人中。
 
-1.	Touch the `[6: Auto Calibration]` menu. Then, the automatic calibration menu will appear.
+1. 触摸`[6: 自动校准]`菜单。然后，自动校准菜单将出现。
 
-2.	Calibrate the robot's axis origin, tool length, load mass, base axis direction, etc. by selecting the desired menu,
+2. 通过选择所需菜单校准机器人的轴原点、工具长度、负载质量、基轴方向等。
 
     ![](../../_assets/tp630/system-calib-menu_eng.png)
-
-
 [__SOURCE](7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)
-# 7.7.1 Optimize Axis Origin and Tool Length
+# 7.7.1 优化轴原点和工具长度
 
-The optimization of axis origin and tool length is a function to calibrate the origin and tool length of each axis of the robot without using an external measuring sensor.
+轴原点和工具长度的优化功能是用来校准机器人每个轴的原点和工具长度，而无需使用外部测量传感器。
 
-Prepare two pointed tips. Fix one on the outside and the other on the tool. Then, while changing only the posture of the tooltip of the robot based on the outside fixed tip, you need to record several points using the robot program. At this time, you need to teach seven points to find the axis origin and tool length, and four points or more to find only the tool length.
+准备两个尖头。一个固定在外侧，另一个固定在工具上。然后，仅根据外部固定尖头改变机器人的工具提示的姿态，您需要使用机器人程序记录多个点。在此过程中，您需要教七个点来寻找轴原点和工具长度，而四个点或更多仅用于寻找工具长度。
 
-![Figure 67 Method of Teaching for the Axis Origin and Tool Length Optimization Function](../../_assets/image_228.png)
+![图67 轴原点和工具长度优化功能的教学方法](../../_assets/image_228.png)
 
-Using the axis origin and tool length optimization function, you can find the optimized tool lengths X, Y, and Z and the optimized origin of the robot H, V, R2, and B axes as well, even when no CAD data is available for them.
+使用轴原点和工具长度优化功能，即使没有可用的CAD数据，您也可以找到优化的工具长度X、Y和Z以及机器人H、V、R2和B轴的优化原点。
 
 {% hint style="warning" %}
-When the axis origin and tool length optimization function is used, the encoder offset and tool length will be changed, thus also changing the operation position of the previously taught program. Therefore, you should perform the optimization of axis origin and tool length before writing the teaching program.
+当使用轴原点和工具长度优化功能时，编码器偏移和工具长度将会改变，从而也改变以前教学程序的操作位置。因此，您应该在编写教学程序之前进行轴原点和工具长度的优化。
 {% endhint %}
 
 {% hint style="info" %}
-* In using the axis origin and tool length optimization function, the accuracy of the teaching is proportional to the accuracy of the maximum step position error result. Therefore, you should prepare two pointed tips and perform the teaching for the tooltip to match the two tips as accurately as possible. Make sure that the accuracy of the matching between the tooltip and the fixed points in space is within 0.5 mm when visually checked.
-* Teach by setting a posture, with a difference of 30 deg or more, for each step so that the postures of the steps are not similar.
-* Operate the wrist axes \(R2, B, R1\) as large as possible in a step and perform teaching while keeping a sufficient \(as large as possible\) angle difference of the wrist axes for individual steps.
-* The teaching program must be composed of hidden pose step commands.
+* 在使用轴原点和工具长度优化功能时，教学的准确性与最大步骤位置误差结果的准确性成正比。因此，您应该准备两个尖头，并尽可能准确地进行工具提示的教学，使两个尖头保持匹配。确保工具提示与空间中固定点之间的匹配精度在视觉检查时不超过0.5mm。
+* 通过设置姿态，确保每个步骤之间的差异在30度或以上，以使步骤的姿态不相似。
+* 在一个步骤中尽可能大地操作手腕轴\(R2, B, R1\)，并在每个步骤保持手腕轴的充分角度差异。
+* 教学程序必须由隐藏姿态步骤命令组成。
 {% endhint %}
 
-The method to use the axis origin and tool length optimization function is as follows.
+使用轴原点和工具长度优化功能的方法如下。
 
-1.	Touch the `6: Auto Calibration - 1: Optimize Axis Origin and Tool Length` menu.
+1. 触摸 `6: Auto Calibration - 1: Optimize Axis Origin and Tool Length` 菜单。
 
-2.	Select an optimization target and set detailed options.
+2. 选择优化目标并设置详细选项。
 
     ![](../../_assets/tp630/system-calib-tool_eng.png)
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -8154,30 +7093,21 @@ The method to use the axis origin and tool length optimization function is as fo
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed parameter setting information of the additional axis. You can
-          check and set the name, specification, and configuration of the additional
-          axis.</p>
+        <p>附加轴的详细参数设置信息。您可以检查并设置附加轴的名称、规格和配置。</p>
         <ul>
-          <li><b>[Optimization Selection]</b>: You can select an optimization target.
+          <li><b>[优化选择]</b>: 您可以选择优化目标。
             <ul>
-              <li><b>[Tool Length]</b>: You can calibrate the robot&#x2019;s tool length value.
-                If the robot origin is correctly set, you can calibrate only the tool length.</li>
-              <li><b>[Axis Origin &amp; Tool Length]</b>: You can calibrate both the robot&#x2019;s
-                origin and tool length values.
-                <br />Normally, this function can be used when installing a robot and then initially
-                setting the correct origin.</li>
+              <li><b>[工具长度]</b>: 您可以校准机器人的工具长度值。
+                如果机器人原点设置正确，您只能校准工具长度。</li>
+              <li><b>[轴原点 &amp; 工具长度]</b>: 您可以同时校准机器人的
+                原点和工具长度值。
+                <br />通常，这个功能可以在安装机器人后初始设置正确原点时使用。</li>
             </ul>
           </li>
-          <li><b>[Program Number]</b>: You can set the number of the program in which the same
-            point is recorded in multiple postures.</li>
-          <li><b>[Tool Number]</b>: This is the number of the tool to be set automatically.
-            This should match the tool number recorded in the setting program.</li>
-          <li><b>[Step location Error tolerance]</b>: You can set the error range of the automatic
-            calibration result (the initial setting value is 0.6 mm). If the expected
-            error is within the error range, the integer data will be automatically
-            updated, and if the error is out of the error range, whether to reflect
-            the integer will be notified to and confirmed with the user, and then the
-            necessary handling will be performed.</li>
+          <li><b>[程序编号]</b>: 您可以设置同一个点在多个姿态下记录的程序编号。</li>
+          <li><b>[工具编号]</b>: 这是要自动设置的工具编号。
+            这应与记录在设置程序中的工具编号匹配。</li>
+          <li><b>[步骤位置误差容差]</b>: 您可以设置自动校准结果的误差范围（初始设置值为0.6mm）。如果预期误差在误差范围内，整数数据将会自动更新；如果误差超出误差范围，是否要反映整数将通知并确认用户，然后进行必要的处理。</li>
         </ul>
       </td>
     </tr>
@@ -8187,9 +7117,9 @@ The method to use the axis origin and tool length optimization function is as fo
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li>`[Execute]`: You can execute optimization based on the set information.
-            The optimization result will appear in [Max Step Position Error].</li>
+          <li>`[确定]`: 您可以保存更改。</li>
+          <li>`[执行]`: 您可以根据设置的信息执行优化。
+            优化结果将出现在 [最大步骤位置误差] 中。</li>
         </ul>
       </td>
     </tr>
@@ -8197,857 +7127,767 @@ The method to use the axis origin and tool length optimization function is as fo
 </table>
 
 {% hint style="warning" %}
-It requires your attention that if you calibrate both the robot origin and tool length values, all origins of the robot will change, consequently changing the position of the previously created program.
+请注意，如果您校准机器人原点和工具长度值，机器人的所有原点将会改变，因此会改变之前创建程序的位置。
 {% endhint %}
 
 {% hint style="info" %}
-* You can also set the origin of each axis and tool length of the robot in the settings menu.
-  * Tool Length: `[system] - 3: Robot Parameter - 1: Tool Data`.
-  * Origin of each axis: `[system] - 3: Robot Parameter - 2: Axis Origin`
-* If you calibrate the tool angle using the angle calibration function \(`[system] - 3: Robot Parameter - 1: Tool Data`\), you should execute the origin axis and tool length optimization function first, and then execute the angle calibration. In this way, the tool data can be set correctly.
+* 您还可以在设置菜单中设置机器人的每个轴的原点和工具长度。
+  * 工具长度: `[system] - 3: Robot Parameter - 1: Tool Data`。
+  * 每个轴的原点: `[system] - 3: Robot Parameter - 2: Axis Origin`
+* 如果您使用角度校准功能\( `[system] - 3: Robot Parameter - 1: Tool Data`\) 校准工具角度，您应该首先执行原点轴和工具长度优化功能，然后再执行角度校准。这样，可以正确设置工具数据。
 {% endhint %}
-
-
 [__SOURCE](7-system/7-auto-calibration/2-positioner-calib.md)
-# 7.7.2 Positioner Calibration
+# 7.7.2 位置器校准
 
-Positioner calibration is a function that enables the robot to perform a synchronized follow-up with the operation of a jig device installed outside the robot or to perform a linear or circular operation relative to the jig device. The external jig device in which the positioner calibration function will be applied to is called a positioner or station.
+位置器校准是一项功能，使机器人能够与安装在机器人外部的夹具设备的操作进行同步跟随，或相对于夹具设备执行线性或圆形操作。将在位置器校准功能应用于的外部夹具设备称为位置器或工作站。
 
-Using the positioner calibration function makes it possible to compensate for the operational difficulties because of the limitation of the robot operation area. In other words, even if the positioner moves while the workpiece is fixed onto it, the robot can still perform a linear or circular operation on the workpiece by following up with the movement of the positioner.
+使用位置器校准功能可以补偿由于机器人操作区域的限制而导致的操作困难。换句话说，即使位置器在工件固定在其上的情况下移动，机器人仍然可以通过跟随位置器的移动在工件上执行线性或圆形操作。
 
-You can simply set the positioner's coordinate system by performing the positioner calibration by teaching three points for a 1-axis positioner and five points for a 2-axis positioning.
+您可以通过教学1轴位置器的三个点或2轴位置器的五个点来简单地设置位置器的坐标系统。
 
-![Figure 68 1-Axis Positioner \(Left\) / 2-Axis Positioner \(Right\)](../../_assets/image_244.png)
+![图68 1轴位置器 \(左\) / 2轴位置器 \(右\)](../../_assets/image_244.png)
 
-The information on the main functions of the positioner calibration is as follows.
+位置器校准的主要功能信息如下。
 
-| Main Functions | Description |
+| 主要功能 | 描述 |
 | :--- | :--- |
-| Positioner group | 1-4 groups are supported |
-| Positioner axis count | 1-axis positioner and 2-axis positioner are supported \(rotation axis\) |
-| Interpolation mode | Linear interpolation and circular interpolation are supported |
+| 位置器组 | 支持1-4个组 |
+| 位置器轴计数 | 支持1轴位置器和2轴位置器 \(旋转轴\) |
+| 插值模式 | 支持线性插值和圆形插值 |
 
 {% hint style="info" %}
-* The positioner calibration function can be used while the positioner group is set.
-* For more details, refer to the "[${cont_model} Controller Positioner Sync Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README)".
+* 位置器校准功能可以在设置好位置器组的情况下使用。
+* 有关更多详细信息，请参阅"[${cont_model} 控制器位置器同步功能手册](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/zh/README)"。
 {% endhint %}
-
-
 [__SOURCE](7-system/7-auto-calibration/3-load-estimation.md)
-# 7.7.3 Load Estimation Function
+# 7.7.3 负载估算功能
 
-Load estimation is a function that automatically calculates the physical properties \(mass, center position, inertia\) of the tool attached to the front end of the robot through a certain operation.
+负载估算是一个通过特定操作自动计算工具的物理属性（质量、中心位置、惯性）的功能，这些工具连接在机器人的前端。
 
-The manipulator information \(mass, center of mass, inertia of each link\) is registered in the controller. However, as a tool will be used after being attached to the front end of the robot when necessary, the tool information should be inputted. The information on the tool physical properties includes tool mass \(kg\), center position, and inertia that are necessary to safely use the robot.
+操纵器信息（质量、质心、每个连杆的惯性）登记在控制器中。然而，由于工具在必要时会附加在机器人的前端使用，因此需要输入工具信息。工具物理属性的信息包括工具质量（kg）、中心位置、以及安全使用机器人所必需的惯性。
 
-If the CAD data contains the physical properties information of the tool, you can directly input the tool mass, center position, and inertia by touching the `[system]` button  - `[3: Robot Parameter  - 1: Tool Data]` menu of the job program.
+如果CAD数据包含工具的物理属性信息，则可以通过触摸`[system]`按钮 - `[3: Robot Parameter - 1: Tool Data] ([3: Robot Parameter  - 1: Tool Data])`作业程序菜单直接输入工具的质量、中心位置和惯性。
 
 ![](../../_assets/tp630/robot-tool_1_eng.png)
 
-
-
-The tool data setting information is as follows.
+工具数据设置的信息如下。
 
 ![Figure 70 Tool Data](../../_assets/image_505.png)
 
-* `[Weight]`: The total weight \(kg\) of the tool installed at the front end of the robot
-* `[Center]`: The distance \(mm\) in the x, y, z directions from the center of the robot flange face to the position of the center of gravity of the tool
-* `[Inertia]`: The moment of inertia of the tool with respect to the tool coordinate \(kg/m2\). The moment of inertia will be determined by the mass distribution around the x, y, and z axes based on the center of gravity, and will increase as the load mass is distributed farther from the rotation axis.
-* Tool data coordinate system: Inertia and center will be expressed as values with respect to the x-, y-, and z-axis directions.
+* `[Weight]`: 安装在机器人前端的工具的总重量（kg）
+* `[Center]`: 从机器人法兰面中心到工具重心位置的x、y、z方向的距离（mm）
+* `[Inertia]`: 相对于工具坐标系的工具的转动惯量（kg/m²）。转动惯量将根据重心周围的x、y、z轴质量分布决定，并且当负载质量远离旋转轴分布时，将增加。
+* 工具数据坐标系：惯性和中心将以相对于x、y、z轴方向的值表示。
 
-
-
-However, in many cases, it is difficult to determine the physical properties of the tool such as mass, inertia, and center of gravity of the tool from CAD data. At this time, you can check the physical properties of the tool using the load estimation function in the robot controller.
+然而，在许多情况下，难以从CAD数据中确定工具的物理属性，如质量、惯性和工具的重心。此时，可以使用机器人控制器中的负载估算功能检查工具的物理属性。
 
 ![Figure 71 Load Estimation Function](../../_assets/tp630/system-calib-load_eng.png)
 
-1.	Touch the `[6: Auto Calibration  - 4: Load Estimation Function]` menu.
+1. 触摸`[6: Auto Calibration - 4: Load Estimation Function] ([6: Auto Calibration  - 4: Load Estimation Function])`菜单。
 
-2.	After touching the `[Add. Weight on Each Axis]` button, input the information of the additional weight of each axis.
+2. 在触摸`[Add. Weight on Each Axis]`按钮后，输入每个轴的附加重量信息。
 
-If the load estimation function is performed while there is additional weight, it will be determined that all the weight objects mounted onto the robot are at the front end. For accurate load estimation, the information on the additional weight of each axis should be inputted.
+如果在存在附加重量的情况下执行负载估算功能，将判断所有装在机器人的重量物体位于前端。为了准确进行负载估算，应输入每个轴的附加重量信息。
 
-3.	After moving the robot to a safe area by moving the main axis of the robot, touch the `[Set pose]` button.
+3. 通过移动机器人的主轴将机器人移动到安全区域后，触摸`[Set pose]`按钮。
 
-4.	After touching the `[Wrist Axis Operation Area]` button, designate the operation area of the wrist axis to be used in the load estimation operation. Load estimation can be performed in an operation area that there is no interference not only with nearby facilities but also with the manipulator.
+4. 在触摸`[Wrist Axis Operation Area]`按钮后，指定在负载估算操作中使用的腕轴操作区域。负载估算可以在与附近设施以及操纵器没有干扰的操作区域内进行。
 
-If the `[Wrist Axis Operation Area]` button is not supported, skip this step, and perform the next step.
+如果不支持`[Wrist Axis Operation Area]`按钮，请跳过此步骤，执行下一步。
 
-5.	Touch the `[Play check]` button. Then, while the robot is operating at a low speed, you can check for any interference with nearby facilities or the manipulator.
+5. 触摸`[Play check]`按钮。然后，在机器人以低速运行时，可以检查与附近设施或操纵器的任何干扰。
 
-6.	After inputting the number of the tool mounted onto the robot, touch the `[Play Normal]` button. Then, load estimation will be performed, allowing the physical properties of the tool to be calculated.
+6. 输入安装在机器人的工具编号后，触摸`[Play Normal]`按钮。然后，将执行负载估算，从而计算出工具的物理属性。
 
-7.	After checking the load estimation result, touch the `[End]` button. Then, the calculated physical properties of the tool will be registered in the tool number.
+7. 在检查负载估算结果后，触摸`[End]`按钮。然后，计算出的工具物理属性将注册在工具编号中。
 
 {% hint style="info" %}
-* Additional weight is the overall weight of all devices that the user attaches to the robot, such as a welding dressing device and welding signal line relay box, except for the tool mounted at the front end of the robot.
-* 
-  The wrist axis operation area function will not be supported in some robots.
+* 附加重量是用户附加到机器人上的所有设备的总体重量，如焊接装置和焊接信号线继电器箱，但不包括安装在机器人前端的工具。
 
-* It requires your attention that the load estimation function may not be executed depending on the setting values of the wrist axis operation area function.
-* For details on the load estimation function, refer to the "Load Estimation Function Manual."
+* 一些机器人可能不支持腕轴操作区域功能。
+
+* 负载估算功能的执行可能会依赖于腕轴操作区域功能的设定值，请注意。
+* 有关负载估算功能的详细信息，请参阅“负载估算功能手册”。
 {% endhint %}
-
-
-
-
 [__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/README.md)
-# 7.7.4 Base Axis Calibration
+# 7.7.4 基座轴校准
 
-Base axis calibration is a function to calibrate the installation direction of the axis.
+基座轴校准是一个用于校准轴的安装方向的功能。
 
-It is almost impossible to install the base axis to exactly match one direction \(X, Y, or Z\) of the robot coordinate system. When you calculate the direction of the base axis in the controller using the base axis calibration function, you can improve the performance of the linear interpolation trajectory of the system including the base axis.
+几乎不可能将基座轴安装到机器人坐标系统的任一方向 \(X, Y, 或 Z\) 完全匹配。当您使用基座轴校准功能在控制器中计算基座轴的方向时，可以提高系统（包括基座轴）的线性插补轨迹的性能。
 
-After the robot is installed on the base axis, this function makes it possible to perform position interpolation by finding the direction vector of any base axis on which the robot is installed.
+在机器人安装在基座轴上之后，此功能使得通过找到安装机器人所用的任何基座轴的方向向量来执行位置插补成为可能。
 
 ![Figure 72 Base Axis Calibration](../../../_assets/image_497.png)
 
 
-In general, the base axis is used to move the robot to the operation position. In special cases, the base axis can also be used in a case in which a linear trajectory should be guaranteed while the robot is moving on the base axis.
+一般来说，基座轴用于将机器人移动到操作位置。在特殊情况下，基座轴也可以在机器人移动在基座轴上时需要保证线性轨迹的情况下使用。
 
-* When two robots with the base axis calibrated deliver the workpiece \(multi-robots will be supported in the future\)
-* When you need to perform interpolation while operating the base axis
-
-
-
-
-
-
+* 当两台基座轴校准的机器人交付工件时 \(未来将支持多机器人\)
+* 当您需要在操作基座轴时执行插补时
 [__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/1-base-axis-initial-set.md)
-# 7.7.4.1 Base Axis Initial Setting
+# 7.7.4.1 基轴初始设置
 
-1.	In manual mode, touch the `system - 5: Initialize - 5: Additional Axis Parameter Setting`.
+1. 在手动模式下，触摸 `系统 - 5: 初始化 - 5: 附加轴参数设置 (system - 5: Initialize - 5: Additional Axis Parameter Setting)`。
 
-2.	After setting the parameters such as the specifications and configuration of the additional axis, touch the `[OK]` button.
+2. 在设置了附加轴的规格和配置等参数后，触摸 `[OK]` 按钮。
 
-* `[Axis Specification]`: You can select the specification of the additional axis as base.
-* `[Axis Configuration]`: You can select the mechanism of the additional axis as any.
-* Other parameters: You can set other parameters according to the instrumental design value and controller configuration specifications.
-
-
+* `[轴规格]`: 您可以选择将附加轴作为基轴的规格。
+* `[轴配置]`: 您可以选择附加轴的机制为任意。
+* 其他参数: 您可以根据仪器设计值和控制器配置规格设置其他参数。
 
 {% hint style="info" %}
-* When the system is initialized, the additional axis setting menu will appear, allowing you to perform the initial setting of the base axis.
+* 当系统初始化时，附加轴设置菜单将出现，允许您执行基轴的初始设置。
 * 
-  The additional axis parameter setting menu is a function for engineers, so it will not be supported for general users. For details on the additional axis parameter setting menu, contact the engineer for inquiry.
+  附加轴参数设置菜单是工程师的功能，因此不支持一般用户。如需了解附加轴参数设置菜单的详细信息，请联系工程师进行咨询。
 {% endhint %}
 
 {% hint style="warning" %}
-You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. Do not set the axis configuration as any for the other base axes except for the first base axis.
+您只能对第一个基轴使用校准功能，并且在设置附加轴参数时可以将轴配置设置为任意。除第一个基轴外，请勿将其他基轴的轴配置设置为任意。
 {% endhint %}
-
-
 [__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/2-base-axis-calib-prog-teach.md)
-# 7.7.4.2 Base Axis Calibration Program Teaching
+# 7.7.4.2 基础轴校准程序教学
 
-1.	Make a reference point in space, and then record the first reference point.
+1. 在空间中建立一个参考点，然后记录第一个参考点。
 
-2.	Move the base axis more than 200 mm and record the same point as the second step.
+2. 将基础轴移动超过 200 mm，并将相同的点记录为第二步。
 
-3.	While moving 200 mm or more in the same direction as the direction you moved in step 2, record the same point as the third and fourth steps.
+3. 在与第二步中移动的方向相同的方向上移动 200 mm 或更多，然后将相同的点记录为第三步和第四步。
 
 ![](../../../_assets/image_526.png)
 
 
 
 {% hint style="warning" %}
-* Teach the travel axis calibration program using a tool for which robot calibration \(optimization of the axis origin and tool length\) has been completed.
+* 使用已完成机器人校准（轴原点和工具长度的优化）的工具来教学行程轴校准程序。
 * 
-  When recording a step, record it using a tool number for base axis calibration.
+  记录步骤时，使用工具编号进行基础轴校准。
 
 * 
-  Record the position by setting the moving distance of the base axis between recording steps as far as possible.
+  尽可能设置基础轴在记录步骤之间的移动距离来记录位置。
 {% endhint %}
-
-
 [__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/3-base-axis-calib-exec.md)
-# 7.7.4.3 Base Axis Calibration Execution
+# 7.7.4.3 基座轴校准执行
 
-1.	Touch the `[6: Auto Calibration  - 6: Base Axis Calibration]` menu.
+1. 触摸 `[6: Auto Calibration - 6: Base Axis Calibration] ([6: Auto Calibration  - 6: Base Axis Calibration])` 菜单。
 
-2.	After inputting the program number for the base axis calibration, touch the `[Auto Setting]` button.
+2. 输入基座轴校准的程序编号后，触摸 `[Auto Setting]` 按钮。
 
     ![](../../../_assets/tp630/system-calib-base_eng.png)
 
-3.	After checking the installation direction vector value of the base axis, touch the `[OK]` button.
-
-
+3. 查看基座轴的安装方向向量值后，触摸 `[OK]` 按钮。
 [__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/4-operation-after-base-calib.md)
-# 7.7.4.4 Operation After Base Axis Calibration
+# 7.7.4.4 基座轴校准后的操作
 
-If you jog the base axis after performing base axis calibration, the distance traveled in the created direction vector of the base axis will be converted into the current coordinate value.
+如果在执行基座轴校准后移动基座轴，基座轴创建的方向向量中的行程将转换为当前坐标值。
 
-![Figure 73 Operation After Calibration of the Base Axis](../../../_assets/image_528.png)
+![图73 基座轴校准后的操作](../../../_assets/image_528.png)
 
-1.	Touch the `[+]` button at the top right of the panel stack in the work area, and then touch `[Pose]` in the panel selection window.
+1. 触摸工作区面板堆栈右上角的`[+]`按钮，然后在面板选择窗口中触摸`[Pose]`。
 
-2.	Jog the base axis. The distance traveled in the direction of the base axis will be converted into X, Y, and Z values and displayed in the pose information window.
+2. 移动基座轴。沿基座轴移动的距离将转换为X、Y和Z值，并在位置信息窗口中显示。
 
-3.	Record and play back the steps in the usual way.
+3. 按照 usual way 记录和回放步骤。
 
 {% hint style="warning" %}
-Set the jog coordinate system as the tool coordinate system and jog the base axis to check whether the base axis is properly calibrated. If the tooltip fixing operation is executed, it means that the base axis has been properly calibrated.
+将 jog 坐标系统设置为工具坐标系统，并移动基座轴以检查基座轴是否正确校准。如果执行了工具提示固定操作，则表示基座轴已正确校准。
 {% endhint %}
-
-
 [__SOURCE](7-system/7-auto-calibration/5-gravity-direction-auto-set.md)
-# 7.7.5 Gravity Direction Auto Setting
+# 7.7.5 重力方向自动设置
 
-The ${cont_model} controller is based on dynamics, so it is important to set the gravity direction.
+${cont_model} 控制器基于动态，因此设置重力方向非常重要。
 
-In general, the robot installation direction is perpendicular to the gravity direction as follows. If the robot is installed obliquely to the ground, the gravity direction should be set in the robot controller. At this time, you can use the automatic gravity direction setting function.
+通常，机器人安装方向垂直于重力方向，如下所示。如果机器人斜放在地面上，则需要在机器人控制器中设置重力方向。在此时，可以使用自动重力方向设置功能。
 
-![Figure 74 Gravity Direction of the Robot Placed on a Floor \(Left\) / Gravity Direction of the Robot Placed on a Slope \(Right\)](../../_assets/image_507.png)
+![图74 安装在地面上的机器人重力方向（左）/ 安装在斜坡上的机器人重力方向（右）](../../_assets/image_507.png)
 
 
 
-How to set the gravity direction is as follows.
+设置重力方向的方法如下。
 
-1.	Attach a weight to the outside to indicate the gravity direction, and then teach two points \(Step 1, Step 2\) in the direction of the gravitational action.
+1.	在外部附加一个重量以指示重力方向，然后教学两个点（步骤1，步骤2）在重力作用的方向上。
 
-2.	Touch the `[6: Auto Calibration  - 8: Automatic setting of gravity direction]` menu.
+2.	触摸 `[6: 自动校准 - 8: 重力方向的自动设置] ([6: 自动校准 - 8: 重力方向的自动设置])` 菜单。
 
-3.	After inputting the program number, touch the `[Execute]` button. Then, the direction vector will be calculated and displayed.
+3.	在输入程序编号后，触摸 `[执行]` 按钮。然后，方向向量将被计算并显示。
 
     ![](../../_assets/tp630/system-calib-gravity_eng.png)
 
 
-4.	After checking the direction vector value, touch the `[OK]` button. Then, the direction will be set as the gravity direction.
-
-
+4.	在检查方向向量值后，触摸 `[确定]` 按钮。然后，方向将被设置为重力方向。
 [__SOURCE](7-system/7-auto-calibration/6-robot-tool-calibration.md)
-# 7.7.6 Calibration of the Robot and Tool
+# 7.7.6 机器人的校准和工具
 
-The robot and tool calibration function will be used in an environment where the position of the robot can be measured with a 3D measuring device.
+机器人和工具的校准功能将在可以使用3D测量设备测量机器人位置的环境中使用。
 
-1.	After selecting the position to be measured at the tooltip of the robot, measure the position of more than 15 points while moving the position and posture of the robot in various ways, and record the robot positions as a program.
+1. 在机器人的工具提示中选择要测量的位置，移动机器人的位置和姿态，以多种方式测量超过15个点的位置，并将机器人位置记录为程序。
 
     ![](../../_assets/image_245.png)
 
-2.	Organize the measured robot's position data \(measuring point data\) in X, Y, and Z formats, and then create a file \(Format: ASCII Extension: MSR\). 
+2. 将测量到的机器人的位置数据（测量点数据）整理为X、Y和Z格式，然后创建一个文件（格式：ASCII 扩展名：MSR）。
 
     ![](../../_assets/tp630/system-calib-robottool-msr.png)
 
-3.	After saving the position data file into a removable storage device, connect the removable storage device to the teach pendant. The `[USB]` icon \( \) will appear in the status bar of the ${cont_model} teach pendant screen.
+3. 将位置数据文件保存到可移动存储设备中，然后将可移动存储设备连接到教学挂件。`[USB]` 图标（ ）将在 ${cont_model} 教学挂件屏幕的状态栏中出现。
 
-4.	Touch the `[6: Auto Calibration  - 9: Robot and Tool calibration condition]` menu.
+4. 点击 `[6: 自动校准 - 9: 机器人和工具校准条件] ([6: Auto Calibration  - 9: Robot and Tool calibration condition])` 菜单。
 
-5.	Touch the `[Explorer]` button to select a position data file and set the robot program used for the measurement.
+5. 点击 `[Explorer]` 按钮以选择位置数据文件并设置用于测量的机器人程序。
 
     ![](../../_assets/tp630/system-calib-robottool_eng.png)
 
+6. 点击 `[OK]` 按钮。然后，屏幕将切换到机器人和工具校准屏幕。
 
-
-6.	Touch the `[OK]` button. Then, the screen will switch to the robot and tool calibration screen.
-
-7.	Touch the `[Execute]` button on the robot and tool calibration execution screen. Then, the calibration results will appear.
+7. 点击机器人和工具校准执行屏幕上的 `[Execute]` 按钮。然后，校准结果将出现。
 
     ![](../../_assets/tp630/system-calib-robottool-exe_eng.png)
 
+8. 检查校准结果后，点击 `[OK]` 按钮。然后，校准结果将自动应用于轴原点和工具整数。
 
-
-8.	After checking the calibration result, touch the `[OK]` button. Then, the calibration result will be automatically applied to the axis origin and tool integer.
-
-9.	Touch the `[3: Robot Parameter  - 1: Tool Data]` menu. Then, you can check the robot calibration execution result.
+9. 点击 `[3: 机器人参数 - 1: 工具数据] ([3: Robot Parameter  - 1: Tool Data])` 菜单。然后，您可以检查机器人校准执行结果。
 
     ![](../../_assets/tp630/system-calib-robottool-toolinfo_eng.png)
 
 <Br>
 
 {% hint style="info" %}
-The axis origin and tool length X, Y, and Z values of the axes 2-5 \(H, V, R2, and B axes\) of the calibration parameter are selected. To calibrate the tool only, perform execution after deselecting the value of each axis.
+选择校准参数中轴2-5（H、V、R2和B轴）的轴原点和工具长度X、Y和Z值。要仅校准工具，请在取消选择每个轴的值后执行。
 {% endhint %}
 
 <br>
 
+#### 恢复校准数据
 
-#### Restore calibration data
+在执行机器人和工具校准时，校准数据作为校准.json 文件单独存储在路径 /ata0:2/lib/hi6/backup/ 中。<br>
+如果由于系统初始化等操作而丢失校准数据，可以使用存储的文件恢复数据。（但是，如果通过执行串行编码器重置初始化了编码器数据，则无法恢复。）
 
-When performing robot and tool calibration, the calibration data is stored separately as a calibration.json file in the path /ata0:2/lib/hi6/backup/. <br>
-If calibration data is lost due to operations such as system initialization, it can be restored using the stored file. (However, if the encoder data has been initialized by performing a serial encoder reset, it cannot be restored.)
-
-1. The "Restore" button will be activated if the calibration.json file exists in the path /ata0:2/lib/hi6/backup/.
-2. After performing a restore and powering on again, the previously performed robot and tool calibration data will be applied.
+1. 如果校准.json 文件存在于路径 /ata0:2/lib/hi6/backup/ 中，"恢复" 按钮将被激活。
+2. 在执行恢复并重新启动后，将应用之前执行的机器人和工具校准数据。
 
 ![](../../_assets/tp630/robot_calib_recover.png)
-
-
 [__SOURCE](7-system/7-auto-calibration/7-addaxis-autotuning.md)
-# 7.7.7 Additional Axis Autotuning
+# 7.7.7 额外轴自调节
 
-* Available from version V60.28-00.
+* 从版本 V60.28-00 开始可用。
 </br>
 
-### A. Overview
+### A. 概述
 
-This function finds the optimal gain by moving the additional axis within the range set by the user. And it can be used when the additional axis does not have a proper gain set, resulting in noise or poor control performance.
+该功能通过在用户设置的范围内移动额外轴来找到最佳增益。当额外轴没有合适的增益设置，导致噪声或控制性能差时，可以使用该功能。
 
 | ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
 |---|---|
-| Linear axis motion | Circular axis motion |
+| 线性轴运动 | 圆形轴运动 |
 <!-- ![additional_axis](../../_assets/_7.7.7_additional_axis.jpg) -->
 
-### B. Tuning Description
+### B. 调节说明
 
 ![](../../_assets/_7.7.7_intro_en.png)
 
-![c1](../../_assets/c1.png)  **Setting before tuning**
+![c1](../../_assets/c1.png)  **调节前设置**
 
-`Additional axis`: Select the additional axis you want to tune.
+`额外轴 (Additional axis)`: 选择您要调节的额外轴。
 
-`Range of Motion`: Set the additional axis motion range(Linear axis: 2, 5, 10[mm] / Circular axis: 2, 5, 10[deg]). Adjust the position of the additional axis through jog, to set the appropriate additional axis motion range. Larger motion ranges result in better tuning(Motion beyond the current specification's maximum range of 10 mm (or 10 deg) requires additional development).
+`运动范围`: 设置额外轴的运动范围（线性轴：2, 5, 10[mm] / 圆形轴：2, 5, 10[deg]）。通过手动移动调整额外轴的位置，以设置合适的额外轴运动范围。较大的运动范围可以实现更好的调节（超出当前规格最大范围的运动10 mm（或10 deg）需要额外开发）。
 
-* Starting position: The starting position when additional axis autotuning begins.
-* Ending position: The ending position when additional axis autotuning begins.
-* Current position: Indicates the current position of the additional axis.
+* 起始位置：额外轴自调节开始时的起始位置。
+* 结束位置：额外轴自调节开始时的结束位置。
+* 当前位置信息：指示额外轴的当前位置。
 
-**Tuned gain(Kv)**: The parameter value being tuned.
+**调节后的增益(Kv)**: 正在调节的参数值。
 
 </br>
 
-![c2](../../_assets/c2.png) **Tuning Process (Range test > Motion test > Run)**
+![c2](../../_assets/c2.png) **调节过程（范围测试 > 运动测试 > 运行）**
 
-**1. Range test**
+**1. 范围测试**
 
-* Moves within the set motion range at a low speed. If there are any issues with the additional axis motion range, press the stop button and reset the motion range.
+* 在设定的运动范围内以低速移动。如果额外轴运动范围有任何问题，请按停止按钮并重置运动范围。
 
-**2. Motion test**
+**2. 运动测试**
 
-* Moves within the set motion range at a high speed to check the initial tuned gain value.
+* 在设定的运动范围内以高速移动，以检查初始调节增益值。
 
-**3. Run**
+**3. 运行**
 
-* The additional axis autotuning process begins.
-* During tuning, the additional axis may make brief loud noises (as it searches for the vibration gain value)
-* Once tuning is completed, the gain values of the tuning paramter Kv before and after tuning will be displayed. Pressing `[OK]` will prompt a window asking whether to apply the tuned gain. If press `[enter]`, the tuned gain will be applied. If press `[No]`, the original gain value will be retained.
+* 额外轴自调节过程开始。
+* 调节过程中，额外轴可能会发出短暂的巨大噪音（在寻找振动增益值时）
+* 调节完成后，调节参数 Kv 的增益值在调节前后将被显示。按下 `[OK]` 将弹出一个窗口询问是否应用调节后的增益。如果按下 `[enter]`，调节后的增益将被应用。如果按下 `[No]`，原始增益值将被保留。
 
 {% hint style="warning" %}
 
-Since noise is difficult to analyze with data, tuning cannot be as precise as when a tuning specialist adjusts manually. If manual tuning is required, it can be done by adjusting the Kv gain.
+由于数据分析噪声较为困难，调节的精度无法与调节专家手动调整时相提并论。如果需要手动调节，可以通过调整 Kv 增益来完成。
 {% endhint %}
 
-* If the tuned gain results in noise, motion tracking performance may degrades, leading the large shake.
-* Conversely, if the Kv gain is too high, high-frequency noise may be generated from the motor.
+* 如果调节后的增益导致噪声，运动跟踪性能可能下降，导致较大震动。
+* 反之，如果 Kv 增益过高，电机可能产生高频噪音。
 
-If the tuned gain results in noise, navigate to `[System] - 3:Robot parameter - 33:Servo parameter - 1:Servo loop gain` and gradually set lower the Kv value (when the Kv value changes, other gain values are automatically recalculated), until the high-frequency noise disappears.
+如果调节后的增益导致噪声，请导航到 `[System] - 3:机器人参数 - 33:伺服参数 - 1:伺服回路增益 ([System] - 3:Robot parameter - 33:Servo parameter - 1:Servo loop gain)`，逐渐将 Kv 值调低（当 Kv 值变化时，其他增益值会自动重新计算），直到高频噪声消失。
 
-If the noise persists, please contact us for further assistance.
-
+如果噪声仍然存在，请与我们联系以获取进一步的帮助。
 [__SOURCE](7-system/8-safety-system.md)
-# 7.8 Safety System 
+# 7.8 安全系统 
 
 {% hint style="info" %}
-This function is supported from the Hi7 controller.
+此功能由 Hi7 控制器支持。
 {% endhint %}
 
-1.	Touch the `[8: Safety System]` menu. Then, the menu of safety system will appear.
+1. 触摸 `[8: 安全系统]` 菜单。然后，安全系统的菜单将出现。
 
-2.	Select the desired menu to perform Basic Settings, Parameter Settings, Monitoring, Certificate, or Safety Radar.
+2. 选择所需菜单以执行基本设置、参数设置、监控、证书或安全雷达。
 
 ![](../_assets/tp630/system-safety-menu.png)
 
 {% hint style="info" %}
-For detailed information on 1: Basic Settings, 2: Parameter Settings, 3: Monitoring, and 4: Certificate of the Safety System, refer to the "[SafeSpace2.0 Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README)".
+有关安全系统的 1: 基本设置、2: 参数设置、3: 监控和 4: 证书的详细信息，请参阅 "[SafeSpace2.0 手册](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/zh/README)"。
 {% endhint %}
 
 {% hint style="info" %}
-For detailed information on the Safety Radar, refer to the "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)".
+有关安全雷达的详细信息，请参阅 "[目标检测系统](https://github.com/hyundai-robotics/doc-Object-Detection-System)"。
 {% endhint %}
 [__SOURCE](7-system/9-cobot-system.md)
-# 7.9 Cobot System
+# 7.9 Cobot 系统
 
 {% hint style="info" %}
-This function is supported from the Hi7 controller.
+此功能在 Hi7 控制器上支持。
 {% endhint %}
 
+1. 触摸 `[Cobot System]`。协作机器人系统菜单将出现。
 
-1.	Touch `[Cobot System]`. The Collaborative Robot System menu appears.
-
-2.	 Select the desired menu to perform Collision Detection or Direct Teaching.
+2. 选择所需菜单以执行碰撞检测或直接教学。
 
 ![](../../_assets/tp630/system-cobot-menu.png)
 
 {% hint style="info" %}
-For detailed information on the Collaborative Robot System, refer to the  "[Cobot Safety Function Manual](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/korean/README)".
+有关协作机器人系统的详细信息，请参阅 "[Cobot Safety Function Manual](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/korean/README)"。
 {% endhint %}
 [__SOURCE](7-system/10-option-system/README.md)
-# 7.10 Option System
+# 7.10 选项系统
 
 {% hint style="info" %}
-This function is supported from the Hi7 controller.
+此功能仅在 Hi7 控制器中支持。
 {% endhint %}
 
-1.	Touch `[Option System]`. The Option System menu appears.
+1. 触摸 `[Option System]`。选项系统菜单出现。
 
-2.	Select the desired menu to perform the corresponding function.
+2. 选择所需菜单以执行相应功能。
 
 ![](../../_assets/tp630/system-option-menu.png)
-
 [__SOURCE](7-system/10-option-system/1-userdio-board-setting.md)
-# 7.10.1 UserDIO Board Setting
+# 7.10.1 用户DIO板设置
 
 {% hint style="info" %}
-This function is supported from the Hi7 controller.
+此功能支持 Hi7 控制器。
 {% endhint %}
 
-
-In the Hi7 controller, the User DIO Board (BD681) and Extension DIO Board (BD682) can be used to process digital input/output signals and the conveyor interface.
-
+在 Hi7 控制器中，用户 DIO 板 (BD681) 和扩展 DIO 板 (BD682) 可用于处理数字输入/输出信号和输送机接口。
 
 ![](../../_assets/tp630/system-option-dio.png)
 
 {% hint style="info" %}
-For detailed information on the User DIO Board settings, refer to the  "[Hi7 Robot Controller Function Manual - User DIO, Extension DIO](https://hrbook-hrc.web.app/#/view/doc-userDIO-ExtensionDIO/en/README)".
+有关用户 DIO 板设置的详细信息，请参阅 "[Hi7 机器人控制器功能手册 - 用户 DIO, 扩展 DIO](https://hrbook-hrc.web.app/#/view/doc-userDIO-ExtensionDIO/zh/README)"。
 {% endhint %}
 [__SOURCE](8-r-code/README.md)
-# 8. R Codes
+# 8. R 代碼
 
-When it comes to the operating procedures for frequently used functions, such as modifying the contents of a program or changing the setting status of a controller, you can use them easily by designating specific service codes \(R codes\). 
+當涉及到經常使用的功能的操作程序，如修改程序內容或更改控制器的設置狀態時，您可以通過指定特定的服務代碼 \(R 代碼\) 來輕鬆使用它們。
 
-R codes are configured in the "R+No." format, which combines R, representing Reset and Rapid, with a number.
-
-
-
-
-
-
+R 代碼以 "R+號碼" 格式配置，將表示重置和快速的 R 與一個數字相結合。
 [__SOURCE](8-r-code/1-use-r-code.md)
-# 8.1 Use of R Codes
+# 8.1 使用 R 代码
 
-The method to execute a specified function using an R code is as follows.
+执行指定函数的方法使用 R 代码如下。
 
-1.	Press the `[R..[NO]]` key  of the the keypad. Then, the pop-up window for R-code will appear.
+1. 按下 `[R..[NO]]` 键盘上的键。然后，R 代码的弹出窗口将出现。
 
     ![](../_assets/tp630/k-r.png)
 
-
-
-2.	Input the code number in the input area, and then touch the `[OK]` button or press the `[ENTER]` key. Then, the function designated to the selected R code will be executed.
+2. 在输入区域输入代码编号，然后触摸 `[OK]` 按钮或按下 `[ENTER]` 键。然后，将执行指定给选定 R 代码的函数。
 
     ![](../_assets/tp630/pop-rcode_eng.png)
-
-
 
 <table style="text-align:left">
   <thead>
     <tr>
-      <th>R Code</th>
-      <th>Description</th>
+      <th>R 代码</th>
+      <th>描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>R0 : Reset task</td>
-      <td>Initialize the step counter and move to STEP0.</td>
+      <td>R0 : 重置任务</td>
+      <td>初始化步数计数器并移动到 STEP0。</td>
     </tr>
     <tr>
-      <td>R1 : Reset error</td>
-      <td>Clears the status when an error or warning occurs.</td>
+      <td>R1 : 重置错误</td>
+      <td>当发生错误或警告时清除状态。</td>
     </tr>
     <tr>
-      <td>R17 : Open file manager</td>
-      <td>Quickly launch [Service] -> [5: File manager]</td>
+      <td>R17 : 打开文件管理器</td>
+      <td>快速启动 [服务] -> [5: 文件管理器]</td>
     </tr>
     <tr>
-      <td>R86 : Display free memory</td>
-      <td> Used to display the remaining memory of the T/P or motherboard at the top of the T/P screen.</td>
+      <td>R86 : 显示剩余内存</td>
+      <td>用于在 T/P 屏幕顶部显示 T/P 或主板的剩余内存。</td>
     </tr>
     <tr>
-      <td>R99 : Save</td>
-      <td>Saves historical data existing in memory as a file.</td>
+      <td>R99 : 保存</td>
+      <td>将存在于内存中的历史数据保存为文件。</td>
     </tr>
     <tr>
-      <td>R115 : Copy job file</td>
-      <td>Copy the created job program to another job program.</td>
+      <td>R115 : 复制作业文件</td>
+      <td>将创建的作业程序复制到另一个作业程序。</td>
     </tr>
     <tr>
-      <td>R117 : Delete job file</td>
-      <td>This is a function to individually delete written job.</td>
+      <td>R117 : 删除作业文件</td>
+      <td>这是单独删除已编写作业的功能。</td>
     </tr>
     <tr>
-      <td>R286 : Display software version</td>
-      <td>Quickly launch [Service] -> [7: System diagnosis] -> [1: System version]</td>
+      <td>R286 : 显示软件版本</td>
+      <td>快速启动 [服务] -> [7: 系统诊断] -> [1: 系统版本]</td>
     </tr>
     <tr>
-      <td>R321 : Axis sync. jog setting</td>
-      <td>Displays a settings screen to group arbitrary axes into one synchronization group and use the function to jog with a single jog key.</td>
+      <td>R321 : 轴同步操控设置</td>
+      <td>显示设置屏幕，以将任意轴分组为一个同步组，并使用单个操控键进行操控。</td>
     </tr>
     <tr>
-      <td>R360 : Set contpath manually</td>
-      <td>This is a function that forcibly changes the execution status of CONTPATH.</td>
+      <td>R360 : 手动设置 contpath</td>
+      <td>这是强制更改 CONTPATH 执行状态的功能。</td>
     </tr>
     <tr>
-      <td>R361 : Set jog-inching level</td>
-      <td>Use this when you want to change the inching distance of the currently set level.</td>
+      <td>R361 : 设置 jog-微调级别</td>
+      <td>当您要更改当前设定级别的微调距离时使用此功能。</td>
     </tr>
     <tr>
-      <td>R362 : Axis control status change</td>
-      <td>Manually execute the control status (axisctrl on/off) of the auxiliary axis.</td>
+      <td>R362 : 轴控制状态改变</td>
+      <td>手动执行辅助轴的控制状态（轴控制开/关）。</td>
     </tr>
   </tbody>
 </table>
-
-
-
 [__SOURCE](8-r-code/2-r0.md)
-# 8.2 R0 for Resetting the Step Counter
+# 8.2 R0 用于重置步进计数器
 
-After inputting 0 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key.
+在收藏夹窗口中输入 0 后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
 ![](../_assets/tp630/pop-rcode_eng.png)
 
-You can initialize the step counter to move to STEP0. You can also perform the following functions.
+您可以初始化步进计数器以移动到 STEP0。您还可以执行以下功能。
 
-* Clearing the playback execution status
-* Turning off the overall abnormality signal and lamp
-* Turning off the alarm signal
-* Clearing the wait status
-* Clearing the status and signals of various application functions
+* 清除播放执行状态
+* 关闭整体异常信号和指示灯
+* 关闭警报信号
+* 清除等待状态
+* 清除各种应用功能的状态和信号
 
 
 
 {% hint style="info" %}
-R0 code cannot be used during the startup of the robot.
+R0 代码在机器人启动期间无法使用。
 {% endhint %}
-
-
 [__SOURCE](8-r-code/3-r115.md)
-# 8.3 R115 for Copying a Program
+# 8.3 R115 复制程序
 
-You can copy the JOB program on the mainboard to another program on the mainboard. After inputting the number of the program that you want to copy, input the program number to which you want to copy the copied program.
+您可以将主板上的 JOB 程序复制到主板上的另一个程序。输入您想要复制的程序的编号后，输入您想要将复制的程序复制到的程序编号。
 
-1.	After inputting 115 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key.
+1. 输入 115 在收藏夹窗口中，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
-2.	After inputting the number of the program \(original\) that you want to copy and also the number of the program \(target\) to which you want to copy the copied program, touch the `[OK]` button or press the `[ENTER]` key. Then, the program will be copied.
+2. 输入您想要复制的程序 \(original\) 的编号以及您想要将复制的程序复制到的程序 \(target\) 的编号，触摸 `[OK]` 按钮或按 `[ENTER]` 键。然后，程序将被复制。
 
     ![](../_assets/tp630/pop-rcode-115_end.png)
 
-* If a program with the same number as the program to which you want to copy the copied program exists already, you should select whether to overwrite the file.
+* 如果要复制的目标程序已经存在相同编号的程序，您应该选择是否覆盖文件。
 * 
-  If there is no original file to copy, a notification message \("No Original File Exists."\) will appear.
+  如果没有可复制的原始文件，将出现通知消息 \("没有原始文件存在."\)。
 
 
 
 {% hint style="info" %}
-Code R115 cannot be used while the program is running; it must be used when the program is stopped.
+代码 R115 在程序运行时无法使用；它必须在程序停止时使用。
 {% endhint %}
-
-
-
-
 [__SOURCE](8-r-code/4-r117.md)
-# 8.4 R117 for Deleting a Program
+# 8.4 R117 删除程序
 
-You can individually delete the programs in the internal memory.
+您可以单独删除内部存储器中的程序。
 
-1.	After inputting 117 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key.
+1. 在收藏夹窗口输入117后，触摸`[OK]`按钮或按`[ENTER]`键。
 
-2.	After inputting the number of the program that you want to delete, touch the `[OK]` button or press the `[ENTER]` key. Then, the deletion confirmation window will appear.
+2. 输入您想要删除的程序编号后，触摸`[OK]`按钮或按`[ENTER]`键。然后，删除确认窗口将出现。
 
     ![](../_assets/tp630/pop-rcode-117_eng.png)
 
-* If there is no file to delete, a notification message \("No File Exists."\) will appear. 
-* If you want to delete a protected program, a notification message \("A Protected File."\) will appear.
+* 如果没有文件可以删除，将出现通知消息（"没有文件存在。"）。
+* 如果您想删除被保护的程序，将出现通知消息（"受保护的文件。"）。
 
-3.	In the deletion confirmation window, touch the `[OK]` button or press the `[ENTER]` key. Then, the selected program will be deleted.
+3. 在删除确认窗口中，触摸`[OK]`按钮或按`[ENTER]`键。然后，选定的程序将被删除。
 
 {% hint style="info" %}
-The R117 code cannot be used in automatic mode. It must be used in manual mode.
+R117代码无法在自动模式下使用。必须在手动模式下使用。
 {% endhint %}
-
-
 [__SOURCE](8-r-code/5-r210.md)
-# 8.5 R210 for Selecting a Spot Gun Number
+# 8.5 R210 选择点焊枪编号
 
-You can select the spot guns to use when using multiple spot welding guns \(servo guns or pneumatic guns\).
+在使用多个点焊枪（伺服枪或气动枪）时，您可以选择要使用的点焊枪。
 
-1.	After inputting 210 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key.
+1. 在收藏窗口中输入210后，触摸`[OK]`按钮或按`[ENTER]`键。
 
-2.	After inputting the number of the spot gun to use, touch the `[OK]` button or press the `[ENTER]` key.
+2. 输入要使用的点焊枪编号后，触摸`[OK]`按钮或按`[ENTER]`键。
 
     ![](../_assets/tp630/pop-rcode-210_eng.png)
 
-* The selected spot gun number will be displayed in the bottom right corner of the ${cont_model} teach pendant screen.
-* If you change the spot gun number, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter]` menu.
+* 选定的点焊枪编号将在${cont_model}示教器屏幕的右下角显示。
+* 如果更改点焊枪编号，则相应的工具编号将自动更改。您可以在`[system - 4: Application Parameter - 1: Spot Welding - 2:Welding gun parameter] ([system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter])`菜单中检查相应的点焊枪工具编号。
 
 
 
 {% hint style="info" %}
-* R210 code cannot be used during the startup of the robot.
-* The spot gun number can be set only in the spot welding environment \(`[Spot Welding]` item in the `[system  - 5: Initialize - 3: Usage Setting]` menu is set as enable\).
-* You can manually open, close, and squeeze the selected spot welding gun. For details on the spot welding function, refer to the "${cont_model} Controller Spot Welding Function Manual."
+* R210代码在机器人启动期间无法使用。
+* 只有在点焊环境中才能设置点焊枪编号（`[system - 5: 初始化 - 3: Usage Setting] ([system  - 5: Initialize - 3: Usage Setting])`菜单中的`[Spot Welding]`项设置为启用）。
+* 您可以手动打开、关闭和挤压选定的点焊枪。有关点焊功能的详细信息，请参阅"${cont_model} Controller Spot Welding Function Manual."
 {% endhint %}
-
-
 [__SOURCE](8-r-code/6-r211.md)
-# 8.6 R211 for Setting the Servo Gun Squeeze Force
+# 8.6 R211 用于设置伺服枪夹紧力
 
-You can manually set the squeeze force when executing the servo gun squeeze. 
+您可以在执行伺服枪夹紧时手动设置夹紧力。
 
-1.	After inputting 211 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key.
+1. 在收藏夹窗口输入211后，触摸`[OK]`按钮或按`[ENTER]`键。
 
-2.	After inputting the squeeze force, touch the `[OK]` button or press the `[ENTER]` key.
+2. 输入夹紧力后，触摸`[OK]`按钮或按`[ENTER]`键。
 
     ![](../_assets/tp630/pop-rcode-211_eng.png)
 
 
 
-* The squeeze force in the welding condition file will not be changed.
-* If the inputted squeeze force is greater than or smaller than the upper limit of the current/pressure table of the servo gun parameters, a warning message will appear.
+* 焊接条件文件中的夹紧力不会被更改。
+* 如果输入的夹紧力大于或小于伺服枪参数的电流/压力表的上限，将显示警告信息。
 
 
 
 {% hint style="info" %}
-* R211 code cannot be used during the startup of the robot. 
+* R211代码在机器人启动期间无法使用。 
 * 
-  The spot gun number can be set only in the spot welding environment \(`[Spot Welding]` item in the `[system  - 5: Initialize - 3: Usage Setting]` menu is set as enable\). 
+  仅在点焊环境中可以设置点焊枪编号 \(`[Spot Welding]`项目在`[system - 5: 初始化 - 3: Usage Setting] ([system  - 5: Initialize - 3: Usage Setting])`菜单中设置为启用\)。 
 
-* For details on the manual setting of the servo gun squeeze force, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+* 有关伺服枪夹紧力的手动设置的详细信息，请参阅"[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 {% endhint %}
-
-
 [__SOURCE](8-r-code/7-r212.md)
-# 8.7 R212 for Presetting the Servo Gun Moving Electrode Wear Volume
+# 8.7 R212 用于预置伺服枪移动电极磨损量
 
-You can manually set the servo gun moving electrode wear volume.
+您可以手动设置伺服枪移动电极磨损量。
 
-1.	After inputting 212 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key. 
+1. 在收藏夹窗口中输入 212 后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
-2.	After inputting the moving electrode wear volume, touch the `[OK]` button or press the `[ENTER]` key.
+2. 输入移动电极磨损量后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
     ![](../_assets/tp630/pop-rcode-212_eng.png)
 
 {% hint style="warning" %}
-It requires your attention that if the setting value is set larger or smaller than the actual wear volume of the electrode, it may cause mismatching of the squeeze force or interference with the workpiece.
+请注意，如果设置的值大于或小于电极的实际磨损量，可能会导致挤压力不匹配或与工件干扰。
 {% endhint %}
 
 {% hint style="info" %}
-* R212 code cannot be used during the startup of the robot.
-* The spot gun number can be set only in the spot welding environment \(`[Spot Welding]` item in the `[system  - 5: Initialize - 3: Usage Setting]` menu is set as enable\).
-* For details on the manual setting of the servo gun moving electrode wear volume, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+* R212 代码在机器人启动时无法使用。
+* 点焊编号只能在点焊环境中设置 \(`[Spot Welding]` 项在 `[system - 5: 初始化 - 3: Usage Setting] ([system  - 5: Initialize - 3: Usage Setting])` 菜单中设置为启用\)。
+* 有关伺服枪移动电极磨损量的手动设置的详细信息，请参阅 "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 {% endhint %}
-
-
 [__SOURCE](8-r-code/8-r213.md)
-# 8.8 R213 for Presetting the Servo Gun Fixed Electrode Wear Volume
+# 8.8 R213 用于预设伺服枪固定电极磨损量
 
-You can manually set the servo gun fixed electrode wear volume. 
+您可以手动设置伺服枪固定电极磨损量。
 
-1.	After inputting 213 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key. 
+1. 在收藏窗口中输入213后，触摸`[OK]`按钮或按`[ENTER]`键。
 
-2.	After inputting the fixed electrode wear volume, touch the `[OK]` button or press the `[ENTER]` key.
+2. 输入固定电极磨损量后，触摸`[OK]`按钮或按`[ENTER]`键。
 
     ![](../_assets/tp630/pop-rcode-213_eng.png)
 
 {% hint style="warning" %}
-It requires your attention that if the setting value is set larger or smaller than the actual wear volume of the electrode, it may cause mismatching of the squeeze force or interference with the workpiece.
+请注意，如果设置的值大于或小于电极的实际磨损量，可能会导致夹紧力不匹配或与工件干涉。
 {% endhint %}
 
 {% hint style="info" %}
-* R213 code cannot be used during the startup of the robot. 
-* The spot gun number can only be set in the spot welding environment \(`[Spot Welding]` item in the `[system  - 5: Initialize - 3: Usage Setting]` menu is set as enable\).
-* For details on the manual setting of the servo gun fixed electrode wear volume, refer to the ""[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+* R213代码在机器人启动期间无法使用。
+* 点焊枪编号仅可在点焊环境中设置 \(`[Spot Welding]` 项在 `[system - 5: 初始化 - 3: Usage Setting] ([system  - 5: Initialize - 3: Usage Setting])` 菜单中设置为启用\)。
+* 有关伺服枪固定电极磨损量的手动设置的详细信息，请参阅 "[${cont_model} 控制器点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 {% endhint %}
-
-
 [__SOURCE](8-r-code/9-r214.md)
-# 8.9 R214 for Selecting Welding Guns Simultaneously
+# 8.9 R214 同时选择焊接枪
 
-You can select the numbers of spot welding guns \(servo guns or pneumatic guns\) that are to be used in a welding operation in which multiple spot welding guns will be used at the same time.
+您可以选择在焊接操作中将同时使用的点焊枪（伺服枪或气动枪）的数量。
 
-1.	After inputting 214 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key. 
+1. 在收藏夹窗口输入 214 后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
-2.	After inputting the numbers of the welding guns to use simultaneously, touch the `[OK]` button or press the `[ENTER]` key.
+2. 输入要同时使用的焊接枪的数量后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
     ![](../_assets/tp630/pop-rcode-214_eng.png)
 
-* The selected spot gun number will be displayed in the bottom right corner of the ${cont_model} teach pendant screen.
-* If you select spot welding guns that are different in type from each other, a notification message \("The Gun Type of the Currently Selected Gun is Set Incorrectly."\) will appear.
+* 所选的点枪号码会显示在 ${cont_model} 教学挂件屏幕的右下角。
+* 如果您选择的点焊枪类型不同，将出现通知消息（“当前选择的枪的类型设置不正确。”）。
 
 <Br>
 
 {% hint style="info" %}
-* R214 code cannot be used during the startup of the robot.
-* The spot gun number can only be set in the spot welding environment \(`[Spot Welding]` item in the `[system  - 5: Initialize  - 3: Usage Setting]` menu is set as enable.
-* You can check the setting status of the spot welding gun in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter]` menu.
-  * When a gun is selected as a multisync gun, the manual squeeze/open/close operations of the selected gun will be simultaneously in sync with the previously selected guns.
-  * When a gun is selected as a multisync gun, if the gun LED is in the ON status, the SPOT command will be recorded in the sync spot format.
-* The selected spot welding gun can be operated manually. For details on the spot welding function, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+* R214 代码在机器人启动期间不能使用。
+* 点枪号码只能在点焊环境中设置（`[Spot Welding]` 项在 `[system - 5: 初始化 - 3: Usage Setting] ([system  - 5: Initialize  - 3: Usage Setting])` 菜单中设置为启用）。
+* 您可以在 `[system - 4: Application Parameter - 1: Spot Welding - 2:Welding gun parameter] ([system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter])` 菜单中检查点焊枪的设置状态。
+  * 当枪被选为多同步枪时，所选择枪的手动挤压/打开/关闭操作将与之前选择的枪同步进行。
+  * 当枪被选为多同步枪时，如果枪 LED 处于打开状态，SPOT 命令将以同步点格式记录。
+* 所选的点焊枪可以手动操作。有关点焊功能的详细信息，请参考 "[${cont_model} 控制器点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 {% endhint %}
-
-
-
-
 [__SOURCE](8-r-code/10-r215.md)
-# 8.10 R215 for Setting the Squeeze Force in the Spot Welding Condition
+# 8.10 R215用于设置点焊条件下的挤压力
 
-You can set the squeeze force required for servo gun welding in the welding condition table. You can also set the squeeze force in the `system  - 4: Application Parameter  - 1: Spot Welding  - 4: Welding Data (Condition, Sequence)  - 2: Welding Condition` menu.
+您可以在焊接条件表中设置伺服枪焊接所需的挤压力。您还可以在`系统 - 4: 应用参数 - 1: 点焊 - 4: 焊接数据 (条件, 顺序) - 2: 焊接条件 (系统 - 4: 应用参数 - 1: 点焊 - 4: 焊接数据 (条件, 顺序) - 2: 焊接条件)`菜单中设置挤压力。
 
-1.	After inputting 215 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key. 
+1. 在收藏夹窗口中输入215后，触摸`[OK]`按钮或按`[ENTER]`键。
 
-2.	After inputting the welding condition number, touch the `[OK]` button or press the `[ENTER]` key.
+2. 输入焊接条件编号后，触摸`[OK]`按钮或按`[ENTER]`键。
 
     ![](../_assets/tp630/pop-rcode-215-1_eng.png)
 
-
-
-3.	After inputting the servo gun squeeze force, touch the `[OK]` button or press the `[ENTER]` key.
+3. 输入伺服枪挤压力后，触摸`[OK]`按钮或按`[ENTER]`键。
 
     ![](../_assets/tp630/pop-rcode-215-2_eng.png)
-
-
 [__SOURCE](8-r-code/11-r220.md)
-# 8.11 R220 for Setting the Panel Thickness \(Sv\)
+# 8.11 R220 设定面板厚度 \(Sv\)
 
-You can manually set the panel thickness to record the servo gun spot welding step.
+您可以手动设定面板厚度，以记录伺服枪点焊步骤。
 
-If you execute the one-touch recording in which the MOVE and SPOT statements are to be simultaneously recorded while only the servo gun fixed electrode is in the state of being in contact with the panel, the position of the moving electrode will be automatically recorded in the MOVE statement in consideration of the panel thickness and wear volume.
+如果您执行一键记录，其中 MOVE 和 SPOT 指令在伺服枪固定电极仅与面板接触的状态下同时被记录，则移动电极的位置将根据面板厚度和磨损量自动记录在 MOVE 指令中。
 
-1.	After inputting 220 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key. 
+1. 在收藏窗口输入 220 后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
-2.	After inputting the panel thickness, touch the `[OK]` button or press the `[ENTER]` key.
+2. 在输入面板厚度后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
     ![](../_assets/tp630/pop-rcode-220_eng.png)
 
 
 
 {% hint style="info" %}
-For details on the manual setting of the panel thickness, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+有关面板厚度手动设置的详细信息，请参阅 "[${cont_model} 控制器点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 {% endhint %}
-
-
 [__SOURCE](8-r-code/12-r314.md)
-# 8.12 R314 Engineer Mode
+# 8.12 R314 工程师模式
 
-In the R Code window, type 314 and then touch the `[OK]` button or press the `[ENTER]` key.
+在 R 代码窗口中，输入 314，然后触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
 ![](../_assets/tp630/pop-rcode-314.png)
 
-After completion, the following display flashes in the upper right corner of the screen.
+完成后，屏幕右上角会闪烁以下显示。
 
 ![](../_assets/tp630/eng-mode.png)
 
-The following functions can be set up in engineer mode.
+在工程师模式中可以设置以下功能。
 
-* Axis origin (robot parameters) 
-* Soft limit (robot parameters) 
-* Encoder offset (Robot Parameters) 
-* Servo parameters (Robot Parameters) 
-* Acceleration and deceleration parameters (robot parameters) 
-* Servo tool change (Application parameters) 
-* System Initialization (Initialization)
-* Robot Type Selection (Initialization)
-* Additional axes Parameters (Initialization)
-* Axis lock (Initialize)
-* Other detailed applications
+* 轴原点（机器人参数） 
+* 软限制（机器人参数） 
+* 编码器偏移（机器人参数） 
+* 伺服参数（机器人参数） 
+* 加速和减速参数（机器人参数） 
+* 伺服工具更换（应用参数） 
+* 系统初始化（初始化）
+* 机器人类型选择（初始化）
+* 额外轴参数（初始化）
+* 轴锁定（初始化）
+* 其他详细应用
 
 {% hint style="warning" %}
 
-* Be aware that incorrect settings in engineer mode can cause serious problems with the robot system. {% endhint %}
-
-
+* 请注意，工程师模式下的错误设置可能会导致机器人系统严重问题。{% endhint %}
 [__SOURCE](8-r-code/13-r358.md)
-# 8.13 R358 for Changing the Servo Tool
+# 8.13 R358 更改伺服工具
 
-You can manually connect and disconnect the servo tool in the servo tool change system. 
+您可以手动连接和断开伺服工具在伺服工具更换系统中。
 
-To change the servo tool in the servo tool change system, you need to disconnect or connect the power and various signal lines using a physical automatic tool change \(ATC\) device.
+要在伺服工具更换系统中更换伺服工具，您需要使用物理自动工具更换 \(ATC\) 设备断开或连接电源和各种信号线。
 
-When the servo tool is a servo gun, if you want to manually perform the change work, you need to move the robot, while the motor is turned on, to the servo gun support table where you can connect or disconnect the robot, and then perform the change work. If the servo tool is a different type, such as a positioner, you can perform the change work when the preparation for connection and disconnection work is completed.
+当伺服工具是伺服枪时，如果您想手动进行更换工作，您需要在电机开启的情况下移动机器人到可以连接或断开机器人的伺服枪支撑桌，然后进行更换工作。如果伺服工具是其他类型，例如定位器，您可以在连接和断开工作准备完成后进行更换工作。
 
-R358 servo tool change parameters and the examples are as follows.
+R358 伺服工具更换参数及示例如下。
 
 ![](../_assets/image_546.png)
 
-The method to change the servo tool using the R358 code is as follows.
+使用 R358 代码更换伺服工具的方法如下。
 
-1.	After inputting 358 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key.
+1. 在收藏夹窗口输入358后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
-2.	After inputting the change operation number \(0: Disconnect, 1: Connect, 2: Fix\), touch the `[OK]` button or press the `[ENTER]` key.
+2. 输入更换操作编号 \(0: 断开, 1: 连接, 2: 固定\) 后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
     ![](../_assets/tp630/pop-rcode-358-1_eng.png)
 
-
-3.	After inputting the number of the welding gun to change, touch the `[OK]` button or press the `[ENTER]` key. The selected weld gun number will be displayed in the bottom right corner of the ${cont_model} teach pendant screen.
-
+3. 输入要更换的焊接枪编号后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。所选的焊接枪编号将在 ${cont_model} 教导挂架屏幕的右下角显示。
 
     ![](../_assets/tp630/pop-rcode-358-2_eng.png)
 
 {% hint style="info" %}
-* R358 code cannot be used in automatic mode. It must be used in manual mode.
+* R358 代码不能在自动模式下使用。必须在手动模式下使用。
 * 
-  When the spot gun number is changed, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter]` menu.
+  当点焊枪编号更改时，对应点焊枪指定的工具编号将自动更改。您可以在 `[system - 4: Application Parameter - 1: Spot Welding - 2:Welding gun parameter] ([system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter])` 菜单中查看对应点焊枪的工具编号。
 
 * 
-  The servo tool change setting can be performed only when the motor is turned on.
+  伺服工具更换设置只能在电机开启时进行。
 
-* For details on the servo tool change, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+* 有关伺服工具更换的详细信息，请参阅 "[${cont_model} 控制器点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 {% endhint %}
-
-
 [__SOURCE](8-r-code/14-r359.md)
-# 8.14 R359 for Servo Tool Encoder Power On Relay
+# 8.14 R359 伺服工具编码器电源开启继电器
 
-If the servo gun is applied in the servo tool change system, you need to execute this function to reset the encoder of the servo tool axis when installing the servo tool for the first time.
+如果伺服枪应用于伺服工具更换系统，则需要在第一次安装伺服工具时执行此功能以重置伺服工具轴的编码器。
 
-1.	After inputting 359 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key.
+1.	在收藏夹窗口输入359后，触摸`[OK]`按钮或按下`[ENTER]`键。
 
-2.	After inputting 1, touch the `[OK]` button or press the `[ENTER]` key. Then, the power will be supplied to the encoder.
+2.	在输入1后，触摸`[OK]`按钮或按下`[ENTER]`键。然后，电源将供应给编码器。
 
     ![](../_assets/tp630/pop-rcode-359_eng.png)
 
 
 
 {% hint style="info" %}
-* R359 code cannot be used in automatic mode. It must be used in manual mode.
+* R359代码不能在自动模式下使用。必须在手动模式下使用。
 * 
-  To disable the forced power supply to the servo gun encoder, you should turn off the power of the controller and then turn it back on. Therefore, when the encoder reset is completed, turn off the power of the controller and turn it back on, and then progress the manual connection.
+  要禁用对伺服枪编码器的强制供电，您应该关闭控制器的电源，然后再重新开启。因此，当编码器重置完成后，请关闭控制器的电源并重新开启，然后进行手动连接。
 
-* The servo tool encoder power setting function is a function for engineers, so it is not supported for general users. Please contact our engineer for more information on this feature.
-* For details on the servo tool encoder power setting, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+* 伺服工具编码器电源设置功能是为工程师设计的，因此不支持一般用户。有关该功能的更多信息，请与我们的工程师联系。
+* 有关伺服工具编码器电源设置的详细信息，请参阅"[${cont_model} 控制器点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 {% endhint %}
 
 {% hint style="warning" %}
-Never mechanically connect or disconnect the servo gun while the encoder power is forcibly supplied.
+在强制供电的情况下，绝不要机械连接或断开伺服枪。
 {% endhint %}
-
-
 [__SOURCE](8-r-code/15-r360.md)
-# 8.15 R360 Set CONTPATH manually
+# 8.15 R360 手动设置 CONTPATH
 
-It manually changes the CONTPATH (continuous path) mode. The input ranges are 0, 1, and 2, and the description for each number is as follows. (Same as [contpath](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/6-contpath) statement.)
-
+它手动更改 CONTPATH（连续路径）模式。输入范围为 0、1 和 2，每个数字的描述如下。（与 [contpath](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/5-moving-robot/6-contpath) 语句相同。）
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Number</th>
-		<th style="text-align:left">Meaning</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">数字</th>
+		<th style="text-align:left">含义</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>0</td>
-		<td>Discontinuous</td>
+		<td>不连续</td>
       <td style="text-align:left">
-        If the step contains functions, when the step position is reached, while the robot pausing, executes the functions and then moves to the next step.
+        如果步骤包含功能，当达到步骤位置时，机器人暂停，执行功能，然后移动到下一个步骤。
       </td>
 	 </tr>
 	 <tr>
 		<td>1</td>
-		<td>Continuous.<br>However, input signal is discontinuous (default)</td>
+		<td>连续。<br>但是，输入信号是不连续的（默认）</td>
       <td style="text-align:left">
-        During step movement, while the robot moving, the functions in the target step are executed, and then moves through the target step to the next step.<br>
-		However, in the case of an output function, the actual output point is output when the command value reaches within the accuracy range.<br>
-		In addition, if the input signal is used for the parameter of the command, while the robot pausing, executes the functions and then moves to the next step.
+        在步骤移动期间，当机器人移动时，目标步骤中的功能被执行，然后通过目标步骤移动到下一个步骤。<br>
+		但是，在输出功能的情况下，实际输出点在命令值达到精度范围内时输出。<br>
+		此外，如果输入信号用于命令的参数，当机器人暂停时，执行功能，然后移动到下一个步骤。
       </td>
 	 </tr>
 	 <tr>
 		<td>2</td>
-		<td>Continuous.<br>Input signal is also continuous</td>
+		<td>连续。<br>输入信号也是连续的</td>
       <td style="text-align:left">
-        Even if the command contains an input signal, it is interpreted in advance and moved continuously.
+        即使命令包含输入信号，它也会提前解释并连续移动。
       </td>
       <td style="text-align:left"></td>
     </tr>
@@ -9059,109 +7899,96 @@ It manually changes the CONTPATH (continuous path) mode. The input ranges are 0,
 
 {% hint style="info" %}
 
-- Input signal : fb.di
+- 输入信号 : fb.di
 
-- Output signal : fb.do, _s, _m, _mo,
+- 输出信号 : fb.do, _s, _m, _mo,
 
-- Other discontinuous condition
-  1) Discontinuous operation: Step FWD under discontinuous conditions, Step BWD, One step playback
-  2) GUN1 or GUN2 step.
-  3) If accu=0 and the value is 0
-  4) If the tool number changes
+- 其他不连续条件
+  1) 不连续操作：在不连续条件下的前进步骤，后退步骤，逐步回放
+  2) GUN1 或 GUN2 步骤。
+  3) 如果 accu=0 且值为 0
+  4) 如果工具编号发生变化
 
 {% endhint %}
 
-Here's how to operate it:
+操作方式如下：
 
-1. Press the R button, type 360, touch the `[OK]` button, or press the <b>ENTER</b> key.
+1. 按下 R 按钮，输入 360，触摸 `[OK]` 按钮，或按 <b>ENTER</b> 键。
 
-2. Enter the continuous pass number (0~2), touch the `[OK]` button, or press the <b>ENTER</b> key.
+2. 输入连续通行证号（0~2），触摸 `[OK]` 按钮，或按 <b>ENTER</b> 键。
 
 ![](../_assets/tp630/pop-rcode-360.png)
 
-3. The changed mode can be checked by the `CP0`, `CP1`, or `CP2` flag in the title-bar.
+3. 可以通过标题栏中的 `CP0`、`CP1` 或 `CP2` 标志检查已更改的模式。
 
 ![](../_assets/tp630/flag-cp.png)
-
 [__SOURCE](8-r-code/16-r361.md)
-# 8.16 R361 for Setting the Jog Inching Level
+# 8.16 R361 设置 Jog 进给级别
 
-R361 jog inching level setting information is as follows.
+R361 jog 进给级别设置信息如下。
 
 ![](../_assets/image_538.png)
 
-The method to change the inching distance of the currently set level is as follows.
+更改当前设置级别的进给距离的方法如下。
 
-1.	After inputting 361 in the favorites window, touch the `[OK]` button or press the `[ENTER]` key.
+1. 在收藏窗口中输入 361 后，触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
-2.	After inputting the unit of the jog inching level \(0: Distance. 1: Angle\), touch the `[OK]` button or press the `[ENTER]` key.
+2. 输入 jog 进给级别的单位 \(0: 距离. 1: 角度\)，然后触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
     ![](../_assets/tp630/pop-rcode-361-1_eng.png)
 
-
-3.	If you input '1', input a inching angle and touch the `[OK]` button or press the `[ENTER]` key.
-
+3. 如果输入 '1'，请输入进给角度，然后触摸 `[OK]` 按钮或按 `[ENTER]` 键。
 
     ![](../_assets/tp630/pop-rcode-361-2_eng.png)
 
 {% hint style="info" %}
-* R361 code cannot be used in automatic mode. It must be used in manual mode.
-* The inching distance set using the R361 code will be set for the currently set jog level. Therefore, if the current jog speed level is 8, the inching distance corresponding to 8 will be changed.
-* Jog inching is possible only when the jog inching key is activated \(LED On\).
+* R361 代码不能在自动模式下使用。必须在手动模式下使用。
+* 使用 R361 代码设置的进给距离将用于当前设置的 jog 级别。因此，如果当前 jog 速度级别为 8，则将更改与 8 对应的进给距离。
+* 仅当激活 jog 进给键 \(LED 开\) 时，才能进行 jog 进给。
 {% endhint %}
-
-
 [__SOURCE](8-r-code/17-r321.md)
-# 8.17 R321 Axis sync. jog setting
+# 8.17 R321 轴同步 jog 设置
 
-This is a function to group arbitrary axes into one synchronous group and jog them with a single jog key. 
+这是一个将任意轴分组到一个同步组并用单个 jog 按键进行 jog 的功能。
 
 ![](../_assets/tp630/init-axis-sync-jog.png)
 
-How to use the axis synchronous jog function is as follows.
+使用轴同步 jog 功能的方法如下。
 
-1. Set the axes you want to move with one key to the same synchronization group and press the `[OK]` button.
-2. Use axis synchronous jog using the jog key.
-3. When you finish using the axis synchronous jog function, set all synchronization groups to invalid.
+1. 将您希望通过一个按键移动的轴设置到同一同步组，然后按下 `[OK]` 按钮。
+2. 使用 jog 按键进行轴同步 jog。
+3. 当您完成使用轴同步 jog 功能时，将所有同步组设置为无效。
 
 {% hint style="info" %}
-* This function is only effective when jogging. The synchronization function does not apply in automatic mode.
-* Synchronous jog pairs are not initialized across reboots.
-* The Pose value in the Cartesian coordinate system of the synchronous jog pair does not match the Pose situation of the actual robot (simple jog function).
+* 此功能仅在 jog 时有效。同步功能不适用于自动模式。
+* 同步 jog 配对在重启时不会初始化。
+* 同步 jog 配对在笛卡尔坐标系中的姿态值与实际机器人的姿态情况不匹配（简单 jog 功能）。
 {% endhint %}
-
-
 [__SOURCE](9-property/README.md)
-# 9. Property
+# 9. 属性
 
-When teaching a job program for a welding operation, you should set the arc welding-specific details, such as weaving, retry/restart, and characteristics of the welder, in addition to welding conditions such as voltage and current. Moreover, there are cases in which you should check the position of a step or an auxiliary point.
-
-
-
-
+当为焊接操作教学作业程序时，除了电压和电流等焊接条件外，还应设置弧焊特定细节，例如摆动、重试/重新启动和焊工的特性。此外，有时还应检查步进或辅助点的位置。
 [__SOURCE](9-property/1-use-property.md)
-# 9.1 Use of the property Function
+# 9.1 使用属性功能
 
-If you use the `[property]` button the L button bar of the ${cont_model} teach pendant screen, you can quickly and easily set the conditions and check the position simply by a single button operation.
+如果您在 ${cont_model} 教导挂钩屏幕的 L 按钮栏上使用 `[property]` 按钮，您可以通过一次按钮操作快速轻松地设置条件并检查位置。
 
 ![Figure 75 Function for the `[Attributes]` Button](../_assets/tp630/lbt-property-arc_eng.png)
 
-For example, if you touch the `[property]` button while the cursor is on the 'arcon' statement that is for the Arc On function, the contents of the condition number used in the current statement among the welding start conditions will be displayed. On the screen, you can check or change the details of the welding start conditions. Moreover, if there is another condition file associated with the concerned condition file, you can move directly to it. In other words, the `[property]` button allows you to check and change the details of the contents related to a specific statement such as condition file or step position quickly and easily.
+例如，如果您在用于 Arc On 功能的 'arcon' 语句上触摸 `[property]` 按钮，将显示当前语句中用于焊接启动条件的条件编号的内容。在屏幕上，您可以检查或更改焊接启动条件的详细信息。此外，如果与相关条件文件关联的其他条件文件存在，您可以直接转到它。换句话说，`[property]` 按钮允许您迅速轻松地检查和更改与特定语句相关的内容的详细信息，例如条件文件或步骤位置。
 
+以下显示了使用 `[property]` 按钮检查和更改与特定命令相关的条件文件和详细信息的方法。
 
+1. 选择一个特定语句，将光标放在其上，并触摸 `[property]` 按钮。
 
-The following shows the method to check and change the condition file and details related to a specific command using the `[property]` button.
-
-1.	Select a specific statement, place the cursor on it, and touch the `[property]` button.
-
-2.	By referring to the following table, you can check and change the file or details related to the selected statement.
+2. 参照以下表格，您可以检查和更改与所选语句相关的文件或详细信息。
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Statement</th>
-      <th style="text-align:left">File and Contents</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">语句</th>
+      <th style="text-align:left">文件和内容</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -9173,46 +8000,37 @@ The following shows the method to check and change the condition file and detail
         <p></p>
       </td>
       <td style="text-align:left">
-        <p>Step position</p>
+        <p>步骤位置</p>
         <p></p>
-        <p>Reference position</p>
+        <p>参考位置</p>
       </td>
       <td style="text-align:left">
-        <p>Current step position or global pose variable</p>
-        <p>X Y Z (mm) Rx Ry Rz (deg) T1&#x2013;T10</p>
-        <p>The unit, coordinate system, and robot configuration</p>
+        <p>当前位置或全局位姿变量</p>
+        <p>X Y Z (mm) Rx Ry Rz (度) T1&#x2013;T10</p>
+        <p>单位、坐标系和机器人配置</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">arcon asf=</td>
       <td style="text-align:left">
-        <p>Welding start condition</p>
-        <p>Welding auxiliary condition</p>
-        <p>Arc welder condition</p>
+        <p>焊接启动条件</p>
+        <p>焊接辅助条件</p>
+        <p>电弧焊条件</p>
       </td>
       <td style="text-align:left">
         <ul>
-          <li>Welding start condition: Condition number, description, voltage check,
-            retry, operation mode, output current, output voltage, WCR waiting time,
-            robot delay time, etc.</li>
-          <li>Welding auxiliary condition
+          <li>焊接启动条件：条件编号、描述、电压检查、重试、操作模式、输出电流、输出电压、WCR 等待时间、机器人延迟时间等。</li>
+          <li>焊接辅助条件
             <ul>
-              <li>Retry: Count, retract time/speed, back step/welding line movement amount,
-                shift movement amount, speed, current, voltage</li>
-              <li>Restart: Count, overlap amount, moving speed, welding current, voltage,
-                current</li>
-              <li>Overlap condition setting (in the middle of welding): Arc, gas, wire,
-                and coolant</li>
+              <li>重试：计数、收回时间/速度、反向步骤/焊接线移动量、偏移移动量、速度、电流、电压</li>
+              <li>重新启动：计数、重叠量、移动速度、焊接电流、电压、电流</li>
+              <li>重叠条件设置（在焊接中间）：电弧、气体、焊丝和冷却液</li>
             </ul>
           </li>
-          <li>Arc welder condition: Welder number, title, description, power control
-            mode, wire diameter, protruding distance, deposition detection time, ARC
-            OFF detection time, etc.
+          <li>电弧焊条件：焊机编号、标题、描述、功率控制模式、焊丝直径、突出的距离、沉积检测时间、ARC OFF 检测时间等。
             <ul>
-              <li>Current properties: Polarity, command value (V), measurement value (A),
-                and compensation value</li>
-              <li>Voltage properties: Polarity, command value (V), measurement value (V),
-                and compensation value</li>
+              <li>电流属性：极性、指令值 (V)、测量值 (A) 和补偿值</li>
+              <li>电压属性：极性、指令值 (V)、测量值 (V) 和补偿值</li>
             </ul>
           </li>
         </ul>
@@ -9221,58 +8039,45 @@ The following shows the method to check and change the condition file and detail
     <tr>
       <td style="text-align:left">arcon aef=</td>
       <td style="text-align:left">
-        <p>Welding end condition</p>
-        <p>Welding auxiliary condition</p>
+        <p>焊接结束条件</p>
+        <p>焊接辅助条件</p>
       </td>
       <td style="text-align:left">
         <ul>
-          <li>Welding end condition: Condition number, description, voltage check, output
-            current, output voltage, downslope, condition holding time, and gas postflow</li>
-          <li>Welding auxiliary condition: Automatic deposition release: Count, current,
-            voltage, delay time</li>
+          <li>焊接结束条件：条件编号、描述、电压检查、输出电流、输出电压、降坡、条件保持时间和气体后流</li>
+          <li>焊接辅助条件：自动沉积释放：计数、电流、电压、延迟时间</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">weavon wev=</td>
-      <td style="text-align:left">Weaving condition</td>
+      <td style="text-align:left">编织条件</td>
       <td style="text-align:left">
         <ul>
-          <li>Weaving condition: Gun number, weaving type, frequency, basic pattern,
-            progress angle, boundary limit, moving time, and timer</li>
-          <li>Arc sensing condition: Arc sensing, left and right sensing start cycle,
-            top and bottom sensing cycle, voltage factor, compensation distance per
-            sample, etc.</li>
+          <li>编织条件：枪号、编织类型、频率、基本模式、进度角、边界限制、移动时间和定时器</li>
+          <li>电弧感应条件：电弧感应、左右感应启动周期、上下感应周期、电压因子、每次采样的补偿距离等。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-3.	Touch the `[Record]` button or press the `[ESC]` key to end the operation.
+3. 触摸 `[Record]` 按钮或按 `[ESC]` 键以结束操作。
 
-* `[Record]`: You can save the changes and end the operation.
-* `[ESC]`: You can cancel the change and end the operation.
-
-
-
-
-
-
+* `[Record]`：您可以保存更改并结束操作。
+* `[ESC]`：您可以取消更改并结束操作。
 [__SOURCE](9-property/2-move-step-position/README.md)
-# 9.2 Move-Step Position
+# 9.2 移动步骤位置
 
-You can check or modify the position of the step in the currently selected line in the JOB program.
-
-
+您可以检查或修改当前选定行中 JOB 程序的步骤位置。
 [__SOURCE](9-property/2-move-step-position/1-hidden-pose-move.md)
-# 9.2.1 Hidden Pose Move Statement
+# 9.2.1 隐藏位姿移动语句
 
-You can check or modify the position of the current step in the hidden pose move statement \(a step recorded by the `[REC]` key, that is, a move statement that does not include a pose variable\).
+您可以检查或修改当前步骤在隐藏位姿移动语句中的位置 \(由 `[REC]` 键记录的步骤，即不包括位姿变量的移动语句\)。
 
-1.	Touch the `[property]` button in the move command \(move statement\) recorded as a hidden pose. Then, the current step position will appear. 
+1.	触摸作为隐藏位姿记录的移动命令 \(移动语句\) 中的 `[property]` 按钮。然后，当前步骤位置将显示。
 
-2.	Check and modify the current step position.
+2.	检查并修改当前步骤位置。
 
     ![](../../_assets/tp630/step-info_eng.png)
 
@@ -9281,8 +8086,8 @@ You can check or modify the position of the current step in the hidden pose move
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -9291,22 +8096,17 @@ You can check or modify the position of the current step in the hidden pose move
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Position information of the current step. You can check and set the name,
-          coordinate value and coordinate system format, etc.</p>
+        <p>当前步骤的位置信息。您可以检查并设置名称、坐标值和坐标系统格式等。</p>
         <ul>
-          <li><b>[Name]</b>: Number of the current step. After inputting the step number, press
-            the <b>`[ENTER]` </b>key to move to the concerned step.</li>
-          <li><b>Coordinate Value</b>: Current coordinate value of the current step
+          <li><b>[名称]</b>: 当前步骤的编号。输入步骤编号后，按 <b>`[ENTER]` </b>键移动到相关步骤。</li>
+          <li><b>坐标值</b>: 当前步骤的当前坐标值
             <ul>
-              <li>Select an item using the cursor key.</li>
-              <li>After inputting a value in the desired item, press the `[ENTER]` key
-                to reflect the change.</li>
-              <li>If the coordinate system format is set as an encoder, the coordinate value
-                will not be changed.</li>
+              <li>使用光标键选择项目。</li>
+              <li>在所需项目中输入值后，按 `[ENTER]` 键以反映该更改。</li>
+              <li>如果坐标系统格式设置为编码器，则坐标值将不会更改。</li>
             </ul>
           </li>
-          <li><b>[Coord. System]</b>: The coordinate system format to express the position
-            of the current step</li>
+          <li><b>[坐标系]</b>: 表达当前步骤位置的坐标系统格式</li>
         </ul>
       </td>
     </tr>
@@ -9316,51 +8116,42 @@ You can check or modify the position of the current step in the hidden pose move
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li><b>[Previous]/[Next]</b>: You can display the information of the previous or
-            next step.</li>
-          <li><b>[Original Value]</b>: You can display the original hidden pose value of the
-            current step.</li>
-          <li><b>[Current Robot Pose]</b>: You can display the value of the posture the robot
-            is currently taking.</li>
-          <li><b>[Moving]</b>: Touching the button will move the robot to the
-            recorded step position (Jog).</li>
+          <li>`[OK]`: 您可以保存更改。</li>
+          <li><b>[上一页]/[下一页]</b>: 您可以显示上一个或下一个步骤的信息。</li>
+          <li><b>[原始值]</b>: 您可以显示当前步骤的原始隐藏位姿值。</li>
+          <li><b>[当前机器人位姿]</b>: 您可以显示机器人当前采取的姿态值。</li>
+          <li><b>[移动]</b>: 触摸该按钮将使机器人移动到记录的步骤位置 (Jog)。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-3.	Touch the `[OK]` button. Then, the change will be saved in the job program, and the operation will end. 
+3.	触摸 `[OK]` 按钮。然后，更改将保存在作业程序中，操作将结束。 
 
-* If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
+* 如果您通过按 `[ESC]` 键结束操作，更改将不会被保存。 
 
 {% hint style="info" %}
-* If `[Robot Configuration]` is set as undesignated, the robot will designate a configuration the very closest to the current position of the robot.
+* 如果 `[Robot Configuration]` 设置为未指定，机器人将指定最接近当前机器人位置的配置。
 * 
-  For the designation according to the robot configuration, refer to "[2.3.2.2 Base and Robot Recording Coordinates](../../2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)".
+  关于机器人配置的指定，请参考 "[2.3.2.2 基座和机器人记录坐标](../../2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)"。
 {% endhint %}
-
-
 [__SOURCE](9-property/2-move-step-position/2-pose-rec-move.md)
-# 9.2.2 Pose Recording Move Statement and Pose Assign Statement
+# 9.2.2 姿态记录移动语句和姿态赋值语句
 
-You can edit the pose variable value in the move statement, including the pose variable or the pose variable assign statement.
+您可以编辑移动语句中的姿态变量值，包括姿态变量或姿态变量赋值语句。
 
-1.	Touch the `[property]` button in the move command \(move statement\) recorded as a pose variable. Then, the pose variable setting screen will appear.
+1. 触摸记录为姿态变量的移动命令 \(移动语句\) 中的 `[property]` 按钮。然后，姿态变量设置屏幕将会出现。
 
-2.	Check and modify the current pose variable.
+2. 检查并修改当前姿态变量。
 
     ![](../../_assets/tp630/step-pose-global_eng.png)
-
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -9369,28 +8160,21 @@ You can edit the pose variable value in the move statement, including the pose v
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Current pose variable information. You can check and set the name, coordinate
-          value, coordinate system format, etc.</p>
+        <p>当前姿态变量信息。您可以检查并设置名称、坐标值、坐标系统格式等。</p>
         <ul>
-          <li><b>[Name]</b>: Name of the current pose variable</li>
-          <li><b>Coordinate value</b>: The coordinate value of the current pose variable
+          <li><b>[名称]</b>: 当前姿态变量的名称</li>
+          <li><b>坐标值</b>: 当前姿态变量的坐标值
             <ul>
-              <li>Select an item using the cursor key.</li>
-              <li>After inputting a value in the desired item, press the <b>`[ENTER]`</b> key
-                to reflect the change.</li>
-              <li>If the coordinate system format is set as an encoder, the coordinate value
-                will not be changed.</li>
+              <li>使用光标键选择项目。</li>
+              <li>在所需项目中输入值后，按 <b>`[ENTER]`</b> 键以反映更改。</li>
+              <li>如果坐标系统格式设置为编码器，坐标值将不会更改。</li>
             </ul>
           </li>
-          <li><b>[Coord. System]</b>: The coordinate system format to express the position
-            of the current pose variable</li>
-          <li><b>[Configuration]</b>: When describing the position of the robot, there are
-            multiple solutions because of the characteristics of the device, so the
-            robot configuration is designated to uniquely describe the configuration.
+          <li><b>[坐标系统]</b>: 表达当前姿态变量位置的坐标系统格式</li>
+          <li><b>[配置]</b>: 描述机器人位置时，由于设备特性存在多种解决方案，因此机器人配置被指定为唯一描述配置。
             <ul>
-              <li>This function can only be used when the coordinate system type is set
-                as a base or robot.</li>
-              <li>For details on the robot configuration, refer to &#x201C;<a href="../../operation/step/step-pose-modify/">2.3.2 Recording and Changing a Step Position</a><b>.</b>&#x201D;</li>
+              <li>此功能仅在坐标系统类型设置为基座或机器人时可用。</li>
+              <li>有关机器人配置的详细信息，请参阅 “<a href="../../operation/step/step-pose-modify/">2.3.2 记录和改变一步位置</a><b>.</b> ”</li>
             </ul>
           </li>
         </ul>
@@ -9402,375 +8186,352 @@ You can edit the pose variable value in the move statement, including the pose v
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li><b>[Previous]/[Next]</b>: You can display the information of the previous or
-            next step.</li>
-          <li><b>[Original Value]</b>: You can display the original hidden pose value of the
-            current step.</li>
-          <li><b>[Current Robot Pose]</b>: You can display the value of the pose the robot
-            is currently taking.</li>
-          <li><b>[Moving]</b>: Touching the button will move the robot to the
-            recorded step position (Jog).</li>
+          <li>`[确定]`: 您可以保存更改。</li>
+          <li><b>[上一步]/[下一步]</b>: 您可以显示上一或下一步骤的信息。</li>
+          <li><b>[原始值]</b>: 您可以显示当前步骤的原始隐藏姿态值。</li>
+          <li><b>[当前机器人姿态]</b>: 您可以显示机器人当前所处的姿态值。</li>
+          <li><b>[移动]</b>: 触摸按钮将使机器人移动到记录的步骤位置（Jog）。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-3.	Touch the `[OK]` button. Then, the change will be saved in the job program, and the operation will end.
+3. 触摸 `[确定]` 按钮。然后，更改将被保存到作业程序中，操作将结束。
 
-* If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
-
+* 如果您通过按 `[ESC]` 键结束操作，更改将不会被保存。
 [__SOURCE](9-property/3-spot-welding-func.md)
-# 9.3 Spot Welding Function
+# 9.3 点焊功能
 
-When writing the SPOT command while writing the program, if you place the cursor on the spot welding function position in manual mode and touch the `[property]` button, then the `[1: Spot Welding]` menu will be highlighted in the application parameter setting menu screen. Using the spot welding function, you can quickly modify the contents of the welding conditions and also of the welding sequence when performing spot welding.
+在编写程序时，如果在手动模式下将光标放置在点焊功能位置并触摸 `[property]` 按钮，则在应用参数设置菜单屏幕中，`[1: 点焊]` 菜单将被高亮显示。使用点焊功能，您可以快速修改焊接条件的内容以及进行点焊时的焊接顺序。
 
 ![Figure 76 Spot Welding Function](../_assets/tp630/app-spot-menu_eng.png)
 
 {% hint style="info" %}
-* You can use the spot welding function by touching the `[system]` button  - `[4: Application Parameter  - 1: Spot Welding]`.
+* 您可以通过触摸 `[system]` 按钮 - `[4: 应用参数 - 1: 点焊] ([4: Application Parameter  - 1: Spot Welding])` 来使用点焊功能。
 * 
-  For details on the spot welding function, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
+  有关点焊功能的详细信息，请参阅 "[${cont_model} 控制器点焊功能手册](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/README)"。
 {% endhint %}
-
-
 [__SOURCE](10-robot-language.md)
-# 10. Robot Language
+# 10. 机器人语言
 
-For details on the robot language, refer to the "[${cont_model} Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README?cont_model=${cont_model})"
-
+有关机器人语言的详细信息，请参阅 "[${cont_model} 机器人控制器功能手册. - 机器人语言 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/zh/README?cont_model=${cont_model})"
 [__SOURCE](11-etc/README.md)
-# 11. Etc.
+# 11. 其他
 
-This chapter explains additional information that was not covered earlier.
-
+本章解释了之前未涵盖的其他信息。
 [__SOURCE](11-etc/1-controller-files/README.md)
-# 11.1 Major Folders and Files in the Robot Controller
+# 11.1 机器人控制器中的主要文件夹和文件
 
-Various configuration, teaching, and log files are stored inside the robot controller.
-In this section, we describe the folder structure and the roles of the individual files.
-
+各种配置、教学和日志文件存储在机器人控制器内部。
+在本节中，我们将描述文件夹结构和各个文件的角色。
 [__SOURCE](11-etc/1-controller-files/1-caution-ftp.md)
-# 11.1.1 Cautions When Loading to the project/ Folder via FTP
+# 11.1.1 通过 FTP 加载到 project/ 文件夹时的注意事项
 
 {% hint style="warning" %}
-`[Warning]` The TP file manager or FTP service allows you to modify folders and files.
-However, careless modification or deletion of files may cause serious issues such as boot failure, malfunction, or data loss.
-Do not modify these files unless you fully understand their mechanism or are working under the guidance of a qualified expert.
+`[警告]` TP 文件管理器或 FTP 服务允许您修改文件夹和文件。
+然而，粗心的修改或删除文件可能会导致严重的问题，例如启动失败、故障或数据丢失。
+除非您完全了解它们的机制或在合格专家的指导下工作，否则请勿修改这些文件。
 {% endhint %}
 
-You can back up and restore configuration and teaching files in the project folder using HRWorkbench, file manager, or the backup features.
+您可以使用 HRWorkbench、文件管理器或备份功能在项目文件夹中备份和恢复配置和教学文件。
 
-However, in some cases, it may be more convenient to use familiar FTP software to back up files to a PC or restore them to the robot controller.
-This section describes important precautions to keep in mind when doing so.
-(Details of each file in the project folder will be explained in the next section.)
+然而，在某些情况下，使用熟悉的 FTP 软件将文件备份到 PC 或将它们恢复到机器人控制器可能更方便。
+本节描述进行此操作时需要注意的重要事项。
+(项目文件夹中每个文件的详细信息将在下一节中解释。)
 
+#### 在 project/jobs/ 文件夹中修改 .job 文件后应用更改
 
-#### Applying Changes After Modifying .job Files in the project/jobs/ Folder
+当您使用 FTP 软件在 `project/jobs/` 文件夹中添加或覆盖 .job 文件时，机器人控制器不会立即在内存中反映这些更改。
+(使用 HRWorkbench 或文件管理器时，变化会被即时检测并自动加载到内存中。)
 
-When you add or overwrite .job files in the `project/jobs/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
-(When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
+有两种方法将更新的文件应用于内存：
 
-There are two ways to apply the updated files to memory:
-
-- On the HOME screen, click the `...` button on the console bar and select `reload updated jobs`.
+- 在 HOME 屏幕上，点击控制台栏上的 ` (...)` 按钮，然后选择 `重新加载更新的作业 (reload updated jobs)`。
 
   ![](../../_assets/tp630/etc/console_reload_job.png)
 
-- Reboot the robot controller.
+- 重新启动机器人控制器。
 
+#### 在 project/vars/ 文件夹中修改 .json 和 .csv 文件后应用更改
 
-#### Applying Changes After Modifying .json and .csv Files in the project/vars/ Folder
+当您使用 FTP 软件在 `project/vars/` 文件夹中添加或覆盖全局变量文件时，机器人控制器不会立即在内存中反映这些更改。
+(使用 HRWorkbench 或文件管理器时，变化会被即时检测并自动加载到内存中。)
 
-When you add or overwrite global variable files in the `project/vars/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
-(When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
+要将更新的文件应用于内存，请使用以下方法：
 
-To apply the updated files to memory, use the method below:
-
-- Open the Global Variables Monitoring window, then click the `Load All` (F-button) at the bottom.
+- 打开全局变量监控窗口，然后点击底部的 `Load All` (F-button)。
 
 ![](../../_assets/tp630/etc/gvar_load.png)
 
 {% hint style="warning" %}
-Do not reboot the robot controller to apply updated global variable files.
-When the controller is powered off, the current global variable values in memory are saved back to files, which will overwrite the files you just updated.
+请勿重启机器人控制器以应用更新的全局变量文件。
+当控制器断电时，当前内存中的全局变量值将被保存回文件中，这将覆盖您刚刚更新的文件。
 {% endhint %}
-
 [__SOURCE](11-etc/1-controller-files/2-project.md)
 # 11.1.2 project/
 
-This is the most important folder where the robot's configuration, teaching data, and state are stored.
-When backing up or restoring the controller system, this folder is the core component.
+这是存储机器人配置、教学数据和状态的最重要文件夹。
+在备份或恢复控制器系统时，此文件夹是核心组件。
 
 #### project/
 
-This folder contains various configuration files as well as state-backup files that are saved immediately before the controller is powered off (shutdown).
-The state backup includes information stored at power-off for the following purposes:
+此文件夹包含各种配置文件以及在控制器关闭前立即保存的状态备份文件。
+状态备份包括在关机时为以下目的存储的信息：
 
-    - To resume the task that was running before power-off when the controller is powered on again
-      (Note: For complex operations such as robot applications or plugins, resuming may not be possible.)
+    - 在控制器再次启动时恢复关机前正在运行的任务
+      （注意：对于复杂操作，例如机器人应用程序或插件，可能无法恢复。）
 
-    - To preserve output signals from just before power-off and restore them after power-on
+    - 保留关机前的输出信号并在开机后恢复
 
 
 * arc_weld.json
   
-  Arc welding application configuration file
+  弧焊应用配置文件
 
 * arc_weld_bkup.json
   
-  Backup data of the arc welding application state saved just before power-off
+  在关机前保存的弧焊应用状态的备份数据
 
 * calibration.json
 
-  Robot calibration configuration file
+  机器人校准配置文件
 
 * context.json
 
-  Execution context for all tasks' .job files, including instruction pointer positions, call history of .job files with arguments, local variable values, etc.
+  所有任务的 .job 文件的执行上下文，包括指令指针位置、带参数的 .job 文件调用历史、局部变量值等。
 
 * dout.json
 
-  Output states of general-purpose digital signals saved just before power-off
+  在关机前保存的一般数字信号的输出状态
 
 * force_control.json
 
-  Force control configuration file
+  力控制配置文件
 
 * hi6_proj.json
 
-  Main project file. Most configuration of base features are stored here.
+  主项目文件。大部分基础特性的配置存储在这里。
 
 * kw.json
   
-  Built-in PLC `kw` relay values saved just before power-off
+  在关机前保存的内置 PLC `kw` 继电器值
 
 * maintenance.json
 
-  Various maintenance and system information, robot model, number of axes, operating hours, software version, remaining memory and storage, system codes, and per-thread execution times
+  各种维护和系统信息，包括机器人型号、轴数、运行时间、软件版本、剩余内存和存储、系统代码以及每线程执行时间
 
 * motion_bkup.bin
   
-  Backup data related to robot motion saved just before power-off
+  与机器人运动相关的在关机前保存的备份数据
 
 * mw.json
   
-  Built-in PLC `mw` relay values saved just before power-off
+  在关机前保存的内置 PLC `mw` 继电器值
 
 * playback_bkup.bin
 
-  Backup data related to .job execution saved just before power-off
+  在关机前保存的与 .job 执行相关的备份数据
 
 * sealing.json
 
-  Sealing application configuration file
+  密封应用配置文件
 
 * sout.json
 
-  System signal output values saved just before power-off
+  在关机前保存的系统信号输出值
 
 * spot_weld.json
 
-  Spot welding application configuration file
+  点焊应用配置文件
 
 * spot_weld_bkup.json
 
-  Backup data of the spot welding application state saved just before power-off
+  在关机前保存的点焊应用状态的备份数据
 
 * svtool_change.json
 
-  Additional axis configuration file for servo tool change operations
+  额外轴配置文件，用于伺服工具更换操作
 
 * version.json
 
-  Information used to determine whether data updates are required on the first boot after a software version upgrade (current version number)
+  用于确定软件版本升级后第一次启动时是否需要数据更新的信息（当前版本号）
   
 
 #### project/jobs/
   
-Folder storing teaching programs (.job files).
+存储教学程序 (.job 文件) 的文件夹。
 
 
 #### project/lads/
   
-Folder storing built-in PLC ladder programs (.lad files).
+存储内置 PLC 梯形图程序 (.lad 文件) 的文件夹。
 
 
 #### project/safety/
   
-(HI7 controller) Folder storing Functional Safety configuration files.
+（HI7 控制器）存储功能安全配置文件的文件夹。
 
 * safety_parameter.json
 
-  Functional Safety configuration file
+  功能安全配置文件
 
 * safety_parameter.json.cert
 
-  Certification file for the safety configuration.
-  A valid certificate is issued only when the configuration is saved with the correct password. If invalid, the controller will not operate.
+  功能安全配置的认证文件。
+  只有在以正确的密码保存配置时才会发放有效证书。如果无效，控制器将无法操作。
 
 
 #### project/vars/
 
-Folder storing variables and aliases.
+存储变量和别名的文件夹。
 
 * aliases.json
 
-  Robot language alias file
+  机器人语言别名文件
 
 * *.csv
 
-  Top-level array files (comma-separated values format)
+  顶层数组文件（逗号分隔值格式）
 
 * vars.json
 
-  Global variable file
-  
+  全局变量文件
 [__SOURCE](11-etc/1-controller-files/3-log.md)
 # 11.1.3 log/
 
 
-This folder stores various log files. In the file names below, ? represents a number; when the maximum number is reached, the files are overwritten in a circular manner starting from 0, or it may represent a timestamp in the format YYYYMMDD_HHMMSS.
+该文件夹存储各种日志文件。在下面的文件名中，? 表示一个数字；当达到最大数字时，文件会以循环方式从 0 开始覆盖，或者它可能表示格式为 YYYYMMDD_HHMMSS 的时间戳。
 
-Among these files:
+这些文件中：
 
-Event logs can be viewed in the Teach Pendant log window or via HRWorkbench.
+事件日志可以在教导挂件日志窗口中查看或通过 HRWorkbench 查看。
 
-Scope logs can only be viewed using HRWorkbench.
+范围日志只能通过 HRWorkbench 查看。
 
-The remaining .txt files can be opened with any standard text editor.
+其余 .txt 文件可以用任何标准文本编辑器打开。
 
 
 * bootlog_?.txt
 
-  Log file storing the controller's boot history.
-  Used for analyzing issues such as boot failures. A new file is created in a   circular manner each time the controller boots.
+  存储控制器启动历史的日志文件。  
+  用于分析如启动失败等问题。每次控制器启动时，都会循环创建一个新文件。
 
 * evlog_alarm_??.txt
 
-  Log file storing Error and Warning events.
+  存储错误和警告事件的日志文件。
 
 * evlog_hist_??.txt
 
-  Log file storing History events.
-  Mainly records execution history of .job files.
+  存储历史事件的日志文件。  
+  主要记录 .job 文件的执行历史。
 
 * evlog_io_??.txt
 
-  Log file storing I/O conversion events.
+  存储 I/O 转换事件的日志文件。
 
 * evlog_noti_??.txt
 
-  Log file storing Notice events.
+  存储通知事件的日志文件。
 
 * evlog_oper_00.txt
 
-  Log file storing user Operation events.
+  存储用户操作事件的日志文件。
 
 * evlog_stst_00.txt
 
-  Log file storing Start and Stop events of the robot.
+  存储机器人的启动和停止事件的日志文件。
 
 * pow_stage.txt
 
-  File storing power-on, power-failure recovery, and power-failure backup states.
+  存储开机、断电恢复和断电备份状态的文件。
 
 * sclog_base_????????_??????.bin
 
-  Scope log file storing time-series data such as each axis's position, speed, and acceleration.  
-  ????????_?????? represents the timestamp in YYYYMMDD_HHMMSS format.  
-  Generated when robot shock is detected or specific errors occur. Can be viewed using the Scope Log feature in HRWorkbench.
+  存储各轴位置、速度和加速度等时间序列数据的范围日志文件。  
+  ????????_?????? 表示 YYYYMMDD_HHMMSS 格式的时间戳。  
+  当检测到机器人冲击或发生特定错误时生成。可以通过 HRWorkbench 的范围日志功能查看。
 
 * sclog_base_????????_??????.json
 
-  Schema file describing the type of data stored in the corresponding .bin file.
-  The .bin and .json files must exist as a pair to open the log.
+  描述存储在对应 .bin 文件中数据类型的模式文件。  
+  打开日志时，.bin 和 .json 文件必须成对存在。
 
 * shutdownlog_?.txt
 
-  Log file storing the controller's power-off history.  
-  Used to analyze whether power-failure backup operations were performed correctly. A new file is created in a circular manner each time the controller powers off.
+  存储控制器关机历史的日志文件。  
+  用于分析断电备份操作是否正确执行。每次控制器关机时，都会循环创建一个新文件。
 
 * updatesvclog_?.txt
 
-  Log file storing the controller software version upgrade history.
-  Used to analyze whether the version upgrade was performed successfully.
-  
+  存储控制器软件版本升级历史的日志文件。  
+  用于分析版本升级是否成功。
 [__SOURCE](11-etc/1-controller-files/4-backup.md)
 # 11.1.4 backup/
 
-This folder stores MAIN-side backups of the controller.  
-Folder names are generated in the format `bYYYYMMDD_HHMM`, containing subfolders: project/, log/, cifX/, EC_LOG/, and EDR_LOG/.
+此文件夹存储控制器的MAIN侧备份。  
+文件夹名称按格式 `bYYYYMMDD_HHMM` 生成，包含子文件夹：project/，log/，cifX/，EC_LOG/ 和 EDR_LOG/。
 
 
 #### backup/ev/
 
-Folder storing event backups.  
-Backups are automatically created when specific errors occur.
+存储事件备份的文件夹。  
+当发生特定错误时，备份会自动创建。
 
 
 #### backup/ts/
 
-Folder storing scheduled backups.  
-Backups are automatically created at the scheduled times.
-
+存储定期备份的文件夹。  
+备份会在预定时间自动创建。
 [__SOURCE](11-etc/1-controller-files/5-etc.md)
-# 11.1.5 Other Folders
+# 11.1.5 其他文件夹
 
 #### apps/
 
-Folder where plug-in apps executed on the MAIN side are installed and stored.
+安装和存储在 MAIN 端执行的插件应用的文件夹。
 
 
 #### fbrr/
 
-File-Based Robot Registry folder.  
-Stores information files (.fbr) for each robot mechanism model.
-When a new model information file is added, the robot system can be configured by selecting the model during system initialization.
+基于文件的机器人注册表文件夹。  
+存储每个机器人机制模型的信息文件 (.fbr)。  
+当添加一个新的模型信息文件时，可以在系统初始化期间通过选择模型来配置机器人系统。
 
 
 #### gather/
 
-Folder storing result files (.GDT) from the time-series data gathering function.
+存储时间序列数据收集功能结果文件 (.GDT) 的文件夹。
 
 
 #### help/
 
-Folder storing HTML help files for the robot language HRScript.
+存储机器人语言 HRScript 的 HTML 帮助文件的文件夹。
 
 
 #### roblang/
 
-Folder storing syntax files for the robot language HRScript.
+存储机器人语言 HRScript 语法文件的文件夹。
 
 * procs_?.json
   
-  Procedure syntax files by category
+  按类别划分的过程语法文件
 
 * funcs_?.json
 
-  Function syntax files by category
+  按类别划分的函数语法文件
 
 * svars_?.json
   
-  System variable syntax files by category
-
+  按类别划分的系统变量语法文件
 [__SOURCE](appendices/README.md)
-# Appendices
-
-  
-
-
-
+# 附录
 [__SOURCE](appendices/rules-occupational-safety.md)
-# Rules on Occupational Safety and Health Standards, and Notice for Safety Inspection
+# 职业安全与健康标准的规则，以及安全检查通知
 
-The industrial robot should be installed in consideration of the inspection standards both of the Rules on Occupational Safety and Health Standards and of the Notice for Safety Inspection \(if subject to inspection\).
+工业机器人应在考虑《职业安全与健康标准的规则》和《安全检查通知》的检查标准下安装（如需检查）。
 
-"[Rules on Occupational Safety and Health Standards](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/en/README)"
-
+"[职业安全与健康标准的规则](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/zh/README)"
 [__SOURCE](quality-assurance.md)
-# Quality Assurance
+# 质量保证
 
-"[Quality Assurance](https://hrbook-hrc.web.app/#/view/quality-assurance/en/README)"
+"[质量保证](https://hrbook-hrc.web.app/#/view/quality-assurance/zh/README)"

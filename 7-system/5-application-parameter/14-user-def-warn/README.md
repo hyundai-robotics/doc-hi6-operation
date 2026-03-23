@@ -1,7 +1,7 @@
-﻿# 7.5.14 User-Defined Warning
+# 7.5.14 用户定义警告
 
-This function allows users to define warnings for specific conditions in the ${cont_model} robot controller. When the defined conditions are met, the user-defined warning is triggered.
+此功能允许用户为 ${cont_model} 机器人控制器中的特定条件定义警告。当满足定义的条件时，将触发用户定义的警告。
 
 {% hint style="info" %}
-Supported from V60.30-00.
+支持从 V60.30-00 开始。
 {% endhint %}

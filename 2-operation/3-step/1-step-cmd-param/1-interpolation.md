@@ -1,62 +1,47 @@
-﻿# 2.3.1.1 Interpolation
+# 2.3.1.1 插值
 
-Interpolation refers to the interpolated path between steps, and the interpolation method for the `[Step N]` determines the form of the path between `[Step N-1]` and `[Step N]`.
+插值是指步骤之间的插值路径，而 `[Step N]` 的插值方法决定了 `[Step N-1]` 和 `[Step N]` 之间的路径形式。
 
-* P-PTP \(Point-to-Point\) It is the fastest of the general interpolation modes as it interpolates the path between two steps based on individual axes, not the tooltip. Considering the characteristics of industrial robots that consist of rotation joints, the path of the tooltip is usually shaped in a C form.
+* P-PTP \(点对点\) 它是一般插值模式中最快的，因为它基于单独的轴，而不是工具末端插值两个步骤之间的路径。考虑到由旋转关节组成的工业机器人特性，工具末端的路径通常呈 C 形。
 
+![图 14 P-PTP 插值中工具路径的示例](../../../_assets/image_73.png)
 
+* L-线性插值 它在笛卡尔空间中的两个步骤之间沿直线移动。它用于需要线性路径的情况，例如弧焊部分。运动会在手腕姿态自动变化的情况下进行，如下所示。
 
+![图 15 L-线性插值示例](../../../_assets/image_48.png)
 
-
-![Figure 14 Example of the Tooltip Path in P-PTP Interpolation](../../../_assets/image_73.png)
-
-* L-Linear interpolation It moves in a linear line between two steps in Cartesian space. It is used for a case in which a linear path is needed, such as an arc welding section. The movement will take place while the wrist posture changes automatically as follows.
-
-![Figure 15 Example of L-Linear Interpolation](../../../_assets/image_48.png)
-
-During the linear interpolation, under certain conditions, the robot cannot automatically change the wrist posture, and such a condition is called the singular posture.
-
-
+在线性插值期间，在某些条件下，机器人无法自动改变手腕姿态，这种情况称为奇异姿态。
 
 {% hint style="info" %}
-Singular postures in which the posture interpolation cannot be performed are as follows.
+无法执行姿态插值的奇异姿态如下。
 
-* If the B-axis is near the dead zone: For details on the dead zone setting, refer to "[7.4.5 B-axis Deadzone](../../../7-system/4-robot-parameter/5-b-axis-deadzone.md)".
-* When the sign of the B-axis changes: When the sign of the B-axis angle switches \( - → + \) or \( + → - \)
-* When the angle variation of the R2 and R1 axes exceeds 180 degrees
-* When the center of the B-axis \(axis 5\) or the tooltip passes the center of rotation of the S-axis \(axis 1\): There may be an error in the trajectory as well as in the posture.
-* When the angle variation of the S-axis exceeds 180 degrees
+* 如果 B 轴接近死区：有关死区设置的详细信息，请参考 "[7.4.5 B 轴死区](../../../7-system/4-robot-parameter/5-b-axis-deadzone.md)"。
+* 当 B 轴的符号改变时：当 B 轴角度的符号切换 \( - → + \) 或 \( + → - \)
+* 当 R2 和 R1 轴的角度变化超过 180 度
+* 当 B 轴 \(轴 5\) 或工具末端通过 S 轴 \(轴 1\) 的旋转中心时：在姿态和轨迹中可能会出现错误。
+* 当 S 轴的角度变化超过 180 度
 {% endhint %}
 
-* C-Circular interpolation
+* C-圆形插值
 
-  It moves in a circular path created between two steps. There should be three points to determine the circle, and the references for selecting them are as follows.
+  它在两个步骤之间创建的圆形路径中移动。确定圆形需要三个点，选择这些点的参考如下。
 
+  * 在从 `[Step n]` 移动到 `[Step n+1]` 时，如果 `[Step n+1]` 的插值方法是 C-圆形插值，则需要参考下一个步骤 `[Step n+2]`。
 
+  * 如果 `[Step n+2]` 的插值方法是 C-圆形插值，则需要基于 `[Step n]`、`[Step n+1]` 和 `[Step n+2]` 确定圆形，并在其中沿 `[Step n]` - `[Step n+1]` 的段的弧线移动。
 
-  * At the time of moving from `[Step n]` to `[Step n+1]`, if the interpolation method of `[Step n+1]` is C-circular interpolation, it is required to refer to the next step `[Step n+2]`.
+  * 如果 `[Step n+2]` 的插值方法不是圆形插值，则需要参考前一步骤 `[Step n-1]` 并基于 `[Step n-1]`、`[Step n]` 和 `[Step n+1]` 确定圆形，并在其中沿 `[Step n]` - `[Step n+1]` 的段的弧线移动。
 
-  * If the interpolation method of `[Step n+2]` is C-circular interpolation, it is required to determine the circle based on `[Step n]`, `[Step n+1]`, and `[Step n+2]`, and among them, movement should take place along the arc of the section of `[Step n]` - `[Step n+1]`.
+![图 16 C-圆形插值示例 1](../../../_assets/image_338.png)
 
-  * If the interpolation method of `[Step n+2]` is not a circular interpolation, it is required to refer to the previous step `[Step n-1]` and determine the circle based on `[Step n-1]`, `[Step n]`, and `[Step n+1]`, and among them, movement should take place along the arc of the section of `[Step n]` - `[Step n+1]`.
+如果使用选择确定圆形所需的三个点的标准，您可以通过对相同点进行双重注册来创建程序，即使在连续弧的情况下也是如此。
 
+通过确定步骤的插值方法以考虑沿移动路径，并使用相同点的双重注册功能，您可以按需创建程序。
 
+![图 17 C-圆形插值示例 2](../../../_assets/image_302.png)
 
-![Figure 16 Example 1 of C-Circular Interpolation](../../../_assets/image_338.png)
+* 固定工具插值
 
-If you use the criteria of selecting three points required for determining the circle, you can create a program through the double registration of the same point, even in the case of a continuous arc.
+  当机器人拥有工件并使用外部固定工具进行工作时，将使用此方法。在这种情况下，插值将在机器人拥有的工件基础上进行。
 
-In this way, by determining the interpolation method of the step in consideration of the path to move along and using the same point dual registration function, you can create a program as desired.
-
-![Figure 17 Example 2 of C-Circular Interpolation](../../../_assets/image_302.png)
-
-* Stationary tool interpolation
-
-  This method will be used when the robot owns the workpiece and perform the work using an externally fixed tool. In this case, the interpolation will be performed based on the workpiece owned by the robot.
-
-  For details on the types of interpolation for stationary tools, refer to "[7.3.6.2 Stationary Tool Coordinate System](../../../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)".
-
-
-
-
-
+  有关固定工具的插值类型的详细信息，请参考 "[7.3.6.2 固定工具坐标系统](../../../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)"。

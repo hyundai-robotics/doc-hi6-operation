@@ -1,10 +1,9 @@
-﻿# 7.7 Auto Calibration
+﻿# 7.7 自动校准
 
-To use the robot correctly, the robot's axis origin, tool length, load mass, and base axis direction can be found using the taught programs and using the movements that will be executed automatically. Those calibrated values will be automatically reflected in the robot.
+要正确使用机器人，可以使用教导程序和将自动执行的移动找到机器人的轴原点、工具长度、负载质量和基轴方向。这些校准值将自动反映在机器人中。
 
-1.	Touch the `[6: Auto Calibration]` menu. Then, the automatic calibration menu will appear.
+1. 触摸`[6: 自动校准]`菜单。然后，自动校准菜单将出现。
 
-2.	Calibrate the robot's axis origin, tool length, load mass, base axis direction, etc. by selecting the desired menu,
+2. 通过选择所需菜单校准机器人的轴原点、工具长度、负载质量、基轴方向等。
 
     ![](../../_assets/tp630/system-calib-menu_eng.png)
-

@@ -1,4 +1,3 @@
-﻿# 5. Condition Setting
+﻿# 5. 条件设置
 
-You can simply change the operation conditions without modifying the program. The changed setting values will remain the same even if the controller is restarted.
-
+您可以简单地更改操作条件，而无需修改程序。即使控制器重新启动，修改的设置值仍将保持不变。

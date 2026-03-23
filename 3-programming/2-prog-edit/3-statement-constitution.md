@@ -1,17 +1,14 @@
-﻿# 3.2.3 Statement Configuration
+# 3.2.3 声明配置
 
-A statement consists of an address area and a statement area. 
+声明由地址区域和声明区域组成。 
 
-![Figure 28 Areas Comprising a Statement](../../_assets/tp630/pane-prog-section.png)
+![图 28 组成声明的区域](../../_assets/tp630/pane-prog-section.png)
 
-| No. | Area | Description |
+| No. | 区域 | 描述 |
 | :--- | :--- | :--- |
-| ![](../../_assets/c1.png) | Address area | Displays the line number \(1 to 9999\) and step number \(S1 to S999\) |
-| ![](../../_assets/c2.png) | Statement area | Displays a statement |
+| ![](../../_assets/c1.png) | 地址区域 | 显示行号 \(1 到 9999\) 和步骤号 \(S1 到 S999\) |
+| ![](../../_assets/c2.png) | 声明区域 | 显示一条声明 |
 
-You can move the cursor position between the address area and the statement area by pressing the `[←/→]` key on the teach pendant. Pressing the `[↓/↑]` key will allow you to move the cursor up and down between the lines within the selected area.
+您可以通过按 `[←/→]` 键在地址区域和声明区域之间移动光标位置。按 `[↓/↑]` 键可以在选定区域内的行之间上下移动光标。
 
-![Figure 29 Moving the Cursor Between Areas \(Left: Address Area. Right: Statement Area\)](../../_assets/tp630/pane-prog-sectionchng.png)
-
-
-
+![图 29 在区域之间移动光标 \(左：地址区域。右：声明区域\)](../../_assets/tp630/pane-prog-sectionchng.png)

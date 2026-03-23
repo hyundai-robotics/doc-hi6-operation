@@ -1,20 +1,15 @@
-﻿# 7.7.4 Base Axis Calibration
+﻿# 7.7.4 基座轴校准
 
-Base axis calibration is a function to calibrate the installation direction of the axis.
+基座轴校准是一个用于校准轴的安装方向的功能。
 
-It is almost impossible to install the base axis to exactly match one direction \(X, Y, or Z\) of the robot coordinate system. When you calculate the direction of the base axis in the controller using the base axis calibration function, you can improve the performance of the linear interpolation trajectory of the system including the base axis.
+几乎不可能将基座轴安装到机器人坐标系统的任一方向 \(X, Y, 或 Z\) 完全匹配。当您使用基座轴校准功能在控制器中计算基座轴的方向时，可以提高系统（包括基座轴）的线性插补轨迹的性能。
 
-After the robot is installed on the base axis, this function makes it possible to perform position interpolation by finding the direction vector of any base axis on which the robot is installed.
+在机器人安装在基座轴上之后，此功能使得通过找到安装机器人所用的任何基座轴的方向向量来执行位置插补成为可能。
 
 ![Figure 72 Base Axis Calibration](../../../_assets/image_497.png)
 
 
-In general, the base axis is used to move the robot to the operation position. In special cases, the base axis can also be used in a case in which a linear trajectory should be guaranteed while the robot is moving on the base axis.
+一般来说，基座轴用于将机器人移动到操作位置。在特殊情况下，基座轴也可以在机器人移动在基座轴上时需要保证线性轨迹的情况下使用。
 
-* When two robots with the base axis calibrated deliver the workpiece \(multi-robots will be supported in the future\)
-* When you need to perform interpolation while operating the base axis
-
-
-
-
-
+* 当两台基座轴校准的机器人交付工件时 \(未来将支持多机器人\)
+* 当您需要在操作基座轴时执行插补时

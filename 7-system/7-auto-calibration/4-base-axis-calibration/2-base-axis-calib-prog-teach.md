@@ -1,21 +1,20 @@
-﻿# 7.7.4.2 Base Axis Calibration Program Teaching
+﻿# 7.7.4.2 基础轴校准程序教学
 
-1.	Make a reference point in space, and then record the first reference point.
+1. 在空间中建立一个参考点，然后记录第一个参考点。
 
-2.	Move the base axis more than 200 mm and record the same point as the second step.
+2. 将基础轴移动超过 200 mm，并将相同的点记录为第二步。
 
-3.	While moving 200 mm or more in the same direction as the direction you moved in step 2, record the same point as the third and fourth steps.
+3. 在与第二步中移动的方向相同的方向上移动 200 mm 或更多，然后将相同的点记录为第三步和第四步。
 
 ![](../../../_assets/image_526.png)
 
 
 
 {% hint style="warning" %}
-* Teach the travel axis calibration program using a tool for which robot calibration \(optimization of the axis origin and tool length\) has been completed.
+* 使用已完成机器人校准（轴原点和工具长度的优化）的工具来教学行程轴校准程序。
 * 
-  When recording a step, record it using a tool number for base axis calibration.
+  记录步骤时，使用工具编号进行基础轴校准。
 
 * 
-  Record the position by setting the moving distance of the base axis between recording steps as far as possible.
+  尽可能设置基础轴在记录步骤之间的移动距离来记录位置。
 {% endhint %}
-
