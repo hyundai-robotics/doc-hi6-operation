@@ -6268,7 +6268,7 @@ For details on how to execute scheduled programs, refer to the "[${cont_model} C
 [__SOURCE](7-system/3-control-parameter/8-auto-backup-restore.md)
 # 7.3.8 Automatic Backup and Recovery
 
-For details on how to automatically back up and recover the controller's data, refer to the "[${cont_model} Controller Automatic Backup Function Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-auto-backup/en/README)".
+For details on how to automatically back up and recover the controller's data, refer to the "[${cont_model} Controller Automatic Backup Function Manual](https://hrbook-hrc.web.app/#/view/doc-hi6-auto-backup/en/README?cont_model=${cont_model})".
 
 
 [__SOURCE](7-system/3-control-parameter/9-network-setting/README.md)
@@ -6344,7 +6344,7 @@ You can set the information required for Network Setting for LAN ports.
 # 7.3.9.2.1 Modbus slave
 
 This section covers settings and monitoring when using the controller's Modbus TCP slave communication. <br>
-For more information, refer to "[${cont_model} Robot Controller Function Manual - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/en/README)".
+For more information, refer to "[${cont_model} Robot Controller Function Manual - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/en/README?cont_model=${cont_model})".
 
 
 [__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/3-ntp-client.md)
@@ -8176,7 +8176,7 @@ The information on the main functions of the positioner calibration is as follow
 
 {% hint style="info" %}
 * The positioner calibration function can be used while the positioner group is set.
-* For more details, refer to the "[${cont_model} Controller Positioner Sync Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README)".
+* For more details, refer to the "[${cont_model} Controller Positioner Sync Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README?cont_model=${cont_model})".
 {% endhint %}
 
 

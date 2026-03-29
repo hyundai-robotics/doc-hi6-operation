@@ -18,6 +18,6 @@ The information on the main functions of the positioner calibration is as follow
 
 {% hint style="info" %}
 * The positioner calibration function can be used while the positioner group is set.
-* For more details, refer to the "[${cont_model} Controller Positioner Sync Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README)".
+* For more details, refer to the "[${cont_model} Controller Positioner Sync Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README?cont_model=${cont_model})".
 {% endhint %}
 
