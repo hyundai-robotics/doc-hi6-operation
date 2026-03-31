@@ -16,7 +16,7 @@ You can update the version of each module of the controller using the integrated
 
     ![](../../../_assets/image_255.png)
 
-5.	When the update is completed, touch the `[OK]` button. Then, the version upgrade program execution window will be closed, and the controller will automatically restart.
+5.	When the update is completed, restart the controller.
 
     ![](../../../_assets/image_367.png)
 

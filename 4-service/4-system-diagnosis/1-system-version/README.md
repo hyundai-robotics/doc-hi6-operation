@@ -28,7 +28,7 @@
       <td style="text-align:left">
         <p>Edit and manage the system environment using the function buttons.</p>
         <ul>
-          <li>[OK]: You can save the contents of the change.</li>
+          <li>[OK]: The menu will be closed.</li>
           <li>[Ver. up]: You can update the version of each module of the controller.</li>
         </ul>
       </td>

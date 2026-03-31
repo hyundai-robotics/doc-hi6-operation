@@ -2,9 +2,9 @@
 
 Touch `[Call Stack]` in the panel selection window to display the Call Stack window. In order to understand the contents of this section, an understanding of the `call`~`return` statement and local variables of the hrscript must be preceded.
 
-[Call, Jump Statement and Subprograms](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/7-call-jump/README)
+[Call, Jump Statement and Subprograms](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/7-call-jump/README?cont_model=${cont_model})
 
-[Local Variables](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/8-local-global-var/1-local-variables)
+[Local Variables](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/8-local-global-var/1-local-variables?cont_model=${cont_model})
 
 
 ### Call and Return of Robot Language

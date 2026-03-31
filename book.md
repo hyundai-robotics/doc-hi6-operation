@@ -161,9 +161,6 @@ The following shows an example of the basic configuration of the robot system ac
 
 ![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../_assets/image_285.png)
 
-![Figure 3 Basic Configuration of the Collaborative Robot System ](../../_assets/image_292.png)
-
-
 [__SOURCE](1-robot-system/1-basic-constitution/1-controller.md)
 # 1.1.1 Controller
 
@@ -179,34 +176,12 @@ The following shows an example of the basic configuration of the robot system ac
 | ![](../../_assets/c4.png)  | Emergency stop switch | Causes the robot to stop operating when pressed in case of an emergency |
 | ![](../../_assets/c5.png)  | Cooling fan | A device that forcibly discharges the heated air inside the controller |
 
-#### Collaborative Robot Controller
-
-![Figure 5 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_15.png)
-
-
-
-| No. | Name | Description |
-| :--- | :--- | :--- |
-| ![](../../_assets/c1.png) | Robot cable connector | A connector that has built-in communication and power lines, making it possible to connect the controller to the equipment. |
-| ![](../../_assets/c2.png) | Power connector | A connector that supplies power to the controller. |
-| ![](../../_assets/c3.png) | Power circuit breaker | The main power of the controller can be turned on or off with the power switch. |
-| ![](../../_assets/c4.png) | Vent | An air inflow passage for cooling the controller. |
-| ![](../../_assets/c5.png) | Handle | It is mounted on the front and rear of the controller and used for transportation. |
-| ![](../../_assets/c6.png) | Emergency stop switch | When an emergency situation occurs, the operation of the robot can be stopped by pressing the emergency stop switch. |
-| ![](../../_assets/c7.png) | Application device connection hole | A passage to be used when an application device needs to be connected using a cable, with an internal module. |
-| ![](../../_assets/c8.png) | Teach pendant connection hole | A passage for the connection of a teach pendant of direct-connection type. |
-| ![](../../_assets/c9.png) | I/O connection block | This connects peripheral devices to the controller. |
-| ![](../../_assets/c10.png) | Door | You can open the side of the controller by opening the door. |
-| ![](../../_assets/c11.png) | Cooling fan | It is a device that forcibly discharges the heated air from inside the controller. |
-
-
-
 
 [__SOURCE](1-robot-system/1-basic-constitution/2-teach-pendant.md)
 
 # 1.1.2 Teach Pendant 
 
-Both the models, TP600 and TP630, are supported. This operation manual describes how to use a teach pendant based on the TP600 model. TP600 is a model developed exclusively for the ${cont_model} controller and provides a large touch screen.
+This operation manual describes how to use a teach pendant based on the TP630 model. TP630 is a model developed exclusively for the ${cont_model} controller and provides a large touch screen.
 
 ![](../../_assets/tp630/TP-hw.png)
 
@@ -749,20 +724,6 @@ Turn the power switch on the left side of the robot controller to the ON directi
 
 ![](../../../_assets/image_12.png)
 
-#### Collaborative Robot Controller
-
-The power of the collaborative robot is supplied through the power connector of the controller.
-
-Push upward the switch on the power breaker. When power is connected, the robot system will boot, the display of the teach pendant will be turned on, and the collaborative robot's LED lamp will be turned on in white.
-
-
-
-![](../../../_assets/image_23.png)
-
-### 
-
-
-
 
 [__SOURCE](1-robot-system/2-basic-usage/1-power-on/1-input-of-the-power-to-the-mot.md)
 # 1.2.1.1 Input of the Power to the Motor and the Operable Status
@@ -836,47 +797,54 @@ It refers to all operations of stopping the robot and turning off the power butt
 
 ![](../../_assets/image_29.png)
 
-#### Collaborative Robot Controller
-
-1.	Press the `[Stop]` key on the teach pendant. The robot in operation will stop, and the stop lamp will be turned on.
-
-2.	Press the emergency stop switch on the controller. The servo power to the robot motor will be cut off, and then the motor will be turned off.
-
-![](../../_assets/image_11.png)
-
-
-
-3.	Push downward the switch on the power circuit breaker. When the power is cut off, the robot system will be turned off, and the display of the teach pendant and the LED lamp of the collaborative robot will be turned off.
-
-![](../../_assets/image_288.png)
-
-
 [__SOURCE](1-robot-system/2-basic-usage/3-change-language-of-tp.md)
 # 1.2.3 Changing the language of the teach pendant screen
 
-If you need to change the language of the teach pendant, you can change it with the following procedure. The following is an example of changing Korean to English mode.
+If you need to change the language of the teach pendant, you can change it with the following procedure. The following is an example of changing English to Korean mode.
 
-1.	Click `[service]` button on the function button bar.
+### A. Change via Teach Pendant Options (Supported in V70.00-00 and above only)
 
-    ![](../../_assets/tp630/fbt-service_eng.png)
+1.	Click `[F1: service]` button.
 
-2.	Select `[9: Exit TP application]`.
+    ![](../../_assets/tp630/service/fb-service.png)
 
-    ![](../../_assets/tp630/svc-exit-TP_eng.png)
+2.	Enter `11: Teach Pendant Options`.
 
-3.	Click the globe icon on the top-right corner.
+    ![](../../_assets/tp630/service/menu-tp-option.png)
 
-    ![](../../_assets/tp630/TP-lang1_eng.png)
+3. Select `Korean` from the Language settings.
 
+    ![](../../_assets/tp630/service/tp-option-lang.png)
 
-4.	Select `[English]` on pop-up menu.
+4. Press the `[ESC]` key to return to the top-level HOME screen, then wait a moment.
 
-5.	Click `[run TP]` button on the bottom-right corner and wait for about 8 seconds.
+<br>
 
-    ![](../../_assets/tp630/TP-lang2_eng.png)
+### B. Change After Closing the Teach Pendant Software
 
+1. Click the `[F1: service]` button.
 
+   ![](../../_assets/tp630/service/fb-service.png)
 
+2. Select 9: Exit TP Application.
+
+    ![](../../_assets/tp630/service/exit-application.png)
+
+3. Click the language combo box at the bottom left.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang.png)
+
+    {% hint style="info" %}
+
+    For versions below V60.32-00, click the globe icon at the top right.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang-old.png)
+
+    {% endhint %}
+
+4.	Select `English` from the pop-up menu.
+
+5.	Click the `[run TP]` button at the bottom right and wait for about 15 seconds.
 
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/README.md)
 # 1.2.4 Screen of the ${cont_model} Teach Pendant
@@ -3271,7 +3239,7 @@ You can inspect and manage the state of the robot and controller. You can check 
       <td style="text-align:left">
         <p>Edit and manage the system environment using the function buttons.</p>
         <ul>
-          <li>[OK]: You can save the contents of the change.</li>
+          <li>[OK]: The menu will be closed.</li>
           <li>[Ver. up]: You can update the version of each module of the controller.</li>
         </ul>
       </td>
@@ -3301,7 +3269,7 @@ You can update the version of each module of the controller using the integrated
 
     ![](../../../_assets/image_255.png)
 
-5.	When the update is completed, touch the `[OK]` button. Then, the version upgrade program execution window will be closed, and the controller will automatically restart.
+5.	When the update is completed, restart the controller.
 
     ![](../../../_assets/image_367.png)
 
@@ -3586,7 +3554,7 @@ You can check the status of the robot system and various data of the controller.
   The items that can be monitored will be displayed differently depending on the setting of the controller. 
 
 * 
-  For details on how to use the panel stack and window of the work area, refer to "[1.2.3.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area.md)".
+  For details on how to use the panel stack and window of the work area, refer to "[1.2.3.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area?cont_model=${cont_model})".
 {% endhint %}
 
 [__SOURCE](6-monitoring/1-basic/README.md)
@@ -3862,12 +3830,12 @@ Select `[fn input]` or `[fn output]` in the panel selection window. The fn input
 
 Please refer to the link below for how to set up fn object.
 
-[7.3.2.12 fn block allocation](../../7-system/3-control-parameter/2-io-signal-setting/12-fn-block)
+[7.3.2.12 fn block allocation](../../7-system/3-control-parameter/2-io-signal-setting/12-fn-block?cont_model=${cont_model})
 
 
 Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to be displayed.
 
-The use of the remaining F buttons is the same as the [Public Input](6-user-input) and [Public Output](7-user-output) monitoring windows.
+The use of the remaining F buttons is the same as the [Public Input](6-user-input?cont_model=${cont_model}) and [Public Output](7-user-output?cont_model=${cont_model}) monitoring windows.
 
 
 ![](../../_assets/io/io_fn_mon.png)
@@ -4026,7 +3994,7 @@ You can modify the selected job program in the task edit window.
 </table>
 
 {% hint style="info" %}
-For details on how to manage and write programs, refer to "[3 Program Writing](../programming/)."
+For details on how to manage and write programs, refer to "[3 Program Writing](../../3-programming/README.md?cont_model=${cont_model})."
 {% endhint %}
 
 
@@ -4505,20 +4473,20 @@ There are a total of 10 pages in various data windows, so you can group and mana
 
 The elements of array or object can be viewed with the [F6: sub.level] button or the `ENTER` key, and can go up to the upper level with the [F5: up.level] button or the `ESC` key.
 
-You can enter a value in the `Start Index` edit-box to display an array from a specific index. ([Global Variable](8-global-variable/README.md) window has the same method of operation.)
+You can enter a value in the `Start Index` edit-box to display an array from a specific index. ([Global Variable](3-global-variable/README?cont_model=${cont_model}) window has the same method of operation.)
 
-{% {% hint style="warning" %}
+{% hint style="warning" %}
 * To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
-{% {% endhint %}
+{% endhint %}
 
 [__SOURCE](6-monitoring/3-job/6-call-stack.md)
 # 6.3.6 call stack
 
 Touch `[Call Stack]` in the panel selection window to display the Call Stack window. In order to understand the contents of this section, an understanding of the `call`~`return` statement and local variables of the hrscript must be preceded.
 
-[Call, Jump Statement and Subprograms](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/7-call-jump/README)
+[Call, Jump Statement and Subprograms](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/7-call-jump/README?cont_model=${cont_model})
 
-[Local Variables](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/8-local-global-var/1-local-variables)
+[Local Variables](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/3-flowcontrol-subprogram/8-local-global-var/1-local-variables?cont_model=${cont_model})
 
 
 ### Call and Return of Robot Language
@@ -4592,12 +4560,12 @@ You can easily understand the flow of the program that has been called so far by
 Touch `[multitask]` in the panel selection window.
 This displays the information of the programs that are run automatically in the main task and the sub tasks 1 - 7, including the steps, functions, operating state, and work state.
 
-![](../../_assets/tp630/pane-multi-task_eng.png) 
+![](../../_assets/tp630/pane-multi-task_eng.png)
 
 <br>
 
 {% hint style="info" %}
- Refer to "${cont_model} Controller Multitasking Function Manual" for details.
+ Refer to ["${cont_model} Controller Multitasking Function Manual"](https://hrbook-hrc.web.app/#/view/doc-multi-task/en/README?cont_model=${cont_model}) for details.
 {% endhint %}
 [__SOURCE](6-monitoring/3-job/8-program-reservation.md)
 # 6.3.8 Program reservation execution
@@ -4770,7 +4738,7 @@ Touch [Brake Diagnostics] in the button list below to display the brake diagnost
 
 {% hint style="info" %}
 
-* For more details on the brake diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/16-brake_check)" command.
+* For more details on the brake diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.16 brake_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/16-brake_check?cont_model=${cont_model})" command.
 
 {% endhint %}
 [__SOURCE](6-monitoring/4-system/2-system-diagnosis/2-gas-pressure-check.md)
@@ -4809,7 +4777,7 @@ Touch [Gas Spring Diagnostics] in the button list below to display the gas sprin
 * The estimated gas spring pressure may vary depending on the initial posture at the start of measurement.
 During the robot's initial setup, please manage the pressure values based on the measurements taken at each reference posture, and regularly measure the pressure in the same posture to compare it with the initial values.
 If a significant difference is observed in the measured values, please inspect the condition of the equipment.
-* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/7-gasp_check)" command.  
+* For more details on the gas spring diagnostic function, refer to the "${cont_model} Robot Controller Function Manual - HRScript Robot Language", section for the "[10.1.7 gasp_check](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/7-gasp_check?cont_model=${cont_model})" command.  
 
 {% endhint %}
 
@@ -4923,7 +4891,7 @@ You can check the information related to the conveyor and press sync functions. 
 
 
 {% hint style="info" %}
-For details on the sensor sync function, refer to the "${cont_model} Sensor Sync Function Manual."
+For details on the sensor sync function, refer to the ["${cont_model} Sensor Sync Function Manual."](https://hrbook-hrc.web.app/#/view/doc-sensor-sync/en/README?cont_model=${cont_model})
 {% endhint %}
 
 
@@ -4954,7 +4922,7 @@ This displays the spot gun axis data, the input/output signals and operating inf
 <br>
 
 {% hint style="info" %}
- Refer to Spot Welding Manual's "[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/3-Related-functions/3-1-monitoring/README)" for more details.
+ Refer to Spot Welding Manual's "[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/3-Related-functions/3-1-monitoring/README?cont_model=${cont_model})" for more details.
 {% endhint %}
 
 [__SOURCE](6-monitoring/5-appl/11-tool-change.md)
@@ -4968,12 +4936,12 @@ In the panel selection window, touch `[servo tool change]`. This displays the st
 <br>
 
 {% hint style="info" %}
- Refer to "${cont_model} Controller Servo Tool Change Function Manual" for more details.
+ Refer to ["${cont_model} Controller Servo Tool Change Function Manual"](https://hrbook-hrc.web.app/#/view/doc-svtool-change/en/README?cont_model=${cont_model}) for more details.
 {% endhint %}
 [__SOURCE](6-monitoring/5-appl/20-arc.md)
 # 6.5.20 Arc Welding Data
 
-Refer to Arc Welding Manual's "[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/en/7_Monitoring/README)".
+Refer to Arc Welding Manual's "[7. Welding data monitoring](https://hrbook-hrc.web.app/#/view/doc-arc-weld/en/7_Monitoring/README?cont_model=${cont_model})".
 
 [__SOURCE](6-monitoring/5-appl/28-forcecontrol-monitoring.md)
 # 6.5.28 force control monitoring
@@ -7642,6 +7610,91 @@ In the move command, the robot speed is applied by combining the original speed 
 * When an I/O signal is received during playback, the reduced speed mode will still be applied.
 {% endhint %}
 
+[__SOURCE](7-system/5-application-parameter/23-scurve-condition/README.md)
+# 7.5.23 S-curve Condition
+
+The S‑curve refers to motion‑trajectory planning that adjusts path accuracy and residual vibration according to the task, enabling the design of an optimal process
+
+![](../../../_assets/tp630/s-curve_velocity_comparison.png)
+
+The image compares the default velocity‑profiling method with the S‑curve velocity‑profiling method.
+
+Default (blue solid line): Acceleration starts and ends with abrupt changes in acceleration, which can cause vibration.
+S‑curve (red dashed line): The speed change during acceleration and deceleration is performed more smoothly. This minimizes robot vibration and reduces path error even when the motion speed changes.
+
+{% hint style="warning" %}
+* If continuous motion generation fails, the motion will run as a discontinuous (broken) motion. In that region, adjust the parameters or switch back to the default motion (Default) for reliable operation.
+* History logs can be used to view records of continuous‑motion failures.
+{% endhint %}
+
+{% hint style="info" %}
+* This feature is supported from version V70.00‑00 onward.
+* Refer to the command syntax in the ${cont_model} controller manual "[5.22 scurve](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/22-s-curve?cont_model=${cont_model})"
+{% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/23-scurve-condition/1-scurve-condition.md)
+# 7.5.23.1 S-curve condition
+
+S‑curve condition settings allow you to define the characteristics of the acceleration and deceleration phases that occur when the robot is operating in detail. Configure the items below to match each process’s required characteristics (such as path accuracy or vibration reduction).
+
+![](../../../_assets/tp630/s-curve_condition.png)
+
+  * Condition Name: Enter the name of the condition.
+  * Path Accuracy <br>
+    Determines how faithfully the robot follows the specified trajectory. A higher value is recommended for processes such as machining or precision assembly where trajectory deviation must be minimized.
+    A larger value increases path accuracy, but it may also cause relatively higher vibration.
+  * Smooth Motion <br>
+    Determines how gently the acceleration and deceleration change. Use a higher value when you need to protect fragile workpieces (e.g., glass), when the process is sensitive to vibration, or when you want to reduce mechanical shock to the robot hardware. A larger value yields smoother motion, but it also increases cycle time. Setting the value too high may prevent the robot from performing continuous motions, causing it to move in a discontinuous manner.
+
+## Example Settings
+
+* Precision machining and dispensing (path accuracy priority)
+  * The robot must follow a predetermined trajectory accurately.
+
+  * Recommended settings:
+    * Path accuracy: High (e.g., 80 ~ 100)
+    * Smooth motion: Low‑to‑medium (e.g., 20 ~ 40)
+
+  * Use case: Applying sealant along complex curves of automotive parts, or performing laser cutting. To minimize trajectory error, set accuracy high; maintaining the path is more important than slight vibration.
+
+  * Caution: Adjust parameters according to the actual robot’s vibration behavior and the specific process specifications.
+
+* Sensitive cargo transport (vibration‑reduction, smooth motion priority)
+  * A process where vibration can damage the product or cause mis‑placement.
+
+  * Recommended settings:
+    * Path accuracy: Medium (e.g., 50)
+    * Smooth motion: High (e.g., 80 ~ 100)
+
+  * Use case: Transporting semiconductor wafers, large glass panels (LCD/OLED), or containers with easily spilling liquid. Minimize shock during acceleration/deceleration to prevent slip or shaking.
+
+  * Caution: As motion becomes smoother, overall cycle time (operation time) may increase, or discontinuous motions may need to be performed.
+[__SOURCE](7-system/5-application-parameter/23-scurve-condition/2-acceldecel-parameter.md)
+# 7.5.23.2 Acceleration/Deceleration Parameters
+
+S‑curve conditions and **maximum jerk** complement each other. When optimizing a process with only the S‑curve setting proves difficult, or when you need to adjust the maximum jerk limit for each joint, you adjust the parameters.
+
+![](../../../_assets/tp630/s-curve_acceldecel_parameter.png)
+
+Relationship Between Jerk and Motion
+Jerk is the rate of change of acceleration, and modifying this value produces the following characteristic changes.
+
+- **Decrease maximum jerk (↓):** Acceleration changes more gradually, making motion smoother and reducing vibration. However, it takes longer to reach the target speed, which can increase cycle time.
+
+- **Increase maximum jerk (↑):** Provides a more responsive motion, but if the value is too high the “smooth motion” effect of the S‑curve condition is diminished, leading to greater mechanical impact.
+
+Automatic Update of Maximum Jerk
+The system automatically recalculates the maximum jerk value whenever key parameters change to maintain equipment stability.
+
+{% hint style="warning" %}
+**Caution:** When you manually set a value, modifying the top speed or acceleration time will overwrite the manually entered maximum jerk with the system‑calculated value. If you have optimized the jerk value for a specific process, be sure to back up the existing value before making changes.
+{% endhint %}
+
+
+{% hint style="info" %}
+Because acceleration/deceleration parameters have a large impact on robot motion characteristics, they are only enabled in Engineering mode or higher.
+{% endhint %}
+
 [__SOURCE](7-system/6-initialization/README.md)
 # 7.6 Initialization
 
@@ -8714,8 +8767,8 @@ You can select the spot guns to use when using multiple spot welding guns \(serv
 
     ![](../_assets/tp630/pop-rcode-210_eng.png)
 
-* The selected spot gun number will be displayed on the `[Gun]` button on the left side of the ${cont_model} teach pendant screen.
-* If you change the spot gun number, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 1: Gun Number Corresponding Tool Number and Gun Type Setting]` menu.
+* The selected spot gun number will be displayed in the bottom right corner of the ${cont_model} teach pendant screen.
+* If you change the spot gun number, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter]` menu.
 
 
 
@@ -8808,7 +8861,7 @@ You can select the numbers of spot welding guns \(servo guns or pneumatic guns\)
 
     ![](../_assets/tp630/pop-rcode-214_eng.png)
 
-* The selected spot gun number will be displayed on the `[Gun]` button on the left side of the ${cont_model} teach pendant screen.
+* The selected spot gun number will be displayed in the bottom right corner of the ${cont_model} teach pendant screen.
 * If you select spot welding guns that are different in type from each other, a notification message \("The Gun Type of the Currently Selected Gun is Set Incorrectly."\) will appear.
 
 <Br>
@@ -8816,7 +8869,7 @@ You can select the numbers of spot welding guns \(servo guns or pneumatic guns\)
 {% hint style="info" %}
 * R214 code cannot be used during the startup of the robot.
 * The spot gun number can only be set in the spot welding environment \(`[Spot Welding]` item in the `[system  - 5: Initialize  - 3: Usage Setting]` menu is set as enable.
-* You can check the setting status of the spot welding gun in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 1: Gun Number Corresponding Tool Number and Gun Type Setting]` menu.
+* You can check the setting status of the spot welding gun in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter]` menu.
   * When a gun is selected as a multisync gun, the manual squeeze/open/close operations of the selected gun will be simultaneously in sync with the previously selected guns.
   * When a gun is selected as a multisync gun, if the gun LED is in the ON status, the SPOT command will be recorded in the sync spot format.
 * The selected spot welding gun can be operated manually. For details on the spot welding function, refer to the "[${cont_model} Controller Spot Welding Function Manual](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/README)".
@@ -8915,7 +8968,7 @@ The method to change the servo tool using the R358 code is as follows.
     ![](../_assets/tp630/pop-rcode-358-1_eng.png)
 
 
-3.	After inputting the number of the welding gun to change, touch the `[OK]` button or press the `[ENTER]` key. The selected weld gun number will be displayed on the `[Gun]` button on the left side of the ${cont_model} teach pendant screen.
+3.	After inputting the number of the welding gun to change, touch the `[OK]` button or press the `[ENTER]` key. The selected weld gun number will be displayed in the bottom right corner of the ${cont_model} teach pendant screen.
 
 
     ![](../_assets/tp630/pop-rcode-358-2_eng.png)
@@ -8923,7 +8976,7 @@ The method to change the servo tool using the R358 code is as follows.
 {% hint style="info" %}
 * R358 code cannot be used in automatic mode. It must be used in manual mode.
 * 
-  When the spot gun number is changed, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 1: Gun Number Corresponding Tool Number and Gun Type Setting]` menu.
+  When the spot gun number is changed, the tool number designated in the spot gun corresponding tool number will be automatically changed. You can check the spot gun corresponding tool number in the `[system  - 4: Application Parameter  - 1: Spot Welding  - 2:Welding gun parameter]` menu.
 
 * 
   The servo tool change setting can be performed only when the motor is turned on.
@@ -9385,7 +9438,7 @@ When writing the SPOT command while writing the program, if you place the cursor
 [__SOURCE](10-robot-language.md)
 # 10. Robot Language
 
-For details on the robot language, refer to the "[${cont_model} Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README)"
+For details on the robot language, refer to the "[${cont_model} Robot Controller Function Manual. - Robot Language HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README?cont_model=${cont_model})"
 
 [__SOURCE](11-etc/README.md)
 # 11. Etc.
