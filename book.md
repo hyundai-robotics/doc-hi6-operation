@@ -5420,11 +5420,11 @@ Refer to Arc Welding Manual's "[7. 焊接数据监控](https://hrbook-hrc.web.ap
 [__SOURCE](7-system/3-control-parameter/7-prog-reservation.md)
 # 7.3.7 定时程序执行
 
-有关如何执行定时程序的详细信息，请参阅 "[${cont_model} 控制器定时程序执行功能手册](https://hrbook-hrc.web.app/#/view/doc-reserved-program-execution/zh/README)"。
+有关如何执行定时程序的详细信息，请参阅 "[${cont_model} 控制器定时程序执行功能手册](https://hrbook-hrc.web.app/#/view/doc-reserved-program-execution/zh/README?cont_model=${cont_model})"。
 [__SOURCE](7-system/3-control-parameter/8-auto-backup-restore.md)
 # 7.3.8 自动备份和恢复
 
-有关如何自动备份和恢复控制器数据的详细信息，请参考 "[${cont_model} 控制器自动备份功能手册](https://hrbook-hrc.web.app/#/view/doc-hi6-auto-backup/zh/README)"。
+有关如何自动备份和恢复控制器数据的详细信息，请参考 "[${cont_model} 控制器自动备份功能手册](https://hrbook-hrc.web.app/#/view/doc-hi6-auto-backup/zh/README?cont_model=${cont_model})"。
 [__SOURCE](7-system/3-control-parameter/9-network-setting/README.md)
 # 7.3.9 网络
 
@@ -5493,7 +5493,7 @@ Refer to Arc Welding Manual's "[7. 焊接数据监控](https://hrbook-hrc.web.ap
 # 7.3.9.2.1 Modbus 从站
 
 本节涵盖使用控制器的 Modbus TCP 从站通信时的设置和监控。 <br>
-有关更多信息，请参考 "[${cont_model} 机器人控制器功能手册 - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/zh/README)"。
+有关更多信息，请参考 "[${cont_model} 机器人控制器功能手册 - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/zh/README?cont_model=${cont_model})"。
 [__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/3-ntp-client.md)
 # 7.3.9.2.3 NTP 客户端
 
@@ -7157,7 +7157,7 @@ S曲线条件和**最大加加速度**相辅相成。当仅用S曲线设置优�
 
 {% hint style="info" %}
 * 位置器校准功能可以在设置好位置器组的情况下使用。
-* 有关更多详细信息，请参阅"[${cont_model} 控制器位置器同步功能手册](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/zh/README)"。
+* 有关更多详细信息，请参阅"[${cont_model} 控制器位置器同步功能手册](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/zh/README?cont_model=${cont_model})"。
 {% endhint %}
 [__SOURCE](7-system/7-auto-calibration/3-load-estimation.md)
 # 7.7.3 负载估算功能

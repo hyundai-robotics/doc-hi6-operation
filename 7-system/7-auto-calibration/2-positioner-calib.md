@@ -18,5 +18,5 @@
 
 {% hint style="info" %}
 * 位置器校准功能可以在设置好位置器组的情况下使用。
-* 有关更多详细信息，请参阅"[${cont_model} 控制器位置器同步功能手册](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/zh/README)"。
+* 有关更多详细信息，请参阅"[${cont_model} 控制器位置器同步功能手册](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/zh/README?cont_model=${cont_model})"。
 {% endhint %}
