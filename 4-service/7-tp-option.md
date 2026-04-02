@@ -42,7 +42,8 @@ Set the preference options of the teach pendant.
       <td style="text-align:left">
         Touch screen On
       </td>
-      <td style="text-align:left">Turns the touch screen ON or OFF.<br> Disable this option if there is a risk of unintended Teach Pendant operation due to accidental screen contact.</td>
+      <td style="text-align:left">Turns the touch screen ON or OFF.<br> Disable this option if there is a risk of unintended Teach Pendant operation due to accidental screen contact.<br>
+      To re-enable the touchscreen option, press Ctrl + ←(Backspace) to activate the bottom button bar keypad mode, then enable the option again.</td>
     </tr>
     <tr>
       <td style="text-align:left">
