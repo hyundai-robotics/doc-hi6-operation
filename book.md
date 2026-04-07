@@ -3350,7 +3350,8 @@ Set the preference options of the teach pendant.
       <td style="text-align:left">
         Touch screen On
       </td>
-      <td style="text-align:left">Turns the touch screen ON or OFF.<br> Disable this option if there is a risk of unintended Teach Pendant operation due to accidental screen contact.</td>
+      <td style="text-align:left">Turns the touch screen ON or OFF.<br> Disable this option if there is a risk of unintended Teach Pendant operation due to accidental screen contact.<br>
+      To re-enable the touchscreen option, press Ctrl + ←(Backspace) to activate the bottom button bar keypad mode, then enable the option again.</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -7774,7 +7775,7 @@ Some items in the `[Initialize]` menu will be supported only when a specific typ
 
 3.	After touching the `[Favorites]` button at the bottom right of the ${cont_model} teach pendant screen, input 314 in the input area of the favorites window, and then touch the `[OK]` button.
 
-    ![](../../_assets/tp630/pop-rcode-314_eng.png)
+    ![](../../_assets/tp630/pop-rcode-314-2_eng.png)
 
 {% hint style="warning" %}
 * In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
@@ -8921,7 +8922,7 @@ For details on the manual setting of the panel thickness, refer to the "[${cont_
 
 In the R Code window, type 314 and then touch the `[OK]` button or press the `[ENTER]` key.
 
-![](../_assets/tp630/pop-rcode-314.png)
+![](../_assets/tp630/pop-rcode-314-1_eng.png)
 
 After completion, the following display flashes in the upper right corner of the screen.
 

@@ -27,7 +27,7 @@
 
 3.	After touching the `[Favorites]` button at the bottom right of the ${cont_model} teach pendant screen, input 314 in the input area of the favorites window, and then touch the `[OK]` button.
 
-    ![](../../_assets/tp630/pop-rcode-314_eng.png)
+    ![](../../_assets/tp630/pop-rcode-314-2_eng.png)
 
 {% hint style="warning" %}
 * In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
