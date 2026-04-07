@@ -38,7 +38,8 @@ The current encoder position can be set as the encoder origin position \(positio
           <li>[Calculate Correction Value]: You can calibrate the encoder offset value
             of the selected axis.</li>
           <li>[Previous Correction Value]: You can retrieve the encoder offset value
-            that existed prior to the calibration of the selected axis.</li>
+            that existed prior to the calibration of all axes.</li>
+          <li>[Robot Move]: Tap the [Robot Move] button to move the robot to the recorded step position (Jog).</li>
         </ul>
       </td>
     </tr>
