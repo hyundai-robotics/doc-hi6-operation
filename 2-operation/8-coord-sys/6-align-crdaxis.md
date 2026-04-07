@@ -24,7 +24,7 @@ Procedure for Coordinate Axis Alignment
 
 5. After completing Axis Alignment (Step 1), press the rotational direction key corresponding to the previously selected axis to perform coordinate alignment. (Step 2 - optional)
 
-6. Once the desired position is reached, press the ESC key to exit the coordinate axis alignment screen.
+6. Once the desired position is reached, press the `[ESC]` key to exit the coordinate axis alignment screen.
 
 
 ![](../../_assets/tp630/align-crd-axis_eng.png)
