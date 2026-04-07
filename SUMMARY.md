@@ -61,6 +61,7 @@
     * [2.8.3 Robot Coordinate System](2-operation/8-coord-sys/3-robot-crdsys.md)
     * [2.8.4 User Coordinate System](2-operation/8-coord-sys/4-user-crdsys.md)
     * [2.8.5 Tool Coordinate System](2-operation/8-coord-sys/5-tool-crdsys.md)
+    * [2.8.6 Coordinate Axis Alignment](2-operation/8-coord-sys/6-align-crdaxis.md)
   * [2.9 Optimization of the Axis Origin and Tool Length](2-operation/9-axis-origin.md)
   * [2.10 Tool Data Automatic Calibration](2-operation/10-tool-data-auto-calib.md)
 * [3. Program Writing](3-programming/README.md)
