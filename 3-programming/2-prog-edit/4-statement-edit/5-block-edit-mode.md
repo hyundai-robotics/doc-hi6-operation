@@ -7,6 +7,7 @@
 
 job 편집 화면에서 화살표 좌 키로 커서를 주소영역으로 옮깁니다.  
 `F2: 블록편집` 버튼을 클릭하면 블록 편집 모드로 진입하면서, 커서가 회색으로 바뀝니다.
+
 ![](../../../_assets/tp630/blockedit/11_blockeditmode2.PNG)
 ![](../../../_assets/tp630/blockedit/12_blockeditmode.PNG)
 <br><br>

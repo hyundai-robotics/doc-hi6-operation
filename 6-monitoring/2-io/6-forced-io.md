@@ -49,6 +49,7 @@ panel 제목 막대의 * 표시는 테이블이 수정되었고 이 수정 내�
 
 
 panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것을 확인할 수 있습니다. 제목 막대에는 빨간색의 F가 점멸하는데, 이것은 강제 IO가 적용되고 있음을 경고하는 표시입니다.
+
 ![](../../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
 
 
