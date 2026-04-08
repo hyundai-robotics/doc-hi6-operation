@@ -2300,7 +2300,7 @@ Jog Key Functions Summary
 * This function must be performed only when the robot is stopped and in Manual Mode.
 (It cannot be executed in Auto Mode.)
 * If the `[ESC]` key is pressed while holding a jog key, the popup window will close and jog will be re-enabled. Use caution during operation.
-* If the auxiliary axis is set to Base and X, Y, Z are not defined (undefined state), an error log will be displayed.
+* If the additional axis is set to Base and X, Y, Z are not defined (undefined state), an error log will be displayed.
 * If the desired alignment direction is not reachable even with jogging, an error message indicating unreachable XYZ position will appear.
 * If alignment is attempted again from a non-interpolatable posture, an error will occur. In this case, press the Return to Original Position key to avoid the problematic region and retry.
 * When aligning at a singularity point, pressing the released button again will continue the motion. Since the path is recalculated from the current position, it operates at normal speed. (The speed increases slightly, but this is the normal speed.)
@@ -3057,6 +3057,31 @@ Once in accessible mode, the following warning message is displayed, and the MAI
 ![](../../_assets/tp630/file-manager/fl-toggle-root1.png)
 
 Click the `[toggle root]` button once more to release the accessible mode.
+
+[__SOURCE](4-service/2-file-manager/9-tp-backup.md)
+# 4.2.9 Import Automatic Backup
+
+Import the automatic backup configured in System - Automatic Backup and Restore.
+
+1. On the File Manager screen, navigate to backup/ts under the \(T/P\) item, and use the teach pendant arrow keys to select the backup folder to import.
+
+![](../../_assets/tp630/file-manager/fl-autobackup-copy-select_eng.png)
+
+2. Click the `[F2: copy]` button to copy the backup. (This may take approximately 3 minutes.)
+
+![](../../_assets/tp630/file-manager/fl-autobackup-copy-button_eng.png)
+
+3. From the folder list, select the destination folder on the removable storage device (USB) using the teach pendant arrow keys.
+
+![](../../_assets/tp630/file-manager/fl-autobackup-paste-select_eng.png)
+
+4. Click the `[F3: paste]` button to transfer the backup to the storage device (USB).
+
+![](../../_assets/tp630/file-manager/fl-autobackup-paste-button_eng.png)
+
+5. Once completed, verify the result on the File Manager screen.
+
+![](../../_assets/tp630/file-manager/fl-autobackup-paste-done_eng.png)
 
 [__SOURCE](4-service/3-program-conversion/README.md)
 # 4.3 Program Conversion
