@@ -8,7 +8,7 @@ However, when service personnel perform this procedure manually on site, the hom
 ![](../../../_assets/tp630/axis-posi-restore1.png)
 
 In other words, home position restoration refers to:  
-Using an external reference point (dial gauge), after replacing a component, compensating the inaccurately calibrated home position Ωo' by the value ⓒ − ⓐ to restore it to the accurate home position Ωo.  
+Using an external reference point (dial gauge), after replacing a component, compensating the inaccurately calibrated home position Ωo' by the value ⓒ - ⓐ to restore it to the accurate home position Ωo.  
 (This is required to reuse the teaching program.)
 
 {% hint style="warning" %}

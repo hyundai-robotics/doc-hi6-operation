@@ -200,6 +200,7 @@
     * [7.4.1 Tool Data](7-system/4-robot-parameter/1-tool-data/README.md)
       * [7.4.1.1 Tool Data Setting](7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)
       * [7.4.1.2 Tool Data Setting Information](7-system/4-robot-parameter/1-tool-data/2-tool-data-set-info.md)
+      * [7.4.1.3 High Load Mode](7-system/4-robot-parameter/1-tool-data/3-tool-data-high-load_mode.md)
     * [7.4.2 Axis Origin](7-system/4-robot-parameter/2-axis-origin.md)
     * [7.4.3 Soft Limit](7-system/4-robot-parameter/3-soft-limit.md)
     * [7.4.4 Encoder Offset](7-system/4-robot-parameter/4-encoder-offset/README.md)

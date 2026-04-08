@@ -1,6 +1,6 @@
 ﻿# 7.5.23.1 S-curve condition
 
-S‑curve condition settings allow you to define the characteristics of the acceleration and deceleration phases that occur when the robot is operating in detail. Configure the items below to match each process’s required characteristics (such as path accuracy or vibration reduction).
+S-curve condition settings allow you to define the characteristics of the acceleration and deceleration phases that occur when the robot is operating in detail. Configure the items below to match each process's required characteristics (such as path accuracy or vibration reduction).
 
 ![](../../../_assets/tp630/s-curve_condition.png)
 
@@ -18,14 +18,14 @@ S‑curve condition settings allow you to define the characteristics of the acce
 
   * Recommended settings:
     * Path accuracy: High (e.g., 80 ~ 100)
-    * Smooth motion: Low‑to‑medium (e.g., 20 ~ 40)
+    * Smooth motion: Low-to-medium (e.g., 20 ~ 40)
 
   * Use case: Applying sealant along complex curves of automotive parts, or performing laser cutting. To minimize trajectory error, set accuracy high; maintaining the path is more important than slight vibration.
 
-  * Caution: Adjust parameters according to the actual robot’s vibration behavior and the specific process specifications.
+  * Caution: Adjust parameters according to the actual robot's vibration behavior and the specific process specifications.
 
-* Sensitive cargo transport (vibration‑reduction, smooth motion priority)
-  * A process where vibration can damage the product or cause mis‑placement.
+* Sensitive cargo transport (vibration-reduction, smooth motion priority)
+  * A process where vibration can damage the product or cause mis-placement.
 
   * Recommended settings:
     * Path accuracy: Medium (e.g., 50)
