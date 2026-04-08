@@ -6,7 +6,7 @@
 
 ![](../../_assets/tp630/file-manager/fl-autobackup-copy-select.png)
 
-2. `복사` 버튼 클릭해 백업을 복사하십시오. 백업\(약 3분 소요\)
+2. `[F2: 복사]` 버튼 클릭해 백업을 복사하십시오. 백업\(약 3분 소요\)
 
 ![](../../_assets/tp630/file-manager/fl-autobackup-copy-button.png)
 
@@ -15,7 +15,7 @@
 ![](../../_assets/tp630/file-manager/fl-autobackup-paste-select.png)
 
 
-4. `붙여넣기` 버튼 클릭해 백업을 저장 장치(USB)로 가져오십시오.
+4. `[F3: 붙여넣기]` 버튼 클릭해 백업을 저장 장치(USB)로 가져오십시오.
 
 ![](../../_assets/tp630/file-manager/fl-autobackup-paste-button.png)
 
