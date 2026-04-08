@@ -47,7 +47,7 @@ Jog Key Functions Summary
 * This function must be performed only when the robot is stopped and in Manual Mode.
 (It cannot be executed in Auto Mode.)
 * If the `[ESC]` key is pressed while holding a jog key, the popup window will close and jog will be re-enabled. Use caution during operation.
-* If the auxiliary axis is set to Base and X, Y, Z are not defined (undefined state), an error log will be displayed.
+* If the additional axis is set to Base and X, Y, Z are not defined (undefined state), an error log will be displayed.
 * If the desired alignment direction is not reachable even with jogging, an error message indicating unreachable XYZ position will appear.
 * If alignment is attempted again from a non-interpolatable posture, an error will occur. In this case, press the Return to Original Position key to avoid the problematic region and retry.
 * When aligning at a singularity point, pressing the released button again will continue the motion. Since the path is recalculated from the current position, it operates at normal speed. (The speed increases slightly, but this is the normal speed.)
