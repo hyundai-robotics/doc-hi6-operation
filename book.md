@@ -6711,7 +6711,7 @@ The allowable ratio can be changed depending on the robot model and controller s
 [__SOURCE](7-system/4-robot-parameter/1-tool-data/3-tool-data-high-load_mode.md)
 # 7.4.1.3 High Load Mode
 
-The availability of High Load Mode may vary depending on the robot model. In general, high load mode is supported on medium-sized robots with a payload capacity of 100 kg or more.<br> For models that support high load mode, you can configure "4. High load mode" as shown in the figure below in `[F2: system] - 3. Robot Parameter - 33. Servo parameter - 9. Servo control environment` menu.<br> For models that support high load mode, auto apply is the default setting.
+The availability of High Load Mode may vary depending on the robot model. In general, high load mode is supported on medium-sized robots with a payload capacity of 100 kg or more.<br> For models that support high load mode, you can configure "4. High load mode" as shown in the figure below in `[F2: system] - 3: Robot Parameter - 33: Servo parameter - 9: Servo control environment` menu.<br> For models that support high load mode, auto apply is the default setting.
 
 ![Figure 63 High Load Mode Setting Screen](../../../_assets/image_high_load_mode_setting_eng.png)
 
