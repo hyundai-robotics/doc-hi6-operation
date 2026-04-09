@@ -246,6 +246,7 @@
     * [7.6.4 Serial Encoder Reset](7-system/6-initialization/4-serial-encoder-reset.md)
     * [7.6.5 Additional Axis Parameter Setting](7-system/6-initialization/5-add-axis-param.md)
     * [7.6.6 Mechanism Setting](7-system/6-initialization/6-mechannism-set.md)
+    * [7.6.7 Axis Synchronization Function](7-system/6-initialization/7-axis-sync.md)
   * [7.7 Auto Calibration](7-system/7-auto-calibration/README.md)
     * [7.7.1 Optimize Axis Origin and Tool Length](7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)
     * [7.7.2 Positioner Calibration](7-system/7-auto-calibration/2-positioner-calib.md)
