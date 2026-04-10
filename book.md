@@ -8250,6 +8250,94 @@ The procedure to change the currently configured axis synchronization pair is as
 * Be aware that changing settings during axis synchronization operation will affect the Cartesian coordinate system.
 {% endhint %}
 
+[__SOURCE](7-system/6-initialization/8-axis-lock/README.md)
+# 7.6.8 Axis Lock
+
+### Purpose of the Function
+
+The purpose of the axis lock function is to temporarily disable a specific axis when repair or replacement is required due to issues with the motor, reducer, or other components of the robot or auxiliary axes. This allows the remaining normal axes to continue operating. By allowing the operation of normal axes, this function improve the convenience of robot maintenance and availability, and to minimize line productivity losses for certain robots.
+
+![](../../../_assets/tp630/init-axis-lock-purpose_eng.png)
+
+<br>
+
+### Scope of the Function
+
+The scope of functionality provided depends on the type of robot and the axis to which the Axis Lock function is applied, as shown in the table below.
+
+|Robot|Axis Lock|Motor ON|JOG(Axis)|JOG(Cartesian)|Step Recording|Command Recording|Command Execution|Step FWD/BWD|Auto Operation|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|All Robots|Robot Axis|o|o|x|x|o|x|x|x|
+|All Robots|Auxiliary Axis|o|o|o|o|o|x|o|x|
+|*Exception Robots|Specific Axis|o|o|o|o|o|o|o|o|
+
+- *Specific axes for exception robots:
+    -	S axis of HH140G-0A
+    -	L and R axes of LCD robots
+    -	LA and RA axes of LCD 2-DOF arm robots
+
+<br>
+
+{% hint style="info" %}
+-   This function is available only when the Engineer Code (R314) is entered.
+-   Playback in Auto Mode is not available when this function is enabled.
+-   When the function is applied, the corresponding axis operates in a locked state.
+
+{% endhint %}
+
+[__SOURCE](7-system/6-initialization/8-axis-lock/1-setting.md)
+# 7.6.8.1 How to Configure the Function
+
+### Menu Access
+
+Select the menu by navigating to `[F2: system] - 5: Initialization - 9: Axis lock setting`. When entering the menu, you will be prompted to confirm whether each axis brake is functioning normally, as shown below.
+
+{% hint style="warning" %}
+Since the robot may fall if the brake wiring is abnormal, please ensure that the brake wiring of each axis is normal before configuring the axis locking function.
+{% endhint %}
+
+![](../../../_assets/tp630/init-axis-lock-menu_eng.png)
+
+
+### Function Configuration
+
+After confirming that the brake wiring is normal and entering the menu, the specifications of each axis and the axis lock setting status will be displayed as shown below. Select the axis to which you want to apply axis lock, then press `[OK]` to exit the menu.
+
+![](../../../_assets/tp630/init-axis-lock-setting_eng.png)
+
+[__SOURCE](7-system/6-initialization/8-axis-lock/2-function-check.md)
+# 7.6.8.2 Checking Function Application
+
+When the axis lock function is applied, robot motion may differ from normal operation due to the locked axis. Therefore, always verify whether axis lock is active before operating the robot.
+
+You can check whether the function is applied through the status bar, warning message, and monitoring display status.
+
+### Status Display Window
+
+The status display window show various conditions required for robot operation.
+
+{% hint style="warning" %}
+While using the axis lock function, be sure to check the corresponding indicators before operating the robot.
+{% endhint %}
+
+-   Status display window: AxLk
+-   Right matrix: "Axis lock"
+
+![](../../../_assets/tp630/init-axis-lock-status_eng.png)
+
+
+### Monitor Window
+
+During monitoring, the axis data will show an "Axis lock" message for any axis where the function is applied. If a robot axis or base axis is locked, the coordinate values cannot be displayed. In this case, the Cartesian coordinates and the values of the locked axis will be shown as '------'.
+
+![](../../../_assets/tp630/init-axis-lock-monitor_eng.png)
+
+### Warning Message
+
+When switching screens or modes, the range of functions corresponding to the locked axis is displayed as a warning message. Through this message, you can always be aware of whether the axis lock function is applied and its range.
+
+![](../../../_assets/tp630/init-axis-lock-warning_eng.png)
+
 [__SOURCE](7-system/7-auto-calibration/README.md)
 # 7.7 Auto Calibration
 
