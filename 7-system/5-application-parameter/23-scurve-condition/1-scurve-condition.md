@@ -11,7 +11,7 @@ S-curve condition settings allow you to define the characteristics of the accele
   * Smooth Motion <br>
     Determines how gently the acceleration and deceleration change. Use a higher value when you need to protect fragile workpieces (e.g., glass), when the process is sensitive to vibration, or when you want to reduce mechanical shock to the robot hardware. A larger value yields smoother motion, but it also increases cycle time. Setting the value too high may prevent the robot from performing continuous motions, causing it to move in a discontinuous manner.
 
-## Example Settings
+### Example Settings
 
 * Precision machining and dispensing (path accuracy priority)
   * The robot must follow a predetermined trajectory accurately.

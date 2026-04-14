@@ -1,4 +1,4 @@
-﻿# 4.2.6 Partial Restoration
+﻿# 4.2.7 Partial Restoration
 
 When restoring only some folders or files of backup data, use the `Copy` and `Paste` feature.
 

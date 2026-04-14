@@ -3017,7 +3017,7 @@ You can restore files such as projects, logs which backed up with `backup all` f
 4. Turn off and on the power the controller.
 
 [__SOURCE](4-service/2-file-manager/7-data-restore-partial.md)
-# 4.2.6 Partial Restoration
+# 4.2.7 Partial Restoration
 
 When restoring only some folders or files of backup data, use the `Copy` and `Paste` feature.
 
@@ -3655,7 +3655,7 @@ Touch `[Pose]` in the panel selection window. Then, the robot pose information w
 
 
 [__SOURCE](6-monitoring/1-basic/2-op-info.md)
-# 6.3.2 Operation time
+# 6.1.2 Operation time
 
 In the panel selection window, touch `[Operation time]`. Then, the controller's operation information window will appear.
 
@@ -6343,7 +6343,7 @@ You can set the information required for Network Setting for LAN ports.
 
 3.	Setting parameters will be adjusted when you reboot the system.
 
-<img src ="../../../_assets/image_551.png">
+<img src ="../../../_assets/image_551.PNG">
 
 <table>
   <thead>
@@ -7760,7 +7760,7 @@ S-curve condition settings allow you to define the characteristics of the accele
   * Smooth Motion <br>
     Determines how gently the acceleration and deceleration change. Use a higher value when you need to protect fragile workpieces (e.g., glass), when the process is sensitive to vibration, or when you want to reduce mechanical shock to the robot hardware. A larger value yields smoother motion, but it also increases cycle time. Setting the value too high may prevent the robot from performing continuous motions, causing it to move in a discontinuous manner.
 
-## Example Settings
+### Example Settings
 
 * Precision machining and dispensing (path accuracy priority)
   * The robot must follow a predetermined trajectory accurately.
