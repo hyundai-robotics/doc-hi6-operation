@@ -302,6 +302,7 @@
     * [11.1.3 log/](11-etc/1-controller-files/3-log.md)
     * [11.1.4 backup/](11-etc/1-controller-files/4-backup.md)
     * [11.1.5 etc/](11-etc/1-controller-files/5-etc.md)
+  * [11.2 키패드 모드](11-etc/2-keypad-mode.md)
 * [별첨](appendices/README.md)
   * [산업안전보건기준에 관한 규칙 및 안전검사 고시](appendices/rules-occupational-safety.md)
 * [품질 보증](quality-assurance.md)
