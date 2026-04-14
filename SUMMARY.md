@@ -298,6 +298,7 @@
     * [11.1.3 log/](11-etc/1-controller-files/3-log.md)
     * [11.1.4 backup/](11-etc/1-controller-files/4-backup.md)
     * [11.1.5 Other Folders](11-etc/1-controller-files/5-etc.md)
+  * [11.2 Keypad Mode](11-etc/2-keypad-mode.md)
 * [Appendices](appendices/README.md)
   * [Rules on Occupational Safety and Health Standards, and Notice for Safety Inspection](appendices/rules-occupational-safety.md)
 * [Quality Assurance](quality-assurance.md)

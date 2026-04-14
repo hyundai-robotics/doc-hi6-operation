@@ -3432,28 +3432,31 @@ Set the preference options of the teach pendant.
         Touch screen On
       </td>
       <td style="text-align:left">Turns the touch screen ON or OFF.<br> Disable this option if there is a risk of unintended Teach Pendant operation due to accidental screen contact.<br>
-      To re-enable the touchscreen option, press Ctrl + ←(Backspace) to activate the bottom button bar keypad mode, then enable the option again.</td>
+      To re-enable the touchscreen option, press Ctrl + ←(Backspace) to activate the F button bar keypad mode, then enable the option again.<sup>1)</sup></td>
     </tr>
     <tr>
       <td style="text-align:left">
         Whether to use the job key
       </td>
-      <td style="text-align:left">Select whether to use the jog keys `J7-`/`J7+` and `J8-`/`J8+` respectively. <br>Turn off this option if there is a risk of positioner collision or other issues due to incorrect jog key operation.<sup>1)</sup></td>
+      <td style="text-align:left">Select whether to use the jog keys `J7-`/`J7+` and `J8-`/`J8+` respectively. <br>Turn off this option if there is a risk of positioner collision or other issues due to incorrect jog key operation.<sup>2)</sup></td>
     </tr>
     <tr>
       <td style="text-align:left">
         Language
       </td>
       <td style="text-align:left">Changes the display language of the Teach Pendant. Changes take effect after returning to the main screen.<br>
-      (Supported from version V70.00-00 and later.<sup>2)</sup>)</td>
+      (Supported from version V70.00-00 and later.<sup>3)</sup>)</td>
     </tr>
   </tbody>
 </table>
 
 {% hint style="info" %}
-1\) For more details on the use of jog keys, refer to the Mechanism Jog Rules in "[7.6.6 Mechanism Settings](../7-system/6-initialization/6-mechannism-set.md)"
 
-2\) For versions prior to the one mentioned above, the display language can only be switched after executing `[F1: Service] - 9: Exit TP application`.
+1\) For more details on keypad mode, refer to "[11.2 Keypad Mode](../11-etc/2-keypad-mode.md)".
+
+2\) For more details on the use of jog keys, refer to the Mechanism Jog Rules in "[7.6.6 Mechanism Settings](../7-system/6-initialization/6-mechannism-set.md)".
+
+3\) For versions prior to the one mentioned above, the display language can only be switched after executing `[F1: Service] - 9: Exit TP application`.
 
 {% endhint %}
 
@@ -9996,6 +9999,43 @@ Folder storing syntax files for the robot language HRScript.
 * svars_?.json
   
   System variable syntax files by category
+
+[__SOURCE](11-etc/2-keypad-mode.md)
+# 11.2 Keypad Mode
+
+This feature allows the L, R and F(Function) buttons on the touch screen to operated using the keypad. If the touch screen is `malfunctioning` or if the touch screen is `turned off` via `[F1: service] - 11: Teach pendant option`, you can use this feature to operate the buttons.
+
+When keypad mode is activated, the corresponding control keys for each button are displayed at the top or bottom of the buttons.
+
+### L, R Button Bar Keypad Mode
+- Shortcut: `[CTRL]+[.]`
+    - L button bar
+        - `[R..]` : `[rec.cond]`
+        - `[7]` : `[run to]`
+        - `[4]` : `[jog inch.]`
+        - `[1]` : `[property]]`
+        - `[0]` : `[help]`
+    - R button bar
+        - `[ENTER]` : `[man.out]`
+        - `[9]` : `[pane layout]`
+        - `[6]` : `[soft kb.]`
+        - `[3]` : `[user key]`
+        - `[BS]` : `[prev/next]`
+
+![](../_assets/tp630/keypad-mode-LR_eng.png)
+
+### F Button Bar Keypad Mode
+- Shortcut: `[CTRL]+[←(Backspace)]`
+    - F button bar (Mapped to F buttons corresponding to number keys)
+        - The following descriptions are based on the buttons displayed on the highest level screen.
+        - `[1]` : `[F1: service]`
+        - `[2]` : `[F2: system]`
+        - `[3]` : `[F3: rel.WAIT]`
+        - `[4]` : `[F4: log]`
+        - `[6]` : `[F6: cmd.input]`
+        - `[7]` : `[F7: cond.set]`
+
+![](../_assets/tp630/keypad-mode-F_eng.png)
 
 [__SOURCE](appendices/README.md)
 # Appendices
