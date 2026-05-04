@@ -68,13 +68,33 @@ Additionally, you can comment or uncomment a single line without selecting a blo
  ![](../../../_assets/tp630/blockedit/60_remark.PNG)
 <br><br>
 
-#### 8. Closing Block Edit Mode
+
+#### 8. Auto Comment / Remove Comments
+
+(This feature is supported from version V70.01-00 and later.)
+
+- Press the `[R5: Prev/next]` button to display the `[F1: auto comment]` and `[F2: uncomment]` buttons.
+
+- When you press `[F1: auto comment]`, the registered data comments are automatically inserted on the selected statements.
+
+  * For how to configure data comments, refer to [4.11 data comment](../../../4-service/11-data-cmts.md).
+
+  * For application conditions, refer to section [4.3.9 Statement data comment](../../../4-service/3-program-conversion/9-stmt-comment.md).
+
+- When you press `[F2: uncomments]`, the comments of the selected statements are removed (regardless of whether data is registered).
+
+![](../../../_assets/tp630/blockedit/66_auto_comment.PNG)
+
+
+#### 9. Closing Block Edit Mode
 
 Block edit mode can be closed by clicking `F7: close` or pressing the `ESC` key.
 <br><br>
 
 
-#### 9. Auto-adjusting Step #
+----
+
+#### Auto-adjusting Step #
 
 For example, if steps S1-S2 are copied and pasted below, the `move` statement originally at S3 will be pushed down and renumbered as S5 due to the inserted 2 steps.
 

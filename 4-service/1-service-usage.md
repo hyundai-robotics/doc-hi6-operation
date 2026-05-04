@@ -7,7 +7,7 @@
     ![](../_assets/tp630/svc-list.png)
 
 
-
+* `4: Data comment`: You can manages comments for input/output variables, relays, and various other variables.
 * `5: File Manager`: You can manage files in the main board's internal memory, teach pendant, or removable storage device.
 * `6: Program Conversion`: You can convert the data, such as the condition and location of the created program, by batch or individually.
 * `7: System Diagnosis`: You can check the status of the robot and controller and update the system version.
