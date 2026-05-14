@@ -1,6 +1,6 @@
 ﻿# 4.11 Data Comments
 
-(This feature is supported from version V70.01-00 and later.)
+(This feature is supported from version V70.02-00 and later.)
 
 You can register comments for IO variables, relays of the built-in PLC, and other general variables. The registered comments are displayed as tooltips in the monitoring panels. (`public input`, `public output`, `fn input`, `fn output`, `global variable`, `memory variable`, `watch` monitoring)
 

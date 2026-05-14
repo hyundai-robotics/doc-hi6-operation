@@ -1,6 +1,6 @@
 ﻿# 4.3.9 Statement Comments
 
-(This feature is supported in version V70.01-00 and later.)
+(This feature is supported in version V70.02-00 and later.)
 
 This feature automatically attaches comments to statements using pre-configured data comments. It also includes functions to delete comments in bulk or assign serial numbers to `spot` statements (Spot Welding commands).
 

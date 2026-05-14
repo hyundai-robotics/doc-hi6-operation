@@ -71,7 +71,7 @@ Additionally, you can comment or uncomment a single line without selecting a blo
 
 #### 8. Auto Comment / Remove Comments
 
-(This feature is supported from version V70.01-00 and later.)
+(This feature is supported from version V70.02-00 and later.)
 
 - Press the `[R5: Prev/next]` button to display the `[F1: auto comment]` and `[F2: uncomment]` buttons.
 
