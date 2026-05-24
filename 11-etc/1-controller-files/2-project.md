@@ -1,4 +1,10 @@
-﻿# 11.1.2 project/
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 11.1.2 project/
 
 
 로봇의 설정, 교시, 상태가 보관되는 가장 중요한 폴더입니다.  

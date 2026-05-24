@@ -1,4 +1,10 @@
-﻿# 7.10.1 사용자DIO 보드 설정
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 7.10.1 사용자DIO 보드 설정
 
 {% hint style="info" %}
 이 기능은 Hi7 제어기부터 지원됩니다.
@@ -12,4 +18,4 @@ Hi7 제어기에서 '사용자 DIO 보드(BD681)'와 '확장 DIO 보드(BD682)'�
 
 {% hint style="info" %}
 사용자DIO 보드 설정에 대한 자세한 관한 내용은  "[Hi7 제어기 기능설명서 - 사용자DIO, 확장DIO](https://hrbook-hrc.web.app/#/view/doc-userDIO-ExtensionDIO/ko/README)"을 참고하십시오.
-{% endhint %}
+{% endhint %} 

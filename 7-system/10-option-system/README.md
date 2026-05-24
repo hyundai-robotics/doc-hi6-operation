@@ -1,4 +1,10 @@
-﻿# 7.10 옵션 장치
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 7.10 옵션 장치
 
 {% hint style="info" %}
 이 기능은 Hi7 제어기부터 지원됩니다.

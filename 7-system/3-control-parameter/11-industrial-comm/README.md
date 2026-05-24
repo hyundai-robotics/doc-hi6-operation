@@ -1,4 +1,10 @@
-﻿# 7.3.11 산업용 통신 \(필드버스\)
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6"]
+}
+</script>
+
+# 7.3.11 산업용 통신 \(필드버스\)
 
 산업용 통신\(필드버스; Fieldbus\)을 사용 설정합니다.
 

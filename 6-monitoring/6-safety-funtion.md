@@ -1,4 +1,10 @@
-﻿# 6.6 안전 기능
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 6.6 안전 기능
 
 {% hint style="info" %}
 이 기능은 Hi7 제어기부터 지원됩니다.
@@ -12,5 +18,3 @@
 {% hint style="info" %}
 * 안전 기능에 대한 자세한 내용은 "[SafeSpace2.0 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)"를 참조하십시오.
 {% endhint %}
-
-
