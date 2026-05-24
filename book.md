@@ -1,0 +1,10061 @@
+﻿
+[__SOURCE](README.md)
+# ${cont_model} 제어기 조작설명서 - TP630
+
+[__SOURCE](0-about-this-manual/README.md)
+# 이 설명서에 대하여
+
+이 설명서는 HD현대로보틱스 ${cont_model} 제어기의 기본 사항과 구조 및 산업용 로봇의 공통 조작에 대해 설명합니다. 각 장에서는 기본 조작 방법뿐만 아니라 여러 응용 기능의 사용 방법에 대해 설명합니다.
+
+이 설명서에서는 협동로봇을 이용한 직접 교시와 안전 기능 설정 방법, 스폿 용접 기능, 아크 용접 기능, 포지셔너 동기 기능, 센서 동기 기능 등의 응용 기능에 대해서는 자세히 다루지 않습니다. 관련 정보에 대한 자세한 내용은 협동로봇 보수 설명서와 응용 기능별 설명서를 참조하십시오.
+
+제품을 사용하기 전에 반드시 설명서의 내용을 충분히 숙지하시기 바랍니다. 또한 필요할 때 언제든 볼 수 있도록 설명서를 가까운 장소에 보관하십시오.
+
+이 설명서는 HD현대로보틱스 제품을 구매한 고객에게 참조용으로 제공되거나 교육을 위한 내부 교육 자료로 제공되어 사용될 수 있습니다.
+
+이 설명서는 표준 사양을 기준으로 작성되었으므로 구입하신 제품의 모델에 따라 일부 내용이 다를 수 있습니다. 또한 이 설명서의 내용과 사양은 제품의 성능 향상을 위해 예고 없이 변경될 수 있으며 부정확한 내용이나 오탈자로 인해 발생하는 상황에 대해서 HD현대로보틱스는 책임이 없습니다. 개정에 관한 상세한 정보는 당사의 인터넷 웹사이트 [https://www.hd-hyundairobotics.com/](https://www.hd-hyundairobotics.com/)를 방문하여 확인하시기 바랍니다.
+
+
+
+
+[__SOURCE](0-about-this-manual/precautions.md)
+# 사전 주의사항
+
+{% include file="ko/precautions.md" %}
+
+[__SOURCE](0-about-this-manual/notation.md)
+# 표기 규약
+
+이 설명서에서는 내용의 이해를 돕기 위해 다음의 표기 규약과 안전 지시를 사용합니다.
+
+### 그림설명
+
+그림은 제품 조작 방법의 이해를 돕고 화면을 설명하는데 사용합니다. 그림을 설명할 때에는 다음과 같이 해당 부분에 숫자를 표기하고 그에 대응하는 내용을 설명합니다.
+
+![](../_assets/tp630/pane-prog-cmd-param.png)
+
+### GUI \(Graphical User Interface\)
+
+GUI는 메뉴 이름 및 버튼 이름을 대괄호 안에 넣고 옅은 배경색으로 표시합니다. 여러 메뉴를 순서대로 선택해야 할 때에는 이름 사이에 - 기호를 넣어 표시합니다.
+
+* 이름이 있는 메뉴: 수동 또는 자동 모드의 초기 화면에서 `[F1: 서비스]` 버튼을 터치하십시오.
+* 여러 메뉴: 수동 모드의 초기 화면에서 `[F2: 시스템] - 5: 초기화 - 6: 메커니즘 설정` 메뉴를 터치하십시오.
+
+
+
+### 조작키 표기법
+
+기능 조작을 위하여 티치 펜던트의 조작부에서 누르는 키는 대괄호에 넣고 옅은 배경색으로 표시합니다.
+
+* `[시작]` 키를 누르면 로봇에 작성된 프로그램의 자동 운전을 시작합니다.
+
+### 상호 참조
+
+설명서 내에서 연관된 정보로의 바로가기를 제공합니다. 상호 참조는 다음과 같이 굵은 글씨에 큰따옴표로 표시합니다.
+
+* 날짜와 시간 정보 변경에 대한 자세한 내용은 "[4.5 날짜 및 시간 설정](../4-service/5-date-time-setting.md)"을 참조하십시오.
+
+### 참고 사항
+
+제품을 사용할 때 알아 두면 좋을 유용한 사항이나 추가적인 정보를 다음과 같이 제공합니다.
+
+{% hint style="info" %}
+상태 표시줄에  ![](../_assets/eng-mode.png) 아이콘이 깜빡이면 엔지니어\(engineer\) 모드 상태입니다.
+{% endhint %}
+
+[__SOURCE](0-about-this-manual/safety-notice.md)
+# 안전 주의 사항
+
+제품의 올바른 사용과 사용자의 안전을 확보하고 재산상의 피해 방지를 위해 반드시 다음의 안전 주의 사항을 숙지한 후 제품을 사용하시기 바랍니다.
+
+### 위험
+
+{% hint style="danger" %}
+\[위험\] 긴박한 위험: 준수하지 않았을 경우 작업자가 사망하거나 중상을 입을 수 있습니다.
+{% endhint %}
+
+* 설명서의 제품 설치 내용을 숙지하고 지시 사항을 준수하여 로봇 제품과 기타 장치를 설치하십시오.
+* 소프트웨어에 치명적인 오류가 발생하면 즉시 사용을 중단하고 고객지원팀에 연락하십시오.
+* 제품의 고장이나 파손 등 문제가 있을 때에는 즉시 사용을 중단하고 고객지원팀에 문의하십시오.
+
+
+
+### 경고
+
+{% hint style="warning" %}
+\[경고\] 잠재적인 위험: 준수하지 않았을 경우 작업자가 상해를 입거나 제품이 크게 손상되는 등 재산상의 손해를 입을 수 있습니다.
+{% endhint %}
+
+
+
+* 제어기와 연결하여 사용할 안전 장비는 반드시 안전용 접점 단자 또는 Safety I/O로 설정한 Configurable digital I/O에 이중 신호로 연결하십시오. 일반 접점 단자에 연결하거나 단일 신호로 연결할 경우 규정된 안전 수준을 충족할 수 없습니다.
+* 제어기의 내부 브래킷 뒤로 손가락 등의 신체 부위를 집어 넣지 마십시오. 감전이나 상해의 위험이 있습니다.
+* 로봇 응용 시스템 제조자나 로봇 사용자는 설명서의 내용을 숙지하고 제품의 운영 교육을 이수하십시오.
+* 작업자와 사용자의 안전을 위해 제품 설치 전 반드시 안전 펜스 등 적절한 안전 시설을 마련하십시오.
+* 규격 정보를 확인하여 알맞은 고정 나사를 사용하여 지정된 토크로 체결하십시오. 나사가 헐거우면 로봇이 설치 장소에서 분리되어 추락하거나 손상될 수 있습니다.
+* 제품의 연결부\(전원 및 케이블\)에 액체나 먼지, 금속 가루 등의 전도성 이물질이 들어가지 않도록 주의하십시오. 또한 연결부를 뾰족한 물체로 찌르거나 케이블 연결 시 무리한 힘을 가하지 마십시오. 연결 단자의 부식 또는 일시적인 단락으로 제품이 폭발하거나 화재가 발생할 수 있습니다.
+* 배선 정보를 확인하고 장치 유형에 맞춰 알맞은 단자를 이용해 장치를 연결하십시오. 특히, 안전 장치는 일반 단자에 연결하면 안전 기능을 보장할 수 없으므로 반드시 안전 장치용 단자에 연결하십시오.
+* 손상된 케이블을 절대 사용하지 말고 제품 사용 중에는 전원을 분리하지 마십시오. 감전, 화재, 고장, 및 상해의 원인이 될 수 있습니다.
+* 제품을 장시간 사용하면 열이 발생하여 화상 등 상해의 위험이 있습니다. 제품을 만져야 할 경우에는 전원을 끄고 1시간 이상 방치하여 제품을 충분히 냉각한 후 작업하십시오.
+* 로봇의 움직임에 주의하여 티치 펜던트를 사용하십시오.
+* 티치 펜던트에서 치명적인 에러를 경고하는 경우 즉시 비상 정지 스위치로 로봇을 정지하고 원인을 파악하여 에러를 해결하십시오. 에러를 해결할 수 없는 경우 고객지원팀에 문의하십시오.
+* 절대 무단으로 제품을 설치, 개조, 분해 및 수리하지 마십시오. 고장 및 사고의 원인이 될 수 있습니다. 또한 이로 인한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
+
+
+
+### 주의
+
+{% hint style="warning" %}
+\[주의\] 저위험 요소 : 준수하지 않았을 경우 작업자가 경미한 상해를 입거나 제품이 손상되는 등 재산상의 손해를 입을 수 있습니다. 
+{% endhint %}
+
+
+
+* 제품을 임의로 설치 또는 개조, 분해, 수리하지 마십시오. 또한 당사의 전문가 이외의 사람이 임의로 제품을 개조하거나 부품을 부착하는 행위를 금합니다. 이로 인한 제품 고장 발생 시 무상 서비스 및 품질 보증 서비스를 받을 수 없습니다.
+* 자격이 있는 설치 전문가가 해당 국가 및 지역의 관련 규정 및 법규를 준수하여 제품을 설치해야 합니다. 제품을 설치 및 수리할 때에는 고객지원팀에 문의하여 전문가에게 의뢰하십시오.
+* 먼지가 많거나 더러운 곳에 제품을 설치 및 사용하지 마십시오. 먼지나 이물질로 인해 제품이 고장 나거나 성능에 이상이 발생할 수 있습니다.
+* 자성이 있거나 자성의 영향이 미치는 곳 또는 전자파 장해가 있는 곳에 제품을 설치 및 사용하지 마십시오. 자성에 의해 제품이 손상되거나 성능에 이상이 발생할 수 있습니다.
+* 제품 운전 시에는 헐거운 옷이나 장신구를 착용하지 말고, 머리카락이 긴 경우에는 뒤로 묶어 로봇의 관절 등에 끼이지 않도록 주의하십시오.
+* 제품 동작 중에는 작동 범위 내에 들어가거나 로봇을 만지지 마십시오. 상해의 위험이 있습니다.
+* 제품은 포장된 상태로 운반하여 파손을 피하고 습도가 낮은 건조한 장소에 보관하십시오. 포장 자재 내부에 습기로 제품이 손상되거나 고장 날 수 있습니다.
+* 제품은 온도와 습도가 변하기 쉬운 곳을 피하고, 깨끗하고 서늘하며 건조한 곳에 보관하십시오.
+* 제품 운반 시에는 올바를 자세를 유지하고 두 명 이상이 함께 작업하십시오. 허리나 팔, 다리 등의 신체 부위에 상해를 입을 수 있습니다.
+* 리프팅 장비를 이용해 제품을 운반하는 경우에는 해당 국가 및 지역의 안전 규정 및 장비 사용 지침을 준수하십시오.
+* 설명서의 운반 내용을 숙지하고 지시 사항을 준수하여 제품을 운반하십시오. 고객의 제품 운송으로 발생한 제품의 손상 및 파손에 대해 당사는 책임지지 않습니다.
+
+
+
+
+[__SOURCE](1-robot-system/README.md)
+# 1. 로봇 시스템
+
+
+[__SOURCE](1-robot-system/1-basic-constitution/README.md)
+# 1.1 기본 구성
+
+산업용 로봇이란 "자동 제어에 의한 조작\(manipulation\) 기능 및 이동 동작 기능이 탑재되어 산업 현장에서 다양한 작업을 프로그램으로 실행할 수 있는 기계"입니다. 협동로봇은 산업용 로봇의 한 종류입니다.
+
+로봇 시스템은 로봇 본체와 본체를 제어하는 제어기로 구성됩니다. 제어기에는 로봇 시스템의 설정 및 수동 조작에 사용하는 티치 펜던트가 부착됩니다.
+
+* 로봇: 물체를 운반하거나 부품을 조립하는 등 산업 현장에서 다양한 작업을 수행합니다.
+* 제어기: 티치 펜던트로 설정한 프로그램의 설정값에 따라 로봇의 동작을 조정합니다. 제어기의 입출력 포트를 이용해 다양한 외부 장비 또는 장치와 연동할 수 있습니다.
+* 티치 펜던트: 로봇 시스템 전체를 관리하는 장치입니다. 로봇에게 특정 자세를 학습시키거나 프로그램을 설정 및 제어할 수 있습니다.
+
+로봇 유형에 따른 로봇 시스템의 기본 구성의 예는 다음과 같습니다.
+
+![그림 1 LCD 로봇 시스템의 기본 구성](../../_assets/image.png)
+
+![그림 2 수직다관절로봇 시스템의 기본 구성](../../_assets/image_6.png)
+
+[__SOURCE](1-robot-system/1-basic-constitution/1-controller.md)
+### 1.1.1 제어기
+
+#### 수직다관절로봇 제어기
+
+![그림 4 제어기 앞면\(좌\) / 뒷면\(우\)](../../_assets/image_33.png)
+
+| 번호 | 이름 | 설명 |
+| :--- | :--- | :--- |
+| ![](../../_assets/c1.png) | 연결부 | 제어기에 기구 및 티치 펜던트를 연결하거나 응용 장치를 내부의 모듈과 연결하는 통로입니다. |
+| ![](../../_assets/c2.png) | 전원 스위치 | 제어기의 주전원을 켜거나 끕니다. |
+| ![](../../_assets/c3.png) | TP 보관용 고리 | 티치 펜던트를 걸어 보관합니다. |
+| ![](../../_assets/c4.png) | 비상 정지 스위치 | 긴급 상황 발생 시 비상 정지 스위치를 눌러 로봇의 동작을 정지시킵니다. |
+| ![](../../_assets/c5.png) | 냉각팬 | 제어기 내부의 가열된 공기를 외부로 강제 유출시키는 장치입니다. |
+
+[__SOURCE](1-robot-system/1-basic-constitution/2-teach-pendant.md)
+### 1.1.2 티치 펜던트
+
+티치 펜던트는 TP630을 지원합니다. 본 조작 설명서에서는 _TP630_ 모델을 기준으로 사용 방법을 설명합니다.
+
+TP630은 기존 Hi5a 제어기와 동일한 조작키 사용 환경을 제공합니다.
+
+![_그림 6 TP630 앞면\(좌\) / 뒷면\(우\)_](../../_assets/tp630/TP-hw.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">이름</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">조작키</td>
+      <td style="text-align:left">로봇의 동작을 제어하고
+        명령을 입력하거나 메뉴를
+        선택하고 설정합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">모드 스위치</td>
+      <td style="text-align:left">모드 스위치를 돌려 운전
+        모드(
+        <img src="../../_assets/sb-manual.png" alt/>수동/
+        <img src="../../_assets/sb-auto.png" alt/>자동/
+        <img src="../../_assets/sb-remote.png" alt/>원격)를 선택합니다. 티치
+        펜던트에서 모드 스위치
+        키를 빼면 선택된 운전
+        모드로 잠금 설정됩니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">디스플레이</td>
+      <td style="text-align:left">터치 스크린으로 로봇의
+        동작 상태와 설정 정보를
+        확인 및 변경합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">비상 정지 스위치</td>
+      <td style="text-align:left">긴급 상황 발생 시 비상
+        정지 스위치를 눌러 로봇의
+        동작을 정지시킵니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">USB 연결 포트</td>
+      <td style="text-align:left">이동식 저장 장치 등 USB 통신으로 접속 가능한 장치를 연결합니다.<br>
+        FAT32 포맷을 사용 바랍니다. exFAT, NTFS 포맷은 지원하지 않으므로 유의하십시오.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">마운팅 브래킷</td>
+      <td style="text-align:left">티치 펜던트를 들거나
+        걸어 보관합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c7.png" alt/>
+      </td>
+      <td style="text-align:left">인에이블링 스위치</td>
+      <td
+      style="text-align:left">
+        <p>수동 모드에서 티치 펜던트로
+          로봇 조작 시, 안전 스위치로
+          사용합니다.</p>
+        <ul>
+          <li>1단, 3단: 로봇 운전이 정지됩니다.
+            3단일 경우, 2단을 거치지
+            않고 1단으로 복귀합니다.</li>
+          <li>2단: 로봇을 조작할 수
+            있습니다.</li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c8.png" alt/>
+      </td>
+      <td style="text-align:left">케이블 연결 커넥터</td>
+      <td
+      style="text-align:left">제어기와 연결하기 위한
+        케이블을 연결하는 커넥터입니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+#### 조작키
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">조작키</th>
+      <th style="text-align:left">이름</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-shift.png" alt/>
+      </td>
+      <td style="text-align:left">SHIFT</td>
+      <td style="text-align:left">
+      <P>키의 상부(연두색)에 표시된 기능을 실행할 때는 함께 사용합니다. </P>
+        <ul>
+          <li>`[SHIFT]` 키를 특정 키와 함께
+            누르면 해당 키의 기능이
+            전환됩니다.</li>
+          <li>[스텝 전/후진] 기능 조작시 이 키를 함께 누르면, 고속 스텝 전/후진 기능이 동작합니다.</li>
+          <li>입력 표시창에서 문자열을 편집할 때는, `[←/→]` 방향키와 같이 눌러 커서(cursor)를 이동시킬 수 있습니다. </li>
+          <li>JOB 편집 창에서 `[↑/↓]`
+            키와 함께 누르면 사용
+            중인 화면을 전환할 수
+            있습니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-ctrl.png" alt/>
+      </td>
+      <td style="text-align:left">CTRL</td>
+      <td style="text-align:left"><<b>CTRL</b>> 키를 특정 키와 함께
+        누르면 해당 키에 정의된
+        기능이 실행됩니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-bwd-fwd.png" alt/>
+      </td>
+      <td style="text-align:left">스텝 전/후진</td>
+      <td style="text-align:left">
+      <p>수동모드에서 스텝단위로 전진 또는 후진할 때 사용합니다. </P>
+      <ul>
+          <li>자세한 내용은 `[조건설정]` - [2: 스텝 전/후진시 최고속]을 참고하십시오.</li>
+          <li>`[SHIFT]`키와 함께 누르면 고속 스텝 전/후진 기능이 동작합니다.
+      </ul>
+   </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-esc.png" alt/>
+      </td>
+      <td style="text-align:left">ESC</td>
+      <td style="text-align:left">
+      <p>현재 상태나, 화면을 취소합니다. </P>
+        <ul>
+          <li>키 입력이나 진행 중인
+            각종 기능을 취소합니다.</li>
+          <li>`[ESC]` 키를 누르면 변경
+            내용을 저장하지 않고
+            상위 레벨로 전환할 수
+            있습니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-axes.png" alt/>
+      </td>
+      <td style="text-align:left">축 조작키</td>
+      <td style="text-align:left">
+        <p>로봇의 각 축을 조작합니다. </P>
+        <ul>
+          <li>조인트 좌표계인 경우 각 축을 구동합니다.</li>
+          <li>로봇 좌표계인 경우 직교방향으로 구동합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-direction.png" alt/>
+      </td>
+      <td style="text-align:left">방향키</td>
+      <td style="text-align:left">
+        <p>화면의 선택 옵션이나 편집위치를 이동합니다. </P>
+        <ul>
+          <li>`[↑/↓]`
+            키를 누르면 스텝이나 펑션을 이동합니다.</li>
+          <li>단어 커서 상태에서 `[←/→]`
+            방향키를 누르면 기록된 스텝이나
+            다른 기능 인수로 이동합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-r.png" alt/>
+      </td>
+      <td style="text-align:left">R코드</td>
+      <td style="text-align:left">
+        <P>코드별로 정의된 기능을 신속히 수행합니다. </P>
+        <ul>
+          <li>R 코드로 등록된 기능을 수행하거나RESET기능이 필요할 때 사용합니다.</li>
+          <li>[R..(NO)]를 누른 후 `[ENTER]`키를 누르면, R코드의 "R0 : 스텝카운터 리셋"과 동일한 RESET 기능이 수행됩니다. 자세한 설명은 R코드 기능을 참고하십시오.</li>
+          <li>허락/거부(Yes/No)의 응답에 대해 거부(No)를 선택할 때 사용합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-enter.png" alt/>
+      </td>
+      <td style="text-align:left">Enter</td>
+      <td style="text-align:left">
+      <P>입력 정보가 반영됩니다. </P>
+        <ul>
+          <li>수치 입력 시 `[ENTER]` 키를
+            누르면 입력값이 설정에
+            적용됩니다.</li>
+          <li>허락/거부(Yes/No)의 응답에
+            대해 `[ENTER]` 키를 누르면
+            허락(Yes)이 선택됩니다.</li>
+          <li>수동 모드에서 명령문
+            수정 시, 문장 커서 상태에서
+            `[ENTER]` 키를 누르면 명령문
+            인수를 편집할 수 있는
+            단어 커서 상태로 전환됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-motor-on.png" alt/>
+      </td>
+      <td style="text-align:left">모터온</td>
+      <td style="text-align:left">
+        <p>로봇 각 축의 모터에 서보
+          전원을 공급합니다.</p>
+        <ul>
+          <li>수동 모드에서 <<b>모터온</b>>
+            키를 누르면 모터 램프가
+            깜빡입니다.</li>
+          <li>자동 모드에서 <<b>모터온</b>>
+            키를 누르면 모터 램프가
+            켜집니다.</li>
+        </ul>
+      </td>
+    </tr>
+   <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-start.png" alt/>
+      </td>
+      <td style="text-align:left">시작</td>
+      <td style="text-align:left"><<b>시작</b>> 키를 누르면 로봇에
+        작성된 프로그램의 자동
+        운전을 시작합니다. 로봇의
+        자동 운전이 시작되면
+        시작 램프가 켜지고 정지
+        램프가 꺼집니다.</td>
+    </tr>
+   <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-stop.png" alt/>
+      </td>
+      <td style="text-align:left">정지</td>
+      <td style="text-align:left">
+        <p><<b>정지</b>> 키를 누르면 자동
+          운전 중인 로봇이 일시적으로
+          멈춥니다.</p>
+        <ul>
+          <li>로봇이 정지하면 정지
+            램프가 켜지고 시작 램프가
+            꺼집니다.</li>
+          <li>로봇은 작성된 프로그램의
+            경로 수행 중에 정지된
+            상태이므로 주변 장치와
+            충돌할 위험은 없습니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-previous.png" alt/>
+      </td>
+      <td style="text-align:left">지난화면</td>
+      <td style="text-align:left">
+        <p>지난 운전 이력을 보여줍니다.</p>
+        <ul>
+          <li>작업 명령문의 실행 이력이나 에러 이력, 메시지 이력 등이 기록되는 지난 화면 대화상자를 나타냅니다.</li>
+          <li>한 번 누르면, 메인보드가 출력하는 이력을 보여주고, 한 번 더 누르면 티치펜던트가 출력하는 이력을 보여줍니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-gun.png" alt/>
+      </td>
+      <td style="text-align:left">GUN</td>
+      <td style="text-align:left">
+        <p>스텝 기록과 동시에 GUN 신호의 기록 여부를 결정합니다. 기능 선택 상태는 좌측의 LED에 표시됩니다.</p>
+        <ul>
+          <li>`[SHIFT]`키와 함께 누르면 GUN1 신호가 수동 출력됩니다.</li>
+          <li>아크 용접을 사용할 때, 자동 운전시에 LED가 점등되어 있으면 실제로 아크 용접을 진행하고, LED가 소등되어 있으면 아크 용접을 진행하지 않고 티칭된 궤적만을 확인합니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-crdsys.png" alt/>
+      </td>
+      <td style="text-align:left">툴/좌표계</td>
+      <td style="text-align:left">
+        <p>로봇 구동시 기준 좌표계를 선택합니다.</p>
+        <ul>
+          <li>축 조작 키를 누를 경우 로봇을 움직일 좌표계(축, 직교, TOOL)를 선택합니다.
+          </li>
+          <li>`[SHIFT]`와 동시에 누르면 툴 번호를 선택 받는 대화상자가 열립니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-record.png" alt/>
+      </td>
+      <td style="text-align:left">위치수정/기록</td>
+      <td style="text-align:left">
+        <p>프로그램내의 스텝을 기록할 때 즉, MOVE명령을 추가할 때 사용합니다.</p>
+        <ul>
+          <li>이 때 입력되는 MOVE 명령은 숨은 포즈로 이루어진 명령입니다.</li>
+          <li>커서가 스텝에 위치해 있을 때에는 다음 스텝을 삽입할 수 있습니다. </li>
+          <li>`[SHIFT]`키와 함께 누르면 선택된 스텝의 위치를 수정할 때 사용합니다. </li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-prog-step.png" alt/>
+      </td>
+      <td style="text-align:left">프로그램/스텝</td>
+      <td style="text-align:left">
+        <p>스텝을 선택할 때 사용합니다.</p>
+        <ul>
+          <li>`[SHIFT]`키와 함께 누르면 프로그램을 선택하는데 사용합니다. </li>
+          <li><<b>프로그램</b>>키를 2번 누르면, 프로그램 목록이 표시됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-unit-mech.png" alt/>
+      </td>
+      <td style="text-align:left">유닛/메커니즘</td>
+      <td style="text-align:left">
+        <p>메커니즘과 유닛을 선택할 때 사용합니다.</p>
+        <ul>
+          <li>메커니즘은 로봇이 0번이고 부가축에 대해서는 사용자가 초기화 설정 메뉴에서 설정하는데 따릅니다.</li>
+          <li>유닛은 `[SHIFT]`키를 누른 상태에서 이 키를 조작하여 선택할 수 있습니다. 유닛은 메커니즘의 조합으로 사용자가 특정 조합의 유닛으로 프로그램을 구성하고자 할 때 사용합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-number.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>숫자키</p>
+      </td>
+      <td style="text-align:left">
+      <p>숫자를 입력하거나 삭제합니다.</p>
+      <ul>
+          <li>`[SHIFT]`키와 함께 누르면
+            부호(- / +)나 쉼표(,)를 입력하거나,
+            명령문 또는 인수를 삭제(DEL)할
+            수 있습니다.</li>
+          <li><<b>BS</b>>: 커서가 입력된
+            위치에서 텍스트를 한
+            글자씩 지웁니다.(backspace) 또한,
+            명령어 편집 시 인수를
+            선택하고 <<b>BS</b>> 키를 누르면
+            인수 값 전체를 삭제할
+            수 있습니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](1-robot-system/2-basic-usage/README.md)
+# 1.2    기본 사용
+
+
+[__SOURCE](1-robot-system/2-basic-usage/1-power-on/README.md)
+# 1.2.1 전원 켜기
+
+{% hint style="info" %}
+전원을 켜고 끄는 방법은 제어기별로 다를 수 있습니다.
+{% endhint %}
+
+#### 수직다관절로봇 제어기
+
+로봇을 기동하려면 로봇 제어기에 전원을 공급해야 합니다.
+
+제어기 좌측의 전원 스위치를 ON 방향으로 돌리십시오. 제어기의 메인 전원이 연결됩니다. 전원이 연결되면 로봇 시스템이 부팅되어 티치 펜던트의 디스플레이가 켜지고 모든 장치가 켜집니다.
+
+
+
+![](../../../_assets/image_12.png)
+
+
+[__SOURCE](1-robot-system/2-basic-usage/1-power-on/1-input-of-the-power-to-the-mot.md)
+# 1.2.1.1 모터 전원 투입 및 조작 가능 상태
+
+티치 펜던트의 모드 스위치와 안전 플러그의 상태에 따라 모터 전원 투입 및 조작 가능 상태가 결정됩니다.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">안전 플러그</th>
+      <th style="text-align:left">모드 스위치: 수동</th>
+      <th style="text-align:left">모드 스위치: 자동</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">해제</td>
+      <td style="text-align:left">
+        <ul>
+          <li>Motor ON 가능</li>
+          <li>스텝 전후진 가능</li>
+        </ul>
+      </td>
+      <td style="text-align:left">Emergency (Motor Off)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">투입</td>
+      <td style="text-align:left">
+        <ul>
+          <li>Motor ON 가능</li>
+          <li>스텝 전후진 가능</li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>Motor ON 가능</li>
+          <li>정상 속도 운전</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+일반 산업용 로봇에는 안전 플러그를 사용합니다. 그러나 LCD 로봇에는 안전 플러그 대신 라이트 커튼을 사용합니다.
+{% endhint %}
+
+
+[__SOURCE](1-robot-system/2-basic-usage/2-power-off.md)
+# 1.2.2 전원 끄기
+
+모든 작업을 수행한 후, 로봇을 정지하고 제어기의 전원 버튼을 끄는 모든 동작을 말합니다.
+
+{% hint style="warning" %}
+* 로봇을 장시간 사용하지 않을 때에는 엔코더 배터리가 방전될 수 있으므로 로봇을 기준 위치로 이동시킨 후 전원을 해제하십시오.
+* 엔코더 배터리에 전압 저하 알람이 발생한 상태에서 전원을 해제하면 엔코더 데이터가 소멸될 수 있으므로 주의하십시오.
+{% endhint %}
+
+#### 수직다관절로봇 제어기
+
+1. 티치 펜던트의 `[정지]` 키를 누르십시오. 운전 중인 로봇이 동작을 멈추고 정지 램프가 켜집니다.
+
+2. 티치 펜던트의 비상 정지 스위치를 누르십시오. 로봇 모터에 서보 전원이 차단되어 모터가 꺼집니다.
+
+![](../../_assets/image_36.png)
+
+
+
+3. 제어기 좌측의 전원 스위치를 OFF 방향으로 돌리십시오. 로봇 시스템의 전원이 차단됩니다.
+
+![](../../_assets/image_29.png)
+
+
+[__SOURCE](1-robot-system/2-basic-usage/3-change-language-of-tp.md)
+# 1.2.3 티치펜던트 화면의 언어 변경하기
+
+티치펜던트의 언어가 맞지 않을 경우, 다음의 절차로 변경할 수 있습니다. 다음 예는 한국어 모드를 영어 모드로 변경하는 예입니다.
+
+### A. 티치펜던트 옵션에서 변경 (V70.00-00 이상에서만 지원)
+
+1. `[F1: 서비스]` 버튼을 클릭하십시오.
+
+    ![](../../_assets/tp630/service/fb-service.png)
+
+2. `11: 티치펜던트 옵션` 으로 진입하십시오.
+
+    ![](../../_assets/tp630/service/menu-tp-option.png)
+
+3. 언어에서 `English`를 선택하십시오.
+
+    ![](../../_assets/tp630/service/tp-option-lang.png)
+
+4. `[ESC]`키로 최상위 HOME 화면으로 빠져나온 후 잠시 기다리십시오.
+
+<br>
+
+### B. 티치펜던트 소프트웨어를 종료한 후 변경
+
+1. `[F1: 서비스]` 버튼을 클릭하십시오.
+
+    ![](../../_assets/tp630/service/fb-service.png)
+
+2. `9: TP 응용프로그램 종료`를 선택하십시오.
+
+    ![](../../_assets/tp630/service/exit-application.png)
+
+3. 좌 하단의 언어 콤보박스를 클릭하십시오.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang.png)
+
+    {% hint style="info" %}
+
+    V60.32-00 미만 버전은 우 상단의 지구본 아이콘을 클릭하십시오.
+
+    ![](../../_assets/tp630/service/autorun-sub-lang-old.png)
+
+    {% endhint %}
+
+4.	팝업 메뉴에서 `English`를 선택하십시오.
+
+5.	우하단의 `[run TP]` 버튼을 클릭하고, 15초 정도 기다리십시오.
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/README.md)
+# 1.2.4 ${cont_model} 티치 펜던트 화면
+
+로봇의 동작을 제어하거나 로봇과 연동된 장치를 관리할 수 있습니다. ${cont_model} TP630 티치 펜던트 화면은 다음과 같이 10개의 화면 창으로 구성됩니다.
+<br>
+
+![](../../../_assets/tp630/TP-main.png)
+
+| 번호 | 설명 | 
+| :--- | :--- | 
+| ![](../../../_assets/c1.png) | 제목 표시줄 : 티치펜던트의 통신 상태와 운전 모드, 로봇 시스템의 상태와 메커니즘을 표시합니다. ([1.2.3.1 제목 표시줄](1-title-area.md)) |
+| ![](../../../_assets/c2.png) | 상태 표시줄 : 현재 로봇의 운동 모드 및 각종 설정을 표시합니다.  ([1.2.3.2 상태 표시줄](2-status-bar.md)) |
+| ![](../../../_assets/c3.png) | R버튼 막대 : 화면 우측 메뉴 그룹입니다.  ([1.2.3.3 R(Right)버튼 막대](3-Rbt-bar.md)) |
+| ![](../../../_assets/c4.png) | 모니터링 창 : 운전 중 각종 가동 정보를 보여줍니다.  ([1.2.3.4 모니터링 창](4-mon-area.md)) |
+| ![](../../../_assets/c5.png) | 기능버튼 줄 : 화면 하단 메뉴 그룹입니다. 주요 설정 및 모니터링 기능을 지원합니다.  ([1.2.3.5 기능버튼 줄](5-function-buttons.md)) |
+| ![](../../../_assets/c6.png) | 입력 표시줄 : 작업 편집창에 명령어를 입력할 수 있습니다. ([1.2.3.6 입력 표시줄](6-input-area.md)) |
+| ![](../../../_assets/c7.png) | 안내 표시줄 : 조작 중 각종 안내 메시지를 보여줍니다.  ([1.2.3.8 안내 표시줄](7-guide-area.md)) |
+| ![](../../../_assets/c8.png) | 작업 편집창 : JOB 프로그램을 편집하는 영역입니다.  ([1.2.3.8 작업 편집창](8-work-area.md)) |
+| ![](../../../_assets/c9.png) | 기록조건 표시줄 : 기록할 스텝의 조건을 표시합니다.  ([1.2.3.9 기록조건 표시줄](9-record-cnd-area.md)) |
+| ![](../../../_assets/c10.png) | L버튼 막대  : 화면 좌측 메뉴 그룹입니다.  ([1.2.3.10 L버튼 막대](10-Lbt-bar.md)) |
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/1-title-area.md)
+# 1.2.4.1 제목 표시줄
+
+TP 화면의 최상단에 로봇 시스템의 상태를 표시합니다.
+
+<br>
+
+![](../../../_assets/tp630/TP-main-title.png)
+
+
+| 번호 | 설명 | 
+| :--- | :--- | 
+| ![](../../../_assets/c1.png) | 네트워크 상태를 표시합니다. (![](../../../_assets/flag-comm-ok.png) : 연결O, ![](../../../_assets/flag-comm-ng.png) : 연결X)|
+| ![](../../../_assets/c2.png) | usb 메모리가 삽입된 경우 해당 아이콘으로 표시됩니다. |
+| ![](../../../_assets/c3.png) | 연속패스(CONTPATH) 모드를 표시합니다. (CP# : CP(연속패스)+모드번호) <br> (참고: [R360](../../../8-r-code/15-r360.md?cont_model=${cont_model})) |
+| ![](../../../_assets/c4.png) | 응용 기능별 현재 상태를 표시합니다.(SW : 건서치 기록 상태, PBk : 도장 구간) |
+| ![](../../../_assets/c5.png) | 포지셔너 동기 상태를 표시합니다.(M:S{스테이션번호}) |
+| ![](../../../_assets/c6.png) | 협조제어 상태를 표시합니다.(I:독립, M:마스터 지정, S:슬레이브 지정) |
+| ![](../../../_assets/c7.png) | 축 제어 상태를 표시합니다.(j_{축번호} off인 경우 표시) |
+| ![](../../../_assets/c8.png) | 축 잠금 상태를 표시합니다.|
+| ![](../../../_assets/c9.png) | 엔코더 배터리 이상 상태를 표시합니다. (이상 상태인 경우 점멸)|
+| ![](../../../_assets/c10.png) | 감속기 수명 이상 상태를 표시합니다.(이상 상태인 경우 축 번호 표시 및 점멸)|
+| ![](../../../_assets/c11.png) | 사용자 레벨을 표시합니다. (E : 엔지니어모드) <br> (참고: [R314](../../../8-r-code/12-r314.md?cont_model=${cont_model}))|
+| ![](../../../_assets/c12.png) | PLC 동작 상태를 표시합니다. |
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/2-status-bar.md)
+# 1.2.4.2 상태 표시줄
+
+로봇 운전을 위한 각종 상태 값을 표시합니다. 6개 칸에 표시되는 정보 중 툴(2), 메카니즘(3), 좌표계(4)는 해당 칸을 터치함으로써 설정 할 수 있습니다.
+
+![](../../../_assets/tp630/TP-main-status.png)
+
+
+
+| 번호 | 설명 |
+| :--- | :--- |
+| ![](../../../_assets/c1.png) | 로봇의 운전 방식을 표시합니다. <li>수동: 조그로 로봇을 제어하고, JOB 프로그램을 작성하는 로봇 교시 모드입니다.</li> <li>자동: JOB 프로그램을 재생하여 로봇을 자동으로 운전하는 모드입니다.</li> <li>원격수동: 모드를 원격에서 I/O신호로 결정하는 상태입니다. (현재 상태: 수동 모드)</li> <li>원격자동: 모드를 원격에서 I/O신호로 결정하는 상태입니다. (현재 상태: 자동 모드)</li> |
+| ![](../../../_assets/c2.png) | 선택된 툴 번호를 확인하고 설정합니다.<br> `[툴]` 버튼을 터치한 후 설정창에서 툴 번호를 입력하고 `[확인]` 버튼을 터치하십시오.|
+| ![](../../../_assets/c3.png) | 선택된 메커니즘을 확인하고 변경합니다. <br> 원하는 메커니즘 그룹이 나타날 때까지 [메커니즘] 버튼을 반복해서 터치하십시오. 초기 설정에서 로봇 모델이 선택되지 않은 경우, 메커니즘 그룹이 표시되지 않고 미초기화 표시가 나타납니다. |
+| ![](../../../_assets/c4.png) | 조그 조작의 기준 좌표계를 확인하고 설정합니다. <br> 원하는 좌표계 방식이 나타날 때까지 <b>[좌표계]</b> 버튼을 반복해서 터치하십시오. 선택한 기준 좌표계에 따라 변경된 축의 이름이 화면 우측 조그 막대에 나타납니다.<li> 축(Joint) 좌표계: 조그 막대에 각 축의 이름이 표시됩니다. 축 이름 우측의 <b>[-/+]</b> 버튼을 터치하면 해당하는 축을 움직일 수 있습니다.</li> <li> 로봇(Robot) 좌표계: 조그 막대에 X, Y, Z, RX, RY, RZ와 부가축이 표시됩니다. 로봇 좌표계를 기준으로 로봇의 툴 끝(TCP, Tool Center Point)을 이동 및 회전할 수 있습니다.</li> <li> 사용자(User) 좌표계: 조그 막대에 X, Y, Z, RX, RY, RZ와 부가축이 표시됩니다. 사용자 좌표계를   기준으로 로봇의 툴 끝(TCP)을 이동 및 회전할 수 있습니다.</li> <li> <img src="../../../_assets/bt-crd-tool (1) (1) (2).png" alt/>툴(Tool) 좌표계: 조그 막대에 X, Y, Z, RX, RY, RZ와 부가축이 표시됩니다. 툴 좌표계를 기준으로 로봇의 툴 끝(TCP)을 이동 및 회전할 수 있습니다.</li>|
+| ![](../../../_assets/c5.png) | 축별 또는 직교 조그의 속도 레벨과 사용 모드를 표시합니다. <li>[HI/LOW]: 원하는 축별 또는 직교 조그의 속도 레벨(1: 저속 ~ 8: 고속)이 나타날 때까지 버튼을 반복하여 터치하십시오. `[SHIFT]`버튼과 함께 터치하면 최저 또는 최고 레벨을 한 번에 설정할 수 있습니다.</li> |
+| ![](../../../_assets/c6.png) | 날짜와 시간 정보가 표시됩니다. <br> `[F1: 서비스] - 8: 날짜, 시간설정` 메뉴를 터치하면 날짜와 시간 정보를 변경할 수 있습니다. ([4.5 날짜 및 시간 설정](../../../4-service/5-date-time-setting.md))|
+
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/3-Rbt-bar.md)
+# 1.2.4.3 R(Right)버튼 막대
+
+화면 우측 5개의 버튼을 표시하며 화면을 터치할 수 있습니다. 비활성 상태의 버튼은 회색으로 표시됩니다. 자동모드에서는 [전/후] 버튼이 비활성화됩니다.
+
+![](../../../_assets/tp630/TP-main-rbt.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>범용 출력, 필드버스 출력 등을 수동으로 출력하거나, 변수에 값을 수동 설정합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>모니터링용 창을 분할하거나 통합하기 위해 사용합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>명령문 편집이나 주석문을 편질할 때 사용합니다. 터치스크린으로 키보드처럼 사용할 수 있습니다.</p>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>사용자 키를 기능버튼 줄에 정의하여 사용합니다. </p>
+        <p>스폿/아크 응용을 위해 등록된 기능을 표시하며, 자세한 사용법은 해당 응용 매뉴얼을 참고하시기 바랍니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>기능버튼 줄의 메뉴가 한 페이지를 넘어갈 때 사용합니다.</p>
+        <p>기능버튼이 7개 이상이 경우에 활성화되며, 버튼을 누를 때마다 다음 7개 버튼으로 화면이 전환됩니다. `[SHIFT]` 키와 함께 누르면 역방향으로 전환됩니다. </p>
+      </td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/4-mon-area.md)
+# 1.2.4.4 모니터링 창
+
+각 축별 위치데이터, I/O 데이터, 각 응용 별 상태 데이터를 실시간으로 표시하는 창입니다.  
+창 선택과 창 조정(분할, 닫기)은 [창조정] 버튼으로 실행하며 총 3개의 모니터 창을 표시할 수 있습니다. ([6. 모니터링](../../../6-monitoring/README.md))
+
+<br>
+
+![](../../../_assets/tp630/TP-main-mon.png)
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/5-function-buttons.md)
+# 1.2.4.5 기능버튼 줄
+
+화면 하단 7개의 버튼으로 구성된 기능버튼들 입니다.현재의 조작화면에 따라 구성이 달라집니다. 작업 프로그램 편집 중에는 명령어 목록이나 명령어 파라미터 설정 값 등의 버튼이 표시됩니다. 아래 표는 최상위 화면에서 표시되는 버튼에 대한 설명입니다.
+
+![](../../../_assets/tp630/TP-main-functions.png)
+
+
+
+
+| 번호 | 설명 | 
+| :--- | :--- | 
+| ![](../../../_assets/c1.png) | 변수 및 파일관리 등 사용자 편의기능과 관련된 메뉴들이 있습니다. ([4.서비스](../../../4-service/README.md)) |
+| ![](../../../_assets/c2.png) | 로봇 구동, 응용 프로그램 등을 위한 상세 설정 메뉴들이 있습니다. ([7.시스템](../../../7-system/README.md)) |
+| ![](../../../_assets/c3.png) | 입력신호 대기나 용접완료 신호 대기 시에 `[SHIFT]`+`WAIT해제`를 누르면 강제로 신호 대기를 해제할 수 있습니다. `시스템** > 1: 사용자 환경] 에서 'wait 강제 해제' 항목이 유효로 되어 있으면 신호 대기를 강제 해제 할 수 없습니다. |
+| ![](../../../_assets/c4.png) | 에러나 경고 이력을 표시합니다. 내용과 발생시각, 발생 프로그램 번호, 스텝번호, 축데이터, 입출력 상태 등을 확인합니다. ([2.5.2 에러 처리](../../../2-operation/5-error-info/2-error-handle.md))|
+| ![](../../../_assets/c5.png) | 수동모드의 초기화면에 [명령입력] 버튼이 표시됩니다. 작업 편집창에 명령문을 입력하는 용도로 사용됩니다. ([3.2.2.1 일반 명령문 입력](../../../3-programming/2-prog-edit/1-statement.md))|
+| ![](../../../_assets/c6.png) | 스텝 전/후진이동 시 최고속도, 경로 복구 여부 등 로봇의 운전 조건을 설정합니다. ([5.조건 설정](../../../5-conditional-setting/README.md))|
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/6-input-area.md)
+# 1.2.4.6 입력 표시줄
+
+명령어, 문자 또는 함수 등 편집할 내용의 입력값이 표시되는 영역입니다.  
+기능버튼 줄의 `명령어 입력`을 사용하지 않고 입력 표시창에 명령어를 바로 기록할 수 있습니다. 정의되지 않은 명령어나 문법 오류시 아래와 같은 에러가 발생합니다.
+
+![](../../../_assets/tp630/pop-error-nocmd.png)
+
+<br>
+
+아래 표는 move 명령어의 각 인자에 해당하는 입력 표시창 내용입니다.
+
+<br>
+
+|명령어 인자|관련 입력 내용|
+|--|--|
+|![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-input.png)|
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/7-guide-area.md)
+# 1.2.4.7 안내 표시줄
+
+사용자의 조작을 안내 또는 지시하는 메시지를 표시하며 출력(print) 명령문에서 출력방향을 티치펜던트로 선택했을 때 출력 메시지가 표시되는 영역입니다.
+
+<br>
+
+아래 표는 move 명령어의 각 인자에 해당하는 안내문구입니다.
+
+<br>
+
+|명령어 인자|관련 안내문구|
+|--|--|
+|![](../../../_assets/tp630/pane-prog-mov-argument.png)|![](../../../_assets/tp630/TP-main-guide.png)|
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area.md)
+# 1.2.4.8 작업 편집창
+
+JOB 프로그램을 편집하는 작업 영역입니다. 자세한 프로그램 작성법은 "[3. 프로그램 작성](../../../3-programming/README.md)"을 참고하시기 바랍니다.
+
+<br>
+
+![](../../../_assets/tp630/pane-job-area.png)
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        선택된 JOB 프로그램의 이름을 표시합니다.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>프로그램 내 스텝과 펑션 번호를 표시합니다.</p>
+        <ul>
+          <li>P101 : 현재 JOB 프로그램 번호</li>
+          <li>S3 : 현재 선택된 행의 스텝번호</li>
+          <li>F1 : 현재 선택된 행의 펑션번호</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+    </tr>
+  </tbody>
+</table>
+
+ 편집 시도 중 파일 속성에 따라 아래와 같은 에러가 발생할 수 있습니다. 파일 속성에 관한 내용은  "[4.2.4 파일 보호](../../../4-service/2-file-manager/4-file-protect.md)" 절을 참고하십시오.
+
+![](../../../_assets/tp630/pop-error-fileprotect.png)
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/9-record-cnd-area.md)
+# 1.2.4.9 기록조건 표시줄
+
+기록할 스텝의 조건(속도, accuracy, tool #, option 등)을 표시합니다. L버튼 막대 중 `기록조건` <img src="../../../_assets/tp630/lbt-record.png" width="35mm"></img>
+을 눌러서 변경 가능하며 자세한 내용은 "[3.2.2.3 기록 조건](../../../3-programming/2-prog-edit/2-statement-input/3-rec-cond.md)"을 참고하십시오.</td>
+
+<br>
+
+![](../../../_assets/tp630/TP-main-recordcnd.png)
+
+
+[__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/10-Lbt-bar.md)
+# 1.2.4.10 L(Left)버튼 막대
+
+화면 좌측 5개의 버튼을 표시하며 화면을 터치할 수 있습니다. 비활성 상태의 버튼은 회색으로 표시됩니다. 자동모드에서는 `기록조건`과 `조그인칭` 버튼이 비활성화됩니다.
+
+<br>
+
+![](../../../_assets/tp630/TP-main-lbt_new.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>기록할 스텝의 속도, accuracy, 툴 번호, 스텝 option 등의 조건을 미리 편집하는데 사용합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>스텝 전/후진 시 스텝 단위로 실행할지 펑션 단위로 실행할지, 아니면 작업 프로그램 끝가지 연속으로 실행할지를 선택합니다. 현재 선택된 상태는 버튼에 아이콘으로 표시됩니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>인칭 레벨에서 지정한 양 만큼만 로봇을 수동으로 움직이고자 할 때 사용합니다. 조그 인칭이 선택되면 녹색으로 표시됩니다.</p>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>커서를 특정 명령문에 위치한 상태에서 누르면 그 명령문과 관계된 속성(Quick Open) 기능이 실행됩니다. </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p> 상황별 해당 도움말을 표시합니다. 커서가 명령문 위에 있을 때는 명령문의 문법 형식을 보여줍니다. 에러 발생 시 이 키를 누르면 에러에 대한 내용과 조치 방법 등을 확인할 수 있습니다.</p>
+      </td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
+
+<Br>
+
+{% hint style="info" %}
+조그 인칭 모드
+
+일반 모드에서는 조그키를 누르고 있는 동안 로봇이 계속 움직이지만, 인칭 모드에서는 각 인칭 레벨의 설정 값만큼만 이동한 후 정지하므로 세밀하게 조작할 수 있습니다.
+{% endhint %}
+
+[__SOURCE](2-operation/README.md)
+# 2. 운전
+
+운전은 로봇에게 작업 내용을 지시하고 그 내용을 확인하는 행위를 말합니다. 산업용 로봇에서는 일반적으로 수동\(manual\) 운전 방식과 자동\(auto\) 운전 방식을 사용합니다. 수동 운전은 로봇에 작업 내용을 직접 지시하는 것이고 자동 운전은 지시된 작업 내용을 로봇이 반복하여 실행하도록 하는 것입니다.
+
+
+[__SOURCE](2-operation/1-manual-operation/README.md)
+# 2.1 수동 운전
+
+수동 운전이란 안전한 속도에서 로봇을 직접 교시하고 확인하는 운전 방법입니다.
+
+
+[__SOURCE](2-operation/1-manual-operation/1-how-to-op.md)
+# 2.1.1 운전 방법
+
+조그키를 이용하여 로봇에 작업 내용을 지시하고 지시된 작업 내용을 확인하는 방법은 다음과 같습니다.
+
+1. 안전 펜스와 로봇의 동작 범위 내에 사람 또는 장애물 유무를 확인하십시오.
+
+2. 티치 펜던트의 모드 스위치를 돌려 운전 방식을 수동 모드로 설정하십시오.
+
+
+
+![](../../_assets/tp630/TP-hw-switch-manual.png) 
+
+3. ${cont_model} 티치 펜던트 화면의 상태 표시줄에서 운전 방식이 수동 모드로 설정되어 있는지 확인하십시오.
+
+![](../../_assets/tp630/sbar-mode.png)
+
+* 자동 모드로 설정된 경우, 티치 펜던트의 모드 스위치를 돌려 운전 방식을 수동 모드로 설정하십시오.
+
+4. `[SHIFT]`+`[프로그램]` 키를 누르십시오. 프로그램 선택창이 나타납니다.
+
+![](../../_assets/tp630/k-prog-step.png)
+
+5. 프로그램 선택창의 목록에서 프로그램을 선택하거나 프로그램 번호를 입력한 후 `[ENTER]` 키를 누르십시오.
+
+![](../../_assets/tp630/dlg-prog-sel.png)
+
+ 6. 티치 펜던트의 `[MOT.ON]` 키를 누르십시오. 모터 램프가 깜빡이고 로봇 각 축의 모터에 서보 전원 공급을 위한 준비 상태가 됩니다.
+
+7. 티치 펜던트 뒷면의 인에이블링 스위치를 누르십시오. 모터 램프가 켜지고 모터의 브레이크가 해제되어 서보 전원이 공급됩니다. 로봇을 움직일 수 있는 상태가 됩니다.
+
+8. 조그키를 이용해 속도 레벨이나 좌표계의 이동 조건에 따라 로봇을 조작하십시오.
+
+* 로봇의 위치를 저장하려면, 원하는 위치에서 `[기록]` 키를 누르십시오. 스텝이 기록됩니다.
+* 스텝에 필요한 기능을 기록하려면, `명령입력` 버튼을 터치하십시오.
+* 수동으로 전진 또는 후진하며 기록된 로봇의 위치를 확인하려면 `[STEP.FWD/STEP.BWD]` 키를 누르십시오. `[STEP.FWD/STEP.BWD]` 키를 누르고 있는 동안 로봇이 스텝 단위로 이동합니다. 로봇이 목표 스텝에 도달하면 명령어 앞에 수행 완료 표시\( . \)가 나타나고 정지합니다.
+
+[__SOURCE](2-operation/1-manual-operation/2-op-speed.md)
+# 2.1.2    운전 속도 조정
+
+수동 모드에서는 스텝 전후진 운전과 수동 조그 조작을 이용해 로봇을 조작합니다. TP 우측 상단의 아래와 같은 속도 표시창에, 현재 설정된 속도가 표시 됩니다.
+
+![](../../_assets/tp630/sbar-spd-manual.png)
+
+상단의 '수동속도" 는 수동모드에서만 표시되며 자동모드 일 경우 '재생속도"로 표시가 변경됩니다. 속도 창 하단 좌측 8는 조그 속도 레벨을 나타내고, 우측 200mm/s는 스텝 전/후진시의 제한속도를 의미합니다. 
+여기서 제한 속도라 함은 스텝 전/후진시 제한 되는 속도를 나타내며 좌측의 < 표시는 같거나 작음을 의미합니다. 
+
+
+예를 들어, 기록된 스텝의 속도가 1000 mm/s 이고 수동모드의 제한 속도가 200 mm/s 라면 스텝 전/후진시 스텝의 이동 속도는 200 mm/s 로 제한됩니다.
+만약, 이 때 기록 속도가 100 mm/s 라면 이 속도는 수동속도인 250 mm/s 보다 작으므로 로봇은 100 mm/s 로 이동하게 됩니다.
+
+
+{% hint style="info" %}
+스텝 제한 속도를 설정은 "[5.1 운전 조건 설정](../../5-conditional-setting/1-op-cond-set.md)"를 참고하시기 바랍니다..
+{% endhint %}
+
+조그 조작은 `[SPEED]` 키를 사용하여 속도를 level 1 에서 level 8까지 단계별로 조절 할 수 있습니다. 이 때에도 로봇 툴의 속도는 수동 속도 이하로 제한됩니다.
+
+<br>
+
+{% hint style="info" %}
+자동 모드일 때, `[속도조절]` 버튼에는 스텝 제한 속도\(mm/sec\) 대신 재생 속도\(%\)가 표시됩니다.
+{% endhint %}
+
+
+{% hint style="warning" %}
+\[주의\] 툴 데이터의 길이와 각도가 실제와 다르게 설정되어 있으면 수동 모드에서 툴이 너무 빠르게 동작할 수 있습니다. 로봇을 조작하기 전에 반드시 툴 데이터가 올바르게 설정되어 있는지 확인하십시오.
+{% endhint %}
+
+
+
+
+[__SOURCE](2-operation/1-manual-operation/3-step-fwd-bwd.md)
+# 2.1.3 스텝 전후진
+
+스텝 전후진이란 수동 모드에서 로봇을 조작하는 방법의 하나로 기록된 프로그램을 재생하는 것입니다. 스텝 전후진으로 로봇을 조작하면 기록된 프로그램의 경로와 상호 인터록 관계를 안전한 속도 범위에서 확인할 수 있습니다.
+
+스텝 전후진 시 실행 단위는 ${cont_model} 티치 펜던트 화면 좌측의 `실행단위` 버튼에서 확인 및 설정할 수 있습니다.
+
+![](../../_assets/tp630/lbt-runto.png)  
+
+
+스텝 전후진 시 실행 단위를 설정하려면, 원하는 옵션이 나타날 때까지 `실행단위` 버튼을 반복해서 터치하십시오.
+
+![](../../_assets/tp630/lbt-runto-sw.png)
+
+* `cmd`: 명령어 한 행씩 실행합니다.
+* `step`: 한 스텝씩 실행합니다.
+* `end`: end 명령문까지 실행합니다.
+
+실행 단위가 **cmd** 또는 **step**으로 설정되어 있을 때, 로봇은 설정된 Accuracy 영역을 무시하고 기록된 스텝까지 도달하지만 **end**로 설정되어 있을 경우에 로봇은 자동 모드에서의 재생 시와 동일한 경로로 동작합니다.
+
+실행 단위를 **cmd** 또는 **step**으로 설정하고 스텝 전후진을 수행할 때는 코너링이 없는 경로상에서 로봇이 동작합니다. 코너링에 대한 자세한 내용은 "[2.3.1.4 Accuracy](../3-step/1-step-cmd-param/4-accuracy.md)"를 참조하십시오.
+
+![그림 12 cmd/step 설정 시 재생 전후진 경로](../../_assets/path-cmd-step-pback-fwd-bwd.png)
+
+실행 단위를 **end**로 설정하고 스텝 전후진을 수행하면 정지 위치에 따라 로봇의 경로가 달라집니다. 즉, 로봇이 코너링이 아닌 다른 곳에서 정지한 후 전진을 실행하면 원래 코너링의 경로를 복구하지만, 후진을 실행하면 기록된 스텝까지 이동하며 이 때 기록된 스텝에서는 정지 후 즉각 이전 스텝으로 이동합니다. 로봇이 코너링에서 정지한 후에는 전후진 시 모두 이전의 코너 경로를 유지합니다.
+
+![그림 13 end 설정 시 재생 전후진 경로](../../_assets/path-end-pback-fwd-bwd.png)
+
+로봇이 코너링에서 정지한 후 전진을 실행하면 원래 코너 경로를 따라 동작합니다. 여기서 다시 후진을 실행하다가 이전 스텝에 다 도달하지 못한 상태에서 다시 전진을 실행할 때는 원래의 코너링의 경로를 만들지 못하는 경우가 있습니다. 즉, 스텝의 거리가 원래 보다 짧아져서 기존의 Accuracy 조건을 만족할 수 없으면 원래의 코너 경로 보다 작게 코너 경로가 만들어집니다.
+
+![그림 14 스텝 후진 후 전진 시 로봇 경로 변경 예](../../_assets/path-step-bwd-then-fwd.png)
+
+스텝 전후진 시의 최고 속도와 펑션 실행 여부를 설정할 수 있습니다. ${cont_model} 티치 펜던트 화면 우 하단의 `[조건설정]` 버튼을 터치한 후 설정창에서 속도값과 펑션 실행 옵션을 설정하십시오.
+
+![](../../_assets/tp630/cond-set-step-fwd-bwd-spd.png)
+
+* \[2: 스텝 전/후진시 최고속\]: 수동 속도에 설정한 값과 동일합니다.
+* \[3: 스텝 전진시 펑션 실행\]: 펑션 실행 옵션을 선택합니다.
+  * Off: 스텝 전후진 시 펑션을 실행하지 않습니다. 외부 I/O 조건과 무관하게 로봇 경로만 확인할 수 있습니다. 외부 시스템과의 인터록이 동작하지 않으므로 주의해야 합니다.
+  * On: 모든 펑션을 실행합니다. 외부 인터록이 완성된 후 사용해야 합니다.
+  * I On: 입력 대기 펑션만 실행합니다. 외부 인터록에 의한 안전 확인이 필요한 경우 사용하십시오.
+
+
+[__SOURCE](2-operation/2-automatic-operation/README.md)
+# 2.2 자동 운전
+
+자동 운전이란 로봇이 작업할 내용을 교시한 후 로봇에게 작업을 시키는 운전 방법입니다.
+
+
+[__SOURCE](2-operation/2-automatic-operation/1-how-to-op.md)
+# 2.2.1 운전 방법
+
+로봇에게 작업 내용을 교시하고 작업을 시키는 방법은 다음과 같습니다.
+
+1.	안전 펜스와 로봇의 동작 범위 내에 사람 또는 장애물 유무를 확인하십시오. 
+
+2.	티치 펜던트의 모드 스위치를 돌려 운전 방식을 자동 모드로 설정하십시오.
+
+    ![](../../_assets/tp630/TP-hw-switch-auto.png)
+
+3.	티치 펜던트 화면의 상태 표시줄에서 운전 방식이 자동 모드로 설정되어 있는지 확인하십시오.
+
+    ![](../../_assets/tp630/sbar-mode-auto.png)
+
+* 수동 모드로 설정된 경우, 티치 펜던트의 모드 스위치를 돌려 운전 방식을 자동 모드로 설정하십시오
+
+4.	초기 화면의 우 하단에서 `[조건설정]` 버튼을 터치하십시오. 조건 설정창이 나타납니다.
+
+    ![](../../_assets/tp630/fbt-condset.png)
+
+
+
+5.	프로그램의 반복 옵션과 로봇의 운전 속도를 설정하십시오.
+
+    ![](../../_assets/tp630/cond-set-cycle-auto-spd.png)
+
+    * \[1: 동작 사이클\]: 자동 운전 시 실행되는 프로그램의 반복 여부를 설정합니다.
+    * \[6: 자동운전 속도비율\]: 자동 모드에서 프로그램 재생 시 로봇의 운전 속도\(%\)를 설정합니다. 예를 들어, 운전 속도를 100으로 설정하면 스텝의 기록 속도로 로봇이 이동하고 50으로 설정하면 기록 속도의 50% 비율로 로봇이 이동합니다.
+
+6.	티치 펜던트의 `[시작]` 키를 누르십시오. 시작 램프가 켜지고 로봇이 작성된 프로그램에 따라 작업을 수행합니다.
+
+
+
+
+[__SOURCE](2-operation/2-automatic-operation/2-adjust-op-spd.md)
+# 2.2.2 운전 속도 조정
+
+자동 운전 시에는 ${cont_model} 티치 펜던트 화면 상단의 상태 표시줄에 프로그램 재생 시 로봇의 재생 속도\(%\)가 표시됩니다. 표시된 재생 속도는 스텝에 기록되어 있는 스텝 속도에 대한 로봇의 이동 속도의 비율입니다.
+
+![](../../_assets/tp630/speed_rate.png)
+
+| No. | 항목 | 모드 | 설명 |
+|-----|-----|-----|-----|
+| ① | 재생 속도 | Auto | 스텝 속도에 대한 로봇의 이동 속도의 비율 (1 - 100) |
+| ② | 스텝 속도 | Auto/Manual | 해당 스텝의 지령 속도 (단위: mm/sec, cm/min, %, sec) |
+| ③ | 이동 속도 | Auto/Manual | 재생 속도 \(%\) * 스텝 속도 |
+
+
+재생 속도를 조작하는 방법은 다음과 같습니다.
+
+1. 자동 모드에서 `[CTRL]`+`[SPEED.HI]` 또는 `[CTRL]`+`[SPEED.LOW]` 키로 재생 속도 조절합니다.  
+재생 속도가 10 미만인 경우 1 단위로 증감합니다.  
+재생 속도가 10 이상인 경우 10 단위로 증감합니다.
+
+2. 자동 모드에서 재생 속도 표시 영역을 터치하면 속도 조절 다이얼로그가 팝업됩니다.  
+재생 속도를 1 - 100 범위로 숫자를 입력 하거나 슬라이드 바를 조작하여 최소 단위 1% 로 값을 조정할 수 있습니다.  
+다이얼로그의 확인 버튼을 누르면 입력한 값으로 재생 속도가 변경됩니다.
+
+{% hint style="warning" %}
+\[주의\] 모션 중 실시간 재생 속도 조절을 반영하는 동작 사양은 다음과 같습니다.
+* 일반적으로 모션 동작 중에 재생 속도를 조절하면 실시간으로 현재 모션에 반영됩니다.
+* 단, SAFETY MODE 에서는 현재 모션 종료 후, 다음 스텝부터 변경된 재생 속도를 반영합니다.
+* 또한, 아크 기능이 활성화된 상태에서는 모션 중 실시간 재생 속도 변경을 반영하지 않습니다.
+* 재생 속도 값을 1 -> 100 또는 100 -> 1 등의 큰 값의 변경은 권장하지 않습니다.
+{% endhint %}
+
+{% hint style="info" %}
+수동 모드일 때, 상태 표시줄의 `속도조절` 버튼에는 재생 속도\(%\) 대신 스텝 제한 속도\(mm/sec\)가 표시됩니다.
+{% endhint %}
+
+자동 모드에서는 조건 설정의 자동 운전 속도 비율 값을 변경하여 프로그램을 수정하지 않고 로봇의 운전 속도를 조절할 수 있습니다.
+
+${cont_model} 티치 펜던트 화면 우 하단에서 `조건설정` 버튼을 터치한 후 설정창에서 \[2: 스텝 전후진시 최고속\] 과 \[6: 자동운전 속도비율\] 옵션의 값을 설정하십시오.
+
+
+<br>
+
+![](../../_assets/tp630/cond-set-step-fwd-bwd-spd-auto-spd.png)
+
+
+[__SOURCE](2-operation/3-step/README.md)
+# 2.3 스텝
+
+스텝은 작업 프로그램에 기록되어 로봇이 취하는 특정한 자세\(각 축의 위치 또는 툴 끝의 위치\)를 뜻합니다. 즉, 로봇이 움직여 도달한 하나의 위치가 스텝입니다.
+
+로봇은 한 스텝에서 다른 스텝으로 이동하며 다양한 기능을 수행합니다. 로봇이 한 스텝에서 다른 스텝으로 이동하기 위해서는 이동 명령 move와 이동 조건이 필요합니다.
+
+* 이동 명령 move: 로봇 프로그래밍의 기본 단위로 로봇 본체의 이동을 지시하는 명령어입니다. 로봇의 동작에 필요한 최소한의 정보로 구성됩니다.
+* 이동 조건: 로봇의 위치, 보간, 속도, Accuracy, 툴 번호 등의 스텝 명령문 인수\(PARAMETER\) 등을 포함합니다.
+
+
+
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/README.md)
+# 2.3.1 스텝 명령문 인수
+
+스텝 명령문 인수\(Parameter\)는 로봇 스텝의 이동에 필요한 이동 명령 move 이외의 이동 조건으로 로봇의 위치, 보간, 속도, Accuracy, 툴 번호 등이 있습니다.
+
+스텝 명령문 인수에는 기본 인수와 선택 인수가 있습니다. 기본 인수는 스텝에 필수적인 인수이고 선택 인수는 필요에 따라 추가할 수 있는 인수입니다.
+
+스텝 명령문은 다음과 같이 구성됩니다.
+
+![](../../../_assets/image_77.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">인수</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">보간</td>
+      <td style="text-align:left">
+        <p>스텝과 스텝 사이의 보간된
+          경로</p>
+        <p>P (축보간), L (직선보간), C
+          (원호보간), SP (정치툴보간
+          Off), SL (정치툴 직선보간), SC
+          (정치툴 원호보간)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">포즈</td>
+      <td style="text-align:left">
+        <p>위치를 기록하는 인수.
+          이 인수가 생략되고 명령문
+          뒤에 포즈가 지정될 수도
+          있습니다(숨은 포즈).</p>
+        <p>Target 포즈(X, Y, Z, Rx, Ry, Rz, Cfg){좌표계}
+          + 시프트(X, Y, Z, Rx, Ry, Rz){좌표계}</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">속도</td>
+      <td style="text-align:left">로봇의 운전 속도(단위:
+        mm/sec, cm/min, %, sec)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">Accuracy</td>
+      <td style="text-align:left">로봇이 목표 스텝으로
+        이동할 때 발생하는 현재
+        위치와 기록 위치의 허용
+        오차값(0 ~ 7)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">툴 번호</td>
+      <td style="text-align:left">사용하는 툴의 번호(0 ~
+        31)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">대입문</td>
+      <td style="text-align:left">move 출발 시, 수행 할 대입문
+      
+  왼쪽부터 순차적으로 각 대입문이 수행됩니다.</td>
+    </tr>
+        <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c7.png" alt/>
+      </td>
+      <td style="text-align:left">정지 조건</td>
+      <td style="text-align:left">로봇이 다음 명령(스텝
+        또는 펑션)을 수행하기
+        위해 이동을 정지하기
+        위한 조건</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c8.png" alt/>
+      </td>
+      <td style="text-align:left">주석</td>
+      <td style="text-align:left">스텝에 대한 설명</td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/1-interpolation.md)
+# 2.3.1.1 보간
+
+보간은 스텝과 스텝 사이의 보간된 경로를 말하며 \[스텝 N\]의 보간 방법은 \[스텝 N-1\]과 \[스텝 N\] 사이의 경로 형태를 결정합니다.
+
+#### 
+
+#### P-PTP \(Point To Point\) 
+
+툴 끝이 아닌 각 축을 기준으로 두 스텝 사이의 경로를 보간하는 방식으로 일반 보간 방식 중 가장 빠릅니다. 회전형 조인트로 구성된 산업용 로봇의 특성상 툴 끝 경로는 일반적으로 C 자 형태로 형성됩니다.
+
+![그림 15 P-PTP 보간의 툴 끝 경로 예](../../../_assets/image_73.png)
+
+#### 
+
+#### L-직선보간 
+
+직교 공간상에서 두 스텝 사이를 직선으로 이동합니다. 아크 용접 구간 등 직선 경로가 필요한 경우에 사용하며 다음과 같이 손목 자세를 자동으로 바꾸며 이동합니다.
+
+![그림 16 L-직선 보간 예](../../../_assets/image_48.png)
+
+직선보간 시 특정한 조건에서는 로봇이 손목 자세를 자동으로 바꾸지 못합니다. 이 조건을 Singular 자세라고 합니다.
+
+{% hint style="info" %}
+자세 보간이 불가능한 Singular 자세는 다음과 같습니다.
+
+* B축이 Dead zone 근처인 경우: Dead zone 설정에 대한 자세한 내용은 "[7.4.5 B축 비사용구역](../../../7-system/4-robot-parameter/5-b-axis-deadzone.md)"을 참조하십시오.
+* B축의 부호가 바뀌는 경우: B축 각도의 부호가 \( - → + \) 또는 \( + → - \) 로 전환되는 경우입니다.
+* R2, R1축의 각도 변화가 180도를 초과하는 경우
+* S축\(1축\) 회전 중심을 B축\(5축\) 중심이나 툴 끝이 지나가는 경우: 자세는 물론, 궤적 오차나 에러가 발생할 수 있습니다.
+* S축의 각도 변화가 180 도를 초과하는 경우
+{% endhint %}
+
+#### 
+
+#### C-원호보간
+
+두 스텝 사이를 원호로 생성되는 경로로 이동합니다. 원을 결정하려면 3점이 필요한데 이를 선정하는 기준은 다음과 같습니다.  
+
+* \[스텝 n\]에서 \[스텝 n+1\]로 이동할 때 \[스텝 n+1\]의 보간 방법이 원호보간 C이면 다음 스텝 \[스텝 n+2\]를 참조합니다. 
+* \[스텝 n+2\]의 보간 방법이 원호보간 C이면, \[스텝 n\] \[스텝 n+1\] \[스텝 n+2\]로 원을 결정하고 그 중에서 \[스텝 n\] ~ \[스텝 n+1\] 구간의 호를 따라 이동합니다. 
+* \[스텝 n+2\]의 보간 방법이 원호보간이 아니면, 이전 스텝 \[스텝 n-1\]을 참조하여 \[스텝 n-1\]\[스텝 n\]\[스텝 n+1\]로 원을 결정하고 그 중에서 \[스텝 n\] ~ \[스텝 n+1\] 구간의 호를 따라 이동합니다.
+
+![그림 17 C-원호보간 예1](../../../_assets/image_96.png)
+
+원의 결정에 필요한 3점 선정 기준을 이용하면 연속원호의 경우에도 동일점 이중등록을 이용하여 프로그램을 작성할 수 있습니다.
+
+이와 같이 이동할 경로를 고려하여 스텝의 보간 방법을 결정하고 동일점 이중등록을 이용하면 원하는 대로 프로그램을 작성할 수 있습니다.
+
+![그림 18 C-원호 보간 예2](../../../_assets/image_101.png)
+
+#### 
+
+#### 정치툴 보간
+
+로봇이 작업물을 소유하고, 외부의 고정된 툴을 이용하여 작업하는 경우에 사용합니다. 이 경우에 보간 동작은 로봇이 소유하고 있는 작업물을 기준으로 이루어집니다.  정치툴 보간의 종류에 대한 자세한 내용은 "[7.3.6.2 정치툴 좌표계](../../../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)"를 참조하십시오.
+
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/2-pose.md)
+# 2.3.1.2 포즈
+
+포즈는 위치를 기록하는 인수입니다. \[명령입력\] 버튼을 이용하여 이동 명령 move를 입력한 경우는 tg\(target\) 인수에 포즈식을 지정해야 합니다. `[기록]` 키를 이용해 move문을 입력한 경우에는 tg 인수가 나타나지 않습니다. `[기록]` 키를 누르는 순간의 로봇 본체의 위치와 자세가 기록되는데 JOB 편집 화면에는 표시되지 않으므로 이것을 숨은 포즈라고 합니다.
+
+${cont_model} 티치 펜던트 화면 우측의 메뉴 버튼을 이용하여 포즈를 입력하는 방법은 다음과 같습니다.
+
+1. 포즈 변수를(po1) 선언합니다.   
+   `명령입력` > var_io > var] 선택 후 'po1' 을 입력합니다.
+
+2. 변수를 초기화합니다.  
+   `cur.pose` 버튼을 이용하여 변수는 꼭 포즈타입으로 초기화해야 합니다.
+   
+3. 선언과 초기화된 변수를 실행한 후 마침표(.)가 찍혔는지 확인합니다.
+4. `[명령입력]` 버튼을 터치한 후 `motion`을 선택하고 move 명령문을 입력하십시오.
+
+![](../../../_assets/tp630/fbt-cmd-input-s.png)
+![](../../../_assets/tp630/fbt-motion.png)
+
+5. move 명령어가 선택된 상태로 `속성` 버튼을 터치한 후 현재의 로봇 포즈 속성을 설정하고 `[확인]` 버튼 터치하십시오.
+
+![](../../../_assets/tp630/prg-step-pose.png)
+
+<br>
+
+
+포즈 변수와 쉬프트 변수는 다음의 형식으로 저장됩니다.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">포즈 변수</th>
+      <th style="text-align:left">쉬프트 변수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">(X, Y, Z, Rx, Ry, Rz, {좌표계}, {config.})</td>
+      <td style="text-align:left">(X, Y, Z, Rx, Ry, Rz, {좌표계})</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p>{좌표계}:
+          <br />&quot;base&quot; = 베이스 좌표계
+          <br
+          />
+        </p>
+        <p>&quot;robot&quot; = 로봇 좌표계
+          <br />
+        </p>
+        <p>&quot;user{n}&quot; = 사용자 좌표계(n은
+          번호)
+          <br />
+        </p>
+        <p>&quot;joint&quot; = 축 좌표계
+          <br />
+        </p>
+        <p>&quot;encoder&quot;= 엔코더</p>
+      </td>
+      <td style="text-align:left">
+        <p>{좌표계}:</p>
+        <p>&quot;base&quot; = 베이스 좌표계
+          <br
+          />
+        </p>
+        <p>&quot;robot&quot; = 로봇 좌표계
+          <br />
+        </p>
+        <p>&quot;user{n}&quot; = 사용자 좌표계(n은
+          번호)
+          <br />
+        </p>
+        <p>&quot;joint&quot; = 축 좌표계</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/3-speed.md)
+# 2.3.1.3 속도
+
+로봇의 운전 속도는 다음 4 종의 단위를 사용하여 표시합니다. 모든 보간 방법에서 사용할 수 있습니다.
+
+* mm/sec, cm/min: 로봇의 툴 끝\(TCP, Tool Center Point\)의 최고 속도를 설정합니다. 로봇의 최고 속도는 위치, 가감속 파라미터 등에 따라 제어기에서 자동으로 계산됩니다. 설정값이 로봇 성능의 최고 속도 한계보다 클 경우, 로봇은 최고 속도 한계로만 동작합니다.  
+* sec: 로봇의 이동 시간을 설정합니다. 로봇의 최단 이동 시간은 위치, 가감속 파라미터 등에 따라 제어기에서 자동으로 계산됩니다. 설정값이 로봇 성능의 최단 시간 한계보다 짧을 경우, 로봇은 최단 시간 한계로만 동작합니다.  
+* %: 로봇이 낼 수 있는 최고 속도에 대한 로봇의 이동 속도의 비율을 설정합니다. 100%로 설정하면 로봇이 허용 범위 내의 최고 속도로 동작합니다.
+<br>
+<br>
+
+### 메커니즘 지정 속도 계획
+
+
+* {mech:메커니즘 번호,spd:속도}(속도 단위) : 선택한 메커니즘 번호 기준으로 해당 스텝 속도 궤적을 계획합니다.
+* 코드 예시
+
+```python
+S2   move P,spd={mech:1,spd:100}mm/sec,accu=0,tool=0
+```
+
+| 메커니즘 지정 속도 계획 (메커니즘 100mm/sec)| 로봇 속도 계획 (로봇 100mm/sec)|
+|---|---|
+| ![alt text](../../../_assets/tp630/Vel_Profile_2Mec_Addaxis.gif) | ![alt text](../../../_assets/tp630/Vel_Profile_1Mec_Rob.gif) |
+
+* 상기 노란색 원은 메커니즘 1로 설정한 부가축입니다. 
+  * 메커니즘 지정 속도 : 부가축(메커니즘 1)이 100mm/sec 속도에 맞는 궤적을 만듭니다.
+  * 기본 설정 : 로봇이 100mm/sec 속도에 맞는 궤적을 만듭니다.
+<br>
+
+{% hint style="info" %}
+메커니즘 지정 속도 계획 기능은 V60.32-00 버전부터 사용 가능합니다.
+
+* mm/sec 또는 cm/min인 경우에만 사양이 적용됩니다. 
+* 선택한 메커니즘이 정지 상태일 때, 로봇 속도 기준으로 이동합니다. 
+* 부가축이 회전 타입일 때, `시스템 - 5: 초기화 - 5:부가축 파라미터 설정`의 세부 사항에서 설정된 회전 반경 기준으로 mm/sec 또는 cm/min을 계획합니다.
+* 아크 기능 중 부가축 회전 포지셔너 정지 위빙일 때, 포지셔너 위의 작업물 회전 반경으로 속도를 계획합니다.(포지셔너 캘리브레이션이 완료된 상태여야 합니다.) 
+{% endhint %}
+
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/4-accuracy.md)
+# 2.3.1.4 Accuracy
+
+로봇이 목표 스텝을 진행할 때 그 스텝을 통과하는 정밀도\(기록 위치에 대한 접근 정도\)를 결정합니다. 로봇이 목표 스텝으로 이동할 때 발생하는 현재 위치와 기록 위치의 오차가 일정 수치보다 작으면 다음 스텝으로 이동합니다. 이때의 허용 오차값이 Accuracy입니다.
+
+Accuracy에 의해 새롭게 만들어진 Accuracy 범위\(0 ~ 7\) 내에 있는 경로를 코너링 경로라고 합니다. 일반적으로 Accuracy가 클수록 코너링 속도가 빨라지므로 이동 시간 측면에서 유리합니다.
+
+![그림 19 Accuracy에 따른 P2의 경로 변화](../../../_assets/image_53.png)
+
+Accuracy 0이 가장 정밀하고 Accuracy 7은 오차가 가장 큽니다. Accuracy는 목표 스텝 양쪽 궤적 중 짧은 궤적 길이의 1/2보다는 크게 적용되지 않습니다. 즉, 위의 예에서 "Accuracy ≤ min\(P1-P2, P2-P3\) / 2" 수식을 적용할 수 있습니다. 이 수식에서는 TCP 거리로 설명하였으나 각도에서도 동일한 개념을 적용할 수 있습니다.
+
+Accuracy level의 적용 값은 로봇의 경우에는 로봇의 툴 끝 거리 및 자세 각도로, 부가축의 경우에는 직동축은 길이, 회전축은 각도로 정의되며, 이 값은 `시스템 - 3: 로봇 파라미터 - 6: Accuracy` 메뉴에서 직접 변경할 수 있습니다. Accuracy level의 적용 값에 대한 자세한 내용은 "[7.4.6 Accuracy](../../../7-system/4-robot-parameter/6-accuracy.md)"를 참조하십시오.
+
+다음의 그림은 Accuracy level 값에 따라 코너링 경로가 어떻게 생성되는지 나타냅니다. 일반적인 6축 다관절 로봇과 부가축이 있는 경우 Accuracy 값은 TCP \(툴 끝 거리\), ORN \(자세 각도\), AUX \(부가축 거리\)를 개별적으로 설정할 수 있습니다. 해당 Accuracy level 값을 모두 만족시켜야 하므로 TCP, ORN, AUX 중 가장 작은 값을 기준으로 코너링 경로를 생성합니다. 코너링 경로는 항상 Convex hull property를 만족하면서 속도 변화에 무관하게 일정한 곡선으로 생성됩니다. 다만, 서보지연에 의해 저속과 고속에서는 수 밀리미터\(mm\)의 오차가 발생할 수 있습니다.
+
+![그림 20 Accuracy level 값에 따른 코너링 경로 생성](../../../_assets/image_79.png)
+
+{% hint style="info" %}
+Accuracy level 값에 따른 코너링 경로 생성 방식은 모든 보간 종류에서 동일하게 적용됩니다. P 보간인 경우에는 TCP 거리 Accuracy가 적용되지만 오차가 발생할 수 있습니다.
+{% endhint %}
+
+코너링 경로는 Convex hull property에 의해 다음의 convex polygon 영역을 벗어나지 않습니다.
+
+![그림 21 Convex polygon 영역 내의 코너링 경로의 모든 점](../../../_assets/image_87.png)
+
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/5-tool-no.md)
+# 2.3.1.5 툴 번호
+
+로봇 위치는 툴 끝의 위치와 자세로 결정됩니다. 사용하는 툴의 번호\(0 ~ 31\)를 지정합니다. 툴 설정에 대한 자세한 사항은 "[7.4.1.1 툴 데이터 설정](../../../7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)"을 참고하십시오.
+
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/6-until.md)
+# 2.3.1.6 정지 조건
+
+until 다음의 조건식을 만족하면 로봇은 이동을 정지하고 다음 명령\(스텝 또는 펑션\)을 수행합니다.
+
+until 다음의 조건식의 값은 result\(\) 함수의 리턴값을 통해 확인할 수 있습니다. move 동작이 조건식에 의해 종료되었는지 확인할 수 있습니다.
+
+![그림 22 정지 조건의 예](../../../_assets/image_46_1.png)
+
+{% hint style="info" %}
+로봇 언어에 대한 자세한 내용은 "[${cont_model} 로봇제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+[__SOURCE](2-operation/3-step/1-step-cmd-param/7-comment.md)
+# 2.3.1.7 주석
+
+스텝에 대한 설명을 주석으로 입력합니다. 주석 내용은 소프트 키보드를 이용해 편리하게 입력할 수 있습니다. "[3.2.4.4 소프트 키보드](../../../3-programming/2-prog-edit/4-statement-edit/4-softkeyboard.md)" 를 참고하십시오.
+
+
+[__SOURCE](2-operation/3-step/2-step-pose-modify/README.md)
+# 2.3.2 스텝 위치 기록 및 변경
+
+`[기록]` 버튼을 이용해 기록된 스텝의 로봇 위치 및 자세를 기록하거나 변경합니다.
+
+
+[__SOURCE](2-operation/3-step/2-step-pose-modify/1-joint-crd-sys.md)
+# 2.3.2.1 축 좌표 기록 좌표
+
+수동 모드에서 `시스템 - 1: 사용자 환경` 메뉴의 `1: POSE 기록 형태` 옵션이 축 좌표로 설정된 경우, move 명령문에서 `속성` 버튼을 터치하십시오. 그림과 같이 속성창이 나타납니다. 엔코더로 기록된 로봇의 자세는 위치만 확인할 수 있고 위치 데이터는 수정할 수 없습니다.
+
+![](../../../_assets/tp630/lbt-property.png)
+
+![](../../../_assets/tp630/dlg-property-axis.png)
+
+[__SOURCE](2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)
+# 2.3.2.2 베이스 및 로봇 기록 좌표
+
+로봇의 위치와 자세는 좌표계에 따라 다르게 나타낼 수 있습니다. 주행 축이 없는 경우, 일반적으로 베이스 좌표와 로봇 좌표가 동일합니다. 주행 축이 정의된 경우, 로봇 툴의 위치와 자세는 베이스 좌표와 로봇 좌표에 따라 다르게 나타납니다.
+
+수동 모드에서 `[F2: 시스템 - 1: 사용자 환경` 메뉴의 `1: POSE 기록 형태` 옵션이 베이스 또는 로봇으로 설정된 경우, move 명령문에서 `[속성]` 버튼을 터치하십시오. 속성창에서 로봇 툴의 위치와 자세를 확인할 수 있습니다.
+
+{% hint style="info" %}
+Pose 기록 형태를 변경하려면 고객지원팀에 문의하여 전문가에게 의뢰하거나 엔지니어에게 문의하십시오.
+{% endhint %}
+
+하나의 툴 끝 위치 및 방향에 대해서, 기구의 특성상 여러 자세가 있을 수 있으므로, 하나의 자세로 정의하려면 로봇 형태\(config.\)를 지정해야 합니다.
+
+협동로봇의 경우, 기구학적 구조에 의해 소프트 리밋에 제한될 수 있습니다. 로봇이 동작하지 않을 때 소프트 리밋을 해제하거나 큰 값으로 설정하여 사용할 수 있습니다.
+
+* auto \(자동\): 현재 로봇이 취하고 있는 자세에 대하여 이후의 항목들을 설정하지 않고 자동으로 결정합니다. 지정하지 않으면 아래의 항목들의 지정여부로 결정합니다.
+* back \(뒤쪽\): 로봇의 툴 끝이 로봇 좌표계의 X축-방향인 뒤쪽입니다. 지정하지 않으면 + 방향인 앞쪽입니다.
+* down \(하\): H축과 V축의 관계입니다. 지정하면 하, 지정하지 않으면 상입니다.
+
+
+![그림 23 H축과 V축 자세: 상\(좌\), 하\(우\)](../../../_assets/image_58_1.png)
+
+* flip \(플립\): B축의 좌표가 + 값인 플립입니다. 지정하지 않으면 - 값인 논플립\(non-flip\)입니다. 그림의 적색 화살표는 손목축의 상부 방향을 나타냅니다.
+
+![그림 24 Flip \(좌\) / Non-flip \(우\) 자세](../../../_assets/image_75.png)
+
+* S (`|S|>=180`): S축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다. 
+* B (`|B|>=180`): B축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다.
+* R2 (`|R2|>=180`): R2축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다.
+* R1 (`|R1|>=180`): R1축 각도의 절대값이 180도 이상입니다. 지정하지 않으면 180도 미만입니다.
+
+좌표계는 \[포즈변수\].crd로 저장되며\(예: po32.crd\) 다음의 문자열 중 하나가 지정됩니다. 공문자열이면 기본값이 joint로 인식됩니다.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p>베이스 좌표계 = &quot;base&quot;
+          <br
+          />
+        </p>
+        <p>로봇 좌표계 = &quot;robot&quot;
+          <br />
+        </p>
+        <p>축 좌표계 = &quot;joint&quot;
+          <br />
+        </p>
+        <p>엔코더 = &quot;encoder&quot;
+          <br />
+        </p>
+        <p>사용자 좌표계 = &quot;u1&quot; ~ &quot;u10&quot;
+          <br
+          />
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](2-operation/4-r-code.md)
+# 2.4 R코드
+
+R코드는 특정한 기능에 할당한 고유의 코드 번호입니다. 자주 사용하는 기능에 고유의 코드 번호를 지정해 두어 해당 기능을 신속하게 사용할 수 있습니다. R코드에 대한 자세한 내용은 "[8. R코드](../8-r-code/README.md)"를 참조하십시오.
+
+${cont_model} 티치 펜던트의 \[R\] 키를 누른 후 코드 번호를 입력하고 `[확인]` 버튼을 터치하십시오. 미리 지정된 기능이 실행됩니다.
+
+![](../_assets/tp630/k-r.png)
+
+
+[__SOURCE](2-operation/5-error-info/README.md)
+# 2.5 에러 정보
+
+문제가 발생하면 ${cont_model} 티치 펜던트 화면 하단의 이력 표시줄에 알림이 나타나 약 1분 동안 깜빡입니다. 에러 코드와 알림 메시지, 에러 발생 시점을 확인할 수 있습니다.
+
+![](../../_assets/tp630/wg-alarm.png)
+
+
+[__SOURCE](2-operation/5-error-info/1-error-type.md)
+# 2.5.1 에러 유형
+
+로봇 시스템의 문제\(trouble\)에는 에러와 경고가 있습니다.
+
+* 에러\(error\): 로봇 동작을 멈춰야 할 만큼 중대한 문제로, 알림 메시지의 코드 번호는 E로 시작합니다.
+
+![](../../_assets/image_91.png)
+
+* 경고\(warning\): 로봇 동작은 계속되지만 대응 조치 수행 여부를 확인해야 하는 문제로, 알림 메시지의 코드 번호는 W로 시작합니다.
+
+![](../../_assets/image_102.png)
+
+
+
+
+[__SOURCE](2-operation/5-error-info/2-error-handle.md)
+# 2.5.2 에러 처리
+
+시스템 고장이나 조작 오류 등 다양한 시스템 문제를 확인하고 처리하는 방법은 다음과 같습니다.
+
+* 경고나 에러가 발생한 시점에 안내 표시줄에 코드 번호와 이름을 포함한 메시지가 뜹니다.
+
+![](../../_assets/tp630/wg-alarm.png)
+
+* 티치펜던트 하단 기능버튼 줄에서 [이력] 버튼을 터치하십시오. 에러 및 경고 이력이 새 창으로 나타납니다.
+  
+  * 에러 및 경고 이력은 시간순으로 정렬되어 나타납니다. 위에 표시된 이력일 수록 최근에 발생한 에러입니다. 가장 최근에 발생한 문제는 노란 바탕색으로 하이라이트됩니다.
+
+![](../../_assets/tp630/fbt-log.png)
+
+![](../../_assets/tp630/wg-alarm-log.png)
+
+* ${cont_model} 티치 펜던트 화면 좌측의 \[도움말\] 버튼을 터치하십시오. 에러 코드와 알림 메시지, 문제의 원인과 조치 방법을 확인할 수 있습니다.
+
+![](../../_assets/tp630/lbt-help.png)
+
+![](../../_assets/tp630/help-alarm.png)
+
+
+
+
+
+
+[__SOURCE](2-operation/6-log.md)
+# 2.6 이벤트 이력 (event log)
+
+과거로부터 현재 시점에서 발생한 일정 개수의 에러, 경고, 알림, 시작/정지, 조작, I/O 값의 변화, 로봇언어 실행 등 이벤트의 이력이 보관됩니다. (보관되는 최대 개수는 타입에 따라 다릅니다.)<br>
+각 이력의 타입과 메시지, 발생 시각, 발생 시점의 프로그램/스텝/펑션 번호와 관련 보조정보를 확인할 수 있으며, 이를 문제 원인의 분석과 대응에 단서로 활용할 수 있습니다.
+
+패널 선택창에서 하단의 \[이력\]을 터치하십시오. 이력창이 나타납니다.
+           
+
+![](../_assets/tp630/log/11_fb_log.PNG)
+
+각종 이벤트 이력을 확인할 수 있습니다. 오른쪽 위방향 화살표를 터치하십시오.
+
+![](../_assets/tp630/log/21_log.PNG)
+
+아래 그림과 같이 이력에 대한 필터 옵션과 보조정보들이 표시됩니다. 한번 더 누르면 닫을 수 있습니다.
+
+![](../_assets/tp630/log/31_log.PNG)
+![](../_assets/tp630/log/44_di.PNG)
+
+{% hint style="info" %}
+보조정보의 표시는 V60.30-01부터 지원됩니다.
+{% endhint %}
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c1.png"/>
+      </td>
+      <td style="text-align:left">
+        보조정보 : 에러와 경고는 발생한 시점의 시스템의 상태가 같이 기록되며, 보조정보 창에서 이를 확인할 수 있습니다. 상단의 탭을 클릭하여 원하는 보조정보를 선택해 확인할 수 있습니다. 켜진 입출력 신호값은 노란바탕으로 표시되며, 할당된 사용자 입출력이면 볼드체로 표시됩니다.
+        <ul>  
+          <li>Pose : 로봇, 부가 축 값입니다. (단위: mm 혹은 deg.)</li>
+          <li>S/In : 시스템입력(전용입력)신호의 값입니다. 첫 8byte만 기록됩니다. (sib0~7)</li>
+          <li>S/Out : 시스템출력(전용출력)신호의 값입니다. 첫 8byte만 기록됩니다. (sob0~7)</li>
+          <li>D/In : 사용자입력(범용입력)신호의 값입니다. fb0의 첫 32byte만 기록됩니다. </li>(fb0.dib0~31)
+          <li>D/Out : 사용자출력(범용출력)신호의 값입니다. fb0의 첫 32byte만 기록됩니다. </li>(fb0.dob0~31)
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c2.png"/>
+      </td>
+      <td style="text-align:left">
+        필터 버튼으로 원하는 타입의 이력만 표시할 수 있습니다. 필터 버튼을 켜면 해당 타입을 표시하고, 끄면 감춥니다.
+        <ul>
+          <li>[전부]: 모든 필터버튼을 한꺼번에 끄거나 켭니다.</li>
+          <li>[+E]/[+W]: 에러 또는 경고 이력을 확인합니다.</li>
+          <li>[+N]: 알림(Notice) 이력을 확인합니다.</li>
+          <li>[+ST]: 로봇의 기동(START)과 정지(STOP) 이력을 확인합니다.
+          <li>[+P]: 주기적으로 기록되는 상태 이력을 확인합니다.</li>
+          <li>[+OP]: 사용자 조작 이력을 확인합니다.</li>
+          <li>[+IO]: 입출력 신호의 변화 이력을 확인합니다.</li>
+          <li>[+H]: JOB 프로그램의 실행 이력을 확인합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c3.png"/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[<img src="../_assets/bt-menu.png"/>]: 팝업 메뉴를 엽니다.
+            <ul>
+              <li>log 파일로 저장: 이벤트들은 먼저 메모리 버퍼에 저장되고 버퍼가 차면 자동으로 파일로 저장됩니다. 이 메뉴를 선택하면 아직 버퍼에 있는 이력들도 즉시 파일로 저장합니다.</li>
+              <li>log 파일 클리어: 메모리 버퍼의 이력을 클리어하고 이력 파일을 모두 삭제합니다.(삭제된 파일은 복구할 수 없습니다.)</li>
+            </ul>
+          </li>
+          <li>[
+            <img src="../_assets/bt-lock.png"/>]: 새로운 이력이 화면에 표시되는 것을 잠급니다. 잠그더라도 새로 발생하는 이력은 계속 기록되며, 화면 갱신만을 막는 것입니다. 이력 화면에 계속 갱신되어, 확인이 방해될 때 활용할 수 있는 기능입니다.잠금 버튼을 한번 더 누르거나, 이력창을 닫았다가 열어서 잠금을 풀 수 있습니다.</li>
+          <li>[
+            <img src="../_assets/bt-trash.png"/>]: 화면에 표시된 이력을 클리어합니다. 화면만 클리어하는 것이고, 내부적으로 기록된 이력은 삭제되지 않습니다.</li>
+          <li>[
+            <img src="../_assets/bt-refresh.png"/>]: 이력 화면을 클리어한 상태에서 이 버튼을 누르면, 이력을 다시 가져와 화면에 표시합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../_assets/c4.png"/>
+      </td>
+      <td style="text-align:left">선택한 타입의 이력 목록입니다. 새로 발생한 이벤트는 상단에 노란 바탕색으로 표시됩니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](2-operation/7-user-key/README.md)
+# 2.7 사용자 키
+
+${cont_model} 티치 펜던트 화면 우측의 사용자키 영역의 버튼에 원하는 기능을 할당하여 로봇 티칭 시 편리하게 사용할 수 있습니다.
+
+
+[__SOURCE](2-operation/7-user-key/1-user-key-region.md)
+# 2.7.1 사용자키 영역 전환
+
+원하는 영역이 나타날 때까지 ${cont_model} 티치 펜던트 화면 우측의 \[사용자키\] 버튼을 터치하십시오. 메뉴 버튼 영역이 사용자키 영역으로 전환됩니다. 사용자키 영역은 사용자키를 터치할 때마다 전환됩니다. 키 신호 출력 기능과 스폿용접이나 아크용접 등의 로봇 응용 기능이 제공되며, 설치된 플러그인 앱의 기능이 제공되기도 합니다.
+
+![그림 25 사용자키 영역 전환](../../_assets/tp630/user-bar/user-bar.png)
+
+* `[SHIFT]` 키를 누른 상태에서 `사용자키` 버튼을 터치하면 반대 방향으로 영역을 전환할 수 있습니다.
+
+* 키 신호 출력 기능 영역은 버튼이 등록되지 않은 초기 상태에서는 비어 있습니다.
+
+[__SOURCE](2-operation/7-user-key/2-button-registration/README.md)
+# 2.7.2 영역별 버튼 등록
+
+사용자키 영역에 원하는 기능을 버튼으로 등록합니다.
+
+
+
+
+[__SOURCE](2-operation/7-user-key/2-button-registration/1-key-signal-output.md)
+# 2.7.2.1 키 신호 출력 기능 영역
+
+`키 신호 출력`은 원하는 변수를 F버튼에 할당하여, 버튼 조작으로 해당 변수의 값에 1이나 0을 대입할 수 있는 기능입니다. 주로, 출력 변수를 할당한 F버튼 조작으로 I/O 출력 신호를 켜거나 끄는데 사용합니다. (일반 변수, alias, 출력변수 등 모든 종류의 변수를 지정할 수 있습니다.)
+
+HOME 화면 우측의 `[F4: 사용자키]`를 눌러 `키 신호 출력` 버튼을 열 수 있습니다. 설정을 하지 않았다면, 모든 버튼이 비어있을 것입니다.
+
+아래 방법으로 버튼을 설정할 수 있습니다;
+
+1.	`키 신호 출력` 버튼이 열린 상태에서, `[CTRL]+[사용자키]` 버튼을 터치하십시오. 키 신호 출력 설정창이 나타납니다.
+
+2.	버튼에 표시할 기능 이름과 옵션을 설정한 후 `[F7: 확인]` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/ctrl-key-outsignal.png)
+
+* `제목` : 버튼에 표시할 이름
+* `on-변수` : 변수명을 지정하면 버튼을 켜는 순간 해당 변수에 1이 대입됩니다.
+* `off-변수` : 변수명을 지정하면 버튼을 끄는 순간 해당 변수에 1이 대입됩니다.
+* 토글 :
+  + 체크 함 : 버튼이 누를 때마다 ON/OFF 토글 동작을 합니다.
+  + 체크 안 함 : 버튼이 누를 때 ON되고, 뗄 때 OFF됩니다.
+* `자동 모드 시 허용` :
+  + 체크 함 : 자동 모드 중에도 이 기능이 동작합니다.
+  + 체크 안 함 : 자동 모드 중에는 이 기능이 동작하지 않습니다.
+* `자동 모드 시 OFF` : 자동 모드로 전환하는 순간 이 기능에 설정한 변수들이 모두 OFF됩니다.
+
+{% hint style="info" %}
+`on-변수`, `off-변수`에는 가령 3.5라고 입력하고 `[ENTER]`를 누르면 fb3.do5가 입력되고, 5라고 입력하고 `[ENTER]`를 누르면 do5가 입력됩니다.
+혹은 하단의 F버튼 [fb], [do], [so] 을 사용하여 입력해도 됩니다.
+{% endhint %}
+
+3. `키 신호 출력` 버튼을 열고 `SHIFT` 키와 함께 등록한 F키를 터치하여 설정값이 제대로 적용되는지 확인하십시오.
+
+![](../../../_assets/tp630/rbt-userkey-keysig.png)
+
+
+{% hint style="info" %}
+`[F2: 시스템] - 2: 제어 파라미터 - 2: 입출력 신호 설정 - 5: 키 신호 출력]` 메뉴에서도 동일한 설정화면에 진입할 수 있습니다. 자세한 내용은 "[7.3.2.8 키 신호 출력](../../../7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)"을 참조하십시오.
+{% endhint %}
+
+[__SOURCE](2-operation/7-user-key/2-button-registration/2-rob-appl-cfg.md)
+# 2.7.2.2 로봇 응용 사용자키 설정
+
+원하는 영역이 나타날 때까지 ${cont_model} 티치 펜던트 화면 우측의 `[사용자키]` 버튼을 터치하십시오. F 버튼 영역이 스폿용접 막대, 아크용접 막대 등 로봇응용 사용자키 영역으로 전환됩니다.
+
+![그림 25 사용자키 영역 전환](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
+
+`ctrl`키를 누른 상태에서 `[사용자키]`버튼을 누르면, 사용자 버튼의 배치를 조정할 수 있는 설정화면이 열립니다.
+
+화면 하단의 리스트는 선택 가능한 F버튼들의 리스트이며, `[화살표 상]`/`[화살표 하]`로 커서를 이동할 수 있습니다.
+화면 상단은 사용자 버튼의 배치이며, `[화살표 좌]`/`[화살표 우]`로 커서를 이동할 수 있습니다.
+`[ENTER]` 키 혹은 `[선택]` 버튼을 누르면, 선택된 F버튼이 사용자 버튼으로 배치됩니다.
+`[DEL]` 키 혹은 `[삭제]` 버튼을 누르면, 선택된 위치의 버튼이 삭제되어 빈 자리가 됩니다.
+
+배치를 완료한 후 `[확인]` 버튼을 누르면, 사용자 버튼 배치가 저장됩니다.
+
+
+* 스폿 응용 기능에 대한 자세한 내용은 별도의 "[${cont_model} 기능 설명서 - 스폿 용접](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+* 아크 응용 기능에 대한 자세한 내용은 별도의 "[${cont_model} 기능 설명서 - 아크 용접](https://hrbook-hrc.web.app/#/view/doc-arc-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+[__SOURCE](2-operation/8-coord-sys/README.md)
+# 2.8 좌표계
+
+로봇의 이동 방향을 결정하기 위해 공간상의 좌표를 사용합니다. ${cont_model} 제어기에는 축 좌표계, 로봇 좌표계, 사용자 좌표계, 툴 좌표계가 있습니다.
+
+
+
+
+[__SOURCE](2-operation/8-coord-sys/1-jog-key.md)
+# 2.8.1 조그키
+
+수동 모드에서 사용합니다. 모터가 켜진 상태에서 인에이블링 스위치를 잡고 있는 동안 티치 펜던트의 조그키를 눌러 로봇을 저속으로 움직일 수 있습니다.
+
+로봇의 동작 방향은 현재 선택된 좌표계에 따라 달라집니다. 축 좌표계일 때는 각 축이 개별적으로 동작하고, 로봇 좌표계, 사용자 좌표계, 툴 좌표계일 때는 선택된 직교 좌표계의 방향대로 툴 끝이 이동하도록 로봇의 여러 축이 동시에 움직입니다.
+
+![](../../_assets/tp630/sbar-crdsys.png)
+
+
+![그림 26 티치 펜던트의 조그키](../../_assets/tp630/keypad-jog.png)
+
+
+J7, J8의 키는 로봇의 종류와 부가축 설정상태에 따라 다르게 동작 합니다. 7축 로봇의 경우 J7은 3번째 축인 R3축에 할당된 조그키로 동작 합니다. 기타 기종의 경우 '티치펜던트 옵션"메뉴에서 조그키 사용으로 설정한 경우 메커니즘의 설정에 따라 각각의 부가축이 할당될 수 있습니다. 
+
+조그 시 선택된 메커니즘이 메커니즘\[0\] 로봇인 경우에 한하여 다음 메커니즘\[1\]의 전체 축 개수가 2축 이하이면 등록된 부가축의 순서에 따라 각각 할당됩니다. 이때 메커니즘\[1\]에서 할당되지 않은 키가 남아 있고 그 다음 메커니즘이 잔여 키에 할당 가능한 축 개수 이내로 되어 있는 경우 순차적으로 할당됩니다.
+
+예를 들어, 부가축 메커니즘의 축 개수에 따른 J7, J8축에 대한 할당 여부는 다음과 같습니다.
+
+| 메커니즘\[0\] | 메커니즘\[1\] | 메커니즘\[2\] | J7축 / J8축 할당 여부 |
+| :--- | :--- | :--- | :--- |
+| 6축 로봇 | 주행축1 축 | 포지셔너 1축 | J7: 주행축 / J8: 포지셔너 |
+| 6축 로봇 | 주행축1 축 | 포지셔너 2축 | J7: 주행축 / J8: 미할당 |
+| 6축 로봇 | 주행축2 축 | 포지셔너 2축 | J7: 주행축 1 / J8: 주행축 2 |
+| 6축 로봇 | 주행축3 축 | 포지셔너 1축 | J7: 미할당 / J8: 미할당 |
+
+
+[__SOURCE](2-operation/8-coord-sys/2-joint-crdsys.md)
+# 2.8.2 축 좌표계
+
+<table>
+	<th style="background:lightgreen">축 좌표계</th>
+	<th>로봇 좌표계</th>
+	<th>사용자 좌표계</th>
+	<th>툴 좌표계</th>
+<tr>
+	<td><img src="../../_assets/tp630/sbt-crd-axis.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-robot.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-user.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-tool.png"/></td>
+</tr>
+</table>
+
+
+1.	수동 모드에서 모터를 켜고 티치 펜던트 뒷면의 인에이블링 스위치를 잡으십시오.
+
+2.	${cont_model} 티치펜던트 키패드의 `[좌표계]` 키나 상태 표시줄의 `좌표계` 버튼을 반복해서 눌러, 축 좌표계를 선택하십시오.
+
+![](../../_assets/tp630/k-crdsys.png)
+
+![](../../_assets/tp630/sbar-crdsys.png)
+
+3.	조그키로 로봇을 동작하십시오. 로봇의 각 축이 독립적으로 움직입니다.
+
+![](../../_assets/image_85.png)
+
+{% hint style="info" %}
+조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 "[2.8.1 조그키](1-jog-key.md)"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](2-operation/8-coord-sys/3-robot-crdsys.md)
+# 2.8.3 로봇 좌표계
+
+<table>
+	<th>축 좌표계</th>
+	<th style="background:lightgreen">로봇 좌표계</th>
+	<th>사용자 좌표계</th>
+	<th>툴 좌표계</th>
+<tr>
+	<td><img src="../../_assets/tp630/sbt-crd-axis.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-robot.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-user.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-tool.png"/></td>
+</tr>
+</table>
+
+1.	수동 모드에서 모터를 켜고 티치 펜던트 뒷면의 인에이블링 스위치를 잡으십시오.
+
+2.	티치펜던트의 `[좌표계]` 키나 상태 표시줄의 `좌표계` 버튼을 반복해서 눌러, 로봇 좌표계를 선택하십시오.
+
+![](../../_assets/tp630/k-crdsys.png)
+
+![](../../_assets/tp630/sbar-crdsys.png)
+
+3.	조그키로 로봇을 동작하십시오. 로봇이 다음과 같이 움직입니다.
+
+![](../../_assets/image_62.png)
+
+{% hint style="info" %}
+* 조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 "[2.8.1 조그키](1-jog-key.md)"를 참조하십시오.
+* 오른손을 이용하면 로봇 좌표계에서 로봇의 동작을 쉽게 이해할 수 있습니다.
+
+![](../../_assets/crd-direction.png) 
+
+그림 27 좌표계 방향\(좌\) / 회전 방향\(우\)
+
+* 로봇 뒷면에서 오른손 검지 손가락의 진행 방향을 로봇 좌표계의 X방향으로 두면, 엄지 손가락의 진행 방향이 Z방향, 중지 손가락의 진행 방향이 Y방향이 됩니다.
+* 오른손 엄지 손가락을 회전 중심축 방향으로 두면, 나머지 손가락을 접은 방향이 회전 방향의 + 방향입니다.
+{% endhint %}
+
+
+
+
+[__SOURCE](2-operation/8-coord-sys/4-user-crdsys.md)
+# 2.8.4 사용자 좌표계
+
+<table>
+	<th>축 좌표계</th>
+	<th>로봇 좌표계</th>
+	<th style="background:lightgreen">사용자 좌표계</th>
+	<th>툴 좌표계</th>
+<tr>
+	<td><img src="../../_assets/tp630/sbt-crd-axis.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-robot.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-user.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-tool.png"/></td>
+</tr>
+</table>
+
+1.	초기 화면 하단의 `시스템 - 2: 제어 파라미터 - 7: 좌표계 등록 - 1: 사용자 좌표계` 메뉴를 터치한 후 사용자 좌표계를 등록하십시오.
+
+{% hint style="info" %}
+사용자 좌표계 등록 방법에 대한 자세한 내용은 "[7.3.6.1 사용자 좌표계](../../7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md)"를 참조하십시오.
+{% endhint %}
+
+2.	초기 화면 우 하단의 `조건설정` 버튼을 터치한 후 \[9: 사용자 좌표계 지정\] 옵션에 좌표계를 설정하십시오. 직교 좌표계 대신 사용자 좌표계를 선택할 수 있습니다.
+
+![](../../_assets/tp630/fbt-condset.png)
+![](../../_assets/tp630/cond-set-usercrd.png)
+
+3.	티치펜던트의 \[좌표계\] 키나 상태 표시줄의 좌표계 버튼을 반복해서 눌러, 사용자 좌표계를 선택하십시오.
+
+![](../../_assets/tp630/k-crdsys.png)
+![](../../_assets/tp630/sbar-crdsys.png)
+
+4.	조그키로 로봇을 동작하십시오. 로봇이 다음과 같이 움직입니다.
+
+![](../../_assets/image_103.png)
+
+{% hint style="info" %}
+조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 "[2.8.1 조그키](1-jog-key.md)"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](2-operation/8-coord-sys/5-tool-crdsys.md)
+# 2.8.5 툴 좌표계
+
+<table>
+	<th>축 좌표계</th>
+	<th>로봇 좌표계</th>
+	<th>사용자 좌표계</th>
+	<th style="background:lightgreen">툴 좌표계</th>
+<tr>
+	<td><img src="../../_assets/tp630/sbt-crd-axis.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-robot.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-user.png"/></td>
+	<td><img src="../../_assets/tp630/sbt-crd-tool.png"/></td>
+</tr>
+</table>
+
+1.	수동 모드에서 모터를 켜고 티치 펜던트 뒷면의 인에이블링 스위치를 잡으십시오.
+
+2.	티치펜던트의 `[좌표계]` 키나 상태 표시줄의 `좌표계` 버튼을 반복해서 눌러, 툴 좌표계를 선택하십시오.
+
+![](../../_assets/tp630/k-crdsys.png)
+
+![](../../_assets/tp630/sbar-crdsys.png)
+
+3.	조그키로 로봇을 동작하십시오. 로봇이 다음과 같이 움직입니다.
+
+
+
+* 로봇에 토치를 부착한 경우
+
+![](../../_assets/image_68.png)
+
+
+
+* 로봇에 토치를 부착하지 않은 경우
+
+![](../../_assets/image_92.png)
+
+{% hint style="info" %}
+조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 "[2.8.1 조그키](1-jog-key.md)"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](2-operation/8-coord-sys/6-align-crdaxis.md)
+# 2.8.6 좌표축 정렬
+
+XYZ 위치는 고정한 상태로 설정한 좌표계의 축으로 TCP 좌표계를 정렬하는 기능입니다.
+
+
+![](../../_assets/tp630/align-crd-axis-example.png)
+
+해당 기능은 2단계로 나눠서 정렬합니다. 
+* 축 정렬(1단계) : 해당 단계에서는 툴의 z축을 선택한 좌표계로 정렬합니다.
+* 좌표계 정렬(2단계) : 축 정렬(1단계)이 완료된 상태에서 TCP 좌표계와 선택한 좌표계가 서로 직교하도록 정렬합니다.
+* 원위치 복구 : 해당 기능 진입할 때의 초기 위치로 이동합니다. 정렬 단계의 완료 여부와 상관없이 윈위치로 복구합니다. 
+
+
+좌표축 정렬하는 방법은 다음과 같습니다.
+
+1.	목적에 맞는 위치로 조깅이 끝난 상태에서 현재 로봇이 정지해있고 모터 On 그리고 수동모드인지 확인하십시오.
+
+2.	티치펜던트의 **`[Ctrl]`** 버튼 키와 화면의 `[좌표계]`를 함께 누르거나, R300으로 좌표축 정렬 화면에 진입하십시오.
+
+3.	이동하고자 하는 좌표계를 선택하십시오.
+
+4.  원하는 축 방향으로 조그 키를 눌러 툴의 z축을 정렬하십시오. (1단계)
+
+5.  축 정렬(1단계)이 완료된 상태에서 선택했던 키의 회전방향 키를 선택하여 좌표계 정렬하십시오. (2단계 - 선택 사항)
+
+6.  원하는 위치에 도달했으면 좌표축 정렬 화면을 `[ESC]` 키로 종료하십시오.
+
+
+![](../../_assets/tp630/align-crd-axis.png)
+
+조그 키 기능 정리
+  - 축 정렬 : +X, +Y, +Z 키
+  - 원위치 복구 : -X, -Y, -Z 키
+  - 좌표계 정렬 : 툴의 z축 정렬 시 선택한 키의 회전 방향(+Rx, +Ry, +Rz) 키 
+     
+
+{% hint style="info" %}
+* 좌표축 정렬 기능 창이 활성화 된 상태일 때는 조그 기능이 비활성화 된다.
+* 좌표계 정렬 기능은 축 정렬이 완료 되었을때만 동작한다.
+* 툴의 z축 정렬이 완료되면 조그버튼을 눌러도 해당위치에 있다.
+* 소프트리밋을 피해갈 수 있는 방향으로 정렬을 진행하지만 그 어느 방향으로도 피할 수 없으면 소프트리밋 초과 에러 로그가 띄워진다.
+  (예상되는 정렬 경로가 시계방향인데 소프트리밋이 발생하는 동작이면 시계반대방향으로 회전한다.)
+* 베이스, 로봇, 사용자 좌표계 선택 후 조그하면 해당 좌표계로 기준이 변경된다.
+{% endhint %}
+
+{% hint style="warning" %}
+* 반드시 로봇이 정지된 상태에서 수행해야하고 수동 모드일 때만 해당 기능을 실행하십시오. (자동모드에서는 실행 불가)
+* 정렬을 위해 조그 키를 누르는 도중 `[ESC]` 키를 눌러 팝업 창을 종료하면 조그가 다시 활성화되니 이에 유의하여 작업하십시오.
+* 부가축이 베이스이고 X,Y,Z가 지정되지 않은 **임의** 상태이면 에러 로그가 띄워집니다.
+* 조그로도 이동할 수 없는 정렬 방향이면 도달할 수 없는 XYZ 위치입니다 에러 로그가 띄워집니다.
+* 보간 불가능 자세에서 정렬을 다시 진행하면 에러가 나오는데 이때 원위치 복구키를 눌러 해당 구간을 회피하여 다시 구동하십시오.
+* 특이점 발생 지점에서 정렬 할 때, 뗀 버튼을 다시 누르면 마저 이동하지만 현위치에서 경로를 재연산하므로 정상 속도로 동작합니다. (속도가 조금 빨라지는데 해당 속도가 정상적인 속도)
+{% endhint %}
+
+[__SOURCE](2-operation/9-axis-origin.md)
+# 2.9 축 원점 및 툴 길이 최적화 설정
+
+직선보간 궤적 및 좌표변환 정도의 향상을 위해 축 정수와 툴 길이를 자동으로 설정합니다.
+
+* 3차원상에서 측정하기 어려운 툴 끝까지의 거리를 자동으로 설정할 수 있습니다. 보정되는 파라미터는 H, V, R2, B축의 축 원점과 X, Y, Z방향 툴 길이입니다.
+* '축 원점 및 툴 길이"와 '툴 길이" 최적화를 실행할 수 있습니다.
+
+{% hint style="warning" %}
+로봇 프로그램을 티칭하기 전에 '축 원점 및 툴 길이"를 최적화하십시오. 로봇 프로그램이 만들어진 상태에서 '축 원점 및 툴 길이"를 최적화하면 기존 프로그램의 위치가 변경될 수 있습니다.
+{% endhint %}
+
+축 원점 및 툴 길이 최적화를 설정하는 방법은 다음과 같습니다.
+
+1.	티치 펜던트의 모드 스위치를 이용해 운전 방식을 수동 모드로 설정하십시오.
+
+2.	`[SHIFT]`+`[프로그램]` 키를 누른 후 프로그램 번호를 입력하고 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/k-prog-step.png)
+![](../_assets/tp630/dlg-prog-sel.png)
+
+3.	티치 펜던트의 `[모터온]` 키를 누르십시오. 모터 램프가 깜빡입니다.
+
+* 모터가 켜지지 않으면 이력 표시줄에서 에러 메시지를 확인하고 문제를 해결하십시오.
+
+4.	티치 펜던트 뒷면의 인에이블링 스위치를 잡은 채로 조그키를 이용해 로봇을 동작하십시오
+
+5.	로봇의 동작 범위 내 임의의 위치에 뾰족한 침을 두고 로봇의 툴 끝을 침에 일치시키십시오. 로봇 선단부터 일치시킨 툴 끝까지의 길이가 최적화됩니다.
+
+6.	티치 펜던트의 `[기록]` 키를 눌러 스텝을 기록하십시오.
+
+
+
+![](../_assets/tp630/k-record.png)
+
+7.	로봇의 자세를 바꾸고 5 ~ 6번 단계를 4번 이상 반복하십시오.
+
+* 가능한 한 6축 전체를 이용하여 로봇의 자세를 바꾸십시오. 또한 축의 각도는 30 deg 이상 변경하십시오.
+
+8.	`[시스템] - 6: 자동 캘리브레이션 - 1: 축 원점 및 툴 길이 최적화` 메뉴를 선택하십시오.
+
+![](../_assets/tp630/menu-axis-origin-tool-opt.png)
+
+9.	자동 캘리브레이션용으로 작성한 프로그램 번호, 툴 번호, 스텝 위치 오차 허용 범위를 설정한 후 \[실행\] 버튼을 터치하십시오. 선택된 축 원점 및 툴 길이가 설정됩니다.
+
+![](../_assets/tp630/axis-origin-tool-opt.png)
+
+* 여러 개의 툴을 사용할 때, 두 번째 툴의 자동 캘리브레이션부터는 \[최적화 선택\] 옵션을 툴 길이로 선택하여 실행하십시오. 축 원점 및 툴 길이를 선택하면 먼저 설정한 툴의 정보가 맞지 않게 됩니다.
+
+{% hint style="info" %}
+이 기능에 대한 자세한 내용은 "[7.7.1 축 원점 및 툴 길이 최적화](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](2-operation/10-tool-data-auto-calib.md)
+# 2.10 툴 데이터 자동 보정
+
+자동 캘리브레이션 기능 등을 이용해 축 원점 및 툴 길이를 결정한 후 툴이 변형되었을 때 간단히 새로운 툴 데이터를 결정할 수 있습니다. 이때, 축 원점\(Axis origin\)은 결정되어 있어야 하고 계속 유지되어야 합니다. 또한 툴 길이를 결정하고 각도 보정을 완료한 후 고정된 기준점을 티칭해 두어야 합니다. 툴 변형이 발생하면 툴을 변경 전에 지정해 둔 기준점에 동일한 자세로 위치시킨 후 툴 데이터 자동 보정을 실행하십시오.
+
+1.	`[F2: 시스템] - 3: 로봇 파라미터 - 1: 툴 데이터` 메뉴를 선택하십시오.
+
+![](../_assets/tp630/menu-tool-data.png)
+
+2.	`자동보정` 버튼을 터치한 후 조그키를 이용하여 툴 끝을 원래의 위치로 이동하십시오.
+
+![](../_assets/tp630/tool-data-auto-calib.png)
+
+3.	미리 결정해 둔 기준점의 프로그램 번호, 스텝 번호, 설정할 툴 번호를 확인한 후 `[실행]` 버튼을 터치하십시오.
+
+![](../_assets/tp630/tool-data-auto-calib2.png)
+
+{% hint style="info" %}
+이 기능에 대한 자세한 내용은 "[7.4.1 툴 데이터](../7-system/4-robot-parameter/1-tool-data/README.md)"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](3-programming/README.md)
+# 3. 프로그램 작성
+
+로봇이 작업을 수행하여 원하는 결과를 얻을 수 있도록 프로그램을 작성하고 관리할 수 있습니다.
+
+
+[__SOURCE](3-programming/1-prog-manage.md)
+# 3.1 프로그램 관리
+
+로봇이 정지된 상태에서, 프로그램을 생성, 수정 및 삭제할 수 있습니다.
+
+1.	JOB 프로그램창에서 `[프로그램]` 키를 `[SHIFT]`와 함께 누르십시오. 프로그램 선택창이 나타납니다.
+
+![](../_assets/tp630/k-prog-step.png)
+
+2.	프로그램을 생성, 수정 및 삭제하십시오.
+
+* 새 프로그램을 추가하려면, 신규 프로그램 번호를 입력 후 엔터를 입력하십시오. "[3.2 프로그램 작성](2-prog-edif/../2-prog-edit/README.md)"을 참조하여 내용을 입력하십시오.
+
+![](../_assets/tp630/k-prg-select.png)
+
+* 프로그램을 열어 내용을 확인하고 수정하려면, 프로그램 번호를 입력하거나 목록에서 프로그램을 선택한 후 `[ENTER]` 키를 누르십시오. 선택한 프로그램이 JOB 프로그램창에서 열립니다.
+
+
+* 프로그램을 삭제하려면, 파일 목록\(`서비스 - 5: 파일관리`\)에서 해당 프로그램을 선택한 후 삭제하십시오. 자세한 내용은 "[4.2.1 파일관리](../4-service/2-file-manager/1-file-management.md)"를 참고하시기 바랍니다.
+
+* 또한, R코드\(R117\)를 이용하여 프로그램을 빠르게 삭제할 수 있습니다. 자세한 내용은 "[8.4 R117 프로그램 삭제](../8-r-code/4-r117.md)"를 참조하십시오.
+
+
+
+
+[__SOURCE](3-programming/2-prog-edit/README.md)
+# 3.2    프로그램 작성
+
+원하는 결과를 얻기 위해 로봇의 동작을 지시하는 다양한 명령문으로 구성된 프로그램을 작성하고 편집합니다. 프로그램은 수동 모드에서 작성할 수 있습니다.
+
+
+
+
+[__SOURCE](3-programming/2-prog-edit/1-statement.md)
+# 3.2.1 명령문
+
+일반적인 프로그램은 로봇의 이동을 지시하는 스텝 명령문과 이동 후 작업을 지시하는 펑션 명령문으로 구성됩니다.
+
+명령문은 크게 명령어와 부가 항목인 인수\(Parameter\)로 나뉘며 인수에는 명령문에 반드시 필요한 기본 인수와 생략 가능한 선택 인수가 있습니다.
+
+![](../../_assets/tp630/pane-prog-cmd-param.png)
+
+| 번호 | 설명 | 번호 | 설명 |
+| :--- | :--- | :--- | :--- |
+| ![](../../_assets/c1.png) | 스텝 번호 | ![](../../_assets/c3.png) | 인수 |
+| ![](../../_assets/c2.png) | 명령어 | ![](../../_assets/c4.png) | 주석 |
+
+{% hint style="info" %}
+인수에 대한 자세한 내용은 "[2.3.1 스텝 명령문 인수](../../2-operation/3-step/1-step-cmd-param/README.md)"를 참조하십시오.
+{% endhint %}
+
+명령문을 입력하면 기본 인수에는 기본 설정값이 자동으로 입력되며 변경할 수 있습니다. 선택 인수는 기호\( \_ \)로 표시되며 이곳을 선택하면 인수값을 입력할 수 있습니다. 인수에 따라 화면 하단에 입력 가능한 인수가 버튼으로 나타납니다.
+
+![그림 28 명령문 편집 - 인수값 입력](../../_assets/tp630/pane-prog-move-option.png)
+
+명령어 인수를 편집할 때는 티치 펜던트의 조작키와 화면 하단의 메뉴 버튼을 이용하거나 소프트 키보드를 이용하여 변수나 수식, 문자열을 편집할 수 있습니다.
+
+[__SOURCE](3-programming/2-prog-edit/2-statement-input/README.md)
+# 3.2.2 명령문 입력
+
+
+[__SOURCE](3-programming/2-prog-edit/2-statement-input/1-gen-statement-input.md)
+# 3.2.2.1 일반 명령문 입력
+
+1.	수동 모드에서 초기 화면 하단의 \[명령입력\] 버튼을 터치하십시오. 명령 입력창이 나타납니다.
+
+![](../../../_assets/tp630/sbt-cmd.png)
+
+2.	명령문 그룹을 터치하거나 명령어를 입력한 후 목록에서 명령어를 선택하십시오. 현재 커서 위치의 바로 아래에 명령문이 입력됩니다.
+
+![](../../../_assets/tp630/sbt-cmd-list.png)
+
+* 한 그룹의 명령어가 많을 경우 [이전/다음] 버튼을 눌러서 추가 명령어를 확인하십시오.
+* 각 명령문에 대한 자세한 내용은 "[${cont_model} 제어기 기능설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+[__SOURCE](3-programming/2-prog-edit/2-statement-input/2-step-input.md)
+# 3.2.2.2 숨은 포즈의 스텝 명령문 입력
+
+현재 로봇이 취한 자세를 이동 명령으로 입력하려면, 키패드의 `[기록]` 키를 누르십시오.
+
+![](../../../_assets/tp630/k-record.png)
+
+`[기록]` 키로 명령을 입력하면 일반 명령문 입력 방식과 달리 포즈 변수가 스텝에 나타나지 않으므로 숨은 포즈라고 합니다,
+
+
+
+
+[__SOURCE](3-programming/2-prog-edit/2-statement-input/3-rec-cond.md)
+# 3.2.2.3 기록 조건
+
+`[기록]` 키로 명령문을 입력하면 로봇의 현재 자세가 타겟 포즈로 기록되고 이동 명령\(move\) 인수는 `기록조건` 버튼으로 미리 설정한 값이 적용됩니다. 명령문의 기록 조건을 설정하는 방법은 다음과 같습니다.
+
+1.	${cont_model} 티치 펜던트 화면 좌측의 `기록조건` 버튼을 터치하십시오. 기록 조건 설정창이 나타납니다.
+
+
+
+![](../../../_assets/tp630/lbt-record.png)
+
+ 2.	보간, 이동 속도와 단위, 정밀도, 툴 번호, 메커니즘 세트를 설정한 후 `체크` 버튼 \(![](../../../_assets/icon-ok.png)\)을 터치하십시오.
+
+![](../../../_assets/tp630/lbt-record-edit.png)
+
+* 위치 기록 시, 기록 조건에 설정한 조건을 기준으로 이동 명령문이 기록됩니다.
+* 메커니즘 세트에서는 위치 기록 시 저장할 메커니즘의 구성을 지정합니다.
+  * \[메커니즘 세트\] 버튼을 짧게 터치하면, 사전에 정의된 메커니즘 세트 번호가 순차적으로 나타납니다.
+  * \[메커니즘 세트\] 버튼을 길게 터치하면, 메커니즘 세트 설정창에서 기존의 세트 구성을 수정하거나 \[+\] 또는 \[-\] 버튼을 이용하여 메커니즘 세트를 추가 및 삭제할 수 있습니다.
+
+![](../../../_assets/tp630/pop-mechanism.png)
+
+
+
+
+
+
+[__SOURCE](3-programming/2-prog-edit/3-statement-constitution.md)
+# 3.2.3 명령문 구성
+
+명령문은 주소 영역과 명령문 영역으로 구성됩니다.
+
+<br>
+
+![그림 29 명령문의 구성 영역](../../_assets/tp630/pane-prog-section.png)
+
+| 번호 | 영역 | 설명 |
+| :--- | :--- | :--- |
+| ![](../../_assets/c1.png) | 주소 영역 | 행 번호\(1 ~ 9999\)와 스텝 번호 \(S1 ~ S999\)가 표시됩니다. |
+| ![](../../_assets/c2.png) | 명령문 영역 | 명령문이 표시됩니다. |
+
+티치 펜던트의 `[←/→]` 방향키를 눌러 주소 영역과 명령문 영역 사이에서 커서의 위치를 이동할 수 있습니다. `[↓/↑]` 방향키를 누르면 선택된 영역 내의 행 사이에서 커서를 위아래로 이동할 수 있습니다.
+
+![그림 30 영역 간 커서 이동\(좌: 주소 영역, 우: 명령문 영역\)](../../_assets/tp630/pane-prog-sectionchng.png)
+
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/README.md)
+# 3.2.4 명령문 편집
+
+티치 펜던트의 조작키와 화면 하단의 메뉴 버튼을 이용하여 JOB 프로그램창에서 명령문을 편집합니다. 소프트 키보드를 이용하면 변수나 수식, 문자열을 편집할 수 있습니다.
+
+명령문 영역은 선택된 대상에 따라 커서 상태를 전환하여 명령문을 확인 및 편집할 수 있습니다.
+
+* 문장 커서 상태: 명령문의 한 행 전체가 선택 상태로 명령문을 확인할 수 있습니다. 
+
+![](../../../_assets/tp630/pane-prog-cmd-edit.png)
+
+
+* 명령문 커서 상태: 명령문의 개별 인수가 선택된 상태로 명령문을 확인하고 편집할 수 있습니다.
+
+![](../../../_assets/tp630/pane-prog-cmd-edit1.png)
+
+
+
+
+
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/1-how-to-edit-statement.md)
+# 3.2.4.1 명령문 편집 방법
+
+명령문을 편집하는 방법은 다음과 같습니다.
+
+1. JOB 프로그램창에서 티치 펜던트의 `[↑/↓]` 방향키를 눌러 명령문 영역을 선택하십시오. 명령문 영역이 문장 커서 상태로 선택됩니다.
+
+
+2. 문장 커서 상태에서 티치 펜던트의 `[ENTER]` 키를 누르십시오. 명령문 커서 상태가 되어 인수가 선택되고 하단의 입력 영역에 선택된 인수값이 나타납니다.
+
+3. 티치 펜던트의 조작키와 화면 우측의 메뉴 버튼을 이용하여 인수값을 편집하십시오.
+
+
+* `[←/→]` 방향키를 누르면 인수 사이에서 커서를 좌우로 이동할 수 있습니다.
+
+* 인수에 따라 화면 우측에 입력 가능한 인수가 버튼으로 나타납니다. 원하는 버튼을 선택하면 간편히 인수를 입력할 수 있습니다.
+
+* 소프트 키보드를 이용하여 변수나 수식, 문자열을 편집할 수 있습니다.
+
+
+4.	`[ENTER]` 키를 누르십시오. 변경 내용이 적용되어 명령문의 인수값이 변경되고 커서가 다음 인수로 이동합니다.
+
+
+* 변경 내용을 취소하려면, `[ESC]` 키를 누르십시오.
+
+
+5.	2 ~ 3번 절차를 반복하여 다른 인수를 편집하십시오.
+
+
+6.	`[ENTER]` 키를 눌러 편집을 완료하십시오. 변경 내용이 JOB 프로그램에 저장되고 문장 커서 상태로 돌아갑니다.
+
+
+
+
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/2-statement-edit-example.md)
+# 3.2.4.2 명령문 편집 예
+
+보간 인수를 P \(축 보간\)에서 L \(직선 보간\)로 변경하는 것을 예로 들어, 명령문을 편집하는 방법에 대해 설명합니다.
+
+1.	문장 커서 상태에서 티치 펜던트의 `[ENTER]` 키를 누르십시오. 단어 커서 상태가 되어 move 문의 보간 인수인 P \(축 보간\)가 선택됩니다. 입력 영역에는 보간의 현재 설정값인 P가 표시되고 입력 가능한 보간 인수가 화면 우측에 버튼으로 나타납니다.
+
+![](../../../_assets/tp630/pane-prog-move-P.png)
+
+2.	화면 우측의 버튼 중 \[L\] 버튼을 터치하십시오. 입력 영역에 L \(직선 보간\)이 표시됩니다. 
+
+![](../../../_assets/tp630/pane-prog-move-L.png)
+
+3.	`[ENTER]` 키를 누르십시오. 명령문의 보간 인수가 L로 변경되고 커서가 다음 인수로 이동하여 이동 속도가 선택됩니다.
+
+![](../../../_assets/tp630/pane-prog-move-spd.png)
+
+4.	`[ENTER]` 키를 눌러 편집을 완료하십시오. 변경 내용이 JOB 프로그램에 저장되고 문장 커서 상태로 돌아갑니다.
+
+
+
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/3-how-to-edit-line-no.md)
+# 3.2.4.3 행 번호 편집 방법
+
+행 번호는 1 ~ 9999 사이의 수로 설정할 수 있습니다.
+
+1.	JOB 프로그램창에서 티치 펜던트의 `[←/→]` 방향키를 눌러 주소 영역을 선택하십시오. 주소 영역이 선택됩니다.
+
+ * 명령문 영역에서 문장 커서 상태일 경우 `[←]` 방향키를 누르면 커서가 주소 영역으로 이동할 수 있습니다. 
+
+![](../../../_assets/tp630/pane-prog-linenum.png)
+
+2.	주소 영역에서 `[↓/↑]` 방향키를 눌러 행을 선택한 후 행 번호를 편집하십시오.
+
+ * 행 번호를 입력하려면, 숫자키를 이용하여 입력 영역에 행 번호를 입력하십시오. 
+ * 행 번호를 삭제하려면, `[BS]` 키를 누르십시오. 입력 영역에서 행 번호의 주소값이 제거됩니다.
+  
+![](../../../_assets/tp630/pane-prog-linenum1.png)
+
+3.	`[ENTER]` 키를 눌러 편집을 완료하십시오. 변경 내용이 JOB 프로그램에 저장됩니다.
+
+![](../../../_assets/tp630/pane-prog-linenum2.png)
+
+
+
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/4-softkeyboard.md)
+# 3.2.4.4 소프트 키보드
+
+${cont_model} 티치 펜던트 화면의 소프트 키보드를 이용하여 변수나 수식, 문자열을 편리하게 입력합니다.
+
+1.	${cont_model} 티치 펜던트 화면의 오른쪽 표시줄에서 \[![](../../../_assets/tp630/rbt-softkb.png)\] 버튼을 터치하십시오. 화면 하단에 소프트 키보드가 나타납니다.
+
+2.	소프트 키보드를 이용하여 입력 영역에 변수나 수식, 문자열을 입력하십시오. 기존의 인수값이 제거되고 입력한 텍스트가 표시됩니다.
+
+![](../../../_assets/tp630/rbt-softkb-prog-new.png)
+
+* 입력 영역 좌측의 \[![](../../../_assets/bt-cursor-left.png)/![](../../../_assets/bt-cursor-right.png)\] 버튼을 터치하면, 커서의 위치를 이동하여 원하는 위치에 텍스트를 삽입할 수 있습니다.
+* \[![](../../../_assets/bt-lang.png)\] 버튼을 터치하면 입력 언어를 변경할 수 있습니다.
+* 티치 펜던트의 `[SHIFT]` 키를 누른 상태에서 키를 터치하면 대문자 및 기호를 입력할 수 있습니다.
+
+3.	텍스트 편집을 완료하면, `[ENTER]` 키를 누르십시오.
+
+
+
+
+[__SOURCE](3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md)
+# 3.2.4.5 블록 편집 모드
+
+프로그램의 한 행 또는 여러 행을 블록\(Block\)으로 설정하여 복사, 이동, 삭제 및 주석처리, 자동주석을 수행할 수 있습니다.
+<br>
+
+#### 1.	블록 편집 모드로 진입하기.
+
+job 편집 화면에서 화살표 좌 키로 커서를 주소영역으로 옮깁니다.  
+`[F2: 블록편집]` 버튼을 클릭하면 블록 편집 모드로 진입하면서, 커서가 회색으로 바뀝니다.
+
+![](../../../_assets/tp630/blockedit/11_blockeditmode2.PNG)
+![](../../../_assets/tp630/blockedit/12_blockeditmode.PNG)
+<br><br>
+
+#### 2. 블록 설정하기
+
+화살표 상/하 키로 커서를 움직여 블록 시작 위치에 두고 `[ENTER]`키를 누릅니다. 다시 화살표 상/하 키로 커서를 움직여 블록 끝 위치에 두고 `[ENTER]`키를 누릅니다. 편집을 수행할 블록이 파란 배경색으로 설정되었습니다.
+
+![](../../../_assets/tp630/blockedit/20_set_block.PNG)
+
+(커서를 블록에서 다른 곳으로 이동시키지 않고, 그 자리에서 복사나 삭제 등을 한다면, 두 번째 `[ENTER]`는 누르지 않아도 됩니다.)
+<br><br>
+
+#### 3. 복사하기
+
+블록이 설정된 상태에서 `[F2: 복사하기]`를 클릭하면 블록의 내용이 클립보드로 복사됩니다.  
+혹은, 블록설정 없이 `[F2: 복사하기]`를 클릭하여 1행만 복사할 수도 있습니다.
+<br><br>
+
+#### 4. 붙여넣기
+
+화살표 상/하 키로 커서를 움직여 붙여넣을 지점의 바로 윗 행에 커서를 두고 `[F3: 붙여넣기]`를 클릭합니다.  
+예를 들어, 아까 클립보드로 복사한 블록의 S1의 `delay 1` 명령문 아래에 붙여넣는다면 커서를 `delay 1`에 두고 `[F3: 붙여넣기]`를 클릭하면 됩니다.
+
+![](../../../_assets/tp630/blockedit/30_paste.PNG)
+![](../../../_assets/tp630/blockedit/32_paste.PNG)
+<br><br>
+
+#### 5. 잘라내기
+
+블록이 설정된 상태에서 `[F1: 잘라내기]`를 클릭하면 블록이 옅은 회색으로 변하면서 잘라낸 상태로 표현됩니다.  
+혹은, 블록설정 없이 `[F1: 잘라내기]`를 클릭하여 1행만 잘라낼 수도 있습니다.
+![](../../../_assets/tp630/blockedit/40_cut.PNG)
+
+잘라낸 블록의 붙여넣기는 위에서 설명한 방법과 동일합니다.
+<br><br>
+
+#### 6. 삭제하기
+
+블록이 설정된 상태에서 `[F4: 삭제하기]`를 클릭한 후, `삭제할까요?` 메시지에 `[확인]`을 클릭하면 블록이 삭제됩니다.  
+혹은, 블록설정 없이 `[F4: 삭제하기]`를 클릭하여 1행만 삭제할 수도 있습니다.
+ ![](../../../_assets/tp630/blockedit/50_delete.PNG)
+<br><br>
+
+#### 7. 주석처리, 주석처리 해제
+
+job 프로그램의 특정 영역을 삭제하지는 않으면서 임시로 실행이 안 되도록 할 때, 사용하는 기능입니다.  
+블록이 설정된 상태에서 `[F5: 주석처리]`를 클릭하면, 블록 내의 명령문들이 주석처리(remark)됩니다.  
+블록이 설정된 상태에서 `[F6: 주석처리 해제]`를 클릭하면, 주석을 해제(unremark)됩니다.  
+혹은, 블록설정 없이 1행에 대한 주석 처리와 해제를 할 수도 있습니다.
+
+{% hint style="info" %}
+- 버전 V60.30-00 이상 : 스텝도 주석처리됩니다.
+{% endhint %}
+
+ ![](../../../_assets/tp630/blockedit/60_remark.PNG)
+<br><br>
+
+#### 8. 자동주석, 주석제거
+
+(이 기능은 V70.02-00 및 이후 버전부터 지원됩니다.)
+
+- `[R5: 이전/다음]` 버튼을 누르면 `[F1: 자동주석]`, `[F2: 주석제거]` 버튼이 나타납니다. 
+
+- `[F1: 자동주석]` 버튼을 누르면, 선택된 명령문들에 등록된 데이터 주석이 자동 입력됩니다.
+
+  * 데이터 주석 설정 방법에 대해서는 [4.11 데이터 주석](../../../4-service/11-data-cmts.md)을 참조하십시오.
+  
+  * 적용 조건에 대해서는 [4.3.9 명령문 주석](../../../4-service/3-program-conversion/9-stmt-comment.md) 절을 참조하십시오.
+
+- `[F2: 주석제거]` 버튼을 누르면, (데이터 등록 여부와 무관하게) 선택된 명령문들의 주석을 제거합니다.
+
+ ![](../../../_assets/tp630/blockedit/66_auto_comment.PNG)
+
+
+#### 9. 블록 편집 모드 종료하기
+
+`[F7: 닫기]`를 클릭하거나, `[ESC]` 키를 누르면 블록 편집 모드가 종료됩니다.
+<br><br>
+
+----
+#### 스텝번호 자동 조정
+
+가령 아래 그림과 같이 S1~S2를 복사하여 하단에 붙여넣는다고 하면, S3의 `move`문은 붙여넣은 2개의 스텝에 의해 번호가 밀려서 S5로 바뀌게 됩니다.
+
+이 때, 동일 job 내의 모든 분기 명령문(`goto`, `gosub`, `if`문, `wait`문의 timeout 주소 등)의 타겟 주소 S3은 S5로 자동 조정됩니다. 
+
+예를 들어 아래 그림의 조건부 분기 명령문인 `if di45==0 then S3`은 전과 동일한 `move`문으로 분기하기 위해 타겟 주소인 S3이 S5로 자동 조정됩니다.
+
+
+![](../../../_assets/tp630/blockedit/71_branch_adjust.PNG)
+![](../../../_assets/tp630/blockedit/72_branch_adjust.PNG)
+
+이러한 스텝번호 자동 조정은 기록, 삭제, 블록편집 등 스텝 번호가 밀리거나 당겨지는 동작들에 대해 수행됩니다.
+
+{% hint style="info" %}
+아래 사양은 버전 V60.30-00 이상부터 적용됩니다;
+{% endhint %}
+
+타겟이 되는 스텝이 삭제나 주석 처리에 의해 사라지는 경우에는 아래와 같이 `deleted_스텝번호` 혹은 `remarked_스텝번호`로 조정됩니다. 이렇게 조정된 타겟 주소는 적절한 스텝 번호 (혹은 행번호나 레이블)로 수작업 조정해주십시오.
+(그대로 두면, 명령문 실행 시 문법 에러가 발생합니다.)
+![](../../../_assets/tp630/blockedit/76_branch_adjust.PNG)
+
+
+[__SOURCE](4-service/README.md)
+# 4. 서비스
+
+변수 및 파일 관리 등 프로그램의 각종 서비스 기능 메뉴를 사용할 수 있습니다.
+
+
+[__SOURCE](4-service/1-menu-usage.md)
+# 4.1 서비스 메뉴 사용
+
+1.	수동 또는 자동 모드에서 초기 화면 하단의 `[F1: 서비스]` 버튼을 터치하십시오. 프로그램의 각종 서비스 메뉴가 표시됩니다.
+
+2.	원하는 메뉴를 선택하여 파일 및 프로그램, 티치펜던트를 관리하거나 로봇 시스템의 상태를 확인하십시오. 
+
+![](../_assets/tp630/svc-list.png)
+
+---
+
+* `4: 데이터 주석`: 입출력 변수, 릴레이, 기타 각종 변수의 주석을 관리합니다.
+* `5: 파일관리`: 메인 보드의 내부 메모리와 티치펜던트 및 이동식 저장 장치의 파일을 관리합니다.
+* `6: 프로그램 변환`: 작성된 프로그램의 조건 및 위치 등을 일괄 또는 개별 변환합니다.
+* `7: 시스템 진단`: 로봇과 제어기의 상태를 확인하고 시스템의 버전을 업데이트합니다.
+* `8: 날짜, 시간 설정`: 제어기의 날짜와 시간을 설정합니다.
+* `9: TP 응용프로그램 종료`: TP(티치펜던트) 응용프로그램을 종료합니다.
+* `10: 앱(App)`: 티치펜던트에 설치되어 실행되는 소프트웨어를 관리합니다.
+* `11: 티치펜던트 옵션`: 티치펜던트의 소리와 화면꺼짐 시간을 설정합니다.
+* `12: 티치펜던트 공유`: 티치펜던트를 여러 대의 제어기 혹은 HRSpace4의 가상제어기에 연결하는데 사용합니다.
+* `14: 시스템 프로그램` : 제어기에 설치된 시스템 프로그램(e.g. OPC-UA server) 목록을 확인하고 제거 할 수 있습니다.
+* `19: 산업용 통신 모니터링`: 펌웨어 정보 및 통신 상태를 모니터링합니다.
+
+[__SOURCE](4-service/2-file-manager/README.md)
+# 4.2    파일 관리
+
+메인 보드의 내부 메모리 또는 티치 펜던트나 이동식 저장 장치의 파일을 관리합니다.
+
+1. \[5: 파일관리\] 메뉴를 터치하십시오. 장치별 폴더 목록과 선택한 폴더에 저장된 파일의 목록이 나타납니다.
+2. 장치별 폴더 구조와 저장된 파일을 확인하고 관리하십시오.
+
+![](../../_assets/tp630/file-manager/fl-manage.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <li> 메인 보드의 내부 메모리, 티치 펜던트, 이동식 저장 장치의 폴더 목록입니다. 폴더 구조를 확인할 수 있습니다.</li>
+        <li> [<img src="../../_assets/icon-mb.png" alt/>MAIN]: 메인 보드(M/B)에 저장된 파일은 실제 로봇의 동작에 사용됩니다.</li>
+        <li> [<img src="../../_assets/icon-tp.png" alt/>TP] / [
+          <img src="../../_assets/icon-usb.png" alt/>USB]: 티치 펜던트(T/P)와 이동식 저장 장치(USB)는 데이터 백업 시 사용합니다. [
+          <img src="../../_assets/icon-usb.png" alt/>USB] 폴더는 티치 펜던트에
+          이동식 저장 장치가 연결된 경우에만 나타납니다.</li>
+        <li> 티치 펜던트의 방향키로 폴더 목록에서 커서를 이동할 수 있습니다.</li>
+        <li> 폴더 목록에서 [<img src="../../_assets/icon-gt.png" alt/>] 또는 [
+          <img src="../../_assets/icon-wedge.png" alt/>]를 선택한 후 `[ENTER]` 키를 누르면 하위 폴더를 표시하거나 숨길 수 있습니다.</li>
+        <li> 폴더를 선택하면 폴더에 저장된 파일의 목록을 확인할 수 있습니다.</li>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">선택한 폴더에 저장된 파일의 목록입니다. 파일별로
+        이름과 크기, 최종 수정 날짜, 보호 여부, 추가 정보를 확인할 수 있습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">기능 버튼을 이용해 파일과 폴더를 관리할 수 있습니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+* R코드의 "**R17 파일 관리**"와 동일한 기능입니다.
+* 이동식 저장 장치를 티치 펜던트에 연결하면 ${cont_model} 티치 펜던트 화면의 상태 표시줄에 \[USB\] 아이콘\(![](../../_assets/icon-usb2.png)\)이 나타납니다.
+{% endhint %}
+
+{% hint style="warning" %}
+파일을 복사하거나 삭제하는 등의 동작을 수행하는 도중에 티치 펜던트에서 이동식 저장 장치를 절대 분리하지 마십시오. 데이터가 손상될 수 있습니다.
+{% endhint %}
+
+
+[__SOURCE](4-service/2-file-manager/1-file-management.md)
+# 4.2.1 파일 관리
+
+하나 혹은 여러 파일을 선택하여 복사, 이동 및 삭제합니다.
+
+1.	폴더 목록에서 티치 펜던트의 방향키를 이용해 폴더를 선택하십시오. 선택한 폴더에 저장된 파일 목록이 나타납니다. 
+
+![](../../_assets/tp630/file-manager/fl-folder-select.png)
+
+2.	파일 목록에서 원하는 파일을 터치하여 선택하십시오. 
+
+![](../../_assets/tp630/file-manager/fl-file-select.png)
+
+* <<b>CTRL</b>> 키를 누른 상태에서 파일을 터치하면 여러 파일을 하나씩 선택할 수 있습니다.
+* `[SHIFT]` 키를 누른 상태에서 두 파일을 터치하면 두 파일 사이의 모든 파일을 한 번에 선택할 수 있습니다.
+* 화면 좌측아래의 \[전체선택\] 버튼을 터치하면 모든 파일을 한 번에 선택할 수 있습니다.
+* 파일 선택을 취소하려면 `[ESC]` 키를 누르십시오.
+
+
+
+3.	화면 아래의 기능 버튼을 이용하여 선택한 파일을 복사, 이동 및 삭제하십시오.
+
+* \[복사\]: 선택한 파일을 복사하여 다른 폴더에 붙여 넣을 수 있도록 임시 폴더에 저장합니다.
+* \[붙여넣기\]: 클립보드에 저장한 파일을 원하는 폴더에 붙여 넣습니다.
+* \[잘라내기\]: 선택한 파일을 잘라내어 다른 폴더에 붙여 넣을 수 있도록 임시 폴더에 저장합니다.
+* \[삭제\]: 선택한 파일을 삭제합니다. 보호 설정된 파일\(속성에 보호 표시\(W\_\)\)은 삭제할 수 없습니다.
+
+4.	파일을 폴더에 붙여 넣기할 경우, 방향키로 폴더를 선택한 후 `[붙여넣기]` 버튼을 터치하십시오. 선택한 폴더에 파일이 붙여 넣기됩니다. 
+
+![](../../_assets/tp630/file-manager/fl-copy.png)
+
+* 선택한 폴더에 같은 이름의 파일이 있으면 중복 알림창이 나타납니다. 덮어쓰기 여부를 설정하여 처리하십시오. 
+
+![](../../_assets/tp630/file-manager/fl-copy-pop.png)
+
+* 파일을 삭제할 경우, 우측아래 `[BS]` 키와 `[SHIFT]` 키를 누른 후 확인창에서 `[확인]` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/file-manager/fl-delete-pop.png)
+
+
+[__SOURCE](4-service/2-file-manager/2-rename-file-folder.md)
+# 4.2.2 파일명 및 폴더명 변경
+
+파일 또는 폴더의 이름을 변경합니다.
+
+1.	파일\(또는 폴더\) 목록에서 원하는 파일\(또는 폴더\)을 터치하여 선택한 후 화면 하단에서 `이름변경` 버튼을 터치하십시오.
+
+
+![](../../_assets/tp630/file-manager/fld-rename-select.png)
+
+2.	입력 영역에 파일\(또는 폴더\) 이름을 입력하십시오.
+
+![](../../_assets/tp630/file-manager/fld-rename.png)
+
+* 숫자는 티치 펜던트의 조작 키를 이용해 간단히 입력할 수 있습니다. (커서 이동, 숫자키: 숫자 입력)
+* 숫자를 포함한 텍스트를 입력하려면 이력 표시줄의 \[![](../../_assets/tp630/rbt-softkb.png)\] 버튼을 터치하여 소프트 키보드를 이용하십시오.
+
+3.	`[ENTER]` 키를 누르십시오. 목록에 입력한 이름으로 변경되어 나타납니다.
+
+{% hint style="info" %}
+* 보호 설정된 파일도 이름을 변경할 수 있습니다.
+* 파일의 이름을 변경해도 크기, 수정 날짜, 속성 등의 정보는 기존과 동일하게 유지됩니다.
+* R코드의 "**R116 프로그램 번호 변경**"과 동일한 기능입니다.
+{% endhint %}
+
+
+
+
+[__SOURCE](4-service/2-file-manager/3-folder-management/README.md)
+# 4.2.3 폴더 관리
+
+폴더를 삭제하거나 새 폴더를 추가합니다.
+
+
+[__SOURCE](4-service/2-file-manager/3-folder-management/1-folder-removal.md)
+# 4.2.3.1 폴더 삭제
+
+1.	폴더 목록에서 티치 펜던트의 방향키를 이용해 폴더를 선택한 후 화면 우측 하단의 `DEL` (혹은 `shift` + `🠔`) 키를 누르십시오. 
+
+![](../../../_assets/tp630/file-manager/fld-delete.png)
+
+2.	확인창에서 `[확인]` 버튼을 터치하십시오. 선택한 폴더와 폴더에 저장된 파일이 모두 삭제됩니다.
+
+![](../../../_assets/tp630/file-manager/fld-delete-pop.png)
+
+
+
+
+[__SOURCE](4-service/2-file-manager/3-folder-management/2-folder-generation.md)
+# 4.2.3.2 폴더 생성
+
+1.	폴더 목록에서 티치 펜던트의 방향키를 이용해 폴더를 선택한 후 화면 하단의 `새 폴더` 버튼을 터치하십시오. 선택한 폴더의 하위에 새 폴더가 추가됩니다.
+
+![](../../../_assets/tp630/file-manager/fld-create.png)
+
+2.	새 폴더의 이름을 입력한 후 `[ENTER]` 키를 누르십시오.
+
+![](../../../_assets/tp630/file-manager/fld-create-rename.png)
+
+
+[__SOURCE](4-service/2-file-manager/4-file-protect.md)
+# 4.2.4 파일 보호
+
+프로그램을 변경하거나 삭제할 수 없도록 설정하여 중요한 파일을 보호합니다.
+
+1.	파일을 선택한 후 `속성` 버튼을 터치하십시오. 속성 설정창이 나타납니다. 
+
+![](../../_assets/tp630/file-manager/fl-attribute.png)
+
+2.	파일 이름을 확인하고 `읽기전용` 체크박스를 터치하여 선택한 후 `[확인]` 버튼을 터치하십시오. 파일 목록의 속성에 보호 표시\(W\_\)가 나타납니다.
+
+![](../../_assets/tp630/file-manager/fl-attribute-pop.png)
+
+
+
+
+[__SOURCE](4-service/2-file-manager/5-data-backup.md)
+# 4.2.5 전체 백업
+
+프로젝트, 이력\(log\) 등 제어기의 파일들을 백업합니다.
+
+1.	폴더 목록의 티치 펜던트\(T/P\) 또는 이동식 저장 장치\(USB\)에서 티치 펜던트의 방향키를 이용해 백업을 저장할 대상 폴더를 선택하십시오. 
+
+![](../../_assets/tp630/file-manager/fl-backup-select.png)
+
+2.	`SHIFT` 키를 누른 상태에서 화면 하단의 `[전체 백업]` 버튼을 클릭하십시오.
+
+![](../../_assets/tp630/file-manager/fl-backup-button.png)
+
+3.	`시작` 버튼 클릭해 백업을 시작하십시오. 백업\(약 1분 소요\)이 완료되면 결과창에서 백업 결과를 확인하십시오.
+
+![](../../_assets/tp630/file-manager/fl-backup-pop.png)
+
+
+[__SOURCE](4-service/2-file-manager/6-data-restore.md)
+# 4.2.6 전체 복원
+
+프로젝트, 이력\(log\) 등 전체 백업 기능으로 백업한 파일들을 시스템으로 복원합니다.
+
+1.	폴더 목록의 티치 펜던트\(T/P\) 또는 이동식 저장 장치\(USB\)에서 티치 펜던트의 방향키를 이용해 전체 백업했던 폴더를 선택하십시오.
+
+![](../../_assets/tp630/file-manager/fl-backup-select.png)
+
+
+2.	`SHIFT` 키를 누른 상태에서 화면 하단의 `[전체 복원]` 버튼을 클릭하십시오.
+
+![](../../_assets/tp630/file-manager/fl-restore-button.png)
+
+
+3.	`시작` 버튼 클릭해 복원을 시작하십시오. 복원\(약 1분 소요\)이 완료되면 결과창에서 복원 결과를 확인하십시오.
+
+![](../../_assets/tp630/file-manager/fl-restore-report.png)
+
+4.	제어기의 전원을 재투입하십시오.
+
+[__SOURCE](4-service/2-file-manager/7-data-restore-partial.md)
+# 4.2.7 부분적인 복원
+
+백업 데이터 중 일부 폴더나 파일만 복원할 때는 복사, 붙여넣기 기능을 활용하십시오.
+
+1.	폴더 목록의 티치 펜던트\(T/P\) 또는 이동식 저장 장치\(USB\)에서 티치 펜던트의 방향키를 이용해 프로젝트 또는 이력이 백업된 폴더를 선택한 후 화면 우측의 `복사` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/file-manager/fl-restore-copy.png)
+
+
+2.	폴더 목록에서 티치 펜던트의 방향키를 이용해 \[MAIN\]을 선택한 후 화면 우측의 `붙여넣기` 버튼을 터치하십시오. 
+
+![](../../_assets/tp630/file-manager/fl-restore-paste.png)
+
+
+3.	중복 알림창에서 \[전부\] 체크박스를 터치하여 선택한 후 `[확인]` 버튼을 터치하십시오. 메인 보드에 백업 데이터가 복원됩니다.
+
+![](../../_assets/tp630/file-manager/fl-restore-pop.png)
+
+ 4.	제어기의 전원을 다시 켜십시오.
+
+
+[__SOURCE](4-service/2-file-manager/8-toggle-root.md)
+# 4.2.8 토글 root
+
+{% hint style="info" %}
+V60.26-00 부터 지원됩니다.
+{% endhint %}
+
+파일관리자 좌측의 트리창에 표시되는 MAIN과 TP 노드는 사용자에게 접근이 허가된 home 폴더 이하 만을 보여줍니다. home 폴더 바깥 영역은 시스템 폴더들로서 사용자가 함부로 접근해서는 안됩니다.
+
+유지보수 작업 중 꼭 필요한 경우라면, 화면 하단의 `[토글 root]`버튼을 클릭하여 시스템 폴더 접근 가능 모드로 전환할 수 있습니다.
+
+접근 가능 모드에 진입하면 아래와 같은 경고 메시지가 표시되고, MAIN과 TP 노드가 최상단의 시스템 폴더까지 표시합니다.
+
+![](../../_assets/tp630/file-manager/fl-toggle-root0.png)
+
+![](../../_assets/tp630/file-manager/fl-toggle-root1.png)
+
+`[토글 root]`버튼을 한번 더 클릭하면, 접근 가능 모드가 해제됩니다.
+
+[__SOURCE](4-service/2-file-manager/9-tp-backup.md)
+# 4.2.9 자동 백업 가져오기
+
+시스템 - 자동 백업 및 복원에서 설정한 자동 백업을 가져온다.
+
+1. 파일관리자 화면에서 \(T/P\) 항목 밑의 backup/ts 에서 티치 펜던트의 방향키를 이용해 가져올 백업 폴더를 선택하십시오.
+
+![](../../_assets/tp630/file-manager/fl-autobackup-copy-select.png)
+
+2. `[F2: 복사]` 버튼 클릭해 백업을 복사하십시오. 백업\(약 3분 소요\)
+
+![](../../_assets/tp630/file-manager/fl-autobackup-copy-button.png)
+
+3. 폴더 목록의 이동식 저장 장치(USB)에서 티치 펜던트의 방향키를 이용해 백업을 저장할 대상 폴더를 선택하십시오.
+
+![](../../_assets/tp630/file-manager/fl-autobackup-paste-select.png)
+
+
+4. `[F3: 붙여넣기]` 버튼 클릭해 백업을 저장 장치(USB)로 가져오십시오.
+
+![](../../_assets/tp630/file-manager/fl-autobackup-paste-button.png)
+
+5. 완료되면 파일관리자 화면에서 확인하십시오.
+
+![](../../_assets/tp630/file-manager/fl-autobackup-paste-done.png)
+[__SOURCE](4-service/3-program-conversion/README.md)
+# 4.3 프로그램 변환
+
+작성된 프로그램의 조건 및 위치 등을 일괄 또는 개별적으로 수정하거나 좌표를 변환하여 새 프로그램을 작성합니다.
+
+1.	`6: 프로그램 변환` 메뉴를 터치하십시오. 프로그램 변환 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 프로그램의 조건 및 위치 등을 수정하거나 새 프로그램을 작성하십시오.
+
+![](../../_assets/tp630/prg-modi-menu.png)
+
+{% hint style="info" %}
+로봇 기동 중에는 `4: 기록좌표계`, `5: 좌표변환`, `6: 미러 이미지`, `7: 스텝복사` 메뉴의 사용이 제한됩니다.
+{% endhint %}
+
+[__SOURCE](4-service/3-program-conversion/1-rec-condition.md)
+# 4.3.1 기록 조건
+
+프로그램의 특정 스텝에 기록 조건을 변경 설정하여 기존의 프로그램에 적용하거나 새 프로그램을 생성합니다.
+
+1.	`6: 프로그램 변환 - 1: 기록조건` 메뉴를 터치하십시오. 기록 조건 변환 설정창이 나타납니다.
+
+2.	기록 조건 옵션을 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/prg-cond-modi.png)
+
+* \[원본 프로그램\]/\[타겟 프로그램\]: 기록 조건을 변경할 원본 프로그램의 번호\(초기 설정값: 현재 선택된 프로그램\)와 기록 조건을 변경한 후 저장할 새 프로그램의 번호를 입력합니다. 대상 프로그램 번호를 원본 프로그램과 같은 번호로 설정하면 원본 프로그램이 덮어쓰기 되어 새 프로그램으로 대체됩니다.
+* \[시작 스텝\]/\[종료 스텝\]: 기록 조건을 변경 적용할 스텝의 범위\(초기 설정값: 1 / 마지막 스텝\)를 설정합니다.
+* \[Accuracy\], \[툴\]: 기록 조건을 변경합니다.
+
+
+
+
+[__SOURCE](4-service/3-program-conversion/2-rec-speed.md)
+# 4.3.2 기록 속도
+
+프로그램의 특정 스텝에 기록 속도를 변경 설정하여 기존의 프로그램에 적용하거나 새 프로그램을 생성합니다.
+1.	[6: 프로그램 변환 > 2: 기록속도] 메뉴를 터치하십시오. 기록 속도 변환 설정창이 나타납니다.
+2.	기록 속도 옵션을 설정한 후 `[확인]` 버튼을 터치하십시오.
+ 
+ ![](../../_assets/tp630/prg-speed-modi.png)
+
+* [원본 프로그램]/[타겟 프로그램]: 기록 속도를 변경할 원본 프로그램의 번호(초기 설정값: 현재 선택된 프로그램)와 기록 속도를 변경한 후 저장할 새 프로그램의 번호를 입력합니다. 대상 프로그램 번호를 원본 프로그램과 같은 번호로 설정하면 원본 프로그램이 덮어쓰기 되어 새 프로그램으로 대체됩니다.
+* [시작 스텝]/[종료 스텝]: 기록 조건을 변경 적용할 스텝의 범위(초기 설정값: 1/마지막 스텝)를 설정합니다.
+* [방법]: 속도 지정 방법을 설정합니다.
+* [속도지정]: 기록된 속도를 일괄 변환합니다.
+* [배율지정]: 기록된 속도의 단위와 [단위] 옵션에서 선택한 속도 단위가 일치할 경우, 기록된 속도에 대한 비율(%)로 변환합니다.
+* [단위변환]: 기록된 속도의 단위를 변환합니다.
+* [구간]: 기록 속도를 변경 설정할 스텝의 범위에서 적용 구간을 설정합니다.
+* [단위]: 속도 단위를 설정합니다. 속도 지정 방법을 [배율지정]으로 선택한 경우에는 스텝에 기록된 속도의 단위와 일치하는 것만 배율의 비율로 변환합니다.
+* [속도]: 속도를 설정합니다. 속도 지정 방법을 [배율지정]으로 선택한 경우에는 배율값을 의미합니다.
+
+[__SOURCE](4-service/3-program-conversion/3-rec-position.md)
+# 4.3.3 기록 위치
+
+프로그램의 특정 스텝에 숨은 포즈로 기록된 스텝 위치의 좌표계를 변경 설정하여 기존의 프로그램에 적용하거나 새 프로그램을 생성합니다.
+
+1. [6: 프로그램 변환 > 3: 기록위치] 메뉴를 터치하십시오. 기록 위치 변환 설정창이 나타납니다.
+2. 기록 위치 옵션을 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+  ![](../../_assets/tp630/prg-position-modi.png)
+
+* [원본 프로그램]/[대상 프로그램]: 기록 위치를 변경할 원본 프로그램의 번호(초기 설정값: 현재 선택된 프로그램)와 기록 위치를 변경한 후 저장할 새 프로그램의 번호를 입력합니다. 대상 프로그램 번호를 원본 프로그램과 같은 번호로 설정하면 원본 프로그램이 덮어쓰기 되어 새 프로그램으로 대체됩니다.
+* 스텝 범위: 기록 위치를 변경 적용할 스텝의 범위(초기 설정값: 1 ~ 마지막 스텝)를 설정합니다.
+* [좌표계 형식]: 스텝에 기록된 위치 데이터를 변환(shift)할 좌표계를 선택합니다. 베이스, 로봇, 툴, 사용자 선택 시, 직교 좌표값으로 변환하고, 축 선택 시 축 각도로 변환합니다.
+
+[__SOURCE](4-service/3-program-conversion/4-rec-crdsys.md)
+# 4.3.4 기록 좌표계
+
+숨은 포즈로 기록된 스텝 위치의 좌표계를 변경합니다. 해당 스텝에서 퀵오픈 버튼을 누르면 변경된 좌표계를 확인할 수 있습니다. 로봇 기동 중에는 [4: 기록좌표계] 메뉴의 사용이 제한됩니다.
+1.	[6: 프로그램 변환 > 4: 기록좌표계] 메뉴를 터치하십시오. 기록 좌표계 변환 설정창이 나타납니다.
+2.	기록 좌표계 옵션을 설정한 후 `[확인]` 버튼을 터치하십시오.
+ 
+   ![](../../_assets/tp630/prg-coordisys-modi.png)
+
+* [원본 프로그램]/[타겟 프로그램]: 기록 좌표계를 변경할 원본 프로그램의 번호(초기 설정값: 현재 선택된 프로그램)와 기록 좌표계를 변경한 후 저장할 새 프로그램의 번호를 입력합니다. 대상 프로그램 번호를 원본 프로그램과 같은 번호로 설정하면 원본 프로그램이 덮어쓰기 되어 새 프로그램으로 대체됩니다.
+* [시작 스텝]/[종료 스텝]: 기록 좌표계를 변경 적용할 스텝의 범위(초기 설정값: 1 / 마지막 스텝)를 설정합니다.
+* [좌표계 형식]: 새로 지정할 좌표계를 선택합니다.
+
+[__SOURCE](4-service/3-program-conversion/5-rec-conversion.md)
+# 4.3.5 좌표 변환
+
+좌표 변환 기능은 작업물(이미지 1)에 프로그램을 티칭한 이후에 이미지 2와 같이 동일한 모양의 작업물이 다른 위치에 있을 경우에도 별도의 티칭 없이 프로그램을 작성할 수 있게 해주는 기능입니다.
+ 
+   ![](../../_assets/rec-conv1.png)
+
+좌표 변환 기능을 사용하기 위해서는 3개의 기준점이 필요합니다. 초기 위치에서 작업물에 3개의 기준점을 표시하여 프로그램A를 작성합니다. 작업물의 위치를 이동한 후 미리 표시해 둔 3개의 기준점을 프로그램 B로 작성합니다.
+ 
+   ![](../../_assets/rec-conv2.png)
+
+
+{% hint style="warning" %}
+* 좌표 변환의 세 기준점에 대한 티칭의 정도는 좌표 변환 프로그램의 정확도에 영향을 미칩니다. 가능한 한 3개의 기준점에 대해 정확하게 티칭하십시오.
+* 좌표 변환의 3개의 기준점 사이의 거리는 가능한 한 멀게 설정하십시오.
+{% endhint %}
+
+
+프로그램 A와 프로그램 B의 기준이 되는 3 스텝에서 좌표 변환량을 계산하여 기존 프로그램(프로그램 1)을 새로운 프로그램(프로그램 2)으로 변환합니다.
+ 
+
+![](../../_assets/rec-conv3.png)
+
+
+로봇 기동 중에는 [5: 좌표변환] 메뉴의 사용이 제한됩니다. 좌표 변환 기능을 사용하는 방법은 다음과 같습니다.
+1.	[6: 프로그램 변환 > 5: 좌표변환] 메뉴를 터치하십시오. 좌표 변환 설정창이 나타납니다.
+2.	좌표 변환 옵션을 설정한 후 `[확인]` 버튼을 터치하십시오.
+ 
+ ![](../../_assets/tp630/prg-coordinate-modi.png)
+
+* [원본 프로그램]/[대상 프로그램]: 기존의 티칭 프로그램 번호(이미지 1의 프로그램 번호)와 좌표 변환을 수행하여 생성할 새 프로그램 번호(이미지 2의 프로그램 번호)를 설정합니다.
+* [이전위치 프로그램]/[변경위치 프로그램]: 좌표 변환의 기준이 되는 3점이 기록된 프로그램 번호(프로그램 A의 번호)와 좌표 변환의 기준이 되는 3점이 기록된 프로그램 번호(프로그램 B의 번호)를 설정합니다.
+
+[__SOURCE](4-service/3-program-conversion/6-mirror-image.md)
+# 4.3.6 미러 이미지
+
+로봇의 S축 0° 위치에서 Y-Z 평면을 기준으로 S축 위치와 손목축의 자세가 대칭인 프로그램을 작성합니다.
+이 기능은 자동차의 본체 용접과 같이 좌우 두 대의 로봇에 동일한 작업을 지시할 때 유용합니다. 먼저 한 대의 로봇에 작업을 티칭한 후 다른 한 대의 로봇에는 티칭한 작업의 프로그램을 열고 미러 이미지로 변환하면 S축에 대칭인 프로그램이 작성됩니다.
+
+   ![](../../_assets/mirror-image1.png)
+ 
+ 
+{% hint style="info" %}
+협동로봇에는 미러 이미지 기능을 지원하지 않습니다.
+로봇 기동 중에는 [6: 미러 이미지] 메뉴의 사용이 제한됩니다. 미러 이미지 기능을 사용하는 방법은 다음과 같습니다.
+{% endhint %}
+
+
+1.	[6: 프로그램 변환 > 6: 미러 이미지] 메뉴를 터치하십시오. 미러 이미지 설정창이 나타납니다.
+2.	미러 이미지 변환 옵션을 설정한 후 `[확인]` 버튼을 터치하십시오.<br>
+    -부가축의 경우 선택된 부가축에 한해서 동작 방향을 반전 하므로 주행축 등 필요에 따라 선택 여부를 결정 해야 합니다.
+
+
+* [원본 프로그램]/[대상 프로그램]: 기존 프로그램 번호와 미러 이미지로 변환하여 생성할 새 프로그램 번호를 설정합니다.
+
+   ![](../../_assets/tp630/prg-mirror-img.png)
+[__SOURCE](4-service/3-program-conversion/7-step-copy/README.md)
+# 4.3.7 스텝 복사
+
+프로그램의 일부를 다른 프로그램 또는 동일 프로그램으로 복사합니다. 스텝에 기록된 펑션(기능)도 함께 복사됩니다. 로봇 기동 중에는 [7: 스텝복사] 메뉴의 사용이 제한됩니다.
+
+1.	[6: 프로그램 변환 > 7: 스텝복사] 메뉴를 터치하십시오. 스텝 복사 설정창이 나타납니다.
+2.	스텝 복사 옵션을 설정한 후 `[확인]` 버튼을 터치하십시오
+ 
+   ![](../../../_assets/tp630/prg-step-copy.png)
+
+* [원본 프로그램]/[대상 프로그램]: 스텝을 복사할 원본 프로그램 번호와 복사한 스텝을 붙여 넣어 생성할 새 프로그램 번호를 설정합니다. 대상 프로그램 번호를 원본 프로그램과 같은 번호로 설정하면 원본 프로그램이 덮어쓰기 되어 새 프로그램으로 대체됩니다.
+* [시작 스텝]/[종료 스텝]: 복사할 스텝의 범위(초기 설정값: 1/마지막 스텝)를 설정합니다.
+* [투입 스텝]: 복사한 스텝을 붙여 넣을 기준 스텝을 설정합니다. 복사한 스텝은 기준 스텝 바로 다음에 붙여 넣기됩니다.
+* [복사 방법]: 복사한 스텝의 진행 방향을 선택합니다.
+* [정방향]/[역방향]: 복사한 스텝이 원본 프로그램과 동일한 순서 또는 원본 프로그램의 역순으로 붙여 넣기됩니다.
+
+{% hint style="info" %}
+* 보호 설정된 프로그램은 복사할 수 없습니다.
+* 복사한 스텝에 END 기능이 기록된 경우, 기능이 함께 복사됩니다. 필요에 따라 기능을 삭제하십시오.
+* 복사한 스텝에 복사 범위를 벗어난 스텝으로 점프(GOTO, GOSUB)하는 기능이 기록된 경우, 기능은 복사되지만 번호는 자동으로 변경되지 않습니다. 복사 후 번호를 변경하십시오.
+{% endhint %}
+
+[__SOURCE](4-service/3-program-conversion/7-step-copy/1-step-copy-example.md)
+# 4.3.7.1 스텝 복사 예
+
+프로그램1의 스텝2 ~ 스텝5를 프로그램2의 스텝2\(투입 스텝으로 설정\)에 정방향과 역방향으로 복사합니다.
+
+대상 프로그램\(프로그램2\)의 투입 스텝\(스텝2\) 바로 다음에 원본 프로그램\(프로그램1\)의 스텝2 ~ 스텝5가 정방향\(원본 프로그램과 동일한 순서\) 또는 역방향\(원본 프로그램의 역순\)으로 삽입됩니다.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">방법</th>
+      <th style="text-align:left">절차</th>
+      <th style="text-align:left"></th>
+      <th style="text-align:left">상세 과정</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">정방향</td>
+      <td style="text-align:left">복사 전</td>
+      <td style="text-align:left">
+        <p>원본 프로그램</p>
+        <p>(프로그램1)</p>
+        <p>▼</p>
+        <p>▼</p>
+        <p>대상 프로그램</p>
+        <p>(프로그램2)</p>
+      </td>
+      <td style="text-align:left">
+        <img src="../../../_assets/step-copy-fwd-prv.png" alt/>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">복사 결과</td>
+      <td style="text-align:left">프로그램2</td>
+      <td style="text-align:left">
+        <img src="../../../_assets/step-copy-fwd-nxt.png" alt/>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">역방향</td>
+      <td style="text-align:left">복사 전</td>
+      <td style="text-align:left">
+        <p>원본 프로그램</p>
+        <p>(프로그램1)</p>
+        <p>▼</p>
+        <p>▼</p>
+        <p>대상 프로그램</p>
+        <p>(프로그램2)</p>
+      </td>
+      <td style="text-align:left">
+        <img src="../../../_assets/step-copy-bwd-prv.png" alt/>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">복사 결과</td>
+      <td style="text-align:left">프로그램2</td>
+      <td style="text-align:left">
+        <img src="../../../_assets/step-copy-bwd-nxt.png" alt/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](4-service/3-program-conversion/9-stmt-comment.md)
+# 4.3.9 명령문 주석
+
+(이 기능은 V70.02-00 및 이후 버전부터 지원됩니다.)
+
+미리 설정된 데이터 주석을 활용하여, 명령문에 주석을 자동으로 붙여주는 기능입니다. 주석을 일괄 삭제하거나, 스폿용접 명령문인 `spot`문에 일련번호를 붙이는 기능도 포함하고 있습니다. 
+
+데이터 주석 설정 방법에 대해서는 [4.11 데이터 주석](../11-data-cmts.md)을 참조하십시오
+
+* 수행 예 1 (신호대입문, `wait`문, `move`문)
+![](../../_assets/tp630/prog-conv/prog-conv-data-job1.png)
+ 
+
+* 수행 예 2 (`spot`문)
+![](../../_assets/tp630/prog-conv/prog-conv-data-job2.png)
+
+
+### 조작방법
+
+(1) `[F1]: 서비스 - 6: 프로그램 변환 - 9: 명령문 주석`을 선택합니다.
+
+![](../../_assets/tp630/prog-conv/prog-conv-data-cmt.png)
+
+
+
+(2) 아래 조건들을 설정한 후, `[F7: 실행]`키로 실행합니다.
+
+- `원본 프로그램`
+
+  주석을 적용하고자 하는 원본 프로그램의 번호.
+  0으로 설정하면 모든 job의 전 영역에 대해 수행합니다.
+
+- `대상 프로그램`
+
+  주석 저장 후 새로 저장할 대상 프로그램의 번호
+  `원본 프로그램` 번호와 동일할 경우 덮어쓰게 됩니다.
+
+- `시작스텝` ~ `종료스텝`
+  
+  기록 조건을 변경하고자 하는 범위. (초기값은 0~마지막 스텝)
+  예를 들어, 2~5로 설정하면 스텝 2의 `move`문부터 스텝 5의 마지막 펑션까지 적용됩니다. 
+
+- `기존 주석`
+
+  * `모두 삭제` : 주석의 적용이 아닌 삭제를 수행합니다. (주석 행은 삭제하지 않으며, 명령문 우측의 주석만 삭제합니다.)
+  * `덮어쓰기` : 명령문에 기존 주석이 있으면, 덮어씁니다.
+  * `건너뛰기` : 명령문에 기존 주석이 있으면, 그 명령어에 대해서는 처리하지 않습니다.
+
+
+- `적용될 명령어들` (`기존 주석`을 `모두 삭제`로 선택한 경우에는 숨겨집니다.)
+  
+  주석을 적용할 대상 명령어들을 선택합니다. 
+
+  * `대입문 좌변` : 대입문의 좌변 변수의 주석을 명령문 주석으로 사용합니다.
+  * `move` : `tg=` 인수가 있는 move문에 대해, `tg=` 에 설정한 포즈식의 첫 포즈변수의 주석을 명령문 주석으로 사용합니다. 숨은 포즈 `move`문에 대해서는 적용되지 않습니다.
+  * `wait`, `if` (`elseif` 포함), `switch` : 조건 파라미터로 지정한 변수의 주석을 명령문 주석으로 사용합니다.
+  * `spot` : job 범위 내에서의 일련번호를 명령문 주석으로 사용합니다.
+    가령 접두어를 `W.P.=`로 설정하고 시작번호를 101로 설정하면, 첫 `spot`문에는 `W.P.=101`, 두번 째 `spot`문에는 `W.P.=102`와 같은 식으로 주석이 자동 입력됩니다.
+
+
+- `접두어`
+  
+  `spot`명령문의 주석으로 적용할 일련번호의 접두어를 정의합니다. 소프트키보드를 활용해 편집하십시오.
+
+- `시작번호`
+
+  `spot`명령문의 주석으로 적용할 일련번호의 시작번호를 설정합니다.
+
+ ------------
+
+### 참고사항
+
+-	명령문의 조건 파라미터가 수식으로 되어 있으면, 수식의 첫 글자를 점유하는 변수를 기준으로 주석이 결정됩니다. 예를 들어, `di1`이 `part check`이고, `di2`가 `vacuum check`이면, 아래의 `if`문에는 `part check`라는 주석이 적용됩니다.
+
+    ```python
+    if di1=0 and di2=0 then 90 # part check
+    ```
+
+-	job 편집화면의 블록편집 모드에서도 선택된 명령문들에 대해 주석을 자동 입력하거나 제거할 수 있습니다. 적용 조건은 이 화면의 설정을 따르지 않고 아래와 같이 고정 적용됩니다.
+  
+    * `기존 주석` : `덮어쓰기`
+    * `적용될 명령어들` : `spot`을 제외한 모든 명령어
+
+    상세한 내용은 [3.2.4.5 블록 편집 모드](../../3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md)을 참조하십시오.
+ 
+[__SOURCE](4-service/4-system-diagnosis/README.md)
+# 4.4 시스템 진단
+
+로봇과 제어기의 상태를 검사하고 관리합니다. 제어기의 모듈별로 버전을 확인하고 업데이트할 수 있습니다.
+
+
+[__SOURCE](4-service/4-system-diagnosis/1-system-version/README.md)
+# 4.4.1 시스템 버전
+
+`7: 시스템 진단 - 1: 시스템 환경` 메뉴를 터치하십시오. 시스템 환경 설정창이 나타납니다.
+
+1. 로봇과 제어기의 시스템 환경 정보를 확인하고 관리하십시오.
+
+![](../../../_assets/tp630/svc-system-version.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">로봇과 제어기의 시스템
+        환경(소프트웨어 버전)
+        정보입니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>기능 버튼을 이용해 시스템
+          환경을 편집하고 관리합니다.</p>
+        <ul>
+          <li>[확인]: 메뉴를 닫습니다.</li>
+          <li>[버전업]: 제어기 각 모듈의 버전을 업데이트합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](4-service/4-system-diagnosis/1-system-version/1-controller-system-update.md)
+# 4.4.1.1 제어기 시스템 업데이트
+
+통합 압축 파일을 이용하여 제어기 각 모듈의 버전을 업데이트합니다.
+
+1.	통합 압축 파일이 저장된 이동식 저장 장치를 티치 펜던트의 USB 슬롯에 연결하십시오. 티치 펜던트에 이동식 저장 장치가 연결되면 제목 표시줄에 \[USB\] 아이콘\(![](../../../_assets/icon-usb2.png)\)이 나타납니다.
+
+2.	시스템 환경 설정창 우측의 `버전업` 버튼을 터치하십시오. 버전업 프로그램 실행창이 나타납니다.
+
+3.	드롭다운 메뉴를 터치하여 \[버전 업\] 모드를 선택하고 `Open` 버튼을 이용하여 통합 압축 파일을 선택한 후 `[확인]` 버튼을 터치하십시오. 
+
+![](../../../_assets/image_118.png)
+
+4.	업데이트할 모듈을 선택한 후 `[확인]` 버튼을 터치하십시오. 업데이트가 시작됩니다. 
+
+![](../../../_assets/image_109.png)
+
+5.	업데이트가 완료되면 제어기를 재부팅 하십시오.
+
+![](../../../_assets/image_114.png)
+
+
+[__SOURCE](4-service/5-date-time-setting.md)
+# 4.5 날짜 및 시간 설정
+
+제어기의 날짜와 시간을 설정합니다.
+
+1.	\[8: 날짜, 시간 설정\] 메뉴를 터치하십시오. 날짜 및 시간 설정창이 나타납니다.
+
+2.	날짜 및 시간 정보를 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../_assets/tp630/svc-date.png)
+
+* 티치 펜던트의 조작키로 날짜와 시간을 입력하여 설정합니다.
+* 방향키를 누르면 날짜와 시간 항목\(연/월/일/시/분/초/오전오후\) 사이에서 커서가 이동합니다.
+* 숫자키를 눌러 숫자를 입력합니다. `[SHIFT]`+<↑/↓> 키로 수치를 조절할 수도 있습니다.
+* 달력에서 날짜를 설정합니다. \[◁/▷\] 버튼을 터치하여 연월을 선택한 후 날짜를 터치하십시오.
+
+
+
+
+[__SOURCE](4-service/6-app.md)
+# 4.6 앱(App)
+
+티치 펜던트에 설치되어 실행되는 소프트웨어를 관리합니다.
+
+자세한 내용은 "[${cont_model} 로봇제어기 기능설명서 - Teach Pendant 앱(App)](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/ko/README)"을 참조하십시오.
+
+
+[__SOURCE](4-service/7-tp-option.md)
+# 4.7 티치펜던트 옵션
+
+티치펜던트의 각종 환경 설정 옵션을 설정합니다.
+
+![](../_assets/tp630/svc-option.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">항목</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        소리
+      </td>
+      <td style="text-align:left">티치펜던트의 비프(beep) 음을 ON/OFF 합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        화면보호기 시간
+      </td>
+      <td style="text-align:left">마지막 조작 시점부터 설정한 시간이 소요된 후 화면보호기가 작동합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        화면보호기 밝기
+      </td>
+      <td style="text-align:left">화면보호기의 밝기를 0(꺼짐) ~ 6(약간 어두움) 단계로 설정합니다.<br>(V60.32-06 버전부터 지원됩니다.)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        화면 보호 중 통신 주기
+      </td>
+      <td style="text-align:left">화면보호기 동작 중, 티치펜던트가 제어기 본체로부터의 정보 수신을 얼마나 느리게 할 지를 통신 주기로 설정합니다. 0으로 설정하면 지연 없이 동일하게 통신합니다.<br>
+      (V60.30-08 버전부터 지원됩니다.)
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        터치스크린 켜기
+      </td>
+      <td style="text-align:left">터치스크린을 ON/OFF 합니다.<br>
+      의도하지 않은 화면 접촉에 의한 티치펜던트 오조작이 우려될 경우 이 옵션을 끄십시오.<br>
+      다시 터치스크린을 옵션을 키고자 하는 경우, CTRL + ←(Backspace) 키를 눌러 F 버튼 막대 키패드 모드를 활성한 후 옵션을 다시 활성화 하십시오.<sup>1)</sup></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        조그키 사용 여부
+      </td>
+      <td style="text-align:left">조그키 `J7-`/`J7+`와 `J8-`/`J8+`를 사용할 지 각각 선택합니다. <br>조그키 오조작으로 인한 포지셔너 충돌 등이 우려될 경우 이 옵션을 끄십시오.<sup>2)</sup></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        언어
+      </td>
+      <td style="text-align:left">티치펜던트의 표시 언어를 변경합니다. 최상위 화면으로 나간 후 부터 적용됩니다.<br>
+      (V70.00-00 버전부터 지원됩니다.<sup>3)</sup>) </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+
+1\) 키패드 모드에 관한 자세한 내용은 "[11.2 키패드 모드](../11-etc/2-keypad-mode.md)"를 참고하십시오.
+
+2\) 조그키 사용 여부에 관한 자세한 내용은  "[7.6.6 메커니즘 설정](../7-system/6-initialization/6-mechannism-set.md)"의 메커니즘 조그 규칙을 참고하십시오.
+
+3\) 그 이 전 버전은 `[F1: 서비스] - 9: TP 응용프로그램 종료` 를 수행한 상태에서만 표시 언어를 전환할 수 있습니다.
+
+{% endhint %}
+
+
+
+[__SOURCE](4-service/8-tp-share.md)
+# 4.8 티치펜던트 공유
+
+![](../_assets/tp630/tp-sharing.png)
+
+화면 상단의 라디오 버튼으로 모드를 선택합니다.
+
+* OFF : 공유 기능을 사용하지 않습니다. 평상시엔 OFF로 되어 있어야 티치펜던트가 정상적으로 제어기에 연결됩니다.
+
+* VRC (PC) : 실제 티치펜던트를 데스크탑 PC에 실행한 HRSpace4의 여러 가상제어기(VRC)에 연결하여, 전환해가면서 사용합니다. 연결 방법은 HRSpace4 도움말의 아래 설명을 참조하십시오.
+  + HRSpace4 설명서 - 8.4. 실제 티치펜던트 (RTP; Real Teach Pendant)
+
+* RRC (Real Robot Controller) : 티치펜던트 1대를 여러 대의 제어기에 연결하여, 전환해가면서 사용합니다.
+  + 별도의 옵션 하드웨어가 필요합니다. 현재 이 기능은 지원되지 않습니다.
+
+[__SOURCE](4-service/9-industrial-communication-monitoring.md)
+# 4.9 산업용 통신 모니터링
+
+펌웨어 정보 및 통신 상태를 모니터링합니다.
+
+자세한 내용은 "[${cont_model} 제어기 기능설명서 - 산업용 통신 > 1. CIFX PCI 통신 > 1.4 CIFX PCI 통신 모니터링](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/ko-${cont_model}/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README?cont_model=${cont_model})"을 참조하십시오.
+[__SOURCE](4-service/10-system-program.md)
+# 4.10 시스템 프로그램
+
+제어기에 설치된 시스템 프로그램(e.g. OPC-UA server) 목록을 확인하고 제거 할 수 있습니다.
+
+<br>
+
+1. 시스템 프로그램의 설치
+    * ${cont_model} 시스템 프로그램 설치 파일(hps)이 든 USB를 TP에 연결 합니다.
+    * \[[5: 파일관리](2-file-manager/README.md)\] 메뉴를 실행합니다. \[<img src="../_assets/icon-usb.png" alt/>USB\] 파일 목록 에서 해당 파일을 선택하고 엔터키를 누릅니다.
+    * 프로그램 설치 대화 창이 나타나면 `실행` 버튼을 눌러 설치를 시작 합니다.
+    * 설치가 완료 되면 `나가기` 버튼을 누릅니다.
+    * 프로그램을 시작 하려면 시스템을 재 시작 하십시오.
+
+<br>
+
+2.	시스템 프로그램의 제거
+    * \[14: 시스템 프로그램\] 메뉴를 실행하여 설치된 프로그램 목록을 확인 합니다.
+    * 프로그램을 선택하고 화면 하단의 `제거하기` 버튼을 클릭 합니다.
+    * 프로그램 제거 대화 창이 나타나면 `실행` 버튼을 눌러 제거를 시작 합니다.
+    * 제거가 완료 되면 `나가기` 버튼을 누릅니다.
+
+[__SOURCE](4-service/11-data-cmts.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
+# 4.11 데이터 주석
+
+(이 기능은 V70.02-00 및 이후 버전부터 지원됩니다.)
+
+IO변수, 내장 PLC의 각 릴레이, 기타 일반 변수에 대해 주석을 등록할 수 있습니다. 등록된 주석은 모니터링창에 툴 팁으로 표시됩니다. (`범용 입력`, `범용 출력`, `fn 입력`, `fn 출력`, `전역변수`, `메모리 변수`, `각종 데이터` 모니터링)
+
+![](../_assets/tp630/data-cmt/data-cmt-di.png)
+
+또한, 아래 기능들을 사용하여 등록된 주석을 job 프로그램의 각 명령문에 자동으로 입력할 수도 있습니다.
+
+* [4.3.9 명령문 주석](3-program-conversion/9-stmt-comment.md)
+* [3.2.4.5 블록 편집 모드](../3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md) - `[자동 주석]` 버튼.
+
+
+이 화면에서 설정된 주석은 메인 모듈의 `project/DataCmt.txt` 파일로 저장됩니다.
+
+![](../_assets/tp630/data-cmt/data-cmt.png)
+
+### 데이터 주석 화면
+   1. `[F1:서비스] - 4: 데이터 주석`을 선택하여 화면을 엽니다.
+
+   2. 상단의 필터 콤보박스들로 원하는 데이터 종류와 타입을 선택합니다.
+
+   3. 선택된 데이터들이 테이블에 나타납니다. 각 항목의 이름과 주석, 현재 값을 볼 수 있습니다.
+
+   4. `fb.dio`, `fn.dio`, `relay` 객체는 모든 인덱스가 표시됩니다. 주석이 등록된 인덱스는 주석이 표시되고, 등록되지 않은 인덱스는 주석 열이 비어 있습니다.
+
+   5. `etc`는 IO와 릴레이를 제외한 나머지, 즉 각종 전역 변수들 중 주석이 등록된 것만 표시합니다. (지역 변수는 서브 job에 따라 의미가 달라질 수 있으므로 주석을 등록하지 마십시오.) 데이터 타입은 해당 변수의 타입에 따라 표시됩니다.
+   ![](../_assets/tp630/data-cmt/data-cmt-etc.png)
+
+### 이동
+   1. 상하 화살표키를 눌러 항목을 이동할 수 있습니다. `Ctrl`키와 같이 누르면 더 빠르게 이동합니다.
+
+   2. 혹은, `이름` 열에 숫자키로 인덱스를 입력하여 해당 인덱스로 바로 이동할 수도 있습니다. (`etc` 객체에서는 불가)
+
+   3. 한번에 표시되는 항목 수는 최대 1000개입니다. 따라서, `M` 릴레이 등 이보다 최대 인덱스가 큰 종류는 한번에 볼 수 없습니다. 위 2.의 방법으로 페이지를 바꿔가며 이동해야 합니다.
+
+
+### 편집, 저장, 불러오기
+   1. `주석` 열에 숫자키나 소프트키보드로 주석을 입력, 편집 할 수 있습니다.
+   
+   2. 등록되어 있는 주석을 제거하고 싶으면, 주석 열의 문자열을 삭제하면 됩니다. (공백 문자열은 미등록으로 간주됩니다.)
+
+   3. `[F7:확인]` 혹은 `[SHIFT]+[F7:적용]`을 누르면, 편집한 내용이 메인 모듈에 반영되고, `DataCmt.txt` 파일에도 저장됩니다.
+
+   4. `[F1:클리어]`를 누르면, 모든 항목이 삭제됩니다. (파일에는 `[F7:확인]`를 눌러야 반영됩니다.)
+      
+   5. `[F2:다시 로드]`을 누르면, `DataCmt.txt` 파일이 다시 로드되고, TP의 데이터 주석 화면도 갱신됩니다.
+
+   6. `[F3:정렬]`을 누르면, 화면에서는 변화가 없지만, `[F7:확인]`로 저장할 때 정렬된 상태로 저장됩니다. 정렬하지 않고 저장하면, 파일의 기존 순서가 보존됩니다.
+
+   7. 값 열은 편집할 수 없습니다.
+
+
+### `DataCmt.txt` 파일
+
+   1. 혹은 PC에서 텍스트 편집기를 사용하여 `DataCmt.txt` 파일을 편집할 수도 있습니다. 아래 그림은 파일을 `Visual Studio Code` 로 열어 본 예입니다.
+   ![](../_assets/tp630/data-cmt/data-cmt-file.png)
+
+   2. 파일은 `tsv(Tab-Separated Values)` 형식입니다. 각각의 행이 1개씩의 이름, 주석 쌍으로 구성됩니다. 이름과 주석 사이는 1개 이상의 탭(tab) 문자로 구분해야 합니다.  
+
+   3. HRLadder의 `릴레이 설명 가져오기`/`릴레이 설명 내보내기` 기능의 파일형식과 호환됩니다. 따라서 작성된 파일은 Hi6/Hi7 제어기, HRLadder 공용으로 사용할 수 있습니다. (Hi5a 제어기와도 호환됩니다. 단, 릴레이명, 변수명의 차이는 조정이 필요합니다.)
+
+   4. IO나 릴레이 이름은 대문자로 된 내장PLC 방식과 소문자로 된 hrscript 방식을 모두 동일하게 인식합니다. (가령, `FB5.DIB3`과 `fb5.dib3`을 동일하 것으로 간주합니다.) 변수의 경우는 대소문자가 정확히 일치해야 합니다.
+
+   5. 비영어 언어의 주석일 경우, 파일의 인코딩 방식은 반드시 UTF8-BOM로 저장하십시오. (영어 주석만 사용할 경우는 ANSI, UTF8-BOM 둘 다 가능)
+
+[__SOURCE](5-conditional-setting/README.md)
+# 5. 조건 설정
+
+프로그램을 수정하지 않고 운전 조건만 간편히 변경합니다. 변경한 설정값은 제어기가 재시동되어도 동일하게 유지됩니다.
+
+
+[__SOURCE](5-conditional-setting/1-op-cond-set.md)
+# 5.1    운전 조건 설정
+
+1.	초기 화면에서 좌측 상단의 \[속도조절\] 버튼을 터치하십시오. 운전 조건 설정창이 나타납니다.
+
+    ![](../_assets/tp630/sbar-spd-auto.png)  ![](../_assets/tp630/sbar-spd-manual.png)
+
+{% hint style="info" %}
+\[속도조절\] 버튼에는 수동 모드일 때에는 스텝 전후진 제한 속도\(mm/sec\)가 표시되고, 자동 모드에서는 재생 속도\(%\)가 표시됩니다.
+{% endhint %}
+
+
+
+2.	운전 조건 설정값을 변경한 후 `[확인]` 버튼을 터치하십시오. 세부 설정값들에 대한 설명은 다음장으로 이어집니다.
+
+    ![](../_assets/tp630/sbar-condi-setting.png)
+
+
+
+
+[__SOURCE](5-conditional-setting/2-op-cond-set-info.md)
+# 5.2    운전 조건 설정 정보
+
+
+
+* \[1: 동작 사이클\]: 자동 운전 시 실행되는 프로그램의 반복 여부를 설정합니다. 로봇 기동 중에도 설정할 수 있으며 수동 운전 시에서 설정값이 적용되지 않습니다.
+  * 1사이클: 작업 프로그램을 1 회 운전 후 종료합니다. 프로그램 END를 만나면 로봇이 정지합니다.
+  * 반복: 작업 프로그램을 연속해서 반복 운전합니다. 외부의 정지 조작이 있으면 로봇이 정지합니다.
+* \[2: 스탭 전/후진시 최고속\]: 스텝의 전후진 시 제한 속도를 설정합니다. 이 옵션에 대한 자세한 내용은 "[2.1 수동 운전](../2-operation/1-manual-operation/README.md)"을 참조하십시오.
+* \[3: 스탭 전진시 펑션 실행\]: 스텝 전진 시 작업 프로그램에 기록된 기능의 실행 옵션\(방식\)을 설정합니다.
+  * Off: 작업 프로그램에 기록된 END만 실행합니다. END를 제외한 다른 모든 기능은 실행하지 않습니다.
+  * On: 작업 프로그램에 기록된 모든 기능을 실행합니다.
+  * 1 On: 입력 신호 대기 기능과 프로그램 END 기능만 실행합니다.
+
+{% hint style="warning" %}
+스텝 후진 시에는 입력 대기 신호 기능만 실행하고 이외의 모든 기능은 실행하지 않습니다.
+{% endhint %}
+
+* \[4: 스텝 후진 후, 전진 시 펑션 재실행\]: 스텝 후진 후 다시 전진할 때 작업 프로그램에 기록된 기능 중 이전에 실행한 기능을 다시 실행하도록 설정합니다.
+* \[5: 스텝 전/후진시 경로복구\]: 스텝 전후진 시 경로 복구의 실행 방식을 설정합니다.
+  * 무효: 경로 복구를 실행하지 않습니다.
+  * 유효: 사용자에게 경로 복구의 실행 여부를 확인하지 않고 수행합니다.
+* \[6: 자동운전 속도비율\]: 자동 모드로 프로그램 재생 시 로봇의 운전 속도\(%\)를 설정합니다. 작업 프로그램의 스텝에 기록된 속도를 변경하는 것이 아니라 스텝에 기록된 속도에 대한 로봇의 이동 속도를 1 ~ 100% 범위의 비율\(%\)로 일괄 변경합니다.
+
+
+{% hint style="info" %}
+스텝 후진 시에는 입력 대기 신호 기능만 실행하고 이외의 모든 기능은 실행하지 않습니다.
+{% endhint %}
+
+* \[7: 로봇 Lock\]: 로봇을 실제로 움직이지 않고 작업 프로그램을 자동 운전하도록 설정합니다. 주변 기기와의 입출력 상태와 소프트 리미트, 사이클 타임 등을 확인할 수 있습니다.
+* \[8: 보간기준\]: 수동으로 로봇을 조그 동작할 때 기준이 되는 툴을 설정합니다. 일반적으로 로봇툴을 보간 기준으로 사용합니다.
+  * 로봇툴: 로봇 선단에 부착된 툴을 기준으로 보간 동작을 실행합니다.
+  * 정치툴: 바닥면 등에 고정된 툴의 선단을 기준으로 보간 동작을 실행합니다. 정치툴을 보간 기준으로 선택하면 초기 화면 좌측의 툴 번호가 ST0으로 표시됩니다\(![](../_assets/tp630/sbt-crd-st0-small.png)\).
+
+
+{% hint style="info" %}
+정치툴을 보간 기준으로 선택한 경우 반드시 정치툴 좌표계를 설정해야 합니다. 자세한 내용은 "[7.3.6.2 정치툴 좌표계](../7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)"를 참조하십시오.
+{% endhint %}
+
+* \[9: 사용자 좌표계 지정\]: 수동 조그 조작 시 직교 동작을 위해 사용자 좌표계 번호\(0 ~ 10\)를 설정합니다. 로봇이 지정된 사용자 좌표계의 X, Y, Z 축 방향으로 직교 좌표계 동작을 수행합니다. 그리고 포즈 모니터링 시 선택한 사용자 좌표계의 좌표값이 툴 선단의 X, Y, Z 좌표값으로 나타납니다.
+
+  * 0으로 설정하면 화면 우측의 \[좌표계\] 버튼에 로봇 좌표계 아이콘\(![](../_assets/tp630/sbt-crd-robot-small.png)\)이 표시됩니다. 사용자 좌표계에 대한 동작이 해제되고 로봇 좌표계에 대한 직교 좌표 동작 및 모니터링을 수행합니다. <br>
+![](../_assets/tp630/pane-pose-robotcoord.png)
+
+  * 1 ~ 10 사이의 번호로 설정하면 \[좌표계\] 버튼에 사용자 좌표계 아이콘\(![](../_assets/tp630/sbt-crd-user-small.png)\)이 표시됩니다. `[축조작]` 키로 변경된 좌표치 값은 사용자 좌표계를 기준으로 합니다. <br>
+![](../_assets/tp630/pane-pose-usrcoord.png)
+
+
+{% hint style="info" %}
+사용자 좌표계 번호는 `시스템 - 2: 제어 파라미터 - 6: 좌표계 등록 - 1: 사용자 좌표계` 메뉴에서 등록할 수 있습니다.
+{% endhint %}
+
+
+* \[10: PLC 동작 모드\]: 로봇 제어기가 내장 PLC를 사용하여 입출력 신호를 제어할 때, 내장 PLC를 제어하기 위한 모드를 설정합니다. 내장 PLC 모드는 모두 4가지가 있습니다. 자세한 내용은 "[${cont_model} 제어기 내장 PLC 기능설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-embedded-plc/ko/README?cont_model=${cont_model})"를 참고 하십시오.
+
+  * Off : 기능을 무효로 설정합니다.
+  * Stop : 내장 PLC 동작을 정지시킵니다.
+  * R-Stop (Remote Stop) : Remote 모드이며, 제어기에 연결된 PC의 HRLadder에서 내장 PLC 동작을 정지시킵니다.
+  * R-Run (Remote Run) : Remote 모드이며, 제어기에 연결된 PC의 HRLadder에서 내장 PLC 의 동작을 실행시킵니다.
+  * Run : 제어기로 Download된 PLC 프로그램을 제어기가 동작합니다. PC의 HRLadder에서는 모니터링만 가능합니다.
+
+
+
+
+[__SOURCE](6-monitoring/README.md)
+# 6. 모니터링
+
+로봇 시스템의 상태와 제어기의 각종 데이터를 확인합니다.
+
+1.	화면 우측의 `창조정` 버튼과 하단의 `분할` 버튼을 터치한 후 왼쪽 하단의 `선택` 버튼까지 순서대로 터치 하십시오. 패널 선택창이 나타납니다.
+
+![](../_assets/tp630/rbt-window-divide.png)
+
+
+2.	패널 선택창에서 원하는 모니터링 항목을 선택하여 로봇 시스템의 상태와 제어기의 각종 데이터를 확인하십시오.
+
+![](../_assets/tp630/pane-list.png)
+
+{% hint style="info" %}
+* 패널 선택창에 모니터링 가능한 모든 항목이 나타납니다.
+* 모니터링 가능한 항목은 제어기 설정에 따라 다르게 나타납니다.
+* 작업 영역의 패널 스택과 창의 사용 방법에 대한 자세한 내용은 "[1.2.3.8 작업 편집창](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area?cont_model=${cont_model})"을 참조하십시오.
+{% endhint %}
+[__SOURCE](6-monitoring/1-basic/README.md)
+# 6.1 기본
+
+
+[__SOURCE](6-monitoring/1-basic/1-pose.md)
+# 6.1.1 포즈
+
+패널 선택창에서 \[포즈\]를 터치하십시오. 로봇의 포즈 정보창이 나타납니다. 로봇 각 축의 현재 각도와 TCP의 좌표값, 엔코더의 현재값과 지령값을 확인할 수 있습니다.
+
+![](../../_assets/tp630/pane-pose.png)
+
+
+[__SOURCE](6-monitoring/1-basic/2-op-info.md)
+# 6.1.2 가동정보
+
+패널 선택창에서 \[가동정보\]를 터치하십시오. 제어기의 가동 정보창이 나타납니다.
+
+시스템 초기화와 전원 투입, 최근 사이클 시작 직후의 제어기 동작별 누적 시간과 사이클 횟수를 확인할 수 있습니다. 정보 하단의 항목별 \[클리어\] 버튼을 터치하면 가동 정보를 초기화할 수 있습니다.
+
+![그림 42 가동 정보](../../_assets/tp630/pane-operating.png)
+
+항목별 조건에 따른 반영 시점은 다음과 같습니다.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">항목</th>
+      <th style="text-align:left">조건</th>
+      <th style="text-align:left">반영 시점</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">시스템 초기화 후</td>
+      <td style="text-align:left">측정 시간</td>
+      <td style="text-align:left">시스템 초기화 후부터
+        현재 시점 사이에 제어기가
+        가동한 시간</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">모터 ON 시간</td>
+      <td style="text-align:left">시스템 초기화 후부터
+        현재 시점 사이에 제어기의
+        모터가 켜져 있었던 시간</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">전원 투입 후</td>
+      <td style="text-align:left">측정 시간</td>
+      <td style="text-align:left">
+        <p>전원 투입 후부터 현재
+          시점 사이에 제어기가
+          가동한 시간</p>
+        <p>
+          <img src="../../_assets/op-time1.png" alt/>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">사이클 기록 시간</td>
+      <td style="text-align:left">
+        <p>전원 투입 후부터 지난
+          사이클까지 제어기가
+          가동한 시간</p>
+        <p>
+          <img src="../../_assets/op-time2.png" alt/>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">최근 사이클 시작 후</td>
+      <td
+      style="text-align:left">측정 시간</td>
+        <td style="text-align:left">
+          <p>사이클 시작(또는 전원
+            투입) 후부터 현재 시점
+            사이에 제어기가 가동한
+            시간</p>
+          <p>
+            <img src="../../_assets/op-time3.png" alt/>
+          </p>
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">사이클 기록 시간</td>
+      <td style="text-align:left">
+        <p>사이클 시작(또는 전원
+          투입) 후부터 지난 사이클까지
+          제어기가 가동한 시간</p>
+        <p>
+          <img src="../../_assets/op-time4.png" alt/>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](6-monitoring/1-basic/3-history.md)
+# 6.1.3 히스토리
+
+패널 선택창에서 \[히스토리\]를 터치하십시오. 히스토리창이 나타납니다.
+
+작업 프로그램의 실행 이력과 타임 스탬프가 함께 출력되어 히스토리를 확인할 수 있습니다.
+
+![그림 44 히스토리](../../_assets/tp630/pane-history.png)
+
+
+
+
+[__SOURCE](6-monitoring/2-io/README.md)
+# 6.2 IO, PLC, 통신
+
+
+[__SOURCE](6-monitoring/2-io/1-system-input.md)
+# 6.2.1 시스템 입력
+
+패널 선택창에서 \[시스템 입력\]을 터치하십시오. 입력 신호창이 나타납니다.
+
+로봇의 운행과 관련된 신호, 제어기와 로봇의 이상을 감지하기 위해 미리 할당된 입력 신호의 상태를 확인할 수 있습니다.
+
+
+![그림 37 시스템 입력 - ON/OFF,값,시퀀스 상태](../../_assets/tp630/pane-system-input.png)
+
+* ON/OFF 상태와 시퀀스 상태에서 현재 입력 중인 신호는 노란색으로 표시됩니다.
+* 시퀀스 상태에서는 제어기 시퀀스 신호의 상태만 표시합니다.
+* \[ON/OFF\]/\[값\]/\[시퀀스\]: 하단의 [모드]] 버튼을 터치하여 입력 신호창의 표시 방식을 변경할 수 있습니다.
+
+
+[__SOURCE](6-monitoring/2-io/2-system-output.md)
+# 6.2.2 시스템 출력
+
+패널 선택창에서 \[시스템 출력\]을 터치하십시오. 출력 신호창이 나타납니다.
+
+로봇의 운행과 관련된 신호와 브레이크 제어 상태를 확인할 수 있습니다.
+
+
+![그림 39 시스템 출력 - ON/OFF/값/시퀀스 상태](../../_assets/tp630/pane-system-output.png)
+
+* ON/OFF 상태와 시퀀스 상태에서 현재 입력 중인 신호는 노란색으로 표시됩니다.
+* 시퀀스 상태에서는 제어기 시퀀스 신호의 상태만 표시합니다.
+* \[ON/OFF\]/\[값\]/\[시퀀스\]: 하단의 [모드] 버튼을 터치하여 출력 신호창의 표시 방식을 변경할 수 있습니다.
+* \[수동 출력\]: ON/OFF 상태와 시퀀스 상태에서 선택한 신호를 강제로 출력할 수 있습니다.
+
+<br>
+
+#### 수동 출력
+
+원하는 신호를 선택하여 강제로 출력할 수 있습니다.
+
+1. 시스템 출력 신호창 우측의 \[ON/OFF\] 또는 \[시퀀스\] 라디오 버튼을 터치하여 표시 방식을 ON/OFF 또는 시퀀스 상태로 설정하십시오.
+2. 신호창에서 신호를 터치하여 선택한 후 \[수동 출력\] 버튼을 터치하십시오.
+
+![](../../_assets/tp630/pane-system-output1.png)
+
+3. 수동 출력 확인창에서 출력 조건을 확인한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/pane-system-output-manual-pop.png)
+
+
+
+| soN | =1/0 |
+| :---: | :---: |
+| N: 출력할 신호의 번호 | 출력 상태\(1: 출력, 0: 미출력\) |
+
+4. 선택한 신호의 출력 상태를 확인하십시오. 선택한 신호가 출력 상태로 전환되어 신호창에 노란색으로 표시됩니다.
+
+
+
+
+[__SOURCE](6-monitoring/2-io/3-user-input.md)
+# 6.2.3 범용 입력
+
+패널 선택창에서 \[범용 입력\]을 터치하십시오. 범용 입력 신호창이 나타납니다.
+
+제어기 내 I/O 보드의 CNIN 커넥터를 통해 입력되는 신호인 범용 입력 신호의 상태를 확인할 수 있습니다.
+
+![그림 40 범용 입력 신호 - ON/OFF 상태\(좌\) / 값 상태\(우\)](../../_assets/tp630/pane-univinsig-mode.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>범용 입력 신호의 상태를
+          표시합니다.</p>
+        <ul>
+          <li>시스템의 기본 사양으로
+            지정되거나 사용자에
+            의해 할당된 범용 입력
+            신호는 굵은 글씨로 표시됩니다.</li>
+          <li>현재 입력 중인 신호는
+            초록색으로 표시됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[속성적용]: 정/부논리
+            속성을 입력 상태값에 적용할지 여부를
+            설정할 수 있습니다. </li>
+          <li>[모드]: 해당 주소의 상태를 비트, 바이트, 워드 단위로 표시합니다.</li>
+          <li>[di/x]: 제어기의 논리적인 입력 상태와 PLC에 의한 매핑 상태를 구분하여 표시합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+* 내장 PLC로 필드버스 신호 등을 매핑하여 사용하는 경우에는 입력 신호의 On/Off 상태가 다르게 나타날 수 있습니다.
+* 입력 신호의 흐름은 다음과 같습니다. 
+{% endhint %}
+
+![](../../_assets/user-input-flow.png)
+
+
+[__SOURCE](6-monitoring/2-io/4-user-output.md)
+# 6.2.4 범용 출력
+
+패널 선택창에서 \[범용 출력\]을 터치하십시오. 범용 출력 신호창이 나타납니다.
+
+제어기 내 I/O 보드의 CNOUT커넥터를 통해 입력하는 신호인 범용 출력 신호의 상태를 확인할 수 있습니다.
+
+![그림 41 범용 출력 신호 - ON/OFF 상태\(좌\) / 값 상태\(우\)](../../_assets/tp630/pane-univoutsig-mode.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>범용 출력 신호의 상태를
+          표시합니다.</p>
+        <ul>
+          <li>시스템의 기본 사양으로
+            지정되거나 사용자에
+            의해 할당된 범용 출력
+            신호는 굵은 글씨로 표시됩니다.</li>
+          <li>현재 출력 중인 신호는
+            초록색으로 표시됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[속성적용]: 정/부논리
+            속성을 입력 상태값에 적용할지 여부를
+            설정할 수 있습니다. </li>
+          <li>[모드]: 해당 주소의 상태를 비트, 바이트, 워드 단위로 표시합니다.</li>
+          <li>[수동 출력]: 선택한 신호를
+            강제로 출력할 수 있습니다.</li>
+          <li>[do/y]: 제어기의 논리적인 입력 상태와 PLC에 의한 매핑 상태를 구분하여 표시합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+* 내장 PLC로 필드버스 신호 등을 매핑하여 사용하는 경우에는 출력 신호의 On/Off 상태가 다르게 나타날 수 있습니다.
+* 출력 신호의 흐름은 다음과 같습니다.
+{% endhint %}
+
+![](../../_assets/user-input-flow.png)
+
+#### 수동 출력
+
+원하는 신호를 선택하여 강제로 출력할 수 있습니다.
+
+1. 범용 출력 신호창 우측의 \[ON/OFF\] 라디오 버튼을 터치하여 표시 방식을 ON/OFF 상태로 설정하십시오.
+2. 신호창에서 신호를 터치하여 선택한 후 \[수동 출력\] 버튼을 터치하십시오.
+
+![](../../_assets/tp630/pane-univoutsig.png)
+
+3. 수동 출력 확인창에서 출력 조건을 확인한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/pane-univoutsig-manual.png)
+
+| FbN | doN | =1/0 |
+| :---: | :---: | :---: |
+| N: 모니터링할 FB 블록의 번호 | N: 출력할 신호의 번호 | 출력 상태\(1: 출력, 0: 미출력\) |
+
+4. 선택한 신호의 출력 상태를 확인하십시오. 선택한 신호가 출력 상태로 전환되어 신호창에 초록색으로 표시됩니다.
+
+![](../../_assets/tp630/pane-univoutsig-onoff.png)
+
+
+[__SOURCE](6-monitoring/2-io/5-fn-io.md)
+# 6.2.5 fn 입력, fn 출력
+
+fb객체의 특정 영역을 지정하여 fn객체를 정의할 수 있습니다.
+${cont_model} 제어기가 필드버스 master이고, 여러 개의 필드버스 slave장치들이 있을 경우, 각 slave장치의 영역들을 하나씩의 fn객체로 설정해두면, 이 slave들을 직관적으로 다룰 수 있습니다.
+
+설정된 fn객체는 로봇언어와 내장PLC에서 fb객체와 동일한 방식으로 사용될 수 있습니다.
+
+![](../../_assets/io/io_fn.png)
+
+
+패널 선택창에서 \[fn 입력\] 혹은 \[fn 출력\]을 선택하십시오. 범용 입력 신호창이 나타납니다.
+
+fn객체를 설정한 경우, 각 fn객체의 입력, 출력 신호의 상태를 확인할 수 있습니다.
+
+fn객체 설정 방법은 아래 링크를 참조하십시오.
+
+[7.3.2.12 fn 블럭 할당](../../7-system/3-control-parameter/2-io-signal-setting/12-fn-block?cont_model=${cont_model})
+
+[F6:이전] / [F7:다음] 버튼을 클릭하면 표시할 fn객체의 번호를 변경할 수 있습니다.
+
+나머지 F버튼들의 사용방법은 [범용 입력](3-user-input?cont_model=${cont_model}), [범용 출력](4-user-output?cont_model=${cont_model}) 모니터링 창과 동일합니다.
+
+
+
+
+![그림 40 범용 입력 신호 - ON/OFF 상태\(좌\) / 값 상태\(우\)](../../_assets/io/io_fn_mon.png)
+
+
+[__SOURCE](6-monitoring/2-io/6-forced-io.md)
+# 6.2.6 강제 IO (forced io)
+
+강제 IO 창에는 원하는 IO 릴레이 변수를 등록하여, 변경된 IO 값을 강제로 적용 할 수 있습니다.
+
+
+{% hint style="warning" %}
+* 시험 혹은 문제 분석을 위한 기능입니다.
+* 강제 IO의 오조작은 충돌, 낙하, 인명피해 등 심각한 사고를 유발할 수 있습니다. 해당 IO의 구성을 완전히 이해하고 값 변경의 결과를 명확히 예측하는 경우에만 신중을 기해 사용하십시오.
+* 시험 및 문제 분석이 끝나면, 반드시 강제 IO를 전체 클리어하여 정상적인 IO 상태로 복구해 주십시오.
+
+{% endhint %}
+
+#### 강제 IO 창 열기
+
+1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
+
+![](../../_assets/tp630/panel-split.png)
+&nbsp;
+![](../../_assets/tp630/panel-sel.png)
+
+2. 패널 선택창에서 `강제 io`를 더블클릭하십시오. 강제 I/O 창이 열립니다.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io.png)
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-mon.png)
+
+
+#### 사용 방법
+
+이름 열을 선택한 후 원하는 IO 릴레이 변수명을 타이핑하고 `ENTER` 키를 누르면, 테이블에 해당 변수가 등록됩니다.  
+(이름 칸을 한번 더 클릭하여 입력한 변수명을 수정할 수 있습니다.)
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-name.png)
+
+
+값 열을 선택한 후 적용할 새 IO 값을 타이핑하고 `ENTER` 키를 누르십시오.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-val.png)
+
+적용할 강제 IO 항목이 더 있으면 마찬가지 방법으로 입력하십시오. 최대 100개의 항목을 입력할 수 있습니다.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-multi.png)
+
+panel 제목 막대의 * 표시는 테이블이 수정되었고 이 수정 내용이 아직 적용되지 않았다는 의미입니다.
+강제 IO를 적용하려면 [F7: 적용] 버튼을 누르십시오.
+경고 메시지박스에서 `[확인]` 버튼을 누르는 순간 강제 I/O 항목들이 일괄 적용됩니다.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-apply.png)
+
+
+panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것을 확인할 수 있습니다. 제목 막대에는 빨간색의 F가 점멸하는데, 이것은 강제 IO가 적용되고 있음을 경고하는 표시입니다.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-result.png)
+
+
+* 편집 중 항목을 삭제할 때는 `SHIFT+DEL`을 누르십시오.
+* [F5: 위로 교환], [F6: 아래로 교환] 버튼을 눌러 항목의 순서를 바꿀 수 있습니다.
+* 테이블을 편집하다가 [F3: 편집 취소]를 누르면, 마지막으로 적용된 상태를 다시 불러옵니다.
+
+
+시험 및 문제 분석이 끝나면, 반드시 [F2: 클리어] 버튼을 눌러 강제 IO를 전체 클리어하십시오.
+
+![](../../_assets/tp630/panel-forced-io/panel-forced-io-clear.png)
+
+{% hint style="warning" %}
+* 여러 개의 항목이 같은 릴레이(혹은 겹쳐진 bit들)에 대해 서로 상반된 값을 강제한 경우, 테이블의 아래쪽 항목의 값으로 강제됩니다.
+* ${cont_model} 제어기의 전원을 끄면 강제 IO로 등록된 내용은 모두 클리어됩니다.
+
+{% endhint %}
+
+[__SOURCE](6-monitoring/2-io/7-memory-variables.md)
+# 6.2.7 메모리 변수
+
+패널 선택창에서 \[메모리 변수\]를 터치하십시오. 내장PLC 릴레이들 중 로봇언어에서 접근 가능한 변수를 표시합니다. 
+
+
+
+
+![](../../_assets/tp630/pane-memory-variables.png) 
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left"> 
+      <ul>
+          데이터 메모리(mw)와 시스템 메모리(sw)의 현재 값을 16진수, 부호있는 10진수, long형, float형 등으로 표시합니다.
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[시작주소]: 해당 버튼을 선택한 후 대화상자에 시작주소를 입력하면 입력주소를 화면 첫줄에 표시합니다.</li>
+          <li>[수동설정]: 화면의 원하는 주소셀을 선택한 후 해당 버튼을 누르면 원하는 값으로 기록할 수 있습니다.</li>
+          <li>[_mw/_sw]: 해당버튼을 누르면 mw변수와 sw변수를 전환하여 보여줍니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+[__SOURCE](6-monitoring/2-io/8-EC-device-info.md)
+# 6.2.8 EtherCAT 장치 
+
+패널 선택창에서 [EC. 장치정보]를 선택하십시오. ${cont_model} 제어기 내/외부 EtherCAT 네트워크를 구성하는 슬레이브 장치 목록과  장치 연결 상태를 보여줍니다. EtherCAT 네트워크에서 제어기 메인보드는 EtherCAT 마스터로 동작합니다.
+ 
+
+![](../../_assets/tp630/pane-EC-device.png) 
+
+
+-	ENI-구성된 슬레이브 번호: 제어기 EtherCAT 네트워크를 구성하는 슬레이브 장치 개수
+-	연결된 슬레이브 번호: 현재 연결된 슬레이브 장치 개수, 'ENI-구성된 슬레이브 번호' 개수와 동일해야 한다.
+-	디바이스: 메인보드와 연결된 EtherCAT 슬레이브 장치명
+-	주소: EtherCAT 네트워크 상 고유주소
+-	접속
+    -	NG: 통신불능
+    -	OK: 연결상태
+-	모드
+    -	Unknown: 통신불능 상태로 인해 현재 상태를 알 수 없음
+    -	Init: 통신 채널 초기화
+    -	pre-op: 비주기 메일박스를 이용한 통신만 가능한 상태
+    -	safe-op: Slave 장치의 송신(Tx PDO) 데이터만 교신 가능한 상태
+    -	operation: Slave 장치의 송수신(Tx/RxPDO) 데이터 모두 교신 가능한 상태
+
+[__SOURCE](6-monitoring/3-job/README.md)
+# 6.3 job 프로그램, 로봇언어
+
+
+[__SOURCE](6-monitoring/3-job/1-job.md)
+# 6.3.1 job
+
+패널 선택창에서 \[job\]을 터치하십시오. 전체 프로그램 리스트를 보기 위해서는 `[SHIFT]`+`[프로그램]`키를 누르면 프로그램 선택창이 나타납니다.
+
+![](../../_assets/tp630/k-prg-select.png)
+
+선택된 프로그램이 화면에 보이면 명령어 추가, 수정 등 편집을 수행할 수 있습니다.  
+
+![](../../_assets/tp630/pane-job.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호/키</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/tp630/k-prog-step.png" alt/>
+      </td>
+      <td style="text-align:left"> <ul> `[SHIFT]`+<<b>프로그램</b>>:  프로그램 목록에서 프로그램을 생성, 삭제, 선택합니다. <ul/></td>
+    </tr>
+     <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left"><ul>프로그램의 기본 정보와
+        명령문을 표시합니다. 명령문의 상세 정보를
+        확인하고 편집할 수 있습니다.<ul/></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[...]: 자동 들여쓰기가
+            잘못 적용된 경우 JOB 프로그램의
+            자동 들여쓰기를 다시
+            수행합니다.
+            <br />
+          </li>
+          <li>프로그램 작성 시 선택한
+            명령문의 인수값은 입력
+            영역에 표시됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+프로그램의 관리 및 작성 방법에 대한 자세한 내용은 "[3 프로그램 작성](../../3-programming/README?cont_model=${cont_model})"을 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](6-monitoring/3-job/2-hot-edit.md)
+# 6.3.2 hot edit
+
+로봇 기동 중에도 라인을 정지하지 않고 job 프로그램을 편집할 수 있는 기능입니다. 
+
+
+{% hint style="warning" %}
+* 본 기능을 통해 현재 자동 운전 중인 프로그램, 혹은 호출될 프로그램을 수정하고 적용하면 다음 사이클(메인 프로그램 END 실행 이후 시점)부터 적용되어 수정된 프로그램으로 로봇을 재생합니다. 올바르지 않는 수정은 로봇과 지그간 충돌과 같은 심각한 사고를 유발할 수 있으므로 최대한 주의하십시오.
+{% endhint %}
+<br><br>
+
+### 진입
+
+패널 선택창에서 \[hot edit\]를 터치하십시오. 현재 선택된 job 프로그램의 hotedit 창이 열립니다.
+
+![그림 43 hot edit](../../_assets/tp630/pane-hot-edit-0.png)
+
+<br>
+
+
+### 가능한 편집의 종류
+
+조작방식은 수동모드에서 조작과 동일하나, 아래의 기능은 사용할 수 없습니다. 
+
+1) \[기록\] 키 (숨은 포즈 MOVE의 기록): 'Hot Edit중에는 금지된 조작입니다.' 메시지 표시
+2) \[위치수정\] 키: 'Hot Edit중에는 금지된 조작입니다.'  메시지 표시
+
+
+![](../../_assets/tp630/pane-hot-edit-1.png)
+
+<br>
+
+### 반영
+
+프로그램 편집을 완료했다면, 안내표시줄 왼쪽의 ![](../../_assets/tp630/bt-menu.png) 버튼을 클릭하여 팝업 메뉴를 열고 'hotedit: 적용 요청'을 선택하십시오.
+
+![](../../_assets/tp630/pane-hot-edit-apply2.png)
+
+<br>
+
+반영되는 시점은 아래 표와 같습니다.
+
+<u>V60.32-03 및 이후 버전</u>
+<table>
+<thead>
+  <tr>
+    <th>상태</th>
+    <th>프로그램</th>
+    <th>적용 요청 후, 적용 시점</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="2">정지/재생<br>무관</td>
+    <td>재생 중이 아닌 프로그램<br>(호출스택에 포함되지 않은 job)</td>
+    <td>즉시 적용</td>
+  </tr>
+  <tr>
+    <td>재생 중인 프로그램<br>(호출스택에 포함된 job)</td>
+    <td>다음 cycle 시작<br>혹은 RESET 0</td>
+  </tr>
+</tbody>
+</table>
+<br>
+
+<u>V60.32-02 및 이전 버전</u>
+<table>
+<thead>
+  <tr>
+    <th>상태</th>
+    <th>프로그램</th>
+    <th>적용 요청 후, 적용 시점</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>정지 중</td>
+    <td>-</td>
+    <td>즉시 적용</td>
+  </tr>
+  <tr>
+    <td rowspan="2">재생 중</td>
+    <td>재생 중이 아닌 프로그램<br>(호출스택에 포함되지 않은 job)</td>
+    <td>즉시 적용</td>
+  </tr>
+  <tr>
+    <td>재생 중인 프로그램<br>(호출스택에 포함된 job)</td>
+    <td>다음 cycle 시작</td>
+  </tr>
+</tbody>
+</table>
+<br>
+
+### 제목막대 표시
+
+  hotedit 패널 제목막대의 우측에는 현재의 상태를 나타내는 기호가 표시됩니다.
+
+  \* 기호는 교시 프로그램이 수정되어 가동 중인 프로그램과 달라졌음을 의미합니다.  
+  ![](../../_assets/tp630/pane-hot-edit-apply3.png)
+
+  \> 기호는 가동 중 hotedit 적용이 요청된 상태를 의미합니다.  
+  ![](../../_assets/tp630/pane-hot-edit-apply4.png)
+
+  기호 표시가 없으면 수정 전이거나 적용이 완료되어 가동 중인 프로그램과 동일함을 의미합니다.  
+  ![](../../_assets/tp630/pane-hot-edit-apply5.png)
+
+
+### 다른 프로그램 선택
+
+[SHIFT]+[프로그램]키를 누르면 다른 프로그램을 선택할 수 있습니다. 새 프로그램을 작성할 수도 있습니다.
+
+[__SOURCE](6-monitoring/3-job/3-global-variable/README.md)
+# 6.3.3 전역변수
+
+모든 전역 변수의 목록을 표시해줍니다. 변수를 생성/삭제하고, 타입과 값을 편집할 수도 있습니다.
+
+&nbsp;
+
+#### 전역변수창 열기
+
+1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
+
+![](../../../_assets/tp630/panel-split.png)
+&nbsp;
+![](../../../_assets/tp630/panel-sel.png)
+
+2. 패널 선택창에서 \[전역변수\]를 터치하십시오. 전역변수 창이 열립니다.
+
+![](../../../_assets/tp630/pane-gvar.png)
+
+![](../../../_assets/tp630/panel-gvar/panel-gvar0.png)
+
+[__SOURCE](6-monitoring/3-job/3-global-variable/1-basic-feature.md)
+# 6.3.3.1 기본 기능
+
+#### 변수 찾기
+
+변수의 개수가 많아서 원하는 변수를 찾기가 어려울 때는 상단의 필터에 변수의 이름을 일부만 타이핑하십시오. 입력한 필터 문자열로 시작하는 변수만 화면에 표시되므로, 변수를 쉽게 찾을 수 있습니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-find.png)
+
+
+#### 변수 값 변경하기 (bool, 정수, 실수, 문자열 타입의 경우)
+
+원하는 변수의 값 열을 선택하고 새로운 값을 타이핑하십시오.
+ENTER키를 누르면 입력한 값이 해당 변수에 대입됩니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-edit-value.png)
+
+
+#### 변수 값 변경하기 (포즈, 시프트 타입의 경우)
+
+원하는 포즈나 시프트 변수의 값 열을 선택합니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-edit-pose1.png)
+
+ENTER키를 누르면 포즈 혹은 시프트 속성 창이 열립니다.
+편집을 수행한 후, F7: 확인 버튼을 클릭합니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-edit-pose2.png)
+
+
+#### 변수 타입 변경하기
+
+원하는 변수의 타입 열을 선택하고 ENTER키를 누릅니다. 아래와 같이 변수 생성하기 대화상자가 나타납니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-edit-type.png)
+
+![](../../../_assets/tp630/panel-gvar/gv-create-var.png)
+
+타입 리스트에서 원하는 타입을 선택하고 확인 버튼을 클릭하면, 해당 변수의 타입이 변경됩니다. 타입이 바뀌면 값은 초기화 되므로 유의하십시오.
+
+여러 개의 변수에 대해 타입을 선택한 후 ENTER키를 눌러 한꺼번에 변경할 수도 있습니다.
+(SHIFT+상하 화살표키를 눌러 연속된 여러 개의 셀을 선택할 수 있습니다. 혹은 CTRL키를 누른 채 원하는 셀들을 여러 개 터치하여 선택할 수 있습니다.)
+
+![](../../../_assets/tp630/panel-gvar/gv-sel-multi-type.png)
+
+
+#### 변수 이름 변경하기
+
+원하는 변수의 이름 열을 선택한 후 소프트키보드를 열어 새로운 이름을 타이핑하십시오.
+ENTER키를 누르면 입력한 이름으로 변경됩니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-edit-name.png)
+
+
+#### 변수 생성하기
+
+상단의 필터에 변수의 생성할 변수의 이름을 입력합니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-new.png)
+
+중복된 이름의 변수가 없는 것을 확인한 후 필터 옆의 + 버튼을 클릭하면, 변수가 디폴트 타입 int(정수)로 생성됩니다. 위에서 설명한 방법으로 생성된 변수를 원하는 타입으로 변경하십시오.
+
+![](../../../_assets/tp630/panel-gvar/gv-new2.png)
+
+
+#### 변수 삭제하기
+
+삭제할 변수를 선택합니다.
+DEL(CTRL+BACKSPACE) 키를 누르면 확인/취소 대화상자가 나타납니다. 변수명을 확인한 후, 확인 버튼을 누르십시오.
+
+![](../../../_assets/tp630/panel-gvar/gv-delete.png)
+
+
+[__SOURCE](6-monitoring/3-job/3-global-variable/2-array-object.md)
+# 6.3.3.2 배열과 객체
+
+##### 배열 생성하기
+
+pos라는 이름의 5x200의 2차원 포즈 배열 변수를 생성하는 예로 설명하겠습니다.
+위에서 설명한 방법으로 pos라는 이름의 변수를 생성합니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-new-arr1.png)
+
+
+타입 열을 선택하고 ENTER키를 누릅니다. 아래와 같이 변수 생성하기 대화상자가 나타납니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-new-arr2.png)
+
+타입 리스트에서 포즈를 선택합니다. 요소 개수에 5,200을 입력하고 확인 버튼을 누르면, pos의 타입이 Pose[5][200]의 배열로 변경됩니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-new-arr3.png)
+
+
+{% hint style="warning" %}
+\[경고\] 지나치게 큰 배열을 정의하면, 저장이나 불러오기에 소요되는 시간이 길어지고 정전시의 자동 저장이 실패할 수 있으므로 유의하십시오.
+{% endhint %}
+
+
+##### 배열 요소값 확인하고 변경하기
+
+배열 변수의 값은 []로만 표시되고 요소들의 값은 표시되지 않습니다.
+값 열을 선택하고 `ENTER`키를 누르거나 [F6: 하위레벨] 버튼을 클릭하면 배열이 하위레벨로 펼쳐지면서 요소 값들을 볼 수 있습니다.  
+
+![](../../../_assets/tp630/panel-gvar/gv-arr-level1.png)
+
+배열 요소에 대해서도 위에서 설명한 방법으로 값이나 타입을 변경할 수 있습니다.  
+
+2차원 배열 pos에서 pos[0]~pos[4] 또한 배열들입니다. ENTER키나 F6키를 눌러 하위레벨로 계속 내려갈 수 있습니다. 현재 표시되고 있는 배열의 레벨과 인덱스는 전역변수창 제목막대에서 확인할 수 있습니다.
+
+[F5: 상위레벨] 버튼을 클릭하거나 `ESC`키를 누르면 다시 상위레벨로 올라갑니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-arr-level2.png)
+
+배열은 동시에 100개의 요소만 표시되기 때문에, 기본적으로 [0]~[99] 인덱스 범위만 볼 수 있습니다. 좌상단의 시작 인덱스 편집박스의 값을 바꾸면 다른 범위의 요소도 확인 가능합니다. 예를 들어 /pos[4]에서 시작 인덱스에 190을 입력하면, [190]~[199]의 요소를 볼 수 있습니다.
+
+
+##### 객체 속성값 확인하고 변경하기
+
+객체 변수의 값 열을 선택하고 `ENTER`키를 누르거나 [F5: 하위레벨] 버튼을 클릭하면 객체가 하위레벨로 펼쳐지면서 속성 값들을 볼 수 있습니다. 조작방식은 배열과 거의 유사합니다. 단 시작 인덱스 편집박스는 사용되지 않습니다.
+
+![](../../../_assets/tp630/panel-gvar/gv-obj2.png)
+
+<br>
+
+##### 고정 변수(fixed-variable)
+
+가령 전역변수 창에서 `weld_points`라는 대량의 포즈를 작성했는데, 아래와 같은 대입문 수행에 의해 모든 데이터가 삭제될 수 있습니다.
+
+```python
+weld_points=0
+```
+
+변수를 고정(fixed)으로 지정하면 이러한 실수를 방지할 수 있습니다.
+
+![](../../../_assets/tp630/panel-gvar/fixed-var.png)
+
+전역변수 창의 최상위 레벨에서 배열 변수를 선택하고 [F4: 고정 토글]을 누르면, 타입이 `array`에서 `F.array` (fixed-array)로 변경됩니다.
+고정 변수로 지정되면, 대입문으로 다른 값을 대입할 수 없습니다. `weld_points`가 fixed 2차원 배열일 때, 아래 각 대입문의 결과는 주석과 같습니다.
+
+```python
+global weld_points  # 무시됨.
+global weld_points=0  # 대입 불가 에러 발생
+weld_points=0  # 대입 불가 에러 발생
+weld_points[2]=Array[30]  # 요소에 새로운 값 대입 가능
+weld_points[2][1]="light"  # 요소에 새로운 값 대입 가능
+weld_points[2][1].j2=90.5  # 속성에 새로운 값 대입 가능
+```
+
+[F4: 고정 토글]을 한번 더 수행하면 고정이 해제되면서 `F.array`가 다시 `array`로 원상복구됩니다.
+
+[__SOURCE](6-monitoring/3-job/3-global-variable/3-var-files.md)
+# 6.3.3.3 변수 파일
+
+변수 값들은 전원을 꺼도 보존되어야 하므로 파일로도 저장되는데, 전역변수는 종류에 따라 아래의 2가지 형태로 저장됩니다.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">종류</th>
+      <th style="text-align:left">경로파일명</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        전역 최상위(root) 배열 변수
+      </td>
+      <td style="text-align:left">MAIN/project/vars/*.csv</td>
+      <td style="text-align:left">각 변수마다 파일이 1개씩 생성되며 파일명은 변수명과 동일합니다.</td>
+    </tr>
+	 <tr>
+      <td style="text-align:left">
+        나머지 변수
+      </td>
+      <td style="text-align:left">MAIN/project/vars/vars.json</td>
+      <td style="text-align:left">나머지 모든 전역 변수가 하나의 파일로 모아서 저장됩니다.</td>
+    </tr>
+	</tbody>
+</table>
+
+<br>
+
+##### vars/.csv 파일
+
+파일관리자에서 `MAIN/project/vars/` 폴더를 열어보면 `weld_points.csv`라는 파일이 생성되어 있습니다. 최상위 레벨에서 배열 변수를 생성하면 변수명과 동일한 .csv 파일이 생성되며, 변수를 삭제하면 해당 파일은 자동으로 삭제됩니다.
+
+![](../../../_assets/tp630/panel-gvar/csv0.png)
+
+이 파일을 USB 메모리나 FTP로 복사하여 PC에서 열어봅시다. .csv 파일은 Comma-Separated Values 즉, 쉼표로 구분된 값들을 표현하는 아주 단순한 표준 텍스트 포맷입니다.
+
+참고 : [위키백과: CSV (파일 형식)](https://ko.wikipedia.org/wiki/CSV_(%ED%8C%8C%EC%9D%BC_%ED%98%95%EC%8B%9D))
+
+.csv 파일은 하나의 2차원 표를 표현하는데, 열은 쉼표로 구분하고 행은 개행으로 구분합니다.
+
+![](../../../_assets/tp630/panel-gvar/csv1.png)
+
+기정의 변수를 저장한 csv 파일은 `weld_points` 2차원 배열을 만들어가는 과정이 순서대로 나열되어 있습니다.
+
+각 행은 1번 째 열은 인덱스, 2번 째 열은 타입, 3번 째~마지막 열은 값입니다. 첫 행은 표의 헤더로서 이를 설명하고 있습니다.
+
+둘 째 행은 최상위 레벨, 즉 `weld_points` 자신을 만드는 행입니다. 따라서 인덱스 열은 비어 있고, 타입은 array, 개수는 10입니다. 즉, 일단 `weld_points[10]`이 만들어지며, 10개의 요소는 기본값인 0들로 채워집니다.
+
+```python
+, array, 10
+```
+
+다음 행들은 `weld_points[0]`의 요소들에 포즈타입 값을 생성해 대입하는 행입니다.
+
+```python
+[0][0], Pose, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, "base"
+[0][1], Pose, 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, "base"
+...
+```
+
+`weld_points[0]`에 대해 100개의 행이 수행되면 다음은 아래와 같이 `weld_points[1]`에 대한 처리를 수행하는 행들이 이어집니다.
+
+```python
+[1], array; 100
+[1][0], Pose; 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, "base"
+[1][1], Pose; 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, "base"
+[1][2], Pose; 0.000, 0.000, 0.000, 0.000, 0.000, 0.000, "base"
+...
+```
+
+.csv 파일을 파일관리자에서 더블클릭하여, Microsof Excel로 열어 편집할 수 있습니다. 편집이 끝나면 저장 버튼이나 `Ctrl+S`로 저장하십시오.
+
+![](../../../_assets/tp630/panel-gvar/csv2.png)
+
+Excel에서 저장하면 아래와 같이 불필요한 쉼표도 생기고, 좌표계의 따옴표도 사라져서 형식이 약간 변화합니다. Excel이 .csv를 처리하는 방식이므로 어쩔 수 없습니다. 어쨌든 ${cont_model} 제어기는 아래의 형식도 인식하므로 상관없습니다.
+
+```python
+, array,10,,,,,,
+[0], array,100,,,,,,
+[0][0], Pose,0,90,10,0,20,0,
+[0][1], Pose,0,0,0,0,0,0,base
+[0][2], Pose,0,10,0,0,0,0,robot
+[0][3], Pose,0,20,0,0,0,0,base
+[0][4], Pose,0,0,0,0,0,0,base
+[0][5], Pose,0,0,0,0,0,0,base
+```
+
+<br>
+
+##### .csv 불러오기
+
+편집한 파일을 다시 `MAIN/project/vars/` 에 덮어쓸 수 있지만, 메모리에 자동 반영되지는 않습니다.
+
+전역변수 창에서 [F2: 전부 불러오기] 버튼을 클릭하면, `vars/` 폴더의 모든 변수 파일을 메모리로 다시 불러옵니다.
+(변수 파일을 삭제하고 [F2: 전부 불러오기]를 클릭하면, 메모리의 해당 변수도 삭제되므로 주의하십시오.)
+
+![](../../../_assets/tp630/panel-gvar/fixed-var.png)
+[__SOURCE](6-monitoring/3-job/4-local-variable.md)
+# 6.3.4 지역변수
+
+현재 호출 프레임의 모든 지역 변수의 목록을 표시해줍니다. 변수를 생성/삭제하거나, 변수명, 타입을 변경할 수는 없지만 값을 편집할 수는 있습니다.
+
+1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
+
+![](../../_assets/tp630/panel-split.png)
+&nbsp;
+![](../../_assets/tp630/panel-sel.png)
+
+
+2.	패널 선택창에서 \[지역변수\]를 터치하십시오. 프로그램에 포함된 지역 변수 목록이 새 창에 나타납니다.
+
+![](../../_assets/tp630/pane-lvar.png)
+
+3.	변수 이름과 타입, 값을 확인하십시오. 변수 값을 변경하는 방법은 앞 절에서 설명한 전역변수와 동일합니다.
+
+![](../../_assets/tp630/pane-lvar-mon.png)
+
+[__SOURCE](6-monitoring/3-job/5-watch.md)
+# 6.3.5 각종 데이터 (watch)
+
+각종 데이터 창에는 원하는 변수나 수식들을 등록하여, 값을 모니터링하거나 변경할 수 있습니다.
+
+
+#### 각종 데이터 창 열기
+
+1. 화면을 분할하고 좌측 하단의 [선택] 버튼을 누릅니다.
+
+![](../../_assets/tp630/panel-split.png)
+&nbsp;
+![](../../_assets/tp630/panel-sel.png)
+
+2. 패널 선택창에서 `각종 데이터`를 터치하십시오. 각종 데이터 창이 열립니다.
+
+![](../../_assets/tp630/panel-watch/panel-watch.png)
+
+![](../../_assets/tp630/panel-watch/panel-watch-mon.png)
+
+
+#### 사용 방법
+
+상단의 입력칸에 원하는 변수나 수식을 입력하고 `+` 버튼을 클릭하면 테이블에 새로운 항목으로 입력됩니다.
+
+![](../../_assets/tp630/panel-watch/panel-watch2.png)
+
+
+이름 열을 한번 더 클릭하여 입력한 변수명이나 수식을 수정할 수 있습니다.
+
+![](../../_assets/tp630/panel-watch/panel-watch-rename.png)
+
+값 열을 클릭하여 새로운 값을 입력하면, 해당 변수의 값을 변경하게 됩니다. 수식의 값을 변경하는 행위는 무시됩니다.
+
+포즈/시프트 변수 혹은 수식의 값 열을 선택하고 `ENTER`키를 누르면 포즈/시프트 속성 창이 열리면서 값을 확인하고 수정할 수 있습니다.
+
+![](../../_assets/tp630/panel-gvar/gv-edit-pose2.png)
+
+특정 행에 대해 `SHIFT+DEL`키를 누르면, 해당 행을 삭제합니다.
+
+하단의 F버튼에서 [F7: 전부 저장하기] 버튼을 누르면, 작성된 변수, 수식 목록을 `cfg/watch.json` 파일에 저장합니다. 이 파일은 전원 재부팅 시 자동으로 불러옵니다.
+이 파일을 FTP 등을 통해 외부 PC로 전송 받아 목록을 편집할 수도 있습니다. 편집된 파일을 다시 `cfg/` 폴더로 덮어쓴 후 [F1: 전부 불러오기] 버튼을 클릭하면 각종 데이터 창에 반영됩니다.
+
+![](../../_assets/tp630/panel-watch/panel-watch-fbt.png)
+
+[F2: 위로 교환], [F3: 아래로 교환] 버튼을 클릭하면 현재 선택된 행의 위치를 위, 아래의 행과 교환하면서 이동 시킬 수 있습니다.  
+
+각종 데이터 창에는 총 10개의 페이지가 있어, 표시하고 싶은 변수나 수식을 그룹핑해 관리할 수 있습니다. [F4: 페이지] 버튼을 클릭하면 다음 페이지를 보여주고, `SHIFT`+[F4: 페이지] 버튼을 클릭하면 이전 페이지를 보여줍니다.
+
+배열이나 객체는 [F6: 하위레벨] 버튼이나 `ENTER`키로 하위 요소들을 볼 수 있으며, [F5: 상위레벨] 버튼이나 `ESC`키로 상위레벨로 올라갈 수 있습니다.
+
+시작 인덱스 편집박스에 값을 입력하여 특정 배열 요소부터 표시하도록 할 수 있습니다. ([전역변수](3-global-variable/README?cont_model=${cont_model}) 창과 조작방법이 동일합니다.)
+
+{% hint style="warning" %}
+* 결과값 표시를 갱신하기 위해 수식은 빠른 주기로 수행됩니다. mkucs()와 같이 시스템에 특정한 생성이나 변경을 유발하는 함수는 수식 내에 포함시키지 않도록 유의하십시오.
+{% endhint %}
+[__SOURCE](6-monitoring/3-job/6-call-stack.md)
+# 6.3.6 호출 스택
+
+패널 선택창에서 \[호출 스택\]을 터치하면 호출 스택창이 나타납니다. 이 절의 내용을 이해하려면 먼저 hrscript의 `call`~`return`문과 지역변수에 대한 이해가 선행되어야 합니다.
+
+[call문, jump문과 서브프로그램](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/3-flowcontrol-subprogram/7-call-jump/README?cont_model=${cont_model})
+
+[지역변수](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/3-flowcontrol-subprogram/8-local-global-var/1-local-var?cont_model=${cont_model})
+
+
+### 로봇언어의 호출과 리턴
+
+로봇언어에서는 `call`문으로 서브 job 프로그램을 호출(call)할 수 있습니다. 서브 프로그램은 `end`나 `return`문을 수행할 때 자신을 호출한 call문의 다음 명령문 위치로 리턴(return)합니다. 예를 들어 아래 그림에서, 5번 job은 8번 job을 호출하여 수행하다가 `return`문을 만나서 다시 5번 job의 `call`문의 다음 명령문부터 수행을 계속해나가는 것을 볼 수 있습니다. 
+
+![서브 job의 호출(call)과 리턴(return)](../../_assets/call-return.png)
+
+프로그램 옆에 그려진 그릇 모양은 호출 스택(call stack)이라는 저장공간입니다. 호출 스택에는 현재 수행되는 프로그램의 호출 프레임(call frame)이 쌓입니다. 호출 프레임 안에는 job 프로그램의 실매개변수와 지역변수 집합, 복귀할 주소(return address)가 저장됩니다.  
+서브 프로그램이 호출되면 새로운 호출 프레임이 최상단(top)에 쌓이기(push) 때문에, 자신을 호출한 프로그램의 지역변수는 보관되고 새로운 지역변수 공간이 준비됩니다.  
+서브 프로그램이 리턴되면 top 호출 프레임은 버리고(pop), 그 아래에 있던 호출 프레임이 다시 top이 됩니다. 호출 프레임에는 call 직전의 실매개변수, 지역변수가 그대로 보관되어 있고, 복귀할 위치 정보도 있기 때문에, 호출한 프로그램은 call 직전에 하던 작업을 그대로 이어 수행할 수 있습니다.
+
+
+### 호출 스택창
+
+호출 스택창으로 현재 호출 스택의 내용을 확인할 수 있습니다.
+<br><br>
+
+0001_main.job
+```python
+var n_work=10
+call 0005_init,12
+end
+```
+
+0005_init.job
+```python
+param mode
+var sensor_id
+call 0008_go_home
+for sensor_id=1 to 5
+  call 0009_check_sensor,sensor_id # --------- (A)
+next
+end
+```
+
+0008_go_home.job
+```python
+var pos1, pos2
+# do something
+end
+```
+
+0009_check_sensor.job
+```python
+param id
+var sensor_value
+# do something  --------- (B)
+end
+```
+
+job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 현재 프로그램이 5번 job의 `for`~`next` 루프 내부의 call문이 3번째 수행되어 (B) 위치까지 실행된 상태라고 한다면, 티치펜던트 화면은 아래 그림과 같은 상태일 것입니다.
+
+![job 편집, 호출 스택, 지역변수](../../_assets/call-stack.png)
+
+
+호출 스택의 맨 아래 프레임에는 1번 job, 그 위의 프레임에는 5번 job, 최상단(top) 프레임에는 9번 job이 쌓여있습니다. > 모양의 커서는 9번 job을 가리키고 있고, 지역변수 창에는 매개변수 `id`와 지역변수 `sensor_value`의 값이 표시되고 있습니다. 따라서, 9번 job은 5번 job에 의해 호출됐고, 5번 job은 1번 job에 의해 호출됐다는 정보를 확인할 수 있습니다.  
+5번 job이 호출을 한 위치까지 보고 싶다면 5번 job의 프레임을 선택하고 `ENTER`키를 누르십시오, job 편집창의 커서가 즉각 (A) 위치로 이동하여 call을 수행한 위치를 보여주며, 지역변수 창에는 5번 job의 프레임 내용, 즉 매개변수 `mode`와 지역변수 `sensor_id`의 값이 각각 call 직전의 값인 12와 3으로 표시됩니다.
+
+![job 편집, 호출 스택, 지역변수- 2](../../_assets/call-stack2.png)
+
+이와 같이 호출한 job의 프레임을 선택하여 이제까지 호출된 프로그램의 흐름을 쉽게 파악할 수 있습니다.
+
+{% hint style="warning" %}
+\[주의\] Step-FWD나 재생을 수행할 떄는 작업을 재개할 때는 > 커서를 반드시 최상단(top) 프레임 위치로 복구하십시오. 그러지 않으면, job 커서의 위치가 바뀐 것으로 간주되어 호출스택이 초기화된 채로 수행됩니다.
+{% endhint %}
+
+[__SOURCE](6-monitoring/3-job/7-multi-task.md)
+# 6.3.7 멀티 태스크
+
+패널 선택창에서 \[멀티 태스크\]을 터치하십시오. 멀티 태스킹 사용 시 현재 메인 태스크와 서브 태스크 1-7에 자동 운전 중인 프로그램, 스텝, 펑션, 동작상태, 작업상태를 표시합니다. 
+
+
+![](../../_assets/tp630/pane-multi-task.png) 
+
+<br>
+
+{% hint style="info" %}
+ 상세 내용은 "[멀티태스크 기능설명서](https://hrbook-hrc.web.app/#/view/doc-multi-task/ko/README?cont_model=${cont_model})"를 참조하여 주십시오.
+{% endhint %}
+[__SOURCE](6-monitoring/3-job/8-program-reservation.md)
+# 6.3.8 프로그램 예약실행
+
+`시스템 - 2: 제어 파라미터 - 7: 프로그램 예약실행` 항목에서 '적용 레지스터 개수'를 20개 또는 1개로 선택합니다.
+
+![](../../_assets/tp630/ctrl-prog-reserve.png)
+
+패널 선택창에서 \[프로그램 예약실행\]을 터치하십시오. 예약 실행창이 나타납니다.
+
+외부 신호에 의해 프로그램을 예약하고 예약 순서에 따라 프로그램을 수행할 때, 예약 프로그램 목록에서 상태를 확인하고 변경할 수 있습니다.
+
+![그림 51 프로그램 예약 실행 화면](../../_assets/tp630/pane-prog-reserv.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>예약 프로그램 목록입니다.
+          1 ~ 20 개의 프로그램을 예약
+          설정할 수 있습니다.</p>
+        <ul>
+          <li>원격 모드에서 실행 중인
+            프로그램이 종료되면
+            예약 순서에 따라 프로그램이
+            자동으로 실행됩니다.</li>
+          <li>프로그램의 예약 실행이
+            종료되면 목록에서 삭제됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[편집]: 예약 프로그램
+            목록을 편집합니다.</li>
+          <li>[삽입]: 예약 프로그램
+            목록에 예약 실행할 프로그램을
+            추가합니다.</li>
+          <li>[삭제]: 예약 프로그램
+            목록에서 예약 프로그램을
+            삭제합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+* `프로그램 예약실행` 항목은 응용 기능 중 센서 동기 기능의 동기 상태를 컨베이어 또는 프레스로 설정한 경우에만 활성화됩니다.
+* `프로그램 예약실행` 항목은 `시스템 - 2: 제어 파라미터 - 7: 프로그램 예약실행` 메뉴에서 `적용 레지스터 개수` 옵션이 무효로 설정되어 있으면 활성화되지 않습니다.
+* 프로그램 예약 실행에 대한 자세한 내용은 별도의 "[${cont_model} 제어기 프로그램 예약 실행 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-reserved-program-execution/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](6-monitoring/4-system/README.md)
+# 6.4 시스템
+
+
+[__SOURCE](6-monitoring/4-system/1-system-spec.md)
+# 6.4.1 시스템 특성
+
+패널 선택창에서 \[시스템 특성\]을 터치하십시오. 시스템 특성창이 나타납니다. 로봇 시스템의 다양한 데이터를 모두 확인하거나 특정한 정보 유형의 데이터만 확인할 수 있습니다.
+
+![](../../_assets/tp630/pane-syscharacter.png)
+
+| 번호 | 설명 |
+| :--- | :--- |
+| ![](../../_assets/c1.png) | 로봇 시스템의 데이터를 표시합니다. 상단의 정보 유형을 선택하여 해당 유형의 상세 데이터를 확인할 수 있습니다. |
+| ![](../../_assets/c2.png) | \[초기화\]: 축별 모션을 제외한 나머지 항목에 한하여, 시스템 데이터의 최대값을 유형별로 현재값으로 초기화할 수 있습니다. |
+
+{% hint style="info" %}
+시스템 특성 모니터링 기능은 엔지니어 모드에서만 사용할 수 있습니다.
+{% endhint %}
+
+{% hint style="warning" %}
+* 엔지니어 모드\(Engineer Mode\)에서는 상태 표시줄에 엔지니어 모드 아이콘\(![](../../_assets/eng-mode.png)\)이 깜빡입니다.
+* 엔지니어 모드에서 잘못 설정하면 로봇 시스템에 심각한 문제가 발생할 수 있으므로 주의하시기 바랍니다.
+{% endhint %}
+
+<br>
+
+
+#### 초기화
+
+원하는 정보 유형을 선택하여 데이터의 최대값을 현재값으로 초기화할 수 있습니다.
+
+1. 시스템 특성창 하단의 \[초기화\] 버튼을 터치하십시오.
+2. 초기화할 정보 유형을 터치하십시오. 선택한 항목의 최대값이 현재값으로 초기화됩니다.
+
+![](../../_assets/tp630/pane-syscharacter-clear.png)
+
+
+[__SOURCE](6-monitoring/4-system/2-system-diagnosis/README.md)
+# 6.4.2 시스템 진단
+
+패널 선택창에서 **[시스템 진단]** 을 터치하십시오. 최초 실행 시 브레이크 검사 데이터 창이 나타납니다.
+
+![시스템 진단 모니터링](../../../_assets/tp630/pane-sys-diagnosis.png)
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p><strong>[시스템 진단]</strong> 패널을 클릭한 상태에서 아래 버튼을 클릭하여 다른 검사 항목으로 전환할 수 있습니다.</p>
+        <ul>
+          <li><strong>[브레이크 검사]</strong>: 브레이크 검사 데이터 화면으로 전환합니다.</li>
+          <li><strong>[가스스프링 검사]</strong>: 가스스프링 검사 데이터 화면으로 전환합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](6-monitoring/4-system/2-system-diagnosis/1-brake-check.md)
+# 6.4.2.1 브레이크 검사 모니터링
+
+아래 버튼에서 **[브레이크 검사]** 를 터치하면 브레이크 검사 데이터 창이 나타납니다.
+
+![브레이크 검사 모니터링](../../../_assets/tp630/pane-sys-diagnosis-brake.png)
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <strong>[각도 변화량]</strong>
+        <p>브레이크 Hold/Release 상태에서 토크 적용 시 현재 각도 변화량, 최대 각도 변화량, 기준 각도 변화량을 표시합니다.</p>
+        <ul>
+          <li>현재 각도 변화량은 검사 중인 축에만 표시됩니다.</li>
+          <li>기준값 설정 모드인 경우 축 이름이 노란색으로 표시됩니다.</li>          
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">        
+        <strong>[토크 비율]</strong>
+        <p>브레이크 검사 시 적용할 토크 비율을 표시합니다.</p>
+      </td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+{% hint style="info" %}
+* 브레이크 검사 기능에 대한 자세한 내용은 "${cont_model} 제어기 기능설명서 - 로봇언어 HRScript" 의 [10.1.16 brake_check문](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/10-etc/1-proc/16-brake_check?cont_model=${cont_model}) 항목을 참조하십시오.  
+{% endhint %}
+
+
+[__SOURCE](6-monitoring/4-system/2-system-diagnosis/2-gas-pressure-check.md)
+# 6.4.2.2 가스스프링 압력 검사 모니터링
+
+아래 버튼에서 **[가스스프링 검사]** 를 터치하면 가스스프링 압력 검사 데이터 창이 나타납니다.
+
+![가스스프링 압력 검사 모니터링](../../../_assets/tp630/pane-sys-diagnosis-gas-pressure.png)
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>최근 5개의 가스스프링 압력 검사 결과를 표시합니다.</p>
+        <ul>
+          <li><strong>[타임스탬프]</strong>: 가스스프링 검사를 수행한 시각을 표시합니다.</li>
+          <li><strong>[압력]</strong>: 기준압력과 허용치, 추정된 압력을 표시합니다. </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+* 가스스프링이 장착된 로봇에서만 지원되는 기능입니다.
+* 측정 시작 자세에 따라 가스 스프링 압력의 추정 결과가 달라질 수 있습니다.
+로봇 초기 세팅 시 각 기준 자세에서 측정된 압력값을 기준으로 관리하시기 바라며, 동일한 자세에서 정기적으로 압력을 측정하여 초기 값과 비교하십시오. 측정값의 차이가 크게 발생할 경우, 장비 상태를 점검해 주시기 바랍니다.
+* 가스스프링 검사 기능에 대한 자세한 내용은 "${cont_model} 제어기 기능설명서 - 로봇언어 HRScript" 의 [10.1.7 gasp_check문](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/10-etc/1-proc/7-gasp_check?cont_model=${cont_model}) 항목을 참조하십시오. 
+
+{% endhint %}
+[__SOURCE](6-monitoring/4-system/3-system-task.md)
+# 6.4.3 태스크
+
+패널 선택창에서 \[태스크\]를 터치하십시오. 태스크창이 나타납니다.
+
+태스크별 동작 주기와 실행 시간 정보를 확인할 수 있습니다.
+
+![그림 46 태스크](../../_assets/tp630/pane-task.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+        태스크별 동작 주기와
+        실행 시간 정보를 표시합니다
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+      <ul>
+          <li>[사이클 시간]/[실행 시간]:
+            태스크별 정보 유형을
+            변경합니다.</li>
+          <li>[초기화]: 표시된 정보를
+            초기화합니다.</li>
+          <li>[카운터]: 태스크 모니터가 정상인 동안 카운터가 증가합니다..</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](6-monitoring/4-system/4-hw-monitoring.md)
+# 6.4.4 하드웨어 모니터링
+
+패널 선택창에서 [하드웨어 모니터링]을 선택하십시오. COM모듈 보드의 현재 전압, 온도 값을 모니터링 할 수 있습니다.
+허용 오차를 벗어날 경우 경고 메시지가 주기적(24h)으로 발생됩니다.
+ 
+ ![](../../_assets/tp630/pane-hw-monitoring.png)
+ 
+ 
+- 허용 오차 값을 변경 하시려면, 해당 셀을 선택하여 편집하고 [저장 최소/최대] 버튼을 누르십시오.
+- 기본값으로 초기화 하시려면 [초기화 최소/최대] 버튼을 누르세요.
+
+[__SOURCE](6-monitoring/5-appl/README.md)
+# 6.5 고급기능 및 로봇응용
+
+
+[__SOURCE](6-monitoring/5-appl/1-sensor-sync.md)
+# 6.5.1 센서 동기
+
+패널 선택창에서 \[센서 동기\]를 터치하십시오. 센서 동기창이 나타납니다.
+
+컨베이어 및 프레스 동기 기능과 관련된 정보를 확인할 수 있습니다. 센서 동기 기능은 `시스템 - 4: 응용 파라미터 - 4: 센서 동기` 메뉴에서 동기 상태를 컨베이어 또는 프레스로 설정하면 활성화됩니다.
+
+![그림 50 센서 동기 모니터링](../../_assets/tp630/pane-sensorsynch.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">선택한 센서의 컨베이어
+        및 프레스 동기 기능과
+        관련된 정보를 표시합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[sensor #1]: 드롭다운 메뉴를
+            터치하여 모니터링할
+            센서를 선택합니다.</li>
+          <li>[수동 초기화]: 센서 관련
+            각종 데이터(엔코더 펄스,
+            센서 위치, 센서 속도, 작업물
+            진입 개수, 동기 재생 상태
+            등)를 수동으로 삭제합니다.</li>
+          <li>[리밋 스위치 작동]: 리밋
+            스위치를 수동으로 입력할
+            경우 사용합니다.</li>
+          <li>[작업 포지션 입력]: 센서의
+            위치값(직선 mm, 원형 deg)을
+            수동으로 입력합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+센서 동기 기능에 대한 자세한 내용은 별도의 "[${cont_model} 센서동기 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-sensor-sync/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](6-monitoring/5-appl/2-coldet-monitoring.md)
+# 6.5.2 충돌검지 모니터링
+ 
+ ![](../../_assets/tp630/coldet_monitoring_pane.png)
+ ![](../../_assets/tp630/coldet_monitoring.png)
+
+ - [민감도] : 비율 값으로 높을 수록 민감하게 충돌을 검지 (0: 무효) [0~200]
+ - `[시스템>3:로봇 파라미터>14:충돌검지]` 일반 설정 탭에서 [민감도] 값을 설정 할 수 있다.
+ - [외란 토크]-[현재값] : 현재 추정되는 외력 토크 [Nm]
+ - [외란 토크]-[최대값] : 추정되는 외력 토크 중 최대값 [Nm]
+ - [기준값] : 충돌이라 판단하는 토크 임계값 [Nm]
+ - [최대/기준] : [최대값]값과 [기준값]값의 비율로서, 1 이상이 되면 해당 축에 충돌이 있다고 판단
+
+
+[__SOURCE](6-monitoring/5-appl/10-spot.md)
+# 6.5.10 스폿 용접 데이터
+
+패널 선택창에서 \[스폿\]을 터치하십시오. 스폿용접의 입출력 신호와 각종 데이터, 가동정보를 표시합니다. 
+
+
+![](../../_assets/tp630/pane-spot.png) 
+
+<br>
+
+{% hint style="info" %}
+ 상세 내용은 스폿 용접 기능 설명서의 "[3.1 모니터링](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/3-Related-functions/3-1-monitoring/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](6-monitoring/5-appl/11-tool-change.md)
+# 6.5.11 서보툴 체인지
+
+패널 선택창에서 \[서보툴 제인지\]을 터치하십시오. 서보툴 체인지 기능 사용 시 서보툴의 상태와 엔코더 전원투입 입/출력 상태를 표시합니다. 
+
+
+![](../../_assets/tp630/pane-tool-change.png) 
+
+<br>
+
+{% hint style="info" %}
+ 상세 내용은 "[서보툴 체인지 기능설명서](https://hrbook-hrc.web.app/#/view/doc-svtool-change/ko/README?cont_model=${cont_model})"를 참조하여 주십시오.
+{% endhint %}
+
+
+[__SOURCE](6-monitoring/5-appl/20-arc.md)
+# 6.5.20 아크 용접 데이터
+
+해당 내용은 아크 용접 기능 설명서의 "[7. 용접 데이터 모니터링](https://hrbook-hrc.web.app/#/view/doc-arc-weld/ko/7_Monitoring/README?cont_model=${cont_model})"을 참조하십시오.
+[__SOURCE](6-monitoring/5-appl/28-forcecontrol-monitoring.md)
+# 6.5.28 힘제어 모니터링
+ 
+![](../../_assets/tp630/force_monitoring.png)
+
+#### 설명 
+* 힘 제어 기능이 활성화 된 상황에서 [외력] 데이터를 모니터링
+* 힘 제어 기능 : fctrl, softxyz 및 softjoint 명령어 
+
+#### 파라미터 
+
+ - [cartesian] : 직교 좌표 외력 힘/토크 추정값   
+    - fctrl 기능 사용시 : 로봇 좌표계 기준 힘과 토크값 표시
+    - softxyz 기능 사용시 : 로봇 좌표계 기준 힘과 토크값 표시
+    - softjoint 기능 사용시 : 표시하지 않음
+ - [joint] : 축 좌표 기준 외력 토크 추정값 
+    - fctrl 기능 사용시 : 표시하지 않음
+    - softxyz 기능 사용시 : 표시하지 않음
+    - softjoint 기능 사용시 : 토크값 표시  
+
+[__SOURCE](6-monitoring/6-safety-funtion.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 6.6 안전 기능
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+패널 선택창에서 [안전 기능]을 터치하십시오. 안전 기능의 상태창이 나타납니다. 
+안전 기능, 수동 속도, 정지 시간, 정지 거리, MCU-A, MCU-B 상태값을 확인할 수 있습니다.
+
+![](../_assets/image_552.png)
+
+{% hint style="info" %}
+* 안전 기능에 대한 자세한 내용은 "[SafeSpace2.0 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)"를 참조하십시오.
+{% endhint %}
+
+[__SOURCE](7-system/README.md)
+# 7. 시스템
+
+설정 항목에서는 사용자의 정보와 각종 파라미터 정보 등을 확인 및 설정할 수 있습니다.
+
+
+[__SOURCE](7-system/1-setting-menu.md)
+# 7.1 시스템 메뉴 사용
+
+1.	수동 또는 자동 모드에서 초기 화면 하단의 `[시스템]` 버튼을 터치하십시오. 프로그램의 설정 메뉴가 표시됩니다.
+
+![](../_assets/tp630/sbt-system.png)
+
+2.	원하는 메뉴를 선택하여 사용자의 정보와 각종 파라미터 정보를 확인 및 설정하십시오.
+
+![](../_assets/tp630/sbt-system-menu.png)
+
+
+---
+
+* \[1: 사용자 환경\]: 각종 사용자 조건을 확인하고 설정합니다.
+* \[2: 제어 파라미터\]: 제어기의 각종 조건을 설정하고 입출력 신호, 통신 정보, 로봇 준비 OK 신호 조건, 원위치 신호 및 좌표계를 설정합니다.
+* \[3: 로봇 파라미터\]: 로봇 동작과 관련된 각종 데이터와 축별 원점, 동작 범위 등의 정보를 설정합니다.
+* \[4: 응용 파라미터\]: 로봇의 응용 기능을 사용하기 위한 각종 파라미터를 확인하고 설정합니다.
+* \[5: 초기화\]: 로봇 시스템의 초기화를 수행합니다. 또한 시리얼 엔코더를 초기화할 수 있습니다.
+* \[6: 자동 캘리브레이션\]: 로봇을 올바로 사용하기 위해 교시된 프로그램 및 자동으로 동작하는 움직임을 이용하여 로봇의 축 원점, 툴 길이, 부하 질량, 베이스축 방향 등을 캘리브레이션합니다.
+
+
+
+
+[__SOURCE](7-system/2-user-environment.md)
+# 7.2 사용자 환경
+
+각종 사용자 조건을 확인하고 설정합니다.
+
+1.	\[1: 사용자 환경\] 메뉴를 터치하십시오. 사용자 환경 설정창이 나타납니다.
+
+2.	사용자 환경을 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../_assets/tp630/system-user-environ.png)
+
+* \[1: Pose 기록 형태\]: 숨은 포즈로 기록되는 스텝의 위치 기록 형태를 설정합니다. ("[2.3.1.2 포즈](../2-operation/3-step/1-step-cmd-param/2-pose.md)")
+  * \[베이스\]/\[로봇\]/\[축각도\]: 베이스 좌표, 로봇, 축각도 값을 기준으로 스텝의 위치를 기록합니다
+  * \[U\]: 사용자 좌표계에서의 위치를 기록합니다.
+* \[2: 명령어 삭제시 확인\]: 수동 모드에서 명령문 삭제 시 삭제 확인창의 노출 여부를 설정합니다.
+* \[3: WAIT\(DI/WI\) 강제해제\]: 입력 신호 대기 또는 용접 완료 신호 대기에서 `[SHIFT]`+ `WAIT 해제` 키를 이용해 신호 대기 상태의 강제 해제 여부를 설정합니다.
+* \[4: 프로그램 스트로브신호 사용\]: 외부 디지털 신호를 수신하여 외부 프로그램 선택 시 외부 프로그램이 선택되는 시점을 설정합니다.
+  * \[무효\]: 외부 프로그램 선택 신호만을 읽어 들여 외부 프로그램을 선택합니다.
+  * \[유효\]: 프로그램 스트로브가 입력되는 시점에 외부 프로그램 선택 신호를 읽어 들여 외부 프로그램을 선택합니다.
+
+
+
+* \[5: 재생 프로그램의 외부갱신\]: 재생 중인 프로그램을 외부\(PC\)에서 수정하여 제어기로 다운로드하는 것의 허용 여부를 설정합니다. \(재생 중인 프로그램 번호에 대해 새로 다운로드된 프로그램은 다음 사이클부터 적용됩니다.\)
+
+{% hint style="warning" %}
+재생 중인 프로그램을 외부\(PC\)에서 수정하여 제어기로 다운로드하면 제품이 고장 나거나 성능에 이상이 발생할 수 있습니다. 고객지원팀에 문의하여 전문가에게 의뢰하거나 엔지니어에게 문의하십시오.
+{% endhint %}
+
+* \[6: 충돌센서\]: 충돌 센서 동작 시 로봇을 정지시키는 방법을 설정합니다.
+  * \[\(1\) 비상정지\]: 로봇을 비상 정지\(운전 준비 OFF \(모터 OFF\) 상태\)로 정지 시킵니다.
+  * \[\(2\) 정지\]: 로봇을 일반 정지\(운전 준비 ON \(모터 ON\) 상태\)로 정지 시킵니다.
+
+{% hint style="info" %}
+* 충돌 센서 작동으로 모터가 꺼진 상태에서 \[설정\] 메뉴에 진입하면 모터 ON 및 조그 동작이 가능합니다. 이를 이용하여 충돌한 로봇을 이동시킬 수 있습니다.
+* \[센서처리\]가 정지로 설정된 상태에서 충돌 센서가 동작하면 로봇은 조그 동작만 가능합니다.
+{% endhint %}
+
+
+* \[7: 입출력 신호 바이트 표시]: 입출력 신호를 바이트 단위로 표시합니다.
+  * 유효로 선택한 경우, 입력 신호 할당 페이지의 설정화면이 아래와 같이 변경됩니다.
+  ![](../_assets/tp630/system-user-environ-byte-index.png)
+
+* \[8: 정지신호 입력시 수동조작\]: 외부 정지 신호 입력 시 조그 동작의 가능 여부를 설정합니다.
+
+* \[9: 티치펜던트 분리\]: 펜던트를 분리한 상태에서도 자동 모드로 로봇을 구동하기 위한 기능입니다.
+  * `분리`로 설정하면 티치펜던트와 메인보드간 통신이 끊어졌을 때 발생하는 "E2800 Teaching pendant 동작이상" 에러도 발생하시키지 않습니다. (통신이 끊긴 상태에서도 로봇은 동작합니다.)
+  * `연결`로 설정하면 티치펜던트와 메인보드간 통신이 끊어졌을 때 발생하는 "E2800 Teaching pendant 동작이상" 에러가 발생하면서 모터OFF됩니다. (엔지니어 코드(R314) 입력 상태에서는 통신 타임아웃 시간을 설정할 수 있습니다.)
+  * `분리`로 설정하고, 제어기에서 티치펜던트를 제거한 상태로 전원을 투입하면 제어기는 현재 모드를 원격모드로 인식하고 외부 모터 ON, 외부 기동에 의해 로봇을 자동운전 할 수 있습니다.
+  * 티치펜던트에는 비상정지 스위치, 모드변환 스위치가 별도 신호 선으로 연결되어 있기 때문에 이 신호 선을 적절하게 결선해야 합니다.
+  * CNRTP 콘넥터의 핀 9번(Auto)을 2번(M1)에 연결하고, 핀 5번(비상정지1)을 2번(M1)에 연결하고, 핀 6번(비상정지2)을 1번(P1)에 연결한 전용 CNRTP 콘넥터를 티치펜던트 대신 접속해주시기 바랍니다.
+
+[__SOURCE](7-system/3-control-parameter/README.md)
+# 7.3    제어 파라미터
+
+제어기의 각종 조건을 설정하고 입출력 신호, 통신 정보, 로봇 준비 OK 신호 조건, 원위치 신호 및 좌표계를 설정합니다.
+
+1.	\[2: 제어 파라미터\] 메뉴를 터치하십시오. 제어 파라미터 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 제어기의 각종 조건을 확인 및 설정하십시오.
+
+![](../../_assets/tp630/ctrl-menu.png)
+
+
+[__SOURCE](7-system/3-control-parameter/1-control-env-setting.md)
+# 7.3.1 제어 환경 설정
+
+제어기의 각종 조건을 설정하여 필요한 작업을 수행합니다.
+
+1.	`2: 제어 파라미터 - 1: 제어 환경 설정` 메뉴를 터치하십시오.
+
+2.	제어기의 제어 환경 조건을 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/ctrl-environment-setting.png)
+
+* \[절전기능\]: 절전 기능의 사용 여부와 대기 시간을 설정합니다.
+
+  절전 기능을 사용 설정하면, 자동 모드에서 로봇이 기동 대기, 입력 신호 대기 등의 장시간 동안 운전 정지 상태에 있는 경우 대기 시간이 경과하면 모터의 전원 공급을 차단하여 소비 전력을 절약합니다. 로봇에 운전 명령이 입력되면 자동적으로 절전 기능이 해제되어 모터에 전원을 공급하고 로봇이 동작합니다.
+
+{% hint style="info" %}
+절전 기능이 활성화/비활성화되는 과정에서 지연 요소가 발생할 수 있습니다. 로봇의 속도를 예상하여 작업하는 경우에는 절전 기능을 무효로 설정하여 작업하십시오.
+{% endhint %}
+
+* \[자동모드에서 경로복구\]: 자동 모드에서 경로 복구 시의 허용 거리와 허용 각도를 설정합니다.
+
+   경로 복구 시 거리 및 각도가 설정된 허용 범위 이상인 경우 에러를 검출합니다. 허용 거리를 -1로 설정하면 경로를 복구하지 않습니다.
+
+
+* \[냉각팬 꺼짐 동작 시간\]: 
+
+  로봇이 가동중인 상태에서는 회생저항에 의해 제어기 내부의 온도가 상승하며, 이 온도 상승을 방지하기 위하여 냉각팬이 동작되어야 합니다. 
+
+  로봇이 비가동중인 상태에서는 제어기 내부의 온도는 더 이상 상승하지 않으며 따라서 이때는 냉각팬이 동작할 이유는 없습니다. 오히려 냉각팬이 동작하면 팬 수명의 단축, 소음 발생 및 소비 전력의 증가등의 역효과만 있습니다.
+
+  로봇이 가동중인 상태(모터 ON)가 되면 즉시 냉각팬이 동작하여야 하며, 로봇이 비가동중인 상태(모터 OFF, 절전 동작)가 되면 일정 시간이 경과된 후 냉각팬을 동작하지 않습니다. 만약 즉시 냉각팬이 동작하지 않는다면 회생저항의 잠열에 의해 제어기 내부의 온도가 상승합니다. 
+
+  냉각팬 껴짐/꺼짐 동작의 제어를 위한 신호 출력은 [시스템/제어 파라미터/입출력 신호 설정/출력 신호 할당] 메뉴의 "냉각팬 제어" 항목에서 설정하며 이 출력 신호로 냉각팬 전원 제어를 위한 회로가 구성되어야 합니다.
+
+  "냉각팬 꺼짐 동작 시간"이 0으로 설정되었거나 "냉각팬 제어" 출력 신호가 -1로 설정된 경우에는 냉각팬이 항상 켜진 상태로 동작합니다. 
+
+
+* \[인터록 이상 시간\]: 
+
+  입력신호의 최대 대기시간을 설정하는 기능입니다. <br>
+  재생 중에 입력신호 대기상태의 시간이 규정된 시간을 초과하면 인터록 이상신호를 출력합니다. 이 규정된 시간이 인터록 이상시간입니다.
+  
+  인터록 이상신호는 [시스템/제어 파라미터/입출력 신호 설정/출력 신호 할당] 메뉴의 "인터록 이상"에 할당되어 있는 신호입니다. 
+
+* \[중력 보상 기능\]: 
+
+  중력 보상기능은 로봇의 설정된 툴 부하에 따라 발생하는 처짐량을 예측해서 보상 함으로써 보다 정확한 위치 정확도를 기대할 수 있습니다.
+
+  다만 툴 부하정보를 변경하는 경우 예상 처짐량이 달라 지게 되므로 기존과 다른 위치로 이동 하게 됩니다. 또한, 중력 보상 기능 적용 중에는 엔코더 값으로 기록된 스텝으로는 이동할 수 없습니다.
+
+{% hint style="info" %}
+[시스템 > 6: 자동 캘리브레이션 > 9: 로봇과 툴 캘리브레이션]에서 강성을 포함하는 캘리브레이션을 한 경우, 중력 보상 기능을 유효로 할 수 있습니다.
+{% endhint %}
+
+* \[첫 스텝 안전속도 이동\]: 
+
+  로봇 기동시 첫 스텝을 안전 속도로 제한하여 이동할지 현재 설정된 속도로 이동할지 설정합니다. 
+  * 유효: 안전 속도로 제한하여 이동합니다.
+  * 무효: 현재 설정된 속도로 이동합니다.
+
+  로봇은 안전을 위해서 기동시 첫 스텝을 안전속도로 제한하여 이동하는것이 기본입니다. 단지 실링이나 도장같은 특수한 작업은 이에 의한 품질 문제가 발생할 수 있기 때문에 이런 경우에 한해서 제한적으로 무효로 사용하십시오. 
+
+
+* \[PLC 실행시간 비율\]: 
+
+  내장 PLC를 사용할 때 제어기 내부에서 PLC 실행 시간을 조절할 수 있습니다. 제어기는 내부적으로 5ms 마다 PLC 래더 프로그램을 실행하는데 PLC 실행을 어느 정도 할당할지 설정하십시오. 이 비율이 커질수록 PLC 프로그램의 스캔 타임을 단축할 수 있으나 너무 크면 CPU 실행시간이 부족하게 되어 태스크 실행시간 초과 에러가 발생할 수 있습니다. 
+   
+
+
+* \[사이클타임 최적화 모드 (Cycle Time Optimization Mode)
+\]
+
+  자동 재생 시 로봇의 스텝 이동 시간을 줄여 생산성을 향상시키는 기능입니다.
+  * 유효
+    - 로봇의 가감속 곡선 및 최고 속도를 동적으로 조정하여 더 빠르게 이동합니다.
+    - 동적 가감속 조정이 적용됩니다. (Dynamic Motion 적용)
+
+  * 무효
+    - 기존에 설정된 고정 가감속 및 속도 조건으로 이동됩니다.
+    - 일반 모드로 동작됩니다. (기존 Motion Profile 유지)
+
+  * Dynamic Motion 비율 설정 (`0 ~ 100`)
+    - `0` : 사용하지 않습니다. (정적 이동)
+    - `0 ~ 1` : 동적 모션 적용 강도 조정할 수 있습니다.
+    - 값이 클수록 더 적극적인 속도 최적화가 적용됩니다.
+
+
+{% hint style="info" %}
+사이클타임이 중요한 공정(예: 반복적 픽앤플레이스)에서는 높은 Dynamic 비율을 적용하면 생산성 향상에 도움됩니다.
+{% endhint %}
+
+{% hint style="warning" %}
+과감한 가감속 및 최고속 사용으로 과토크 에러 및 진동 발생 가능이 존재합니다.
+{% endhint %}
+
+
+
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/README.md)
+# 7.3.2 입출력 신호 설정
+
+1.	`2: 제어 파라미터 - 2: 입출력 신호 설정` 메뉴를 터치하십시오. 입출력 신호 설정 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 입출력 신호의 속성, 신호 할당 등을 설정하십시오.
+
+![](../../../_assets/tp630/ctrl-inoutsing-menu.png)
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/1-input-signal-prop.md)
+# 7.3.2.1 입력 신호 속성
+
+범용 입력 신호에 대한 신호의 논리와 명칭을 설정합니다.
+
+1.	`2: 제어 파라미터 - 2: 입출력 신호 설정 - 1: 입력 신호 속성` 메뉴를 터치하십시오.
+
+2.	범용 입력 신호 목록을 확인하고 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/ctrl-insignal-attri.png)
+
+* \[추가\]: 목록에 새로운 범용 입력 신호를 추가합니다.
+* \[삭제하기\]: 목록에서 범용 입력 신호를 삭제합니다.
+
+
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/2-output-signal-prop.md)
+# 7.3.2.2 출력 신호 속성
+
+범용 출력 신호에 대한 신호의 논리와 펄스 속성, 명칭을 설정합니다.
+
+1.	`2: 제어 파라미터 - 2: 입출력 신호 설정 - 2: 출력 신호 속성` 메뉴를 터치하십시오.
+
+2.	범용 출력 신호 목록을 확인하고 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/ctrl-outsignal-attri.png)
+
+* \[추가\]: 목록에 새로운 범용 출력 신호를 추가합니다.
+* \[삭제하기\]: 목록에서 범용 출력 신호를 삭제합니다.
+
+
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/3-io-signal-set-info.md)
+# 7.3.2.3    입출력 신호 설정 정보
+
+* \[신호\]: 속성을 적용할 신호입니다. fb 블록의 신호는 블록 번호와 소수점, 신호 번호의 순으로 입력하여 지정합니다. 예를 들어, fb1 블록의 35번 신호를 지정하려면 1.35를 입력하여 설정할 수 있습니다.
+* \[부논리\]: 범용 입출력 신호의 정논리와 부논리는 다음과 같습니다.
+
+![](../../../_assets/image_186.png)
+
+* \[펄스 횟수\]: 펄스 횟수입니다. 1 ~ 100 사이의 값으로 설정하면 펄스 출력하고 0으로 설정하면 지연 출력합니다.
+* \[펄스ON\]/\[펄스OFF\]: 펄스 출력 또는 지연 출력 시, 출력 신호의 On 시간과 Off 시간입니다. 펄스 속성값에 따른 펄스 출력 예는 다음과 같습니다.
+* 펄스 출력 - 횟수: 3, ON 시간: 1 초, OFF 시간; 0.2 초
+
+![](../../../_assets/image_189.png)
+
+
+
+* 지연 출력 - 횟수: 0, ON 시간: 1 초, OFF 시간; 0.5 초
+
+
+
+![](../../../_assets/image_183.png)
+
+* \[명칭\]: 범용 입출력 신호의 명칭입니다.
+
+
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/4-input-signal-assign.md)
+# 7.3.2.4 입력 신호 할당
+
+제어기 입력 신호를 이용해 제어기의 상태나 동작을 원격으로 제어할 수 있습니다. 원격 제어 항목에 입력 신호 번호를 할당하는 방법은 다음과 같습니다.
+
+1.	`2: 제어 파라미터 - 2: 입출력 신호 설정 - 3: 입력 신호 할당` 메뉴를 터치하십시오.
+
+2.	원격 제어 항목에 입력 신호 번호를 입력한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/ctrl-insignal-assign.png)
+
+* \[ALL 초기화\]: 모든 원격 제어 항목에 할당된 입력 신호의 번호를 초기화합니다.
+* \[ONE 초기화\]: 선택된 원격 제어 항목에 할당된 입력 신호의 번호를 초기화합니다.
+* \[채널 초기화\]: 설정한 입력 신호의 입력 채널을 초기화합니다. 채널은 fb0 ~ fb9로 구성되며, fb0인 경우 fb0가 생략되어 표시됩니다.
+* \[S\]: 원격 제어를 시스템 입력 신호로 사용할 경우, 시스템 신호를 지정합니다. 시스템 신호는 알파벳 s에 신호 번호를 조합하여 "s+숫자"로 구성됩니다. 예를 들어, 시스템 신호 49는 s49로 설정합니다.
+
+
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/5-input-signal-set-info.md)
+# 7.3.2.5 입력 신호 설정 정보
+
+* 원격\(Remote\) 모드
+
+티치 펜던트의 모드 스위치가 원격\(![](../../../_assets/sb-remote.png)\)으로 선택된 상태에서 원격 모드로 선택되기 위해서는 해당 신호가 on 되어야 합니다. 해당 신호가 off되면 내부 모드로 선택됩니다. 일반적으로 티치 펜던트의 모드 스위치를 원격\(![](../../../_assets/sb-remote.png)\)으로 선택하면 사용자는 원격 모드로 선택되기를 원하기 때문에 기본값은 254로 지정하였고 입력 신호 속성에 해당 신호는 부논리로 지정됩니다.
+
+* 수동\(Teach\) 모드
+
+원격 모드로 선택된 상태에서 해당 신호가 on되면 원격에서 수동으로 로봇을 조작하는 상태가 됩니다. 그런데 일반적으로 이 상태에서 로봇을 조작하는 경우는 없으므로 거의 사용하지 않습니다.
+
+* 자동\(Playback\) 모드
+
+원격 모드로 선택된 상태에서 해당 신호가 on되면 원격에서 자동으로 로봇을 조작하는 상태가 됩니다. 그런데 일반적으로 사용자는 티치펜던트의 모드 스위치를 원격\(![](../../../_assets/sb-remote.png)\)으로 선택하면 원격에서 자동으로 로봇을 조작하기를 원하기 때문에 기본값은 255로 지정하였고 신호 속성에 해당 신호는 부논리로 지정됩니다.
+
+* 외부 기동
+
+원격 자동 모드에서 로봇을 기동\(start\)하기 위해 사용합니다.
+
+* 외부 정지
+
+원격 자동 모드에서 로봇을 정지\(stop\)하기 위해 사용합니다.
+
+* 외부 프로그램 선택
+
+외부에서 기동 동작 시 프로그램 선택 Bit를 읽어 외부 프로그램으로 확정하는 시점은 프로그램 스트로브\(Strobe\) 신호의 사용 여부에 따라 달라집니다.
+
+* 프로그램 스트로브 신호 사용이 유효인 경우: 외부 기동 입력 시 프로그램 스트포브 신호가 On이면 프로그램 선택 Bit를 읽고, 이 값을 프로그램 번호로 확정합니다.  
+
+![그림 52 프로그램 스트로브신호 &amp;lt;유효&amp;gt; 시 외부 프로그램 선택 선도](../../../_assets/io-signal-strobe1.png)
+
+* 프로그램 스트로브 신호 사용이 무효인 경우: 외부 기동 입력 후 프로그램 선택 Bit를 읽고, 이 값이 90 ms 동안 변경되지 않는 경우에 프로그램 번호로 확정합니다.
+
+![그림 53 프로그램 스트로브신호 &amp;lt;무효&amp;gt; 시 외부 프로그램 선택 선도](../../../_assets/io-signal-strobe2.png)
+
+* 프로그램 선택 Bit와 Binary/Discrete \(OFF→Binary\)
+
+프로그램 선택Bit는 외부 기동 신호가 입력되었을 때, 실행할 프로그램을 선택하기 위한 신호 조합입니다. 현재 TP에서 프로그램 HEADER 혹은 END에 커서가 있을 때에만 적용되며, 프로그램 수행 중에는 수행 중인 프로그램을 끝까지 수행하게 됩니다. Binary/Discrete 신호는 프로그램 선택 Bit의 해석을 결정해주는 옵션이며, 0인 경우 Binary로 인식하고, 1인 경우에는 Discrete로 인식합니다. 예를 들어, 프로그램 선택 Bit가 다음과 같이 설정된 경우, 입력에 따른 수행 JOB 예는 다음과 같습니다.
+
+![](../../../_assets/image_181.png)
+
+* 외부 RESET
+
+외부 신호에 의해 티치 펜던트에서 R0 스텝 카운터 리셋 기능을 실행한 것과 동일하게 동작하기 위해 사용합니다. 로봇이 기동 중인 경우에는 이 기능이 동작하지 않으며, 이 기능이 정상적으로 동작하면 프로그램의 처음으로 실행 위치를 이동하고 각종 에러나 경고의 발생 상태를 클리어합니다. 이 기능에 대한 내용은 "[8.2 R0 스텝 카운터 리셋](../../../8-r-code/2-r0.md)"을 참조하십시오.
+
+* 저속 지령
+
+외부 신호에 의해 로봇의 이동 속도를 안전 속도\(250mm/s\) 이내로 제한하기 위해 사용합니다.
+
+* 충돌 센서
+
+로봇의 충돌을 검지하고 로봇을 정지하기 위해 사용합니다. `[시스템] - 1: 사용자 환경 - 6: 충돌센서` 메뉴의 설정과 연계하여 로봇을 정지할 때 조건과 신호의 논리가 결정됩니다.
+
+* 에러/경보 신호 클리어
+
+외부 신호에 의해 각종 에러나 경고의 발생 상태를 클리어합니다.
+
+* 조이스틱 모드
+
+로봇을 수동으로 조그하기 위해 사용합니다. 일반적으로 LCD 매크로 검사 장비에서 사용되며 사용을 위해서는 별도의 기능 설명서를 참고하시기 바랍니다.
+
+* 도어 스위치
+
+안전 펜스의 도어가 개방되었을 때 이동 중인 로봇을 정지하기 위해 사용합니다.
+
+* 화면보호 해제
+
+티치 펜던트를 조작하지 않으면 `서비스 - 11: 티치 펜던트 옵션\] 메뉴에서 설정한 화면꺼짐 시간이 경과되면 티치 펜던트가 화면보호 상태로 전환됩니다. 외부 신호에 의해 티치 펜던트의 화면을 켜기 위해 사용합니다.
+
+* 외부 모터 on
+
+외부 조작 패널에서 모터 on을 수행하기 위해 사용합니다.
+
+* 외부 모터 off
+
+외부 조작 패널에서 모터 off를 수행하기 위해 사용합니다.
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/6-output-signal-assign.md)
+# 7.3.2.6 출력 신호 할당
+
+제어기 출력 신호를 이용해 제어기에 발생한 이벤트 정보나 상태 정보를 외부로 전달할 수 있습니다. 외부로 전달할 정보에 출력 신호를 할당하는 방법은 다음과 같습니다.
+
+1.	`2: 제어 파라미터 - 2: 입출력 신호 설정 - 4: 출력신호 할당` 메뉴를 터치하십시오.
+
+2.	정보 항목에 출력 신호 번호를 입력한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/ctrl-outsignal-assign.png)
+
+* \[ALL 초기화\]: 모든 정보 항목에 할당된 출력 신호의 번호를 초기화합니다.
+* \[ONE 초기화\]: 선택된 정보 항목에 할당된 출력 신호의 번호를 초기화합니다.
+* \[채널 초기화\]: 설정한 출력 신호의 입력 채널을 초기화합니다. 채널은 fb0 ~ fb9로 구성되며, fb0인 경우 fb0가 생략되어 표시됩니다.
+* \[이전 태스크\]/\[다음 태스크\]: 이전 또는 다음 태스크 화면으로 이동합니다.
+* \[S\]: 원격 제어를 시스템 입력 신호로 사용할 경우, 시스템 신호를 지정합니다. 시스템 신호는 알파벳 s에 신호 번호를 조합하여 "s+숫자"로 구성됩니다. 예를 들어, 시스템 신호 49는 s49로 설정합니다.
+
+
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/7-output-signal-set-info.md)
+# 7.3.2.7 출력 신호 설정 정보
+
+* 원격\(Remote\) 모드
+
+티치 펜던트의 모드 스위치가 원격\(![](../../../_assets/sb-remote.png)\)으로 선택된 상태로 입력 신호 할당에서 원격 모드에 설정된 신호가 on으로 입력되었을 때 비로소 원격 모드 상태가 됩니다. 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 수동\(Teach\) 모드
+
+제어기의 조작 모드가 수동 모드인 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 자동\(Playback\) 모드
+
+제어기의 조작 모드가 자동 모드인 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 모터 ON
+
+MOTOR ON 입력에 의해 각각의 모터에 전원이 공급되고 구동할 준비가 되었을 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 로봇 준비 OK
+
+현재 제어기의 상태가 `시스템 - 2: 제어 파라미터 - 4: 로봇 준비 조건\] 메뉴에서 설정된 조건이 모두 만족할 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 기동 중
+
+수동 모드에서 스텝 전후진 동작이나 자동 모드에서 기동 입력에 의해 로봇이 기동할 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 로봇 동작 중\(Moving\)
+
+로봇이 이동 중일 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 일시 정지 중\(Hold\)
+
+기동 중 신호의 출력과 상반되게 로봇이 정지 중일 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 비상 정지 중
+
+티치 펜던트 또는 제어기 전면에 장착된 비상 정지 버튼이 입력된 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 비상 정지 중\(외부\)
+
+시스템 보드와 연결된 외부 비상 정지가 입력된 상태를 외부로 출력하고자 할 때 사용합니다
+
+* 저속 모드 중
+
+입력 신호 할당에서 저속 지령에 설정된 신호가 on인 경우나 수동 모드에서는 로봇이 안전 속도에서 동작하며 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 프로그램 END
+
+작업 프로그램에서 사이클 END가 수행되면 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 종합 이상
+
+제어기에서 발생되는 에러는 시스템 오류에 의해 발생하는 에러와 사용자의 조작 실수에 의해 발생하는 에러로 구분됩니다. 시스템 오류에 의해 에러가 발생할 때 이 상태를 외부로 출력하고자 할 때 사용합니다. 시스템 오류에 의해 발생하는 에러는 1 ~ 999와 2000 ~ 7999 이내에 해당합니다.
+
+* 조작 에러
+
+제어기에서 발생되는 에러는 시스템 오류에 의해 발생하는 에러와 사용자의 조작 실수에 의해 발생하는 에러로 구분됩니다. 사용자의 조작 실수에 의해 에러가 발생할 때 이 상태를 외부로 출력하고자 할 때 사용합니다. 참고로 시스템 오류에 의해 발생하는 에러는 1 ~ 999와 2000 ~ 7999 이내에 해당합니다.
+
+* 경고 발생
+
+제어기에서 경고가 발생하면 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 충돌 센서
+
+입력 신호 할당에 설정된 충돌 센서 입력이 on되어 로봇에 충돌이 발생되었을 때 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 스텝 SET 경보
+
+자동 모드에서 현재 선택된 커서의 위치가 이전에 실행했던 위치와 다른 경우는 위험할 수 있으므로 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 인터록 이상
+
+작업 프로그램의 WAIT 명령문에서 대기한 시간이 `[F2: 시스템] - 2: 제어 파리미터 - 1: 제어 환경 설정` 메뉴의 \[인터록 이상 시간\] 옵션에 설정된 시간을 초과하면 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 에러/경고 출력 Bit, 에러/경고 출력 선택, 에러/경고 출력 STRB
+
+에러/경고 출력 Bit, 에러/경고 출력 STRB, 종합 이상, 조작 에러, 경고 발생 신호는 다음의 시퀀스를 참조하십시오.
+
+![그림 54 16비트 출력](../../../_assets/image_550.png)
+
+* 외부 RESET ACK
+
+입력 신호 할당에 설정된 외부 RESET 신호가 on되면 이 상태를 외부로 출력하고자 할 때 사용합니다. 이 신호는 200ms동안 on된 후 자동으로 off됩니다.
+
+* 프로그램 에코 Bit
+
+입력 신호 할당에 설정된 프로그램 선택 Bit에 의해 프로그램이 선택되었을 때 선택된 프로그램 번호를 외부로 출력하고자 할 때 사용합니다.
+
+* 프로그램 ACK
+
+원격 모드에서 외부 기동 입력에 의해 로봇이 기동할 때 이 상태를 외부로 출력하고자 할 때 사용합니다. 이 신호는 200ms동안 on된 후 자동으로 off됩니다.
+
+* 아크 용접 이상
+
+아크 용접과 관련하여 에러가 발생한 경우에 이 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 아크 용착 경보
+
+아크 용접 중 용착이 발생한 경우에 이 상태를 외부로 출력하고자 할 때 사용합니다. 이 신호는 200ms동안 on된 후 자동으로 off됩니다.
+
+* 로봇락 상태\(유효=ON\)
+
+`조건설정`에서 로봇 Lock 설정 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 필드버스 이상, 필드버스 IDLE
+
+CC-LINK, 디바이스넷 등의 필드 버스 통신 보드를 사용할 때 통신의 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 배터리\(백업, 엔코더\) 전압저하
+
+메인 보드에 장착된 SRAM 상태를 유지하기 위한 백업 배터리나 각각의 모터에 장착된 엔코더 값을 유지하기 위한 엔코더 배터리에 전압 저하가 발생한 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 토크모니터링
+
+로봇 6축에 인가되는 토크값을 외부로 출력하고자 할 때 사용합니다. 외부로 출력되는 토크값은 1/2 배율의 % 값입니다.
+
+* 그리스 주유 알람
+
+그리스 주유가 필요한 상태를 외부로 출력하고자 할 때 사용합니다.
+
+* 평균 부하율 이상 알람
+
+로봇이 작업 중 평균치 부하율을 초과하였는지 상태를 외부로 출력하고자 할 때 사용합니다.
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/8-key-signal-output.md)
+# 7.3.2.8 키 신호 출력
+
+`키 신호 출력`은 원하는 변수를 F버튼에 할당하여, 버튼 조작으로 해당 변수의 값에 1이나 0을 대입할 수 있는 기능입니다. 주로, 출력 변수를 할당한 F버튼 조작으로 I/O 출력 신호를 켜거나 끄는데 사용합니다. (일반 변수, alias, 출력변수 등 모든 종류의 변수를 지정할 수 있습니다.)
+
+1. `[F2: 시스템] - 2: 제어 파라미터 - 2: 입출력 신호 설정 - 5: 키 신호 출력` 메뉴를 선택하여, 설정화면을 여십시오.
+2. 버튼에 표시할 기능 이름과 옵션을 설정한 후 `[F7: 확인]` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/ctrl-key-outsignal.png)
+
+
+* `제목` : 버튼에 표시할 이름
+* `on-변수` : 변수명을 지정하면 버튼을 켜는 순간 해당 변수에 1이 대입됩니다.
+* `off-변수` : 변수명을 지정하면 버튼을 끄는 순간 해당 변수에 1이 대입됩니다.
+* 토글 :
+  + 체크 함 : 버튼이 누를 때마다 ON/OFF 토글 동작을 합니다.
+  + 체크 안 함 : 버튼이 누를 때 ON되고, 뗄 때 OFF됩니다.
+* `자동 모드 시 허용` :
+  + 체크 함 : 자동 모드 중에도 이 기능이 동작합니다.
+  + 체크 안 함 : 자동 모드 중에는 이 기능이 동작하지 않습니다.
+* `자동 모드 시 OFF` : 자동 모드로 전환하는 순간 이 기능에 설정한 변수들이 모두 OFF됩니다.
+
+{% hint style="info" %}
+`on-변수`, `off-변수`에는 가령 3.5라고 입력하고 `[ENTER]`를 누르면 fb3.do5가 입력되고, 5라고 입력하고 `[ENTER]`를 누르면 do5가 입력됩니다.
+혹은 하단의 F버튼 [fb], [do], [so] 을 사용하여 입력해도 됩니다.
+{% endhint %}
+
+3. `키 신호 출력` 버튼을 열고 `SHIFT` 키와 함께 등록한 F키를 터치하여 설정값이 제대로 적용되는지 확인하십시오.
+
+![](../../../_assets/tp630/rbt-userkey-keysig.png)
+
+{% hint style="info" %}
+${cont_model} 티치 펜던트의 사용자키 영역에서도 동일한 설정화면에 진입할 수 있습니다. 자세한 내용은 "[2.7.2.1 키 신호 출력 기능 영역](../../../2-operation/7-user-key/2-button-registration/1-key-signal-output.md)"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/9-dio-block-assign.md)
+# 7.3.2.9 FB 블록 할당
+
+제어기의 범용 입출력 신호를 사용하는 방법을 설정합니다. 
+
+1.	`2: 제어 파라미터 - 2: 입출력 신호 설정 - 6: FB 블록 할당` 메뉴를 터치하십시오.
+
+2.	선택된 FB 주소의 DIO 블록을 연결 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+    ![](../../../_assets/tp630/ctrl-dio-blockassign.png)
+
+{% hint style="info" %} 연결 가능한 옵션은 아래와 같습니다.
+* [PCI 슬롯 1]
+* [PCI 슬롯 2]
+* [PCI 슬롯 3]
+* [EtherNet/IP 어댑터]
+* [이더켓 IO]
+* [EtherNet/IP 스캐너]
+* [사용자 DIO]
+{% endhint %}
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/10-multi-signal-output.md)
+# 7.3.2.10    복수 신호 출력
+
+출력 신호\(최대 16개\)를 하나의 그룹으로 생성하여 데이터를 각각의 신호로 출력할 수 있습니다.
+
+데이터는 바이너리 포맷으로 출력의 on 또는 off를 결정합니다. 예를 들어, 다음 화면에서 do41과 do43을 출력하기 위한 데이터는 바이너리로 0101 \(십진수 5\)입니다.
+
+1. `2: 제어 파라미터 - 2: 입출력 신호 설정 - 7: 복수 신호 출력` 메뉴를 터치하십시오.
+2. 출력 신호 그룹의 이름과 신호, 스트로브를 설정하십시오.
+
+![](../../../_assets/tp630/ctrl-multi-outsignal.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>출력 신호 그룹 목록에서
+          선택한 그룹의 상세 정보입니다.
+          그룹 이름과 설명, 신호
+          및 스트로브를 설정할
+          수 있습니다.</p>
+        <ul>
+          <li>[ALL 초기화]/[ONE 초기화]: 모든
+            신호 또는 선택된 신호의
+            설정값을 -1로 초기화합니다.</li>
+          <li>[채널 초기화]: 설정된
+            신호의 출력 채널을 초기화합니다(0
+            ~ 9: 디지털 신호).</li>
+          <li>[범위 지정]: 시작 신호와
+            종료 신호를 지정하여
+            신호를 빠르게 설정합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>`[확인]`: 변경 내용을 저장합니다.</li>
+          <li>[+]/[-]: 새로운 출력 신호 그룹을
+            추가하거나 출력 신호
+            그룹을 삭제합니다.</li>
+          <li>출력 신호 그룹 목록입니다.
+            그룹 이름을 선택하면
+            상세 정보를 확인 및 편집할
+            수 있습니다.</li>
+          <li>[페이지 복사]/[페이지
+            붙여넣기]: 출력 신호 그룹
+            정보를 복사하여 다른
+            그룹에 붙여 넣습니다.</li>
+        </ul>
+        <p>목록에서 복사할 그룹의
+          이름을 선택하고 [페이지
+          복사] 버튼을 터치한 후
+          값을 적용할 그룹의 이름을
+          선택하고 [페이지 붙여넣기]
+          버튼을 터치하십시오.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+예를 들어, 위의 화면의 설정과 같이 구성된 작업 프로그램이 실행되면 다음과 같이 동작합니다.
+
+![그림 55 작업 프로그램 실행 예](../../../_assets/image_58.png)
+
+S1에서 S2로 출발하여 S2의 accuracy ok가 되었을 때 지정된 그룹의 신호와 함께 스트로브 신호를 출력합니다. 200 ms 경과 후 스트로브 신호는 off 됩니다. \(스트로브 신호는 200 ms의 펄스 신호\)
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/11-multi-signal-input.md)
+# 7.3.2.11    복수 신호 입력
+
+입력 신호\(최대 16개\)를 하나의 그룹으로 생성하여 각각의 신호 입력으로 데이터를 얻을 수 있습니다.
+
+데이터는 바이너리 포맷으로 입력의 on 또는 off에 따라 결정됩니다. 예를 들어, 다음 화면에서 di41과 di43이 on이고 이외의 모든 신호가 off일 경우 데이터는 0101 \(십진수 5\)입니다.
+
+1. `2: 제어 파라미터 - 2: 입출력 신호 설정 - 8: 복수 신호 입력` 메뉴를 터치하십시오.
+2. 입력 신호 그룹의 이름과 신호를 설정하십시오.
+
+![](../../../_assets/tp630/ctrl-multi-insignal.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>입력 신호 그룹 목록에서
+          선택한 그룹의 상세 정보입니다.
+          그룹 이름과 설명, 신호를
+          설정할 수 있습니다.</p>
+        <ul>
+          <li>[ALL 초기화]/[ONE 초기화]: 모든
+            신호 또는 선택된 신호의
+            설정값을 -1로 초기화합니다.</li>
+          <li>[채널 초기화]: 설정된
+            신호의 입력 채널을 초기화합니다(0
+            ~ 9: 디지털 신호).</li>
+          <li>[범위 지정]: 시작 신호와
+            종료 신호를 지정하여
+            신호를 빠르게 설정합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>`[확인]`: 변경 내용을 저장합니다.</li>
+          <li>[+]/[-]: 새로운 입력 신호 그룹을
+            추가하거나 입력 신호
+            그룹을 삭제합니다.</li>
+          <li>입력 신호 그룹 목록입니다.
+            그룹 이름을 선택하면
+            상세 정보를 확인 및 편집할
+            수 있습니다.</li>
+          <li>[페이지 복사]/[페이지
+            붙여넣기]: 입력 신호 그룹
+            정보를 복사하여 다른
+            그룹에 붙여 넣습니다.
+            <br
+            />목록에서 복사할 그룹의
+            이름을 선택하고 [페이지
+            복사] 버튼을 터치한 후
+            값을 적용할 그룹의 이름을
+            선택하고 [페이지 붙여넣기]
+            버튼을 터치하십시오.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+예를 들어, 위의 화면의 설정과 같이 구성된 작업 프로그램이 실행되면 다음과 같이 동작합니다.
+
+![그림 56 작업 프로그램 실행 예](../../../_assets/image_50.png)
+
+S1에서 S2로 출발한 후 wait 명령문을 실행합니다. S2의 accuracy ok가 되기 이전에 wait 조건이 만족하면 빨간색 경로로 로봇이 이동하지만 그렇지 않는 경우 S2 위치에서 wait 조건이 만족할 때까지 계속 대기합니다.
+
+
+[__SOURCE](7-system/3-control-parameter/2-io-signal-setting/12-fn-block.md)
+# 7.3.2.12 fn 블럭 할당
+
+fb객체의 특정 영역을 지정하여 fn객체를 정의할 수 있습니다.
+${cont_model} 제어기가 필드버스 master이고, 여러 개의 필드버스 slave장치들이 있을 경우, 각 slave장치의 영역들을 하나씩의 fn객체로 설정해두면, 이 slave들을 직관적으로 다룰 수 있습니다.
+
+설정된 fn객체는 로봇언어와 내장PLC에서 fb객체와 동일한 방식으로 사용될 수 있습니다.
+
+![](../../../_assets/io/io_fn.png)
+
+1. `[2: 제어 파라미터 - 2: 입출력 신호 설정 - 9: fn 블록 할당]` 메뉴를 선택하십시오.
+
+2. 아직 fn 설정 전이라면 화면이 비어 있습니다. 우측의 + 버튼을 클릭하면 새로운 fn 객체가 추가됩니다. fn 인덱스 번호는 0에서 63까지 자동으로 증가합니다.
+
+3. fn 인덱스 번호를 변경하려면, 새 이름을 타이핑한 후 `[F7:확인]` 혹은 `SHIFT+[F7:적용]` 버튼을 클릭하십시오.
+  ![](../../../_assets/io/io_fn_rename.png)
+
+4. 각 fn 객체에 대해 입력신호와 출력신호의 영역을 따로 설정합니다.
+
+5. `fb#` 열에는 fn 영역을 어떤 fb객체 내에 배치할 지를 fb 인덱스 번호(0~9)로 설정합니다.
+
+6. `바이트 베이스` 열에는 fb객체 내에서 fn 영역을 시작할 byte 인덱스를 지정합니다.
+
+7. `바이트 수` 열에는 fn영역의 크기를 byte 단위로 지정합니다.
+
+&nbsp;  
+
+예를 들어서 아래 그림과 같이 설정된 경우;
+
+![](../../../_assets/io/io_fn_fn0.png)
+
+![](../../../_assets/io/io_fn_fn3.png)
+
+&nbsp;  
+
+아래 표와 같이 매핑됩니다.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>fn0</th>
+      <th>fb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>입력</td>
+      <td>
+        fn0.dib[0~2]<br>
+        fn0.xb[0~2]
+      </td>
+      <td>
+        fb1.dib[2~4]<br>
+        fb1.xb[2~4]
+      </td>
+    </tr>
+    <tr>
+      <td>출력</td>
+      <td>
+        fn0.dob[0~3]<br>
+        fn0.yb[0~3]
+      </td>
+      <td>
+        fb2.dob[3~6]<br>
+        fb2.yb[3~6]
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>fn3</th>
+      <th>fb</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>입력</td>
+      <td>
+        -
+      </td>
+      <td>
+        -
+      </td>
+    </tr>
+    <tr>
+      <td>출력</td>
+      <td>
+        fn3.dob[0~4]<br>
+        fn3.yb[0~4]
+      </td>
+      <td>
+        fb3.dob[4~8]<br>
+        fb3.yb[4~8]
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+fn 입력, fn 출력 모니터링 창을 열어, 각 fn객체의 dio 혹은 xy 릴레이 현재값을 확인하거나 수동출력할 수 있습니다. 자세한 내용은 아래 링크를 참고하십시오.
+
+[6.2.5 fn 입력, fn 출력](../../../6-monitoring/2-io/5-fn-io.md)
+
+[__SOURCE](7-system/3-control-parameter/3-serial-port.md)
+# 7.3.3 시리얼 포트
+
+시리얼 포트 통신에 필요한 정보를 설정합니다.
+
+1. `2: 제어 파라미터 - 3: 시리얼 포트` 메뉴를 터치하십시오.
+2. 시리얼 포트별 파라미터를 설정하십시오.
+
+![](../../_assets/tp630/ctrl-serial.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">시리얼 포트 목록에서
+        선택한 포트의 상세 정보입니다.
+        포트 이름과 파라미터
+        값을 설정할 수 있습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><strong>시리얼 포트 목록</strong>:
+            포트 이름을 선택하면
+            상세 정보를 확인 및 편집할
+            수 있습니다.</li>
+          <li><strong>[확인]</strong>: 변경 내용을 저장합니다.</li>
+          <li><strong>[+]/[-]</strong>: 새로운 시리얼 포트를
+            추가하거나 시리얼 포트를
+            삭제합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        루프백 시험을 수행합니다. 시리얼 포트의 RX와 TX를 연결한 상태에서 통신이 정상인지 확인합니다.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+다음의 정보를 참고하여 시리얼 포트의 용도를 설정하십시오.
+
+* Sensor: 비전 센서와 접속하여 시프트 데이터 수신
+* LVS: 용접선 추종을 위한 레이저 비전 센서 연결
+* MODBUS: ${cont_model} 제어기의 MODBUS 슬레이브 기능 사용
+{% endhint %}
+
+
+[__SOURCE](7-system/3-control-parameter/4-robot-ready-cond.md)
+# 7.3.4 로봇 준비 조건
+
+로봇의 준비 완료 시 `시스템 - 2: 제어 파라미터 - 2: 입출력 신호 설정 - 4: 출력신호 할당`의 \[로봇 준비 OK\] 항목의 신호 출력을 위한 조건을 설정합니다.
+
+1.	`2: 제어 파라미터 - 4: 로봇 준비 조건` 메뉴를 터치하십시오.
+
+2.	로봇 준비 조건을 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/ctrl-robot-readycond.png)
+
+
+[__SOURCE](7-system/3-control-parameter/5-home-position.md)
+# 7.3.5 원위치 등록
+
+로봇의 임의 자세를 원위치로 등록하여 로봇이 이 위치에 들어왔을 때 원위치 신호를 출력 신호란에 출력할 수 있습니다. 원위치는 축별 자세로 지정하고 16 개까지 등록하여 사용할 수 있으며 축별 마진을 추가로 설정할 수 있습니다.
+
+1. `2: 제어 파라미터 - 5: 원위치 등록` 메뉴를 터치하십시오.
+2. 원위치 탭을 선택하고 사용 여부와 출력 신호, 축각도와 범위를 설정하십시오.
+
+![](../../_assets/tp630/ctrl-home-position.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>탭에서 선택한 원위치의
+          상세 정보입니다. 사용
+          여부와 출력 신호, 축각도와
+          범위, 설명을 설정할 수
+          있습니다.</p>
+        <ul>
+          <li>[사용 여부]: 사용 여부를
+            설정합니다.</li>
+          <li>[출력 신호]: 출력 신호
+            번호를 입력합니다.</li>
+          <li>[축각도]/[범위]: 원위치에서
+            로봇의 축각도와 범위를
+            입력합니다.</li>
+          <li>범위가 0으로 설정된 경우,
+            해당 축에 대해서는 원위치
+            검사를 수행하지 않습니다.</li>
+          <li>범위는 원위치 포인트의
+            + 방향과 - 방향의 범위로
+            사용합니다. 예를 들어,
+            범위를 0.5로 설정하면 원위치
+            신호의 출력 범위는 1이
+            됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>`[확인]`: 변경 내용을 저장합니다.</li>
+          <li>[현재 로봇 포즈]: 현재
+            로봇 자세의 축각도와
+            범위가 자동으로 입력됩니다.</li>
+          <li>[프로그램/스텝]: 프로그램과
+            스텝 번호를 입력하면
+            해당 스텝의 축각도와
+            범위가 자동으로 입력됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](7-system/3-control-parameter/6-cordsys-reg/README.md)
+# 7.3.6 좌표계 등록
+
+1.	`2: 제어 파라미터 - 6: 좌표계 등록` 메뉴를 터치하십시오. 좌표계 등록 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 사용자 좌표계나 정치툴 좌표계에 대한 좌표계를 설정하십시오.
+
+![](../../../_assets/tp630/ctrl-coord-menu.png)
+
+
+[__SOURCE](7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md)
+# 7.3.6.1 사용자 좌표계
+
+사용자 좌표계는 사용자\(User\)가 지정하는 위치에 설정하는 좌표계입니다. 사용자 좌표계를 사용하기 위해 먼저 사용자 좌표계 정의를 위한 3개의 기준 스텝을 티칭한 후 티칭된 프로그램 번호와 스텝 순서를 지정하여 사용자 좌표계를 등록합니다.
+
+다음 절차에 따라 3개의 기준 스텝을 티칭하십시오. 하기의 절차는 스텝 순서를 "OXY"로 지정할 때에 대한 설명입니다. (O:원점위치, X:방향위치, Y:평면위치) 
+
+![그림 57 사용자 좌표계 정의를 위한 3개의 기준 스텝 티칭 방법](../../../_assets/image_197.png)
+
+1. 사용자 좌표계의 원점 정의: 임의의 한 점을 티칭하십시오.
+2. 사용자 좌표계의 X축 정의: 가능한 한 원점과의 거리가 200 mm 이상 떨어진 지점의 X축 선상에 임의의 한 점을 티칭하십시오.
+3. 사용자 좌표계의 XY 평면 정의\(Y축과 Z축 방향 결정\): 가능한 한 원점과의 거리가 200 mm 이상 떨어진 지점의 X축과 Y축으로 이루어지는 평면상에 임의의 한 점을 티칭하십시오.
+
+{% hint style="info" %}
+* 사용자 좌표계 설정용 프로그램을 티칭할 때 TCP \(Tool Center Point\)는 정확한 값으로 설정되어 있어야 합니다. 현재 선택된 툴의 툴 데이터가 정확한 값으로 입력되었는지 확인하십시오.
+* 사용자 좌표계는 총 20개까지 등록할 수 있습니다.
+{% endhint %}
+
+{% hint style="warning" %}
+좌표계 정의를 위한 기준점 기록 시 주의 사항은 다음과 같습니다.
+
+* 기준 3점이 동일 직선상에 존재하지 않아야 합니다.
+* 기준 3점 간의 거리가 지나치게 가깝지 않아야 합니다.
+* 사용자 좌표계의 평면을 정의한 S3 이후의 스텝은 좌표계 등록에 아무런 영향을 미치지 않습니다.
+{% endhint %}
+
+티칭된 프로그램 번호와 스텝 순서를 지정하여 사용자 좌표계를 등록하는 방법은 다음과 같습니다.
+
+1. `2: 제어 파라미터 - 6: 좌표계 등록 - 1: 사용자 좌표계` 메뉴를 터치하십시오.
+2. 등록을 원하는 사용자 좌표계로 이동합니다. ("+" 버튼으로 생성 가능)
+3. 프로그램 번호, 스텝 순서를 지정한 후 [F1:JOB 계산] 버튼을 누릅니다.
+4. 계산된 사용자 좌표계 원점의 위치가 표시됩니다.
+
+![](../../../_assets/tp630/ctrl-user-coord.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">사용자 좌표계 목록에서 선택한 좌표계의 상세 정보입니다. <br>
+      좌표계 이름과 설명, 티칭된 프로그램 번호, 스텝 순서, 베이스 좌표계 기준의 원점의 위치를 설정할 수 있습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>`[확인]`: 변경 내용을 저장합니다.</li>
+          <li>[+]/[-]: 새로운 사용자 좌표계를
+            추가하거나 사용자 좌표계를
+            삭제합니다.</li>
+          <li>사용자 좌표계 목록입니다.
+            좌표계 이름을 선택하면
+            상세 정보를 확인 및 편집할
+            수 있습니다.</li>
+          <li>[페이지 복사]/[페이지
+            붙여넣기]: 사용자 좌표계
+            정보를 복사하여 다른
+            좌표계에 붙여 넣습니다.
+            <br
+            />목록에서 복사할 좌표계
+            정보의 이름을 선택하고
+            [페이지 복사] 버튼을 터치한
+            후 값을 적용할 좌표계의
+            이름을 선택하고 [페이지
+            붙여넣기] 버튼을 터치하십시오.</li>
+          <li>[JOB 계산]: 사용자 좌표계를 정의하기 위해 티칭한 프로그램과 스텝 순서를 기반으로 사용자 좌표계를 계산합니다.
+            <br
+            />[등록을 위한 프로그램 번호] 옵션에 티칭한 프로그램의 번호를 입력하고 스텝 순서를 지정한 후 [JOB 계산] 버튼을 터치하면 사용자 좌표계의 원점과 각도가 계산됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)
+# 7.3.6.2 정치툴 좌표계
+
+로봇 툴은 로봇 선단에 부착된 툴입니다. 일반적으로 로봇은 로봇에 부착된 툴을 이용하여 작업을 수행합니다. 대표적인 것으로 아크 용접이 있습니다. 아크 용접 툴은 통상적으로 로봇 선단에 부착되며 외부에 고정되어 있는 작업물에 용접을 수행할 때 사용합니다.
+
+이에 반해서 정치툴\(Stationary Tool\)은 작업하는 툴이 로봇이 아닌 외부에 부착되어 있는 것으로, 이 경우에는 로봇이 작업물을 핸들링하여 외부에 고정된 툴에 위치시킴으로써 작업을 수행하게 됩니다. 정치툴을 이용한 대표적인 작업은 실링 작업입니다. 통상적으로 실링 작업은 외부에 부착된 툴이 실링에 필요한 용제를 일정한 양으로 토출하면 로봇이 작업물을 들고 실링에 필요한 궤적을 생성하여 작업합니다.
+
+![그림 58 실링 작업 예](../../../_assets/image_154.png)
+
+이 궤적을 생성하기 위해 로봇은 자체에 부착된 툴이 아닌 외부에 부착된 툴을 기준으로 직선 \(L\) 및 원호 \(C\) 보간을 수행합니다. 이때 정치툴 보간 기능을 사용합니다.
+
+정치툴 보간 기능을 이용하면 로봇이 취부한 작업물의 자세가 변경되어도 정치툴의 작업물 상의 이동 경로는 직선 및 원호를 유지할 수 있습니다. 이와 같이 외부 툴의 이동 경로가 중요한 작업에는 반드시 정치툴 보간 기능을 이용합니다.
+
+정치툴 보간 기능을 이용하려면 정치툴 좌표계를 반드시 설정해야 합니다.
+
+정치툴 좌표계를 설정하는 방법은 다음과 같습니다.
+
+1. `2: 제어 파라미터 - 6: 좌표계 등록 - 2: 정치툴 좌표계` 메뉴를 터치하십시오.
+2. 원하는 탭을 선택하고 정치툴 좌표계의 위치를 등록하십시오.
+
+![](../../../_assets/tp630/ctrl-stationary-coord.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">정치툴 좌표계는 탭을
+        선택하여 총 20개(tool 0 ~ tool 19)를
+        설정할 수 있습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[<b>확인</b>]: 변경 내용을 저장합니다.</li>
+          <li>[<b>현재 로봇 포즈</b>]: 현재의 TCP 위치를
+            정치툴 좌표계의 위치로
+            설정합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+* 현재 TCP 위치를 정치툴 좌표계 위치로 설정
+
+로봇 베이스 좌표계를 기준으로 TCP를 정확히 찾은 후 그림과 같이 정치툴과 로봇툴을 일치시키고 `현재 로봇 포즈` 버튼으로 자동 설정 기능을 실행하십시오. 현재의 TCP 위치가 등록됩니다.
+
+![그림 59 \[자동설정\] 버튼을 이용한 티칭 방법](../../../_assets/image_178.png)
+
+* 정치툴 좌표계를 이용한 프로그램 작성
+
+정치툴 보간 스텝으로 기록하려면 스텝을 SL 또는 SC로 기록합니다. ${cont_model} 티치 펜던트 화면 좌측 상단의 `기록조건` 버튼을 이용하여 기록 조건을 SL \(정치툴 직선보간\) 또는 SC \(정치툴 원호보간\)로 변경하여 사용할 수 있습니다.
+
+예를 들어, 정치툴 좌표계 0번을 등록하고 사용하는 경우에는 다음과 같이 프로그램을 작성할 수 있습니다.
+
+![](../../../_assets/tp630/pane-prog-cmd-SL.png)
+
+{% hint style="info" %}
+정치 서보건 사용 시에는 정치툴 보간 기능이 필요하지 않습니다. 서보건 용접에서는 정치 서보건에 대한 작업물의 이동 경로가 직선 혹은 원호로 만들어질 필요가 없고 용접점만 중요하기 때문입니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/3-control-parameter/7-prog-reservation.md)
+# 7.3.7 프로그램 예약 실행
+
+프로그램을 예약 실행하는 방법에 대한 자세한 내용은 "[${cont_model} 제어기 프로그램 예약 실행 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-reserved-program-execution/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+
+[__SOURCE](7-system/3-control-parameter/8-auto-backup-restore.md)
+# 7.3.8 자동 백업 및 복원
+
+제어기의 데이터를 자동으로 백업하고 복원하는 방법에 대한 자세한 내용은 "[${cont_model} 제어기 자동 백업 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-auto-backup/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/README.md)
+# 7.3.9 네트워크
+
+1.  `2: 제어 파라미터 - 9: 네트워크` 메뉴를 터치하십시오. 네트워크 설정 메뉴가 나타납니다.
+
+2.  원하는 메뉴를 선택하여 사용환경 설정, 서비스 등을 설정하십시오.
+
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/1-environment-setting.md)
+# 7.3.9.1 사용환경 설정
+
+이더넷 네트워크 설정을 할 수 있습니다.
+
+1.	`시스템 - 2: 제어 파라미터 - 9: 네트워크 - 1: 사용환경 설정`으로 진입하십시오.
+
+2.	LAN(Public)에서 각 파라미터 설정이 가능합니다. 클래스 C형의 IP 주소를 바탕으로 구성하십시오.
+
+3.	설정 파라미터들은 제어기 재부팅시 적용됩니다.
+
+<img src="../../../_assets/image_551.PNG"></img>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">LAN 포트 설정 탭입니다. (범용)은 수정이 가능하며, 이더캣, T/P-main은 수정이 불가능합니다.
+	  </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <br />포트설정을 변경합니다. IP, 서브넷 마스크, 게이트웨이는 수정이 가능합니다.
+          <li><b>IP : </b> 연결할 IP 주소를 설정합니다.</li>
+          <li><b>서브넷 마스크 : </b> 서브넷 마스크를 설정합니다. 클래스 C기준 255.255.255.0을 사용합니다.</li>
+          <li><b>게이트웨이 : </b>게이트웨이를 설정합니다. 3번째 정보까지는 IP주소와 동등합니다. 4번째 주소를 0 혹은 255로 설정하면 Broadcast가 가능합니다.
+          <li><b>MAC : </b>제어기의 MAC 주소를 확인할 수 있습니다.
+          </li>
+        </ul>
+      </td>
+    </tr>
+	<tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>[OK]</b>: 설정을 저장합니다. 시스템을 재부팅한 후 변경사항이 적용됩니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/README.md)
+# 7.3.9.2 서비스
+
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/1-modbus-slave.md)
+# 7.3.9.2.1 모드버스 슬레이브
+
+제어기의 모드버스 TCP 슬레이브 통신을 사용할 때 설정과 모니터링에 대한 내용입니다.<br>
+자세한 내용은 "[${cont_model} 제어기 기능설명서 - 모드버스](https://hrbook-hrc.web.app/#/view/doc-modbus/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/3-ntp-client.md)
+# 7.3.9.2.3 NTP 클라이언트
+
+제어기의 시간을 자동으로 NTP 서버와 동기화 할 수 있습니다. <br>
+
+자세한 내용은 "[${cont_model} 제어기 기능설명서 - NTP 시간 동기화](https://hrbook-hrc.web.app/#/view/doc-hi6-ntp-time-synchronization/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+
+[__SOURCE](7-system/3-control-parameter/9-network-setting/2-service/4-enet-comm-setting.md)
+# 7.3.9.2.4 이더넷 통신 설정
+
+이더넷 통신을 수행하기 이전에 먼저 이더넷 통신 객체를 생성하고 설정해야 합니다. <br>
+이더넷 객체는 최대 5개까지 생성하여 사용할 수 있으며 또한 현재 통신 상태에 대한 모니터링이 가능합니다. <br>
+
+현재는 HRScript에서 모드버스 마스터 동작을 수행하기 위해 사용됩니다. 모드버스 통신 기능에 대한 자세한 내용은 별도의 "[${cont_model} 제어기 기능설명서 - 모드버스](https://hrbook-hrc.web.app/#/view/doc-modbus/ko/README?cont_model=${cont_model})"를 참조하십시오.  
+
+
+![](../../../../_assets/tp630/image32.png)
+
+[닫기] 버튼으로 해당 이더넷 객체의 소켓을 강제로 닫을 수 있으며 [연결] 버튼으로 통신 연결을 수행할 수 있습니다. <br>
+제어기 부팅시에는 설정된 이더넷 객체로 통신 연결을 자동으로 수행합니다. <br>
+
+
+*   **이름**
+
+    이더넷 통신 객체의 이름입니다. 각각의 이름은 반드시 "enet0" ~ "enet4"로 설정되어야 합니다.
+
+
+*   **프로토콜**
+
+    통신 프로토콜을 선택합니다. 
+
+
+*   **IP 주소**
+
+    통신 대상에 사용된 IP 주소를 설정합니다. 
+
+
+*   **로컬 포트**
+
+    지역 포트 번호를 설정합니다.
+
+
+*   **원격 포트**
+
+    원격 포트 번호를 설정합니다.
+
+
+*   **상태**
+
+    통신 연결 상태를 표시합니다. 
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/README.md)
+# 7.3.10 옵션기능의 라이센스키 등록
+
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/1-summary.md)
+# 7.3.10.1 옵션기능의 라이선스키란?
+
+${cont_model} 로봇 제어기의 기능들 중 특정 옵션기능들은 별도로 판매하고 있으며, 고객께서는 옵션기능을 구매해야 사용할 수 있습니다. 옵션기능의 라이선스키는 로봇제어기의 메인보드에 부여된 고유번호와 구매한 옵션기능을 조합하여 별도의 라이선스키 생성 프로그램에 의해 만들어지기 때문에 구매한 제어기에서만 구매한 기능이 동작하도록 되어 있습니다.
+따라서 옵션기능을 사용하고 있는 로봇제어기의 메인보드는 다른 제어기와 교체될 수 없습니다.
+만일, 메인보드에 고장이 발생하여 스페어 파트로 교체될 경우를 위해 30일 동안 사용할 수 있는 임시-키를 이용할 수 있도록 되어 있습니다.
+이 경우, 당사 A/S에 연락하여 30일 이전에 정식 라이선스키를 얻을 수 있도록 해야 합니다.
+ 
+* 기능 구성 <br>
+  옵션기능의 구매 여부 설정 <br>
+  라이선스 키 설정
+
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/2-registration-process.md)
+# 7.3.10.2 라이선스키 등록 절차
+
+* 시스템 일련번호에 맞는 옵션기능의 라이선스키를 구매합니다. 시스템 일련번호는 라이선스 등록화면에 있습니다.
+
+  ![](../../../_assets/tp630/license-key1.png)
+
+
+* 옵션기능의 구매여부를 먼저 선택한 다음, 라이선스키를 입력합니다.
+만일, 구매여부의 선택항목과 라이선스키가 일치하지 않으면, 해당기능을 실행할 때 에러가 발생합니다.
+
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/3-registration.md)
+# 7.3.10.3 라이선스키 등록
+
+* 등록 화면
+
+  ![](../../../_assets/tp630/license-key2.png)
+
+
+* 라이선스키가 올바로 입력된 경우에는 라이선스 키 입력의 오른쪽에 "==> OK"가 표시됩니다.
+
+* 만일, "==> NG"가 표시되면 라이선스키가 올바르지 않거나, 구매여부가 잘못 선택된 경우입니다.
+
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/4-temporary-key.md)
+# 7.3.10.4 임시-키란?
+
+* 임시-키는 30일동안만 사용할 수 있으며, 1회만 발급이 가능합니다.
+
+* 임시-키의 잔여사용일이 10일이내인 경우, 제어기 부팅시마다 다음 경고가 발생합니다. <br>
+  "W0025 옵션기능의 임시 라이센스키 사용일이 (0)일 밖에 남지 않았습니다."
+
+* 임시-키의 용도는 옵션기능을 사용하고 있는 제어기의 메인보드에 이상이 발생하여 스패어 파트로 교체되었을 때에 당사 A/S에서 라이선스키를 재발급 받을 때까지 사용하는 용도입니다.
+
+[__SOURCE](7-system/3-control-parameter/10-license-key/5-temporary-key-registration.md)
+# 7.3.10.5 임시-키 발급
+
+* 임시-키는 [F]키를 눌러 발급 받을 수 있습니다.
+
+  ![](../../../_assets/tp630/license-key3.png)
+
+
+* 정상적으로 발급된 경우에는 다음 화면과 같이 사용할 수 있는 잔여일이 표시됩니다.
+
+  ![](../../../_assets/tp630/license-key4.png)
+
+
+* 주의) 잔여일이 0인 경우에는 옵션기능을 더 이상 사용할 수 없으며, 이후에는 임시-키가 1일 사용으로 발급됩니다. 옵션기능 때문에 생산라인이 정지될 수 있으므로 반드시 잔여일이 0이 되기 전에 당사로 연락하여 정식 라이선스키를 발급 받으시기 바랍니다. 
+
+
+[__SOURCE](7-system/3-control-parameter/11-industrial-comm/README.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6"]
+}
+</script>
+
+# 7.3.11 산업용 통신 \(필드버스\)
+
+산업용 통신\(필드버스; Fieldbus\)을 사용 설정합니다.
+
+1.	사용할 통신에 따라 "[Hi6-N 제어기 보수 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-n-maintenance/ko/README)" 혹은 "[Hi6-T 제어기 보수 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-t-maintenance/ko/README)"를 참조하여 PCI 카드 장착 및 슬롯 번호\(1 ~ 4\)를 설정하십시오.
+
+2.	"7.3.11.1 펌웨어 설정"을 참조하여 산업용 통신 펌웨어를 설정하십시오.
+
+3.	제어기의 전원을 끈 후 다시 켜십시오.
+
+4.	필요한 경우, "7.3.11.2 산업용 통신 설정"을 참조하여 부가 설정을 수행하십시오.
+
+
+
+
+[__SOURCE](7-system/3-control-parameter/11-industrial-comm/1-pci-slot-set.md)
+# 7.3.11.1 PCI 슬롯 설정
+
+산업용 통신에 사용할 PCI 슬롯을 설정합니다.
+
+1.	`2: 제어 파라미터 - 11: 산업용 통신 - 1: PCI 슬롯 설정 - 1 채널` 메뉴를 터치하십시오. PCI 슬롯 설정 화면이 나타납니다.
+
+2.	원하는 탭을 선택하고 통신 방식\(Master / Slave\)과 프로토콜을 설정한 후 `[확인]` 버튼을 터치하십시오. PCI 슬롯 설정이 완료됩니다.
+
+![](../../../_assets/tp630/ctrl-industrial-channel.png)
+
+
+
+{% hint style="warning" %}
+PCI 슬롯 설정 완료 시 슬롯 1 ~ 4에 설정된 CONGIF 파일이 모두 삭제됩니다. 사용 중 통신 PCI 슬롯을 변경하려면 기존의 CONFIG 설정을 별도로 백업해 두고 필요한 경우 복원하여 사용하십시오.
+{% endhint %}
+
+3.	제어기의 전원을 끈 후 다시 켜십시오.
+
+{% hint style="warning" %}
+* PCI 슬롯의 사용 설정 시 제어기의 전원을 끈 후 다시 켜야만 설정값이 시스템에 적용됩니다.
+{% endhint %}
+
+
+
+
+[__SOURCE](7-system/3-control-parameter/11-industrial-comm/2-industrial-comm-set.md)
+# 7.3.11.2 산업용 통신 설정
+
+\(추후 기능 제공\) 통신 방식을 CC-Link 슬레이브로 설정하면, 제어기 내부에서 각 통신별로 상세 정보를 설정할 수 있습니다.
+
+{% hint style="info" %}
+통신 정보는 "[HD현대로보틱스 웹사이트](https://www.hd-hyundairobotics.com/)"에서 "Sycon.net" 프로그램을 이용해 설정하십시오.
+{% endhint %}
+
+[__SOURCE](7-system/3-control-parameter/11-industrial-comm/3-monitoring.md)
+# 7.3.11.3 모니터링
+
+산업용 통신에서 사용 설정된 펌웨어와 통신의 설정 정보 및 동작 상태를 모니터링합니다.
+
+1.	`[서비스] - 19: 산업용 통신 모니터링` 메뉴를 터치하십시오. 보드별 산업용 통신 모니터링 화면이 나타납니다.
+
+2.	원하는 탭을 선택하여 펌웨어, 통신 장치 및 통신 구성의 상세 정보를 확인하십시오.
+
+![](../../../_assets/tp630/svc-industrial-mon.png)
+
+{% hint style="info" %}
+\[재시작\] 버튼을 이용하여 PCI 통신 카드의 산업용 통신을 다시 시작할 수 있습니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/4-robot-parameter/README.md)
+# 7.4 로봇 파라미터
+
+로봇 동작과 관련된 각종 데이터와 축별 원점, 동작 범위 등의 정보를 설정합니다.
+
+1.	\[3: 로봇 파라미터\] 메뉴를 터치하십시오. 로봇 파라미터 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 로봇 본체의 각종 파라미터를 확인하고 설정하십시오.
+
+![](../../_assets/tp630/robot-menu.png)
+
+
+[__SOURCE](7-system/4-robot-parameter/1-tool-data/README.md)
+# 7.4.1 툴 데이터
+
+로봇의 R1축 플랜지\(Flange\)를 기준으로 TCP \(Tool Center Point\)의 거리와 각도를 설정하고, 툴의 중량, 무게 중심과 이너셔를 등록합니다. \[1: 툴 데이터\] 메뉴를 이용해 수동으로 등록할 수 있습니다.
+
+다른 방법으로, 툴 길이는 자동 캘리브레이션 기능을 이용하여 설정할 수 있고, 툴의 중량과 무게 중심, 이셔너는 부하추정 기능을 이용하여 등록할 수 있습니다.
+
+직선 또는 원호와 같은 보간 동작 시에는 TCP 점을 기준으로 궤적을 생성하므로 티칭 작업 전에는 툴의 길이와 각도를 정확하게 설정해야 합니다.
+
+${cont_model} 제어기는 로봇의 동역학을 기반으로 제어합니다. 툴의 중량과 중심, 이너셔를 정확하게 설정해야 로봇이 빠르고 안전하게 동작할 수 있습니다. 툴의 중량과 중심, 이너셔 값이 정확하지 않거나 틀린 경우, 로봇의 성능과 수명에 심각한 문제가 발생할 수 있습니다.
+
+특히 툴 체인지 기능을 사용하는 경우에는 각 툴에 대한 정보뿐만 아니라 분리된 상태의 툴에도 할당한 별도의 번호까지 모든 툴 체인저 관련 툴 정보를 입력하여 사용해야 합니다. 그리고 핸들링 작업 시에도 작업물의 탈착 상태를 각 툴 번호에 할당하여 사용해야 합니다.
+
+툴의 길이는 플랜지 좌표계에서 방향별 길이입니다. \(X축 방향 길이: Xt / Y축 방향 길이: Yt / Z축 방향 길이: Zt\)
+
+![그림 61 로봇 형태별 플랜지 좌표계](../../../_assets/image_213.png)
+
+툴의 각도는 플랜지 좌표계에서 방향별 자세 변환량입니다. \(X축 방향 각도: Rx / Y축 방향 각도: Ry / Z축 방향 각도: Rz\)
+
+![그림 62 툴 각도: Rotating Rx \(좌\) / Rotating Ry \(중간\) / Rotating Rz \(우\)](../../../_assets/image_211.png)
+
+즉, 툴의 길이 및 각도는 플랜지 좌표계를 기준으로 설정됩니다. 툴 길이는 플랜지 좌표계의 중심에서 TCP까지의 거리를 설정합니다.
+
+툴의 자세는 위와 같이 설정된 툴 각도에 따라 툴 플랜지 좌표계를 기준으로 X, Y, Z 방향을 순차적으로 회전시킨 값입니다.
+
+Rxyz = Rot\(z, Rz\)Rot\(y, Ry\)Rot\(x, Rx\)
+
+* Rxyz: 툴 플랜지를 기준으로 한 툴의 자세 회전 행렬
+* Rot\(z, Rz\): 플랜지 좌표계의 Z축으로 Rz만큼 회전시키는 회전 행렬
+* Rot\(y, Ry\): 플랜지 좌표계의 Y축으로 Ry만큼 회전시키는 회전 행렬
+* Rot\(x, Rx\): 플랜지 좌표계의 X축으로 Rx만큼 회전시키는 회전 행렬
+
+
+[__SOURCE](7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)
+# 7.4.1.1 툴 데이터 설정
+
+수동으로 로봇의 R1축 플랜지를 기준으로 TCP \(Tool Center Point\)의 거리와 각도를 설정하고, 툴의 중량, 무게 중심과 이너셔를 등록하는 방법은 다음과 같습니다.
+
+1. `3: 로봇 파라미터 - 1: 툴 데이터` 메뉴를 터치하십시오.
+2. 툴 데이터의 이름과 중량, 축별 상세 조건, 허용 비율을 설정하십시오.
+
+![](../../../_assets/tp630/robot-tool.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">툴 데이터 목록에서 선택한
+        툴 데이터의 상세 정보입니다.
+        툴 데이터 이름과 설명,
+        중량, 축별 상세 조건, 허용
+        비율을 설정할 수 있습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[자동보정]: 새로운 툴
+            데이터를 생성하거나
+            기존의 프로그램을 활용하여
+            툴 데이터를 간단히 생성합니다.
+            <br
+            />기존에 티칭되어 있는
+            스텝 위치에 새로 설정하려면
+            툴을 위치시킨 후 자동
+            보정 기능을 실행하면
+            새로운 툴의 길이와 각도가
+            생성됩니다.
+            <br />
+            <img src="../../../_assets/tp630/robot-tool-autocal.png" alt/>
+            <br />
+            <ul>
+              <li>[기존 프로그램 번호]:
+                툴 변형이 일어나기 전
+                티칭되어 있는 프로그램
+                번호를 입력합니다.</li>
+              <li>[기존 스텝 번호]: 툴 데이터
+                자동 보정을 시행할 스텝
+                번호를 입력합니다.</li>
+              <li>[설정할 툴 번호]: 새로
+                설정할 툴의 번호를 입력합니다.
+                <br
+                />
+              </li>
+            </ul>
+          </li>
+          <li>[각도보정]: 툴의 각도를 보정합니다.
+            <br />
+            <img src="../../../_assets/tp630/robot-tool-anglecal.png" alt/>
+          </li>
+          <li>[CAD데이터 적용]: 툴의 CAD 데이터를 가지고 있는 경우 부하추정 과정을 생략하고, 입력한 툴 데이터로 부하추정 완료한 것으로 간주합니다.
+            <br />
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>`[확인]`: 변경 내용을 저장합니다.</li>
+          <li>[+]/[-]: 새로운 툴 데이터를
+            추가하거나 툴 데이터를
+            삭제합니다.</li>
+          <li>툴 데이터 목록입니다.
+            툴 데이터 이름을 선택하면
+            상세 정보를 확인 및 편집할
+            수 있습니다.</li>
+          <li>[페이지 복사]/[페이지
+            붙여넣기]: 툴 데이터 정보를
+            복사하여 다른 툴 데이터에
+            붙여 넣습니다.
+            <br />목록에서 복사할 툴 데이터
+            정보의 이름을 선택하고
+            [페이지 복사] 버튼을 터치한
+            후 값을 적용할 툴 데이터의
+            이름을 선택하고 [페이지
+            붙여넣기] 버튼을 터치하십시오.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+* 툴 데이터 목록에서, 부하 추정이 되지 않는 툴 데이터는 이름의 우측에 \(X\) 표시가 나타납니다.
+* 반드시 부하 추정을 실행한 후에 툴을 사용하십시오. 부하 추정이 되지 않은 툴을 사용하면 로봇의 속도 및 내구성에 문제가 발생할 수 있습니다.
+* 툴 데이터를 복사하면 부하 추정 데이터가 함께 복사됩니다. 툴 데이터 복사 및 붙여넣기 기능은 부하 추정이 수행된 툴 번호 탭에서만 실행할 수 있습니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/4-robot-parameter/1-tool-data/2-tool-data-set-info.md)
+# 7.4.1.2 툴 데이터 설정 정보
+
+* \[중량\]: 툴의 중량\(kg\)
+* \[길이\]: 툴의 길이\(mm\). 자동 캘리브레이션 기능 또는 자동 보정 기능을 이용하여 설정할 수 있습니다.
+* \[각도\]: 툴의 각도\(deg\). 자동 캘리브레이션 기능 또는 각도 보정 기능을 이용하여 설정할 수 있습니다.
+* \[중심\]: 플랜지 중심을 기준으로 툴의 무게 중심 위치\(mm\). 부하 추정 기능을 이용하여 설정할 수 있습니다.
+* \[이너셔\]: 툴 좌표에 대한 툴의 관성 모멘트\(kg·㎡\). 부하 추정 기능을 이용하여 설정할 수 있습니다.
+* 허용 비율: \(고부하 모드 적용 로봇 모델에 한함\) 기준 허용값 대비 현재 설정의 비율. 허용 비율에 따른 로봇 동작은 다음과 같습니다.
+
+| 구분 | 정상 | 고부하 모드 | 예외 허용 모드 | 재생 불가\(대형\) |
+| :--- | :--- | :--- | :--- | :--- |
+| 중량 비율 \(%\) | ~ 100 | 100 ~ 120 | 100 ~ 120 | 120 ~ |
+| 모멘트 비율 \(%\) | ~ 100 | 100 ~ 110 | 100 ~ 115\(150\) | 115\(150\) ~ |
+| 이셔너 비율 \(%\) | ~ 100 | 100 ~ 130 | 100 ~ 150\(600\) | 150\(600\) ~ |
+
+{% hint style="info" %}
+허용 비율은 로봇 모델과 제어기 소프트웨어 버전에 따라 변경될 수 있습니다.
+{% endhint %}
+
+
+
+
+[__SOURCE](7-system/4-robot-parameter/1-tool-data/3-tool-data-high-load_mode.md)
+# 7.4.1.3 고부하 모드
+
+로봇 기종별로 고부하모드 지원여부가 다를 수 있습니다. 통상적으로 가반하중이 100 Kg 이상인 중형로봇 이상에서 고부하 모드를 지원하고 있습니다.<br> 고부하 모드를 지원하는 기종의 경우 `[F2: 시스템] - 3: 로봇파라미터 - 33: 서보 파라미터 - 9: 서보제어 환경설정` 메뉴 에서 아래 그림에서와 같이<br> "4. 고부하 모드"에 대한 설정을 할 수 있습니다. 고부하 모드가 지원되는 기종의 경우 자동적용이 기본설정 값 입니다.
+
+![그림 63 고부하 모드 설정화면](../../../_assets/image_high_load_mode_setting.png)
+
+| 설정 값 | 동작 특성 |
+| :--- | :--- |
+|무효 | 툴 부하와 무관하게 일반 모드로 동작 <br>- 모터 On 시 (W0051) 고부하 모드 '무효' 로 로봇의 조기고장 우려 경고 발생
+|자동적용| 툴 부하가 정격부하 미만일 경우 일반 모드로 동작하고 정격을 초과하는 경우 <br> 고부하 모드로 전환 되며 로봇의 동작 속도 및 가감속이 낮아짐.
+|예외허용| 툴 부하가 고부하모드 최대허용비율 미만인 경우 자동적용과 동일하게 동작 <br> 고부하 기준을 초과하는 경우 고부하 예외모드로 동작 <br> -	모터 ON시 (W00177) 고부하 '예외허용"모드로 로봇의 조기고장 우려 경고
+
+
+로봇에 현재 적용 된 툴의 부하에 따른 고부하 모드 적용 상태는 아리의 그림 에서와 같이 확인 할 수 있습니다.<br>
+
+![그림 64 툴 부하에 따른 고부하 모드 적용 상태 확인](../../../_assets/home_tool_no.png)
+
+
+![일반 모드 툴 (일반 폰트)](../../../_assets/tp630/normal_mode_tool.png)  : 일반 모드(일반 폰트)
+
+![고부하 모드 (진한 폰트)](../../../_assets/tp630/high_load_mode_tool.png) : **고부하 모드** (굵은 폰트)
+
+![고부하 예외모드 (붉은 색)](../../../_assets/tp630/high_load_exception_mode_tool.png) : <span style="color: red; font-weight: bold;">고부하 예외 모드</span>(붉은 색 폰트)
+
+{% hint style="info" %}
+고부하 모드 허용 비율은 로봇 모델과 제어기 소프트웨어 버전에 따라 변경될 수 있습니다.
+{% endhint %}
+
+
+
+
+[__SOURCE](7-system/4-robot-parameter/2-axis-origin.md)
+# 7.4.2 축 원점
+
+각 축의 기구학적 원점 위치를 등록할 수 있습니다.
+
+1. `3: 로봇 파라미터 - 2: 축 원점` 메뉴를 터치하십시오.
+2. 각 축의 기구학적 원점 위치를 설정하십시오.
+
+![](../../_assets/tp630/robot-origin.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>각 축의 기구학적 원점
+          위치의 상세 정보입니다.
+          축의 엔코더와 위치를
+          설정할 수 있습니다.</p>
+        <ul>
+          <li>S축: 로봇과 주변 지그의
+            설치 상황에 따라 S축 원점을
+            변경합니다.</li>
+          <li>R1축: 툴의 부착 방향에
+            따라 R1축 원점을 변경합니다.</li>
+          <li>H, V, R2, B축: 자동 캘리브레이션
+            기능을 이용하여 자동으로
+            설정할 수 있습니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>`[확인]`: 변경 내용을 저장합니다.</li>
+          <li>[적용]: 선택된 축 정보에
+            선택한 원점 위치를 적용합니다.</li>
+          <li>[전체적용]: 모든 축 정보에
+            선택한 원점 위치를 적용합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="warning" %}
+* 축 원점 설정은 로봇의 직교 동작 정확도에 영향을 미칩니다. 가능한 한 정확한 값으로 변경하십시오.
+* 축 원점 설정이 변경되면 기존에 작성된 프로그램의 위치가 변경되므로 축 원점 설정은 반드시 초기 설치 단계에서만 실행하십시오.
+* 엔코더 옵셋 설정이 변경되면 축 원점을 새로 설정해야 하므로 반드시 엔코더 옵셋 설정을 완료한 후에 축 원점을 설정하십시오.
+{% endhint %}
+
+{% hint style="info" %}
+공장 출하 시에는 각 축의 기구학적 원점 위치가 표준값\(0X400000\)으로 설정되어 있습니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/4-robot-parameter/3-soft-limit.md)
+# 7.4.3 소프트 리밋
+
+로봇 사용 환경에 따라 각 축의 동작 범위를 조정합니다.
+
+1. `3: 로봇 파라미터 - 3: 소프트 리밋` 메뉴를 터치하십시오.
+2. 각 축의 동작 범위를 설정하십시오.
+
+![](../../_assets/tp630/robot-softlimit.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">각 축의 동작 범위의 상세
+        정보입니다. 축의 최소와
+        최대 동작 범위와 현재
+        축 위치를 설정할 수 있습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>`[확인]`: 변경 내용을 저장합니다.</li>
+          <li>[현재값]: 현재 로봇의
+            위치를 기준으로 각 축의
+            동작 범위를 설정합니다.</li>
+          <li>[전체 초기화]: 모든 축의 동작
+            범위를 초기화합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+공장 출하 시에는 로봇 각 축의 동작 범위가 최대로 설정되어 있습니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/4-robot-parameter/4-encoder-offset/README.md)
+# 7.4.4 엔코더 옵셋
+
+현재 엔코더의 위치를 엔코더의 원점 위치\(0X400000위치\)로 설정할 수 있습니다. 로봇 각 축의 기준 위치\(각 축의 스케일이 부착된 위치\)에서 엔코더의 원점을 결정합니다.
+
+1. `3: 로봇 파라미터 - 4: 엔코더 옵셋` 메뉴를 터치하십시오.
+2. 각 축의 위치를 조정하여 엔코더 옵셋값을 설정하십시오. 엔코더 옵셋값은 헥사값\(Hexa값, 16진수\)으로 기록됩니다.
+
+![](../../../_assets/tp630/robot-encoder-offset.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">각 축의 엔코더 옵셋값의
+        상세 정보입니다. 축의
+        보정된 엔코더 값과 현재
+        엔코더 값, 현재 위치를
+        설정할 수 있습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[확인]: 변경 내용을 저장합니다.</li>
+          <li>[단일 초기화]/[전체 초기화]: 선택된
+            축 또는 모든 축의 엔코더
+            옵셋값을 초기화합니다.</li>
+          <li>[보정값 계산]: 모터 교체가 필요할 때 해당 축의 모터 교체후에도 교체전의 위치로 엔코더 보정값을 쉽게 설정하기 위한 기능입니다. <br>
+            [7.4.4.2 축별 원위치 복원]을 참고하십시오.
+            </li>
+          <li>[이전 보정값]: 전체
+            축의 보정 전 엔코더 옵셋값을
+            불러 옵니다.</li>
+          <li>[로봇 이동]: [로봇 이동]
+            버튼을 터치하여 기록된
+            스텝의 위치로 로봇을
+            움직입니다. (조그)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+공장 출하 시 엔코더 옵셋값이 설정됩니다. 모터나 엔코더 교환 등 필요한 경우에만 엔코더 옵셋값을 재설정하십시오.
+{% endhint %}
+
+
+[__SOURCE](7-system/4-robot-parameter/4-encoder-offset/1-encoder-offset-utilization.md)
+# 7.4.4.1 엔코더 옵셋값 활용
+
+현재의 작업 프로그램을 백업하고 시스템을 초기화\(`시스템 - 5: 초기화 - 1: 시스템 초기화\]\)한 후에도 기존의 프로그램을 계속해서 사용하려면 로봇은 초기화 이전의 기준 위치 정보를 유지해야 합니다. 엔코더 옵셋값을 기록해 두면 로봇의 이전 위치 정보를 불러 올 수 있습니다.
+
+시스템 초기화 후에 엔코더 옵셋값을 헥사값으로 직접 입력하십시오. 소프트 키보드를 이용하여 간편히 입력할 수 있습니다.
+
+만약, 엔코더 옵셋값을 축 위치값\(mm 또는 degree\)으로 기록해 둔 경우에는, `[SHIFT]` 키를 누른 상태에서 \[ONE 초기화\] 버튼을 터치하여 나타난 입력창에 축 위치값을 입력한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/robot-encoder-backup.png)
+
+{% hint style="info" %}
+축 위치 입력창의 기본 설정값은 기준 자세 값입니다. 축 위치 값을 입력하지 않고 저장하면 현재 엔코더의 위치가 원점 위치\(0X400000\)로 설정됩니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/4-robot-parameter/4-encoder-offset/2-axis-posi-restore.md)
+# 7.4.4.2 축별 원위치 복원
+
+로봇 기구의 부품 고장(특히, 모터나 감속기)이 발생하여 해당 부품을 교체하는 경우 기존 티칭 프로그램을 재가동하기 위해서는 기존의 원점과 동일한 조건으로 엔코더를 보정하여야 합니다. <br> 하지만 AS요원이 현장에서 상기의 조치를 수동으로 할 때는 다수의 시행착오를 통해 원점을 맞추는 경우가 발생하기도 하는데 이를 쉽게 조치하기 위한 전용 기능입니다.
+
+* 기구 수리 후 원위치 복원이란?
+
+![](../../../_assets/tp630/axis-posi-restore1.png)
+
+즉, 원위치 복원이란 <br>
+외부참조점(다이얼게이지)을 이용하여 부품 교체 후, 부정확하게 보정된 원점 Ωo'을 <br>
+ⓒ-ⓐ값으로 보상하여 정확한 원점인 Ωo로 복원하는 것.(티칭프로그램 재사용을 위해 필요)
+
+{% hint style="warning" %}
+외부참조점(ⓑ)의 위치가 부품 교체 전과 교체 후에 변경되면 안됩니다. 즉, 부품 교체 전과 교체 후 반드시 동일 위치여야 합니다.
+{% endhint %}
+<br>
+<br>
+<사용 예> <br>
+하기에서는 S축의 모터를 교체한다는 가정하에 기능을 설명합니다.
+
+1.	신규 프로그램(101.job)을 지정하고 단단히 고정된 툴의 한 지점과 JIG 혹은 주변장치에 근접하도록 S1[확인지점 Approach], S2[원위치 확인지점, S1대비 S축만 회전]을 티칭합니다.  
+![](../../../_assets/tp630/axis-posi-restore2.png)
+
+2.	S축의 모터를 교체한 후, 교체전의 엔코더 보정 위치와 근접하게 S축을 수동 조작한 후 시스템/로봇 파라미터/엔코더 보정 화면에서 S축에 대해 엔코더 보정을 수행합니다.
+
+3.	티칭된 프로그램(101.job)을 수동 조작하여 S1으로 이동하고, 그 후 S2로 이동하면서 기구 부품 교체전과 동일한 위치가 되었을 때 S3[원위치 확인지점, S1대비 S축만 회전]을 티칭합니다. <br>
+![](../../../_assets/tp630/axis-posi-restore3.png)
+
+4.	S축에 대한 엔코더 보정값을 자동 계산합니다.
+    1) 시스템/로봇 파라미터/엔코더 보정 화면에 진입합니다. <br>
+    2) S축으로 커서를 이동한 후, [F3:보정값계산]을 누릅니다. <br>
+    ![](../../../_assets/tp630/axis-posi-restore4.png)
+
+    3)	"S축 모터 교체 전"의 프로그램 번호는 101, 스텝 번호는 2로 설정하며
+"S축 모터 교체 후"의 프로그램 번호는 101, 스텝 번호는 3으로 설정한 후,
+[실행] 버튼을 누릅니다. <br>
+(* "S축 모터 교체 후"의 프로그램 또는 스텝 번호가 0이면 현재 로봇의 S축 위치로 엔코더 보정값을 계산합니다.) <br>
+    ![](../../../_assets/tp630/axis-posi-restore5.png)
+
+    4)	S축에 계산된 엔코더 보정값이 화면에 표시되며, [F7:확인]를 누르면 보정된 엔코더값이 반영됩니다. <br>
+    ![](../../../_assets/tp630/axis-posi-restore6.png)
+
+    5.	티칭된 프로그램(101.job)의 S2로 이동하였을 때, 모터 교체전과 동일한 위치인지 확인합니다. <br>
+    
+[__SOURCE](7-system/4-robot-parameter/5-b-axis-deadzone.md)
+# 7.4.5 B축 비사용구역
+
+B축의 0도 부근에서는 R1축 회전 중심축과 R2축의 회전 중심축이 거의 평행이 되는데, 로봇의 TCP가 직선이나 원호와 같은 보간 동작을 하면 작은 움직임에도 손목 축이 급격히 동작하게 됩니다.
+
+B축의 비사용 구역을 설정합니다.
+
+1.	`3: 로봇 파라미터 - 5: B축 비사용구역` 메뉴를 터치하십시오.
+
+2.	비사용 구역의 판단 각도와 보간 처리 방식을 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/robot-baxis-deadz.png)
+
+* \[설정값\]: B축 비사용 구역의 판단 각도를 입력합니다.
+* \[비사용구역의 보간처리\]: 로봇의 궤적이 보간 동작으로 B축 비사용 구역을 통과해야 하는 경우, 에러 처리 및 로봇의 정지 여부를 설정합니다.
+
+
+
+
+[__SOURCE](7-system/4-robot-parameter/6-accuracy.md)
+# 7.4.6 Accuracy
+
+로봇의 목표 스텝 진행 시 스텝을 통과하는 정밀도인 Accuracy 레벨의 상세 조건을 설정합니다.
+
+1. `3: 로봇 파라미터 - 6: Accuracy` 메뉴를 터치하십시오.
+2. Accuracy 레벨별 툴 끝 위치\(TCP\)와 자세를 설정하십시오.
+
+![](../../_assets/tp630/robot-accuracy.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>Accuracy 레벨별 상세 정보입니다.
+          Accuracy 레벨의 툴 끝 위치(TCP)와
+          자세를 설정할 수 있습니다.</p>
+        <ul>
+          <li>Accuracy 레벨은 0부터 7까지
+            설정할 수 있으며 Accuracy 레벨은
+            스텝 명령문 인수의 하나로
+            기록됩니다.</li>
+          <li>Accuracy 레벨 0 ~ 6: 각 레벨에 TCP
+            거리 및 자세, 부가축의
+            거리 및 각도를 입력합니다.
+            <br
+            />LCD 로봇과 같이 직선 또는
+            원호 보간을 지원하지
+            않는 로봇의 경우에는
+            부가축과 동일한 방법이
+            적용됩니다.</li>
+          <li>Accuracy 레벨 7: 제어기에서
+            자동으로 값이 계산되어
+            나타나므로 직접 입력하지
+            않아도 됩니다.
+            <br />Accuracy 레벨 7을 사용하면 스텝
+            거리의 1/2 조건을 만족하는
+            최대의 코너링 경로가
+            생성됩니다. LCD 핸드의
+            진출입와 같이 로봇을
+            최대한 부드럽고 빠르게
+            동작시키고자 할 때 Accuracy
+            레벨 7을 유용하게 사용할
+            수 있습니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>`[확인]`: 변경 내용을 저장합니다.</li>
+          <li>[전체 초기화]: 모든 Accuracy 레벨의
+            TCP 거리와 자세를 초기화합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+* "[2.3 스텝](../../2-operation/3-step/README.md)"의 내용에 대한 이해를 바탕으로 Accuracy 레벨에 접근하면 더 쉽게 사용할 수 있습니다.
+* 서보건과 이퀄라이저 리스건의 용접 스텝에서는 설정된 Accuracy 레벨에 관계없이 제어기에서 자동으로 제한합니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/4-robot-parameter/7-axis-add-weight/README.md)
+# 7.4.7 축별 부가중량
+
+로봇의 기본 축에 장착된 트랜스포머나 배선용 지지대 등에 대한 정보를 등록합니다.
+
+1.	`3: 로봇 파라미터 - 7: 축별 부가중량` 메뉴를 터치하십시오.
+
+2.	기본 축 탭을 선택하고 장착된 부가 중량 정보를 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/robot-addweight.png)
+
+{% hint style="warning" %}
+로봇에 트랜스포머나 배선용 지지대 등이 장착되어 부가 중량이 있을 경우에는 반드시 각 축의 부가 중량 정보를 등록하십시오. 부가 중량을 정확히 등록하지 않으면 툴 부하 추정 시 오차가 커질 수 있습니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/4-robot-parameter/7-axis-add-weight/1-crdsys-origin-of-each-axis.md)
+# 7.4.7.1 각 축의 좌표계 원점
+
+각 축의 X, Y, Z 방향은 로봇 좌표계와 동일한 방향으로 설정되어 있습니다. 각 축의 좌표계 원점은 다음을 참조하십시오.
+
+![그림 63 로봇 형태별 각 축의 좌표계 원점](../../../_assets/image_484.png)
+
+
+[__SOURCE](7-system/4-robot-parameter/8-collision-detection/README.md)
+# 7.4.8 충돌검지
+
+로봇 작업 중에 충돌이 발생하는 경우, 충돌의 피해를 최소화하기 위해 로봇 동작 중에 정상적으로 발생하는 토크와 현재 발생되고 있는 토크를 비교하여 비정상적인 토크가 발생하면 에러로 처리하는 기능을 충돌 검지라 합니다. 
+
+
+${cont_model} 제어기에는 로봇이 비정상적인 조건에서 동작하게 되거나 이상 동작을 하게 될 때의 안전장치로서 기존에 있던 과전류, 과부하, 과속도 및 위치편차에러 검지 기능과 충돌검지 기능이 상호 보완적으로 작용하여 로봇의 안정성을 높이는 역할을 합니다. 
+
+`3: 로봇 파라미터 - 14: 충돌 검지` 메뉴를 터치하십시오.
+
+{% hint style="info" %}
+* 충돌검지 기능은 모터가 켜진 상태에서만 동작합니다.
+* 반드시 정확한 툴/부가 중량 설정 or 부하추정을 실행한 후에 충돌검지 기능을 사용하십시오.
+* 툴 중량 및 축별 부가 중량이 실제와 다를 경우, 오검지가 발생할 수 있습니다.
+* 부하추정 및 센서기반/센서리스 힘 제어 기능 수행 시 충돌을 검지하지 않습니다.
+* 로봇에 부착되지 않은 포지셔너, 정치건, 지그 등의 충돌은 검지할 수 없습니다.
+* 특주형 로봇은 모델 기반의 충돌검지 기능을 지원하지 않습니다.
+* 자동운전 후 수동운전 전환했을때 충돌검지 발생 시 해당 현상은 오류가 아닙니다 (충돌검지 세팅값 점검 필요).
+
+{% endhint %}
+
+
+![](../../../_assets/tp630/coldet/robot_impact_detection.png)
+
+[__SOURCE](7-system/4-robot-parameter/8-collision-detection/1-coldet-model-based.md)
+# 7.4.8.1 모델기반 충돌검지
+
+모델기반 충돌검지 기능은 로봇이 동작 중에 정상적으로 발생해야 하는 토크와 실제 측정되는 토크의 차이를 로봇의 동역학 모델을 기반으로 계산하여 충돌을 검지합니다. 민감도를 설정하여 충돌에 대한 반응성을 조절할 수 있으며, 로봇이 저속으로 움직일 때에 발생하는 외부와의 접촉에 대해서도 검지 가능합니다. 
+
+
+1. `3: 로봇 파라미터 - 14: 충돌 검지 - 1: 모델 기반 충돌 검지` 메뉴를 터치하십시오.
+
+
+![](../../../_assets/tp630/coldet/model_based_coldet_tab_general.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">모델 기반 충돌 검지 기능 사용 유무를 설정합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">축 전체 기본 민감도를 의미하며 값이 높을수록 민감하게 충돌음 감지하게 됩니다.
+      (기본값:100, 최대값:200)  </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">저속 충돌검지 기능 사용 유무를 설정 합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">저속 충돌을 검지하기 위한 설정 시간으로, 이 기준 시간 이상으로 충돌이 가해지면 충돌로 인식합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">링크 속도가 설정값 보다 작을 때에만 저속 충돌로 판단합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">기본 설정값으로 초기화 합니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+![](../../../_assets/tp630/coldet/model_based_coldet_tab_axis.png)
+
+{% hint style="info" %}
+축별 설정 탭은 엔지니어링 모드 이상에서만 활성화 됩니다. 
+{% endhint %}
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">축별 검지 기준값 대비 비율(%)로서 값이 낮을 수록 민감하게 반응합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">차단 주파수 값으로 일반적으로 로봇의 제어 환경값으로 설정됩니다. 임의의 축을 0으로 설정하면, 해당 축은 충돌 검지 기능이 비활성화 됩니다.(최대값:100) </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">기본 설정값으로 초기화 합니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+축 별 최종 민감도값은 축별 민감도 값에 비례하고, 축 전체 기본 민감도와 반비례 합니다.    
+{% endhint %}
+
+[__SOURCE](7-system/4-robot-parameter/8-collision-detection/2-coldet-axis.md)
+# 7.4.8.2 충돌검지 (축별) 설정
+
+충돌검지 기능은 로봇 각축에 발생하는 외란토크와 외란토크의 변화율을 감시하여 측정된 값이 설정치를 초과할 때 에러로 처리 합니다. 
+
+* 외란토크가 설정치를 초과하면 \[E0160 (O축)충돌 검지\]
+* 외란토크 변화율이 설정치를 초과하면 \[E0161 (O축)충격 검지\] 로 표시합니다. 
+
+
+![](../../../_assets/tp630/coldet/collision_detection_of_axis.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">축별 충돌 검지 기능 사용 유무를 설정합니다. 유효인 상태라도 로봇 정지 상태이거나 스폿 GUN 가압 중에는 기능이 동작하지 않습니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">충돌 이후 민감도 유지 여부를 설정합니다. 유효인 상태이면 충돌 감지 이후에도 현재 감지 레벨을 유지합니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left"> 
+        <p>[측정값] 충돌검지(coldet level.id) 명령이 유효한 구간에서 발생한 "외란토크" 최대값을 표시합니다.</p>
+        <p>[설정값] 사용자는 이 값을 참고하여 각 레벨의 충돌검지를 위한 "외란토크" 값으로 설정 가능합니다. </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c4.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>[측정값] 충돌검지(coldet level.id) 명령이 유효한 구간에서 발생한 "외란토크 변화율" 최대값을 표시합니다.</p>
+        <p>[설정값] 사용자는 이 값을 참고하여 각 레벨의 충돌검지를 위한 "외란토크 변화율" 값으로 설정 가능합니다.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c5.png" alt/>
+      </td>
+      <td style="text-align:left">각 축의 외란토크와 외란토크 변화율의 측정치(최대값)을 다시 측정하게 됩니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c6.png" alt/>
+      </td>
+      <td style="text-align:left">각 축에 설정된 레벨값 전체를 초기값으로 설정하고자 할 때 사용합니다. </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c7.png" alt/>
+      </td>
+      <td style="text-align:left">레벨을 더 추가 하고자 할때 사용합니다. 설정할 수 있는 최대 레벨의 개수는 16개 입니다.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        <img src="../../../_assets/c8.png" alt/>
+      </td>
+      <td style="text-align:left">최대 레벨을 삭제 하고자 할때 사용합니다. LV6 이상부터 삭제 가능 합니다. </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="info" %}
+충돌 검지 측정값은 최대 2분 이내로 출력됩니다
+{% endhint %}
+
+[__SOURCE](7-system/4-robot-parameter/9-jog-inch-level/README.md)
+# 7.4.9 조그인칭 레벨 설정
+
+이동 거리를 지정하여 동작을 제한할 수 있습니다. 수동 모드에서 조그키로 원하는 거리만큼 이동할 때 유용합니다.
+
+1.	`3: 로봇 파라미터 - 11: 조그인칭 레벨설정` 메뉴를 터치하십시오.
+
+2.	조그인칭 레벨별로 거리와 각도를 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/robot-jog-inching.png)
+
+
+[__SOURCE](7-system/4-robot-parameter/9-jog-inch-level/1-jog-inch-main-funcs.md)
+# 7.4.9.1 조그인칭 기능의 주요 기능
+
+* 인칭 가능 좌표계
+  * 축 좌표계 인칭: 각 축의 이동 거리\(mm\)와 각도\(deg\)를 지정한 만큼만 이동합니다.
+  * 직교 좌표계 인칭
+  * 툴 좌표계 인칭
+  * 사용자 좌표계 인칭: X, Y, Z 위치\(mm\)와 Rx, Ry, Rz 자세\(deg\)에 대해 지정한 만큼만 이동합니다.
+* 인칭 거리 속도 레벨 기존의 조그 속도와 동일한 레벨에 인칭 거리를 설정할 수 있어 8 단계의 속도를 선택할 수 있으며 각 단계에 인칭 거리를 설정할 수 있습니다.
+
+
+
+
+[__SOURCE](7-system/4-robot-parameter/9-jog-inch-level/2-inch-jog-operation.md)
+# 7.4.9.2 인칭 조그 조작
+
+인칭 기능은 조그키 ONE PUSH 당 최대 이동 거리를 초과하여 움직이지 않게 하는 기능입니다.
+
+인칭 거리에 도달한 이후에도 계속 조그키를 누르고 있다가 손을 떼면 로봇이 인칭 거리까지 감속하여 정지하고 움직이지 않습니다.
+
+![그림 64 인칭 거리 도달 후 키에서 손을 뗀 경우](../../../_assets/image_209.png)
+
+인칭 거리에 도달하기 전에 조그키에서 손을 뗀 경우에는 조그키에서 손을 뗀 시점부터 로봇이 감속하여 정지합니다. 이때는 일반 조그 모드와 동일합니다.
+
+![그림 65 인칭 거리 도달 전 키에서 손을 뗀 경우](../../../_assets/image_216.png)
+
+{% hint style="info" %}
+축 좌표계에서 속도 레벨 1은 엔코더 1 bit씩 이동하도록 고정되어 있습니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/4-robot-parameter/12-system-maintenance/README.md)
+# 7.4.10 감속기 수명 설정
+
+로봇축의 감속기가 교체된 경우 감속기 정격 수명을 초기화 합니다.
+감속기는 동작 부하조건 및 속도에 따라 정격 수명이 소진되는 속도가 달라집니다. 고속 고부하 조건일수록 보다 빠른 속도로 수명이 감소하게 됩니다. 
+시스템 특성데이터의 감속기 정격 수명 모니터링 에서는 로봇의 동작 상태를 모니터링 하여 감속기의 잔여 정격수명 및 최근 동작 패턴을 기반으로 예상 수명을 표시하고 있습니다.
+
+정격 수명 : 정격부하 및 정격속도 조건하에서 지속적으로 구동 시 잔여 수명<br>
+예상 수명 : 최근 구동 조건을 바탕으로 예상되는 잔여 수명으로 로봇의 최근 동작 패턴에 따라 예상 수명이<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 증가하거나 감소 할 수 있습니다. 
+
+감속기 교체시 정격수명 초기화 방법
+1.	`3: 로봇 파라미터 - 12: 감속기 수명 설정` 메뉴를 터치하십시오.
+
+2.	교체된 감속기에 해당하는 위치로 커서를 옮긴 후 `단일 초기화` 버튼을 터치하십시오.
+만일 전체 감속기를 교체하였거나, 신규 로봇으로 본체를 교체한 경우에는 `전체 초기화` 버튼을 터치 하십시오. 정격 수명이 초기화 된 감속기의 경우 수정 일자 항목에 초기화 수행 일자가 기록 됩니다. 
+
+![](../../../_assets/tp630/reducer_lifetime_setting.png)
+
+
+수명 계산 주기 `분` : 감속기 정격 및 예상 수명의 갱신 주기 설정 최소 10분 단위로 설정 가능.
+
+{% hint style="info" %}
+감속기 정격 수명 및 예상 수명은 감속기의 수명 계산 모델에 의해 계산된 예측 참고치 입니다. 실제 감속기의 수명은 구동환경에 따라 예상 모델과 차이가 있을 수 있습니다. 
+{% endhint %}
+
+[__SOURCE](7-system/4-robot-parameter/13-system-diagnosis/README.md)
+# 7.4.13 시스템 고장진단
+
+로봇 시스템의 고장을 진단하기 위한 각종 기능들을 위해서 사용됩니다. 
+
+
+[__SOURCE](7-system/4-robot-parameter/13-system-diagnosis/1-gas-spring-pressure_sensor.md)
+# 7.4.13.1 가스스프링 압력센서
+
+가스스프링 압력센서 기능은 가스스프링을 사용하고 여기에 당사에서 지정한 압력센서(PN2570)가 부착된 로봇에서 디지털 입력에 의해 경고나 에러를 발생한다던지 또는 아날로그 입력에 의해 상시 압력센서의 값을 읽어 가스스프링의 압력 이상을 검출하기 위해 사용합니다.  <br> 
+
+[디지털 입력] <br>
+![](../../../_assets/tp630/gasp_sensor.png)
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">항목</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        경고 입력
+      </td>
+      <td style="text-align:left">
+        경고를 입력받을 신호의 번호를 설정합니다. 압력센서에서는 계측된 압력이 설정한 허용오차를 벗어났을 때 경고 출력을 할 수 있습니다. 제어기에서는 설정된 신호가 on될때 W21020를 발생합니다.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        에러 입력
+      </td>
+      <td style="text-align:left">
+        에러를 입력받을 신호의 번호를 설정합니다. 압력센서에서는 계측된 압력이 설정한 허용오차를 벗어났을 때 에러 출력을 할 수 있습니다. 제어기에서는 설정된 신호가 on될때 E21020를 발생합니다.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+[아날로그 입력] <br>
+![](../../../_assets/tp630/gasp_sensor2.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">항목</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        신호 할당
+      </td>
+      <td style="text-align:left">
+        압력센서의 값이 입력되는 디지털 신호를 설정 합니다.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        현재값
+      </td>
+      <td style="text-align:left">
+        압력센서에서 계측되는 압력값이 표시됩니다.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        기준압력
+      </td>
+      <td style="text-align:left">
+        가스스프링에 주입한 기준 압력을 설정 합니다. 
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        경고 허용오차 및 출력 신호
+      </td>
+      <td style="text-align:left">
+        계측된 압력이 기준 압력에서 설정한 허용오차를 뺀 값보다 작을 때 W21018을 발생합니다. <br>
+        출력 신호가 설정되어 있으면 해당 신호 출력을 on 합니다. 
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"> 
+        에러 허용오차 및 출력 신호
+      </td>
+      <td style="text-align:left">
+        계측된 압력이 기준 압력에서 설정한 허용오차를 뺀 값보다 작을 때 E21018를 발생합니다. <br>
+        출력 신호가 설정되어 있으면 해당 신호 출력을 on 합니다.  
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+{% hint style="info" %}
+* 본 기능은 V70.00.00 이상의 버전에서 지원합니다.    
+{% endhint %}
+
+
+[__SOURCE](7-system/5-application-parameter/README.md)
+# 7.5 응용 파라미터
+
+1.	\[4: 응용 파라미터\] 메뉴를 터치하십시오. 응용 파라미터 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 로봇 응용 기능의 사용을 위한 각종 파라미터를 확인하고 설정하십시오.
+
+![](../../_assets/tp630/app-menu.png)
+
+{% hint style="info" %}
+본 설명서에서 다루지 않은 항목들은 별도의 응용 기능별 "기능 설명서"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](7-system/5-application-parameter/10-cmd-idp-exe.md)
+# 7.5.10 명령문 독립 실행
+
+설정된 입력 신호가 OFF에서 ON되었을 때 해당하는 명령문을 작업 프로그램과 별도로 수행하는 기능입니다. <br>
+사용하지 않는 서브태스크를 이용해서 해당 명령문을 실행하게 되는데 보통은 서브태스크 1이 사용됩니다. <br>
+멀티태스킹에 대한 자세한 내용은 "[${cont_model} 제어기 기능 설명서 - 멀티태스킹](https://hrbook-hrc.web.app/#/view/doc-multi-task/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+
+![](../../_assets/tp630/cmd-idp-exe.png)
+
+  * 입력 신호: 제어기에 입력되는 신호를 설정합니다.
+  * 명령문: 
+    * 입력 신호가 OFF에서 ON될때 실행할 명령문을 기록합니다. 
+    * 일반적으로 정치서보건의 건서치 및 팁드레싱 작업을 위해서 task start가 사용되며 포지셔너 독립운전을 위해서는 move가 사용됩니다. 
+    * task start 사용시 이 명령을 실행하는데 서브태스크 1이 사용되므로 sub는 2이상으로 지정하거나 0으로 지정하십시오. (0=자동할당)
+  * 실행 중 출력신호: 
+    * 해당 명령문의 실행을 시작하면 ON되고 실행이 완료되면 OFF됩니다. 
+    * 명령문이 move가 아니면 실행시간이 매우 짧기때문에 의미가 없습니다.
+  * 실행완료 출력신호: 
+    * 해당 명령문의 실행을 시작하면 OFF되고 실행이 완료되면 ON됩니다. 
+    * 명령문이 move가 아니면 실행시간이 매우 짧기 때문에 의미가 없습니다.
+
+{% hint style="info" %}
+* 자동모드의 모터ON 상태에서만 실행이 가능합니다.
+* move문을 실행하는 경우는 해당 축이 메인 태스크에서 사용하지 않도록 메커니즘으로 분리하거나 axisctrl off로 축제어 상태를 무효화 하여야 합니다.
+{% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/13-user-def-error/README.md)
+# 7.5.13 사용자 정의 에러 기능
+
+본 기능은 ${cont_model} 로봇 제어기에 사용자가 특정 조건에 대한 에러를 정의하고, 조건을 충족시켰을때 사용자가 정의한 에러를 발생시키는 기능입니다.
+
+{% hint style="info" %}
+이 기능은 V60.30-00 및 이후 버전부터 지원됩니다.
+{% endhint %}
+[__SOURCE](7-system/5-application-parameter/13-user-def-error/1-setting.md)
+# 7.5.13.1 사용자 정의 에러 설정
+
+1. `시스템 - 4: 응용 파라미터 - 13: 사용자 정의 에러` 메뉴를 터치하십시오.<br><br>
+2. '샘플파일 생성' 버튼을 클릭하십시오.<br>
+* MAIN/project 경로에 'help_user_err.json' 파일이 생성됩니다.<br>
+![](../../../_assets/tp630/user-def-code/image1.png)
+
+3. 설정화면 재진입 시 샘플파일에 작성된 사용자 정의 에러가 표시됩니다.
+-   에러 코드 : 발생시킬 에러 코드를 지정합니다.
+-	조건식 : 해당 에러를 발생하기 위한 조건식을 지정합니다. 조건식은 if문에서 사용되는 조건식은 모두 가능합니다.
+-	메시지 : 해당 에러가 발생할 때 출력되는 메시지를 지정합니다.
+-	모터 off : 사용자 지정 에러가 발생되는 경우에 모터 off 동작 여부를 지정합니다.<br>
+![](../../../_assets/tp630/user-def-code/image2.png)
+
+4. 티칭 펜던트에 USB를 장착하고, 파일 관리자 메뉴로 진입하여 'help_user_err.json' 파일을 USB 경로로 복사합니다.<br><br>
+![](../../../_assets/tp630/user-def-code/image3.png)
+
+5. PC에서 파일을 열고 정의할 에러를 샘플파일 양식에 맞게 편집합니다.(메모장으로 편집 가능)<br>
+-   E65###: 에러 코드(설정 범위 E65001 ~ E65500)
+    -	cnd : 조건식
+    -	msg : 에러 도움말에 표시되는 원인 메시지
+    -   remedy : 에러 도움말에 표시되는 조치 방법
+    -	mot_off : 모터 off<br>
+![](../../../_assets/tp630/user-def-code/image4.png)
+
+6. 편집된 파일을 다시 티칭 펜던트로 복사합니다.
+
+
+[__SOURCE](7-system/5-application-parameter/13-user-def-error/2-example.md)
+# 7.5.13.2 사용자 정의 에러 예제
+
+1. 'help_user_err.json' 파일을 아래와 같이 수정합니다.<br>
+![](../../../_assets/tp630/user-def-code/image9.png)
+
+2. 조건식을 만족시키기 위해 di5번 신호를 on하면 E65001이 발생합니다.<br>
+![](../../../_assets/tp630/user-def-code/image10.png)
+
+3. 에러에 대한 도움말을 확인하면 작성한 내용과 동일한 내용을 확인할 수 있습니다.<br>
+![](../../../_assets/tp630/user-def-code/image11.png)
+[__SOURCE](7-system/5-application-parameter/14-user-def-warn/README.md)
+# 7.5.14 사용자 정의 경고 기능
+
+본 기능은 ${cont_model} 로봇 제어기에 사용자가 특정 조건에 대한 경고를 정의하고, 조건을 충족시켰을때 사용자가 정의한 경고를 발생시키는 기능입니다.
+
+{% hint style="info" %}
+이 기능은 V60.30-00 및 이후 버전부터 지원됩니다.
+{% endhint %}
+[__SOURCE](7-system/5-application-parameter/14-user-def-warn/1-setting.md)
+# 7.5.14.1 사용자 정의 경고 설정
+
+1. `시스템 - 4: 응용 파라미터 - 14: 사용자 정의 경고` 메뉴를 터치하십시오.<br><br>
+2. '샘플파일 생성' 버튼을 클릭하십시오.<br>
+* MAIN/project 경로에 'help_user_warn.json' 파일이 생성됩니다.<br>
+![](../../../_assets/tp630/user-def-code/image5.png)
+
+3. 설정화면 재진입 시 샘플파일에 작성된 사용자 정의 경고가 표시됩니다.
+-   경고 코드 : 발생시킬 경고 코드를 지정합니다.
+-	조건식 : 해당 경고를 발생하기 위한 조건식을 지정합니다. 조건식은 if문에서 사용되는 조건식은 모두 가능합니다.
+-	메시지 : 해당 경고가 발생할 때 출력되는 메시지를 지정합니다.<br>
+![](../../../_assets/tp630/user-def-code/image6.png)
+
+4. 티칭 펜던트에 USB를 장착하고, 파일 관리자 메뉴로 진입하여 'help_user_warn.json' 파일을 USB 경로로 복사합니다.<br><br>
+![](../../../_assets/tp630/user-def-code/image7.png)
+
+5. PC에서 파일을 열고 정의할 경고를 샘플파일 양식에 맞게 편집합니다.(메모장으로 편집 가능)<br><br>
+-   W65###: 경고 코드(설정 범위 W65001 ~ W65100)
+    -	cnd : 조건식
+    -	msg : 경고 도움말에 표시되는 원인 메시지
+    -   remedy : 경고 도움말에 표시되는 조치 방법<br>
+![](../../../_assets/tp630/user-def-code/image8.png)
+
+6. 편집된 파일을 다시 티칭 펜던트로 복사합니다.
+[__SOURCE](7-system/5-application-parameter/14-user-def-warn/2-example.md)
+# 7.5.14.2 사용자 정의 경고 예제
+
+1. 'help_user_warn.json' 파일을 아래와 같이 수정합니다.<br>
+![](../../../_assets/tp630/user-def-code/image12.png)
+
+2. 조건식을 만족시키기 위해 di6번 신호를 on하면 W65001이 발생합니다.<br>
+![](../../../_assets/tp630/user-def-code/image13.png)
+
+3. 경고에 대한 도움말을 확인하면 작성한 내용과 동일한 내용을 확인할 수 있습니다.<br>
+![](../../../_assets/tp630/user-def-code/image14.png)
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/README.md)
+# 7.5.16 조이스틱 모드
+
+조이스틱과 같은 외부 장치로 로봇의 조작을 수행하기 위한 기능입니다. 
+
+![](../../../_assets/tp630/joystick_mode_menu.png)
+
+* 조이스틱 가능 <br>
+   조이스틱 모드에 해당하는 기능들을 수행하기 위해서는 입력 신호의 설정이 반드시 필요하며 또한 ON 상태가 되어야 합니다. 
+
+* 실행 타입 <br>
+   조깅 동작을 설정된 신호의 입력 상태로 수행할지 Open-api의 입력 상태로 수행할지 선택합니다. <br>
+   조깅 동작은 T/P의 수동모드에서 조작하는 조그키 동작과 완전히 동일합니다. 
+
+
+{% hint style="info" %}
+* 자동 모드의 모터온 상태에서만 동작합니다.
+{% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/1-jogging-in-signal.md)
+# 7.5.16.1 조깅(입력신호)
+
+신호 입력에 의한 로봇 조깅을 위해서는 각각의 방향키에 해당하는 입력 신호를 설정합니다. <br>
+해당 입력 신호가 ON상태의 구간에서 해당축이 지정된 방향으로 이동합니다. <br>
+
+좌표계에 입력 신호를 설정한 경우에는 해당 입력 신호가 ON이 되면 이에 매칭되는 좌표계가 선택이 됩니다. <br>
+
+매커너즘 번호에 해당하는 입력 신호를 상태에 따라서 매커니즘의 변경이 가능합니다. <br>
+
+![](../../../_assets/tp630/jogging_in_signal.png)
+
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/2-jogging-open-api.md)
+# 7.5.16.2 조깅(open-api)
+
+open-api 통신에 대해서는 별도의 설명서를 참고하십시오. <br>
+로봇 조깅을 위해서 사용되는 url주소와 body에 대한 정보는 하기와 같습니다 .
+
+* url : POST /project/robot/joystick/joy
+* body <br>
+    axis : double형 배열로 구성. axis[0]는 J1에 해당하며 값이 -1이면 왼쪽, +1이면 오른쪽으로 이동을 의미함<br>
+
+
+{% hint style="info" %}
+300ms 동안 데이터 수신이 없으면 조깅 동작을 중단합니다. 
+{% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/3-speed-level.md)
+# 7.5.16.3 속도
+
+신호 입력에 의한 로봇 조깅의 속도 레벨을 변경하는 기능입니다. <br>
+설정된 입력 신호가 ON 상태가 되면 해당 속도 레벨로 변경되며 또한 해당 출력 신호를 ON으로 출력합니다. <br>
+
+![](../../../_assets/tp630/speed_level.png)
+
+
+
+
+[__SOURCE](7-system/5-application-parameter/16-joystick-mode/4-robot-move.md)
+# 7.5.16.4 로봇이동
+
+신호 입력에 의해 지정된 로봇의 축을 지정된 속도로 지정된 위치까지 이동하는 기능입니다. <br>
+하기의 그림에서 fb2.di34 신호가 ON되면 로봇 6축의 위치가 30도가 되도록 10%의 속도로 로봇이 이동합니다. <br>
+
+로봇 2축 이상을 동시에 이동하려면 입력신호를 동일하게 설정하면 됩니다. 이때 이동속도는 이 중에서 가장 선두에 기록된 설정값이 적용됩니다. <br>
+
+![](../../../_assets/tp630/robot_move.png)
+
+
+
+[__SOURCE](7-system/5-application-parameter/22-reduced-speed-mode.md)
+# 7.5.22 저속 운전 모드
+
+입력 신호(di)가 OFF에서 ON되었을 때 재생 속도가 설정한 감속 비율로 줄어듭니다. <br>
+move 문 로봇 속도는 기존 속도값에 자동모드 재생속도와 감속 비율이 반영되어 적용됩니다. <br>
+
+
+![](../../_assets/tp630/reduced_spd_mode.png)
+
+  * 입력 신호: 제어기에 입력되는 신호를 설정합니다.
+  * 활성화: 
+    * High : 신호가 ON일 때 감속 적용, 신호 OFF일 때 감속 해제
+    * Low : 신호가 Off 일 때 감속 적용, 신호 ON일 때 감속 해제
+  * 감속 비율:  
+    * 재생 속도 기준 감속할 비율을 결정합니다.
+    * 저속 운전 모드 입력 신호가 들어왔을 때 로봇 속도는 자동모드 재생속도에 감속 비율을 곱한 값이 반영됩니다.
+
+{% hint style="info" %}
+* 수동모드에서는 감속 비율이 적용되지 않습니다.
+{% endhint %}
+
+{% hint style="warning" %}
+* 입력 신호의 상태에 알맞는 활성화 조건을 선택하여 구동하십시오.
+* 재생 중 강제로 I/O 신호가 들어오는 경우에도 저속모드가 적용됩니다.
+{% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/23-scurve-condition/README.md)
+# 7.5.23 S-curve 조건
+
+S-curve는 작업에 따라 경로 정확도, 잔류 진동을 조절하여 최적 공정을 설계하기 위한 모션 궤적 계획을 의미합니다.
+
+![](../../../_assets/tp630/s-curve_velocity_comparison.png)
+
+본 이미지는 기본 속도 프로파일링 방식과 S-curve 속도 프로파일링 방식을 비교한 그래프입니다.
+
+Default (청색 실선): 가속 시작과 종료 시점에 가속도 변화가 급격하여 진동을 유발할 수 있습니다.
+
+S-curve (적색 점선): 가속 및 감속 시 속도변화를 보다 부드럽게 수행 합니다. 이를 통해 로봇의 진동을 최소화하고, 동작 속도 변경 시에도 경로 오차를 최소화 할 수 있습니다. 
+
+{% hint style="warning" %}
+* 연속 모션 생성에 실패하는 경우, 모션이 끊기는 불연속 모션으로 동작합니다. 해당 구간에서는 파라미터를 수정하거나 기본 모션(Default)으로 전환하여 작업하는 것을 권장합니다.
+* 연속 모션 실패 이력은 히스토리 로그를 통해 확인할 수 있습니다.
+{% endhint %}
+
+{% hint style="info" %}
+* 이 기능은 V70.00-00 및 이후 버전부터 지원됩니다.
+* 명령어 문법은 ${cont_model} 제어기 기능설명서 "[5.22 scurve문](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/5-moving-robot/22-s-curve?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+[__SOURCE](7-system/5-application-parameter/23-scurve-condition/1-scurve-condition.md)
+# 7.5.23.1 S-curve 조건
+
+S-curve 조건 설정 화면에서는 로봇 구동 시 발생하는 가감속 구간의 특성을 세부적으로 정의할 수 있습니다. 각 공정의 요구 특성(경로 정확도 또는 진동 저감)에 맞게 아래 항목을 설정하십시오.
+
+![](../../../_assets/tp630/s-curve_condition.png)
+
+  * 조건 명칭: 조건의 이름을 입력합니다.
+  * 경로 정확도 <br>
+    로봇이 지정된 궤적을 얼마나 충실히 따르는지를 결정합니다. 가공이나 정밀 조립과 같이 궤적 이탈이 최소화되어야 하는 공정에서 높은 값을 권장합니다.
+    값이 클 수록 경로 정확도가 높아지지만 상대적으로 진동이 커질 수 있습니다.
+
+  * 스무스 모션 <br>
+    가속 및 감속도의 변화를 부드럽게 하는 정도를 결정합니다. 유리와 같이 손상되기 쉬운 작업물이나 진동에 민감한 공정, 로봇 하드웨어의 기계적 충격을 줄여야 할 때 값을 높여 사용하십시오.
+    값이 클 수록 부드러운 동작을 수행 하지만 사이클 타임이 증가합니다. 또한 너무 높은 값을 설정하는 경우, 연속 모션을 수행하지 못하고 불연속 동작 하는 경우도 있을 수 있습니다. 
+
+
+### 설정 예시
+
+* 정밀 가공 및 디스펜싱 (경로 정확도 우선)
+  * 로봇이 정해진 궤적을 정확하게 따라가야 하는 공정입니다.
+
+
+  * 추천 설정:
+    * 경로 정확도: 높음 (예: 80~100)
+    * 스무스 모션: 낮음~중간 (예: 20~40)
+
+  * 사용 시나리오: 자동차 부품의 복잡한 곡면을 따라 실란트를 도포하거나, 레이저 커팅을 수행할 때 사용합니다. 궤적 오차 최소화를 위해 정확도를 높게 설정하며, 약간의 진동보다는 경로 유지가 더 중요한 경우입니다.
+  * 주의사항: 요구 공정의 요구 사양에 맞추어 실제 로봇의 진동 발생 여부를 참고해서 파라미터 조정이 필요 합니다. 
+
+
+* 민감한 화물 이송 (진동 저감 스무스 모션 우선)
+  * 진동에 의해 제품이 파손되거나 위치가 틀어질 위험이 있는 공정입니다.
+
+  * 추천 설정:
+    * 경로 정확도: 중간 (예: 50)
+    * 스무스 모션: 높음 (예: 80~100)
+
+  * 사용 시나리오: 반도체 웨이퍼나 대형 유리 기판(LCD/OLED) 이송, 또는 넘치기 쉬운 액체가 담긴 용기를 옮길 때 사용합니다. 가감속 시의 충격을 최소화하여 제품의 슬립(Slip) 현상이나 흔들림을 방지합니다.
+  * 주의사항: 동작이 부드러워지는 만큼 전체적인 사이클 타임(작업 시간)증가, 또는 불연속 모션모션을 수행할 수 있습니다.
+
+
+[__SOURCE](7-system/5-application-parameter/23-scurve-condition/2-acceldecel-parameter.md)
+# 7.5.23.2 가감속 파라미터
+
+S-curve 조건과 **최대 저크**는 상호 보완적인 관계에 있습니다. S-curve 설정만으로 공정 최적화가 어려운 경우, 각 조인트별 최대 저크 제한값을 조정 하고자 하는 경우 파라미터를 조정 합니다.
+
+![](../../../_assets/tp630/s-curve_acceldecel_parameter.png)
+
+저크(Jerk)와 모션의 관계
+저크는 가속도의 변화율을 의미하며, 이 값을 조절함에 따라 다음과 같은 특성 변화가 발생합니다.
+
+최대 저크 값 감소 (↓): 가속도 변화가 더 완만해져 모션이 부드러워지며 진동이 감소합니다. 단, 목표 속도에 도달하는 시간이 길어져 사이클 타임이 증가할 수 있습니다.
+
+최대 저크 값 증가 (↑): 기민한 반응성을 얻을 수 있으나, 값이 너무 크면 S-curve 조건의 '스무스 모션' 설정 효과가 반감되어 기계적 충격이 커질 수 있습니다.
+
+
+최대 저크 값의 자동 갱신
+시스템은 장비의 안정성을 위해 주요 파라미터 변경 시 최대 저크 값을 자동으로 재계산합니다.
+- 갱신 조건: 최고 속도 또는 가속 시간 설정 변경 시
+- 부가축 적용: 부가축 파라미터 설정에서 해당 축의 최고 속도 또는 가속 시간 사양을 변경하는 경우에도 동일하게 갱신됩니다.
+
+{% hint style="warning" %}
+주의: 수동 설정 값 초기화 최고 속도나 가속 시간을 수정하면 수동으로 입력했던 최대 저크 값이 시스템 계산값으로 덮어쓰기(Overwrite) 됩니다. 특정 공정을 위해 저크 값을 최적화한 경우, 변경 전 기존 값을 반드시 백업하시기 바랍니다.
+{% endhint %}
+
+
+{% hint style="info" %}
+가감속 파라미터 설정은 로봇의 동작 특성에 큰 영향을 미치는 중요한 파라미터 이기 때문에 엔지니어링 모드 이상에서만 활성화 됩니다.
+{% endhint %}
+
+[__SOURCE](7-system/6-initialization/README.md)
+# 7.6 초기화
+
+로봇 제어기가 정상적으로 동작하지 않는 경우 시스템을 초기화합니다. 반드시 HD현대로보틱스 로봇의 초기화 설정 경험이 있는 엔지니어가 시스템 초기화를 수행해야 합니다.
+
+1.	\[5: 초기화\] 메뉴를 터치하십시오. 초기화 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 로봇 시스템 및 시리얼 엔코더의 초기화를 수행하십시오.
+
+![](../../_assets/tp630/init-menu.png)
+
+{% hint style="info" %}
+\[초기화\] 메뉴의 일부 항목은 특정 유형의 부가축을 선택한 경우에만 지원됩니다.
+{% endhint %}
+
+{% hint style="info" %}
+* 시스템을 초기화하려면 고객지원팀에 문의하여 전문가에게 의뢰하거나 자격을 갖춘 엔지니어에게 문의하여 오조작을 예방하십시오.
+* 시스템을 초기화하면 제어기에 저장된 모든 데이터와 프로그램이 삭제됩니다. 시스템을 초기화하기 전에 데이터와 프로그램을 백업해 두고 필요한 경우 복원하여 사용하십시오. 데이터 백업과 복원에 대한 자세한 내용은 "[4.2.5 데이터 백업](../../4-service/2-file-manager/5-data-backup.md)"과 "[4.2.6 데이터 복원](../../4-service/2-file-manager/6-data-restore.md)"을 참조하십시오.
+{% endhint %}
+
+
+
+
+[__SOURCE](7-system/6-initialization/1-system-format.md)
+# 7.6.1 시스템 초기화
+
+1.	${cont_model} 티치 펜던트 화면의 상태 표시줄에서 운전 방식이 수동 모드로 설정되어 있는지 확인하십시오.
+
+![](../../_assets/tp630/sbar-mode-manual.png)
+
+* 자동 모드로 설정되어 있는 경우, 티치 펜던트의 모드 스위치를 돌려 수동 모드로 설정하십시오.
+
+![](../../_assets/tp630/TP-hw-switch-manual.png)
+
+2.	`5: 초기화 - 1: 시스템 초기화` 메뉴를 터치하십시오.
+
+3.	저장된 데이터를 확인한 후 \[초기화\] 버튼을 터치하십시오. 제어 파라미터 파일과 기계 파라미터 파일을 포함한 모든 데이터와 프로그램이 삭제되고 초기 설정값으로 복원됩니다.
+
+![](../../_assets/tp630/pop-system-init.png)
+
+
+[__SOURCE](7-system/6-initialization/2-robot-type-sel.md)
+# 7.6.2 로봇 타입 선택
+
+
+1.	`5: 초기화 - 2: 로봇타입 선택` 메뉴를 터치하십시오. 또는 ${cont_model} 티치 펜던트 화면 우측 상단의 \[메커니즘\] 버튼을 터치하십시오.
+
+2.	로봇 모델 선택창에서 로봇을 선택한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/init-robot-select.png)
+
+* 로봇 모델 목록을 스크롤하여 모델명을 확인하거나 모델명을 직접 입력하여 검색할 수 있습니다.
+* 로봇 용도 버튼을 터치하면 해당 용도에 속한 로봇만 목록에서 확인할 수 있습니다.
+* 신규 로봇 모델을 선택하면 기계 파라미터 파일\(hi6\_porj.json\)이 초기 설정값으로 복원되고 각종 이력 파일도 초기화됩니다.
+* 주행축이나 서보건과 같은 부가축이 포함된 시스템을 선택한 경우, 부가축의 개수를 설정하십시오. 부가축이 없이 로봇축만으로 구성된 시스템의 경우에는 0을 입력하면 됩니다.
+
+![](../../_assets/tp630/init-addaxis-pop.png)
+
+{% hint style="warning" %}
+* 로봇 본체와 제어기는 하나의 시스템으로 구성되어 출하됩니다. 이 때문에 로봇 제어기에는 시스템을 함께 구성하는 로봇의 구동 용량에 맞는 드라이브가 장착됩니다.
+* 시스템을 초기화하여 재설정할 경우에는, 공장 출하 시에 초기값으로 설정된 로봇 모델을 반드시 확인하여 올바른 모델로 설정하십시오.
+{% endhint %}
+
+3.	엔지니어 모드로 진입합니다. 자세한 설정은 "[8.12 엔지니어 모드](../../8-r-code\12-r314.md)"를 참고바랍니다.
+
+4.	${cont_model} 티치 펜던트 화면 하단의 `시스템 - 3: 로봇 파라미터 - 4: 엔코더 옵셋\] 메뉴를 터치하십시오.
+
+5.	엔코더 옵셋 보정을 수행하십시오. 로봇 위치가 기준 자세가 아니더라도 모터를 켜기 위해서는 임시로 엔코더 옵셋을 설정해야 합니다. 자세한 설명은 자세한 내용은 "[7.4.4 엔코더 옵셋](../../7-system/4-robot-parameter/4-encoder-offset/README.md)"를 참조하십시오.
+
+![](../../_assets/tp630/robot-encoder-offset_.png)
+
+{% hint style="info" %}
+* 엔코더 옵셋 설정은 통상적으로 로봇을 기준 자세로 이동한 상태에서 수행합니다.
+* 시스템 초기화 시에는 로봇의 위치가 기준 자세가 아니어도 엔코더 옵셋 설정을 수행하십시오. 그렇지 않으면 모터가 켜지지 않아 로봇을 구동할 수 없습니다.
+*  
+{% endhint %}
+
+6.	제어기의 전원을 껐다가 켠 후 모터에 전원을 공급하십시오.
+
+7.	수동 모드에서 저속으로 안전하게 로봇을 기준 자세로 움직인 후 5 ~ 6번 단계를 참조하여 다시 엔코더 옵셋 보정을 수행하십시오.
+
+* 엔코더 옵셋 설정에서는 현재 엔코더의 위치가 0X400000으로\(16 진수\) 설정됩니다.
+* 모터가 고장 나 교체할 경우 같은 위치에서 엔코더 옵셋 설정을 수행하면 기록된 프로그램을 동일하게 사용할 수 있습니다.
+
+8.	티치 펜던트의 `프로그램` 키를 눌러 프로그램 9999번을 선택한 후 한 스텝을 기록하십시오. 로봇을 기준 위치로 간편하게 이동할 수 있습니다.
+
+
+
+{% hint style="warning" %}
+* 협동로봇 초기화에 대한 자세한 내용은 "협동로봇 안전 기능 설명서"를 참조하십시오.
+* 시스템을 초기화하려면 고객지원팀에 문의하여 전문가에게 의뢰하십시오.
+* 시스템을 초기화하면 제어 파라미터 파일, 기계 파라미터 파일을 포함한 모든 데이터와 프로그램이 삭제됩니다. 시스템을 초기화하기 전에 데이터를 백업해 두면 필요한 경우 복원하여 사용할 수 있습니다. 데이터 백업과 복원에 대한 자세한 내용은 "[4.2.5 데이터 백업](../../4-service/2-file-manager/5-data-backup.md)"과 "[4.2.6 데이터 복원](../../4-service/2-file-manager/6-data-restore.md)"을 참조하십시오.
+{% endhint %}
+
+
+
+
+[__SOURCE](7-system/6-initialization/3-usage-set/README.md)
+# 7.6.3 용도 설정
+
+작업 용도를 선택하고 작업 용도에 맞게 사용자 키 및 입출력 할당 신호를 초기화합니다.
+
+1.	`5: 초기화 - 3: 용도설정` 메뉴를 터치하십시오.
+
+2.	작업 용도를 선택하고 용도에 맞춰 환경 조건을 설정한 후 `[확인]` 버튼을 터치하십시오. 선택한 작업 용도 관련 명령어를 사용할 수 있으며 관련 메뉴에 접근할 수 있습니다.
+
+
+
+
+[__SOURCE](7-system/6-initialization/3-usage-set/1-spot-welding.md)
+# 7.6.3.1 스폿 용접
+
+작업 용도를 스폿용접으로 선택하면 스폿 용접 관련 명령어를 사용할 수 있으며 스폿 용접 관련 메뉴에 접근할 수 있습니다.
+
+![](../../../_assets/tp630/init-usage-spot.png)
+
+1.	\[스폿용접\]을 유효로 설정하십시오. 다른 용도는 무효 처리됩니다.
+
+2.	\[사용자키 초기화\] 드롭다운 메뉴와 \[입출력할당 초기화\] 드롭다운 메뉴를 클릭하여 스폿으로 설정하십시오.
+
+
+
+
+[__SOURCE](7-system/6-initialization/3-usage-set/2-arc-welding.md)
+# 7.6.3.2 아크 용접
+
+작업 용도를 아크용접으로 선택하면 아크 용접 관련 명령어를 사용할 수 있으며 아크 용접 관련 메뉴에 접근할 수 있습니다.
+
+![](../../../_assets/tp630/init-usage-arc.png)
+
+1.	\[아크용접\] 사용을 유효로 설정하십시오. 화면 하단에 시스템에서 지원하는 용접기 정보와 설정 탭이 활성화 됩니다. [용접기 정보] 탭을 확인한 후 용접기 번호를 설정하십시오.
+
+2.	\[사용자키 초기화\] 드롭다운 메뉴와 \[입출력할당 초기화\] 드롭다운 메뉴를 클릭하여 아크로 설정하십시오.
+
+3. 자세한 설정은 아크용접 기능설명서의 [4.2 Arc 용접기 설정](https://hrbook-hrc.web.app/#/view/doc-arc-weld/ko/4_Setting/2_Arc_setting/README?cont_model=${cont_model}) 을 참고하시기 바랍니다.
+
+
+[__SOURCE](7-system/6-initialization/4-serial-encoder-reset.md)
+# 7.6.4 시리얼 엔코더 리셋
+
+시리얼 엔코더는 내부 메모리에 엔코더 회전수 정보를 저장합니다. 모터의 에러 상태를 해제하거나 엔코더의 영점을 리셋하여 엔코더의 회전수를 0으로 클리어할 수 있습니다.
+
+1. `5: 초기화 - 4: 시리얼 엔코더 리셋` 메뉴를 터치하십시오.
+2. 각 축의 엔코더 리셋 모드를 설정하고 상태를 확인한 후 리셋을 실행하십시오.
+
+![](../../_assets/tp630/init-serialenco-reset.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>축별로 엔코더 리셋 사용
+          여부와 모드를 설정합니다.</p>
+        <ul>
+          <li>[무효]: 시리얼 엔코더
+            리셋을 실행하지 않습니다.</li>
+          <li>[에러해제]: 엔코더 회전수를
+            클리어하지 않고 모터의
+            엔코더 관련 에러만 해제합니다.</li>
+          <li>[엔코더 리셋]: 모터의
+            엔코더 관련 에러를 해제하고
+            엔코더의 영점을 리셋하여
+            회전수를 클리어합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[실행]: 시리얼 엔코더
+            리셋을 실행합니다.</li>
+          <li>[전축선택]: 모든 축을
+            한 번에 선택합니다.</li>
+          <li>[전축해제]: 모든 축의
+            선택을 한 번에 해제합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="warning" %}
+* 로봇 시스템의 초기화 설정 수행 시에 엔코더 리셋을 수행하고 로봇이 정상 동작 중에는 절대 엔코더 리셋을 수행해서는 안 됩니다. 다만, 통신 이상 등의 엔코더 관련 에러가 발생하거나 엔코더 배터리가 소실된 경우에는 엔코더 리셋을 수행할 수 있습니다. 이때에는 기존의 로봇 원점 위치와 달라지지 않도록 로봇 프로그램의 실제 위치를 확인하여 작업하십시오.
+* 제어기와 엔코더에 전원이 공급되지 않으면 엔코더의 위치 정보가 손실되어 로봇 작업 프로그램 사용에 문제가 발생할 수 있습니다. 이를 해결하기 위해 시리얼 엔코더에 전용 배터리를 부착하여 제어기의 전원 상태에 관계없이 위치 정보를 기록합니다. 엔코더 배터리에 전압 에러가 발생하면 반드시 제어기의 전원이 켜져 있는 상태에서 배터리를 교체하여 위치 정보의 손실을 예방하십시오.
+{% endhint %}
+
+
+[__SOURCE](7-system/6-initialization/5-add-axis-param.md)
+# 7.6.5 부가축 파라미터 설정
+
+로봇 외에 사용할 수 있는 부가축에는 로봇의 베이스축\(주행축\), 서보건축, 포지셔너축, 지그축이 있습니다. 부가축 사양별 상세 내용은 "[부가축 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-add-axes/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+사용 중인 부가축의 사양 및 구성 등 파라미터를 설정하는 방법은 다음과 같습니다.
+
+1. `5: 초기화 - 5: 부가축 파라미터 설정` 메뉴를 터치하십시오.
+2. 부가축의 사양 및 구성 등 파라미터를 설정하십시오.
+
+![](../../_assets/tp630/init-addaxis.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>부가축의 상세 파라미터
+          설정 정보입니다. 부가축
+          이름과 사양, 구성 등을
+          확인하고 설정할 수 있습니다.</p>
+        <ul>
+          <li><b>[이름]</b>: 사용 중인 부가축의
+            이름입니다.</li>
+          <li><b>[축 사양]</b>: 부가축의 사양입니다.
+            사양에 따라 부가축 용도별로
+            개발된 별도의 기능을
+            사용할 수 있습니다.</li>
+          <li><b>[축 구성]</b>: 부가축의 메커니즘
+            형태입니다. 일부 축 사양에는
+            사전에 등록된 메커니즘
+            형태를 지정할 수 있습니다.
+            대표적으로 포지셔너의
+            경우 표준 포지셔너 모델을
+            선택할 수 있습니다.</li>
+          <li><b>[축 위치]</b>: DSP 보드에서 해당
+            축이 연결된 위치입니다.
+            배선이 연결된 사양에
+            따라 BD 번호, DSP 번호, 축 번호,
+            브레이크 번호를 순차적으로
+            배선된 사양에 따라 지정합니다.</li>
+          <li><b>[감속비]</b>: 부가축 모터와
+            링크의 감속비 정보입니다.
+            <ul>
+              <li>감속비 부호는 부가축
+                링크가 (+) 방향으로 움직일
+                때의 모터 샤프트의 회전
+                방향에 따라 설정합니다.
+                샤프트를 정면에서 보았을
+                때 반시계방향(CCW)으로
+                회전하면 (+) 부호, 시계방향(CW)으로
+                회전하면 (-) 방향입니다.</li>
+              <li>감속비 분자항의 파라미터는
+                링크의 이동 거리(mm 또는
+                deg)이며, 분모에 해당하는
+                파라미터는 링크의 이동
+                거리에 대응하는 모터의
+                회전수입니다. 설정 항목의
+                파라미터는 정수 형태로
+                정의됩니다. 소수점으로
+                나타나는 파라미터의
+                경우 일정 배수를 분자와
+                분모에 곱해 정수로 감속비를
+                설정하십시오.</li>
+            </ul>
+          </li>
+          <li><b>[소프트리밋]</b>: 부가축의
+            최소와 최대 동작 범위입니다.</li>
+          <li><b>[AMP 사양]</b>: 부가축 엠프 사양입니다.</li>
+          <li><b>[모터 사양]</b>: 부가축에
+            연결된 모터의 모델명입니다.</li>
+          <li><b>[가감속 파라미터]</b>: 부가축의
+            최고 속도와 가속 시간입니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>[회전 반경]</b>: 부가축이
+            회전축인 경우, 조그 시
+            선속도 제한을 위한 회전
+            반경을 설정합니다.</li>
+        </ul>
+        <ul>
+          <li><b>[감속비 보정]</b>: 실제 부가축 거리와 모니터링에 표시되는 거리가 일치되도록 보정합니다.</li>
+        </ul>
+      </td>
+      <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c3.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>[확인]</b>: 변경 내용을 저장합니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+[__SOURCE](7-system/6-initialization/6-mechannism-set.md)
+# 7.6.6 메커니즘 설정
+
+메커니즘은 조그 조작 시 조그키가 할당되는 그룹으로 활용됩니다. 또한 스텝의 위치 기록 또는 편집 시 개별적으로 구분짓는 최소 단위 축들의 집합입니다. 메커니즘을 설정하면 각 축의 그룹별로 메커니즘 번호\(M\# \)가 할당됩니다.
+
+엔드리스 기능의 사용 여부를 설정하는 방법은 다음과 같습니다.
+
+1.	`5: 초기화 - 6: 메커니즘 설정` 메뉴를 터치하십시오.
+
+2.	축별로 메커니즘 번호와 엔드리스 기능의 사용 여부를 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+![](../../_assets/tp630/robot-mechanism.png)
+
+* \[메커니즘\]: 드롭다운 메뉴를 터치하여 축의 메커니즘 번호를 설정합니다.
+  * 축 사양이 로봇인 경우 메커니즘 번호가 M0으로 고정됩니다.
+  * 부가축부터 메커니즘 번호를 M1 ~ M7 사이의 값으로 지정할 수 있습니다.
+  * 동일한 메커니즘 번호로 설정된 축은 동일한 그룹으로 관리됩니다.
+  * 부가축의 조그를 위해서 \[메커니즘\] 버튼을 이용하여 메커니즘 그룹을 전환합니다. 이때 조그키를 누르면 해당 메커니즘의 축의 순서대로 조그가 됩니다.
+* \[엔드리스\]: 축에서 엔드리스 기능의 사용 여부를 설정합니다.
+
+{% hint style="info" %}
+설정된 메커니즘 단위는 멀티태스킹에서 개별 태스크에 할당되어 구동될 수 있는 최소 단위입니다. 개별 태스크에는 복합적인 메커니즘의 조합이 할당될 수 있습니다.
+{% endhint %}
+
+#### 
+
+#### 메커니즘 조그 규칙
+
+* ${cont_model} 제어기는 총 8개의 조그키를 제공합니다.
+* 메커니즘은 조그 조작 시 하나의 그룹으로 활용됩니다.
+* 메커니즘 번호를 \[M0\]으로 선택할 경우에는 예외적으로 7/8축 조그키가 동작하며, 다음 메커니즘을 포함한 총 축의 수가 8축 이내인 범위에서 M1 및 M2를 조작할 수 있습니다. 이 경우에도 메커니즘 번호를 \[M1\]으로 설정하면 M1의 구성 요소만 별도로 조그 조작할 수 있습니다.
+* 활용 예는 다음과 같습니다.
+
+예1\) M0: Robot \(1 ~ 6축\), M1: 주행축\(7축\), M2: 서보건\(8축\)
+
+* \[M0\] 선택 => 1 ~ 6축 조그키: M0, 7축 조그키: M1, 8축 조그키: M2
+* \[M1\] 선택 => 1축 조그키: M1
+* \[M2\] 선택 => 1축 조그키: M2
+
+예2\) M0: Robot \(1 ~ 6축\), M1: 주행축\(7축\), M2: 서보건\(8 ~ 9축\)
+
+* \[M0\] 선택 => 1 ~ 6축 조그키: M0, 7축 조그키: M1
+* \[M1\] 선택 => 1축 조그키: M1
+* \[M2\] 선택 => 1 ~ 2축 조그키: M2
+
+예3\) M0: Robot \(1 ~ 7축\), M1: 주행축\(8축\), M2: 서보건\(9 ~ 10축\)
+
+* \[M0\] 선택 => 1 ~ 7축 조그키: M0, 8축 조그키: M1
+* \[M1\] 선택 => 1축 조그키: M1
+* \[M2\] 선택 => 1축 조그키: M2
+
+
+
+
+[__SOURCE](7-system/6-initialization/7-axis-sync.md)
+# 7.6.7 축 동기 기능
+
+부가축 2개를 항상 동일한 위치로 움직이도록 하나의 동기 쌍으로 묶는 기능입니다.
+
+축 동기를 유효로 설정하면 지정된 부가축들 간의 위치를 소프트웨어적으로 항상 동기하여 움직이게 됩니다. 그러므로 동기하고자 하는 부가축들을 물리적으로 정렬한 상태에서 축 원점 설정을 통해 소프트웨어적으로 동일한 위치로 인식할 수 있도록 해야 합니다. 또한 동기하고자 하는 축들의 물리적인 이동 방향이 같은 방향이 되도록 설정되어야 합니다.
+
+축 동기는 최대 4쌍의 부가축들 간의 위치 동기를 지원합니다. 동일한 그룹으로 부가축 2개를 선택하면 하나의 동기 쌍으로 묶이게 됩니다.
+
+현재 설정된 축 동기 쌍을 변경하는 방법은 다음과 같습니다.
+
+![](../../_assets/tp630/axis-synchronization.png)
+
+1. R321 동기 조그 기능이 활성화 되어 있다면 전부 `무효`로 변경합니다.
+
+2. 엔지니어 모드(R314) 선택 후 `[F2: 시스템] - 5.초기화 - 8.축 동기 설정`으로 진입합니다.
+
+3. 축 동기 기능을 활성화하는 경우 `사용`을 `무효`에서 `유효`로 변경합니다.
+
+4. 하나의 축으로 간주하고자 하는 2개의 부가축을 같은 그룹으로 지정합니다.  
+
+5. 축 동기 그룹 지정을 마쳤으면 `[F7: 확인]` 버튼을 누릅니다.
+
+
+{% hint style="info" %}
+* 축 동기 설정 완료 후 Motor On 시 그룹 쌍이 중간값으로 정렬하므로 정렬 완료될 때까지 대기합니다.
+* 축 동기 기능이 설정된 이후 각각의 축을 개별적으로 움직일 수 없으며 조그키도 하나의 축으로 할당 되게 됩니다.
+* 조그 이외 Job 파일을 실행할 때도 해당 기능이 반영됩니다.
+* 축 동기 그룹 쌍은 재부팅 되어도 초기화되지 않습니다.
+* `사용`이 `무효` 로 설정 되어 있으면 축 동기 기능이 활성화되지 않습니다.
+* 축 동기 그룹 쌍의 직교 좌표계 Pose 값은 실제 로봇의 Pose 상황과 일치합니다.
+* 비상정지 또는 서보 에러 등, 기타 요인에 의해 동기축들의 위치에 오차가 발생하는 경우 Motor On 시점에 2개 축의 중간 지점으로 이동해 다시 정렬하게 됩니다.
+{% endhint %}
+
+{% hint style="warning" %}
+* 반드시 모터 사양과 부가축 파라미터 설정값이 동기화에 맞는 상태(축 사양, 구성, 속도, 가속시간 동일)인지 확인하고 사용하십시오.
+* 축 동기 기능을 사용하지 않는 경우 사용여부를 `무효`로 설정하고 그룹 쌍도 `무효`로 초기화하십시오.
+* 동기 조그 기능과 혼용해서 사용하지 않도록 주의하십시오.
+* Job 파일의 step pose 값이 축 동기가 고려되어 구현되었는지 확인하십시오.
+* 축 동기 기능 구동 중 변경할 시 직교좌표계가 변한다는 점 유의하여 사용하십시오.
+{% endhint %}
+
+[__SOURCE](7-system/6-initialization/8-axis-lock/README.md)
+# 7.6.8 축 잠금
+
+### 기능의 목적
+로봇 및 부가축의 모터와 감속기 등의 문제로 축의 수리/교체가 필요할 때, 해당축을 임시로 무효화하여 타 정상축의 움직임을 허용하는 것이 축잠금 기능의 목적입니다. 정상축의 동작을 허용함으로써 로봇 유지보수의 편의성, 로봇 가용성 향상과 일부 로봇에 한하여 라인 생산성 손실을 최소화 하고자 합니다. 
+
+![](../../../_assets/tp630/init-axis-lock-purpose.png)
+
+<br>
+
+### 기능의 범위
+
+축잠금 기능을 적용하는 로봇과 축의 종류에따라 제공하는 기능의 범위는 다음 표와 같습니다.
+
+
+|로봇|축잠금|모터ON|JOG(축)|JOG(직교)|스텝기록|명령어 기록|명령어 실행|스텝전후진|자동운전|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|모든로봇|로봇축|o|o|x|x|o|x|x|x|
+|모든로봇|부가축|o|o|o|o|o|x|o|x|
+|*예외로봇|특정축|o|o|o|o|o|o|o|o|
+- *예외 로봇의 특정축: 
+    -	HH140G-0A의 S축
+    -	LCD 로봇의 L, R축
+    -	LCD 2자유도 암 로봇의 LA,RA축
+
+<br>
+
+{% hint style="info" %}
+-	기능은 엔지니어코드(R314) 입력시에만 사용이 가능합니다.
+-   기능 설정시 자동모드의 재생이 불가합니다.
+-	기능 적용 시 해당축이 잠긴 채 동작합니다.
+
+{% endhint %}
+[__SOURCE](7-system/6-initialization/8-axis-lock/1-setting.md)
+# 7.6.8.1  기능 설정 방법
+
+### 메뉴 진입
+
+`[F2:설정] - 5: 초기화 - 9: 축 잠금 설정`으로 메뉴를 선택합니다. 메뉴 선택시 아래와 같이 각 축 브레이크의 정상확인 여부를 물어봅니다. 
+
+{% hint style="warning" %}
+축잠금 기능은 브레이크 배선이 비정상적일 경우 로봇이 낙하할 수 있기때문에, 기능 설정전 각 축의 브레이크 배선이 정상적인지 반드시 확인하십시오. 
+{% endhint %}
+
+![](../../../_assets/tp630/init-axis-lock-menu.png)
+
+
+###  기능 설정
+
+브레이크 배선의 정상여부 확인 후, 메뉴에 진입하면 아래와 같이 각 축의 사양과 축잠금 기능 설정 유무가 표시됩니다. 축잠금을 적용하려는 축의 선택한 후 `[확인]`을 눌러 메뉴를 종료하십시오. 
+
+![](../../../_assets/tp630/init-axis-lock-setting.png)
+[__SOURCE](7-system/6-initialization/8-axis-lock/2-function-check.md)
+# 7.6.8.2 기능 적용여부 확인
+
+
+축잠금 기능이 적용하면 잠긴축으로 인해 기존의 움직임과 다를 수 있으므로 축잠금여부를 항상 확인 후 로봇조작을 수행해야 한다. 기능의 적용여부는 상태표시줄과 경고메세지, 모니터링 표시상태로 확인할 수 있습니다.
+
+### 상태표시창
+
+상태표시창은 로봇 운전을 위한 각종 상태를 표시합니다. 
+
+{% hint style="warning" %}
+축잠금 기능을 사용하는 동안 해당 표시를 반드시 확인한 후 로봇을 조작하도록 하십시오.  
+{% endhint %}
+
+-	상태표시줄: AxLk
+-	우측 매트릭스: "축잠김" 메시지 
+
+![](../../../_assets/tp630/init-axis-lock-status.png)
+
+### 모니터링 창(각축 데이터)
+
+모니터링 중 각축 데이터는 기능이 적용된 축에 대하여 축잠김 메시지를 출력합니다. 로봇축과 베이스축이 잠긴 경우 좌표값을 표시할 수 없으므로, 직교좌표와 잠긴 축의 값은 '------'로 표시합니다.
+
+![](../../../_assets/tp630/init-axis-lock-monitor.png)
+
+### 경고 메시지
+
+화면 전환, 모드 전환시 잠긴 축에 해당하는 기능의 범위가 경고메세지로 출력됩니다. 해당 메세지를 통해 축잠김 기능의 적용여부와 기능의 범위를 항시 인지할 수 있습니다. 
+
+![](../../../_assets/tp630/init-axis-lock-warning.png)
+[__SOURCE](7-system/7-auto-calibration/README.md)
+# 7.7 자동 캘리브레이션
+
+올바른 로봇 사용을 위해 교시된 프로그램 및 자동으로 동작하는 움직임을 이용하여 로봇의 축 원점, 툴 길이, 부하 질량, 베이스축 방향을 찾을 수 있습니다. 이렇게 캘리브레이션된 값은 로봇에 자동으로 반영됩니다.
+
+1.	\[6: 자동 캘리브레이션\] 메뉴를 터치하십시오. 자동 캘리브레이션 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 로봇의 축 원점, 툴 길이, 부하 질량, 베이스축 방향 등의 캘리브레이션을 수행하십시오.
+
+![](../../_assets/tp630/system-calib-menu.png)
+
+
+[__SOURCE](7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)
+# 7.7.1 축 원점 및 툴 길이 최적화
+
+축 원점 및 툴 길이 최적화는 외부 측정센서를 사용하지 않고 로봇 각 축의 원점 및 툴 길이를 캘리브레이션하는 기능입니다.
+
+뾰족한 팁 2 개를 준비하여 하나는 외부에 고정하고 다른 하나는 툴에 고정한 후 외부의 고정 팁을 기준으로 로봇의 툴 끝의 자세만 바꿔 여러 점을 로봇 프로그램으로 기록합니다. 이때 축 원점과 툴 길이를 모두 찾아내려면 7 점, 툴 길이만 찾아내려면 4 점 이상을 교시해야 합니다.
+
+![그림 68 축 원점 및 툴 길이 최적화 기능 교시 방법](../../_assets/image_228.png)
+
+축 원점 및 툴 길이 최적화 기능을 이용하면 CAD데이터가 없는 툴 길이 X, Y, Z뿐만 아니라 로봇 H, V, R2, B축의 원점을 최적화하여 찾아낼 수 있습니다.
+
+{% hint style="warning" %}
+축 원점 및 툴 길이 최적화 기능을 사용하면 엔코더 옵셋 및 툴 길이가 변경되어 기존에 교시된 프로그램의 작업 위치가 변경됩니다. 그러므로 축 원점 및 툴 길이 최적화는 반드시 교시 프로그램 작성 전에 수행하십시오.
+{% endhint %}
+
+{% hint style="info" %}
+* 축 원점 및 툴 길이 최적화 기능에서 교시의 정확도는 최대 스텝 위치 오차 결과의 정확성과 비례합니다. 따라서 뾰족한 두 팁을 준비하여 이 두 팁을 가능한 한 정확히 일치하는 교시 작업이 요구됩니다. 툴 끝과 공간상의 고정점의 일치 정확도가 육안 확인 시 0.5 mm 이내가 되도록 합니다.
+* 스텝의 자세가 유사하지 않도록 스텝별로 가능한 한 30 deg 이상 차이를 둔 자세를 설정하여 티칭하십시오.
+* 스텝의 손목 축\(R2, B, R1\)을 가능한 한 크게 동작시키고 스텝별 손목 축의 각도 차이를 충분히\(가능한 한 크게\) 두고 티칭하십시오.
+* 교시 프로그램은 숨은 포즈 스텝 명령문으로 구성되어야 합니다.
+{% endhint %}
+
+축 원점 및 툴 길이 최적화 기능의 사용 방법은 다음과 같습니다.
+
+1. `6: 자동 캘리브레이션 - 1: 축 원점 및 툴 길이 최적화` 메뉴를 터치하십시오.
+2. 최적화 대상을 선택하고 상세 옵션을 설정하십시오.
+
+![](../../_assets/tp630/system-calib-tool.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>축 원점 및 툴 길이 최적화 기능의 선택 사항들을 입력하고 최적화 결과를 표시 합니다.</p>
+        <ul>
+          <li><b>[최적화 선택]</b>: 최적화
+            대상을 설정합니다.
+            <ul>
+              <li><b>[툴 길이]</b>: 로봇의 툴 길이
+                값을 보정합니다. 로봇
+                원점이 정확히 설정된
+                경우에는 툴 길이만 보정할
+                수 있습니다.</li>
+              <li><b>[축 원점 및 툴 길이]</b>: 로봇의
+                원점과 툴 길이 값을 모두
+                보정합니다. 통상적으로
+                로봇을 설치하고 최초에
+                정확한 원점을 설정하고자
+                할 때 사용합니다.</li>
+            </ul>
+          </li>
+          <li><b>[프로그램 번호]</b>: 동일점을
+            여러 자세로 기록한 프로그램의
+            번호를 설정합니다.</li>
+          <li><b>[툴 번호]</b>: 자동 설정하려는
+            툴의 번호입니다. 설정용
+            프로그램에 기록되어
+            있는 툴 번호와 일치해야
+            합니다.</li>
+          <li><b>[스텝위치 오차 허용범위]</b>:
+            자동 캘리브레이션 결과의
+            오차 범위를 설정합니다(초기
+            설정값 0.6 mm). 예상 오차가
+            오차 범위 내이면 자동으로
+            정수 데이터를 갱신하고
+            오차 범위를 벗어나면
+            정수의 반영 여부를 사용자에게
+            알려 확인 후 처리합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:center">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>[확인]</b>: 변경 내용을 저장합니다.</li>
+          <li><b>[실행]</b>: 설정 정보를 바탕으로
+            최적화를 실행합니다.
+            최적화 결과는 [최대스텝
+            위치 오차]에 나타납니다.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% hint style="warning" %}
+로봇의 원점과 툴 길이 값을 모두 보정하면 모든 로봇의 원점이 변경되어 기존에 작성된 프로그램의 위치가 변경되므로 주의하십시오.
+{% endhint %}
+
+{% hint style="info" %}
+* 로봇 각 축의 원점 및 툴 길이는 설정 메뉴에서도 설정할 수 있습니다.
+  * 툴 길이: `[시스템] - 3: 로봇 파라미터 - 1: 툴 데이터`
+  * 각 축의 원점: `[시스템] - 3: 로봇 파라미터 - 2: 축 원점`
+* 각도보정 기능\(`[시스템] - 3: 로봇 파라미터 - 1: 툴 데이터`\)을 이용해 툴 각도를 보정할 경우, 축 원점 및 툴 길이 최적화 기능을 먼저 실행한 후 각도 보정을 실행하십시오. 정확한 툴 데이터를 설정할 수 있습니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/7-auto-calibration/2-positioner-calib.md)
+# 7.7.2 포지셔너 캘리브레이션
+
+포지셔너\(Positioner\) 캘리브레이션은 로봇 외부에 설치된 지그 장치 동작에 동기화하여 로봇이 추종하거나 그 지그 장치에 대해 상대적인 직선 또는 원호 동작을 가능하게 하는 기능입니다. 포지셔너 캘리브레이션 기능에 적용되는 외부 지그 장치를 포지셔너 또는 스테이션\(Station\)이라고 합니다.
+
+포지셔너 캘리브레이션 기능을 이용하면 로봇 작업 영역의 제한으로 인한 작업의 어려움을 보완할 수 있습니다. 즉, 작업물이 포지셔너 위에 고정되어 있는 상태에서 포지셔너가 이동하더라도 로봇은 이 포지셔너의 움직임을 추종하면서 작업물 위에서 직선 또는 원호 동작을 할 수 있습니다.
+
+1축 포지셔너는 3 점, 2축 포지셔녀는 5 점을 교시하여 포지셔너의 캘리브레이션을 수행하면 간단히 포지셔너의 좌표계를 설정할 수 있습니다.
+
+![그림 69 1축 표지셔너\(좌\) / 2축 포지셔너\(우\)](../../_assets/image_244.png)
+
+포지셔너 캘리브레이션 기능의 주요 기능 정보는 다음과 같습니다.
+
+| 주요 기능 | 설명 |
+| :--- | :--- |
+| 포지셔너 그룸 | 1 ~ 4 그룹 지원 |
+| 포지셔너 축 수 | 1축 포지셔너, 2축 포지셔너 지원\(회전축\) |
+| 보간 방식 | 직선 보간, 원호 보간 지원 |
+
+{% hint style="info" %}
+* 포지셔너 캘리브레이션 기능은 포지셔너 그룹이 설정된 상태에서 사용할 수 있습니다.
+* 자세한 내용은 "[${cont_model} 제어기 포지셔너 동기 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](7-system/7-auto-calibration/3-load-estimation.md)
+# 7.7.3 부하추정 기능
+
+부하추정 기능이란 로봇의 선단에 부착된 툴의 물성치\(질량, 중심 위치, 이너셔\(Inertia\)\)를 일정한 동작을 거쳐 자동으로 산출하는 기능입니다. 하기 내용 이외의 상세 설명은 "[부하추정 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-load-estimation/ko/README?cont_model=${cont_model})"를 참고하시기 바랍니다.
+
+제어기에는 로봇 본체의 정보\(각 링크의 질량, 질량 중심, 이너셔\)가 등록되어 있습니다. 그러나 툴은 필요에 따라 로봇의 선단에 부착하여 사용하므로 툴 정보를 입력해야 합니다. 로봇을 안전하게 사용하기 위해 필요한 툴의 물성치 정보에는 툴 질량\(kg\), 중심 위치, 이셔너가 있습니다.
+
+CAD 데이터에 툴의 물성치 정보가 있으면 초기 화면의 `시스템 - 3: 로봇 파라미터 - 1: 툴 데이터\] 메뉴를 터치하여 툴 질량과 중심, 이너셔를 직접 입력할 수 있습니다.
+
+![](../../_assets/tp630/robot-tool_1.png)
+
+툴 데이터의 설정 정보는 다음과 같습니다.
+
+![그림 71 툴 데이터](../../_assets/image_502.png)
+
+* \[중량\]: 로봇 선단에 장착되는 툴의 총 중량\(kg\)입니다.
+* \[중심\]: 로봇 플랜지 면의 중심에서 툴의 무게 중심 위치까지의 x, y, z 방향의 거리\(mm\)입니다.
+* \[이너셔\]: 툴 좌표에 대한 툴의 관성 모멘트\(kg·㎡\)입니다. 관성 모멘트는 무게 중심을 기준으로 x, y, z축 둘레의 질량 분포에 따라 결정되고 부하 질량이 회전축에서 멀리 분포할수록 커집니다.
+* 툴 데이터 좌표계: 이너셔와 중심은 x, y, z축 방향에 대한 값으로 표기합니다.
+
+그러나 많은 경우, CAD 데이터에서 툴의 질량과 이너셔, 무게 중심 등의 물성치를 확인하기 어렵습니다. 이때, 로봇 제어기에서 부하추정 기능을 이용하여 툴의 물성치를 확인할 수 있습니다.
+
+![](../../_assets/tp630/system-calib-load.png)
+
+1.	`6: 자동 캘리브레이션 - 4: 부하추정 기능` 메뉴를 터치하십시오.
+
+2.	\[축별 부가중량\] 버튼을 터치한 후 축별 부가 중량 정보를 입력하십시오.
+
+부가 중량이 있는 상태에서 부하추정 기능을 수행하면 로봇에 장착된 모든 중량물이 선단에 있는 것으로 판단합니다. 정확한 부하추정을 위해 축별 부가 중량 정보를 입력해야 합니다.
+
+3.	로봇의 주축을 움직여 로봇을 안전한 영역으로 이동시킨 후 \[주축 자세지정\] 버튼을 터치하십시오.
+
+4.	\[손목축 동작영역\] 버튼을 터치한 후 부하추정 동작에서 사용할 손목축의 동작 영역을 지정하십시오. 주변 시설이나 로봇 본체와 간섭이 발생하지 않는 동작 영역에서 부하추정을 수행할 수 있습니다.
+
+\[손목축 동작영역\] 버튼이 지원되지 않을 경우, 이 단계를 생략하고 다음 단계를 수행하십시오
+
+5.	`확인**운전\] 버튼을 터치하십시오. 로봇이 저속으로 동작하는 동안 주변 시설이나 로봇 본체의 간섭 여부를 확인할 수 있습니다.
+
+6.	로봇에 장착된 툴의 번호를 입력한 후 \[정상운전\] 버튼을 터치하십시오. 부하추정을 수행하여 툴의 물성치가 산출됩니다.
+
+7.	부하추정 결과를 확인한 후 \[종료\] 버튼을 터치하십시오. 산출된 툴의 물성치가 툴 번호에 등록됩니다.
+
+{% hint style="info" %}
+* 부가 중량이란 로봇 선단에 장착되는 툴을 제외한, 용접 드레싱 및 용접 신호선 중계 박스 등과 같이 사용자가 로봇에 장착하는 모든 장치의 무게입니다.
+* 손목축 동작영역 기능은 일부 로봇에서는 지원되지 않습니다.
+* 손목축 동작영역 기능의 설정값에 따라 부하추정 기능이 실행되지 않을 수 있으니 주의하십시오.
+{% endhint %}
+
+
+
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/README.md)
+# 7.7.4 베이스축 캘리브레이션
+
+베이스축 캘리브레이션 기능은 축의 설치 방향을 캘리브레이션하는 기능입니다.
+
+로봇 좌표계의 한 방향\(X, Y, Z\)과 정확히 일치하도록 베이스 축을 설치하는 것은 거의 불가능합니다. 베이스축 캘리브레이션 기능을 이용하여 제어기에서 베이스 축의 방향을 계산하여 베이스 축을 포함한 시스템의 직선보간 궤적 성능을 향상시킬 수 있습니다.
+
+로봇을 베이스 축에 설치한 후 로봇이 설치된 임의의 베이스 축의 방향 벡터를 찾아 위치보간을 수행할 수 있게 합니다.
+
+![그림 73 베이스 축 캘리브레이션](../../../_assets/image_513.png)
+
+일반적으로 베이스 축은 로봇을 작업 위치로 이동하는데 사용합니다. 특수한 경우, 로봇이 베이스 축으로 이동하면서 직선 궤적이 보장되어야 하는 경우에도 베이스 축을 사용할 수 있습니다.
+
+* 2 대의 베이스 축 캘리브레이션 로봇이 작업물을 반송하는 경우\(멀티 로봇 향후 지원\)
+* 베이스 축을 동작하며 보간 동작을 해야 하는 경우
+
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/1-base-axis-initial-set.md)
+# 7.7.4.1 베이스 축 초기 설정
+
+1.	수동 모드에서 초기 화면 하단의 `시스템 - 5: 초기화 - 5: 부가축 파라미터 설정` 메뉴를 터치하십시오.
+
+2.	부가축의 사양 및 구성 등 파라미터를 설정한 후 `[확인]` 버튼을 터치하십시오.
+
+* \[축 사양\]: 부가축의 사양을 베이스로 선택합니다.
+* \[축 구성\]: 부가축의 메커니즘 형태를 임의로 선택합니다.
+* 그외 파라미터: 기구 설계치와 제어기 구성 사양에 맞게 설정합니다.
+
+{% hint style="info" %}
+* 시스템 초기화 시에도 부가축 설정 메뉴가 나타나 베이스 축의 초기 설정을 할 수 있습니다.
+* 부가축 파라미터 설정 메뉴는 일반 사용자에게 지원되지 않는 엔지니어용 기능입니다. 부가축 파라미터 설정 메뉴에 대한 자세한 내용은 엔지니어에게 문의하시기 바랍니다.
+{% endhint %}
+
+{% hint style="warning" %}
+첫 번째 베이스 축에 한하여 캘리브레이션 기능을 사용할 수 있으며 부가축 파라미터 설정 시 축 구성을 임의로 설정할 수 있습니다. 첫 번째 베이스 축을 제외한 나머지 베이스 축에는 축 구성을 임의로 설정하지 마십시오.
+{% endhint %}
+
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/2-base-axis-calib-prog-teach.md)
+# 7.7.4.2 베이스축 캘리브레이션 프로그램 티칭
+
+1.	공간 상의 기준점을 마련하여 첫 번째 기준점을 기록하십시오.
+
+2.	베이스 축을 200 mm 이상 이동하여 동일점을 두 번째 스텝으로 기록하십시오.
+
+3.	2번 단계에서 이동한 방향과 동일한 방향으로 200 mm 이상씩 이동하며 동일점을 세 번째와 네 번째 스텝으로 기록하십시오.
+
+![](../../../_assets/image_526.png)
+
+
+
+{% hint style="warning" %}
+* 로봇 캘리브레이션\(축 원점 및 툴 길이 최적화\)이 완료된 툴을 이용하여 주행축 캘리브레이션 프로그램을 티칭하십시오.
+* 스텝 기록 시 베이스축 캘리브레이션을 위한 툴 번호로 기록하십시오.
+* 기록 스텝 간 베이스축의 이동 거리는 가능한 한 멀게 설정하여 위치를 기록하십시오.
+{% endhint %}
+
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/3-base-axis-calib-exec.md)
+# 7.7.4.3 베이스축 캘리브레이션 실행
+
+1.	`6: 자동 캘리브레이션 - 6: 베이스축 캘리브레이션` 메뉴를 터치하십시오.
+
+2.	베이스축 캘리브레이션용 프로그램 번호를 입력한 후 `자동설정` 버튼을 터치하십시오.
+
+![](../../../_assets/tp630/system-calib-base.png)
+
+3.	베이스축의 설치 방향 벡터값을 확인한 후 `[확인]` 버튼을 터치하십시오.
+
+
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/4-operation-after-base-calib.md)
+# 7.7.4.4 베이스축 캘리브레이션 후 조작
+
+베이스축 캘리브레이션 후에 베이스축을 조그 조작하면 생성된 베이스 축의 방향 벡터로 주행한 거리가 현재의 좌표값으로 환산됩니다.
+
+![그림 74 베이스축 캘리브레이션 후 조작](../../../_assets/image_519.png)
+
+1. 작업 영역의 패널 스택 우측 상단의 \[+\] 버튼을 터치한 후 패널 선택창에서 \[포즈\]를 터치하십시오. 베이스축의 이동에 따른 좌표계의 환산값이 나타납니다.
+2. 베이스축을 조그 조작하십시오. 베이스축 방향으로 주행한 거리가 X, Y, Z 값으로 환산되어 포즈 정보창에 나타납니다
+3. 통상적인 방법으로 스텝을 기록하고 재생하십시오.
+
+{% hint style="warning" %}
+조그 좌표계를 툴 좌표계로 설정하고 베이스축을 조그 조작하여 베이스축의 정상 캘리브레이션 여부를 확인하십시오. 툴 끝 고정 동작이 실행되면 베이스축이 정상적으로 캘리브레이션된 것입니다.
+{% endhint %}
+
+
+[__SOURCE](7-system/7-auto-calibration/5-gravity-direction-auto-set.md)
+# 7.7.5 중력방향 자동 설정
+
+${cont_model} 제어기는 동역학 기반의 제어기이므로 중력 방향을 설정하는 것이 중요합니다.
+
+일반적으로 로봇의 설치 방향은 다음과 같이 중력 방향에 수직입니다. 로봇이 지면에 비스듬한 방향으로 설치된 경우 중력 방향을 로봇 제어기에 설정해야 합니다. 이때 중력 방향 자동 설정 기능을 사용할 수 있습니다.
+
+![그림 75 지면에 놓인 로봇의 중력 방향\(좌\) / 경사면에 놓인 로봇의 중력 방향\(우\)](../../_assets/image_503.png)
+
+중력 방향을 설정하는 방법은 다음과 같습니다.
+
+1. 외부에 추를 달아 중력 방향을 표시하고 중력의 작용 방향으로 두 점\(Step1, Step2\)을 교시하십시오.
+2. `6: 자동 캘리브레이션 - 8: 중력방향 자동 설정` 메뉴를 터치하십시오.
+3. 프로그램 번호를 입력한 후 \[실행\] 버튼을 터치하십시오. 방향 벡터가 계산되어 나타납니다.
+
+![](../../_assets/tp630/system-calib-gravity.png)
+
+4. 방향 벡터값을 확인한 후 `[확인]` 버튼을 터치하십시오. 이 방향이 중력 방향으로 재설정됩니다.
+
+
+[__SOURCE](7-system/7-auto-calibration/6-robot-tool-calibration.md)
+# 7.7.6 로봇과 툴 캘리브레이션
+
+로봇과 툴 캘리브레이션 기능은 3차원 측정기로 로봇의 툴끝 위치를 측정할 수 있는 환경에서 사용합니다.
+
+1.	로봇의 툴 끝에 측정할 위치를 선정한 후 로봇의 위치와 자세를 다양하게 움직이면서 15 점 이상의 위치를 측정하고 로봇 위치를 프로그램으로 기록하십시오.</br>
+ 필요한 측정 포인트의 갯수는 캘리브레이션 대상 파라미터의 종류가 많을수록 증가 합니다.</br>
+  일반적으로는 측정 데이터의 갯수가 많을수록 보다 정확한 캘리브레이션이 가능 합니다. 
+
+![](../../_assets/image_245.png)
+
+2.	측정한 로봇의 위치 데이터\(측정점 데이터\)를 X, Y, Z 형식으로 정리하여 파일\(형식: ASCII, 확장자: MSR\)을 생성하십시오.
+
+![](../../_assets/image_258.png)
+
+3.	위치 데이터 파일을 이동식 저장 장치에 저장한 후 이동식 저장 장치를 티치 펜던트에 연결하십시오. ${cont_model} 티치 펜던트 화면의 상태 표시줄에 \[USB\] 아이콘\(![](../../_assets/icon-usb2.png)\)이 나타납니다.
+
+4.	`6: 자동 캘리브레이션 - 9: 로봇과 툴 캘리브레이션` 메뉴를 터치하십시오.
+
+5.	\[탐색기\] 버튼을 터치하여 위치 데이터 파일을 선택한 후 측정에 사용한 로봇 프로그램을 설정하십시오.
+
+![](../../_assets/tp630/system-calib-robottool.png)
+
+6.	`[확인]` 버튼를 터치하십시오. 로봇과 툴 캘리브레이션 실행 화면으로 전환됩니다.
+
+7.	로봇과 툴 캘리브레이션 실행 화면에서 <img src="../../_assets/c1.png" alt/> 에서 캘리브레이션 대상 파라미터의 종류를 선택 한 후  \[실행\] 버튼을 터치하십시오.</br>
+ 잠시동안 파라미터를 최적화 한 후 캘리브레이션 결과가 나타납니다.</br>
+ 기본적으로 축 원점 파라미터 및 툴 길이에 대한 파라미터가 선택되어 있습니다. 필요에 따라 링크간 길이 및 축 각도와</br> 
+ 같은 오차들을 포함해서 캘리브레이션 하는 경우 \[Full-DH\] 파라미터를 선택 합니다. </br>
+ 각 조인트들의 강성을 포함해서 캘리브레이션 하는 경우 \[강성\] 옵션을 선택 합니다.</br>
+ 단, Full-DH파라미터 캘리브레이션 및 강성을 포함하는 경우, 보다 정확한 측정 장치로 30 포인트 이상의 위치 측정이 필요합니다.</br>
+ 부정확 한 측정기를 통해 상대적으로 오차가 큰 측정 데이터를 통해 캘리브레이션 하는 경우,</br>
+  때때로 매우 부정확한 결과를 얻을 수 있으니 주의 하십시오.
+
+![](../../_assets/tp630/system-calib-robottool-exe.png)
+
+8.	캘리브레이션 결과를 확인한 후 `[확인]` 버튼을 터치하십시오. 캘리브레이션 결과값이 축 원점 및 툴 정수에 자동으로 적용됩니다.</br> 
+강성을 포함해서 캘리브레이션 한 경우 `시스템``제어 파라미터``제어 환경 설정`에서 </br>
+중력보상 기능을 유효로 할 수 있습니다.  중력 보상기능을 유효로 하는 경우 로봇은 설정된 툴 부하에 따라 </br>
+발생하는 처짐량을 예측해서 보상 함으로써 보다 정확한 위치 정확도를 기대할 수 있습니다.</br>
+다만 툴 부하정보를 변경하는 경우 예상 처짐량이 달라 지게 되므로 기존과 다른 위치로 이동 하게 됩니다.</br>
+또한 중력 보상 기능 적용 중에는 엔코더 값으로 기록된 스텝으로는 이동할 수 없으니 참고 하십시오. 
+
+9.	`3: 로봇 파라미터 - 1: 툴 데이터` 메뉴를 터치하여 로봇 캘리브레이션 실행 결과를 확인할 수 있습니다.
+
+![](../../_assets/tp630/system-calib-robottool-toolinfo.png)
+
+{% hint style="info" %}
+캘리브레이션 파라미터의 2 ~ 5축\(H, V, R2, B축\)의 축 원점과 툴 길이 X, Y, Z 값은 기본으로 선택되어 있습니다. 툴만 캘리브레이션하려면 각 축의 값을 선택 해제한 후 실행하십시오.
+{% endhint %}
+
+<br>
+
+
+#### 캘리브레이션 데이터 복원
+
+로봇과 툴 캘리브레이션을 수행하면 /ata0:2/lib/hi6/backup/의 경로에 calibration.json 파일로 캘리브레이션 데이터를 별도로 보관합니다. <br>
+시스템 초기화등의 조작으로 인해 캘리브레이션 데이터가 사라졌을 때 보관된 파일을 이용해서 복원이 가능합니다. (단, 시리얼엔코더 리셋을 수행하여 엔코더 데이터가 초기화된 경우에는 복원이 불가합니다.)
+
+1. /ata0:2/lib/hi6/backup/의 경로에 calibration.json 파일이 존재하는 경우에 "복원" 버튼이 활성화 됩니다.
+2. 복원을 수행한 후 전원을 재투입하면 이전에 수행한 로봇과 툴 캘리브리이션 데이터로 적용됩니다.
+
+![](../../_assets/tp630/robot_calib_recover.png)
+
+
+[__SOURCE](7-system/7-auto-calibration/7-Addaxis-autotuning.md)
+# 7.7.7 부가축 자동튜닝
+
+* V60.28-00 버전부터 사용 가능합니다.
+
+</br>
+
+### (1) 개요
+
+사용자가 설정한 범위 내에서 부가축을 움직이면서 최적의 게인을 찾습니다. 이 기능은 부가축에 적절한 게인이 설정되어 있지 않아 소음이나 제어 성능이 나쁜 경우에 사용됩니다.
+
+| ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
+|---|---|
+| 직동축 모션 | 회전축 모션 |
+<!-- ![additional_axis](../../_assets/_7.7.7_additional_axis.jpg) -->
+
+### (2) 튜닝 상세 설명
+
+![](../../_assets/_7.7.7_intro.png)
+
+![c1](../../_assets/c1.png)  **튜닝 전 설정**
+
+**[부가축]**: 튜닝할 부가축을 선택합니다.
+
+**[모션 범위]**: 부가축 움직임 범위(직동 축: 2, 5, 10[mm] / 회전 축: 2, 5, 10[deg])를 설정합니다. 부가축의 위치를 조그를 통해 조정하여, 적절한 부가축 모션 범위를 설정합니다. 더 큰 모션일수록, 튜닝이 잘 됩니다(현재 주어진 최대범위 10mm(or 10deg) 보다 더 큰 모션은 추가적인 개발이 필요합니다).
+
+* 시작 위치: 부가축 자동튜닝이 시작 될 때, 시작 위치입니다.
+* 종료 위치: 부가축 자동튜닝이 시작 될 때, 끝 위치입니다.
+* 현재 위치: 현재 부가축 위치를 나타냅니다.
+
+**[튜닝 게인(Kv)]**: 튜닝되는 파라미터 값입니다.
+
+</br>
+
+![c2](../../_assets/c2.png) **튜닝 프로세스(동작 영역 확인 > 모션 확인 > 실행)**
+
+A. 동작 영역 확인
+
+* 낮은 속도로 설정된 모션 범위를 움직입니다. 부가축 모션 범위에 문제가 있는 경우, 정지 버튼을 누르고 모션 범위를 재설정하세요.
+
+B. 모션 확인
+
+* 빠른 속도로 설정된 모션 범위를 움직이며 초기 게인 값을 확인합니다.
+
+C. 실행
+
+* 튜닝되는 부가축은 시작위치와 종료위치 안에서 움직이면서 적절한 게인을 찾는 모션을 진행하게 됩니다.
+* 튜닝 중에 부가축에서 잠깐의 큰 소음(발진 게인 값을 찾는 과정)이 발생할 수 있습니다.
+* 튜닝이 끝나면 튜닝 파라미터 Kv의 튜닝 전, 후에 대한 게인 값이 보여집니다. `[확인]`을 누르면 게인 변경 여부를 묻는 창이 뜨게 되고, 확인을 누를 시 튜닝된 게인으로 설정됩니다. 확인을 누르지 않을 경우, 기존 게인 값이 유지가 됩니다.
+
+{% hint style="warning" %}
+
+소음은 데이터로 분석이 어려운 부분으로, 튜닝 담당자가 직접 소음을 들으며 튜닝하는 것 만큼 섬세하게 튜닝되기 어렵습니다. 수동으로 게인을 튜닝하는 경우, Kv 게인 조정을 통해 수동 튜닝을 진행할 수 있습니다.
+
+* 통상 Kv 게인이 너무 낮은 경우, 트래킹 성능이 저하되며 진동이 발생할 수 있습니다.
+* 반대로 Kv 게인이 너무 높은 경우, 모터에서 고주파 소음이 발생하게 됩니다.
+
+자동으로 튜닝된 게인이 소음이 날 경우, `[F2:시스템] - 3. 로봇 파라미터 - 33. 서보 파라미터 - 1. 서보 루프 게인` 메뉴로 진입하여 Kv 값을 낮춰가며(Kv 값이 바뀌면, 다른 게인 값들은 자동 계산되어 바뀜) 고주파 소음이 안나는 지점을 찾아야 합니다.
+
+그럼에도 지속적인 소음이 발생한다면, 당사로 문의 주십시오.
+
+{% endhint %}
+
+[__SOURCE](7-system/8-safety-system.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 7.8 안전 시스템
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+1.	\[8: 안전 시스템\] 메뉴를 터치하십시오. 안전 시스템 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 기본 설정, 파라미터 설정, 모니터링, 인증서, 안전 레이더를 수행하십시오.
+
+![](../_assets/tp630/system-safety-menu.png)
+
+{% hint style="info" %}
+안전 시스템의 1:기본 설정, 2: 파라미터 설정, 3: 모니터링, 4: 인증서에 대한 자세한 관한 내용은  "[SafeSpace2.0 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/ko/README)"을 참고하십시오.
+{% endhint %}
+
+{% hint style="info" %}
+안전 레이더에 대한 자세한 관한 내용은  "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)"을 참고하십시오.
+{% endhint %}
+[__SOURCE](7-system/9-cobot-system.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 7.9 협동로봇 시스템
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+
+1.	\[협동로봇 시스템\] 메뉴를 터치하십시오. 협동로봇 시스템 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 충돌 검지, 직접 교시를 수행하십시오.
+
+![](../_assets/tp630/system-cobot-menu.png)
+
+{% hint style="info" %}
+협동로봇 시스템에 대한 자세한 관한 내용은  "[협동로봇 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/ko/README)"을 참고하십시오.
+{% endhint %}
+[__SOURCE](7-system/10-option-system/README.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 7.10 옵션 장치
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+1.	\[옵션 장치\] 메뉴를 터치하십시오. 옵션 장치 메뉴가 나타납니다.
+
+2.	원하는 메뉴를 선택하여 수행하십시오.
+
+![](../../_assets/tp630/system-option-menu.png)
+
+[__SOURCE](7-system/10-option-system/1-userdio-board-setting.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 7.10.1 사용자DIO 보드 설정
+
+{% hint style="info" %}
+이 기능은 Hi7 제어기부터 지원됩니다.
+{% endhint %}
+
+
+Hi7 제어기에서 '사용자 DIO 보드(BD681)'와 '확장 DIO 보드(BD682)'를 활용하여 디지털 입출력 신호와 컨베이어 인터페이스를 진행할 수 있습니다.
+
+
+![](../../_assets/tp630/system-option-dio.png)
+
+{% hint style="info" %}
+사용자DIO 보드 설정에 대한 자세한 관한 내용은  "[Hi7 제어기 기능설명서 - 사용자DIO, 확장DIO](https://hrbook-hrc.web.app/#/view/doc-userDIO-ExtensionDIO/ko/README)"을 참고하십시오.
+{% endhint %} 
+[__SOURCE](8-r-code/README.md)
+# 8. R코드
+
+프로그램의 내용 수정이나 제어기의 설정 상태 변경과 같이 자주 사용하는 기능의 조작 절차를 특정한 서비스 코드\(R코드\)로 지정해 두고 간편하게 사용할 수 있습니다.
+
+R코드는 Reset\(리셋\)과 Rapid\(빠른\)의 R에 번호를 조합하여 "R+No." 형식으로 구성됩니다.
+
+
+
+
+[__SOURCE](8-r-code/1-use-r-code.md)
+# 8.1 R 코드 사용
+
+R코드를 이용하여 지정된 기능을 실행하는 방법은 다음과 같습니다.
+
+1.	${cont_model} 티치 펜던트 키패드 중 \[R..\] 키를 누르십시오. R 코드 입력창이 나타납니다.
+
+![](../_assets/tp630/k-r.png)
+
+2.	목록에서 코드 번호를 선택하거나 입력 영역에 코드 번호를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오. 선택한 R코드에 지정된 기능이 실행됩니다.
+
+
+
+![](../_assets/tp630/pop-rcode.png)
+
+
+<table style="text-align:left">
+  <thead>
+    <tr>
+      <th>R 코드</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R0 : 태스크 리셋</td>
+      <td>스텝 카운터를 초기화하여 STEP0으로 이동합니다.</td>
+    </tr>
+    <tr>
+      <td>R1 : 에러 리셋</td>
+      <td>에러나 경고가 발생했을 때 상태를 클리어합니다.</td>
+    </tr>
+    <tr>
+      <td>R17 : 파일 관리</td>
+      <td>[서비스] -> [5: 파일관리]를 빠르게 실행합니다.</td>
+    </tr>
+    <tr>
+      <td>R86 : free 메모리 표시</td>
+      <td>T/P화면 상단에 T/P나 메인보드의 잔여메모리를 표시할 때 사용합니다.</td>
+    </tr>
+    <tr>
+      <td>R99 : 저장</td>
+      <td>메모리에 존재하는 이력 데이터를 파일로 저장합니다.</td>
+    </tr>
+    <tr>
+      <td>R115 : 프로그램 복사</td>
+      <td>작성된 작업 프로그램을 다른 작업 프로그램으로 복사합니다.</td>
+    </tr>
+    <tr>
+      <td>R117 : 프로그램 삭제</td>
+      <td>작성된 작업 프로그램을 개별적으로 삭제하는 기능입니다.</td>
+    </tr>
+    <tr>
+      <td>R286 : 소프트웨어 버전표시</td>
+      <td>[서비스] -> [7: 시스템 진단] -> [1: 시스템 버전]을 빠르게 실행합니다.</td>
+    </tr>
+    <tr>
+      <td>R321 : 축 동기 조그 설정</td>
+      <td>임의의 축들을 하나의 동기 그룹으로 묶고 조그키 하나로 조그하는 기능을 사용하기 위한 설정 화면을 표시합니다.</td>
+    </tr>
+    <tr>
+      <td>R360 : CONTPATH 수동 설정</td>
+      <td>CONTPATH의 실행상태를 강제로 변경하는 기능입니다.</td>
+    </tr>
+    <tr>
+      <td>R361 : 조그 인칭 레벨 설정</td>
+      <td>현재 설정된 레벨의 인칭 거리를 변경하고자 할 때 사용합니다.</td>
+    </tr>
+    <tr>
+      <td>R362 : 축 제어 상태 변경</td>
+      <td>부가축의 제어 상태(axisctrl on/off)를 수동으로 실행합니다.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+[__SOURCE](8-r-code/2-r0.md)
+# 8.2 R0 스텝 카운터 리셋
+
+R 코드 창에서 0을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode.png)
+
+스텝 카운터를 초기화하여 STEP0으로 이동합니다. 또한 다음의 기능을 실행할 수 있습니다.
+
+* 플레이백 실행 상태 클리어
+* 종합 이상 신호, 램프 끄기
+* 경보 신호 끄기
+* WAIT 대기 상태 클리어
+* 각종 응용 기능 상태 및 신호 클리어 등
+
+{% hint style="info" %}
+로봇 기동 중에는 R0 코드를 사용할 수 없습니다.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/3-r115.md)
+# 8.3 R115 프로그램 복사
+
+메인 보드의 JOB 프로그램을 메인 보드의 다른 프로그램으로 복사합니다. 복사할 프로그램 번호를 입력한 후에 복사될 프로그램 번호를 입력하십시오.
+
+1.	즐겨찾기 창에서 115를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	복사할 프로그램\(원본\) 번호와 복사될 프로그램\(대상\) 번호를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오. 프로그램이 복사됩니다.
+
+![](../_assets/tp630/pop-rcode-115.png)
+
+* 복사될 프로그램과 동일한 번호의 프로그램이 이미 존재하는 경우에는 해당 파일로의 덮어쓰기 여부를 선택해야 합니다.
+* 복사할 원본 파일이 없으면 알림 메시지\("원본 파일이 존재하지 않습니다."\)가 나타납니다.
+
+{% hint style="info" %}
+프로그램 재생 중에는 R115 코드를 사용할 수 없습니다. 반드시 정지 후 사용하십시오.
+{% endhint %}
+
+
+
+
+[__SOURCE](8-r-code/4-r117.md)
+# 8.4 R117 프로그램 삭제
+
+내부 메모리의 프로그램을 개별적으로 삭제합니다.
+
+1.	즐겨찾기 창에서 117을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	삭제할 프로그램 번호를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오. 삭제 확인창이 나타납니다.
+
+![](../_assets/tp630/pop-rcode-117.png)
+
+* 삭제할 파일이 없으면 알림 메시지\("파일이 존재하지 않습니다."\)가 나타납니다.
+* 보호 설정된 프로그램을 삭제하려하면 알림 메시지\("보호된 파일입니다."\)가 나타납니다
+
+3.	삭제 확인창에서 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오. 선택한 프로그램이 삭제됩니다.
+
+{% hint style="info" %}
+자동 모드에서는 R117 코드를 사용할 수 없습니다. 반드시 수동 모드에서 사용하십시오.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/5-r210.md)
+# 8.5 R210 스폿건 번호 선택
+
+복수의 스폿 용접건\(서보건 또는 공압건\) 사용 시 사용할 스폿건을 선택합니다.
+
+1.	즐겨찾기 창에서 210을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	사용할 스폿건 번호를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-210.png)
+
+* ${cont_model} 티치 펜던트 화면 우측 하단에 선택한 스폿건 번호가 표시됩니다.
+* 스폿건 번호를 변경하면 스폿건 대응 툴 번호에 지정된 툴 번호가 자동으로 변경됩니다. 스폿건 대응 툴 번호는 `시스템 - 4: 응용파라미터 - 1: 스폿용접 - 2: 용접건 파라미터\] 메뉴에서 확인할 수 있습니다.
+
+{% hint style="info" %}
+* 로봇 기동 중에는 R210 코드를 사용할 수 없습니다.
+* 스폿 용접 환경\(`시스템 - 5: 초기화 - 3: 용도설정\] 메뉴의 \[스폿용접\] 항목을 유효로 설정\)에서만 스폿건 번호를 설정할 수 있습니다.
+* 선택한 스폿 용접건은 수동으로 건개폐 및 건가압 동작을 실행할 수 있습니다. 
+ 스폿 용접 기능에 대한 자세한 내용은 "[${cont_model} 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/6-r211.md)
+# 8.6 R211 서보건 가압력 설정
+
+서보건 가압 실행 시 가압력을 수동으로 설정합니다.
+
+1.	즐겨찾기 창에서 211을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	서보건 가압력을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-211.png)
+
+* 용접 조건 파일의 가압력은 변경되지 않습니다.
+* 입력한 가압력이 서보건 파라미터의 전류 가압력 테이블의 상한치보다 크거나 작으면 경고 메시지가 나타납니다.
+
+{% hint style="info" %}
+* 로봇 기동 중에는 R211 코드를 사용할 수 없습니다.
+* 스폿 용접 환경\(`시스템 - 5: 초기화 - 3: 용도설정\] 메뉴의 \[스폿용접\] 항목을 유효로 설정\)에서만 스폿건 번호를 설정할 수 있습니다.
+* 서보건 가압력 수동 설정에 대한 자세한 내용은 "[${cont_model} 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/7-r212.md)
+# 8.7 R212 서보건 이동전극 마모량 프리셋
+
+서보건 이동전극의 마모량을 수동으로 설정합니다.
+
+1.	즐겨찾기 창에서 212를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	이동전극의 마모량을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-212.png)
+
+{% hint style="warning" %}
+설정값을 전극의 실마모량 보다 크거나 작게 설정하면 가압력 불일치나 작업물 간섭 등을 유발할 수 있으므로 주의하십시오.
+{% endhint %}
+
+{% hint style="info" %}
+* 로봇 기동 중에는 R212 코드를 사용할 수 없습니다.
+* 스폿 용접 환경\(`시스템 - 5: 초기화 - 3: 용도설정\] 메뉴의 \[스폿용접\] 항목을 유효로 설정\)에서만 스폿건 번호를 설정할 수 있습니다.
+* 서보건 이동전극의 마모량 수동 설정에 대한 자세한 내용은 "[${cont_model} 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/8-r213.md)
+# 8.8 R213 서보건 고정전극 마모량 프리셋
+
+서보건 고정전극의 마모량을 사용자가 수동으로 설정하는 기능입니다. 
+
+1.	즐겨찾기 창에서 213를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	고정전극의 마모량을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-213.png)
+
+{% hint style="warning" %}
+설정값을 전극의 실마모량 보다 크거나 작게 설정하면 가압력 불일치나 작업물 간섭 등을 유발할 수 있으므로 주의하십시오.
+{% endhint %}
+
+{% hint style="info" %}
+* 로봇 기동 중에는 R213 코드를 사용할 수 없습니다.
+* 스폿 용접 환경\(`시스템 - 5: 초기화 - 3: 용도설정\] 메뉴의 \[스폿용접\] 항목을 유효로 설정\)에서만 스폿건 번호를 설정할 수 있습니다.
+* 서보건 고정전극의 마모량 수동 설정에 대한 자세한 내용은 "[${cont_model} 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/9-r214.md)
+# 8.9 R214 동시 용접건 선택
+
+복수의 스폿 용접건\(서보건 또는 공압건\)으로 동시에 용접 작업에 사용할 스폿 용접건 번호를 선택합니다.
+
+1.	즐겨찾기 창에서 214를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	동시 사용할 용접건의 번호를 모두 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-214.png)
+
+* ${cont_model} 티치 펜던트 화면 우측 하단에 선택한 스폿건 번호가 표시됩니다.
+* 유형이 서로 다른 스폿 용접건을 선택하면 알림 메시지\("현재 선택된 GUN의 건 타입을 잘못 설정하였습니다."\)가 나타납니다.
+
+{% hint style="info" %}
+* 로봇 기동 중에는 R214 코드를 사용할 수 없습니다.
+* 스폿 용접 환경\(`시스템 - 5: 초기화 - 3: 용도설정` 메뉴의 `스폿용접` 항목을 유효로 설정\)에서만 스폿건 번호를 설정할 수 있습니다.
+* 스폿 용접건의 설정 상태는 `시스템 - 4: 응용파라미터 - 1: 스폿용접 - 2:용접건 파라미터` 메뉴에서 확인할 수 있습니다.
+  * 멀티 씽크 건으로 선택되면 수동 가압/개폐 동작을 기존에 선택된 건과 함께 동시에 동작됩니다.
+  * 멀티 씽크 건으로 선택되면 GUN LED가 ON되어 있을 경우 SPOT 명령도 멀티 씽크 스폿 형식으로 기록됩니다.
+* 선택한 스폿 용접건은 수동으로 조작할 수 있습니다. 스폿 용접 기능에 대한 자세한 내용은 "[${cont_model} 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+
+
+[__SOURCE](8-r-code/10-r215.md)
+# 8.10 R215 스폿용접조건 가압력 설정
+
+서보건 용접 시 필요한 가압력을 용접 조건 테이블에 설정합니다. `시스템 - 4: 응용파라미터 - 1: 스폿용접 - 4: 용접데이터 (조건, 시퀀스) - 2: 용접조건` 메뉴에서도 가압력을 설정할 수 있습니다.
+
+1.	즐겨찾기 창에서 215를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	용접조건 번호를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-215-1.png)
+
+3.	서보건 가압력을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-215-2.png)
+
+
+[__SOURCE](8-r-code/11-r220.md)
+# 8.11 R220 패널 두께 설정\(Sv\)
+
+서보건 스폿용접 스텝의 기록을 위한 패널 두께를 수동으로 설정합니다.
+
+서보건의 고정전극만 패널에 맞닿은 상태에서 MOVE문과 SPOT 명령문을 동시에 기록하는 원터치 기록을 실행하면 이동전극의 위치는 패널 두께와 마모량을 고려하여 MOVE문에 자동으로 기록됩니다.
+
+1.	즐겨찾기 창에서 220을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	패널 두께를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-220.png)
+
+{% hint style="info" %}
+수동 패널 두께 설정에 대한 자세한 내용은 "[${cont_model} 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/12-r314.md)
+# 8.12 R314 엔지니어 모드
+
+R 코드 창에서 314을 입력한 후 [__확인__] 버튼을 터치하거나 <__ENTER__> 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-314.png)
+
+완료 후 화면 우측 상단에 아래와 같은 표시가 깜빡입니다.
+
+![](../_assets/tp630/eng-mode.png)
+
+엔지니어 모드에서는 다음과 같은 기능의 설정이 가능합니다.
+
+* 축 원점 (로봇 파라미터) 
+* 소프트 리밋 (로봇 파라미터) 
+* 엔코더 옵셋 (로봇 파라미터) 
+* 서보 파라미터 (로봇 파라미터) 
+* 가감속 파라미터 (로봇 파라미터) 
+* 서보툴 체인지 (응용 파라미터) 
+* 시스템 초기화 (초기화)
+* 로봇타입 선택 (초기화)
+* 부가축 파라미터 설정 (초기화)
+* 축 잠금 설정 (초기화)
+* 기타 세부 응용 기능
+
+{% hint style="warning" %}
+
+* 엔지니어 모드에서 잘못 설정하면 로봇 시스템에 심각한 문제가 발생할 수 있으므로 주의하시기 바랍니다. {% endhint %}
+
+
+[__SOURCE](8-r-code/13-r358.md)
+# 8.13 R358 서보툴 체인지
+
+서보툴 체인지 시스템에서 서보툴을 수동으로 접속 및 분리합니다.
+
+서보툴 체인지 시스템에서 서보툴을 변경하려면 물리적인 ATC \(자동 툴 체인지\) 장치를 이용하여 전원, 각종 신호 라인을 분리하거나 접속해야 합니다.
+
+서보툴이 서보건인 경우 수동으로 체인지 작업을 수행하려면, 모터가 켜진 상태에서\(인에이블링 스위치 On\) 로봇을 접속 및 분리할 서보건 거치대로 이동한 후 체인지 작업을 실시합니다. 서보툴이 포지셔너 등의 다른 유형인 경우 접속 및 분리 작업을 위한 준비가 완료된 상태에서 체인지 작업을 실시합니다.
+
+R358 서보툴 체인지 파라미터와 예는 다음과 같습니다.
+
+![](../_assets/image_261.png)
+
+R358 코드를 이용한 서보툴 체인지 설정 방법은 다음과 같습니다.
+
+1.	즐겨찾기 창에서 358을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	체인지 동작 번호\(0: 분리, 1: 접속, 2: 고정\)를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-358-1.png)
+
+3.	체인지할 용접건 번호를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오. ${cont_model} 티치 펜던트 화면 우측 하단에 선택한 용접건 번호가 표시됩니다.
+
+![](../_assets/tp630/pop-rcode-358-2.png)
+
+{% hint style="info" %}
+* 자동 모드에서는 R358 코드를 사용할 수 없습니다. 반드시 수동 모드에서 사용하십시오.
+* 스폿건 번호를 변경하면 스폿건 대응 툴 번호에 지정된 툴 번호가 자동으로 변경됩니다. 스폿건 대응 툴 번호는 `시스템 - 4: 응용파라미터 - 1: 스폿용접 - 2:용접건 파라미터` 메뉴에서 확인할 수 있습니다.
+* 모터가 켜진 상태에서만 서보툴 체인지 설정을 할 수 있습니다.
+* 서보툴 체인지에 대한 자세한 내용은 "[${cont_model} 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/14-r359.md)
+# 8.14 R359 서보툴 엔코더 전원 ON/OFF Relay
+
+서보툴 체인지 시스템에서 서보건을 적용한 경우, 최초 서보건 장착 시 서보건 축의 엔코더를 리셋하기 위해 실행합니다.
+
+1.	즐겨찾기 창에서 359를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	1을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오. 엔코더에 전원이 투입됩니다.
+
+3.	0을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오. 엔코더에 전원이 해제됩니다.
+
+![](../_assets/tp630/pop-rcode-359.png)
+
+{% hint style="info" %}
+* 자동 모드에서는 R359 코드를 사용할 수 없습니다. 반드시 수동 모드에서 사용하십시오.
+* 서보건 엔코더의 강제 전원 투입을 해제하려면 제어기의 전원을 끈 후 다시 켜야 합니다. 따라서 엔코더 리셋이 종료되면 제어기의 전원을 껐다 켠 후 서보건 수동 결합을 진행하십시오.
+* 서보툴 엔코더 전원 설정 기능은 일반 사용자에게 지원되지 않는 엔지니어용 기능입니다. 이 기능에 대한 자세한 내용은 엔지니어에게 문의하시기 바랍니다.
+* 서보툴 엔코더 전원 설정에 대한 자세한 내용은 "[${cont_model} 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+{% hint style="warning" %}
+엔코더 전원이 강제로 투입된 상태에서는 절대 서보건을 기계적으로 결합하거나 분리하지 마십시오.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/15-r360.md)
+# 8.15 R360 CONTPATH 수동 설정
+
+CONTPATH(연속패스) 모드를 수동으로 변경하는 기능입니다. 입력범위는 0, 1, 2 이고, 각 번호 별 설명은 다음과 같습니다. ([contpath](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/5-moving-robot/7-contpath?cont_model=${cont_model}) 명령문과 동일)
+
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+		<th style="text-align:left">의미</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+		<td>불연속</td>
+      <td style="text-align:left">
+        스텝에 펑션이 포함되어 있는 스텝인 경우, 스텝위치에 도달한 다음, 로봇이 정지해있는 상태에서 명령(함수)를 실행하고 다음스텝으로 이동합니다.
+      </td>
+	 </tr>
+	 <tr>
+		<td>1</td>
+		<td>연속.<br>단, 입력신호는 불연속 (default)</td>
+      <td style="text-align:left">
+        스텝 이동 중에 목표스텝에 기록되어 있는 명령어들이 실행한 후, 로봇이 정지하지 않고 목표스텝을 경유하여 다음 스텝으로 이동합니다.<br>
+		  단, 출력명령인 경우 실제 외부로 출력되는 시점은 지령치가 accuracy 범위 안에 도달했을 때 출력됩니다.<br>
+		  또한 명령어의 파라미터에 입력신호를 사용하는 경우 불연속 처리되어 지령치가 accuracy 범위 안에 도달하면, 로봇이 정지해 있는 상태에서 명령을 실행하고 다음스텝으로 이동합니다.
+      </td>
+	 </tr>
+	 <tr>
+		<td>2</td>
+		<td>연속.<br>입력신호도 연속</td>
+      <td style="text-align:left">
+        입력신호가 포함된 명령어 일지라도 미리 해석하여 연속으로 이동합니다.
+      </td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<br>
+
+{% hint style="info" %}
+
+- 입력신호 : fb.di
+
+- 출력신호 : fb.do, _s, _m, _mo,
+
+- 그 외의 불연속 조건
+  1) 불연속운전: Step FWD이면서 불연속 조건일 때, Step BWD, One step 재생
+  2) GUN1 or GUN2가 있는 step
+  3) accu=0이고 값이 0인 경우
+  4) tool번호가 변경되는 경우
+
+{% endhint %}
+
+조작 방법은 다음과 같습니다.
+
+1.	R버튼을 누르고 360을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	연속패스 번호 (0~2)를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-360.png)
+
+3. 변경된 모드는 제목표시줄의 `CP0`, `CP1`, 혹은 `CP2` 플래그로 확인할 수 있습니다.
+
+![](../_assets/tp630/flag-cp.png)
+
+[__SOURCE](8-r-code/16-r361.md)
+# 8.16 R361 조그인칭 레벨 설정
+
+R361 조그인칭 레벨 설정 정보는 다음과 같습니다.
+
+![](../_assets/image_541.png)
+
+현재 설정된 레벨의 인칭 거리를 변경하는 방법은 다음과 같습니다.
+
+1.	즐겨찾기 창에서 361을 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+2.	조그인칭 레벨의 단위\(0: 거리, 1: 각도\)를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-361-1.png)
+
+3.	1을 입력한 경우, 인칭 각도를 입력한 후 `[확인]` 버튼을 터치하거나 `[ENTER]` 키를 누르십시오.
+
+![](../_assets/tp630/pop-rcode-361-2.png)
+
+{% hint style="info" %}
+* 자동 모드에서는 R361 코드를 사용할 수 없습니다. 반드시 수동 모드에서 사용하십시오.
+* R361 코드를 이용해 설정한 인칭 거리는 현재 설정되어 있는 조그레벨에 대해 설정됩니다. 따라서 현재 조그속도 레벨이 8인 경우, 8i에 해당하는 인칭 거리가 변경됩니다.
+* 조그인칭 키가 활성화\(LED On\)된 상태에서만 조그인칭 동작이 가능합니다.
+* 조그인칭 레벨 설정 기능은 일반 사용자에게 지원되지 않는 엔지니어용 기능입니다. 이 기능에 대한 자세한 내용은 엔지니어에게 문의하시기 바랍니다.
+{% endhint %}
+
+
+[__SOURCE](8-r-code/17-r321.md)
+# 8.17 R321 동기 조그
+
+임의의 축들을 하나의 동기 그룹으로 묶고 조그키 하나로 조그하는 기능입니다. 
+
+![](../_assets/tp630/init-axis-sync-jog.png)
+
+축 동기 조그 기능을 사용하는 방법은 아래와 같습니다.
+
+1. 하나의 키로 움직이고자 하는 축들을 같은 동기 그룹으로 설정하고 `[확인]`  버튼을 누릅니다.
+2. 조그키를 이용해서 축 동기 조그를 사용합니다.
+3. 축 동기 조그 기능의 사용을 마치면 동기 그룹을 모두 무효로 설정합니다.
+
+{% hint style="info" %}
+* 해당 기능은 조그할 때만 유효합니다. 자동 모드에서는 동기 기능이 적용되지 않습니다.
+* 동기 조그 쌍은 재부팅이 되어도 초기화되지 않습니다.
+* 동기 조그 쌍의 직교 좌표계 Pose 값은 실제 로봇의 Pose 상황과 항상 일치하지는 않습니다.(단순한 조그 기능)
+{% endhint %}
+
+
+[__SOURCE](9-property/README.md)
+# 9. 속성
+
+아크용접 작업 프로그램을 티칭할 경우 전압, 전류 등 용접 관련 조건뿐만 아니라 위빙과 Retry/Restart, 용접기의 특성 등 아크 전용 기능의 세부적인 설정이 필요합니다. 또한 기본적으로 스텝이나 보조점의 위치를 확인할 경우도 있습니다.
+
+
+
+
+[__SOURCE](9-property/1-use-property.md)
+# 9.1 속성 기능 사용
+
+${cont_model} 티치 펜던트 화면 우측의 \[속성\] 버튼을 이용하면 이러한 조건 설정과 위치 확인을 한 번의 버튼 조작으로 쉽고 빠르게 수행할 수 있습니다.
+
+![그림 76 \[속성\] 버튼의 기능](../_assets/tp630/lbt-property-arc.png)
+
+예를 들어, Arc On 기능을 하는arcon 명령문에 커서가 있을 때 \[속성\] 버튼을 터치하면 용접 시작 조건 중 현재 명령문에서 사용하는 조건 번호의 내용이 표시됩니다. 화면에서 용접 시작 조건의 세부 내용을 확인하거나 변경할 수 있습니다. 또한 해당 조건 파일과 연관된 다른 조건 파일이 있을 경우 그곳으로 바로 이동할 수 있습니다. 즉, \[속성\] 버튼은 특정 명령문과 관련된 조건 파일이나 스텝 위치 등 세부 연관 내용을 쉽고 빠르게 확인하고 변경할 수 있게 해 줍니다.
+
+\[속성\] 버튼을 이용하여 특정 명령문과 관련된 조건 파일 및 상세 내용을 확인하고 변경하는 방법은 다음과 같습니다.
+
+1. 특정 명령문을 선택하여 커서를 두고 \[속성\] 버튼을 터치하십시오.
+2. 다음 표의 내용을 참고하여 선택한 명령문과 관련된 파일이나 상세 내용을 확인 및 변경하십시오.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">명령문</th>
+      <th style="text-align:left">파일 및 내용</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p>move
+          <br />
+        </p>
+        <p>refp</p>
+      </td>
+      <td style="text-align:left">
+        <p>스텝 위치
+          <br />
+        </p>
+        <p>참조 위치</p>
+      </td>
+      <td style="text-align:left">
+        <p>현재 스텝 위치 또는 전역
+          포즈 변수</p>
+        <p>X Y Z (mm) Rx Ry Rz (deg) T1 ~ T10</p>
+        <p>유닛, 좌표계, 로봇 Configuration</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">arcon asf=</td>
+      <td style="text-align:left">
+        <p>용접 시작 조건</p>
+        <p>용접 보조 조건</p>
+        <p>아크 용접기 조건</p>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>용접 시작 조건: 조건 번호,
+            설명, 전압 확인, 재시도,
+            동작 모드, 출력 전류, 출력
+            전압, WCR 대기 시간, 로봇
+            지연 시간 등</li>
+          <li>용접 보조 조건
+            <ul>
+              <li>RETRY: 횟수, RETRACT시간/속도, 후퇴/용접선
+                이동량, 쉬프트 이동량,
+                속도, 전류, 전압</li>
+              <li>RESTART: 횟수, 중첩량, 이동
+                속도, 용접 전류, 전압,
+                전류</li>
+              <li>(용접 중)오버랩 조건 설정:
+                아크, 가스, 와이어, 냉각수</li>
+            </ul>
+          </li>
+          <li>아크 용접기 조건: 용접기
+            번호, 명칭, 설명, 전원
+            제어 모드, 와이어 직경,
+            돌출 길이, 용착 검출 시간,
+            ARC OFF 검출 시간 등
+            <ul>
+              <li>전류 특성: 극성, 지령치(V),
+                측정치(A), 보정치</li>
+              <li>전압 특성: 극성, 지령치(V),
+                측정치(V), 보정치</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">arcon aef=</td>
+      <td style="text-align:left">
+        <p>용접 종료 조건</p>
+        <p>용접 보조 조건</p>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>용접 종료 조건: 조건 번호,
+            설명, 전압 확인, 출력 전류,
+            출력 전압, 다운 슬로프,
+            조건 유지 시간, 가스 후출</li>
+          <li>용접 보조 조건: 자동 용착
+            해제 횟수, 전류, 전압,
+            지연시간</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">weavon wev=</td>
+      <td style="text-align:left">위빙 조건</td>
+      <td style="text-align:left">
+        <ul>
+          <li>위빙 조건: 건 번호, 위빙
+            형태, 주파수, 기본 패턴,
+            진행 각도, 경계 제한, 이동
+            시간, 타이머</li>
+          <li>아크 센싱 조건: 아크 센싱,
+            좌우 센싱 시작 사이클,
+            상하 센싱 시작 사이클,
+            전압 계수, 샘플당 보정
+            거리 등</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+1. `[기록]` 키를 누르거나 `[ESC]` 키를 눌러 작업을 종료하십시오.
+2. `[기록]` : 변경 내용을 저장하고 작업을 종료합니다.
+3. `[ESC]` : 변경 내용을 취소하고 작업을 종료합니다
+
+
+[__SOURCE](9-property/2-move-step-position/README.md)
+# 9.2 move-스텝 위치
+
+작업 프로그램에서 현재 선택된 행에 있는 스텝의 위치를 확인하거나 수정합니다.
+
+
+[__SOURCE](9-property/2-move-step-position/1-hidden-pose-move.md)
+# 9.2.1 숨은 포즈 move문
+
+숨은 포즈 move문\(`[기록]` 키로 기록된 스텝, 즉 포즈 변수를 포함하지 않는 move문\)에서 현재 스텝의 위치를 확인하거나 수정합니다.
+
+1. 숨은 포즈로 기록된 이동 명령\(move문\)에서 `속성` 버튼을 터치하십시오. 현재 스텝의 위치가 나타납니다.
+2. 현재 스텝의 위치를 확인하고 수정하십시오.
+
+![](../../_assets/tp630/step-info.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>현재 스텝의 위치 정보입니다.
+          이름과 좌표값, 좌표계
+          형식 등을 확인하고 설정할
+          수 있습니다.</p>
+        <ul>
+          <li><b>[이름]</b>: 현재 스텝의 번호입니다.
+            스텝 번호를 입력한 후
+            `[ENTER]` 키를 누르면 해당
+            스텝으로 이동합니다.</li>
+          <li><b>좌표값</b>: 현재 스텝의 좌표값입니다.</li>
+          <li>커서키를 이용해 항목을
+            선택합니다.</li>
+          <li>원하는 항목에서 값을
+            입력한 후 `[ENTER]` 키를 눌러
+            변경 내용을 반영합니다.</li>
+          <li>좌표계 형식이 엔코더로
+            설정된 경우에는 좌표값이
+            변경되지 않습니다.</li>
+          <li><b>[좌표계]</b>: 현재 스텝의
+            위치를 표현할 좌표계
+            형식입니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>[확인]</b>: 변경 내용을 저장합니다.</li>
+          <li><b>[이전]/[다음]</b>: 이전 또는
+            다음 스텝의 정보를 표시합니다.</li>
+          <li><b>[원래값]</b>: 현재 스텝의
+            원래 숨은 포즈값을 표시합니다.</li>
+          <li><b>[현재 로봇 포즈]</b>: 현재
+            로봇이 취하고 있는 자세의
+            값을 표시합니다.</li>
+          <li><b>[로봇 이동]</b>: 
+            버튼을 누른 상태에서 기록된
+            스텝의 위치로 로봇이
+            움직입니다. (조그)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+1. `[확인]` 버튼을 누르십시오. 작업 프로그램에 변경 내용이 저장되고 작업이 종료됩니다.
+2. `[ESC]` 키를 눌러 종료하면 변경 내용이 저장되지 않습니다.
+
+{% hint style="info" %}
+* `로봇 구성 형태`를 미지정으로 설정하는 경우 로봇은 현재 위치에서 가장 가깝게 로봇 형태를 지정합니다.
+* 로봇 구성 형태에 따른 지정은 "[2.3.2.2 베이스 및 로봇 기록 좌표](../../2-operation/3-step/2-step-pose-modify/2-base-robot-crd-sys.md)"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](9-property/2-move-step-position/2-pose-rec-move.md)
+# 9.2.2 포즈기록 move문, 포즈 대입문
+
+포즈 변수를 포함하는 move문 또는 포즈 변수 대입문에서 포즈 변수값을 편집합니다.
+
+1. 포즈 변수로 기록된 이동 명령\(move문\)에서 `속성` 버튼을 터치하십시오. 포즈 변수 설정 화면이 나타납니다.
+2. 현재 포즈 변수를 확인하고 수정하십시오.
+
+![](../../_assets/tp630/step-pose-global.png)
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">번호</th>
+      <th style="text-align:left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <p>현재 포즈 변수 정보입니다.
+          이름과 좌표값, 좌표계
+          형식 등을 확인하고 설정할
+          수 있습니다.</p>
+        <ul>
+          <li><b>[이름]</b>: 현재 포즈 변수의
+            이름입니다.</li>
+          <li><b>좌표값</b>: 현재 포즈 변수의
+            좌표값입니다.
+            <ul>
+              <li>커서키를 이용해 항목을
+                선택합니다.</li>
+              <li>원하는 항목에서 값을
+                입력한 후 `[ENTER]` 키를 눌러
+                변경 내용을 반영합니다.</li>
+              <li>좌표계 형식이 엔코더로
+                설정된 경우에는 좌표값이
+                변경되지 않습니다.</li>
+            </ul>
+          </li>
+          <li><b>[좌표계]</b>: 현재 포즈 변수의
+            위치를 표현할 좌표계
+            형식입니다.</li>
+          <li><b>[로봇 구성 형태]</b>: 로봇의
+            위치를 기술할 때 그 기구의
+            특성상 복수의 해가 존재하므로,
+            그 형태를 유일하게 기술하기
+            위한 로봇 형태(Configuration)를
+            지정한 것입니다.
+            <ul>
+              <li>좌표계 형식이 베이스
+                또는 로봇으로 설정된
+                경우에만 사용할 수 있습니다.</li>
+              <li>로봇 구성 형태에 대한
+                자세한 내용은 "<a href="../../operation/step/step-pose-modify/">2.3.2 스텝 위치 기록 및 변경</a>"을
+                참조하십시오.</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><b>[완료]</b>: 변경 내용을 저장합니다.</li>
+          <li><b>[이전]/[다음]</b>: 이전 또는
+            다음 변수의 정보를 표시합니다. * 이 기능은 배열 변수에만 제공됩니다.</li>
+          <li><b>[원래값]</b>: 현재 스텝의
+            원래 숨은 포즈값을 표시합니다.</li>
+          <li><b>[현재 로봇 포즈]</b>: 현재
+            로봇이 취하고 있는 자세의
+            값을 표시합니다.</li>
+          <li><b>[로봇 이동]</b>:
+            버튼을 누른 상태에서 기록된
+            포즈 변수의 위치로 로봇이
+            움직입니다. (조그)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+1. `[확인]` 버튼을 누르십시오. 작업 프로그램에 변경 내용이 저장되고 작업이 종료됩니다.
+2. `[ESC]` 키를 눌러 종료하면 변경 내용이 저장되지 않습니다.
+
+
+[__SOURCE](9-property/3-spot-welding-func.md)
+# 9.3 스폿용접 펑션
+
+프로그램 작성 중 SPOT 명령문을 기록했을 때, 수동 모드에서 스폿용접 펑션 위치에 커서를 두고 \[속성\] 버튼을 터치하면 스폿용접의 메뉴 화면이 표시됩니다. 서보건의 설정이나 용접 조건과 용접 시퀀스 등의 내용을 빠르게 수정할 수 있습니다.
+
+![그림 77 스폿용접 펑션](../_assets/tp630/app-spot-menu.png)
+
+{% hint style="info" %}
+* `시스템 - 4: 응용 파라미터 - 1: 스폿용접` 메뉴를 터치하여 스폿용접 기능을 사용할 수 있습니다.
+* 스폿용접 기능에 대한 자세한 내용은 "[${cont_model} 제어기 스폿용접 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-spot-weld/ko/README?cont_model=${cont_model})"를 참조하십시오.
+{% endhint %}
+
+
+[__SOURCE](10-robot-language.md)
+# 10. 로봇 언어
+
+로봇 언어에 대한 자세한 내용은 "[${cont_model} 제어기 기능 설명서 - 로봇언어 HRScript](https://hrbook-hrc.web.app/#/view/doc-hrscript/ko/README?cont_model=${cont_model})"를 참조하십시오.
+
+[__SOURCE](11-etc/README.md)
+# 11. 기타
+
+이 장에서 앞에서 설명하지 않은 부가적인 정보들을 설명합니다.
+
+[__SOURCE](11-etc/1-controller-files/README.md)
+# 11.1 로봇 제어기 내의 주요 폴더, 파일들
+
+로봇 제어기 내에는 다양한 설정, 교시, 이력 파일들이 저장됩니다. 이 절에서는 폴더의 구조과 각 파일들의 역할에 대해 설명하겠습니다.
+
+[__SOURCE](11-etc/1-controller-files/1-caution-ftp.md)
+# 11.1.1 project/ 폴더의 FTP 로드시 주의할 점
+
+{% hint style="warning" %}
+\[주의\] 파일관리자, 혹은 FTP 서비스를 통해, 폴더와 파일을 수정할 수 있습니다.  
+하지만, 파일을 함부로 수정하거나 삭제할 경우, 부팅 불능, 오동작, 데이터 유실 등 심각한 문제가 발생할 수 있습니다. 내용을 완전히 숙지하고 있거나, 전문가의 도움을 받는 경우가 아니면 함부로 조작하지 않도록 유의하십시오.
+{% endhint %}
+
+
+HRWorkbench나 파일관리자, 백업 기능을 통해 프로젝트 폴더의 설정, 교시 파일의 백업, 복원이 가능합니다.
+
+하지만, 때로는 익숙한 FTP 소프트웨어를 사용하여 PC로의 파일 백업과 로봇 제어기로의 복원을 수행하는 것이 편리할 때도 있습니다.
+이 때, 주의해야 할 점을 설명하겠습니다. (프로젝트 폴더의 각 파일에 대해서는 다음 절에서 설명합니다.)
+
+
+#### project/jobs/ 폴더 내의 .job 파일 변경 후 반영
+
+FTP 소프트웨어로 .job 파일을 `project/job/` 폴더에 추가, 혹은 덮어쓰기한 경우, 로봇제어기는 이를 즉각 메모리에 반영하지 않습니다. (HRWorkbench나 파일관리자의 경우는 즉각 인식하여 자동으로 메모리로 로드합니다.)
+
+이를 메모리에 반영하기 위한 방법은 아래 2가지가 있습니다.
+
+- HOME 하면 콘솔 막대의 `...` 버튼을 클릭하여 `갱신된 job들 다시 불러오기`를 수행
+
+  ![](../../_assets/tp630/etc/console_reload_job.png)
+
+- 로봇제어기를 재부팅
+
+
+#### project/vars/ 폴더 내의 .json, .csv 파일 변경 후 반영
+
+FTP 소프트웨어로 전역 변수 파일을 `project/vars/` 폴더에 추가, 혹은 덮어쓰기한 경우, 로봇제어기는 이를 즉각 메모리에 반영하지 않습니다. (HRWorkbench나 파일관리자의 경우는 즉각 인식하여 자동으로 메모리로 로드합니다.)
+
+이를 메모리에 반영하기 위해서는 아래 방법을 사용하십시오.
+
+- 전역변수 모니터링 창을 열어 선택한 후, 하단의 `전부 불러오기` F버튼을 클릭하십시오.
+
+  ![](../../_assets/tp630/etc/gvar_load.png)
+
+
+{% hint style="warning" %}
+전역 변수 파일을 덮어 씌운 후 이를 인식시키기 위해 로봇제어기를 재부팅하는 방법은 사용하지 마십시오. 로봇제어기를 전원OFF 시키는 순간, 메모리의 전역 변수값을 파일로 저장하기 때문에, 다시 기존의 변수들로 덮어 씌워집니다.
+{% endhint %}
+
+[__SOURCE](11-etc/1-controller-files/2-project.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 11.1.2 project/
+
+
+로봇의 설정, 교시, 상태가 보관되는 가장 중요한 폴더입니다.  
+제어기 시스템을 백업, 복원할 때는 이 폴더가 핵심입니다.
+
+
+#### project/
+
+각종 설정 파일들과 제어기의 전원 OFF (정전) 직전에 저장되는 상태 백업 파일들이 보관되는 폴더입니다.
+상태 백업은 아래와 같은 목적으로 제어기 전원 OFF 시 저장되는 정보입니다.
+
+	- 전원 OFF 전 작업을 전원 ON 후 이어서 수행   
+	  (단, 로봇 응용이나 플러그인 등 복잡한 작업의 경우, 이어서 할 수 없는 경우도 있습니다.)
+	- 전원 OFF의 신호 출력을 전원 ON 후 유지
+
+
+* arc_weld.json
+  
+  아크 용접 응용 설정 파일
+
+* arc_weld_bkup.json
+  
+  전원 OFF 직전의 아크 용접 응용 상태 백업 데이터
+
+* calibration.json
+
+  로봇 캘리브레이션 설정 파일
+
+* context.json
+
+  모든 task의 .job 실행 문맥.  
+  즉, 실행 커서가 진행된 위치, .job들이 call된 이력과 인수값, 지역변수값 등
+
+* dout.json
+
+  전원 OFF 직전의 범용 digital 신호 출력값
+
+* force_control.json
+
+  힘 제어 설정
+
+* hi6_proj.json
+  
+  메인 프로젝트 파일. 대부분의 기본 기능 설정이 여기에 저장됨.
+
+* kw.json
+
+  전원 OFF 직전의 내장PLC kw 릴레이값
+
+* maintenance.json
+
+  각종 유지보수 정보, 시스템 정보
+  로봇 모델, 축 수, 가동 시간, 소프트웨어 버전, 잔여 메모리와 스토리지, 시스템 코드, 시스템 thread별 수행 시간
+
+* motion_bkup.bin
+
+  전원 OFF 직전의 로봇 모션과 관련된 백업 데이터
+
+* mw.json
+  
+  전원 OFF 직전의 내장PLC mw 릴레이값
+
+* playback_bkup.bin
+
+  전원 OFF 직전의 .job 실행과 관련된 백업 데이터
+
+* sealing.json
+
+  실링 응용 설정 파일
+
+* sout.json
+
+  전원 OFF 직전의 시스템 신호 출력값
+
+* spot_weld.json
+
+  스폿 용접 응용 설정 파일
+
+* spot_weld_bkup.json
+
+  전원 OFF 직전의 스폿 용접 응용 상태 백업 데이터
+
+* svtool_change.json
+
+  서보 툴 체인지를 위한 부가축 설정 파일
+
+* version.json
+
+  소프트웨어 버전업 후 첫 부팅 시 해야할 데이터 업데이트의 판단을 위한 정보. (현재 버전번호)
+  
+
+#### project/jobs/
+  
+교시 프로그램 (.job) 들이 보관되는 폴더입니다.
+
+
+#### project/lads/
+  
+내장PLC 래더 프로그램 (.lad) 들이 보관되는 폴더입니다.
+
+
+#### project/safety/
+  
+(Hi7 제어기 이상) 안전기능(Functional Safety)의 설정 파일이 보관되는 폴더입니다.
+
+* safety_parameter.json
+
+  안전기능의 설정 파일
+
+* safety_parameter.json.cert
+
+  안전기능 설정의 인증 파일.  
+  올바른 암호와 함께 설정을 저장했을 때, 유효한 인증이 발급됩니다. 유효하지 않으면, 제어기가 동작하지 않습니다.
+
+
+#### project/vars/
+
+변수와 alias들이 보관되는 폴더입니다.
+
+* aliases.json
+
+  로봇언어 alias 파일
+
+* *.csv
+
+  최상위 배열 파일들 (comma-separated values 포맷)
+
+* vars.json
+
+  전역변수 파일
+
+[__SOURCE](11-etc/1-controller-files/3-log.md)
+# 11.1.3 log/
+
+
+각종 이력 파일이 보관되는 폴더입니다. 아래 파일명에서 ?는 숫자에 해당하며, 최대 숫자에 도달하면 다시 0번에 기록하는 식으로 덮어쓰는 순환구조이거나, 년월일_시분초를 뜻하는 timestamp입니다.
+
+이 중, 이벤트 이력은 티치펜던트의 이력 창이나 HRWorkbench로 열어 볼 수 있으며, 스코프 이력은 HRWorkbench로만 열어 볼 수 있습니다. 나머지 .txt 파일들은 일반적인 텍스트 편집기로 열어 볼 수 있습니다.
+
+
+* bootlog_?.txt
+
+  제어기 부팅 시의 이력이 저장되는 파일.  
+  부팅 불능 등의 문제를 분석하기 위한 용도입니다. 부팅할 때마다 1개씩 순환 생성됩니다.
+
+* evlog_alarm_??.txt
+
+  에러(Error), 경고(Warning) 이벤트 이력이 저장되는 파일.  
+
+* evlog_hist_??.txt
+
+  실행(History) 이벤트 이력이 저장되는 파일.  
+  주로 .job 실행 이력들이 저장됩니다.
+
+* evlog_io_??.txt
+
+  IO 변환 이벤트 이력이 저장되는 파일.
+
+* evlog_noti_??.txt
+
+  알림(Notice) 이벤트 이력이 저장되는 파일.
+
+* evlog_oper_00.txt
+
+  조작(Operation) 이벤트 이력이 저장되는 파일.
+
+* evlog_stst_00.txt
+
+  로봇의 기동(Start), 정지(Stop) 이벤트 이력이 저장되는 파일.
+
+* pow_stage.txt
+
+  전원ON, 정전 복원, 정전 백업 등의 상태를 저장하는 파일.
+
+* sclog_base_????????_??????.bin
+
+  각 축 각도, 속도, 가속도 등 각종 시계열 데이터를 저장하는 스코프 이력 파일.  
+  ??????_??????는 년월일_시분초입니다.  
+  로봇 충격 검지나 특정 에러 발생 시 생성됩니다. HRWorkbench의 scope log 확인 기능으로 열어 볼 수 있습니다.
+
+* sclog_base_????????_??????.json
+
+  sclog_....bin 파일이 어떤 종류의 데이터로 저장됐는지를 보관하는 schema 파일.  
+  .bin 파일과 .json 파일이 쌍으로 존재해야 파일을 열어볼 수 있습니다.
+
+* shutdownlog_?.txt
+
+  제어기 전원 OFF 시의 이력이 저장되는 파일.  
+  정전 백업 동작의 정상 수행 여부를 분석하기 위한 용도입니다. 전원 OFF 시마다 1개씩 순환 생성됩니다.
+
+* updatesvclog_?.txt
+
+  제어기 소프트웨어 버전업 시의 이력이 저장되는 파일.  
+  버전업의 정상 수행 여부를 분석하기 위한 용도입니다.
+
+[__SOURCE](11-etc/1-controller-files/4-backup.md)
+# 11.1.4 backup/
+
+
+제어기의 MAIN측 백업들이 보관되는 폴더입니다.  
+`b년월일_시분` 포맷으로 폴더명이 생성되며, 그 안에 project/, log/, cifX/, EC_LOG/, EDR_LOG/ 폴더가 저장됩니다.
+
+
+#### backup/ev/
+
+이벤트 백업들이 보관되는 폴더입니다. 특정한 에러 발생 시 자동으로 백업됩니다.
+
+
+#### backup/ts/
+
+스케줄 백업들이 보관되는 폴더입니다. 예약된 시간에 자동으로 백업됩니다.
+
+[__SOURCE](11-etc/1-controller-files/5-etc.md)
+# 11.1.5 기타 폴더들
+
+#### apps/
+
+MAIN측에서 실행되는 플러그인(plug-in) 앱들이 설치, 저장되는 폴더입니다.
+
+
+#### fbrr/
+
+파일 기반 로봇정보 레지스트리 (File Based Robot Registry) 폴더입니다.  
+각 로봇 기구 모델별 정보 파일(.fbr)들이 보관됩니다. 새로운 모델 정보 파일을 추가하면, 시스템 초기화 시 해당 모델을 선택하여 로봇 시스템을 구성할 수 있습니다.
+
+
+#### gather/
+
+시계열 데이터를 수집하는 게더링 (gathering) 기능의 결과 파일 (.GDT) 저장 폴더입니다.
+
+
+#### help/
+
+로봇언어 HRScript의 html 도움말이 저장되는 폴더입니다.
+
+
+#### roblang/
+
+로봇언어 HRScript의 문법 파일이 저장되는 폴더입니다.
+
+* procs_?.json
+
+  category별 프로시저 문법 파일
+
+* funcs_?.json
+
+  category별 함수 문법 파일
+
+* svars_?.json
+
+  category별 시스템 변수 문법 파일
+
+[__SOURCE](11-etc/2-keypad-mode.md)
+# 11.2 키패드 모드
+
+터치스크린의 L, R, F(기능) 버튼을 키패드로 조작할 수 있는 기능입니다. `터치스크린 고장` 또는 `[F1: 서비스] - 11: 티치펜던트 옵션` 메뉴에서 `터치스크린을 OFF`한 경우, 해당 기능을 사용하여 버튼을 조작할 수 있습니다.
+
+키패드 모드가 활성화되면 각 버튼 상단 또는 하단에 해당 버튼을 조작할 수 있는 조작키가 표시됩니다.
+
+### L, R 버튼 막대 키패드 모드
+- 단축키: `[CTRL]+[.]`
+    - L 버튼 막대
+        - `[R..]` : `[기록조건]`
+        - `[7]` : `[실행단위]`
+        - `[4]` : `[조그인칭]`
+        - `[1]` : `[속성]`
+        - `[0]` : `[도움말]`
+    - R 버튼 막대
+        - `[ENTER]` : `[수동출력]`
+        - `[9]` : `[창조정]`
+        - `[6]` : `[소프트키보드]`
+        - `[3]` : `[사용자키]`
+        - `[BS]` : `[이전/다음]`
+
+![](../_assets/tp630/keypad-mode-LR.png)
+
+### F 버튼 막대 키패드 모드
+- 단축키: `[CTRL]+[←(Backspace)]`
+    - F 버튼 막대 (숫자키에 대응하는 F 버튼에 매핑됨)
+        - 아래는 최상위 화면에서 표시되는 버튼 기준 설명입니다.
+        - `[1]` : `[F1: 서비스]`
+        - `[2]` : `[F2: 시스템]`
+        - `[3]` : `[F3: WAIT 해제]`
+        - `[4]` : `[F4: 이력]`
+        - `[6]` : `[F6: 명령입력]`
+        - `[7]` : `[F7: 조건설정]`
+
+![](../_assets/tp630/keypad-mode-F.png)
+
+[__SOURCE](appendices/README.md)
+# 별첨
+
+  
+
+
+
+[__SOURCE](appendices/rules-occupational-safety.md)
+# 산업안전보건기준에 관한 규칙 및 안전검사 고시
+
+당해 산업용 로봇은 산업안전보건기준에 관한 규칙 및 안전검사 고시(검사 대상일 경우)의 검사 기준을 고려하여 설치하여야 한다.
+
+"[산업안전보건기준에 관한 규칙](https://hrbook-hrc.web.app/#/view/rules-on-occupational-safety-and-health-standards/ko/README)"
+
+[__SOURCE](quality-assurance.md)
+# 품질보증
+
+"[품질보증](https://hrbook-hrc.web.app/#/view/quality-assurance/ko/README)"
