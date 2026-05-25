@@ -18,7 +18,7 @@ Please refer to the link below for how to set up fn object.
 
 Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to be displayed.
 
-The use of the remaining F buttons is the same as the [6.2.3 Public Input](./3-user-input.md) and [6.2.4 Public Output](./4-user-output.md)?cont_model=${cont_model}) monitoring windows.
+The use of the remaining F buttons is the same as the [6.2.3 Public Input](./3-user-input.md) and [6.2.4 Public Output](./4-user-output.md?cont_model=${cont_model}) monitoring windows.
 
 
 ![](../../_assets/io/io_fn_mon.png)
