@@ -1,4 +1,10 @@
-﻿# 7.9 Cobot System
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 7.9 Cobot System
 
 {% hint style="info" %}
 This function is supported from the Hi7 controller.
@@ -12,5 +18,5 @@ This function is supported from the Hi7 controller.
 ![](../../_assets/tp630/system-cobot-menu.png)
 
 {% hint style="info" %}
-For detailed information on the Collaborative Robot System, refer to the  "[Cobot Safety Function Manual](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/korean/README)".
+For detailed information on the Collaborative Robot System, refer to the  "[Safety Function Manual for Collaborative Robot](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/en/README)".
 {% endhint %}

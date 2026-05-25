@@ -1,4 +1,10 @@
-﻿# 6.6 Safety Funtion
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 6.6 Safety Funtion
 
 {% hint style="info" %}
 This function is supported from the Hi7 controller.

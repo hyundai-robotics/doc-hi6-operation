@@ -1791,7 +1791,7 @@ The coordinate system will be saved as `[Pose Variable]`.crd \(Example: po32.crd
 [__SOURCE](2-operation/4-r-code.md)
 # 2.4 R Codes
 
-R codes are unique code numbers assigned to specific functions. Assigning unique code numbers to frequently used functions can help you use those functions quickly. For details on R codes, refer to "[8 R codes](../r-code/)."
+R codes are unique code numbers assigned to specific functions. Assigning unique code numbers to frequently used functions can help you use those functions quickly. For details on R codes, refer to "[8. R codes](../8-r-code/README.md)."
 
 After touching the `[R..[NO]]` key, input the code number and touch the `[OK]` button. Then the predefined function will be executed.
 
@@ -2117,7 +2117,7 @@ For example, whether to perform an assignment for the axes J7 and J8 according t
     ![](../../_assets/image_85.png)
 
 {% hint style="info" %}
-For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](jog-key.md)". 
+For details on the robot's progress direction in relation to the jog keys, refer to "[2.8.1 Jog Keys](./1-jog-key.md)". 
 {% endhint %}
 
 
@@ -2381,7 +2381,7 @@ After determining the axis origin and tool length through automatic calibration,
     ![](../_assets/tp630/tool-data-auto-calib2_eng.png)
 
 {% hint style="info" %}
-For details on this function, refer to "[7.4.1 Tool Data](../setting/robot-parameter/tool-data/)."
+For details on this function, refer to "[7.4.1 Tool Data](../7-system/4-robot-parameter/1-tool-data/README.md)."
 {% endhint %}
 
 
@@ -2442,7 +2442,7 @@ A statement is largely divided into a command and a parameter, which is an addit
 | ![](../../_assets/c2.png)  | Command | ![](../../_assets/c4.png)  | Comment |
 
 {% hint style="info" %}
-For details on parameters, refer to "[2.3.1 Step Statement Parameters](../../operation/step/step-cmd-param/)."
+For details on parameters, refer to "[2.3.1 Step Statement Parameters](../../2-operation/3-step/1-step-cmd-param/README.md)."
 {% endhint %}
 
 When you input a statement, basic setting values will be automatically inputted into the default parameters and can be changed. Optional parameters are marked with a symbol \( \_ \), and you can input the parameter values by selecting the parameters. Moreover, parameters that can be inputted will be displayed as buttons on the function button bar.
@@ -2730,7 +2730,7 @@ Additionally, you can comment or uncomment a single line without selecting a blo
 
 #### 8. Auto Comment / Remove Comments
 
-(This feature is supported from version V70.01-00 and later.)
+(This feature is supported from version V70.02-00 and later.)
 
 - Press the `[R5: Prev/next]` button to display the `[F1: auto comment]` and `[F2: uncomment]` buttons.
 
@@ -3306,7 +3306,7 @@ The steps 2-5 of the original program \(program 1\) will be inserted right after
 [__SOURCE](4-service/3-program-conversion/9-stmt-comment.md)
 # 4.3.9 Statement Comments
 
-(This feature is supported in version V70.01-00 and later.)
+(This feature is supported in version V70.02-00 and later.)
 
 This feature automatically attaches comments to statements using pre-configured data comments. It also includes functions to delete comments in bulk or assign serial numbers to `spot` statements (Spot Welding commands).
 
@@ -3341,7 +3341,7 @@ For details on how to configure data comments, please refer to [4.11 Data Commen
 - `Start step` ~ `End step`
 
   The specific range of steps where you want to apply the changes. (Default: 0 ~ last step).
-  For example, if set to 2–5, the changes will be applied starting from the move statement at Step 2 through to the final function of Step 5.
+  For example, if set to 2-5, the changes will be applied starting from the move statement at Step 2 through to the final function of Step 5.
 
 
 - `Existing comment`
@@ -3352,7 +3352,7 @@ For details on how to configure data comments, please refer to [4.11 Data Commen
 
   * `Skip` : If a statement already has a comment, that specific statement will be bypassed and left as is.
 
- 
+ 
 - `Affected commends` (Hidden if `Existing comment` is set to `Delete all`.)
 
    Select the types of commands to which you want to apply comments.
@@ -3591,9 +3591,7 @@ Refer to the following section in the HRSpace4 Help for connection instructions.
 
 Monitor firmware information and communication status.
 
-For more information, refer to "[${cont_model} Controller Function Manual - Industrial Communication > 1. CIFX PCI Communication > 1.4 CIFX PCI - Monitoring Industrial Communication](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/en/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README)"
-
-
+For more information, refer to "[${cont_model} Controller Function Manual - Industrial Communication > 1. CIFX PCI Communication > 1.4 CIFX PCI - Monitoring Industrial Communication](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/en-${cont_model}/1-cifx-pci-communication/4-cifx-pci-monitoring-industrial-communication/README?cont_model=${cont_model})
 [__SOURCE](4-service/10-system-program.md)
 # 4.10 System program
 
@@ -3619,9 +3617,15 @@ You can view and remove the system programs (e.g. OPC-UA server) installed on th
    * After the removal is complete, press the `Exit` button.
 
 [__SOURCE](4-service/11-data-cmts.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
 # 4.11 Data Comments
 
-(This feature is supported from version V70.01-00 and later.)
+(This feature is supported from version V70.02-00 and later.)
 
 You can register comments for IO variables, relays of the built-in PLC, and other general variables. The registered comments are displayed as tooltips in the monitoring panels. (`public input`, `public output`, `fn input`, `fn output`, `global variable`, `memory variable`, `watch` monitoring)
 
@@ -4099,7 +4103,7 @@ Please refer to the link below for how to set up fn object.
 
 Click the '[F6:prev]' / '[F7:next]' button to change the number of fn objects to be displayed.
 
-The use of the remaining F buttons is the same as the [Public Input](6-user-input?cont_model=${cont_model}) and [Public Output](7-user-output?cont_model=${cont_model}) monitoring windows.
+The use of the remaining F buttons is the same as the [6.2.3 Public Input](./3-user-input.md) and [6.2.4 Public Output](./4-user-output.md)?cont_model=${cont_model}) monitoring windows.
 
 
 ![](../../_assets/io/io_fn_mon.png)
@@ -5227,6 +5231,12 @@ Refer to Arc Welding Manual's "[7. Welding data monitoring](https://hrbook-hrc.w
     - in case of softjoint function : joint coordinate 
 
 [__SOURCE](6-monitoring/6-safety-funtion.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
 # 6.6 Safety Funtion
 
 {% hint style="info" %}
@@ -7713,7 +7723,7 @@ The gas spring pressure sensor function is used to detect abnormal pressure in t
 
 2.	Select the desired menu, and then check and set various parameters for the use of the application functions of the robot.
 
-    ![](../_assets/tp630/app-menu_eng.png)
+    ![](../../_assets/tp630/app-menu_eng.png)
 
 
 <br>
@@ -7958,7 +7968,7 @@ S-curve (red dashed line): The speed change during acceleration and deceleration
 {% endhint %}
 
 {% hint style="info" %}
-* This feature is supported from version V70.00-00 onward.
+* This feature is supported from version V70.00-00 onward.
 * Refer to the command syntax in the ${cont_model} controller manual "[5.22 scurve](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/22-s-curve?cont_model=${cont_model})"
 {% endhint %}
 
@@ -7982,8 +7992,8 @@ S-curve condition settings allow you to define the characteristics of the accele
   * The robot must follow a predetermined trajectory accurately.
 
   * Recommended settings:
-    * Path accuracy: High (e.g., 80 ~ 100)
-    * Smooth motion: Low-to-medium (e.g., 20 ~ 40)
+    * Path accuracy: High (e.g., 80 ~ 100)
+    * Smooth motion: Low-to-medium (e.g., 20 ~ 40)
 
   * Use case: Applying sealant along complex curves of automotive parts, or performing laser cutting. To minimize trajectory error, set accuracy high; maintaining the path is more important than slight vibration.
 
@@ -7994,7 +8004,7 @@ S-curve condition settings allow you to define the characteristics of the accele
 
   * Recommended settings:
     * Path accuracy: Medium (e.g., 50)
-    * Smooth motion: High (e.g., 80 ~ 100)
+    * Smooth motion: High (e.g., 80 ~ 100)
 
   * Use case: Transporting semiconductor wafers, large glass panels (LCD/OLED), or containers with easily spilling liquid. Minimize shock during acceleration/deceleration to prevent slip or shaking.
 
@@ -8945,7 +8955,7 @@ This function finds the optimal gain by moving the additional axis within the ra
 | ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
 |---|---|
 | Linear axis motion | Circular axis motion |
-<!-- ![additional_axis](../../_assets/_7.7.7_additional_axis.jpg) -->
+
 
 ### B. Tuning Description
 
@@ -8994,6 +9004,12 @@ If the tuned gain results in noise, navigate to `[System] - 3:Robot parameter - 
 If the noise persists, please contact us for further assistance.
 
 [__SOURCE](7-system/8-safety-system.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
 # 7.8 Safety System 
 
 {% hint style="info" %}
@@ -9014,6 +9030,12 @@ For detailed information on 1: Basic Settings, 2: Parameter Settings, 3: Monitor
 For detailed information on the Safety Radar, refer to the "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)".
 {% endhint %}
 [__SOURCE](7-system/9-cobot-system.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
 # 7.9 Cobot System
 
 {% hint style="info" %}
@@ -9028,9 +9050,15 @@ This function is supported from the Hi7 controller.
 ![](../../_assets/tp630/system-cobot-menu.png)
 
 {% hint style="info" %}
-For detailed information on the Collaborative Robot System, refer to the  "[Cobot Safety Function Manual](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/korean/README)".
+For detailed information on the Collaborative Robot System, refer to the  "[Safety Function Manual for Collaborative Robot](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/en/README)".
 {% endhint %}
 [__SOURCE](7-system/10-option-system/README.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
 # 7.10 Option System
 
 {% hint style="info" %}
@@ -9044,6 +9072,12 @@ This function is supported from the Hi7 controller.
 ![](../../_assets/tp630/system-option-menu.png)
 
 [__SOURCE](7-system/10-option-system/1-userdio-board-setting.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
 # 7.10.1 UserDIO Board Setting
 
 {% hint style="info" %}
@@ -9475,7 +9509,7 @@ Never mechanically connect or disconnect the servo gun while the encoder power i
 [__SOURCE](8-r-code/15-r360.md)
 # 8.15 R360 Set CONTPATH manually
 
-It manually changes the CONTPATH (continuous path) mode. The input ranges are 0, 1, and 2, and the description for each number is as follows. (Same as [contpath](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/6-contpath) statement.)
+It manually changes the CONTPATH (continuous path) mode. The input ranges are 0, 1, and 2, and the description for each number is as follows. (Same as [5.7 contpath](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/7-contpath?cont_model=${cont_model}) statement.)
 
 
 <table>
@@ -9958,6 +9992,12 @@ When the controller is powered off, the current global variable values in memory
 {% endhint %}
 
 [__SOURCE](11-etc/1-controller-files/2-project.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
 # 11.1.2 project/
 
 This is the most important folder where the robot's configuration, teaching data, and state are stored.
@@ -10059,7 +10099,7 @@ Folder storing built-in PLC ladder programs (.lad files).
 
 #### project/safety/
   
-(HI7 controller) Folder storing Functional Safety configuration files.
+(Hi7 controller) Folder storing Functional Safety configuration files.
 
 * safety_parameter.json
 

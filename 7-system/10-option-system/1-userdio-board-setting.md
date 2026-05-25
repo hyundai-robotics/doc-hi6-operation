@@ -1,4 +1,10 @@
-﻿# 7.10.1 UserDIO Board Setting
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 7.10.1 UserDIO Board Setting
 
 {% hint style="info" %}
 This function is supported from the Hi7 controller.

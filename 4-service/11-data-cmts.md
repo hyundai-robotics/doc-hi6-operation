@@ -1,4 +1,10 @@
-﻿# 4.11 Data Comments
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi6", "Hi7"]
+}
+</script>
+
+# 4.11 Data Comments
 
 (This feature is supported from version V70.02-00 and later.)
 

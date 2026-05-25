@@ -35,7 +35,7 @@ For details on how to configure data comments, please refer to [4.11 Data Commen
 - `Start step` ~ `End step`
 
   The specific range of steps where you want to apply the changes. (Default: 0 ~ last step).
-  For example, if set to 2–5, the changes will be applied starting from the move statement at Step 2 through to the final function of Step 5.
+  For example, if set to 2-5, the changes will be applied starting from the move statement at Step 2 through to the final function of Step 5.
 
 
 - `Existing comment`
@@ -46,7 +46,7 @@ For details on how to configure data comments, please refer to [4.11 Data Commen
 
   * `Skip` : If a statement already has a comment, that specific statement will be bypassed and left as is.
 
- 
+ 
 - `Affected commends` (Hidden if `Existing comment` is set to `Delete all`.)
 
    Select the types of commands to which you want to apply comments.

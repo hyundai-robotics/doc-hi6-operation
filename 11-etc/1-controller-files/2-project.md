@@ -1,4 +1,10 @@
-﻿# 11.1.2 project/
+﻿<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 11.1.2 project/
 
 This is the most important folder where the robot's configuration, teaching data, and state are stored.
 When backing up or restoring the controller system, this folder is the core component.
@@ -99,7 +105,7 @@ Folder storing built-in PLC ladder programs (.lad files).
 
 #### project/safety/
   
-(HI7 controller) Folder storing Functional Safety configuration files.
+(Hi7 controller) Folder storing Functional Safety configuration files.
 
 * safety_parameter.json
 

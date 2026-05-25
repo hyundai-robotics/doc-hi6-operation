@@ -17,8 +17,8 @@ S-curve condition settings allow you to define the characteristics of the accele
   * The robot must follow a predetermined trajectory accurately.
 
   * Recommended settings:
-    * Path accuracy: High (e.g., 80 ~ 100)
-    * Smooth motion: Low-to-medium (e.g., 20 ~ 40)
+    * Path accuracy: High (e.g., 80 ~ 100)
+    * Smooth motion: Low-to-medium (e.g., 20 ~ 40)
 
   * Use case: Applying sealant along complex curves of automotive parts, or performing laser cutting. To minimize trajectory error, set accuracy high; maintaining the path is more important than slight vibration.
 
@@ -29,7 +29,7 @@ S-curve condition settings allow you to define the characteristics of the accele
 
   * Recommended settings:
     * Path accuracy: Medium (e.g., 50)
-    * Smooth motion: High (e.g., 80 ~ 100)
+    * Smooth motion: High (e.g., 80 ~ 100)
 
   * Use case: Transporting semiconductor wafers, large glass panels (LCD/OLED), or containers with easily spilling liquid. Minimize shock during acceleration/deceleration to prevent slip or shaking.
 

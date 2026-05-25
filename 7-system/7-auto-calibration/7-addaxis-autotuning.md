@@ -10,7 +10,7 @@ This function finds the optimal gain by moving the additional axis within the ra
 | ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
 |---|---|
 | Linear axis motion | Circular axis motion |
-<!-- ![additional_axis](../../_assets/_7.7.7_additional_axis.jpg) -->
+
 
 ### B. Tuning Description
 

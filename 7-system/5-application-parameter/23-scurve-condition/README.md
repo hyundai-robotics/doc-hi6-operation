@@ -15,6 +15,6 @@ S-curve (red dashed line): The speed change during acceleration and deceleration
 {% endhint %}
 
 {% hint style="info" %}
-* This feature is supported from version V70.00-00 onward.
+* This feature is supported from version V70.00-00 onward.
 * Refer to the command syntax in the ${cont_model} controller manual "[5.22 scurve](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/22-s-curve?cont_model=${cont_model})"
 {% endhint %}
