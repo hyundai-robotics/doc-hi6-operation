@@ -6514,71 +6514,7 @@ ${cont_model} 로봇 제어기의 기능들 중 특정 옵션기능들은 별도
 </script>
 
 # 7.3.11 산업용 통신 \(필드버스\)
-
-산업용 통신\(필드버스; Fieldbus\)을 사용 설정합니다.
-
-1.	사용할 통신에 따라 "[Hi6-N 제어기 보수 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-n-maintenance/ko/README)" 혹은 "[Hi6-T 제어기 보수 설명서](https://hrbook-hrc.web.app/#/view/doc-hi6-t-maintenance/ko/README)"를 참조하여 PCI 카드 장착 및 슬롯 번호\(1 ~ 4\)를 설정하십시오.
-
-2.	"7.3.11.1 펌웨어 설정"을 참조하여 산업용 통신 펌웨어를 설정하십시오.
-
-3.	제어기의 전원을 끈 후 다시 켜십시오.
-
-4.	필요한 경우, "7.3.11.2 산업용 통신 설정"을 참조하여 부가 설정을 수행하십시오.
-
-
-
-
-[__SOURCE](7-system/3-control-parameter/11-industrial-comm/1-pci-slot-set.md)
-# 7.3.11.1 PCI 슬롯 설정
-
-산업용 통신에 사용할 PCI 슬롯을 설정합니다.
-
-1.	`2: 제어 파라미터 - 11: 산업용 통신 - 1: PCI 슬롯 설정 - 1 채널` 메뉴를 터치하십시오. PCI 슬롯 설정 화면이 나타납니다.
-
-2.	원하는 탭을 선택하고 통신 방식\(Master / Slave\)과 프로토콜을 설정한 후 `[확인]` 버튼을 터치하십시오. PCI 슬롯 설정이 완료됩니다.
-
-![](../../../_assets/tp630/ctrl-industrial-channel.png)
-
-
-
-{% hint style="warning" %}
-PCI 슬롯 설정 완료 시 슬롯 1 ~ 4에 설정된 CONGIF 파일이 모두 삭제됩니다. 사용 중 통신 PCI 슬롯을 변경하려면 기존의 CONFIG 설정을 별도로 백업해 두고 필요한 경우 복원하여 사용하십시오.
-{% endhint %}
-
-3.	제어기의 전원을 끈 후 다시 켜십시오.
-
-{% hint style="warning" %}
-* PCI 슬롯의 사용 설정 시 제어기의 전원을 끈 후 다시 켜야만 설정값이 시스템에 적용됩니다.
-{% endhint %}
-
-
-
-
-[__SOURCE](7-system/3-control-parameter/11-industrial-comm/2-industrial-comm-set.md)
-# 7.3.11.2 산업용 통신 설정
-
-\(추후 기능 제공\) 통신 방식을 CC-Link 슬레이브로 설정하면, 제어기 내부에서 각 통신별로 상세 정보를 설정할 수 있습니다.
-
-{% hint style="info" %}
-통신 정보는 "[HD현대로보틱스 웹사이트](https://www.hd-hyundairobotics.com/)"에서 "Sycon.net" 프로그램을 이용해 설정하십시오.
-{% endhint %}
-
-[__SOURCE](7-system/3-control-parameter/11-industrial-comm/3-monitoring.md)
-# 7.3.11.3 모니터링
-
-산업용 통신에서 사용 설정된 펌웨어와 통신의 설정 정보 및 동작 상태를 모니터링합니다.
-
-1.	`[서비스] - 19: 산업용 통신 모니터링` 메뉴를 터치하십시오. 보드별 산업용 통신 모니터링 화면이 나타납니다.
-
-2.	원하는 탭을 선택하여 펌웨어, 통신 장치 및 통신 구성의 상세 정보를 확인하십시오.
-
-![](../../../_assets/tp630/svc-industrial-mon.png)
-
-{% hint style="info" %}
-\[재시작\] 버튼을 이용하여 PCI 통신 카드의 산업용 통신을 다시 시작할 수 있습니다.
-{% endhint %}
-
-
+산업용 통신에 대한 자세한 내용은 "[${cont_model} 제어기 기능 설명서 - 산업용 통신](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/ko-${cont_model}/README?cont_model=${cont_model})"을 참조하십시오.
 [__SOURCE](7-system/4-robot-parameter/README.md)
 # 7.4 로봇 파라미터
 
