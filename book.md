@@ -5559,59 +5559,8 @@ Refer to Arc Welding Manual's "[7. 焊接数据监控](https://hrbook-hrc.web.ap
 [__SOURCE](7-system/3-control-parameter/11-industrial-comm/README.md)
 # 7.3.11 工业通信 \(fieldbus\)
 
-您可以设置工业通信 \(fieldbus\) 以使用它。
+"[${cont_model} 机器人控制器功能手册. - 工业通信](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/zh-${cont_model}/README?cont_model=${cont_model})"
 
-1. 根据要使用的通信类型，您需要安装 PCI 卡，然后参照 "${cont_model} 控制器维护手册" 设置插槽编号 \(1 到 4\)。
-
-2. 参考 "[7.3.11.1 固件设置](1-firmware-set.md)" 设置工业通信固件。
-
-3. 关闭控制器的电源，然后重新打开。
-
-4. 如有必要，请参考 "[7.3.11.2 工业通信设置](2-industrial-comm-set.md)" 进行其他设置。
-[__SOURCE](7-system/3-control-parameter/11-industrial-comm/1-pci-slot-set.md)
-# 7.3.11.1 PCI插槽设置
-
-您可以设置用于工业通信的PCI插槽。
-
-1.	触摸`[2: Control Parameter - 11: 工业通信 - 1: 1：PCI插槽设置 - 1 Channel] ([2: Control Parameter  - 11: Industrial Communication  - 1: PCI Slot Settings  - 1 Channel])`菜单。然后，PCI插槽设置屏幕将出现。
-
-2.	选择所需的选项卡，然后设置通信方式\(主/从\)和协议。之后，点击`[OK]`按钮。
-
-    ![](../../../_assets/tp630/ctrl-industrial-channel_eng.png)
-
-{% hint style="warning" %}
-当PCI插槽设置完成后，插槽#1 - #4中设置的CONFIG文件将全部删除。当您在使用中想更改通信PCI插槽时，应单独备份现有的CONFIG设置，并在恢复后使用。 
-{% endhint %}
-
-3.	关闭控制器的电源，然后再重新打开。
-
-{% hint style="warning" %}
-* 当您执行PCI插槽的设置以使用它时，设置值将在您关闭控制器的电源并重新打开后才会应用于系统。
-{% endhint %}
-[__SOURCE](7-system/3-control-parameter/11-industrial-comm/2-industrial-comm-set.md)
-# 7.3.11.2 工业通信设置
-
-\(该功能将稍后提供\) 如果将通信方式设置为 CC-Link 从站，您可以在控制器内部设置每种通信的详细信息。
-
-{% hint style="info" %}
-您可以通过 HD Hyundai Robotics 网站上的 "Sycon.net" 程序设置通信信息 (https://www.hd-hyundairobotics.com/zh/main)。
-{% endhint %}
-[__SOURCE](7-system/3-control-parameter/11-industrial-comm/3-monitoring.md)
-# 7.3.11.3 监控
-
-您可以监控您在工业通信菜单中设置的固件和通信的设置信息和操作状态。
-
-1. 触摸 `服务 - 19: 工业通信监控 (service - 19: Industrial Communication Monitoring)` 菜单。然后将出现每个板的工业通信监控屏幕。
-
-2. 通过选择所需的选项卡，您可以检查固件、通信设备和通信配置的详细信息。
-
-    ![](../../../_assets/tp630/svc-industrial-mon_eng.png)
-
-<Br>
-
-{% hint style="info" %}
-您可以使用 `[Restart]` 按钮重新启动 PCI 通信卡的工业通信。
-{% endhint %}
 [__SOURCE](7-system/4-robot-parameter/README.md)
 # 7.4 机器人参数
 

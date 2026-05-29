@@ -1,11 +1,3 @@
 ﻿# 7.3.11 工业通信 \(fieldbus\)
 
-您可以设置工业通信 \(fieldbus\) 以使用它。
-
-1. 根据要使用的通信类型，您需要安装 PCI 卡，然后参照 "${cont_model} 控制器维护手册" 设置插槽编号 \(1 到 4\)。
-
-2. 参考 "[7.3.11.1 固件设置](1-firmware-set.md)" 设置工业通信固件。
-
-3. 关闭控制器的电源，然后重新打开。
-
-4. 如有必要，请参考 "[7.3.11.2 工业通信设置](2-industrial-comm-set.md)" 进行其他设置。
+"[${cont_model} 机器人控制器功能手册. - 工业通信](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/zh-${cont_model}/README?cont_model=${cont_model})"
