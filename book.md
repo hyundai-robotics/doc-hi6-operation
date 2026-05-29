@@ -6705,75 +6705,7 @@ If the purchase selection and the license key do not match, an error will occur 
 [__SOURCE](7-system/3-control-parameter/11-industrial-comm/README.md)
 # 7.3.11 Industrial Communication \(fieldbus\)
 
-You can perform the setting of the industrial communication \(fieldbus\) to use it.
-
-1.	Depending on the type of the communication to use, you need to install a PCI card and then set the slot number \(1 to 4\) by referring to the "${cont_model} Controller Maintenance Manual".
-
-2.	Set the industrial communication firmware by referring to "[7.3.11.1 Firmware Setting](1-firmware-set.md)".
-
-3.	Turn off the power of the controller, and then turn it back on.
-
-4.	If necessary, carry out additional setting by referring to "[7.3.11.2 Industrial Communication Setting](2-industrial-comm-set.md)".
-
-
-
-
-
-
-[__SOURCE](7-system/3-control-parameter/11-industrial-comm/1-pci-slot-set.md)
-# 7.3.11.1 PCI Slot Settings
-
-You can set the PCI slot to be used for the industrial communication.
-
-1.	Touch the `[2: Control Parameter  - 11: Industrial Communication  - 1: PCI Slot Settings  - 1 Channel]` menu. Then, the PCI slot setting screen will appear.
-
-2.	Select the desired tab and then set the communication method \(Master / Slave\) and protocol. After that, tap the `[OK]` button.
-
-    ![](../../../_assets/tp630/ctrl-industrial-channel_eng.png)
-
-
-
-{% hint style="warning" %}
-When the PCI slot setting is completed, the CONFIG files set in the slot \#1 - \#4 will be all deleted. When you want to change the communication PCI slot in the middle of using it, you should back up the existing CONFIG setting separately and use it after restoring it. 
-{% endhint %}
-
-3.	Turn off the power of the controller, and then turn it back on.
-
-{% hint style="warning" %}
-* When you perform the setting of the PCI slot to use it, the setting value will be applied to the system only after you turn off the power of the controller and then turn it back on.
-{% endhint %}
-
-
-
-
-[__SOURCE](7-system/3-control-parameter/11-industrial-comm/2-industrial-comm-set.md)
-# 7.3.11.2 Industrial Communication Setting
-
-\(The function to be provided later\) If you set the communication method to CC-Link slave, you can set the detailed information for each type of communication inside the controller.
-
-{% hint style="info" %}
-You can set the communication information by using the "Sycon.net" program on the HD Hyundai Robotics internet website (https://www.hd-hyundairobotics.com/en/main).
-{% endhint %}
-
-
-[__SOURCE](7-system/3-control-parameter/11-industrial-comm/3-monitoring.md)
-# 7.3.11.3 Monitoring
-
-You can monitor the setting information and operation status of the firmware and communication the use of which you have set in the industrial communication menu.
-
-1.	Touch `service - 19: Industrial Communication Monitoring` menu. Then the screen for monitoring the industrial communication of each board will appear.
-
-2.	By selecting the desired tab, you can check the detailed information of the firmware, communication devices and communication configuration. 
-
-    ![](../../../_assets/tp630/svc-industrial-mon_eng.png)
-
-<Br>
-
-{% hint style="info" %}
-You can restart the industrial communication of the PCI communication card by using the `[Restart]` button.
-{% endhint %}
-
-
+For details on the industrial communication, refer to the "[${cont_model} Robot Controller Function Manual. - Industrial Communication](https://hrbook-hrc.web.app/#/view/doc-industrial-communication/en-${cont_model}/README?cont_model=${cont_model})"
 [__SOURCE](7-system/4-robot-parameter/README.md)
 # 7.4 Robot Parameters
 
