@@ -81,7 +81,7 @@ Imminent danger: Incompliance may cause the death of or serious injuries to the 
 * Read the contents of the product installation in the manual and follow the instructions when installing the robot product and other devices.
 * If a fatal error occurs in the software, stop using it immediately, and contact our customer support team.
 * If there is a problem with the product, such as failure or damage, stop using it immediately and contact the customer support team for inquiry.
-
+* Operational errors or misoperations while the robot is energized can cause sudden movements of the robot, potentially leading to the operator's body becoming caught or crushed between the robot structure or surrounding equipment, resulting in death or serious injury.
 
 
 ### Warning
@@ -1178,7 +1178,9 @@ Operation refers to the act of instructing the contents of the work to the robot
 
 Manual operation is an operation method of directly teaching and checking the robot at a safe speed.
 
-
+{% hint style="danger" %}
+[DANGER] Unlike normal operation, the teaching mode of manual operation is a high-risk work phase where the operator directly enters the robot’s operating range. Unexpected robot movements during teaching can cause collisions, catching, or crushing accidents, potentially resulting in serious injury or death.
+{% endhint %}
 [__SOURCE](2-operation/1-manual-operation/1-how-to-op.md)
 # 2.1.1 Operation Method
 

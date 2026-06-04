@@ -11,7 +11,7 @@ Imminent danger: Incompliance may cause the death of or serious injuries to the 
 * Read the contents of the product installation in the manual and follow the instructions when installing the robot product and other devices.
 * If a fatal error occurs in the software, stop using it immediately, and contact our customer support team.
 * If there is a problem with the product, such as failure or damage, stop using it immediately and contact the customer support team for inquiry.
-
+* Operational errors or misoperations while the robot is energized can cause sudden movements of the robot, potentially leading to the operator's body becoming caught or crushed between the robot structure or surrounding equipment, resulting in death or serious injury.
 
 
 ### Warning
