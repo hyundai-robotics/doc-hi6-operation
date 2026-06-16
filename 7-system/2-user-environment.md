@@ -14,7 +14,7 @@ You can check and set various user conditions.
   * `[U]`: You can record the position in the user coordinate system.
 * `2: Confirmation in deleting commands` You can set whether to expose the deletion confirmation window when deleting a statement in manual mode.
 
-* `3: Wait\(di/wi\) release`: While in the input signal wait or welding complete signal wait status, you can set whether to force the signal wait status to be deactivated by pressing `[SHIFT]` + [rel.WAIT].
+* `3: Force release of "wait" command`: Sets whether to force release the wait state using the `[SHIFT]` + [rel.WAIT] keys while waiting for a "wait" command.
 * `4: Program strobe signal use`: When selecting an external program by receiving an external digital signal, you can set the time when the external program is to be selected.
 
   * `[Disable]`: Makes it possible to select an external program by reading only the external program selection signal
