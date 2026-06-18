@@ -5231,7 +5231,7 @@ You can check and set various user conditions.
   * `[U]`: You can record the position in the user coordinate system.
 * `2: Confirmation in deleting commands` You can set whether to expose the deletion confirmation window when deleting a statement in manual mode.
 
-* `3: Wait\(di/wi\) release`: While in the input signal wait or welding complete signal wait status, you can set whether to force the signal wait status to be deactivated by pressing `[SHIFT]` + [rel.WAIT].
+* `3: Force release of "wait" command`: Sets whether to force release the wait state using the `[SHIFT]` + [rel.WAIT] keys while waiting for a "wait" command.
 * `4: Program strobe signal use`: When selecting an external program by receiving an external digital signal, you can set the time when the external program is to be selected.
 
   * `[Disable]`: Makes it possible to select an external program by reading only the external program selection signal
@@ -6526,9 +6526,9 @@ For more information, refer to "[${cont_model} Controller Function Manual - NTP 
 # 7.3.9.2.4 Ethernet Communication Settings
 
 Before performing Ethernet communication, you must first create and configure an Ethernet communication object.  
-Up to five Ethernet objects can be created and used, and the current communication status can be monitored in real-time.  
+Up to eight Ethernet objects can be created and used, and the current communication status can be monitored in real-time.  
 
-Currently, this is used to perform Modbus Master operations within HRScript. For detailed information on Modbus communication functions, please refer to the separate "[${cont_model} Controller Functional Manual - Modbus](https://hrbook-hrc.web.app/#/view/doc-modbus/en/README?cont_model=${cont_model})".  
+Currently, it is used to perform communication independently through HRScript or settings. 
 
 ![](../../../../_assets/tp630/image32.png)
 
@@ -6537,11 +6537,11 @@ When the controller boots, it automatically attempts to establish a communicatio
 
 * **Name** 
 
-    The name of the Ethernet communication object. Each name must be set between "enet0" and "enet4".
+    The name of the Ethernet communication object. Each name must be set between "enet0" and "enet7".
 
 * **Protocol** 
 
-    Select the communication protocol.
+    Select the communication protocol. (UDP, TCP client, TCP server)
 
 * **IP Address** 
 
