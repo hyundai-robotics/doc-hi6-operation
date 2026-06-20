@@ -2556,7 +2556,7 @@ job 프로그램의 특정 영역을 삭제하지는 않으면서 임시로 실�
 변수 및 파일 관리 등 프로그램의 각종 서비스 기능 메뉴를 사용할 수 있습니다.
 
 
-[__SOURCE](4-service/1-menu-usage.md)
+[__SOURCE](4-service/1-service-usage.md)
 # 4.1 서비스 메뉴 사용
 
 1.	수동 또는 자동 모드에서 초기 화면 하단의 `[F1: 서비스]` 버튼을 터치하십시오. 프로그램의 각종 서비스 메뉴가 표시됩니다.
@@ -8576,7 +8576,7 @@ ${cont_model} 제어기는 동역학 기반의 제어기이므로 중력 방향�
 ![](../../_assets/tp630/robot_calib_recover.png)
 
 
-[__SOURCE](7-system/7-auto-calibration/7-Addaxis-autotuning.md)
+[__SOURCE](7-system/7-auto-calibration/7-addaxis-autotuning.md)
 # 7.7.7 부가축 자동튜닝
 
 * V60.28-00 버전부터 사용 가능합니다.
