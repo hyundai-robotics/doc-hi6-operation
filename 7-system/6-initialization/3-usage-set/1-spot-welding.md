@@ -4,7 +4,7 @@ If you select the operation usage as spot welding, you can use the commands rela
 
 ![](../../../_assets/tp630/init-usage-spot_eng.png)
 
-1.	Set `[Spot Welding]` as enable. Then, other usages will be handled as disable.
+1.	Set `[Spot Welding]` as enable. 
 
 2.	Click the `[User Key Initialization]` drop-down menu and the `[Input/Output Assign Initialization]` drop-down menu, respectively, and select spot.
 

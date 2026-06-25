@@ -5347,9 +5347,9 @@ Delays may occur in the process of activating/deactivating the power-saving func
     - Uses predefined acceleration, deceleration, and maximum speed settings.
     - Operates in standard motion profile mode
 
-  - Dynamic Motion Ratio (`0 ~ 100`)
+  - Dynamic Motion Ratio (`0 ~ 1.0`)
     - `0`: Disabled (static motion)
-    - `1 ~ 100`: Adjusts the intensity of dynamic motion
+    - `1 ~ 1.0`: Adjusts the intensity of dynamic motion
     - Higher values apply more aggressive optimization for speed and acceleration
 
 
@@ -8034,7 +8034,7 @@ If you select the operation usage as spot welding, you can use the commands rela
 
 ![](../../../_assets/tp630/init-usage-spot_eng.png)
 
-1.	Set `[Spot Welding]` as enable. Then, other usages will be handled as disable.
+1.	Set `[Spot Welding]` as enable. 
 
 2.	Click the `[User Key Initialization]` drop-down menu and the `[Input/Output Assign Initialization]` drop-down menu, respectively, and select spot.
 
@@ -8660,7 +8660,9 @@ In general, the base axis is used to move the robot to the operation position. I
 {% endhint %}
 
 {% hint style="warning" %}
-You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. Do not set the axis configuration as any for the other base axes except for the first base axis.
+* You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. 
+* Do not set the axis configuration as any for the other base axes except for the first base axis.
+* Base axis calibration is available only when the base axis configuration is any.
 {% endhint %}
 
 

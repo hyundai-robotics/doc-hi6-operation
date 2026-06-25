@@ -17,6 +17,8 @@
 {% endhint %}
 
 {% hint style="warning" %}
-You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. Do not set the axis configuration as any for the other base axes except for the first base axis.
+* You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. 
+* Do not set the axis configuration as any for the other base axes except for the first base axis.
+* Base axis calibration is available only when the base axis configuration is any.
 {% endhint %}
 

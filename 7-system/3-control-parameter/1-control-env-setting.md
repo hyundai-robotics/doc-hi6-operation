@@ -57,9 +57,9 @@ Delays may occur in the process of activating/deactivating the power-saving func
     - Uses predefined acceleration, deceleration, and maximum speed settings.
     - Operates in standard motion profile mode
 
-  - Dynamic Motion Ratio (`0 ~ 100`)
+  - Dynamic Motion Ratio (`0 ~ 1.0`)
     - `0`: Disabled (static motion)
-    - `1 ~ 100`: Adjusts the intensity of dynamic motion
+    - `1 ~ 1.0`: Adjusts the intensity of dynamic motion
     - Higher values apply more aggressive optimization for speed and acceleration
 
 
