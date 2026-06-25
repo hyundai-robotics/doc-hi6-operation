@@ -12,7 +12,8 @@ After determining the axis origin and tool length through automatic calibration,
 
 3.	 After checking the program number of the predetermined reference point, the step number, and the tool number, touch the `[Execute]` button.
 
-    ![](../_assets/tp630/tool-data-auto-calib2_eng.png)
+     ![](../_assets/tp630/tool-data-auto-calib2_eng.png)
+
 
 {% hint style="info" %}
 For details on this function, refer to "[7.4.1 Tool Data](../7-system/4-robot-parameter/1-tool-data/README.md)."
