@@ -13,12 +13,13 @@ ${cont_model} 티치 펜던트 화면 우측의 메뉴 버튼을 이용하여 �
 3. 선언과 초기화된 변수를 실행한 후 마침표(.)가 찍혔는지 확인합니다.
 4. `[명령입력]` 버튼을 터치한 후 `motion`을 선택하고 move 명령문을 입력하십시오.
 
-![](../../../_assets/tp630/fbt-cmd-input-s.png)
-![](../../../_assets/tp630/fbt-motion.png)
+    ![](../../../_assets/tp630/fbt-cmd-input-s.png)
+
+    ![](../../../_assets/tp630/fbt-motion.png)
 
 5. move 명령어가 선택된 상태로 `속성` 버튼을 터치한 후 현재의 로봇 포즈 속성을 설정하고 `[확인]` 버튼 터치하십시오.
 
-![](../../../_assets/tp630/prg-step-pose.png)
+    ![](../../../_assets/tp630/prg-step-pose.png)
 
 <br>
 

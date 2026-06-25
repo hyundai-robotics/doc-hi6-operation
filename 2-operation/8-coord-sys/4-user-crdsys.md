@@ -21,17 +21,19 @@
 
 2.	초기 화면 우 하단의 `조건설정` 버튼을 터치한 후 \[9: 사용자 좌표계 지정\] 옵션에 좌표계를 설정하십시오. 직교 좌표계 대신 사용자 좌표계를 선택할 수 있습니다.
 
-![](../../_assets/tp630/fbt-condset.png)
-![](../../_assets/tp630/cond-set-usercrd.png)
+    ![](../../_assets/tp630/fbt-condset.png)
+
+    ![](../../_assets/tp630/cond-set-usercrd.png)
 
 3.	티치펜던트의 \[좌표계\] 키나 상태 표시줄의 좌표계 버튼을 반복해서 눌러, 사용자 좌표계를 선택하십시오.
 
-![](../../_assets/tp630/k-crdsys.png)
-![](../../_assets/tp630/sbar-crdsys.png)
+	![](../../_assets/tp630/k-crdsys.png)
+
+	![](../../_assets/tp630/sbar-crdsys.png)
 
 4.	조그키로 로봇을 동작하십시오. 로봇이 다음과 같이 움직입니다.
 
-![](../../_assets/image_103.png)
+	![](../../_assets/image_103.png)
 
 {% hint style="info" %}
 조그키에 대한 로봇의 진행 방향에 대한 자세한 내용은 "[2.8.1 조그키](1-jog-key.md)"를 참조하십시오.

@@ -15,8 +15,9 @@
 
 2.	`[SHIFT]`+`[프로그램]` 키를 누른 후 프로그램 번호를 입력하고 `[ENTER]` 키를 누르십시오.
 
-![](../_assets/tp630/k-prog-step.png)
-![](../_assets/tp630/dlg-prog-sel.png)
+    ![](../_assets/tp630/k-prog-step.png)
+
+    ![](../_assets/tp630/dlg-prog-sel.png)
 
 3.	티치 펜던트의 `[모터온]` 키를 누르십시오. 모터 램프가 깜빡입니다.
 
@@ -28,9 +29,7 @@
 
 6.	티치 펜던트의 `[기록]` 키를 눌러 스텝을 기록하십시오.
 
-
-
-![](../_assets/tp630/k-record.png)
+    ![](../_assets/tp630/k-record.png)
 
 7.	로봇의 자세를 바꾸고 5 ~ 6번 단계를 4번 이상 반복하십시오.
 
@@ -38,11 +37,11 @@
 
 8.	`[시스템] - 6: 자동 캘리브레이션 - 1: 축 원점 및 툴 길이 최적화` 메뉴를 선택하십시오.
 
-![](../_assets/tp630/menu-axis-origin-tool-opt.png)
+    ![](../_assets/tp630/menu-axis-origin-tool-opt.png)
 
 9.	자동 캘리브레이션용으로 작성한 프로그램 번호, 툴 번호, 스텝 위치 오차 허용 범위를 설정한 후 \[실행\] 버튼을 터치하십시오. 선택된 축 원점 및 툴 길이가 설정됩니다.
 
-![](../_assets/tp630/axis-origin-tool-opt.png)
+    ![](../_assets/tp630/axis-origin-tool-opt.png)
 
 * 여러 개의 툴을 사용할 때, 두 번째 툴의 자동 캘리브레이션부터는 \[최적화 선택\] 옵션을 툴 길이로 선택하여 실행하십시오. 축 원점 및 툴 길이를 선택하면 먼저 설정한 툴의 정보가 맞지 않게 됩니다.
 

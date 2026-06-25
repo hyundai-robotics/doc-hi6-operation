@@ -4,21 +4,21 @@
 
 * 경고나 에러가 발생한 시점에 안내 표시줄에 코드 번호와 이름을 포함한 메시지가 뜹니다.
 
-![](../../_assets/tp630/wg-alarm.png)
+  ![](../../_assets/tp630/wg-alarm.png)
 
 * 티치펜던트 하단 기능버튼 줄에서 [이력] 버튼을 터치하십시오. 에러 및 경고 이력이 새 창으로 나타납니다.
   
   * 에러 및 경고 이력은 시간순으로 정렬되어 나타납니다. 위에 표시된 이력일 수록 최근에 발생한 에러입니다. 가장 최근에 발생한 문제는 노란 바탕색으로 하이라이트됩니다.
 
-![](../../_assets/tp630/fbt-log.png)
+  ![](../../_assets/tp630/fbt-log.png)
 
-![](../../_assets/tp630/wg-alarm-log.png)
+  ![](../../_assets/tp630/wg-alarm-log.png)
 
 * ${cont_model} 티치 펜던트 화면 좌측의 \[도움말\] 버튼을 터치하십시오. 에러 코드와 알림 메시지, 문제의 원인과 조치 방법을 확인할 수 있습니다.
 
-![](../../_assets/tp630/lbt-help.png)
+  ![](../../_assets/tp630/lbt-help.png)
 
-![](../../_assets/tp630/help-alarm.png)
+  ![](../../_assets/tp630/help-alarm.png)
 
 
 
