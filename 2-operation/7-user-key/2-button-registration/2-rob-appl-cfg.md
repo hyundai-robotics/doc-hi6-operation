@@ -4,7 +4,7 @@ Touch the `[user key]` button on the R button bar of the ${cont_model} teach pen
 
 
 
-![](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
+![Figure 25 User key button allocation](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
 
 Press the `ctrl` key and press the `user-key` button to open a configuraiton screen where you can adjust the layout of the user buttons.
 

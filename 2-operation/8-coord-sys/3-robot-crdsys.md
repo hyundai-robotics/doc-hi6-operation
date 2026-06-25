@@ -27,13 +27,13 @@
     ![](../../_assets/image_62.png)
 
 {% hint style="info" %}
-* For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)." 
+* For details on the robot's progress direction in relation to the jog keys, refer to "[2.8.1 Jog Keys](1-jog-key.md)." 
 * 
   If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
 
   ![](../../_assets/crd-direction.png) 
 
-Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
+Figure 27 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
 
 * If you put the progress direction of the right index finger in the X direction of the robot coordinate system, while you stand on the back of the robot, the progress direction of the thumb becomes the Z direction, and the progress direction of the middle finger becomes the Y direction.
 * If you put the thumb of the right hand in the direction of the central axis of rotation, the direction of the other folded fingers becomes the + direction of the rotation direction.

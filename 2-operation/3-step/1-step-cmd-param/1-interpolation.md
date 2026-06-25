@@ -8,11 +8,11 @@ Interpolation refers to the interpolated path between steps, and the interpolati
 
 
 
-![Figure 14 Example of the Tooltip Path in P-PTP Interpolation](../../../_assets/image_73.png)
+![Figure 15 Example of the Tooltip Path in P-PTP Interpolation](../../../_assets/image_73.png)
 
 * L-Linear interpolation It moves in a linear line between two steps in Cartesian space. It is used for a case in which a linear path is needed, such as an arc welding section. The movement will take place while the wrist posture changes automatically as follows.
 
-![Figure 15 Example of L-Linear Interpolation](../../../_assets/image_48.png)
+![Figure 16 Example of L-Linear Interpolation](../../../_assets/image_48.png)
 
 During the linear interpolation, under certain conditions, the robot cannot automatically change the wrist posture, and such a condition is called the singular posture.
 

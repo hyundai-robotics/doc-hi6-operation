@@ -13,7 +13,7 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 1.	Set the operation mode to manual mode using the mode switch on the teach pendant.
 
-2.	After touching the `[PROG]` key with `[SHIFT]` in the JOB program window, input the program number, and then touch the `[OK]` button.
+2.	After touching the `[PROG]` key with `[SHIFT]` in the JOB program window, input the program number, and then touch the `[Enter]` button.
 
 
     ![](../_assets/tp630/k-prog-step_eng.png)

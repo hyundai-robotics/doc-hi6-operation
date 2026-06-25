@@ -36,6 +36,6 @@ For details on how to register the user coordinate system, refer to "[7.3.6.1 Us
 	![](../../_assets/tp630/sbar-user-crdsys_eng.png)
 
 {% hint style="info" %}
-For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)." 
+For details on the robot's progress direction in relation to the jog keys, refer to "[2.8.1 Jog Keys](1-jog-key.md)." 
 {% endhint %}
 

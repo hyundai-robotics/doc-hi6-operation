@@ -6,7 +6,7 @@ A path that is newly created within the accuracy range \(0~7\) according to the 
 
 
 
-![Figure 18 Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
+![Figure 19 Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
 
 Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression "Accuracy ≤ min\(P1-P2, P2-P3\) / 2" in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
 

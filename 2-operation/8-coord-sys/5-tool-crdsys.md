@@ -34,6 +34,6 @@
     ![](../../_assets/image_92.png)
 
 {% hint style="info" %}
-For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)."
+For details on the robot's progress direction in relation to the jog keys, refer to "[2.8.1 Jog Keys](1-jog-key.md)."
 {% endhint %}
 
