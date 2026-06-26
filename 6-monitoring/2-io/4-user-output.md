@@ -4,7 +4,7 @@ Touch `[public Output]` in the panel selection window. Then, the public output s
 
 You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
 
-![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
+![Figure 41 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
 
 <table>
   <thead>

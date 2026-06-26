@@ -3138,9 +3138,9 @@ You can change the coordinate system of the step position recorded as a hidden p
 [__SOURCE](4-service/3-program-conversion/5-rec-conversion.md)
 # 4.3.5 Coordinate Shifting
 
-The coordinate shifting function is a function that enables you to create a program without additional teaching even if a workpiece of the same shape, as shown in Image 2, is placed at a different location after a program taught on the workpiece \(Image 1\).
+The coordinate shifting function is a function that enables you to create a program without additional teaching even if a workpiece of the same shape, as shown in Figure 2, is placed at a different location after a program taught on the workpiece \(Figure 1\).
 
-![Left: Figure 1, Right: Fugure 2](../../_assets/image_369.png)
+![Left: Figure 1, Right: Figure 2](../../_assets/image_369.png)
 
 It is required to have three reference points to use the coordinate shifting function. You can create Program A by marking three reference points on the workpiece at the initial position. After moving the position of the workpiece, write Program B using the previously marked three reference points.
 
@@ -3167,9 +3167,9 @@ This function is not allowed during a robot operation. How to use the coordinate
     ![](../../_assets/tp630/prg-coordinate-modi_eng.png)
 
 
-* [Source program] : Existing teaching program number (Program number of [Figure. 1]) 
+* [Source program] : Existing teaching program number (Program number of [Figure 1]) 
 
-* [Target program] : Program number to newly create by executing coordinate conversion (Program number of [Figure. 2])
+* [Target program] : Program number to newly create by executing coordinate conversion (Program number of [Figure 2])
 
 * [previous base program] : Number of a program with 3 standard points (Number of [Program A]) 
  
@@ -3428,7 +3428,7 @@ You can set the date and time of the controller.
 
 Manages the software installed and running on the teach pendant.
 
-For more information, refer to "[${cont_model} Controller Function Manual - Teach Pendant App](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/README)".
+For more information, refer to "[${cont_model} Controller Function Manual - Teach Pendant App](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/en/README?cont_model=${cont_model})".
 
 
 [__SOURCE](4-service/7-tp-option.md)
@@ -3565,6 +3565,8 @@ You can view and remove the system programs (e.g. OPC-UA server) installed on th
 
 You can register comments for IO variables, relays of the built-in PLC, and other general variables. The registered comments are displayed as tooltips in the monitoring panels. (`public input`, `public output`, `fn input`, `fn output`, `global variable`, `memory variable`, `watch` monitoring)
 
+![](../_assets/tp630/data-cmt/data-cmt-di_eng.png)
+
 Additionally, using the features below, the registered comments can be automatically attached onto each statement of the job program.
 
 * [4.3.9 Statement data comment](3-program-conversion/9-stmt-comment.md)
@@ -3587,6 +3589,7 @@ The comments configured on this screen are saved to the `project/DataCmt.txt` fi
 
    5. `etc` displays only items (excluding IO and relays) among various global variables that have registered comments. (Do not register comments for local variables, as their meaning may vary depending on the sub-job.) The data type is displayed according to the variable type.
 
+![](../_assets/tp630/data-cmt/data-cmt-etc_eng.png)
 
 ### Navigation
 
@@ -3758,7 +3761,7 @@ You can check the status of the robot system and various data of the controller.
   The items that can be monitored will be displayed differently depending on the setting of the controller. 
 
 * 
-  For details on how to use the panel stack and window of the work area, refer to "[1.2.3.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area?cont_model=${cont_model})".
+  For details on how to use the panel stack and window of the work area, refer to "[1.2.4.8 Task edit window](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area?cont_model=${cont_model})".
 {% endhint %}
 
 [__SOURCE](6-monitoring/1-basic/README.md)
@@ -3798,7 +3801,7 @@ You can check the history in which the execution log and time stamps of the job 
 
 
 
-![](../../_assets/tp630/pane-history_eng.png)
+![Figure 44 History](../../_assets/tp630/pane-history_eng.png)
 
 [__SOURCE](6-monitoring/2-io/README.md)
 # 6.2 IO, PLC, Communication
@@ -3811,7 +3814,7 @@ In the panel selection window, touch `[System Input]`. Then, the input signal wi
 
 You can check the status of signals related to the robot operation and the status of the input signals preassigned to detect any abnormality that occurs to the robot and the controller.
 
-![](../../_assets/tp630/pane-system-input_eng.png)
+![Figure 37 System Input - ON/OFF,Value, Sequence status](../../_assets/tp630/pane-system-input_eng.png)
 
 
 
@@ -3836,7 +3839,7 @@ You can check the signals related to the robot operation and check the status of
 
 
 
-![](../../_assets/tp630/pane-system-output_eng.png)
+![Figure 39 System Output - ON/OFF,Value, Sequence status](../../_assets/tp630/pane-system-output_eng.png)
 
 * In the ON/OFF status and sequence status, the signals currently being outputted will be displayed in yellow.
 * In the sequence status, only the status of the controller sequence signals will be displayed.
@@ -3877,7 +3880,7 @@ Touch `[public Input]` in the panel selection window. Then, the public input sig
 
 You can check the status of public input signals that are inputted through the CNIN connector of the I/O board in the controller.
 
-![](../../_assets/tp630/pane-public-input_eng.png)
+![Figure 40 Public Input Signal - ON/OFF status (Left) / value (Right)](../../_assets/tp630/pane-public-input_eng.png)
 
 <table>
   <thead>
@@ -3892,9 +3895,9 @@ You can check the status of public input signals that are inputted through the C
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Displays the status of general input signals</p>
+        <p>Displays the status of public input signals</p>
         <ul>
-          <li>General input signals designated as the system&#x2019;s basic specifications
+          <li>Public input signals designated as the system&#x2019;s basic specifications
             or assigned by the user will be displayed <b>in bold</b>.</li>
           <li>The signals currently being inputted will be displayed in yellow.</li>
         </ul>
@@ -3938,7 +3941,7 @@ Touch `[public Output]` in the panel selection window. Then, the public output s
 
 You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
 
-![Figure 40 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
+![Figure 41 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
 
 <table>
   <thead>
@@ -4121,6 +4124,39 @@ Touch `[memory variables]` in the panel selection window.
 Of internal PLC relays, the accessible variables from Robot Language are displayed.
 
 ![](../../_assets/tp630/pane-memory-variables_eng.png) 
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">No.</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c1.png" alt/>
+      </td>
+      <td style="text-align:left"> 
+      <ul>
+          Displays the current values of data memory (mw) and system memory (sw) in hexadecimal, signed decimal, long integer, and floating-point formats.
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <img src="../../_assets/c2.png" alt/>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li>[start addr.]: Select this button and enter the start address in the dialog box to display it on the first line of the screen.</li>
+          <li>[manual setting]: Select the desired address cell on the screen and click this button to enter a new value.</li>
+          <li>[_mw/_sw]: Click this button to toggle between displaying the mw and sw variables.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 [__SOURCE](6-monitoring/2-io/8-EC-device-info.md)
 # 6.2.8 EtherCAT device
 

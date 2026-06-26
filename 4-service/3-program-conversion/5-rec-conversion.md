@@ -1,8 +1,8 @@
 ﻿# 4.3.5 Coordinate Shifting
 
-The coordinate shifting function is a function that enables you to create a program without additional teaching even if a workpiece of the same shape, as shown in Image 2, is placed at a different location after a program taught on the workpiece \(Image 1\).
+The coordinate shifting function is a function that enables you to create a program without additional teaching even if a workpiece of the same shape, as shown in Figure 2, is placed at a different location after a program taught on the workpiece \(Figure 1\).
 
-![Left: Figure 1, Right: Fugure 2](../../_assets/image_369.png)
+![Left: Figure 1, Right: Figure 2](../../_assets/image_369.png)
 
 It is required to have three reference points to use the coordinate shifting function. You can create Program A by marking three reference points on the workpiece at the initial position. After moving the position of the workpiece, write Program B using the previously marked three reference points.
 
@@ -29,9 +29,9 @@ This function is not allowed during a robot operation. How to use the coordinate
     ![](../../_assets/tp630/prg-coordinate-modi_eng.png)
 
 
-* [Source program] : Existing teaching program number (Program number of [Figure. 1]) 
+* [Source program] : Existing teaching program number (Program number of [Figure 1]) 
 
-* [Target program] : Program number to newly create by executing coordinate conversion (Program number of [Figure. 2])
+* [Target program] : Program number to newly create by executing coordinate conversion (Program number of [Figure 2])
 
 * [previous base program] : Number of a program with 3 standard points (Number of [Program A]) 
  

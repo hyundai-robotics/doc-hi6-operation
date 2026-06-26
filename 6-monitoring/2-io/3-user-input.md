@@ -4,7 +4,7 @@ Touch `[public Input]` in the panel selection window. Then, the public input sig
 
 You can check the status of public input signals that are inputted through the CNIN connector of the I/O board in the controller.
 
-![](../../_assets/tp630/pane-public-input_eng.png)
+![Figure 40 Public Input Signal - ON/OFF status (Left) / value (Right)](../../_assets/tp630/pane-public-input_eng.png)
 
 <table>
   <thead>
@@ -19,9 +19,9 @@ You can check the status of public input signals that are inputted through the C
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Displays the status of general input signals</p>
+        <p>Displays the status of public input signals</p>
         <ul>
-          <li>General input signals designated as the system&#x2019;s basic specifications
+          <li>Public input signals designated as the system&#x2019;s basic specifications
             or assigned by the user will be displayed <b>in bold</b>.</li>
           <li>The signals currently being inputted will be displayed in yellow.</li>
         </ul>

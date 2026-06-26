@@ -6,7 +6,7 @@ You can check the signals related to the robot operation and check the status of
 
 
 
-![](../../_assets/tp630/pane-system-output_eng.png)
+![Figure 39 System Output - ON/OFF,Value, Sequence status](../../_assets/tp630/pane-system-output_eng.png)
 
 * In the ON/OFF status and sequence status, the signals currently being outputted will be displayed in yellow.
 * In the sequence status, only the status of the controller sequence signals will be displayed.

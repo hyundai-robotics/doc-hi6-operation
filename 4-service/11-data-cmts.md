@@ -10,6 +10,8 @@
 
 You can register comments for IO variables, relays of the built-in PLC, and other general variables. The registered comments are displayed as tooltips in the monitoring panels. (`public input`, `public output`, `fn input`, `fn output`, `global variable`, `memory variable`, `watch` monitoring)
 
+![](../_assets/tp630/data-cmt/data-cmt-di_eng.png)
+
 Additionally, using the features below, the registered comments can be automatically attached onto each statement of the job program.
 
 * [4.3.9 Statement data comment](3-program-conversion/9-stmt-comment.md)
@@ -32,6 +34,7 @@ The comments configured on this screen are saved to the `project/DataCmt.txt` fi
 
    5. `etc` displays only items (excluding IO and relays) among various global variables that have registered comments. (Do not register comments for local variables, as their meaning may vary depending on the sub-job.) The data type is displayed according to the variable type.
 
+![](../_assets/tp630/data-cmt/data-cmt-etc_eng.png)
 
 ### Navigation
 
