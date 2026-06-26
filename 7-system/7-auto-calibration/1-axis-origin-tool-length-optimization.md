@@ -6,6 +6,10 @@ Prepare two pointed tips. Fix one on the outside and the other on the tool. Then
 
 ![Figure 67 Method of Teaching for the Axis Origin and Tool Length Optimization Function](../../_assets/image_228.png)
 
+{% hint style="info" %}
+* Starting from version V70.02-00, the axis origin optimization function will no longer be supported for general users. If you would like to change the axis origin in later versions, please contact our customer support team to ask an expert or an engineer.
+{% endhint %}
+
 Using the axis origin and tool length optimization function, you can find the optimized tool lengths X, Y, and Z and the optimized origin of the robot H, V, R2, and B axes as well, even when no CAD data is available for them.
 
 {% hint style="warning" %}
@@ -42,9 +46,7 @@ The method to use the axis origin and tool length optimization function is as fo
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed parameter setting information of the additional axis. You can
-          check and set the name, specification, and configuration of the additional
-          axis.</p>
+        <p>Inputs the options for the axis origin and tool length optimization function and displays the optimization results.</p>
         <ul>
           <li><b>[Optimization Selection]</b>: You can select an optimization target.
             <ul>
