@@ -36,11 +36,11 @@ When the robot is externally started up, the timing of reading the program selec
 
 * When the program strobe signal use is set as enable: If the program strobe signal is on while there is an external startup input, the program selection bit will be read, and the read value will be determined as the program number.
 
-![Figure 51 Diagram of the Selection of an External Program When the Program Strobe Signal is Set as &amp;lt;Enable&amp;gt;](../../../_assets/image_438.png)
+![Figure 52 Diagram of the Selection of an External Program When the Program Strobe Signal is Set as \<Enable\>](../../../_assets/image_438.png)
 
 * When the program strobe signal use is set as disable: After there is an external startup input, the program selection bit will be read, and if this value does not change for 90 ms, it will be determined as the program number.
 
-![](../../../_assets/image_465.png)
+![Figure 53 Timing Chart for External Program Selection When the Program Strobe Signal is Set to \<Disable\>](../../../_assets/image_465.png)
 
 
 

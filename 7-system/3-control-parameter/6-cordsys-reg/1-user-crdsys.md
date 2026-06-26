@@ -47,7 +47,7 @@ The method to register the user coordinate system by designating the taught prog
   </thead>
   <tbody>
     <tr>
-      <td style="text-align_assets
+      <td style="text-align_assets">
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Detailed information on the coordinate system selected from the user coordinate
@@ -55,7 +55,7 @@ The method to register the user coordinate system by designating the taught prog
         taught program number, step order and the origin pose based on base axis origin.</td>
     </tr>
     <tr>
-      <td style="text-align_assets
+      <td style="text-align_assets">
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">

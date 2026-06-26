@@ -1407,11 +1407,11 @@ Interpolation refers to the interpolated path between steps, and the interpolati
 
 
 
-![Figure 14 Example of the Tooltip Path in P-PTP Interpolation](../../../_assets/image_73.png)
+![Figure 15 Example of the Tooltip Path in P-PTP Interpolation](../../../_assets/image_73.png)
 
 * L-Linear interpolation It moves in a linear line between two steps in Cartesian space. It is used for a case in which a linear path is needed, such as an arc welding section. The movement will take place while the wrist posture changes automatically as follows.
 
-![Figure 15 Example of L-Linear Interpolation](../../../_assets/image_48.png)
+![Figure 16 Example of L-Linear Interpolation](../../../_assets/image_48.png)
 
 During the linear interpolation, under certain conditions, the robot cannot automatically change the wrist posture, and such a condition is called the singular posture.
 
@@ -1572,7 +1572,7 @@ A path that is newly created within the accuracy range \(0~7\) according to the 
 
 
 
-![Figure 18 Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
+![Figure 19 Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
 
 Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression "Accuracy ≤ min\(P1-P2, P2-P3\) / 2" in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
 
@@ -1659,13 +1659,13 @@ Collaborative robots can be restricted by the soft limit because of their mechan
 * back: The tooltip of the robot is in the - direction on the X-axis of the robot coordinate system, meaning the rear. If this is not designated, the tooltip will be in the + direction, meaning the front. 
 * down: Relationship between the H-axis and V-axis. If this is designated, the result will be the bottom. If this is not designated, the result will be top.
 
-![Figure 22 Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../_assets/image_58_1.png)
+![Figure 23 Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../_assets/image_58_1.png)
 
 
 
 * flip: Flip with the B-axis coordinate being a + value. If this is not designated, the result will be non-flip with a - value. The red arrow in the figure shows the direction of the top of the wrist axis.
 
-![Figure 23 Flip \(Left\) / Non-flip \(Right\) Posture](../../../_assets/image_75.png)
+![Figure 24 Flip \(Left\) / Non-flip \(Right\) Posture](../../../_assets/image_75.png)
 
 * `S (|S|>=180)`: The absolute value of the S-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
 * `B (|B|>=180)`: The absolute value of the B-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
@@ -1957,7 +1957,7 @@ Touch the `[user key]` button on the R button bar of the ${cont_model} teach pen
 
 
 
-![](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
+![Figure 25 User key button allocation](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
 
 Press the `ctrl` key and press the `user-key` button to open a configuraiton screen where you can adjust the layout of the user buttons.
 
@@ -1990,7 +1990,7 @@ The direction of the robot motion depends on the reference coordinate system. Th
 ![](../../_assets/tp630/sbar-joint-crdsys_eng.png)
 
 
-![](../../_assets/tp630/keypad-jog_eng.png)
+![Figure 26 Teach pendant jog keys](../../_assets/tp630/keypad-jog_eng.png)
 
 The motions of J7 and J8 keys are determined by how you set the robot model and additional axes. J7 in a 7-axes robot can be operated by the jog key assigned at R3 axis, the third axis. For other type robots,  you can operate the additional axes with jog keys, according to the mechanism setting.
 
@@ -2076,13 +2076,13 @@ For details on the robot's progress direction in relation to the jog keys, refer
     ![](../../_assets/image_62.png)
 
 {% hint style="info" %}
-* For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)." 
+* For details on the robot's progress direction in relation to the jog keys, refer to "[2.8.1 Jog Keys](1-jog-key.md)." 
 * 
   If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
 
   ![](../../_assets/crd-direction.png) 
 
-Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
+Figure 27 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
 
 * If you put the progress direction of the right index finger in the X direction of the robot coordinate system, while you stand on the back of the robot, the progress direction of the thumb becomes the Z direction, and the progress direction of the middle finger becomes the Y direction.
 * If you put the thumb of the right hand in the direction of the central axis of rotation, the direction of the other folded fingers becomes the + direction of the rotation direction.
@@ -2117,20 +2117,25 @@ Figure 26 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
 For details on how to register the user coordinate system, refer to "[7.3.6.1 User Coordinate System](../../7-system/3-control-parameter/6-cordsys-reg/1-user-crdsys.md)."
 {% endhint %}
 
-2.	Touch the `[Speed Adjustment]` button at the top left of the initial screen and then set the coordinate system in the `[9: Select user coordinate]` option. You can choose the user coordinate system instead of the Cartesian coordinate system.
+2.	Touch the `[cond.set]` button at the bottom left of the initial screen and then set the coordinate system in the `[9: Select user coordinate]` option. You can choose the user coordinate system instead of the Cartesian coordinate system.
 
 	![](../../_assets/tp630/fbt-condset_eng.png)
 
 	![](../../_assets/tp630/cond-set-usercrd_eng.png)
 
-3.	Operate the robot with the jog keys. The robot will move as follows.
+3.	Repeatedly press the `[crd.sys]` key on the teach pendant or the coordinate system button on the status bar to select the user coordinate system.
 
 	![](../../_assets/tp630/k-crdsys_eng.png)
 
 	![](../../_assets/tp630/sbar-user-crdsys_eng.png)
 
+
+4. Operate the robot with the jog keys. The robot will move as follows.	
+
+	![](../../_assets/image_103.png)
+
 {% hint style="info" %}
-For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)." 
+For details on the robot's progress direction in relation to the jog keys, refer to "[2.8.1 Jog Keys](1-jog-key.md)." 
 {% endhint %}
 
 
@@ -2171,7 +2176,7 @@ For details on the robot's progress direction in relation to the jog keys, refer
     ![](../../_assets/image_92.png)
 
 {% hint style="info" %}
-For details on the robot's progress direction in relation to the jog keys, refer to "[2.7.1 Jog Keys](1-jog-key.md)."
+For details on the robot's progress direction in relation to the jog keys, refer to "[2.8.1 Jog Keys](1-jog-key.md)."
 {% endhint %}
 
 
@@ -2247,7 +2252,7 @@ The following shows how to set the optimization of the axis origin and tool leng
 
 1.	Set the operation mode to manual mode using the mode switch on the teach pendant.
 
-2.	After touching the `[PROG]` key with `[SHIFT]` in the JOB program window, input the program number, and then touch the `[OK]` button.
+2.	After touching the `[PROG]` key with `[SHIFT]` in the JOB program window, input the program number, and then touch the `[Enter]` button.
 
 
     ![](../_assets/tp630/k-prog-step_eng.png)
@@ -2303,7 +2308,8 @@ After determining the axis origin and tool length through automatic calibration,
 
 3.	 After checking the program number of the predetermined reference point, the step number, and the tool number, touch the `[Execute]` button.
 
-    ![](../_assets/tp630/tool-data-auto-calib2_eng.png)
+     ![](../_assets/tp630/tool-data-auto-calib2_eng.png)
+
 
 {% hint style="info" %}
 For details on this function, refer to "[7.4.1 Tool Data](../7-system/4-robot-parameter/1-tool-data/README.md)."
@@ -2559,20 +2565,20 @@ The line number can be set to any number between 1 and 9999.
 
 You can easily input variables, expressions, and strings using the soft keyboard on the ${cont_model} teach pendant screen.
 
-1.	Touch the `[![](../../../_assets/tp630/rbt-softkb_eng.png)]` button on the log bar of the ${cont_model} teach pendant screen. Then, a soft keyboard will appear at the bottom of the screen.
+1.	Touch the ![](../../../_assets/tp630/rbt-softkb_eng.png ) button on the log bar of the ${cont_model} teach pendant screen. Then, a soft keyboard will appear at the bottom of the screen.
 
 2.	You can input variables, expressions, and strings in the input area using the soft keyboard. The existing parameter values will be removed, and the inputted texts will be displayed.
 
     ![](../../../_assets/tp630/rbt-softkb-prog_eng.png)
 
 
-* If you touch the `[![](../../../_assets/bt-cursor-left.png)/![](../../../_assets/bt-cursor-right.png)]` button on the left side of the input area, you can move the cursor position, allowing you to insert the text at the desired position.
+* If you touch the ![](../../../_assets/bt-cursor-left.png)/![](../../../_assets/bt-cursor-right.png) button on the left side of the input area, you can move the cursor position, allowing you to insert the text at the desired position.
 
-* You can change the input language by touching the `[![](../../../_assets/bt-lang.png)]` button.
+* You can change the input language by touching the ![](../../../_assets/bt-lang.png) button.
 
 * You can input a capital letter or a symbol by touching the key while pressing the `[SHIFT]` key on the teach pendant.
 
-* You can move the keyboard to the top of the screen by touching the `[![](../../../_assets/tp630/bt-dock-softkb_eng.png)]` button.
+* You can move the keyboard to the top of the screen by touching the ![](../../../_assets/tp630/bt-dock-softkb_eng.png) button.
 
 3.	When you have finished editing the text, you can hide the soft keyboard by pressing the `[ENTER]` key.
 
@@ -5394,7 +5400,7 @@ You can set the logic and name for a general input signal.
 
 You can set the logic, pulse, and name for a general input signal.
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 1: Output Signal Attribute` menu. 
+1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 2: Output Signal Attribute` menu. 
 
 2.	Check and set the general input signal list, and then touch the `[OK]` button.
 
@@ -5507,11 +5513,11 @@ When the robot is externally started up, the timing of reading the program selec
 
 * When the program strobe signal use is set as enable: If the program strobe signal is on while there is an external startup input, the program selection bit will be read, and the read value will be determined as the program number.
 
-![Figure 51 Diagram of the Selection of an External Program When the Program Strobe Signal is Set as &amp;lt;Enable&amp;gt;](../../../_assets/image_438.png)
+![Figure 52 Diagram of the Selection of an External Program When the Program Strobe Signal is Set as \<Enable\>](../../../_assets/image_438.png)
 
 * When the program strobe signal use is set as disable: After there is an external startup input, the program selection bit will be read, and if this value does not change for 90 ms, it will be determined as the program number.
 
-![](../../../_assets/image_465.png)
+![Figure 53 Timing Chart for External Program Selection When the Program Strobe Signal is Set to \<Disable\>](../../../_assets/image_465.png)
 
 
 
@@ -6112,7 +6118,7 @@ It is mapped as shown in the table below.
 
 You can open the fn input / output monitoring panel to view or manually output the current value of the dio or xy relay for each fn object. See the link below for more information.
 
-[6.8 fn input, fn output](../../../6-monitoring/2-io/5-fn-io.md)
+[6.2.5 fn input, fn output](../../../6-monitoring/2-io/5-fn-io.md)
 
 [__SOURCE](7-system/3-control-parameter/3-serial-port.md)
 # 7.3.3 Serial Port
@@ -6312,7 +6318,7 @@ The method to register the user coordinate system by designating the taught prog
   </thead>
   <tbody>
     <tr>
-      <td style="text-align_assets
+      <td style="text-align_assets">
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">Detailed information on the coordinate system selected from the user coordinate
@@ -6320,7 +6326,7 @@ The method to register the user coordinate system by designating the taught prog
         taught program number, step order and the origin pose based on base axis origin.</td>
     </tr>
     <tr>
-      <td style="text-align_assets
+      <td style="text-align_assets">
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
@@ -7969,19 +7975,13 @@ Some items in the `[Initialize]` menu will be supported only when a specific typ
 
 {% endhint %}
 
-3.	After touching the `[Favorites]` button at the bottom right of the ${cont_model} teach pendant screen, input 314 in the input area of the favorites window, and then touch the `[OK]` button.
+3.	Enter Engineer Mode. For detailed settings, please refer to "[8.12 Engineer Mode](../../8-r-code/12-r314.md)".
 
-    ![](../../_assets/tp630/pop-rcode-314-2_eng.png)
-
-{% hint style="warning" %}
-* In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
-* Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
-{% endhint %}
 
 4.	Touch the `[system]` button  - `[3: Robot Parameter  - 4: Encoder Offset]` menu.
 
 
-5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.
+5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.For detailed information, please refer to "[7.4.4 Encoder Offset](../../7-system/4-robot-parameter/4-encoder-offset/README.md)".
 
     ![](../../_assets/tp630/robot-encoder-offset__eng.png)
 
@@ -8007,7 +8007,7 @@ Some items in the `[Initialize]` menu will be supported only when a specific typ
   For initialization of a collaborative root, refer to the collaborative robot safety functions manual.
 
 * 
-  When the system is initialized, all data and programs, including control parameter files and machine parameter files, will be deleted. If you back up your data before initializing the system, it can be restored and used when necessary.
+  When the system is initialized, all data and programs, including control parameter files and machine parameter files, will be deleted. If you back up your data before initializing the system, it can be restored and used when necessary.For detailed information on data backup and restore, please refer to ["4.2.5 Data Backup"](../../4-service/2-file-manager/5-data-backup.md) and ["4.2.6 Data Restore"](../../4-service/2-file-manager/6-data-restore.md).
 {% endhint %}
 
 

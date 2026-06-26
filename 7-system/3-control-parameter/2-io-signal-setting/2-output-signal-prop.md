@@ -2,7 +2,7 @@
 
 You can set the logic, pulse, and name for a general input signal.
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 1: Output Signal Attribute` menu. 
+1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 2: Output Signal Attribute` menu. 
 
 2.	Check and set the general input signal list, and then touch the `[OK]` button.
 

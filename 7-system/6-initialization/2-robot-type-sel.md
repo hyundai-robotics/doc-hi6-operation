@@ -25,19 +25,13 @@
 
 {% endhint %}
 
-3.	After touching the `[Favorites]` button at the bottom right of the ${cont_model} teach pendant screen, input 314 in the input area of the favorites window, and then touch the `[OK]` button.
+3.	Enter Engineer Mode. For detailed settings, please refer to "[8.12 Engineer Mode](../../8-r-code/12-r314.md)".
 
-    ![](../../_assets/tp630/pop-rcode-314-2_eng.png)
-
-{% hint style="warning" %}
-* In Engineer Mode, the Engineer Mode icon \(![](../../_assets/eng-mode.png)\) will blink on the status bar.
-* Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
-{% endhint %}
 
 4.	Touch the `[system]` button  - `[3: Robot Parameter  - 4: Encoder Offset]` menu.
 
 
-5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.
+5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.For detailed information, please refer to "[7.4.4 Encoder Offset](../../7-system/4-robot-parameter/4-encoder-offset/README.md)".
 
     ![](../../_assets/tp630/robot-encoder-offset__eng.png)
 
@@ -63,7 +57,7 @@
   For initialization of a collaborative root, refer to the collaborative robot safety functions manual.
 
 * 
-  When the system is initialized, all data and programs, including control parameter files and machine parameter files, will be deleted. If you back up your data before initializing the system, it can be restored and used when necessary.
+  When the system is initialized, all data and programs, including control parameter files and machine parameter files, will be deleted. If you back up your data before initializing the system, it can be restored and used when necessary.For detailed information on data backup and restore, please refer to ["4.2.5 Data Backup"](../../4-service/2-file-manager/5-data-backup.md) and ["4.2.6 Data Restore"](../../4-service/2-file-manager/6-data-restore.md).
 {% endhint %}
 
 
