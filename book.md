@@ -2951,11 +2951,11 @@ V60.26-00 부터 지원됩니다.
 
 좌표 변환 기능은 작업물(이미지 1)에 프로그램을 티칭한 이후에 이미지 2와 같이 동일한 모양의 작업물이 다른 위치에 있을 경우에도 별도의 티칭 없이 프로그램을 작성할 수 있게 해주는 기능입니다.
  
-   ![](../../_assets/rec-conv1.png)
+   ![좌: 이미지 1, 우: 이미지 2](../../_assets/rec-conv1.png)
 
 좌표 변환 기능을 사용하기 위해서는 3개의 기준점이 필요합니다. 초기 위치에서 작업물에 3개의 기준점을 표시하여 프로그램A를 작성합니다. 작업물의 위치를 이동한 후 미리 표시해 둔 3개의 기준점을 프로그램 B로 작성합니다.
  
-   ![](../../_assets/rec-conv2.png)
+   ![좌: 프로그램 A, 우: 프로그램 B](../../_assets/rec-conv2.png)
 
 
 {% hint style="warning" %}
@@ -3270,7 +3270,7 @@ V60.26-00 부터 지원됩니다.
 
 티치 펜던트에 설치되어 실행되는 소프트웨어를 관리합니다.
 
-자세한 내용은 "[${cont_model} 로봇제어기 기능설명서 - Teach Pendant 앱(App)](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/ko/README)"을 참조하십시오.
+자세한 내용은 "[${cont_model} 로봇제어기 기능설명서 - Teach Pendant 앱(App)](https://hrbook-hrc.web.app/#/view/doc-hi6-tp-app/ko/README?cont_model=${cont_model})"을 참조하십시오.
 
 
 [__SOURCE](4-service/7-tp-option.md)
@@ -3574,7 +3574,7 @@ IO변수, 내장 PLC의 각 릴레이, 기타 일반 변수에 대해 주석을 
 {% hint style="info" %}
 * 패널 선택창에 모니터링 가능한 모든 항목이 나타납니다.
 * 모니터링 가능한 항목은 제어기 설정에 따라 다르게 나타납니다.
-* 작업 영역의 패널 스택과 창의 사용 방법에 대한 자세한 내용은 "[1.2.3.8 작업 편집창](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area?cont_model=${cont_model})"을 참조하십시오.
+* 작업 영역의 패널 스택과 창의 사용 방법에 대한 자세한 내용은 "[1.2.4.8 작업 편집창](../1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/8-work-area?cont_model=${cont_model})"을 참조하십시오.
 {% endhint %}
 [__SOURCE](6-monitoring/1-basic/README.md)
 # 6.1 기본
@@ -3745,7 +3745,7 @@ IO변수, 내장 PLC의 각 릴레이, 기타 일반 변수에 대해 주석을 
 
 4. 선택한 신호의 출력 상태를 확인하십시오. 선택한 신호가 출력 상태로 전환되어 신호창에 노란색으로 표시됩니다.
 
-
+![](../../_assets/tp630/pane-system-output2.png)
 
 
 [__SOURCE](6-monitoring/2-io/3-user-input.md)
