@@ -2244,6 +2244,11 @@ You can make it possible for the axis integer and tool length to be automaticall
 * You can make it possible for the distance to the tooltip, which is difficult to measure in 3D, to be automatically set. The parameters to be calibrated are the axis origins of the H, V, R2, and B axes and the tool length in the X, Y, and Z directions.
 * You can perform "optimization of axis origin and tool length" and of "tool length."
 
+{% hint style="info" %}
+* Starting from version V70.02-00, the axis origin optimization function will no longer be supported for general users. If you would like to change the axis origin in later versions, please contact our customer support team to ask an expert or an engineer.
+{% endhint %}
+
+
 {% hint style="warning" %}
 You should optimize the "axis origin and tool length" before teaching the robot program. If the "axis origin and tool length" is optimized while a robot program has been created already, the position in the existing program may change.
 {% endhint %}
