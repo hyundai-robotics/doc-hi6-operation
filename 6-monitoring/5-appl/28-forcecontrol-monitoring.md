@@ -1,17 +1,17 @@
-﻿# 6.5.28 force control monitoring
+﻿# 6.5.28 力控制监控
  
 ![](../../_assets/tp630/force_monitoring.png)
 
-#### Description 
-* In case of force control, this monitoring data show estimated [external force] 
+#### 描述 
+* 在力控制的情况下，此监控数据显示估计的 [外部力量] 
  
-#### Parameters 
+#### 参数 
 
- - [cartesian] : external force or torque in cartesian space
-    - in case of fctrl function : robot coordinate
-    - in case of softxyz function : robot coordinate
-    - in case of softjoint function : not shown 
- - [joint] : external torque in joint space    
-    - in case of fctrl function : not shown
-    - in case of softxyz function : not shown
-    - in case of softjoint function : joint coordinate 
+ - [cartesian] : 笛卡尔空间中的外部力量或扭矩
+    - 在 fctrl 函数的情况下 : 机器人坐标
+    - 在 softxyz 函数的情况下 : 机器人坐标
+    - 在 softjoint 函数的情况下 : 不显示 
+ - [joint] : 关节空间中的外部扭矩    
+    - 在 fctrl 函数的情况下 : 不显示
+    - 在 softxyz 函数的情况下 : 不显示
+    - 在 softjoint 函数的情况下 : 关节坐标 

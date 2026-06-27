@@ -1,21 +1,19 @@
-﻿# 2.3.1 Step Statement Parameters
+# 2.3.1 步骤语句参数
 
-The step statement parameters are the movement conditions required for the step movement of the robot, such as the robot position, interpolation, speed, accuracy, and tool number of the robot, in addition to move, a movement command.
+步骤语句参数是机器人步骤移动所需的运动条件，包括机器人位置、插值、速度、精度和工具编码号，以及移动指令。
 
-Parameters of the step statement are divided into default parameters and optional parameters. The default parameters are the essential ones for a step, and the optional parameters are the ones that can be added when necessary. 
+步骤语句的参数分为默认参数和可选参数。默认参数是步骤所必需的基本参数，而可选参数是可以根据需要添加的参数。
 
-The step statement is configured as follows.
-
-
+步骤语句的配置如下。
 
 ![](../../../_assets/image_77.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Parameter</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">参数</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -23,71 +21,66 @@ The step statement is configured as follows.
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Interpolation</td>
+      <td style="text-align:left">插值</td>
       <td style="text-align:left">
-        <p>Interpolated path between steps</p>
-        <p>P (Joint interpolation), L (Linear interpolation), C (Circular interpolation),
-          SP (Stationary tool interpolation off), SL (Stationary tool linear interpolation),
-          SC (Stationary tool circular interpolation)</p>
+        <p>步骤之间的插值路径</p>
+        <p>P（关节插值）、L（线性插值）、C（圆形插值）、 
+          SP（ stationary tool interpolation off），SL（静止工具线性插值），
+          SC（静止工具圆形插值）</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c2.png" alt/>
       </td>
-      <td style="text-align:left">Pose</td>
+      <td style="text-align:left">姿态</td>
       <td style="text-align:left">
-        <p>A parameter to record a position. This parameter may be omitted, and a
-          pose may be designated after the statement (hidden pose).</p>
-        <p>Target pose (X, Y, Z, Rx, Ry, Rz, Cfg) {Coordinate system} + Shift (X,
-          Y, Z, Rx, Ry, Rz) {Coordinate system}</p>
+        <p>用于记录位置的参数。此参数可以省略，并且可以在语句后指定一个姿态（隐藏姿态）。</p>
+        <p>目标姿态（X，Y，Z，Rx，Ry，Rz，Cfg）{坐标系统} + 偏移（X，
+          Y，Z，Rx，Ry，Rz）{坐标系统}</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c3.png" alt/>
       </td>
-      <td style="text-align:left">Speed</td>
-      <td style="text-align:left">Operation speed of the robot (Unit: mm/sec, cm/min, %, sec)</td>
+      <td style="text-align:left">速度</td>
+      <td style="text-align:left">机器人操作速度 （单位：mm/sec, cm/min, %, sec）</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c4.png" alt/>
       </td>
-      <td style="text-align:left">Accuracy</td>
-      <td style="text-align:left">A value of the allowable error (0&#x2013;7) between the current position
-        and the recorded position that occurs when the robot moves to the target
-        step</td>
+      <td style="text-align:left">精度</td>
+      <td style="text-align:left">当前位与记录位之间的误差允许值（0–7），当机器人移动到目标步骤时发生</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c5.png" alt/>
       </td>
-      <td style="text-align:left">Tool number</td>
-      <td style="text-align:left">Number of the tool in use (0&#x2013;31)</td>
+      <td style="text-align:left">工具编号</td>
+      <td style="text-align:left">正在使用的工具编号（0–31）</td>
     </tr>
-        <tr>
+    <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c6.png" alt/>
       </td>
-      <td style="text-align:left">Assignment statement</td>
-      <td style="text-align:left">At the start of the move, each assignment statement is executed sequentially from left to right</td>
+      <td style="text-align:left">赋值语句</td>
+      <td style="text-align:left">在移动开始时，每个赋值语句从左到右依次执行</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c7.png" alt/>
       </td>
-      <td style="text-align:left">Stop condition</td>
-      <td style="text-align:left">A condition for the robot to stop moving to execute the next command (step
-        or function)</td>
+      <td style="text-align:left">停止条件</td>
+      <td style="text-align:left">机器人停止移动以执行下一个命令（步骤或功能）的条件</td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../../_assets/c8.png" alt/>
       </td>
-      <td style="text-align:left">Comment</td>
-      <td style="text-align:left">Description of the step</td>
+      <td style="text-align:left">注释</td>
+      <td style="text-align:left">步骤的描述</td>
     </tr>
   </tbody>
 </table>
-

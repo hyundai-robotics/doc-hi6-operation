@@ -1,77 +1,76 @@
-﻿<script id="page-config" type="application/json">
+<script id="page-config" type="application/json">
 {
 	"permittedStrs": ["Hi6", "Hi7"]
 }
 </script>
 
-# 4.11 Data Comments
+# 4.11 数据注释
 
-(This feature is supported from version V70.02-00 and later.)
+(此功能支持从 V70.02-00 版本及更高版本。)
 
-You can register comments for IO variables, relays of the built-in PLC, and other general variables. The registered comments are displayed as tooltips in the monitoring panels. (`public input`, `public output`, `fn input`, `fn output`, `global variable`, `memory variable`, `watch` monitoring)
+您可以为 IO 变量、内置 PLC 的继电器和其他一般变量注册注释。注册的注释将在监控面板中显示为工具提示。 (`公共输入 (public input)`, `公共输出 (public output)`, `fn 输入 (fn input)`, `fn 输出 (fn output)`, `全局变量 (global variable)`, `内存变量 (memory variable)`, `多种数据 (watch)` 监控)
 
 ![](../_assets/tp630/data-cmt/data-cmt-di_eng.png)
 
-Additionally, using the features below, the registered comments can be automatically attached onto each statement of the job program.
+此外，通过使用以下功能，注册的注释可以自动附加到作业程序的每个语句上。
 
-* [4.3.9 Statement data comment](3-program-conversion/9-stmt-comment.md)
-* [3.2.4.5 Block Editing Mode](../3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md) - `[auto comment]` button.
+* [4.3.9 语句数据注释](3-program-conversion/9-stmt-comment.md)
+* [3.2.4.5 块编辑模式](../3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md) - `[auto comment]` 按钮。
 
-The comments configured on this screen are saved to the `project/DataCmt.txt` file in the main module.
+在此屏幕上配置的注释将保存到 `project/DataCmt.txt` 文件中。
 
 ![](../_assets/tp630/data-cmt/data-cmt.png)
 
 
-### Data Comments Screen
+### 数据注释屏幕
 
-   1. Select `[F1: Service] - 4: Data comment` to open the screen.
+   1. 选择 `[F1: 服务] - 4: 数据注释 ([F1: Service] - 4: Data comment)` 打开屏幕。
 
-   2. Use the filter combo boxes at the top to select the desired data category and type.
+   2. 使用顶部的过滤组合框选择所需的数据类别和类型。
 
-   3. The selected data will be displayed in a table. You can view the name, comment, and current value of each item.
+   3. 所选数据将以表格形式显示。您可以查看每个项目的名称、注释和当前值。
 
-   4. For `fb.dio`, `fn.dio`, and `relay` objects, all indices are displayed. Indices with registered comments will show the comments, while those without will have an empty comment field.
+   4. 对于 `fb.dio`、`fn.dio` 和 `relay` 对象，所有索引都会显示。具有注册注释的索引将显示注释，而没有注册的索引将有一个空的注释字段。
 
-   5. `etc` displays only items (excluding IO and relays) among various global variables that have registered comments. (Do not register comments for local variables, as their meaning may vary depending on the sub-job.) The data type is displayed according to the variable type.
+   5. `etc` 仅显示各种全局变量中具有注册注释的项目（排除 IO 和继电器）。(不要为局部变量注册注释，因为它们的含义可能因子作业而异。) 数据类型根据变量类型显示。
 
 ![](../_assets/tp630/data-cmt/data-cmt-etc_eng.png)
 
-### Navigation
+### 导航
 
-   1. You can move between items by pressing the `Up`/`Down` arrow keys. Press them while holding the `Ctrl` key to move faster.
+   1. 您可以通过按 `上 (Up)`/`下 (Down)` 箭头键在项目之间移动。按住 `Ctrl` 键时按下可以更快地移动。
 
-   2. Alternatively, you can jump directly to a specific index by entering the number in the `Name` column. (Note: This is not available for `etc` objects.)
+   2. 或者，您可以直接在 `名称 (Name)` 列中输入数字以跳转到特定索引。(注意：此功能不适用于 `etc` 对象。)
 
-   3. A maximum of 1,000 items can be displayed at once. For types with a larger maximum index (such as `M`-Relays), you cannot view them all on one screen. You must navigate through pages using the method described in above 2.
+   3. 最多可以同时显示 1,000 个项目。对于具有更大最大索引的类型（例如 ` (M)`-继电器），您不能在一个屏幕上查看所有内容。必须使用上述方法通过页面进行导航。
+
+### 编辑、保存和加载
+
+   1. 您可以使用数字键盘或软键盘在 `注释 (Comment)` 列中输入或编辑注释。
+
+   2. 要删除现有的注释，只需删除注释列中的文本。（空字符串被视为未注册。）
+
+   3. 按下 `[F7: 确定] ([F7: OK])` 或 `[SHIFT]+[F7: 应用]` 将把您的编辑应用于主模块并将其保存到 `DataCmt.txt` 文件中。
+
+   4. 按下 `[F1: 初始化] ([F1: 清除])` 将删除所有项目。（更改仅在按下 `[F7: 确定] ([F7: OK])` 后在文件中反映。）
+
+   5. 按下 `[F2: 重新加载] ([F2: Reload])` 重新加载 `DataCmt.txt` 文件并刷新 TP 上的数据注释屏幕。
+
+   6. 按下 `[F3: 排序] ([F3: Sort])` 将不会更改当前屏幕显示，但当您按下 `[F7: 确定] ([F7: OK])` 时，数据将以排序状态保存。如果您在不排序的情况下保存，文件中的原始顺序将被保留。
+
+   7. 值列无法编辑。
 
 
-### Edit, Save, and Load
+### `DataCmt.txt` 文件
 
-   1. You can enter or edit comments in the `Comment` column using the numeric keypad or the soft keyboard.
-
-   2. To remove an existing comment, simply delete the text in the comment column. (Empty strings are treated as unregistered.)
-
-   3. Pressing `[F7: OK]` or `[SHIFT]+[F7: Apply]` will apply your edits to the main module and save them to the `DataCmt.txt` file.
-
-   4. Pressing `[F1: Clear]` will delete all items. (Changes will only be reflected in the file after pressing `[F7: OK]`.)
-
-   5. Pressing `[F2: Reload]` reloads the `DataCmt.txt` file and refreshes the data comment screen on the TP.
-
-   6. Pressing `[F3: Sort]` will not change the current screen display, but the data will be saved in a sorted state when you press `[F7: OK]`. If you save without sorting, the original order in the file will be preserved.
-
-   7. The Value column cannot be edited.
-
-
-### `DataCmt.txt` File
-
-   1. Alternatively, you can edit the `DataCmt.txt` file directly on a PC using a text editor. The image below shows an example of the file opened in `Visual Studio Code`.
+   1. 或者，您可以使用文本编辑器直接在 PC 上编辑 `DataCmt.txt` 文件。下面的图片显示了在 `Visual Studio Code` 中打开该文件的示例。
 
       ![](../_assets/tp630/data-cmt/data-cmt-file.png)
 
-   2. The file is in `tsv (Tab-Separated Values)` format. Each row consists of a Name and Comment pair. The Name and Comment must be separated by at least one tab character.
+   2. 文件采用 `tsv (Tab-Separated Values)` 格式。每行由名称和注释对组成。名称和注释必须用至少一个制表符分隔。
 
-   3. The file format is compatible with the `Import Relay Description` / `Export Relay Description` functions in HRLadder. Therefore, the created file can be used interchangeably between Hi6/Hi7 controllers and HRLadder. (It is also compatible with Hi5a controllers; however, differences in relay or variable names may require adjustment.)
+   3. 文件格式与 HRLadder 中的 `导入继电器描述` / `导出继电器描述` 功能兼容。因此，创建的文件可以在 Hi6/Hi7 控制器和 HRLadder 之间交替使用。(它也与 Hi5a 控制器兼容；不过，继电器或变量名称的差异可能需要进行调整。)
 
-   4. For I/O or relay names, the system recognizes both the Built-in PLC style (UPPERCASE) and the hrscript style (lowercase) as identical. (For example, `FB5.DIB3` and `fb5.dib3` are treated as the same.) For variables, however, the case must match exactly.
+   4. 对于 I/O 或继电器名称，系统将内置 PLC 样式（大写）和 hrscript 样式（小写）视为相同。(例如，`FB5.DIB3` 和 `fb5.dib3` 被视为相同.) 但对于变量，区分大小写必须完全匹配。
 
-   5. If comments contain non-English characters, the file encoding must be saved as UTF8-BOM. (If only English comments are used, both ANSI and UTF8-BOM are acceptable.)
+   5. 如果注释包含非英语字符，则文件编码必须保存为 UTF8-BOM。（如果只使用英语注释，则 ANSI 和 UTF8-BOM 都可以接受。）

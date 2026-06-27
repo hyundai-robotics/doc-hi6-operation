@@ -1,20 +1,18 @@
-﻿# 7.4.3 Soft Limit
+﻿# 7.4.3 软极限
 
-You can adjust the operation range of each axis according to the robot's use environment.
+您可以根据机器人的使用环境调整每个轴的操作范围。
 
-1.	Touch the `3: Robot Parameter  - 3. Soft Limit` menu.
+1. 触摸 `3: Robot Parameter - 3. Soft Limit (3: Robot Parameter  - 3. Soft Limit)` 菜单。
 
-2.	Set the operation range of each axis.
+2. 设置每个轴的操作范围。
 
     ![](../../_assets/tp630/robot-softlimit_eng.png)
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -22,9 +20,7 @@ You can adjust the operation range of each axis according to the robot's use env
       <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">Detailed information on the operation range of each axis. You can set
-        the minimum and maximum operation ranges of an axis and the current axis
-        position.</td>
+      <td style="text-align:left">每个轴的操作范围的详细信息。您可以设置一个轴的最小和最大操作范围以及当前轴位置。</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -32,10 +28,9 @@ You can adjust the operation range of each axis according to the robot's use env
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Cur. Value]: You can set the operation range of each axis based on the
-            current robot position.</li>
-          <li>[Reset All]: You can initialize the operation range of all axes.</li>
+          <li>[OK]: 您可以保存更改。</li>
+          <li>[Cur. Value]: 您可以根据当前机器人位置设置每个轴的操作范围。</li>
+          <li>[Reset All]: 您可以初始化所有轴的操作范围。</li>
         </ul>
       </td>
     </tr>
@@ -43,6 +38,5 @@ You can adjust the operation range of each axis according to the robot's use env
 </table>
 
 {% hint style="info" %}
-At the time of the shipping from the factory, the operation range of each axis of the robot is set to a maximum. 
+出厂时，机器人的每个轴的操作范围设置为最大值。 
 {% endhint %}
-

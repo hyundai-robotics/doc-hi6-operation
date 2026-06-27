@@ -1,20 +1,18 @@
-﻿# 7.3.5 Home Position Registration
+# 7.3.5 主位置注册
 
-By registering the robot's arbitrary posture as the home position, you can allow the home position signal to be outputted to the output signal field when the robot enters this position. The home position can be designated based on the posture of each axis, and up to sixteen postures can be registered and used, and the margin for each axis can be additionally set.
+通过将机器人的任意姿态注册为主位置，您可以允许当机器人进入该位置时主位置信号输出到输出信号字段。主位置可以根据每个轴的姿态指定，最多可以注册和使用十六个姿态，并且每个轴的余量可以另外设置。
 
-1.	Touch the `[2: Control Parameter  - 5: Registration of Home Position]` menu.
+1. 触摸 `[2: 控制参数 - 5: 主位置注册] ([2: 控制参数  - 5: 主位置注册])` 菜单。
 
-2.	Select the home position tab, and then set the use, output signal, axis angle, and range.
+2. 选择主位置选项卡，然后设置使用、输出信号、轴角度和范围。
 
     ![](../../_assets/tp630/ctrl-home-position_eng.png)
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -23,18 +21,14 @@ By registering the robot's arbitrary posture as the home position, you can allow
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information on the home position selected in the tab. You can
-          set the use, output signal, axis angle and range, and description.</p>
+        <p>在选项卡中选择的主位置的详细信息。您可以
+          设置使用、输出信号、轴角度和范围以及描述。</p>
         <ul>
-          <li>[Use]: You can set whether to use.</li>
-          <li>[Output Signal]: You can input the output signal number.</li>
-          <li>[Axis Angle]/[Range]: You can input the axis angle and range of the robot
-            at the home position.</li>
-          <li>If the range is set to 0, home position inspection will not be performed
-            for the axis.</li>
-          <li>The range refers to a range that covers the + direction and - direction
-            of the home point. For example, if the range is set to 0.5, the output
-            range of the home position signal will be 1.</li>
+          <li>[使用]: 您可以设置是否使用。</li>
+          <li>[输出信号]: 您可以输入输出信号编号。</li>
+          <li>[轴角度]/[范围]: 您可以输入机器人在主位置的轴角度和范围。</li>
+          <li>如果范围设置为0，则不会对该轴进行主位置检查。</li>
+          <li>范围指的是覆盖主点的 + 方向和 - 方向的范围。例如，如果范围设置为0.5，则主位置信号的输出范围将为1。</li>
         </ul>
       </td>
     </tr>
@@ -44,14 +38,11 @@ By registering the robot's arbitrary posture as the home position, you can allow
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li><b>[Current Robot Pose]</b>: The axis angle and range of the current robot
-            posture will be automatically inputted.</li>
-          <li><b>[Program/Step]</b>: If you input the program and step number, the axis
-            angle and range of the relevant step will be automatically inputted.</li>
+          <li>`[确定]`: 您可以保存更改。</li>
+          <li><b>[当前机器人姿态]</b>: 当前机器人姿态的轴角度和范围将自动输入。</li>
+          <li><b>[程序/步骤]</b>: 如果您输入程序和步骤编号，相关步骤的轴角度和范围将自动输入。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-

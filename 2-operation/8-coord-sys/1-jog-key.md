@@ -1,30 +1,22 @@
-﻿# 2.8.1 Jog Keys
+# 2.8.1 运动键
 
-It can be used in manual mode. When you are holding the enabling switch, with the motor ON and pressing jog keys, you can move the robot at a low speed.
+可以在手动模式下使用。当您按住启用开关，电机开启并按下运动键时，可以以低速移动机器人。
 
-The direction of the robot motion depends on the reference coordinate system. The joints moves individually in the axis corrdinate system, while they move simultaneously in other corrdinate systems so that the TCP can move in the direction of the selected rectangular coordinate system.
+机器人运动的方向取决于参考坐标系。在轴坐标系中，关节独立移动，而在其他坐标系中，它们会同时移动，从而使TCP可以沿选定的矩形坐标系移动。
 
 ![](../../_assets/tp630/sbar-joint-crdsys_eng.png)
 
+![图26 教练面板运动键](../../_assets/tp630/keypad-jog_eng.png)
 
-![Figure 26 Teach pendant jog keys](../../_assets/tp630/keypad-jog_eng.png)
+J7和J8键的运动由您设置的机器人模型和附加轴决定。在7轴机器人中，J7可以通过分配在R3轴（第三轴）的运动键进行操作。对于其他类型的机器人，您可以根据机制设置，通过运动键操作附加轴。
 
-The motions of J7 and J8 keys are determined by how you set the robot model and additional axes. J7 in a 7-axes robot can be operated by the jog key assigned at R3 axis, the third axis. For other type robots,  you can operate the additional axes with jog keys, according to the mechanism setting.
+仅当选择的机制是运动 `[0]` 中选择的机器人时，如果下一个机制 `[1]` 的总轴数少于两个，它们将根据注册的附加轴的顺序进行分配。这时，如果机制 `[1]` 中仍有未分配的键，并且下一个机制在可以分配剩余轴的轴数方面有空间，它们将按顺序分配。
 
-Only in the case in which the selected mechanism is mechanism `[0]` robot selected during jogging, if the total number of axes of the next mechanism `[1]` is less than two, they will be assigned according to the order of the registered additional axes. At this time, if unassigned keys remain in the mechanism `[1]` and the next mechanism has room, in terms of the number of axes to which the remaining axes can be assigned, they will be sequentially assigned.
+例如，根据附加轴的机制轴数，是否为J7和J8轴进行分配如下所示。
 
-For example, whether to perform an assignment for the axes J7 and J8 according to the number of axes of the mechanisms for the additional axes will be as follows.
-
-| Mechanism `[0]` | Mechanism `[1]` | Mechanism `[2]` | Whether to assign for J7 axis / J8 axis |
+| 机制 `[0]` | 机制 `[1]` | 机制 `[2]` | J7轴 / J8轴的分配情况 |
 | :--- | :--- | :--- | :--- |
-| 6-axis robot | Travel axis, Axis 1 | Positioner, Axis 1 | J7: Travel axis / J8: Positioner |
-| 6-axis robot | Travel axis, Axis 1 | Positioner, Axis 2 | J7: Travel axis / J8: Not assigned |
-| 6-axis robot | Travel axis, Axis 2 | Positioner, Axis 2 | J7: Travel axis 1 / J8: Travel axis 2 |
-| 6-axis robot | Travel axis, Axis 3 | Positioner, Axis 1 | J7: Not assigned / J8: Not assigned |
-
-
-
-
-
-
-
+| 6轴机器人 | 旅行轴，轴1 | 定位器，轴1 | J7: 旅行轴 / J8: 定位器 |
+| 6轴机器人 | 旅行轴，轴1 | 定位器，轴2 | J7: 旅行轴 / J8: 未分配 |
+| 6轴机器人 | 旅行轴，轴2 | 定位器，轴2 | J7: 旅行轴1 / J8: 旅行轴2 |
+| 6轴机器人 | 旅行轴，轴3 | 定位器，轴1 | J7: 未分配 / J8: 未分配 |

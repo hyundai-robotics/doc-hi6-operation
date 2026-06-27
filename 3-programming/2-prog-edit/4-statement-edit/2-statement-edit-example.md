@@ -1,20 +1,17 @@
-﻿# 3.2.4.2 Example of Statement Editing
+# 3.2.4.2 编辑语句的示例
 
-With an example of changing the interpolation parameter from P \(joint interpolation\) to L \(linear interpolation\), the following describes how to edit a statement.
+以将插值参数从 P \(关节插值\) 更改为 L \(线性插值\) 的示例，以下描述了如何编辑语句。
 
-1.	Press the `[ENTER]` key on the teach pendant while in the statement cursor status. Then, the statement cursor will change to the word cursor status, allowing the P \(joint interpolation\), which is the interpolation parameter of the move statement, to be selected. In the input area, P, which is the current setting value of interpolation, will be displayed and the interpolation parameter that can be inputted will be displayed as buttons on the function button bar of the screen.
+1. 在语句光标状态下，按下 `[ENTER]` 键。然后，语句光标将变为单词光标状态，允许选择 P \(关节插值\)，这是移动语句的插值参数。在输入区域，将显示当前插值设置值 P，屏幕的功能按钮栏上将显示可以输入的插值参数作为按钮。
 
     ![](../../../_assets/tp630/pane-prog-move-P.png)
 
-2.	Touch the `[L]` button among the buttons on the function button bar. Then, L \(linear interpolation\) will be displayed in the input area.
+2. 在功能按钮栏中触摸 `[L]` 按钮。然后，输入区域将显示 L \(线性插值\)。
 
     ![](../../../_assets/tp630/pane-prog-move-L.png)
 
-3.	Press the `[ENTER]` key. The interpolation parameter of the statement will change to L, and then the cursor will move to the next parameter, allowing the moving speed to be selected.
+3. 按下 `[ENTER]` 键。语句的插值参数将更改为 L，然后光标将移动到下一个参数，允许选择移动速度。
 
     ![](../../../_assets/tp630/pane-prog-move-spd.png)
 
-4.	Press the `[ENTER]` key to complete editing. The contents of the change will be saved in the JOB program, and then the cursor will return to the statement cursor status.
-
-
-
+4. 按下 `[ENTER]` 键以完成编辑。更改的内容将保存在 JOB 程序中，然后光标将返回到语句光标状态。

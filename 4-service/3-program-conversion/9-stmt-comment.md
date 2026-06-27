@@ -1,88 +1,83 @@
-﻿# 4.3.9 Statement Comments
+# 4.3.9 语句注释
 
-(This feature is supported in version V70.02-00 and later.)
+(此功能在版本 V70.02-00 及以后版本中支持。)
 
-This feature automatically attaches comments to statements using pre-configured data comments. It also includes functions to delete comments in bulk or assign serial numbers to `spot` statements (Spot Welding commands).
+此功能使用预配置的数据注释自动将注释附加到语句上。它还包括批量删除注释或为 `点 (spot)` 语句（点焊命令）分配序列号的功能。
 
-For details on how to configure data comments, please refer to [4.11 Data Comments](../11-data-cmts.md).
+有关如何配置数据注释的详细信息，请参阅 [4.11 数据注释](../11-data-cmts.md)。
 
-* Execution Example 1: Signal assignment, `wait`, `move` statements
+* 执行示例 1：信号分配，`等待 (wait)`，`移动 (move)` 语句
 
   ![](../../_assets/tp630/prog-conv/prog-conv-data-job1.png)
 
-
-* Execution Example 2: `spot` statement
+* 执行示例 2：`点 (spot)` 语句
   
   ![](../../_assets/tp630/prog-conv/prog-conv-data-job2.png)
 
+### 操作方法
 
-### Operation Method
-
-(1) Select `[F1: Service] -> 6: Program conversion -> 9: Statement data comment`.
+(1) 选择 `[F1: Service] -> 6: 程序转换 -> 9: 语句数据注释`。
 
 ![](../../_assets/tp630/prog-conv/prog-conv-data-cmt.png)
 
-(2) Configure the settings below, then press the `[F7: OK]` key to run the process.
+(2) 配置以下设置，然后按 `[F7: 确定] ([F7: OK])` 键以运行该过程。
 
-- `Source Program`
+- `源程序 (Source Program)`
 
-  The number of the original program you wish to apply comments to. If set to 0, the operation will be performed across all ranges of all jobs.
+  您希望应用注释的原始程序的编号。如果设置为 0，操作将在所有作业的所有范围内执行。
 
-- `Target Program`
+- `目标程序 (Target Program)`
 
-  The program number where the results will be saved. If this is the same as the `Source program` number, the file will be overwritten.
+  将保存结果的程序编号。如果与 `源程序 (Source program)` 编号相同，则文件将被覆盖。
 
-- `Start step` ~ `End step`
+- `开始步骤 (Start step)` ~ `结束步骤 (End step)`
 
-  The specific range of steps where you want to apply the changes. (Default: 0 ~ last step).
-  For example, if set to 2-5, the changes will be applied starting from the move statement at Step 2 through to the final function of Step 5.
+  您希望应用更改的具体步骤范围。 （默认值：0 ~ 最后一步）。
+  例如，如果设置为 2-5，则更改将从步骤 2 的移动语句开始应用，直到步骤 5 的最后一个功能。
 
+- `现有注释 (Existing comment)`
 
-- `Existing comment`
-
-  * `Delete all` : Deletes existing comments instead of applying new ones. (This only removes the comments attached to the statement; it does not delete the comment statement lines.)
+  * `全部删除 (Delete all)` : 删除现有的注释，而不是应用新的注释。 （这仅删除附加到语句的注释；它不删除注释语句行。）
     
-  * `Overwrite` : If a statement already has a comment, it will be replaced with the new one.
+  * `覆盖 (Overwrite)` : 如果语句已经有注释，将被新的注释替换。
 
-  * `Skip` : If a statement already has a comment, that specific statement will be bypassed and left as is.
+  * `跳过 (Skip)` : 如果语句已经有注释，该特定语句将被跳过并保持不变。
 
- 
-- `Affected commends` (Hidden if `Existing comment` is set to `Delete all`.)
+- `受影响的命令 (Affected commends)` （如果 `现有注释 (Existing comment)` 设置为 `全部删除 (Delete all)`，则隐藏。）
 
-   Select the types of commands to which you want to apply comments.
+  选择您希望应用注释的命令类型。
 
-   * `LHS of assignment`: Uses the comment associated with the variable on the Left-Hand Side of an assignment statement as the statement comment.
+  * `赋值的左侧 (LHS of assignment)`: 使用与赋值语句左侧变量关联的注释作为语句注释。
 
-   * `move`: For `move` statements containing a `tg=` argument, the comment of the first pose variable in the assigned pose expression is used. (Note: This does not apply to hidden pose `move` statements.)
+  * `移动 (move)`: 对于包含 `tg=` 参数的 `移动 (move)` 语句，使用分配姿态表达式中第一个姿态变量的注释。 （注意：这不适用于隐藏姿态 `移动 (move)` 语句。）
 
-   * `wait`, `if` (including `elseif`), `switch`: Uses the comment of the variable specified in the conditional parameters as the statement comment.
+  * `等待 (wait)`，`如果 (if)` （包括 `elseif`），`切换 (switch)`: 使用条件参数中指定的变量的注释作为语句注释。
 
-   * `spot`: Assigns a serial number within the job scope as the statement comment.
-   For example, if you set the prefix to `W.P.=` and the starting number to 101, the first spot statement will be commented as `W.P.=101`, the second as `W.P.=102`, and so on.
+  * `点 (spot)`: 在作业范围内分配一个序列号作为语句注释。
+  例如，如果您将前缀设置为 `W.P.=`，起始编号设置为 101，则第一个点语句将注释为 `W.P.=101`，第二个为 `W.P.=102`，依此类推。
 
-- `Prefix`
+- `前缀 (Prefix)`
   
-  Defines the prefix for the serial numbers applied to `spot` statement comments. You can edit this using the soft keyboard.
+  定义应用于 `点 (spot)` 语句评论的序列号的前缀。您可以使用软键盘编辑此内容。
 
-- `Starting number`
+- `起始编号 (Starting number)`
 
-  Sets the initial number for the serial sequence applied to `spot` statement comments.
+  设置应用于 `点 (spot)` 语句注释的序列的初始编号。
 
 ----
 
-### Notes
+### 注意事项
 
-- If the conditional parameter of a statement is an expression, the comment is determined based on the variable occupying the first character of that expression. For example, if `di1` is commented as `part check` and `di2` is `vacuum check`, the following `if` statement will be assigned the comment `part check`:
+- 如果语句的条件参数是表达式，则注释根据占据该表达式第一个字符的变量决定。例如，如果 `di1` 注释为 `part check` 而 `di2` 为 `vacuum check`，则以下 `如果 (if)` 语句将被分配注释 `part check`：
 
     ```python
     if di1=0 and di2=0 then 90 # part check
     ```
 
-- In the Block Editing Mode of the job edit screen, you can also automatically insert or remove comments for selected statements. Unlike this screen, the application conditions for this mode are fixed as follows:
+- 在作业编辑屏幕的块编辑模式下，您还可以为选定的语句自动插入或删除注释。与此屏幕不同的是，此模式的应用条件固定如下：
 
-  * `Existing comment`: `Overwrite`
+  * `现有注释 (Existing comment)`: `覆盖 (Overwrite)`
 
-  * `Affected commands`: All commands except `spot`
+  * `受影响的命令 (Affected commands)`: 除 `点 (spot)` 外的所有命令
 
-For further details, please refer to [3.2.4.5 Block Editing Mode](../../3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md).
- 
+有关更多详细信息，请参阅 [3.2.4.5 块编辑模式](../../3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md)。

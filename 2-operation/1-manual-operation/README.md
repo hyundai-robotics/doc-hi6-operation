@@ -1,7 +1,7 @@
-﻿# 2.1 Manual Operation
+﻿# 2.1 手动操作
 
-Manual operation is an operation method of directly teaching and checking the robot at a safe speed.
+手动操作是一种以安全速度直接教导和检查机器人的操作方法。
 
 {% hint style="danger" %}
-[DANGER] Unlike normal operation, the teaching mode of manual operation is a high-risk work phase where the operator directly enters the robot's operating range. Unexpected robot movements during teaching can cause collisions, catching, or crushing accidents, potentially resulting in serious injury or death.
+[DANGER] 与正常操作不同，手动操作的教学模式是一个高风险工作阶段，操作员直接进入机器人的操作范围。在教学过程中意外的机器人移动可能导致碰撞、夹住或压伤事故，可能导致严重伤害或死亡。
 {% endhint %}

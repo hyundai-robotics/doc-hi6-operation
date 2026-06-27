@@ -1,10 +1,9 @@
-﻿# 2.5.1 Error Type
+﻿# 2.5.1 错误类型
 
-Troubles in the robot system are composed of errors and warnings.
+机器人系统中的故障由错误和警告组成。
 
 ![](../../_assets/tp630/wg-err-wrn_eng.png)
 
-* Error: It is a trouble serious enough to stop the robot operation, and the code number in the notification message starts with E.
+* 错误：这是一个严重到足以停止机器人操作的问题，通知消息中的代码编号以 E 开头。
 
-
-* Warning: The robot will continue to operate, but a warning is a trouble that requires you to check whether or not a response action has been taken. The code number in the notification message starts with W.
+* 警告：机器人将继续操作，但警告是一个需要您检查是否采取了响应措施的问题。通知消息中的代码编号以 W 开头。

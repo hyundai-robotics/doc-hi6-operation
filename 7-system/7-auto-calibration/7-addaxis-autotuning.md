@@ -1,59 +1,59 @@
-﻿# 7.7.7 Additional Axis Autotuning
+# 7.7.7 额外轴自动调优
 
-* Available from version V60.28-00.
+* 从版本 V60.28-00 可用。
 </br>
 
-### A. Overview
+### A. 概述
 
-This function finds the optimal gain by moving the additional axis within the range set by the user. And it can be used when the additional axis does not have a proper gain set, resulting in noise or poor control performance.
+此功能通过在用户设置的范围内移动额外轴来找到最佳增益。当额外轴没有正确设置增益而导致噪音或控制性能不佳时，可以使用此功能。
 
 | ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
 |---|---|
-| Linear axis motion | Circular axis motion |
+| 线性轴运动 | 圆形轴运动 |
 
 
-### B. Tuning Description
+### B. 调优描述
 
 ![](../../_assets/_7.7.7_intro_en.png)
 
-![c1](../../_assets/c1.png)  **Setting before tuning**
+![c1](../../_assets/c1.png)  **调优前的设置**
 
-`Additional axis`: Select the additional axis you want to tune.
+`附加轴 (Additional axis)`: 选择您希望调优的额外轴。
 
-`Range of Motion`: Set the additional axis motion range(Linear axis: 2, 5, 10[mm] / Circular axis: 2, 5, 10[deg]). Adjust the position of the additional axis through jog, to set the appropriate additional axis motion range. Larger motion ranges result in better tuning(Motion beyond the current specification's maximum range of 10 mm (or 10 deg) requires additional development).
+`运动范围`: 设置额外轴运动范围(线性轴: 2, 5, 10[mm] / 圆形轴: 2, 5, 10[deg])。通过慢速移动额外轴，调整适当的额外轴运动范围。较大的运动范围可以获得更好的调优效果（超过当前规格的最大范围10 mm（或10 deg）的运动需要额外开发）。
 
-* Starting position: The starting position when additional axis autotuning begins.
-* Ending position: The ending position when additional axis autotuning begins.
-* Current position: Indicates the current position of the additional axis.
+* 起始位置: 额外轴自动调优开始时的起始位置。
+* 结束位置: 额外轴自动调优开始时的结束位置。
+* 当前 position: 指示额外轴的当前位置。
 
-**Tuned gain(Kv)**: The parameter value being tuned.
+**调优增益(Kv)**: 正在调优的参数值。
 
 </br>
 
-![c2](../../_assets/c2.png) **Tuning Process (Range test > Motion test > Run)**
+![c2](../../_assets/c2.png) **调优过程（范围测试 > 运动测试 > 运行）**
 
-**1. Range test**
+**1. 范围测试**
 
-* Moves within the set motion range at a low speed. If there are any issues with the additional axis motion range, press the stop button and reset the motion range.
+* 在设定的运动范围内以低速移动。如果额外轴运动范围存在任何问题，请按停止按钮并重置运动范围。
 
-**2. Motion test**
+**2. 运动测试**
 
-* Moves within the set motion range at a high speed to check the initial tuned gain value.
+* 在设定的运动范围内以高速移动以检查初始调优增益值。
 
-**3. Run**
+**3. 运行**
 
-* The additional axis autotuning process begins.
-* During tuning, the additional axis may make brief loud noises (as it searches for the vibration gain value)
-* Once tuning is completed, the gain values of the tuning paramter Kv before and after tuning will be displayed. Pressing `[OK]` will prompt a window asking whether to apply the tuned gain. If press `[enter]`, the tuned gain will be applied. If press `[No]`, the original gain value will be retained.
+* 额外轴自动调优过程开始。
+* 在调优过程中，额外轴可能会发出短暂的响声（因为它正在寻找振动增益值）。
+* 调优完成后，将显示调优参数 Kv 调优前后的增益值。按下 `[OK]` 会弹出一个窗口询问是否应用调优增益。如果按下 `[enter]`，将应用调优增益。如果按下 `[No]`，将保留原始增益值。
 
 {% hint style="warning" %}
 
-Since noise is difficult to analyze with data, tuning cannot be as precise as when a tuning specialist adjusts manually. If manual tuning is required, it can be done by adjusting the Kv gain.
+由于噪声数据分析困难，因此调优的精度无法与调优专家手动调整时一样。如果需要手动调优，可以通过调整 Kv 增益来进行。
 {% endhint %}
 
-* If the tuned gain results in noise, motion tracking performance may degrades, leading the large shake.
-* Conversely, if the Kv gain is too high, high-frequency noise may be generated from the motor.
+* 如果调优增益导致噪音，运动跟踪性能可能会下降，导致大幅抖动。
+* 反之，如果 Kv 增益过高，电机可能会产生高频噪音。
 
-If the tuned gain results in noise, navigate to `[System] - 3:Robot parameter - 33:Servo parameter - 1:Servo loop gain` and gradually set lower the Kv value (when the Kv value changes, other gain values are automatically recalculated), until the high-frequency noise disappears.
+如果调优增益导致噪音，请导航至 `[System] - 3:机器人参数 - 33:伺服参数 - 1:伺服环路增益 ([System] - 3:Robot parameter - 33:Servo parameter - 1:Servo loop gain)`，逐渐降低 Kv 值（当 Kv 值变化时，其他增益值会自动重新计算），直到高频噪音消失。
 
-If the noise persists, please contact us for further assistance.
+如果噪音仍然存在，请联系我们以获得进一步帮助。

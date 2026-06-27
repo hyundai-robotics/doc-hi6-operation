@@ -1,8 +1,8 @@
-﻿# 7.3.10.4 What is a temporary-key?
+﻿# 7.3.10.4 什么是临时密钥？
 
-* Temporary-key can only be used for 30 days and can only be issued once.
+* 临时密钥只能使用30天，并且只能发行一次。
 
-* If the remaining date of the temporary key is less than 10 days, the following warning occurs every time the controller boots. <br>
-  "W0025 Only (0) days left for the optional function temporary license key free trial period."
+* 如果临时密钥的剩余日期少于10天，则在控制器每次启动时都会出现以下警告。 <br>
+  "W0025 仅剩 (0) 天用于可选功能临时许可证密钥免费试用期。"
 
-* The purpose of the temporary key is to use it until the license key is reissued by our A/S when a problem occurs in the main board of the controller using the optional function and it is replaced with a spare part.
+* 临时密钥的目的是在控制器主板使用可选功能时出现问题并更换为备件时，直到由我们的A/S重新发行许可证密钥为止。

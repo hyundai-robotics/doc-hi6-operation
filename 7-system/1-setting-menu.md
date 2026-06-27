@@ -1,28 +1,23 @@
-﻿# 7.1 Use of the Menus in 'system'
+﻿# 7.1 在“system”中的菜单使用
 
-1.	In manual or automatic mode, touch the `[system]` button on the function button bar. Then, the program's settings menus will be displayed.
+1. 在手动或自动模式下，触摸功能按钮栏上的 `[system]` 按钮。然后，程序的设置菜单将显示。
 
     ![](../_assets/tp630/sbt-system_eng.png)
 
-2.	You can check and set the user information and various parameter information by selecting the desired menus.
+2. 通过选择所需菜单，您可以检查和设置用户信息及各种参数信息。
 
     ![](../_assets/tp630/sbt-system-menu_eng.png)
 
-* `[1: User Environment]`: You can check and set various user conditions.
+* `[1: User Environment]`：您可以检查和设置各种用户条件。
 * 
-  `[2: Control Parameter]`: You can set various conditions of the controller and the input/output signals, communication information, robot ready OK signal condition, home position signal, and coordinate system.
-
-* 
-  `[3: Robot Parameter]`: You can set various data related to robot operation and information such as the origin of each axis and operation range.
-
-* `[4: Application Parameter]`: You can check and set various parameters for using the robot's application functions.
-* 
-  `[5: Initialize]`: You can perform the initial setting of the robot system. You can also initialize the serial encoder.
+  `[2: Control Parameter]`：您可以设置控制器和输入/输出信号、通信信息、机器人准备好信号条件、原点信号和坐标系统的各种条件。
 
 * 
-  `[6: Auto Calibration]`: You can calibrate the robot's axis origin, tool length, load mass, and base axis direction, etc. using the programs taught to use the robot correctly and also by using the movement that will automatically operate.
+  `[3: Robot Parameter]`：您可以设置与机器人操作相关的各种数据，如每个轴的原点和操作范围。
 
+* `[4: Application Parameter]`：您可以检查和设置用于机器人应用功能的各种参数。
+* 
+  `[5: Initialize]`：您可以执行机器人系统的初始设置。您还可以初始化串行编码器。
 
-
-
-
+* 
+  `[6: Auto Calibration]`：您可以使用教导机器人正确使用的程序以及将自动操作的运动来校准机器人的轴原点、工具长度、负载质量和基轴方向等。

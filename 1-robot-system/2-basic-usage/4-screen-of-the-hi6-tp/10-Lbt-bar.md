@@ -1,6 +1,6 @@
-﻿# 1.2.4.10 L(Left) button bar
+# 1.2.4.10 L(Left) button bar
 
-5 buttons are displayed on the left side of the screen, and you can touch the buttons. Inactive buttons will be grayed out. Under the automatic mode, the record condition, jog inching are disabled, which makes it impossible to use those functions.
+5 个按钮显示在屏幕的左侧，您可以触摸这些按钮。非活动按钮将显示为灰色。在自动模式下，记录条件、手动移动被禁用，这使得无法使用这些功能。
 
 <br>
 
@@ -9,8 +9,8 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -19,7 +19,7 @@
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is the key used to edit conditions including speed, accuracy, tool number, step option etc. of the recording step. Editing is done in the record condition window.</p>
+        <p>这是用于编辑录制步骤的条件，包括速度、精度、工具编号、步骤选项等的键。编辑在录制条件窗口中进行。</p>
       </td>
     </tr>
     <tr>
@@ -27,7 +27,7 @@
         <img src="../../../_assets/c2.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This selects whether to execute in steps or in functions when moving the steps forward/backward or whether to continuously execute up to the end of the task program. Currently selected condition is displayed on the button as an icon.</p>
+        <p>此按钮选择在前进/后退步骤时是逐步执行还是功能执行，或者是否连续执行到任务程序的结束。当前选择的条件以图标的形式显示在按钮上。</p>
       </td>
     </tr>
     <tr>
@@ -35,7 +35,7 @@
         <img src="../../../_assets/c3.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>This is the key to use when you want to manually move the robot by the designated amount at inching levels. A green light will be on when the jog inching function is activated.</p>
+        <p>这是当您希望按指定数量手动移动机器人时在微调级别使用的键。当 jog inching 功能激活时，绿灯会亮起。</p>
         <p>
       </td>
     </tr>
@@ -44,7 +44,7 @@
         <img src="../../../_assets/c4.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>If this key is pressed while the cursor is placed at a certain command sentence, the Quick Open function related to the command sentence will be executed. See the Quick Open for detailed description. </p>
+        <p>如果在某个命令句子处按下此键，将执行与该命令句子相关的快速打开功能。有关详细描述，请参见快速打开。</p>
       </td>
     </tr>
     <tr>
@@ -52,15 +52,10 @@
         <img src="../../../_assets/c5.png" alt/>
       </td>
       <td style="text-align:left">
-        <p> Displays relevant Help depending on each status. Grammar form for command sentence is shown if pressing this key when the cursor exists in command sentence. You can view contents, measures or diagnosis methods for error pressing this key in occurrence of error.
+        <p>根据每个状态显示相关帮助。如果光标处于命令句子中，按下此键将显示命令句子的语法形式。发生错误时，按此键可查看内容、措施或诊断方法。
 </p>
       </td>
     </tr>
     </tr>
   </tbody>
 </table>
-
-
-
-
-

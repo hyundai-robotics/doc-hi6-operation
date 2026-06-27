@@ -1,52 +1,52 @@
-﻿# 7.4.4.2 Axis Home Position Restoration
+# 7.4.4.2 轴原点位置恢复
 
-When a component failure occurs in the robot mechanism (especially the motor or reducer) and the component is replaced, the encoder must be calibrated under the same conditions as the original home position in order to restart the existing teaching program.  
-However, when service personnel perform this procedure manually on site, the home position may be set through multiple trials and errors. This dedicated function is provided to simplify that process.
+当机器人机构中的组件发生故障（尤其是电机或减速器）并更换组件时，必须在与原始原点相同的条件下校准编码器，以便重新启动现有的教学程序。  
+然而，当服务人员在现场手动执行此程序时，原点可能需要经过多次试验和错误进行设置。这个专用功能旨在简化该过程。
 
-* What is home position restoration after mechanical repair?
+* 机械维修后的原点恢复是什么？
 
 ![](../../../_assets/tp630/axis-posi-restore1.png)
 
-In other words, home position restoration refers to:  
-Using an external reference point (dial gauge), after replacing a component, compensating the inaccurately calibrated home position Ωo' by the value ⓒ - ⓐ to restore it to the accurate home position Ωo.  
-(This is required to reuse the teaching program.)
+换句话说，原点恢复是指：  
+使用外部参考点（指示规），在更换组件后，通过值 ⓒ - ⓐ 来补偿校准不准确的原点 Ωo'，以将其恢复到准确的原点 Ωo。  
+（这在重用教学程序时是必需的。）
 
 {% hint style="warning" %}
-The position of the external reference point (ⓑ) must not change before and after component replacement. In other words, it must be exactly the same location both before and after replacement.
+外部参考点（ⓑ）的位置在组件更换前后必须保持不变。换句话说，更换前后必须位于完全相同的位置。
 {% endhint %}
 
 
-### Example
+### 示例
 
-The following example explains the function assuming that the S-axis motor is replaced.
+以下示例解释了假设更换 S 轴电机的功能。
 
-1. Assign a new program (101.job), and teach S1 [verification point - Approach] and S2 [home position verification point, only the S-axis rotates relative to S1] so that a fixed point on the firmly mounted tool approaches a jig or peripheral device.  
+1. 指派一个新程序（101.job），并教导 S1 [验证点 - 接近] 和 S2 [原点验证点，仅 S 轴相对于 S1 旋转]，使固定在稳固安装工具上的点接近夹具或外围设备。
 
    ![](../../../_assets/tp630/axis-posi-restore2.png)
 
-2. After replacing the S-axis motor, manually jog the S-axis to a position close to the encoder calibration position before replacement, then perform encoder calibration for the S-axis on the `System - Robot Parameter - Encoder Calibration` screen.
+2. 更换 S 轴电机后，手动将 S 轴移至接近更换前编码器校准位置的地方，然后在 `系统 - Robot Parameter - Encoder Calibration (System - Robot Parameter - Encoder Calibration)` 屏幕上执行 S 轴的编码器校准。
 
-3. Manually run the taught program (101.job) to move to S1, then move to S2. When the position becomes identical to that before the mechanical component replacement, teach S3 [home position verification point, only the S-axis rotates relative to S1].  
+3. 手动运行所教的程序（101.job）以移动到 S1，然后移动到 S2。当位置与机械组件更换前相同时，教导 S3 [原点验证点，仅 S 轴相对于 S1 旋转]。
 
    ![](../../../_assets/tp630/axis-posi-restore3.png)
 
-4. Automatically calculate the encoder calibration value for the S-axis.
+4. 自动计算 S 轴的编码器校准值。
 
-   1) Enter the `System - Robot Parameter - Encoder Calibration` screen.  
-   2) Move the cursor to the S-axis and press `[F3: Calculate Calibration Value]`. 
+   1) 进入 `系统 - Robot Parameter - Encoder Calibration (System - Robot Parameter - Encoder Calibration)` 屏幕。  
+   2) 将光标移动到 S 轴，并按下 `[F3: 计算校准值]`。 
 
       ![](../../../_assets/tp630/axis-posi-restore4.png)
 
-   3) Set the program number to 101 and the step number to 2 for "Before S-axis motor replacement,"  
-      and set the program number to 101 and the step number to 3 for "After S-axis motor replacement,"  
-      then press the `[Execute]` button.  
+   3) 将程序编号设置为 101，步骤编号设置为 2，表示“更换 S 轴电机之前”，  
+      并将程序编号设置为 101，步骤编号设置为 3，表示“更换 S 轴电机之后”，  
+      然后按下 `[执行]` 按钮。  
 
-      (* If the program or step number for "After S-axis motor replacement" is set to 0, the encoder calibration value is calculated using the current S-axis position of the robot.)  
+      (* 如果“更换 S 轴电机之后”的程序或步骤编号设置为 0，则编码器校准值将使用机器人的当前 S 轴位置计算。)  
 
       ![](../../../_assets/tp630/axis-posi-restore5.png)
 
-   4) The calculated encoder calibration value for the S-axis is displayed on the screen. Press `[F7: Confirm]` to apply the calibrated encoder value.  
+   4) 计算出的 S 轴编码器校准值将在屏幕上显示。按 `[F7: 确认]` 以应用校准后的编码器值。  
 
       ![](../../../_assets/tp630/axis-posi-restore6.png)
 
-5. Move to S2 of the taught program (101.job) and verify that the position is identical to that before the motor replacement.
+5. 移动到所教程序（101.job）的 S2 并验证位置是否与电机更换前相同。

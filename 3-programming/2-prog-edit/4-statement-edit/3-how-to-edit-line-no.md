@@ -1,27 +1,21 @@
-﻿# 3.2.4.3 Line Number Editing Method
+﻿# 3.2.4.3 行号编辑方法
 
-The line number can be set to any number between 1 and 9999.
+行号可以设置为1到9999之间的任何数字。
 
-1.	In the JOB program window, select the address area by pressing the `[←/→]` key on the teach pendant. Then, the address area will be selected.
+1. 在JOB程序窗口中，通过按下`[←/→]`键选择地址区域。然后，将选择地址区域。
 
-* If the cursor is in the statement cursor status while in the statement area, press the `[←]` key to move the cursor to the address area.
+* 如果光标在语句区域处于语句光标状态，请按`[←]`键将光标移动到地址区域。
 
     ![](../../../_assets/tp630/pane-prog-linenum.png)
 
-2.	In the address area, select a line by pressing the `[↓/↑]` key and then edit the line number.
+2. 在地址区域，通过按下`[↓/↑]`键选择一行，然后编辑行号。
 
-* To input a line number, input the line number in the input area using the number keys.
-
-
+* 要输入行号，请使用数字键在输入区域中输入行号。
 
     ![](../../../_assets/tp630/pane-prog-linenum1.png)
 
-* To delete a line number, press the `[BS]` key. Then, the address value of the line number will be removed from the input area.
+* 要删除行号，请按`[BS]`键。然后，行号的地址值将从输入区域中删除。
 
-
-3.	Press the `[ENTER]` key to complete the editing. The contents of the change will be saved in the JOB program.
+3. 按`[ENTER]`键完成编辑。更改的内容将保存在JOB程序中。
 
     ![](../../../_assets/tp630/pane-prog-linenum2.png)
-
-
-

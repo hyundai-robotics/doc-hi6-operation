@@ -1,20 +1,20 @@
-﻿# 4.1 Use of service
+# 4.1 服务的使用
 
-1.	In manual or automatic mode, touch the `[service]` button on the function button bar of the initial screen. Various service menus of the program will be displayed.
+1. 在手动或自动模式下，触摸初始屏幕功能按钮栏上的 `[service]` 按钮。程序的各种服务菜单将会显示。
 
-2.	Selecting the desired menu will enable you to manage files, programs, teach pendants, or to check the status of the robot system.
+2. 选择所需的菜单将使您能够管理文件、程序、示教器或检查机器人系统的状态。
 
     ![](../_assets/tp630/svc-list.png)
 
 
-* `4: Data comment`: You can manages comments for input/output variables, relays, and various other variables.
-* `5: File Manager`: You can manage files in the main board's internal memory, teach pendant, or removable storage device.
-* `6: Program Conversion`: You can convert the data, such as the condition and location of the created program, by batch or individually.
-* `7: System Diagnosis`: You can check the status of the robot and controller and update the system version.
-* `8: Date, time setting`: You can set the date and time of the controller.
-* `9: Exit TP application`: Exit the TP(Teach Pendant) application.
-* `10: App`: Manages the software installed and running on the teach pendant.
-* `11: Teach pendant option`: Set the sound and screen save time of the teach pendant.
-* `12: Teach pendant sharing`: Connect the teach pendant to multiple controllers or to the virtual controllers in HRSpace4.
-* `14: System program`: You can view and remove the system programs (e.g. OPC-UA server) installed on the controller.
-* `19: Industrial Communication Monitoring`: Monitor firmware information and communication status.
+* `4: 数据注释 (4: Data comment)`: 您可以管理输入/输出变量、继电器和各种其他变量的注释。
+* `5: 文件管理器 (5: File Manager)`: 您可以管理主板内部存储器、示教器或可移动存储设备中的文件。
+* `6: Program Conversion`: 您可以按批次或单独转换已创建程序的条件和位置等数据。
+* `7: System Diagnosis`: 您可以检查机器人和控制器的状态并更新系统版本。
+* `8: 日期，时间设置 (8: Date, time setting)`: 您可以设置控制器的日期和时间。
+* `9: 退出TP应用程序 (9: Exit TP application)`: 退出 TP（示教器）应用程序。
+* `10: 应用程序(App) (10: App)`: 管理安装和运行在示教器上的软件。
+* `11: 示教器选项 (11: Teach pendant option)`: 设置示教器的声音和屏幕保护时间。
+* `12: 示教器共享 (12: Teach pendant sharing)`: 将示教器连接到多个控制器或 HRSpace4 中的虚拟控制器。
+* `14: 系统程序 (14: System program)`: 您可以查看和移除安装在控制器上的系统程序（例如，OPC-UA 服务器）。
+* `19: 工业通信监控 (19: Industrial Communication Monitoring)`: 监控固件信息和通信状态。

@@ -1,24 +1,24 @@
-﻿# 2.9 Optimization of the Axis Origin and Tool Length
+﻿# 2.9 轴原点和工具长度的优化
 
-You can make it possible for the axis integer and tool length to be automatically set to improve the accuracy of the linear interpolation trajectory and coordinate shifting.
+您可以使轴整型和工具长度自动设置，从而提高线性插补轨迹和坐标偏移的准确性。
 
-* You can make it possible for the distance to the tooltip, which is difficult to measure in 3D, to be automatically set. The parameters to be calibrated are the axis origins of the H, V, R2, and B axes and the tool length in the X, Y, and Z directions.
-* You can perform "optimization of axis origin and tool length" and of "tool length."
+* 您可以使难以在 3D 中测量的工具提示到工具的距离自动设置。需要校准的参数是 H、V、R2 和 B 轴的轴原点以及 X、Y 和 Z 方向的工具长度。
+* 您可以执行“轴原点和工具长度”的“优化”和“工具长度”。
 
 {% hint style="info" %}
-* Starting from version V70.02-00, the axis origin optimization function will no longer be supported for general users. If you would like to change the axis origin in later versions, please contact our customer support team to ask an expert or an engineer.
+* 从版本 V70.02-00 开始，轴原点优化功能将不再支持一般用户。如果您希望在后续版本中更改轴原点，请联系客户支持团队咨询专家或工程师。
 {% endhint %}
 
 
 {% hint style="warning" %}
-You should optimize the "axis origin and tool length" before teaching the robot program. If the "axis origin and tool length" is optimized while a robot program has been created already, the position in the existing program may change.
+您应该在教导机器人程序之前优化“轴原点和工具长度”。如果在已创建机器人程序时优化“轴原点和工具长度”，现有程序中的位置可能会改变。
 {% endhint %}
 
-The following shows how to set the optimization of the axis origin and tool length:
+以下显示了如何设置轴原点和工具长度的优化：
 
-1.	Set the operation mode to manual mode using the mode switch on the teach pendant.
+1. 使用教导盘上的模式开关将操作模式设置为手动模式。
 
-2.	After touching the `[PROG]` key with `[SHIFT]` in the JOB program window, input the program number, and then touch the `[Enter]` button.
+2. 在 JOB 程序窗口中，按下 `[PROG]` 键和 `[SHIFT]`，输入程序编号，然后按下 `[Enter]` 按钮。
 
 
     ![](../_assets/tp630/k-prog-step_eng.png)
@@ -26,35 +26,34 @@ The following shows how to set the optimization of the axis origin and tool leng
     ![](../_assets/tp630/dlg-prog-sel_eng.png)
 
 
-3.	Press the `[motor]` key on the teach pendant, and then the motor lamp will blink.
+3. 按下教导盘上的 `[motor]` 键，电动机灯将闪烁。
 
-* If the motor is not turned on, check the error message on the log bar and resolve the trouble.
+* 如果电动机未开启，请检查日志栏上的错误信息并解决故障。
 
-4.	Operate the robot using the jog key while holding the enabling switch on the back of the teach pendant.
+4. 在按住教导盘背面的使能开关的同时，使用 jog 键操作机器人。
 
-5.	Place a pointed needle at an arbitrary location within the operation range of the robot, and then match the tooltip of the robot to it. The distance from the front end of the robot to the matched tooltip will be optimized.
+5. 在机器人操作范围内的任意位置放置一个尖针，然后将机器人的工具提示与其对齐。机器人前端与匹配工具提示之间的距离将被优化。
 
-6.	Record the step by touching the `[REC]` key of the keypad.
+6. 通过按下键盘上的 `[REC]` 键记录步骤。
 
     ![](../_assets/tp630/k-record_eng.png)
 
 
-7.	Change the robot's posture and repeat the above steps 5-6 more than four times.
+7. 改变机器人的姿势，并重复步骤 5-6 超过四次。
 
-* Change the robot's posture using all six axes as much as possible. Moreover, change the axis angle by at least 30 degrees.
+* 尽量使用所有六个轴来改变机器人的姿势。此外，轴角度至少改变 30 度。
 
-8.	Touch the `[system]` button  - `[6: Auto Calibration  - 1: Optimize axis origin and tool length]` menu.
+8. 按下 `[system]` 按钮 - `[6: Auto Calibration - 1: Optimize axis origin and tool length] ([6: Auto Calibration  - 1: Optimize axis origin and tool length])` 菜单。
 
     ![](../_assets/tp630/menu-axis-origin-tool-opt_eng.png)
 
 
-9.	Set the program number, tool number, and step position error allowable range created for the automatic calibration, and then touch the `[Execute]` button. Then the selected axis origin and tool length will be set.
+9. 设置为自动校准而创建的程序编号、工具编号和步骤位置误差允许范围，然后按下 `[Execute]` 按钮。然后选定的轴原点和工具长度将被设置。
 
     ![](../_assets/tp630/axis-origin-tool-opt_eng.png)
 
-* When you use multiple tools, you should select Tool Length in the `[Optimization Selection]` option for the second tool. If you select Axis Origin and Tool Length, the previously set tool information will get incorrect.
+* 当您使用多个工具时，您应该在第二个工具的 `[Optimization Selection]` 选项中选择工具长度。如果选择轴原点和工具长度，先前设置的工具信息将会不正确。
 
 {% hint style="info" %}
-For details on this function, refer to "[7.7.1 Optimization of Axis Origin and Tool Length](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)."
+有关此功能的详细信息，请参阅“[7.7.1 轴原点和工具长度的优化](../7-system/7-auto-calibration/1-axis-origin-tool-length-optimization.md)。”
 {% endhint %}
-

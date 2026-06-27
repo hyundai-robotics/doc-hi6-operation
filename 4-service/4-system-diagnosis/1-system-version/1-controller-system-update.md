@@ -1,22 +1,19 @@
-﻿# 4.4.1.1 Controller System Updating
+# 4.4.1.1 控制器系统更新
 
-You can update the version of each module of the controller using the integrated compressed file.
+您可以使用集成的压缩文件更新控制器每个模块的版本。
 
-1.	Connect the removable storage device containing the integrated compressed file to the USB slot of the teach pendant. When the removable storage device is connected to the teach pendant, the `[USB]` icon \(![](../../../_assets/icon-usb2.png)\) will appear in the status bar.
+1. 将包含集成压缩文件的可移动存储设备连接到教导 pendant 的 USB 插槽。当可移动存储设备连接到教导 pendant 时，状态栏中会出现 `[USB]` 图标 \(![](../../../_assets/icon-usb2.png)\)。
 
-2.	Touch the `[Ver. Up]` button on the function button bar. Then, the version upgrade program execution window will appear.
+2. 在功能按钮栏中触摸 `[Ver. Up]` 按钮。然后，会出现版本升级程序执行窗口。
 
-3.	Select the `[Version Up]` mode by touching the drop-down menu, select the integrated compressed file using the `[Open]` button, and then touch the `[OK]` button.
+3. 通过触摸下拉菜单选择 `[Version Up]` 模式，使用 `[Open]` 按钮选择集成压缩文件，然后触摸 `[OK]` 按钮。
 
     ![](../../../_assets/image_311.png)
 
-
-
-4.	After selecting the module that you want to update, touch the `[OK]` button. Then, the update will start.
+4. 选择您要更新的模块后，触摸 `[OK]` 按钮。然后，更新将开始。
 
     ![](../../../_assets/image_255.png)
 
-5.	When the update is completed, restart the controller.
+5. 更新完成后，请重启控制器。
 
     ![](../../../_assets/image_367.png)
-

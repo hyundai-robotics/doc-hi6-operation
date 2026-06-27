@@ -1,21 +1,20 @@
-﻿<script id="page-config" type="application/json">
+<script id="page-config" type="application/json">
 {
 	"permittedStrs": ["Hi7"]
 }
 </script>
 
-# 6.6 Safety Funtion
+# 6.6 安全功能
 
 {% hint style="info" %}
-This function is supported from the Hi7 controller.
+此功能支持Hi7控制器。
 {% endhint %}
 
-In the panel selection window, touch `[Safety Function]`. Then, the Safety Function status window will appear. 
-You can check the status of the Safety Function, Manual Speed, Stop Time, Stop Distance, MCU-A, and MCU-B.
+在面板选择窗口中，触摸`[安全功能]`。然后，安全功能状态窗口将出现。
+您可以检查安全功能、手动速度、停止时间、停止距离、MCU-A和MCU-B的状态。
 
 ![](../_assets/image_552.png)
 
 {% hint style="info" %}
-* For details on the Safety Function, refer to the "[SafeSpace2.0 Manual](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/en/README)".
+* 有关安全功能的详细信息，请参阅 "[SafeSpace2.0手册](https://hrbook-hrc.web.app/#/view/doc-safespace2.0/zh/README)"。
 {% endhint %}
-

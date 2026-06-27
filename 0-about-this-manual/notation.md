@@ -1,40 +1,37 @@
-﻿# Notation Convention
+﻿# 记号约定
 
-In this manual, the following notation conventions and safety instructions are used to help you understand the contents.
+在本手册中，使用以下记号约定和安全说明来帮助您理解内容。
 
-### Description of Figures
+### 图形描述
 
-Figures are used to help you understand how to operate the product and illustrate what you can see on the screen. For the description of figures, numbers will be marked for the relevant parts, and the corresponding contents will be described as follows.
+使用图形帮助您理解如何操作产品，并说明您在屏幕上可以看到的内容。图形的描述中，将为相关部分标记数字，并按照如下描述相应内容。
 
 ![](../_assets/tp630/pane-prog-cmd-param.png)
 
-### GUI \(Graphical User Interface\)
+### 图形用户界面 \(GUI\)
 
-In the GUI, menu names and button names are enclosed in square brackets and displayed with a light background color.
-When multiple menus must be selected in sequence, their names are separated by a hyphen (-).
+在GUI中，菜单名称和按钮名称用方括号括起来，并以浅色背景显示。
+当必须依次选择多个菜单时，它们的名称用连字符 (-) 分隔。
 
-* Single menu: On the initial screen in Manual or Automatic mode, touch the `[F1: Service]`W button.
-* Multiple menus: On the initial screen in Manual mode, touch `[F2: System] - 5: Initialization - 6: Mechanism setting`.
+* 单个菜单：在手动或自动模式的初始屏幕上，触摸`[F1: 服务] ([F1: Service])`W按钮。
+* 多个菜单：在手动模式的初始屏幕上，触摸`[F2: 系统] - 5: 初始化 - 6: 机制设置 ([F2: System] - 5: Initialization - 6: Mechanism setting)`。
 
+### 操作键的记号方法
 
-### Notation Method for Operation Keys
+需要在教导挂件的操作部分按下以操作功能的键将用方括号括起来，并以浅色背景显示。
 
-Keys that are to be pressed on the operation part of the teach pendant to operate functions will be enclosed in square brackets and displayed with a light background color.
+* 如果按下`[Start]`键，机器人中创建的程序的自动操作将开始。
 
-* If you press the `[Start]` key, the automatic operation of the program created in the robot will start.
+### 交叉引用 
 
+它提供了指向手册中相关信息的快捷方式。交叉引用将以双引号显示（“ ”），如下所示。
 
+* 有关如何更改日期和时间信息的详细信息，请参阅“[4.5 设置日期和时间。](../4-service/5-date-time-setting.md)”。
 
-### Cross Reference 
+### 注意
 
-It provides shortcuts to relevant information within the manual. A cross-reference will be shown in double quotation marks (" ") as follows.
-
-* For details on how to change the date and time information, refer to "[4.5 Setting of Date and Time.](../4-service/5-date-time-setting.md)".
-
-### Note
-
-In this section are some helpful tips or additional information that could be useful when you use the product as follows.
+本节包含一些在使用产品时可能有用的提示或附加信息，如下所示。
 
 {% hint style="info" %}
-When the ![](../_assets/eng-mode.png)icon blinks in the status bar, it means that you are in engineer mode.
+当状态栏中的![](../_assets/eng-mode.png)图标闪烁时，意味着您处于工程师模式。
 {% endhint %}

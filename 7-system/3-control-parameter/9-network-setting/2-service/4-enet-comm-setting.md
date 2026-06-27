@@ -1,36 +1,35 @@
-﻿# 7.3.9.2.4 Ethernet Communication Settings
+# 7.3.9.2.4 以太网通信设置
 
-Before performing Ethernet communication, you must first create and configure an Ethernet communication object.  
-Up to eight Ethernet objects can be created and used, and the current communication status can be monitored in real-time.  
+在执行以太网通信之前，您必须首先创建和配置一个以太网通信对象。  
+最多可以创建和使用八个以太网对象，当前的通信状态可以实时监控。  
 
-Currently, it is used to perform communication independently through HRScript or settings. 
+目前，它用于通过HRScript或设置独立执行通信。 
 
 ![](../../../../_assets/tp630/image32.png)
 
-You can forcibly close the socket of the corresponding Ethernet object using the [Close] button, or establish a communication connection using the [Connect] button.  
-When the controller boots, it automatically attempts to establish a communication connection using the configured Ethernet objects.  
+您可以使用[关闭]按钮强制关闭相应以太网对象的套接字，或使用[连接]按钮建立通信连接。  
+当控制器启动时，它会自动尝试使用配置的以太网对象建立通信连接。  
 
-* **Name** 
+* **名称** 
 
-    The name of the Ethernet communication object. Each name must be set between "enet0" and "enet7".
+    以太网通信对象的名称。每个名称必须设置在“enet0”和“enet7”之间。
 
-* **Protocol** 
+* **协议** 
 
-    Select the communication protocol. (UDP, TCP client, TCP server)
+    选择通信协议。（UDP，TCP客户端，TCP服务器）
 
-* **IP Address** 
+* **IP 地址** 
 
-    Set the IP address of the target device.
+    设置目标设备的IP地址。
 
-* **Local Port** 
+* **本地端口** 
 
-    Set the local port number.
+    设置本地端口号。
 
-* **Remote Port** 
+* **远程端口** 
 
-    Set the remote port number.
+    设置远程端口号。
 
-* **Status** 
+* **状态** 
 
-    Displays the current communication connection status. 
-   
+    显示当前通信连接状态。

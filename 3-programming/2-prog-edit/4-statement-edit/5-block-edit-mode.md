@@ -1,118 +1,118 @@
-﻿# 3.2.4.5 Block Editing Mode
+# 3.2.4.5 块编辑模式
 
-You can set a single line or multiple lines of a program as a block to perform copy, move, delete, and remark operations.
+您可以将程序的单行或多行设置为块，以执行复制、移动、删除和备注操作。
 <br>
 
-#### 1. Entering Block Edit Mode
+#### 1. 进入块编辑模式
 
-In the job editing panel, move the cursor to the address area using the left arrow key.
-Click the `F2: Blk.edit` button to enter block edit mode, and the cursor will turn gray.
+在作业编辑面板中，使用左箭头键将光标移动到地址区域。
+单击 `F2: Blk.edit` 按钮进入块编辑模式，光标将变为灰色。
 
 ![](../../../_assets/tp630/blockedit/11_blockeditmode2.PNG)
 ![](../../../_assets/tp630/blockedit/12_blockeditmode.PNG)
 <br><br>
 
-#### 2. Setting a Block
+#### 2. 设置块
 
-Use the up/down arrow keys to move the cursor to the starting position of the block and press the `ENTER` key. Then, move the cursor to the end position of the block using the up/down arrow keys and press `ENTER` again. The selected block will be highlighted with a blue background.
+使用上下箭头键将光标移动到块的起始位置，然后按 `确认 (ENTER)` 键。接着，使用上下箭头键将光标移动到块的结束位置，并再次按 `确认 (ENTER)`。选定的块将以蓝色背景高亮显示。
 
 ![](../../../_assets/tp630/blockedit/20_set_block.PNG)
 
-(If you perform an action like copying or deleting without moving the cursor away from the block, you do not need to press `ENTER` a second time.) 
+（如果在不移开光标的情况下执行复制或删除等操作，则不需要第二次按 `确认 (ENTER)`。）
 <br><br>
 
-#### 3. Copy
+#### 3. 复制
 
-While the block is selected, click `F2: copy` to copy the content to the clipboard.
-Alternatively, you can click `F2: copy` without selecting a block to copy just a single line.
+在块被选中时，单击 `F2: copy` 将内容复制到剪贴板。
+或者，您可以在不选择块的情况下单击 `F2: copy` 仅复制一行。
 <br><br>
 
-#### 4. Paste
+#### 4. 粘贴
 
-Move the cursor to the line above where you want to paste using the up/down arrow keys, then click `F3: paste`.
-For example, if you want to paste the copied block below the `delay 1` statement in S1, place the cursor on `delay 1` and click `F3: paste`.
+使用上下箭头键将光标移动到您希望粘贴的位置上方的行，然后单击 `F3: paste`。
+例如，如果您希望将复制的块粘贴在 S1 中的 `delay 1` 语句下方，请将光标放在 `delay 1` 上，然后单击 `F3: paste`。
 
 ![](../../../_assets/tp630/blockedit/30_paste.PNG)
 ![](../../../_assets/tp630/blockedit/32_paste.PNG)
 <br><br>
 
-#### 5. Cut
+#### 5. 剪切
 
-When a block is selected, clicking `F1: cut` will make the block appear in light gray, indicating that it has been cut.  
-Alternatively, you can click `F1: cut` without selecting a block to cut a single line.
+当选择块时，单击 `F1: cut` 将使块呈现浅灰色，表示该块已被剪切。  
+或者，您可以在不选择块的情况下单击 `F1: cut` 来剪切一行。
 
 ![](../../../_assets/tp630/blockedit/40_cut.PNG)
 
-Pasting a cut block follows the same method as described above.
+粘贴剪切块的方法与上述描述相同。
 <br><br>
 
-#### 6. Delete
-When a block is selected, clicking `F4: delete` and then confirming the `Delete?` prompt will remove the block.  
-Alternatively, you can click `F4: delete` without selecting a block to delete a single line.
+#### 6. 删除
+当选择块时，单击 `F4: delete` 然后确认 `删除吗？ (Delete?)` 提示将删除该块。  
+或者，您可以在不选择块的情况下单击 `F4: delete` 来删除一行。
 
  ![](../../../_assets/tp630/blockedit/50_delete.PNG)
 <br><br>
 
-#### 7. Remark, Unremark
+#### 7. 备注、取消备注
 
-This feature is used to temporarily disable the execution of a specific section in a job program without deleting it.  
-When a block is selected and you click `F5: remark`, the statements within the block are commented out (remarked).
-When a block is selected and you click `F6: unremark`, the comments are removed (unremarked).  
-Additionally, you can comment or uncomment a single line without selecting a block.
+此功能用于暂时禁用作业程序中特定部分的执行而不删除它。  
+当选择块并单击 `F5: remark` 时，块内的语句将被注释掉（备注）。
+当选择块并单击 `F6: unremark` 时，注释将被移除（取消备注）。  
+此外，您可以在不选择块的情况下注释或取消注释一行。
 
 {% hint style="info" %}
-- Less than version V60.30-00 : Steps are not remarked.
-- Version V60.30-00 or later : Steps are also remarked.
+- 小于版本 V60.30-00 : 步骤未被备注。
+- 版本 V60.30-00 及更高版本 : 步骤也被备注。
 {% endhint %}
 
  ![](../../../_assets/tp630/blockedit/60_remark.PNG)
 <br><br>
 
 
-#### 8. Auto Comment / Remove Comments
+#### 8. 自动注释 / 移除注释
 
-(This feature is supported from version V70.02-00 and later.)
+（此功能支持从版本 V70.02-00 及以后的版本。）
 
-- Press the `[R5: Prev/next]` button to display the `[F1: auto comment]` and `[F2: uncomment]` buttons.
+- 按 `[R5: Prev/next]` 按钮以显示 `[F1: 自动注释] ([F1: auto comment])` 和 `[F2: 取消注释] ([F2: uncomment])` 按钮。
 
-- When you press `[F1: auto comment]`, the registered data comments are automatically inserted on the selected statements.
+- 当您按 `[F1: 自动注释] ([F1: auto comment])` 时，已注册的数据注释会自动插入到选定语句上。
 
-  * For how to configure data comments, refer to [4.11 data comment](../../../4-service/11-data-cmts.md).
+  * 有关如何配置数据注释，请参见 [4.11 data comment](../../../4-service/11-data-cmts.md)。
 
-  * For application conditions, refer to section [4.3.9 Statement data comment](../../../4-service/3-program-conversion/9-stmt-comment.md).
+  * 有关应用条件，请参阅 [4.3.9 Statement data comment](../../../4-service/3-program-conversion/9-stmt-comment.md) 部分。
 
-- When you press `[F2: uncomments]`, the comments of the selected statements are removed (regardless of whether data is registered).
+- 当您按 `[F2: uncomments]` 时，所选语句的注释将被移除（无论是否注册数据）。
 
 ![](../../../_assets/tp630/blockedit/66_auto_comment.PNG)
 
 
-#### 9. Closing Block Edit Mode
+#### 9. 关闭块编辑模式
 
-Block edit mode can be closed by clicking `F7: close` or pressing the `ESC` key.
+可以通过单击 `F7: close` 或按 `ESC` 键来关闭块编辑模式。
 <br><br>
 
 
 ----
 
-#### Auto-adjusting Step #
+#### 自动调整步骤 #
 
-For example, if steps S1-S2 are copied and pasted below, the `move` statement originally at S3 will be pushed down and renumbered as S5 due to the inserted 2 steps.
+例如，如果步骤 S1-S2 被复制并粘贴在下面，原本在 S3 的 `移动 (move)` 语句将由于插入的 2 步而被向下推，并重新编号为 S5。
 
-In this case, all branch statement within the same job such as `goto`, `gosub`, `if` statements, and the timeout address of `wait` statements' target addresses will be automatically adjusted from S3 to S5.
+在这种情况下，所有在同一作业中的跳转语句，例如 `goto`、`gosub`、`如果 (if)` 语句，以及 `等待 (wait)` 语句的目标地址的超时地址将会自动调整，从 S3 变为 S5。
 
-For instance, in the example below, the conditional branch statement `if di45==0 then S3` will be updated to S5 to ensure it still branches to the same `move` statement as before.
+例如，在下面的示例中，条件跳转语句 `if di45==0 then S3` 将被更新为 S5，以确保它仍然跳转到与之前相同的 `移动 (move)` 语句。
 
 ![](../../../_assets/tp630/blockedit/71_branch_adjust.PNG)
 ![](../../../_assets/tp630/blockedit/72_branch_adjust.PNG)
 
-This automatic step number adjustment is performed for operations that shift step numbers forward or backward, such as recording, deletion, and block editing.
+这种自动步号调整适用于向前或向后移动步号的操作，例如记录、删除和块编辑。
 
 {% hint style="info" %}
-The following specifications apply from version V60.30-00 and later.
+以下规格适用于版本 V60.30-00 及更高版本。
 {% endhint %}
 
-If a target step is removed due to deletion or remarking, it will be adjusted as `deleted_step#` or `remarked_step#`, as shown below.  
-Please manually adjust these modified target addresses to the appropriate step number (or line number/label).
-(If left unchanged, a syntax error will occur when executing the statement.)
+如果由于删除或备注而移除目标步骤，则将其调整为 `deleted_step#` 或 `remarked_step#`，如下所示。  
+请手动将这些修改的目标地址调整为适当的步骤号码（或行号/标签）。
+（如果不作更改，执行语句时将发生语法错误。）
 
 ![](../../../_assets/tp630/blockedit/76_branch_adjust.PNG)

@@ -1,32 +1,27 @@
-﻿# 7.3.2.3 Input/Output Signal Setting Information
+﻿# 7.3.2.3 输入/输出信号设置信息
 
-* `[Signal]`: The signal to apply the attribute to. The fb block signal can be designated by inputting the block number, decimal point, and signal number in sequence.
+* `[Signal]`: 应用属性的信号。fb块信号可以通过顺序输入块编号、小数点和信号编号来指定。
 
-  For example, if you want to designate the signal 35 of the block fb1, you can set it by inputting 1.35.
+  例如，如果您想指定块fb1的信号35，可以通过输入1.35来设置。
 
 * 
-  `[Negative Logic]`: The positive logic and negative logic of the general input/output signal are as follows.
+  `[Negative Logic]`: 一般输入/输出信号的正逻辑和负逻辑如下所示。
 
 ![](../../../_assets/image_457.png)
 
-* `[Pulse Count]`: Pulse count. This is the count of pulses. If it is set to a value between 1 and 100, pulse output will occur, and if set to 0, a delayed output will occur.
+* `[Pulse Count]`: 脉冲计数。这是脉冲的计数。如果设置为1到100之间的值，将发生脉冲输出；如果设置为0，将发生延迟输出。
 * 
-  `[Pulse On]`/`[Pulse Off]`: This is the On status time and Off status time of the output signal when pulse output or delayed output occurs.
+  `[Pulse On]`/`[Pulse Off]`: 这是脉冲输出或延迟输出发生时输出信号的开启状态时间和关闭状态时间。
 
-  The example of the pulse output according to the pulse attribute value is as follows.
+  根据脉冲属性值的脉冲输出示例如下。
 
 * 
-  Pulse output: Count: 3. On status time: 1 second. Off status time: 0.2 seconds
+  脉冲输出：计数：3。开启状态时间：1秒。关闭状态时间：0.2秒
 
 ![](../../../_assets/image_468.png)
 
-
-
-* Delayed output: Count: 0. On status time: 1 second. Off status time: 0.5 seconds
+* 延迟输出：计数：0。开启状态时间：1秒。关闭状态时间：0.5秒
 
 ![](../../../_assets/image_464.png)
 
-* `[Name]`: Name of the general input/output signal
-
-
-
+* `[Name]`: 一般输入/输出信号的名称

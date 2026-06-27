@@ -1,15 +1,15 @@
-﻿# 6.4.2 System Diagnostics
+﻿# 6.4.2 系统诊断
 
-Touch `System Diagnostics` in the panel selection window.
-When executed for the first time, the Brake Diagnostics screen appears.
+触摸 `System Diagnostics` 在面板选择窗口中。
+第一次执行时，会出现刹车诊断屏幕。
 
 ![System diagnostics monitoring](../../../_assets/tp630/pane-sys-diagnosis_eng.png)
 
 <table> 
   <thead> 
     <tr> 
-      <th style="text-align:left">No.</th> 
-      <th style="text-align:left">Description</th> 
+      <th style="text-align:left">编号</th> 
+      <th style="text-align:left">描述</th> 
     </tr> 
   </thead> 
   <tbody> 
@@ -17,10 +17,10 @@ When executed for the first time, the Brake Diagnostics screen appears.
       <td style="text-align:left"> <img src="../../../_assets/c1.png" alt/> 
       </td> 
       <td style="text-align:left"> 
-        <p> While the <strong>[System Diagnostics]</strong> panel is selected, you can switch to other diagnostic items by tapping the buttons below. </p> 
+        <p> 在选择 <strong>[System Diagnostics]</strong> 面板时，可以通过点击下面的按钮切换到其他诊断项目。 </p> 
         <ul> 
-          <li><strong>[Brake Diagnostics]</strong>: Switches to the brake diagnostics screen.</li> 
-          <li><strong>[Gas Spring Diagnostics]</strong>: Switches to the gas spring diagnostics screen.</li> 
+          <li><strong>[Brake Diagnostics]</strong>: 切换到刹车诊断屏幕。</li> 
+          <li><strong>[Gas Spring Diagnostics]</strong>: 切换到气弹簧诊断屏幕。</li> 
         </ul> 
       </td> 
     </tr> 

@@ -1,4 +1,3 @@
-﻿# 2.3.2 Recording and Changing a Step Position
+﻿# 2.3.2 记录和改变步骤位置
 
-You can record or change the robot position and posture of the recorded step using the `[REC]` key.
-
+您可以使用 `[REC]` 键记录或改变记录步骤的机器人位置和姿态。

@@ -1,14 +1,14 @@
-﻿# 4.8 Teach pendant sharing
+﻿# 4.8 教学 pendant 共享
 
 ![](../_assets/tp630/tp-sharing.png)
 
-Select the mode using the radio buttons at the top of the screen.
+使用屏幕顶部的单选按钮选择模式。
 
-* OFF : The sharing function is disabled. Under normal conditions, this should be set to OFF so that the teach pendant can connect to a controller properly.
+* OFF : 共享功能被禁用。在正常情况下，应该设置为 OFF，以便教学 pendant 能够正确连接到控制器。
 
-* VRC (PC) : A physical teach pendant is connected to multiple virtual controllers (VRCs) running in HRSpace4 on a desktop PC, and can be used by switching between them.
-Refer to the following section in the HRSpace4 Help for connection instructions.
-  + HRSpace4 Manual - 8.4 Real Teach Pendant (RTP)
+* VRC (PC) : 一个物理教学 pendant 连接到多个在桌面 PC 上运行的虚拟控制器 (VRCs)，并可以通过在它们之间切换来使用。
+请参阅 HRSpace4 帮助中的以下部分以获取连接说明。
+  + HRSpace4 手册 - 8.4 实际教学 pendant (RTP)
 
-* RRC (Real Robot Controller) : One teach pendant is connected to multiple controllers and used by switching between them.
-  + Additional optional hardware is required. This feature is currently not supported.
+* RRC (真实机器人控制器) : 一个教学 pendant 连接到多个控制器并通过在它们之间切换来使用。
+  + 需要额外的可选硬件。此功能目前不受支持。

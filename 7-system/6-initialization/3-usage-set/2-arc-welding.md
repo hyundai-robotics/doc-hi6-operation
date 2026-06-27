@@ -1,16 +1,11 @@
-﻿# 7.6.3.2 Arc Welding
+﻿# 7.6.3.2 弧焊 
 
-If you select the operation usage as Arc welding, you can use commands related to arc welding and access the menus related to arc welding.
+如果您选择操作用途为弧焊，则可以使用与弧焊相关的命令并访问与弧焊相关的菜单。
 
 ![](../../../_assets/tp630/init-usage-arc_eng.png)
 
-1.	Set the welding machine type \(analog or digital\) in `[Arc Welding]`. Other usages will be handled as disable, and a list of welders supported by the system will appear at the bottom of the screen.
+1. 在 `[Arc Welding]` 中设置焊接机类型 \(模拟或数字\)。其他用途将被禁用，系统支持的焊机列表将在屏幕底部显示。
 
-2.	After checking the welder list, set the welder number.
+2. 检查焊机列表后，设置焊机编号。
 
-3.	Click the `[User Key Initialization]` drop-down menu and the `[Input/Output Assign Initialization]` drop-down menu, respectively, and select arc.
-
-
-
-
-
+3. 点击 `[User Key Initialization]` 下拉菜单和 `[Input/Output Assign Initialization]` 下拉菜单，分别选择弧焊。

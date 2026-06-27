@@ -1,13 +1,13 @@
-﻿# 4.3.3 Recording Position
+﻿# 4.3.3 录制位置
 
-You can change and set the coordinate system of the step position recorded as a hidden pose in a specific step of the program and apply it to the existing program or create a new program.
+您可以更改和设置在程序特定步骤中记录为隐藏姿势的步骤位置的坐标系统，并将其应用于现有程序或创建新程序。
 
-1. Touch the `[6: Program Conversion  - 3: Record Pose conversion]` menu. Then the recording position conversion setting window will appear.
+1. 触摸`[6: 程序转换 - 3: 录制姿势转换] ([6: 程序转换  - 3: 录制姿势转换])`菜单。然后将出现录制位置转换设置窗口。
 
-2. After setting the recording position option, touch the `[OK]` button.
+2. 在设置录制位置选项后，触摸`[确定]`按钮。
 
   ![](../../_assets/tp630/prg-position-modi_eng.png)
 
-* `[source program]`/`[Target program]`: You can input the number of the original program \(Initial setting value: The currently selected program\) of which recording position you want to change and the number of the new program you want to save after the change of recording position. If you set the number of the target program to match the same number as that of the original program, the original program will be overwritten by and replaced with a new program.
-* `[Step range]`: You can set the range of the steps \(Initial setting value: 1/last step\) to which you will apply the change of the recording position.
-* `[Coord. System Format]`: You can select the coordinate system to shift the position data recorded in the step. If you select base, robot, tool, or user, the position data will be converted to Cartesian coordinate values, and if you select joint, the position data will be converted to axis angles.
+* `[源程序]`/`[目标程序]`：您可以输入想要更改的原始程序的编号 \(初始设置值：当前选定的程序\) 和您希望在更改录制位置后保存的新程序的编号。如果您将目标程序的编号设置为与原始程序相同，则原始程序将被新的程序覆盖和替换。
+* `[步长范围]`：您可以设置要应用录制位置更改的步骤范围 \(初始设置值：1/最后一步\)。
+* `[坐标系统格式]`：您可以选择用于移位在步骤中记录的位置数据的坐标系统。如果选择基准、机器人、工具或用户，则位置数据将被转换为笛卡尔坐标值。如果选择关节，则位置数据将被转换为轴角度。

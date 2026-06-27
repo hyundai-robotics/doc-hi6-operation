@@ -1,6 +1,5 @@
-﻿# 6.1.1 Pose
+# 6.1.1 位姿
 
-Touch `[Pose]` in the panel selection window. Then, the robot pose information window will appear. You can check the current angle of each axis of the robot, the coordinate value of the tool center point \(TCP\), and the current value and command value of the encoder.
+在面板选择窗口中点击 `[Pose]`。然后，机器人位姿信息窗口将出现。您可以查看每个轴的当前角度、工具中心点 \(TCP\) 的坐标值，以及编码器的当前值和命令值。
 
 ![](../../_assets/tp630/pane-pose_eng.png)
-

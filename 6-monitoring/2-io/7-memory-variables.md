@@ -1,16 +1,16 @@
-﻿# 6.2.7 Memory variables
+﻿# 6.2.7 内存变量
 
 
-Touch `[memory variables]` in the panel selection window.
-Of internal PLC relays, the accessible variables from Robot Language are displayed.
+在面板选择窗口中触摸 `[memory variables]`。
+来自机器人语言的可访问变量显示在内部 PLC 继电器中。
 
 ![](../../_assets/tp630/pane-memory-variables_eng.png) 
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -20,7 +20,7 @@ Of internal PLC relays, the accessible variables from Robot Language are display
       </td>
       <td style="text-align:left"> 
       <ul>
-          Displays the current values of data memory (mw) and system memory (sw) in hexadecimal, signed decimal, long integer, and floating-point formats.
+          以十六进制、带符号十进制、长整型和浮点格式显示数据内存 (mw) 和系统内存 (sw) 的当前值。
       </ul>
       </td>
     </tr>
@@ -30,9 +30,9 @@ Of internal PLC relays, the accessible variables from Robot Language are display
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[start addr.]: Select this button and enter the start address in the dialog box to display it on the first line of the screen.</li>
-          <li>[manual setting]: Select the desired address cell on the screen and click this button to enter a new value.</li>
-          <li>[_mw/_sw]: Click this button to toggle between displaying the mw and sw variables.</li>
+          <li>[start addr.]: 选择此按钮并在对话框中输入起始地址以在屏幕的第一行显示。</li>
+          <li>[manual setting]: 在屏幕上选择所需的地址单元并单击此按钮以输入新值。</li>
+          <li>[_mw/_sw]: 单击此按钮在显示 mw 和 sw 变量之间切换。</li>
         </ul>
       </td>
     </tr>

@@ -1,18 +1,14 @@
-﻿# 1.2.4.2 Status display window
+﻿# 1.2.4.2 状态显示窗口
 
-
-This displays various statuses of robot operation. You can set the displayed information by touching each applicable section.
+这显示机器人的各种操作状态。您可以通过触摸每个相关部分来设置显示的信息。
 
 ![](../../../_assets/tp630/TP-main-status_eng.png)
 
-
-
-| No. | Description | 
+| No. | 描述 | 
 | :--- | :--- |
-| ![](../../../_assets/c1.png) | The operation mode of the robot is displayed. <li>manual: a mode for jogging operations and editing JOB programs</li> <li>auto:  a mode for running JOB programs automatically</li> <li>remote manual: a mode for remotely setting the manual or auto mode through I/O signal (current status: manual mode)</li> <li>remote auto: a mode for remotely setting the manual or auto mode through I/O signal (current status: auto mode)</li> |
-| ![](../../../_assets/c2.png) | You can check the current tool information and change it in the pop-up message box.|
-| ![](../../../_assets/c3.png) | Mechanism displays the robot type or the number of the selected additional axis. The robot is 0, and for the user refer to `System - 5: Initialize - 6: Mechanism setting`.  |
-| ![](../../../_assets/c4.png) | This displays the status of the reference coordinate system selected for the manual operation. A status display of 'joint', 'user', 'robot', or 'tool' changes in order, each time you push the status window. With `[Axis Operation]` keys, you can move the robot according to the reference coordinate system.<li> Joint coordinate system: Each axis of the robot will move independently in accordance with the lower part name of `[Axis Operation]` keys.</li> <li> Robot coordinate system:  The robot TCP is translated and rotated on the basis of the robot coordinate system  by `[Axis Operation]` keys.</li> <li> User coordinate system:  The robot TCP is translated and rotated on the basis of the user coordinate system  by `[Axis Operation]` keys..</li> <li> <img src="../../../_assets/bt-crd-tool (1) (1) (2).png" alt/> Tool coordinate system : The robot TCP is translated and rotated on the basis of the tool coordinate system by `[Axis Operation]` keys.</li>|
-| ![](../../../_assets/c5.png) | Determine the speed to operate the robot in the manual mode. In the manual mode, there are 2 different types of operation. One is to run it manually and the other is the step forward/backward operation. There are 8 different steps (1~8) in the level of the speed of manual operation.  <li>Speed level increases by a step if pressing the speed HI key of teach pendant, and decreases by a step if pressing the speed LOW key. Speed level is set to 8 if pressing the [SHIFT (FAST)] + Speed  HI key, and is set to 1 if pressing the [SHIFT (FAST)] + Speed LOW key. </li> |
-| ![](../../../_assets/c6.png) | Date and time information are displayed. <br> You can change this in [service  - 8: Date, time setting] menu. ([4.5 Setting of Date and Time](../../../4-service/5-date-time-setting.md))|
-
+| ![](../../../_assets/c1.png) | 机器人的操作模式显示。 <li>manual: 用于手动操作和编辑 JOB 程序的模式</li> <li>auto: 用于自动运行 JOB 程序的模式</li> <li>remote manual: 通过 I/O 信号远程设置手动或自动模式的模式（当前状态：手动模式）</li> <li>remote auto: 通过 I/O 信号远程设置手动或自动模式的模式（当前状态：自动模式）</li> |
+| ![](../../../_assets/c2.png) | 您可以在弹出消息框中查看当前工具信息并进行更改。 |
+| ![](../../../_assets/c3.png) | 机制显示机器人的类型或所选附加轴的编号。机器人为 0，供用户参考 `系统 - 5: 初始化 - 6: 机制设置 (System - 5: Initialize - 6: Mechanism setting)`。 |
+| ![](../../../_assets/c4.png) | 显示为手动操作选择的参考坐标系的状态。 状态显示为“joint”、“user”、“robot”或“tool”，每次按下状态窗口时依次变化。 使用 `[Axis Operation]` 键，您可以根据参考坐标系移动机器人。<li>关节坐标系：机器人的每个轴将根据 `[Axis Operation]` 键的下部名称独立移动。</li> <li>机器人坐标系：机器人的 TCP 根据机器人坐标系通过 `[Axis Operation]` 键进行平移和旋转。</li> <li>用户坐标系：机器人的 TCP 根据用户坐标系通过 `[Axis Operation]` 键进行平移和旋转。</li> <li><img src="../../../_assets/bt-crd-tool (1) (1) (2).png" alt/> 工具坐标系：机器人的 TCP 根据工具坐标系通过 `[Axis Operation]` 键进行平移和旋转。</li> |
+| ![](../../../_assets/c5.png) | 确定在手动模式下操作机器人的速度。在手动模式下，有两种不同的操作类型。一种是手动运行，另一种是步进前进/后退操作。 手动操作的速度有 8 个不同的级别（1~8）。 <li>如果按下教学挂架的速度 HI 键，速度级别增加一个步骤；如果按下速度 LOW 键，速度级别降低一个步骤。 按下 [SHIFT (FAST)] + 速度 HI 键时，速度级别设置为 8；按下 [SHIFT (FAST)] + 速度 LOW 键时，速度级别设置为 1。</li> |
+| ![](../../../_assets/c6.png) | 显示日期和时间信息。 <br> 您可以在 [service - 8: 日期、时间设置] 菜单中更改此信息。 ([4.5 日期和时间设置](../../../4-service/5-date-time-setting.md)) |

@@ -1,14 +1,13 @@
-﻿# 7.3.10.5 Temporary-key registration
+﻿# 7.3.10.5 临时密钥注册
 
-* A temporary key can be issued by pressing the [F] key.
+* 可以通过按下 [F] 键来发放临时密钥。
 
   ![](../../../_assets/tp630/license-key3.png)
 
 
-* If issued successfully, the remaining days for use are displayed as shown in the following screen.
+* 如果成功发放，剩余使用天数将在以下屏幕中显示。
 
   ![](../../../_assets/tp630/license-key4.png)
 
 
-* Caution) If the remaining days are 0, the optional function can no longer be used, and after that, a temporary key is issued for 1 day use. Because the production line may be stopped due to optional functions, please be sure to contact us before the remaining days reach 0 to receive an official license key. 
-
+* 注意）如果剩余天数为 0，选项功能将无法再使用，此后将发放 1 天的临时密钥。由于可选功能可能导致生产线停滞，请务必在剩余天数达到 0 之前与我们联系以获取正式许可证密钥。

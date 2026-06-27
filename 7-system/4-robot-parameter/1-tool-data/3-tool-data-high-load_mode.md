@@ -1,26 +1,25 @@
-﻿# 7.4.1.3 High Load Mode
+﻿# 7.4.1.3 高负载模式
 
-The availability of High Load Mode may vary depending on the robot model. In general, high load mode is supported on medium-sized robots with a payload capacity of 100 kg or more.<br> For models that support high load mode, you can configure "4. High load mode" as shown in the figure below in `[F2: system] - 3: Robot Parameter - 33: Servo parameter - 9: Servo control environment` menu.<br> For models that support high load mode, auto apply is the default setting.
+高负载模式的可用性可能因机器人型号而异。一般来说，高负载模式适用于额定负载能力为100 kg或更高的中型机器人。<br> 对于支持高负载模式的型号，您可以在`[F2: 系统] - 3: Robot Parameter - 33: 伺服参数 - 9: 伺服控制环境设定 ([F2: system] - 3: Robot Parameter - 33: Servo parameter - 9: Servo control environment)`菜单中按如下图配置“4. 高负载模式”。<br> 对于支持高负载模式的型号，自动应用是默认设置。
 
-![Figure 63 High Load Mode Setting Screen](../../../_assets/image_high_load_mode_setting_eng.png)
+![Figure 63 高负载模式设定屏幕](../../../_assets/image_high_load_mode_setting_eng.png)
 
-| Setting Value | Operating Characteristics |
+| 设置值 | 操作特性 |
 | :--- | :--- |
-|Disable| Operates in normal mode regardless of tool load. <br>- When the motor is turned ON, warning (W0051) is generated indicating risk of premature robot failure due to high load mode being "Disable".
-|Auto apply| Operates in normal mode when the tool load is below the rated load.<br> When the load exceeds the rated value, it switches to high load mode, and the robot's operating speed and acceleration/deceleration are reduced.
-|Permit exception| If the tool load is below the maximum allowable ratio for high load mode, it operates the same as auto apply.<br> If the high-load threshold is exceeded, it operates in high load exception mode.<br> -	When the motor is turned ON, warning (W00177) is generated indicating risk of premature robot failure due to high load "Permit exception" mode.
+|禁用| 在工具负载下以正常模式操作。 <br>- 当电机开启时，将产生警告（W0051），指示由于高负载模式为“禁用”而导致机器人提前失效的风险。 |
+|自动应用| 当工具负载低于额定负载时以正常模式操作。<br> 当负载超过额定值时，切换到高负载模式，机器人操作速度和加速度/减速度将降低。 |
+|允许异常| 如果工具负载低于高负载模式的最大允许比率，则以与自动应用相同的方式操作。<br> 如果超过高负载阈值，则以高负载异常模式操作。<br> - 当电机开启时，将产生警告（W00177），指示由于高负载“允许异常”模式而导致机器人提前失效的风险。|
 
-The high load mode application status based on the currently applied tool load can be checked as shown in the figure below.<br>
+可以如下面图所示检查当前施加的工具负载下的高负载模式应用状态。<br>
 
-![Figure 64 Check high load mode application status based on tool load](../../../_assets/home_tool_no_eng.png)
+![Figure 64 根据工具负载检查高负载模式应用状态](../../../_assets/home_tool_no_eng.png)
 
+![正常模式工具（常规字体）](../../../_assets/tp630/normal_mode_tool_eng.png) : 正常模式（常规字体）
 
-![Normal Mode Tool (regular font)](../../../_assets/tp630/normal_mode_tool_eng.png) : Nomal Mode (regular font)
+![高负载模式（粗体字）](../../../_assets/tp630/high_load_mode_tool_eng.png) : **高负载模式**（粗体字）
 
-![High Load Mode (bold font)](../../../_assets/tp630/high_load_mode_tool_eng.png) : **High Load Mode** (bold font)
-
-![High Load Exception Mode (red font)](../../../_assets/tp630/high_load_exception_mode_tool_eng.png) : <span style="color: red; font-weight: bold;">High Load Exception Mode</span> (red font)
+![高负载异常模式（红色字体）](../../../_assets/tp630/high_load_exception_mode_tool_eng.png) : <span style="color: red; font-weight: bold;">高负载异常模式</span>（红色字体）
 
 {% hint style="info" %}
-The allowable ratio for high load mode may vary depending on the robot model and controller software version.
+高负载模式的允许比率可能因机器人型号和控制器软件版本而异。
 {% endhint %}

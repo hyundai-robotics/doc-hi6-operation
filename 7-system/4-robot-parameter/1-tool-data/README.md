@@ -1,37 +1,30 @@
-﻿# 7.4.1    Tool Data
+﻿# 7.4.1    工具数据
 
-You can set the distance and angle of the TCP based on the robot's R1-axis flange and register the tool's weight, center of gravity, and inertia. You can perform registration manually using the `[1: Tool data]` menu.
+您可以根据机器人的 R1 轴法兰设置 TCP 的距离和角度，并注册工具的重量、重心和惯性。您可以使用 `[1: Tool data]` 菜单手动进行注册。
 
-In another way, the tool length can be set using the automatic calibration function, and the tool's weight, center of gravity, and inertia can be registered using the load estimation function.
+另一种方法是使用自动校准功能设置工具长度，并使用负载估计功能注册工具的重量、重心和惯性。
 
-In the case of interpolation operation such as linear or circular interpolation, the trajectory will be created based on the TCP, so the length and angle of the tool should be accurately set before the teaching.
+在进行线性或圆形插补等插补操作时，轨迹将基于 TCP 创建，因此在教学之前应准确设置工具的长度和角度。
 
-The ${cont_model} controller performs control based on the dynamics of the robot. The robot can operate quickly and safely only when the weight, center, and inertia of the tool are correctly set. If the weight, center, and inertia values of the tool are incorrect or wrong, serious problems may occur in the performance and service life of the robot.
+${cont_model} 控制器根据机器人的动力学执行控制。只有在正确设置工具的重量、中心和惯性时，机器人才能快速安全地操作。如果工具的重量、中心和惯性值不正确，可能会对机器人的性能和使用寿命造成严重问题。
 
-In particular, in the case of using the tool change function, all tool information related to tool change, not only the information about each tool, but also separate numbers assigned to disconnected tools, should be inputted for the use. Moreover, even during the handling operation, the attachment/detachment status of the workpiece should be assigned to each tool number for the use.
+特别是在使用工具更换功能时，所有与工具更换相关的工具信息，不仅是每个工具的信息，还有分配给断开工具的单独编号，均应输入以供使用。此外，即使在处理操作期间，工件的装卸状态也应分配给每个工具编号以供使用。
 
-The length of the tool is the length in each direction in the flange coordinate system. \(Length in X-axis direction: Xt / Length in Y-axis direction: Yt / Length in Z-axis direction: Zt\)
+工具的长度是在法兰坐标系统中每个方向的长度。 \(X 轴方向长度: Xt / Y 轴方向长度: Yt / Z 轴方向长度: Zt\)
 
+![图 60 每种机器人类型的法兰坐标系统](../../../_assets/image_213.png)
 
+工具的角度是在法兰坐标系统中每个方向的姿态转换量。 \(X 轴方向角度: Rx / Y 轴方向角度: Ry / Z 轴方向角度: Rz\)
 
-![Figure 60 Flange Coordinate System for Each Robot Type](../../../_assets/image_213.png)
+![图 61 工具角度: 旋转 Rx \(左\) / 旋转 Ry \(中\) / 旋转 Rz \(右\)](../../../_assets/image_211.png)
 
-The angle of the tool is the posture conversion amount in each direction in the flange coordinate system. \(Angle in X-axis direction: Rx / Angle in Y-axis direction: Ry / Angle in Z-axis direction: Rz\)
+工具的长度和角度将基于法兰坐标系统进行设置。工具长度可以设置为从法兰坐标系统的中心到 TCP 的距离。
 
-![Figure 61 Tool Angle: Rotating Rx \(Left\) / Rotating Ry \(Middle\) / Rotating Rz \(Right\)](../../../_assets/image_211.png)
-
-The length and angle of the tool will be set based on the flange coordinate system. The tool length can be set as the distance from the center of the flange coordinate system to the TCP.
-
-The tool posture is a value acquired by performing rotation sequentially in the X, Y, and Z directions based on the tool flange coordinate system according to the tool angle set as above.
+工具姿态是根据上述设置的工具角度，基于工具法兰坐标系统在 X、Y 和 Z 方向上依次进行旋转而获得的值。
 
 Rxyz = Rot\(z, Rz\)Rot\(y, Ry\)Rot\(x, Rx\)
 
-* Rxyz: Tool posture rotation matrix based on the tool flange
-* Rot\(z, Rz\): Rotation matrix that rotation occurs as much as Rz in the Z-axis direction of the flange coordinate system 
-* Rot\(y, Ry\): Rotation matrix that rotation occurs as much as Ry in the Y-axis direction of the flange coordinate system
-* Rot\(x, Rx\): Rotation matrix that rotation occurs as much as Rx in the X-axis direction of the flange coordinate system
-
-
-
-
-
+* Rxyz: 基于工具法兰的工具姿态旋转矩阵
+* Rot\(z, Rz\): 在法兰坐标系统的 Z 轴方向上旋转 Rz 的旋转矩阵 
+* Rot\(y, Ry\): 在法兰坐标系统的 Y 轴方向上旋转 Ry 的旋转矩阵
+* Rot\(x, Rx\): 在法兰坐标系统的 X 轴方向上旋转 Rx 的旋转矩阵

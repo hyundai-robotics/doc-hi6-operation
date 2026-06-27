@@ -1,116 +1,113 @@
-﻿# 6.3.2 Hot Edit
+# 6.3.2 热编辑
 
-This is the function to edit the program without stopping it, while playback is still running. 
+这是在播放仍在运行时编辑程序而不停止它的功能。
 
 {% hint style="warning" %}
-* When you edit and apply the program that is currently in auto operation or program that will be called, it will be applied from the next cycle (After the program end is executed) and play back the robot with the edited program. Please take maximum precaution since the wrongly implemented editing can cause major accident such as collision between robot and jig.
+* 当您编辑并应用当前处于自动操作中或将要调用的程序时，将从下一个周期（执行程序结束后）开始应用，并用编辑过的程序回放机器人。请务必谨慎，因为错误的编辑可能会导致重大事故，例如机器人与夹具之间的碰撞。
 {% endhint %}
 <br><br>
 
-### Entry 
+### 输入
 
-Touch the `[hot edit]` button at the panel, and Hot Edit window of the current program will be open.
+触摸面板上的 `[hot edit]` 按钮，当前程序的热编辑窗口将打开。
 
 ![](../../_assets/tp630/pane-hot-edit-0_eng.png)
 
 <br>
 
+### 可编辑的类型
 
-### Types of possible edit
+尽管操作与手动模式相同，但以下功能无法使用。
 
-Although the operation is the same as that of manual mode, the following functions cannot be used.
-
-1) `[REC]` key (Record hidden pose MOVE) : Displays the "Operation not allowed while in Hot Edit" message.
-2) `[POS. MOD]` key : Displays the "Operation not allowed while in Hot Edit" message.
-
+1) `[REC]` 键（记录隐藏的姿态MOVE）：显示“在热编辑过程中不允许操作”的消息。
+2) `[POS. MOD]` 键：显示“在热编辑过程中不允许操作”的消息。
 
     ![](../../_assets/tp630/pane-hot-edit-1_eng.png)
 
 <br>
 
-### Reflection 
+### 反映
 
-If you have finished the program edit, click the button ![](../../_assets/tp630/bt-menu.png) on the left side of the guide display bar to open the pop-up menu, and select [hotedit: request to apply].
+如果您完成了程序编辑，请点击 ![](../../_assets/tp630/bt-menu.png) 导航显示条左侧的按钮以打开弹出菜单，并选择 [hotedit: request to apply]。
 
 ![](../../_assets/tp630/pane-hot-edit-apply2_eng.png)
 
 <br>
 
-The actual timing of the reflection is displayed in the following table.
+实际的反映时间显示在以下表格中。
 
-<u>V60.32-03 or later versions:</u>
+<u>V60.32-03 或更高版本：</u>
 <table>
 <thead>
   <tr>
-    <th>Status</th>
-    <th>Program</th>
-    <th>After request, reflection timing</th>
+    <th>状态</th>
+    <th>程序</th>
+    <th>请求后，反映时间</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td rowspan="2">Regardless of <br>Not running<br>or  Running</td>
-    <td>Not running program<br>(Job not included in call stack)</td>
-    <td>immediately applied</td>
+    <td rowspan="2">无论是 <br>不运行<br> 还是运行</td>
+    <td>不运行程序<br>(不包含在调用栈中的作业)</td>
+    <td>立即应用</td>
   </tr>
   <tr>
-    <td>Running program<br>(Job included in call stack)</td>
-    <td>at the end of the cycle<br>or RESET 0</td>
+    <td>运行程序<br>(包含在调用栈中的作业)</td>
+    <td>在周期结束时<br>或RESET 0</td>
   </tr>
 </tbody>
 </table>
 <br>
 
 <br>
-<u>V60.32-02 or prior versions:</u>
+<u>V60.32-02 或之前版本：</u>
 
 <table>
 <thead>
   <tr>
-    <th>Status</th>
-    <th>Program</th>
-    <th>After request, reflection timing</th>
+    <th>状态</th>
+    <th>程序</th>
+    <th>请求后，反映时间</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Not running</td>
+    <td>不运行</td>
     <td>-</td>
-    <td>immediately applied</td>
+    <td>立即应用</td>
   </tr>
   <tr>
-    <td rowspan="2">Running</td>
-    <td>Not running program<br>(Job not included in call stack)</td>
-    <td>immediately applied</td>
+    <td rowspan="2">运行</td>
+    <td>不运行程序<br>(不包含在调用栈中的作业)</td>
+    <td>立即应用</td>
   </tr>
   <tr>
-    <td>Running program<br>(Job included in call stack)</td>
-    <td>at the end of the cycle</td>
+    <td>运行程序<br>(包含在调用栈中的作业)</td>
+    <td>在周期结束时</td>
   </tr>
 </tbody>
 </table>
 
 <br>
 
-### Title bar display
+### 标题栏显示
 
-  A current status symbol is displayed on the right side of the title bar in the Hot Edit window.
+  当前状态符号显示在热编辑窗口标题栏的右侧。
 
-  \'*' symbol means that the teaching program has been modified and is different from the current running program.  
-  
+  \'*' 符号表示教学程序已被修改，并与当前运行的程序不同。
+
   ![](../../_assets/tp630/pane-hot-edit-apply3.png)
 
-  \'>' symbol means that Hot Edit has been requested, while the program is running. 
+  \'>' 符号表示在程序运行时已请求热编辑。
 
   ![](../../_assets/tp630/pane-hot-edit-apply4.png)
 
-  ' '(blank) symbol means that the request has not been reflected yet, or has already been reflected and so the program is the same as the running one.  
-  
-  ![](../../_assets/tp630/pane-hot-edit-apply5.png)
+  ' '(空白) 符号表示请求尚未反映，或已反映，因此程序与运行的程序相同。
 
+  ![](../../_assets/tp630/pane-hot-edit-apply5.png)
 
 <Br>
 
-### Different program selection
+### 不同程序选择
 
-When you press the `[SHIFT]` + `[PROG]` key, you can select a different program. You can also create a new program.
+当您按下 `[SHIFT]` + `[PROG]` 键时，您可以选择不同的程序。您还可以创建一个新程序。

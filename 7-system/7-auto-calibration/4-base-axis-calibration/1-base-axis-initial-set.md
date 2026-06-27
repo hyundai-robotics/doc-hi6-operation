@@ -1,24 +1,23 @@
-﻿# 7.7.4.1 Base Axis Initial Setting
+﻿# 7.7.4.1 基轴初始设置
 
-1.	In manual mode, touch the `system - 5: Initialize - 5: Additional Axis Parameter Setting`.
+1. 在手动模式下，触摸 `系统 - 5: 初始化 - 5: 附加轴参数设置 (system - 5: Initialize - 5: Additional Axis Parameter Setting)`。
 
-2.	After setting the parameters such as the specifications and configuration of the additional axis, touch the `[OK]` button.
+2. 设置完附加轴的规格和配置等参数后，触摸 `[OK]` 按钮。
 
-* `[Axis Specification]`: You can select the specification of the additional axis as base.
-* `[Axis Configuration]`: You can select the mechanism of the additional axis as any.
-* Other parameters: You can set other parameters according to the instrumental design value and controller configuration specifications.
+* `[轴规格]`: 您可以选择附加轴作为基轴的规格。
+* `[轴配置]`: 您可以选择附加轴的机制为任意。
+* 其他参数: 您可以根据仪器设计值和控制器配置规范设置其他参数。
 
 
 
 {% hint style="info" %}
-* When the system is initialized, the additional axis setting menu will appear, allowing you to perform the initial setting of the base axis.
+* 当系统初始化时，附加轴设置菜单将会出现，允许您执行基轴的初始设置。
 * 
-  The additional axis parameter setting menu is a function for engineers, so it will not be supported for general users. For details on the additional axis parameter setting menu, contact the engineer for inquiry.
+  附加轴参数设置菜单是针对工程师的功能，因此一般用户将无法支持。有关附加轴参数设置菜单的详细信息，请联系工程师进行咨询。
 {% endhint %}
 
 {% hint style="warning" %}
-* You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. 
-* Do not set the axis configuration as any for the other base axes except for the first base axis.
-* Base axis calibration is available only when the base axis configuration is any.
+* 您只能为第一个基轴使用校准功能，并且在设置附加轴参数时可以将轴配置设置为任意。
+* 除第一个基轴外，其他基轴不要将轴配置设置为任意。
+* 基轴校准仅在基轴配置为任意时可用。
 {% endhint %}
-

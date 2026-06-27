@@ -1,16 +1,15 @@
-﻿# 7.3.11.3 Monitoring
+# 7.3.11.3 监控
 
-You can monitor the setting information and operation status of the firmware and communication the use of which you have set in the industrial communication menu.
+您可以监控您在工业通信菜单中设置的固件和通信的设置信息及操作状态。
 
-1.	Touch `service - 19: Industrial Communication Monitoring` menu. Then the screen for monitoring the industrial communication of each board will appear.
+1. 触摸 `服务 - 19: 工业通信监控 (service - 19: Industrial Communication Monitoring)` 菜单。然后，每个板卡的工业通信监控屏幕将出现。
 
-2.	By selecting the desired tab, you can check the detailed information of the firmware, communication devices and communication configuration. 
+2. 通过选择所需的选项卡，您可以检查固件、通信设备和通信配置的详细信息。 
 
     ![](../../../_assets/tp630/svc-industrial-mon_eng.png)
 
 <Br>
 
 {% hint style="info" %}
-You can restart the industrial communication of the PCI communication card by using the `[Restart]` button.
+您可以使用 `[Restart]` 按钮重启 PCI 通信卡的工业通信。
 {% endhint %}
-

@@ -1,9 +1,6 @@
-﻿# 7.5.16.3 Speed
+﻿# 7.5.16.3 速度
 
-This function changes the speed level of robot jogging by signal input. <br>
-When the set input signal becomes ON, it changes to the corresponding speed level and also outputs the corresponding output signal as ON. <br>
+此功能通过信号输入改变机器人慢跑的速度级别。 <br>
+当设定的输入信号变为 ON 时，它会更改为相应的速度级别，并且输出相应的输出信号为 ON。 <br>
 
 ![](../../../_assets/tp630/speed_level.png)
-
-
-

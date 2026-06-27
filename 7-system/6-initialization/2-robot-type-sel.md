@@ -1,64 +1,55 @@
-﻿# 7.6.2 Robot Type Selection
+# 7.6.2 机器人类型选择
 
-1.	Touch the `[5: Initialize  - 2: Robot Type Selection]` menu. Or touch the `[Mechanism]` button at the top right of the ${cont_model} teach pendant screen.
+1. 触摸 `[5: Initialize - 2: Robot Type Selection] ([5: Initialize  - 2: Robot Type Selection])` 菜单。或者触摸 ${cont_model} 教教具屏幕右上方的 `[Mechanism]` 按钮。
 
-2.	Select a robot in the robot model selection window, and then touch the `[OK]` button.
+2. 在机器人模型选择窗口中选择一个机器人，然后触摸 `[OK]` 按钮。
 
     ![](../../_assets/tp630/init-robot-select_eng.png)
 
-
-
-* You can scroll through the robot model list to check the model name, or you can input the model name to search.
-* If you touch the robot usage button, only the robots belonging to the usage can be checked on the list.
+* 您可以滚动机器人模型列表以查看模型名称，或输入模型名称进行搜索。
+* 如果您触摸机器人使用按钮，列表中将仅显示属于该用途的机器人。
 * 
-  If you select a new robot model, the machine parameter file \(hi6\_porj.json\) will be restored to the initial setting values, and various history files will also be initialized.
+  如果您选择一个新的机器人模型，机器参数文件 \(hi6\_porj.json\) 将恢复到初始设定值，各种历史文件也将被初始化。
 
 * 
-  If you select a system that includes additional axes such as a travel axis or a servo gun, you should set the number of additional axes. If a system consists of only robot axes without additional axes, input 0. 
+  如果您选择一个包含额外轴的系统，如行走轴或伺服枪，您需要设置额外轴的数量。如果系统仅由机器人轴组成而没有额外轴，请输入 0。
 
   ![](../../_assets/tp630/init-addaxis-pop_eng.png)
 
 {% hint style="warning" %}
-* The manipulator and controller are shipped as one system. For this reason, the robot controller is equipped with a drive suitable for the drive capacity of the robot that is part of the system.
-* When resetting the system by initializing it, you must check the model of the robot that was set to the initial setting values when shipped from the factory, and then set the correct model.
-
+* 操纵器和控制器作为一个系统发货。因此，机器人控制器配备适合于系统组成部分的机器人驱动能力的驱动。
+* 通过初始化系统重置时，必须检查出厂时设置为初始设定值的机器人模型，然后设置正确的模型。
 
 {% endhint %}
 
-3.	Enter Engineer Mode. For detailed settings, please refer to "[8.12 Engineer Mode](../../8-r-code/12-r314.md)".
+3. 进入工程师模式。有关详细设置，请参考 "[8.12 Engineer Mode](../../8-r-code/12-r314.md)"。
 
+4. 触摸 `[system]` 按钮 - `[3: Robot Parameter - 4: Encoder Offset] ([3: Robot Parameter  - 4: Encoder Offset])` 菜单。
 
-4.	Touch the `[system]` button  - `[3: Robot Parameter  - 4: Encoder Offset]` menu.
-
-
-5.	Perform encoder offset calibration. To turn on the motor, you should set the encoder offset temporarily even if the robot position is not the reference position.For detailed information, please refer to "[7.4.4 Encoder Offset](../../7-system/4-robot-parameter/4-encoder-offset/README.md)".
+5. 执行编码器偏移校准。要启动车马，即使机器人位置不是参考位置，您也应该暂时设置编码器偏移。有关详细信息，请参考 "[7.4.4 Encoder Offset](../../7-system/4-robot-parameter/4-encoder-offset/README.md)"。
 
     ![](../../_assets/tp630/robot-encoder-offset__eng.png)
 
 {% hint style="info" %}
-* You should perform an encoder offset setting normally after moving the robot to the reference position.
-* For the initial setting, you should perform the encoder offset setting even if the robot position is not the reference position. Otherwise, the motor will not be turned on, making it impossible to drive the robot.
-
+* 在将机器人移动到参考位置后，您应该正常执行编码器偏移设置。
+* 对于初始设置，即使机器人位置不是参考位置，您也应该执行编码器偏移设置。否则，马达将无法启动，使得无法驱动机器人。
 
 {% endhint %}
 
-6.	Turn off and on the power of the controller and then supply power to the motor.
+6. 关闭并重新打开控制器的电源，然后为电机供电。
 
-7.	In manual mode, move the robot safely to the reference position at low speed and then perform the encoder offset calibration again by referring to steps 7-8.
+7. 在手动模式下，以低速度安全地将机器人移动到参考位置，然后参考步骤 7-8 再次执行编码器偏移校准。
 
-* In the encoder offset setting item, the current encoder position will be set to 0X400000 \(hexadecimal\).
-* When a motor is replaced because of failure, if the encoder offset setting is performed at the same location, the recorded program can be used identically.
+* 在编码器偏移设置项目中，当前编码器位置将设置为 0X400000 \(十六进制\)。
+* 当电机因故障被更换时，如果在同一位置执行编码器偏移设置，则记录的程序可以被完全使用。
 
-8.	Press the `[Program]` key on the teach pendant, and select the program 9999 and then record one step. You can move the robot to the reference position easily. 
+8. 按下教教具上的 `[Program]` 键，选择程序 9999，然后记录一个步骤。您可以轻松地将机器人移动到参考位置。
 
 {% hint style="warning" %}
-* To initialize the system, contact the customer support team and ask an expert.
+* 若要初始化系统，请联系客户支持团队并咨询专家。
 * 
-  For initialization of a collaborative root, refer to the collaborative robot safety functions manual.
+  有关协作根的初始化，请参考协作机器人安全功能手册。
 
 * 
-  When the system is initialized, all data and programs, including control parameter files and machine parameter files, will be deleted. If you back up your data before initializing the system, it can be restored and used when necessary.For detailed information on data backup and restore, please refer to ["4.2.5 Data Backup"](../../4-service/2-file-manager/5-data-backup.md) and ["4.2.6 Data Restore"](../../4-service/2-file-manager/6-data-restore.md).
+  当系统初始化时，所有数据和程序，包括控制参数文件和机器参数文件，将被删除。如果您在初始化系统之前备份数据，则可以在必要时恢复和使用。有关注意事项请参考 ["4.2.5 Data Backup"](../../4-service/2-file-manager/5-data-backup.md) 和 ["4.2.6 Data Restore"](../../4-service/2-file-manager/6-data-restore.md)。
 {% endhint %}
-
-
-

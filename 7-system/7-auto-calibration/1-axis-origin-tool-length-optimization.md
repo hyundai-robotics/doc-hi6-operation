@@ -1,43 +1,42 @@
-﻿# 7.7.1 Optimize Axis Origin and Tool Length
+# 7.7.1 优化轴原点和工具长度
 
-The optimization of axis origin and tool length is a function to calibrate the origin and tool length of each axis of the robot without using an external measuring sensor.
+轴原点和工具长度的优化功能是在不使用外部测量传感器的情况下，校准机器人每个轴的原点和工具长度。
 
-Prepare two pointed tips. Fix one on the outside and the other on the tool. Then, while changing only the posture of the tooltip of the robot based on the outside fixed tip, you need to record several points using the robot program. At this time, you need to teach seven points to find the axis origin and tool length, and four points or more to find only the tool length.
+准备两个尖端。一个固定在外部，另一个固定在工具上。然后，仅根据外部固定尖端更改机器人的工具提示的姿态，您需要使用机器人程序记录多个点。在此时，您需要教授七个点以找到轴原点和工具长度，四个点或更多以仅找到工具长度。
 
-![Figure 67 Method of Teaching for the Axis Origin and Tool Length Optimization Function](../../_assets/image_228.png)
+![图67 轴原点和工具长度优化功能的教学方法](../../_assets/image_228.png)
 
 {% hint style="info" %}
-* Starting from version V70.02-00, the axis origin optimization function will no longer be supported for general users. If you would like to change the axis origin in later versions, please contact our customer support team to ask an expert or an engineer.
+* 从版本 V70.02-00 开始，轴原点优化功能将不再支持一般用户。如果您希望在后续版本中更改轴原点，请联系客户支持团队以咨询专家或工程师。
 {% endhint %}
 
-Using the axis origin and tool length optimization function, you can find the optimized tool lengths X, Y, and Z and the optimized origin of the robot H, V, R2, and B axes as well, even when no CAD data is available for them.
+使用轴原点和工具长度优化功能，即使没有 CAD 数据可用，您也可以找到优化后的工具长度 X、Y 和 Z，以及机器人的优化原点 H、V、R2 和 B 轴。
 
 {% hint style="warning" %}
-When the axis origin and tool length optimization function is used, the encoder offset and tool length will be changed, thus also changing the operation position of the previously taught program. Therefore, you should perform the optimization of axis origin and tool length before writing the teaching program.
+当使用轴原点和工具长度优化功能时，编码器偏移和工具长度将会改变，从而也改变以前教学程序的操作位置。因此，您应该在编写教学程序之前执行轴原点和工具长度的优化。
 {% endhint %}
 
 {% hint style="info" %}
-* In using the axis origin and tool length optimization function, the accuracy of the teaching is proportional to the accuracy of the maximum step position error result. Therefore, you should prepare two pointed tips and perform the teaching for the tooltip to match the two tips as accurately as possible. Make sure that the accuracy of the matching between the tooltip and the fixed points in space is within 0.5 mm when visually checked.
-* Teach by setting a posture, with a difference of 30 deg or more, for each step so that the postures of the steps are not similar.
-* Operate the wrist axes \(R2, B, R1\) as large as possible in a step and perform teaching while keeping a sufficient \(as large as possible\) angle difference of the wrist axes for individual steps.
-* The teaching program must be composed of hidden pose step commands.
+* 使用轴原点和工具长度优化功能时，教学的准确性与最大步位置误差结果的准确性成正比。因此，您应该准备两个尖端，并尽可能准确地进行工具提示教学以匹配这两个尖端。确保在目测检查时，工具提示与空间中固定点的匹配精度在 0.5 mm 以内。
+* 每一步设置一个姿态，差异应为 30 度或以上，使得各步的姿态不相似。
+* 尽可能大幅度操作手腕轴 \(R2, B, R1\)，在保持各步手腕轴之间足够的 \(尽可能大\) 角度差的情况下进行教学。
+* 教学程序必须由隐藏姿态步命令组成。
 {% endhint %}
 
-The method to use the axis origin and tool length optimization function is as follows.
+使用轴原点和工具长度优化功能的方法如下。
 
-1.	Touch the `6: Auto Calibration - 1: Optimize Axis Origin and Tool Length` menu.
+1. 触摸 `6: 自动校准 - 1: 优化轴原点和工具长度` 菜单。
 
-2.	Select an optimization target and set detailed options.
+2. 选择优化目标并设置详细选项。
 
     ![](../../_assets/tp630/system-calib-tool_eng.png)
-
 
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">序号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -46,28 +45,21 @@ The method to use the axis origin and tool length optimization function is as fo
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Inputs the options for the axis origin and tool length optimization function and displays the optimization results.</p>
+        <p>输入轴原点和工具长度优化功能的选项并显示优化结果。</p>
         <ul>
-          <li><b>[Optimization Selection]</b>: You can select an optimization target.
+          <li><b>[优化选择]</b>: 您可以选择优化目标。
             <ul>
-              <li><b>[Tool Length]</b>: You can calibrate the robot&#x2019;s tool length value.
-                If the robot origin is correctly set, you can calibrate only the tool length.</li>
-              <li><b>[Axis Origin &amp; Tool Length]</b>: You can calibrate both the robot&#x2019;s
-                origin and tool length values.
-                <br />Normally, this function can be used when installing a robot and then initially
-                setting the correct origin.</li>
+              <li><b>[工具长度]</b>: 您可以校准机器人的工具长度值。
+                如果机器人原点设置正确，您可以仅校准工具长度。</li>
+              <li><b>[轴原点 &amp; 工具长度]</b>: 您可以校准机器人的
+                原点和工具长度值。
+                <br />通常，此功能可在安装机器人并首次设置正确原点时使用。</li>
             </ul>
           </li>
-          <li><b>[Program Number]</b>: You can set the number of the program in which the same
-            point is recorded in multiple postures.</li>
-          <li><b>[Tool Number]</b>: This is the number of the tool to be set automatically.
-            This should match the tool number recorded in the setting program.</li>
-          <li><b>[Step location Error tolerance]</b>: You can set the error range of the automatic
-            calibration result (the initial setting value is 0.6 mm). If the expected
-            error is within the error range, the integer data will be automatically
-            updated, and if the error is out of the error range, whether to reflect
-            the integer will be notified to and confirmed with the user, and then the
-            necessary handling will be performed.</li>
+          <li><b>[程序编号]</b>: 您可以设置在多个姿态下记录同一点的程序编号。</li>
+          <li><b>[工具编号]</b>: 这是要自动设置的工具的编号。
+            这应与设定程序中记录的工具编号匹配。</li>
+          <li><b>[步位置误差公差]</b>: 您可以设置自动校准结果的误差范围（初始设置值为 0.6 mm）。如果预期误差在误差范围内，整数数据将自动更新；如果误差超出误差范围，将通知用户是否反映该整数，并与用户确认，然后进行必要的处理。</li>
         </ul>
       </td>
     </tr>
@@ -77,9 +69,9 @@ The method to use the axis origin and tool length optimization function is as fo
       </td>
       <td style="text-align:left">
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
-          <li>`[Execute]`: You can execute optimization based on the set information.
-            The optimization result will appear in [Max Step Position Error].</li>
+          <li>`[确定]`: 您可以保存更改。</li>
+          <li>`[执行]`: 您可以根据设置的信息执行优化。
+            优化结果将出现在 [最大步位置误差] 中。</li>
         </ul>
       </td>
     </tr>
@@ -87,13 +79,12 @@ The method to use the axis origin and tool length optimization function is as fo
 </table>
 
 {% hint style="warning" %}
-It requires your attention that if you calibrate both the robot origin and tool length values, all origins of the robot will change, consequently changing the position of the previously created program.
+请注意，如果您校准机器人的原点和工具长度值，机器人的所有原点将发生变化，从而改变以前创建程序的位置。
 {% endhint %}
 
 {% hint style="info" %}
-* You can also set the origin of each axis and tool length of the robot in the settings menu.
-  * Tool Length: `[system] - 3: Robot Parameter - 1: Tool Data`.
-  * Origin of each axis: `[system] - 3: Robot Parameter - 2: Axis Origin`
-* If you calibrate the tool angle using the angle calibration function \(`[system] - 3: Robot Parameter - 1: Tool Data`\), you should execute the origin axis and tool length optimization function first, and then execute the angle calibration. In this way, the tool data can be set correctly.
+* 您还可以在设置菜单中设置机器人的每个轴的原点和工具长度。
+  * 工具长度: `[system] - 3: Robot Parameter - 1: 工具数据 ([system] - 3: Robot Parameter - 1: Tool Data)`。
+  * 每个轴的原点: `[system] - 3: Robot Parameter - 2: 轴原点`
+* 如果您使用角度校准功能校准工具角度（`[system] - 3: Robot Parameter - 1: 工具数据 ([system] - 3: Robot Parameter - 1: Tool Data)`），应先执行原点轴和工具长度优化功能，然后再执行角度校准。通过这种方式，工具数据可以正确设置。
 {% endhint %}
-

@@ -1,17 +1,12 @@
-﻿# 7.4.9.1 Main Functions of the Jog Inching Function
+﻿# 7.4.9.1 Jog增量功能的主要功能
 
-* Inching applicable coordinate systems
+* 增量适用的坐标系统
   * 
-    Inching in the joint coordinate system: Movement will take place as much as the distance \(mm\) and angle \(deg\) designated for each joint.
+    在关节坐标系统中的增量：每个关节指定的距离 \(mm\) 和角度 \(deg\) 将使运动发生。
 
-  * Inching in the Cartesian coordinate system
-  * Inching in the tool coordinate system 
-  * Inching in the user coordinate system: Movement will take place as much as the amount designated for the X, Y, and Z positions \(mm\) and Rx, Ry, and Rz postures\(deg\).
-* Inching level 
+  * 在笛卡尔坐标系统中的增量
+  * 在工具坐标系统中的增量 
+  * 在用户坐标系统中的增量：X、Y 和 Z 位置 \(mm\) 及 Rx、Ry 和 Rz 姿态 \(deg\) 指定的量将使运动发生。
+* 增量等级 
 
-  You can set the inching distance at the same level as the existing jog speed, so you can select eight levels of speed, and you can set the inching distance for each level.
-
-
-
-
-
+  您可以将增量距离设置为与现有 jog 速度相同的等级，因此您可以选择八个速度级别，并为每个级别设置增量距离。

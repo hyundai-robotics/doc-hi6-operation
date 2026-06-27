@@ -1,23 +1,21 @@
-﻿# 1.2.2 Turning Off the Power
+# 1.2.2 关闭电源
 
-It refers to all operations of stopping the robot and turning off the power button of the controller after performing all works.
+它指的是在完成所有工作后停止机器人并关闭控制器电源按钮的所有操作。
 
 {% hint style="warning" %}
-* If the robot will not be in use for a long time, the encoder battery may be discharged, so move the robot to the reference position and then turn off the power.
+* 如果机器人长时间不使用，编码器电池可能会放电，因此请将机器人移动到参考位置，然后再关闭电源。
 
-* Be careful as the encoder data may be destroyed if the power is turned off while the encoder battery has a voltage drop alarm. 
+* 请注意，如果在编码器电池出现电压下降警报时关闭电源，可能会损坏编码器数据。 
 {% endhint %}
 
-#### Vertical Articulated Robot Controller
+#### 垂直关节机器人控制器
 
-1.	Press the `[Stop]` key on the teach pendant. Then, the robot in operation will stop, and the stop lamp will be turned on.
+1. 按下教导 Pendant 上的 `[Stop]` 按钮。然后，正在运行的机器人将停止，并且停止指示灯将亮起。
 
-2.	Press the emergency stop switch on the teach pendant. Then, the servo power to the robot motor will be cut off, and then the motor will be turned off.
+2. 按下教导 Pendant 上的紧急停止开关。然后，机器人电机的伺服电源将被切断，然后电机将关闭。
 
 ![](../../_assets/image_36.png)
 
-
-
-3.	Turn the power switch on the left side of the robot controller to the OFF direction. Then, the robot system will be powered off.
+3. 将机器人控制器左侧的电源开关转到 OFF 方向。然后，机器人系统将断电。
 
 ![](../../_assets/image_29.png)

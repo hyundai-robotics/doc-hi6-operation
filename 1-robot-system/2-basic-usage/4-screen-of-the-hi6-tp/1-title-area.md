@@ -1,6 +1,6 @@
-﻿# 1.2.4.1	Title display window
+﻿# 1.2.4.1	标题显示窗口
 
-This window shows the status of the robot system at the top side of the main screen.
+该窗口显示机器人系统在主屏幕顶部的状态。
 
 <br>
 
@@ -8,17 +8,17 @@ This window shows the status of the robot system at the top side of the main scr
 ![](../../../_assets/tp630/TP-main-title.png)
 
 
-| No. | Description | 
+| No. | 描述 | 
 | :--- | :--- | 
-| ![](../../../_assets/c1.png) | Displays network status. (![](../../../_assets/flag-comm-ok.png) : Connected, ![](../../../_assets/flag-comm-ng.png) : Not Connected)|
-| ![](../../../_assets/c2.png) | Displays an icon when a USB memory device is inserted. |
-| ![](../../../_assets/c3.png) | Displays Continuous Path (CONTPATH) mode. (CP# : CP(Continuous Path)+Mode Number) <br> (Reference: [R360](../../../8-r-code/15-r360.md?cont_model=${cont_model})) |
-| ![](../../../_assets/c4.png) | Displays the current status for each application function. (SW : Welding Record Status, PBk : Painting Section) |
-| ![](../../../_assets/c5.png) | Displays positioner synchronization status. (M:S{Station Number}) |
-| ![](../../../_assets/c6.png) | Displays cooperative control status. (I:Independent, M:Master Designated, S:Slave Designated) |
-| ![](../../../_assets/c7.png) | Displays axis control status. (Shows j_{axis number} if off) |
-| ![](../../../_assets/c8.png) | Displays axis lock status. |
-| ![](../../../_assets/c9.png) | Displays encoder battery error status. (Blinks when error occurs) |
-| ![](../../../_assets/c10.png) | Displays reducer lifespan error status. (Shows and blinks axis number when error occurs) |
-| ![](../../../_assets/c11.png) | Displays user level. (E : Engineer Mode) <br> (Reference: [R314](../../../8-r-code/12-r314.md?cont_model=${cont_model})) |
-| ![](../../../_assets/c12.png) | Displays PLC operation status. |
+| ![](../../../_assets/c1.png) | 显示网络状态。 (![](../../../_assets/flag-comm-ok.png) : 已连接, ![](../../../_assets/flag-comm-ng.png) : 未连接)|
+| ![](../../../_assets/c2.png) | 插入USB存储设备时显示图标。 |
+| ![](../../../_assets/c3.png) | 显示连续路径（CONTPATH）模式。 (CP# : CP(连续路径)+模式编号) <br> (参考: [R360](../../../8-r-code/15-r360.md?cont_model=${cont_model})) |
+| ![](../../../_assets/c4.png) | 显示每个应用功能的当前状态。 (SW : 焊接记录状态, PBk : 涂装区) |
+| ![](../../../_assets/c5.png) | 显示定位器同步状态。 (M:S{站号}) |
+| ![](../../../_assets/c6.png) | 显示协作控制状态。 (I:独立, M:主控指定, S:从控指定) |
+| ![](../../../_assets/c7.png) | 显示轴控制状态。 (关闭时显示 j_{轴编号}) |
+| ![](../../../_assets/c8.png) | 显示轴锁定状态。 |
+| ![](../../../_assets/c9.png) | 显示编码器电池故障状态。 (发生故障时闪烁) |
+| ![](../../../_assets/c10.png) | 显示减速器寿命故障状态。 (发生故障时显示及闪烁轴编号) |
+| ![](../../../_assets/c11.png) | 显示用户级别。 (E : 工程师模式) <br> (参考: [R314](../../../8-r-code/12-r314.md?cont_model=${cont_model})) |
+| ![](../../../_assets/c12.png) | 显示PLC运行状态。 |

@@ -1,4 +1,3 @@
-﻿# 2.7 User Key
+# 2.7 用户键
 
-By assigning the desired functions to the buttons in the user button area on the R button bar of the ${cont_model} teach pendant screen, you can conveniently use them when teaching a robot.
-
+通过将所需功能分配给${cont_model}教导挂件屏幕上的R按钮栏中的用户按钮区域，您可以在教学机器人时方便地使用它们。

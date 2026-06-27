@@ -1,17 +1,17 @@
-﻿<script id="page-config" type="application/json">
+<script id="page-config" type="application/json">
 {
 	"permittedStrs": ["Hi7"]
 }
 </script>
 
-# 7.10 Option System
+# 7.10 选项系统
 
 {% hint style="info" %}
-This function is supported from the Hi7 controller.
+此功能从 Hi7 控制器开始支持。
 {% endhint %}
 
-1.	Touch `[Option System]`. The Option System menu appears.
+1.	触摸 `[Option System]`。选项系统菜单出现。
 
-2.	Select the desired menu to perform the corresponding function.
+2.	选择所需菜单以执行相应功能。
 
 ![](../../_assets/tp630/system-option-menu.png)

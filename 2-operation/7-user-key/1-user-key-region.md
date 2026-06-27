@@ -1,16 +1,9 @@
-﻿# 2.7.1 Switching of the User Key Area
+﻿# 2.7.1 用户密钥区域的切换
 
-Touch the `[user key]` button on the R button bar of the ${cont_model} teach pendant screen until the desired area appears. Then, the menu button area will be switched to the user button area. In the user key area, the key signal output function and the spot application function are assigned and provided by default.
+在 ${cont_model} 教导挂件屏幕的 R 按钮栏上，触摸 `[user key]` 按钮，直到出现所需区域。然后，菜单按钮区域将切换到用户按钮区域。在用户密钥区域，密钥信号输出功能和点应用功能是默认分配和提供的。
 
 ![](../../_assets/tp630/user-bar/user-bar.png)
 
-* If you press the `[user key]` button while pressing the `shift` key, you can switch the area in the opposite direction.
+* 如果您在按住 `shift` 键的同时按下 `[user key]` 按钮，可以向相反方向切换区域。
   
-* The key signal output function area will stay empty as the initial state in which no button is registered.
-
-  
-
-
-
-
-
+* 密钥信号输出功能区域将保持为空，即没有注册按钮的初始状态。

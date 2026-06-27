@@ -1,12 +1,12 @@
-﻿# 7.3.2.10 Multiple Signal Output
+﻿# 7.3.2.10 多信号输出
 
-Output signals \(up to 16 signals\) can be created as a group, and data can be outputted through individual signals.
+输出信号 \(最多 16 个信号\) 可以作为一个组创建，数据可以通过单独的信号输出。
 
-The data is in binary format and determines whether the output will be on or off. For example, the data to print do41 and do43 on the screen shown below is 0101 in binary \(5 in decimal\).
+数据以二进制格式表示，并决定输出是开启还是关闭。例如，在下面所示的屏幕上打印 do41 和 do43 的数据是 0101（在十进制中为 5）。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  -7: Multiple Signal Output` menu
+1.	触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 7: 多信号输出 (2: 控制参数 - 2: 输入/输出信号设置 - 7: 多信号输出)` 菜单
 
-2.	Set the name, signals, and strobe of the output signal group. 
+2.	设置输出信号组的名称、信号和脉冲。
 
     ![](../../../_assets/tp630/ctrl-multi-outsignal_eng.png)
 
@@ -17,8 +17,8 @@ The data is in binary format and determines whether the output will be on or off
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -27,15 +27,11 @@ The data is in binary format and determines whether the output will be on or off
         <img src="../../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information on the group selected from the output signal group
-          list. You can set the name, description, signal and strobe of the group.</p>
+        <p>关于从输出信号组列表中选择的组的详细信息。您可以设置组的名称、描述、信号和脉冲。</p>
         <ul>
-          <li><b>[Reset All]/[Reset One]:</b> You can reset the set value of all signals
-            or of a selected signal to -1.</li>
-          <li><b>[Reset Channel]:</b> You can reset the output channel of the set signal
-            (0&#x2013;9: digital signals)</li>
-          <li><b>[Set Range]</b>: You can quickly set the signal by designating the
-            start and end signals.</li>
+          <li><b>[重置全部]/[重置一个]:</b> 您可以将所有信号的设定值或选定信号的设定值重置为 -1。</li>
+          <li><b>[重置通道]:</b> 您可以重置设定信号的输出通道（0&#x2013;9: 数字信号）</li>
+          <li><b>[设定范围]</b>: 您可以通过指定起始信号和结束信号快速设定信号。</li>
         </ul>
       </td>
     </tr>
@@ -45,25 +41,19 @@ The data is in binary format and determines whether the output will be on or off
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[OK]:</b> You can save the edited content.</li>
-          <li><b>[+]/[-]:</b> You can add a new output signal group or delete an output
-            signal group.</li>
-          <li>This shows a list of output signal groups. Selecting a group name allows
-            you to view and edit details.</li>
-          <li><b>[Copy Page/Paste Page]:</b> You can copy the output signal group information
-            and paste it to another group.</li>
-          <li>Select the name of the group to be copied from the list, touch the <b>[Copy Page]</b> button,
-            select the name of the group to which the value is to be applied, and touch
-            the <b>[Paste Page]</b> button.</li>
+          <li><b>[确定]:</b> 您可以保存编辑的内容。</li>
+          <li><b>[+]/[-]:</b> 您可以添加一个新的输出信号组或删除一个输出信号组。</li>
+          <li>这显示了输出信号组的列表。选择一个组名允许您查看和编辑详细信息。</li>
+          <li><b>[复制页面/粘贴页面]:</b> 您可以复制输出信号组信息并粘贴到另一个组。</li>
+          <li>从列表中选择要复制的组名称，触摸 <b>[复制页面]</b> 按钮，选择要应用值的组名称，然后触摸 <b>[粘贴页面]</b> 按钮。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
-For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
+例如，当按照上面屏幕中的设置配置的作业程序执行时，操作将如下。
 
-![Figure 54 Example of Job Program Execution](../../../_assets/image_429.png)
+![图 54 作业程序执行示例](../../../_assets/image_429.png)
 
-When the robot starts from S1 toward S2 and the accuracy of S2 is OK, the strobe signal will be outputted together with the signal of the designated group. The strobe signal will be turned off after 200 ms. \(The strobe signal is a pulse signal of 200 ms.\)
-
+当机器人从 S1 向 S2 移动，并且 S2 的精度为 OK 时，脉冲信号将与指定组的信号一起输出。脉冲信号将在 200 毫秒后关闭。（脉冲信号是 200 毫秒的脉冲信号。）

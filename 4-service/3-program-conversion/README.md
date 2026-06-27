@@ -1,18 +1,15 @@
-﻿# 4.3 Program Conversion
+﻿# 4.3 程序转换
 
-You can write a new program by modifying the conditions and location of the created program by batches or individually, or by shifting coordinates.
+您可以通过批量或单独修改创建程序的条件和位置，或通过移动坐标来编写新程序。
 
-1.	Touch the `[6: Program Conversion]` menu. Then, the program conversion menu will appear. 
+1.	触摸 `[6: 程序转换]` 菜单。然后，将显示程序转换菜单。
 
-2.	Select the desired menu and then modify the program conditions and location, or write a new program.
+2.	选择所需的菜单，然后修改程序条件和位置，或编写新程序。
 
     ![](../../_assets/tp630/prg-modi-menu_eng.png)
 
 <br>
 
 {% hint style="info" %}
-During the startup of the robot, the use of the menus `[4: The reference coordinate system]`, `[5: Coordinate transformation]`, `[6: Mirror Image]`, and `[7: Step Copy]` will be restricted.
+在机器人启动期间，菜单 `[4: 参照坐标系统]`、`[5: 坐标变换]`、`[6: 镜像]` 和 `[7: 步骤复制]` 的使用将受到限制。
 {% endhint %}
-
-
-

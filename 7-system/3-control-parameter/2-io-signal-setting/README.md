@@ -1,8 +1,7 @@
-﻿# 7.3.2 Input/Output Signal Setting
+# 7.3.2 输入/输出信号设置
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting` menu. Then, the input/output signal setting menu will appear.
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 (2: 控制参数  - 2: 输入/输出信号设置)` 菜单。然后，输入/输出信号设置菜单将出现。
 
-2.	Select the desired menu and set the input/output signal attributes and signal assignment, etc.
+2. 选择所需菜单并设置输入/输出信号属性和信号分配等。
 
     ![](../../../_assets/tp630/ctrl-inoutsing-menu_eng.png)
-

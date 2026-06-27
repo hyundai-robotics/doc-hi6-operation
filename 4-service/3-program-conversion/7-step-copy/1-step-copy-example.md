@@ -1,10 +1,7 @@
-﻿# 4.3.7.1 Example of Step Copy
+﻿# 4.3.7.1 步骤复制示例
 
-You can copy the steps 2-5 of the program 1 to step 2 of the program 2 \(set as the input step\) in the right and reverse directions.
+您可以将程序 1 的步骤 2-5 复制到程序 2 的步骤 2 \(设置为输入步骤\) 中，方向可以是正向或反向。
 
-The steps 2-5 of the original program \(program 1\) will be inserted right after the input step \(step 2\) of the target program \(program 2\) in the right direction \(same order as the original program\) or in the reverse direction \(reverse order of the original program\).
+原始程序的步骤 2-5 \(程序 1\) 将在目标程序 \(程序 2\) 的输入步骤 \(步骤 2\) 之后插入，正向时遵循原始程序的相同顺序，或反向时按照原始程序的逆序。
 
 ![](../../../_assets/image_321.png)
-
-
-

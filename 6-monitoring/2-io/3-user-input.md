@@ -1,16 +1,16 @@
-﻿# 6.2.3 Public Input
+﻿# 6.2.3 公共输入
 
-Touch `[public Input]` in the panel selection window. Then, the public input signal window will appear. 
+在面板选择窗口中触摸 `[public Input]`。然后，将出现公共输入信号窗口。
 
-You can check the status of public input signals that are inputted through the CNIN connector of the I/O board in the controller.
+您可以检查通过控制器中 I/O 板的 CNIN 连接器输入的公共输入信号的状态。
 
-![Figure 40 Public Input Signal - ON/OFF status (Left) / value (Right)](../../_assets/tp630/pane-public-input_eng.png)
+![图 40 公共输入信号 - 开/关状态 (左) / 值 (右)](../../_assets/tp630/pane-public-input_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -19,11 +19,10 @@ You can check the status of public input signals that are inputted through the C
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Displays the status of public input signals</p>
+        <p>显示公共输入信号的状态</p>
         <ul>
-          <li>Public input signals designated as the system&#x2019;s basic specifications
-            or assigned by the user will be displayed <b>in bold</b>.</li>
-          <li>The signals currently being inputted will be displayed in yellow.</li>
+          <li>被指定为系统基本规格或用户分配的公共输入信号将以 <b>加粗</b> 显示。</li>
+          <li>当前输入的信号将以黄色显示。</li>
         </ul>
       </td>
     </tr>
@@ -33,16 +32,9 @@ You can check the status of public input signals that are inputted through the C
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[FB0]: You can select the FB block to monitor by touching the drop-down
-            menu (FB0 - FB15). You can configure up to 16 I/O blocks, and 960 points
-            of signals can be monitored in</li>
-          <li><b>[ATTR.-APPLIED]</b>: You can check the checkbox to perform the setting
-            in a way that the physical input values are to be displayed before passing
-            through the positive/negative logic attributes. The basic setting (unchecked)
-            is that the input logic value after passing through the positive/negative
-            logic attributes will be displayed.</li>
-          <li>[ON/OFF]/[Value]: You can change the signal display mode by touching the
-            radio button.</li>
+          <li>[FB0]: 您可以通过触摸下拉菜单选择要监控的 FB 块 (FB0 - FB15)。您可以配置最多 16 个 I/O 块，并且可以监控 960 点信号</li>
+          <li><b>[ATTR.-APPLIED]</b>: 您可以勾选复选框，以便在通过正/负逻辑属性之前显示物理输入值。基础设置（未选中）是在通过正/负逻辑属性之后显示输入逻辑值。</li>
+          <li>[开/关]/[值]: 您可以通过触摸单选按钮更改信号显示模式。</li>
         </ul>
       </td>
     </tr>
@@ -50,10 +42,9 @@ You can check the status of public input signals that are inputted through the C
 </table>
 
 {% hint style="info" %}
-* In the case of using signals, such as fieldbus signals, by mapping them using an embedded PLC, the On/Off status of the input signals may appear differently. 
+* 在使用信号的情况下，例如通过嵌入式 PLC 映射的现场总线信号，输入信号的开/关状态可能会有所不同。 
 * 
-  The flow of the input signals is as follows.
+  输入信号的流动如下。
 {% endhint %}
 
 ![](../../_assets/user-input-flow_en.png)
-

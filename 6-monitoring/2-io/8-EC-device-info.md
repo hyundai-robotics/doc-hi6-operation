@@ -1,20 +1,20 @@
-﻿# 6.2.8 EtherCAT device
+﻿# 6.2.8 EtherCAT 设备
 
-In the panel selection window, touch `[EtherCAT dev.]`. This monitoring panel shows the slave device list and the devices' networking status, which compose a EtherCAT network with ${cont_model} controller internally and externally. In the EtherCAT network, the controller main board works as a master.
+在面板选择窗口中，触摸 `[EtherCAT dev.]`。该监控面板显示从设备列表和设备的网络状态，这些设备与 ${cont_model} 控制器共同组成一个 EtherCAT 网络。在 EtherCAT 网络中，控制器主板作为主控。
 
 ![](../../_assets/tp630/pane-EC-device_eng.png) 
 
 
--	ENI-Configured Slave Number: the number of slave devices composing the EtherCAT network 
--	Connected Slave Number: the number of current connected slave devices, which is supposed to be the same as 'ENI-Configured Slave Number' 
--	Device: the device name of the EtherCAT slave connected with the main board
--	Address: a unique address on the EtherCAT network
--	Connection
-    -	NG: network failure
-    -	OK: network success
--	Mode
-    -	Unknown: a status where it impossible to check the current status due to network failure
-    -	Init: a status where the network channel has been initialized
-    -	pre-op: a status where a slave device can communicate only by using non-periodic mail-box
-    -	safe-op: a status where a slave device can communicate only transmitting data(Tx PDO)
-    -	operation: a status where a slave device can communicate both transmitting and receiving data(Tx/RxPDO)
+-	ENI-配置从设备数量：组成 EtherCAT 网络的从设备数量  
+-	连接从设备数量：当前连接的从设备数量，应该与“ENI-配置从设备数量”相同  
+-	设备：与主板连接的 EtherCAT 从设备的名称  
+-	地址：EtherCAT 网络上的唯一地址  
+-	连接  
+    -	NG：网络故障  
+    -	OK：网络成功  
+-	模式  
+    -	未知：由于网络故障无法检查当前状态  
+    -	初始化：网络通道已初始化的状态  
+    -	预操作：从设备只能使用非周期邮件进行通信的状态  
+    -	安全操作：从设备只能传输数据(Tx PDO)的状态  
+    -	操作：从设备可以同时传输和接收数据(Tx/RxPDO)的状态  

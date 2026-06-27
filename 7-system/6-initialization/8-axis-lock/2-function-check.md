@@ -1,31 +1,31 @@
-﻿# 7.6.8.2 Checking Function Application
+﻿# 7.6.8.2 检查功能应用
 
-When the axis lock function is applied, robot motion may differ from normal operation due to the locked axis. Therefore, always verify whether axis lock is active before operating the robot.
+当轴锁功能被应用时，机器人运动可能会因锁定的轴而有所不同。因此，在操作机器人之前，请始终验证轴锁是否处于激活状态。
 
-You can check whether the function is applied through the status bar, warning message, and monitoring display status.
+您可以通过状态栏、警告信息和监控显示状态检查功能是否被应用。
 
-### Status Display Window
+### 状态显示窗口
 
-The status display window show various conditions required for robot operation.
+状态显示窗口显示机器人操作所需的各种条件。
 
 {% hint style="warning" %}
-While using the axis lock function, be sure to check the corresponding indicators before operating the robot.
+在使用轴锁功能时，务必在操作机器人之前检查相应的指示灯。
 {% endhint %}
 
--   Status display window: AxLk
--   Right matrix: "Axis lock"
+-   状态显示窗口：AxLk
+-   右侧矩阵：“轴锁”
 
 ![](../../../_assets/tp630/init-axis-lock-status_eng.png)
 
 
-### Monitor Window
+### 监控窗口
 
-During monitoring, the axis data will show an "Axis lock" message for any axis where the function is applied. If a robot axis or base axis is locked, the coordinate values cannot be displayed. In this case, the Cartesian coordinates and the values of the locked axis will be shown as '------'.
+在监控期间，轴数据将显示“轴锁”消息，对于任何应用了该功能的轴。如果机器人轴或基础轴被锁定，则坐标值无法显示。在这种情况下，笛卡尔坐标和锁定轴的值将显示为 '------'。
 
 ![](../../../_assets/tp630/init-axis-lock-monitor_eng.png)
 
-### Warning Message
+### 警告信息
 
-When switching screens or modes, the range of functions corresponding to the locked axis is displayed as a warning message. Through this message, you can always be aware of whether the axis lock function is applied and its range.
+切换屏幕或模式时，锁定轴对应的功能范围将显示为警告信息。通过此消息，您可以始终知道轴锁功能是否被应用及其范围。
 
 ![](../../../_assets/tp630/init-axis-lock-warning_eng.png)

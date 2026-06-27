@@ -1,6 +1,6 @@
-﻿# 1.2.4.4 Monitor window
+# 1.2.4.4 监视窗口
 
-This is the window to display the location data, I/O data and status data of each application by each axis in real time. Divide the main screen and select a monitoring panel. You can have up to 3 monitoring panels. (Refer to "[6. Monitoring](../../../6-monitoring/README.md)".)
+这是一个窗口，用于实时显示每个轴的位置信息、I/O 数据和每个应用程序的状态数据。划分主屏幕并选择监视面板。您可以拥有多达 3 个监视面板。（参见 "[6. Monitoring](../../../6-monitoring/README.md)"。）
 
 <br>
 

@@ -1,4 +1,3 @@
-﻿# 7.3.7 Scheduled Program Execution
+﻿# 7.3.7 定时程序执行
 
-For details on how to execute scheduled programs, refer to the "[${cont_model} Controller Scheduled Program Execution Function Manual](https://hrbook-hrc.web.app/#/view/doc-reserved-program-execution/en/README?cont_model=${cont_model})".
-
+有关如何执行定时程序的详细信息，请参阅 "[${cont_model} 控制器定时程序执行功能手册](https://hrbook-hrc.web.app/#/view/doc-reserved-program-execution/zh/README?cont_model=${cont_model})"。

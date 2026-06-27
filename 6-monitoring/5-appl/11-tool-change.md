@@ -1,12 +1,11 @@
-﻿# 6.5.11 Servo Tool Change
+﻿# 6.5.11 伺服工具更换
 
-
-In the panel selection window, touch `[servo tool change]`. This displays the state of the servo tool and the encoder power supply's input/output state when the servo tool change function is used.
+在面板选择窗口中，触摸 `[servo tool change]`。这将显示伺服工具和编码器电源输入/输出状态在使用伺服工具更换功能时的状态。
 
 ![](../../_assets/tp630/pane-tool-change_eng.png) 
 
 <br>
 
 {% hint style="info" %}
- Refer to ["${cont_model} Controller Servo Tool Change Function Manual"](https://hrbook-hrc.web.app/#/view/doc-svtool-change/en/README?cont_model=${cont_model}) for more details.
+ 请参阅 ["${cont_model} 控制器伺服工具更换功能手册"](https://hrbook-hrc.web.app/#/view/doc-svtool-change/zh/README?cont_model=${cont_model}) 以获取更多详细信息。
 {% endhint %}

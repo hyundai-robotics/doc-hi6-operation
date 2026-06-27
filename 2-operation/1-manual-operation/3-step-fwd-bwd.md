@@ -1,49 +1,41 @@
-﻿# 2.1.3 Step Forward/Backward
+# 2.1.3 向前/向后步骤
 
-The step forward/backward is one of the methods of operating the robot in manual mode and refers to the act of playing back a recorded program. By manipulating the robot in the step forward/backward operation, you can check the recorded program path and mutual interlock relationship at a range of safe speed.
+向前/向后步骤是手动模式下操作机器人的方法之一，指的是播放录制程序的动作。通过在向前/向后操作中操控机器人，可以在安全的速度范围内检查录制的程序路径和相互锁定关系。
 
-The execution unit for the step forward/backward operation can be checked and set from the `[run to]` button on the left side of the ${cont_model} teach pendant screen.
+向前/向后操作的执行单元可以从 ${cont_model} 教学手持屏幕左侧的 `[run to]` 按钮进行检查和设置。
 
 ![](../../_assets/tp630/lbt-runto_eng.png)  
 
-To set the execution unit for the step forward/backward operation, touch the `[run to]` button repeatedly until the desired option appears.
+要设置向前/向后操作的执行单元，反复点击 `[run to]` 按钮，直到所需选项出现。
 
 ![](../../_assets/tp630/lbt-runto-sw_eng.png)
 
-* `[cmd]`: Will execute the command line by line
-* `[Step]`: Will execute step by step
-* `[End]`: Will execute up to the end statement
+* `[cmd]`：将逐行执行命令
+* `[Step]`：将逐步执行
+* `[End]`：将执行到结束语句
 
 <Br>
 
-When the execution unit is set as 'Cmd' or 'Step', the robot will ignore the set accuracy area and reach the recorded step. If it is set as end, the robot will operate on the same path as the one for playing b/n automatic mode.
+当执行单元设置为 'Cmd' 或 'Step' 时，机器人将忽略设置的精度区域并到达记录的步骤。如果设置为end，机器人将在与播放 b/n 自动模式相同的路径上操作。
 
-When you set the execution unit as 'Cmd' or 'Step' and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to "[2.3.1.4 Accuracy](../3-step/1-step-cmd-param/4-accuracy.md)".
+当您将执行单元设置为 'Cmd' 或 'Step' 并执行向前/向后操作时，机器人将在没有拐角的路径上操作。有关拐角的详细信息，请参见 "[2.3.1.4 精度](../3-step/1-step-cmd-param/4-accuracy.md)"。
 
-![Figure 11 Playback Forward/Backward Path When cmd/step Setting is Performed](../../_assets/path-cmd-step-pback-fwd-bwd-en.png)
+![图11 当执行 cmd/step 设置时播放向前/向后路径](../../_assets/path-cmd-step-pback-fwd-bwd-en.png)
 
-If you set the execution unit as end and then perform the step forward/backward operation, the path of the robot will change according to the stop position. In other words, if the robot stops at a place other than at cornering and then executes the forward operation, the robot will recover the original cornering path, but if the robot executes the backward operation, the robot will move to the recorded step, and at this time, the robot will stop at the recorded step and then move immediately to the previous step. When the robot stops at cornering, the robot will maintain its previous cornering path both when moving forward and when moving backward.
+如果您将执行单元设置为end，然后执行向前/向后操作，机器人的路径将根据停止位置而变化。换句话说，如果机器人停在非拐角的位置，然后执行向前操作，机器人将恢复原始拐角路径，但如果机器人执行向后操作，机器人将移动到记录的步骤，此时机器人将在记录的步骤处停止，然后立即移动到上一个步骤。当机器人停在拐角处时，机器人将在向前和向后移动时保持其先前的拐角路径。
 
-![Figure 12 Playback Forward/Backward Path When End Setting is Performed](../../_assets/path-end-pback-fwd-bwd-en.png)
+![图12 当执行end设置时播放向前/向后路径](../../_assets/path-end-pback-fwd-bwd-en.png)
 
-When the robot stops at cornering and then executes the forward operation, the robot will operate on the original cornering path. Here, if the robot executes the backward operation and then, without reaching the previous step completely, executes the forward operation again, the robot may not be able to create the original cornering path in some cases. In other words, if the distance of the step becomes shorter than the original distance, making it impossible to meet the existing accuracy condition, a smaller cornering path than the original one will be created.
+当机器人停在拐角处然后执行向前操作时，机器人将在原始拐角路径上操作。在这里，如果机器人执行向后操作，而后又在没有完全到达上一个步骤的情况下再次执行向前操作，机器人可能无法在某些情况下创建原始的拐角路径。换句话说，如果步骤的距离变短于原始距离，导致无法满足现有的精度条件，则将创建一个小于原始的拐角路径。
 
-![Figure 13 Example of the Robot Path Change During Step Forward/Backward Operation](../../_assets/path-step-bwd-then-fwd-en.png)
+![图13 在向前/向后操作期间机器人路径变化的示例](../../_assets/path-step-bwd-then-fwd-en.png)
 
-
-You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the `[run to]` button on the left side of the ${cont_model} teach pendant screen, set the speed value and function execution option in the setting window.
-
-
+您可以设置向前/向后操作的最大速度，并设置是否执行功能。触摸 ${cont_model} 教学手持屏幕左侧的 `[run to]` 按钮后，在设置窗口中设置速度值和功能执行选项。
 
 ![](../../_assets/tp630/cond-set-step-fwd-bwd-spd_eng.png)
 
-* `2: Step FWD/BWD maximum speed`: Same as the value set for the speed in manual operation
-* `[3: Function execution during step FWD]`: You can select the function execution option.
-  * Off: The function will not be executed for the step forward/backward operation. Regardless of the conditions of the external I/O, you can check only the robot path. Be careful as the interlock with the external system will not work.
-  * On: You can execute all functions. Should be used after the external interlock is completed.
-  * I On: You can execute only the input wait function. It should be used when it is necessary to check the safety through the external interlock.
-
-
-
-
-
+* `2: 步骤前进/后退最大速度 (2: Step FWD/BWD maximum speed)`：与手动操作中设置的速度值相同
+* `[3: 步骤向前执行功能]`：您可以选择功能执行选项。
+  * Off：在步骤向前/向后操作中不会执行功能。无论外部 I/O 的条件如何，只能检查机器人路径。请注意，外部系统的互锁将不起作用。
+  * On：您可以执行所有功能。应在外部互锁完成后使用。
+  * I On：您只能执行输入等待功能。应在需要通过外部互锁检查安全时使用。

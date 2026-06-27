@@ -1,18 +1,18 @@
-﻿# 6.3.1 job
+﻿# 6.3.1 工作
 
-Touch `[job]` in the panel selection window. For the total program list, `[SHIFT]`+`[PROG]` keys lead to the program selection window. Then, you can create, delete, and select a program.
+在面板选择窗口中触摸 `[job]`。要查看总程序列表，按 `[SHIFT]`+`[PROG]` 键将进入程序选择窗口。然后，您可以创建、删除和选择程序。
 
 ![](../../_assets/tp630/k-prg-select_eng.png)
 
-You can modify the selected job program in the task edit window.
+您可以在任务编辑窗口中修改所选的工作程序。
 
 ![](../../_assets/tp630/pane-job_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -20,14 +20,14 @@ You can modify the selected job program in the task edit window.
       <td style="text-align:left">
         <img src="../../_assets/tp630/k-prog-step_eng.png" alt/>
       </td>
-      <td style="text-align:left"> <ul>  `[SHIFT]`+`[PROG]` : In the program selection window, you can create, delete, or select a program. </ul> </td>
+      <td style="text-align:left"> <ul>  `[SHIFT]`+`[PROG]` : 在程序选择窗口中，您可以创建、删除或选择程序。 </ul> </td>
     </tr>
     <tr>
       <td style="text-align:left">
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <ul> Basic information and commands are displayed. You can check and modify details of each command.
+        <ul> 基本信息和命令会显示出来。您可以检查并修改每个命令的详细情况。
         </ul>
       </td>
     </tr>
@@ -37,10 +37,10 @@ You can modify the selected job program in the task edit window.
       </td>
       <td style="text-align:left">
         <ul>
-          <li> <b>[&#x2026;]</b>: If the automatic indentation is applied incorrectly,
-            the automatic indentation in the JOB program can be performed again.</li>
-          <li>When a program is written, the parameter value of the selected statement
-            will be displayed in the input area.</li>
+          <li> <b>[&#x2026;]</b>: 如果自动缩进应用不正确，
+            可以再次在 JOB 程序中执行自动缩进。</li>
+          <li>在编写程序时，所选语句的参数值
+            将显示在输入区域。</li>
         </ul>
       </td>
     </tr>
@@ -48,8 +48,5 @@ You can modify the selected job program in the task edit window.
 </table>
 
 {% hint style="info" %}
-For details on how to manage and write programs, refer to "[3 Program Writing](../../3-programming/README.md?cont_model=${cont_model})."
+有关如何管理和编写程序的详细信息，请参阅 "[3 Program Writing](../../3-programming/README.md?cont_model=${cont_model})"。
 {% endhint %}
-
-
-

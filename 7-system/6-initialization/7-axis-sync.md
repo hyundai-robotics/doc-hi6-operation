@@ -1,40 +1,40 @@
-﻿# 7.6.7 Axis Synchronization Function
+# 7.6.7 轴同步功能
 
-This function groups two auxiliary axes into a synchronization pair so that they always move to the same position.
+此功能将两个辅助轴组合成一个同步对，使它们始终移动到相同的位置。
 
-When axis synchronization is enabled, the positions of the designated auxiliary axes are always synchronized via software. Therefore, the auxiliary axes to be synchronized must be physically aligned, and axis origin must be set so that they are recognized as the same position by the software. In addition, the physical movement directions of the axes to be synchronized must be set to be the same.
+启用轴同步时，指定的辅助轴的位置始终通过软件同步。因此，需要同步的辅助轴必须物理对齐，并且轴原点必须设置，以便软件识别为相同位置。此外，待同步的轴的物理运动方向必须设置为相同。
 
-Axis synchronization supports position synchronization between up to 4 pairs of auxiliary axes. When two auxiliary axes are assigned to the same group, they are treated as one synchronization pair.
+轴同步支持最多4对辅助轴之间的位置同步。当两个辅助轴分配到同一组时，它们将被视为一个同步对。
 
-The procedure to change the currently configured axis synchronization pair is as follows.
+更改当前配置的轴同步对的过程如下。
 
 ![](../../_assets/tp630/axis-synchronization_eng.png)
 
-1. If the R321 Synchronized group jogging function is enabled, set all of them to `Disable`.
+1. 如果启用了 R321 同步组移动功能，将它们全部设置为 `不执行 (Disable)`。
 
-2. Select Engineer Mode (R314), then navigate to `[F2: system] - 5. Initialization - 8. Additional Axis synchronization setting`
+2. 选择工程师模式 (R314)，然后导航至 `[F2: 系统] - 5. 初始化 - 8. 附加轴同步设置 ([F2: system] - 5. Initialization - 8. Additional Axis synchronization setting)`
 
-3. To enable the axis synchronization function, change `Use` from `Disable` to `Enable`.
+3. 要启用轴同步功能，将 `使用 (Use)` 从 `不执行 (Disable)` 更改为 `启用 (Enable)`。
 
-4. Assign the 2 auxiliary axes to be treated as one axis to the same group.
+4. 将要视为一个轴的两个辅助轴分配到同一组。
 
-5. After completing the group assignment, press the `[F7: OK]` button.
+5. 完成组分配后，按下 `[F7: 确定] ([F7: OK])` 按钮。
 
 
 {% hint style="info" %}
-* After completing axis synchronization settings, when Motor ON is activated, the group pair will align to the midpoint. Wait until alignment is completed.
-* Once axis synchronization is enabled, individual axes cannot be moved independently, and jog keys are assigned as a single axis.
-* This function also applies when executing Job files, not only during jog operations.
-* Axis synchronization group pairs are retained even after reboot.
-* If `Use` is set to `Disable`, the axis synchronization function will not be activated.
-* The Cartesian coordinate Pose values of synchronized axis groups match the actual robot pose.
-* If position errors occur between synchronized axes due to emergency stop, servo error, or other factors, the axes will move to the midpoint and realign when Motor ON is activated.
+* 完成轴同步设置后，当激活电机开启时，组对将对齐到中点。等待对齐完成。
+* 一旦启用轴同步，单个轴不能独立移动，移动键被分配为单个轴。
+* 此功能在执行作业文件时也适用，不仅限于移动操作。
+* 即使在重启后，轴同步组对也会保留。
+* 如果 `使用 (Use)` 设置为 `不执行 (Disable)`，轴同步功能将不会激活。
+* 同步轴组的笛卡尔坐标姿态值与实际机器人姿态匹配。
+* 如果由于紧急停止、伺服错误或其他因素导致同步轴之间出现位置误差，则在激活电机时，轴将移动到中点并重新对齐。
 {% endhint %}
 
 {% hint style="warning" %}
-* Before use, ensure that motor specifications and auxiliary axis parameters are properly matched for synchronization (same axis specifications, configuration, speed, and acceleration time).
-* If the axis synchronization function is not used, set `Use` to `Disable` and reset the group pairs to `Disable`.
-* Do not use this function together with the Synchronized group jogging function.
-* Verify that the step pose values in the Job file are implemented with axis synchronization in mind.
-* Be aware that changing settings during axis synchronization operation will affect the Cartesian coordinate system.
+* 在使用前，请确保电机规格和辅助轴参数适当匹配以进行同步（相同的轴规格、配置、速度和加速度时间）。
+* 如果不使用轴同步功能，将 `使用 (Use)` 设置为 `不执行 (Disable)` 并将组对重置为 `不执行 (Disable)`。
+* 请勿将此功能与同步组移动功能一起使用。
+* 验证作业文件中的步态姿态值在考虑轴同步的情况下实现。
+* 请注意，在轴同步操作期间更改设置将影响笛卡尔坐标系统。
 {% endhint %}

@@ -1,23 +1,19 @@
-﻿# 7.7.5 Gravity Direction Auto Setting
+﻿# 7.7.5 重力方向自动设置
 
-The ${cont_model} controller is based on dynamics, so it is important to set the gravity direction.
+${cont_model} 控制器基于动力学，因此设置重力方向非常重要。
 
-In general, the robot installation direction is perpendicular to the gravity direction as follows. If the robot is installed obliquely to the ground, the gravity direction should be set in the robot controller. At this time, you can use the automatic gravity direction setting function.
+一般而言，机器人安装方向垂直于重力方向，如下所示。如果机器人斜置于地面，则应在机器人控制器中设置重力方向。此时，可以使用自动重力方向设置功能。
 
-![Figure 74 Gravity Direction of the Robot Placed on a Floor \(Left\) / Gravity Direction of the Robot Placed on a Slope \(Right\)](../../_assets/image_507.png)
+![图74 安装在地面上的机器人重力方向 \(左\) / 安装在斜坡上的机器人重力方向 \(右\)](../../_assets/image_507.png)
 
+设置重力方向的方法如下。
 
+1. 在外部附上一个重物以指示重力方向，然后在重力作用方向上教导两个点 \(步骤1，步骤2\)。
 
-How to set the gravity direction is as follows.
+2. 触摸 `[6: Auto Calibration - 8: Automatic setting of gravity direction] ([6: Auto Calibration  - 8: Automatic setting of gravity direction])` 菜单。
 
-1.	Attach a weight to the outside to indicate the gravity direction, and then teach two points \(Step 1, Step 2\) in the direction of the gravitational action.
-
-2.	Touch the `[6: Auto Calibration  - 8: Automatic setting of gravity direction]` menu.
-
-3.	After inputting the program number, touch the `[Execute]` button. Then, the direction vector will be calculated and displayed.
+3. 输入程序编号后，触摸 `[Execute]` 按钮。然后，方向向量将被计算并显示。
 
     ![](../../_assets/tp630/system-calib-gravity_eng.png)
 
-
-4.	After checking the direction vector value, touch the `[OK]` button. Then, the direction will be set as the gravity direction.
-
+4. 检查方向向量值后，触摸 `[OK]` 按钮。然后，方向将被设置为重力方向。

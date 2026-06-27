@@ -1,11 +1,11 @@
-﻿# 7.4.1.1 Tool Data Setting
+﻿# 7.4.1.1 工具数据设置
 
 
-The manual method of setting the distance and angle of TCP based on the robot's R1-axis flange and registering the tool's weight, center of gravity, and inertia is as follows.
+手动设置基于机器人 R1 轴法兰的 TCP 距离和角度，并注册工具的重量、重心和惯性的方式如下。
 
-1.	Touch the `[3: Robot Parameter  - 1: Tool Data]` menu.
+1.	触摸 `[3: Robot Parameter - 1: Tool Data] ([3: Robot Parameter  - 1: Tool Data])` 菜单。
 
-2.	Set the tool data name, weight, detailed conditions of each axis, and allowable ratio.
+2.	设置工具数据名称、重量、每个轴的详细条件和允许的比率。
 
     ![](../../../_assets/tp630/robot-tool_eng.png)
 
@@ -13,8 +13,8 @@ The manual method of setting the distance and angle of TCP based on the robot's 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -22,9 +22,8 @@ The manual method of setting the distance and angle of TCP based on the robot's 
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left"><ul>Detailed information on the tool data selected from the tool data list.
-        You can set the tool data name and description, weight, detailed conditions
-        of each axis, and allowable ratio.</ul></td>
+      <td style="text-align:left"><ul>从工具数据列表中选择的工具数据的详细信息。
+        您可以设置工具数据名称和描述、重量、每个轴的详细条件和允许的比率。</ul></td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -32,24 +31,23 @@ The manual method of setting the distance and angle of TCP based on the robot's 
       </td>
       <td style="text-align:left">
         <ul>
-          <li><b>[Auto Calibration]</b>: You can create new tool data or can create
-            tool data simply by using an existing program. If you want to perform setting newly at the previously taught step position, you should first place the tool, and then execute the automatic calibration function to create tool length and angle newly.
+          <li><b>[自动校准]</b>: 您可以创建新的工具数据，或仅通过使用现有程序创建工具数据。如果您希望在之前教授的步态位置重新进行设置，您应该首先放置工具，然后执行自动校准功能以重新创建工具长度和角度。
             <br />
             <img src="../../../_assets/tp630/robot-tool-autocal_eng.png" alt/>
             <br />
           </li>
           <ul>
-            <li>[Previous Program Number]: You can input the program number taught before tool deformation occurs.</li>
-            <li>[Previous Step Number]: You can input the step number for which automatic tool data calibration will be performed.</li>
-            <li>[Tool Number to Set]: You can input the tool number to be newly set.</li>
+            <li>[之前程序编号]: 您可以输入在工具变形发生之前教授的程序编号。</li>
+            <li>[之前步骤编号]: 您可以输入将执行自动工具数据校准的步骤编号。</li>
+            <li>[要设置的工具编号]: 您可以输入要新设置的工具编号。</li>
           </ul>
           <li>
-            <p>[Angle Calibration]: You can calibrate the angle of the tool.</p>
+            <p>[角度校准]: 您可以校准工具的角度。</p>
             <p>
               <img src="../../../_assets/tp630/robot-tool-anglecal_eng.png" alt/>
             </p>
           </li>
-          <li>[Apply CAD data]: If you have the CAD data of the tool and edit the tool data with that, then it is regarded as the completion of load estimation.
+          <li>[应用 CAD 数据]: 如果您拥有工具的 CAD 数据并使用它编辑工具数据，则视为负载估算的完成。
             <br />
           </li>
         </ul>
@@ -61,15 +59,11 @@ The manual method of setting the distance and angle of TCP based on the robot's 
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[+]/[-]: You can add new tool data or delete tool data.</li>
-          <li>Tool data list. Selecting a tool data name will allow you to check and
-            edit detailed information.</li>
-          <li>[Copy page]/[Paste page]: You can copy the tool data information and then
-            paste it to another tool data.
-            <br />After selecting the name of the tool data information to be copied from
-            the list and touching the<b> [Copy page] </b>button, select the name of
-            the tool data to which the value is to be applied, and then touch the <b>[Paste page]</b> button.</li>
+          <li>[确定]: 您可以保存更改。</li>
+          <li>[+]/[-]: 您可以添加新的工具数据或删除工具数据。</li>
+          <li>工具数据列表。选择工具数据名称将允许您检查和编辑详细信息。</li>
+          <li>[复制页面]/[粘贴页面]: 您可以复制工具数据信息，然后将其粘贴到另一个工具数据中。
+            <br />在从列表中选择要复制的工具数据信息的名称并触摸<b> [复制页面] </b>按钮后，选择要应用值的工具数据名称，然后触摸<b>[粘贴页面]</b>按钮。</li>
         </ul>
       </td>
     </tr>
@@ -77,9 +71,8 @@ The manual method of setting the distance and angle of TCP based on the robot's 
 </table>
 
 {% hint style="info" %}
-* In the tool data list, tool data for which load estimation is not performed will be marked with \(X\) to the right side of the name.
-* You must perform load estimation first before using the tool. The use of tools for which load estimation is not performed could cause trouble with the speed and durability of the robot.
+* 在工具数据列表中，未执行负载估算的工具数据将在名称右侧标记为 \(X\)。
+* 您必须先执行负载估算才能使用该工具。使用未执行负载估算的工具可能会导致机器人速度和耐用性出现问题。
 * 
-  When tool data is copied, the load estimation data will also be copied. The tool data copying and pasting functions can only be executed on the tab of the tool number for which load estimation has been performed.
+  复制工具数据时，负载估算数据也将被复制。工具数据的复制和粘贴功能只能在已执行负载估算的工具编号选项卡上执行。
 {% endhint %}
-

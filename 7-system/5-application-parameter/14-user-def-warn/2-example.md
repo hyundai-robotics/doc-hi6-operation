@@ -1,10 +1,10 @@
-﻿# 7.5.14.2 User-Defined Warning Example
+﻿# 7.5.14.2 用户定义警告示例
 
-1. Modify the 'help_user_warn.json' file as shown below.<br>
+1. 修改 'help_user_warn.json' 文件，如下所示。<br>
 ![](../../../_assets/tp630/user-def-code/image12.png)
 
-2. When the di6 signal is turned on to satisfy the condition expression, W65001 will be triggered<br>
+2. 当 di6 信号打开以满足条件表达式时，W65001 将被触发<br>
 ![](../../../_assets/tp630/user-def-code/image13.png)
 
-3. Checking the warning help will display the same content as written in the file.<br>
+3. 检查警告帮助将显示与文件中写的相同内容。<br>
 ![](../../../_assets/tp630/user-def-code/image14.png)

@@ -1,23 +1,23 @@
-﻿# 7.5.22 Reduced Speed Mode
+# 7.5.22 减速模式
 
-When the input signal (di) changes from OFF to ON, the robot speed is reduced according to the set reduction ratio. <br>
-In the move command, the robot speed is applied by combining the original speed value with the auto mode robot speed and the reduction ratio. <br>
+当输入信号（di）从关闭变为开启时，机器人速度根据设定的减速比率降低。 <br>
+在移动命令中，机器人速度通过将原始速度值与自动模式机器人速度和减速比率结合应用。 <br>
 
 ![](../../_assets/tp630/reduced_spd_mode.png)
 
-  * Input Signal: Sets the signal received by the controller.
-  * Active: 
-    * High : Reduction is applied when the signal is ON, and canceled when the signal is OFF.
-    * Low : Reduction is applied when the signal is OFF, and canceled when the signal is ON.
-  * Reduced Speed Rate:  
-    * Determines the ratio by which the speed will be reduced.
-    * When the reduced speed mode input signal is received, the robot speed is set to the auto mode robot speed multiplied by the reduced speed rate.
+  * 输入信号：设置控制器接收到的信号。
+  * 激活：
+    * 高：当信号处于开启状态时应用减速，信号关闭时取消减速。
+    * 低：当信号处于关闭状态时应用减速，信号开启时取消减速。
+  * 减速率：  
+    * 确定速度将降低的比例。
+    * 当收到减速模式输入信号时，机器人速度设置为自动模式机器人速度乘以减速率。
 
 {% hint style="info" %}
-* The reduction ratio is not applied in manual mode.
+* 在手动模式下不应用减速比率。
 {% endhint %}
 
 {% hint style="warning" %}
-* Select the correct active condition that matches the state of the input signal.
-* When an I/O signal is received during playback, the reduced speed mode will still be applied.
+* 选择与输入信号状态匹配的正确激活条件。
+* 在播放过程中收到I/O信号时，仍然会应用减速模式。
 {% endhint %}

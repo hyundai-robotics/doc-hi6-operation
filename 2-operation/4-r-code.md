@@ -1,12 +1,7 @@
-﻿# 2.4 R Codes
+﻿# 2.4 R 代码
 
-R codes are unique code numbers assigned to specific functions. Assigning unique code numbers to frequently used functions can help you use those functions quickly. For details on R codes, refer to "[8. R codes](../8-r-code/README.md)."
+R 代码是分配给特定功能的唯一代码数字。为常用功能分配唯一代码数字可以帮助您快速使用这些功能。有关 R 代码的详细信息，请参阅 "[8. R 代码](../8-r-code/README.md)。"
 
-After touching the `[R..[NO]]` key, input the code number and touch the `[OK]` button. Then the predefined function will be executed.
+在触摸 `[R..[NO]]` 键后，输入代码数字并触摸 `[OK]` 按钮。然后将执行预定义功能。
 
 ![](../_assets/tp630/k-r.png)
-
-
-
-
-

@@ -1,4 +1,3 @@
-﻿# 2. Operation
+# 2. 操作
 
-Operation refers to the act of instructing the contents of the work to the robot and checking the contents. In general, when it comes to industrial robots, manual and automatic modes are used. Manual operation refers to the act of directly instructing the contents of the work to the robot, and the automatic operation refers to the act of making the robot repeatedly execute the contents of the instructed work.
-
+操作是指向机器人指示工作内容并检查内容的行为。一般来说，工业机器人使用手动和自动模式。手动操作是指直接向机器人指示工作内容的行为，而自动操作是指让机器人重复执行指示工作内容的行为。

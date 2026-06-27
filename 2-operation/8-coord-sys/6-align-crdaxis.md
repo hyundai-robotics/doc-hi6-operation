@@ -1,54 +1,51 @@
-﻿# 2.8.6 Coordinate Axis Alignment
+# 2.8.6 坐标轴对齐
 
-This function aligns the TCP coordinate system with the axes of a selected coordinate system while keeping the XYZ position fixed.
-
+此功能在保持XYZ位置固定的情况下，将TCP坐标系与选定坐标系的轴对齐。
 
 ![](../../_assets/tp630/align-crd-axis-example_eng.png)
 
-The alignment is performed in two steps:
-* Axis Alignment (Step 1) : In this step, the tool's Z-axis is aligned with the selected coordinate system.
-* Coordinate System Alignment (Step 2) : After completing Axis Alignment (Step 1), the TCP coordinate system is adjusted to be orthogonal to the selected coordinate system.
-* Return to Original Position : Moves the robot back to the initial position when entering this function. The return is performed regardless of whether the alignment steps are completed.
+对齐分为两个步骤：
+* 轴对齐（步骤1）：在此步骤中，工具的Z轴与选定坐标系对齐。
+* 坐标系对齐（步骤2）：完成轴对齐（步骤1）后，TCP坐标系调整为与选定坐标系正交。
+* 返回原始位置：当进入此功能时，将机器人移回初始位置。无论对齐步骤是否完成，都会执行返回。
 
-Procedure for Coordinate Axis Alignment
-1.  After jogging to the desired position, ensure that:
-    * The robot is stopped
-    * The motor is ON
-    * The system is in Manual Mode
+坐标轴对齐的流程
+1.  在移动到期望位置后，确保：
+    * 机器人已停止
+    * 电机已打开
+    * 系统处于手动模式
 
-2. Press the **`[Ctrl]`** button on the teach pendant together with `[crd.sys]`, or enter the coordinate axis alignment screen via R300.
+2. 按下教导终端上的 **`[Ctrl]`** 按钮和 `[crd.sys]`，或通过R300进入坐标轴对齐屏幕。
 
-3. Select the coordinate system you want to align to.
+3. 选择要对齐的坐标系。
 
-4. Press the jog key in the desired axis direction to align the tool's Z-axis. (Step 1)
+4. 按下期望轴方向的移动键以对齐工具的Z轴。（步骤1）
 
-5. After completing Axis Alignment (Step 1), press the rotational direction key corresponding to the previously selected axis to perform coordinate alignment. (Step 2 - optional)
+5. 在完成轴对齐（步骤1）后，按下与先前选择的轴相对应的旋转方向键以执行坐标对齐。（步骤2 - 可选）
 
-6. Once the desired position is reached, press the `[ESC]` key to exit the coordinate axis alignment screen.
-
+6. 一旦达到期望位置，按下 `[ESC]` 键以退出坐标轴对齐屏幕。
 
 ![](../../_assets/tp630/align-crd-axis_eng.png)
 
-Jog Key Functions Summary
-  - Axis Alignment: +X, +Y, +Z keys
-  - Return to Original Position: -X, -Y, -Z keys
-  - Coordinate Alignment: Rotational direction keys (+Rx, +Ry, +Rz) corresponding to the axis selected during Z-axis alignment
-
+移动键功能摘要
+  - 轴对齐：+X, +Y, +Z 键
+  - 返回原始位置：-X, -Y, -Z 键
+  - 坐标对齐：与Z轴对齐时选定轴相对应的旋转方向键（+Rx, +Ry, +Rz）
 
 {% hint style="info" %}
-* Jog functions are disabled while the coordinate axis alignment window is active.
-* Coordinate alignment is only available after completing axis alignment.
-* Once the tool Z-axis alignment is completed, pressing jog buttons will maintain the current position.
-* Alignment is performed in a direction that avoids soft limits. If no valid path exists, a soft limit exceeded error will be displayed. (If the expected path is clockwise but causes a soft limit, the system will rotate counterclockwise instead.)
-* When Base, Robot, or User coordinate systems are selected, jogging will follow the selected coordinate system as the reference.
+* 当坐标轴对齐窗口处于活动状态时，移动功能被禁用。
+* 坐标对齐仅在完成轴对齐后可用。
+* 一旦工具Z轴对齐完成，按下移动按钮将保持当前位置信息。
+* 对齐是在避免软限制的方向上执行。如果不存在有效路径，将显示超出软限制的错误。（如果期望路径为顺时针但导致软限制，则系统将改为逆时针旋转。）
+* 当选择基座、机器人或用户坐标系时，移动将遵循所选择的坐标系作为参考。
 {% endhint %}
 
 {% hint style="warning" %}
-* This function must be performed only when the robot is stopped and in Manual Mode.
-(It cannot be executed in Auto Mode.)
-* If the `[ESC]` key is pressed while holding a jog key, the popup window will close and jog will be re-enabled. Use caution during operation.
-* If the additional axis is set to Base and X, Y, Z are not defined (undefined state), an error log will be displayed.
-* If the desired alignment direction is not reachable even with jogging, an error message indicating unreachable XYZ position will appear.
-* If alignment is attempted again from a non-interpolatable posture, an error will occur. In this case, press the Return to Original Position key to avoid the problematic region and retry.
-* When aligning at a singularity point, pressing the released button again will continue the motion. Since the path is recalculated from the current position, it operates at normal speed. (The speed increases slightly, but this is the normal speed.)
+* 此功能仅在机器人停止且处于手动模式时执行。
+（无法在自动模式下执行。）
+* 如果在按住移动键时按下 `[ESC]` 键，弹出窗口将关闭，并重新启用移动。操作时请谨慎。
+* 如果附加轴设置为基座且X、Y、Z未定义（未定义状态），将显示错误日志。
+* 如果期望的对齐方向即使在移动时也无法到达，将出现指示无法到达XYZ位置的错误消息。
+* 如果尝试再次在不可插值的姿势下进行对齐，将发生错误。在这种情况下，请按返回原始位置键以避免问题区域并重试。
+* 在奇点处对齐时，再次按下释放按钮将继续运动。由于路径从当前位点重新计算，因此以正常速度运行。（速度略微增加，但这是正常速度。）
 {% endhint %}

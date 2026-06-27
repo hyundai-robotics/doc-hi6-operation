@@ -1,10 +1,10 @@
-﻿# 7.4.6 Accuracy
+﻿# 7.4.6 精度
 
-You can set the detailed conditions of the accuracy level, which refers to the accuracy of passing through the step when the robot progresses the target step.
+您可以设置精度级别的详细条件，这指的是当机器人执行目标步骤时通过该步骤的精度。
 
-1.	Touch the `[3: Robot Parameter  - 6: Accuracy]` menu.
+1. 触摸 `[3: Robot Parameter - 6: Accuracy] ([3: Robot Parameter - 6: Accuracy])` 菜单。
 
-2.	Set the tooltip position \(TCP\) and posture for each accuracy level.
+2. 为每个精度级别设置工具提示位置 \(TCP\) 和姿态。
 
     ![](../../_assets/tp630/robot-accuracy_eng.png)
 
@@ -13,8 +13,8 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -23,21 +23,14 @@ You can set the detailed conditions of the accuracy level, which refers to the a
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information for each level. You can set the tooltip position
-          (TCP) and posture for each accuracy level.</p>
+        <p>每个级别的详细信息。您可以为每个精度级别设置工具提示位置
+          (TCP) 和姿态。</p>
         <ul>
-          <li>The accuracy level can be set to a value from 0 to 7, and the accuracy
-            level will be recorded as one of the step statement parameters.</li>
-          <li>Accuracy level 0&#x2013;6: Input the TCP distance and posture, as well
-            as the distance and angle of the additional axis, for each level.
-            <br />For the robots that do not support linear or circular interpolation, such
-            as LCD robots, the same method as for additional axes will be applied.</li>
-          <li>Accuracy level 7: The value will be automatically calculated and displayed
-            in the controller, so you do not need to input the value directly.
-            <br />When the accuracy level 7 is applied, the maximum cornering path that
-            satisfies the condition of 1/2 of the step distance will be created. Accuracy
-            level 7 is useful when it is required to make the robot move as smoothly
-            and quickly as possible, such as the act of LDC hand entering and exiting.</li>
+          <li>精度级别可以设置为 0 到 7 的值，精度级别将作为步骤语句参数之一被记录。</li>
+          <li>精度级别 0&#x2013;6：为每个级别输入 TCP 距离和姿态，以及额外轴的距离和角度。
+            <br />对于不支持线性或圆形插补的机器人，例如 LCD 机器人，将采用与额外轴相同的方法。</li>
+          <li>精度级别 7：该值将自动计算并显示在控制器上，因此您无需直接输入值。
+            <br />当应用精度级别 7 时，将创建一个满足步幅距离 1/2 条件的最大弯曲路径。精度级别 7 在需要使机器人尽可能平稳和快速移动时非常有效，例如 LDC 手进出时的动作。</li>
         </ul>
       </td>
     </tr>
@@ -47,9 +40,8 @@ You can set the detailed conditions of the accuracy level, which refers to the a
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Reset All]: You can initialize the TCP distance and posture for all accuracy
-            levels.</li>
+          <li>[确定]：您可以保存更改。</li>
+          <li>[重置所有]：您可以初始化所有精度级别的 TCP 距离和姿态。</li>
         </ul>
       </td>
     </tr>
@@ -57,11 +49,6 @@ You can set the detailed conditions of the accuracy level, which refers to the a
 </table>
 
 {% hint style="info" %}
-* If you approach the accuracy level based on your understanding of the contents of "[2.3 Step](../../2-operation/3-step/README.md)," you can use it more easily.
-* In the welding step that uses a servo gun or an equalizerless gun, the controller will automatically perform restriction regardless of the set accuracy level. 
-
-
+* 如果您根据对 “[2.3 步骤](../../2-operation/3-step/README.md)” 内容的理解接近精度级别，您可以更轻松地使用它。
+* 在使用伺服枪或无均衡枪的焊接步骤中，控制器将自动执行限制，无论设置的精度级别如何。 
 {% endhint %}
-
-
-

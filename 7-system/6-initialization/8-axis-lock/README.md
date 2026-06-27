@@ -1,33 +1,33 @@
-﻿# 7.6.8 Axis Lock
+# 7.6.8 轴锁
 
-### Purpose of the Function
+### 功能目的
 
-The purpose of the axis lock function is to temporarily disable a specific axis when repair or replacement is required due to issues with the motor, reducer, or other components of the robot or auxiliary axes. This allows the remaining normal axes to continue operating. By allowing the operation of normal axes, this function improve the convenience of robot maintenance and availability, and to minimize line productivity losses for certain robots.
+轴锁功能的目的是在需要因电机、减速器或机器人的其他组件或辅助轴出现问题而进行修理或更换时，暂时禁用特定轴。这使得其他正常轴可以继续操作。通过允许正常轴的运行，此功能提高了机器人的维护便利性和可用性，并最小化某些机器人的生产线效率损失。
 
 ![](../../../_assets/tp630/init-axis-lock-purpose_eng.png)
 
 <br>
 
-### Scope of the Function
+### 功能范围
 
-The scope of functionality provided depends on the type of robot and the axis to which the Axis Lock function is applied, as shown in the table below.
+所提供的功能范围取决于机器人类型和应用轴锁功能的轴，如下表所示。
 
 |Robot|Axis Lock|Motor ON|JOG(Axis)|JOG(Cartesian)|Step Recording|Command Recording|Command Execution|Step FWD/BWD|Auto Operation|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|All Robots|Robot Axis|o|o|x|x|o|x|x|x|
-|All Robots|Auxiliary Axis|o|o|o|o|o|x|o|x|
-|*Exception Robots|Specific Axis|o|o|o|o|o|o|o|o|
+|所有机器人|机器人轴|o|o|x|x|o|x|x|x|
+|所有机器人|辅助轴|o|o|o|o|o|x|o|x|
+|*例外机器人|特定轴|o|o|o|o|o|o|o|o|
 
-- *Specific axes for exception robots:
-    -	S axis of HH140G-0A
-    -	L and R axes of LCD robots
-    -	LA and RA axes of LCD 2-DOF arm robots
+- *例外机器人的特定轴：
+    - HH140G-0A的S轴
+    - LCD机器人的L和R轴
+    - LCD 2-DOF臂机器人的LA和RA轴
 
 <br>
 
 {% hint style="info" %}
--   This function is available only when the Engineer Code (R314) is entered.
--   Playback in Auto Mode is not available when this function is enabled.
--   When the function is applied, the corresponding axis operates in a locked state.
+-   仅当输入工程师代码（R314）时，此功能可用。
+-   启用此功能时，无法在自动模式下播放。
+-   当应用此功能时，相关轴处于锁定状态。
 
 {% endhint %}

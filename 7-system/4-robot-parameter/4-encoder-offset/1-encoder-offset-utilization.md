@@ -1,16 +1,13 @@
-﻿# 7.4.4.1 Encoder Offset Value Utilization
+# 7.4.4.1 编码器偏移值的利用
 
-To continue using the existing program even after the current job program is backed up and the system is initialized `system - 5: Initialize - 1: System Initialization`, the robot should maintain the reference position information that existed before initialization. If you record the encoder offset value, the previous position information of the robot can be retrieved.
+为了在当前工作程序备份并初始化系统后继续使用现有程序，机器人必须保持初始化前存在的参考位置信息。如果记录编码器偏移值，机器人之前的位置信息可以被检索。
 
-After system initialization, directly input the encoder offset value as a hex value. It will be easy to input the value if you use the soft keyboard.
+系统初始化后，直接输入编码器偏移值为十六进制值。如果使用软键盘输入该值会更加方便。
 
-If the encoder offset value is recorded as the axis position value \(mm or degree\), you need to input the axis position value into the input window that will appear when you touch the `[Reset One]` button while pressing the `[SHIFT]` key.
+如果编码器偏移值以轴位置值 \(mm 或度\) 记录，需要在按下 `[SHIFT]` 键的同时触摸 `[Reset One]` 按钮时，输入窗口中输入轴位置值。
 
 ![](../../../_assets/tp630/robot-encoder-backup_eng.png)
 
-
-
 {% hint style="info" %}
-The basic setting value in the axis position input window is the reference position value. If you save without inputting the axis position value, the current encoder position will be set as the origin position \(0X400000\).
+轴位置输入窗口中的基本设置值是参考位置值。如果不输入轴位置值就保存，当前编码器位置将被设置为原点位置 \(0X400000\)。
 {% endhint %}
-

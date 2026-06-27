@@ -1,5 +1,3 @@
-﻿# 2.3.1.5 Tool Number
+﻿# 2.3.1.5 工具编号
 
-The robot position will be determined by the position and posture of the tooltip. You can designate the tool number \(0-31\) that will be used. Refer to "[7.4.1.1 Tool Data Setting](../../../7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)" for more details.
-
-
+机器人位置将由工具提示的位置信息和姿态决定。您可以指定将要使用的工具编号 \(0-31\)。有关更多详细信息，请参阅 "[7.4.1.1 工具数据设置](../../../7-system/4-robot-parameter/1-tool-data/1-tool-data-set.md)"。

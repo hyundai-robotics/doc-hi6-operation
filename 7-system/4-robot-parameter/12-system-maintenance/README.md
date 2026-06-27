@@ -1,25 +1,25 @@
-﻿# 7.4.10 Reducer Lifespan Setting
+﻿# 7.4.10 减速机使用寿命设置
 
-If the reducer of the robot axis is replaced, the rated life of the reducer should be initialized.
-The rate at which the rated life of the reducer is exhausted depends on the operating load conditions and speed. The higher the speed and the higher the load, the faster the life span decreases.
-The reducer life data can be found in the system characteristics data. 
-The monitoring menu displays the remaining rated life of the reducer and the expected life based on the latest robot operation pattern.
+如果机器人轴的减速机被更换，则应初始化减速机的额定使用寿命。
+减速机额定使用寿命耗尽的速率取决于操作负载条件和速度。速度越高，负载越大，使用寿命下降得越快。
+减速机寿命数据可以在系统特性数据中找到。
+监控菜单显示减速机的剩余额定寿命和基于最新机器人操作模式的预期寿命。
 
-Rated life : Remaining life when continuously driven under rated load and rated speed conditions<br>
-Expected life: Estimated remaining life based on recent actual driving conditions.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Life expectancy may increase or decrease depending on the robot's recent motion patterns. 
+额定寿命：在额定负载和额定速度条件下持续驱动时的剩余寿命<br>
+预期寿命：根据最近实际驱动条件估算的剩余寿命。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  寿命预期可能会因机器人最近的运动模式而增加或减少。
 
-Initialization of the reducer lifespan
-1.    Touch the `[3: Robot parameter  - 12: System maintenance  - 2:Reducer Lifespan setting]` menu.
+减速机使用寿命初始化
+1.    触摸`[3: Robot parameter - 12: 系统维护 - 2:Reducer Lifespan setting] ([3: Robot parameter  - 12: System maintenance  - 2:Reducer Lifespan setting])`菜单。
 
-2.    Move the cursor to the position corresponding to the replaced reducer and touch the `[Reset one]` button.
-If all reducers are replaced or the body is replaced with a new robot, touch the `[Reset all]` button. In the case of a reducer whose rated life is initialized, the date of initialization is recorded in the chaned date column.
+2.    将光标移动到与更换的减速机相对应的位置并触摸`[Reset one]`按钮。
+如果所有减速机都被更换或机身被更换为新机器人，请触摸`[Reset all]`按钮。在初始化额定寿命的减速机的情况下，初始化日期会记录在更改日期列中。
 
 ![](../../../_assets/tp630/reducer_lifetime_setting.png)
 
 
-Lifespan calculation cycle`[min]` : Renewal period of reducer lifespan. The minimum period is 10 minutes.
+使用寿命计算周期`[min]`：减速机使用寿命的更新周期。最短周期为10分钟。
 
 {% hint style="info" %}
-The reducer rated and expected life are predicted reference values based on reducer life prediction model. The actual life of the reducer may vary from the expected model depending on the driving conditions.
+减速机的额定和预期寿命是基于减速机寿命预测模型的预测参考值。实际减速机的寿命可能会根据驾驶条件与预期模型有所不同。
 {% endhint %}

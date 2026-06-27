@@ -1,17 +1,15 @@
-﻿# 4.2.5 Backup all
+﻿# 4.2.5 备份所有
 
-You can backup the controller's files, such as the project, log.
+您可以备份控制器的文件，例如项目、日志。
 
-1. In the Teach Pendant\(T/P\) or USB Storage Device in the folder tree, use the direction keys on the Teach Pendant to select the target folder where you want to save the backup.
+1. 在教导操作面板\(T/P\)或USB存储设备的文件夹树中，使用教导操作面板上的方向键选择您想要保存备份的目标文件夹。
 
     ![](../../_assets/tp630/file-manager/fl-backup-select.png)
 
-2. Press the `SHIFT` key and click the `[backup all]` button on the bottom of the screen.
-
+2. 按下 `SHIFT` 键，然后点击屏幕底部的 `[backup all]` 按钮。
 
     ![](../../_assets/tp630/file-manager/fl-backup-button.png)
 
-3. Click the 'Start' button to `start` the backup. Once Backup\(approximately 1 minute\) is complete, check the results of the backup in the results window.
+3. 点击 'Start' 按钮以 ` (start)` 备份。一旦备份（大约 1 分钟）完成，请在结果窗口中检查备份结果。
 
     ![](../../_assets/tp630/file-manager/fl-backup-pop.png)
-

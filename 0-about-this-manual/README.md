@@ -1,5 +1,5 @@
-﻿# About the Manual
+﻿# 关于手册
 
-This manual describes the basics and structure of HD Hyundai Robotics' ${cont_model} controller as well as the common operation of industrial robots. Each chapter describes not only basic operation methods but also the methods to use various application functions.
+本手册描述了HD Hyundai Robotics的${cont_model}控制器的基础知识和结构，以及工业机器人的常见操作。每一章不仅描述了基本操作方法，还介绍了使用各种应用功能的方法。
 
-This manual does not cover detailed application functions, such as direct teaching using a collaborative robot, methods of setting safety functions, spot welding, arc welding, positioner sync function, and sensor sync function. For details on relevant information, refer to the collaborative robot maintenance manual and individual application function manuals.
+本手册不涵盖详细的应用功能，如使用协作机器人进行直接教学、安全功能设置方法、点焊、弧焊、定位器同步功能和传感器同步功能的相关信息。如需详细信息，请参阅协作机器人维护手册和各个应用功能手册。

@@ -1,44 +1,44 @@
-﻿# 11.1.1 Cautions When Loading to the project/ Folder via FTP
+﻿# 11.1.1 通过 FTP 加载到 project/ 文件夹时的注意事项
 
 {% hint style="warning" %}
-`[Warning]` The TP file manager or FTP service allows you to modify folders and files.
-However, careless modification or deletion of files may cause serious issues such as boot failure, malfunction, or data loss.
-Do not modify these files unless you fully understand their mechanism or are working under the guidance of a qualified expert.
+`[Warning]` TP 文件管理器或 FTP 服务允许您修改文件夹和文件。
+然而，粗心的修改或删除文件可能会导致严重的问题，如启动失败、故障或数据丢失。
+除非您完全理解其机制或在合格专家的指导下工作，否则不要修改这些文件。
 {% endhint %}
 
-You can back up and restore configuration and teaching files in the project folder using HRWorkbench, file manager, or the backup features.
+您可以使用 HRWorkbench、文件管理器或备份功能备份和恢复项目文件夹中的配置和教学文件。
 
-However, in some cases, it may be more convenient to use familiar FTP software to back up files to a PC or restore them to the robot controller.
-This section describes important precautions to keep in mind when doing so.
-(Details of each file in the project folder will be explained in the next section.)
+但是，在某些情况下，使用熟悉的 FTP 软件将文件备份到 PC 或将其恢复到机器人控制器可能更方便。
+本节描述了在这样做时需要注意的重要预防措施。
+(项目文件夹中每个文件的详细信息将在下一节中解释。)
 
 
-#### Applying Changes After Modifying .job Files in the project/jobs/ Folder
+#### 在修改 project/jobs/ 文件夹中的 .job 文件后应用更改
 
-When you add or overwrite .job files in the `project/jobs/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
-(When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
+当您使用 FTP 软件在 `project/jobs/` 文件夹中添加或覆盖 .job 文件时，机器人控制器不会立即在内存中反映这些更改。
+(使用 HRWorkbench 或文件管理器时，更改会立即被检测并自动加载到内存中。)
 
-There are two ways to apply the updated files to memory:
+有两种方法可以将更新的文件应用到内存中：
 
-- On the HOME screen, click the `...` button on the console bar and select `reload updated jobs`.
+- 在 HOME 屏幕上，单击控制台栏中的 ` (...)` 按钮，然后选择 `重新加载更新的Job (reload updated jobs)`。
 
   ![](../../_assets/tp630/etc/console_reload_job.png)
 
-- Reboot the robot controller.
+- 重启机器人控制器。
 
 
-#### Applying Changes After Modifying .json and .csv Files in the project/vars/ Folder
+#### 在修改 project/vars/ 文件夹中的 .json 和 .csv 文件后应用更改
 
-When you add or overwrite global variable files in the `project/vars/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
-(When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
+当您使用 FTP 软件在 `project/vars/` 文件夹中添加或覆盖全局变量文件时，机器人控制器不会立即在内存中反映这些更改。
+(使用 HRWorkbench 或文件管理器时，更改会立即被检测并自动加载到内存中。)
 
-To apply the updated files to memory, use the method below:
+要将更新的文件应用到内存中，请使用以下方法：
 
-- Open the Global Variables Monitoring window, then click the `Load All` (F-button) at the bottom.
+- 打开全局变量监控窗口，然后单击底部的 `Load All` (F-button)。
 
 ![](../../_assets/tp630/etc/gvar_load.png)
 
 {% hint style="warning" %}
-Do not reboot the robot controller to apply updated global variable files.
-When the controller is powered off, the current global variable values in memory are saved back to files, which will overwrite the files you just updated.
+不要重启机器人控制器以应用更新的全局变量文件。
+当控制器断电时，内存中当前的全局变量值会保存回文件，这将覆盖您刚刚更新的文件。
 {% endhint %}

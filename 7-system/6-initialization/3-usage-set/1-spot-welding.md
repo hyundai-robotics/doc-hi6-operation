@@ -1,14 +1,9 @@
-﻿# 7.6.3.1 Spot Welding
+﻿# 7.6.3.1 点焊
 
-If you select the operation usage as spot welding, you can use the commands related to spot welding and access the menu related to spot welding.
+如果您将操作用法选择为点焊，您可以使用与点焊相关的命令并访问与点焊相关的菜单。
 
 ![](../../../_assets/tp630/init-usage-spot_eng.png)
 
-1.	Set `[Spot Welding]` as enable. 
+1. 设置 `[Spot Welding]` 为启用。
 
-2.	Click the `[User Key Initialization]` drop-down menu and the `[Input/Output Assign Initialization]` drop-down menu, respectively, and select spot.
-
-
-
-
-
+2. 分别点击`[User Key Initialization]`下拉菜单和`[Input/Output Assign Initialization]`下拉菜单，并选择点焊。

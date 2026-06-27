@@ -1,10 +1,10 @@
-﻿# 1.2.4.7 Guide display window
+# 1.2.4.7 指导显示窗口
 
-This displays the guide or direction message for the user to operate and is the area that displays the print message when the print direction is set to T/P in the 'print' command.
+这显示了用户操作的指导或方向信息，并且是在'print'命令中设置打印方向为T/P时显示打印信息的区域。
 
 <br>
 
-The below table is the guide message for each parameter of 'move' command.
+下表是'move'命令每个参数的指导信息。
 
 <br>
 

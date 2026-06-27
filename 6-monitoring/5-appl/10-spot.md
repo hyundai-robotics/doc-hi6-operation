@@ -1,12 +1,12 @@
-﻿# 6.5.10 Spot Welding Data
+# 6.5.10 点焊数据
 
-Touch `[spot]` in the panel selection window.
-This displays the spot gun axis data, the input/output signals and operating information of spot welding.
+在面板选择窗口中触摸 `[spot]`。
+这将显示点枪轴数据、输入/输出信号和点焊的操作信息。
 
 ![](../../_assets/tp630/pane-spot_eng.png) 
 
 <br>
 
 {% hint style="info" %}
- Refer to Spot Welding Manual's "[3.1 Monitoring](https://hrbook-hrc.web.app/#/view/doc-spot-weld/en/3-Related-functions/3-1-monitoring/README?cont_model=${cont_model})" for more details.
+ 参阅点焊手册中的 "[3.1 监控](https://hrbook-hrc.web.app/#/view/doc-spot-weld/zh/3-Related-functions/3-1-monitoring/README?cont_model=${cont_model})" 获取更多详细信息。
 {% endhint %}

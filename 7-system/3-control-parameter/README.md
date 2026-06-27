@@ -1,10 +1,9 @@
-﻿# 7.3 Control Parameter
+﻿# 7.3 控制参数
 
-You can set various conditions of the controller and set the input/output signal, communication information, robot ready OK signal condition, home position signal, and the coordinate system.
+您可以设置控制器的各种条件，并设置输入/输出信号、通信信息、机器人准备就绪信号条件、原点信号和坐标系统。
 
-1.	Touch the `[2: Control parameter]` menu. Then, the control parameter menu will appear. 
+1. 触摸`[2: Control parameter]`菜单。然后，控制参数菜单将出现。
 
-2.	Select the desired menu and check and set various conditions of the controller.
+2. 选择所需菜单并检查和设置控制器的各种条件。
 
     ![](../../_assets/tp630/ctrl-menu_eng.png)
-

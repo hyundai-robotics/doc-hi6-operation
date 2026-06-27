@@ -1,13 +1,8 @@
-﻿# 2.3 Step
+﻿# 2.3 步骤
 
-A step refers to a specific posture \(the position of each axis or the position of the tooltip\) that is to be recorded in the job program and taken by the robot. In other words, a step is one position that the robot will reach through a movement.
+步骤是指在作业程序中记录的特定姿势（每个轴的位置或工具提示的位置），由机器人采取。换句话说，步骤是机器人通过移动达到的一个位置。
 
-The robot performs various functions while moving from one step to another. For movement from one step to another, a movement condition such as a move, which is a movement command, is required.
+机器人在从一个步骤移动到另一个步骤时执行各种功能。为了从一个步骤移动到另一个步骤，需要一个运动条件，例如移动，这是一个运动命令。
 
-* It is the basic unit of robot programming. This is a command for the manipulator to move. It consists of minimum information that is necessary for the operation of the robot. 
-* Movement conditions: These are the step statement parameters such as robot position, interpolation, speed, accuracy, and tool number.
-
-
-
-
-
+* 它是机器人编程的基本单元。这是操纵器移动的命令。它由机器人操作所需的最少信息组成。
+* 运动条件：这些是步骤语句参数，如机器人位置、插值、速度、精度和工具编号。

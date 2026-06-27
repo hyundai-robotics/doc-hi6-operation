@@ -1,10 +1,8 @@
-﻿# 7.5.16.4 Moving
+﻿# 7.5.16.4 移动
 
-This is a function that moves the axis of the robot specified by signal input to the specified position at the specified speed. <br>
-In the figure below, when the fb2.di34 signal is turned on, the robot moves at 10% speed so that the position of the robot's 6 axes is 30 degrees. <br>
+这是一个将机器人指定轴通过信号输入移动到指定位置的功能，速度为指定速度。 <br>
+在下图中，当fb2.di34信号打开时，机器人以10%的速度移动，使得机器人6个轴的位置为30度。 <br>
 
-If you want to move two or more axes of the robot simultaneously, set the input signals to the same value. At this time, the movement speed is applied to the setting value recorded first among them. <br>
+如果您想同时移动两个或更多机器人轴，请将输入信号设置为相同的值。在此时，运动速度应用于它们中首先记录的设置值。 <br>
 
 ![](../../../_assets/tp630/robot_move.png)
-
-

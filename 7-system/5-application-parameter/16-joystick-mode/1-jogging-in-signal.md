@@ -1,11 +1,10 @@
 ﻿# 7.5.16.1 Jogging(input signal)
 
-To jog the robot by signal input, set the input signal corresponding to each direction key. <br>
-In the section where the corresponding input signal is ON, the corresponding axis moves in the specified direction. <br>
+要通过信号输入控制机器人移动，请设置对应于每个方向键的输入信号。 <br>
+在对应输入信号为ON的部分，相应的轴将在指定方向上移动。 <br>
 
-When an input signal is set to a coordinate system, if the input signal turns on, the matching coordinate system is selected. <br>
+当输入信号被设置为坐标系时，如果输入信号被打开，则匹配的坐标系将被选中。 <br>
 
-The input signal corresponding to the mechanism number can change the mechanism depending on the status. <br>
+与机制编号对应的输入信号可以根据状态改变机制。 <br>
 
 ![](../../../_assets/tp630/jogging_in_signal.png)
-

@@ -1,23 +1,22 @@
-﻿# 7.7.2 Positioner Calibration
+# 7.7.2 定位器校准
 
-Positioner calibration is a function that enables the robot to perform a synchronized follow-up with the operation of a jig device installed outside the robot or to perform a linear or circular operation relative to the jig device. The external jig device in which the positioner calibration function will be applied to is called a positioner or station.
+定位器校准是一种功能，使机器人能够与安装在机器人外部的夹具设备的操作进行同步跟进，或相对于夹具设备进行线性或圆形操作。将应用定位器校准功能的外部夹具设备称为定位器或工作站。
 
-Using the positioner calibration function makes it possible to compensate for the operational difficulties because of the limitation of the robot operation area. In other words, even if the positioner moves while the workpiece is fixed onto it, the robot can still perform a linear or circular operation on the workpiece by following up with the movement of the positioner.
+使用定位器校准功能使得可以补偿由于机器人操作区域限制而带来的操作困难。换句话说，即使定位器在工件固定在其上时移动，机器人仍然可以通过跟随定位器的移动对工件进行线性或圆形操作。
 
-You can simply set the positioner's coordinate system by performing the positioner calibration by teaching three points for a 1-axis positioner and five points for a 2-axis positioning.
+您可以通过教学三个点来设置1轴定位器的坐标系统，或通过教学五个点来设置2轴定位器的坐标系统。
 
-![Figure 68 1-Axis Positioner \(Left\) / 2-Axis Positioner \(Right\)](../../_assets/image_244.png)
+![图68 1轴定位器 \(左\) / 2轴定位器 \(右\)](../../_assets/image_244.png)
 
-The information on the main functions of the positioner calibration is as follows.
+定位器校准的主要功能信息如下。
 
-| Main Functions | Description |
+| 主要功能 | 描述 |
 | :--- | :--- |
-| Positioner group | 1-4 groups are supported |
-| Positioner axis count | 1-axis positioner and 2-axis positioner are supported \(rotation axis\) |
-| Interpolation mode | Linear interpolation and circular interpolation are supported |
+| 定位器组 | 支持1-4组 |
+| 定位器轴数 | 支持1轴定位器和2轴定位器 \(旋转轴\) |
+| 插值模式 | 支持线性插值和圆形插值 |
 
 {% hint style="info" %}
-* The positioner calibration function can be used while the positioner group is set.
-* For more details, refer to the "[${cont_model} Controller Positioner Sync Function Manual](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/en/README?cont_model=${cont_model})".
+* 定位器校准功能可以在设定定位器组时使用。
+* 有关更多详细信息，请参阅 "[${cont_model} 控制器定位器同步功能手册](https://hrbook-hrc.web.app/#/view/doc-positioner-sync/zh/README?cont_model=${cont_model})"。
 {% endhint %}
-

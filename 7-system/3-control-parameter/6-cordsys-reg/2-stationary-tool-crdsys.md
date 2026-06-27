@@ -1,32 +1,30 @@
-﻿# 7.3.6.2 Stationary Tool Coordinate System
+﻿# 7.3.6.2 静态工具坐标系统
 
-A robot tool is a tool attached to the front end of the robot. In general, robots perform operations using tools attached to the robot. A typical example is arc welding. The arc welding tool is usually attached to the front end of the robot and is used to perform welding on the externally fixed workpiece.
+机器人工具是附加在机器人前端的工具。一般来说，机器人使用附加在机器人上的工具执行操作。一个典型的例子是弧焊。弧焊工具通常附加在机器人的前端，用于在外部固定的工件上进行焊接。
 
-On the other hand, in the case of a stationary tool, the tool is attached to the outside, not the robot. In this case, the robot handles the workpiece and places it on an externally fixed tool to operate. A typical operation using a stationary tool is the sealing operation. Normally, in the sealing operation, when the external tool discharges a certain amount of solvent required for sealing, the robot holds the workpiece and creates the required trajectory to operate.
+另一方面，在静态工具的情况下，工具附加在外部，而不是机器人上。在这种情况下，机器人处理工件并将其放置在外部固定的工具上以进行操作。使用静态工具的典型操作是密封操作。通常，在密封操作中，当外部工具释放出所需的某种量的溶剂以进行密封时，机器人持有工件并创建所需的轨迹进行操作。
 
-![Figure 57 Example of a Sealing Operation](../../../_assets/tp630/stationary_crd_sealing_eng.png)
+![图57 密封操作示例](../../../_assets/tp630/stationary_crd_sealing_eng.png)
 
-To create the required trajectory, the robot performs linear \(L\) and circular \(C\) interpolations based on the externally attached tool, not based on the tool attached to itself. At this time, the stationary tool interpolation function will be used.
+为了创建所需的轨迹，机器人基于外部附加的工具执行线性 \(L\) 和圆形 \(C\) 插补，而不是基于附加在自己上的工具。在此期间，将使用静态工具插补功能。
 
-When the stationary tool interpolation function is used, even if the posture of the workpiece held by the robot is changed, the moving path of the stationary tool on the workpiece can maintain the linear lines and arcs. As such, the stationary tool interpolation function must always be used for an operation for which the moving path of the external tool is important.
+当使用静态工具插补功能时，即使机器人持有的工件的姿态发生变化，静态工具在工件上的移动路径仍然可以保持直线和弧线。因此，静态工具插补功能必须始终用于外部工具的移动路径重要的操作。
 
-To use the stationary tool interpolation function, you must set the stationary tool coordinate system.
+要使用静态工具插补功能，必须设置静态工具坐标系统。
 
-The method to set the stationary tool coordinate system is as follows.
+设置静态工具坐标系统的方法如下。
 
-1.	Touch the `[2: Control Parameter  - 6: Coordinate Registration 2: Stationary Tool Coordinate System]` menu.
+1. 触摸`[2: 控制参数 - 6: 坐标注册 2: 静态工具坐标系统] ([2: 控制参数 - 6: 坐标注册 2: 静态工具坐标系统])`菜单。
 
-2.	Select the desired tab and register the position of the stationary tool coordinate system. 
+2. 选择所需的选项卡并注册静态工具坐标系统的位置。
 
     ![](../../../_assets/tp630/ctrl-stationary-coord_eng.png)
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -34,8 +32,7 @@ The method to set the stationary tool coordinate system is as follows.
       <td style="text-align:left">
         <img src="../../../_assets/c1.png" alt/>
       </td>
-      <td style="text-align:left">You can set a total of twenty stationary tool coordinate systems (tool 0
-        - tool 19) by selecting a tab.</td>
+      <td style="text-align:left">可以通过选择选项卡设置总共二十个静态工具坐标系统（工具0 - 工具19）。</td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -43,34 +40,28 @@ The method to set the stationary tool coordinate system is as follows.
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[<b>OK</b>]: You can save the changes.</li>
-          <li>[<b>Current robot pose</b>]: You can set the current TCP position as the position of
-            the stationary tool coordinate system.</li>
+          <li>[<b>确定</b>]: 可以保存更改。</li>
+          <li>[<b>当前机器人姿态</b>]: 可以将当前TCP位置设置为静态工具坐标系统的位置。</li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
 
+### 将当前TCP位置设置为静态工具坐标系统的位置
 
-
-### Setting the Current TCP Position as the Position of the Stationary Tool Coordinate System
-
-After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the `[Current robot pose]` button. Then, the current TCP position will be registered.
+在准确找到基于机器人基坐标系统的TCP之后，应将静态工具与机器人工具匹配，如下图所示，然后使用`[当前机器人姿态]`按钮执行自动设置功能。然后，当前TCP位置将被注册。
 
 ![](../../../_assets/tp630/stationary_crd_autoset_eng.png)
 
+### 使用静态工具坐标系统编写程序
 
+要执行静态工具插补步骤的记录，您应该将步骤记录为SL或SC。在${cont_model}教学挂件屏幕左上角的`[录制条件]`按钮上，您可以将录制条件更改为SL \(静态工具线性插补\)或SC \(静态工具圆形插补\)。
 
-### Writing a Program Using the Stationary Tool Coordinate System
-
-To perform the recording for the stationary tool interpolation step, you should record the step as SL or SC. Using the `[Recording Condition]` button on the upper left of the ${cont_model} teach pendant screen, you can change the recording condition to SL \(stationary tool linear interpolation\) or SC \(stationary tool circular interpolation\).
-
-For example, if you register and use the stationary tool coordinate system No. 1, you can create a program as follows.
+例如，如果您注册并使用静态工具坐标系统编号1，则可以创建如下程序。
 
 ![](../../../_assets/tp630/pane-prog-cmd-SL_eng.png)
 
 {% hint style="info" %}
-In the case of using the stationary servo gun, the stationary tool interpolation function is not required. This is because, in the servo gun welding, the moving path of the workpiece for the stationary servo gun does not need to be formed in a linear line or arc while only the welding point is important.
+在使用静态伺服枪的情况下，静态工具插补功能不是必需的。这是因为在伺服枪焊接中，静态伺服枪的工件移动路径不需要以直线或弧线形成，而焊接点则是重要的。
 {% endhint %}
-

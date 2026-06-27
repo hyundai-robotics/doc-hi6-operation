@@ -1,21 +1,14 @@
-﻿# 6.15 Workcell
+﻿# 6.15 工作单元
 
-This function is under development. As soon as completed, the content will be updated.
+此功能正在开发中。完成后，内容将会更新。
 
 ---
 
-In the panel selection window, touch `[Work Cell]`. Then, the robot's current posture will appear on the 3D screen.
+在面板选择窗口中，触摸 `[Work Cell]`。然后，机器人的当前姿态将在 3D 屏幕上显示。
 
-By setting the safety function of the collaborative robot, you can check the setting status of the operation area \(![](../_assets/c1.png)\), tool area \(![](../_assets/c2.png)\), tool direction restriction \(![](../_assets/c3.png)\), robot elbow area \(![](../_assets/c4.png)\), prohibited area \(![](../_assets/c5.png)\).
+通过设置协作机器人的安全功能，您可以检查操作区域的设置状态 \(![](../_assets/c1.png)\)、工具区域 \(![](../_assets/c2.png)\)、工具方向限制 \(![](../_assets/c3.png)\)、机器人肘部区域 \(![](../_assets/c4.png)\)、禁止区域 \(![](../_assets/c5.png)\)。
 
+![图 47 工作单元监控](../_assets/image_430.png)
 
-
-![Figure 47 Work Cell Monitoring](../_assets/image_430.png)
-
-* Select the `[Upscale/Downscale]` icon \(![](../_assets/wc-zoom.png)\), `[Move]` icon \(![](../_assets/wc-pan.png)\), or `[Rotate]` icon \(![](../_assets/wc-rotate.png)\) at the bottom right of the 3D screen, and then drag the screen. Then, the camera will be adjusted.
-* If the setting is changed, you can apply the new settings only after closing and reopening the workcell window.
-
-
-
-
-
+* 选择右下角 3D 屏幕上的 `[Upscale/Downscale]` 图标 \(![](../_assets/wc-zoom.png)\)、`[Move]` 图标 \(![](../_assets/wc-pan.png)\) 或 `[Rotate]` 图标 \(![](../_assets/wc-rotate.png)\)，然后拖动屏幕。然后，摄像头将被调整。
+* 如果设置已更改，您只有在关闭并重新打开工作单元窗口后才能应用新设置。

@@ -1,24 +1,19 @@
-﻿# 7.3.2.4 Input Signal Assignment
+﻿# 7.3.2.4 输入信号分配
 
-You can remotely control the controller's state or operation using the controller input signal. The method of assigning the input signal number in the remote-control item is as follows.
+您可以使用控制器输入信号远程控制控制器的状态或操作。分配远程控制项中的输入信号编号的方法如下。
 
-1.	Touch the `2: Control Parameter  - 2: Input/Output Signal Setting  - 3: Input Signal Assign` menu. 
+1. 触摸 `2: 控制参数 - 2: 输入/输出信号设置 - 3: 输入信号分配 (2: 控制参数 - 2: 输入/输出信号设置 - 3: 输入信号分配)` 菜单。
 
-2.	After inputting the input signal number in the remote control item, touch the `[OK]` button.
+2. 在远程控制项中输入输入信号编号后，触摸 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-insignal-assign_eng.png)
 
-* `[Reset All]`: You can reset the numbers of the input signals assigned to all remote control items. 
+* `[重置所有]`: 您可以重置分配给所有远程控制项的输入信号编号。
 * 
-  `[Reset One]`: You can reset the number of the input signal assigned to the selected remote control item. 
-
-* 
-  `[Reset Channel]`: You can initialize the input channel for the set input signal. The channel consists of fb0 to fb9, and fb0 will be omitted in the display in the case of fb0.
+  `[重置一个]`: 您可以重置分配给选定远程控制项的输入信号编号。
 
 * 
-  `[S]`: You can designate the system signal when using the remote control as a system input signal. The system signal consists of "s+number," which combines the letter s with the signal number. For example, you can set the system signal 49 as s49.
+  `[重置通道]`: 您可以初始化设定输入信号的输入通道。通道由 fb0 到 fb9 组成，在 fb0 的情况下，显示中将省略 fb0。
 
-
-
-
-
+* 
+  `[S]`: 您可以在使用远程控制作为系统输入信号时指定系统信号。系统信号由 "s+编号" 组成，将字母 s 与信号编号结合。例如，您可以将系统信号 49 设置为 s49。

@@ -1,10 +1,7 @@
-﻿# 7.3.6 Coordinate System Registration
+﻿# 7.3.6 坐标系统注册
 
-1.	Touch the `[2: Control Parameter  - 6: Coordinate Registration]` menu. Then, the coordinate system registration menu will appear. 
+1. 触摸`[2: 控制参数 - 6: 坐标注册] ([2: 控制参数 - 6: 坐标注册])`菜单。然后，坐标系统注册菜单将出现。
 
-2.	By selecting the desired menu, you can set the coordinate system with respect to the user coordinate system or the stationary tool coordinate system.
+2. 通过选择所需菜单，您可以根据用户坐标系统或静态工具坐标系统设置坐标系统。
 
     ![](../../../_assets/tp630/ctrl-coord-menu_eng.png)
-
-
-

@@ -1,4 +1,3 @@
-﻿# 4. Service
+﻿# 4. 服务
 
-You can use the program's various service function menus such as variable and file management.
-
+您可以使用程序的各种服务功能菜单，例如变量和文件管理。

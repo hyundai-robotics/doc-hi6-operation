@@ -1,69 +1,68 @@
 ﻿# 11.1.3 log/
 
 
-This folder stores various log files. In the file names below, ? represents a number; when the maximum number is reached, the files are overwritten in a circular manner starting from 0, or it may represent a timestamp in the format YYYYMMDD_HHMMSS.
+此文件夹存储各种日志文件。在下面的文件名中，? 表示一个数字；当达到最大数字时，文件将以循环方式从 0 开始覆盖，或者它可能表示格式为 YYYYMMDD_HHMMSS 的时间戳。
 
-Among these files:
+这些文件中：
 
-Event logs can be viewed in the Teach Pendant log window or via HRWorkbench.
+事件日志可以在教导挂件日志窗口中查看，也可以通过 HRWorkbench 查看。
 
-Scope logs can only be viewed using HRWorkbench.
+范围日志只能通过 HRWorkbench 查看。
 
-The remaining .txt files can be opened with any standard text editor.
+其余的 .txt 文件可以使用任何标准文本编辑器打开。
 
 
 * bootlog_?.txt
 
-  Log file storing the controller's boot history.
-  Used for analyzing issues such as boot failures. A new file is created in a   circular manner each time the controller boots.
+  存储控制器启动历史的日志文件。
+  用于分析启动失败等问题。每次控制器启动时，会以循环方式创建一个新文件。
 
 * evlog_alarm_??.txt
 
-  Log file storing Error and Warning events.
+  存储错误和警告事件的日志文件。
 
 * evlog_hist_??.txt
 
-  Log file storing History events.
-  Mainly records execution history of .job files.
+  存储历史事件的日志文件。
+  主要记录 .job 文件的执行历史。
 
 * evlog_io_??.txt
 
-  Log file storing I/O conversion events.
+  存储 I/O 转换事件的日志文件。
 
 * evlog_noti_??.txt
 
-  Log file storing Notice events.
+  存储通知事件的日志文件。
 
 * evlog_oper_00.txt
 
-  Log file storing user Operation events.
+  存储用户操作事件的日志文件。
 
 * evlog_stst_00.txt
 
-  Log file storing Start and Stop events of the robot.
+  存储机器人启动和停止事件的日志文件。
 
 * pow_stage.txt
 
-  File storing power-on, power-failure recovery, and power-failure backup states.
+  存储电源开启、电源故障恢复和电源故障备份状态的文件。
 
 * sclog_base_????????_??????.bin
 
-  Scope log file storing time-series data such as each axis's position, speed, and acceleration.  
-  ????????_?????? represents the timestamp in YYYYMMDD_HHMMSS format.  
-  Generated when robot shock is detected or specific errors occur. Can be viewed using the Scope Log feature in HRWorkbench.
+  存储时间序列数据（如每个轴的位置、速度和加速度）的范围日志文件。  
+  ????????_?????? 表示 YYYYMMDD_HHMMSS 格式的时间戳。  
+  当检测到机器人震动或发生特定错误时生成。可以使用 HRWorkbench 中的范围日志功能查看。
 
 * sclog_base_????????_??????.json
 
-  Schema file describing the type of data stored in the corresponding .bin file.
-  The .bin and .json files must exist as a pair to open the log.
+  描述对应 .bin 文件中存储的数据类型的模式文件。
+  .bin 和 .json 文件必须成对存在才能打开日志。
 
 * shutdownlog_?.txt
 
-  Log file storing the controller's power-off history.  
-  Used to analyze whether power-failure backup operations were performed correctly. A new file is created in a circular manner each time the controller powers off.
+  存储控制器关机历史的日志文件。  
+  用于分析电源故障备份操作是否正确执行。每次控制器关机时，会以循环方式创建一个新文件。
 
 * updatesvclog_?.txt
 
-  Log file storing the controller software version upgrade history.
-  Used to analyze whether the version upgrade was performed successfully.
-  
+  存储控制器软件版本升级历史的日志文件。
+  用于分析版本升级是否成功。

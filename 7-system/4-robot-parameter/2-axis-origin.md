@@ -1,22 +1,18 @@
-﻿# 7.4.2 Axis Origin
+# 7.4.2 轴原点
 
-You can register the mechanical origin position of each axis.
+您可以注册每个轴的机械原点位置。
 
-1.	Touch the `[3: Robot Parameter  - 2: Axis Origin]` menu.
+1. 触摸 `[3: Robot Parameter - 2: Axis Origin] ([3: Robot Parameter  - 2: Axis Origin])` 菜单。
 
-2.	Register the mechanical origin position of each axis.
+2. 注册每个轴的机械原点位置。
 
     ![](../../_assets/tp630/robot-origin_eng.png)
-
-
-
-
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align:left">编号</th>
+      <th style="text-align:left">描述</th>
     </tr>
   </thead>
   <tbody>
@@ -25,15 +21,12 @@ You can register the mechanical origin position of each axis.
         <img src="../../_assets/c1.png" alt/>
       </td>
       <td style="text-align:left">
-        <p>Detailed information on the mechanical origin position of each axis. You
-          can set the encoder and position of the axis.</p>
+        <p>每个轴机械原点位置的详细信息。您
+          可以设置轴的编码器和位置。</p>
         <ul>
-          <li>S-axis: You can change the S-axis origin depending on the installation
-            situation of the robot and surrounding jig.</li>
-          <li>R1-axis: You can change the origin of the R1- axis origin according to
-            the tool attachment direction.</li>
-          <li>H, V, R2, and B axes: Can be set automatically through the automatic calibration
-            function</li>
+          <li>S轴：您可以根据机器人和周围夹具的安装情况更改S轴原点。</li>
+          <li>R1轴：您可以根据工具安装方向更改R1轴原点。</li>
+          <li>H、V、R2 和 B 轴：可以通过自动校准功能自动设置。</li>
         </ul>
       </td>
     </tr>
@@ -43,10 +36,9 @@ You can register the mechanical origin position of each axis.
       </td>
       <td style="text-align:left">
         <ul>
-          <li>[OK]: You can save the changes.</li>
-          <li>[Apply One]: You can apply the selected origin position to the selected
-            axis information.</li>
-          <li>[Apply All]: You can apply the selected origin position to all axis information.</li>
+          <li>[确定]：您可以保存更改。</li>
+          <li>[应用单个]：您可以将选定的原点位置应用于选定的轴信息。</li>
+          <li>[应用所有]：您可以将选定的原点位置应用于所有轴信息。</li>
         </ul>
       </td>
     </tr>
@@ -54,15 +46,14 @@ You can register the mechanical origin position of each axis.
 </table>
 
 {% hint style="warning" %}
-* The axis origin setting affects the accuracy of the robot's cartesian operation. Change it to the exact value as much as possible.
+* 轴原点设置会影响机器人的笛卡尔操作精度。尽量将其更改为准确值。
 * 
-  If the axis origin setting is changed, the position of the previously created program will be changed. Therefore, the axis origin setting must be executed only at the initial installation stage.
+  如果更改轴原点设置，先前创建的程序的位置将会改变。因此，轴原点设置必须仅在初始安装阶段执行。
 
 * 
-  If the encoder offset setting is changed, the axis origin should be newly set. Therefore, the encoder offset setting must be completed before the setting of the axis origin.
+  如果更改了编码器偏移设置，则应重新设置轴原点。因此，在设置轴原点之前，必须完成编码器偏移设置。
 {% endhint %}
 
 {% hint style="info" %}
-At the time of the shipping from the factory, the mechanical origin position of each axis is set at the standard value \(0X400000\).
+在出厂时，每个轴的机械原点位置设置为标准值 \(0X400000\)。
 {% endhint %}
-

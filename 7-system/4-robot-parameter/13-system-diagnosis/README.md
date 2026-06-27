@@ -1,4 +1,3 @@
-﻿# 7.4.13 System diagnosis
+﻿# 7.4.13 系统诊断
 
-It is used for various functions to diagnose failures in robot systems. 
-
+它用于诊断机器人系统中的故障的各种功能。

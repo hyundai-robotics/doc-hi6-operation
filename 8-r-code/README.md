@@ -1,10 +1,5 @@
-﻿# 8. R Codes
+﻿# 8. R 代码
 
-When it comes to the operating procedures for frequently used functions, such as modifying the contents of a program or changing the setting status of a controller, you can use them easily by designating specific service codes \(R codes\). 
+当涉及到常用功能的操作程序时，例如修改程序的内容或更改控制器的设置状态，您可以通过指定特定的服务代码 \(R 代码\) 轻松使用它们。
 
-R codes are configured in the "R+No." format, which combines R, representing Reset and Rapid, with a number.
-
-
-
-
-
+R 代码采用 "R+No." 格式配置，其中 R 代表重置和快速，后跟一个数字。

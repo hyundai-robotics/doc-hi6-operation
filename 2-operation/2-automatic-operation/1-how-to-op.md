@@ -1,10 +1,10 @@
-﻿# 2.2.1 Operation Method
+# 2.2.1 操作方法
 
-It is the method to teach the robot the contents of the work and then make it perform the work is as follows.
+教机器人工作内容并让其执行工作的方式如下。
 
-1.	Check whether there are people or obstacles within the safety fence and the operation range of the robot.
+1. 检查安全围栏内及机器人操作范围内是否有人员或障碍物。
 
-2.	Set the operation mode to automatic mode by turning the mode switch of the teach pendant.
+2. 通过转动教导挂件的模式开关，将操作模式设置为自动模式。
 
     <div style="max-width: 35vw">  
 
@@ -12,24 +12,22 @@ It is the method to teach the robot the contents of the work and then make it pe
      
     </div>
 
-3.	On the status bar of the ${cont_model} teach pendant screen, check whether the operation mode is set to automatic mode.
+3. 在 ${cont_model} 教导挂件屏幕的状态栏上，检查操作模式是否设置为自动模式。
 
     ![](../../_assets/tp630/sbar-mode-auto1_eng.png)
 
-* If it is set to manual mode, turn the mode switch of the teach pendant to set the operation mode to automatic mode.
+* 如果设置为手动模式，请转动教导挂件的模式开关，将操作模式设置为自动模式。
 
-4.	Touch the `[Recording Condition]` button on the left side of the initial screen. Then, the condition setting window will appear.
+4. 点击初始屏幕左侧的 `[Recording Condition]` 按钮。然后，将出现条件设置窗口。
 
     ![](../../_assets/tp630/fbt-condset_eng.png)
 
-
-
-5.	Set the program repetition option and robot operation speed.
+5. 设置程序重复选项和机器人操作速度。
 
     ![](../../_assets/tp630/cond-set-cycle-auto-spd_eng.png)
 
-* `1: Operation Cycle type`: You can set whether to repeat the program that will be executed during automatic operation.
-* `6: Playback speed rate`: You can set the operation speed \(%\) of the robot when a program is played back in automatic mode.  
-  For example, if the operation speed is set to 100, the robot will move at the recorded speed of the step, and if it is set to 50, the robot will move at the ratio of 50% of the recorded speed.
+* `1: Operation Cycle type`: 您可以设置是否重复在自动操作期间将要执行的程序。
+* `6: 自动运行速率 (6: Playback speed rate)`: 您可以设置程序在自动模式下回放时机器人的操作速度 \(%\)。  
+  例如，如果设置操作速度为100，机器人将在记录的步骤速度下移动；如果设置为50，机器人将以记录速度的50%比例移动。
 
-6.	Press the `[start]` key on the teach pendant. The start lamp will be turned on, and the robot will perform the work according to the created program.
+6. 按下教导挂件上的 `[start]` 键。启动灯会亮起，机器人将根据创建的程序执行工作。

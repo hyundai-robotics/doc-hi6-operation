@@ -1,24 +1,19 @@
-﻿# 7.3.11.1 PCI Slot Settings
+# 7.3.11.1 PCI 插槽设置
 
-You can set the PCI slot to be used for the industrial communication.
+您可以设置用于工业通信的 PCI 插槽。
 
-1.	Touch the `[2: Control Parameter  - 11: Industrial Communication  - 1: PCI Slot Settings  - 1 Channel]` menu. Then, the PCI slot setting screen will appear.
+1. 触摸 `[2: Control Parameter - 11: 工业通信 - 1: PCI 插槽设置 - 1 Channel] ([2: Control Parameter  - 11: Industrial Communication  - 1: PCI Slot Settings  - 1 Channel])` 菜单。然后，PCI 插槽设置屏幕将显示。
 
-2.	Select the desired tab and then set the communication method \(Master / Slave\) and protocol. After that, tap the `[OK]` button.
+2. 选择所需的标签，然后设置通信方式 \(Master / Slave\) 和协议。之后，点击 `[OK]` 按钮。
 
     ![](../../../_assets/tp630/ctrl-industrial-channel_eng.png)
 
-
-
 {% hint style="warning" %}
-When the PCI slot setting is completed, the CONFIG files set in the slot \#1 - \#4 will be all deleted. When you want to change the communication PCI slot in the middle of using it, you should back up the existing CONFIG setting separately and use it after restoring it. 
+完成 PCI 插槽设置后，插槽 \#1 - \#4 中设置的 CONFIG 文件将全部删除。当您想要在使用过程中更改通信 PCI 插槽时，应该单独备份现有的 CONFIG 设置，并在恢复后使用它。
 {% endhint %}
 
-3.	Turn off the power of the controller, and then turn it back on.
+3. 关闭控制器的电源，然后重新打开它。
 
 {% hint style="warning" %}
-* When you perform the setting of the PCI slot to use it, the setting value will be applied to the system only after you turn off the power of the controller and then turn it back on.
+* 当您执行 PCI 插槽的设置以使用时，设置值将在您关闭控制器电源后重新打开时应用到系统。
 {% endhint %}
-
-
-

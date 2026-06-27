@@ -1,26 +1,21 @@
-﻿# 3.2.4.1 Statement Editing Method
+﻿# 3.2.4.1 声明编辑方法
 
-The following shows how to edit a statement.
+以下显示如何编辑声明。
 
-1.	In the JOB program window, select the statement area by pressing the `[↑/↓]` key on the teach pendant. The statement area will be selected while in the statement cursor status.
+1.	在JOB程序窗口中，通过按下`[↑/↓]`键选择声明区域。当处于声明光标状态时，声明区域将被选中。
 
-2.	Press the `[ENTER]` key on the teach pendant while in the statement cursor status. Then, switching to the statement cursor status will occur and a parameter will be selected, and the selected parameter value will appear in the input area at the bottom.
+2.	在声明光标状态下，按下`[ENTER]`键。然后，将切换到声明光标状态，选择一个参数，所选参数值将出现在屏幕底部的输入区域。
 
-3.	Edit the parameter value using the operation keys on the teach pendant and the menu buttons  of the screen.
+3.	使用教学挂件上的操作键和屏幕的菜单按钮编辑参数值。
 
-* Pressing the `[←/→]` key will allow you to move the cursor in the left or right direction between parameters
-* Parameters that can be inputted will be displayed as buttons on the function button bar. You can easily input parameters by selecting the desired buttons.
-* You can edit variables, expressions, and strings using the soft keyboard. 
+* 按下`[←/→]`键可以让您在参数之间向左或向右移动光标
+* 可以输入的参数将显示为功能按钮栏上的按钮。您可以通过选择所需的按钮轻松输入参数。
+* 您可以使用软键盘编辑变量、表达式和字符串。
 
-4.	Press the `[ENTER]` key. Then, the contents of the change will be applied, allowing the parameter value of the statement to be changed and the cursor to move to the next parameter.
+4.	按下`[ENTER]`键。然后，更改的内容将被应用，允许声明的参数值被更改，光标将移动到下一个参数。
 
-* To cancel the change, press the `[ESC]` key.
+* 要取消更改，请按下`[ESC]`键。
 
-5.	You can edit another parameter by repeating the above steps 2-3.
+5.	您可以通过重复上述步骤2-3来编辑另一个参数。
 
-6.	Press the `[ENTER]` key to complete the editing. The changes will be saved in the JOB program, and the cursor will return to the statement cursor status.
-
-
-
-
-
+6.	按下`[ENTER]`键以完成编辑。更改将保存在JOB程序中，光标将返回到声明光标状态。

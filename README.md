@@ -1,1 +1,1 @@
-﻿# ${cont_model} Controller Operation Manual - TP630
+# ${cont_model} 控制器操作手册 - TP630

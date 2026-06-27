@@ -1,14 +1,14 @@
-﻿# 8.1 Use of R Codes
+# 8.1 使用 R 代码
 
-The method to execute a specified function using an R code is as follows.
+使用 R 代码执行指定功能的方法如下。
 
-1.	Press the `[R..[NO]]` key  of the the keypad. Then, the pop-up window for R-code will appear.
+1. 按下键盘上的 `[R..[NO]]` 键。然后，R 代码的弹出窗口将出现。
 
     ![](../_assets/tp630/k-r.png)
 
 
 
-2.	Input the code number in the input area, and then touch the `[OK]` button or press the `[ENTER]` key. Then, the function designated to the selected R code will be executed.
+2. 在输入区输入代码号码，然后触摸 `[OK]` 按钮或按下 `[ENTER]` 键。然后，将执行指定于所选 R 代码的功能。
 
     ![](../_assets/tp630/pop-rcode_eng.png)
 
@@ -17,60 +17,58 @@ The method to execute a specified function using an R code is as follows.
 <table style="text-align:left">
   <thead>
     <tr>
-      <th>R Code</th>
-      <th>Description</th>
+      <th>R 代码</th>
+      <th>描述</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>R0 : Reset task</td>
-      <td>Initialize the step counter and move to STEP0.</td>
+      <td>R0 : 重置任务</td>
+      <td>初始化步进计数器并移动到 STEP0。</td>
     </tr>
     <tr>
-      <td>R1 : Reset error</td>
-      <td>Clears the status when an error or warning occurs.</td>
+      <td>R1 : 重置错误</td>
+      <td>发生错误或警告时清除状态。</td>
     </tr>
     <tr>
-      <td>R17 : Open file manager</td>
-      <td>Quickly launch [Service] -> [5: File manager]</td>
+      <td>R17 : 打开文件管理器</td>
+      <td>快速启动 [服务] -> [5: 文件管理器]</td>
     </tr>
     <tr>
-      <td>R86 : Display free memory</td>
-      <td> Used to display the remaining memory of the T/P or motherboard at the top of the T/P screen.</td>
+      <td>R86 : 显示剩余内存</td>
+      <td>用于在 T/P 屏幕顶部显示 T/P 或主板的剩余内存。</td>
     </tr>
     <tr>
-      <td>R99 : Save</td>
-      <td>Saves historical data existing in memory as a file.</td>
+      <td>R99 : 保存</td>
+      <td>将存在于内存中的历史数据保存为文件。</td>
     </tr>
     <tr>
-      <td>R115 : Copy job file</td>
-      <td>Copy the created job program to another job program.</td>
+      <td>R115 : 复制作业文件</td>
+      <td>将创建的作业程序复制到另一个作业程序。</td>
     </tr>
     <tr>
-      <td>R117 : Delete job file</td>
-      <td>This is a function to individually delete written job.</td>
+      <td>R117 : 删除作业文件</td>
+      <td>此功能用于单独删除已写入的作业。</td>
     </tr>
     <tr>
-      <td>R286 : Display software version</td>
-      <td>Quickly launch [Service] -> [7: System diagnosis] -> [1: System version]</td>
+      <td>R286 : 显示软件版本</td>
+      <td>快速启动 [服务] -> [7: 系统诊断] -> [1: 系统版本]</td>
     </tr>
     <tr>
-      <td>R321 : Axis sync. jog setting</td>
-      <td>Displays a settings screen to group arbitrary axes into one synchronization group and use the function to jog with a single jog key.</td>
+      <td>R321 : 轴同步 jog 设置</td>
+      <td>显示设置屏幕以将任意轴分组为一个同步组，并使用单个 jog 键进行 jog 功能。</td>
     </tr>
     <tr>
-      <td>R360 : Set contpath manually</td>
-      <td>This is a function that forcibly changes the execution status of CONTPATH.</td>
+      <td>R360 : 手动设置 contpath</td>
+      <td>此功能强制更改 CONTPATH 的执行状态。</td>
     </tr>
     <tr>
-      <td>R361 : Set jog-inching level</td>
-      <td>Use this when you want to change the inching distance of the currently set level.</td>
+      <td>R361 : 设置 jog 缓冲级别</td>
+      <td>当您想要更改当前设置级别的缓冲距离时使用此功能。</td>
     </tr>
     <tr>
-      <td>R362 : Axis control status change</td>
-      <td>Manually execute the control status (axisctrl on/off) of the auxiliary axis.</td>
+      <td>R362 : 轴控制状态更改</td>
+      <td>手动执行辅助轴的控制状态 (axisctrl 开/关)。</td>
     </tr>
   </tbody>
 </table>
-
-
