@@ -42,6 +42,6 @@ If you need to change the language of the teach pendant, you can change it with 
 
     {% endhint %}
 
-4.	Select `English` from the pop-up menu.
+4.	Select `Korean` from the pop-up menu.
 
 5.	Click the `[run TP]` button at the bottom right and wait for about 15 seconds.

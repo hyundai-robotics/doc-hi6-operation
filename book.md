@@ -89,7 +89,7 @@ The following shows an example of the basic configuration of the robot system ac
 
 #### Vertical Articulated Robot Controller 
 
-![Figure 4 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_33.png)
+![Figure 3 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_33.png)
 
 | No. | Name | Description |
 | :--- | :--- | :--- |
@@ -765,7 +765,7 @@ If you need to change the language of the teach pendant, you can change it with 
 
     {% endhint %}
 
-4.	Select `English` from the pop-up menu.
+4.	Select `Korean` from the pop-up menu.
 
 5.	Click the `[run TP]` button at the bottom right and wait for about 15 seconds.
 
@@ -779,16 +779,16 @@ Following figure represents the screen displayed on teach pendant. Teach pendant
 
 | No. | Description | 
 | :--- | :--- | 
-| ![](../../../_assets/c1.png) | Title display window : various status icons of TP communication, robot system, mechanism, etc. ([1.2.3.1 Title display window](1-title-area.md)) |
-| ![](../../../_assets/c2.png) | Status display window: a operating mode and settings ([1.2.3.2 Status display window](2-status-bar.md)) |
-| ![](../../../_assets/c3.png) | R button bar : the menu group of the right side on the main screen  ([1.2.3.3 R button bar](3-Rbt-bar.md)) |
-| ![](../../../_assets/c4.png) | Monitor window : running data during operations  ([1.2.3.4 Monitor window](4-mon-area.md)) |
-| ![](../../../_assets/c5.png) | Function button bar : the menu group of the bottom side on the main screen, which supports main settings and monitoring  ([1.2.3.5 Function button bar](5-function-buttons.md)) |
-| ![](../../../_assets/c6.png) | Input display window : direct typing area for the task edit window ([1.2.3.6 Input display window](6-input-area.md)) |
-| ![](../../../_assets/c7.png) | Guide display window : guide messages during operations  ([1.2.3.7 Guide display window](7-guide-area.md)) |
-| ![](../../../_assets/c8.png) | Task edit window : the area for editing JOB programs  ([1.2.3.8 Task edit window](8-work-area.md)) |
-| ![](../../../_assets/c9.png) | Record condition display window : the  conditions of recording steps  ([1.2.3.9 Record condition display window](9-record-cnd-area.md)) |
-| ![](../../../_assets/c10.png) | L button bar  : the menu group of the left side on the main screen  ([1.2.3.10 L button bar](10-Lbt-bar.md)) |
+| ![](../../../_assets/c1.png) | Title display window : various status icons of TP communication, robot system, mechanism, etc. ([1.2.4.1 Title display window](1-title-area.md)) |
+| ![](../../../_assets/c2.png) | Status display window: a operating mode and settings ([1.2.4.2 Status display window](2-status-bar.md)) |
+| ![](../../../_assets/c3.png) | R button bar : the menu group of the right side on the main screen  ([1.2.4.3 R button bar](3-Rbt-bar.md)) |
+| ![](../../../_assets/c4.png) | Monitor window : running data during operations  ([1.2.4.4 Monitor window](4-mon-area.md)) |
+| ![](../../../_assets/c5.png) | Function button bar : the menu group of the bottom side on the main screen, which supports main settings and monitoring  ([1.2.4.5 Function button bar](5-function-buttons.md)) |
+| ![](../../../_assets/c6.png) | Input display window : direct typing area for the task edit window ([1.2.4.6 Input display window](6-input-area.md)) |
+| ![](../../../_assets/c7.png) | Guide display window : guide messages during operations  ([1.2.4.7 Guide display window](7-guide-area.md)) |
+| ![](../../../_assets/c8.png) | Task edit window : the area for editing JOB programs  ([1.2.4.8 Task edit window](8-work-area.md)) |
+| ![](../../../_assets/c9.png) | Record condition display window : the  conditions of recording steps  ([1.2.4.9 Record condition display window](9-record-cnd-area.md)) |
+| ![](../../../_assets/c10.png) | L button bar  : the menu group of the left side on the main screen  ([1.2.4.10 L button bar](10-Lbt-bar.md)) |
 
 
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/1-title-area.md)
@@ -927,7 +927,7 @@ This is the window to display the location data, I/O data and status data of eac
 | ![](../../../_assets/c2.png) | system : detail settings for robot operations and applications ([7.System](../../../7-system/README.md)) |
 | ![](../../../_assets/c3.png) | rel.WAIT : release of signal waiting  such as input signal or welding completion signal by pressing with `[SHIFT]` key (precondition : `[F2: system] - 1: User environment - 'Wait(di/wi) release' - Disable`) |
 | ![](../../../_assets/c4.png) | log : error or waring history including  an error code, a notification message, time of error occurrence, etc. ([2.5.2 Error Handling](../../../2-operation/5-error-info/2-error-handle.md))|
-| ![](../../../_assets/c5.png) | cmd.input : displayed in the initial page of the manual mode, and used for inputting a program command ([3.2.2.1 Statements](../../../3-programming/2-prog-edit/1-statement.md))|
+| ![](../../../_assets/c5.png) | cmd.input : displayed in the initial page of the manual mode, and used for inputting a program command ([3.2.2.1 Statements](../../../3-programming/2-prog-edit/2-statement-input/1-gen-statement-input.md))|
 | ![](../../../_assets/c6.png) | cond.set : robot operating conditions such as robot speed for Step forward/backward and path recovery ([5.Condition Setting](../../../5-conditional-setting/README.md))|
 [__SOURCE](1-robot-system/2-basic-usage/4-screen-of-the-hi6-tp/6-input-area.md)
 # 1.2.4.6 Input display window
