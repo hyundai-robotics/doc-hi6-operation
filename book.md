@@ -1273,15 +1273,41 @@ It is the method to teach the robot the contents of the work and then make it pe
 [__SOURCE](2-operation/2-automatic-operation/2-adjust-op-spd.md)
 # 2.2.2 Operation Speed Adjustment
 
-In automatic operation, the `[Speed Adjustment]` button on the left side of the ${cont_model} teach pendant screen will display the robot's operation speed \(%\) while the program is being played back. The displayed operation speed is the ratio of the robot's moving speed to the speed recorded in the step.
+During automatic operation, the robot's playback speed \(%\) during program playback is displayed in the status bar at the top of the ${cont_model} teach pendant screen. The displayed playback speed represents the ratio of the robot's actual moving speed relative to the step speed recorded in the step.
 
-![](../../_assets/tp630/sbar-spd-auto_eng.png)
+![](../../_assets/tp630/speed_rate_eng.png)
+
+| No. | Item | Mode | Description |
+|-----|-----|-----|-----|
+| ① | Playback Speed | Auto | Ratio of the robot's moving speed to the step speed (1 - 100) |
+| ② | Step Speed | Auto/Manual | Commanded speed of the corresponding step (Unit: mm/sec, cm/min, %, sec) |
+| ③ | Moving Speed | Auto/Manual | Playback Speed (%) * Step Speed |
+
+The playback speed can be adjusted using the following methods:
+
+1. In Auto Mode, adjust the playback speed by pressing the `[CTRL]`+`[SPEED.HI]` or `[CTRL]`+`[SPEED.LOW]` keys.  
+If the playback speed is less than 10, it increases or decreases in increments of 1.  
+If the playback speed is 10 or higher, it increases or decreases in increments of 10.
+
+2. In Auto Mode, tapping the playback speed display area will bring up a speed adjustment pop-up dialog.  
+You can enter a value from 1 to 100 or use the slider bar to adjust the value in minimum increments of 1%.  
+Pressing the confirmation button in the dialog applies the entered value as the new playback speed.
+
+{% hint style="warning" %}
+[CAUTION] The operational specifications for applying real-time playback speed adjustments during motion are as follows:
+* Generally, if the playback speed is adjusted during a motion operation, it is applied to the current motion in real time.
+* However, in SAFETY MODE, the changed playback speed is applied from the next step after the current motion ends.
+* Additionally, when the Arc function is activated, real-time playback speed changes during motion are not applied.
+* Changing the playback speed drastically between extreme values (e.g., 1 -> 100 or 100 -> 1) is not recommended.
+{% endhint %}
 
 {% hint style="info" %}
 In manual mode, the `[Speed Adjustment]` button will display the step speed limit, instead of the playback speed \(%\).
 {% endhint %}
 
-In automatic mode, you can adjust the operation speed of the robot, without modifying the program, by changing the value of the automatic operation speed ratio in the condition setting. After touching the `[Speed Adjustment]` button on the left side of the ${cont_model} teach pendant screen, set the option values of the `2: Step FWD/BWD maximum speed` and `[6: Playback speed rate]` in the setting window.
+In automatic mode, you can adjust the operation speed of the robot, without modifying the program, by changing the value of the automatic operation speed ratio in the condition setting. 
+
+Tap the `cond.set` button at the bottom right of the ${cont_model} teach pendant screen, and then configure the values for options [Max Speed during Step Fwd/Bwd] and [Auto Operation Speed Ratio] in the settings window
 
 ![](../../_assets/tp630/cond-set-step-fwd-bwd-spd-auto-spd_eng.png)
 
@@ -2574,7 +2600,7 @@ You can easily input variables, expressions, and strings using the soft keyboard
 
 2.	You can input variables, expressions, and strings in the input area using the soft keyboard. The existing parameter values will be removed, and the inputted texts will be displayed.
 
-    ![](../../../_assets/tp630/rbt-softkb-prog_eng.png)
+    ![](../../../_assets/tp630/rbt-softkb-prog-new_eng.png)
 
 
 * If you touch the ![](../../../_assets/bt-cursor-left.png)/![](../../../_assets/bt-cursor-right.png) button on the left side of the input area, you can move the cursor position, allowing you to insert the text at the desired position.
@@ -2590,7 +2616,7 @@ You can easily input variables, expressions, and strings using the soft keyboard
 
 
 
-
+ 
 
 [__SOURCE](3-programming/2-prog-edit/4-statement-edit/5-block-edit-mode.md)
 # 3.2.4.5 Block Editing Mode
@@ -3880,7 +3906,7 @@ Touch `[public Input]` in the panel selection window. Then, the public input sig
 
 You can check the status of public input signals that are inputted through the CNIN connector of the I/O board in the controller.
 
-![Figure 40 Public Input Signal - ON/OFF status (Left) / value (Right)](../../_assets/tp630/pane-public-input_eng.png)
+![Figure 40 Public Input Signal - ON/OFF status (Left) / value (Right)](../../_assets/tp630/pane-univinsig-mode.png)
 
 <table>
   <thead>
@@ -5769,7 +5795,7 @@ Error/Warning output bit, Error/Warning output selection and Error/Warning outpu
 
 For the error/warning output bit, error/warning output strobe, overall abnormality, operation error, and warning occurrence signals, refer to the following sequence.
 
-![Figure 53 16Bit Output](../../../_assets/image_456.png)
+![Figure 54 16Bit Output](../../../_assets/image_456.png)
 
 #### External reset ack
 
@@ -5976,7 +6002,7 @@ The data is in binary format and determines whether the output will be on or off
 
 For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
 
-![Figure 54 Example of Job Program Execution](../../../_assets/image_429.png)
+![Figure 55 Example of Job Program Execution](../../../_assets/image_429.png)
 
 When the robot starts from S1 toward S2 and the accuracy of S2 is OK, the strobe signal will be outputted together with the signal of the designated group. The strobe signal will be turned off after 200 ms. \(The strobe signal is a pulse signal of 200 ms.\)
 
@@ -6047,7 +6073,7 @@ The data is in binary format and will be determined by the input on or off. For 
 
 For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
 
-![Figure 55 Example of Job Program Execution](../../../_assets/image_407.png)
+![Figure 56 Example of Job Program Execution](../../../_assets/image_407.png)
 
 After starting from S1 toward S2, the robot executes the wait statement. If the wait condition is satisfied before the accuracy of S2 is ok, the robot will move to the path in red. If this is not the case, the robot will wait until the wait condition is satisfied.
 
@@ -6316,7 +6342,7 @@ The user coordinate system is a coordinate system that is to be set at a positio
 
 Teach three reference steps by following the procedures below. The following procedure explains when the step order is specified as "OXY" (O: origin pose, X: axis pose, Y: plane pose).
 
-![Figure 56 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
+![Figure 57 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
 
 
 1.	Define the origin of the user coordinate system: Teach an arbitrary point.
@@ -6402,7 +6428,7 @@ A robot tool is a tool attached to the front end of the robot. In general, robot
 
 On the other hand, in the case of a stationary tool, the tool is attached to the outside, not the robot. In this case, the robot handles the workpiece and places it on an externally fixed tool to operate. A typical operation using a stationary tool is the sealing operation. Normally, in the sealing operation, when the external tool discharges a certain amount of solvent required for sealing, the robot holds the workpiece and creates the required trajectory to operate.
 
-![Figure 57 Example of a Sealing Operation](../../../_assets/tp630/stationary_crd_sealing_eng.png)
+![Figure 58 Example of a Sealing Operation](../../../_assets/tp630/stationary_crd_sealing_eng.png)
 
 To create the required trajectory, the robot performs linear \(L\) and circular \(C\) interpolations based on the externally attached tool, not based on the tool attached to itself. At this time, the stationary tool interpolation function will be used.
 
@@ -6456,7 +6482,7 @@ The method to set the stationary tool coordinate system is as follows.
 
 After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the `[Current robot pose]` button. Then, the current TCP position will be registered.
 
-![](../../../_assets/tp630/stationary_crd_autoset_eng.png)
+![Figure 59 Teaching Method Using the Auto Configuration](../../../_assets/tp630/stationary_crd_autoset_eng.png)
 
 
 

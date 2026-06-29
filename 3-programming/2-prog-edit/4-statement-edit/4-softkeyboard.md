@@ -6,7 +6,7 @@ You can easily input variables, expressions, and strings using the soft keyboard
 
 2.	You can input variables, expressions, and strings in the input area using the soft keyboard. The existing parameter values will be removed, and the inputted texts will be displayed.
 
-    ![](../../../_assets/tp630/rbt-softkb-prog_eng.png)
+    ![](../../../_assets/tp630/rbt-softkb-prog-new_eng.png)
 
 
 * If you touch the ![](../../../_assets/bt-cursor-left.png)/![](../../../_assets/bt-cursor-right.png) button on the left side of the input area, you can move the cursor position, allowing you to insert the text at the desired position.
@@ -22,4 +22,4 @@ You can easily input variables, expressions, and strings using the soft keyboard
 
 
 
-
+ 

@@ -4,7 +4,7 @@ A robot tool is a tool attached to the front end of the robot. In general, robot
 
 On the other hand, in the case of a stationary tool, the tool is attached to the outside, not the robot. In this case, the robot handles the workpiece and places it on an externally fixed tool to operate. A typical operation using a stationary tool is the sealing operation. Normally, in the sealing operation, when the external tool discharges a certain amount of solvent required for sealing, the robot holds the workpiece and creates the required trajectory to operate.
 
-![Figure 57 Example of a Sealing Operation](../../../_assets/tp630/stationary_crd_sealing_eng.png)
+![Figure 58 Example of a Sealing Operation](../../../_assets/tp630/stationary_crd_sealing_eng.png)
 
 To create the required trajectory, the robot performs linear \(L\) and circular \(C\) interpolations based on the externally attached tool, not based on the tool attached to itself. At this time, the stationary tool interpolation function will be used.
 
@@ -58,7 +58,7 @@ The method to set the stationary tool coordinate system is as follows.
 
 After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the `[Current robot pose]` button. Then, the current TCP position will be registered.
 
-![](../../../_assets/tp630/stationary_crd_autoset_eng.png)
+![Figure 59 Teaching Method Using the Auto Configuration](../../../_assets/tp630/stationary_crd_autoset_eng.png)
 
 
 
