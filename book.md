@@ -8975,7 +8975,7 @@ This function is supported from the Hi7 controller.
 
 2.	 Select the desired menu to perform Collision Detection or Direct Teaching.
 
-![](../../_assets/tp630/system-cobot-menu.png)
+![](../_assets/tp630/system-cobot-menu.png)
 
 {% hint style="info" %}
 For detailed information on the Collaborative Robot System, refer to the  "[Safety Function Manual for Collaborative Robot](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/en/README)".
