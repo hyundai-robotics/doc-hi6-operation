@@ -74,4 +74,4 @@ You can edit the pose variable value in the move statement, including the pose v
 
 3.	Touch the `[OK]` button. Then, the change will be saved in the job program, and the operation will end.
 
-* If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
+    * If you end the operation by pressing the `[ESC]` key, the change will not be saved. 

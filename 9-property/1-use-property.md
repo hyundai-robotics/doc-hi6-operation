@@ -109,8 +109,8 @@ The following shows the method to check and change the condition file and detail
 
 3.	Touch the `[Record]` button or press the `[ESC]` key to end the operation.
 
-* `[Record]`: You can save the changes and end the operation.
-* `[ESC]`: You can cancel the change and end the operation.
+    * `[Record]`: You can save the changes and end the operation.
+    * `[ESC]`: You can cancel the change and end the operation.
 
 
 

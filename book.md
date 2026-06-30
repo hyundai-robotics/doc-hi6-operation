@@ -9673,8 +9673,8 @@ The following shows the method to check and change the condition file and detail
 
 3.	Touch the `[Record]` button or press the `[ESC]` key to end the operation.
 
-* `[Record]`: You can save the changes and end the operation.
-* `[ESC]`: You can cancel the change and end the operation.
+    * `[Record]`: You can save the changes and end the operation.
+    * `[ESC]`: You can cancel the change and end the operation.
 
 
 
@@ -9755,7 +9755,7 @@ You can check or modify the position of the current step in the hidden pose move
 
 3.	Touch the `[OK]` button. Then, the change will be saved in the job program, and the operation will end. 
 
-* If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
+    * If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
 
 {% hint style="info" %}
 * If `[Robot Configuration]` is set as undesignated, the robot will designate a configuration the very closest to the current position of the robot.
@@ -9841,7 +9841,7 @@ You can edit the pose variable value in the move statement, including the pose v
 
 3.	Touch the `[OK]` button. Then, the change will be saved in the job program, and the operation will end.
 
-* If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
+    * If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
 
 [__SOURCE](9-property/3-spot-welding-func.md)
 # 9.3 Spot Welding Function

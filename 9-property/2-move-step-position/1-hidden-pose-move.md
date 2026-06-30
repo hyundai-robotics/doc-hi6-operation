@@ -65,7 +65,7 @@ You can check or modify the position of the current step in the hidden pose move
 
 3.	Touch the `[OK]` button. Then, the change will be saved in the job program, and the operation will end. 
 
-* If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
+    * If you end the operation by pressing the `[ESC]` key, the change will not be saved. 
 
 {% hint style="info" %}
 * If `[Robot Configuration]` is set as undesignated, the robot will designate a configuration the very closest to the current position of the robot.
