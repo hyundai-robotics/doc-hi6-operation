@@ -12,6 +12,11 @@ The status display window show various conditions required for robot operation.
 While using the axis lock function, be sure to check the corresponding indicators before operating the robot.
 {% endhint %}
 
+{% hint style="warning" %}
+Lors de l'utilisation de la fonction de verrouillage des axes, vérifiez toujours les indicateurs correspondants avant de faire fonctionner le robot.
+{% endhint %}
+
+
 -   Status display window: AxLk
 -   Right matrix: "Axis lock"
 

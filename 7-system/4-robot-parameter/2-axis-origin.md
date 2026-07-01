@@ -62,6 +62,14 @@ You can register the mechanical origin position of each axis.
   If the encoder offset setting is changed, the axis origin should be newly set. Therefore, the encoder offset setting must be completed before the setting of the axis origin.
 {% endhint %}
 
+{% hint style="warning" %}
+
+* Le réglage de l'origine des axes affecte la précision des mouvements cartésiens du robot. Réglez-la aussi précisément que possible.
+* Si le réglage de l'origine des axes est modifié, les positions des programmes créés précédemment sont également modifiées. Effectuez ce réglage uniquement lors de l'installation initiale.
+* Si le réglage de l'offset de l'encodeur est modifié, l'origine des axes doit être réglée de nouveau. Par conséquent, le réglage de l'offset de l'encodeur doit être terminé avant celui de l'origine des axes.
+  {% endhint %}
+
+
 {% hint style="info" %}
 At the time of the shipping from the factory, the mechanical origin position of each axis is set at the standard value \(0X400000\).
 {% endhint %}

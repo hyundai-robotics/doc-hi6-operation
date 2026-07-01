@@ -18,6 +18,11 @@ The system automatically recalculates the maximum jerk value whenever key parame
 **Caution:** When you manually set a value, modifying the top speed or acceleration time will overwrite the manually entered maximum jerk with the system-calculated value. If you have optimized the jerk value for a specific process, be sure to back up the existing value before making changes.
 {% endhint %}
 
+{% hint style="warning" %}
+**Attention :** Si vous saisissez une valeur manuellement, toute modification de la vitesse maximale ou du temps d'accélération remplacera la valeur maximale de jerk saisie par la valeur calculée par le système. Si la valeur de jerk a été optimisée pour un procédé spécifique, veillez à sauvegarder la valeur actuelle avant toute modification.
+{% endhint %}
+
+
 
 {% hint style="info" %}
 Because acceleration/deceleration parameters have a large impact on robot motion characteristics, they are only enabled in Engineering mode or higher.

@@ -22,3 +22,11 @@
 * Base axis calibration is available only when the base axis configuration is any.
 {% endhint %}
 
+{% hint style="warning" %}
+
+* La fonction de calibration est disponible uniquement pour le premier axe de base. Lors du réglage des paramètres des axes additionnels, la configuration de cet axe peut être définie sur **Any**.
+* Ne définissez pas la configuration des autres axes de base sur **Any**.
+* La calibration de l'axe de base est disponible uniquement lorsque la configuration du premier axe de base est définie sur **Any**.
+  {% endhint %}
+
+

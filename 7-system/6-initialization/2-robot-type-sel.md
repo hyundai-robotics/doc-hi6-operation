@@ -25,6 +25,13 @@
 
 {% endhint %}
 
+{% hint style="warning" %}
+
+* Le manipulateur et le contrôleur sont livrés en tant qu'un seul système. Le contrôleur est donc équipé d'un variateur adapté à la capacité d'entraînement du robot.
+* Après une réinitialisation du système, vérifiez le modèle de robot configuré par défaut en usine, puis sélectionnez le modèle approprié.
+  {% endhint %}
+
+
 3.	Enter Engineer Mode. For detailed settings, please refer to "[8.12 Engineer Mode](../../8-r-code/12-r314.md)".
 
 
@@ -59,6 +66,13 @@
 * 
   When the system is initialized, all data and programs, including control parameter files and machine parameter files, will be deleted. If you back up your data before initializing the system, it can be restored and used when necessary.For detailed information on data backup and restore, please refer to ["4.2.5 Data Backup"](../../4-service/2-file-manager/5-data-backup.md) and ["4.2.6 Data Restore"](../../4-service/2-file-manager/6-data-restore.md).
 {% endhint %}
+
+{% hint style="warning" %}
+
+* Pour initialiser le système, contactez le service d'assistance clientèle.
+* Pour l'initialisation d'un robot collaboratif, reportez-vous au manuel des fonctions de sécurité du robot collaboratif.
+* Lors de l'initialisation du système, toutes les données et tous les programmes, y compris les fichiers de paramètres de commande et les fichiers de paramètres machine, sont supprimés. Il est recommandé d'effectuer une sauvegarde des données avant l'initialisation afin de pouvoir les restaurer si nécessaire. Pour plus d'informations, reportez-vous aux sections « 4.2.5 Sauvegarde des données » et « 4.2.6 Restauration des données ».
+  {% endhint %}
 
 
 

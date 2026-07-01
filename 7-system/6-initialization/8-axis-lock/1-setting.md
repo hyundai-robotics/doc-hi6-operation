@@ -8,6 +8,11 @@ Select the menu by navigating to `[F2: system] - 5: Initialization - 9: Axis loc
 Since the robot may fall if the brake wiring is abnormal, please ensure that the brake wiring of each axis is normal before configuring the axis locking function.
 {% endhint %}
 
+{% hint style="warning" %}
+Comme le robot peut tomber en cas d'anomalie du câblage des freins, vérifiez que le câblage des freins de chaque axe est correct avant de configurer la fonction de verrouillage des axes.
+{% endhint %}
+
+
 ![](../../../_assets/tp630/init-axis-lock-menu_eng.png)
 
 

@@ -21,3 +21,8 @@ In the move command, the robot speed is applied by combining the original speed 
 * Select the correct active condition that matches the state of the input signal.
 * When an I/O signal is received during playback, the reduced speed mode will still be applied.
 {% endhint %}
+
+{% hint style="warning" %}
+* Sélectionnez la condition d'activation correspondant à l'état du signal d'entrée.
+* Si un signal d'E/S est reçu pendant l'exécution, le mode de vitesse réduite reste appliqué.
+{% endhint %}

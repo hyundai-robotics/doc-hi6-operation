@@ -16,6 +16,11 @@ Using the axis origin and tool length optimization function, you can find the op
 When the axis origin and tool length optimization function is used, the encoder offset and tool length will be changed, thus also changing the operation position of the previously taught program. Therefore, you should perform the optimization of axis origin and tool length before writing the teaching program.
 {% endhint %}
 
+{% hint style="warning" %}
+Lorsque la fonction d'optimisation de l'origine des axes et de la longueur de l'outil est utilisée, l'offset de l'encodeur et la longueur de l'outil sont modifiés. Les positions d'exécution des programmes enseignés précédemment sont donc également modifiées. Effectuez cette optimisation avant de créer le programme d'apprentissage (*teaching*).
+{% endhint %}
+
+
 {% hint style="info" %}
 * In using the axis origin and tool length optimization function, the accuracy of the teaching is proportional to the accuracy of the maximum step position error result. Therefore, you should prepare two pointed tips and perform the teaching for the tooltip to match the two tips as accurately as possible. Make sure that the accuracy of the matching between the tooltip and the fixed points in space is within 0.5 mm when visually checked.
 * Teach by setting a posture, with a difference of 30 deg or more, for each step so that the postures of the steps are not similar.
@@ -89,6 +94,12 @@ The method to use the axis origin and tool length optimization function is as fo
 {% hint style="warning" %}
 It requires your attention that if you calibrate both the robot origin and tool length values, all origins of the robot will change, consequently changing the position of the previously created program.
 {% endhint %}
+
+{% hint style="warning" %}
+Si vous calibrez à la fois l'origine du robot et la longueur de l'outil, toutes les origines du robot seront modifiées. Les positions des programmes créés précédemment seront donc également modifiées.
+{% endhint %}
+
+
 
 {% hint style="info" %}
 * You can also set the origin of each axis and tool length of the robot in the settings menu.

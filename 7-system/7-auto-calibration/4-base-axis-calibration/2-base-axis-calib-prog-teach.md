@@ -19,3 +19,10 @@
   Record the position by setting the moving distance of the base axis between recording steps as far as possible.
 {% endhint %}
 
+{% hint style="warning" %}
+
+* Créez le programme de calibration de l'axe de déplacement à l'aide d'un outil pour lequel la calibration du robot (optimisation de l'origine des axes et de la longueur de l'outil) a déjà été effectuée.
+* Lors de l'enregistrement d'une étape, utilisez le numéro d'outil dédié à la calibration de l'axe de base.
+* Lors de l'enregistrement des positions, veillez à ce que la distance de déplacement de l'axe de base entre les étapes soit aussi grande que possible.
+  {% endhint %}
+

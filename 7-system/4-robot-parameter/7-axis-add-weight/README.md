@@ -14,3 +14,7 @@ You can register information on a transformer or wiring support mounted on the b
 If the robot has an additional weight because a transformer or wiring support is mounted onto it, you must register the information on the additional weight of each axis. If the additional weight is not correctly registered, the error may get large when the tool load estimation is performed.
 {% endhint %}
 
+{% hint style="warning" %}
+Si un transformateur, un support de câbles ou tout autre équipement ajoute une charge au robot, enregistrez la charge supplémentaire de chaque axe. Si cette charge n'est pas correctement enregistrée, l'erreur d'estimation de la charge de l'outil peut être importante.
+{% endhint %}
+

@@ -28,6 +28,15 @@ The cautions in recording the reference points for defining the coordinate syste
 * Subsequent steps after S3 will not have any effect on the coordinate system registration.
 {% endhint %}
 
+{% hint style="warning" %}
+Respectez les précautions suivantes lors de l'enregistrement des points de référence pour définir le système de coordonnées.
+
+* Les trois points de référence ne doivent pas être alignés.
+* La distance entre les trois points de référence ne doit pas être trop faible.
+* Les opérations effectuées après l'étape S3 n'ont aucun effet sur l'enregistrement du système de coordonnées.
+  {% endhint %}
+
+
 The method to register the user coordinate system by designating the taught program number and step order is as follows.
 
 1. Touch the `[2: Control Parameter  - 6: Coordinate System Registration  - 1: User Coordinate System]` menu.

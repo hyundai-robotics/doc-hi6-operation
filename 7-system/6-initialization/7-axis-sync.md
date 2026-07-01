@@ -38,3 +38,12 @@ The procedure to change the currently configured axis synchronization pair is as
 * Verify that the step pose values in the Job file are implemented with axis synchronization in mind.
 * Be aware that changing settings during axis synchronization operation will affect the Cartesian coordinate system.
 {% endhint %}
+
+{% hint style="warning" %}
+
+* Avant utilisation, vérifiez que les spécifications des moteurs et les paramètres des axes auxiliaires sont correctement configurés pour la synchronisation (mêmes spécifications d'axe, configuration, vitesse et temps d'accélération).
+* Si la fonction de synchronisation des axes n'est pas utilisée, réglez **Use** sur **Disable** et définissez tous les groupes associés sur **Disable**.
+* N'utilisez pas cette fonction en même temps que la fonction de déplacement manuel des groupes synchronisés (*Synchronized Group Jogging*).
+* Vérifiez que les valeurs de position des étapes (*Step Pose*) du fichier Job ont été définies en tenant compte de la synchronisation des axes.
+* Toute modification des paramètres pendant la synchronisation des axes affecte le système de coordonnées cartésiennes.
+  {% endhint %}

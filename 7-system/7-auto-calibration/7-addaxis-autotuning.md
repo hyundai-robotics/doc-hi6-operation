@@ -51,6 +51,11 @@ This function finds the optimal gain by moving the additional axis within the ra
 Since noise is difficult to analyze with data, tuning cannot be as precise as when a tuning specialist adjusts manually. If manual tuning is required, it can be done by adjusting the Kv gain.
 {% endhint %}
 
+{% hint style="warning" %}
+L'analyse du bruit à partir des données étant limitée, le réglage ne peut pas être aussi précis qu'un réglage manuel effectué par un spécialiste. Si un réglage manuel est nécessaire, ajustez le gain **Kv**.
+{% endhint %}
+
+
 * If the tuned gain results in noise, motion tracking performance may degrades, leading the large shake.
 * Conversely, if the Kv gain is too high, high-frequency noise may be generated from the motor.
 

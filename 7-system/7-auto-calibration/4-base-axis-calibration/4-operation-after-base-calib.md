@@ -14,3 +14,7 @@ If you jog the base axis after performing base axis calibration, the distance tr
 Set the jog coordinate system as the tool coordinate system and jog the base axis to check whether the base axis is properly calibrated. If the tooltip fixing operation is executed, it means that the base axis has been properly calibrated.
 {% endhint %}
 
+{% hint style="warning" %}
+Réglez le système de coordonnées du jogging sur le système de coordonnées outil, puis déplacez l'axe de base en mode jogging pour vérifier que sa calibration est correcte. Si la pointe de l'outil reste fixe pendant le déplacement, la calibration de l'axe de base est correcte.
+{% endhint %}
+

@@ -28,6 +28,10 @@ You can check and set various user conditions.
 If the program being played back is modified externally \(PC\) and downloaded to the controller, it could cause a failure of or abnormality with the product. Contact our customer support team to ask an expert or an engineer.
 {% endhint %}
 
+{% hint style="warning" %}
+Si le programme est modifié sur un PC puis téléchargé vers le contrôleur pendant son exécution, cela peut provoquer une défaillance ou un dysfonctionnement du produit. Contactez le service d'assistance clientèle.
+{% endhint %}
+
 
 * `[6: Collision sensor process]`: You can set a method of stopping the robot when the collision sensor is operating.
   * `[(1) Em.stop]`: The robot will stop into the emergency stop mode, where the robot falls down motor-off status.

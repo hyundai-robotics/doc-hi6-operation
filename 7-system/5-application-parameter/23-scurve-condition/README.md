@@ -14,6 +14,12 @@ S-curve (red dashed line): The speed change during acceleration and deceleration
 * History logs can be used to view records of continuous-motion failures.
 {% endhint %}
 
+{% hint style="warning" %}
+* Si la génération du mouvement continu échoue, le mouvement est exécuté en mode discontinu. Dans cette zone, ajustez les paramètres ou revenez au mouvement par défaut (*Default*) pour garantir un fonctionnement fiable.
+* Les journaux d'historique permettent de consulter les enregistrements des échecs de génération du mouvement continu.
+{% endhint %}
+
+
 {% hint style="info" %}
 * This feature is supported from version V70.00-00 onward.
 * Refer to the command syntax in the ${cont_model} controller manual "[5.22 scurve](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/5-moving-robot/22-s-curve?cont_model=${cont_model})"

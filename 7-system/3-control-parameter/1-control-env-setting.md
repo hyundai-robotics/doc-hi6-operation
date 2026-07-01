@@ -70,3 +70,7 @@ For processes where cycle time is critical (e.g., repetitive pick-and-place), ap
 {% hint style="warning" %}
 Be aware that higher values may lead to mechanical vibration or trigger over-torque faults, especially under high payload or rapid directional changes.
 {% endhint %}
+
+{% hint style="warning" %}
+Des valeurs élevées peuvent provoquer des vibrations mécaniques ou des défauts de surcouple, en particulier avec une charge utile élevée ou lors de changements rapides de direction.
+{% endhint %}

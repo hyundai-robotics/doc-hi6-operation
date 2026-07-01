@@ -53,4 +53,7 @@ The serial encoder stores the encoder rotation speed information in the internal
 {% endhint %}
 
 
-
+{% hint style="warning" %}
+* La réinitialisation de l'encodeur peut être effectuée lors de la configuration initiale du système robot, mais ne doit jamais être réalisée pendant le fonctionnement normal du robot. Toutefois, en cas d'erreur liée à l'encodeur, telle qu'une erreur de communication ou une perte de la batterie de l'encodeur, une réinitialisation peut être effectuée. Dans ce cas, vérifiez que la position réelle du robot correspond à la position d'origine existante dans le programme du robot.
+* Si le contrôleur et l'encodeur ne sont plus alimentés, les informations de position de l'encodeur peuvent être perdues, ce qui peut entraîner un dysfonctionnement des programmes du robot. Pour éviter ce problème, l'encodeur série est équipé d'une batterie dédiée qui conserve les informations de position, même lorsque le contrôleur est hors tension. Si une erreur de tension de la batterie de l'encodeur est détectée, remplacez la batterie pendant que le contrôleur est encore sous tension afin d'éviter toute perte des informations de position.
+{% endhint %}
