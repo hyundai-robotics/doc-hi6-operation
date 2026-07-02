@@ -28,6 +28,15 @@ Pressing the confirmation button in the dialog applies the entered value as the 
 * Changing the playback speed drastically between extreme values (e.g., 1 -> 100 or 100 -> 1) is not recommended.
 {% endhint %}
 
+{% hint style="warning" %}
+[ATTENTION] Les spécifications opérationnelles relatives à l’application des réglages de vitesse d’exécution en temps réel pendant le mouvement sont les suivantes :
+* En règle générale, lorsqu’une vitesse d’exécution est modifiée pendant une opération de mouvement, la modification est appliquée en temps réel au mouvement en cours.
+* Toutefois, en SAFETY MODE, la vitesse d’exécution modifiée est appliquée à partir de l’étape suivante, après la fin du mouvement en cours.
+* De plus, lorsque la fonction Arc est activée, les modifications de vitesse d’exécution en temps réel pendant le mouvement ne sont pas appliquées.
+* Il est déconseillé de modifier brusquement la vitesse d’exécution entre des valeurs extrêmes, par exemple de 1 à 100 ou de 100 à 1.
+{% endhint %}
+
+
 {% hint style="info" %}
 In manual mode, the `[Speed Adjustment]` button will display the step speed limit, instead of the playback speed \(%\).
 {% endhint %}

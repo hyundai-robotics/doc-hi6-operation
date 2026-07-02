@@ -6,6 +6,13 @@ However, careless modification or deletion of files may cause serious issues suc
 Do not modify these files unless you fully understand their mechanism or are working under the guidance of a qualified expert.
 {% endhint %}
 
+{% hint style="warning" %}
+`[Avertissement]` Le gestionnaire de fichiers du TP ou le service FTP permet de modifier les dossiers et les fichiers.
+Toutefois, toute modification ou suppression imprudente de fichiers peut entraîner de graves problèmes, tels qu’un échec de démarrage, un dysfonctionnement ou une perte de données.
+Ne pas modifier ces fichiers sans en comprendre parfaitement le fonctionnement, ou sans intervenir sous la supervision d’un expert qualifié.
+{% endhint %}
+
+
 You can back up and restore configuration and teaching files in the project folder using HRWorkbench, file manager, or the backup features.
 
 However, in some cases, it may be more convenient to use familiar FTP software to back up files to a PC or restore them to the robot controller.
@@ -41,4 +48,9 @@ To apply the updated files to memory, use the method below:
 {% hint style="warning" %}
 Do not reboot the robot controller to apply updated global variable files.
 When the controller is powered off, the current global variable values in memory are saved back to files, which will overwrite the files you just updated.
+{% endhint %}
+
+{% hint style="warning" %}
+Ne pas redémarrer le contrôleur du robot pour appliquer les fichiers de variables globales mis à jour.
+Lorsque le contrôleur est mis hors tension, les valeurs actuelles des variables globales en mémoire sont réenregistrées dans les fichiers, ce qui écrase les fichiers qui viennent d’être mis à jour.
 {% endhint %}

@@ -5,6 +5,10 @@ This is the function to edit the program without stopping it, while playback is 
 {% hint style="warning" %}
 * When you edit and apply the program that is currently in auto operation or program that will be called, it will be applied from the next cycle (After the program end is executed) and play back the robot with the edited program. Please take maximum precaution since the wrongly implemented editing can cause major accident such as collision between robot and jig.
 {% endhint %}
+{% hint style="warning" %}
+* Lorsqu’un programme en cours de fonctionnement automatique, ou un programme qui sera appelé, est modifié puis appliqué, les modifications sont prises en compte à partir du cycle suivant, après l’exécution de la fin du programme. Le robot exécutera alors le programme modifié. Faire preuve d’une extrême prudence, car une modification incorrecte peut provoquer un accident grave, notamment une collision entre le robot et le gabarit.
+{% endhint %}
+
 <br><br>
 
 ### Entry 

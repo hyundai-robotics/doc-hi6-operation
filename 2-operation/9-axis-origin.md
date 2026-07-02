@@ -14,6 +14,10 @@ You can make it possible for the axis integer and tool length to be automaticall
 You should optimize the "axis origin and tool length" before teaching the robot program. If the "axis origin and tool length" is optimized while a robot program has been created already, the position in the existing program may change.
 {% endhint %}
 
+{% hint style="warning" %}
+Il convient d’optimiser « l’origine des axes et la longueur de l’outil » avant l’apprentissage du programme robot. Si « l’origine des axes et la longueur de l’outil » sont optimisées alors qu’un programme robot a déjà été créé, les positions définies dans le programme existant peuvent être modifiées.
+{% endhint %}
+
 The following shows how to set the optimization of the axis origin and tool length:
 
 1.	Set the operation mode to manual mode using the mode switch on the teach pendant.

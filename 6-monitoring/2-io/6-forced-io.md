@@ -8,6 +8,12 @@ You can register IO relay variables in the Force IO panel to force some changed 
 * After testing and problem analysis, be sure to clear the forced IO completely and restore it to a normal IO state.
 
 {% endhint %}
+{% hint style="warning" %}
+* Cette fonction est destinée exclusivement aux essais ou à l’analyse de dysfonctionnements.
+* Une utilisation incorrecte de la fonction d’E/S forcées peut provoquer des accidents graves, notamment des collisions, des chutes de charge, ainsi que des blessures graves ou mortelles. Utiliser cette fonction avec prudence, uniquement après avoir parfaitement compris les connexions d’E/S du système et évalué avec précision les conséquences de la modification des valeurs forcées.
+* Après les essais ou l’analyse de dysfonctionnements, veiller à supprimer complètement les E/S forcées et à rétablir l’état normal des E/S.
+{% endhint %}
+
 
 #### Opening forced IO panel
 
@@ -62,5 +68,9 @@ After completing the test and problem analysis, be sure to press the [F2: Clear]
 {% hint style="warning" %}
 * If multiple entries force conflicting values for the same relay (or overlaid bits), they are forced to the value of the lower item of the table.
 * When the ${cont_model} controller is powered off, all contents registered as forced IO are cleared.
+{% endhint %}
 
+{% hint style="warning" %}
+* Si plusieurs entrées imposent des valeurs contradictoires au même relais ou à des bits superposés, la valeur forcée correspond à celle de l’élément situé le plus bas dans le tableau.
+* Lorsque le contrôleur ${cont_model} est mis hors tension, tous les éléments enregistrés en tant qu’E/S forcées sont effacés.
 {% endhint %}

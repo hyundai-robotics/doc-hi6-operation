@@ -19,6 +19,9 @@ Select `Pose` in the Type list. If you enter 5,200 for the number of elements an
 {% hint style="warning" %}
 `[Warning]` Be aware that defining an array that is too large may take longer to save or load and may fail to save automatically in the event of a power failure.
 {% endhint %}
+{% hint style="warning" %}
+`[Avertissement]` Veuillez noter que la définition d’un tableau de taille excessive peut augmenter le temps nécessaire à l’enregistrement ou au chargement, et empêcher l’enregistrement automatique en cas de coupure d’alimentation.
+{% endhint %}
 
 
 ##### Viewing and changing the array element value

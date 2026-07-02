@@ -20,6 +20,10 @@ System character monitoring function is only available in engineer mode.
 * Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
 {% endhint %}
 
+{% hint style="warning" %}
+* En Engineer Mode, l’icône Engineer Mode (![](../../_assets/eng-mode.png)) clignote dans la barre d’état.
+* Faire preuve de prudence, car une configuration incorrecte peut entraîner un dysfonctionnement grave du système robot.
+  {% endhint %}
 <Br> 
 
 ### Initialization

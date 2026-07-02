@@ -68,3 +68,6 @@ You can manage files in the main board's internal memory, teach pendant, or remo
 Never remove the removable storage device from the teach pendant while performing operations such as copying or deleting files. Data may be corrupted.
 {% endhint %}
 
+{% hint style="warning" %}
+Ne jamais retirer le périphérique de stockage amovible du teach pendant pendant l’exécution d’opérations telles que la copie ou la suppression de fichiers. Les données peuvent être corrompues.
+{% endhint %}

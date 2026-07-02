@@ -22,6 +22,10 @@
 While in the step backward operation, only the input wait signal function will be executed, and all other functions will not be executed.
 {% endhint %}
 
+{% hint style="warning" %}
+Lors de l’exécution d’une opération de recul d’étape, seule la fonction d’attente de signal d’entrée est exécutée ; toutes les autres fonctions ne sont pas exécutées.
+{% endhint %}
+
 * `[4: Re-execution of the function after step backward and forward]`: You can perform setting in a way that the previously executed functions among the functions recorded in the job program can be executed again when in the step forward operation again after the step backward operation.
 </br>
 

@@ -53,3 +53,6 @@ You can enter a value in the `Start Index` edit-box to display an array from a s
 {% hint style="warning" %}
 * To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
 {% endhint %}
+{% hint style="warning" %}
+* Afin de mettre à jour l’affichage des valeurs de résultat, les expressions sont recalculées de manière répétée à un cycle court. Veiller à ne pas inclure dans l’expression des fonctions susceptibles de créer ou de modifier des éléments propres au système, telles que mkucs().
+{% endhint %}

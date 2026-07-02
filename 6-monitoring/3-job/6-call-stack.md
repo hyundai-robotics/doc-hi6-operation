@@ -71,3 +71,7 @@ You can easily understand the flow of the program that has been called so far by
 {% hint style="warning" %}
 `[caution]` When performing Step-FWD or playback, be sure to restore the > cursor to the top frame position when resuming operations. Otherwise, the position of the job cursor is considered to have changed and the call stack is initialized.
 {% endhint %}
+
+{% hint style="warning" %}
+[Attention] Lors de l’exécution de Step-FWD ou de la lecture du programme, veiller à replacer le curseur > sur la position du cadre supérieur avant de reprendre les opérations. Dans le cas contraire, la position du curseur de tâche est considérée comme modifiée et la pile d’appels est initialisée.
+{% endhint %}

@@ -52,3 +52,14 @@ Jog Key Functions Summary
 * If alignment is attempted again from a non-interpolatable posture, an error will occur. In this case, press the Return to Original Position key to avoid the problematic region and retry.
 * When aligning at a singularity point, pressing the released button again will continue the motion. Since the path is recalculated from the current position, it operates at normal speed. (The speed increases slightly, but this is the normal speed.)
 {% endhint %}
+
+{% hint style="warning" %}
+
+* Cette fonction doit être exécutée uniquement lorsque le robot est à l’arrêt et en Manual Mode.
+  (Elle ne peut pas être exécutée en Auto Mode.)
+* Si la touche [ESC] est enfoncée alors qu’une touche de jog est maintenue, la fenêtre contextuelle se ferme et le jog est réactivé. Faire preuve de prudence pendant l’opération.
+* Si l’axe additionnel est défini sur Base et que X, Y et Z ne sont pas définis (état indéfini), un journal d’erreur s’affiche.
+* Si la direction d’alignement souhaitée ne peut pas être atteinte, même par jog, un message d’erreur indiquant une position XYZ inaccessible s’affiche.
+* Si une nouvelle tentative d’alignement est effectuée depuis une posture non interpolable, une erreur se produit. Dans ce cas, appuyer sur la touche Return to Original Position afin d’éviter la zone problématique, puis réessayer.
+* Lors d’un alignement au niveau d’un point de singularité, appuyer à nouveau sur le bouton précédemment relâché permet de poursuivre le mouvement. Le trajet étant recalculé à partir de la position actuelle, le robot fonctionne à la vitesse normale. (La vitesse augmente légèrement, mais il s’agit de la vitesse normale.)
+{% endhint %}

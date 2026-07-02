@@ -24,5 +24,7 @@ In automatic mode, the `[Speed Adjustment]` button will display the playback spe
 If the length and angle in the tool data are set differently from the actual values, the tool may operate too fast in manual mode. Before operating the robot, you must make sure that the tool data is set correctly.
 {% endhint %}
 
-
+{% hint style="warning" %}
+Si la longueur et l’angle définis dans les données de l’outil diffèrent des valeurs réelles, l’outil peut se déplacer à une vitesse excessive en mode manuel. Avant d’utiliser le robot, s’assurer impérativement que les données de l’outil sont correctement configurées.
+{% endhint %}
 

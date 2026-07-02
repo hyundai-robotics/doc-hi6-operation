@@ -8,6 +8,13 @@ It refers to all operations of stopping the robot and turning off the power butt
 * Be careful as the encoder data may be destroyed if the power is turned off while the encoder battery has a voltage drop alarm. 
 {% endhint %}
 
+{% hint style="warning" %}
+
+* Si le robot doit rester inutilisé pendant une période prolongée, la batterie de l’encodeur peut se décharger. Amener le robot à la position de référence, puis couper l’alimentation.
+
+* Faire preuve de prudence : les données de l’encodeur peuvent être altérées si l’alimentation est coupée alors qu’une alarme de baisse de tension de la batterie de l’encodeur est active.
+{% endhint %}
+
 #### Vertical Articulated Robot Controller
 
 1.	Press the `[Stop]` key on the teach pendant. Then, the robot in operation will stop, and the stop lamp will be turned on.
