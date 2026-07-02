@@ -706,6 +706,13 @@ It refers to all operations of stopping the robot and turning off the power butt
 * Be careful as the encoder data may be destroyed if the power is turned off while the encoder battery has a voltage drop alarm. 
 {% endhint %}
 
+{% hint style="warning" %}
+
+* Si le robot doit rester inutilisé pendant une période prolongée, la batterie de l’encodeur peut se décharger. Amener le robot à la position de référence, puis couper l’alimentation.
+
+* Faire preuve de prudence : les données de l’encodeur peuvent être altérées si l’alimentation est coupée alors qu’une alarme de baisse de tension de la batterie de l’encodeur est active.
+{% endhint %}
+
 #### Vertical Articulated Robot Controller
 
 1.	Press the `[Stop]` key on the teach pendant. Then, the robot in operation will stop, and the stop lamp will be turned on.
@@ -1104,6 +1111,10 @@ Manual operation is an operation method of directly teaching and checking the ro
 {% hint style="danger" %}
 [DANGER] Unlike normal operation, the teaching mode of manual operation is a high-risk work phase where the operator directly enters the robot's operating range. Unexpected robot movements during teaching can cause collisions, catching, or crushing accidents, potentially resulting in serious injury or death.
 {% endhint %}
+
+{% hint style="danger" %}
+[DANGER] Contrairement au fonctionnement normal, le mode d’apprentissage en fonctionnement manuel constitue une phase d’intervention à haut risque, au cours de laquelle l’opérateur pénètre directement dans l’enveloppe de travail du robot. Tout mouvement imprévu du robot pendant l’apprentissage peut entraîner des collisions, des happements, des coincements ou des écrasements, pouvant provoquer des blessures graves ou mortelles.
+{% endhint %}
 [__SOURCE](2-operation/1-manual-operation/1-how-to-op.md)
 # 2.1.1 Operation Method
 
@@ -1173,7 +1184,9 @@ In automatic mode, the `[Speed Adjustment]` button will display the playback spe
 If the length and angle in the tool data are set differently from the actual values, the tool may operate too fast in manual mode. Before operating the robot, you must make sure that the tool data is set correctly.
 {% endhint %}
 
-
+{% hint style="warning" %}
+Si la longueur et l’angle définis dans les données de l’outil diffèrent des valeurs réelles, l’outil peut se déplacer à une vitesse excessive en mode manuel. Avant d’utiliser le robot, s’assurer impérativement que les données de l’outil sont correctement configurées.
+{% endhint %}
 
 
 [__SOURCE](2-operation/1-manual-operation/3-step-fwd-bwd.md)
@@ -1300,6 +1313,15 @@ Pressing the confirmation button in the dialog applies the entered value as the 
 * Additionally, when the Arc function is activated, real-time playback speed changes during motion are not applied.
 * Changing the playback speed drastically between extreme values (e.g., 1 -> 100 or 100 -> 1) is not recommended.
 {% endhint %}
+
+{% hint style="warning" %}
+[ATTENTION] Les spécifications opérationnelles relatives à l’application des réglages de vitesse d’exécution en temps réel pendant le mouvement sont les suivantes :
+* En règle générale, lorsqu’une vitesse d’exécution est modifiée pendant une opération de mouvement, la modification est appliquée en temps réel au mouvement en cours.
+* Toutefois, en SAFETY MODE, la vitesse d’exécution modifiée est appliquée à partir de l’étape suivante, après la fin du mouvement en cours.
+* De plus, lorsque la fonction Arc est activée, les modifications de vitesse d’exécution en temps réel pendant le mouvement ne sont pas appliquées.
+* Il est déconseillé de modifier brusquement la vitesse d’exécution entre des valeurs extrêmes, par exemple de 1 à 100 ou de 100 à 1.
+{% endhint %}
+
 
 {% hint style="info" %}
 In manual mode, the `[Speed Adjustment]` button will display the step speed limit, instead of the playback speed \(%\).
@@ -2262,6 +2284,16 @@ Jog Key Functions Summary
 * When aligning at a singularity point, pressing the released button again will continue the motion. Since the path is recalculated from the current position, it operates at normal speed. (The speed increases slightly, but this is the normal speed.)
 {% endhint %}
 
+{% hint style="warning" %}
+
+* Cette fonction doit être exécutée uniquement lorsque le robot est à l’arrêt et en Manual Mode.
+  (Elle ne peut pas être exécutée en Auto Mode.)
+* Si la touche [ESC] est enfoncée alors qu’une touche de jog est maintenue, la fenêtre contextuelle se ferme et le jog est réactivé. Faire preuve de prudence pendant l’opération.
+* Si l’axe additionnel est défini sur Base et que X, Y et Z ne sont pas définis (état indéfini), un journal d’erreur s’affiche.
+* Si la direction d’alignement souhaitée ne peut pas être atteinte, même par jog, un message d’erreur indiquant une position XYZ inaccessible s’affiche.
+* Si une nouvelle tentative d’alignement est effectuée depuis une posture non interpolable, une erreur se produit. Dans ce cas, appuyer sur la touche Return to Original Position afin d’éviter la zone problématique, puis réessayer.
+* Lors d’un alignement au niveau d’un point de singularité, appuyer à nouveau sur le bouton précédemment relâché permet de poursuivre le mouvement. Le trajet étant recalculé à partir de la position actuelle, le robot fonctionne à la vitesse normale. (La vitesse augmente légèrement, mais il s’agit de la vitesse normale.)
+{% endhint %}
 [__SOURCE](2-operation/9-axis-origin.md)
 # 2.9 Optimization of the Axis Origin and Tool Length
 
@@ -2277,6 +2309,10 @@ You can make it possible for the axis integer and tool length to be automaticall
 
 {% hint style="warning" %}
 You should optimize the "axis origin and tool length" before teaching the robot program. If the "axis origin and tool length" is optimized while a robot program has been created already, the position in the existing program may change.
+{% endhint %}
+
+{% hint style="warning" %}
+Il convient d’optimiser « l’origine des axes et la longueur de l’outil » avant l’apprentissage du programme robot. Si « l’origine des axes et la longueur de l’outil » sont optimisées alors qu’un programme robot a déjà été créé, les positions définies dans le programme existant peuvent être modifiées.
 {% endhint %}
 
 The following shows how to set the optimization of the axis origin and tool length:
@@ -2837,6 +2873,9 @@ You can manage files in the main board's internal memory, teach pendant, or remo
 Never remove the removable storage device from the teach pendant while performing operations such as copying or deleting files. Data may be corrupted.
 {% endhint %}
 
+{% hint style="warning" %}
+Ne jamais retirer le périphérique de stockage amovible du teach pendant pendant l’exécution d’opérations telles que la copie ou la suppression de fichiers. Les données peuvent être corrompues.
+{% endhint %}
 
 [__SOURCE](4-service/2-file-manager/1-file-management.md)
 # 4.2.1 File Management
@@ -3710,6 +3749,10 @@ On the `[Speed Adjustment]` button, the speed limit \(mm/sec\) will be displayed
 While in the step backward operation, only the input wait signal function will be executed, and all other functions will not be executed.
 {% endhint %}
 
+{% hint style="warning" %}
+Lors de l’exécution d’une opération de recul d’étape, seule la fonction d’attente de signal d’entrée est exécutée ; toutes les autres fonctions ne sont pas exécutées.
+{% endhint %}
+
 * `[4: Re-execution of the function after step backward and forward]`: You can perform setting in a way that the previously executed functions among the functions recorded in the job program can be executed again when in the step forward operation again after the step backward operation.
 </br>
 
@@ -4085,6 +4128,12 @@ You can register IO relay variables in the Force IO panel to force some changed 
 * After testing and problem analysis, be sure to clear the forced IO completely and restore it to a normal IO state.
 
 {% endhint %}
+{% hint style="warning" %}
+* Cette fonction est destinée exclusivement aux essais ou à l’analyse de dysfonctionnements.
+* Une utilisation incorrecte de la fonction d’E/S forcées peut provoquer des accidents graves, notamment des collisions, des chutes de charge, ainsi que des blessures graves ou mortelles. Utiliser cette fonction avec prudence, uniquement après avoir parfaitement compris les connexions d’E/S du système et évalué avec précision les conséquences de la modification des valeurs forcées.
+* Après les essais ou l’analyse de dysfonctionnements, veiller à supprimer complètement les E/S forcées et à rétablir l’état normal des E/S.
+{% endhint %}
+
 
 #### Opening forced IO panel
 
@@ -4139,7 +4188,11 @@ After completing the test and problem analysis, be sure to press the [F2: Clear]
 {% hint style="warning" %}
 * If multiple entries force conflicting values for the same relay (or overlaid bits), they are forced to the value of the lower item of the table.
 * When the ${cont_model} controller is powered off, all contents registered as forced IO are cleared.
+{% endhint %}
 
+{% hint style="warning" %}
+* Si plusieurs entrées imposent des valeurs contradictoires au même relais ou à des bits superposés, la valeur forcée correspond à celle de l’élément situé le plus bas dans le tableau.
+* Lorsque le contrôleur ${cont_model} est mis hors tension, tous les éléments enregistrés en tant qu’E/S forcées sont effacés.
 {% endhint %}
 
 [__SOURCE](6-monitoring/2-io/7-memory-variables.md)
@@ -4274,6 +4327,10 @@ This is the function to edit the program without stopping it, while playback is 
 {% hint style="warning" %}
 * When you edit and apply the program that is currently in auto operation or program that will be called, it will be applied from the next cycle (After the program end is executed) and play back the robot with the edited program. Please take maximum precaution since the wrongly implemented editing can cause major accident such as collision between robot and jig.
 {% endhint %}
+{% hint style="warning" %}
+* Lorsqu’un programme en cours de fonctionnement automatique, ou un programme qui sera appelé, est modifié puis appliqué, les modifications sont prises en compte à partir du cycle suivant, après l’exécution de la fin du programme. Le robot exécutera alors le programme modifié. Faire preuve d’une extrême prudence, car une modification incorrecte peut provoquer un accident grave, notamment une collision entre le robot et le gabarit.
+{% endhint %}
+
 <br><br>
 
 ### Entry 
@@ -4501,6 +4558,9 @@ Select `Pose` in the Type list. If you enter 5,200 for the number of elements an
 
 {% hint style="warning" %}
 `[Warning]` Be aware that defining an array that is too large may take longer to save or load and may fail to save automatically in the event of a power failure.
+{% endhint %}
+{% hint style="warning" %}
+`[Avertissement]` Veuillez noter que la définition d’un tableau de taille excessive peut augmenter le temps nécessaire à l’enregistrement ou au chargement, et empêcher l’enregistrement automatique en cas de coupure d’alimentation.
 {% endhint %}
 
 
@@ -4744,6 +4804,9 @@ You can enter a value in the `Start Index` edit-box to display an array from a s
 {% hint style="warning" %}
 * To update the display of the result values, the expressions are calculated repeatedly at a fast period. Be careful not to include functions in the expression that cause system-specific creation or changes, such as mkucs().
 {% endhint %}
+{% hint style="warning" %}
+* Afin de mettre à jour l’affichage des valeurs de résultat, les expressions sont recalculées de manière répétée à un cycle court. Veiller à ne pas inclure dans l’expression des fonctions susceptibles de créer ou de modifier des éléments propres au système, telles que mkucs().
+{% endhint %}
 
 [__SOURCE](6-monitoring/3-job/6-call-stack.md)
 # 6.3.6 call stack
@@ -4818,6 +4881,10 @@ You can easily understand the flow of the program that has been called so far by
 
 {% hint style="warning" %}
 `[caution]` When performing Step-FWD or playback, be sure to restore the > cursor to the top frame position when resuming operations. Otherwise, the position of the job cursor is considered to have changed and the call stack is initialized.
+{% endhint %}
+
+{% hint style="warning" %}
+[Attention] Lors de l’exécution de Step-FWD ou de la lecture du programme, veiller à replacer le curseur > sur la position du cadre supérieur avant de reprendre les opérations. Dans le cas contraire, la position du curseur de tâche est considérée comme modifiée et la pile d’appels est initialisée.
 {% endhint %}
 [__SOURCE](6-monitoring/3-job/7-multi-task.md)
 # 6.3.7 Multi-task
@@ -4921,6 +4988,10 @@ System character monitoring function is only available in engineer mode.
 * Use caution as a serious problem may occur in the robot system if the setting is performed incorrectly.
 {% endhint %}
 
+{% hint style="warning" %}
+* En Engineer Mode, l’icône Engineer Mode (![](../../_assets/eng-mode.png)) clignote dans la barre d’état.
+* Faire preuve de prudence, car une configuration incorrecte peut entraîner un dysfonctionnement grave du système robot.
+  {% endhint %}
 <Br> 
 
 ### Initialization
@@ -5318,6 +5389,10 @@ You can check and set various user conditions.
 If the program being played back is modified externally \(PC\) and downloaded to the controller, it could cause a failure of or abnormality with the product. Contact our customer support team to ask an expert or an engineer.
 {% endhint %}
 
+{% hint style="warning" %}
+Si le programme est modifié sur un PC puis téléchargé vers le contrôleur pendant son exécution, cela peut provoquer une défaillance ou un dysfonctionnement du produit. Contactez le service d'assistance clientèle.
+{% endhint %}
+
 
 * `[6: Collision sensor process]`: You can set a method of stopping the robot when the collision sensor is operating.
   * `[(1) Em.stop]`: The robot will stop into the emergency stop mode, where the robot falls down motor-off status.
@@ -5433,6 +5508,11 @@ For processes where cycle time is critical (e.g., repetitive pick-and-place), ap
 {% hint style="warning" %}
 Be aware that higher values may lead to mechanical vibration or trigger over-torque faults, especially under high payload or rapid directional changes.
 {% endhint %}
+
+{% hint style="warning" %}
+Des valeurs élevées peuvent provoquer des vibrations mécaniques ou des défauts de surcouple, en particulier avec une charge utile élevée ou lors de changements rapides de direction.
+{% endhint %}
+
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/README.md)
 # 7.3.2 Input/Output Signal Setting
 
@@ -6366,6 +6446,15 @@ The cautions in recording the reference points for defining the coordinate syste
 * Subsequent steps after S3 will not have any effect on the coordinate system registration.
 {% endhint %}
 
+{% hint style="warning" %}
+Respectez les précautions suivantes lors de l'enregistrement des points de référence pour définir le système de coordonnées.
+
+* Les trois points de référence ne doivent pas être alignés.
+* La distance entre les trois points de référence ne doit pas être trop faible.
+* Les opérations effectuées après l'étape S3 n'ont aucun effet sur l'enregistrement du système de coordonnées.
+  {% endhint %}
+
+
 The method to register the user coordinate system by designating the taught program number and step order is as follows.
 
 1. Touch the `[2: Control Parameter  - 6: Coordinate System Registration  - 1: User Coordinate System]` menu.
@@ -6960,6 +7049,14 @@ You can register the mechanical origin position of each axis.
   If the encoder offset setting is changed, the axis origin should be newly set. Therefore, the encoder offset setting must be completed before the setting of the axis origin.
 {% endhint %}
 
+{% hint style="warning" %}
+
+* Le réglage de l'origine des axes affecte la précision des mouvements cartésiens du robot. Réglez-la aussi précisément que possible.
+* Si le réglage de l'origine des axes est modifié, les positions des programmes créés précédemment sont également modifiées. Effectuez ce réglage uniquement lors de l'installation initiale.
+* Si le réglage de l'offset de l'encodeur est modifié, l'origine des axes doit être réglée de nouveau. Par conséquent, le réglage de l'offset de l'encodeur doit être terminé avant celui de l'origine des axes.
+  {% endhint %}
+
+
 {% hint style="info" %}
 At the time of the shipping from the factory, the mechanical origin position of each axis is set at the standard value \(0X400000\).
 {% endhint %}
@@ -7248,6 +7345,10 @@ You can register information on a transformer or wiring support mounted on the b
 
 {% hint style="warning" %}
 If the robot has an additional weight because a transformer or wiring support is mounted onto it, you must register the information on the additional weight of each axis. If the additional weight is not correctly registered, the error may get large when the tool load estimation is performed.
+{% endhint %}
+
+{% hint style="warning" %}
+Si un transformateur, un support de câbles ou tout autre équipement ajoute une charge au robot, enregistrez la charge supplémentaire de chaque axe. Si cette charge n'est pas correctement enregistrée, l'erreur d'estimation de la charge de l'outil peut être importante.
 {% endhint %}
 
 
@@ -7880,6 +7981,11 @@ In the move command, the robot speed is applied by combining the original speed 
 * When an I/O signal is received during playback, the reduced speed mode will still be applied.
 {% endhint %}
 
+{% hint style="warning" %}
+* Sélectionnez la condition d'activation correspondant à l'état du signal d'entrée.
+* Si un signal d'E/S est reçu pendant l'exécution, le mode de vitesse réduite reste appliqué.
+{% endhint %}
+
 [__SOURCE](7-system/5-application-parameter/23-scurve-condition/README.md)
 # 7.5.23 S-curve Condition
 
@@ -7896,6 +8002,12 @@ S-curve (red dashed line): The speed change during acceleration and deceleration
 * If continuous motion generation fails, the motion will run as a discontinuous (broken) motion. In that region, adjust the parameters or switch back to the default motion (Default) for reliable operation.
 * History logs can be used to view records of continuous-motion failures.
 {% endhint %}
+
+{% hint style="warning" %}
+* Si la génération du mouvement continu échoue, le mouvement est exécuté en mode discontinu. Dans cette zone, ajustez les paramètres ou revenez au mouvement par défaut (*Default*) pour garantir un fonctionnement fiable.
+* Les journaux d'historique permettent de consulter les enregistrements des échecs de génération du mouvement continu.
+{% endhint %}
+
 
 {% hint style="info" %}
 * This feature is supported from version V70.00-00 onward.
@@ -7959,6 +8071,11 @@ The system automatically recalculates the maximum jerk value whenever key parame
 {% hint style="warning" %}
 **Caution:** When you manually set a value, modifying the top speed or acceleration time will overwrite the manually entered maximum jerk with the system-calculated value. If you have optimized the jerk value for a specific process, be sure to back up the existing value before making changes.
 {% endhint %}
+
+{% hint style="warning" %}
+**Attention :** Si vous saisissez une valeur manuellement, toute modification de la vitesse maximale ou du temps d'accélération remplacera la valeur maximale de jerk saisie par la valeur calculée par le système. Si la valeur de jerk a été optimisée pour un procédé spécifique, veillez à sauvegarder la valeur actuelle avant toute modification.
+{% endhint %}
+
 
 
 {% hint style="info" %}
@@ -8042,6 +8159,13 @@ Some items in the `[Initialize]` menu will be supported only when a specific typ
 
 {% endhint %}
 
+{% hint style="warning" %}
+
+* Le manipulateur et le contrôleur sont livrés en tant qu'un seul système. Le contrôleur est donc équipé d'un variateur adapté à la capacité d'entraînement du robot.
+* Après une réinitialisation du système, vérifiez le modèle de robot configuré par défaut en usine, puis sélectionnez le modèle approprié.
+  {% endhint %}
+
+
 3.	Enter Engineer Mode. For detailed settings, please refer to "[8.12 Engineer Mode](../../8-r-code/12-r314.md)".
 
 
@@ -8076,6 +8200,13 @@ Some items in the `[Initialize]` menu will be supported only when a specific typ
 * 
   When the system is initialized, all data and programs, including control parameter files and machine parameter files, will be deleted. If you back up your data before initializing the system, it can be restored and used when necessary.For detailed information on data backup and restore, please refer to ["4.2.5 Data Backup"](../../4-service/2-file-manager/5-data-backup.md) and ["4.2.6 Data Restore"](../../4-service/2-file-manager/6-data-restore.md).
 {% endhint %}
+
+{% hint style="warning" %}
+
+* Pour initialiser le système, contactez le service d'assistance clientèle.
+* Pour l'initialisation d'un robot collaboratif, reportez-vous au manuel des fonctions de sécurité du robot collaboratif.
+* Lors de l'initialisation du système, toutes les données et tous les programmes, y compris les fichiers de paramètres de commande et les fichiers de paramètres machine, sont supprimés. Il est recommandé d'effectuer une sauvegarde des données avant l'initialisation afin de pouvoir les restaurer si nécessaire. Pour plus d'informations, reportez-vous aux sections « 4.2.5 Sauvegarde des données » et « 4.2.6 Restauration des données ».
+  {% endhint %}
 
 
 
@@ -8184,7 +8315,10 @@ The serial encoder stores the encoder rotation speed information in the internal
 {% endhint %}
 
 
-
+{% hint style="warning" %}
+* La réinitialisation de l'encodeur peut être effectuée lors de la configuration initiale du système robot, mais ne doit jamais être réalisée pendant le fonctionnement normal du robot. Toutefois, en cas d'erreur liée à l'encodeur, telle qu'une erreur de communication ou une perte de la batterie de l'encodeur, une réinitialisation peut être effectuée. Dans ce cas, vérifiez que la position réelle du robot correspond à la position d'origine existante dans le programme du robot.
+* Si le contrôleur et l'encodeur ne sont plus alimentés, les informations de position de l'encodeur peuvent être perdues, ce qui peut entraîner un dysfonctionnement des programmes du robot. Pour éviter ce problème, l'encodeur série est équipé d'une batterie dédiée qui conserve les informations de position, même lorsque le contrôleur est hors tension. Si une erreur de tension de la batterie de l'encodeur est détectée, remplacez la batterie pendant que le contrôleur est encore sous tension afin d'éviter toute perte des informations de position.
+{% endhint %}
 
 [__SOURCE](7-system/6-initialization/5-add-axis-param.md)
 # 7.6.5 Additional Axis Parameter Setting
@@ -8403,6 +8537,15 @@ The procedure to change the currently configured axis synchronization pair is as
 * Be aware that changing settings during axis synchronization operation will affect the Cartesian coordinate system.
 {% endhint %}
 
+{% hint style="warning" %}
+
+* Avant utilisation, vérifiez que les spécifications des moteurs et les paramètres des axes auxiliaires sont correctement configurés pour la synchronisation (mêmes spécifications d'axe, configuration, vitesse et temps d'accélération).
+* Si la fonction de synchronisation des axes n'est pas utilisée, réglez **Use** sur **Disable** et définissez tous les groupes associés sur **Disable**.
+* N'utilisez pas cette fonction en même temps que la fonction de déplacement manuel des groupes synchronisés (*Synchronized Group Jogging*).
+* Vérifiez que les valeurs de position des étapes (*Step Pose*) du fichier Job ont été définies en tenant compte de la synchronisation des axes.
+* Toute modification des paramètres pendant la synchronisation des axes affecte le système de coordonnées cartésiennes.
+  {% endhint %}
+
 [__SOURCE](7-system/6-initialization/8-axis-lock/README.md)
 # 7.6.8 Axis Lock
 
@@ -8449,6 +8592,11 @@ Select the menu by navigating to `[F2: system] - 5: Initialization - 9: Axis loc
 Since the robot may fall if the brake wiring is abnormal, please ensure that the brake wiring of each axis is normal before configuring the axis locking function.
 {% endhint %}
 
+{% hint style="warning" %}
+Comme le robot peut tomber en cas d'anomalie du câblage des freins, vérifiez que le câblage des freins de chaque axe est correct avant de configurer la fonction de verrouillage des axes.
+{% endhint %}
+
+
 ![](../../../_assets/tp630/init-axis-lock-menu_eng.png)
 
 
@@ -8472,6 +8620,11 @@ The status display window show various conditions required for robot operation.
 {% hint style="warning" %}
 While using the axis lock function, be sure to check the corresponding indicators before operating the robot.
 {% endhint %}
+
+{% hint style="warning" %}
+Lors de l'utilisation de la fonction de verrouillage des axes, vérifiez toujours les indicateurs correspondants avant de faire fonctionner le robot.
+{% endhint %}
+
 
 -   Status display window: AxLk
 -   Right matrix: "Axis lock"
@@ -8521,6 +8674,11 @@ Using the axis origin and tool length optimization function, you can find the op
 {% hint style="warning" %}
 When the axis origin and tool length optimization function is used, the encoder offset and tool length will be changed, thus also changing the operation position of the previously taught program. Therefore, you should perform the optimization of axis origin and tool length before writing the teaching program.
 {% endhint %}
+
+{% hint style="warning" %}
+Lorsque la fonction d'optimisation de l'origine des axes et de la longueur de l'outil est utilisée, l'offset de l'encodeur et la longueur de l'outil sont modifiés. Les positions d'exécution des programmes enseignés précédemment sont donc également modifiées. Effectuez cette optimisation avant de créer le programme d'apprentissage (*teaching*).
+{% endhint %}
+
 
 {% hint style="info" %}
 * In using the axis origin and tool length optimization function, the accuracy of the teaching is proportional to the accuracy of the maximum step position error result. Therefore, you should prepare two pointed tips and perform the teaching for the tooltip to match the two tips as accurately as possible. Make sure that the accuracy of the matching between the tooltip and the fixed points in space is within 0.5 mm when visually checked.
@@ -8595,6 +8753,12 @@ The method to use the axis origin and tool length optimization function is as fo
 {% hint style="warning" %}
 It requires your attention that if you calibrate both the robot origin and tool length values, all origins of the robot will change, consequently changing the position of the previously created program.
 {% endhint %}
+
+{% hint style="warning" %}
+Si vous calibrez à la fois l'origine du robot et la longueur de l'outil, toutes les origines du robot seront modifiées. Les positions des programmes créés précédemment seront donc également modifiées.
+{% endhint %}
+
+
 
 {% hint style="info" %}
 * You can also set the origin of each axis and tool length of the robot in the settings menu.
@@ -8734,6 +8898,14 @@ In general, the base axis is used to move the robot to the operation position. I
 * Base axis calibration is available only when the base axis configuration is any.
 {% endhint %}
 
+{% hint style="warning" %}
+
+* La fonction de calibration est disponible uniquement pour le premier axe de base. Lors du réglage des paramètres des axes additionnels, la configuration de cet axe peut être définie sur **Any**.
+* Ne définissez pas la configuration des autres axes de base sur **Any**.
+* La calibration de l'axe de base est disponible uniquement lorsque la configuration du premier axe de base est définie sur **Any**.
+  {% endhint %}
+
+
 
 [__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/2-base-axis-calib-prog-teach.md)
 # 7.7.4.2 Base Axis Calibration Program Teaching
@@ -8756,6 +8928,13 @@ In general, the base axis is used to move the robot to the operation position. I
 * 
   Record the position by setting the moving distance of the base axis between recording steps as far as possible.
 {% endhint %}
+
+{% hint style="warning" %}
+
+* Créez le programme de calibration de l'axe de déplacement à l'aide d'un outil pour lequel la calibration du robot (optimisation de l'origine des axes et de la longueur de l'outil) a déjà été effectuée.
+* Lors de l'enregistrement d'une étape, utilisez le numéro d'outil dédié à la calibration de l'axe de base.
+* Lors de l'enregistrement des positions, veillez à ce que la distance de déplacement de l'axe de base entre les étapes soit aussi grande que possible.
+  {% endhint %}
 
 
 [__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/3-base-axis-calib-exec.md)
@@ -8785,6 +8964,10 @@ If you jog the base axis after performing base axis calibration, the distance tr
 
 {% hint style="warning" %}
 Set the jog coordinate system as the tool coordinate system and jog the base axis to check whether the base axis is properly calibrated. If the tooltip fixing operation is executed, it means that the base axis has been properly calibrated.
+{% endhint %}
+
+{% hint style="warning" %}
+Réglez le système de coordonnées du jogging sur le système de coordonnées outil, puis déplacez l'axe de base en mode jogging pour vérifier que sa calibration est correcte. Si la pointe de l'outil reste fixe pendant le déplacement, la calibration de l'axe de base est correcte.
 {% endhint %}
 
 
@@ -8923,6 +9106,11 @@ This function finds the optimal gain by moving the additional axis within the ra
 
 Since noise is difficult to analyze with data, tuning cannot be as precise as when a tuning specialist adjusts manually. If manual tuning is required, it can be done by adjusting the Kv gain.
 {% endhint %}
+
+{% hint style="warning" %}
+L'analyse du bruit à partir des données étant limitée, le réglage ne peut pas être aussi précis qu'un réglage manuel effectué par un spécialiste. Si un réglage manuel est nécessaire, ajustez le gain **Kv**.
+{% endhint %}
+
 
 * If the tuned gain results in noise, motion tracking performance may degrades, leading the large shake.
 * Conversely, if the Kv gain is too high, high-frequency noise may be generated from the motor.
@@ -9242,6 +9430,10 @@ You can manually set the servo gun moving electrode wear volume.
 {% hint style="warning" %}
 It requires your attention that if the setting value is set larger or smaller than the actual wear volume of the electrode, it may cause mismatching of the squeeze force or interference with the workpiece.
 {% endhint %}
+{% hint style="warning" %}
+Il convient de noter que si la valeur de réglage est définie à une valeur supérieure ou inférieure à l’usure réelle de l’électrode, cela peut entraîner une inadéquation de la force de serrage ou une interférence avec la pièce.
+{% endhint %}
+
 
 {% hint style="info" %}
 * R212 code cannot be used during the startup of the robot.
@@ -9263,6 +9455,10 @@ You can manually set the servo gun fixed electrode wear volume.
 
 {% hint style="warning" %}
 It requires your attention that if the setting value is set larger or smaller than the actual wear volume of the electrode, it may cause mismatching of the squeeze force or interference with the workpiece.
+{% endhint %}
+
+{% hint style="warning" %}
+Il convient de noter que si la valeur de réglage est définie à une valeur supérieure ou inférieure à l’usure réelle de l’électrode, cela peut entraîner une inadéquation de la force de serrage ou une interférence avec la pièce.
 {% endhint %}
 
 {% hint style="info" %}
@@ -9364,9 +9560,12 @@ The following functions can be set up in engineer mode.
 * Other detailed applications
 
 {% hint style="warning" %}
+* Be aware that incorrect settings in engineer mode can cause serious problems with the robot system. 
+{% endhint %}
 
-* Be aware that incorrect settings in engineer mode can cause serious problems with the robot system. {% endhint %}
-
+{% hint style="warning" %}
+* Veuillez noter qu’une configuration incorrecte en Engineer Mode peut entraîner de graves problèmes au niveau du système robot.
+{% endhint %}
 
 [__SOURCE](8-r-code/13-r358.md)
 # 8.13 R358 for Changing the Servo Tool
@@ -9433,6 +9632,9 @@ If the servo gun is applied in the servo tool change system, you need to execute
 Never mechanically connect or disconnect the servo gun while the encoder power is forcibly supplied.
 {% endhint %}
 
+{% hint style="warning" %}
+Ne jamais raccorder ni déconnecter mécaniquement la pince servo lorsque l’alimentation de l’encodeur est forcée.
+{% endhint %}
 
 [__SOURCE](8-r-code/15-r360.md)
 # 8.15 R360 Set CONTPATH manually
@@ -9882,6 +10084,13 @@ However, careless modification or deletion of files may cause serious issues suc
 Do not modify these files unless you fully understand their mechanism or are working under the guidance of a qualified expert.
 {% endhint %}
 
+{% hint style="warning" %}
+`[Avertissement]` Le gestionnaire de fichiers du TP ou le service FTP permet de modifier les dossiers et les fichiers.
+Toutefois, toute modification ou suppression imprudente de fichiers peut entraîner de graves problèmes, tels qu’un échec de démarrage, un dysfonctionnement ou une perte de données.
+Ne pas modifier ces fichiers sans en comprendre parfaitement le fonctionnement, ou sans intervenir sous la supervision d’un expert qualifié.
+{% endhint %}
+
+
 You can back up and restore configuration and teaching files in the project folder using HRWorkbench, file manager, or the backup features.
 
 However, in some cases, it may be more convenient to use familiar FTP software to back up files to a PC or restore them to the robot controller.
@@ -9917,6 +10126,11 @@ To apply the updated files to memory, use the method below:
 {% hint style="warning" %}
 Do not reboot the robot controller to apply updated global variable files.
 When the controller is powered off, the current global variable values in memory are saved back to files, which will overwrite the files you just updated.
+{% endhint %}
+
+{% hint style="warning" %}
+Ne pas redémarrer le contrôleur du robot pour appliquer les fichiers de variables globales mis à jour.
+Lorsque le contrôleur est mis hors tension, les valeurs actuelles des variables globales en mémoire sont réenregistrées dans les fichiers, ce qui écrase les fichiers qui viennent d’être mis à jour.
 {% endhint %}
 
 [__SOURCE](11-etc/1-controller-files/2-project.md)
