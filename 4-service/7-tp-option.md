@@ -14,6 +14,14 @@
   <tbody>
     <tr>
       <td style="text-align:left">
+        마우스 커서 표시
+      </td>
+      <td style="text-align:left">티치펜던트 화면에 마우스 커서 표시를 ON/OFF 합니다.<br>
+      (V70.04-00 버전부터 지원됩니다.)
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
         소리
       </td>
       <td style="text-align:left">티치펜던트의 비프(beep) 음을 ON/OFF 합니다.</td>
@@ -58,6 +66,13 @@
       </td>
       <td style="text-align:left">티치펜던트의 표시 언어를 변경합니다. 최상위 화면으로 나간 후 부터 적용됩니다.<br>
       (V70.00-00 버전부터 지원됩니다.<sup>3)</sup>) </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        스크린샷 지연
+      </td>
+      <td style="text-align:left">[CTRL]+[SHIFT]+[.]키에 의해 티치펜던트 화면을 캡쳐할 수 있습니다. <br>이때 캡쳐 동작에 대한 지연 시간을 설정합니다.<br>참고로 캡쳐된 화면은 파일관리자에서 TP/log 폴더에 screen_?.png 파일로 저장됩니다.<br>
+      (V70.02-00 버전부터 지원됩니다.)</td>
     </tr>
   </tbody>
 </table>
