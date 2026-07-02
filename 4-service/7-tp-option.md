@@ -14,6 +14,13 @@ Set the preference options of the teach pendant.
   <tbody>
     <tr>
       <td style="text-align:left">
+        Display mouse cursor
+      </td>
+      <td style="text-align:left">Toggles the display of the mouse cursor on the teach pendant screen.<br>
+      (Supported from version V70.04-00 and later.)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
         Sound
       </td>
       <td style="text-align:left">Turns the Teach Pendant's beep sound ON or OFF.</td>
@@ -57,6 +64,13 @@ Set the preference options of the teach pendant.
       </td>
       <td style="text-align:left">Changes the display language of the Teach Pendant. Changes take effect after returning to the main screen.<br>
       (Supported from version V70.00-00 and later.<sup>3)</sup>)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        Screenshot delay
+      </td>
+      <td style="text-align:left">You can capture the teach pendant screen by pressing the [CTRL]+[SHIFT]+[.] keys. <br>This setting determines the delay time for the capture operation.<br>Captured screens are saved as "screen_?.png" files in the TP/log folder within the File Manager.<br>
+      (Supported from version V70.02-00 and later.)</td>
     </tr>
   </tbody>
 </table>
