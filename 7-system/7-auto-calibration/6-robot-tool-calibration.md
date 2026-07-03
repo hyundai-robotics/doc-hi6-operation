@@ -22,13 +22,25 @@ The robot and tool calibration function will be used in an environment where the
 
 6.	Touch the `[OK]` button. Then, the screen will switch to the robot and tool calibration screen.
 
-7.	Touch the `[Execute]` button on the robot and tool calibration execution screen. Then, the calibration results will appear.
 
-    ![](../../_assets/tp630/system-calib-robottool-exe_eng.png)
+7. On the robot and tool calibration execution screen, select the type of calibration parameter from <img src="../../_assets/c1.png" alt/>, and then touch the `[Execute]` button. </br>
+The system optimizes the selected parameters for a short period, after which the calibration results are displayed. </br>
+By default, the axis origin and tool length parameters are selected. If calibration is required for additional error parameters, such as link lengths and joint angle offsets, select the `[Full-DH]` parameter. </br>
+To include joint stiffness in the calibration, select the `[Stiffness]` option. </br>
+When calibrating using the Full-DH parameters or including joint stiffness, position measurements at 30 or more points using a high-accuracy measuring device are required. </br>
+If calibration is performed using measurement data with relatively large errors obtained from an inaccurate measuring device, the calibration results may sometimes be highly inaccurate. Exercise caution when performing the calibration.
+
+
+    ![](../../_assets/tp630/system-calib-robottool-exe.png)
 
 
 
-8.	After checking the calibration result, touch the `[OK]` button. Then, the calibration result will be automatically applied to the axis origin and tool integer.
+8. After checking the calibration results, touch the `[OK]` button. The calibration results are automatically applied to the axis origin and tool integer. </br>
+If the calibration includes joint stiffness, the gravity compensation function can be enabled from `System``Control parameter``Control environment setting`. </br>
+When the gravity compensation function is enabled, the robot predicts and compensates for the deflection caused by the configured tool payload. As a result, the robot can achieve more accurate positioning. </br>
+If the tool payload information is changed, the predicted deflection also changes. As a result, the robot may move to a different position than before. </br>
+When the gravity compensation function is enabled, the robot cannot move to steps recorded as encoder values. Keep this in mind when operating the robot.
+
 
 9.	Touch the `[3: Robot Parameter  - 1: Tool Data]` menu. Then, you can check the robot calibration execution result.
 
