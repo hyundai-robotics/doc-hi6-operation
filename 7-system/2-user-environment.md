@@ -36,9 +36,16 @@ If the program being played back is modified externally \(PC\) and downloaded to
 
 
 * `[7: Signal display in byte]`: You can display signal addresses in byte unit by selecting `[Enable]`.
-  * 'Input signal assign' page changes as below accorinding to your selection.
+  * 'Input signal assign' page changes as below accorinding to your selection. <br>
   
     ![](../_assets/tp630/system-user-environ-byte-index_eng.png)
+
+{% hint style="info" %}
+* Many PLCs utilize a byte-based signal structure, allowing for more intuitive interfacing with such equipment. <br>
+For instance, the eighth signal corresponds to bit 0 of byte 1 and is simply designated as 1.0; consequently, the output signal is represented as QX1.0 and the input signal as IX1.0. 
+* In robot programming languages, while the eighth signal can be activated by executing `do8=1`, it is also possible to trigger the output at the bit level using `dob1.x0=1`. In other words, `fb2.do11=1` produces the same output as `fb2.dob1.x3=1`.<br>
+{% endhint %}
+
 
 * `8:Manual oper. for stop signal in`: You can set whether to enable jog operation when an external stop signal is inputted.
 
