@@ -5853,23 +5853,9 @@ When welding deposition occurs during arc welding, this function is used to outp
 This function is used to output to the outside the robot lock setting status in `[Condition Setting]`.
 
 
-
-#### Field bus abnormal, and field bus idle
-
-When a fieldbus communication board such as CC-LINK and DeviceNet is used, this function is used to output the communication state to the outside.
-
-
-
 #### Battery \(backup, encoder\) voltage drop
 
 When there is a voltage drop in the backup battery to maintain the state of the SRAM installed on the main board or a voltage drop in the encoder battery to maintain the value of the encoder installed on each motor, this function is used to output to the outside.
-
-
-
-#### Torque monitoring
-
-This function is used to output to the outside the torque value that is applied to the six axes of the robot. The torque value that will be outputted to the outside is a % value in the multiplier of 1/2.
-
 
 
 #### Grease injection alarm
@@ -5877,10 +5863,14 @@ This function is used to output to the outside the torque value that is applied 
 This function is used to output to the outside the condition that requires grease injection.
 
 
+#### Cooling fan control
 
-#### Average load factor abnormality alarm 
+Used by the Hi6 controller to control the cooling fan. Typically, the cooling fan is wired to so49. If the cooling fan turns off due to an output error, an internal temperature overheat error may occur.
 
-This function is used to output to the outside the status regarding whether the robot has exceeded the average load factor during operation.
+
+#### Motor on ready in remote auto mode 
+
+Used to output a signal indicating that the motor is ready to be turned on while in remote automatic mode.
 
 
 
