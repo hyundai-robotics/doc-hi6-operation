@@ -6833,7 +6833,7 @@ The manual method of setting the distance and angle of TCP based on the robot's 
       <td style="text-align:left">
         <ul>
           <li>[OK]: You can save the changes.</li>
-          <li>[+]/[-]: You can add new tool data or delete tool data.</li>
+          <li>[+]/[-]: You can add new tool data or delete tool data. Tool data corresponding to the currently selected tool number cannot be deleted.</li>
           <li>Tool data list. Selecting a tool data name will allow you to check and
             edit detailed information.</li>
           <li>[Copy page]/[Paste page]: You can copy the tool data information and then
