@@ -1,3 +1,3 @@
 ﻿# Precautions
 
-{% include file="en/precautions.md" %}
+{% include file="fn/precautions.md" %}

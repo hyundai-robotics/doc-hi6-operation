@@ -12,7 +12,7 @@ This manual does not cover detailed application functions, such as direct teachi
 [__SOURCE](0-about-this-manual/precautions.md)
 # Precautions
 
-{% include file="en/precautions.md" %}
+{% include file="fn/precautions.md" %}
 
 [__SOURCE](0-about-this-manual/notation.md)
 # Notation Convention
@@ -59,7 +59,7 @@ When the ![](../_assets/eng-mode.png)icon blinks in the status bar, it means tha
 [__SOURCE](0-about-this-manual/safety-notice.md)
 # Safety Cautions
 
-{% include file="en/safety-notice.md" %}
+{% include file="fn/safety-notice.md" %}
 
 [__SOURCE](1-robot-system/README.md)
 # 1. Robot System

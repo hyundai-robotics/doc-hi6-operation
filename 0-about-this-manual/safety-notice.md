@@ -1,3 +1,3 @@
 ﻿# Safety Cautions
 
-{% include file="en/safety-notice.md" %}
+{% include file="fn/safety-notice.md" %}
