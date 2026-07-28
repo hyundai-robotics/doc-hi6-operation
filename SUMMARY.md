@@ -130,6 +130,8 @@
     * [6.2.6 Forced IO](6-monitoring/2-io/6-forced-io.md)
     * [6.2.7 Memory Variables](6-monitoring/2-io/7-memory-variables.md)
     * [6.2.8 EtherCAT device](6-monitoring/2-io/8-EC-device-info.md)
+    * [6.2.9 Safety IO](6-monitoring/2-io/9-safety-io.md)
+    * [6.2.10 Safety Communication](6-monitoring/2-io/10-safety-comm.md)
   * [6.3 Job Program, Robot Language](6-monitoring/3-job/README.md)
     * [6.3.1 Job](6-monitoring/3-job/1-job.md)
     * [6.3.2 Hot Edit](6-monitoring/3-job/2-hot-edit.md)  
