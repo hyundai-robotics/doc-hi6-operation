@@ -131,6 +131,8 @@
     * [6.2.6 강제 IO](6-monitoring/2-io/6-forced-io.md)
     * [6.2.7 메모리 변수](6-monitoring/2-io/7-memory-variables.md)
     * [6.2.8 이더캣 장치 정보](6-monitoring/2-io/8-EC-device-info.md)
+    * [6.2.9 안전 입출력](6-monitoring/2-io/9-safety-io.md)
+    * [6.2.10 안전 통신](6-monitoring/2-io/10-safety-comm.md)
   * [6.3 job 프로그램, 로봇언어](6-monitoring/3-job/README.md)
     * [6.3.1 job](6-monitoring/3-job/1-job.md)
     * [6.3.2 hot edit](6-monitoring/3-job/2-hot-edit.md)  

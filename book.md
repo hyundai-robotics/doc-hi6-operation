@@ -4069,6 +4069,42 @@ panel 제목 막대의 * 표시는 사라지고, 강제 IO값이 적용된 것�
     -	safe-op: Slave 장치의 송신(Tx PDO) 데이터만 교신 가능한 상태
     -	operation: Slave 장치의 송수신(Tx/RxPDO) 데이터 모두 교신 가능한 상태
 
+[__SOURCE](6-monitoring/2-io/9-safety-io.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 6.2.9 안전 입출력
+
+패널 선택창에서 [안전 입출력]을 선택하십시오.<br>
+다음의 정보를 확인할 수 있습니다. <br>
+- 기본/부가 입출력 상태
+- 안전 신호 할당 여부 
+- 접근 가능한 내부 주소
+<br>
+<br>
+![](../../_assets/tp630/pane-sio.png)
+[__SOURCE](6-monitoring/2-io/10-safety-comm.md)
+<script id="page-config" type="application/json">
+{
+	"permittedStrs": ["Hi7"]
+}
+</script>
+
+# 6.2.10 안전 통신
+
+패널 선택창에서 [안전 통신]을 선택하십시오.<br>
+다음의 정보를 확인할 수 있습니다. <br>
+- 안전 통신 선택 상태 (PROFIsafe or CIP Safety)
+- 입출력 상태
+- 안전 신호 할당 여부 
+- 접근 가능한 내부 주소
+<br>
+<br>
+![](../../_assets/tp630/pane-safety-comm.png) 
+
 [__SOURCE](6-monitoring/3-job/README.md)
 # 6.3 job 프로그램, 로봇언어
 
