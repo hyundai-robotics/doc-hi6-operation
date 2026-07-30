@@ -26,11 +26,11 @@
 
 * 프로그램 스트로브 신호 사용이 유효인 경우: 외부 기동 입력 시 프로그램 스트포브 신호가 On이면 프로그램 선택 Bit를 읽고, 이 값을 프로그램 번호로 확정합니다.  
 
-![그림 52 프로그램 스트로브신호 &amp;lt;유효&amp;gt; 시 외부 프로그램 선택 선도](../../../_assets/io-signal-strobe1.png)
+![프로그램 스트로브신호 &amp;lt;유효&amp;gt; 시 외부 프로그램 선택 선도](../../../_assets/io-signal-strobe1.png)
 
 * 프로그램 스트로브 신호 사용이 무효인 경우: 외부 기동 입력 후 프로그램 선택 Bit를 읽고, 이 값이 90 ms 동안 변경되지 않는 경우에 프로그램 번호로 확정합니다.
 
-![그림 53 프로그램 스트로브신호 &amp;lt;무효&amp;gt; 시 외부 프로그램 선택 선도](../../../_assets/io-signal-strobe2.png)
+![프로그램 스트로브신호 &amp;lt;무효&amp;gt; 시 외부 프로그램 선택 선도](../../../_assets/io-signal-strobe2.png)
 
 * 프로그램 선택 Bit와 Binary/Discrete \(OFF→Binary\)
 

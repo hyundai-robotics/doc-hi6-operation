@@ -12,7 +12,7 @@
 
 패널 선택창에서 \[hot edit\]를 터치하십시오. 현재 선택된 job 프로그램의 hotedit 창이 열립니다.
 
-![그림 43 hot edit](../../_assets/tp630/pane-hot-edit-0.png)
+![hot edit](../../_assets/tp630/pane-hot-edit-0.png)
 
 <br>
 

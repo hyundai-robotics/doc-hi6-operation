@@ -4,7 +4,7 @@
 
 제어기 내 I/O 보드의 CNIN 커넥터를 통해 입력되는 신호인 범용 입력 신호의 상태를 확인할 수 있습니다.
 
-![그림 40 범용 입력 신호 - ON/OFF 상태\(좌\) / 값 상태\(우\)](../../_assets/tp630/pane-univinsig-mode.png)
+![범용 입력 신호 - ON/OFF 상태\(좌\) / 값 상태\(우\)](../../_assets/tp630/pane-univinsig-mode.png)
 
 <table>
   <thead>
