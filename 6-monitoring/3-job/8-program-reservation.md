@@ -8,7 +8,7 @@ In the panel selection window, touch `[program reserve]`. Then, the scheduled pr
 
 When programs are scheduled through external signals and executed in the scheduled order, you can check and change the status in the list of scheduled programs.
 
-![Figure 50 Program reserve](../../_assets/tp630/pane-prog-reserv_eng.png)
+![Program reserve](../../_assets/tp630/pane-prog-reserv_eng.png)
 
 <table>
   <thead>

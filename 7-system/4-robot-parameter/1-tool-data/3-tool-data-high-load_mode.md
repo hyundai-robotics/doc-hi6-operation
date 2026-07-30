@@ -2,7 +2,7 @@
 
 The availability of High Load Mode may vary depending on the robot model. In general, high load mode is supported on medium-sized robots with a payload capacity of 100 kg or more.<br> For models that support high load mode, you can configure "4. High load mode" as shown in the figure below in `[F2: system] - 3: Robot Parameter - 33: Servo parameter - 9: Servo control environment` menu.<br> For models that support high load mode, auto apply is the default setting.
 
-![Figure 63 High Load Mode Setting Screen](../../../_assets/image_high_load_mode_setting_eng.png)
+![High Load Mode Setting Screen](../../../_assets/image_high_load_mode_setting_eng.png)
 
 | Setting Value | Operating Characteristics |
 | :--- | :--- |
@@ -12,7 +12,7 @@ The availability of High Load Mode may vary depending on the robot model. In gen
 
 The high load mode application status based on the currently applied tool load can be checked as shown in the figure below.<br>
 
-![Figure 64 Check high load mode application status based on tool load](../../../_assets/home_tool_no_eng.png)
+![Check high load mode application status based on tool load](../../../_assets/home_tool_no_eng.png)
 
 
 ![Normal Mode Tool (regular font)](../../../_assets/tp630/normal_mode_tool_eng.png) : Nomal Mode (regular font)

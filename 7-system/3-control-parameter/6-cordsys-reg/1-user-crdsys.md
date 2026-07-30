@@ -4,7 +4,7 @@ The user coordinate system is a coordinate system that is to be set at a positio
 
 Teach three reference steps by following the procedures below. The following procedure explains when the step order is specified as "OXY" (O: origin pose, X: axis pose, Y: plane pose).
 
-![Figure 57 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
+![Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
 
 
 1.	Define the origin of the user coordinate system: Teach an arbitrary point.

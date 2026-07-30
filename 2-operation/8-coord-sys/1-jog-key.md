@@ -7,7 +7,7 @@ The direction of the robot motion depends on the reference coordinate system. Th
 ![](../../_assets/tp630/sbar-joint-crdsys_eng.png)
 
 
-![Figure 26 Teach pendant jog keys](../../_assets/tp630/keypad-jog_eng.png)
+![Teach pendant jog keys](../../_assets/tp630/keypad-jog_eng.png)
 
 The motions of J7 and J8 keys are determined by how you set the robot model and additional axes. J7 in a 7-axes robot can be operated by the jog key assigned at R3 axis, the third axis. For other type robots,  you can operate the additional axes with jog keys, according to the mechanism setting.
 

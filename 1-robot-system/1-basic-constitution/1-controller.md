@@ -2,7 +2,7 @@
 
 #### Vertical Articulated Robot Controller 
 
-![Figure 3 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_33.png)
+![Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_33.png)
 
 | No. | Name | Description |
 | :--- | :--- | :--- |

@@ -12,7 +12,7 @@ If the CAD data contains the physical properties information of the tool, you ca
 
 The tool data setting information is as follows.
 
-![Figure 70 Tool Data](../../_assets/image_505.png)
+![Tool Data](../../_assets/image_505.png)
 
 * `[Weight]`: The total weight \(kg\) of the tool installed at the front end of the robot
 * `[Center]`: The distance \(mm\) in the x, y, z directions from the center of the robot flange face to the position of the center of gravity of the tool
@@ -23,7 +23,7 @@ The tool data setting information is as follows.
 
 However, in many cases, it is difficult to determine the physical properties of the tool such as mass, inertia, and center of gravity of the tool from CAD data. At this time, you can check the physical properties of the tool using the load estimation function in the robot controller.
 
-![Figure 71 Load Estimation Function](../../_assets/tp630/system-calib-load_eng.png)
+![Load Estimation Function](../../_assets/tp630/system-calib-load_eng.png)
 
 1.	Touch the `[6: Auto Calibration  - 4: Load Estimation Function]` menu.
 

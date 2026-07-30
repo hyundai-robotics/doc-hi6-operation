@@ -78,18 +78,18 @@ The robot system consists of a manipulator and a controller that controls the ma
 
 The following shows an example of the basic configuration of the robot system according to the robot type.
 
-![Figure 1 Basic Configuration of the LCD Robot System](../../_assets/image_286.png)
+![Basic Configuration of the LCD Robot System](../../_assets/image_286.png)
 
 
 
-![Figure 2 Basic Configuration of the Vertical Articulated Robot System ](../../_assets/image_285.png)
+![Basic Configuration of the Vertical Articulated Robot System ](../../_assets/image_285.png)
 
 [__SOURCE](1-robot-system/1-basic-constitution/1-controller.md)
 # 1.1.1 Controller
 
 #### Vertical Articulated Robot Controller 
 
-![Figure 3 Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_33.png)
+![Front \(Left\) / Back \(Right\) of the Controller](../../_assets/image_33.png)
 
 | No. | Name | Description |
 | :--- | :--- | :--- |
@@ -1199,15 +1199,15 @@ When the execution unit is set as 'Cmd' or 'Step', the robot will ignore the set
 
 When you set the execution unit as 'Cmd' or 'Step' and perform the step forward/backward operation, the robot will operate on a path without cornering. For details on cornering, refer to "[2.3.1.4 Accuracy](../3-step/1-step-cmd-param/4-accuracy.md)".
 
-![Figure 12 Playback Forward/Backward Path When cmd/step Setting is Performed](../../_assets/path-cmd-step-pback-fwd-bwd-en.png)
+![Playback Forward/Backward Path When cmd/step Setting is Performed](../../_assets/path-cmd-step-pback-fwd-bwd-en.png)
 
 If you set the execution unit as end and then perform the step forward/backward operation, the path of the robot will change according to the stop position. In other words, if the robot stops at a place other than at cornering and then executes the forward operation, the robot will recover the original cornering path, but if the robot executes the backward operation, the robot will move to the recorded step, and at this time, the robot will stop at the recorded step and then move immediately to the previous step. When the robot stops at cornering, the robot will maintain its previous cornering path both when moving forward and when moving backward.
 
-![Figure 13 Playback Forward/Backward Path When End Setting is Performed](../../_assets/path-end-pback-fwd-bwd-en.png)
+![Playback Forward/Backward Path When End Setting is Performed](../../_assets/path-end-pback-fwd-bwd-en.png)
 
 When the robot stops at cornering and then executes the forward operation, the robot will operate on the original cornering path. Here, if the robot executes the backward operation and then, without reaching the previous step completely, executes the forward operation again, the robot may not be able to create the original cornering path in some cases. In other words, if the distance of the step becomes shorter than the original distance, making it impossible to meet the existing accuracy condition, a smaller cornering path than the original one will be created.
 
-![Figure 14 Example of the Robot Path Change During Step Forward/Backward Operation](../../_assets/path-step-bwd-then-fwd-en.png)
+![Example of the Robot Path Change During Step Forward/Backward Operation](../../_assets/path-step-bwd-then-fwd-en.png)
 
 
 You can set the maximum speed for the step forward/backward operation and set whether to execute functions as well. After touching the `[run to]` button on the left side of the ${cont_model} teach pendant screen, set the speed value and function execution option in the setting window.
@@ -1433,11 +1433,11 @@ Interpolation refers to the interpolated path between steps, and the interpolati
 
 
 
-![Figure 15 Example of the Tooltip Path in P-PTP Interpolation](../../../_assets/image_73.png)
+![Example of the Tooltip Path in P-PTP Interpolation](../../../_assets/image_73.png)
 
 * L-Linear interpolation It moves in a linear line between two steps in Cartesian space. It is used for a case in which a linear path is needed, such as an arc welding section. The movement will take place while the wrist posture changes automatically as follows.
 
-![Figure 16 Example of L-Linear Interpolation](../../../_assets/image_48.png)
+![Example of L-Linear Interpolation](../../../_assets/image_48.png)
 
 During the linear interpolation, under certain conditions, the robot cannot automatically change the wrist posture, and such a condition is called the singular posture.
 
@@ -1467,13 +1467,13 @@ Singular postures in which the posture interpolation cannot be performed are as 
 
 
 
-![Figure 16 Example 1 of C-Circular Interpolation](../../../_assets/image_338.png)
+![Example 1 of C-Circular Interpolation](../../../_assets/image_338.png)
 
 If you use the criteria of selecting three points required for determining the circle, you can create a program through the double registration of the same point, even in the case of a continuous arc.
 
 In this way, by determining the interpolation method of the step in consideration of the path to move along and using the same point dual registration function, you can create a program as desired.
 
-![Figure 17 Example 2 of C-Circular Interpolation](../../../_assets/image_302.png)
+![Example 2 of C-Circular Interpolation](../../../_assets/image_302.png)
 
 * Stationary tool interpolation
 
@@ -1598,7 +1598,7 @@ A path that is newly created within the accuracy range \(0~7\) according to the 
 
 
 
-![Figure 19 Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
+![Change of the Path P2 Because of Accuracy](../../../_assets/image_53.png)
 
 Accuracy 0 has the highest accuracy, and Accuracy 7 has the greatest error. Accuracy will be applied in a way that it cannot be greater than 1/2 of the length of the shorter trajectory of both trajectories of the target step. In other words, you can apply the expression "Accuracy ≤ min\(P1-P2, P2-P3\) / 2" in the example above. In this expression, the TCP distance is used for explanation, but the same concept can be applied to the angle.
 
@@ -1608,7 +1608,7 @@ In the case of a robot, the value of the applicable accuracy level will be defin
 
 The figure below shows how the cornering path is created according to the value of the accuracy level. If there is a general 6-axis articulated robot and an additional axis, the value of accuracy level can be set individually for TCP \(tooltip distance\), ORN \(position angle\), and AUX \(additional axis distance\). Because all the values of relevant accuracy levels should be satisfied, the cornering path will be created based on the smallest value among TCP, ORN, and AUX. The cornering path will be created in a constant curve, regardless of the speed variation, while satisfying the convex hull property. However, errors of several millimeters \(mm\) may occur at low speed and high speed because of servo delay.
 
-![Figure 19 Creation of the Cornering Path According to the Value of Accuracy Level](../../../_assets/image_79.png)
+![Creation of the Cornering Path According to the Value of Accuracy Level](../../../_assets/image_79.png)
 
 {% hint style="info" %}
 The mode of creating the cornering path according to the value of accuracy level will be applied to all types of interpolation in the same manner. In the case of P interpolation, the TCP distance accuracy will be applied, but errors may occur.
@@ -1616,7 +1616,7 @@ The mode of creating the cornering path according to the value of accuracy level
 
 The cornering path will not exceed the convex polygon area because of the convex hull property, as shown below.
 
-![Figure 20 All Points on the Cornering Path within the Convex Polygon Area](../../../_assets/image_87.png)
+![All Points on the Cornering Path within the Convex Polygon Area](../../../_assets/image_87.png)
 
 
 [__SOURCE](2-operation/3-step/1-step-cmd-param/5-tool-no.md)
@@ -1633,7 +1633,7 @@ When the conditional expression "after until" is satisfied, the robot stops movi
 
 The value of the conditional expression "after until" can be checked through the return value of the result \(\) function. You can check whether the move operation is terminated by a conditional expression.
 
-![Figure 21 Example of Stop Conditions](../../../_assets/image_46_1.png)
+![Example of Stop Conditions](../../../_assets/image_46_1.png)
 
 {% hint style="info" %}
 For details on the robot language, refer to the "[Robot Language Function Manual](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/README)."
@@ -1685,13 +1685,13 @@ Collaborative robots can be restricted by the soft limit because of their mechan
 * back: The tooltip of the robot is in the - direction on the X-axis of the robot coordinate system, meaning the rear. If this is not designated, the tooltip will be in the + direction, meaning the front. 
 * down: Relationship between the H-axis and V-axis. If this is designated, the result will be the bottom. If this is not designated, the result will be top.
 
-![Figure 23 Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../_assets/image_58_1.png)
+![Posture of the H and V Axes: Up \(Left\), Down \(Right\)](../../../_assets/image_58_1.png)
 
 
 
 * flip: Flip with the B-axis coordinate being a + value. If this is not designated, the result will be non-flip with a - value. The red arrow in the figure shows the direction of the top of the wrist axis.
 
-![Figure 24 Flip \(Left\) / Non-flip \(Right\) Posture](../../../_assets/image_75.png)
+![Flip \(Left\) / Non-flip \(Right\) Posture](../../../_assets/image_75.png)
 
 * `S (|S|>=180)`: The absolute value of the S-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
 * `B (|B|>=180)`: The absolute value of the B-axis angle is more than 180 degrees. If not designated, it will be less than 180 degrees.
@@ -1983,7 +1983,7 @@ Touch the `[user key]` button on the R button bar of the ${cont_model} teach pen
 
 
 
-![Figure 25 User key button allocation](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
+![User key button allocation](../../../_assets/tp630/user-bar/ubar-spotweld-cfg.png)
 
 Press the `ctrl` key and press the `user-key` button to open a configuraiton screen where you can adjust the layout of the user buttons.
 
@@ -2016,7 +2016,7 @@ The direction of the robot motion depends on the reference coordinate system. Th
 ![](../../_assets/tp630/sbar-joint-crdsys_eng.png)
 
 
-![Figure 26 Teach pendant jog keys](../../_assets/tp630/keypad-jog_eng.png)
+![Teach pendant jog keys](../../_assets/tp630/keypad-jog_eng.png)
 
 The motions of J7 and J8 keys are determined by how you set the robot model and additional axes. J7 in a 7-axes robot can be operated by the jog key assigned at R3 axis, the third axis. For other type robots,  you can operate the additional axes with jog keys, according to the mechanism setting.
 
@@ -2106,9 +2106,7 @@ For details on the robot's progress direction in relation to the jog keys, refer
 * 
   If you use your right hand, you can easily understand the operation of the robot in the robot coordinate system.
 
-  ![](../../_assets/crd-direction.png) 
-
-Figure 27 Coordinate System Direction \(Left\) / Rotation Direction \(Right\)
+  ![Coordinate System Direction \(Left\) / Rotation Direction \(Right\)](../../_assets/crd-direction.png) 
 
 * If you put the progress direction of the right index finger in the X direction of the robot coordinate system, while you stand on the back of the robot, the progress direction of the thumb becomes the Z direction, and the progress direction of the middle finger becomes the Y direction.
 * If you put the thumb of the right hand in the direction of the central axis of rotation, the direction of the other folded fingers becomes the + direction of the rotation direction.
@@ -2409,7 +2407,7 @@ For details on parameters, refer to "[2.3.1 Step Statement Parameters](../../2-o
 
 When you input a statement, basic setting values will be automatically inputted into the default parameters and can be changed. Optional parameters are marked with a symbol \( \_ \), and you can input the parameter values by selecting the parameters. Moreover, parameters that can be inputted will be displayed as buttons on the function button bar.
 
-![Figure 27 Editing a Command &#x2013; Inputting Parameter Values](../../_assets/tp630/pane-prog-move-option.png)
+![Editing a Command &#x2013; Inputting Parameter Values](../../_assets/tp630/pane-prog-move-option.png)
 
 When editing the command parameters, you can edit variables, expressions, and strings by using the operation keys on the teach pendant and the menu buttons on the bottom of the screen, or by using the soft keyboard.
 
@@ -2478,7 +2476,7 @@ When a statement is inputted using the `[REC]` key, the current posture of the r
 
 A statement consists of an address area and a statement area. 
 
-![Figure 28 Areas Comprising a Statement](../../_assets/tp630/pane-prog-section.png)
+![Areas Comprising a Statement](../../_assets/tp630/pane-prog-section.png)
 
 | No. | Area | Description |
 | :--- | :--- | :--- |
@@ -2487,7 +2485,7 @@ A statement consists of an address area and a statement area.
 
 You can move the cursor position between the address area and the statement area by pressing the `[←/→]` key on the teach pendant. Pressing the `[↓/↑]` key will allow you to move the cursor up and down between the lines within the selected area.
 
-![Figure 29 Moving the Cursor Between Areas \(Left: Address Area. Right: Statement Area\)](../../_assets/tp630/pane-prog-sectionchng.png)
+![Moving the Cursor Between Areas \(Left: Address Area. Right: Statement Area\)](../../_assets/tp630/pane-prog-sectionchng.png)
 
 
 
@@ -3208,7 +3206,7 @@ You can write a program in which the position of the S axis and the posture of t
 
 This function is useful when instructing two robots on the left and right to perform the same operation, such as welding the body of a vehicle. First, teach an operation to one robot and then open the program of the taught operation and convert it into a mirror image. Then, a program symmetrical to the S axis will be written.
 
-![Figure 32 Original Program \(Left\) / Program Converted Through Mirror Image \(Right\)](../../_assets/image_379.png)
+![Original Program \(Left\) / Program Converted Through Mirror Image \(Right\)](../../_assets/image_379.png)
 
 {% hint style="info" %}
 The mirror image function is not supported for collaborative robots.
@@ -3823,7 +3821,7 @@ In the panel selection window, touch `[Operation time]`. Then, the controller's 
 
 You can check the accumulated time and number of cycles for each operation of the controller created immediately after system initialization, power input, and the start of the recent cycle. You can initialize the operation information by touching the `[Clear]` button for each item at the bottom of the information.
 
-![Figure 41 Operation information](../../_assets/tp630/pane-operating_eng.png)
+![Operation information](../../_assets/tp630/pane-operating_eng.png)
 
 
 
@@ -3841,7 +3839,7 @@ You can check the history in which the execution log and time stamps of the job 
 
 
 
-![Figure 44 History](../../_assets/tp630/pane-history_eng.png)
+![History](../../_assets/tp630/pane-history_eng.png)
 
 [__SOURCE](6-monitoring/2-io/README.md)
 # 6.2 IO, PLC, Communication
@@ -3854,7 +3852,7 @@ In the panel selection window, touch `[System Input]`. Then, the input signal wi
 
 You can check the status of signals related to the robot operation and the status of the input signals preassigned to detect any abnormality that occurs to the robot and the controller.
 
-![Figure 37 System Input - ON/OFF,Value, Sequence status](../../_assets/tp630/pane-system-input_eng.png)
+![System Input - ON/OFF,Value, Sequence status](../../_assets/tp630/pane-system-input_eng.png)
 
 
 
@@ -3879,7 +3877,7 @@ You can check the signals related to the robot operation and check the status of
 
 
 
-![Figure 39 System Output - ON/OFF,Value, Sequence status](../../_assets/tp630/pane-system-output_eng.png)
+![System Output - ON/OFF,Value, Sequence status](../../_assets/tp630/pane-system-output_eng.png)
 
 * In the ON/OFF status and sequence status, the signals currently being outputted will be displayed in yellow.
 * In the sequence status, only the status of the controller sequence signals will be displayed.
@@ -3920,7 +3918,7 @@ Touch `[public Input]` in the panel selection window. Then, the public input sig
 
 You can check the status of public input signals that are inputted through the CNIN connector of the I/O board in the controller.
 
-![Figure 40 Public Input Signal - ON/OFF status (Left) / value (Right)](../../_assets/tp630/pane-univinsig-mode.png)
+![Public Input Signal - ON/OFF status (Left) / value (Right)](../../_assets/tp630/pane-univinsig-mode.png)
 
 <table>
   <thead>
@@ -3981,7 +3979,7 @@ Touch `[public Output]` in the panel selection window. Then, the public output s
 
 You can check the status of public output signals that are outputted through the CNOUT connector of the I/O board in the controller.
 
-![Figure 41 Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
+![Public Output Signal &#x2013; ON/OFF Status \(Left\) / Value Status \(Right\)](../../_assets/tp630/pane-univoutsig-mode_eng.png)
 
 <table>
   <thead>
@@ -4906,7 +4904,7 @@ In the panel selection window, touch `[program reserve]`. Then, the scheduled pr
 
 When programs are scheduled through external signals and executed in the scheduled order, you can check and change the status in the list of scheduled programs.
 
-![Figure 50 Program reserve](../../_assets/tp630/pane-prog-reserv_eng.png)
+![Program reserve](../../_assets/tp630/pane-prog-reserv_eng.png)
 
 <table>
   <thead>
@@ -5117,7 +5115,7 @@ In the panel selection window, touch `[Task monitor]`. Then, the task window wil
 
 You can check the operation cycle and execution time information for each task.
 
-![Figure 45 Task monitor](../../_assets/tp630/pane-task_eng.png)
+![Task monitor](../../_assets/tp630/pane-task_eng.png)
 
 <table>
   <thead>
@@ -5178,7 +5176,7 @@ Touch `[Sensor Sync]` in the panel selection window. Then, the sensor sync windo
 
 You can check the information related to the conveyor and press sync functions. The sensor sync function can be activated by setting the sync status as conveyor or press in the `[system  - 4: Application Parameter  - 4: Sensor Sync]` menu.
 
-![Figure 49 Sensor Sync Monitoring](../../_assets/tp630/pane-sensorsynch_eng.png)
+![Sensor Sync Monitoring](../../_assets/tp630/pane-sensorsynch_eng.png)
 
 <table>
   <thead>
@@ -5649,11 +5647,11 @@ When the robot is externally started up, the timing of reading the program selec
 
 * When the program strobe signal use is set as enable: If the program strobe signal is on while there is an external startup input, the program selection bit will be read, and the read value will be determined as the program number.
 
-![Figure 52 Diagram of the Selection of an External Program When the Program Strobe Signal is Set as \<Enable\>](../../../_assets/image_438.png)
+![Diagram of the Selection of an External Program When the Program Strobe Signal is Set as \<Enable\>](../../../_assets/image_438.png)
 
 * When the program strobe signal use is set as disable: After there is an external startup input, the program selection bit will be read, and if this value does not change for 90 ms, it will be determined as the program number.
 
-![Figure 53 Timing Chart for External Program Selection When the Program Strobe Signal is Set to \<Disable\>](../../../_assets/image_465.png)
+![Timing Chart for External Program Selection When the Program Strobe Signal is Set to \<Disable\>](../../../_assets/image_465.png)
 
 
 
@@ -5864,7 +5862,7 @@ Error/Warning output bit, Error/Warning output selection and Error/Warning outpu
 
 For the error/warning output bit, error/warning output strobe, overall abnormality, operation error, and warning occurrence signals, refer to the following sequence.
 
-![Figure 54 16Bit Output](../../../_assets/image_456.png)
+![16Bit Output](../../../_assets/image_456.png)
 
 #### External reset ack
 
@@ -6061,7 +6059,7 @@ The data is in binary format and determines whether the output will be on or off
 
 For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
 
-![Figure 55 Example of Job Program Execution](../../../_assets/image_429.png)
+![Example of Job Program Execution](../../../_assets/image_429.png)
 
 When the robot starts from S1 toward S2 and the accuracy of S2 is OK, the strobe signal will be outputted together with the signal of the designated group. The strobe signal will be turned off after 200 ms. \(The strobe signal is a pulse signal of 200 ms.\)
 
@@ -6132,7 +6130,7 @@ The data is in binary format and will be determined by the input on or off. For 
 
 For example, when a job program configured as the setting in the screen above is executed, the operation will be as follows.
 
-![Figure 56 Example of Job Program Execution](../../../_assets/image_407.png)
+![Example of Job Program Execution](../../../_assets/image_407.png)
 
 After starting from S1 toward S2, the robot executes the wait statement. If the wait condition is satisfied before the accuracy of S2 is ok, the robot will move to the path in red. If this is not the case, the robot will wait until the wait condition is satisfied.
 
@@ -6401,7 +6399,7 @@ The user coordinate system is a coordinate system that is to be set at a positio
 
 Teach three reference steps by following the procedures below. The following procedure explains when the step order is specified as "OXY" (O: origin pose, X: axis pose, Y: plane pose).
 
-![Figure 57 Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
+![Method of Teaching Three Reference Steps for Defining the User Coordinate System](../../../_assets/image_427.png)
 
 
 1.	Define the origin of the user coordinate system: Teach an arbitrary point.
@@ -6487,7 +6485,7 @@ A robot tool is a tool attached to the front end of the robot. In general, robot
 
 On the other hand, in the case of a stationary tool, the tool is attached to the outside, not the robot. In this case, the robot handles the workpiece and places it on an externally fixed tool to operate. A typical operation using a stationary tool is the sealing operation. Normally, in the sealing operation, when the external tool discharges a certain amount of solvent required for sealing, the robot holds the workpiece and creates the required trajectory to operate.
 
-![Figure 58 Example of a Sealing Operation](../../../_assets/tp630/stationary_crd_sealing_eng.png)
+![Example of a Sealing Operation](../../../_assets/tp630/stationary_crd_sealing_eng.png)
 
 To create the required trajectory, the robot performs linear \(L\) and circular \(C\) interpolations based on the externally attached tool, not based on the tool attached to itself. At this time, the stationary tool interpolation function will be used.
 
@@ -6541,7 +6539,7 @@ The method to set the stationary tool coordinate system is as follows.
 
 After accurately finding the TCP based on the robot base coordinate system, you should match the stationary tool and the robot tool, as shown in the figure below, and then execute the automatic setting function using the `[Current robot pose]` button. Then, the current TCP position will be registered.
 
-![Figure 59 Teaching Method Using the Auto Configuration](../../../_assets/tp630/stationary_crd_autoset_eng.png)
+![Teaching Method Using the Auto Configuration](../../../_assets/tp630/stationary_crd_autoset_eng.png)
 
 
 
@@ -6794,11 +6792,11 @@ The length of the tool is the length in each direction in the flange coordinate 
 
 
 
-![Figure 60 Flange Coordinate System for Each Robot Type](../../../_assets/image_213.png)
+![Flange Coordinate System for Each Robot Type](../../../_assets/image_213.png)
 
 The angle of the tool is the posture conversion amount in each direction in the flange coordinate system. \(Angle in X-axis direction: Rx / Angle in Y-axis direction: Ry / Angle in Z-axis direction: Rz\)
 
-![Figure 61 Tool Angle: Rotating Rx \(Left\) / Rotating Ry \(Middle\) / Rotating Rz \(Right\)](../../../_assets/image_211.png)
+![Tool Angle: Rotating Rx \(Left\) / Rotating Ry \(Middle\) / Rotating Rz \(Right\)](../../../_assets/image_211.png)
 
 The length and angle of the tool will be set based on the flange coordinate system. The tool length can be set as the distance from the center of the flange coordinate system to the TCP.
 
@@ -6931,7 +6929,7 @@ The allowable ratio can be changed depending on the robot model and controller s
 
 The availability of High Load Mode may vary depending on the robot model. In general, high load mode is supported on medium-sized robots with a payload capacity of 100 kg or more.<br> For models that support high load mode, you can configure "4. High load mode" as shown in the figure below in `[F2: system] - 3: Robot Parameter - 33: Servo parameter - 9: Servo control environment` menu.<br> For models that support high load mode, auto apply is the default setting.
 
-![Figure 63 High Load Mode Setting Screen](../../../_assets/image_high_load_mode_setting_eng.png)
+![High Load Mode Setting Screen](../../../_assets/image_high_load_mode_setting_eng.png)
 
 | Setting Value | Operating Characteristics |
 | :--- | :--- |
@@ -6941,7 +6939,7 @@ The availability of High Load Mode may vary depending on the robot model. In gen
 
 The high load mode application status based on the currently applied tool load can be checked as shown in the figure below.<br>
 
-![Figure 64 Check high load mode application status based on tool load](../../../_assets/home_tool_no_eng.png)
+![Check high load mode application status based on tool load](../../../_assets/home_tool_no_eng.png)
 
 
 ![Normal Mode Tool (regular font)](../../../_assets/tp630/normal_mode_tool_eng.png) : Nomal Mode (regular font)
@@ -7315,7 +7313,7 @@ If the robot has an additional weight because a transformer or wiring support is
 
 The X, Y, and Z directions of each axis are set in the same direction as the robot coordinate system. Refer to the following about the coordinate system origin of each axis.
 
-![Figure 62 Coordinate System Origin of Each Axis for Each Robot Configuration ](../../../_assets/image_476.png)
+![Coordinate System Origin of Each Axis for Each Robot Configuration ](../../../_assets/image_476.png)
 
 
 [__SOURCE](7-system/4-robot-parameter/8-collision-detection/README.md)
@@ -7561,13 +7559,13 @@ The inching function is a function that does not allow the movement to take plac
 
 Even after reaching the inching distance, if you keep pressing the jog key and then release your hand, the robot will decelerate to the inching distance, and then stop.
 
-![Figure 63 When Releasing the Key After Reaching the Inching Distance](../../../_assets/image_488.png)
+![When Releasing the Key After Reaching the Inching Distance](../../../_assets/image_488.png)
 
 
 
 If you release the jog key before reaching the inching distance, the robot will decelerate, starting from the time you release the jog key, and then stop. At this time, the mode will be the same as the general jog mode.
 
-![Figure 64 When Releasing the Hand Before Reaching the Inching Distance](../../../_assets/image_473.png)
+![When Releasing the Hand Before Reaching the Inching Distance](../../../_assets/image_473.png)
 
 {% hint style="info" %}
 In the joint coordinate system, the speed level 1 is fixed to a mode that the robot will move by 1 bit of the encoder.
@@ -8620,7 +8618,7 @@ The optimization of axis origin and tool length is a function to calibrate the o
 
 Prepare two pointed tips. Fix one on the outside and the other on the tool. Then, while changing only the posture of the tooltip of the robot based on the outside fixed tip, you need to record several points using the robot program. At this time, you need to teach seven points to find the axis origin and tool length, and four points or more to find only the tool length.
 
-![Figure 67 Method of Teaching for the Axis Origin and Tool Length Optimization Function](../../_assets/image_228.png)
+![Method of Teaching for the Axis Origin and Tool Length Optimization Function](../../_assets/image_228.png)
 
 {% hint style="info" %}
 * Starting from version V70.02-00, the axis origin optimization function will no longer be supported for general users. If you would like to change the axis origin in later versions, please contact our customer support team to ask an expert or an engineer.
@@ -8723,7 +8721,7 @@ Using the positioner calibration function makes it possible to compensate for th
 
 You can simply set the positioner's coordinate system by performing the positioner calibration by teaching three points for a 1-axis positioner and five points for a 2-axis positioning.
 
-![Figure 68 1-Axis Positioner \(Left\) / 2-Axis Positioner \(Right\)](../../_assets/image_244.png)
+![1-Axis Positioner \(Left\) / 2-Axis Positioner \(Right\)](../../_assets/image_244.png)
 
 The information on the main functions of the positioner calibration is as follows.
 
@@ -8754,7 +8752,7 @@ If the CAD data contains the physical properties information of the tool, you ca
 
 The tool data setting information is as follows.
 
-![Figure 70 Tool Data](../../_assets/image_505.png)
+![Tool Data](../../_assets/image_505.png)
 
 * `[Weight]`: The total weight \(kg\) of the tool installed at the front end of the robot
 * `[Center]`: The distance \(mm\) in the x, y, z directions from the center of the robot flange face to the position of the center of gravity of the tool
@@ -8765,7 +8763,7 @@ The tool data setting information is as follows.
 
 However, in many cases, it is difficult to determine the physical properties of the tool such as mass, inertia, and center of gravity of the tool from CAD data. At this time, you can check the physical properties of the tool using the load estimation function in the robot controller.
 
-![Figure 71 Load Estimation Function](../../_assets/tp630/system-calib-load_eng.png)
+![Load Estimation Function](../../_assets/tp630/system-calib-load_eng.png)
 
 1.	Touch the `[6: Auto Calibration  - 4: Load Estimation Function]` menu.
 
@@ -8806,7 +8804,7 @@ It is almost impossible to install the base axis to exactly match one direction 
 
 After the robot is installed on the base axis, this function makes it possible to perform position interpolation by finding the direction vector of any base axis on which the robot is installed.
 
-![Figure 72 Base Axis Calibration](../../../_assets/image_497.png)
+![Base Axis Calibration](../../../_assets/image_497.png)
 
 
 In general, the base axis is used to move the robot to the operation position. In special cases, the base axis can also be used in a case in which a linear trajectory should be guaranteed while the robot is moving on the base axis.
@@ -8885,7 +8883,7 @@ In general, the base axis is used to move the robot to the operation position. I
 
 If you jog the base axis after performing base axis calibration, the distance traveled in the created direction vector of the base axis will be converted into the current coordinate value.
 
-![Figure 73 Operation After Calibration of the Base Axis](../../../_assets/image_528.png)
+![Operation After Calibration of the Base Axis](../../../_assets/image_528.png)
 
 1.	Touch the `[+]` button at the top right of the panel stack in the work area, and then touch `[Pose]` in the panel selection window.
 
@@ -8905,7 +8903,7 @@ The ${cont_model} controller is based on dynamics, so it is important to set the
 
 In general, the robot installation direction is perpendicular to the gravity direction as follows. If the robot is installed obliquely to the ground, the gravity direction should be set in the robot controller. At this time, you can use the automatic gravity direction setting function.
 
-![Figure 74 Gravity Direction of the Robot Placed on a Floor \(Left\) / Gravity Direction of the Robot Placed on a Slope \(Right\)](../../_assets/image_507.png)
+![Gravity Direction of the Robot Placed on a Floor \(Left\) / Gravity Direction of the Robot Placed on a Slope \(Right\)](../../_assets/image_507.png)
 
 
 
@@ -9688,7 +9686,7 @@ When teaching a job program for a welding operation, you should set the arc weld
 
 If you use the `[property]` button the L button bar of the ${cont_model} teach pendant screen, you can quickly and easily set the conditions and check the position simply by a single button operation.
 
-![Figure 75 Function for the `[Attributes]` Button](../_assets/tp630/lbt-property-arc_eng.png)
+![Function for the `[Attributes]` Button](../_assets/tp630/lbt-property-arc_eng.png)
 
 For example, if you touch the `[property]` button while the cursor is on the 'arcon' statement that is for the Arc On function, the contents of the condition number used in the current statement among the welding start conditions will be displayed. On the screen, you can check or change the details of the welding start conditions. Moreover, if there is another condition file associated with the concerned condition file, you can move directly to it. In other words, the `[property]` button allows you to check and change the details of the contents related to a specific statement such as condition file or step position quickly and easily.
 
@@ -9970,7 +9968,7 @@ You can edit the pose variable value in the move statement, including the pose v
 
 When writing the SPOT command while writing the program, if you place the cursor on the spot welding function position in manual mode and touch the `[property]` button, then the `[1: Spot Welding]` menu will be highlighted in the application parameter setting menu screen. Using the spot welding function, you can quickly modify the contents of the welding conditions and also of the welding sequence when performing spot welding.
 
-![Figure 76 Spot Welding Function](../_assets/tp630/app-spot-menu_eng.png)
+![Spot Welding Function](../_assets/tp630/app-spot-menu_eng.png)
 
 {% hint style="info" %}
 * You can use the spot welding function by touching the `[system]` button  - `[4: Application Parameter  - 1: Spot Welding]`.
