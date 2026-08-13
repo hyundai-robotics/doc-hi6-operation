@@ -52,7 +52,7 @@
       <td style="text-align:left">
         산업용 통신
       </td>
-      <td style="text-align:left">산업용 통신(cifX 카드) 설정의 초기화 여부입니다.
+      <td style="text-align:left">산업용 통신(cifX 카드) 설정의 초기화 여부입니다. (V70.04-00부터 초기화 지원됩니다.)
       </td>
     </tr>
     <tr>
