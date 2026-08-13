@@ -50,6 +50,13 @@
     </tr>
     <tr>
       <td style="text-align:left">
+        산업용 통신
+      </td>
+      <td style="text-align:left">산업용 통신(cifX 카드) 설정의 초기화 여부입니다.
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
         안전 파라미터
       </td>
       <td style="text-align:left">안전 파라미터로 설정된 정보의 초기화 여부입니다.
