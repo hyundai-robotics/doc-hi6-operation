@@ -51,6 +51,13 @@
     </tr>
     <tr>
       <td style="text-align:left">
+        Industrial comm.
+      </td>
+      <td style="text-align:left">Whether to initialize all settings of industrial communication(cifX card).
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
         Safety parameter
       </td>
       <td style="text-align:left">Whether to initialize safety parameter settings.
