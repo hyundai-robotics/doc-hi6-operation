@@ -53,7 +53,7 @@
       <td style="text-align:left">
         Industrial comm.
       </td>
-      <td style="text-align:left">Whether to initialize all settings of industrial communication(cifX card).
+      <td style="text-align:left">Whether to initialize all settings of industrial communication(cifX card). (Initialization is supported from V70.04-00)
       </td>
     </tr>
     <tr>
