@@ -13,7 +13,9 @@ You can set various conditions of the controller and perform necessary operation
   While the power saving function is used, if the robot is in operation stop status while in the auto mode for a long period, such as waiting for startup or waiting for an input signal, the power supply to the motor will be cut off when the wait time has expired, helping save power consumption. When an operation command is inputted in the robot, the power saving function will be automatically deactivated, allowing the power to be supplied to the motor and the robot to operate.
 
 {% hint style="info" %}
-Delays may occur in the process of activating/deactivating the power-saving function. When operating while expecting the speed of the robot, you should set the power saving function as disable.
+- Delays may occur in the process of activating/deactivating the power-saving function. When operating while expecting the speed of the robot, you should set the power saving function as disable.  
+- Power saving function is disabled when cooperative control or conveyor synchronization is in use.  
+
 {% endhint %}
 
 
