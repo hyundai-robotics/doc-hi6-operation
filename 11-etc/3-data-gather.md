@@ -2,7 +2,7 @@
 
 This screen allows you to configure settings for acquiring data from the robot and sensors.
 - After accessing Engineering Mode, you can configure the gathering options under [Service] - [16: Data Collection].
-- Data can be collected using the gather statement.
+- Data can be collected using the [gather](https://hrbook-hrc.web.app/#/view/doc-hrscript/en/10-etc/1-proc/1-gather?cont_model=${cont_model}) statement.
 
 ### Data Acquisition Method
 - Collected result files can be saved with the .GDT extension.
