@@ -8108,6 +8108,13 @@ Some items in the `[Initialize]` menu will be supported only when a specific typ
     </tr>
     <tr>
       <td style="text-align:left">
+        Industrial comm.
+      </td>
+      <td style="text-align:left">Whether to initialize all settings of industrial communication(cifX card). (Initialization is supported from V70.04-00)
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
         Safety parameter
       </td>
       <td style="text-align:left">Whether to initialize safety parameter settings.
@@ -10343,6 +10350,21 @@ When keypad mode is activated, the corresponding control keys for each button ar
 
 ![](../_assets/tp630/keypad-mode-F_eng.png)
 
+[__SOURCE](11-etc/3-data-gather.md)
+# 11.3 Data Gathering
+
+This screen allows you to configure settings for acquiring data from the robot and sensors.
+- After accessing Engineering Mode, you can configure the gathering options under [Service] - [16: Data Collection].
+- Data can be collected using the gather statement.
+
+### Data Acquisition Method
+- Collected result files can be saved with the .GDT extension.
+- GDT files can be found in the gather folder under the Toggle root directory.
+- Enter the options you want to gather into Edit Boxes 1–12.
+  - The available options can be checked in the Help menu.
+- Sampling Time: The sampling interval can be configured starting from 0.2 ms.
+
+![](../_assets/tp630/gather_data.png)
 [__SOURCE](appendices/README.md)
 # Appendices
 
