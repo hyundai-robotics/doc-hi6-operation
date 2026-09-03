@@ -8518,6 +8518,7 @@ The procedure to change the currently configured axis synchronization pair is as
 * Do not use this function together with the Synchronized group jogging function.
 * Verify that the step pose values in the Job file are implemented with axis synchronization in mind.
 * Be aware that changing settings during axis synchronization operation will affect the Cartesian coordinate system.
+* Verify that the Synchronized axes are on the same board.
 {% endhint %}
 
 [__SOURCE](7-system/6-initialization/8-axis-lock/README.md)
