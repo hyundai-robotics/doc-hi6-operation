@@ -64,3 +64,5 @@ For instance, the eighth signal corresponds to bit 0 of byte 1 and is simply des
   * Because the emergency switch and mode conversion switch are separately connected through a signal wire to the teach pendant, you must appropriately wire this signal wire. 
 
   * Connect CNRTP connector pin #9 (Auto) to #2 (M1) and pin #5 (Emergency stop 1) to #2 (M1), and use the exclusive CNRTP connector with pin #6 (Emergency stop 2) connected to #1 (P1) instead of the teach pendant.
+
+* `[10: Power on program]` : Upon completion of the controller's boot process, the system automatically executes the setting program up to its 'end' command. If you wish to initialize global variable values ​​during startup, you can write a separate program for this purpose and set its program number; this ensures the initialized values ​​are used each time the system boots. (Supported in version V70.04-00 or later.)
