@@ -14,7 +14,10 @@ In general, the base axis is used to move the robot to the operation position. I
 * When two robots with the base axis calibrated deliver the workpiece \(multi-robots will be supported in the future\)
 * When you need to perform interpolation while operating the base axis
 
-
+{% hint style="info" %}
+* We support two base axis calibration methods. The first is \[Teaching based Base Axis Calibration\], where the user manually records reference points. The second is \[Sensor based Base Axis Calibration\], which uses a laser tracker to measure reference points. Please select the appropriate method for your environment.
+* The \[Sensor based Base Axis Calibration\] feature is supported from version V70.06-00 and later.
+{% endhint %}
 
 
 

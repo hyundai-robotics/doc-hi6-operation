@@ -12,13 +12,12 @@
 
 {% hint style="info" %}
 * When the system is initialized, the additional axis setting menu will appear, allowing you to perform the initial setting of the base axis.
-* 
-  The additional axis parameter setting menu is a function for engineers, so it will not be supported for general users. For details on the additional axis parameter setting menu, contact the engineer for inquiry.
+* The additional axis parameter setting menu is a function for engineers, so it will not be supported for general users. For details on the additional axis parameter setting menu, contact the engineer for inquiry.
 {% endhint %}
 
 {% hint style="warning" %}
-* You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. 
-* Do not set the axis configuration as any for the other base axes except for the first base axis.
-* Base axis calibration is available only when the base axis configuration is any.
+* Base axis calibration is available only when the base axis configuration is set to Any.
+* For \[Teaching based Base Axis Calibration\], the calibration feature can only be used for the first base axis. Set the axis configuration to Any for the first base axis, and do NOT set it to Any for any remaining base axes.
+* \[Sensor based Base Axis Calibration\] applies the calibration feature to all base axes. Set the axis configuration to Any for all base axes.
 {% endhint %}
 

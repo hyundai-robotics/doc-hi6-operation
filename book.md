@@ -8824,7 +8824,10 @@ In general, the base axis is used to move the robot to the operation position. I
 * When two robots with the base axis calibrated deliver the workpiece \(multi-robots will be supported in the future\)
 * When you need to perform interpolation while operating the base axis
 
-
+{% hint style="info" %}
+* We support two base axis calibration methods. The first is \[Teaching based Base Axis Calibration\], where the user manually records reference points. The second is \[Sensor based Base Axis Calibration\], which uses a laser tracker to measure reference points. Please select the appropriate method for your environment.
+* The \[Sensor based Base Axis Calibration\] feature is supported from version V70.06-00 and later.
+{% endhint %}
 
 
 
@@ -8844,19 +8847,24 @@ In general, the base axis is used to move the robot to the operation position. I
 
 {% hint style="info" %}
 * When the system is initialized, the additional axis setting menu will appear, allowing you to perform the initial setting of the base axis.
-* 
-  The additional axis parameter setting menu is a function for engineers, so it will not be supported for general users. For details on the additional axis parameter setting menu, contact the engineer for inquiry.
+* The additional axis parameter setting menu is a function for engineers, so it will not be supported for general users. For details on the additional axis parameter setting menu, contact the engineer for inquiry.
 {% endhint %}
 
 {% hint style="warning" %}
-* You can use the calibration function only for the first base axis, and you can set the axis configuration as any when setting the additional axis parameter. 
-* Do not set the axis configuration as any for the other base axes except for the first base axis.
-* Base axis calibration is available only when the base axis configuration is any.
+* Base axis calibration is available only when the base axis configuration is set to Any.
+* For \[Teaching based Base Axis Calibration\], the calibration feature can only be used for the first base axis. Set the axis configuration to Any for the first base axis, and do NOT set it to Any for any remaining base axes.
+* \[Sensor based Base Axis Calibration\] applies the calibration feature to all base axes. Set the axis configuration to Any for all base axes.
 {% endhint %}
 
 
-[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/2-base-axis-calib-prog-teach.md)
-# 7.7.4.2 Base Axis Calibration Program Teaching
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/2-base-axis-calib-teach.md)
+# 7.7.4.2 Teaching based Base Axis Calibration
+
+{% hint style="info" %}
+* This section covers the \[Teaching based Base Axis Calibration\] feature. For details on the \[Sensor based Base Axis Calibration\] feature, please refer to the next page.
+{% endhint %}
+
+#### Base Axis Calibration Program Teaching
 
 1.	Make a reference point in space, and then record the first reference point.
 
@@ -8866,22 +8874,16 @@ In general, the base axis is used to move the robot to the operation position. I
 
 ![](../../../_assets/image_526.png)
 
-
-
 {% hint style="warning" %}
 * Teach the travel axis calibration program using a tool for which robot calibration \(optimization of the axis origin and tool length\) has been completed.
-* 
-  When recording a step, record it using a tool number for base axis calibration.
+* When recording a step, record it using a tool number for base axis calibration.
 
-* 
-  Record the position by setting the moving distance of the base axis between recording steps as far as possible.
+* Record the position by setting the moving distance of the base axis between recording steps as far as possible.
 {% endhint %}
 
+#### Base Axis Calibration Execution
 
-[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/3-base-axis-calib-exec.md)
-# 7.7.4.3 Base Axis Calibration Execution
-
-1.	Touch the `[6: Auto Calibration  - 6: Base Axis Calibration]` menu.
+1.	Touch the `[6: Auto Calibration  - 6: Base Axis Calibration - 1: Sensor based Calibration]` menu.
 
 2.	After inputting the program number for the base axis calibration, touch the `[Auto Setting]` button.
 
@@ -8889,9 +8891,7 @@ In general, the base axis is used to move the robot to the operation position. I
 
 3.	After checking the installation direction vector value of the base axis, touch the `[OK]` button.
 
-
-[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/4-operation-after-base-calib.md)
-# 7.7.4.4 Operation After Base Axis Calibration
+#### Operation After Base Axis Calibration
 
 If you jog the base axis after performing base axis calibration, the distance traveled in the created direction vector of the base axis will be converted into the current coordinate value.
 
@@ -8906,8 +8906,88 @@ If you jog the base axis after performing base axis calibration, the distance tr
 {% hint style="warning" %}
 Set the jog coordinate system as the tool coordinate system and jog the base axis to check whether the base axis is properly calibrated. If the tooltip fixing operation is executed, it means that the base axis has been properly calibrated.
 {% endhint %}
+[__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/3-base-axis-calib-sensor.md)
+# 7.7.4.3 Sensor based Base Axis Calibration
+
+{% hint style="info" %}
+
+* This section covers the **[Sensor based Base Axis Calibration]** feature. This feature is supported from version V70.06-00 and later.
+{% endhint %}
+
+![](../../../_assets/system-baseCalibSensor-config-Eng.png)
+
+#### Teaching Calibration Program and Measuring Data
+
+1. Install the laser tracker in a position where various poses of the robot and base axes can be measured.
+
+2. Set the sensor coordinate system of the laser tracker to the desired position and orientation. This coordinate system will be used as the base coordinate system of the controller. Set the position and orientation of the coordinate system for easy robot control.
+
+3. With all base axes located at their origins, move the robot through various positions and poses to measure 20 or more positions, and record these positions into a program.
+
+    * When doing so, record the initial 3 positions with a fixed orientation such that they do not lie on a single straight line.
+
+    * Generally, a larger amount of measurement data allows for more accurate calibration.
 
 
+{% hint style="warning" %}
+* Saving the calibration results may alter the tool length associated with the tool number used for program recording. Select a tool number where changing the tool length is acceptable when recording the program.
+{% endhint %}
+
+4. With the robot fixed, move only the base axes to measure positions and record them into the program.
+
+    * Do NOT move two or more base axes simultaneously.
+
+    * Measure and record at least 5 positions per base axis.
+
+    * Measurement and recording for a single base axis must be done continuously without interspersing positions from other base axes. <br> If recorded positions for multiple base axes are mixed alternately in the program, calibration cannot be performed properly.
+
+    * Additionally, the number of recorded positions must not exceed 30 per axis, and the total number of recorded positions must not exceed 100.
+
+
+5. Organize the measured position data in X, Y, Z format to create a file (Format: ASCII, Extension: MSR, Unit: mm).
+
+![](../../../_assets/system-baseCalibSensor-msr.png)
+
+#### Executing Calibration
+1. After saving the position data file into a removable storage device, connect the removable storage device to the teach pendant. The `[USB]` icon (![](../../../_assets/icon-usb2.png)\) will appear in the status bar of the ${cont_model} teach pendant screen.
+
+2. Touch `6: Auto Calibration > 6: Base Axis Calibration > 2: Sensor based Calibration`.
+
+3. Touch the `[Explorer]` button <img src="../../../_assets/c1.png" alt/> to select the position data file, and then select the robot program used for measurement.
+
+4. Touch the `[OK]` button <img src="../../../_assets/c2.png" alt/>. The screen will switch to the Sensor based Calibration execution screen.
+
+![](../../../_assets/system-baseCalibSensor-ExplorerOK-Eng.png)
+
+5. On the Sensor based Calibration execution screen, select whether to calibrate the reduction ratio. Enabling this feature will update the reduction ratio of the base axis after calibration.
+
+6. Touch the `[Execute]` button <img src="../../../_assets/c3.png" alt/> on the Sensor based Calibration execution screen. After optimizing parameters for a moment, the calibration results will appear.
+
+7. Check the calibration results, then touch the `[OK]` button <img src="../../../_assets/c4.png" alt/>.
+
+![](../../../_assets/system-baseCalibSensor-ExecuteOk-Eng.png)
+
+8. A message will appear asking whether to save the calibration result values. If saved, the tool length for the tool number used in the program and the base axis reduction gear ratio will be modified. Verify and save the settings.
+
+9. In Pose Monitoring, the X, Y, Z values of the Cartesian coordinate system will be output with respect to the set base coordinate system.
+
+![](../../../_assets/system-baseCalibSensor-Result-Eng.png)
+
+#### Verification After Calibration
+
+1. If calibration was performed normally and saved, the X, Y, Z values of the Cartesian coordinate system in Pose Monitoring must match the laser tracker's measured values. Move the robot and base axes to an arbitrary position, then measure the position with the laser tracker. Check whether the measured values match the coordinate values in Pose Monitoring. It is normal if the difference between the measured values and the Pose Monitoring coordinate values is within 3 mm.
+
+2. You can also verify whether the base axis calibration was successful by setting the jog coordinate system to the Tool Coordinate System and jog operating the base axis. If only the base axis moves while the tool tip remains fixed in position, the base axis calibration has been performed normally.
+
+#### Restoring Calibration Data
+
+When Sensor based Base Axis Calibration is executed and the results are saved, the calibration data is backed up separately as a base_axis_calibration.json file in the /ata0:2/lib/hi6/backup/ path. <br> If calibration data is lost due to operations such as system initialization, it can be restored using the backed-up file. (Note: Restoration is not possible if encoder data was initialized by performing a serial encoder reset.)
+
+1. The "Restore" button is enabled if the base_axis_calibration.json file exists in the /ata0:2/lib/hi6/backup/ path.
+
+2. After performing restoration, restarting the power will apply the previously performed base axis calibration data. Note that tool length data will not be restored.
+
+![](../../../_assets/system-baseCalibSensor-Restore-Eng.png)
 [__SOURCE](7-system/7-auto-calibration/5-gravity-direction-auto-set.md)
 # 7.7.5 Gravity Direction Auto Setting
 
