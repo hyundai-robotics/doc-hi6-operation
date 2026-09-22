@@ -9,7 +9,7 @@
 
 This function finds the optimal gain by moving the additional axis within the range set by the user. And it can be used when the additional axis does not have a proper gain set, resulting in noise or poor control performance.
 
-![alt text](../../_assets/회전축.gif)
+![](../../_assets/회전축.gif)
 
 
 
