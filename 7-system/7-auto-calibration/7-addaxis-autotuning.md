@@ -1,15 +1,16 @@
 ﻿# 7.7.7 Additional Axis Autotuning
 
 * Available from version V60.28-00.
+* Autotuning is not supported for servoguns.
+
 </br>
 
 ### A. Overview
 
 This function finds the optimal gain by moving the additional axis within the range set by the user. And it can be used when the additional axis does not have a proper gain set, resulting in noise or poor control performance.
 
-| ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
-|---|---|
-| Linear axis motion | Circular axis motion |
+![alt text](../../_assets/회전축.gif)
+
 
 
 ### B. Tuning Description
