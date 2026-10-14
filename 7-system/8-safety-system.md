@@ -21,5 +21,5 @@ For detailed information on 1: Basic Settings, 2: Parameter Settings, 3: Monitor
 {% endhint %}
 
 {% hint style="info" %}
-For detailed information on the Safety Radar, refer to the "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)".
+For detailed information on the Safety Radar, refer to the "[Radar Object Detection System](https://hrbook-hrc.web.app/#/view/doc-Object-Detection-System/en/README?cont_model=${cont_model})".
 {% endhint %}

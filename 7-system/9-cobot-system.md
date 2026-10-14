@@ -18,5 +18,5 @@ This function is supported from the Hi7 controller.
 ![](../_assets/tp630/system-cobot-menu.png)
 
 {% hint style="info" %}
-For detailed information on the Collaborative Robot System, refer to the  "[Safety Function Manual for Collaborative Robot](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/en/README)".
+For detailed information on the Collaborative Robot System, refer to the  "[Function Manual for Collaborative Robot - HDC Series](https://hrbook-hrc.web.app/#/view/doc-cobot-operation/en/README?cont_model=${cont_model})".
 {% endhint %}
