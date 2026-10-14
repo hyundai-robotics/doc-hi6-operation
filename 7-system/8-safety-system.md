@@ -21,5 +21,5 @@
 {% endhint %}
 
 {% hint style="info" %}
-안전 레이더에 대한 자세한 관한 내용은  "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)"을 참고하십시오.
+안전 레이더에 대한 자세한 관한 내용은  "[레이더 객체 감지 시스템](https://hrbook-hrc.web.app/#/view/doc-Object-Detection-System/ko/README?cont_model=${cont_model})"을 참고하십시오.
 {% endhint %}

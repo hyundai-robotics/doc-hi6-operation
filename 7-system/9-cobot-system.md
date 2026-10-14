@@ -18,5 +18,5 @@
 ![](../_assets/tp630/system-cobot-menu.png)
 
 {% hint style="info" %}
-협동로봇 시스템에 대한 자세한 관한 내용은  "[협동로봇 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/ko/README)"을 참고하십시오.
+협동로봇 시스템에 대한 자세한 관한 내용은  "[협동로봇 기능 설명서 - HDC 시리즈](https://hrbook-hrc.web.app/#/view/doc-cobot-operation/ko/README?cont_model=${cont_model})"을 참고하십시오.
 {% endhint %}
