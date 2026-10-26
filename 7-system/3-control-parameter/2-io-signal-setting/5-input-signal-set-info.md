@@ -108,3 +108,9 @@ This function is used to turn on the motor from an external operation panel.
 
 This function is used to turn off the motor from an external operation panel.
 
+
+
+#### Disable Manual Operation
+
+This is an input signal that determines whether to disable jog operation and step forward/reverse operation in manual mode.
+
