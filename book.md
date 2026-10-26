@@ -5724,6 +5724,12 @@ This function is used to turn on the motor from an external operation panel.
 This function is used to turn off the motor from an external operation panel.
 
 
+
+#### Disable Manual Operation
+
+This is an input signal that determines whether to disable jog operation and step forward/reverse operation in manual mode.
+
+
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/6-output-signal-assign.md)
 # 7.3.2.6 Output Signal Assignment
 
@@ -6432,34 +6438,62 @@ The method to register the user coordinate system by designating the taught prog
 1. Touch the `[2: Control Parameter  - 6: Coordinate System Registration  - 1: User Coordinate System]` menu.
 
 2. Go to the user coordinate system you want to register (you can create it with the "+" button).
-3. After specifying the program number and step order, press the [F1:JOB Calculation] button.
-4. The position of the calculated user coordinate system origin is displayed.
+3. After specifying the program number, step order and reference coordinate system, touch the [calc. from job] button.
+4. The calculated origin position and angles of the user coordinate system are displayed.
 
     ![](../../../_assets/tp630/ctrl-user-coord_eng.png)
 
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">No.</th>
-      <th style="text-align:left">Description</th>
+      <th style="text-align: left;">No.</th>
+      <th style="text-align: left;">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align_assets">
-        <img src="../../../_assets/c1.png" alt/>
+      <td style="text-align: left;">
+        <img src="../../../_assets/c1.png" alt />
       </td>
-      <td style="text-align:left">Detailed information on the coordinate system selected from the user coordinate
-        system list. You can set the coordinate system name and description, the
-        taught program number, step order and the origin pose based on base axis origin.</td>
+      <td style="text-align: left;">
+        Detailed information on the coordinate system selected from the user coordinate system list.<br />
+        You can set the coordinate system name and description, the taught program number, step order, reference coordinate system and origin position.
+        <ul>
+          <li><b>[Step order]</b>: Specifies the order of the steps used to define the position and orientation of the user coordinate system.<br />
+            &lt;Origin&gt;&lt;Axis direction&gt;&lt;Coordinate plane&gt;<br />
+            The first step specifies the origin position of the user coordinate system.<br />
+            The second step specifies the direction from the origin along the axis designated in [Step order].<br />
+            The third step specifies an arbitrary point on the plane designated in [Step order] to define that plane.</li>
+          <li><b>[Ref Frame]</b>: Specifies the reference coordinate system used to define the position and orientation of the user coordinate system.<br />
+            Supported in V70.06-00 and later.
+            <ul>
+              <li><b>[BASE]</b>: Defines the position of the user coordinate system in the base coordinate system. The user coordinate system remains fixed even when the robot or additional axes move.</li>
+              <li><b>[ROBOT]</b>: Defines the position of the user coordinate system in the robot coordinate system. When the travel axis moves, the absolute position of the user coordinate system moves with the robot.</li>
+              <li><b>[POSITIONER]</b>: Defines the position of the user coordinate system in the positioner coordinate system corresponding to the specified positioner number. The user coordinate system moves with the positioner.</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td style="text-align_assets">
-        <img src="../../../_assets/c2.png" alt/>
+      <td style="text-align: left;">
+        <img src="../../../_assets/c2.png" alt />
       </td>
-      <td style="text-align:left">
+      <td style="text-align: left;">
+        Calculates the position of the user coordinate system from the specified job.<br /><br />
+        Enter the taught program number in [Job no.], specify [Step order] and [Ref Frame], and then touch the [calc. from job] button. The origin position and angles of the user coordinate system are calculated and updated on the screen.
         <ul>
-          <li>`[OK]`: You can save the changes.</li>
+          <li><b>[calc. from job]</b>: Calculates the user coordinate system based on the taught program, step order and reference coordinate system information.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">
+        <img src="../../../_assets/c3.png" alt />
+      </td>
+      <td style="text-align: left;">
+        <ul>
+          <li><b>[OK]</b>: You can save the changes.</li>
           <li><b>[+]/[-]</b>: You can add a new user coordinate system or delete a user
             coordinate system.</li>
           <li>A list of user coordinate systems. Selecting the coordinate system name
@@ -6470,11 +6504,6 @@ The method to register the user coordinate system by designating the taught prog
             from the list, and then touching the <b>[Copy Page] </b>button, select the
             name of the coordinate system to which the value is to be applied, and
             then touch the <b>[Paste Page]</b> button.</li>
-          <li><b>[Calc.from job]</b>: You can calculate the user coordinate system based
-            on the taught program and step order to define the user coordinate system.
-            <br />If you touch the <b>[Calc. from job]</b> button after inputting the taught
-            program number in the<b> [Job no.]</b> option and step order, the origin of the
-            user coordinate system will be calculated.</li>
         </ul>
       </td>
     </tr>
@@ -9086,15 +9115,16 @@ If calibration data is lost due to operations such as system initialization, it 
 # 7.7.7 Additional Axis Autotuning
 
 * Available from version V60.28-00.
+* Autotuning is not supported for servoguns.
+
 </br>
 
 ### A. Overview
 
 This function finds the optimal gain by moving the additional axis within the range set by the user. And it can be used when the additional axis does not have a proper gain set, resulting in noise or poor control performance.
 
-| ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
-|---|---|
-| Linear axis motion | Circular axis motion |
+![](../../_assets/회전축.gif)
+
 
 
 ### B. Tuning Description
@@ -9167,7 +9197,7 @@ For detailed information on 1: Basic Settings, 2: Parameter Settings, 3: Monitor
 {% endhint %}
 
 {% hint style="info" %}
-For detailed information on the Safety Radar, refer to the "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)".
+For detailed information on the Safety Radar, refer to the "[Radar Object Detection System](https://hrbook-hrc.web.app/#/view/doc-Object-Detection-System/en/README?cont_model=${cont_model})".
 {% endhint %}
 [__SOURCE](7-system/9-cobot-system.md)
 <script id="page-config" type="application/json">
@@ -9190,7 +9220,7 @@ This function is supported from the Hi7 controller.
 ![](../_assets/tp630/system-cobot-menu.png)
 
 {% hint style="info" %}
-For detailed information on the Collaborative Robot System, refer to the  "[Safety Function Manual for Collaborative Robot](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/en/README)".
+For detailed information on the Collaborative Robot System, refer to the  "[Function Manual for Collaborative Robot - HDC Series](https://hrbook-hrc.web.app/#/view/doc-cobot-operation/en/README?cont_model=${cont_model})".
 {% endhint %}
 [__SOURCE](7-system/10-option-system/README.md)
 <script id="page-config" type="application/json">
