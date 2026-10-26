@@ -5530,6 +5530,10 @@ job 편집창과 호출 스택창, 지역 변수창이 떠 있는 상태에서, 
 
 외부 조작 패널에서 모터 off를 수행하기 위해 사용합니다.
 
+* 수동조작 금지
+
+수동모드에서 조그 동작과 스텝 전/후진 동작을 금지할지 여부를 결정하는 입력신호입니다.
+
 
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/6-output-signal-assign.md)
 # 7.3.2.6 출력 신호 할당
@@ -6186,55 +6190,69 @@ fn 입력, fn 출력 모니터링 창을 열어, 각 fn객체의 dio 혹은 xy �
 
 ![](../../../_assets/tp630/ctrl-user-coord.png)
 
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">번호</th>
-      <th style="text-align:left">설명</th>
+      <th style="text-align: left;">번호</th>
+      <th style="text-align: left;">설명</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c1.png" alt/>
+      <td style="text-align: left;">
+        <img src="../../../_assets/c1.png" alt />
       </td>
-      <td style="text-align:left">사용자 좌표계 목록에서 선택한 좌표계의 상세 정보입니다. <br>
-      좌표계 이름과 설명, 티칭된 프로그램 번호, 스텝 순서, 베이스 좌표계 기준의 원점의 위치를 설정할 수 있습니다.</td>
+      <td style="text-align: left;">
+        사용자 좌표계 목록에서 선택한 좌표계의 상세 정보입니다.<br />
+        좌표계 이름과 설명, 티칭된 프로그램 번호, 스텝 순서, 베이스 좌표계 기준의 원점의 위치를 설정할 수 있습니다.
+        <ul>
+          <li>[스텝 순서]: 사용자 좌표계 위치 및 방향 생성을 위한 스텝의 구성 순서를 지정 합니다.<br/>
+          <원점><좌표계 방향><좌표계 평면><br/> 
+           첫번째 스텝은 사용자 좌표계 원점 위치를 지정 합니다.<br/> 
+           두번째 스텝은 사용자 좌표계 원점 으로 부터 스텝 순서에 지정된 방향을 지정 합니다.<br/> 
+           세번째 스텝은 [스텝 순서]에 지정된 평면을 정의 하기위해 해당 평면상의 임의 위치를 지정 합니다.<br/></li>
+        </ul>
+        <ul>
+          <li>[기준 좌표계]: 사용자 좌표계 위치 및 방향을 정의하는 기준 좌표계를 지정 합니다.<br/>
+          - V70.06-00 이상 버전에서 지원<br/>
+           [BASE] : 베이스 좌표계 상에서 사용자 좌표계 위치를 정의합니다. 로봇 또는 부가축의 이동에도 사용자 좌표계 위치가 변하지 않습니다.<br/>
+           [ROBOT] : 로봇좌표계 상에서 사용자 좌표계 위치를 정의 합니다. 주행축이 움직일 경우 사용자 좌표계의 절대 위치가 로봇과 함께 이동 합니다.<br/> 
+           [POSITIONER] 지정된 포지셔너 번호에 해당하는 포지셔너 좌표계 상에 사용자 좌표계의 위치가 정의 됩니다. 포지셔너 이동 시 사용자 좌표계의 위치가 포지셔너와 함께 움직입니다.<br/></li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <img src="../../../_assets/c2.png" alt/>
+      <td style="text-align: left;">
+        <img src="../../../_assets/c2.png" alt />
       </td>
-      <td style="text-align:left">
+      <td style="text-align: left;">
+        사용자 좌표계 위치를 지정된 JOB으로부터 계산합니다.<br /><br />
+        [등록을 위한 프로그램 번호] 옵션에 티칭한 프로그램의 번호를 입력하고 스텝 순서와 기준 좌표계를 지정한 후 [JOB 계산] 버튼을 터치하면 사용자 좌표계의 원점과 각도가 계산되어 화면에 갱신 됩니다.
         <ul>
-          <li>`[확인]`: 변경 내용을 저장합니다.</li>
-          <li>[+]/[-]: 새로운 사용자 좌표계를
-            추가하거나 사용자 좌표계를
-            삭제합니다.</li>
-          <li>사용자 좌표계 목록입니다.
-            좌표계 이름을 선택하면
-            상세 정보를 확인 및 편집할
-            수 있습니다.</li>
-          <li>[페이지 복사]/[페이지
-            붙여넣기]: 사용자 좌표계
-            정보를 복사하여 다른
-            좌표계에 붙여 넣습니다.
-            <br
-            />목록에서 복사할 좌표계
-            정보의 이름을 선택하고
-            [페이지 복사] 버튼을 터치한
-            후 값을 적용할 좌표계의
-            이름을 선택하고 [페이지
-            붙여넣기] 버튼을 터치하십시오.</li>
-          <li>[JOB 계산]: 사용자 좌표계를 정의하기 위해 티칭한 프로그램과 스텝 순서를 기반으로 사용자 좌표계를 계산합니다.
-            <br
-            />[등록을 위한 프로그램 번호] 옵션에 티칭한 프로그램의 번호를 입력하고 스텝 순서를 지정한 후 [JOB 계산] 버튼을 터치하면 사용자 좌표계의 원점과 각도가 계산됩니다.</li>
+          <li>[JOB 계산]: 사용자 좌표계를 정의하기 위해 티칭한 프로그램과 스텝 순서 기준 좌표계 정보에 따라 사용자 좌표계를 계산합니다.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left;">
+        <img src="../../../_assets/c3.png" alt />
+      </td>
+      <td style="text-align: left;">
+        <ul>
+          <li>[확인]: 변경 내용을 저장합니다.</li>
+          <li>[+]/[-]: 새로운 사용자 좌표계를 추가하거나 사용자 좌표계를 삭제합니다.</li>
+          <li>사용자 좌표계 목록입니다. 좌표계 이름을 선택하면 상세 정보를 확인 및 편집할 수 있습니다.</li>
+          <li>
+            [페이지 복사]/[페이지 붙여넣기]: 사용자 좌표계 정보를 복사하여 다른 좌표계에 붙여 넣습니다.<br />
+            목록에서 복사할 좌표계 정보의 이름을 선택하고 [페이지 복사] 버튼을 터치한 후 값을 적용할 좌표계의 이름을 선택하고 [페이지 붙여넣기] 버튼을 터치하십시오.
+          </li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
+```
 
 [__SOURCE](7-system/3-control-parameter/6-cordsys-reg/2-stationary-tool-crdsys.md)
 # 7.3.6.2 정치툴 좌표계
@@ -8561,7 +8579,7 @@ CAD 데이터에 툴의 물성치 정보가 있으면 초기 화면의 `시스�
 
 {% hint style="info" %}
 * 당사는 두 가지 방식의 베이스축 캘리브레이션을 지원합니다. 첫 번째 방법은 사용자가 직접 기준점을 기록하는 [교시 기반 베이스축 캘리브레이션]이며, 두 번째 방법은 레이저 트래커를 이용하여 기준점을 측정하는 [센서 기반 베이스축 캘리브레이션]입니다. 환경에 맞게 적절한 방법을 선택하십시오.
-* [센서 기반 베이스축 캘리브레이션] 기능은 V70.04-00 및 이후 버전부터 지원됩니다.
+* [센서 기반 베이스축 캘리브레이션] 기능은 V70.06-00 및 이후 버전부터 지원됩니다.
 {% endhint %}
 [__SOURCE](7-system/7-auto-calibration/4-base-axis-calibration/1-base-axis-initial-set.md)
 # 7.7.4.1 베이스 축 초기 설정
@@ -8645,7 +8663,7 @@ CAD 데이터에 툴의 물성치 정보가 있으면 초기 화면의 `시스�
 # 7.7.4.3 센서 기반 베이스축 캘리브레이션
 
 {% hint style="info" %}
-* 해당 사항은 \[센서 기반 베이스축 캘리브레이션\] 기능에 대한 내용입니다. 해당 기능은 V70.04-00 및 이후 버전부터 지원됩니다.
+* 해당 사항은 \[센서 기반 베이스축 캘리브레이션\] 기능에 대한 내용입니다. 해당 기능은 V70.06-00 및 이후 버전부터 지원됩니다.
 {% endhint %}
 
 ![](../../../_assets/system-baseCalibSensor-config.png)
@@ -8818,6 +8836,7 @@ ${cont_model} 제어기는 동역학 기반의 제어기이므로 중력 방향�
 # 7.7.7 부가축 자동튜닝
 
 * V60.28-00 버전부터 사용 가능합니다.
+* 서보건은 자동튜닝을 지원하지 않습니다.
 
 </br>
 
@@ -8825,9 +8844,9 @@ ${cont_model} 제어기는 동역학 기반의 제어기이므로 중력 방향�
 
 사용자가 설정한 범위 내에서 부가축을 움직이면서 최적의 게인을 찾습니다. 이 기능은 부가축에 적절한 게인이 설정되어 있지 않아 소음이나 제어 성능이 나쁜 경우에 사용됩니다.
 
-| ![alt text](../../_assets/직동축.gif) | ![alt text](../../_assets/회전축.gif) |
-|---|---|
-| 직동축 모션 | 회전축 모션 |
+![](../../_assets/회전축.gif)
+
+
 <!-- ![additional_axis](../../_assets/_7.7.7_additional_axis.jpg) -->
 
 ### (2) 튜닝 상세 설명
@@ -8900,7 +8919,7 @@ C. 실행
 {% endhint %}
 
 {% hint style="info" %}
-안전 레이더에 대한 자세한 관한 내용은  "[Object Detection System](https://github.com/hyundai-robotics/doc-Object-Detection-System)"을 참고하십시오.
+안전 레이더에 대한 자세한 관한 내용은  "[레이더 객체 감지 시스템](https://hrbook-hrc.web.app/#/view/doc-Object-Detection-System/ko/README?cont_model=${cont_model})"을 참고하십시오.
 {% endhint %}
 [__SOURCE](7-system/9-cobot-system.md)
 <script id="page-config" type="application/json">
@@ -8923,7 +8942,7 @@ C. 실행
 ![](../_assets/tp630/system-cobot-menu.png)
 
 {% hint style="info" %}
-협동로봇 시스템에 대한 자세한 관한 내용은  "[협동로봇 안전 기능 설명서](https://hrbook-hrc.web.app/#/view/doc-cobot-safety-function/ko/README)"을 참고하십시오.
+협동로봇 시스템에 대한 자세한 관한 내용은  "[협동로봇 기능 설명서 - HDC 시리즈](https://hrbook-hrc.web.app/#/view/doc-cobot-operation/ko/README?cont_model=${cont_model})"을 참고하십시오.
 {% endhint %}
 [__SOURCE](7-system/10-option-system/README.md)
 <script id="page-config" type="application/json">
