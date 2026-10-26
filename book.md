@@ -4985,6 +4985,12 @@ end
 #### 外部电机关闭
 
 此功能用于从外部操作面板关闭电机。
+
+#### 手动操作禁止
+
+在手动模式下，决定是否禁止点动及步进前/后退操作的输入信号。
+
+
 [__SOURCE](7-system/3-control-parameter/2-io-signal-setting/6-output-signal-assign.md)
 # 7.3.2.6 输出信号分配
 
