@@ -15,10 +15,10 @@ This section describes important precautions to keep in mind when doing so.
 
 #### Applying Changes After Modifying .job Files in the project/jobs/ Folder
 
-When you add or overwrite .job files in the `project/jobs/` folder using FTP software, the robot controller does not immediately reflect these changes in memory.
-(When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
+Starting with `V70.06-00`, `.job` files added to or overwritten in the `project/jobs/` folder via FTP are applied automatically. Updates to a Job on the call stack are deferred until the Job leaves the call stack or execution stops.
 
-There are two ways to apply the updated files to memory:
+In versions earlier than `V70.06-00`, use one of the methods below to load the updated `.job` files into memory after transferring them via FTP.
+(When using HRWorkbench or file manager, changes are detected instantly and automatically loaded into memory.)
 
 - On the HOME screen, click the `...` button on the console bar and select `reload updated jobs`.
 
