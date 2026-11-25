@@ -7,11 +7,11 @@
 * `[Inertia]`: The moment of inertia \(kg/m2\) of the tool with respect to the tool coordinate. You can set it using the load estimation function.
 * Allowable Ratio: \(Only for the robot models to which high-load mode is applied\) This is the ratio of the current setting against the allowable reference value. The robot operation, according to the allowable ratio, is as follows.
 
-| Classification | Normal | High-load mode | Exception allowable mode | Playback impossible \(Large size\) |
+| Classification | Normal mode | High-load mode | Exception allowable mode | Playback impossible \(Large size\) |
 | :--- | :--- | :--- | :--- | :--- |
-| Weight ratio \(%\) | - 100 | 100-120 | 100-120 | 120 - |
-| Moment ratio \(%\) | - 100 | 100-110 | 100-115 \(150\) | 115 \(150\) - |
-| Inertia ratio \(%\) | - 100 | 100-130 | 100-150 \(600\) | 150 \(600\) - |
+| Weight ratio \(%\) | - 100 | 100-120 | -120 | 120 - |
+| Moment ratio \(%\) | - 100 | 100-110 | -115 \(150\) | 115 \(150\) - |
+| Inertia ratio \(%\) | - 100 | 100-130 | -150 \(600\) | 150 \(600\) - |
 
 {% hint style="info" %}
 The allowable ratio can be changed depending on the robot model and controller software version.
